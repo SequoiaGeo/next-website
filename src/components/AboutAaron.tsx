@@ -171,6 +171,107 @@ export default function AboutAaron() {
             Balanced Comfort, Fresno CA &mdash; 50+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318 (C36 Plumbing, B General Building)
           </p>
 
+          {/* Industry connections */}
+          <div className="pt-4">
+            <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">In the rooms where home services decisions get made</p>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <div className="overflow-hidden rounded-2xl shadow-sm">
+                <Image
+                  src="/aaron-joe-crisera.webp"
+                  alt="Aaron Husak with Joe Crisera, home services industry leader"
+                  width={2268}
+                  height={4032}
+                  className="w-full h-64 object-cover object-top"
+                />
+                <div className="px-4 py-3 bg-white border-t border-gray-100">
+                  <p className="text-xs font-semibold text-[#1a1a1a]">Joe Crisera</p>
+                  <p className="text-xs text-gray-400">Home services industry leader</p>
+                </div>
+              </div>
+              <div className="overflow-hidden rounded-2xl shadow-sm">
+                <Image
+                  src="/aaron-tommy-mello.webp"
+                  alt="Aaron Husak with Tommy Mello, founder of A1 Garage Door Service"
+                  width={4032}
+                  height={2268}
+                  className="w-full h-64 object-cover object-top"
+                />
+                <div className="px-4 py-3 bg-white border-t border-gray-100">
+                  <p className="text-xs font-semibold text-[#1a1a1a]">Tommy Mello</p>
+                  <p className="text-xs text-gray-400">Founder, A1 Garage Door Service</p>
+                </div>
+              </div>
+              <div className="overflow-hidden rounded-2xl shadow-sm">
+                <Image
+                  src="/aaron-michelle-van-beek.webp"
+                  alt="Aaron Husak with Michelle Van Beek at Growth Summit 2022"
+                  width={2268}
+                  height={4032}
+                  className="w-full h-64 object-cover object-top"
+                />
+                <div className="px-4 py-3 bg-white border-t border-gray-100">
+                  <p className="text-xs font-semibold text-[#1a1a1a]">Michelle Van Beek</p>
+                  <p className="text-xs text-gray-400">Home services growth leader</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Office origin + podcasts */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 items-stretch">
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <Image
+                src="/first-office-exterior.webp"
+                alt="Balanced Comfort first office — Fresno, CA"
+                width={4000}
+                height={3000}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col justify-between rounded-2xl border border-gray-200 bg-white p-6">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">As Featured On</p>
+                <div className="space-y-3">
+                  <a
+                    href="https://www.thefirstclick.net/ep-320-using-ai-to-increase-website-clarity-with-aaron-husak/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-3 group"
+                  >
+                    <span className="mt-0.5 flex-shrink-0 h-8 w-8 rounded-full bg-[#C8EDD2] flex items-center justify-center">
+                      <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">Digital Marketing Therapy &mdash; Ep. 320</p>
+                      <p className="text-xs text-gray-400">Using AI to Increase Website Clarity</p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.grownearby.com/podcast/the-success-story-of-aaron-husak/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-3 group"
+                  >
+                    <span className="mt-0.5 flex-shrink-0 h-8 w-8 rounded-full bg-[#C8EDD2] flex items-center justify-center">
+                      <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">Grow Nearby Podcast</p>
+                      <p className="text-xs text-gray-400">The Success Story of Aaron Husak</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="mt-6 border-t border-gray-100 pt-4">
+                <p className="text-xs text-gray-400 leading-relaxed">Started in a 400 sq ft office in Fresno, CA. Grew to 130 employees, 4,000+ five-star reviews, and four consecutive Inc 5000 rankings before founding Sequoia GEO.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
