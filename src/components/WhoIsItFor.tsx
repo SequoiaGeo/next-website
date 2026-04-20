@@ -26,7 +26,7 @@ export default function WhoIsItFor() {
             <p className="section-overline mb-4">Is This a Fit?</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
               Built for operators.{" "}
-              <span className="text-[#2D6A4F]">Not for shoppers.</span>
+              <span className="text-[#1A5C3A]">Not for shoppers.</span>
             </h2>
             <p className="mt-5 text-base text-gray-500 leading-relaxed">
               Ten clients at a time. That constraint is intentional: it&rsquo;s what lets
@@ -36,7 +36,7 @@ export default function WhoIsItFor() {
             <div className="mt-8 flex flex-col gap-3">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1B4332]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
                 Apply for a Spot
                 <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -61,17 +61,17 @@ export default function WhoIsItFor() {
             {/* Good fit */}
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#D8F3DC]">
-                  <svg className="h-3.5 w-3.5 text-[#2D6A4F]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#C8EDD2]">
+                  <svg className="h-3.5 w-3.5 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-[#2D6A4F]">This is for you if</h3>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A]">This is for you if</h3>
               </div>
               <ul className="divide-y divide-gray-100">
                 {goodFit.map((item) => (
                   <li key={item} className="flex items-start gap-4 py-4 first:pt-0">
-                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#52B788]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                     <span className="text-base leading-relaxed text-gray-700">{item}</span>

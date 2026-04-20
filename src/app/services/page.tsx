@@ -69,8 +69,8 @@ export default function ServicesPage() {
       <section className="bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#52B788]/30 bg-white px-5 py-2 text-sm font-medium text-[#2D6A4F] shadow-sm mb-6">
-              <span className="inline-block h-2 w-2 rounded-full bg-[#52B788]" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
+              <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
               The Channels I Manage
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl">
@@ -97,8 +97,8 @@ export default function ServicesPage() {
                 key={service.title}
                 className="flex flex-col rounded-2xl border border-gray-200 bg-[#fafaf8] p-6 shadow-sm"
               >
-                <span className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#D8F3DC]">
-                  <svg className="h-4 w-4 text-[#2D6A4F]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                <span className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#C8EDD2]">
+                  <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
@@ -124,7 +124,7 @@ export default function ServicesPage() {
               <Link
                 key={page.href}
                 href={page.href}
-                className="rounded-xl border border-[#52B788]/30 bg-white px-6 py-3 text-base font-semibold text-[#2D6A4F] shadow-sm transition hover:bg-[#D8F3DC] hover:border-[#52B788]"
+                className="rounded-xl border border-[#3A9E6A]/30 bg-white px-6 py-3 text-base font-semibold text-[#1A5C3A] shadow-sm transition hover:bg-[#C8EDD2] hover:border-[#3A9E6A]"
               >
                 {page.label}
               </Link>
@@ -166,8 +166,8 @@ export default function ServicesPage() {
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
                 <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D8F3DC]">
-                    <svg className="h-4 w-4 text-[#2D6A4F]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
+                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </div>
@@ -218,7 +218,7 @@ export default function ServicesPage() {
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-white p-7">
-                <div className="mb-4 text-4xl font-black text-[#D8F3DC]">{item.number}</div>
+                <div className="mb-4 text-4xl font-black text-[#C8EDD2]">{item.number}</div>
                 <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
               </div>
@@ -268,12 +268,12 @@ export default function ServicesPage() {
       </section>
 
       {/* Positioning note */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
             Before I Touch Any of These Channels
           </h2>
-          <p className="mt-4 text-lg text-[#D8F3DC]/80">
+          <p className="mt-4 text-lg text-[#C8EDD2]/80">
             Every engagement starts with a Full Picture Audit: your marketing spend and ROI by channel,
             your phone handling, your booking rate, your review velocity, and where revenue is leaking.
             You get a complete playbook before a single dollar of new spend is approved.
@@ -281,7 +281,7 @@ export default function ServicesPage() {
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#2D6A4F] transition hover:bg-[#D8F3DC]"
+              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Start With the Audit
               <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

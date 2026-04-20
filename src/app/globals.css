@@ -25,7 +25,7 @@ p, li, span, a, label, input, textarea, button {
 
 /* Section overline — replaces pill badges */
 .section-overline {
-  @apply text-xs font-semibold uppercase tracking-[0.15em] text-[#52B788];
+  @apply text-xs font-semibold uppercase tracking-[0.15em] text-[#3A9E6A];
 }
 
 /* Buttons */
@@ -34,17 +34,17 @@ p, li, span, a, label, input, textarea, button {
 }
 
 .btn-primary {
-  @apply bg-[#52B788] text-[#1B4332] border-none;
+  @apply bg-[#3A9E6A] text-[#0D2318] border-none;
 }
 .btn-primary:hover {
   @apply bg-[#6FCF97] -translate-y-0.5;
 }
 
 .btn-dark {
-  @apply bg-[#2D6A4F] text-white border-none;
+  @apply bg-[#1A5C3A] text-white border-none;
 }
 .btn-dark:hover {
-  @apply bg-[#1B4332] -translate-y-0.5;
+  @apply bg-[#0D2318] -translate-y-0.5;
 }
 
 .btn-ghost {
@@ -55,17 +55,17 @@ p, li, span, a, label, input, textarea, button {
 }
 
 .btn-secondary {
-  @apply bg-transparent text-[#2D6A4F] border-2 border-[#2D6A4F];
+  @apply bg-transparent text-[#1A5C3A] border-2 border-[#1A5C3A];
 }
 .btn-secondary:hover {
-  @apply bg-[#2D6A4F] text-white;
+  @apply bg-[#1A5C3A] text-white;
 }
 
 .btn-white {
-  @apply bg-white text-[#2D6A4F] border-none;
+  @apply bg-white text-[#1A5C3A] border-none;
 }
 .btn-white:hover {
-  @apply bg-[#D8F3DC] -translate-y-0.5;
+  @apply bg-[#C8EDD2] -translate-y-0.5;
 }
 
 /* Card */
@@ -86,7 +86,7 @@ p, li, span, a, label, input, textarea, button {
 
 /* Gradient text */
 .text-gradient {
-  background: linear-gradient(135deg, #1B4332, #52B788);
+  background: linear-gradient(135deg, #0D2318, #3A9E6A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -102,7 +102,7 @@ p, li, span, a, label, input, textarea, button {
 /* Focus */
 a:focus-visible,
 button:focus-visible {
-  @apply outline-2 outline-[#52B788] outline-offset-2 rounded;
+  @apply outline-2 outline-[#3A9E6A] outline-offset-2 rounded;
 }
 
 /* Blog / prose overrides */

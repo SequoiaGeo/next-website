@@ -18,8 +18,8 @@ export default function CaseStudy() {
         <div className="mx-auto mt-16 max-w-4xl overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
           <div className="grid lg:grid-cols-2">
             {/* Left: Visual */}
-            <div className="flex flex-col items-center justify-center bg-[#1B4332] p-12 text-white">
-              <p className="text-sm font-medium uppercase tracking-widest text-[#52B788]">
+            <div className="flex flex-col items-center justify-center bg-[#0D2318] p-12 text-white">
+              <p className="text-sm font-medium uppercase tracking-widest text-[#3A9E6A]">
                 Case Study
               </p>
               <h3 className="mt-4 text-center text-2xl font-bold leading-snug">
@@ -48,7 +48,7 @@ export default function CaseStudy() {
                   { stat: "Dec 2024", label: "Acquired" },
                 ].map((item) => (
                   <div key={item.label}>
-                    <p className="text-2xl font-extrabold text-[#2D6A4F]">
+                    <p className="text-2xl font-extrabold text-[#1A5C3A]">
                       {item.stat}
                     </p>
                     <p className="text-sm text-gray-500">{item.label}</p>
@@ -59,7 +59,7 @@ export default function CaseStudy() {
               {/* CTA */}
               <Link
                 href="#"
-                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#2D6A4F] transition hover:text-[#1B4332]"
+                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#1A5C3A] transition hover:text-[#0D2318]"
               >
                 Read Full Case Study
                 <svg

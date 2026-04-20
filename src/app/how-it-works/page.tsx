@@ -45,14 +45,14 @@ export default function HowItWorksPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B4332] py-20 sm:py-28">
+      <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <div className="section-overline mb-6">How It Works</div>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               30 days. Full access. No obligation after that.
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-[#D8F3DC]/80">
+            <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
               Here&rsquo;s exactly what happens when we work together -- from the first call to
               day 30.
             </p>
@@ -96,11 +96,11 @@ export default function HowItWorksPage() {
               <div key={step.week} className="relative flex gap-8">
                 {/* Timeline line */}
                 <div className="flex flex-col items-center">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B4332] text-xs font-extrabold text-white">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0D2318] text-xs font-extrabold text-white">
                     {index + 1}
                   </div>
                   {index < steps.length - 1 && (
-                    <div className="mt-2 w-px grow bg-[#52B788]/30" />
+                    <div className="mt-2 w-px grow bg-[#3A9E6A]/30" />
                   )}
                 </div>
 
@@ -110,16 +110,16 @@ export default function HowItWorksPage() {
                   <h3 className="text-xl font-extrabold text-[#1a1a1a]">{step.title}</h3>
                   <div className="mt-4 space-y-3">
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-wide text-[#2D6A4F]">
+                      <p className="text-xs font-bold uppercase tracking-wide text-[#1A5C3A]">
                         What we do
                       </p>
                       <p className="mt-1 text-base leading-relaxed text-gray-600">{step.what}</p>
                     </div>
-                    <div className="rounded-lg border border-[#52B788]/20 bg-[#D8F3DC]/40 px-4 py-3">
-                      <p className="text-xs font-bold uppercase tracking-wide text-[#1B4332]">
+                    <div className="rounded-lg border border-[#3A9E6A]/20 bg-[#C8EDD2]/40 px-4 py-3">
+                      <p className="text-xs font-bold uppercase tracking-wide text-[#0D2318]">
                         What you get
                       </p>
-                      <p className="mt-1 text-sm leading-relaxed text-[#1B4332]/80">{step.get}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-[#0D2318]/80">{step.get}</p>
                     </div>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function HowItWorksPage() {
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <svg
-                    className="mt-1 h-4 w-4 shrink-0 text-[#52B788]"
+                    className="mt-1 h-4 w-4 shrink-0 text-[#3A9E6A]"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={2.5}
@@ -156,7 +156,7 @@ export default function HowItWorksPage() {
                 </div>
               ))}
             </div>
-            <div className="mt-8 rounded-xl border border-[#52B788]/20 bg-white px-6 py-5 shadow-sm">
+            <div className="mt-8 rounded-xl border border-[#3A9E6A]/20 bg-white px-6 py-5 shadow-sm">
               <p className="text-sm font-bold text-[#1a1a1a]">Pricing</p>
               <p className="mt-1 text-sm leading-relaxed text-gray-600">
                 Monthly retainers start at $2,500/month. Scope depends on number of channels, ad spend
@@ -169,25 +169,25 @@ export default function HowItWorksPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
             Start with a free strategy call.
           </h2>
-          <p className="mt-4 text-lg text-[#D8F3DC]/80">
+          <p className="mt-4 text-lg text-[#C8EDD2]/80">
             15 minutes. We&rsquo;ll tell you whether the 30-day engagement makes sense for your
             situation, and if it doesn&rsquo;t, we&rsquo;ll tell you that too.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1B4332] transition hover:bg-[#D8F3DC]"
+              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call
             </Link>
             <a
               href="tel:5595213122"
-              className="text-base font-medium text-[#D8F3DC] hover:text-white transition-colors"
+              className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors"
             >
               (559) 521-3122
             </a>

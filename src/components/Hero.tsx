@@ -9,7 +9,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative bg-[#1B4332] overflow-hidden">
+    <section className="relative bg-[#0D2318] overflow-hidden">
       {/* Grain texture overlay */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.035]"
@@ -20,7 +20,7 @@ export default function Hero() {
           backgroundSize: "128px 128px",
         }}
       />
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-[#2D6A4F]/30 via-transparent to-[#1B4332]" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-[#1A5C3A]/30 via-transparent to-[#0D2318]" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-16 pb-20 sm:pt-20 sm:pb-24 lg:pt-24 lg:pb-28">
 
@@ -28,22 +28,22 @@ export default function Hero() {
 
           {/* Left: Copy */}
           <div>
-            <p className="section-overline text-[#52B788] mb-6">
+            <p className="section-overline text-[#3A9E6A] mb-6">
               Growth Operations for Home Services
             </p>
 
             <h1 className="text-5xl font-extrabold text-white sm:text-6xl lg:text-[4.25rem] leading-[1.06] tracking-tight">
               What would your marketing look like if the person running it had{" "}
-              <em className="not-italic text-[#52B788]">P&L responsibility?</em>
+              <em className="not-italic text-[#3A9E6A]">P&L responsibility?</em>
             </h1>
 
-            <p className="mt-8 text-lg text-[#D8F3DC]/70 leading-relaxed max-w-2xl">
+            <p className="mt-8 text-lg text-[#C8EDD2]/70 leading-relaxed max-w-2xl">
               An agency sends you a leads report. An operator asks why revenue didn&rsquo;t move.
               Marketing and sales aren&rsquo;t two separate things. They&rsquo;re the same pipeline.
               If one end is leaking, it doesn&rsquo;t matter how much you pour in the other.
             </p>
 
-            <p className="mt-4 text-base text-[#D8F3DC]/45 max-w-xl">
+            <p className="mt-4 text-base text-[#C8EDD2]/45 max-w-xl">
               13 years running a home service company to 130+ employees and 4x Inc 5000.
               Now working with 10 contractors at a time.
             </p>
@@ -51,7 +51,7 @@ export default function Hero() {
             <div className="mt-10 flex flex-col sm:flex-row gap-3">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-[#52B788] px-8 py-4 text-base font-semibold text-[#1B4332] transition hover:bg-[#6FCF97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#52B788]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3A9E6A]"
               >
                 Book a Strategy Call
                 <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
@@ -68,7 +68,7 @@ export default function Hero() {
 
             <a
               href="tel:5595213122"
-              className="mt-6 inline-flex items-center gap-2 text-sm text-[#D8F3DC]/40 hover:text-[#D8F3DC]/70 transition-colors"
+              className="mt-6 inline-flex items-center gap-2 text-sm text-[#C8EDD2]/40 hover:text-[#C8EDD2]/70 transition-colors"
             >
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -84,9 +84,9 @@ export default function Hero() {
                 key={s.value}
                 className="rounded-xl border border-white/10 bg-white/[0.06] p-5 lg:p-6 backdrop-blur-sm"
               >
-                <div className="text-3xl font-extrabold text-[#52B788] lg:text-4xl">{s.value}</div>
+                <div className="text-3xl font-extrabold text-[#3A9E6A] lg:text-4xl">{s.value}</div>
                 <div className="mt-1 text-sm font-semibold text-white leading-snug">{s.label}</div>
-                <div className="mt-1 text-xs text-[#D8F3DC]/40 leading-snug">{s.sub}</div>
+                <div className="mt-1 text-xs text-[#C8EDD2]/40 leading-snug">{s.sub}</div>
               </div>
             ))}
           </div>
@@ -94,13 +94,13 @@ export default function Hero() {
 
         {/* Bottom strip */}
         <div className="mt-16 pt-7 border-t border-white/10">
-          <div className="flex flex-wrap gap-x-8 gap-y-2 text-xs text-[#D8F3DC]/35 font-medium">
+          <div className="flex flex-wrap gap-x-8 gap-y-2 text-xs text-[#C8EDD2]/35 font-medium">
             <span>CA Licensed Contractor B &middot; C-2 &middot; C-20 HVAC &middot; C-36 Plumbing</span>
             <span className="hidden sm:inline text-white/10">|</span>
             <span>Fresno, CA &middot; Serving Nationwide</span>
             <span className="hidden sm:inline text-white/10">|</span>
             <span>10 clients at a time &middot; Currently{" "}
-              <span className="text-[#52B788]/80">accepting applications</span>
+              <span className="text-[#3A9E6A]/80">accepting applications</span>
             </span>
           </div>
         </div>

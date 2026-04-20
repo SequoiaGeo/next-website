@@ -59,20 +59,20 @@ const features = [
 
 export default function AIAutomation() {
   return (
-    <section id="ai-automation" className="relative bg-[#1B4332] overflow-hidden">
+    <section id="ai-automation" className="relative bg-[#0D2318] overflow-hidden">
       {/* Background accents */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-[#2D6A4F]/50 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-[#52B788]/20 blur-3xl" />
+        <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-[#1A5C3A]/50 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-[#3A9E6A]/20 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
         {/* Badge */}
         <div className="text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[#52B788]/20 px-5 py-2 text-sm font-semibold text-[#52B788] ring-1 ring-inset ring-[#52B788]/30">
+          <span className="inline-flex items-center gap-2 rounded-full bg-[#3A9E6A]/20 px-5 py-2 text-sm font-semibold text-[#3A9E6A] ring-1 ring-inset ring-[#3A9E6A]/30">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#52B788] opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#52B788]" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#3A9E6A] opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#3A9E6A]" />
             </span>
             NEW: Most Requested Service
           </span>
@@ -81,7 +81,7 @@ export default function AIAutomation() {
         {/* Headline */}
         <h2 className="mt-8 text-center text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
           Stop Losing{" "}
-          <span className="text-[#52B788]">$126,000/Year</span> from Missed
+          <span className="text-[#3A9E6A]">$126,000/Year</span> from Missed
           Calls
         </h2>
 
@@ -98,9 +98,9 @@ export default function AIAutomation() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition hover:border-[#52B788]/40 hover:bg-white/10"
+              className="group rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition hover:border-[#3A9E6A]/40 hover:bg-white/10"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#52B788]/20 text-[#52B788] transition group-hover:bg-[#52B788]/30">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#3A9E6A]/20 text-[#3A9E6A] transition group-hover:bg-[#3A9E6A]/30">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-bold text-white">{feature.title}</h3>
@@ -115,7 +115,7 @@ export default function AIAutomation() {
         <div className="mt-16 text-center">
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center rounded-lg bg-[#52B788] px-10 py-4 text-lg font-bold text-[#1B4332] shadow-lg shadow-[#52B788]/25 transition hover:bg-[#6FCF97] hover:shadow-xl hover:shadow-[#52B788]/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#52B788]"
+            className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-10 py-4 text-lg font-bold text-[#0D2318] shadow-lg shadow-[#3A9E6A]/25 transition hover:bg-[#6FCF97] hover:shadow-xl hover:shadow-[#3A9E6A]/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3A9E6A]"
           >
             Get AI Automation for Your Business
             <svg
@@ -135,12 +135,12 @@ export default function AIAutomation() {
           <p className="mt-5 text-sm text-gray-400">
             Free demo &middot; No commitment &middot; See results in 30 days
           </p>
-          <div className="mt-6 inline-flex items-center gap-3 rounded-full border border-[#52B788]/30 bg-[#52B788]/10 px-6 py-3">
+          <div className="mt-6 inline-flex items-center gap-3 rounded-full border border-[#3A9E6A]/30 bg-[#3A9E6A]/10 px-6 py-3">
             <span className="relative flex h-3 w-3">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#52B788] opacity-75" />
-              <span className="relative inline-flex h-3 w-3 rounded-full bg-[#52B788]" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#3A9E6A] opacity-75" />
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-[#3A9E6A]" />
             </span>
-            <span className="text-sm font-medium text-[#D8F3DC]">
+            <span className="text-sm font-medium text-[#C8EDD2]">
               Try it now: click the chat widget in the bottom-right corner to talk to our AI
             </span>
           </div>

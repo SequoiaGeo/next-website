@@ -115,7 +115,7 @@ export default function Services() {
           <p className="section-overline mb-4">What We Do</p>
           <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
             Every channel connected{" "}
-            <span className="text-[#2D6A4F]">to booked jobs.</span>
+            <span className="text-[#1A5C3A]">to booked jobs.</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-gray-500">
             These aren&rsquo;t standalone packages. They&rsquo;re the channels managed as part of
@@ -127,16 +127,16 @@ export default function Services() {
         {/* Featured: Website Design */}
         <Link
           href="/services/website-design"
-          className="group mb-8 flex flex-col lg:flex-row overflow-hidden rounded-2xl border border-[#52B788]/30 bg-white transition hover:border-[#52B788]/60 hover:shadow-xl hover:shadow-[#52B788]/10"
+          className="group mb-8 flex flex-col lg:flex-row overflow-hidden rounded-2xl border border-[#3A9E6A]/30 bg-white transition hover:border-[#3A9E6A]/60 hover:shadow-xl hover:shadow-[#3A9E6A]/10"
         >
           {/* Content */}
           <div className="flex flex-col justify-between p-8 lg:p-10 lg:max-w-lg">
             <div>
-              <span className="inline-block rounded-full bg-[#D8F3DC] px-3 py-1 text-xs font-semibold text-[#1B4332] mb-4">
+              <span className="inline-block rounded-full bg-[#C8EDD2] px-3 py-1 text-xs font-semibold text-[#0D2318] mb-4">
                 Featured Service
               </span>
               <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1B4332] text-[#52B788]">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0D2318] text-[#3A9E6A]">
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
                   </svg>
@@ -152,7 +152,7 @@ export default function Services() {
                 The site you&rsquo;re on right now is an example of what we build.
               </p>
             </div>
-            <div className="mt-8 inline-flex items-center text-sm font-semibold text-[#2D6A4F] transition group-hover:text-[#1B4332]">
+            <div className="mt-8 inline-flex items-center text-sm font-semibold text-[#1A5C3A] transition group-hover:text-[#0D2318]">
               See what&rsquo;s included
               <svg className="ml-2 h-4 w-4 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -161,7 +161,7 @@ export default function Services() {
           </div>
 
           {/* Visual panel */}
-          <div className="flex-1 min-h-[200px] lg:min-h-0 bg-[#1B4332] flex items-center justify-center p-10">
+          <div className="flex-1 min-h-[200px] lg:min-h-0 bg-[#0D2318] flex items-center justify-center p-10">
             <div className="w-full max-w-sm">
               {/* Fake browser chrome */}
               <div className="rounded-xl bg-white/10 overflow-hidden shadow-2xl">
@@ -174,9 +174,9 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="p-5 space-y-3">
-                  <div className="h-3 w-3/4 rounded bg-[#52B788]/40" />
+                  <div className="h-3 w-3/4 rounded bg-[#3A9E6A]/40" />
                   <div className="h-3 w-1/2 rounded bg-white/10" />
-                  <div className="mt-4 h-8 w-32 rounded-lg bg-[#52B788]/60" />
+                  <div className="mt-4 h-8 w-32 rounded-lg bg-[#3A9E6A]/60" />
                   <div className="mt-4 grid grid-cols-2 gap-2">
                     <div className="h-16 rounded-lg bg-white/5" />
                     <div className="h-16 rounded-lg bg-white/5" />
@@ -195,14 +195,14 @@ export default function Services() {
               href={service.href}
               className="group flex flex-col bg-white p-7 transition hover:bg-[#fafaf8]"
             >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#D8F3DC] text-[#2D6A4F] transition group-hover:bg-[#52B788]/20">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#C8EDD2] text-[#1A5C3A] transition group-hover:bg-[#3A9E6A]/20">
                 {service.icon}
               </div>
               <h3 className="text-base font-bold text-[#1a1a1a]">{service.title}</h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-500">
                 {service.description}
               </p>
-              <span className="mt-5 inline-flex items-center text-xs font-semibold text-[#2D6A4F] transition group-hover:text-[#52B788]">
+              <span className="mt-5 inline-flex items-center text-xs font-semibold text-[#1A5C3A] transition group-hover:text-[#3A9E6A]">
                 Learn more
                 <svg className="ml-1 h-3.5 w-3.5 transition group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />

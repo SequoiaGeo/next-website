@@ -10,7 +10,7 @@ export default function RefundPolicy() {
   return (
     <section className="py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#1B4332] mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#0D2318] mb-4">
           Refund Policy
         </h1>
         <p className="text-sm text-gray-500 mb-12">
@@ -26,7 +26,7 @@ export default function RefundPolicy() {
           </p>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#1B4332] mb-4">
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">
               Monthly Service Agreements
             </h2>
             <p>
@@ -55,7 +55,7 @@ export default function RefundPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#1B4332] mb-4">
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">
               Project-Based Work
             </h2>
             <p>
@@ -84,7 +84,7 @@ export default function RefundPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#1B4332] mb-4">
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">
               Advertising Spend
             </h2>
             <p>
@@ -97,7 +97,7 @@ export default function RefundPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#1B4332] mb-4">
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">
               Satisfaction Commitment
             </h2>
             <p>
@@ -110,7 +110,7 @@ export default function RefundPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#1B4332] mb-4">
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">
               How to Request a Refund
             </h2>
             <p>
@@ -130,20 +130,20 @@ export default function RefundPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#1B4332] mb-4">
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">
               Contact Information
             </h2>
             <p>
               For refund requests or billing questions, please contact us:
             </p>
-            <div className="mt-4 p-6 bg-[#1B4332]/5 rounded-lg">
-              <p className="font-semibold text-[#1B4332]">Sequoia GEO</p>
+            <div className="mt-4 p-6 bg-[#0D2318]/5 rounded-lg">
+              <p className="font-semibold text-[#0D2318]">Sequoia GEO</p>
               <p>Fresno, CA</p>
               <p>
                 Email:{" "}
                 <a
                   href="mailto:Aaron@sequoiageo.com"
-                  className="text-[#52B788] hover:underline"
+                  className="text-[#3A9E6A] hover:underline"
                 >
                   Aaron@sequoiageo.com
                 </a>

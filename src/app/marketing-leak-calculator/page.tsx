@@ -23,7 +23,7 @@ function Slider({
     <div className="space-y-3">
       <div className="flex items-center justify-between">
         <label className="text-sm font-semibold text-[#1a1a1a]">{label}</label>
-        <span className="text-base font-extrabold text-[#2D6A4F]">{format(value)}</span>
+        <span className="text-base font-extrabold text-[#1A5C3A]">{format(value)}</span>
       </div>
       <input
         type="range"
@@ -34,7 +34,7 @@ function Slider({
         onChange={(e) => onChange(Number(e.target.value))}
         className="w-full h-2 rounded-full appearance-none cursor-pointer"
         style={{
-          background: `linear-gradient(to right, #2D6A4F ${((value - min) / (max - min)) * 100}%, #e5e7eb ${((value - min) / (max - min)) * 100}%)`,
+          background: `linear-gradient(to right, #1A5C3A ${((value - min) / (max - min)) * 100}%, #e5e7eb ${((value - min) / (max - min)) * 100}%)`,
         }}
       />
       <div className="flex justify-between text-xs text-gray-400">
@@ -95,21 +95,21 @@ export default function MarketingLeakCalculator() {
       {/* Nav strip */}
       <div className="border-b border-gray-200 bg-white px-6 py-4">
         <div className="mx-auto max-w-7xl">
-          <Link href="/" className="text-sm font-semibold text-[#2D6A4F] hover:text-[#1B4332] transition-colors">
+          <Link href="/" className="text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors">
             ← Back to Sequoia GEO
           </Link>
         </div>
       </div>
 
       {/* Header */}
-      <div className="bg-[#1B4332]">
+      <div className="bg-[#0D2318]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-14 sm:py-16">
-          <p className="section-overline text-[#52B788] mb-4">Free Tool</p>
+          <p className="section-overline text-[#3A9E6A] mb-4">Free Tool</p>
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-[1.08] max-w-2xl">
             How much revenue is leaking from{" "}
-            <span className="text-[#52B788]">your marketing pipeline?</span>
+            <span className="text-[#3A9E6A]">your marketing pipeline?</span>
           </h1>
-          <p className="mt-4 text-base text-[#D8F3DC]/60 max-w-xl leading-relaxed">
+          <p className="mt-4 text-base text-[#C8EDD2]/60 max-w-xl leading-relaxed">
             Enter your numbers. The calculator shows you what your marketing is actually producing
             versus what it could be producing, in dollars.
           </p>
@@ -236,9 +236,9 @@ export default function MarketingLeakCalculator() {
                   { label: "At good performer (55%)", value: results.goodRevenue, highlight: false },
                   { label: "At top 10% (65%)", value: results.topRevenue, highlight: true },
                 ].map((row) => (
-                  <div key={row.label} className={`flex items-center justify-between rounded-lg px-4 py-3 ${row.highlight ? "bg-[#D8F3DC]" : "bg-gray-50"}`}>
-                    <span className={`text-sm ${row.highlight ? "font-semibold text-[#1B4332]" : "text-gray-600"}`}>{row.label}</span>
-                    <span className={`text-base font-extrabold ${row.highlight ? "text-[#1B4332]" : "text-[#1a1a1a]"}`}>{formatDollar(row.value)}/mo</span>
+                  <div key={row.label} className={`flex items-center justify-between rounded-lg px-4 py-3 ${row.highlight ? "bg-[#C8EDD2]" : "bg-gray-50"}`}>
+                    <span className={`text-sm ${row.highlight ? "font-semibold text-[#0D2318]" : "text-gray-600"}`}>{row.label}</span>
+                    <span className={`text-base font-extrabold ${row.highlight ? "text-[#0D2318]" : "text-[#1a1a1a]"}`}>{formatDollar(row.value)}/mo</span>
                   </div>
                 ))}
               </div>
@@ -246,14 +246,14 @@ export default function MarketingLeakCalculator() {
 
             {/* The gap */}
             {results.annualGap > 0 && (
-              <div className="rounded-2xl bg-[#1B4332] p-7">
-                <p className="text-xs font-bold uppercase tracking-widest text-[#52B788]/60 mb-2">Annual revenue gap</p>
-                <p className="text-5xl font-extrabold text-[#52B788]">{formatCurrency(results.annualGap)}</p>
-                <p className="mt-2 text-sm text-[#D8F3DC]/60 leading-relaxed">
+              <div className="rounded-2xl bg-[#0D2318] p-7">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A]/60 mb-2">Annual revenue gap</p>
+                <p className="text-5xl font-extrabold text-[#3A9E6A]">{formatCurrency(results.annualGap)}</p>
+                <p className="mt-2 text-sm text-[#C8EDD2]/60 leading-relaxed">
                   That&rsquo;s the difference between your current booking rate and what a top-performing
                   operation produces from the same marketing spend.
                 </p>
-                <p className="mt-3 text-sm text-[#D8F3DC]/40">
+                <p className="mt-3 text-sm text-[#C8EDD2]/40">
                   This doesn&rsquo;t require more marketing spend. It requires fixing what&rsquo;s leaking.
                 </p>
               </div>
@@ -267,7 +267,7 @@ export default function MarketingLeakCalculator() {
               </p>
               <Link
                 href="/#contact"
-                className="inline-flex items-center justify-center w-full rounded-lg bg-[#2D6A4F] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#1B4332]"
+                className="inline-flex items-center justify-center w-full rounded-lg bg-[#1A5C3A] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
                 Book a Free Strategy Call
                 <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

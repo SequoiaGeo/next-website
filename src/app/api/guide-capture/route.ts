@@ -27,7 +27,7 @@ export async function POST(req: Request) {
             and stop paying for leads that go nowhere.
           </p>
           <a href="https://sequoiageo.com/lsa-guide.pdf"
-             style="display: inline-block; background: #2D6A4F; color: white; font-weight: 600; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-size: 15px; margin-bottom: 28px;">
+             style="display: inline-block; background: #1A5C3A; color: white; font-weight: 600; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-size: 15px; margin-bottom: 28px;">
             Download the Guide (PDF)
           </a>
           <p style="color: #555; line-height: 1.6; margin: 0 0 12px;">
@@ -35,7 +35,7 @@ export async function POST(req: Request) {
             on the table, that's what the first conversation is for.
           </p>
           <p style="margin: 0 0 24px;">
-            <a href="https://sequoiageo.com/#contact" style="color: #2D6A4F; font-weight: 600;">
+            <a href="https://sequoiageo.com/#contact" style="color: #1A5C3A; font-weight: 600;">
               Book a free strategy call →
             </a>
           </p>

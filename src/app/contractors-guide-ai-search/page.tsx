@@ -19,7 +19,7 @@ export default function ContractorsGuideAISearchPage() {
         <div className="mx-auto max-w-7xl">
           <Link
             href="/"
-            className="text-sm font-semibold text-[#2D6A4F] hover:text-[#1B4332] transition-colors"
+            className="text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
           >
             ← Back to Sequoia GEO
           </Link>
@@ -27,19 +27,19 @@ export default function ContractorsGuideAISearchPage() {
       </div>
 
       {/* Hero */}
-      <div className="bg-[#1B4332]">
+      <div className="bg-[#0D2318]">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 py-16 sm:py-24">
-          <p className="section-overline text-[#52B788] mb-4">Free Guide</p>
+          <p className="section-overline text-[#3A9E6A] mb-4">Free Guide</p>
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl leading-[1.06]">
             The Contractor&rsquo;s Guide to AI Search
           </h1>
-          <p className="mt-5 text-xl text-[#52B788] font-medium leading-snug">
+          <p className="mt-5 text-xl text-[#3A9E6A] font-medium leading-snug">
             How HVAC, Plumbing &amp; Roofing Companies Get Found by ChatGPT, Gemini &amp; Perplexity
           </p>
-          <p className="mt-4 text-sm text-[#D8F3DC]/50 tracking-wide">
+          <p className="mt-4 text-sm text-[#C8EDD2]/50 tracking-wide">
             By Aaron Husak &middot; April 2026 &middot; 20 min read
           </p>
-          <p className="mt-6 text-lg text-[#D8F3DC]/75 leading-relaxed max-w-2xl">
+          <p className="mt-6 text-lg text-[#C8EDD2]/75 leading-relaxed max-w-2xl">
             I spent 20 years running an HVAC and plumbing company. Now I run Sequoia GEO, and I&rsquo;m
             watching the biggest shift in local search since Google Maps changed everything for
             contractors. This guide covers what&rsquo;s happening, why it matters to your business
@@ -65,24 +65,24 @@ export default function ContractorsGuideAISearchPage() {
           <p>Here&rsquo;s what&rsquo;s happening:</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8 not-prose">
-            <div className="bg-[#D8F3DC] rounded-xl p-6">
-              <p className="text-3xl font-black text-[#1B4332] leading-none">900M</p>
-              <p className="text-sm font-semibold text-[#2D6A4F] mt-1">ChatGPT weekly active users</p>
+            <div className="bg-[#C8EDD2] rounded-xl p-6">
+              <p className="text-3xl font-black text-[#0D2318] leading-none">900M</p>
+              <p className="text-sm font-semibold text-[#1A5C3A] mt-1">ChatGPT weekly active users</p>
               <p className="text-xs text-gray-600 mt-1">Processing 2+ billion queries per day</p>
             </div>
-            <div className="bg-[#D8F3DC] rounded-xl p-6">
-              <p className="text-3xl font-black text-[#1B4332] leading-none">800%</p>
-              <p className="text-sm font-semibold text-[#2D6A4F] mt-1">Perplexity year-over-year growth</p>
+            <div className="bg-[#C8EDD2] rounded-xl p-6">
+              <p className="text-3xl font-black text-[#0D2318] leading-none">800%</p>
+              <p className="text-sm font-semibold text-[#1A5C3A] mt-1">Perplexity year-over-year growth</p>
               <p className="text-xs text-gray-600 mt-1">45 million active users and climbing</p>
             </div>
-            <div className="bg-[#D8F3DC] rounded-xl p-6">
-              <p className="text-3xl font-black text-[#1B4332] leading-none">60%</p>
-              <p className="text-sm font-semibold text-[#2D6A4F] mt-1">of U.S. searches show AI Overviews</p>
+            <div className="bg-[#C8EDD2] rounded-xl p-6">
+              <p className="text-3xl font-black text-[#0D2318] leading-none">60%</p>
+              <p className="text-sm font-semibold text-[#1A5C3A] mt-1">of U.S. searches show AI Overviews</p>
               <p className="text-xs text-gray-600 mt-1">Google Gemini above your organic listing</p>
             </div>
-            <div className="bg-[#D8F3DC] rounded-xl p-6">
-              <p className="text-3xl font-black text-[#1B4332] leading-none">25%</p>
-              <p className="text-sm font-semibold text-[#2D6A4F] mt-1">predicted drop in traditional search</p>
+            <div className="bg-[#C8EDD2] rounded-xl p-6">
+              <p className="text-3xl font-black text-[#0D2318] leading-none">25%</p>
+              <p className="text-sm font-semibold text-[#1A5C3A] mt-1">predicted drop in traditional search</p>
               <p className="text-xs text-gray-600 mt-1">Gartner forecast by end of 2026</p>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function ContractorsGuideAISearchPage() {
             AC repair in Fresno?&rdquo; GEO determines whether the AI recommends your company by name.
           </p>
 
-          <blockquote className="border-l-4 border-[#52B788] pl-6 my-8 text-xl font-semibold text-[#1a1a1a] not-prose">
+          <blockquote className="border-l-4 border-[#3A9E6A] pl-6 my-8 text-xl font-semibold text-[#1a1a1a] not-prose">
             With SEO, you&rsquo;re competing for a spot on a list the homeowner scrolls through. With GEO,
             you&rsquo;re competing to be the recommendation. There&rsquo;s no list to scroll. There&rsquo;s no
             second page. The AI either mentions you or it doesn&rsquo;t.
@@ -193,9 +193,9 @@ export default function ContractorsGuideAISearchPage() {
             that organic CTR dropped 61% for queries where AI Overviews appeared.
           </p>
 
-          <div className="bg-[#D8F3DC] rounded-xl p-6 my-8 not-prose">
-            <p className="text-sm font-semibold text-[#2D6A4F] uppercase tracking-wider mb-2">The Flip Side</p>
-            <p className="text-2xl font-black text-[#1B4332] leading-tight">
+          <div className="bg-[#C8EDD2] rounded-xl p-6 my-8 not-prose">
+            <p className="text-sm font-semibold text-[#1A5C3A] uppercase tracking-wider mb-2">The Flip Side</p>
+            <p className="text-2xl font-black text-[#0D2318] leading-tight">
               35% more organic clicks
             </p>
             <p className="text-sm text-gray-700 mt-2">
@@ -275,7 +275,7 @@ export default function ContractorsGuideAISearchPage() {
           {/* Step 1 */}
           <div className="not-prose my-10">
             <div className="flex items-start gap-6">
-              <span className="text-7xl font-black text-[#2D6A4F]/10 leading-none shrink-0 select-none">
+              <span className="text-7xl font-black text-[#1A5C3A]/10 leading-none shrink-0 select-none">
                 01
               </span>
               <div className="prose pt-2">
@@ -306,7 +306,7 @@ export default function ContractorsGuideAISearchPage() {
           {/* Step 2 */}
           <div className="not-prose my-10">
             <div className="flex items-start gap-6">
-              <span className="text-7xl font-black text-[#2D6A4F]/10 leading-none shrink-0 select-none">
+              <span className="text-7xl font-black text-[#1A5C3A]/10 leading-none shrink-0 select-none">
                 02
               </span>
               <div className="prose pt-2">
@@ -332,7 +332,7 @@ export default function ContractorsGuideAISearchPage() {
           {/* Step 3 */}
           <div className="not-prose my-10">
             <div className="flex items-start gap-6">
-              <span className="text-7xl font-black text-[#2D6A4F]/10 leading-none shrink-0 select-none">
+              <span className="text-7xl font-black text-[#1A5C3A]/10 leading-none shrink-0 select-none">
                 03
               </span>
               <div className="prose pt-2">
@@ -355,7 +355,7 @@ export default function ContractorsGuideAISearchPage() {
           {/* Step 4 */}
           <div className="not-prose my-10">
             <div className="flex items-start gap-6">
-              <span className="text-7xl font-black text-[#2D6A4F]/10 leading-none shrink-0 select-none">
+              <span className="text-7xl font-black text-[#1A5C3A]/10 leading-none shrink-0 select-none">
                 04
               </span>
               <div className="prose pt-2">
@@ -388,7 +388,7 @@ export default function ContractorsGuideAISearchPage() {
           {/* Step 5 */}
           <div className="not-prose my-10">
             <div className="flex items-start gap-6">
-              <span className="text-7xl font-black text-[#2D6A4F]/10 leading-none shrink-0 select-none">
+              <span className="text-7xl font-black text-[#1A5C3A]/10 leading-none shrink-0 select-none">
                 05
               </span>
               <div className="prose pt-2">
@@ -412,7 +412,7 @@ export default function ContractorsGuideAISearchPage() {
           {/* Step 6 */}
           <div className="not-prose my-10">
             <div className="flex items-start gap-6">
-              <span className="text-7xl font-black text-[#2D6A4F]/10 leading-none shrink-0 select-none">
+              <span className="text-7xl font-black text-[#1A5C3A]/10 leading-none shrink-0 select-none">
                 06
               </span>
               <div className="prose pt-2">
@@ -437,7 +437,7 @@ export default function ContractorsGuideAISearchPage() {
           {/* Step 7 */}
           <div className="not-prose my-10">
             <div className="flex items-start gap-6">
-              <span className="text-7xl font-black text-[#2D6A4F]/10 leading-none shrink-0 select-none">
+              <span className="text-7xl font-black text-[#1A5C3A]/10 leading-none shrink-0 select-none">
                 07
               </span>
               <div className="prose pt-2">
@@ -469,7 +469,7 @@ export default function ContractorsGuideAISearchPage() {
             service leads.
           </p>
 
-          <blockquote className="border-l-4 border-[#52B788] pl-6 my-8 text-xl font-semibold text-[#1a1a1a] not-prose">
+          <blockquote className="border-l-4 border-[#3A9E6A] pl-6 my-8 text-xl font-semibold text-[#1a1a1a] not-prose">
             SEO captures the people searching Google today. GEO captures the people asking AI
             tomorrow. And they reinforce each other.
           </blockquote>
@@ -480,8 +480,8 @@ export default function ContractorsGuideAISearchPage() {
             that powers one also powers the other. They&rsquo;re complementary, not competing.
           </p>
 
-          <div className="bg-[#D8F3DC] rounded-xl p-6 my-8 not-prose">
-            <p className="text-sm font-semibold text-[#2D6A4F] uppercase tracking-wider mb-3">
+          <div className="bg-[#C8EDD2] rounded-xl p-6 my-8 not-prose">
+            <p className="text-sm font-semibold text-[#1A5C3A] uppercase tracking-wider mb-3">
               Budget Recommendation
             </p>
             <p className="text-base text-gray-800 leading-relaxed">
@@ -493,15 +493,15 @@ export default function ContractorsGuideAISearchPage() {
 
           <p>
             For contractors with service pages already built out for{" "}
-            <Link href="/hvac-seo" className="text-[#2D6A4F] font-semibold hover:text-[#1B4332] underline underline-offset-2">
+            <Link href="/hvac-seo" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] underline underline-offset-2">
               HVAC
             </Link>
             ,{" "}
-            <Link href="/plumbing-seo" className="text-[#2D6A4F] font-semibold hover:text-[#1B4332] underline underline-offset-2">
+            <Link href="/plumbing-seo" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] underline underline-offset-2">
               plumbing
             </Link>
             , and{" "}
-            <Link href="/roofing-seo" className="text-[#2D6A4F] font-semibold hover:text-[#1B4332] underline underline-offset-2">
+            <Link href="/roofing-seo" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] underline underline-offset-2">
               roofing
             </Link>
             , the GEO layer builds directly on that foundation. You&rsquo;re not starting over &mdash; you&rsquo;re
@@ -581,12 +581,12 @@ export default function ContractorsGuideAISearchPage() {
         {/* Author bio */}
         <div className="mt-16 pt-10 border-t border-gray-200">
           <div className="flex items-start gap-5">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#1B4332] text-white text-lg font-black">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#0D2318] text-white text-lg font-black">
               AH
             </div>
             <div>
               <p className="text-sm font-semibold text-[#1a1a1a]">Aaron Husak</p>
-              <p className="text-sm text-[#2D6A4F] font-medium">Founder, Sequoia GEO</p>
+              <p className="text-sm text-[#1A5C3A] font-medium">Founder, Sequoia GEO</p>
               <p className="mt-2 text-sm text-gray-600 leading-relaxed">
                 Aaron scaled an HVAC and plumbing company to 130+ employees and 4x Inc. 5000
                 recognition before founding Sequoia GEO. He now helps home service contractors
@@ -599,20 +599,20 @@ export default function ContractorsGuideAISearchPage() {
       </div>
 
       {/* CTA section */}
-      <div className="bg-[#1B4332]">
+      <div className="bg-[#0D2318]">
         <div className="mx-auto max-w-3xl px-6 lg:px-8 py-16 sm:py-20 text-center">
-          <p className="section-overline text-[#52B788] mb-4">Free Audit</p>
+          <p className="section-overline text-[#3A9E6A] mb-4">Free Audit</p>
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl leading-[1.08]">
             Want us to check your AI visibility for free?
           </h2>
-          <p className="mt-5 text-lg text-[#D8F3DC]/75 leading-relaxed max-w-xl mx-auto">
+          <p className="mt-5 text-lg text-[#C8EDD2]/75 leading-relaxed max-w-xl mx-auto">
             We audit where your business appears across ChatGPT, Gemini, Perplexity, and Google AI
             Overviews. Takes about 3 business days. No pitch, no obligation.
           </p>
           <div className="mt-8">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-[#52B788] px-8 py-4 text-base font-semibold text-[#1B4332] shadow-lg shadow-black/20 transition hover:bg-[#6FCF97] hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] shadow-lg shadow-black/20 transition hover:bg-[#6FCF97] hover:-translate-y-0.5"
             >
               Book a Free Audit
               <svg

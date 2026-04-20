@@ -17,13 +17,13 @@ export default function FractionalCmoPage() {
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#52B788]/30 bg-white px-5 py-2 text-sm font-medium text-[#2D6A4F] shadow-sm mb-6">
-              <span className="inline-block h-2 w-2 rounded-full bg-[#52B788]" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
+              <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
               Fractional CMO
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
               Marketing Leadership Built for{" "}
-              <span className="text-[#2D6A4F]">Home Service Companies</span>
+              <span className="text-[#1A5C3A]">Home Service Companies</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               You don&rsquo;t need a full-time CMO at $180K/year. You need someone who has already built
@@ -33,14 +33,14 @@ export default function FractionalCmoPage() {
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
                 href="/#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#2D6A4F]/25 transition hover:bg-[#1B4332]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Start With a Strategy Call
                 <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
-              <a href="tel:5595213122" className="text-base font-medium text-[#2D6A4F] hover:text-[#1B4332] transition-colors">
+              <a href="tel:5595213122" className="text-base font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors">
                 (559) 521-3122
               </a>
             </div>
@@ -49,13 +49,13 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* What a Fractional CMO actually does */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               What a Fractional CMO Actually Does
             </h2>
-            <p className="mt-4 text-lg text-[#D8F3DC]/80">
+            <p className="mt-4 text-lg text-[#C8EDD2]/80">
               Not a consultant who hands you a deck. Not another agency vendor. A part-time marketing
               leader embedded in your company.
             </p>
@@ -80,8 +80,8 @@ export default function FractionalCmoPage() {
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <h3 className="text-base font-bold text-[#52B788]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#D8F3DC]/70">{item.body}</p>
+                <h3 className="text-base font-bold text-[#3A9E6A]">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
               </div>
             ))}
           </div>
@@ -97,8 +97,8 @@ export default function FractionalCmoPage() {
             </h2>
           </div>
           <div className="mx-auto max-w-4xl grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <div className="rounded-2xl border border-[#52B788]/20 bg-[#D8F3DC]/20 p-8">
-              <h3 className="text-lg font-extrabold text-[#1B4332] mb-5">This fits if you are...</h3>
+            <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#C8EDD2]/20 p-8">
+              <h3 className="text-lg font-extrabold text-[#0D2318] mb-5">This fits if you are...</h3>
               <ul className="space-y-3">
                 {[
                   "Doing $2M–$15M revenue with no dedicated marketing leader",
@@ -107,8 +107,8 @@ export default function FractionalCmoPage() {
                   "Growing fast enough that strategy gaps are starting to limit you",
                   "A founder who needs to stop making every marketing decision personally",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-[#1B4332]">
-                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#52B788]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#0D2318]">
+                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                     {item}
@@ -152,7 +152,7 @@ export default function FractionalCmoPage() {
                 <tr className="border-b border-gray-200">
                   <th className="py-3 text-left font-bold text-[#1a1a1a]"></th>
                   <th className="py-3 text-center font-bold text-[#1a1a1a]">Full-Time CMO</th>
-                  <th className="py-3 text-center font-bold text-[#2D6A4F] bg-[#D8F3DC]/30 rounded-t-lg">Fractional CMO</th>
+                  <th className="py-3 text-center font-bold text-[#1A5C3A] bg-[#C8EDD2]/30 rounded-t-lg">Fractional CMO</th>
                   <th className="py-3 text-center font-bold text-[#1a1a1a]">Marketing Agency</th>
                 </tr>
               </thead>
@@ -168,7 +168,7 @@ export default function FractionalCmoPage() {
                   <tr key={label} className="border-b border-gray-100">
                     <td className="py-3 text-left font-medium text-gray-700">{label}</td>
                     <td className="py-3 text-center text-gray-500">{col1}</td>
-                    <td className="py-3 text-center font-semibold text-[#1B4332] bg-[#D8F3DC]/20">{col2}</td>
+                    <td className="py-3 text-center font-semibold text-[#0D2318] bg-[#C8EDD2]/20">{col2}</td>
                     <td className="py-3 text-center text-gray-500">{col3}</td>
                   </tr>
                 ))}
@@ -181,7 +181,7 @@ export default function FractionalCmoPage() {
       {/* Credentials */}
       <section className="bg-white py-16">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="rounded-2xl border border-[#52B788]/20 bg-[#fafaf8] p-8 sm:p-12 shadow-sm">
+          <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-8 sm:p-12 shadow-sm">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
@@ -210,9 +210,9 @@ export default function FractionalCmoPage() {
                   { stat: "4x", label: "Inc 5000 (2020-2023)" },
                   { stat: "130+", label: "Employees at peak" },
                 ].map((item) => (
-                  <div key={item.label} className="rounded-xl bg-[#D8F3DC] p-5 text-center">
-                    <div className="text-2xl font-extrabold text-[#1B4332]">{item.stat}</div>
-                    <div className="mt-1 text-xs text-[#2D6A4F]">{item.label}</div>
+                  <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
+                    <div className="text-2xl font-extrabold text-[#0D2318]">{item.stat}</div>
+                    <div className="mt-1 text-xs text-[#1A5C3A]">{item.label}</div>
                   </div>
                 ))}
               </div>
@@ -248,8 +248,8 @@ export default function FractionalCmoPage() {
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6 rounded-2xl border border-gray-200 bg-white p-6">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#D8F3DC]">
-                  <span className="text-sm font-extrabold text-[#1B4332]">{item.step}</span>
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#C8EDD2]">
+                  <span className="text-sm font-extrabold text-[#0D2318]">{item.step}</span>
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
@@ -276,7 +276,7 @@ export default function FractionalCmoPage() {
           </div>
           <div className="space-y-8">
             <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-8">
-              <h3 className="text-xl font-extrabold text-[#1B4332] mb-3">Comprehensive Marketing Strategy</h3>
+              <h3 className="text-xl font-extrabold text-[#0D2318] mb-3">Comprehensive Marketing Strategy</h3>
               <p className="text-base leading-relaxed text-gray-600">
                 A comprehensive marketing strategy for a home service company starts with the business: average
                 ticket, gross margin by service line, booking rate, phone answer rate, seasonality, and your
@@ -288,7 +288,7 @@ export default function FractionalCmoPage() {
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-8">
-              <h3 className="text-xl font-extrabold text-[#1B4332] mb-3">Vendor Accountability and Campaign Oversight</h3>
+              <h3 className="text-xl font-extrabold text-[#0D2318] mb-3">Vendor Accountability and Campaign Oversight</h3>
               <p className="text-base leading-relaxed text-gray-600">
                 Most home service companies already have agencies running Google Ads, local SEO, or web design.
                 The problem is that no one holds them accountable to outcomes that matter to you. Campaign
@@ -299,7 +299,7 @@ export default function FractionalCmoPage() {
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-8">
-              <h3 className="text-xl font-extrabold text-[#1B4332] mb-3">Attribution That Connects Marketing to Jobs</h3>
+              <h3 className="text-xl font-extrabold text-[#0D2318] mb-3">Attribution That Connects Marketing to Jobs</h3>
               <p className="text-base leading-relaxed text-gray-600">
                 Most home service businesses do not know their cost per booked job by marketing channel. Building
                 attribution starts with the phone system: call tracking numbers by channel, integration with your
@@ -310,7 +310,7 @@ export default function FractionalCmoPage() {
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-8">
-              <h3 className="text-xl font-extrabold text-[#1B4332] mb-3">Align Marketing with Your Business Goals</h3>
+              <h3 className="text-xl font-extrabold text-[#0D2318] mb-3">Align Marketing with Your Business Goals</h3>
               <p className="text-base leading-relaxed text-gray-600">
                 Marketing that does not align with business goals produces activity, not outcomes. A home service
                 company planning an exit in three years needs a different marketing strategy than one trying to
@@ -356,8 +356,8 @@ export default function FractionalCmoPage() {
                 body: "A home service company with 400 reviews at 4.8 stars converts search traffic at a materially higher rate than a competitor with 80 reviews at 4.2 stars. Review acquisition strategy, review response protocol, and handling of negative reviews are marketing functions that directly affect conversion rates and belong inside the comprehensive marketing strategy.",
               },
             ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-[#52B788]/20 bg-white p-6 shadow-sm">
-                <h3 className="text-base font-extrabold text-[#1B4332] mb-3">{item.title}</h3>
+              <div key={item.title} className="rounded-2xl border border-[#3A9E6A]/20 bg-white p-6 shadow-sm">
+                <h3 className="text-base font-extrabold text-[#0D2318] mb-3">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-gray-600">{item.body}</p>
               </div>
             ))}
@@ -443,8 +443,8 @@ export default function FractionalCmoPage() {
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
                 <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D8F3DC]">
-                    <svg className="h-4 w-4 text-[#2D6A4F]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
+                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </div>
@@ -496,7 +496,7 @@ export default function FractionalCmoPage() {
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-white p-7">
-                <div className="mb-4 text-4xl font-black text-[#D8F3DC]">{item.number}</div>
+                <div className="mb-4 text-4xl font-black text-[#C8EDD2]">{item.number}</div>
                 <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
               </div>
@@ -538,20 +538,20 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#2D6A4F] py-20">
+      <section className="bg-[#1A5C3A] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
             Ready to stop guessing on marketing?
           </h2>
-          <p className="mt-4 text-lg text-[#D8F3DC]/80">
+          <p className="mt-4 text-lg text-[#C8EDD2]/80">
             A 15-minute strategy call is enough to know whether a Fractional CMO engagement makes sense
             for where you are right now. No pitch deck. Just a direct conversation about your numbers.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link href="/#contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#2D6A4F] transition hover:bg-[#D8F3DC]">
+            <Link href="/#contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
               Book a Strategy Call
             </Link>
-            <a href="tel:5595213122" className="text-base font-medium text-[#D8F3DC] hover:text-white transition-colors">(559) 521-3122</a>
+            <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">(559) 521-3122</a>
           </div>
         </div>
       </section>

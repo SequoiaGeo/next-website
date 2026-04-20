@@ -46,7 +46,7 @@ export default function FullPicture() {
             <p className="section-overline mb-4">What We Do Differently</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
               Your marketing isn&rsquo;t just a channel.{" "}
-              <span className="text-[#2D6A4F]">It&rsquo;s a pipeline.</span>
+              <span className="text-[#1A5C3A]">It&rsquo;s a pipeline.</span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
               Before touching your Google Ads, we look at the full picture. Phones. Booking rate.
@@ -54,7 +54,7 @@ export default function FullPicture() {
               turns into a job. Most marketing agencies don&rsquo;t do this because it&rsquo;s
               not their department. We do it because it&rsquo;s the only way to actually move revenue.
             </p>
-            <blockquote className="mt-6 border-l-2 border-[#52B788] pl-5">
+            <blockquote className="mt-6 border-l-2 border-[#3A9E6A] pl-5">
               <p className="text-base font-medium italic text-gray-600">
                 &ldquo;You can generate 200 leads a month and still lose money if your techs are
                 giving away work, your CSRs aren&rsquo;t booking right, or your follow-up
@@ -73,7 +73,7 @@ export default function FullPicture() {
               <div className="bg-gray-50 px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-gray-400">
                 Your agency reports on
               </div>
-              <div className="bg-[#1B4332] px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-white">
+              <div className="bg-[#0D2318] px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-white">
                 We report on
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function FullPicture() {
                   dangerouslySetInnerHTML={{ __html: agency }}
                 />
                 <div
-                  className={`border-t border-l border-gray-200 px-5 py-4 text-sm font-medium text-[#1B4332] ${i % 2 === 1 ? "bg-[#D8F3DC]/30" : "bg-[#D8F3DC]/10"}`}
+                  className={`border-t border-l border-gray-200 px-5 py-4 text-sm font-medium text-[#0D2318] ${i % 2 === 1 ? "bg-[#C8EDD2]/30" : "bg-[#C8EDD2]/10"}`}
                   dangerouslySetInnerHTML={{ __html: me }}
                 />
               </React.Fragment>
@@ -103,15 +103,15 @@ export default function FullPicture() {
       </div>
 
       {/* Section 2: Real findings */}
-      <div className="bg-[#1B4332]">
+      <div className="bg-[#0D2318]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 sm:py-28">
           <div className="mx-auto max-w-3xl text-center mb-14">
-            <p className="section-overline mb-4 text-[#52B788]">Real Findings</p>
+            <p className="section-overline mb-4 text-[#3A9E6A]">Real Findings</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-[1.08]">
               What we find in the first 48 hours{" "}
-              <span className="text-[#52B788]">that agencies miss for months</span>
+              <span className="text-[#3A9E6A]">that agencies miss for months</span>
             </h2>
-            <p className="mt-4 text-base text-[#D8F3DC]/50">
+            <p className="mt-4 text-base text-[#C8EDD2]/50">
               Multiple clients. Multiple agencies. All reporting green.
             </p>
           </div>
@@ -123,15 +123,15 @@ export default function FullPicture() {
                 className="flex flex-col rounded-xl border border-white/10 bg-white/[0.05] p-6"
               >
                 <div className="flex items-baseline gap-2 mb-3">
-                  <span className="text-2xl font-extrabold text-[#52B788]">{item.amount}</span>
-                  <span className="text-xs text-[#D8F3DC]/40">{item.label}</span>
+                  <span className="text-2xl font-extrabold text-[#3A9E6A]">{item.amount}</span>
+                  <span className="text-xs text-[#C8EDD2]/40">{item.label}</span>
                 </div>
-                <p className="text-sm leading-relaxed text-[#D8F3DC]/60">{item.result}</p>
+                <p className="text-sm leading-relaxed text-[#C8EDD2]/60">{item.result}</p>
               </div>
             ))}
           </div>
 
-          <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-[#D8F3DC]/35">
+          <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-[#C8EDD2]/35">
             None of this required special tools. It required someone who reads your appointment notes,
             calls your phone number, and asks why revenue didn&rsquo;t move.
           </p>

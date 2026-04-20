@@ -17,13 +17,13 @@ export default function RestorationSeoPage() {
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#52B788]/30 bg-white px-5 py-2 text-sm font-medium text-[#2D6A4F] shadow-sm mb-6">
-              <span className="inline-block h-2 w-2 rounded-full bg-[#52B788]" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
+              <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
               Restoration Marketing
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
               Restoration Marketing That Understands{" "}
-              <span className="text-[#2D6A4F]">Your Job Mix</span>
+              <span className="text-[#1A5C3A]">Your Job Mix</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               Insurance jobs, TPA relationships, retail emergency calls, storm surges: restoration marketing
@@ -33,14 +33,14 @@ export default function RestorationSeoPage() {
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
                 href="/#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#2D6A4F]/25 transition hover:bg-[#1B4332]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Get a Full Picture Audit
                 <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
-              <a href="tel:5595213122" className="text-base font-medium text-[#2D6A4F] hover:text-[#1B4332] transition-colors">
+              <a href="tel:5595213122" className="text-base font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors">
                 (559) 521-3122
               </a>
             </div>
@@ -49,13 +49,13 @@ export default function RestorationSeoPage() {
       </section>
 
       {/* What's different about restoration */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               Why Restoration Marketing Is Different
             </h2>
-            <p className="mt-4 text-lg text-[#D8F3DC]/80">
+            <p className="mt-4 text-lg text-[#C8EDD2]/80">
               Your marketing mix looks nothing like a standard home services company. These are the metrics
               that actually matter for restoration.
             </p>
@@ -80,8 +80,8 @@ export default function RestorationSeoPage() {
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <h3 className="text-base font-bold text-[#52B788]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#D8F3DC]/70">{item.body}</p>
+                <h3 className="text-base font-bold text-[#3A9E6A]">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
               </div>
             ))}
           </div>
@@ -119,8 +119,8 @@ export default function RestorationSeoPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl border border-[#52B788]/30 bg-[#D8F3DC]/20 p-6">
-              <h3 className="text-base font-bold text-[#1B4332] mb-4">I Report On</h3>
+            <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#C8EDD2]/20 p-6">
+              <h3 className="text-base font-bold text-[#0D2318] mb-4">I Report On</h3>
               <ul className="space-y-2">
                 {[
                   "Cost per booked job by channel",
@@ -129,8 +129,8 @@ export default function RestorationSeoPage() {
                   "Booking rate by time of day and day of week",
                   "Review velocity vs. top 3 local competitors",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm text-[#1B4332]">
-                    <svg className="h-4 w-4 shrink-0 text-[#52B788]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <li key={item} className="flex items-center gap-3 text-sm text-[#0D2318]">
+                    <svg className="h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                     {item}
@@ -169,7 +169,7 @@ export default function RestorationSeoPage() {
               "Off-season pipeline building",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3">
-                <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#52B788]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
                 <span className="text-sm text-gray-700">{item}</span>
@@ -182,7 +182,7 @@ export default function RestorationSeoPage() {
       {/* Credentials */}
       <section className="bg-white py-16">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="rounded-2xl border border-[#52B788]/20 bg-[#fafaf8] p-8 sm:p-12 shadow-sm">
+          <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-8 sm:p-12 shadow-sm">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
@@ -211,9 +211,9 @@ export default function RestorationSeoPage() {
                   { stat: "4x", label: "Inc 5000 (2020-2023)" },
                   { stat: "130+", label: "Employees at peak" },
                 ].map((item) => (
-                  <div key={item.label} className="rounded-xl bg-[#D8F3DC] p-5 text-center">
-                    <div className="text-2xl font-extrabold text-[#1B4332]">{item.stat}</div>
-                    <div className="mt-1 text-xs text-[#2D6A4F]">{item.label}</div>
+                  <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
+                    <div className="text-2xl font-extrabold text-[#0D2318]">{item.stat}</div>
+                    <div className="mt-1 text-xs text-[#1A5C3A]">{item.label}</div>
                   </div>
                 ))}
               </div>
@@ -255,8 +255,8 @@ export default function RestorationSeoPage() {
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
                 <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D8F3DC]">
-                    <svg className="h-4 w-4 text-[#2D6A4F]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
+                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </div>
@@ -306,7 +306,7 @@ export default function RestorationSeoPage() {
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#2D6A4F] text-sm font-bold text-white">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#1A5C3A] text-sm font-bold text-white">
                   {item.step}
                 </div>
                 <div>
@@ -389,8 +389,8 @@ export default function RestorationSeoPage() {
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
                 <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D8F3DC]">
-                    <svg className="h-4 w-4 text-[#2D6A4F]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
+                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </div>
@@ -442,7 +442,7 @@ export default function RestorationSeoPage() {
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-white p-7">
-                <div className="mb-4 text-4xl font-black text-[#D8F3DC]">{item.number}</div>
+                <div className="mb-4 text-4xl font-black text-[#C8EDD2]">{item.number}</div>
                 <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
               </div>
@@ -484,21 +484,21 @@ export default function RestorationSeoPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#2D6A4F] py-20">
+      <section className="bg-[#1A5C3A] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
             Find out what your restoration marketing is actually producing
           </h2>
-          <p className="mt-4 text-lg text-[#D8F3DC]/80">
+          <p className="mt-4 text-lg text-[#C8EDD2]/80">
             The Full Picture Audit looks at your spend by channel, your insurance vs. retail job mix,
             your booking rate, and where revenue is leaking. You&rsquo;ll know exactly what to fix
             before we add a dollar of new spend.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link href="/#contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#2D6A4F] transition hover:bg-[#D8F3DC]">
+            <Link href="/#contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
               Book a Strategy Call
             </Link>
-            <a href="tel:5595213122" className="text-base font-medium text-[#D8F3DC] hover:text-white transition-colors">(559) 521-3122</a>
+            <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">(559) 521-3122</a>
           </div>
         </div>
       </section>

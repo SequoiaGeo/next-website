@@ -39,14 +39,14 @@ export default function AiAutomationPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B4332] py-20 sm:py-28">
+      <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <div className="section-overline mb-6">AI Automation</div>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               The jobs your team doesn&rsquo;t have time to do -- automated.
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-[#D8F3DC]/80">
+            <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
               Every contractor has the same list: follow up with missed calls, ask for reviews after the
               job, re-engage customers who got an estimate and went silent. Nobody does it consistently.
               AI automation does.
@@ -87,9 +87,9 @@ export default function AiAutomationPage() {
                 key={item.title}
                 className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm"
               >
-                <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-full bg-[#D8F3DC]">
+                <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2]">
                   <svg
-                    className="h-4 w-4 text-[#2D6A4F]"
+                    className="h-4 w-4 text-[#1A5C3A]"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={2.5}
@@ -113,13 +113,13 @@ export default function AiAutomationPage() {
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               It runs through the tools you already have.
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-[#D8F3DC]/80">
+            <p className="mt-6 text-lg leading-relaxed text-[#C8EDD2]/80">
               Most of these automations run through GoHighLevel, which integrates with ServiceTitan,
               Housecall Pro, and other field service platforms. We build the workflows, write the
               messaging, connect the integrations, and hand you something that runs without you touching it.
             </p>
             <div className="mt-6 rounded-xl border border-white/10 bg-white/5 px-6 py-4">
-              <p className="text-sm leading-relaxed text-[#D8F3DC]/70">
+              <p className="text-sm leading-relaxed text-[#C8EDD2]/70">
                 This isn&rsquo;t a separate platform you have to learn. It layers onto your existing CRM
                 and phone system.
               </p>
@@ -129,25 +129,25 @@ export default function AiAutomationPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
             Want to see what&rsquo;s possible for your specific setup?
           </h2>
-          <p className="mt-4 text-lg text-[#D8F3DC]/80">
+          <p className="mt-4 text-lg text-[#C8EDD2]/80">
             The first conversation is free. Bring your current stack and we&rsquo;ll tell you exactly
             what can be automated and what the lift looks like.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1B4332] transition hover:bg-[#D8F3DC]"
+              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call
             </Link>
             <a
               href="tel:5595213122"
-              className="text-base font-medium text-[#D8F3DC] hover:text-white transition-colors"
+              className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors"
             >
               (559) 521-3122
             </a>

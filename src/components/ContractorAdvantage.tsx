@@ -49,7 +49,7 @@ export default function ContractorAdvantage() {
         {/* Comparison Table */}
         <div className="mx-auto mt-16 max-w-4xl overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
           {/* Table Header */}
-          <div className="grid grid-cols-3 bg-[#1B4332] text-white">
+          <div className="grid grid-cols-3 bg-[#0D2318] text-white">
             <div className="px-6 py-4 text-sm font-semibold" />
             <div className="px-6 py-4 text-center text-sm font-semibold">
               Sequoia GEO
@@ -73,7 +73,7 @@ export default function ContractorAdvantage() {
               <div className="flex items-center justify-center gap-2 px-6 py-5 text-center text-sm text-gray-700">
                 {/* Green checkmark */}
                 <svg
-                  className="h-5 w-5 flex-shrink-0 text-[#52B788]"
+                  className="h-5 w-5 flex-shrink-0 text-[#3A9E6A]"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2.5}

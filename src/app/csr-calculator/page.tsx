@@ -23,7 +23,7 @@ function Slider({
     <div className="space-y-3">
       <div className="flex items-center justify-between">
         <label className="text-sm font-semibold text-[#1a1a1a]">{label}</label>
-        <span className="text-base font-extrabold text-[#2D6A4F]">{format(value)}</span>
+        <span className="text-base font-extrabold text-[#1A5C3A]">{format(value)}</span>
       </div>
       <input
         type="range"
@@ -34,7 +34,7 @@ function Slider({
         onChange={(e) => onChange(Number(e.target.value))}
         className="w-full h-2 rounded-full appearance-none cursor-pointer"
         style={{
-          background: `linear-gradient(to right, #2D6A4F ${((value - min) / (max - min)) * 100}%, #e5e7eb ${((value - min) / (max - min)) * 100}%)`,
+          background: `linear-gradient(to right, #1A5C3A ${((value - min) / (max - min)) * 100}%, #e5e7eb ${((value - min) / (max - min)) * 100}%)`,
         }}
       />
       <div className="flex justify-between text-xs text-gray-400">
@@ -98,21 +98,21 @@ export default function CSRCalculator() {
       {/* Nav strip */}
       <div className="border-b border-gray-200 bg-white px-6 py-4">
         <div className="mx-auto max-w-7xl">
-          <Link href="/" className="text-sm font-semibold text-[#2D6A4F] hover:text-[#1B4332] transition-colors">
+          <Link href="/" className="text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors">
             ← Back to Sequoia GEO
           </Link>
         </div>
       </div>
 
       {/* Hero */}
-      <div className="bg-[#1B4332]">
+      <div className="bg-[#0D2318]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-14 sm:py-16">
-          <p className="section-overline text-[#52B788] mb-4">Free Tool</p>
+          <p className="section-overline text-[#3A9E6A] mb-4">Free Tool</p>
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-[1.08] max-w-2xl">
             What is a 5% booking rate improvement{" "}
-            <span className="text-[#52B788]">actually worth?</span>
+            <span className="text-[#3A9E6A]">actually worth?</span>
           </h1>
-          <p className="mt-4 text-base text-[#D8F3DC]/60 max-w-xl leading-relaxed">
+          <p className="mt-4 text-base text-[#C8EDD2]/60 max-w-xl leading-relaxed">
             CSRs are the most underleveraged person in most contracting operations. This calculator shows you the dollar value of closing the gap.
           </p>
         </div>
@@ -225,26 +225,26 @@ export default function CSRCalculator() {
                 ].map((row) => (
                   <div
                     key={row.label}
-                    className={`rounded-lg px-4 py-3 ${row.highlight ? "bg-[#D8F3DC]" : "bg-gray-50"}`}
+                    className={`rounded-lg px-4 py-3 ${row.highlight ? "bg-[#C8EDD2]" : "bg-gray-50"}`}
                   >
                     <div className="flex items-center justify-between mb-1">
-                      <span className={`text-sm font-semibold ${row.highlight ? "text-[#1B4332]" : "text-gray-700"}`}>
+                      <span className={`text-sm font-semibold ${row.highlight ? "text-[#0D2318]" : "text-gray-700"}`}>
                         {row.label}
                         {row.capped && (
                           <span className="ml-2 text-xs font-normal text-gray-400">At max (90%)</span>
                         )}
                         {!row.capped && (
-                          <span className={`ml-2 text-xs font-normal ${row.highlight ? "text-[#2D6A4F]" : "text-gray-400"}`}>
+                          <span className={`ml-2 text-xs font-normal ${row.highlight ? "text-[#1A5C3A]" : "text-gray-400"}`}>
                             → {row.rate} booking rate
                           </span>
                         )}
                       </span>
-                      <span className={`text-sm font-extrabold ${row.highlight ? "text-[#1B4332]" : "text-[#1a1a1a]"}`}>
+                      <span className={`text-sm font-extrabold ${row.highlight ? "text-[#0D2318]" : "text-[#1a1a1a]"}`}>
                         +{formatDollar(row.monthly)}/mo
                       </span>
                     </div>
                     <div className="flex justify-end">
-                      <span className={`text-xs ${row.highlight ? "text-[#2D6A4F] font-semibold" : "text-gray-400"}`}>
+                      <span className={`text-xs ${row.highlight ? "text-[#1A5C3A] font-semibold" : "text-gray-400"}`}>
                         +{formatCurrency(row.annual)}/yr
                       </span>
                     </div>
@@ -254,10 +254,10 @@ export default function CSRCalculator() {
             </div>
 
             {/* Annual value callout */}
-            <div className="rounded-2xl bg-[#1B4332] p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#52B788]/60 mb-2">The annual value of a 5% improvement</p>
-              <p className="text-5xl font-extrabold text-[#52B788]">{formatCurrency(results.plus5AnnualGain)}</p>
-              <p className="mt-3 text-sm text-[#D8F3DC]/60 leading-relaxed">
+            <div className="rounded-2xl bg-[#0D2318] p-7">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A]/60 mb-2">The annual value of a 5% improvement</p>
+              <p className="text-5xl font-extrabold text-[#3A9E6A]">{formatCurrency(results.plus5AnnualGain)}</p>
+              <p className="mt-3 text-sm text-[#C8EDD2]/60 leading-relaxed">
                 That doesn&rsquo;t require more leads. It requires better call handling. Most contractors never measure this.
               </p>
             </div>
@@ -267,11 +267,11 @@ export default function CSRCalculator() {
       </div>
 
       {/* Context section */}
-      <div className="bg-[#D8F3DC]/30 border-t border-[#D8F3DC]">
+      <div className="bg-[#C8EDD2]/30 border-t border-[#C8EDD2]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 sm:py-16">
           <div className="max-w-2xl">
-            <p className="section-overline text-[#2D6A4F] mb-4">The levers</p>
-            <h2 className="text-2xl font-extrabold text-[#1B4332] mb-6">What moves the booking rate</h2>
+            <p className="section-overline text-[#1A5C3A] mb-4">The levers</p>
+            <h2 className="text-2xl font-extrabold text-[#0D2318] mb-6">What moves the booking rate</h2>
             <ul className="space-y-4">
               {[
                 {
@@ -288,7 +288,7 @@ export default function CSRCalculator() {
                 },
               ].map((item) => (
                 <li key={item.title} className="flex gap-4">
-                  <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-[#2D6A4F] flex items-center justify-center">
+                  <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-[#1A5C3A] flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
@@ -300,7 +300,7 @@ export default function CSRCalculator() {
                 </li>
               ))}
             </ul>
-            <p className="mt-8 text-sm text-gray-500 border-l-2 border-[#52B788] pl-4">
+            <p className="mt-8 text-sm text-gray-500 border-l-2 border-[#3A9E6A] pl-4">
               Industry average is 38&ndash;42%. Good CSR operations run 55&ndash;65%.
             </p>
           </div>
@@ -316,7 +316,7 @@ export default function CSRCalculator() {
           </p>
           <Link
             href="/#contact"
-            className="inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#1B4332]"
+            className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
           >
             Book a Free Audit
             <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

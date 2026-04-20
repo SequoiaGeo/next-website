@@ -52,7 +52,7 @@ export default function FAQ() {
             <p className="section-overline mb-4">Common Questions</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
               No fluff.{" "}
-              <span className="text-[#2D6A4F]">Just answers.</span>
+              <span className="text-[#1A5C3A]">Just answers.</span>
             </h2>
             <p className="mt-5 text-base text-gray-500 leading-relaxed">
               The questions contractors actually ask when they&rsquo;re deciding whether this
@@ -66,13 +66,13 @@ export default function FAQ() {
               <div key={index}>
                 <button
                   onClick={() => toggle(index)}
-                  className="flex w-full items-center justify-between py-6 text-left transition hover:text-[#2D6A4F]"
+                  className="flex w-full items-center justify-between py-6 text-left transition hover:text-[#1A5C3A]"
                 >
                   <span className="pr-8 text-base font-semibold text-[#1a1a1a] leading-snug">
                     {faq.question}
                   </span>
                   <svg
-                    className={`h-5 w-5 flex-shrink-0 text-[#2D6A4F] transition-transform duration-200 ${
+                    className={`h-5 w-5 flex-shrink-0 text-[#1A5C3A] transition-transform duration-200 ${
                       openIndex === index ? "rotate-45" : ""
                     }`}
                     fill="none"

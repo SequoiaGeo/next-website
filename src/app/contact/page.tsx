@@ -24,7 +24,7 @@ export default function ContactPage() {
               Tell me what you&rsquo;re spending on marketing. I&rsquo;ll tell you what it&rsquo;s actually producing.
             </p>
             <div className="mt-4 inline-flex items-center gap-2 text-sm text-gray-500">
-              <svg className="h-4 w-4 text-[#52B788]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <svg className="h-4 w-4 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               15 minutes &bull; No pitch deck &bull; Real operator-level feedback

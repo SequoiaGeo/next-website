@@ -53,7 +53,7 @@ export default function BalancedComfortCaseStudy() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4">
           <Link
             href="/case-studies"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#2D6A4F] hover:text-[#1B4332] transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,14 +75,14 @@ export default function BalancedComfortCaseStudy() {
       </div>
 
       {/* Hero */}
-      <section className="bg-[#1B4332] py-20 sm:py-28">
+      <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="section-overline mb-4">Case Study</p>
             <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               From One Truck to $10M+ and a Successful Exit
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-[#D8F3DC]/80">
+            <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
               This is the company Aaron Husak built before starting Sequoia GEO. Every strategy we
               deploy for clients was tested here first, over 13 years, with real money on the line.
             </p>
@@ -95,8 +95,8 @@ export default function BalancedComfortCaseStudy() {
                 key={item.label}
                 className="rounded-xl border border-white/10 bg-white/5 p-5 text-center"
               >
-                <div className="text-2xl font-extrabold text-[#52B788]">{item.value}</div>
-                <div className="mt-1 text-xs text-[#D8F3DC]/70 leading-snug">{item.label}</div>
+                <div className="text-2xl font-extrabold text-[#3A9E6A]">{item.value}</div>
+                <div className="mt-1 text-xs text-[#C8EDD2]/70 leading-snug">{item.label}</div>
               </div>
             ))}
           </div>
@@ -150,10 +150,10 @@ export default function BalancedComfortCaseStudy() {
                 key={item.title}
                 className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm"
               >
-                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#D8F3DC]">
-                  <span className="h-4 w-4 rounded-full bg-[#52B788]" aria-hidden="true" />
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#C8EDD2]">
+                  <span className="h-4 w-4 rounded-full bg-[#3A9E6A]" aria-hidden="true" />
                 </div>
-                <h3 className="text-base font-bold text-[#1B4332]">{item.title}</h3>
+                <h3 className="text-base font-bold text-[#0D2318]">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.description}</p>
               </div>
             ))}
@@ -172,7 +172,7 @@ export default function BalancedComfortCaseStudy() {
           </div>
           <div className="mx-auto max-w-5xl grid grid-cols-1 gap-6 sm:grid-cols-3">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-              <div className="text-4xl font-extrabold text-[#52B788]">$10M+</div>
+              <div className="text-4xl font-extrabold text-[#3A9E6A]">$10M+</div>
               <div className="mt-3 text-base font-semibold text-white">Annual Revenue</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-400">
                 What started as a solo operation grew into one of the Central Valley&rsquo;s
@@ -180,7 +180,7 @@ export default function BalancedComfortCaseStudy() {
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-              <div className="text-4xl font-extrabold text-[#52B788]">4,000+</div>
+              <div className="text-4xl font-extrabold text-[#3A9E6A]">4,000+</div>
               <div className="mt-3 text-base font-semibold text-white">Google Reviews</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-400">
                 Not purchased. Not incentivized. Earned through consistent service and a
@@ -188,7 +188,7 @@ export default function BalancedComfortCaseStudy() {
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-              <div className="text-4xl font-extrabold text-[#52B788]">Acquired</div>
+              <div className="text-4xl font-extrabold text-[#3A9E6A]">Acquired</div>
               <div className="mt-3 text-base font-semibold text-white">December 2024</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-400">
                 The ultimate proof: Balanced Comfort was acquired by a buyer who recognized the
@@ -222,13 +222,13 @@ export default function BalancedComfortCaseStudy() {
             </div>
 
             {/* Pull quote */}
-            <blockquote className="mt-10 border-l-4 border-[#52B788] pl-6">
+            <blockquote className="mt-10 border-l-4 border-[#3A9E6A] pl-6">
               <p className="text-xl font-medium italic leading-relaxed text-[#1a1a1a]">
                 &ldquo;Most marketing agencies will tell you what should work. I can tell you what
                 actually works. I used it to build a $10M+ company from my garage. Every
                 strategy we deploy at Sequoia GEO has been battle-tested over 13 years.&rdquo;
               </p>
-              <footer className="mt-4 text-sm font-semibold text-[#2D6A4F]">
+              <footer className="mt-4 text-sm font-semibold text-[#1A5C3A]">
                 Aaron Husak, Founder, Sequoia GEO
               </footer>
             </blockquote>
@@ -237,7 +237,7 @@ export default function BalancedComfortCaseStudy() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-3xl font-extrabold text-white">
             Ready to put 13 years of proven strategy to work for your business?
@@ -245,7 +245,7 @@ export default function BalancedComfortCaseStudy() {
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-[#52B788] px-8 py-4 text-base font-semibold text-[#1B4332] transition hover:bg-[#6FCF97]"
+              className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
             >
               Book a Free Strategy Call
             </Link>

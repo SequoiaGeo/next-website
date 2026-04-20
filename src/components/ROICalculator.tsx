@@ -35,7 +35,7 @@ export default function ROICalculator() {
               <div className="mb-8">
                 <label className="flex items-center justify-between text-sm font-semibold text-[#1a1a1a]">
                   Monthly Marketing Budget
-                  <span className="text-lg font-extrabold text-[#2D6A4F]">
+                  <span className="text-lg font-extrabold text-[#1A5C3A]">
                     ${budget.toLocaleString()}
                   </span>
                 </label>
@@ -46,7 +46,7 @@ export default function ROICalculator() {
                   step={250}
                   value={budget}
                   onChange={(e) => setBudget(Number(e.target.value))}
-                  className="mt-3 h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 accent-[#2D6A4F]"
+                  className="mt-3 h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 accent-[#1A5C3A]"
                 />
                 <div className="mt-1 flex justify-between text-xs text-gray-400">
                   <span>$1,000</span>
@@ -58,7 +58,7 @@ export default function ROICalculator() {
               <div className="mb-8">
                 <label className="flex items-center justify-between text-sm font-semibold text-[#1a1a1a]">
                   Average Job Value
-                  <span className="text-lg font-extrabold text-[#2D6A4F]">
+                  <span className="text-lg font-extrabold text-[#1A5C3A]">
                     ${jobValue.toLocaleString()}
                   </span>
                 </label>
@@ -69,7 +69,7 @@ export default function ROICalculator() {
                   step={500}
                   value={jobValue}
                   onChange={(e) => setJobValue(Number(e.target.value) || 0)}
-                  className="mt-3 w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-[#1a1a1a] focus:border-[#52B788] focus:outline-none focus:ring-2 focus:ring-[#52B788]/20"
+                  className="mt-3 w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-[#1a1a1a] focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
                 />
               </div>
 
@@ -77,7 +77,7 @@ export default function ROICalculator() {
               <div>
                 <label className="flex items-center justify-between text-sm font-semibold text-[#1a1a1a]">
                   Close Rate
-                  <span className="text-lg font-extrabold text-[#2D6A4F]">
+                  <span className="text-lg font-extrabold text-[#1A5C3A]">
                     {closeRate}%
                   </span>
                 </label>
@@ -88,7 +88,7 @@ export default function ROICalculator() {
                   step={5}
                   value={closeRate}
                   onChange={(e) => setCloseRate(Number(e.target.value))}
-                  className="mt-3 h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 accent-[#2D6A4F]"
+                  className="mt-3 h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 accent-[#1A5C3A]"
                 />
                 <div className="mt-1 flex justify-between text-xs text-gray-400">
                   <span>10%</span>
@@ -98,9 +98,9 @@ export default function ROICalculator() {
             </div>
 
             {/* Outputs */}
-            <div className="flex flex-col justify-between bg-[#1B4332] p-10 text-white">
+            <div className="flex flex-col justify-between bg-[#0D2318] p-10 text-white">
               <div>
-                <p className="text-sm font-medium uppercase tracking-widest text-[#52B788]">
+                <p className="text-sm font-medium uppercase tracking-widest text-[#3A9E6A]">
                   Estimated Monthly Results
                 </p>
 
@@ -123,7 +123,7 @@ export default function ROICalculator() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-white/70">ROI</span>
-                    <span className="text-3xl font-extrabold text-[#52B788]">
+                    <span className="text-3xl font-extrabold text-[#3A9E6A]">
                       {roi}%
                     </span>
                   </div>
@@ -133,7 +133,7 @@ export default function ROICalculator() {
               {/* CTA */}
               <Link
                 href="#contact"
-                className="mt-10 inline-flex w-full items-center justify-center rounded-lg bg-[#52B788] px-6 py-4 text-base font-semibold text-[#1B4332] transition hover:bg-[#D8F3DC]"
+                className="mt-10 inline-flex w-full items-center justify-center rounded-lg bg-[#3A9E6A] px-6 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#C8EDD2]"
               >
                 Book Your Free Consultation
               </Link>

@@ -16,7 +16,8 @@ const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],
   display: "swap",
-  preload: false,
+  preload: true,
+  weight: ["300", "400", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -149,17 +150,17 @@ export default function RootLayout({
             }}
           />
         )}
-        {/* GHL Talking Website Chat Widget */}
+        {/* GHL Talking Website Chat Widget — loaded after interactive to avoid LCP penalty */}
         <div
           data-chat-widget=""
           data-widget-id="69a89cf9aa19c91ff060baa1"
           data-location-id="MOZgNBUPW9SPbtzNM52s"
         />
-        <script
+        <Script
           src="https://widgets.leadconnectorhq.com/loader.js"
+          strategy="afterInteractive"
           data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
           data-widget-id="69a89cf9aa19c91ff060baa1"
-          async
         />
       </body>
     </html>

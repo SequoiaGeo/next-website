@@ -8,7 +8,7 @@ export default function Problem() {
           <p className="section-overline mb-4">The Problem</p>
           <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl leading-[1.05]">
             You can generate 200 leads a month{" "}
-            <span className="text-[#52B788]">and still lose money.</span>
+            <span className="text-[#3A9E6A]">and still lose money.</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-400">
             Marketing and sales aren&rsquo;t two separate things. They&rsquo;re the same pipeline.
@@ -25,7 +25,7 @@ export default function Problem() {
         <div className="mx-auto mt-14 max-w-3xl rounded-2xl border border-white/8 bg-white/[0.04] p-8 sm:p-10">
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <div className="shrink-0">
-              <span className="text-6xl font-black text-[#52B788] sm:text-7xl leading-none">58%</span>
+              <span className="text-6xl font-black text-[#3A9E6A] sm:text-7xl leading-none">58%</span>
             </div>
             <div>
               <p className="text-base font-semibold text-white">
@@ -35,7 +35,7 @@ export default function Problem() {
                 The industry average CSR booking rate is 42%. No agency will tell you
                 that, because it&rsquo;s &ldquo;not their department.&rdquo;
               </p>
-              <p className="mt-3 text-base font-bold text-[#52B788]">It is mine.</p>
+              <p className="mt-3 text-base font-bold text-[#3A9E6A]">It is mine.</p>
             </div>
           </div>
         </div>

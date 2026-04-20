@@ -17,13 +17,13 @@ export default function HvacSeoPage() {
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#52B788]/30 bg-white px-5 py-2 text-sm font-medium text-[#2D6A4F] shadow-sm mb-6">
-              <span className="inline-block h-2 w-2 rounded-full bg-[#52B788]" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
+              <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
               HVAC Marketing
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
               HVAC SEO Built by Someone Who{" "}
-              <span className="text-[#2D6A4F]">Ran an HVAC Company</span>
+              <span className="text-[#1A5C3A]">Ran an HVAC Company</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               I spent 13 years running Balanced Comfort Heating &amp; Air. I know your seasonality,
@@ -33,14 +33,14 @@ export default function HvacSeoPage() {
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
                 href="/#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#2D6A4F]/25 transition hover:bg-[#1B4332]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Get a Full Picture Audit
                 <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
-              <a href="tel:5595213122" className="text-base font-medium text-[#2D6A4F] hover:text-[#1B4332] transition-colors">
+              <a href="tel:5595213122" className="text-base font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors">
                 (559) 521-3122
               </a>
             </div>
@@ -49,13 +49,13 @@ export default function HvacSeoPage() {
       </section>
 
       {/* The operator difference */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               What an Agency Misses. What I See.
             </h2>
-            <p className="mt-4 text-lg text-[#D8F3DC]/80">
+            <p className="mt-4 text-lg text-[#C8EDD2]/80">
               Your HVAC marketing agency reports on impressions and clicks. Here&rsquo;s what I look at instead.
             </p>
           </div>
@@ -68,8 +68,8 @@ export default function HvacSeoPage() {
               { title: "Seasonal campaign timing", body: "I've run HVAC ads through 13 California summers. I know when to scale, when to pull back, and which keywords convert in a heat emergency." },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <h3 className="text-base font-bold text-[#52B788]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#D8F3DC]/70">{item.body}</p>
+                <h3 className="text-base font-bold text-[#3A9E6A]">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
               </div>
             ))}
           </div>
@@ -105,7 +105,7 @@ export default function HvacSeoPage() {
               "Vendor accountability (if you have existing agencies)",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 rounded-xl border border-gray-200 bg-[#fafaf8] px-4 py-3">
-                <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#52B788]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
                 <span className="text-sm text-gray-700">{item}</span>
@@ -118,7 +118,7 @@ export default function HvacSeoPage() {
       {/* Operator credentials */}
       <section className="bg-[#fafaf8] py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="rounded-2xl border border-[#52B788]/20 bg-white p-8 sm:p-12 shadow-sm">
+          <div className="rounded-2xl border border-[#3A9E6A]/20 bg-white p-8 sm:p-12 shadow-sm">
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
               <div>
                 <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
@@ -145,9 +145,9 @@ export default function HvacSeoPage() {
                   { stat: "4x", label: "Inc 5000 (2020-2023)" },
                   { stat: "C-20", label: "CA HVAC License" },
                 ].map((item) => (
-                  <div key={item.label} className="rounded-xl bg-[#D8F3DC] p-5 text-center">
-                    <div className="text-2xl font-extrabold text-[#1B4332]">{item.stat}</div>
-                    <div className="mt-1 text-xs text-[#2D6A4F]">{item.label}</div>
+                  <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
+                    <div className="text-2xl font-extrabold text-[#0D2318]">{item.stat}</div>
+                    <div className="mt-1 text-xs text-[#1A5C3A]">{item.label}</div>
                   </div>
                 ))}
               </div>
@@ -189,8 +189,8 @@ export default function HvacSeoPage() {
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
                 <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D8F3DC]">
-                    <svg className="h-4 w-4 text-[#1B4332]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
+                    <svg className="h-4 w-4 text-[#0D2318]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
                     </svg>
                   </div>
@@ -241,7 +241,7 @@ export default function HvacSeoPage() {
               },
             ].map((item) => (
               <div key={item.number} className="flex gap-6 rounded-2xl border border-gray-200 bg-white p-7">
-                <div className="shrink-0 text-3xl font-extrabold text-[#52B788]/40">{item.number}</div>
+                <div className="shrink-0 text-3xl font-extrabold text-[#3A9E6A]/40">{item.number}</div>
                 <div>
                   <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
@@ -331,8 +331,8 @@ export default function HvacSeoPage() {
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
                 <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D8F3DC]">
-                    <svg className="h-4 w-4 text-[#2D6A4F]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
+                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </div>
@@ -383,7 +383,7 @@ export default function HvacSeoPage() {
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-                <div className="mb-4 text-4xl font-black text-[#D8F3DC]">{item.number}</div>
+                <div className="mb-4 text-4xl font-black text-[#C8EDD2]">{item.number}</div>
                 <h3 className="text-base font-bold text-[#1a1a1a]" dangerouslySetInnerHTML={{ __html: item.title }} />
                 <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
               </div>
@@ -425,23 +425,23 @@ export default function HvacSeoPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#2D6A4F] py-20">
+      <section className="bg-[#1A5C3A] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
             Ready to see what your HVAC marketing is actually producing?
           </h2>
-          <p className="mt-4 text-lg text-[#D8F3DC]/80">
+          <p className="mt-4 text-lg text-[#C8EDD2]/80">
             Every engagement starts with a Full Picture Audit. I look at your spend, your booking rate,
             your phone handling, and your revenue, before touching a single campaign.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#2D6A4F] transition hover:bg-[#D8F3DC]"
+              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Strategy Call
             </Link>
-            <a href="tel:5595213122" className="text-base font-medium text-[#D8F3DC] hover:text-white transition-colors">
+            <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">
               (559) 521-3122
             </a>
           </div>

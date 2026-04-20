@@ -47,7 +47,7 @@ export default function SocialProof() {
               key={stat.label}
               className="flex flex-col items-center rounded-xl bg-[#fafaf8] px-6 py-8 text-center transition hover:shadow-md"
             >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#D8F3DC] text-[#2D6A4F]">
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#C8EDD2] text-[#1A5C3A]">
                 {stat.icon}
               </div>
               <h3 className="text-base font-bold text-[#1a1a1a] sm:text-lg">

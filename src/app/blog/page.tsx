@@ -220,8 +220,8 @@ export default function BlogPage() {
       <section className="bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#52B788]/30 bg-white px-5 py-2 text-sm font-medium text-[#2D6A4F] shadow-sm mb-6">
-              <span className="inline-block h-2 w-2 rounded-full bg-[#52B788]" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
+              <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
               Field Notes
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl">
@@ -232,7 +232,7 @@ export default function BlogPage() {
               and now manages marketing for contractors doing $2M&ndash;$15M.
             </p>
             <div className="mt-4 flex items-center justify-center gap-3 text-sm text-gray-500">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1B4332]">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0D2318]">
                 <span className="text-xs font-bold text-white">AH</span>
               </div>
               <span>Written by Aaron Husak &middot; 4x Inc 5000 &middot; CA Licensed Contractor B, C-2, C-20, C-36</span>
@@ -251,7 +251,7 @@ export default function BlogPage() {
                 key={cat}
                 className={`rounded-full px-4 py-1.5 text-sm font-medium ${
                   cat === "All"
-                    ? "bg-[#2D6A4F] text-white"
+                    ? "bg-[#1A5C3A] text-white"
                     : "bg-[#fafaf8] border border-gray-200 text-gray-600"
                 }`}
               >
@@ -265,16 +265,16 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group flex flex-col rounded-2xl border border-gray-200 bg-[#fafaf8] overflow-hidden shadow-sm transition hover:border-[#52B788]/50 hover:shadow-md"
+                className="group flex flex-col rounded-2xl border border-gray-200 bg-[#fafaf8] overflow-hidden shadow-sm transition hover:border-[#3A9E6A]/50 hover:shadow-md"
               >
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="rounded-full bg-[#D8F3DC] px-3 py-1 text-xs font-semibold text-[#1B4332]">
+                    <span className="rounded-full bg-[#C8EDD2] px-3 py-1 text-xs font-semibold text-[#0D2318]">
                       {post.category}
                     </span>
                     <span className="text-xs text-gray-400">{post.date}</span>
                   </div>
-                  <h2 className="text-base font-extrabold text-[#1a1a1a] group-hover:text-[#2D6A4F] transition-colors leading-snug flex-1">
+                  <h2 className="text-base font-extrabold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors leading-snug flex-1">
                     {post.title}
                   </h2>
                   <p className="mt-3 text-sm leading-relaxed text-gray-600 line-clamp-3">
@@ -282,7 +282,7 @@ export default function BlogPage() {
                   </p>
                   <div className="mt-5 flex items-center justify-between text-xs text-gray-400">
                     <span>{post.readTime}</span>
-                    <span className="flex items-center gap-1 font-semibold text-[#2D6A4F]">
+                    <span className="flex items-center gap-1 font-semibold text-[#1A5C3A]">
                       Read
                       <svg className="h-3 w-3 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -297,23 +297,23 @@ export default function BlogPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-2xl font-extrabold text-white">
             Want this analysis applied to your company?
           </h2>
-          <p className="mt-4 text-base text-[#D8F3DC]/80">
+          <p className="mt-4 text-base text-[#C8EDD2]/80">
             Everything in these posts is a slice of what I look at in the Full Picture Audit.
             I&rsquo;ll show you exactly what your marketing is producing before we spend anything new.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#2D6A4F] transition hover:bg-[#D8F3DC]"
+              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Strategy Call
             </Link>
-            <a href="tel:5595213122" className="text-base font-medium text-[#D8F3DC] hover:text-white transition-colors">
+            <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">
               (559) 521-3122
             </a>
           </div>

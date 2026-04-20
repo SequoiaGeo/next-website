@@ -2193,7 +2193,7 @@ const posts: Record<string, Post> = {
         <div className="overflow-x-auto my-8">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="bg-[#1B4332] text-white">
+              <tr className="bg-[#0D2318] text-white">
                 <th className="p-3 text-left font-semibold">Factor</th>
                 <th className="p-3 text-left font-semibold">Fractional CMO</th>
                 <th className="p-3 text-left font-semibold">Marketing Agency</th>
@@ -4470,7 +4470,7 @@ const posts: Record<string, Post> = {
         <p>
           If you want someone to go through the full setup end to end, that&rsquo;s what the 30-day engagement
           is. The dead phone number is usually not the only thing we find.{" "}
-          <a href="/#contact" className="text-[#2D6A4F] font-semibold hover:text-[#1B4332] transition-colors">
+          <a href="/#contact" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">
             Start here.
           </a>
         </p>
@@ -4609,7 +4609,7 @@ const posts: Record<string, Post> = {
         <p>
           If you want to know what your marketing is actually producing before you spend another month at
           the same rate,{" "}
-          <a href="/#contact" className="text-[#2D6A4F] font-semibold hover:text-[#1B4332] transition-colors">
+          <a href="/#contact" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">
             start here.
           </a>
         </p>
@@ -4834,16 +4834,16 @@ const posts: Record<string, Post> = {
           Usually not. Most contractor websites can be updated to be more AI-friendly without a full rebuild. The priorities are: correct schema markup, fixed NAP consistency, content that answers real questions in depth, and authoritative signals like reviews and third-party mentions. A well-planned GEO update can be completed on most existing sites in 60 to 90 days.
         </p>
 
-        <div className="mt-10 rounded-xl bg-[#D8F3DC] p-6 text-center">
-          <p className="text-lg font-bold text-[#1B4332]">
+        <div className="mt-10 rounded-xl bg-[#C8EDD2] p-6 text-center">
+          <p className="text-lg font-bold text-[#0D2318]">
             Want to know if your business is showing up in AI search?
           </p>
-          <p className="mt-2 text-base text-[#2D6A4F]">
+          <p className="mt-2 text-base text-[#1A5C3A]">
             Request a free AI visibility audit and I&rsquo;ll check your profile across ChatGPT, Perplexity, Gemini, and Claude. No sales pressure. Just data.
           </p>
           <Link
             href="/#contact"
-            className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-7 py-3 text-base font-semibold text-white transition hover:bg-[#1B4332]"
+            className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3 text-base font-semibold text-white transition hover:bg-[#0D2318]"
           >
             Get Your Free AI Visibility Audit
           </Link>
@@ -4908,10 +4908,10 @@ const posts: Record<string, Post> = {
         </p>
         <table className="w-full border-collapse text-sm">
           <thead>
-            <tr className="bg-[#D8F3DC]">
-              <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-[#1B4332]">Area</th>
-              <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-[#1B4332]">SEO</th>
-              <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-[#1B4332]">GEO</th>
+            <tr className="bg-[#C8EDD2]">
+              <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-[#0D2318]">Area</th>
+              <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-[#0D2318]">SEO</th>
+              <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-[#0D2318]">GEO</th>
             </tr>
           </thead>
           <tbody>
@@ -5111,16 +5111,16 @@ const posts: Record<string, Post> = {
           Monthly at minimum. Quarterly strategy reviews are also valuable. The reports should include: AI search visibility changes, content published and its performance, technical improvements, brand mentions gained, review growth, and recommendations for the next month. If the reports are mostly vanity metrics or hard to connect to business outcomes, ask for better reports.
         </p>
 
-        <div className="mt-10 rounded-xl bg-[#D8F3DC] p-6 text-center">
-          <p className="text-lg font-bold text-[#1B4332]">
+        <div className="mt-10 rounded-xl bg-[#C8EDD2] p-6 text-center">
+          <p className="text-lg font-bold text-[#0D2318]">
             Curious if your business is showing up in AI search?
           </p>
-          <p className="mt-2 text-base text-[#2D6A4F]">
+          <p className="mt-2 text-base text-[#1A5C3A]">
             I offer a free AI visibility audit for home service and professional service businesses. I&rsquo;ll check your profile across ChatGPT, Perplexity, Gemini, and Claude and give you a realistic picture of where you stand. No sales pressure. Just data.
           </p>
           <Link
             href="/#contact"
-            className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-7 py-3 text-base font-semibold text-white transition hover:bg-[#1B4332]"
+            className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3 text-base font-semibold text-white transition hover:bg-[#0D2318]"
           >
             Get Your Free AI Visibility Audit
           </Link>
@@ -5196,15 +5196,15 @@ export default async function BlogPostPage({
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav className="mb-6 flex items-center gap-2 text-sm text-gray-500">
-            <Link href="/" className="hover:text-[#2D6A4F] transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#1A5C3A] transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-[#2D6A4F] transition-colors">Blog</Link>
+            <Link href="/blog" className="hover:text-[#1A5C3A] transition-colors">Blog</Link>
             <span>/</span>
             <span className="text-[#1a1a1a] truncate max-w-xs">{post.title}</span>
           </nav>
 
           <div className="mb-4">
-            <span className="rounded-full bg-[#D8F3DC] px-3 py-1 text-xs font-semibold text-[#1B4332]">
+            <span className="rounded-full bg-[#C8EDD2] px-3 py-1 text-xs font-semibold text-[#0D2318]">
               {post.category}
             </span>
           </div>
@@ -5216,10 +5216,10 @@ export default async function BlogPostPage({
           {/* Meta */}
           <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-gray-500">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1B4332] text-xs font-bold text-white">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0D2318] text-xs font-bold text-white">
                 AH
               </div>
-              <Link href="/about-sequoia-geo" className="font-medium text-[#2D6A4F] hover:text-[#1B4332] transition-colors">
+              <Link href="/about-sequoia-geo" className="font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors">
                 Aaron Husak
               </Link>
             </div>
@@ -5232,7 +5232,7 @@ export default async function BlogPostPage({
       {/* Article body */}
       <section className="bg-white py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="text-gray-700 leading-relaxed [&_h2]:text-2xl [&_h2]:font-extrabold [&_h2]:text-[#1a1a1a] [&_h2]:mt-10 [&_h2]:mb-4 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#1a1a1a] [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mb-5 [&_p]:leading-relaxed [&_ul]:my-4 [&_ul]:space-y-2 [&_ul]:pl-6 [&_ul>li]:relative [&_ul>li]:before:content-['\2013'] [&_ul>li]:before:absolute [&_ul>li]:before:-left-4 [&_ul>li]:before:text-[#52B788] [&_ol]:my-4 [&_ol]:space-y-2 [&_ol]:pl-6 [&_ol]:list-decimal [&_strong]:font-bold [&_strong]:text-[#1a1a1a]">
+          <div className="text-gray-700 leading-relaxed [&_h2]:text-2xl [&_h2]:font-extrabold [&_h2]:text-[#1a1a1a] [&_h2]:mt-10 [&_h2]:mb-4 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#1a1a1a] [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mb-5 [&_p]:leading-relaxed [&_ul]:my-4 [&_ul]:space-y-2 [&_ul]:pl-6 [&_ul>li]:relative [&_ul>li]:before:content-['\2013'] [&_ul>li]:before:absolute [&_ul>li]:before:-left-4 [&_ul>li]:before:text-[#3A9E6A] [&_ol]:my-4 [&_ol]:space-y-2 [&_ol]:pl-6 [&_ol]:list-decimal [&_strong]:font-bold [&_strong]:text-[#1a1a1a]">
             {post.content}
           </div>
         </div>
@@ -5241,15 +5241,15 @@ export default async function BlogPostPage({
       {/* Author bio */}
       <section className="bg-[#fafaf8] py-12">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="rounded-2xl border border-[#52B788]/20 bg-white p-6 sm:p-8">
+          <div className="rounded-2xl border border-[#3A9E6A]/20 bg-white p-6 sm:p-8">
             <div className="flex gap-4 items-start">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#1B4332]">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#0D2318]">
                 <span className="text-lg font-bold text-white">AH</span>
               </div>
               <div>
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-base font-bold text-[#1a1a1a]">Aaron Husak</span>
-                  <span className="rounded-full bg-[#D8F3DC] px-3 py-0.5 text-xs font-semibold text-[#1B4332]">
+                  <span className="rounded-full bg-[#C8EDD2] px-3 py-0.5 text-xs font-semibold text-[#0D2318]">
                     Founder, Sequoia GEO
                   </span>
                 </div>
@@ -5260,7 +5260,7 @@ export default async function BlogPostPage({
                 </p>
                 <Link
                   href="/about-sequoia-geo"
-                  className="mt-3 inline-flex items-center text-sm font-semibold text-[#2D6A4F] hover:text-[#1B4332] transition-colors"
+                  className="mt-3 inline-flex items-center text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
                 >
                   About Aaron
                   <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -5274,22 +5274,22 @@ export default async function BlogPostPage({
       </section>
 
       {/* CTA */}
-      <section className="bg-[#2D6A4F] py-16">
+      <section className="bg-[#1A5C3A] py-16">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <p className="text-xl font-bold text-white">
             Want an operator&rsquo;s read on your marketing?
           </p>
-          <p className="mt-2 text-base text-[#D8F3DC]/80">
+          <p className="mt-2 text-base text-[#C8EDD2]/80">
             Tell me what you&rsquo;re spending. I&rsquo;ll tell you what it&rsquo;s actually producing.
           </p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-7 py-3.5 text-base font-semibold text-[#2D6A4F] transition hover:bg-[#D8F3DC]"
+              className="inline-flex items-center justify-center rounded-lg bg-white px-7 py-3.5 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Strategy Call
             </Link>
-            <a href="tel:5595213122" className="text-base font-medium text-[#D8F3DC] hover:text-white transition-colors">
+            <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">
               (559) 521-3122
             </a>
           </div>

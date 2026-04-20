@@ -12,14 +12,14 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B4332] py-20 sm:py-28">
+      <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <div className="section-overline mb-6">About Sequoia GEO</div>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               Built by someone who&rsquo;s been on your side of the dispatch board.
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-[#D8F3DC]/80">
+            <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
               Most marketing consultants understand marketing. Aaron Husak understands what it costs
               when the phone doesn&rsquo;t ring.
             </p>
@@ -66,7 +66,7 @@ export default function AboutPage() {
               <div className="pt-2">
                 <Link
                   href="/case-studies/balanced-comfort"
-                  className="inline-flex items-center gap-1 font-semibold text-[#2D6A4F] hover:text-[#1B4332] transition-colors"
+                  className="inline-flex items-center gap-1 font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
                 >
                   Read the Balanced Comfort case study
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -106,8 +106,8 @@ export default function AboutPage() {
                 key={card.title}
                 className="rounded-2xl border border-white/10 bg-white/5 p-7"
               >
-                <h3 className="text-base font-bold text-[#52B788]">{card.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-[#D8F3DC]/70">{card.body}</p>
+                <h3 className="text-base font-bold text-[#3A9E6A]">{card.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#C8EDD2]/70">{card.body}</p>
               </div>
             ))}
           </div>
@@ -145,9 +145,9 @@ export default function AboutPage() {
             ].map((item) => (
               <div
                 key={item.stat}
-                className="rounded-xl border border-[#52B788]/20 bg-white p-5 text-center shadow-sm"
+                className="rounded-xl border border-[#3A9E6A]/20 bg-white p-5 text-center shadow-sm"
               >
-                <div className="text-xl font-extrabold text-[#1B4332]">{item.stat}</div>
+                <div className="text-xl font-extrabold text-[#0D2318]">{item.stat}</div>
                 <div className="mt-1 text-xs text-gray-500">{item.label}</div>
               </div>
             ))}
@@ -172,7 +172,7 @@ export default function AboutPage() {
             <div className="mt-10">
               <Link
                 href="/#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#2D6A4F]/25 transition hover:bg-[#1B4332]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Apply for Your First 30 Days
               </Link>
@@ -182,16 +182,16 @@ export default function AboutPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-[#1B4332] py-20">
+      <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">Ready to talk?</h2>
-          <p className="mt-4 text-lg text-[#D8F3DC]/80">
+          <p className="mt-4 text-lg text-[#C8EDD2]/80">
             (559) 521-3122 &middot; aaron@sequoiageo.com
           </p>
           <div className="mt-8">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1B4332] transition hover:bg-[#D8F3DC]"
+              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call
             </Link>

@@ -51,7 +51,7 @@ export default function HowItWorks() {
             <p className="section-overline mb-4">How it works</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
               Not an agency.{" "}
-              <span className="text-[#2D6A4F]">Your growth operator.</span>
+              <span className="text-[#1A5C3A]">Your growth operator.</span>
             </h2>
             <p className="mt-5 text-base text-gray-500 leading-relaxed">
               The engagement is built around depth, not deliverables.
@@ -59,7 +59,7 @@ export default function HowItWorks() {
             <div className="mt-8">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-[#2D6A4F] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1B4332]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
                 Start With the Full Picture Audit
                 <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -75,16 +75,16 @@ export default function HowItWorks() {
               <div key={step.month} className="flex gap-8 py-10 first:pt-0">
                 {/* Number */}
                 <div className="shrink-0 pt-1">
-                  <span className="text-5xl font-black text-[#2D6A4F]/10">{step.number}</span>
+                  <span className="text-5xl font-black text-[#1A5C3A]/10">{step.number}</span>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#D8F3DC] text-[#2D6A4F]">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#C8EDD2] text-[#1A5C3A]">
                       {step.icon}
                     </div>
-                    <span className="text-xs font-semibold uppercase tracking-widest text-[#52B788]">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
                       {step.month}
                     </span>
                   </div>
