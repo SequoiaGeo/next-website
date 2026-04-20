@@ -92,9 +92,10 @@ export default function AboutAaron() {
           </div>
         </div>
 
-        {/* Balanced Comfort photos */}
+        {/* Balanced Comfort photo gallery */}
         <div className="mx-auto mt-16 max-w-5xl space-y-4">
-          {/* Wide team photo */}
+
+          {/* Wide team panoramic */}
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <Image
               src="/balanced-comfort-team.webp"
@@ -104,26 +105,63 @@ export default function AboutAaron() {
               className="w-full object-cover"
             />
           </div>
-          {/* Two-col: training photo + caption */}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 items-end">
-            <div className="overflow-hidden rounded-2xl shadow-xl">
+
+          {/* Three-col: training photos + fleet */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="overflow-hidden rounded-2xl shadow-sm">
               <Image
                 src="/balanced-comfort-plumbing-training.webp"
                 alt="Balanced Comfort in-house plumbing training, August 2022"
                 width={600}
                 height={503}
+                className="w-full h-48 object-cover"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <Image
+                src="/hajoca-rinnai-training.webp"
+                alt="Balanced Comfort technicians at Hajoca Rinnai training"
+                width={1200}
+                height={900}
+                className="w-full h-48 object-cover"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <Image
+                src="/hajoca-fleet-vans.webp"
+                alt="Balanced Comfort fleet vans at Hajoca Solutions Group"
+                width={1200}
+                height={900}
+                className="w-full h-48 object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Inc 5000 plaques */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <Image
+                src="/inc5000-plaque-2021.webp"
+                alt="Inc 5000 award plaque — Balanced Comfort 2021, #817 overall, 595% growth"
+                width={960}
+                height={1200}
                 className="w-full object-cover"
               />
             </div>
-            <div className="pb-2">
-              <p className="text-sm font-semibold text-[#1a1a1a]">
-                Built from the inside out.
-              </p>
-              <p className="mt-2 text-sm leading-relaxed text-gray-500">
-                When entry-level plumbers were hard to find, we ran in-house training at our shop rather than wait on the market. 50+ employees at peak. 4x Inc 5000, 2020&ndash;2023. That&rsquo;s the background behind every marketing recommendation we make.
-              </p>
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <Image
+                src="/inc5000-plaque-2022.webp"
+                alt="Inc 5000 award plaque — Balanced Comfort 2022, #511 overall"
+                width={960}
+                height={1200}
+                className="w-full object-cover"
+              />
             </div>
           </div>
+          <p className="text-center text-sm text-gray-400">
+            Balanced Comfort, Fresno CA &mdash; 50+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; #817 overall rank (2021, 595% growth) &bull; #511 overall rank (2022)
+          </p>
+
         </div>
 
       </div>
