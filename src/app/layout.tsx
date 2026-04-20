@@ -103,6 +103,40 @@ const organizationSchema = {
     "https://www.linkedin.com/company/sequoiageo",
     "https://www.facebook.com/sequoiageo",
   ],
+  member: {
+    "@type": "Person",
+    "@id": "https://www.sequoiageo.com/#aaron-husak",
+    name: "Aaron Husak",
+    jobTitle: "Founder & Growth Operator",
+    url: "https://www.sequoiageo.com/about-sequoia-geo",
+    image: "https://www.sequoiageo.com/aaron-husak.webp",
+    sameAs: [
+      "https://www.thefirstclick.net/ep-320-using-ai-to-increase-website-clarity-with-aaron-husak/",
+      "https://www.grownearby.com/podcast/the-success-story-of-aaron-husak/",
+    ],
+    award: [
+      "Inc. 5000 Fastest-Growing Companies 2020 — Balanced Comfort",
+      "Inc. 5000 Fastest-Growing Companies 2021 — Balanced Comfort (#817, 595% growth)",
+      "Inc. 5000 Fastest-Growing Companies 2022 — Balanced Comfort (#511)",
+      "Inc. 5000 Fastest-Growing Companies 2023 — Balanced Comfort",
+    ],
+    knowsAbout: [
+      "Home services marketing",
+      "HVAC marketing",
+      "Plumbing marketing",
+      "Google Ads for contractors",
+      "Local SEO",
+      "Marketing attribution",
+      "Booking rate optimization",
+      "Generative Engine Optimization",
+      "AI automation for contractors",
+    ],
+    alumniOf: {
+      "@type": "Organization",
+      name: "Balanced Comfort Heating & Air",
+      url: "https://www.sequoiageo.com/case-studies/balanced-comfort",
+    },
+  },
 };
 
 export default function RootLayout({
