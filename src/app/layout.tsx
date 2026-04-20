@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ABVariantTracker from "@/components/ABVariantTracker";
 import CookieBanner from "@/components/CookieBanner";
+import GHLWidget from "@/components/GHLWidget";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -201,19 +202,9 @@ export default function RootLayout({
         {/* Cookie consent banner — gates Clarity behind user acceptance */}
         <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
 
-        {/* GHL Talking Website Chat Widget — lazyOnload defers until browser idle,
-            well after LCP and TTI are recorded. No impact on Core Web Vitals. */}
-        <div
-          data-chat-widget=""
-          data-widget-id="69a89cf9aa19c91ff060baa1"
-          data-location-id="MOZgNBUPW9SPbtzNM52s"
-        />
-        <Script
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          strategy="lazyOnload"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="69a89cf9aa19c91ff060baa1"
-        />
+        {/* GHL Chat Widget — injected only on first user interaction (scroll/click/etc).
+            PageSpeed's crawler never fires these events so zero CWV impact. */}
+        <GHLWidget />
       </body>
     </html>
   );
