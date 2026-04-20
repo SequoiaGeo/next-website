@@ -105,6 +105,31 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
+      {/* Live audit video */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <p className="section-overline mb-3">See the Work</p>
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              Live audit: Daddario Roofing
+            </h2>
+            <p className="mt-3 text-base text-gray-500 max-w-xl mx-auto">
+              A full marketing audit walkthrough — GBP, Google Ads, LSA, website, and tracking —
+              the same process run for every new client.
+            </p>
+          </div>
+          <div className="relative w-full overflow-hidden rounded-2xl shadow-xl" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              src="https://www.youtube.com/embed/XwTojj72fNA?rel=0&modestbranding=1"
+              title="Live Marketing Audit: Daddario Roofing"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA strip */}
       <section className="bg-[#1A5C3A] py-16">
         <div className="mx-auto max-w-3xl px-6 text-center">
