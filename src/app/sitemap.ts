@@ -20,7 +20,10 @@ const blogSlugs = [
   { slug: "plumber-geo-ai-search-optimization", lastModified: "2025-10-22" },
   { slug: "local-seo-competitor-analysis", lastModified: "2026-01-20" },
   { slug: "local-seo-for-plumbers", lastModified: "2025-09-15" },
-  { slug: "10-must-have-website-features-for-contractors-in-2026", lastModified: "2026-01-08" },
+  { slug: "dead-phone-number-lsa", lastModified: "2026-04-18" },
+  { slug: "three-agencies-one-report", lastModified: "2026-04-18" },
+  { slug: "ai-search-replacing-google-home-services", lastModified: "2026-04-18" },
+  { slug: "what-is-a-geo-agency", lastModified: "2026-04-18" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
