@@ -62,7 +62,7 @@ export default function CaseStudy() {
                 className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#1A5C3A] transition hover:text-[#0D2318]"
               >
                 Read Full Case Study
-                <svg
+                <svg aria-hidden="true"
                   className="h-4 w-4"
                   fill="none"
                   viewBox="0 0 24 24"

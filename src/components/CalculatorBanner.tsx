@@ -8,7 +8,7 @@ export default function CalculatorBanner() {
           <div className="flex items-start gap-5">
             {/* Icon */}
             <div className="shrink-0 flex h-11 w-11 items-center justify-center rounded-xl bg-[#0D2318]">
-              <svg className="h-5 w-5 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <svg aria-hidden="true" className="h-5 w-5 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.613 4.5 4.687V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.687c0-1.074-.807-1.987-1.907-2.115A48.507 48.507 0 0012 2.25z" />
               </svg>
             </div>
@@ -24,7 +24,7 @@ export default function CalculatorBanner() {
             className="shrink-0 inline-flex items-center justify-center rounded-lg bg-[#0D2318] px-6 py-3 text-sm font-semibold text-white transition hover:bg-black/30 whitespace-nowrap"
           >
             Calculate Your Leak
-            <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+            <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </Link>

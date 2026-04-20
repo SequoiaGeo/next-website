@@ -23,7 +23,7 @@ export default function SequoiaGrove({
   fog = "#ffffff",
 }: Props) {
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} width={w} height={h} style={{ display: "block" }}>
+    <svg aria-hidden="true" viewBox={`0 0 ${w} ${h}`} width={w} height={h} style={{ display: "block" }}>
       <defs>
         <linearGradient id="grove-fog" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor={fog} stopOpacity="0.6" />

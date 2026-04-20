@@ -203,8 +203,8 @@ export default function Services() {
                 {service.description}
               </p>
               <span className="mt-5 inline-flex items-center text-xs font-semibold text-[#1A5C3A] transition group-hover:text-[#3A9E6A]">
-                Learn more
-                <svg className="ml-1 h-3.5 w-3.5 transition group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <span aria-label={`Learn more about ${service.title}`}>Learn more</span>
+                <svg aria-hidden="true" className="ml-1 h-3.5 w-3.5 transition group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </span>

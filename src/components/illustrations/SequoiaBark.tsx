@@ -13,7 +13,7 @@ export default function SequoiaBark({ w = 120, h = 400, ink = "#2a4a2e", muted =
   const uid = rawId.replace(/[^\w]/g, "");
 
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} width={w} height={h} style={{ display: "block" }}>
+    <svg aria-hidden="true" viewBox={`0 0 ${w} ${h}`} width={w} height={h} style={{ display: "block" }}>
       <defs>
         <filter id={`bw-${uid}`}>
           <feTurbulence baseFrequency="0.04" numOctaves="3" seed="17" />

@@ -72,7 +72,7 @@ export default function ContractorAdvantage() {
               </div>
               <div className="flex items-center justify-center gap-2 px-6 py-5 text-center text-sm text-gray-700">
                 {/* Green checkmark */}
-                <svg
+                <svg aria-hidden="true"
                   className="h-5 w-5 flex-shrink-0 text-[#3A9E6A]"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -89,7 +89,7 @@ export default function ContractorAdvantage() {
               </div>
               <div className="flex items-center justify-center gap-2 px-6 py-5 text-center text-sm text-gray-500">
                 {/* Red X */}
-                <svg
+                <svg aria-hidden="true"
                   className="h-5 w-5 flex-shrink-0 text-red-400"
                   fill="none"
                   viewBox="0 0 24 24"

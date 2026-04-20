@@ -67,7 +67,7 @@ export default function CookieBanner({ clarityId }: { clarityId?: string }) {
   return (
     <div
       role="dialog"
-      aria-modal="false"
+      aria-modal="true"
       aria-label="Cookie consent"
       aria-describedby="cookie-banner-desc"
       style={{

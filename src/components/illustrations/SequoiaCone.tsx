@@ -5,7 +5,7 @@ interface Props {
 
 export default function SequoiaCone({ size = 60, ink = "#2a4a2e" }: Props) {
   return (
-    <svg viewBox="0 0 60 80" width={size} height={(size * 80) / 60}>
+    <svg aria-hidden="true" viewBox="0 0 60 80" width={size} height={(size * 80) / 60}>
       <g stroke={ink} strokeWidth="0.9" fill="none" opacity="0.85">
         <ellipse cx="30" cy="44" rx="18" ry="26" fill={ink} opacity="0.08" />
         {[...Array(6)].map((_, row) =>

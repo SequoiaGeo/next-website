@@ -5,7 +5,7 @@ interface Props {
 
 export default function SequoiaSprig({ size = 80, ink = "#2a4a2e" }: Props) {
   return (
-    <svg viewBox="0 0 80 80" width={size} height={size}>
+    <svg aria-hidden="true" viewBox="0 0 80 80" width={size} height={size}>
       <g stroke={ink} strokeWidth="1" fill="none" opacity="0.75" strokeLinecap="round">
         <path d="M 40 74 Q 42 50 40 8" />
         {[18, 28, 38, 48, 58, 66].map((y, i) => {
