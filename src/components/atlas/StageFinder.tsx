@@ -15,8 +15,8 @@ const QUESTIONS = [
     q: "How old is the business?",
     opts: [
       { v: "<1yr", l: "Under 1 year" },
-      { v: "1-3yr", l: "1\u20133 years" },
-      { v: "3-10yr", l: "3\u201310 years" },
+      { v: "1-3yr", l: "1–3 years" },
+      { v: "3-10yr", l: "3–10 years" },
       { v: "10+yr", l: "10+ years" },
     ],
   },
@@ -25,14 +25,14 @@ const QUESTIONS = [
     q: "Rough annual revenue?",
     opts: [
       { v: "<250k", l: "Under $250K" },
-      { v: "250k-1m", l: "$250K \u2013 $1M" },
-      { v: "1-5m", l: "$1M \u2013 $5M" },
+      { v: "250k-1m", l: "$250K – $1M" },
+      { v: "1-5m", l: "$1M – $5M" },
       { v: "5m+", l: "$5M+" },
     ],
   },
   {
     field: "primary" as const,
-    q: "What\u2019s the biggest challenge right now?",
+    q: "What’s the biggest challenge right now?",
     opts: [
       { v: "brand-new", l: "Getting started at all" },
       { v: "leads", l: "Finding predictable leads" },
@@ -149,7 +149,7 @@ function AtlasQuestion({
             cursor: step === 0 ? "default" : "pointer",
           }}
         >
-          \u2190 Back
+          ← Back
         </button>
         <div style={{ ...MONO_STYLE, fontSize: 10, color: ATLAS.ink3 }}>Q {step + 1} of 3</div>
       </div>
@@ -171,7 +171,7 @@ function AtlasResult({ stage, reset }: { stage: number; reset: () => void }) {
         />
       </div>
       <div>
-        <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>Your Stage \u00b7 0{s.n}</div>
+        <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>Your Stage · 0{s.n}</div>
         <div
           style={{
             fontFamily: "var(--f-display)",
@@ -190,7 +190,7 @@ function AtlasResult({ stage, reset }: { stage: number; reset: () => void }) {
           {s.summary}
         </p>
         <div style={{ marginTop: 22 }}>
-          <div style={{ ...MONO_STYLE, color: ATLAS.ink3 }}>What we\u2019d recommend</div>
+          <div style={{ ...MONO_STYLE, color: ATLAS.ink3 }}>What we’d recommend</div>
           <div style={{ marginTop: 10, display: "flex", flexWrap: "wrap", gap: 8 }}>
             {s.services.map((sv) => (
               <span
@@ -227,7 +227,7 @@ function AtlasResult({ stage, reset }: { stage: number; reset: () => void }) {
               textDecoration: "none",
             }}
           >
-            Book a {s.name} survey \u2192
+            Book a {s.name} survey →
           </a>
           <button
             onClick={reset}
@@ -285,7 +285,7 @@ export default function StageFinder() {
       <CornerMarks color={ATLAS.ink} />
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 28 }}>
         <div>
-          <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>\u25c6 Find your stage</div>
+          <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>◆ Find your stage</div>
           <div
             style={{
               fontFamily: "var(--f-display)",
@@ -296,7 +296,7 @@ export default function StageFinder() {
               letterSpacing: "-0.01em",
             }}
           >
-            {stageResult ? `You\u2019re in the ${STAGES[stageResult - 1].name} season.` : "Three questions. Thirty seconds."}
+            {stageResult ? `You’re in the ${STAGES[stageResult - 1].name} season.` : "Three questions. Thirty seconds."}
           </div>
         </div>
         {stageResult !== null ? (
@@ -314,7 +314,7 @@ export default function StageFinder() {
               textTransform: "uppercase",
             }}
           >
-            \u21bb Restart
+            ↻ Restart
           </button>
         ) : (
           <div style={{ ...MONO_STYLE, fontSize: 10, color: ATLAS.ink3 }}>0{step + 1} / 03</div>

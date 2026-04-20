@@ -55,7 +55,7 @@ export default function AtlasStageRow({ stage: s, index: i, isLast }: Props) {
       {/* Stage info */}
       <div>
         <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>
-          Stage 0{s.n} \u00b7 {s.age}
+          Stage 0{s.n} · {s.age}
         </div>
         <div
           style={{
@@ -95,7 +95,7 @@ export default function AtlasStageRow({ stage: s, index: i, isLast }: Props) {
               key={sv}
               style={{ fontFamily: "var(--f-serif)", fontSize: 16, color: ATLAS.ink, display: "flex", gap: 10, alignItems: "baseline" }}
             >
-              <span style={{ color: ATLAS.forest, fontFamily: "var(--f-mono)", fontSize: 10 }}>\u2736</span>
+              <span style={{ color: ATLAS.forest, fontFamily: "var(--f-mono)", fontSize: 10 }}>✶</span>
               {sv}
             </li>
           ))}

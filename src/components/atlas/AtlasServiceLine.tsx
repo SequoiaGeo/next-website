@@ -71,7 +71,7 @@ export default function AtlasServiceLine({ service: sv, index: i }: Props) {
           fontSize: 20,
         }}
       >
-        \u2192
+        →
       </div>
     </div>
   );
