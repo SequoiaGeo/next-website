@@ -4,6 +4,7 @@ export default function AboutAaron() {
   return (
     <section id="about" className="bg-[#fafaf8] py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
         <div className="mx-auto grid max-w-5xl gap-16 lg:grid-cols-[280px_1fr] lg:items-start">
 
           {/* Left: avatar + credentials */}
@@ -90,6 +91,23 @@ export default function AboutAaron() {
             </blockquote>
           </div>
         </div>
+
+        {/* Balanced Comfort team photo */}
+        <div className="mx-auto mt-16 max-w-5xl">
+          <div className="overflow-hidden rounded-2xl shadow-xl">
+            <Image
+              src="/balanced-comfort-team.webp"
+              alt="Balanced Comfort team — Fresno, CA"
+              width={1800}
+              height={425}
+              className="w-full object-cover"
+            />
+          </div>
+          <p className="mt-3 text-center text-sm text-gray-400">
+            Balanced Comfort team, Fresno CA &mdash; 50+ employees, 4x Inc 5000 (2020&ndash;2023)
+          </p>
+        </div>
+
       </div>
     </section>
   );
