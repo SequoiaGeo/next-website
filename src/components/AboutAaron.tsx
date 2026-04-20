@@ -92,8 +92,9 @@ export default function AboutAaron() {
           </div>
         </div>
 
-        {/* Balanced Comfort team photo */}
-        <div className="mx-auto mt-16 max-w-5xl">
+        {/* Balanced Comfort photos */}
+        <div className="mx-auto mt-16 max-w-5xl space-y-4">
+          {/* Wide team photo */}
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <Image
               src="/balanced-comfort-team.webp"
@@ -103,9 +104,26 @@ export default function AboutAaron() {
               className="w-full object-cover"
             />
           </div>
-          <p className="mt-3 text-center text-sm text-gray-400">
-            Balanced Comfort team, Fresno CA &mdash; 50+ employees, 4x Inc 5000 (2020&ndash;2023)
-          </p>
+          {/* Two-col: training photo + caption */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 items-end">
+            <div className="overflow-hidden rounded-2xl shadow-xl">
+              <Image
+                src="/balanced-comfort-plumbing-training.webp"
+                alt="Balanced Comfort in-house plumbing training, August 2022"
+                width={600}
+                height={503}
+                className="w-full object-cover"
+              />
+            </div>
+            <div className="pb-2">
+              <p className="text-sm font-semibold text-[#1a1a1a]">
+                Built from the inside out.
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-gray-500">
+                When entry-level plumbers were hard to find, we ran in-house training at our shop rather than wait on the market. 50+ employees at peak. 4x Inc 5000, 2020&ndash;2023. That&rsquo;s the background behind every marketing recommendation we make.
+              </p>
+            </div>
+          </div>
         </div>
 
       </div>
