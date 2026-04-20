@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutAaron() {
   return (
     <section id="about" className="bg-[#fafaf8] py-20 sm:py-28">
@@ -7,8 +9,14 @@ export default function AboutAaron() {
           {/* Left: avatar + credentials */}
           <div className="flex flex-col items-center lg:items-start gap-5">
             <div className="relative">
-              <div className="flex h-64 w-56 items-center justify-center rounded-2xl bg-[#1B4332] shadow-xl">
-                <span className="text-7xl font-black text-white/80">AH</span>
+              <div className="relative h-64 w-56 overflow-hidden rounded-2xl shadow-xl">
+                <Image
+                  src="/aaron-husak.webp"
+                  alt="Aaron Husak, Founder of Sequoia GEO"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
               {/* Inc 5000 badge */}
               <div className="absolute -bottom-4 -right-4 rounded-xl border border-[#52B788]/30 bg-white px-4 py-3 shadow-lg">
