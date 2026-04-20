@@ -49,7 +49,7 @@ const sites: PortfolioSite[] = [
       "Full site rebuild for a plumbing contractor. Old site had no clear calls to action, no phone number above the fold, and was losing leads before they ever hit the contact form.",
     accentColor: "#1a3a5c",
     textColor: "#c8dded",
-    screenshot: "/Kabam Home Page.png",
+    screenshot: "/kabam-home-page.webp",
   },
   {
     name: "Earth Day Fresno",
@@ -74,7 +74,7 @@ const sites: PortfolioSite[] = [
       "A local BBQ caterer with no web presence at all. Built from zero to a site that showcases their menu, services, and booking process — giving them a professional presence they didn\u2019t have before.",
     accentColor: "#4a1a00",
     textColor: "#edd8c8",
-    screenshot: "/Melscatering.png",
+    screenshot: "/melscatering.webp",
   },
   {
     name: "Skye Dreams",

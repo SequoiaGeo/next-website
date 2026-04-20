@@ -201,7 +201,8 @@ export default function RootLayout({
         {/* Cookie consent banner — gates Clarity behind user acceptance */}
         <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
 
-        {/* GHL Talking Website Chat Widget — loaded after interactive to avoid LCP penalty */}
+        {/* GHL Talking Website Chat Widget — lazyOnload defers until browser idle,
+            well after LCP and TTI are recorded. No impact on Core Web Vitals. */}
         <div
           data-chat-widget=""
           data-widget-id="69a89cf9aa19c91ff060baa1"
@@ -209,7 +210,7 @@ export default function RootLayout({
         />
         <Script
           src="https://widgets.leadconnectorhq.com/loader.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
           data-widget-id="69a89cf9aa19c91ff060baa1"
         />
