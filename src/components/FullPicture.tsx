@@ -68,34 +68,36 @@ export default function FullPicture() {
           </div>
 
           {/* Right: comparison table */}
-          <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
-            <div className="grid grid-cols-2 divide-x divide-gray-200">
-              <div className="bg-gray-50 px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-gray-400">
+          <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-lg">
+            {/* Header */}
+            <div className="grid grid-cols-2">
+              <div className="bg-gray-100 px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-gray-400 border-r border-gray-200">
                 Your agency reports on
               </div>
-              <div className="bg-[#0D2318] px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-white">
+              <div className="bg-[#0D2318] px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-[#3A9E6A]">
                 We report on
               </div>
             </div>
+            {/* Rows */}
             {[
-              ["Impressions &amp; clicks", "Revenue per marketing dollar"],
+              ["Impressions & clicks", "Revenue per marketing dollar"],
               ["Cost per lead", "Cost per booked job"],
-              ["&ldquo;Leads generated&rdquo;", "Booking rate by lead source"],
+              ['"Leads generated"', "Booking rate by lead source"],
               ["Rankings", "Average ticket by channel"],
               [
-                "Monthly report you don&rsquo;t read",
-                "\"Your Saturday booking rate dropped 15%: here&rsquo;s the call recording showing why\"",
+                "Monthly report you don't read",
+                '"Your Saturday booking rate dropped 15% — here\'s the call recording showing why"',
               ],
             ].map(([agency, me], i) => (
               <React.Fragment key={i}>
-                <div
-                  className={`border-t border-gray-200 px-5 py-4 text-sm text-gray-500 ${i % 2 === 1 ? "bg-gray-50/60" : "bg-white"}`}
-                  dangerouslySetInnerHTML={{ __html: agency }}
-                />
-                <div
-                  className={`border-t border-l border-gray-200 px-5 py-4 text-sm font-medium text-[#0D2318] ${i % 2 === 1 ? "bg-[#C8EDD2]/30" : "bg-[#C8EDD2]/10"}`}
-                  dangerouslySetInnerHTML={{ __html: me }}
-                />
+                <div className="flex items-start gap-3 border-t border-gray-200 bg-white px-5 py-4 border-r">
+                  <span className="mt-0.5 flex-shrink-0 text-red-400 font-bold text-sm">✕</span>
+                  <span className="text-sm text-gray-400 line-through leading-snug">{agency}</span>
+                </div>
+                <div className="flex items-start gap-3 border-t border-gray-200 bg-[#0D2318] px-5 py-4">
+                  <span className="mt-0.5 flex-shrink-0 text-[#3A9E6A] font-bold text-sm">✓</span>
+                  <span className="text-sm font-semibold text-white leading-snug">{me}</span>
+                </div>
               </React.Fragment>
             ))}
           </div>
