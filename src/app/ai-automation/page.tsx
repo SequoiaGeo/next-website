@@ -106,6 +106,30 @@ export default function AiAutomationPage() {
         </div>
       </section>
 
+      {/* Live build demo video */}
+      <section className="bg-[#fafaf8] py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <p className="section-overline mb-3">See It In Action</p>
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl leading-tight">
+              Live build: AI sales simulator for contractors
+            </h2>
+            <p className="mt-3 text-base text-gray-500 max-w-xl mx-auto">
+              Watch Aaron build an AI-powered sales roleplay tool for contractors from scratch.
+            </p>
+          </div>
+          <div className="relative w-full overflow-hidden rounded-2xl shadow-xl" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              src="https://www.youtube.com/embed/ra2i646BzLI?rel=0&modestbranding=1"
+              title="Live Build: AI Sales Simulator for Contractors"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* How it connects */}
       <section className="bg-[#1a1a1a] py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
