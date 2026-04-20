@@ -62,7 +62,7 @@ const sites: PortfolioSite[] = [
     highlight: "5,000+ attendees \u00b7 80+ vendors",
     accentColor: "#1a4a1a",
     textColor: "#c8edcc",
-    screenshot: "/Earthdayfresno.png",
+    screenshot: "/earthdayfresno.webp",
   },
   {
     name: "Mel's BBQ Catering",
@@ -86,7 +86,7 @@ const sites: PortfolioSite[] = [
       "Replaced a 4-page WordPress site that was generating minimal traffic. The old site was too shallow to rank and gave visitors no reason to stay. Rebuilt with proper structure, content depth, and conversion paths.",
     accentColor: "#2a1a4a",
     textColor: "#d8c8ed",
-    screenshot: "/Skyedreams.png",
+    screenshot: "/skyedreams.webp",
   },
   {
     name: "Skye Mesh",
@@ -98,7 +98,7 @@ const sites: PortfolioSite[] = [
       "A sister company to Skye Dreams launching a new product line. Built from scratch to establish a clean brand presence and capture early interest before the full launch.",
     accentColor: "#1a2a4a",
     textColor: "#c8d8ed",
-    screenshot: "/Skyemesh.png",
+    screenshot: "/skyemesh.webp",
   },
 ];
 
