@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Fraunces } from "next/font/google";
 import Script from "next/script";
+import { cookies } from "next/headers";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import ABVariantTracker from "@/components/ABVariantTracker";
 import CookieBanner from "@/components/CookieBanner";
 import GHLWidget from "@/components/GHLWidget";
 
@@ -142,11 +142,15 @@ const organizationSchema = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // Read A/B variant server-side — no client JS needed
+  const cookieStore = await cookies();
+  const abVariant = cookieStore.get("hp_variant")?.value ?? null;
+
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <head>
@@ -200,8 +204,17 @@ export default function RootLayout({
         {/* Microsoft Clarity — loaded by CookieBanner only after user accepts.
             Removed from here to prevent tracking before consent is given. */}
 
-        {/* A/B variant tracker — tags GA4 user property for homepage split test */}
-        <ABVariantTracker />
+        {/* A/B variant GA4 tag — emitted server-side, zero browser JS overhead.
+            Middleware sets hp_variant cookie; we just read it here and push to GA4. */}
+        {abVariant && process.env.NEXT_PUBLIC_GA_ID && (
+          <Script
+            id="ab-variant-tag"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `gtag('set','user_properties',{hp_variant:'${abVariant}'});gtag('event','ab_variant_assigned',{ab_variant:'${abVariant}',non_interaction:true});`,
+            }}
+          />
+        )}
 
         {/* Cookie consent banner — gates Clarity behind user acceptance */}
         <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
