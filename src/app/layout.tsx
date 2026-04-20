@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ABVariantTracker from "@/components/ABVariantTracker";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -184,6 +185,8 @@ export default function RootLayout({
             }}
           />
         )}
+        {/* A/B variant tracker — tags GA4 user property for homepage split test */}
+        <ABVariantTracker />
         {/* GHL Talking Website Chat Widget — loaded after interactive to avoid LCP penalty */}
         <div
           data-chat-widget=""
