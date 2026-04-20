@@ -5,6 +5,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ABVariantTracker from "@/components/ABVariantTracker";
+import CookieBanner from "@/components/CookieBanner";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -156,12 +157,27 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased font-sans min-h-screen flex flex-col">
+        {/* Skip to main content — accessibility / keyboard nav */}
+        <a href="#main-content" className="skip-to-content">
+          Skip to main content
+        </a>
+
         <Navigation />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <Footer />
-        {/* Google Analytics GA4 */}
+
+        {/* GA4 Consent Mode v2 — set defaults BEFORE the GA4 script loads.
+            analytics_storage defaults to denied until user accepts cookies.
+            GA4 still initializes so it can model conversions in consent-denied mode. */}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
+            <Script
+              id="ga4-consent-defaults"
+              strategy="beforeInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});`,
+              }}
+            />
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
               strategy="afterInteractive"
@@ -170,23 +186,21 @@ export default function RootLayout({
               id="google-analytics"
               strategy="afterInteractive"
               dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_ID}');`,
+                __html: `gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_ID}');`,
               }}
             />
           </>
         )}
-        {/* Microsoft Clarity */}
-        {process.env.NEXT_PUBLIC_CLARITY_ID && (
-          <Script
-            id="microsoft-clarity"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${process.env.NEXT_PUBLIC_CLARITY_ID}");`,
-            }}
-          />
-        )}
+
+        {/* Microsoft Clarity — loaded by CookieBanner only after user accepts.
+            Removed from here to prevent tracking before consent is given. */}
+
         {/* A/B variant tracker — tags GA4 user property for homepage split test */}
         <ABVariantTracker />
+
+        {/* Cookie consent banner — gates Clarity behind user acceptance */}
+        <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
+
         {/* GHL Talking Website Chat Widget — loaded after interactive to avoid LCP penalty */}
         <div
           data-chat-widget=""
