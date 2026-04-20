@@ -12,6 +12,7 @@ interface NavLink {
 const navLinks: NavLink[] = [
   { label: "About", href: "/about-sequoia-geo" },
   { label: "Services", href: "/services" },
+  { label: "Websites", href: "/websites" },
   { label: "Blog", href: "/blog" },
   { label: "Case Studies", href: "/case-studies" },
 ];
