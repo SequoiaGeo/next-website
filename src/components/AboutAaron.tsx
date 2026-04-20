@@ -137,8 +137,8 @@ export default function AboutAaron() {
             </div>
           </div>
 
-          {/* Inc 5000 plaques */}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {/* Inc 5000 plaques + CSLB license */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div className="overflow-hidden rounded-2xl shadow-sm">
               <Image
                 src="/inc5000-plaque-2021.webp"
@@ -157,9 +157,18 @@ export default function AboutAaron() {
                 className="w-full object-cover"
               />
             </div>
+            <div className="overflow-hidden rounded-2xl shadow-sm">
+              <Image
+                src="/cslb-license.webp"
+                alt="California Contractors State License Board — Balanced Comfort, License #1027318, C36 Plumbing, B General Building"
+                width={3331}
+                height={2591}
+                className="w-full object-cover"
+              />
+            </div>
           </div>
           <p className="text-center text-sm text-gray-400">
-            Balanced Comfort, Fresno CA &mdash; 50+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; #817 overall rank (2021, 595% growth) &bull; #511 overall rank (2022)
+            Balanced Comfort, Fresno CA &mdash; 50+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318 (C36 Plumbing, B General Building)
           </p>
 
         </div>
