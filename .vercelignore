@@ -1,0 +1,9 @@
+# Large media files - keep out of Vercel deployments
+public/*.mp4
+public/*.mov
+public/*.avi
+public/*.mkv
+
+# Raw/uncompressed source images (use WebP versions instead)
+public/*.jpg
+public/logo.jpg
