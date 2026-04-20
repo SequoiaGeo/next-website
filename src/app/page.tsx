@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import CalculatorBanner from "@/components/CalculatorBanner";
@@ -8,9 +9,13 @@ import AboutAaron from "@/components/AboutAaron";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import FirstThirtyDays from "@/components/FirstThirtyDays";
-import FAQ from "@/components/FAQ";
 import LSABanner from "@/components/LSABanner";
-import ContactForm from "@/components/ContactForm";
+import YouTubeFacade from "@/components/YouTubeFacade";
+
+// Lazy-load below-fold interactive components — defers their JS until
+// after the critical rendering path completes.
+const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: true });
+const ContactForm = dynamic(() => import("@/components/ContactForm"), { ssr: true });
 
 export default function Home() {
   return (
@@ -23,7 +28,8 @@ export default function Home() {
       <WhoIsItFor />
       <AboutAaron />
 
-      {/* Why work with Sequoia GEO — video */}
+      {/* Why work with Sequoia GEO — YouTube facade loads thumbnail only;
+          iframe + YouTube JS load on click (saves ~500KB on initial load) */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -33,12 +39,9 @@ export default function Home() {
             </h2>
           </div>
           <div className="relative w-full overflow-hidden rounded-2xl shadow-xl" style={{ paddingBottom: "56.25%" }}>
-            <iframe
-              src="https://www.youtube.com/embed/_-VzBDgEYFY?rel=0&modestbranding=1"
+            <YouTubeFacade
+              videoId="_-VzBDgEYFY"
               title="Why work with Sequoia GEO? Aaron Husak explains"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute inset-0 h-full w-full"
             />
           </div>
         </div>
