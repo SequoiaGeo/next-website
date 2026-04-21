@@ -9,7 +9,6 @@ import SequoiaCone from "@/components/illustrations/SequoiaCone";
 import SequoiaBark from "@/components/illustrations/SequoiaBark";
 import SequoiaGrove from "@/components/illustrations/SequoiaGrove";
 import { ATLAS, MONO_STYLE, STAGES, SERVICES } from "@/components/atlas/data";
-import GHLWidget from "@/components/GHLWidget";
 
 export const metadata: Metadata = {
   title: "Marketing That Grows With You | Sequoia GEO",
@@ -575,7 +574,6 @@ export default function AtlasPage() {
           <span>Made in California</span>
         </footer>
       </div>
-      <GHLWidget />
     </div>
   );
 }
