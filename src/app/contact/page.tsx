@@ -1,4 +1,5 @@
 import ContactForm from "@/components/ContactForm";
+import GHLWidget from "@/components/GHLWidget";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function ContactPage() {
 
       {/* Reuse the contact form component */}
       <ContactForm />
+      <GHLWidget />
     </>
   );
 }

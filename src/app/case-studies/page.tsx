@@ -1,4 +1,5 @@
-import Link from "next/link";
+﻿import Link from "next/link";
+import GHLWidget from "@/components/GHLWidget";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -114,7 +115,7 @@ export default function CaseStudiesPage() {
               Live audit: Daddario Roofing
             </h2>
             <p className="mt-3 text-base text-gray-500 max-w-xl mx-auto">
-              A full marketing audit walkthrough — GBP, Google Ads, LSA, website, and tracking —
+              A full marketing audit walkthrough â€” GBP, Google Ads, LSA, website, and tracking â€”
               the same process run for every new client.
             </p>
           </div>
@@ -150,6 +151,7 @@ export default function CaseStudiesPage() {
           </div>
         </div>
       </section>
+      <GHLWidget />
     </>
   );
 }

@@ -1,4 +1,5 @@
-import Link from "next/link";
+﻿import Link from "next/link";
+import GHLWidget from "@/components/GHLWidget";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -101,9 +102,9 @@ export default function FractionalCmoPage() {
               <h3 className="text-lg font-extrabold text-[#0D2318] mb-5">This fits if you are...</h3>
               <ul className="space-y-3">
                 {[
-                  "Doing $2M–$15M revenue with no dedicated marketing leader",
-                  "Spending $5K–$30K/month on marketing with no clear attribution",
-                  "Managing 2–4 separate marketing vendors with no one connecting the dots",
+                  "Doing $2Mâ€“$15M revenue with no dedicated marketing leader",
+                  "Spending $5Kâ€“$30K/month on marketing with no clear attribution",
+                  "Managing 2â€“4 separate marketing vendors with no one connecting the dots",
                   "Growing fast enough that strategy gaps are starting to limit you",
                   "A founder who needs to stop making every marketing decision personally",
                 ].map((item) => (
@@ -158,7 +159,7 @@ export default function FractionalCmoPage() {
               </thead>
               <tbody>
                 {[
-                  ["Typical monthly cost", "$15K–$20K+", "$3K–$8K", "$2K–$10K"],
+                  ["Typical monthly cost", "$15Kâ€“$20K+", "$3Kâ€“$8K", "$2Kâ€“$10K"],
                   ["Industry expertise", "Varies", "Home services, 13 yrs", "Usually generic"],
                   ["Strategic ownership", "Yes", "Yes", "Rarely"],
                   ["Vendor accountability", "Yes", "Yes", "Conflict of interest"],
@@ -555,6 +556,7 @@ export default function FractionalCmoPage() {
           </div>
         </div>
       </section>
+      <GHLWidget />
     </>
   );
 }

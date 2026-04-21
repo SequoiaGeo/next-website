@@ -1,4 +1,5 @@
-import Link from "next/link";
+﻿import Link from "next/link";
+import GHLWidget from "@/components/GHLWidget";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -447,6 +448,7 @@ export default function HvacSeoPage() {
           </div>
         </div>
       </section>
+      <GHLWidget />
     </>
   );
 }
