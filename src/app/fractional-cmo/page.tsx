@@ -65,7 +65,7 @@ export default function FractionalCmoPage() {
             {[
               {
                 title: "Marketing strategy and roadmap",
-                body: "Where to spend, in what order, and why. Built from your actual <strong>revenue data</strong>, not industry benchmarks that have nothing to do with your market, your trade, or your margins. Every <strong>digital marketing strategy</strong> starts with understanding which channels produce <strong>qualified leads</strong> at the lowest <strong>cost per booked job</strong>.",
+                body: "Where to spend, in what order, and why. Built from your actual <strong>revenue data</strong>, not industry benchmarks that have nothing to do with your market, your trade, or your margins. Every <strong>digital marketing approach</strong> starts with understanding which channels produce <strong>qualified leads</strong> at the lowest <strong>cost per booked job</strong>.",
               },
               {
                 title: "Vendor oversight and accountability",
@@ -297,7 +297,7 @@ export default function FractionalCmoPage() {
                 Most home service companies already have agencies running Google Ads, local SEO, or web design.
                 The problem is that no one holds them accountable to outcomes that matter to you. Campaign
                 oversight means evaluating every vendor against the same standard: cost per booked job, not
-                impressions or clicks. Fractional CMO services include making those vendor decisions
+                impressions or clicks. This engagement includes making those vendor decisions
                 so you don&rsquo;t have to. I&rsquo;ll tell you who is earning the fee and who
                 isn&rsquo;t, and I&rsquo;ll handle the difficult conversations. Marketing operations — the
                 ongoing work of executing specific marketing tactics across multiple vendor relationships while
@@ -325,7 +325,7 @@ export default function FractionalCmoPage() {
                 priorities than one deepening penetration in an existing market. The strategic objectives that
                 define where your business is going — sustainable growth in core markets, expansion into new
                 service lines, or positioning for a future sale — are the foundation of any sound growth
-                strategy. Fractional CMO services build the marketing plan around where you are actually trying
+                strategy. The fractional model builds the marketing plan around where you are actually trying
                 to go, with the capital constraints, labor capacity, and local market dynamics you are actually
                 dealing with.
               </p>
@@ -355,7 +355,7 @@ export default function FractionalCmoPage() {
               },
               {
                 title: "Demand is heavily seasonal",
-                body: "HVAC demand spikes in June and July and again in October and November. Roofing contractors see surge demand after hail events. Restoration companies run surge volumes after rain events and pipe freeze cycles. A <strong>marketing strategy</strong> that does not account for seasonality misallocates budget, spending equally across months when the <strong>revenue</strong> opportunity varies by three or four times.",
+                body: "HVAC demand spikes in June and July and again in October and November. Roofing contractors see surge demand after hail events. Restoration companies run surge volumes after rain events and pipe freeze cycles. A <strong>marketing plan</strong> that does not account for seasonality misallocates budget, spending equally across months when the <strong>revenue</strong> opportunity varies by three or four times.",
               },
               {
                 title: "Phone calls are the primary conversion event",
@@ -363,12 +363,61 @@ export default function FractionalCmoPage() {
               },
               {
                 title: "Reviews drive conversion rates directly",
-                body: "A home service company with 400 reviews at 4.8 stars converts <strong>search results</strong> traffic at a materially higher rate than a competitor with 80 reviews at 4.2 stars. <strong>Online reputation</strong> management, review acquisition, and <strong>building relationships</strong> with past customers are <strong>marketing</strong> functions that directly affect conversion rates and belong inside the <strong>digital marketing strategy</strong>.",
+                body: "A home service company with 400 reviews at 4.8 stars converts <strong>search results</strong> traffic at a materially higher rate than a competitor with 80 reviews at 4.2 stars. <strong>Online reputation</strong> management, review acquisition, and <strong>building relationships</strong> with past customers are <strong>marketing</strong> functions that directly affect conversion rates and belong inside the <strong>digital marketing plan</strong>.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-[#3A9E6A]/20 bg-white p-6 shadow-sm">
                 <h3 className="text-base font-extrabold text-[#0D2318] mb-3">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Fractional CMO Roles */}
+      <section className="bg-[#0D2318] py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+              Fractional CMO Roles: What the Engagement Covers
+            </h2>
+            <p className="mt-4 text-lg text-[#C8EDD2]/80 max-w-3xl mx-auto">
+              A fractional chief marketing officer takes on multiple roles simultaneously. Leading marketing
+              teams, managing marketing budgets, overseeing digital marketing efforts, and providing senior
+              marketing executive leadership, all on a contract basis without the overhead of a full-time hire.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "Leading Marketing Teams and Vendors",
+                body: "One of the core fractional CMO roles is leading marketing teams: both internal staff and external vendor relationships. This includes overseeing digital marketing efforts across paid search, SEO, and content, evaluating vendor performance using digital marketing tools and data analytics, and ensuring every marketing initiative connects back to measurable results.",
+              },
+              {
+                title: "Managing Marketing Budgets",
+                body: "A successful fractional CMO manages marketing budgets with the same discipline a CFO applies to operating expenses. That means market research into demand patterns and market trends to inform channel allocation, tracking cost effectiveness by source, and reallocating spend toward whatever is maximizing ROI and driving business growth.",
+              },
+              {
+                title: "Senior Marketing Executive Leadership",
+                body: "Fractional CMO roles require top tier marketing expertise and experienced marketing leadership. A senior marketing executive in this model provides high level marketing leadership across the entire marketing function, developing leading marketing strategy, establishing overall business objectives and a leadership style that keeps teams aligned, and delivering the strategic insight that in-house teams rarely have.",
+              },
+              {
+                title: "Strategic Oversight Across Multiple Companies",
+                body: "Experienced fractional CMOs work with multiple companies across various industries, which develops a market perspective that a single in-house hire rarely builds. That breadth enables strategic oversight: identifying patterns in customer behavior, applying business model insights from adjacent markets, and understanding what actually drives strategic growth versus what produces activity without results.",
+              },
+              {
+                title: "Business Growth and Value Proposition",
+                body: "A fractional CMO helps home service companies enter new markets, sharpen their value proposition, and build brand management systems that create lasting brand identity. The engagement operates on a contract basis, with clear measurable results tied to business goals including lower customer acquisition costs, higher booking rates, and sustainable strategic growth.",
+              },
+              {
+                title: "Fresh Perspective and Extensive Network",
+                body: "A successful fractional CMO brings fresh perspectives because they have seen what works, and what does not, across many different businesses. They also bring an extensive network of vetted vendor relationships, marketing analytics platforms, and external resources that give businesses access to capabilities they would otherwise need to build from scratch.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <h3 className="text-sm font-bold text-[#3A9E6A] mb-2">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
               </div>
             ))}
           </div>
@@ -387,7 +436,7 @@ export default function FractionalCmoPage() {
             {[
               {
                 q: "How is a fractional CMO different from a marketing consultant?",
-                a: "A marketing consultant delivers a plan and exits. A fractional CMO stays in the engagement, implements the plan, manages vendors, makes ongoing budget decisions, and stays accountable to results over time. The engagement functions like having a senior marketing leadership team member inside your business, not an outside advisor who visits once.",
+                a: "A marketing consultant delivers a plan and exits. A fractional CMO stays in the engagement, implements the plan, manages vendors, makes ongoing budget decisions, and stays accountable to results over time. The engagement functions like having a senior marketing executive inside your business, not an outside advisor who visits once.",
               },
               {
                 q: "Do I need a marketing team in place before hiring a fractional CMO?",
@@ -448,7 +497,7 @@ export default function FractionalCmoPage() {
               },
               {
                 title: "Strategic Marketing Leadership",
-                body: "Building a solid <strong>marketing strategy</strong> requires understanding your competitive position and the specific <strong>marketing tactics</strong> that produce results for your trade and service area. Strategic <strong>marketing leadership</strong> begins with a full audit of your current marketing efforts: what channels you are running, where <strong>website visitors</strong> are coming from, where customer acquisition costs are too high, and where <strong>marketing ROI</strong> is lowest. A <strong>fractional CMO</strong> does not add budget to a broken pipeline. They identify what is working, what is wasting money, and what is missing entirely.",
+                body: "Building an effective <strong>marketing program</strong> requires understanding your competitive position and the specific <strong>marketing tactics</strong> that produce results for your trade and service area. Strategic <strong>marketing leadership</strong> begins with a full audit of your current marketing efforts: what channels you are running, where <strong>website visitors</strong> are coming from, where customer acquisition costs are too high, and where <strong>marketing ROI</strong> is lowest. A <strong>fractional CMO</strong> does not add budget to a broken pipeline. They identify what is working, what is wasting money, and what is missing entirely.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -487,12 +536,12 @@ export default function FractionalCmoPage() {
               {
                 number: "01",
                 title: "Accountability to Business Objectives",
-                body: "When home service companies work with traditional marketing agencies, they get campaign management and monthly reports. They do not get a chief marketing officer sitting on their leadership team, making decisions about how to allocate marketing expenditure across channels, or someone developing marketing strategies that connect digital marketing to revenue outcomes. A fractional CMO agency closes that gap.",
+                body: "When home service companies work with traditional agencies, they get campaign management and monthly reports. They do not get a chief marketing officer embedded in their operations, making decisions about how to allocate marketing expenditure across channels, or someone developing approaches that connect digital marketing to revenue outcomes. A fractional CMO agency closes that gap.",
               },
               {
                 number: "02",
                 title: "C-Level Marketing Expertise at a Fraction of the Cost",
-                body: "Fractional CMO services are the cost effective solution for home service companies that need executive level marketing leadership without the cost of a full-time hire. A full-time chief marketing officer commands $200,000 or more in annual compensation. Fractional CMO services deliver c-level marketing expertise at a fraction of that investment, with a proven track record in the specific industry that matters to your business.",
+                body: "The fractional CMO model is the cost effective solution for home service companies that need executive level marketing leadership without the cost of a full-time hire. A full-time chief marketing officer commands $200,000 or more in annual compensation. This delivers c-level marketing expertise at a fraction of that investment, with a proven track record in the specific industry that matters to your business.",
               },
               {
                 number: "03",
@@ -502,7 +551,7 @@ export default function FractionalCmoPage() {
               {
                 number: "04",
                 title: "A Leadership Team, Not a Solo Consultant",
-                body: "A fractional CMO agency like Sequoia GEO brings a leadership team with specialized expertise across paid media, SEO, and analytics alongside the strategic direction of a seasoned chief marketing officer. Independent consultants with high level marketing expertise run into bandwidth constraints when managing marketing initiatives across multiple channels simultaneously. A fractional CMO agency has the depth to execute as well as lead.",
+                body: "A fractional CMO agency like Sequoia GEO brings specialized expertise across paid media, SEO, and analytics alongside the strategic direction of a seasoned chief marketing officer. Independent consultants with high level marketing expertise run into bandwidth constraints when managing marketing initiatives across multiple channels simultaneously. A fractional CMO agency has the depth to execute as well as lead.",
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -531,15 +580,23 @@ export default function FractionalCmoPage() {
               },
               {
                 q: "What does a fractional CMO agency provide that an independent consultant does not?",
-                a: "A fractional CMO agency brings a full marketing leadership team rather than a single practitioner. When you hire a fractional CMO through an agency, you get strategic marketing leadership plus execution capacity. Independent consultants often have deep industry expertise but limited bandwidth to oversee marketing initiatives, manage vendors, and develop marketing strategies simultaneously. A fractional CMO agency closes that gap by pairing senior marketing leadership with a team that can execute on the strategy.",
+                a: "A fractional CMO agency brings a full marketing leadership team rather than a single practitioner. When you hire a fractional CMO through an agency, you get strategic marketing leadership plus execution capacity. Independent consultants often have deep industry expertise but limited bandwidth to oversee marketing initiatives, manage vendors, and develop them simultaneously. A fractional CMO agency closes that gap by pairing senior marketing leadership with a team that can execute on the strategy.",
               },
               {
                 q: "How do fractional CMO services differ from outsourced marketing strategy services?",
-                a: "Outsourced marketing strategy services typically deliver a plan and exit. Fractional CMO services deliver ongoing executive level marketing leadership and accountability. A fractional chief marketing officer stays involved through implementation, measuring marketing effectiveness, adjusting marketing tactics based on results, and ensuring that the go to market strategy is actually producing customer acquisition outcomes. It is a leadership relationship, not a project engagement.",
+                a: "Outsourced marketing strategy services typically deliver a plan and exit. A fractional chief marketing officer delivers ongoing executive level marketing leadership and accountability. A fractional chief marketing officer stays involved through implementation, measuring marketing effectiveness, adjusting marketing tactics based on results, and ensuring that the go to market strategy is actually producing customer acquisition outcomes. It is a leadership relationship, not a project engagement.",
               },
               {
                 q: "What business objectives can fractional CMO services help a home service company achieve?",
                 a: "The business objectives fractional CMO services are most commonly engaged to achieve include lowering customer acquisition costs, increasing booking rate from digital marketing leads, building a go to market strategy for a new service area, improving marketing metrics and attribution so leadership can make better budget decisions, and accelerating growth into a new customer segment or geography. In each case, the fractional CMO provides strategic guidance, oversees marketing initiatives, and is accountable to outcomes rather than activity.",
+              },
+              {
+                q: "What is the difference between a senior level marketing executive and a fractional CMO?",
+                a: "A senior level executive in a full-time CMO role is employed by a single company, commands a six-figure salary, and typically manages a large internal marketing team. A senior level marketing executive serving in a fractional CMO role works on a contract basis across a small number of clients, which gives businesses access to c-level marketing expertise without the overhead of a full-time hire. For most home service companies between $2M and $15M in revenue, the fractional model is the right fit: you get the strategic oversight and marketing depth of a full-time CMO, with the flexibility to scale the engagement as your business grows.",
+              },
+              {
+                q: "How many clients does a fractional CMO typically work with at one time?",
+                a: "A fractional CMO typically works with a small number of clients — usually three to six — at any given time. That structure is intentional. Working with multiple companies across different markets develops a depth of strategic insight that a single-company hire rarely achieves, and it keeps the engagement manageable enough to provide genuine marketing leadership rather than surface-level consultation. For home service companies, that breadth means your fractional CMO is a marketing expert who has already encountered your specific challenges, whether that involves customer behavior patterns, seasonal demand spikes, or competitive pressure in your service trade, and has tested solutions across different businesses and markets.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
