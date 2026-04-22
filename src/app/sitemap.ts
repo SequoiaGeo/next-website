@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { cities } from "./hvac-marketing/city-data";
 
 const BASE_URL = "https://www.sequoiageo.com";
 
@@ -30,78 +31,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
 
   const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: BASE_URL,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 1.0,
-    },
-    {
-      url: `${BASE_URL}/about-sequoia-geo`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/services`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/hvac-seo`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/plumbing-seo`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/roofing-seo`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/restoration-seo`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${BASE_URL}/fractional-cmo`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${BASE_URL}/ai-automation`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${BASE_URL}/case-studies`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/contact`,
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.7,
-    },
+    // Core
+    { url: BASE_URL, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
+    { url: `${BASE_URL}/about-sequoia-geo`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/case-studies`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+
+    // Service pages
+    { url: `${BASE_URL}/hvac-seo`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/plumbing-seo`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/roofing-seo`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/restoration-seo`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/lsa-management`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/fractional-cmo`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/ai-automation`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/websites`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    // Free guides
+    { url: `${BASE_URL}/lsa-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/ai-website-seo-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/contractors-guide-ai-search`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    // Statistics pages
+    { url: `${BASE_URL}/hvac-statistics`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
+    { url: `${BASE_URL}/plumbing-statistics`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
+    { url: `${BASE_URL}/local-services-ads-statistics`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
+
+    // Comparison pages
+    { url: `${BASE_URL}/best-hvac-marketing-agencies`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/best-plumbing-marketing-agencies`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/best-roofing-marketing-agencies`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+
+    // City marketing index
+    { url: `${BASE_URL}/hvac-marketing`, lastModified: now, changeFrequency: "monthly", priority: 0.78 },
   ];
 
   const blogPages: MetadataRoute.Sitemap = blogSlugs.map(({ slug, lastModified }) => ({
@@ -111,5 +75,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticPages, ...blogPages];
+  const cityPages: MetadataRoute.Sitemap = cities.map((city) => ({
+    url: `${BASE_URL}/hvac-marketing/${city.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.72,
+  }));
+
+  return [...staticPages, ...blogPages, ...cityPages];
 }
