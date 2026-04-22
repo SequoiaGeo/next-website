@@ -370,35 +370,33 @@ export default function LsaManagementPage() {
           </h2>
           <div className="space-y-5 text-[#C8EDD2]/80 text-base leading-relaxed max-w-3xl">
             <p>
-              Effective LSA management requires ongoing attention across multiple areas simultaneously. A local
-              services program is not a set-it-and-forget advertising campaign. Local services management is an
-              active process that requires weekly budget adjustments, systematic lead dispute submissions, and
-              ongoing profile optimization to maintain strong Google Local Services Ads performance for your
-              home service business.
+              Effective LSA management requires ongoing attention across multiple areas simultaneously. An LSA
+              program is not a set-it-and-forget advertising campaign. Google Local Services Ads management is
+              an active process that requires weekly budget adjustments, systematic lead dispute submissions,
+              and ongoing profile optimization to maintain strong performance for your home service business.
             </p>
             <p>
-              Home service companies running local services ads compete for a limited number of positions in
-              the Google Local Services unit. The ads visible to customers searching Google depend on your
-              review velocity, response speed, service area alignment, and account standing. An LSA management
-              company that understands these ranking factors helps local service businesses consistently
-              capture more of the high-intent customers searching for HVAC, plumbing, electrical, and roofing
-              services in their specific market.
+              Home service companies running Google ads compete for a limited number of positions in the LSA
+              unit. The ads visible to customers searching Google depend on your review velocity, response
+              speed, profile alignment, and account standing. An LSA management company that understands
+              these ranking factors helps local service businesses consistently capture more of the high-intent
+              customers searching for HVAC, plumbing, electrical, and roofing services in their market.
             </p>
             <p>
-              Local services management without dispute tracking is the most common failure mode for home
-              service companies managing their own ads accounts. Google gives businesses a 30-day window to
+              LSA management without dispute tracking is the most common failure mode for home service
+              companies managing their own Google ads accounts. Google gives businesses a 30-day window to
               dispute leads that do not qualify as legitimate customer contacts. Every undisputed junk lead
-              costs your company real money. A systematic local services dispute process typically recovers
-              15 to 25 percent of total ad spend, which directly reduces your cost per booked job and
-              improves the return your business gets from Google ads.
+              costs your company real money. A systematic LSA dispute process typically recovers 15 to 25
+              percent of total ad spend, which directly reduces your cost per booked job and improves the
+              return your business gets from Google Local Services Ads.
             </p>
             <p>
-              The most valuable thing a local services management partner provides is the connection between
-              your Google Local Services Ads account and your actual revenue. Most home service businesses
-              see their local services spend in one bucket and their booked jobs in another. A properly
-              managed LSA program connects these two data sources so that you know exactly how much revenue
-              your local services investment is generating and whether increasing your ads budget would
-              produce more booked jobs or just more junk contacts from Google.
+              The most valuable thing an LSA management partner provides is the connection between your
+              Google Local Services Ads account and your actual revenue. Most home service businesses see
+              their LSA spend in one bucket and their booked jobs in another. A properly managed LSA program
+              connects these two data sources so that you know exactly how much revenue your Google ads
+              investment is generating and whether increasing your budget would produce more booked jobs or
+              just more junk contacts.
             </p>
           </div>
         </div>
@@ -408,53 +406,51 @@ export default function LsaManagementPage() {
       <section className="bg-[#fafaf8] py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <h2 className="text-2xl font-extrabold text-[#1a1a1a] mb-6">
-            Local Services Ads Management by Trade
+            Google Local Services Ads Management by Trade
           </h2>
           <p className="text-base text-gray-600 leading-relaxed mb-8 max-w-3xl">
-            Local services advertising performs differently depending on the trade and the local market.
-            HVAC, plumbing, electrical, and roofing companies all face different lead costs, dispute rates,
-            and seasonal patterns. Effective local services management accounts for these differences when
-            setting ad budgets, adjusting service areas, and evaluating lead quality for each home service
-            business. A local services management partner with experience across multiple trades brings
-            this context to every Google ads decision.
+            LSA performance differs significantly by trade and market. HVAC, plumbing, electrical, and
+            roofing companies all face different lead costs, dispute rates, and seasonal patterns. Effective
+            LSA management accounts for these differences when setting ad budgets, adjusting coverage zones,
+            and evaluating lead quality for each home service business. An LSA management partner with
+            experience across multiple trades brings this context to every Google ads decision.
           </p>
           <div className="space-y-5 text-base text-gray-600 leading-relaxed">
             <p>
-              HVAC companies running local services ads have the most pronounced seasonal swings of any home
-              service trade. Local services management for HVAC businesses means cutting ad budget in shoulder
+              HVAC companies running Google Local Services Ads have the most pronounced seasonal swings of
+              any home service trade. LSA management for HVAC businesses means cutting ad budget in shoulder
               seasons when customer demand falls and maximizing spend during peak cooling and heating months.
-              Google&rsquo;s local services algorithm rewards consistent response time, so an HVAC company
-              that answers every local services call quickly during peak season builds account history that
-              maintains strong positioning during slower periods. LSA management that ignores seasonality
-              costs HVAC businesses significant ad spend on low-converting customers.
+              Google&rsquo;s LSA algorithm rewards consistent response time, so an HVAC company that answers
+              every Google ad call quickly during peak season builds account history that maintains strong
+              positioning during slower periods. LSA management that ignores seasonality costs HVAC companies
+              significant ad spend on low-converting customers.
             </p>
             <p>
-              Plumbing contractors often see local services leads that are genuinely urgent. Local services
-              ads for plumbing businesses attract high-intent customers who are ready to book immediately.
-              This makes plumbing local services programs well-suited to companies with strong customer
-              service teams who can convert inbound local services calls into booked jobs quickly. A plumbing
-              business that responds to local services leads within a few minutes converts a much higher
-              percentage of those calls than one that follows up hours later. LSA management for plumbing
-              companies focuses on response speed, Google review velocity, and dispute management for
-              out-of-area contacts.
+              Plumbing contractors often see LSA leads that are genuinely urgent. Google ads for plumbing
+              businesses attract high-intent customers who are ready to book immediately. This makes plumbing
+              LSA programs well-suited to companies with strong customer service teams who can convert
+              inbound calls into booked jobs quickly. A plumbing business that responds to Google ad leads
+              within a few minutes converts a much higher percentage of those calls than one that follows
+              up hours later. LSA management for plumbing companies focuses on response speed, Google review
+              velocity, and dispute management for out-of-territory contacts.
             </p>
             <p>
-              Electrical and roofing contractors face different local services challenges. Roofing local
-              services management often requires seasonal ad budget adjustments after storm events, while
-              electrical local services management needs to carefully define service areas to match where
-              licensed electricians can legally operate. Both trades benefit from strong Google review
-              programs. Local services customers comparing companies in the Google Local Services unit
-              click on businesses with more reviews and better ratings. Review management and local
-              services management are inseparable parts of a complete Google local services strategy.
+              Electrical and roofing contractors face different LSA challenges. Roofing LSA management often
+              requires seasonal ad budget adjustments after storm events, while electrical LSA management
+              needs to carefully define coverage zones to match where licensed electricians can legally
+              operate. Both trades benefit from strong Google review programs. Customers comparing companies
+              in the Google ads unit click on businesses with more reviews and better ratings. Review
+              management and LSA management are inseparable parts of a complete Google advertising strategy
+              for home service companies.
             </p>
             <p>
-              Effective local services management across all trades requires the same core disciplines:
-              clean dispute management, fast customer response, a well-defined service area, and a
-              systematic approach to generating Google reviews. A local services management company with
-              expertise across multiple home service trades applies this foundation to your specific
-              business and market. The Google Local Services Ads platform rewards active management.
-              Businesses that treat local services ads as a passive channel consistently pay more per
-              booked job than companies working with a focused LSA management partner.
+              Effective LSA management across all trades requires the same core disciplines: clean dispute
+              management, fast customer response, a well-defined coverage zone, and a systematic approach to
+              generating Google reviews. An LSA management company with expertise across multiple home
+              service trades applies this foundation to your specific business and market. The Google Local
+              Services Ads platform rewards active management. Businesses that treat their Google ads as a
+              passive channel consistently pay more per booked job than companies working with a focused LSA
+              management partner.
             </p>
           </div>
         </div>
