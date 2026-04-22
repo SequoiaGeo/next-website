@@ -369,30 +369,34 @@ export default function LsaManagementPage() {
             How LSA Management Works for Home Service Companies
           </h2>
           <div className="space-y-5 text-[#C8EDD2]/80 text-base leading-relaxed max-w-3xl">
+            <h3 className="text-lg font-bold text-white mt-2">LSA Is an Active Program, Not a Campaign</h3>
             <p>
               Effective LSA management requires ongoing attention across multiple areas simultaneously. An LSA
-              program is not a set-it-and-forget advertising campaign. Google Local Services Ads management is
-              an active process that requires weekly budget adjustments, systematic lead dispute submissions,
+              program is not a set-it-and-forget advertising campaign. LSA management is an active process
+              that requires weekly budget adjustments, systematic lead dispute submissions,
               and ongoing profile optimization to maintain strong performance for your home service business.
             </p>
+            <h3 className="text-lg font-bold text-white mt-2">How LSA Rankings Work</h3>
             <p>
               Home service companies running Google ads compete for a limited number of positions in the LSA
               unit. The ads visible to customers searching Google depend on your review velocity, response
               speed, profile alignment, and account standing. An LSA management company that understands
-              these ranking factors helps local service businesses consistently capture more of the high-intent
+              these ranking factors helps local service businesses book more jobs from high-intent
               customers searching for HVAC, plumbing, electrical, and roofing services in their market.
             </p>
+            <h3 className="text-lg font-bold text-white mt-2">Why LSA Dispute Management Matters</h3>
             <p>
               LSA management without dispute tracking is the most common failure mode for home service
               companies managing their own Google ads accounts. Google gives businesses a 30-day window to
               dispute leads that do not qualify as legitimate customer contacts. Every undisputed junk lead
               costs your company real money. A systematic LSA dispute process typically recovers 15 to 25
               percent of total ad spend, which directly reduces your cost per booked job and improves the
-              return your business gets from Google Local Services Ads.
+              return your business gets from your LSA investment.
             </p>
+            <h3 className="text-lg font-bold text-white mt-2">Connecting LSA Spend to Booked Revenue</h3>
             <p>
               The most valuable thing an LSA management partner provides is the connection between your
-              Google Local Services Ads account and your actual revenue. Most home service businesses see
+              LSA account activity and your actual revenue. Most home service businesses see
               their LSA spend in one bucket and their booked jobs in another. A properly managed LSA program
               connects these two data sources so that you know exactly how much revenue your Google ads
               investment is generating and whether increasing your budget would produce more booked jobs or
@@ -413,9 +417,10 @@ export default function LsaManagementPage() {
             roofing companies all face different lead costs, dispute rates, and seasonal patterns. Effective
             LSA management accounts for these differences when setting ad budgets, adjusting coverage zones,
             and evaluating lead quality for each home service business. An LSA management partner with
-            experience across multiple trades brings this context to every Google ads decision.
+            experience across multiple trades brings this context to every Google ads decision and helps home service companies book more jobs without increasing ad spend.
           </p>
           <div className="space-y-5 text-base text-gray-600 leading-relaxed">
+            <h3 className="text-xl font-bold text-[#1a1a1a] mt-4">LSA Management for HVAC Companies</h3>
             <p>
               HVAC companies running Google Local Services Ads have the most pronounced seasonal swings of
               any home service trade. LSA management for HVAC businesses means cutting ad budget in shoulder
@@ -425,6 +430,7 @@ export default function LsaManagementPage() {
               positioning during slower periods. LSA management that ignores seasonality costs HVAC companies
               significant ad spend on low-converting customers.
             </p>
+            <h3 className="text-xl font-bold text-[#1a1a1a] mt-4">LSA Management for Plumbing Contractors</h3>
             <p>
               Plumbing contractors often see LSA leads that are genuinely urgent. Google ads for plumbing
               businesses attract high-intent customers who are ready to book immediately. This makes plumbing
@@ -434,6 +440,7 @@ export default function LsaManagementPage() {
               up hours later. LSA management for plumbing companies focuses on response speed, Google review
               velocity, and dispute management for out-of-territory contacts.
             </p>
+            <h3 className="text-xl font-bold text-[#1a1a1a] mt-4">LSA Management for Electrical and Roofing</h3>
             <p>
               Electrical and roofing contractors face different LSA challenges. Roofing LSA management often
               requires seasonal ad budget adjustments after storm events, while electrical LSA management
@@ -443,6 +450,7 @@ export default function LsaManagementPage() {
               management and LSA management are inseparable parts of a complete Google advertising strategy
               for home service companies.
             </p>
+            <h3 className="text-xl font-bold text-[#1a1a1a] mt-4">Core LSA Management Disciplines Across All Trades</h3>
             <p>
               Effective LSA management across all trades requires the same core disciplines: clean dispute
               management, fast customer response, a well-defined coverage zone, and a systematic approach to
