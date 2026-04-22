@@ -100,7 +100,7 @@ export default function HvacMarketingIndexPage() {
             {[
               {
                 title: "Local SEO",
-                body: "Local SEO puts HVAC companies at the top of search engine results when homeowners search for HVAC services in their area. HVAC digital marketing built around local SEO and search engine optimization drives more qualified HVAC leads than almost any other digital marketing channel for HVAC contractors and HVAC businesses in mid-size markets. Search engines reward HVAC services companies that build consistent local authority over time.",
+                body: "Local SEO puts HVAC companies at the top of search engine results when homeowners search for HVAC services in their area. HVAC digital marketing built around local SEO and search engine optimization drives more qualified contractor calls than almost any other digital marketing channel for HVAC contractors and HVAC businesses in mid-size markets. Search engines reward HVAC services companies that build consistent local authority over time.",
               },
               {
                 title: "Google Ads and SEO PPC",
@@ -170,11 +170,23 @@ export default function HvacMarketingIndexPage() {
                 Traditional marketing approaches built for other industries rarely translate to the
                 seasonal, geography-dependent nature of HVAC business marketing.
               </p>
+              <p>
+                The HVAC marketing industry continues to evolve, and customized strategies for HVAC
+                advertising are now within reach for mid-size HVAC businesses that were once priced
+                out of a specialized marketing agency. Working with the right agency partner brings
+                specialized expertise in HVAC social media marketing, HVAC marketing campaigns, and
+                brand development that generic digital marketing programs cannot match. Innovative
+                strategies from an internet marketing agency focused on the HVAC marketing industry
+                give contractors the HVAC marketing ideas and marketing company support they need to
+                compete in crowded markets. HVAC businesses that track how much revenue each
+                marketing investment generates keep customized strategies funded and underperforming
+                channels trimmed.
+              </p>
             </div>
             <div className="space-y-4">
               {[
                 { title: "HVAC industry specialization", desc: "HVAC marketing agencies that focus exclusively on HVAC businesses and home service companies understand seasonal demand patterns, service territory limits, and how HVAC marketing strategies differ from general marketing approaches that work for other industries." },
-                { title: "Transparent HVAC lead reporting", desc: "The best HVAC marketing agencies report on HVAC leads, booked calls, and cost per acquisition. Marketing services without clear attribution leave HVAC companies guessing which marketing campaigns and advertising campaigns are producing real revenue." },
+                { title: "Transparent HVAC lead reporting", desc: "The best HVAC marketing agencies report on booked calls, revenue generated, and cost per acquisition. Marketing services without clear attribution leave HVAC companies guessing which marketing campaigns and advertising campaigns are producing real revenue." },
                 { title: "Market-specific HVAC marketing", desc: "Effective HVAC marketing adapts to local competition and local demand. The approach that attracts customers in a saturated major market differs from the HVAC digital marketing approach that builds authority in an underserved mid-size city." },
                 { title: "Full-channel marketing services", desc: "Top HVAC marketing agencies combine SEO PPC, Google Ads, social media marketing, email marketing, content marketing, and reputation management into one coordinated HVAC marketing program that produces consistent lead flow for HVAC contractors and HVAC businesses." },
               ].map((item) => (
@@ -198,7 +210,7 @@ export default function HvacMarketingIndexPage() {
             {[
               {
                 q: "What digital marketing channels generate the most HVAC leads?",
-                a: "For most HVAC businesses, SEO PPC combinations produce the highest HVAC lead volume. Google Ads and Google Local Services Ads capture homeowners actively searching for HVAC services and HVAC contractors. Local SEO builds organic lead generation that compounds over time without ongoing ad spend. Social media marketing and email marketing support brand awareness and repeat customer engagement. The most effective HVAC marketing approach balances all of these channels based on your market, competition level, and marketing budget. HVAC companies that diversify across multiple digital marketing channels and HVAC digital marketing tactics outperform those that depend on a single source of HVAC leads.",
+                a: "For most HVAC businesses, SEO PPC combinations produce the highest HVAC lead volume. Google Ads and Google Local Services Ads capture homeowners actively searching for HVAC services and HVAC contractors. Local SEO builds organic lead generation that compounds over time without ongoing ad spend. Social media marketing and email marketing support brand awareness and repeat customer engagement. The most effective HVAC marketing approach balances all of these channels based on your market, competition level, and marketing budget. HVAC companies that diversify across multiple digital marketing channels and HVAC digital marketing tactics outperform those that depend on a single digital marketing source for new calls.",
               },
               {
                 q: "How much should HVAC companies spend on marketing?",
