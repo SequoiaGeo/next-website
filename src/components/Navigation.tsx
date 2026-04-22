@@ -32,6 +32,7 @@ const resourceLinks = [
       { label: "Best HVAC Marketing Agencies", href: "/best-hvac-marketing-agencies" },
       { label: "Best Plumbing Marketing Agencies", href: "/best-plumbing-marketing-agencies" },
       { label: "Best Roofing Marketing Agencies", href: "/best-roofing-marketing-agencies" },
+      { label: "Leaving Your Marketing Agency?", href: "/leaving-my-marketing-agency" },
     ],
   },
 ];

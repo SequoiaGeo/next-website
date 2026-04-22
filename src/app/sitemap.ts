@@ -66,6 +66,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // City marketing index
     { url: `${BASE_URL}/hvac-marketing`, lastModified: now, changeFrequency: "monthly", priority: 0.78 },
+
+    // Conversion / intent pages
+    { url: `${BASE_URL}/leaving-my-marketing-agency`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
   ];
 
   const blogPages: MetadataRoute.Sitemap = blogSlugs.map(({ slug, lastModified }) => ({
