@@ -268,7 +268,7 @@ export default function HvacSeoPage() {
               What Most HVAC Companies Get Wrong About Local Search
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              After working with HVAC contractors across competitive markets, these are the patterns that consistently hold companies back from ranking where they should.
+              After working with HVAC companies across competitive markets, these are the patterns that consistently hold businesses back from ranking where they should.
             </p>
           </div>
 
@@ -279,8 +279,8 @@ export default function HvacSeoPage() {
                 body: "An HVAC business servicing eight cities should have eight dedicated location pages with unique content and local keywords. Most HVAC companies use one generic service area page that does not rank. Specific web page content built around local search intent does.",
               },
               {
-                title: "Poor Google Reviews Velocity",
-                body: "Google&rsquo;s algorithms weigh review recency heavily. An HVAC business with 200 reviews where 180 are two years old will be outranked by a competitor with 80 reviews and a steady drip of new ones. Online reputation management is an active process, not a setup task.",
+                title: "Poor Online Reviews Velocity",
+                body: "Google&rsquo;s algorithms weigh review recency heavily. An HVAC business with 200 online reviews where 180 are two years old will be outranked by a competitor with 80 online reviews and a steady drip of new ones. Reputation management is an active process, not a setup task. It includes soliciting fresh reviews after every completed job, responding to negative feedback, and monitoring your Google Maps rankings for review-driven drops.",
               },
               {
                 title: "No Real Keyword Research",
@@ -317,7 +317,7 @@ export default function HvacSeoPage() {
               HVAC SEO Tips That Actually Move Rankings
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              These come from managing local search programs for HVAC contractors across California, not from generic SEO blogs.
+              These come from managing local search and online marketing programs for HVAC businesses across California, not from generic SEO blogs.
             </p>
           </div>
 
@@ -341,7 +341,7 @@ export default function HvacSeoPage() {
               {
                 number: "04",
                 title: "Link Building Is Where Most HVAC Companies Have the Biggest Gap",
-                body: "Off-site SEO, specifically link building, is what separates HVAC companies that rank from those that don&rsquo;t. High quality backlinks from supplier directories, local business associations, trade publications, and review platforms build the domain authority that local search results reward. Most HVAC companies have never pursued a single link building opportunity despite dozens being available to them.",
+                body: "Off-site SEO is what separates HVAC companies that rank from those that don&rsquo;t. High-quality backlinks from supplier directories, local business associations, trade publications, and home service marketing services platforms build the domain authority that local search results reward. Most home service contractors have never pursued a single backlink opportunity despite dozens being available to them. Using keyword research tools to find link gaps versus competitors is one of the fastest ways to identify where to focus off-site efforts first.",
               },
             ].map((item) => (
               <div key={item.number} className="flex gap-6 rounded-2xl border border-gray-200 bg-white p-7">
@@ -378,11 +378,11 @@ export default function HvacSeoPage() {
               },
               {
                 title: "Months Two and Three: On-Page and Content",
-                body: "Once the audit is complete, on-page SEO work begins on your most important service pages. For HVAC businesses, that means dedicated pages for AC repair, heating repair, system replacement, maintenance agreements, and location-specific landing pages for every city you serve. Each page targets specific keyword rankings and answers the questions your potential customers are actually searching. This phase typically produces the first organic search results movement.",
+                body: "Once the audit is complete, on-page SEO work begins on your most important pages. For HVAC businesses, that means dedicated landing pages for AC repair, heating repair, system replacement, maintenance agreements, and location-specific pages for every city you serve. Each page targets specific keyword rankings and answers the questions your potential customers are actually searching. This phase typically produces the first organic search results movement.",
               },
               {
                 title: "Ongoing: Authority and Local Signals",
-                body: "Maintaining and growing search results positions for HVAC companies requires continuous work: link building from relevant local sources, review generation tied to completed jobs, Google Business Profile updates, and technical health monitoring. A successful HVAC SEO campaign is not set-and-forget. Search engines update their algorithms regularly, and the content that ranked 18 months ago may need updating to hold its position against more active competitors.",
+                body: "Maintaining and growing search results positions for HVAC companies requires continuous work: acquiring backlinks from relevant local sources, review generation tied to completed jobs, Google Business Profile updates, and technical health monitoring. A successful HVAC SEO campaign is not set-and-forget. Search engines update their algorithms regularly, and the content that ranked 18 months ago may need updating to hold its position against more active competitors.",
               },
               {
                 title: "Monthly: Reporting and Course Corrections",
@@ -423,7 +423,7 @@ export default function HvacSeoPage() {
               },
               {
                 q: "Should HVAC companies use social media for lead generation?",
-                a: "Social media is rarely a primary lead generation channel for HVAC companies, but it plays a supporting role many contractors underestimate. Social media posts create website link signals that influence domain authority, and consistent activity builds the online reputation profile that generates more Google reviews. Treat social media as a brand signal and online reputation channel rather than a direct source of phone calls. Most HVAC clients found through social media convert at lower rates than organic search, but the indirect SEO benefits compound over time.",
+                a: "Social media marketing is rarely a primary lead generation channel for HVAC companies, but it plays a supporting role many contractors underestimate. Social media marketing posts create website link signals that influence domain authority, and consistent activity builds the online reputation profile that generates more Google reviews. Treat social media marketing as a brand signal and reputation channel rather than a direct source of phone calls. Most HVAC clients found through social channels convert at lower rates than organic search, but the indirect SEO benefits compound over time.",
               },
               {
                 q: "What HVAC keywords should I be targeting?",
@@ -464,15 +464,15 @@ export default function HvacSeoPage() {
               },
               {
                 title: "On-Page SEO and Service Pages",
-                body: "On-page SEO for HVAC websites means building dedicated service pages for every major service: air conditioning repair, furnace replacement, heat pump installation, duct cleaning, and maintenance agreements. Each service page targets specific keywords and answers the questions homeowners search before calling. Thin or generic service pages are the most common reason HVAC contractors fail to rank for high-value keywords.",
+                body: "On-page SEO for HVAC websites means building dedicated landing pages for every major service: air conditioning repair, furnace replacement, heat pump installation, duct cleaning, and maintenance agreements. Each page targets specific keywords and answers the questions homeowners search before calling. Thin or generic service pages are the most common reason HVAC contractors fail to rank for high-value keywords.",
               },
               {
                 title: "Technical SEO and Website Performance",
                 body: "Technical SEO covers the infrastructure that search engines use to crawl, index, and rank your web pages. For HVAC companies, this includes website speed optimization, mobile page speed, Core Web Vitals, schema markup for local businesses, and proper site architecture. Website speed matters specifically because most emergency HVAC searches happen on mobile — a slow-loading HVAC website loses potential customers before they read a single line. Search engines use page experience signals as ranking factors, and a fast, well-structured HVAC website tells search engines your business deserves to outrank competitors with slower, less organized sites.",
               },
               {
-                title: "Off-Page SEO, Link Building, and Online Reputation",
-                body: "Off-page SEO for HVAC companies means earning high-quality backlinks from local directories, industry associations, home service platforms, and local media. Link building combined with consistent online reviews builds the domain authority that allows HVAC contractors to rank above competitors who have stronger on-page content but weaker off-page signals. Online reputation and review management are also off-page factors that influence local search rankings.",
+                title: "Off-Page SEO and Online Reputation Management",
+                body: "Off-page SEO for HVAC companies means earning high-quality backlinks from local directories, industry associations, home service platforms, and local media. Consistent online reviews and reputation management build the domain authority that allows HVAC businesses to outrank competitors with stronger on-page content but weaker off-page signals. Google Maps rankings and local pack positions are directly influenced by review velocity, citation consistency, and the quality of your online marketing presence across third-party platforms.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -501,8 +501,8 @@ export default function HvacSeoPage() {
               HVAC SEO Strategy: What Your Website Needs to Rank
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Ranking in local search results for HVAC companies requires a coordinated approach across
-              keyword research, content, technical performance, and reputation signals.
+              Ranking in local search results requires a coordinated approach across
+              keyword research, content, technical performance, and reputation signals. These are the four areas where HVAC marketing services have the most measurable impact.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -520,7 +520,7 @@ export default function HvacSeoPage() {
               {
                 number: "03",
                 title: "Online Reviews and Local Authority",
-                body: "Online reviews are both a ranking signal and a conversion signal. HVAC companies with consistent review velocity rank higher in the Map Pack and convert more clicks to phone calls. A review generation system built into your dispatch workflow, where techs trigger review requests after every closed job, is the most reliable way to build the online reputation that local search rewards. Review quantity, recency, and response rate all factor into local search rankings.",
+                body: "Online reviews are both a ranking signal and a conversion signal. HVAC businesses with consistent review velocity rank higher in the Map Pack and convert more clicks to phone calls. A review generation system built into your dispatch workflow, where techs trigger review requests after every closed job, is the most reliable way to build the online reputation that local search rewards. Review quantity, recency, and response rate all factor into local search rankings and directly influence reputation management outcomes.",
               },
               {
                 number: "04",
@@ -550,11 +550,11 @@ export default function HvacSeoPage() {
             {[
               {
                 q: "What is the most important ranking factor for HVAC local SEO?",
-                a: "Google Business Profile optimization is the single most impactful lever for HVAC local SEO in most markets. A fully optimized GBP with consistent reviews, accurate service categories, and regular posts drives Map Pack visibility that captures the majority of clicks on high-intent HVAC queries. Combined with strong on-page SEO on your service pages and consistent link building, GBP optimization is where most HVAC contractors should focus their SEO investment first.",
+                a: "Google Business Profile optimization is the single most impactful lever for HVAC local SEO in most markets. A fully optimized GBP with consistent online reviews, accurate service categories, and regular posts drives Map Pack visibility that captures the majority of clicks on high-intent HVAC queries. Combined with strong on-page SEO on your web pages and consistent backlink acquisition, GBP optimization is where most HVAC businesses with a local SEO focus should invest first.",
               },
               {
                 q: "How does link building work for HVAC companies?",
-                a: "Link building for HVAC companies focuses on acquiring high-quality backlinks from local business directories, chamber of commerce listings, home service review platforms, supplier websites, and local media coverage. Each backlink signals to Google that your website is a credible local business. HVAC companies rarely need links from national publications. What matters for local search rankings is the quality and relevance of links from sources that Google associates with your service area.",
+                a: "Link building for HVAC companies means acquiring high-quality backlinks from local business directories, chamber of commerce listings, home service review platforms, supplier websites, and local media. Each reference builds domain authority and improves Google Maps rankings and local search positions over time. What matters is the quality and relevance of online marketing signals from sources that Google associates with your service area. HVAC businesses with a clear local SEO focus consistently outperform competitors who invest only in on-page changes without building off-site authority.",
               },
               {
                 q: "What do most HVAC companies get wrong about SEO?",
@@ -579,6 +579,27 @@ export default function HvacSeoPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Switching agencies callout */}
+      <section className="bg-[#fafaf8] border-y border-gray-200 py-12">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-wider text-[#1A5C3A] mb-1">Already with an agency?</p>
+            <p className="text-base text-gray-700">
+              If your current HVAC marketing isn&rsquo;t producing, we can audit what you own and what a clean transition looks like before you commit to anything.
+            </p>
+          </div>
+          <Link
+            href="/leaving-my-marketing-agency"
+            className="shrink-0 inline-flex items-center gap-2 rounded-lg border border-[#1A5C3A] px-6 py-3 text-sm font-semibold text-[#1A5C3A] hover:bg-[#1A5C3A] hover:text-white transition-colors"
+          >
+            Thinking about switching?
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 

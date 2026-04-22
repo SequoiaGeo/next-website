@@ -513,6 +513,7 @@ export default function RoofingSeoPage() {
               { label: "HVAC SEO", href: "/hvac-seo" },
               { label: "Plumbing SEO", href: "/plumbing-seo" },
               { label: "Fractional CMO", href: "/fractional-cmo" },
+              { label: "Leaving Your Agency?", href: "/leaving-my-marketing-agency" },
             ].map((link) => (
               <Link
                 key={link.href}
