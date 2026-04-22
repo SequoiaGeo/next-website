@@ -318,11 +318,11 @@ export default function PlumbingSeoPage() {
               },
               {
                 title: "Keyword Research Across the Full Job Mix",
-                body: "Emergency queries like &ldquo;burst pipe repair&rdquo; convert at different rates than scheduled service queries. Water heater replacement keywords attract a different customer than drain cleaning keywords. Plumbing SEO that maps each relevant keyword to the right service page, across emergency, job-type, location, and problem-based queries, builds organic traffic that compounds year over year.",
+                body: "Emergency queries like &ldquo;burst pipe repair&rdquo; convert at different rates than scheduled service queries. Water heater replacement keywords attract a different customer than drain cleaning keywords. Plumbing SEO that maps each relevant keyword to the right page, across emergency, job-type, location, and problem-based queries, builds organic traffic across all your services that compounds year over year.",
               },
               {
                 title: "Off-Page SEO and Reputation Management",
-                body: "Your domain authority is built through high quality backlinks from supplier directories, trade associations, local news, and relevant websites. Reputation management is the other half: Google&rsquo;s algorithm weights review recency heavily. A plumbing company with a steady drip of new reviews outranks a competitor with more reviews but a flat profile. Both require active management, not a one-time setup.",
+                body: "Your domain authority is built through high quality backlinks from supplier directories, trade associations, local news, and relevant websites. Reputation management is the other half: review recency is a direct ranking factor — Google weights it heavily. A plumbing company with a steady drip of new reviews outranks a competitor with more reviews but a flat profile. Both require active management, not a one-time setup.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -356,7 +356,7 @@ export default function PlumbingSeoPage() {
               {
                 number: "02",
                 title: "Review Velocity, Not Just Review Count",
-                body: "Google&rsquo;s algorithm weights review recency as heavily as total count. An HVAC or plumbing company with 200 reviews where 180 are two years old will be outranked by a competitor with 80 reviews but a steady weekly drip of new ones. The fix is systematic: every completed job triggers a review request timed to send within four hours of completion.",
+                body: "Google&rsquo;s algorithm weights review recency as heavily as total count. HVAC contractors and plumbing companies with 200 reviews where 180 are two years old will be outranked by a competitor with 80 reviews but a steady weekly drip of new ones. The fix is systematic: every completed job triggers a review request timed to send within four hours of completion.",
               },
               {
                 number: "03",
@@ -440,7 +440,7 @@ export default function PlumbingSeoPage() {
             {[
               {
                 title: "Local SEO and Google Business Profile",
-                body: "Local SEO is the primary driver of phone calls for plumbing companies. Google Business Profile optimization determines whether you appear in the Map Pack for emergency queries like 'plumber near me' or 'burst pipe repair.' Accurate business information, review velocity, and proper service area configuration are the foundation of local search visibility that generates calls before homeowners scroll past the map.",
+                body: "Local SEO is the primary driver of phone calls for plumbing companies. As a service area business, your Google Business Profile optimization determines whether you appear in the Map Pack for emergency queries like 'plumber near me' or 'burst pipe repair.' Accurate business information, review velocity, and proper service area configuration are the foundation of local search visibility that generates calls before homeowners scroll past the map.",
               },
               {
                 title: "On-Page SEO and Service Pages",
@@ -554,7 +554,7 @@ export default function PlumbingSeoPage() {
               },
               {
                 title: "Backlinks from Reputable Websites and Local Sources",
-                body: "Off-page SEO for plumbing companies means earning backlinks from reputable websites: trade associations, local media, home services industry directories, and local business platforms. Service businesses that build authority through legitimate link sources outrank those relying on low-quality directories. Building online reputation through quality links and citations is what sustains long-term search engine optimization results.",
+                body: "Off-page SEO for plumbing companies means earning backlinks from reputable websites: trade associations, local media, home services industry directories, and local business platforms. Service businesses that pair high quality content with legitimate link sources outrank those relying on low-quality directories. Building online reputation through quality links and citations is what sustains long-term search engine optimization results.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -594,7 +594,7 @@ export default function PlumbingSeoPage() {
               },
               {
                 q: "How do I know if an SEO company truly understands the plumbing industry?",
-                a: "Ask about their experience with plumbing contractors specifically — not just general home services. A company that understands the plumbing industry knows that search engine optimization for service businesses is local by nature, that emergency query volume shifts seasonally, and that the plumbing job mix (drain cleaning vs. repipes vs. sewer line work) requires different keyword strategies. If they also manage HVAC SEO or similar home service contractor work, that is a positive signal. Generic digital marketing experience does not translate to plumbing business results without industry-specific knowledge.",
+                a: "Ask about their experience with plumbing contractors specifically — not just general home services. A company that understands the plumbing industry knows that search engine optimization for service businesses is local by nature, that emergency query volume shifts seasonally, and that the plumbing job mix (drain cleaning vs. repipes vs. sewer line work) requires different keyword strategies. If they also manage HVAC SEO for HVAC contractors or similar trade work alongside plumbing SEO, that is a strong positive signal. Generic digital marketing experience does not translate to plumbing business results without industry-specific knowledge.",
               },
               {
                 q: "What internet marketing channels matter most for a plumbing business?",
