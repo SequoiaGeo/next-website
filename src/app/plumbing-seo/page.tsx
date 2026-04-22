@@ -224,11 +224,11 @@ export default function PlumbingSeoPage() {
             {[
               {
                 title: "Local SEO for Plumbing Businesses",
-                body: "Local SEO is what gets your plumbing business into the Map Pack when customers search for a plumber in your area. For plumbing contractors, local search is where the highest-converting calls come from. Improving local search visibility means optimizing your Google Business Profile, building citations across local directories, and targeting the location-based searches that homeowners run when they need help right now. Local plumbing businesses that invest in local SEO consistently generate more calls than those relying on paid advertising alone.",
+                body: "Local SEO is what gets your plumbing business into the Map Pack when potential customers need a plumber in your area. For plumbing contractors, local search is where the highest-converting calls come from. Improving local search visibility means optimizing your Google Business Profile, building citations across local directories, and targeting the location-based queries that homeowners run when they need help right now. Local plumbing businesses that invest in local SEO consistently reach more potential customers than those relying on paid advertising alone.",
               },
               {
                 title: "On-Page SEO and Plumbing Website Optimization",
-                body: "Your plumbing website needs to be optimized for the keywords your customers actually search for. On-page SEO for a plumbing site means writing content that targets seo keywords like 'water heater repair near me' or 'drain cleaning [city],' adding SEO-friendly meta descriptions that improve click-through from search engine results pages, and structuring each page so search engines can understand what plumbing services you offer. Most plumbing websites are missing the relevant keywords that would move them up in local search results.",
+                body: "Your plumbing website needs to be optimized for the keywords your target audience actually uses. On-page SEO for a plumbing site means writing content that targets seo keywords like 'water heater repair near me' or 'drain cleaning [city],' adding SEO-friendly meta descriptions that improve click-through from search engine results pages, and structuring each page so search engines can understand what plumbing services you offer. Most plumbing websites are missing the relevant keywords that would move them up in local search results and help potential customers find them.",
               },
               {
                 title: "Technical SEO Audit and Site Health",
@@ -236,15 +236,15 @@ export default function PlumbingSeoPage() {
               },
               {
                 title: "Plumbing SEO Strategy and Keyword Research",
-                body: "A real plumbing SEO strategy starts with understanding how customers search for plumbing services in your market. SEO for plumbers means mapping the right target keywords to each page — emergency queries, job-type queries, and location terms — and then building content that matches the search intent behind those searches. Plumbing business owners who try to rank for every plumbing service on a single generic page consistently underperform competitors who build a deliberate seo strategy across their whole site.",
+                body: "A real plumbing SEO strategy starts with understanding how potential customers find plumbing services in your market. SEO for plumbers means mapping the right target keywords to each page — emergency queries, job-type queries, and location terms — and then building content that matches what those potential customers are searching for. Plumbing business owners who try to rank for every plumbing service on a single generic page consistently underperform competitors who build a deliberate seo strategy across their whole site.",
               },
               {
                 title: "Digital Marketing and Internet Marketing Integration",
-                body: "Plumbing SEO does not operate in isolation. A complete digital marketing strategy for plumbing companies connects SEO to paid advertising, review management, and social media through a unified tracking framework. Internet marketing for home service contractors works best when all marketing channels feed into the same attribution system — so you can see which online marketing investment is generating calls and which is generating noise. We manage the full digital marketing mix so no channel operates blind.",
+                body: "Plumbing SEO does not operate in isolation. A complete digital marketing strategy for plumbing companies connects SEO to paid advertising, review management, and social media through a unified tracking framework. Internet marketing works best when all marketing channels feed into the same attribution system — so you can see which online marketing investment is reaching potential customers and which is generating noise. We manage the full digital marketing mix so no channel operates blind.",
               },
               {
                 title: "Online Reputation and Visibility Management",
-                body: "Online visibility for a plumbing business is built through two interconnected systems: review generation and brand authority. Your online reputation — the volume, recency, and quality of your reviews — directly influences both local search rankings and call conversion rates. Plumbing business owners who systematically build their business online across search engines, directories, and review platforms generate significantly more inbound calls than those who rely on word of mouth alone.",
+                body: "Online visibility for a plumbing business is built through two interconnected systems: review generation and brand authority. Your online reputation — the volume, recency, and quality of your reviews — directly influences both local search rankings and how many potential customers choose to call you. Plumbing business owners who encourage customer reviews and systematically build their business online across search engines, directories, and review platforms reach significantly more potential customers than those who rely on word of mouth alone.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -534,11 +534,11 @@ export default function PlumbingSeoPage() {
             {[
               {
                 title: "Real Experience With Plumbing Contractors",
-                body: "SEO for plumbing contractors is different from SEO for e-commerce or national brands. The plumbing industry has specific search patterns, local competition dynamics, and service seasonality that a generalist agency will not understand. Look for an SEO company that has worked with home service contractors and can speak specifically to your job mix, your service area, and the local search rankings that matter for plumbing businesses in your market.",
+                body: "SEO for plumbing contractors is different from SEO for e-commerce or national brands. The plumbing industry has specific search patterns — potential customers search for plumbing help in moments of urgency, not during casual browsing — and a generalist agency will not understand that dynamic. Look for an SEO company that has worked with service businesses and can speak specifically to your job mix, your service area, and the local search rankings that drive real calls.",
               },
               {
                 title: "Revenue Reporting, Not Just Search Engine Rankings",
-                body: "An SEO company that reports on impressions and click positions without connecting those numbers to booked jobs is not managing your plumbing business effectively. Meaningful SEO performance reporting shows the line from search engine rankings to calls to revenue. Plumbing business owners deserve to know whether their SEO investment is generating work — not just website traffic.",
+                body: "An SEO company that reports on impressions and click positions without connecting those numbers to booked jobs is not managing your plumbing business effectively. Meaningful SEO performance reporting shows the line from potential customers finding you in search engine rankings, to calls, to revenue. Plumbing business owners deserve to know whether their SEO investment is generating work — not just website traffic.",
               },
               {
                 title: "A Clear Local SEO Strategy for Your Market",
@@ -598,7 +598,7 @@ export default function PlumbingSeoPage() {
               },
               {
                 q: "What internet marketing channels matter most for a plumbing business?",
-                a: "For most plumbing businesses, the highest-priority internet marketing channels are organic local search (Google Map Pack and search results), Google Ads for immediate lead capture, and review management for conversion and trust. Online visibility across all three channels compounds: when customers search for plumbing help, they typically check the Map Pack, click the first organic result, and read reviews before calling. Plumbing businesses that are visible across all three touchpoints convert at significantly higher rates than those that depend on a single channel. Mobile users account for more than 60% of plumbing searches, so every online marketing investment needs to perform on small screens first.",
+                a: "For most plumbing businesses, the highest-priority internet marketing channels are organic local search (Google Map Pack and search results), Google Ads for immediate lead capture, and review management for conversion and trust. Online visibility across all three channels compounds: potential customers search for plumbing help in moments of urgency, checking the Map Pack, clicking the first organic result, and reading reviews before calling. Plumbing businesses visible across all three touchpoints convert at significantly higher rates than those that depend on a single channel. Mobile users account for more than 60% of plumbing searches, so every online marketing investment needs to perform on small screens first.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-white p-7">
