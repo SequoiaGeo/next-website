@@ -49,20 +49,20 @@ export default function FullPicture() {
               <span className="text-[#1A5C3A]">It&rsquo;s a pipeline.</span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Before touching your Google Ads, we look at the full picture. Phones. Booking rate.
-              Appointment notes. Where revenue is being left on the table before a lead ever
-              turns into a job. Most marketing agencies don&rsquo;t do this because it&rsquo;s
+              Before touching your <strong>Google Ads</strong>, we look at the full picture. Phones. <strong>Booking rate</strong>.
+              Appointment notes. Where <strong>revenue</strong> is being left on the table before a lead ever
+              turns into a job. Most <strong>marketing agencies</strong> don&rsquo;t do this because it&rsquo;s
               not their department. We do it because it&rsquo;s the only way to actually move revenue.
             </p>
             <blockquote className="mt-6 border-l-2 border-[#3A9E6A] pl-5">
               <p className="text-base font-medium italic text-gray-600">
-                &ldquo;You can generate 200 leads a month and still lose money if your techs are
-                giving away work, your CSRs aren&rsquo;t booking right, or your follow-up
-                process is broken.&rdquo;
+                &ldquo;You can generate <strong>200 leads a month</strong> and still lose money if your techs are
+                giving away work, your <strong>CSRs</strong> aren&rsquo;t booking right, or your <strong>follow-up
+                process</strong> is broken.&rdquo;
               </p>
             </blockquote>
             <p className="mt-4 text-base text-gray-500">
-              That&rsquo;s the difference between a marketing vendor and someone who&rsquo;s
+              That&rsquo;s the difference between a <strong>marketing vendor</strong> and someone who&rsquo;s
               run a company like yours.
             </p>
           </div>
@@ -134,8 +134,8 @@ export default function FullPicture() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-[#C8EDD2]/35">
-            None of this required special tools. It required someone who reads your appointment notes,
-            calls your phone number, and asks why revenue didn&rsquo;t move.
+            None of this required special tools. It required someone who reads your <strong>appointment notes</strong>,
+            calls your <strong>phone number</strong>, and asks why <strong>revenue</strong> didn&rsquo;t move.
           </p>
         </div>
       </div>

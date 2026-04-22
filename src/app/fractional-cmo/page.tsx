@@ -65,24 +65,24 @@ export default function FractionalCmoPage() {
             {[
               {
                 title: "Marketing strategy and roadmap",
-                body: "Where to spend, in what order, and why. Built from your actual revenue data, not industry benchmarks that have nothing to do with your market, your trade, or your margins.",
+                body: "Where to spend, in what order, and why. Built from your actual <strong>revenue data</strong>, not industry benchmarks that have nothing to do with your market, your trade, or your margins. Every <strong>digital marketing strategy</strong> starts with understanding which channels produce <strong>qualified leads</strong> at the lowest <strong>cost per booked job</strong>.",
               },
               {
                 title: "Vendor oversight and accountability",
-                body: "You probably already have agencies running ads, SEO, or social. A Fractional CMO holds them to revenue outcomes instead of vanity metrics. I'll tell you who's earning their fee and who isn't.",
+                body: "You probably already have agencies running ads, SEO, or social. A Fractional CMO holds them to <strong>revenue outcomes</strong> instead of vanity metrics. I&rsquo;ll tell you who&rsquo;s earning their fee based on <strong>cost per booked job</strong> and <strong>marketing ROI</strong> &mdash; not <strong>website visitors</strong> or impressions.",
               },
               {
                 title: "Budget allocation that connects to jobs",
-                body: "Most home service companies don't know their cost per booked job by channel. I build the attribution framework so every dollar of marketing spend traces back to closed revenue.",
+                body: "Most home service companies don&rsquo;t know their <strong>cost per booked job</strong> by channel. I build the <strong>attribution framework</strong> so every dollar of <strong>marketing spend</strong> traces back to closed revenue. <strong>Marketing ROI</strong> measured at the job level, not the click level.",
               },
               {
                 title: "Hiring and team development",
-                body: "If you're ready to bring marketing in-house (a coordinator, a CSR, a content person), I'll help you define the role, hire for it, and get them producing faster.",
+                body: "If you&rsquo;re ready to bring marketing in-house, I&rsquo;ll help you define the role, hire for it, and get them producing faster. <strong>Building relationships</strong> between your internal team and your vendors produces better outcomes than managing them in silos. <strong>Brand visibility</strong> and <strong>online reputation</strong> require consistent internal ownership.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
                 <h3 className="text-base font-bold text-[#3A9E6A]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
+                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70" dangerouslySetInnerHTML={{ __html: item.body }} />
               </div>
             ))}
           </div>
@@ -102,9 +102,9 @@ export default function FractionalCmoPage() {
               <h3 className="text-lg font-extrabold text-[#0D2318] mb-5">This fits if you are...</h3>
               <ul className="space-y-3">
                 {[
-                  "Doing $2Mâ€“$15M revenue with no dedicated marketing leader",
-                  "Spending $5Kâ€“$30K/month on marketing with no clear attribution",
-                  "Managing 2â€“4 separate marketing vendors with no one connecting the dots",
+                  "Doing $2M-$15M revenue with no dedicated marketing leader",
+                  "Spending $5K-$30K/month on marketing with no clear attribution",
+                  "Managing 2-4 separate marketing vendors with no one connecting the dots",
                   "Growing fast enough that strategy gaps are starting to limit you",
                   "A founder who needs to stop making every marketing decision personally",
                 ].map((item) => (
@@ -159,7 +159,7 @@ export default function FractionalCmoPage() {
               </thead>
               <tbody>
                 {[
-                  ["Typical monthly cost", "$15Kâ€“$20K+", "$3Kâ€“$8K", "$2Kâ€“$10K"],
+                  ["Typical monthly cost", "$15K-$20K+", "$3K-$8K", "$2K-$10K"],
                   ["Industry expertise", "Varies", "Home services, 13 yrs", "Usually generic"],
                   ["Strategic ownership", "Yes", "Yes", "Rarely"],
                   ["Vendor accountability", "Yes", "Yes", "Conflict of interest"],
@@ -189,19 +189,19 @@ export default function FractionalCmoPage() {
                   I&rsquo;ve Done What You&rsquo;re Trying to Do
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I built Balanced Comfort Heating &amp; Air from a one-truck startup to 130+ employees
-                  and $10M+ in annual revenue. We made the Inc 5000 four consecutive years: 2020, 2021,
+                  I built <strong>Balanced Comfort Heating &amp; Air</strong> from a one-truck startup to <strong>130+ employees</strong>{" "}
+                  and <strong>$10M+ in annual revenue</strong> over a decade in <strong>home services</strong>. We made the <strong>Inc 5000</strong> four consecutive years: 2020, 2021,
                   2022, and 2023.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I was the marketing decision-maker for that entire run. I hired and fired agencies,
-                  built attribution systems, managed ad spend in the low seven figures across channels,
-                  and connected every dollar of marketing to dispatch data, revenue, and margin.
+                  I was the <strong>marketing decision-maker</strong> for that entire run. I hired and fired <strong>agencies</strong>,
+                  built <strong>attribution systems</strong>, managed <strong>ad spend</strong> in the low seven figures across channels,
+                  and connected every dollar of <strong>marketing</strong> to dispatch data, <strong>revenue</strong>, and margin.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I&rsquo;m a California Licensed Contractor (B General, C-2, C-20 HVAC, C-36 Plumbing).
                   That background isn&rsquo;t just context. It&rsquo;s the reason I see things other
-                  marketing leaders miss.
+                  <strong>marketing leaders</strong> miss &mdash; from <strong>qualified leads</strong> to <strong>booking rate</strong> to <strong>marketing ROI</strong>.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -235,7 +235,7 @@ export default function FractionalCmoPage() {
               {
                 step: "01",
                 title: "Full Picture Audit",
-                body: "Every engagement starts with a deep audit of your current marketing: spend by channel, attribution, phone handling, booking rate, vendor performance, and revenue leakage. You get a complete picture before any strategy is built.",
+                body: "Every engagement starts with a deep audit of your current marketing: spend by channel, attribution, phone handling, booking rate, vendor performance, and revenue leakage. You get a complete picture before any strategy is built. This includes your Google Ads, local SEO, and any Local Services Ads programs already running.",
               },
               {
                 step: "02",
@@ -245,7 +245,7 @@ export default function FractionalCmoPage() {
               {
                 step: "03",
                 title: "Ongoing Leadership",
-                body: "Weekly or bi-weekly strategy sessions. Vendor management. Budget decisions. Hiring guidance. You get a senior marketing voice in the room without a full-time salary on the books.",
+                body: "Weekly or bi-weekly strategy sessions. Vendor management. Budget decisions. Hiring guidance. I provide strategic guidance on which marketing efforts to prioritize, when to reallocate budget, and how to evaluate whether your vendors are actually earning their fees. You get a senior marketing voice in the room without a full-time salary on the books.",
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6 rounded-2xl border border-gray-200 bg-white p-6">
@@ -282,10 +282,13 @@ export default function FractionalCmoPage() {
                 A comprehensive marketing strategy for a home service company starts with the business: average
                 ticket, gross margin by service line, booking rate, phone answer rate, seasonality, and your
                 competitive landscape in the local market. Without that foundation, a marketing plan is
-                guesswork. I build the strategy from your actual data, covering channel selection (paid search,
-                local SEO, content marketing, referral programs), budget allocation by channel, lead generation
-                targets by month, cost-per-booked-job targets, and conversion rates at every stage of the
-                funnel.
+                guesswork. Building effective marketing strategies for home service companies requires market
+                research into your service area dynamics, seasonal demand cycles, and competitive positioning
+                rather than generic industry benchmarks. Strategic planning that skips this step produces a
+                roadmap that looks right on paper and underperforms in the market. I build the strategy from
+                your actual data, covering channel selection (paid search, local SEO, content marketing,
+                referral programs), budget allocation by channel, lead generation targets by month,
+                cost-per-booked-job targets, and conversion rates at every stage of the funnel.
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-8">
@@ -296,7 +299,10 @@ export default function FractionalCmoPage() {
                 oversight means evaluating every vendor against the same standard: cost per booked job, not
                 impressions or clicks. Fractional CMO services include making those vendor decisions
                 so you don&rsquo;t have to. I&rsquo;ll tell you who is earning the fee and who
-                isn&rsquo;t, and I&rsquo;ll handle the difficult conversations.
+                isn&rsquo;t, and I&rsquo;ll handle the difficult conversations. Marketing operations — the
+                ongoing work of executing specific marketing tactics across multiple vendor relationships while
+                keeping them aligned to a unified strategy — is where most home service businesses lose
+                control.
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-8">
@@ -316,9 +322,12 @@ export default function FractionalCmoPage() {
                 Marketing that does not align with business goals produces activity, not outcomes. A home service
                 company planning an exit in three years needs a different marketing strategy than one trying to
                 double revenue in five. A company entering a new service line needs different lead generation
-                priorities than one deepening penetration in an existing market. Fractional CMO services build
-                the marketing plan around where you are actually trying to go, with the capital constraints,
-                labor capacity, and local market dynamics you are actually dealing with.
+                priorities than one deepening penetration in an existing market. The strategic objectives that
+                define where your business is going — sustainable growth in core markets, expansion into new
+                service lines, or positioning for a future sale — are the foundation of any sound growth
+                strategy. Fractional CMO services build the marketing plan around where you are actually trying
+                to go, with the capital constraints, labor capacity, and local market dynamics you are actually
+                dealing with.
               </p>
             </div>
           </div>
@@ -342,24 +351,24 @@ export default function FractionalCmoPage() {
             {[
               {
                 title: "Service is geographically bounded",
-                body: "A plumbing company in Fresno cannot serve customers in Sacramento. Every marketing dollar must target the service area or it is wasted. Local SEO, local visibility in the Google Maps pack, and geotargeted paid search are the channels that drive local market revenue. Brand awareness campaigns that feel good but do not produce inbound calls from the actual service area are a drain on the budget.",
+                body: "A plumbing company in Fresno cannot serve customers in Sacramento. Every <strong>marketing</strong> dollar must target the service area or it is wasted. <strong>Local SEO</strong>, local visibility in the <strong>Google Maps pack</strong>, and geotargeted <strong>paid search</strong> are the channels that drive <strong>local search</strong> revenue. <strong>Brand visibility</strong> campaigns that do not produce inbound calls from the actual service area are a drain on the budget.",
               },
               {
                 title: "Demand is heavily seasonal",
-                body: "HVAC demand spikes in June and July and again in October and November. Roofing contractors see surge demand after hail events. Restoration companies run surge volumes after rain events and pipe freeze cycles. A marketing strategy that does not account for seasonality misallocates budget, spending equally across months when the revenue opportunity varies by three or four times.",
+                body: "HVAC demand spikes in June and July and again in October and November. Roofing contractors see surge demand after hail events. Restoration companies run surge volumes after rain events and pipe freeze cycles. A <strong>marketing strategy</strong> that does not account for seasonality misallocates budget, spending equally across months when the <strong>revenue</strong> opportunity varies by three or four times.",
               },
               {
                 title: "Phone calls are the primary conversion event",
-                body: "Home service customers call. They do not fill out forms. This means call tracking, phone answer rate, and call-to-book conversion are the critical metrics. Marketing feels broken to a lot of home service owners not because their lead generation is failing but because their phone handling is failing. I diagnose that distinction and address the full funnel, not just the top.",
+                body: "<strong>Home service</strong> customers call. They do not fill out forms. This means <strong>call tracking</strong>, phone answer rate, and call-to-book conversion are the critical metrics. <strong>Marketing</strong> feels broken to a lot of home service owners not because their lead generation is failing but because their phone handling is failing. I diagnose that distinction and address the full funnel, turning <strong>website visitors</strong> and <strong>organic search</strong> sessions into <strong>qualified leads</strong> and booked jobs.",
               },
               {
                 title: "Reviews drive conversion rates directly",
-                body: "A home service company with 400 reviews at 4.8 stars converts search traffic at a materially higher rate than a competitor with 80 reviews at 4.2 stars. Review acquisition strategy, review response protocol, and handling of negative reviews are marketing functions that directly affect conversion rates and belong inside the comprehensive marketing strategy.",
+                body: "A home service company with 400 reviews at 4.8 stars converts <strong>search results</strong> traffic at a materially higher rate than a competitor with 80 reviews at 4.2 stars. <strong>Online reputation</strong> management, review acquisition, and <strong>building relationships</strong> with past customers are <strong>marketing</strong> functions that directly affect conversion rates and belong inside the <strong>digital marketing strategy</strong>.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-[#3A9E6A]/20 bg-white p-6 shadow-sm">
                 <h3 className="text-base font-extrabold text-[#0D2318] mb-3">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-gray-600">{item.body}</p>
+                <p className="text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
               </div>
             ))}
           </div>
@@ -427,19 +436,19 @@ export default function FractionalCmoPage() {
             {[
               {
                 title: "Digital Marketing Channel Oversight",
-                body: "Fractional CMO services include ownership of your digital marketing across every channel that drives calls and bookings: Google Ads, local SEO, Google Business Profile, social media marketing, content marketing services, email marketing, and website conversion rate optimization. Every channel is tied to a specific business objective and every marketing campaign is measured against revenue.",
+                body: "<strong>Fractional CMO</strong> services include ownership of your <strong>digital marketing</strong> across every channel that drives calls and bookings: <strong>Google Ads</strong>, <strong>local SEO</strong>, <strong>Google Business Profile</strong>, <strong>social media marketing</strong>, <strong>content marketing</strong> services, <strong>email marketing</strong>, and <strong>website</strong> conversion rate optimization. Every channel is tied to a specific business objective and every <strong>marketing campaign</strong> is measured against <strong>revenue</strong>.",
               },
               {
                 title: "Go-to-Market Strategy",
-                body: "Go to market strategy is one of the most underutilized capabilities a fractional CMO agency provides. Every time a home service company enters a new city, launches a new service line, or wants to compete for a higher-ticket customer segment, a go to market strategy needs to be built: positioning, channel selection, messaging, competitive differentiation, and budget allocation before the first dollar is spent.",
+                body: "Go-to-market strategy is one of the most underutilized capabilities a <strong>fractional CMO</strong> provides. Every time a <strong>home service company</strong> enters a new city, launches a new service line, or wants to attract <strong>new customers</strong> in a higher-ticket segment, a go-to-market strategy needs to be built: positioning, channel selection, messaging, competitive differentiation, and budget allocation before the first dollar is spent.",
               },
               {
                 title: "Marketing and Sales Alignment",
-                body: "Marketing and sales alignment is a capability most contractors have never had. A fractional CMO sits close enough to operations to understand what happens after a call comes in: booking rate, CSR performance, close rate on the truck. Those insights feed back into the marketing strategy and turn digital marketing spend into a closed-loop revenue system built around actual customer acquisition outcomes.",
+                body: "<strong>Marketing</strong> and sales alignment is a capability most contractors have never had. A <strong>fractional CMO</strong> sits close enough to operations to understand what happens after a call comes in: <strong>booking rate</strong>, CSR performance, close rate on the truck. Those insights feed back into the <strong>marketing strategy</strong> and turn <strong>digital marketing</strong> spend into a closed-loop revenue system that connects <strong>potential customers</strong> to <strong>qualified leads</strong> to booked jobs.",
               },
               {
                 title: "Strategic Marketing Leadership",
-                body: "Strategic marketing begins with a full audit of your current marketing efforts: what channels you are running, what your marketing metrics show, where customer acquisition costs are too high, and where marketing effectiveness is lowest. A fractional chief marketing officer does not add budget to a broken pipeline. They identify what is working, what is wasting money, and what is missing entirely.",
+                body: "Building a solid <strong>marketing strategy</strong> requires understanding your competitive position and the specific <strong>marketing tactics</strong> that produce results for your trade and service area. Strategic <strong>marketing leadership</strong> begins with a full audit of your current marketing efforts: what channels you are running, where <strong>website visitors</strong> are coming from, where customer acquisition costs are too high, and where <strong>marketing ROI</strong> is lowest. A <strong>fractional CMO</strong> does not add budget to a broken pipeline. They identify what is working, what is wasting money, and what is missing entirely.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -451,7 +460,7 @@ export default function FractionalCmoPage() {
                   </div>
                   <div>
                     <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
                   </div>
                 </div>
               </div>
@@ -517,6 +526,10 @@ export default function FractionalCmoPage() {
           <div className="space-y-6">
             {[
               {
+                q: "What kinds of home service businesses achieve the best results when they hire a fractional CMO?",
+                a: "Home service businesses that achieve the strongest results are typically running professional services-level marketing spend — $5K to $30K per month — without professional services-level oversight. The executive team is operationally strong but lacks a peer-level marketing leader who understands the trade from the inside. When you hire a fractional CMO with a proven track record in home services across various industries — HVAC, plumbing, roofing, restoration — you get the innovative solutions those businesses need but rarely get from generalist agencies. The fit is strongest when the owner is ready to hand off marketing decisions to someone who has already built what they are trying to build.",
+              },
+              {
                 q: "What does a fractional CMO agency provide that an independent consultant does not?",
                 a: "A fractional CMO agency brings a full marketing leadership team rather than a single practitioner. When you hire a fractional CMO through an agency, you get strategic marketing leadership plus execution capacity. Independent consultants often have deep industry expertise but limited bandwidth to oversee marketing initiatives, manage vendors, and develop marketing strategies simultaneously. A fractional CMO agency closes that gap by pairing senior marketing leadership with a team that can execute on the strategy.",
               },
@@ -533,6 +546,39 @@ export default function FractionalCmoPage() {
                 <h3 className="text-base font-bold text-[#1a1a1a] mb-3">{item.q}</h3>
                 <p className="text-sm leading-relaxed text-gray-600">{item.a}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related services */}
+      <section className="bg-[#fafaf8] py-16">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
+              Services Covered Under Fractional CMO
+            </h2>
+            <p className="mt-3 text-base text-gray-600">
+              A Fractional CMO engagement spans every channel that drives revenue for home service companies.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { label: "Plumbing SEO", href: "/plumbing-seo" },
+              { label: "HVAC SEO", href: "/hvac-seo" },
+              { label: "Roofing SEO", href: "/roofing-seo" },
+              { label: "Local Services Ads", href: "/lsa-management" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-4 text-sm font-semibold text-[#1A5C3A] shadow-sm hover:border-[#3A9E6A]/40 hover:shadow-md transition"
+              >
+                {link.label}
+                <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
             ))}
           </div>
         </div>

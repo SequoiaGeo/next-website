@@ -14,6 +14,97 @@ export const metadata: Metadata = {
 export default function HvacSeoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does HVAC SEO take to work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Local SEO results for HVAC contractors typically start showing within 3 to 6 months for lower-competition markets and 6 to 12 months for highly competitive metro areas. Google Business Profile improvements and review velocity can produce measurable ranking changes in 60 to 90 days. Technical SEO and on-page SEO corrections that fix existing problems can accelerate timelines. Paid advertising produces results immediately but stops when you stop spending. A complete HVAC SEO strategy uses both channels: organic for compound growth, paid for immediate volume."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes HVAC SEO different from general SEO?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "HVAC SEO is local by definition: every job requires physical proximity. It is seasonal: demand spikes in summer and winter and craters in spring and fall. It is emergency-driven: the highest-intent searches happen when equipment fails, not when homeowners are planning ahead. These constraints shape keyword research, content strategy, and campaign management differently than they would for a national brand or B2B company. SEO for HVAC companies that does not account for these dynamics produces generic results that look good in reports but do not move the dispatch board."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need both paid advertising and organic SEO for my HVAC company?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For most HVAC contractors, yes. Local SEO efforts produce the highest ROI over time but take months to build. Google Ads captures emergency demand immediately. The right HVAC marketing strategy uses both: SEO to build the organic foundation that reduces paid dependency over time, and paid search to capture demand that cannot wait for organic rankings. As local search visibility grows, you can pull back ad spend on keywords where you rank organically and redirect budget to new markets or higher-ticket services like air conditioning replacements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What HVAC keywords should I be targeting?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A complete keyword research strategy for HVAC companies goes beyond the obvious head terms. Emergency service queries, equipment-specific terms, location-specific terms, and problem-based queries all drive different types of phone calls. Mapping each category of relevant keywords to dedicated service pages is how HVAC companies build organic traffic that compounds year over year."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I measure whether my HVAC SEO is working?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The right metrics are phone calls and booked jobs from organic search, not rankings alone. Build your tracking infrastructure first: Google Analytics for web page behavior, Google Search Console for search query data, and call tracking to connect organic website traffic to actual phone calls. If your HVAC SEO program cannot show a clear line from search rankings to dispatched jobs, the program is not being managed correctly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the most important ranking factor for HVAC local SEO?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Google Business Profile optimization is the single most impactful lever for HVAC local SEO in most markets. A fully optimized GBP with consistent reviews, accurate service categories, and regular posts drives Map Pack visibility that captures the majority of clicks on high-intent HVAC queries. Combined with strong on-page SEO on your service pages and consistent link building, GBP optimization is where most HVAC contractors should focus their SEO investment first."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What do most HVAC companies get wrong about SEO?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The most common mistake is treating SEO as a one-time project rather than an ongoing program. Search engine rankings require continuous content updates, review generation, citation maintenance, and technical health monitoring. The second most common mistake is measuring SEO by rankings rather than phone calls. Rankings are a leading indicator, but booked jobs are the outcome that matters."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is SEO for HVAC companies different from internet marketing for other local businesses?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SEO for HVAC companies is shaped by two dynamics that rarely apply to other local businesses: seasonality and emergency intent. Most HVAC searches happen at the moment equipment fails, which means the conversion window is extremely short and search engines need to know your business is available, relevant, and trusted before that moment arrives. For a local HVAC contractor, the homeowner who searches for AC repair on a 105-degree afternoon will call the first credible result they see. That is why HVAC SEO focuses so heavily on real-time trust signals: review recency, GBP completeness, and service pages that load fast and answer the right questions immediately."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What should an HVAC company expect from SEO services in the first year?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In the first 90 days, expect improvements in Google Business Profile visibility, citation accuracy, and on-page SEO fundamentals. Keyword rankings for lower-competition terms typically begin moving in months three through five. By the end of the first year, a well-run HVAC SEO program should show measurable organic traffic growth, improved phone call volume from organic search, and a clear picture of which HVAC service pages are driving the most phone calls. Home service companies that invest consistently in HVAC SEO for 12 months typically see cost-per-lead from organic well below their Google Ads spend."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do search engines other than Google matter for HVAC companies?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bing, Apple Maps, and other search engines account for a real share of HVAC searches, particularly from older demographics and iPhone users. A complete HVAC SEO strategy does not ignore these platforms. Bing Places for Business and Apple Business Connect are both free and take less than an hour to configure. The same citation accuracy and on-page SEO work that helps you rank on Google also improves your visibility on other search engines."
+                }
+              }
+            ]
+          })
+        }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -29,7 +120,15 @@ export default function HvacSeoPage() {
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               I spent 13 years running Balanced Comfort Heating &amp; Air. I know your seasonality,
               your CSR challenges, your average ticket, and what an emergency call is worth.
-              That changes how I manage your marketing.
+              That context shapes every digital marketing decision I make for your HVAC business &mdash;
+              from search engine optimization to online visibility in your local market.
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-gray-500">
+              Most vendors treat SEO for HVAC companies as a checklist: update meta tags, build
+              citations, move on. What search engines actually reward is relevance, authority, and
+              content that matches what your customers are searching when their equipment fails.
+              My HVAC SEO approach ties every tactic to a business outcome &mdash; not just organic
+              traffic numbers.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -57,7 +156,7 @@ export default function HvacSeoPage() {
               What an Agency Misses. What I See.
             </h2>
             <p className="mt-4 text-lg text-[#C8EDD2]/80">
-              Your HVAC marketing agency reports on impressions and clicks. Here&rsquo;s what I look at instead.
+              Most HVAC marketing agencies report on impressions and clicks. Here&rsquo;s what matters to an HVAC business owner.
             </p>
           </div>
 
@@ -85,8 +184,11 @@ export default function HvacSeoPage() {
               The Full Picture for HVAC Companies
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              These aren&rsquo;t standalone services. They&rsquo;re the channels I manage as part of your
-              complete growth operation.
+              These aren&rsquo;t standalone HVAC services. They&rsquo;re the integrated digital marketing
+              and SEO services I manage as part of your complete HVAC business growth operation &mdash;
+              every channel tracked back to your dispatch board. Most companies in the HVAC industry
+              run fragmented marketing efforts across three or four vendors with no one accountable for
+              the combined result. This is the full-picture alternative.
             </p>
           </div>
 
@@ -96,10 +198,10 @@ export default function HvacSeoPage() {
               "Local Service Ads setup & dispute management",
               "Google Business Profile optimization",
               "Map Pack ranking strategy",
-              "Seasonal keyword campaigns (heating & cooling)",
+              "Seasonal keyword campaigns (AC repair, heating & cooling)",
               "Emergency service ad scheduling",
               "Review generation integrated with dispatch",
-              "Website conversion optimization",
+              "HVAC website conversion optimization",
               "AI search visibility (ChatGPT, Perplexity)",
               "Marketing attribution & call tracking",
               "CSR booking rate analysis",
@@ -127,7 +229,7 @@ export default function HvacSeoPage() {
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   Balanced Comfort Heating &amp; Air grew from a one-truck startup to 130+ employees and
-                  $10M+ in annual revenue. We made the Inc 5000 four years running: 2020, 2021, 2022, 2023.
+                  $10M+ in annual revenue in the HVAC industry. We made the Inc 5000 four years running: 2020, 2021, 2022, 2023.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I didn&rsquo;t just market the company. I dispatched technicians. I listened to call
@@ -136,7 +238,8 @@ export default function HvacSeoPage() {
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I&rsquo;m a California licensed C-20 HVAC contractor. This isn&rsquo;t just marketing context:
-                  it&rsquo;s the reason I see things your agency doesn&rsquo;t.
+                  it&rsquo;s the reason I see things in your HVAC business that a typical digital marketing
+                  agency never will.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -253,6 +356,48 @@ export default function HvacSeoPage() {
         </div>
       </section>
 
+      {/* How HVAC SEO Services Work */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              How HVAC SEO Services Work Month by Month
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              A properly run HVAC SEO campaign is not a collection of deliverables. It is a managed
+              program with a defined SEO strategy, monthly reporting on keyword rankings and organic
+              traffic, and ongoing adjustments based on real SEO performance data. Here is what that
+              looks like in practice for HVAC businesses.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {[
+              {
+                title: "Month One: Audit and Infrastructure",
+                body: "Every HVAC SEO campaign starts with a complete audit of your current digital marketing footprint: your HVAC website structure, Google Business Profile completeness, existing keyword rankings, citation accuracy, and on-page SEO gaps. The audit surfaces where you are losing website traffic to competitors and why. From there, we build the tracking infrastructure: call tracking, Google Analytics, and Search Console, so every future optimization is measurable against real business outcomes.",
+              },
+              {
+                title: "Months Two and Three: On-Page and Content",
+                body: "Once the audit is complete, on-page SEO work begins on your most important service pages. For HVAC businesses, that means dedicated pages for AC repair, heating repair, system replacement, maintenance agreements, and location-specific landing pages for every city you serve. Each page targets specific keyword rankings and answers the questions your potential customers are actually searching. This phase typically produces the first organic search results movement.",
+              },
+              {
+                title: "Ongoing: Authority and Local Signals",
+                body: "Maintaining and growing search results positions for HVAC companies requires continuous work: link building from relevant local sources, review generation tied to completed jobs, Google Business Profile updates, and technical health monitoring. A successful HVAC SEO campaign is not set-and-forget. Search engines update their algorithms regularly, and the content that ranked 18 months ago may need updating to hold its position against more active competitors.",
+              },
+              {
+                title: "Monthly: Reporting and Course Corrections",
+                body: "Every month you receive a clear report showing organic traffic by landing page, keyword rankings movement, call volume from organic search, and a summary of completed and planned work. If a service page is underperforming, we adjust. If a competitor makes a move in your market, we respond. HVAC SEO services managed this way give HVAC business owners what most digital marketing vendors never provide: a clear line from SEO investment to revenue.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
+                <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* HVAC SEO FAQ */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -270,7 +415,7 @@ export default function HvacSeoPage() {
               },
               {
                 q: "What makes HVAC SEO different from general SEO?",
-                a: "HVAC SEO is local by definition: every job requires physical proximity. It is seasonal: demand spikes in summer and winter and craters in spring and fall. It is emergency-driven: the highest-intent searches happen when equipment fails, not when homeowners are planning ahead. These constraints shape keyword research, content strategy, and campaign management differently than they would for a national brand or B2B company. HVAC SEO services that do not account for these dynamics produce generic results that look good in reports but do not move the dispatch board.",
+                a: "HVAC SEO is local by definition: every job requires physical proximity. It is seasonal: demand spikes in summer and winter and craters in spring and fall. It is emergency-driven: the highest-intent searches happen when equipment fails, not when homeowners are planning ahead. These constraints shape keyword research, content strategy, and campaign management differently than they would for a national brand or B2B company. SEO for HVAC companies that does not account for these dynamics produces generic results that look good in reports but do not move the dispatch board. Every HVAC business has different peak seasons, different service mixes, and different competitive pressures — a successful HVAC SEO campaign is built around those specifics.",
               },
               {
                 q: "Do I need both paid advertising and organic SEO for my HVAC company?",
@@ -286,7 +431,7 @@ export default function HvacSeoPage() {
               },
               {
                 q: "How do I measure whether my HVAC SEO is working?",
-                a: "The right metrics are phone calls and booked jobs from organic search, not rankings alone. Build your tracking infrastructure first: Google Analytics for web page behavior, Google Search Console for search query data, and call tracking to connect organic website traffic to actual phone calls. Once that infrastructure is in place, you can measure SEO success against real business outcomes rather than vanity metrics. If your HVAC SEO program cannot show a clear line from search rankings to dispatched jobs, the program is not being managed correctly.",
+                a: "The right metrics are phone calls and booked jobs from organic search, not rankings alone. Build your tracking infrastructure first: Google Analytics for web page behavior, Google Search Console for search query data, and call tracking to connect organic website traffic to actual phone calls. Once that infrastructure is in place, you can measure SEO performance against real business outcomes rather than vanity metrics. HVAC services range widely in ticket value — AC repair visits, maintenance agreements, and full system replacements each have different economics, and your attribution should reflect that. If your HVAC SEO program cannot show a clear line from search rankings to dispatched jobs, the program is not being managed correctly.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -315,7 +460,7 @@ export default function HvacSeoPage() {
             {[
               {
                 title: "Local SEO and Google Business Profile",
-                body: "Local SEO is the highest-ROI channel for most HVAC contractors. Google Business Profile optimization drives Map Pack visibility, which captures the majority of clicks on emergency HVAC queries. Accurate NAP citations, consistent review velocity, and service area configuration are the foundation of local search rankings that produce phone calls from homeowners ready to book.",
+                body: "Local SEO is the highest-ROI channel for most HVAC contractors. Google Business Profile optimization drives Map Pack visibility, which captures the majority of clicks on emergency HVAC queries. Accurate NAP citations, consistent review velocity, and service area configuration are the foundation of local search rankings that produce phone calls from homeowners ready to book. For HVAC companies competing in dense markets, online visibility in the Map Pack determines whether your phone rings or a competitor's does — the difference between the first and fourth result in local search is often the majority of available clicks.",
               },
               {
                 title: "On-Page SEO and Service Pages",
@@ -323,7 +468,7 @@ export default function HvacSeoPage() {
               },
               {
                 title: "Technical SEO and Website Performance",
-                body: "Technical SEO covers the infrastructure that search engines use to crawl, index, and rank your web pages. For HVAC companies, this includes mobile page speed, Core Web Vitals, schema markup for local businesses, and proper site architecture. A fast, mobile-optimized website converts organic traffic at higher rates and signals to Google that your site deserves to rank for competitive HVAC keywords.",
+                body: "Technical SEO covers the infrastructure that search engines use to crawl, index, and rank your web pages. For HVAC companies, this includes website speed optimization, mobile page speed, Core Web Vitals, schema markup for local businesses, and proper site architecture. Website speed matters specifically because most emergency HVAC searches happen on mobile — a slow-loading HVAC website loses potential customers before they read a single line. Search engines use page experience signals as ranking factors, and a fast, well-structured HVAC website tells search engines your business deserves to outrank competitors with slower, less organized sites.",
               },
               {
                 title: "Off-Page SEO, Link Building, and Online Reputation",
@@ -414,6 +559,18 @@ export default function HvacSeoPage() {
               {
                 q: "What do most HVAC companies get wrong about SEO?",
                 a: "The most common mistake is treating SEO as a one-time project rather than an ongoing program. Search engine rankings require continuous content updates, review generation, citation maintenance, and technical health monitoring. The second most common mistake is measuring SEO by rankings rather than phone calls. Rankings are a leading indicator, but booked jobs are the outcome that matters. A proper HVAC SEO program tracks organic traffic, call volume by landing page, and revenue from organic search.",
+              },
+              {
+                q: "How is SEO for HVAC companies different from internet marketing for other local businesses?",
+                a: "SEO for HVAC companies is shaped by two dynamics that rarely apply to other local businesses: seasonality and emergency intent. Most HVAC searches happen at the moment equipment fails, which means the conversion window is extremely short and search engines need to know your business is available, relevant, and trusted before that moment arrives. Internet marketing for retail or restaurants can afford longer nurture cycles. For a local HVAC contractor, the homeowner who searches for AC repair on a 105-degree afternoon will call the first credible result they see. That is why HVAC SEO focuses so heavily on real-time trust signals: review recency, GBP completeness, and service pages that load fast and answer the right questions immediately.",
+              },
+              {
+                q: "What should an HVAC company expect from SEO services in the first year?",
+                a: "In the first 90 days, expect improvements in Google Business Profile visibility, citation accuracy, and on-page SEO fundamentals. Keyword rankings for lower-competition terms typically begin moving in months three through five. By the end of the first year, a well-run HVAC SEO program should show measurable organic traffic growth, improved phone call volume from organic search, and a clear picture of which HVAC services pages are driving the most satisfied customers to call. Home service companies that invest consistently in HVAC SEO for 12 months typically see cost-per-lead from organic well below their Google Ads spend. A successful HVAC SEO campaign by year one means your organic presence is doing meaningful revenue work, not just accumulating impressions.",
+              },
+              {
+                q: "Do search engines other than Google matter for HVAC companies?",
+                a: "Bing, Apple Maps, and other search engines account for a real share of HVAC searches, particularly from older demographics and iPhone users. A complete HVAC SEO strategy does not ignore these platforms. Bing Places for Business and Apple Business Connect are both free and take less than an hour to configure. The same citation accuracy and on-page SEO work that helps you rank on Google also improves your visibility on other search engines. For HVAC companies focused on building their business online, multi-platform visibility is a straightforward extension of the core SEO work already in place.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-white p-7">

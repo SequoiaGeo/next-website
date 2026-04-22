@@ -25,7 +25,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Home Services Marketing That Looks at the Full Picture | Sequoia GEO",
   description:
-    "Your marketing agency sees clicks. I see your booking rate, average ticket, and why $7K/mo in leads produces $475 in revenue. 13 years as a home services operator. 4x Inc 5000. Now serving 10 companies at a time.",
+    "Home services marketing connected to booked jobs. 13-year operator, 4x Inc 5000. I see your booking rate, average ticket, and where revenue leaks — not just your lead count.",
   keywords: [
     "fractional CMO home services",
     "home services marketing",
@@ -71,6 +71,7 @@ const organizationSchema = {
   name: "Sequoia GEO",
   url: "https://www.sequoiageo.com",
   logo: "https://www.sequoiageo.com/logo.png",
+  image: "https://www.sequoiageo.com/og-image.png",
   description:
     "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, 4x Inc 5000 honoree and 13-year home services operator.",
   foundingDate: "2024",

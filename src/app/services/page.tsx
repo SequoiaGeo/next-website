@@ -142,15 +142,16 @@ export default function ServicesPage() {
               What Contractor Digital Marketing Actually Covers
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Digital marketing for contractors is not a single tactic. It is a coordinated system of digital
-              marketing services designed to generate qualified leads at every stage of the customer journey.
+              Digital marketing for contractors is not a single tactic. It is a coordinated system of contractor
+              digital marketing services designed to generate qualified leads at every stage of the customer journey,
+              reaching the right target audience at the right moment in the buying process.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {[
               {
                 title: "Local SEO and Search Engine Optimization",
-                body: "Local SEO puts your business in front of potential customers searching for your services right now. Search engine optimization for contractors focuses on Google Business Profile, service area pages, keyword research, and the authority signals that improve your position in search engine results. Strong SEO strategies build organic website traffic that generates qualified leads without ongoing ad spend.",
+                body: "Local SEO and local search visibility puts your business in front of potential customers searching for your services right now. Search engine optimization SEO for contractors focuses on Google Business Profile, service area pages, keyword research, and the authority signals that improve your position in search engine results. SEO services like citation building and on-page optimization build organic website traffic that generates qualified leads without ongoing ad spend.",
               },
               {
                 title: "Paid Advertising and Google Local Service Ads",
@@ -244,7 +245,7 @@ export default function ServicesPage() {
               },
               {
                 q: "How long do digital marketing strategies take to work?",
-                a: "PPC advertising and Google Local Service Ads generate qualified leads within days of launch. SEO strategies and content marketing take 3&ndash;6 months to produce significant results in organic search engine results, but they create compounding website traffic and lead generation over time. The most effective contractor digital marketing programs combine both: paid digital marketing campaigns for immediate qualified leads while SEO strategies build the long-term organic asset.",
+                a: "PPC advertising and Google Local Service Ads generate qualified leads within days of launch. Search engine optimization SEO strategies and content marketing take 3&ndash;6 months to produce significant results in organic search engine results, but they create compounding website traffic and lead generation over time. The most effective contractor digital marketing programs combine both: paid digital marketing campaigns for immediate qualified leads while SEO strategies build the long-term organic asset.",
               },
               {
                 q: "What makes marketing for contractors different from general business marketing?",
@@ -278,6 +279,12 @@ export default function ServicesPage() {
             Every engagement starts with a Full Picture Audit: your marketing spend and ROI by channel,
             your phone handling, your booking rate, your review velocity, and where revenue is leaking.
             You get a complete playbook before a single dollar of new spend is approved.
+          </p>
+          <p className="mt-4 text-base text-[#C8EDD2]/60">
+            The goal is to generate leads from prospective clients who are actively searching in your market,
+            then convert more of them into booked jobs. If you want to be an industry leader in your local market,
+            the marketing efforts have to match that standard. Digital marketing efforts that focus on vanity
+            metrics instead of revenue will not get you there.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link

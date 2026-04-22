@@ -59,22 +59,22 @@ export default function AboutAaron() {
 
             <div className="mt-6 space-y-4 text-base leading-relaxed text-gray-600">
               <p>
-                Most contractors trust their marketing partner to take care of things.
-                That trust is reasonable. The problem is that most marketing partners have
-                never run payroll for 130 employees, watched a slow month threaten everything
-                they built, or sat in a CSR training session wondering why booking rates
+                Most contractors trust their <strong>marketing partner</strong> to take care of things.
+                That trust is reasonable. The problem is that most <strong>marketing partners</strong> have
+                never run payroll for <strong>130 employees</strong>, watched a slow month threaten everything
+                they built, or sat in a <strong>CSR training session</strong> wondering why <strong>booking rates</strong>
                 won&rsquo;t move.
               </p>
               <p>
-                After 13 years building a home services company from startup to 4x Inc 5000,
+                After <strong>13 years</strong> building a <strong>home services company</strong> from startup to <strong>4x Inc 5000</strong>,
                 the one thing that separated growth years from flat years wasn&rsquo;t the
-                agency we hired. It was whether marketing, operations, and sales were
+                <strong>agency</strong> we hired. It was whether <strong>marketing</strong>, operations, and sales were
                 connected or siloed.
               </p>
               <p>
-                That&rsquo;s what Sequoia GEO is built around: the full picture. Not just
-                your ad spend, but your booking rate, your average ticket, your appointment
-                notes, your phones on Saturday morning. The things your current agencies
+                That&rsquo;s what <strong>Sequoia GEO</strong> is built around: the full picture. Not just
+                your <strong>ad spend</strong>, but your <strong>booking rate</strong>, your <strong>average ticket</strong>, your appointment
+                notes, your phones on Saturday morning. The things your current <strong>agencies</strong>
                 aren&rsquo;t looking at because it&rsquo;s &ldquo;not their department.&rdquo;
               </p>
             </div>
@@ -82,7 +82,7 @@ export default function AboutAaron() {
             {/* Pull quote */}
             <blockquote className="mt-8 rounded-xl bg-[#0D2318] px-7 py-6">
               <p className="text-base font-medium italic text-[#C8EDD2]/90 leading-relaxed">
-                &ldquo;An agency sends you a leads report. An owner asks why revenue didn&rsquo;t move.&rdquo;
+                &ldquo;An <strong>agency</strong> sends you a <strong>leads report</strong>. An owner asks why <strong>revenue</strong> didn&rsquo;t move.&rdquo;
               </p>
               <footer className="mt-4 flex items-center gap-3">
                 <div className="h-px flex-1 bg-white/10" />

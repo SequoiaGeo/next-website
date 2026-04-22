@@ -98,7 +98,7 @@ export default function AtlasPage() {
 
       <div style={{ position: "relative", zIndex: 2 }}>
 
-        {/* â”€â”€ HERO â”€â”€ */}
+        {/* â"€â"€ HERO â"€â"€ */}
         <section style={{ position: "relative", padding: "110px 80px 100px", overflow: "hidden" }}>
           <div style={{ position: "absolute", right: 80, top: 120, opacity: 0.6, pointerEvents: "none" }} aria-hidden="true">
             <SequoiaSprig size={140} ink={ATLAS.forest} />
@@ -145,7 +145,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â”€â”€ STAGES â”€â”€ */}
+        {/* â"€â"€ STAGES â"€â"€ */}
         <section
           id="stages"
           style={{
@@ -185,7 +185,7 @@ export default function AtlasPage() {
                   lineHeight: 1.5,
                 }}
               >
-                Growth has seasons. We meet you in yours â€” and name the next one out loud.
+                Growth has seasons. We meet you in yours — and name the next one out loud.
               </p>
             </div>
 
@@ -197,7 +197,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â”€â”€ SERVICES â”€â”€ */}
+        {/* â"€â"€ SERVICES â"€â"€ */}
         <section
           id="services"
           style={{
@@ -252,7 +252,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â”€â”€ GEO â”€â”€ */}
+        {/* â"€â"€ GEO â"€â"€ */}
         <section
           id="geo"
           style={{
@@ -286,7 +286,7 @@ export default function AtlasPage() {
                     color: ATLAS.paper,
                   }}
                 >
-                  GEO â€” how
+                  GEO — how
                   <br />
                   <em style={{ color: ATLAS.sage, fontFamily: "var(--f-serif)", fontWeight: 400 }}>machines</em> find you.
                 </h2>
@@ -379,7 +379,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â”€â”€ OPERATOR QUOTE â”€â”€ */}
+        {/* â"€â"€ OPERATOR QUOTE â"€â"€ */}
         <section
           id="about"
           style={{
@@ -435,7 +435,7 @@ export default function AtlasPage() {
                   }}
                   aria-hidden="true"
                 >
-                  â€
+                  "
                 </span>
               </p>
             </blockquote>
@@ -487,7 +487,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â”€â”€ FINAL CTA â”€â”€ */}
+        {/* â"€â"€ FINAL CTA â"€â"€ */}
         <section
           style={{
             padding: "160px 80px",
@@ -531,7 +531,7 @@ export default function AtlasPage() {
                 color: "rgba(243,236,216,0.75)",
               }}
             >
-              Thirty minutes. Free. Youâ€™ll leave with three clear next steps â€” even if you never hire us.
+              Thirty minutes. Free. Youâ€™ll leave with three clear next steps — even if you never hire us.
             </p>
             <Link
               href="/#contact"
@@ -554,7 +554,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â”€â”€ FOOTER â”€â”€ */}
+        {/* â"€â"€ FOOTER â"€â"€ */}
         <footer
           style={{
             padding: "40px 80px",

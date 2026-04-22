@@ -200,7 +200,7 @@ export default function RestorationSeoPage() {
                   mold remediation inquiries.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I built Balanced Comfort from startup to 130+ employees and $10M+ in annual revenue.
+                  I built Balanced Comfort over a decade from startup to 130+ employees and $10M+ in annual revenue.
                   That experience is what I bring to every restoration client I work with.
                 </p>
               </div>
@@ -230,8 +230,9 @@ export default function RestorationSeoPage() {
               What Restoration SEO Actually Requires
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Restoration SEO is not the same as standard home service SEO. Here are the four components
-              every restoration company needs to compete in local search results.
+              Restoration SEO is specialized search engine optimization for restoration companies. The four
+              components every restoration company needs to compete for local search engine rankings are distinct
+              from standard home service SEO — because the dual demand pattern changes everything.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -246,7 +247,7 @@ export default function RestorationSeoPage() {
               },
               {
                 title: "Technical SEO and Site Speed",
-                body: "A slow restoration website loses emergency calls before the property owner even reads your offer. Page speed is a direct search engine ranking signal. Technical SEO ensures search engines can crawl and index your restoration website correctly. I audit every restoration company&rsquo;s website for technical issues before building out any content strategy &ndash; technical debt silently suppresses rankings for years.",
+                body: "A slow restoration website loses emergency calls before the property owner even reads your offer. Page speed is a direct search engine ranking signal. Technical SEO ensures search engines can crawl and index your restoration website correctly. Mobile optimization matters especially for emergency searches — most water damage and fire damage calls originate from a phone. I use Google Analytics and Google Search Console to baseline website traffic and search rankings before any work begins. Technical debt silently suppresses search engine rankings for years and most restoration companies have never done a thorough audit.",
               },
               {
                 title: "Link Building and Reputation",
@@ -366,13 +367,15 @@ export default function RestorationSeoPage() {
               Search engine optimization for restoration companies has to serve two distinct demand types:
               emergency calls from homeowners with active water damage or fire damage, and insurance-driven
               jobs where adjusters and policyholders are researching restoration contractors days after the event.
+              Water damage restoration services and fire damage restoration work require different search visibility
+              strategies — and most SEO companies do not understand either.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {[
               {
                 title: "Local SEO and Emergency Search Visibility",
-                body: "Local SEO for restoration companies focuses heavily on emergency query capture: 'water damage restoration near me,' 'flood cleanup,' 'fire damage repair.' These queries happen at 2am when homeowners are in crisis. Google Business Profile visibility in the Map Pack, fast mobile load speeds, and a prominently displayed phone number determine which restoration company gets that call. Local search visibility built before emergencies happen captures demand that cannot be planned around.",
+                body: "Local SEO for restoration companies focuses heavily on emergency query capture: 'water damage restoration near me,' 'flood cleanup,' 'fire damage repair.' These queries happen at 2am when homeowners are in crisis. Google Business Profile visibility in Google Maps and Google search results, fast mobile load speeds, and a prominently displayed phone number determine which restoration company gets that call. Local search visibility and local visibility in the Map Pack built before emergencies happen captures demand that cannot be planned around.",
               },
               {
                 title: "On-Page SEO for Restoration Services",
@@ -433,12 +436,12 @@ export default function RestorationSeoPage() {
               {
                 number: "03",
                 title: "Online Reviews and Reputation Management",
-                body: "Restoration companies operate in high-stress situations where the customer experience is particularly memorable. Positive online reviews from satisfied restoration customers carry significant weight in local search rankings and conversion. A review generation system that captures feedback consistently after every completed job builds the online reputation that local search rewards. Review recency matters because restoration jobs happen year-round and reviews from three years ago carry less weight than recent ones.",
+                body: "Restoration companies operate in high-stress situations where the customer experience is particularly memorable. Positive online reviews from satisfied restoration customers carry significant weight in local search rankings and conversion. A review generation system that captures feedback consistently after every completed job builds the online reputation and brand visibility that local search rewards. Review recency matters because restoration jobs happen year-round and reviews from three years ago carry less weight than recent ones. Building relationships with past customers through follow-up and review requests is one of the most reliable ways to maintain consistent review velocity.",
               },
               {
                 number: "04",
                 title: "Attribution from Search to Dispatched Job",
-                body: "Restoration SEO success should be measured by dispatched jobs and revenue, not impressions and rankings. That requires call tracking tied to organic landing pages, integration with your CRM or job management system, and reporting that separates emergency organic calls from insurance referrals from paid search. Without that attribution infrastructure, you cannot allocate marketing budget correctly or hold your SEO program accountable to actual business outcomes.",
+                body: "Restoration SEO success should be measured by dispatched jobs and revenue, not impressions and rankings. That requires Google Analytics for web traffic monitoring, Google Search Console for search ranking data, call tracking tied to organic landing pages, and integration with your job management system. Website visitors from organic search become phone calls, phone calls become qualified leads, and qualified leads become dispatched jobs. Reporting that separates emergency organic calls from insurance referrals from paid search is what lets you measure marketing ROI correctly and hold your SEO campaign accountable to actual business outcomes.",
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -470,8 +473,12 @@ export default function RestorationSeoPage() {
                 a: "The most effective restoration SEO programs maintain separate content tracks for insurance-driven jobs and retail emergency calls. Insurance content addresses the claim process, contractor certifications, documentation standards, and TPA relationships. Retail emergency content focuses on speed, availability, and what to do immediately after discovering damage. These are different audiences with different search behavior and different decision criteria. Mixing them on a single generic page serves neither well.",
               },
               {
+                q: "How do restoration SEO services improve search engine rankings?",
+                a: "SEO services for restoration companies improve search engine rankings through a combination of technical fixes, content development, local citation building, and Google Business Profile optimization. For water damage restoration companies, the highest-priority improvements are usually technical indexation issues (pages Google cannot crawl), GBP optimization for the Map Pack, and city-specific service area pages targeting the keywords homeowners search when they have active water damage. Search engine optimization for fire damage restoration follows the same structure but with different content targeting fire, smoke, and soot damage queries. Most restoration companies that invest consistently in SEO services see measurable improvement in local search rankings within 3 to 6 months.",
+              },
+              {
                 q: "What should I look for in a restoration SEO agency?",
-                a: "Look for a restoration SEO agency that understands the difference between insurance job flow and emergency retail calls, has experience with the specific platforms restoration companies use for job management and documentation, and reports success in terms of dispatched jobs rather than website traffic. A general digital marketing agency does not have the restoration industry knowledge to build the content strategy that captures both demand types effectively.",
+                a: "Look for a restoration SEO company that offers SEO services built specifically for the restoration industry. The right SEO company for restoration contractors understands the difference between insurance job flow and emergency retail calls, knows the platforms restoration companies use for job management, and reports SEO success in terms of dispatched jobs and Google Analytics data — not just website traffic and keyword rankings. A general digital marketing agency does not have the restoration knowledge to build an SEO strategy for restoration companies that captures both demand types. Ask any SEO company you evaluate for restoration-specific case studies with revenue outcomes.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">

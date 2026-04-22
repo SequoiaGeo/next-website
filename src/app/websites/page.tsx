@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Website Portfolio | Sequoia GEO",
   description:
-    "Websites built by Sequoia GEO â€” from-scratch builds and full rebuilds for home service contractors, nonprofits, and local businesses. Built to convert, not just look good.",
+    "Websites built by Sequoia GEO — from-scratch builds and full rebuilds for home service contractors, nonprofits, and local businesses. Built to convert, not just look good.",
   alternates: {
     canonical: "https://www.sequoiageo.com/websites",
   },
@@ -35,7 +35,7 @@ const sites: PortfolioSite[] = [
     industry: "Marketing & Growth Operations",
     buildType: "Own Site",
     story:
-      "Three generations of the same site. Started in Wix, rebuilt with Manus AI, then fully rearchitected in Next.js. Each version tested different conversion hypotheses â€” the current build is the result of that iteration.",
+      "Three generations of the same site. Started in Wix, rebuilt with Manus AI, then fully rearchitected in Next.js. Each version tested different conversion hypotheses — the current build is the result of that iteration.",
     highlight: "Wix \u2192 Manus AI \u2192 Next.js",
     accentColor: "#0D2318",
     textColor: "#C8EDD2",
@@ -72,7 +72,7 @@ const sites: PortfolioSite[] = [
     industry: "Food & Catering",
     buildType: "From Scratch",
     story:
-      "A local BBQ caterer with no web presence at all. Built from zero to a site that showcases their menu, services, and booking process â€” giving them a professional presence they didn\u2019t have before.",
+      "A local BBQ caterer with no web presence at all. Built from zero to a site that showcases their menu, services, and booking process — giving them a professional presence they didn\u2019t have before.",
     accentColor: "#4a1a00",
     textColor: "#edd8c8",
     screenshot: "/melscatering.webp",
@@ -283,7 +283,7 @@ export default function WebsitesPage() {
               },
               {
                 title: "Local SEO structure",
-                desc: "Schema markup, proper title tags, service area pages â€” built in from day one.",
+                desc: "Schema markup, proper title tags, service area pages — built in from day one.",
               },
               {
                 title: "Google Business integration",
@@ -322,7 +322,7 @@ export default function WebsitesPage() {
             Need a site that actually gets calls?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
-            We start with an audit of what you have â€” or what you need. No proposals until
+            We start with an audit of what you have — or what you need. No proposals until
             we both know what the real problem is.
           </p>
           <div className="mt-8">
