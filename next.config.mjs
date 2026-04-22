@@ -36,7 +36,7 @@ const nextConfig = {
       { source: "/pest-control-seo", destination: "/#services", permanent: false },
       { source: "/garage-door-seo", destination: "/#services", permanent: false },
       { source: "/electrical-seo", destination: "/#services", permanent: false },
-      { source: "/hvac-marketing", destination: "/hvac-seo", permanent: true },
+      // /hvac-marketing now has its own index page — no redirect needed
       { source: "/google-ads-management", destination: "/#services", permanent: false },
       { source: "/local-service-ads", destination: "/#services", permanent: false },
       { source: "/social-media-marketing", destination: "/#services", permanent: false },

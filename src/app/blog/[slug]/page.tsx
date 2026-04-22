@@ -218,124 +218,245 @@ const posts: Record<string, Post> = {
   },
 
   "local-seo-competitor-analysis": {
-    title: "How to Analyze Your Local SEO Competitors: A Contractor's Field Guide",
+    title: "Local SEO Competitor Analysis for Contractors: Step-by-Step Playbook",
     description:
-      "A practical framework for understanding what's working in your local market, Google Maps analysis, GBP benchmarking, website signals, review velocity, and how to use SEO tools with proper location settings.",
+      "Find out exactly who is outranking you in local search, what they are doing differently, and how to close the gap. The full process used for HVAC, plumbing, and roofing contractors.",
     date: "January 2026",
     dateISO: "2026-01-20",
-    readTime: "9 min read",
+    readTime: "12 min read",
     category: "Local SEO",
     content: (
       <div className="prose prose-lg max-w-none">
         <p>
-          Before spending another dollar on SEO, you need to understand your market baseline. Who&rsquo;s
-          actually ranking in your local area? What are they doing that you&rsquo;re not? This guide
-          walks through the exact process I use when auditing a new client&rsquo;s competitive landscape.
+          Before spending another dollar on SEO, you need to know your market baseline. Who is actually
+          ranking in your local area? What are they doing that you are not? This playbook walks through
+          the exact process used when auditing a new client&rsquo;s competitive landscape, from finding
+          the right competitors to tracking the right metrics month over month.
+        </p>
+        <p>
+          Most contractors skip this step entirely and end up optimizing for a competitive landscape they
+          imagined rather than the one that actually exists. The result is wasted budget chasing keywords
+          the wrong businesses rank for, or ignoring the specific gaps that would actually move the needle.
         </p>
 
-        <h2>Step 1: Find Your Real Competitors on Google Maps</h2>
+        <h2>Step 1: Find Your Real Local Competitors</h2>
         <p>
-          Your real SEO competitors are not necessarily your business rivals. They&rsquo;re whoever is
-          ranking in the Google Map Pack for your target keywords. Open Google in an incognito browser
-          window (so your search history doesn&rsquo;t influence results) and search for:
+          Your SEO competitors are not your business rivals. They are whoever is ranking in the{" "}
+          <strong>Google Map Pack</strong> for your target keywords right now. These may be different
+          companies entirely.
+        </p>
+        <p>
+          Open Google in an incognito window (so your search history does not skew results) and run these
+          searches:
         </p>
         <ul>
           <li>[your service] + [your city]</li>
           <li>[your service] near me</li>
           <li>best [your service] + [your city]</li>
           <li>emergency [your service] + [your city]</li>
+          <li>[your service] + [neighboring city or suburb]</li>
         </ul>
         <p>
-          Do this for 5&ndash;10 different keyword variations and note who appears in the Map Pack
-          consistently. Those 3&ndash;5 businesses are your actual SEO competitors, regardless of whether
-          they compete with you for the same customer base in other ways.
+          Run 8 to 10 keyword variations and document who appears in the Map Pack consistently. The 3 to 5
+          businesses showing up repeatedly are your actual SEO competitors. Build your entire analysis around
+          them, not around who you think of as your business competition.
+        </p>
+        <p>
+          If you want more precise data, use a tool like{" "}
+          <strong>BrightLocal&rsquo;s Local Search Grid</strong> or <strong>GMBspy</strong> to see Map Pack
+          rankings across a geographic grid rather than a single search point. This matters because Google
+          personalizes results by location, so a search from downtown can look different from one in a
+          suburb 8 miles away.
         </p>
 
         <h2>Step 2: Benchmark Each Competitor&rsquo;s Google Business Profile</h2>
         <p>
-          For each top competitor, document: total review count, average star rating, reviews in the last
-          30 days (review velocity), photo count and recency, whether they respond to reviews, posting
-          frequency, and service area coverage.
+          The Google Business Profile is the most direct ranking signal in local search. For each top competitor,
+          record the following in a spreadsheet:
         </p>
+        <ul>
+          <li><strong>Total review count</strong></li>
+          <li><strong>Average star rating</strong></li>
+          <li><strong>Review velocity</strong> (new reviews in the last 30 days)</li>
+          <li><strong>Photo count and recency</strong> (when was the most recent photo added)</li>
+          <li><strong>Whether they respond to reviews</strong> (and how fast)</li>
+          <li><strong>GBP post frequency</strong></li>
+          <li><strong>Services listed</strong> and whether descriptions are filled in</li>
+          <li><strong>Q&A section</strong> (how many questions, are they answered)</li>
+          <li><strong>Service area coverage</strong> vs. physical address</li>
+        </ul>
         <p>
           The metric that matters most and gets overlooked most often is <strong>review velocity</strong>.
           A competitor with 200 reviews getting 10 new reviews per month is beating you at the signal
-          Google uses most heavily for local rankings, even if you have 350 total reviews getting
-          2 per month.
+          Google uses most heavily for local rankings, even if you have 350 total reviews but only 2 new
+          ones per month. Total count is a lagging indicator. Velocity is what Google is watching in real time.
         </p>
         <p>
-          Create a spreadsheet and log these numbers monthly. The trend matters as much as the snapshot.
+          Log these numbers every month. Snapshots are useful; trends are actionable. A competitor who
+          has 180 reviews today and 220 in 90 days is a different threat than one who has been stuck at 180
+          for a year.
         </p>
 
         <h2>Step 3: Analyze Their Websites</h2>
-        <p>Look at the following signals on each competitor&rsquo;s website:</p>
+        <p>
+          Open each competitor&rsquo;s site and work through this checklist:
+        </p>
         <ul>
-          <li>Title tags and meta descriptions (what keywords are they targeting?)</li>
-          <li>Do they have dedicated service pages for each service type?</li>
-          <li>Do they have city-specific landing pages?</li>
-          <li>Is their NAP (Name, Address, Phone) consistent and in the footer?</li>
-          <li>Do they have an embedded Google Map?</li>
-          <li>Schema markup (use Google&rsquo;s Rich Results Test)</li>
-          <li>Page speed (Google PageSpeed Insights)</li>
+          <li><strong>Title tags and meta descriptions</strong>: What keywords are they targeting? Are they city-specific?</li>
+          <li><strong>Service page depth</strong>: Do they have a dedicated page for each service, or one generic services page?</li>
+          <li><strong>City/location pages</strong>: Are there separate pages for each city or suburb they serve?</li>
+          <li><strong>NAP consistency</strong>: Is their Name, Address, Phone in the footer and matching their GBP exactly?</li>
+          <li><strong>Embedded Google Map</strong>: Most high-ranking local sites have one on their contact or homepage.</li>
+          <li><strong>Schema markup</strong>: Use Google&rsquo;s Rich Results Test (search.google.com/test/rich-results). Are they using LocalBusiness or Service schema?</li>
+          <li><strong>Page speed</strong>: Run their site through Google PageSpeed Insights. Note mobile score specifically.</li>
+          <li><strong>Content depth</strong>: Are their service pages 200 words or 1,000 words? Thin pages rank poorly for competitive terms.</li>
+          <li><strong>Blog or resource content</strong>: Do they publish content consistently? This builds topical authority over time.</li>
         </ul>
         <p>
-          You&rsquo;re not looking for perfection. You&rsquo;re looking for gaps, things they&rsquo;re
-          doing that you&rsquo;re not, and things you can do better.
+          You are not looking for a perfect site. You are looking for gaps between what they have and what
+          you have, and gaps between what they have and what Google actually rewards. A competitor with
+          a slow site but 15 dedicated service pages is giving you two clear paths: beat their speed,
+          and match or exceed their content depth.
         </p>
 
-        <h2>Step 4: Check Their Backlinks</h2>
+        <h2>Step 4: Check Their Backlink and Citation Profile</h2>
         <p>
-          Free options include Moz Link Explorer and Google Search Console&rsquo;s Links report. Paid
-          options like Ahrefs or SEMrush give deeper data. For most local contractors, the most valuable
-          backlinks come from: local business directories, chambers of commerce, local news sites, industry
-          associations, and supplier websites.
+          For local contractors, backlinks break down into two categories: <strong>local citations</strong>
+          (directory listings that confirm your NAP data) and <strong>editorial links</strong> (actual
+          links from other websites). Both matter, but for most local markets, citations are the bigger gap.
         </p>
         <p>
-          Find where your competitors have local citations that you don&rsquo;t. Those are easy wins , 
-          getting listed in the same directories gets you the same citation signals they have.
-        </p>
-
-        <h2>Using SEO Tools: Set Location Correctly</h2>
-        <p>
-          One of the most common mistakes contractors make in SEO tools is using too broad a location setting.
-          If you&rsquo;re an HVAC company in Federal Way, Washington, don&rsquo;t set your location to
-          &ldquo;Seattle-Tacoma.&rdquo; Set it to &ldquo;Federal Way, Washington&rdquo; or use the specific
-          zip codes.
+          Free options for backlink research include Moz Link Explorer (limited free searches) and
+          Google Search Console&rsquo;s Links report for your own site. Paid options like{" "}
+          <strong>Ahrefs</strong> or <strong>SEMrush</strong> give deeper competitor data. For citation
+          auditing specifically, <strong>Whitespark&rsquo;s Citation Finder</strong> is built exactly
+          for this and worth the cost.
         </p>
         <p>
-          Broader metro settings give you data about a different competitive landscape. The keywords that
-          rank in Federal Way are not the same as the keywords that rank in Seattle proper. Use the specific
-          city or zip code every time.
+          For most local contractors, the highest-value citation sources are:
         </p>
-
-        <h2>Building Your 30-Day Analysis Plan</h2>
         <ul>
-          <li><strong>Week 1:</strong> Run Map Pack tests for your top 10 keywords. Document the top 5 competitor GBPs.</li>
-          <li><strong>Week 2:</strong> Analyze each competitor&rsquo;s GBP metrics and set up your monthly tracking spreadsheet.</li>
-          <li><strong>Week 3:</strong> Document each competitor&rsquo;s website structure, content depth, and local signals.</li>
-          <li><strong>Week 4:</strong> Run backlink analysis. Establish your baseline rankings in your target keywords.</li>
+          <li>Local chamber of commerce directories</li>
+          <li>BBB (Better Business Bureau)</li>
+          <li>Industry associations (ACCA, PHCC, NRCA, etc.)</li>
+          <li>Local news site business listings</li>
+          <li>Supplier and manufacturer dealer locators</li>
+          <li>HomeAdvisor, Angi, Thumbtack (even if you do not buy leads, the citation matters)</li>
+        </ul>
+        <p>
+          Find where your competitors are listed that you are not. Getting listed in the same directories
+          gives you the same NAP citation signals without any link-building outreach. These are the fastest
+          backlink-equivalent wins available to a local contractor.
+        </p>
+
+        <h2>Step 5: Track Keyword Rankings at the Right Geographic Level</h2>
+        <p>
+          One of the most common mistakes in SEO tools is setting the wrong location. If you run an HVAC
+          company in Federal Way, Washington, do not set your location to &ldquo;Seattle-Tacoma.&rdquo;
+          Set it to &ldquo;Federal Way, Washington&rdquo; or use specific zip codes.
+        </p>
+        <p>
+          Broad metro settings show you the competitive landscape for a different geography. The keywords
+          that rank in Federal Way are not the same as the keywords that rank downtown Seattle. Rankings,
+          competitor difficulty, and search volume all differ at the city and even zip code level for
+          home services.
+        </p>
+        <p>
+          Tools that handle hyper-local rank tracking well:
+        </p>
+        <ul>
+          <li><strong>BrightLocal</strong>: Best purpose-built tool for local rank tracking across multiple locations</li>
+          <li><strong>SEMrush Local</strong>: Good for combining organic rank tracking with GBP insights</li>
+          <li><strong>LocalFalcon</strong>: Grid-based Map Pack rank tracking, excellent for visualizing where you rank across a service area</li>
+          <li><strong>Google Search Console</strong>: Free, shows actual query data, but not location-granular</li>
+        </ul>
+
+        <h2>How to Prioritize What You Find</h2>
+        <p>
+          After running this analysis, you will have a list of gaps. Not all gaps are equal. Here is how
+          to prioritize them:
+        </p>
+        <ul>
+          <li>
+            <strong>Reviews and velocity first.</strong> If your competitors have 2x your review count
+            or are getting 5x your monthly velocity, that is the highest-leverage gap to close. A systematic
+            review request process (text after job completion) is the fastest way to move this.
+          </li>
+          <li>
+            <strong>Missing service pages second.</strong> If competitors have dedicated pages for AC repair,
+            AC installation, furnace repair, furnace installation, and heat pumps, and you have one &ldquo;HVAC
+            Services&rdquo; page, you are missing ranking opportunities for every one of those specific queries.
+          </li>
+          <li>
+            <strong>Citation gaps third.</strong> Find the top 10 directories your competitors are in
+            that you are not. Submit to all of them in one week.
+          </li>
+          <li>
+            <strong>Technical issues fourth.</strong> If your site fails PageSpeed on mobile or is missing
+            schema, fix those after the higher-leverage items are handled.
+          </li>
+        </ul>
+
+        <h2>Your 30-Day Analysis Checklist</h2>
+        <ul>
+          <li><strong>Week 1:</strong> Run Map Pack tests for your top 10 keywords. Document which businesses appear consistently. Record their GBP stats.</li>
+          <li><strong>Week 2:</strong> Complete website analysis for each competitor. Build your comparison spreadsheet with your own site included.</li>
+          <li><strong>Week 3:</strong> Run citation audit. Submit to any directories your competitors are listed in that you are not.</li>
+          <li><strong>Week 4:</strong> Set up rank tracking at the correct hyper-local level. Establish your baseline before starting any optimization so you can measure what actually moved.</li>
         </ul>
 
         <h2>The Most Common Mistakes</h2>
         <ul>
-          <li>Analyzing national or regional companies instead of the actual local businesses ranking in your market</li>
-          <li>Doing this analysis once instead of monthly</li>
-          <li>Ignoring review velocity, focusing only on total count</li>
-          <li>Using broad metro-level settings in keyword tools</li>
-          <li>Not tracking your own baseline before starting any optimization work</li>
+          <li>Analyzing national or regional brands instead of the local businesses actually ranking in your market</li>
+          <li>Running this analysis once and never revisiting it (competitive landscapes shift quarterly)</li>
+          <li>Focusing on total review count while ignoring velocity</li>
+          <li>Using broad metro-level location settings in keyword tools</li>
+          <li>Not recording your own baseline before starting optimization, which makes it impossible to know what worked</li>
+          <li>Treating every gap as equally urgent instead of sequencing by leverage</li>
         </ul>
 
-        <h2>What to Do With This Data</h2>
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>How often should I run a local SEO competitor analysis?</h3>
         <p>
-          Once you know your market baseline, the path is straightforward: exceed your competitors on
-          the metrics Google uses most heavily. In local SEO, that means reviews (quantity and velocity),
-          content (service pages and location pages), citations (local directory listings), and website
-          signals (speed, schema, NAP consistency).
+          Monthly for the GBP metrics (reviews, velocity, photos) since these change quickly. Quarterly
+          for the full analysis including website structure and backlinks. Competitive landscapes in local
+          markets shift significantly over 6 to 12 months, especially if any competitor is actively investing
+          in SEO.
         </p>
+
+        <h3>What is the most important metric in local SEO competitor analysis?</h3>
         <p>
-          The advantage of this framework over generic SEO advice is that it&rsquo;s calibrated to your
-          specific market. You&rsquo;re not trying to match some national benchmark, you&rsquo;re
-          trying to beat the specific businesses that are outranking you right now.
+          Review velocity. Not total review count, not star rating. The rate at which a competitor
+          is accumulating new reviews in the current month is the signal most correlated with Map Pack
+          ranking movement. A business with 150 reviews getting 15 per month will outrank a business
+          with 400 reviews getting 2 per month within 6 to 12 months, all else being equal.
+        </p>
+
+        <h3>Can I do this without paid SEO tools?</h3>
+        <p>
+          Yes, for the most part. The Map Pack analysis, GBP benchmarking, and website checklist require
+          no paid tools. Google Search Console gives you your own ranking and backlink data for free.
+          The main paid tool worth the investment for local contractors is BrightLocal ($30&ndash;$50/month)
+          for grid-based rank tracking. Whitespark ($20/month) is useful if you want a thorough citation audit.
+          Ahrefs and SEMrush are only necessary if you are competing in a high-authority market.
+        </p>
+
+        <h3>My competitor has way more reviews than me. How long will it take to catch up?</h3>
+        <p>
+          If they have 300 reviews and you have 50, and you start getting 20 new reviews per month while
+          they get 3, you close the gap in about 13 months. But ranking impact starts showing before you
+          fully catch up, because Google weights velocity heavily. Focus on your monthly rate first. The
+          total will follow.
+        </p>
+
+        <h3>What is the difference between organic SEO competitors and Map Pack competitors?</h3>
+        <p>
+          They can be different businesses. Your organic competitors are whoever ranks in the blue link
+          results for your keywords. Your Map Pack competitors are whoever ranks in the 3-pack. For most
+          home service queries, the Map Pack dominates clicks, so prioritize Map Pack competitor analysis
+          first. Organic is secondary unless you are specifically targeting informational content or city
+          pages that rank in organic results.
         </p>
       </div>
     ),
