@@ -13,9 +13,13 @@ import { ATLAS, MONO_STYLE, STAGES, SERVICES } from "@/components/atlas/data";
 export const metadata: Metadata = {
   title: "Marketing That Grows With You | Sequoia GEO",
   description:
-    "Four stages of growth. Eleven services. One clear plan for the season youâ€™re actually in. Home services marketing from an operator whoâ€™s been in the seat.",
+    "Four stages of growth. Eleven services. One clear plan for the season you're actually in. Home services marketing from an operator who's been in the seat.",
   alternates: {
-    canonical: "https://www.sequoiageo.com/v2",
+    canonical: "https://www.sequoiageo.com/",
+  },
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
