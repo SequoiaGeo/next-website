@@ -2,46 +2,46 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Case Study: Balanced Comfort Heating & Air | Sequoia GEO",
+  title: "Balanced Comfort Case Study | Sequoia GEO",
   description:
-    "How Aaron Husak built Balanced Comfort from one truck to $10M+ annual revenue, 4,000+ Google reviews, and a successful acquisition. Using the same strategies Sequoia GEO deploys for clients.",
+    "How Balanced Comfort grew from energy audits to $17M+ in annual revenue, four Inc 5000 appearances, three Best Place to Work certifications, and a successful exit. The company Aaron Husak built before starting Sequoia GEO.",
   alternates: {
     canonical: "https://www.sequoiageo.com/case-studies/balanced-comfort",
   },
 };
 
 const stats = [
-  { value: "13 Years", label: "Building Balanced Comfort" },
-  { value: "$10M+", label: "Annual Revenue at Exit" },
-  { value: "4,000+", label: "Google Reviews Earned" },
-  { value: "Acquired", label: "December 2024" },
+  { value: "$17M+", label: "Annual revenue at exit" },
+  { value: "4,000+", label: "5-star Google reviews" },
+  { value: "4x", label: "Inc 5000 (2020–2023)" },
+  { value: "3x", label: "Best Place to Work certified" },
 ];
 
 const strategies = [
   {
     title: "Local SEO",
     description:
-      "Balanced Comfort dominated organic search for every high-intent HVAC keyword in the Fresno market. When customers searched for \"HVAC repair near me\" or \"best AC company in Fresno,\" Balanced Comfort was there: in the map pack, in organic results, and eventually in AI-powered search results.",
+      "Balanced Comfort built organic dominance for high-intent HVAC, plumbing, and restoration searches across Fresno and the Central Valley. Multi-location optimization, technical SEO, and content that matched how customers actually searched.",
+  },
+  {
+    title: "Reputation at scale",
+    description:
+      "4,000+ five-star Google reviews built through consistent follow-up systems and a team that delivered on the promise. Review velocity became a competitive moat no competitor could easily replicate.",
+  },
+  {
+    title: "Conversion-focused web presence",
+    description:
+      "The website was built to convert visitors into booked calls. Page speed, mobile experience, CTA placement, and trust signals were tested and refined over years of real performance data.",
+  },
+  {
+    title: "Paid advertising with tracked ROI",
+    description:
+      "Google Ads, Local Service Ads, and Facebook campaigns run with full attribution tracking. Every dollar traced from click to booked job, with budget calibrated to revenue per channel.",
   },
   {
     title: "Google Business Profile",
     description:
-      "Aaron built a systematic review generation process. Over 13 years, Balanced Comfort accumulated more than 4,000 verified Google reviews, making it one of the most-reviewed HVAC companies in the state. That review volume became a competitive moat no competitor could easily replicate.",
-  },
-  {
-    title: "Conversion-Focused Website",
-    description:
-      "The website wasn't a digital brochure. Every element was tested and optimized to convert visitors into booked service calls: page speed, mobile experience, CTA placement, trust signals. All refined through years of real data.",
-  },
-  {
-    title: "Paid Advertising with Tracked ROI",
-    description:
-      "Google Ads, LSAs, and Facebook campaigns running with full attribution tracking. Every dollar traced from click to booked job. No wasted spend. No guessing.",
-  },
-  {
-    title: "Reputation Management at Scale",
-    description:
-      "Beyond collecting reviews, Aaron built systems to respond to every review, address concerns proactively, and turn the company's reputation into its greatest marketing asset.",
+      "A fully optimized GBP with consistent posting, Q&A management, and photo strategy. One of the most-reviewed HVAC companies in California — built through process, not luck.",
   },
 ];
 
@@ -78,13 +78,14 @@ export default function BalancedComfortCaseStudy() {
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="section-overline mb-4">Case Study</p>
+            <p className="section-overline mb-4">Founder&rsquo;s Story</p>
             <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              From One Truck to $10M+ and a Successful Exit
+              Balanced Comfort Heating &amp; Air
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              This is the company Aaron Husak built before starting Sequoia GEO. Every strategy we
-              deploy for clients was tested here first, over 13 years, with real money on the line.
+              From energy audits to $17M+ in annual revenue, four Inc 5000 appearances, and a
+              successful exit. This is the company Aaron Husak built before starting Sequoia GEO.
+              Every strategy deployed for clients was tested here first.
             </p>
           </div>
 
@@ -108,47 +109,83 @@ export default function BalancedComfortCaseStudy() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              One Truck. Zero Leads. No Online Presence.
+              Founded on energy efficiency
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                In 2012, Aaron Husak launched Balanced Comfort Heating &amp; Air in Fresno,
-                California. No employees. No brand recognition. No website. No Google listing.
-                Just an HVAC technician competing against companies with decades of market
-                presence and million-dollar ad budgets.
+                Aaron Husak founded Balanced Comfort in 2012 to partner with PG&E and the City of
+                Fresno on a residential energy efficiency program. At peak, the company was
+                completing 200 to 300 energy audits per month, helping homeowners across the Fresno
+                area reduce consumption and improve the efficiency of their homes.
               </p>
               <p>
-                The Fresno-Clovis metro is one of the most competitive HVAC markets in California.
-                Breaking through wasn&rsquo;t going to happen with door hangers and Yellow Pages
-                ads. It required a completely different approach.
+                When that program funding ended, Balanced Comfort pivoted into energy code
+                calculations, mechanical engineering design, and fire protection design for an
+                entirely different customer base. Two businesses in the same decade, before HVAC
+                ever entered the picture.
               </p>
               <p>
-                Aaron made a decision that would define the next 13 years: he would build the
-                entire growth engine on digital marketing, and he would learn to do it himself.
+                In 2019, the company was selected to participate in the Energy Savings Assistance
+                Program through PG&E. This weatherization program delivered energy efficiency
+                upgrades to qualifying households at no cost, and Balanced Comfort scaled its team
+                to meet the demand.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 2 - Building the Machine */}
+      {/* Section 2 - The Pivot */}
       <section className="bg-[#fafaf8] py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              March 2020: the pivot that changed everything
+            </h2>
+            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
+              <p>
+                When the coronavirus outbreak forced Balanced Comfort to halt ESA program work,
+                the company had 25 employees on payroll and its main revenue stream had stopped.
+                Most businesses in that position cut staff and waited.
+              </p>
+              <p>
+                Balanced Comfort pivoted to HVAC instead.
+              </p>
+              <p>
+                By hiring skilled technicians and retraining the existing workforce, the company
+                launched heating and air conditioning services across the Central Valley in the
+                middle of a pandemic. The team adapted. Demand was immediate. Protective equipment
+                protocols were put in place and customers responded with trust.
+              </p>
+              <p>
+                That decision launched a different kind of company. Over the following years,
+                Balanced Comfort expanded into plumbing and restoration while continuing to grow
+                the HVAC and weatherization divisions. The marketing engine that drove that
+                growth was built from scratch and refined over years of real performance data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 - The Marketing Engine */}
+      <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl mb-14">
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Building the Marketing Machine
+              The marketing system behind the growth
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Instead of hiring an agency, Aaron became one. Over 13 years of trial, error, and
-              relentless optimization, he developed a full-stack digital marketing system built
-              specifically for home service contractors.
+              Revenue growth at Balanced Comfort was not accidental. It came from a compounding
+              marketing system built for home service contractors and tested with real money on
+              the line.
             </p>
           </div>
           <div className="mx-auto max-w-5xl grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {strategies.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm"
+                className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7 shadow-sm"
               >
                 <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#C8EDD2]">
                   <span className="h-4 w-4 rounded-full bg-[#3A9E6A]" aria-hidden="true" />
@@ -161,72 +198,83 @@ export default function BalancedComfortCaseStudy() {
         </div>
       </section>
 
-      {/* Section 3 - The Numbers */}
+      {/* Section 4 - The Numbers */}
       <section className="bg-[#1a1a1a] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-14">
             <p className="section-overline mb-4">The Numbers</p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              Results That Speak for Themselves
+              Results that compound over time
             </h2>
           </div>
-          <div className="mx-auto max-w-5xl grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="mx-auto max-w-5xl grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-              <div className="text-4xl font-extrabold text-[#3A9E6A]">$10M+</div>
+              <div className="text-4xl font-extrabold text-[#3A9E6A]">$17M+</div>
               <div className="mt-3 text-base font-semibold text-white">Annual Revenue</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-400">
-                What started as a solo operation grew into one of the Central Valley&rsquo;s
-                largest residential HVAC companies.
+                From energy audits to a multi-service home services company with $17M+ in annual
+                revenue at exit.
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
               <div className="text-4xl font-extrabold text-[#3A9E6A]">4,000+</div>
-              <div className="mt-3 text-base font-semibold text-white">Google Reviews</div>
+              <div className="mt-3 text-base font-semibold text-white">5-Star Reviews</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-400">
-                Not purchased. Not incentivized. Earned through consistent service and a
-                systematic approach to reputation management.
+                Earned through consistent service and a systematic approach to reputation
+                management. Not purchased. Not incentivized.
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-              <div className="text-4xl font-extrabold text-[#3A9E6A]">Acquired</div>
-              <div className="mt-3 text-base font-semibold text-white">December 2024</div>
+              <div className="text-4xl font-extrabold text-[#3A9E6A]">4x</div>
+              <div className="mt-3 text-base font-semibold text-white">Inc 5000</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-400">
-                The ultimate proof: Balanced Comfort was acquired by a buyer who recognized the
-                value of the brand, the customer base, and the marketing infrastructure Aaron had
-                built.
+                Named to the Inc 5000 list of fastest-growing private companies four consecutive
+                years: 2020, 2021, 2022, and 2023.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
+              <div className="text-4xl font-extrabold text-[#3A9E6A]">3x</div>
+              <div className="mt-3 text-base font-semibold text-white">Best Place to Work</div>
+              <p className="mt-3 text-sm leading-relaxed text-gray-400">
+                Certified three years in a row. Culture, retention, and team quality were
+                competitive advantages, not afterthoughts.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 4 - Why This Matters */}
+      {/* Section 5 - Why It Matters */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Your marketing agency should know what it&rsquo;s like to answer the phone at 2 AM.
+              Your marketing agency should know what it&rsquo;s like to run a service business.
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                Most marketing agencies have never run a service business. They&rsquo;ve never
-                dispatched a truck, handled a warranty call, or sweated a slow January. They&rsquo;re
-                guessing at what works for contractors based on theory and templates.
+                Most marketing agencies have never dispatched a truck, handled a warranty call,
+                or rebuilt a business model under pressure. They apply templates built for
+                e-commerce or retail and wonder why they don&rsquo;t move the needle for
+                contractors.
               </p>
-              <p>Aaron has lived it. For 13 years.</p>
               <p>
-                Every strategy we recommend, every campaign we build, every optimization we make
-                has been tested in the real world, with real money on the line, in a real
-                contracting business.
+                Sequoia GEO was built by someone who ran a service company for over a decade.
+                Every campaign structure, every SEO strategy, every reputation management
+                process has been tested against real business outcomes, not agency benchmarks.
+              </p>
+              <p>
+                The strategies that produced four Inc 5000 appearances and $17M+ in annual
+                revenue at Balanced Comfort are the same ones deployed for clients today.
               </p>
             </div>
 
             {/* Pull quote */}
             <blockquote className="mt-10 border-l-4 border-[#3A9E6A] pl-6">
               <p className="text-xl font-medium italic leading-relaxed text-[#1a1a1a]">
-                &ldquo;Most marketing agencies will tell you what should work. I can tell you what
-                actually works. I used it to build a $10M+ company from my garage. Every
-                strategy we deploy at Sequoia GEO has been battle-tested over 13 years.&rdquo;
+                &ldquo;Most marketing agencies will tell you what should work. We can tell you what
+                actually works, because we used it to build a company that made the Inc 5000 four
+                years in a row.&rdquo;
               </p>
               <footer className="mt-4 text-sm font-semibold text-[#1A5C3A]">
                 Aaron Husak, Founder, Sequoia GEO
@@ -240,7 +288,7 @@ export default function BalancedComfortCaseStudy() {
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-3xl font-extrabold text-white">
-            Ready to put 13 years of proven strategy to work for your business?
+            Ready to put proven strategy to work for your business?
           </h2>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link

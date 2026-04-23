@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const balancedComfortStats = [
-  { value: "13 Years", label: "Building Balanced Comfort" },
-  { value: "$10M+", label: "Revenue" },
-  { value: "4,000+", label: "Reviews" },
-  { value: "Acquired", label: "Dec 2024" },
+  { value: "$17M+", label: "Annual revenue at exit" },
+  { value: "4,000+", label: "5-star Google reviews" },
+  { value: "4x", label: "Inc 5000 honoree" },
+  { value: "3x", label: "Best Place to Work certified" },
 ];
 
 export default function CaseStudiesPage() {
@@ -51,9 +51,10 @@ export default function CaseStudiesPage() {
                   Balanced Comfort Heating &amp; Air
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
-                  From one truck to $10M+ annual revenue, 4,000+ Google reviews, and a
-                  successful acquisition. This is the company Aaron Husak built before starting
-                  Sequoia GEO. Every strategy he deploys for clients was tested here first.
+                  From one truck to $17M+ annual revenue, 4,000+ 5-star Google reviews, four
+                  Inc 5000 appearances, three Best Place to Work certifications, and a successful
+                  exit. This is the company Aaron Husak built before starting Sequoia GEO. Every
+                  strategy deployed for clients was tested here first.
                 </p>
               </div>
 
