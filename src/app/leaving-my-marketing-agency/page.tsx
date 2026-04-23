@@ -383,19 +383,19 @@ export default function LeavingMyMarketingAgencyPage() {
           </h2>
           <div className="space-y-5 text-base text-gray-600 leading-relaxed max-w-3xl">
             <p>
-              Most contractors who come to us are already in the process of leaving their marketing agency before they
-              reach out. They have been thinking about it for months. The pattern is the same across every trade and
-              every market: a contractor signs with a marketing firm expecting growth, the firm delivers reports instead
-              of revenue, and the contractor eventually decides that leaving their current vendor is the only way to stop
-              the bleeding. The decision is not complicated. Getting out cleanly is where most people need help.
+              Most contractors who find this page are already searching &ldquo;leaving my marketing agency&rdquo; and
+              have been thinking about it for months. The pattern is the same across every trade and every market: a
+              contractor signs with a marketing firm expecting growth, the firm delivers reports instead of revenue, and
+              the contractor eventually decides that leaving their current vendor is the only way to stop the bleeding.
+              Getting out cleanly is where most clients need help.
             </p>
             <p>
-              When a contractor is leaving their marketing agency, the first two weeks reveal how the previous firm
-              operated. Most vendors keep accounts inside their own systems. A contractor who has been paying for
+              When a contractor is leaving their marketing agency, the first two weeks reveal how the previous agency
+              operated. Most agencies keep client accounts inside their own systems. A contractor who has been paying for
               marketing services for 18 months may discover their Google Ads account, their LSA profile, and their
               ad history are all locked inside the vendor&rsquo;s platform. This is not an accident.
-              Most vendors build client relationships this way intentionally. It is harder to leave a marketing
-              firm when leaving means starting over.
+              Most agencies build client relationships this way intentionally. It is harder to leave a marketing
+              agency when leaving means starting over.
             </p>
             <p>
               Our team handles the access recovery process for every contractor in transition. We contact prior vendors,
@@ -407,15 +407,15 @@ export default function LeavingMyMarketingAgencyPage() {
             <p>
               The most common reason contractors stay too long with the wrong marketing firm is not confidence in the
               vendor. It is fear of disruption. Most contractors have heard that switching vendors is complicated, that
-              their ads will go dark, or that other firms cannot pick up where the current one left off.
-              This is rarely true. A contractor who works with a firm that operates transparently can move their
-              account to a new partner in two weeks without meaningful disruption to lead flow. The two weeks of
+              their ads will go dark, or that other agencies cannot pick up where the current one left off.
+              This is rarely true. A client who works with a firm that operates transparently can transition their
+              account to a new agency in two weeks without meaningful disruption to lead flow. The two weeks of
               transition planning we do with every contractor is designed specifically to prevent any gap in coverage.
             </p>
             <p>
               Leaving your marketing agency does not require a perfect plan. It requires honest answers to a few key
               questions: what do you own, what do they control, and what will the transition cost in time and
-              disruption. Our team has done this with contractors across HVAC, plumbing, electrical, roofing, and other
+              disruption. Our team has done this with clients across HVAC, plumbing, electrical, roofing, and other
               trades. The strategy is the same every time. Recover the accounts, document the ad history,
               build a clean foundation, and focus the budget on revenue rather than activity. Your money should
               produce booked jobs, not dashboards. Most contractors see better results within 90 days of leaving their
