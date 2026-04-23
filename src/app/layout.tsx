@@ -23,7 +23,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Home Services Marketing That Looks at the Full Picture | Sequoia GEO",
+  title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
   description:
     "Home services marketing connected to booked jobs. 13-year operator, 4x Inc 5000. I see your booking rate, average ticket, and where revenue leaks — not just your lead count.",
   keywords: [

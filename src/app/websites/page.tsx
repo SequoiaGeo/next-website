@@ -4,7 +4,7 @@ import GHLWidget from "@/components/GHLWidget";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Website Portfolio | Sequoia GEO",
+  title: "Website Designs That Grab Attention and Convert | Sequoia GEO",
   description:
     "Websites built by Sequoia GEO — from-scratch builds and full rebuilds for home service contractors, nonprofits, and local businesses. Built to convert, not just look good.",
   alternates: {
