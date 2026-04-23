@@ -355,65 +355,6 @@ export default function GeoAgencyPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What GEO Agency Work Actually Costs
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Most agencies avoid this question. Here are realistic numbers based on what I see in the market.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {[
-              {
-                tier: "Audit and Strategy",
-                range: "$1,500 – $5,000",
-                desc: "One-time or annual engagement. A proper GEO audit reviews your AI search visibility, schema state, entity authority, and brand presence across all major AI platforms. You get a clear picture of where you stand and what to fix.",
-              },
-              {
-                tier: "Local Business Retainer",
-                range: "$1,500 – $5,000 / mo",
-                desc: "Full-service GEO for contractors and local professional service providers. Covers ongoing monitoring, content development, schema maintenance, brand presence, and monthly reporting.",
-              },
-              {
-                tier: "Regional / Multi-Location",
-                range: "$5,000 – $15,000 / mo",
-                desc: "For businesses with multiple locations or markets. More complex entity management, city-level AI visibility work, and expanded content requirements.",
-              },
-              {
-                tier: "Fractional CMO with GEO",
-                range: "$5,000 – $12,000 / mo",
-                desc: "Strategic marketing leadership with GEO expertise built in. Right for businesses that want a senior marketing voice coordinating across SEO, paid, and AI search rather than managing multiple vendors.",
-              },
-            ].map((item) => (
-              <div key={item.tier} className="rounded-2xl border border-gray-200 bg-white p-7">
-                <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
-                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-[#1a1a1a]">{item.tier}</h3>
-                    <div className="mt-1 text-lg font-extrabold text-[#1A5C3A]">{item.range}</div>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="mt-8 text-center text-sm text-gray-500 max-w-2xl mx-auto">
-            Very cheap GEO services ($500 to $1,000 per month) are almost always templated work or hourly content
-            writing that will not move the needle. GEO builds on itself: the first six months are the most investment-heavy
-            because you are building the foundation. After that, the cost typically decreases as the focus shifts to
-            maintenance and incremental improvements.
-          </p>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
