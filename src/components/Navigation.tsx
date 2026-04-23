@@ -4,11 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const navLinks = [
-  { label: "Blog", href: "/blog" },
-  { label: "Case Studies", href: "/case-studies" },
-];
-
 const serviceLinks = [
   {
     group: "Core Services",
@@ -134,16 +129,6 @@ export default function Navigation() {
 
         {/* Desktop navigation */}
         <div className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-
           {/* Services dropdown */}
           <div className="relative" ref={servicesDropdownRef}>
             <button
@@ -187,6 +172,13 @@ export default function Navigation() {
             )}
           </div>
 
+          <Link
+            href="/case-studies"
+            className="text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
+          >
+            Case Studies
+          </Link>
+
           {/* Resources dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
@@ -229,6 +221,13 @@ export default function Navigation() {
               </div>
             )}
           </div>
+
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
+          >
+            Blog
+          </Link>
         </div>
 
         {/* Desktop CTA */}
@@ -259,17 +258,6 @@ export default function Navigation() {
         }`}
       >
         <div className="flex flex-col px-6 py-8 gap-2">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="text-lg font-medium text-dark-text hover:text-accent-green py-3 border-b border-gray-100 transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-
           {/* Mobile Services accordion */}
           <button
             onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
@@ -307,6 +295,14 @@ export default function Navigation() {
             </div>
           )}
 
+          <Link
+            href="/case-studies"
+            onClick={() => setMobileOpen(false)}
+            className="text-lg font-medium text-dark-text hover:text-accent-green py-3 border-b border-gray-100 transition-colors"
+          >
+            Case Studies
+          </Link>
+
           {/* Mobile Resources accordion */}
           <button
             onClick={() => setMobileResourcesOpen(!mobileResourcesOpen)}
@@ -343,6 +339,14 @@ export default function Navigation() {
               ))}
             </div>
           )}
+
+          <Link
+            href="/blog"
+            onClick={() => setMobileOpen(false)}
+            className="text-lg font-medium text-dark-text hover:text-accent-green py-3 border-b border-gray-100 transition-colors"
+          >
+            Blog
+          </Link>
 
           <div className="mt-6 flex flex-col gap-4">
             <a
