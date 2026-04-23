@@ -47,8 +47,8 @@ const checklistItems = [
   { item: "Google Business Profile", detail: "You should be listed as Primary Owner, not the agency" },
   { item: "Google Ads account", detail: "Should be under your MCC with full admin access" },
   { item: "Local Services Ads profile", detail: "Login credentials should be yours, not theirs" },
-  { item: "Website domain", detail: "Your name on the registrar, not theirs" },
-  { item: "Website hosting", detail: "You should be able to transfer or point DNS without their help" },
+  { item: "Domain registration", detail: "Your name on the registrar, not theirs" },
+  { item: "Hosting account", detail: "You should be able to transfer or point DNS without their help" },
   { item: "Analytics & Search Console", detail: "Full access, not read-only sharing" },
   { item: "Social media accounts", detail: "You are the admin, they are a manager at most" },
   { item: "Review platform logins", detail: "GBP, Yelp, BBB — you own the credentials" },
@@ -61,7 +61,7 @@ const timeline = [
     steps: [
       "Full audit of what you own vs. what they control",
       "Recover ownership of GBP, Ads accounts, and Search Console",
-      "Website backup and transfer if needed",
+      "Site backup and transfer if needed",
       "Baseline performance snapshot across all channels",
     ],
   },
@@ -90,7 +90,7 @@ const timeline = [
 const faqs = [
   {
     q: "Will I lose my Google rankings if I switch?",
-    a: "Your rankings live on your domain and in your Google Business Profile, not inside your agency's account. If they built your website on their infrastructure and you don't own the domain, that's a real risk worth auditing before you leave. If you own your domain and hosting, switching agencies does not affect your organic rankings.",
+    a: "Your rankings live on your domain and in your Google Business Profile, not inside your agency's account. If they built your site on their infrastructure and you don't own the domain, that's a real risk worth auditing before you leave. If you own your domain and hosting, switching agencies does not affect your organic rankings.",
   },
   {
     q: "What happens to my Google Ads history if I switch?",
@@ -109,7 +109,7 @@ const faqs = [
     a: "Access recovery and audit can happen in the first week. Depending on what shape things are in, we're typically running full operations within 10 to 14 days of getting started.",
   },
   {
-    q: "What if my current agency built my website and I'm not sure who owns it?",
+    q: "What if my current agency built my site and I'm not sure who owns it?",
     a: "This is more common than it should be. We start by checking domain registration, hosting account ownership, and whether there are any platform lock-ins like proprietary CMS systems. In most cases we can migrate you. In some cases you'll need a rebuild. Either way, we'll tell you exactly what you're dealing with before you commit to anything.",
   },
   {
@@ -156,7 +156,7 @@ export default function LeavingMyMarketingAgencyPage() {
               <span className="text-[#1A5C3A]">Here&rsquo;s What the Switch Actually Looks Like</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Most contractors stay too long. They&rsquo;ve already spent the money, they&rsquo;re not sure what they own,
+              Most contractors stay too long. They&rsquo;ve already paid for results that never came, they&rsquo;re not sure what they own,
               and they worry about losing rankings or starting over. This page is for you if you&rsquo;re done waiting for things to change.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -371,6 +371,67 @@ export default function LeavingMyMarketingAgencyPage() {
               <span className="text-gray-300">|</span>
               <span>13 Years HVAC &amp; Plumbing Operations</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What leaving your marketing agency actually looks like */}
+      <section className="bg-[#fafaf8] py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <h2 className="text-2xl font-extrabold text-[#1a1a1a] mb-10">
+            What Clients Who Are Leaving Their Marketing Agency Discover First
+          </h2>
+          <div className="space-y-5 text-base text-gray-600 leading-relaxed max-w-3xl">
+            <p>
+              Most clients who come to us are already in the process of leaving their marketing agency before they reach
+              out. They have been thinking about it for months. The pattern is the same across every trade and every
+              market: a client signs with a marketing agency expecting growth, the agency delivers reports instead of
+              revenue, and the client eventually decides that leaving their marketing agency is the only way to stop the
+              bleeding. The decision is not complicated. Getting out cleanly is where most clients need help.
+            </p>
+            <p>
+              When a client is leaving their marketing agency, the first two weeks reveal how the previous agency
+              operated. Most agencies keep client accounts inside their own systems. A client who has been paying a
+              marketing agency for 18 months may discover their Google Ads account, their LSA profile, and their
+              advertising history are all locked inside the agency&rsquo;s infrastructure. This is not an accident.
+              Most agencies build their client relationships this way intentionally. It is harder to leave a marketing
+              agency when leaving means starting over.
+            </p>
+            <p>
+              Our team handles the access recovery process for every client in transition. We contact prior agencies,
+              document what exists, and transfer ownership of every account to the client directly. The client owns the
+              advertising history, the campaign data, and the account standing. If a client has been running Google
+              advertising for two years, that history has real value. Our team makes sure clients leave with it intact
+              rather than leaving it behind with the old agency.
+            </p>
+            <p>
+              The most common reason clients stay too long with the wrong marketing agency is not confidence in the
+              agency. It is fear of disruption. Most clients have heard that switching agencies is complicated, that
+              their advertising will go dark, or that other agencies cannot pick up where the current one left off.
+              This is rarely true. A client who works with an agency that operates transparently can transition their
+              advertising to a new agency in two weeks without meaningful disruption to lead flow. The two weeks of
+              transition planning we do with every client is designed specifically to prevent any gap in coverage.
+            </p>
+            <p>
+              Leaving your marketing agency does not require a perfect plan. It requires honest answers to a few key
+              questions: what do you own, what does the agency control, and what will the transition cost in time and
+              disruption. Our team has done this with clients across HVAC, plumbing, electrical, roofing, and other
+              trades. The strategy is the same every time. Recover the accounts, document the advertising history,
+              build a clean foundation, and focus the client&rsquo;s budget on revenue rather than activity. Most
+              clients see better results within 90 days of leaving their marketing agency than they saw in the previous
+              year of staying. The growth is not from spending more. It is from spending on advertising that connects
+              to booked jobs.
+            </p>
+            <p>
+              The founder of Sequoia GEO hired marketing agencies for 13 years while operating an HVAC and plumbing
+              company. As a founder who built a home service company to the Inc 5000 four years running, he knows
+              what it feels like to sit across from an account rep who cannot explain why the phone is not ringing.
+              As a founder and operator who has been on the client side of the marketing agency relationship, he built
+              Sequoia GEO specifically because the marketing agency industry has no real accountability to the clients
+              it serves. Every client we work with gets direct access to the same founder. No account managers cycling
+              in and out. No strategy that exists in a deck and not in the market. Revenue reporting that connects
+              advertising spend to actual booked jobs, every month.
+            </p>
           </div>
         </div>
       </section>
