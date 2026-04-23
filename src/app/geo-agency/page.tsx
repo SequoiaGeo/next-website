@@ -26,9 +26,9 @@ export default function GeoAgencyPage() {
               <span className="text-[#1A5C3A]">Around One Discipline</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              I named this company Sequoia GEO because Generative Engine Optimization is the core work
-              I built it around. Not a bolt-on. Not a rebrand. A real GEO agency focused on making
-              contractors and local businesses visible in ChatGPT, Perplexity, Gemini, and Claude.
+              Sequoia GEO was named after the discipline it was built around: Generative Engine Optimization.
+              Not a bolt-on. Not a rebrand. A real GEO agency focused on making contractors and local
+              businesses visible in ChatGPT, Perplexity, Gemini, and Claude.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -192,20 +192,20 @@ export default function GeoAgencyPage() {
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
-                  Why I Named the Company Sequoia GEO
+                  Why Sequoia GEO Was Built Around This Discipline
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  GEO was not a rebrand for me. I saw where AI search was heading and built the company
-                  around that discipline specifically. Most agencies offering GEO services are traditional
-                  SEO or digital marketing firms that added it to their service list in 2024 or 2025.
-                  That is not the same thing as building around it from the start.
+                  GEO was not a rebrand. Sequoia GEO was built around that discipline specifically,
+                  from the start. Most agencies offering GEO services are traditional SEO or digital
+                  marketing firms that added it to their service list in 2024 or 2025. That is not
+                  the same thing as building around it from day one.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I hold a California B General Contractor License and spent 13 years operating in home
-                  services, growing from startup to 130+ employees and $10M+ in annual revenue before
-                  moving into marketing. That background means I understand how contractors actually
-                  make decisions, what their customers search for, and what kinds of AI mentions
-                  translate into real jobs — not just impressions.
+                  The team behind Sequoia GEO holds a California B General Contractor License and
+                  spent 13 years operating in home services, growing from startup to 130+ employees
+                  and $10M+ in annual revenue before launching this agency. That background means
+                  Sequoia GEO understands how contractors actually make decisions, what their customers
+                  search for, and what kinds of AI mentions translate into real jobs — not just impressions.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   For home service contractors and local businesses, GEO is not an abstract opportunity.
@@ -355,6 +355,170 @@ export default function GeoAgencyPage() {
         </div>
       </section>
 
+      {/* How GEO Optimization Works */}
+      <section className="bg-[#fafaf8] py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              How Generative Engine Optimization Works
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Generative engine optimization geo is a distinct discipline from traditional SEO. Understanding
+              how AI tools process and surface information explains why the work looks different from
+              anything that came before it.
+            </p>
+          </div>
+          <div className="space-y-10">
+            <div>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
+                How AI Models Generate Answers
+              </h3>
+              <p className="text-base leading-relaxed text-gray-600">
+                AI models like the ones powering ChatGPT, Perplexity, and Google AI Overviews do not retrieve
+                a list of links the way traditional search engines do. They generate synthesized answers by
+                drawing on patterns in their training data, cross-referenced against real-time web signals.
+                When someone asks an AI system which plumber to call in their city, the system is not ranking
+                websites. It is constructing a response based on which businesses it has encountered most
+                consistently, with the most coherent entity information, across the most credible sources.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-gray-600">
+                This is why generative engine optimization requires a fundamentally different strategy than
+                traditional SEO. Technical optimization for search engines focuses heavily on crawlability,
+                keyword placement, and link signals. Generative engine optimization geo focuses on entity
+                clarity, citation architecture, and making your business easy for AI systems to understand
+                and describe accurately. A business that ranks well in Google search can still be invisible
+                in AI generated answers if its entity information is inconsistent, its schema is absent, or
+                its authority signals are fragmented across sources.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
+                AI Search Engines and AI Overviews
+              </h3>
+              <p className="text-base leading-relaxed text-gray-600">
+                Google AI Overviews have fundamentally changed what appears at the top of search results
+                for millions of queries. Where a user once saw ten blue links, they now see a generated
+                paragraph that synthesizes information from multiple sources and, in some cases, no longer
+                requires them to click through to any website at all. AI search engines including Perplexity
+                and ChatGPT search mode operate on the same principle at a larger scale.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-gray-600">
+                For local businesses, this creates both risk and opportunity. A contractor who is not being
+                referenced in AI generated answers is losing potential customers to competitors who are,
+                even if their traditional search engine rankings look healthy. A GEO agency that understands
+                how AI overviews select and cite sources can build the right signals into your content,
+                structured data, and brand presence to improve the odds that your business appears in those
+                answers. That work starts with a clear picture of where you stand today across AI powered
+                search platforms, not just Google.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
+                Technical SEO, Technical Optimization, and AI Readiness
+              </h3>
+              <p className="text-base leading-relaxed text-gray-600">
+                Technical SEO remains important in a GEO context, but the emphasis shifts. Standard
+                technical optimization for traditional search engines prioritizes page speed, crawl
+                efficiency, and indexation. Technical optimization for AI search adds a layer on top:
+                schema markup that clearly describes who you are and what you do, entity disambiguation
+                that connects your business to the right categories and locations, and content structure
+                that supports natural language query optimization.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-gray-600">
+                AI systems use structured data not just to understand page content but to build a model
+                of what a business is, where it operates, who it serves, and how authoritative it is
+                relative to similar businesses. Inconsistent NAP data, missing schema types, and
+                fragmented brand signals across directories and third-party sources all create noise
+                that makes it harder for AI models to confidently include your business in their
+                responses. A real GEO agency addresses this systematically, not just by publishing
+                more content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* GEO Strategy and AI Visibility */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              GEO Strategy: Building AI Search Visibility Over Time
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              AI visibility is not a campaign. It is a compounding asset built through consistent,
+              coordinated work across content, citations, and entity authority.
+            </p>
+          </div>
+          <div className="space-y-10">
+            <div>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
+                AI Citations and Brand Authority
+              </h3>
+              <p className="text-base leading-relaxed text-gray-600">
+                AI citations are the third-party references that AI systems draw on when forming their
+                responses. When a review site, industry directory, local news outlet, or authoritative
+                publication mentions your business in a way that is clear and consistent, that citation
+                becomes a signal AI systems can use. The more high-quality sources that describe your
+                business accurately and consistently, the more confident an AI system becomes about
+                including you in its responses.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-gray-600">
+                Brand authority in the GEO context is not just about backlinks or domain rating. It is
+                about the breadth and consistency of your presence across the sources that AI models
+                treat as credible. This includes structured business directories, industry associations,
+                local media coverage, customer review platforms, and partner or vendor profiles. A GEO
+                strategy maps all of these touchpoints, identifies the gaps, and builds a plan to fill
+                them systematically.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
+                AI Driven Search and Traffic from AI Platforms
+              </h3>
+              <p className="text-base leading-relaxed text-gray-600">
+                AI driven search is changing where businesses get their traffic. AI traffic from platforms
+                like Perplexity, ChatGPT, and Google AI Overviews is becoming a meaningful source of
+                referral visits and, more importantly, of demand generation that never produces a click
+                at all. A user who asks an AI system which HVAC contractor to call and receives a confident
+                recommendation may call that contractor directly, without ever visiting a website. That
+                conversion is invisible in traditional analytics, but it is real.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-gray-600">
+                Measuring AI visibility requires different tools than standard SEO reporting. The best
+                GEO agencies track brand mentions and AI generated answers across platforms, not just
+                keyword rankings and organic sessions. AI search optimization is an iterative process:
+                you build the signals, monitor how AI tools respond, identify where you are still being
+                overlooked, and adjust. This is not a set-it-and-forget-it discipline, and any agency
+                promising otherwise is not being straight with you.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
+                What Separates the Best GEO Agencies
+              </h3>
+              <p className="text-base leading-relaxed text-gray-600">
+                The best GEO agencies have a few things in common. They can explain how AI systems
+                process entity information without resorting to vague buzzwords. They measure AI
+                visibility consistently, not just SEO metrics. They have a clear framework for building
+                citation authority rather than just producing blog content. And they are honest about
+                timelines, because generative engine optimization compounds slowly compared to paid
+                advertising but produces far more durable results.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-gray-600">
+                An AI engine competitive analysis is a useful starting point. By querying the major
+                AI platforms with the questions your target customers are asking, you can see which
+                competitors are being surfaced and what signals appear to be driving those recommendations.
+                That data shapes a GEO strategy built around closing specific gaps rather than running
+                a generic checklist. For home service contractors in competitive local markets, this
+                kind of deliberate, data-grounded approach is what creates a real and lasting advantage
+                in AI search.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -383,7 +547,7 @@ export default function GeoAgencyPage() {
               },
               {
                 q: "What does the free AI visibility audit include?",
-                a: "I check your current visibility across ChatGPT, Perplexity, Gemini, and Claude using queries that should surface your business. I look at your schema and structured data implementation, your entity presence across third-party sources, and your content authority signals. You get a written summary of what I find, an honest assessment of where the gaps are, and realistic advice about what to prioritize. No sales pressure, just data.",
+                a: "We check your current visibility across ChatGPT, Perplexity, Gemini, and Claude using queries that should surface your business. We look at your schema and structured data implementation, your entity presence across third-party sources, and your content authority signals. You get a written summary of what we find, an honest assessment of where the gaps are, and realistic advice about what to prioritize. No sales pressure, just data.",
               },
               {
                 q: "Why is a GEO agency different from a general digital marketing agency?",
@@ -406,8 +570,8 @@ export default function GeoAgencyPage() {
             Find out where you stand in AI search right now
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            I will check your visibility across ChatGPT, Perplexity, Gemini, and Claude, tell you
-            exactly what I find, and give you an honest picture of whether GEO work makes sense for
+            We will check your visibility across ChatGPT, Perplexity, Gemini, and Claude, tell you
+            exactly what we find, and give you an honest picture of whether GEO work makes sense for
             your situation. No pitch, no package, just data.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
