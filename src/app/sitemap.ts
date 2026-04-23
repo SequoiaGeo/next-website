@@ -48,6 +48,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Tools
     { url: `${BASE_URL}/sales-training`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/audit`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/csr-calculator`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/marketing-leak-calculator`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
 
     // Blog
     { url: `${BASE_URL}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.6 },
