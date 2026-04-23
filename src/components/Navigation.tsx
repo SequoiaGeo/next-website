@@ -5,9 +5,30 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Services", href: "/services" },
   { label: "Blog", href: "/blog" },
   { label: "Case Studies", href: "/case-studies" },
+];
+
+const serviceLinks = [
+  {
+    group: "Core Services",
+    items: [
+      { label: "GEO / AI Search Visibility", href: "/geo-agency" },
+      { label: "LSA Management", href: "/lsa-management" },
+      { label: "AI Automation", href: "/ai-automation" },
+      { label: "Fractional CMO", href: "/fractional-cmo" },
+      { label: "Website Design", href: "/websites" },
+    ],
+  },
+  {
+    group: "By Trade",
+    items: [
+      { label: "HVAC SEO & Marketing", href: "/hvac-seo" },
+      { label: "Plumbing SEO", href: "/plumbing-seo" },
+      { label: "Roofing SEO", href: "/roofing-seo" },
+      { label: "Restoration SEO", href: "/restoration-seo" },
+    ],
+  },
 ];
 
 const resourceLinks = [
@@ -39,9 +60,12 @@ const resourceLinks = [
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const servicesDropdownRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -67,9 +91,12 @@ export default function Navigation() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
-  // Close dropdown when clicking outside
+  // Close dropdowns when clicking outside
   useEffect(() => {
     function handleClick(e: MouseEvent) {
+      if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(e.target as Node)) {
+        setServicesOpen(false);
+      }
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setResourcesOpen(false);
       }
@@ -117,10 +144,53 @@ export default function Navigation() {
             </Link>
           ))}
 
+          {/* Services dropdown */}
+          <div className="relative" ref={servicesDropdownRef}>
+            <button
+              onClick={() => { setServicesOpen(!servicesOpen); setResourcesOpen(false); }}
+              className="flex items-center gap-1 text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
+              aria-expanded={servicesOpen}
+              aria-haspopup="true"
+            >
+              Services
+              <svg
+                className={`h-3.5 w-3.5 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2.5}
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </button>
+
+            {servicesOpen && (
+              <div className="absolute top-full left-0 mt-2 w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/10 py-3 z-50">
+                {serviceLinks.map((group) => (
+                  <div key={group.group} className="px-2 mb-1 last:mb-0">
+                    <p className="px-3 py-1.5 text-xs font-bold text-[#1A5C3A] uppercase tracking-wider">
+                      {group.group}
+                    </p>
+                    {group.items.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setServicesOpen(false)}
+                        className="block px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-[#F5FAF7] hover:text-[#1A5C3A] transition-colors"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
           {/* Resources dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
-              onClick={() => setResourcesOpen(!resourcesOpen)}
+              onClick={() => { setResourcesOpen(!resourcesOpen); setServicesOpen(false); }}
               className="flex items-center gap-1 text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
               aria-expanded={resourcesOpen}
               aria-haspopup="true"
@@ -199,6 +269,43 @@ export default function Navigation() {
               {link.label}
             </Link>
           ))}
+
+          {/* Mobile Services accordion */}
+          <button
+            onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+            className="flex items-center justify-between text-lg font-medium text-dark-text hover:text-accent-green py-3 border-b border-gray-100 transition-colors w-full text-left"
+          >
+            Services
+            <svg
+              className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2.5}
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+
+          {mobileServicesOpen && (
+            <div className="pl-4 space-y-1 pb-2">
+              {serviceLinks.map((group) => (
+                <div key={group.group} className="mb-3">
+                  <p className="text-xs font-bold text-[#1A5C3A] uppercase tracking-wider py-1">{group.group}</p>
+                  {group.items.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="block text-base text-gray-600 hover:text-[#1A5C3A] py-1.5 transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )}
 
           {/* Mobile Resources accordion */}
           <button
