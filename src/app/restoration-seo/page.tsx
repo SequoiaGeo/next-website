@@ -207,7 +207,7 @@ export default function RestorationSeoPage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { stat: "B Gen", label: "CA Contractor License" },
-                  { stat: "13 yrs", label: "Home services operator" },
+                  { stat: "13 yrs", label: "Industry operator" },
                   { stat: "4x", label: "Inc 5000 (2020-2023)" },
                   { stat: "130+", label: "Employees at peak" },
                 ].map((item) => (
@@ -247,7 +247,7 @@ export default function RestorationSeoPage() {
               },
               {
                 title: "Technical SEO and Site Speed",
-                body: "A slow restoration website loses emergency calls before the property owner even reads your offer. Page speed is a direct search engine ranking signal. Technical SEO ensures search engines can crawl and index your restoration website correctly. Mobile optimization matters especially for emergency searches — most water damage and fire damage calls originate from a phone. I use Google Analytics and Google Search Console to baseline website traffic and search rankings before any work begins. Technical debt silently suppresses search engine rankings for years and most restoration companies have never done a thorough audit.",
+                body: "A slow restoration website loses emergency calls before anyone even reads your offer. Page speed is a direct search engine ranking signal. Technical SEO ensures search engines can crawl and index your restoration website correctly. Mobile optimization matters especially for emergency searches — most water damage and fire damage calls originate from a phone. I use Google Analytics and Google Search Console to baseline website traffic and search rankings before any work begins. Technical debt silently suppresses search engine rankings for years and most restoration companies have never done a thorough audit.",
               },
               {
                 title: "Link Building and Reputation",
@@ -288,7 +288,7 @@ export default function RestorationSeoPage() {
               {
                 step: "01",
                 title: "Build Service Area Pages for Every City You Serve",
-                body: "A restoration company that serves 15 cities needs 15 dedicated service area pages to rank in local searches. One generic service area page will not rank in search results for city-specific queries. Pages built around local keywords like &ldquo;water damage restoration in [city]&rdquo; capture emergency search traffic from property owners actively searching for restoration services in their specific location &ndash; the highest-converting search traffic a restoration website can earn.",
+                body: "A restoration company that serves 15 cities needs 15 dedicated service area pages to rank in local searches. One generic service area page will not rank in search results for city-specific queries. Pages built around local keywords like &ldquo;water damage restoration in [city]&rdquo; capture emergency search traffic from homeowners actively searching for restoration services in their specific location &ndash; the highest-converting search traffic a restoration website can earn.",
               },
               {
                 step: "02",
@@ -332,7 +332,7 @@ export default function RestorationSeoPage() {
             {[
               {
                 q: "How long does restoration SEO take?",
-                a: "Most restoration companies see measurable improvements in search engine rankings within 3 to 6 months. Significant increases in organic traffic and phone calls typically follow at the 6 to 9 month mark. Competitive urban markets may require 9 to 12 months before organic SEO surpasses paid advertising as a lead volume driver. The SEO investment compounds over time in ways that paid search cannot replicate.",
+                a: "Most restoration companies see measurable improvements in search engine rankings within 3 to 6 months. Significant increases in organic traffic and inbound volume typically follow at the 6 to 9 month mark. Competitive urban markets may require 9 to 12 months before organic SEO surpasses paid advertising as a lead volume driver. The SEO investment compounds over time in ways that paid search cannot replicate.",
               },
               {
                 q: "What makes restoration SEO different from standard contractor SEO?",
@@ -366,7 +366,7 @@ export default function RestorationSeoPage() {
             <p className="mt-4 text-lg text-gray-600">
               Search engine optimization for restoration companies has to serve two distinct demand types:
               emergency calls from homeowners with active water damage or fire damage, and insurance-driven
-              jobs where adjusters and policyholders are researching restoration contractors days after the event.
+              jobs where adjusters and policyholders are researching restoration services days after the event.
               Water damage restoration services and fire damage restoration work require different search visibility
               strategies — and most SEO companies do not understand either.
             </p>
@@ -431,7 +431,7 @@ export default function RestorationSeoPage() {
               {
                 number: "02",
                 title: "Content Marketing for Restoration Authority",
-                body: "Content marketing for restoration companies drives inbound traffic through educational content that answers the questions property owners ask after water damage, fire damage, or mold discovery: what does the restoration process involve, how long does it take, what does insurance cover, how do I prevent mold after a flood. This content builds domain authority, attracts high-quality backlinks, and positions the company as the most credible option in the local market.",
+                body: "Content marketing for restoration companies drives inbound traffic through educational content that answers the questions clients ask after water damage, fire damage, or mold discovery: what does the restoration process involve, how long does it take, what does insurance cover, how do I prevent mold after a flood. This content builds domain authority, attracts high-quality backlinks, and positions the company as the most credible option in the local market.",
               },
               {
                 number: "03",
@@ -441,7 +441,7 @@ export default function RestorationSeoPage() {
               {
                 number: "04",
                 title: "Attribution from Search to Dispatched Job",
-                body: "Restoration SEO success should be measured by dispatched jobs and revenue, not impressions and rankings. That requires Google Analytics for web traffic monitoring, Google Search Console for search ranking data, call tracking tied to organic landing pages, and integration with your job management system. Website visitors from organic search become phone calls, phone calls become qualified leads, and qualified leads become dispatched jobs. Reporting that separates emergency organic calls from insurance referrals from paid search is what lets you measure marketing ROI correctly and hold your SEO campaign accountable to actual business outcomes.",
+                body: "Restoration SEO success should be measured by dispatched jobs and revenue, not impressions and rankings. That requires Google Analytics for web traffic monitoring, Google Search Console for search ranking data, call tracking tied to organic landing pages, and integration with your job management system. Website visitors from organic search become inbound calls, inbound calls become qualified leads, and qualified leads become dispatched jobs. Reporting that separates emergency organic calls from insurance referrals from paid search is what lets you measure marketing ROI correctly and hold your SEO campaign accountable to actual business outcomes.",
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -466,7 +466,7 @@ export default function RestorationSeoPage() {
             {[
               {
                 q: "What restoration keywords produce the highest-value jobs?",
-                a: "Water damage restoration and fire damage restoration keywords typically produce the highest average job values because the scope of work is substantial and insurance coverage is common. Mold remediation keywords produce consistent volume but are more price-sensitive. Emergency keywords like 'water damage near me' and 'flood cleanup' convert immediately but compete heavily on speed of response. A complete restoration SEO strategy covers all categories mapped to dedicated service pages.",
+                a: "Water damage restoration and fire damage restoration keywords typically produce the highest average job values because the scope of work is substantial and insurance coverage is common. Mold remediation keywords produce consistent volume but are more price-sensitive. Emergency keywords like 'water damage near me' and 'flood cleanup' convert immediately but compete heavily on speed of response. A complete restoration SEO strategy covers all categories mapped to dedicated pages for each service.",
               },
               {
                 q: "How does restoration SEO handle the insurance vs. retail distinction?",
@@ -478,7 +478,7 @@ export default function RestorationSeoPage() {
               },
               {
                 q: "What should I look for in a restoration marketing company?",
-                a: "Look for a restoration marketing company that offers SEO services built specifically for the restoration industry. The right partner for restoration contractors understands the difference between insurance job flow and emergency retail calls, knows the platforms restoration companies use for job management, and reports success in terms of dispatched jobs and Google Analytics data — not just website traffic and keyword rankings. A general digital marketing agency does not have the restoration knowledge to build a strategy for restoration companies that captures both demand types. Ask any company you evaluate for restoration-specific case studies with revenue outcomes.",
+                a: "Look for a restoration marketing company that offers SEO services built specifically for the restoration industry. The right partner for restoration businesses understands the difference between insurance job flow and emergency retail calls, knows the platforms restoration companies use for job management, and reports success in terms of dispatched jobs and Google Analytics data — not just website traffic and keyword rankings. A general digital marketing agency does not have the restoration knowledge to build a strategy for restoration companies that captures both demand types. Ask any company you evaluate for restoration-specific case studies with revenue outcomes.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -498,8 +498,8 @@ export default function RestorationSeoPage() {
               Restoration Digital Marketing: Building a Complete Growth System
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Restoration digital marketing covers every channel that moves a property owner from search query to
-              dispatched job. For restoration contractors competing in markets where speed and credibility determine
+              Restoration digital marketing covers every channel that moves a homeowner from search query to
+              dispatched job. For restoration businesses competing in markets where speed and credibility determine
               who gets the call, building a complete digital growth system is not optional.
             </p>
           </div>
@@ -512,22 +512,22 @@ export default function RestorationSeoPage() {
                 water damage or fire damage are not reading blog posts and comparing prices &mdash; they are calling the
                 first credible restoration business that appears on their phone screen. An effective restoration
                 digital marketing strategy combines online visibility in Google search, paid Google Ads coverage for
-                high-intent queries, and a conversion-optimized website that turns visitors into phone calls.
-                Restoration contractors who treat digital marketing as a single channel leave significant job volume
-                on the table. The restoration businesses that generate the most consistent lead generation output
+                high-intent queries, and a conversion-optimized website that turns visitors into calls.
+                Businesses that treat digital marketing as a single channel leave significant job volume
+                on the table. The restoration businesses that generate the most consistent results
                 use a coordinated approach where SEO, Google Ads, and Google Business Profile reinforce each other.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-[#1a1a1a] mb-3">Google Ads for Restoration Contractors</h3>
+              <h3 className="text-lg font-bold text-[#1a1a1a] mb-3">Google Ads for Your Restoration Business</h3>
               <p className="text-sm leading-relaxed text-gray-600">
-                Google Ads generate leads for restoration contractors immediately &mdash; before organic SEO has had
+                Google Ads produce results for your restoration business immediately &mdash; before organic SEO has had
                 time to build search engine rankings. For restoration businesses entering a new market or recovering
                 from a period of limited online visibility, Google Ads bridge the gap between starting and generating
-                sufficient lead volume from organic sources. The most effective Google Ads campaigns for restoration
-                contractors target high-intent emergency keywords: &ldquo;water damage restoration near me,&rdquo;
+                sufficient call volume from organic sources. The most effective Google Ads campaigns target
+                high-intent emergency keywords: &ldquo;water damage restoration near me,&rdquo;
                 &ldquo;fire damage cleanup,&rdquo; &ldquo;emergency flood service.&rdquo; These keywords generate
-                leads with the highest conversion rates because the property owner has an active emergency. Running
+                leads with the highest conversion rates because the caller has an active emergency. Running
                 Google Ads without a mobile-friendly landing page wastes most of the budget &mdash; emergency callers
                 are on phones, and a slow or hard-to-navigate page kills conversions before they happen. Google Ads
                 campaigns need 24/7 scheduling, call extensions, and ad copy optimized for emergency response
@@ -535,13 +535,13 @@ export default function RestorationSeoPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-[#1a1a1a] mb-3">Lead Generation for Your Restoration Business</h3>
+              <h3 className="text-lg font-bold text-[#1a1a1a] mb-3">Growing Your Restoration Business Across Channels</h3>
               <p className="text-sm leading-relaxed text-gray-600">
-                Lead generation for restoration businesses runs across multiple channels simultaneously: Google Ads
+                Generating leads for restoration businesses runs across multiple channels simultaneously: Google Ads
                 for immediate emergency call volume, organic SEO to generate leads from research-phase queries,
                 Google Business Profile for Map Pack visibility, and Local Service Ads for verified-lead credibility.
-                Each channel generates leads with different characteristics and different average values. Restoration
-                contractors who rely on a single source to generate leads are vulnerable to any change in that
+                Each channel generates leads with different characteristics and different average values. Businesses
+                that rely on a single source are vulnerable to any change in that
                 channel &mdash; a Google algorithm update, a rising cost-per-click, or a competitor entering the market.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
@@ -556,19 +556,19 @@ export default function RestorationSeoPage() {
             <div>
               <h3 className="text-lg font-bold text-[#1a1a1a] mb-3">Mobile-Friendly Websites and Online Visibility</h3>
               <p className="text-sm leading-relaxed text-gray-600">
-                A mobile-friendly website is not a feature &mdash; it is a requirement for restoration contractors.
+                A mobile-friendly website is not a feature &mdash; it is a requirement for any restoration business.
                 Water damage and fire damage emergency searches happen overwhelmingly on mobile devices. A website that
                 is not mobile-friendly loses emergency callers before they find the phone number. Mobile-friendly
                 design includes fast page load speed, large tap targets for phone numbers, and no content that
                 requires zooming or horizontal scrolling.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                Online visibility for restoration contractors is built on the combination of a mobile-friendly,
-                fast-loading website and strong Google Business Profile presence. Restoration companies that invest
+                Online visibility for restoration businesses is built on the combination of a mobile-friendly,
+                fast-loading website and strong Google Business Profile presence. Businesses that invest
                 in mobile-friendly websites see higher conversion rates from both paid and organic traffic because
-                the experience from click to phone call is frictionless. Online visibility in Google Maps and the
+                the experience from click to call is frictionless. Online visibility in Google Maps and the
                 local Pack depends heavily on mobile-friendly website quality signals that Google uses as ranking
-                factors. Restoration contractors who have not audited their mobile experience are often losing calls
+                factors. Businesses that have not audited their mobile experience are often losing work
                 to competitors whose mobile-friendly sites simply load faster and display more clearly.
               </p>
             </div>
@@ -577,15 +577,15 @@ export default function RestorationSeoPage() {
               <p className="text-sm leading-relaxed text-gray-600">
                 Internal links are one of the most underleveraged tools in restoration digital marketing. Most
                 restoration websites are built without a deliberate internal linking strategy, which means search
-                engines cannot efficiently discover and index all the service pages the site contains. Internal links
-                pass authority from high-traffic pages &mdash; typically the homepage and a few top service pages &mdash;
-                to deeper service area pages and specialty service pages that would otherwise rank poorly.
+                engines cannot efficiently discover and index all the pages the site contains. Internal links
+                pass authority from high-traffic pages &mdash; typically the homepage and a few top-level pages &mdash;
+                to deeper service area pages and specialty pages that would otherwise rank poorly.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
                 A well-structured internal links system connects your water damage restoration page to your
                 city-specific service area pages, your mold remediation page to your water damage page, and your
-                blog content to the most relevant service pages. This internal links architecture tells search engines
-                which pages are most important and how they relate to each other. For restoration contractors serving
+                blog content to the most relevant pages. This internal links architecture tells search engines
+                which pages are most important and how they relate to each other. For restoration businesses serving
                 multiple cities, internal links between the main service hub page and each city page accelerate the
                 ranking timeline for those local pages. Building internal links intentionally is a technical SEO
                 practice that compounds as the site grows and compounds further as more content is added to support
