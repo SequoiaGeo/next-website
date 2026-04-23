@@ -70,7 +70,7 @@ const timeline = [
     title: "Clean slate setup",
     steps: [
       "GBP optimization and photo refresh",
-      "Google Ads account restructure if taking over existing campaigns",
+      "Google Ads account restructure and ad account review",
       "LSA profile review and dispute backlog cleared",
       "Tracking setup: call tracking, form tracking, GA4 audit",
     ],
@@ -79,7 +79,7 @@ const timeline = [
     week: "Week 3",
     title: "Active and reporting",
     steps: [
-      "Campaigns live and optimized",
+      "Ads live and optimized",
       "First real reporting call: booked jobs, cost per lead, cost per booked job",
       "SEO baseline set with 90-day roadmap",
       "You know exactly what is happening and why",
@@ -249,7 +249,7 @@ export default function LeavingMyMarketingAgencyPage() {
               {[
                 {
                   title: "Sunk cost",
-                  body: "You&rsquo;ve already spent tens of thousands. Leaving feels like admitting it was wasted. But every month you stay is more money on the same outcome.",
+                  body: "You&rsquo;ve already put tens of thousands into it. Leaving feels like admitting it was wasted. But every month you stay is more money on the same outcome.",
                 },
                 {
                   title: "Fear of losing rankings",
@@ -379,56 +379,56 @@ export default function LeavingMyMarketingAgencyPage() {
       <section className="bg-[#fafaf8] py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <h2 className="text-2xl font-extrabold text-[#1a1a1a] mb-10">
-            What Clients Who Are Leaving Their Marketing Agency Discover First
+            Leaving My Marketing Agency: What the Transition Actually Looks Like
           </h2>
           <div className="space-y-5 text-base text-gray-600 leading-relaxed max-w-3xl">
             <p>
-              Most clients who come to us are already in the process of leaving their marketing agency before they reach
-              out. They have been thinking about it for months. The pattern is the same across every trade and every
-              market: a client signs with a marketing agency expecting growth, the agency delivers reports instead of
-              revenue, and the client eventually decides that leaving their marketing agency is the only way to stop the
-              bleeding. The decision is not complicated. Getting out cleanly is where most clients need help.
+              Most contractors who come to us are already in the process of leaving their marketing agency before they
+              reach out. They have been thinking about it for months. The pattern is the same across every trade and
+              every market: a contractor signs with a marketing firm expecting growth, the firm delivers reports instead
+              of revenue, and the contractor eventually decides that leaving their current vendor is the only way to stop
+              the bleeding. The decision is not complicated. Getting out cleanly is where most people need help.
             </p>
             <p>
-              When a client is leaving their marketing agency, the first two weeks reveal how the previous agency
-              operated. Most agencies keep client accounts inside their own systems. A client who has been paying a
-              marketing agency for 18 months may discover their Google Ads account, their LSA profile, and their
-              advertising history are all locked inside the agency&rsquo;s infrastructure. This is not an accident.
-              Most agencies build their client relationships this way intentionally. It is harder to leave a marketing
-              agency when leaving means starting over.
+              When a contractor is leaving their marketing agency, the first two weeks reveal how the previous firm
+              operated. Most vendors keep accounts inside their own systems. A contractor who has been paying for
+              marketing services for 18 months may discover their Google Ads account, their LSA profile, and their
+              ad history are all locked inside the vendor&rsquo;s platform. This is not an accident.
+              Most vendors build client relationships this way intentionally. It is harder to leave a marketing
+              firm when leaving means starting over.
             </p>
             <p>
-              Our team handles the access recovery process for every client in transition. We contact prior agencies,
-              document what exists, and transfer ownership of every account to the client directly. The client owns the
-              advertising history, the campaign data, and the account standing. If a client has been running Google
-              advertising for two years, that history has real value. Our team makes sure clients leave with it intact
-              rather than leaving it behind with the old agency.
+              Our team handles the access recovery process for every contractor in transition. We contact prior vendors,
+              document what exists, and transfer ownership of every account directly to the business. The contractor owns
+              the ad history, the account data, and the account standing. If a contractor has been running Google
+              advertising for two years, that history has real value. Our team makes sure every client leaves with it
+              intact rather than leaving it behind with the old firm.
             </p>
             <p>
-              The most common reason clients stay too long with the wrong marketing agency is not confidence in the
-              agency. It is fear of disruption. Most clients have heard that switching agencies is complicated, that
-              their advertising will go dark, or that other agencies cannot pick up where the current one left off.
-              This is rarely true. A client who works with an agency that operates transparently can transition their
-              advertising to a new agency in two weeks without meaningful disruption to lead flow. The two weeks of
-              transition planning we do with every client is designed specifically to prevent any gap in coverage.
+              The most common reason contractors stay too long with the wrong marketing firm is not confidence in the
+              vendor. It is fear of disruption. Most contractors have heard that switching vendors is complicated, that
+              their ads will go dark, or that other firms cannot pick up where the current one left off.
+              This is rarely true. A contractor who works with a firm that operates transparently can move their
+              account to a new partner in two weeks without meaningful disruption to lead flow. The two weeks of
+              transition planning we do with every contractor is designed specifically to prevent any gap in coverage.
             </p>
             <p>
               Leaving your marketing agency does not require a perfect plan. It requires honest answers to a few key
-              questions: what do you own, what does the agency control, and what will the transition cost in time and
-              disruption. Our team has done this with clients across HVAC, plumbing, electrical, roofing, and other
-              trades. The strategy is the same every time. Recover the accounts, document the advertising history,
-              build a clean foundation, and focus the client&rsquo;s budget on revenue rather than activity. Most
-              clients see better results within 90 days of leaving their marketing agency than they saw in the previous
-              year of staying. The growth is not from spending more. It is from spending on advertising that connects
-              to booked jobs.
+              questions: what do you own, what do they control, and what will the transition cost in time and
+              disruption. Our team has done this with contractors across HVAC, plumbing, electrical, roofing, and other
+              trades. The strategy is the same every time. Recover the accounts, document the ad history,
+              build a clean foundation, and focus the budget on revenue rather than activity. Your money should
+              produce booked jobs, not dashboards. Most contractors see better results within 90 days of leaving their
+              marketing firm than they saw in the previous year of staying. The growth is not from a larger budget.
+              It comes from ads that connect to booked jobs.
             </p>
             <p>
-              The founder of Sequoia GEO hired marketing agencies for 13 years while operating an HVAC and plumbing
-              company. As a founder who built a home service company to the Inc 5000 four years running, he knows
+              The founder of Sequoia GEO hired marketing firms for 13 years while operating an HVAC and plumbing
+              business. As a founder who built a home service company to the Inc 5000 four years running, he knows
               what it feels like to sit across from an account rep who cannot explain why the phone is not ringing.
-              As a founder and operator who has been on the client side of the marketing agency relationship, he built
-              Sequoia GEO specifically because the marketing agency industry has no real accountability to the clients
-              it serves. Every client we work with gets direct access to the same founder. No account managers cycling
+              As a founder and operator who has been on the contractor side of the vendor relationship, he built
+              Sequoia GEO specifically because this industry has no real accountability to the businesses it serves.
+              Every client we work with gets direct access to the same founder. No account managers cycling
               in and out. No strategy that exists in a deck and not in the market. Revenue reporting that connects
               advertising spend to actual booked jobs, every month.
             </p>
