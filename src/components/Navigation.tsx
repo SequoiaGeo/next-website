@@ -51,6 +51,12 @@ const resourceLinks = [
       { label: "Leaving Your Marketing Agency?", href: "/leaving-my-marketing-agency" },
     ],
   },
+  {
+    group: "Tools",
+    items: [
+      { label: "Sales Training Tool", href: "https://talk-n-sell-pro.lovable.app", external: true },
+    ],
+  },
 ];
 
 export default function Navigation() {
@@ -207,14 +213,27 @@ export default function Navigation() {
                       {group.group}
                     </p>
                     {group.items.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        onClick={() => setResourcesOpen(false)}
-                        className="block px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-[#F5FAF7] hover:text-[#1A5C3A] transition-colors"
-                      >
-                        {item.label}
-                      </Link>
+                      "external" in item && item.external ? (
+                        <a
+                          key={item.href}
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setResourcesOpen(false)}
+                          className="block px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-[#F5FAF7] hover:text-[#1A5C3A] transition-colors"
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          onClick={() => setResourcesOpen(false)}
+                          className="block px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-[#F5FAF7] hover:text-[#1A5C3A] transition-colors"
+                        >
+                          {item.label}
+                        </Link>
+                      )
                     ))}
                   </div>
                 ))}
@@ -326,14 +345,27 @@ export default function Navigation() {
                 <div key={group.group} className="mb-3">
                   <p className="text-xs font-bold text-[#1A5C3A] uppercase tracking-wider py-1">{group.group}</p>
                   {group.items.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setMobileOpen(false)}
-                      className="block text-base text-gray-600 hover:text-[#1A5C3A] py-1.5 transition-colors"
-                    >
-                      {item.label}
-                    </Link>
+                    "external" in item && item.external ? (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setMobileOpen(false)}
+                        className="block text-base text-gray-600 hover:text-[#1A5C3A] py-1.5 transition-colors"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setMobileOpen(false)}
+                        className="block text-base text-gray-600 hover:text-[#1A5C3A] py-1.5 transition-colors"
+                      >
+                        {item.label}
+                      </Link>
+                    )
                   ))}
                 </div>
               ))}
