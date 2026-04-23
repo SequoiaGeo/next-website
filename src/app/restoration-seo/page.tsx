@@ -13,6 +13,89 @@ export const metadata: Metadata = {
 export default function RestorationSeoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does restoration SEO take to produce results?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most restoration companies see measurable improvements in search engine rankings within 3 to 6 months. Significant increases in organic traffic and inbound call volume typically follow at the 6 to 9 month mark. Competitive urban markets may require 9 to 12 months before organic SEO surpasses paid advertising as a lead volume driver. The SEO investment compounds over time in ways that paid search cannot replicate."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes restoration SEO different from standard contractor SEO?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Restoration marketing must serve emergency demand at 2am and insurance-driven research from homeowners evaluating contractors days after the initial event. It also requires separate content strategies for water damage, fire damage, mold remediation, and biohazard jobs. Most contractor SEO strategies target one demand pattern. Restoration SEO must serve both emergency intent and research-phase intent with different landing pages, different keywords, and different conversion paths."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does restoration SEO handle the insurance versus retail job distinction?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The most effective restoration SEO programs maintain separate content tracks for insurance-driven jobs and retail emergency calls. Insurance content addresses the claims process, contractor certifications like IICRC, documentation standards, and TPA vendor relationships. Retail emergency content focuses on speed, 24/7 availability, and what to do immediately after discovering damage. These audiences have different search behavior and different decision criteria. Mixing them on a single generic page serves neither well and dilutes the keyword targeting for both."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What IICRC certifications should a restoration company highlight for SEO?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "IICRC certifications are a significant trust signal for both homeowners and insurance adjusters. Water Damage Restoration (WRT), Applied Structural Drying (ASD), Fire and Smoke Restoration (FSRT), and Applied Microbial Remediation (AMRT) certifications should each appear on the relevant service pages. These certifications differentiate restoration companies from unlicensed competitors in both organic search results and when insurance adjusters are evaluating preferred vendor qualifications."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do restoration companies need both Google Ads and organic SEO?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Paid ads deliver immediate visibility for high-priority water damage and fire damage keywords while SEO builds organic rankings over time. A restoration company relying entirely on paid advertising is vulnerable to rising cost-per-click rates and has no durable organic presence when ad budgets contract. A company investing only in SEO misses emergency calls during the months before organic rankings mature. The right restoration marketing strategy uses Google Ads and Local Service Ads for immediate coverage alongside SEO for long-term compound growth."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What restoration keywords produce the highest-value jobs?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Water damage restoration and fire damage restoration keywords typically produce the highest average job values because the scope of work is substantial and insurance coverage is common. Mold remediation keywords produce consistent volume but are more price-sensitive. Emergency keywords like 'water damage near me' and 'flood cleanup' convert immediately but compete heavily on speed of response. A complete restoration SEO strategy covers all damage categories mapped to dedicated service pages."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does TPA relationships affect restoration marketing strategy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Third-party administrators control significant job flow for restoration companies that work with insurance carriers. Getting on TPA preferred vendor lists requires demonstrating certifications, response time standards, documentation capabilities, and geographic coverage. A restoration marketing strategy that only targets consumer searches ignores the insurance channel entirely. Service pages addressing TPA vendor qualifications and insurance carrier partnerships attract the adjuster-side searches that produce high-volume job flow at consistent ticket sizes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When should restoration companies ask for Google reviews?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Property owners who just experienced water damage or a house fire are not emotionally ready to leave reviews immediately after job close. The emotional arc of a restoration project is longer than a standard home service call. Review requests timed to project completion, typically 2 to 3 weeks after restoration work is finished, produce higher conversion rates because customer sentiment peaks when the property is restored and normal life has resumed. Automated review workflows triggered by project completion status in the job management system produce the most consistent review velocity for restoration companies."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What should I look for in a restoration marketing company?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Look for a restoration marketing company that understands the difference between insurance job flow and emergency retail calls, knows the platforms restoration companies use for job management, and reports success in terms of dispatched jobs and cost per acquired job by type, not just website traffic. A general digital marketing agency does not have the restoration industry knowledge to build a strategy that captures both demand types. Ask any company you evaluate for restoration-specific case studies with revenue outcomes and how they separate insurance versus retail attribution."
+                }
+              }
+            ]
+          })
+        }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -32,7 +115,7 @@ export default function RestorationSeoPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Get a Full Picture Audit
@@ -200,7 +283,7 @@ export default function RestorationSeoPage() {
                   mold remediation inquiries.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I built Balanced Comfort over a decade from startup to 130+ employees and $10M+ in annual revenue.
+                  I built Balanced Comfort over a decade from startup to 130+ employees and $17M+ in annual revenue before a successful exit in 2024.
                   That experience is what I bring to every restoration client I work with.
                 </p>
               </div>
@@ -608,7 +691,7 @@ export default function RestorationSeoPage() {
             before we add a dollar of new spend.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link href="/#contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
+            <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
               Book a Strategy Call
             </Link>
             <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">(559) 521-3122</a>

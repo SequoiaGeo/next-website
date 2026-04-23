@@ -132,7 +132,7 @@ export default function HvacSeoPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Get a Full Picture Audit
@@ -228,8 +228,8 @@ export default function HvacSeoPage() {
                   13 Years in the HVAC Business
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  Balanced Comfort Heating &amp; Air grew from a one-truck startup to 130+ employees and
-                  $10M+ in annual revenue in the HVAC industry. We made the Inc 5000 four years running: 2020, 2021, 2022, 2023.
+                  Balanced Comfort Heating &amp; Air grew from a startup to 130+ employees and
+                  $17M+ in annual revenue before a successful exit in 2024. We made the Inc 5000 four years running: 2020, 2021, 2022, 2023.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I didn&rsquo;t just market the company. I dispatched technicians. I listened to call
@@ -663,7 +663,7 @@ export default function HvacSeoPage() {
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Strategy Call
