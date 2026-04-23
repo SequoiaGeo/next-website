@@ -19,7 +19,7 @@ const nextConfig = {
       { source: "/service-page/:path*", destination: "/#services", permanent: true },
 
       // === GEO LANDING PAGES ===
-      { source: "/geo-agency", destination: "/", permanent: true },
+      // /geo-agency now has its own page — no redirect needed
       { source: "/geo-for-plumbers", destination: "/plumbing-seo", permanent: true },
       { source: "/geo-audit", destination: "/#contact", permanent: false },
       { source: "/geo-agency-seattle", destination: "/", permanent: true },
