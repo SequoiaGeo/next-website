@@ -54,7 +54,7 @@ const resourceLinks = [
   {
     group: "Tools",
     items: [
-      { label: "Sales Training Tool", href: "https://talk-n-sell-pro.lovable.app", external: true },
+      { label: "Sales Training Tool", href: "/sales-training" },
     ],
   },
 ];
