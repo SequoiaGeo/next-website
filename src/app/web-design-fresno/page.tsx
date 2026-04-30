@@ -1,5 +1,6 @@
 import Link from "next/link";
 import GHLWidget from "@/components/GHLWidget";
+import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -373,14 +374,14 @@ export default function WebDesignFresnoPage() {
         </div>
       </section>
 
-      {/* GHL Booking Widget */}
+      {/* Booking Calendar */}
       <section className="py-16 px-6 bg-[#FAF7F2]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-4">Schedule Your Free Consultation</h2>
+          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-4">Schedule Your Free Website Review</h2>
           <p className="text-gray-600 mb-8">
             30 minutes to review your site, talk through your goals, and see if we are the right fit.
           </p>
-          <GHLWidget />
+          <BookingCalendar />
         </div>
       </section>
     </>
