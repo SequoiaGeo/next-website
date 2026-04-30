@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import StageFinder from "@/components/atlas/StageFinder";
@@ -91,18 +91,18 @@ export default function AtlasPage() {
           flexWrap: "wrap",
         }}
       >
-        <span>4Ã— Inc. 5000 Honoree</span>
-        <span style={{ color: ATLAS.sage }}>âœ¶</span>
-        <span>3Ã— Best Place to Work</span>
-        <span style={{ color: ATLAS.sage }}>âœ¶</span>
+        <span>4&times; Inc. 5000 Honoree</span>
+        <span style={{ color: ATLAS.sage }}>&#10038;</span>
+        <span>3&times; Best Place to Work</span>
+        <span style={{ color: ATLAS.sage }}>&#10038;</span>
         <span>13 Yrs Operator Experience</span>
-        <span style={{ color: ATLAS.sage }}>âœ¶</span>
-        <span>California-Built Â· Licensed</span>
+        <span style={{ color: ATLAS.sage }}>&#10038;</span>
+        <span>California-Built &middot; Licensed</span>
       </div>
 
       <div style={{ position: "relative", zIndex: 2 }}>
 
-        {/* â"€â"€ HERO â"€â"€ */}
+        {/* HERO */}
         <section style={{ position: "relative", padding: "110px 80px 100px", overflow: "hidden" }}>
           <div style={{ position: "absolute", right: 80, top: 120, opacity: 0.6, pointerEvents: "none" }} aria-hidden="true">
             <SequoiaSprig size={140} ink={ATLAS.forest} />
@@ -110,7 +110,7 @@ export default function AtlasPage() {
 
           <div style={{ maxWidth: 1080, position: "relative" }}>
             <div style={{ ...MONO_STYLE, color: ATLAS.forest, marginBottom: 28 }}>
-              Â§ Marketing Â· Local SEO Â· GEO Â· Fractional CMO
+              &sect; Marketing &middot; Local SEO &middot; GEO &middot; Fractional CMO
             </div>
 
             <h1
@@ -142,14 +142,14 @@ export default function AtlasPage() {
                 color: ATLAS.ink2,
               }}
             >
-              Four stages of growth. Eleven services. One clear plan for the season youâ€™re actually in.
+              Four stages of growth. Eleven services. One clear plan for the season you&rsquo;re actually in.
             </p>
 
             <StageFinder />
           </div>
         </section>
 
-        {/* â"€â"€ STAGES â"€â"€ */}
+        {/* STAGES */}
         <section
           id="stages"
           style={{
@@ -161,7 +161,7 @@ export default function AtlasPage() {
         >
           <div style={{ maxWidth: 1200 }}>
             <div style={{ marginBottom: 80 }}>
-              <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>Â§ 01 Â· The Four Stages</div>
+              <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>&sect; 01 &middot; The Four Stages</div>
               <h2
                 style={{
                   fontFamily: "var(--f-display)",
@@ -189,7 +189,7 @@ export default function AtlasPage() {
                   lineHeight: 1.5,
                 }}
               >
-                Growth has seasons. We meet you in yours — and name the next one out loud.
+                Growth has seasons. We meet you in yours &mdash; and name the next one out loud.
               </p>
             </div>
 
@@ -201,7 +201,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â"€â"€ SERVICES â"€â"€ */}
+        {/* SERVICES */}
         <section
           id="services"
           style={{
@@ -224,7 +224,7 @@ export default function AtlasPage() {
               }}
             >
               <div>
-                <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>Â§ 02 Â· Services</div>
+                <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>&sect; 02 &middot; Services</div>
                 <h2
                   style={{
                     fontFamily: "var(--f-display)",
@@ -244,7 +244,7 @@ export default function AtlasPage() {
                 </h2>
               </div>
               <p style={{ fontFamily: "var(--f-serif)", fontSize: 21, lineHeight: 1.55, color: ATLAS.ink2, margin: 0 }}>
-                One studio. Eleven disciplines. Chosen for your stage, executed by people whoâ€™ve signed the back of the check before.
+                One studio. Eleven disciplines. Chosen for your stage, executed by people who&rsquo;ve signed the back of the check before.
               </p>
             </div>
 
@@ -256,7 +256,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â"€â"€ GEO â"€â"€ */}
+        {/* GEO */}
         <section
           id="geo"
           style={{
@@ -278,7 +278,7 @@ export default function AtlasPage() {
             <div style={{ display: "grid", gridTemplateColumns: "1.15fr 1fr", gap: 72, alignItems: "center" }}>
               {/* Left */}
               <div>
-                <div style={{ ...MONO_STYLE, color: ATLAS.sage }}>Â§ 03 Â· The New Terrain</div>
+                <div style={{ ...MONO_STYLE, color: ATLAS.sage }}>&sect; 03 &middot; The New Terrain</div>
                 <h2
                   style={{
                     fontFamily: "var(--f-display)",
@@ -290,7 +290,7 @@ export default function AtlasPage() {
                     color: ATLAS.paper,
                   }}
                 >
-                  GEO — how
+                  GEO &mdash; how
                   <br />
                   <em style={{ color: ATLAS.sage, fontFamily: "var(--f-serif)", fontWeight: 400 }}>machines</em> find you.
                 </h2>
@@ -319,7 +319,7 @@ export default function AtlasPage() {
                       textDecoration: "none",
                     }}
                   >
-                    Run a free AI-visibility audit â†’
+                    Run a free AI-visibility audit &rarr;
                   </Link>
                 </div>
               </div>
@@ -334,7 +334,7 @@ export default function AtlasPage() {
                 }}
               >
                 <CornerMarks color={ATLAS.sage} />
-                <div style={{ ...MONO_STYLE, color: ATLAS.sage, fontSize: 10 }}>â— Sample Â· HVAC Â· 90d</div>
+                <div style={{ ...MONO_STYLE, color: ATLAS.sage, fontSize: 10 }}>&#9679; Sample &middot; HVAC &middot; 90d</div>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 14, marginTop: 14 }}>
                   <div
                     style={{
@@ -350,7 +350,7 @@ export default function AtlasPage() {
                   <div style={{ fontSize: 12, color: "rgba(243,236,216,0.7)" }}>
                     <div style={{ ...MONO_STYLE, fontSize: 10 }}>AI Visibility</div>
                     <div style={{ color: ATLAS.sage, marginTop: 4, fontFamily: "var(--f-mono)", fontSize: 11 }}>
-                      â–² +62 pts
+                      &#9650; +62 pts
                     </div>
                   </div>
                 </div>
@@ -383,7 +383,7 @@ export default function AtlasPage() {
           </div>
         </section>
 
-        {/* â"€â"€ OPERATOR QUOTE â"€â"€ */}
+        {/* OPERATOR QUOTE */}
         <section
           id="about"
           style={{
@@ -400,7 +400,7 @@ export default function AtlasPage() {
             <SequoiaSprig size={110} ink={ATLAS.forest} />
           </div>
           <div style={{ maxWidth: 1040 }}>
-            <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>Â§ 04 Â· Who Youâ€™ll Work With</div>
+            <div style={{ ...MONO_STYLE, color: ATLAS.forest }}>&sect; 04 &middot; Who You&rsquo;ll Work With</div>
             <blockquote style={{ margin: 0, padding: "40px 0 0" }}>
               <p
                 style={{
@@ -425,7 +425,7 @@ export default function AtlasPage() {
                   }}
                   aria-hidden="true"
                 >
-                  â€œ
+                  &ldquo;
                 </span>
                 For thirteen years I ran a California HVAC company. I hired, I fired, I made payroll, and I wrote the marketing checks myself. Sequoia Geo exists because small businesses deserve an advisor who has actually been in the seat.
                 <span
@@ -439,7 +439,7 @@ export default function AtlasPage() {
                   }}
                   aria-hidden="true"
                 >
-                  "
+                  &rdquo;
                 </span>
               </p>
             </blockquote>
@@ -473,7 +473,7 @@ export default function AtlasPage() {
                     letterSpacing: "0.02em",
                   }}
                 >
-                  Founder Â· Sequoia Geo
+                  Founder &middot; Sequoia Geo
                 </div>
                 <div
                   style={{
@@ -484,14 +484,14 @@ export default function AtlasPage() {
                     fontStyle: "italic",
                   }}
                 >
-                  Former owner, Balanced Comfort Â· CA licensed contractor
+                  Former owner, Balanced Comfort &middot; CA licensed contractor
                 </div>
               </div>
             </footer>
           </div>
         </section>
 
-        {/* â"€â"€ FINAL CTA â"€â"€ */}
+        {/* FINAL CTA */}
         <section
           style={{
             padding: "160px 80px",
@@ -510,7 +510,7 @@ export default function AtlasPage() {
             <SequoiaGrove w={1400} h={320} ink={ATLAS.paper} muted={ATLAS.sage} fog={ATLAS.ink} />
           </div>
           <div style={{ maxWidth: 860, margin: "0 auto", position: "relative", zIndex: 2 }}>
-            <div style={{ ...MONO_STYLE, color: ATLAS.sage }}>Â§ Begin</div>
+            <div style={{ ...MONO_STYLE, color: ATLAS.sage }}>&sect; Begin</div>
             <h2
               style={{
                 fontFamily: "var(--f-display)",
@@ -535,7 +535,7 @@ export default function AtlasPage() {
                 color: "rgba(243,236,216,0.75)",
               }}
             >
-              Thirty minutes. Free. Youâ€™ll leave with three clear next steps — even if you never hire us.
+              Thirty minutes. Free. You&rsquo;ll leave with three clear next steps &mdash; even if you never hire us.
             </p>
             <Link
               href="/#contact"
@@ -553,12 +553,12 @@ export default function AtlasPage() {
                 textDecoration: "none",
               }}
             >
-              Schedule yours â†’
+              Schedule yours &rarr;
             </Link>
           </div>
         </section>
 
-        {/* â"€â"€ FOOTER â"€â"€ */}
+        {/* FOOTER */}
         <footer
           style={{
             padding: "40px 80px",
@@ -573,7 +573,7 @@ export default function AtlasPage() {
             gap: 16,
           }}
         >
-          <span>Â© 2026 Sequoia Geo</span>
+          <span>&copy; 2026 Sequoia Geo</span>
           <span>aaron@sequoiageo.com</span>
           <span>Made in California</span>
         </footer>
@@ -581,4 +581,3 @@ export default function AtlasPage() {
     </div>
   );
 }
-
