@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Script from "next/script";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import CalculatorBanner from "@/components/CalculatorBanner";
@@ -11,6 +12,7 @@ import Testimonials from "@/components/Testimonials";
 import FirstThirtyDays from "@/components/FirstThirtyDays";
 import LSABanner from "@/components/LSABanner";
 import YouTubeFacade from "@/components/YouTubeFacade";
+import BookingCalendar from "@/components/BookingCalendar";
 
 // Lazy-load below-fold interactive components — defers their JS until
 // after the critical rendering path completes.
@@ -22,6 +24,18 @@ export default function Home() {
     <>
       <Hero />
       <Problem />
+
+      {/* ── Google Reviews (Elfsight) ─────────────────────────────────── */}
+      <section className="bg-[#fafaf8] py-12">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <p className="text-center text-xs font-bold uppercase tracking-widest text-[#3A9E6A] mb-3">
+            What clients say
+          </p>
+          <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+          <div className="elfsight-app-42ab95f5-d53f-4800-be57-33d24a8d29cf" data-elfsight-app-lazy />
+        </div>
+      </section>
+
       <CalculatorBanner />
       <FullPicture />
       <HowItWorks />
@@ -136,6 +150,39 @@ export default function Home() {
       <FirstThirtyDays />
       <FAQ />
       <LSABanner />
+
+      {/* Inline booking calendar — primary conversion path */}
+      <section className="bg-[#fafaf8] pt-16 pb-0">
+        <div className="mx-auto max-w-2xl px-6 lg:px-8 text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A] mb-3">Book a Call</p>
+          <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+            Schedule a Free Strategy Call
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            Tell me what you&rsquo;re spending on marketing. I&rsquo;ll tell you what it&rsquo;s actually producing.
+          </p>
+          <div className="mt-3 inline-flex items-center gap-2 text-sm text-gray-500">
+            <svg className="h-4 w-4 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            15 minutes &bull; No pitch deck &bull; Real operator-level feedback
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#fafaf8] py-10">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+          <BookingCalendar />
+        </div>
+      </section>
+
+      {/* Form as fallback */}
+      <div className="mx-auto max-w-3xl px-6">
+        <div className="flex items-center gap-4 py-4">
+          <div className="flex-1 border-t border-gray-200" />
+          <span className="text-sm text-gray-400">or fill out the form below</span>
+          <div className="flex-1 border-t border-gray-200" />
+        </div>
+      </div>
       <ContactForm />
     </>
   );
