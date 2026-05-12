@@ -25,7 +25,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
   description:
-    "Home services marketing connected to booked jobs. 13-year operator, 4x Inc 5000. I see your booking rate, average ticket, and where revenue leaks — not just your lead count.",
+    "Home services marketing connected to booked jobs. 13-year operator, 4x Inc 5000. I see your booking rate, average ticket, and where revenue leaks. Not just your lead count.",
   keywords: [
     "fractional CMO home services",
     "home services marketing",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.sequoiageo.com",
     siteName: "Sequoia GEO",
-    title: "Home Services Marketing That Looks at the Full Picture | Sequoia GEO",
+    title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
     description:
       "Your marketing agency sees clicks. I see your booking rate, average ticket, and why $7K/mo in leads produces $475 in revenue. 13 years as a home services operator. 4x Inc 5000.",
     images: [
@@ -118,10 +118,10 @@ const organizationSchema = {
       "https://www.grownearby.com/podcast/the-success-story-of-aaron-husak/",
     ],
     award: [
-      "Inc. 5000 Fastest-Growing Companies 2020 — Balanced Comfort",
-      "Inc. 5000 Fastest-Growing Companies 2021 — Balanced Comfort (#817, 595% growth)",
-      "Inc. 5000 Fastest-Growing Companies 2022 — Balanced Comfort (#511)",
-      "Inc. 5000 Fastest-Growing Companies 2023 — Balanced Comfort",
+      "Inc. 5000 Fastest-Growing Companies 2020, Balanced Comfort",
+      "Inc. 5000 Fastest-Growing Companies 2021, Balanced Comfort (#817, 595% growth)",
+      "Inc. 5000 Fastest-Growing Companies 2022, Balanced Comfort (#511)",
+      "Inc. 5000 Fastest-Growing Companies 2023, Balanced Comfort",
     ],
     knowsAbout: [
       "Home services marketing",
@@ -191,7 +191,7 @@ export default function RootLayout({
               id="google-analytics"
               strategy="afterInteractive"
               dangerouslySetInnerHTML={{
-                __html: `gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_ID}');`,
+                __html: `gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_ID}');gtag('config','AW-1042937332');`,
               }}
             />
           </>
