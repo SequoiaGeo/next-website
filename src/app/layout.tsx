@@ -5,7 +5,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
-import ABEventEmitter from "@/components/ABEventEmitter";
+
 
 const inter = Inter({
   variable: "--font-inter",
@@ -199,10 +199,6 @@ export default function RootLayout({
 
         {/* Microsoft Clarity — loaded by CookieBanner only after user accepts.
             Removed from here to prevent tracking before consent is given. */}
-
-        {/* A/B variant GA4 event — reads cookie client-side, fires once per session.
-            Middleware handles assignment/redirect; this just tags GA4. */}
-        <ABEventEmitter />
 
         {/* Cookie consent banner — gates Clarity behind user acceptance */}
         <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />

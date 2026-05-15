@@ -65,24 +65,6 @@ export default function CookiePolicyPage() {
             </p>
           </div>
 
-          <div className="border border-gray-100 rounded-xl p-5">
-            <div className="flex items-start justify-between gap-4 mb-2">
-              <h3 className="font-semibold text-base">A/B Testing</h3>
-              <span className="text-xs font-medium bg-green-50 text-green-800 border border-green-200 px-2 py-0.5 rounded-full whitespace-nowrap">
-                Functional — no personal data
-              </span>
-            </div>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              We occasionally run A/B tests to compare different versions of the
-              site. A cookie stores which version you were shown so you see the
-              same version on return visits. No personal data is collected.
-            </p>
-            <p className="text-gray-500 text-xs mt-2">
-              Cookie name:{" "}
-              <code className="bg-gray-50 px-1 rounded">hp_variant</code> —
-              Duration: 30 days
-            </p>
-          </div>
 
           <div className="border border-gray-100 rounded-xl p-5">
             <div className="flex items-start justify-between gap-4 mb-2">
