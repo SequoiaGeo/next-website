@@ -45,14 +45,13 @@ export default function FullPicture() {
           <div>
             <p className="section-overline mb-4">What We Do Differently</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
-              Your marketing isn&rsquo;t just a channel.{" "}
-              <span className="text-[#1A5C3A]">It&rsquo;s a pipeline.</span>
+              Your agency optimizes their metrics.{" "}
+              <span className="text-[#1A5C3A]">Nobody optimizes your revenue.</span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Before touching your <strong>Google Ads</strong>, we look at the full picture. Phones. <strong>Booking rate</strong>.
-              Appointment notes. Where <strong>revenue</strong> is being left on the table before a lead ever
-              turns into a job. Most <strong>marketing agencies</strong> don&rsquo;t do this because it&rsquo;s
-              not their department. We do it because it&rsquo;s the only way to actually move revenue.
+              Before touching your <strong>Google Ads</strong>, we look at the full picture: phones, <strong>booking rate</strong>,
+              appointment notes, and where <strong>revenue</strong> is being left on the table before a lead ever
+              turns into a job. We do this because it&rsquo;s the only way to actually move revenue.
             </p>
             <blockquote className="mt-6 border-l-2 border-[#3A9E6A] pl-5">
               <p className="text-base font-medium italic text-gray-600">
@@ -86,7 +85,7 @@ export default function FullPicture() {
               ["Rankings", "Average ticket by channel"],
               [
                 "Monthly report you don't read",
-                '"Your Saturday booking rate dropped 15% — here\'s the call recording showing why"',
+                '"Your Saturday booking rate dropped 15%. Here\'s the call recording showing why."',
               ],
             ].map(([agency, me], i) => (
               <React.Fragment key={i}>

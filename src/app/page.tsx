@@ -33,6 +33,7 @@ export default function Home() {
     <>
       <Hero />
       <Problem />
+      <AboutAaron />
 
       {/* ── Google Reviews (Elfsight) ─────────────────────────────────── */}
       <section className="bg-[#fafaf8] py-12">
@@ -45,21 +46,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA #1: After problem + reviews, first conversion break */}
+      {/* CTA #1: Visitor just felt pain + saw credibility. Offer diagnosis. */}
       <InlineCTA
-        headline="Let's find where your revenue is leaking."
+        headline="Find out what your marketing is actually producing."
         subtext="15-minute call. No pitch deck. Just your numbers and what they mean."
+        buttonText="Get Your Free Audit"
         variant="green"
       />
 
-      <CalculatorBanner />
       <FullPicture />
+      <CalculatorBanner />
       <HowItWorks />
       <WhoIsItFor />
-      <AboutAaron />
 
-      {/* Why work with Sequoia GEO — YouTube facade loads thumbnail only;
-          iframe + YouTube JS load on click (saves ~500KB on initial load) */}
+      {/* Why work with Sequoia GEO */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -77,14 +77,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA #2: After YouTube / before services grid */}
+      <Services />
+
+      {/* CTA #2: Scarcity, medium commitment */}
       <InlineCTA
-        headline="Working with 10 contractors at a time."
-        subtext="If there's an opening, let's talk about whether it makes sense."
+        headline="Only 10 spots. See if yours is open."
+        subtext="If there's a fit, I'll tell you. If not, I'll tell you that too."
+        buttonText="Check Availability"
         variant="dark"
       />
-
-      <Services />
 
       {/* What I actually look at when I take over marketing */}
       <section className="bg-white py-20">
@@ -171,20 +172,23 @@ export default function Home() {
 
       <Testimonials />
 
-      {/* CTA #3: After testimonials, social proof momentum */}
+      {/* CTA #3: Social proof momentum, ready to act */}
       <InlineCTA
-        headline="See if we're a fit."
-        subtext="One call. If I can help, I'll tell you how. If I can't, I'll tell you that too."
+        headline="They started with one call. Most never left."
+        subtext="No contracts. No pitch. Just your numbers reviewed by someone who's been in your seat."
+        buttonText="Book Your 15-Minute Call"
         variant="light"
       />
 
       <FirstThirtyDays />
       <FAQ />
 
-      {/* CTA #4: After FAQ, last chance before booking section */}
+      {/* CTA #4: Lowest friction for non-ready visitors */}
       <InlineCTA
-        headline="Still have questions? Let's talk."
-        subtext="I'd rather answer them on a call than have you wonder."
+        headline="Not ready for a call? See how much revenue you're leaving on the table."
+        subtext="Enter your spend, calls, and booking rate. Takes 60 seconds."
+        buttonText="Try the Free Calculator"
+        buttonHref="/marketing-leak-calculator"
         variant="green"
       />
 
@@ -195,10 +199,10 @@ export default function Home() {
         <div className="mx-auto max-w-2xl px-6 lg:px-8 text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A] mb-3">Book a Call</p>
           <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-            Schedule a Free Strategy Call
+            Tell Me What You&rsquo;re Spending. I&rsquo;ll Tell You What It&rsquo;s Producing.
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Tell me what you&rsquo;re spending on marketing. I&rsquo;ll tell you what it&rsquo;s actually producing.
+            Pick a time below for a free 15-minute strategy call. No pitch deck. Just your numbers.
           </p>
           <div className="mt-3 inline-flex items-center gap-2 text-sm text-gray-500">
             <svg className="h-4 w-4 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

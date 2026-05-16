@@ -51,10 +51,10 @@ export default function HowItWorks() {
             <p className="section-overline mb-4">How it works</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
               Not an agency.{" "}
-              <span className="text-[#1A5C3A]">Your growth operator.</span>
+              <span className="text-[#1A5C3A]">A fractional CMO who&rsquo;s been in your shoes.</span>
             </h2>
             <p className="mt-5 text-base text-gray-500 leading-relaxed">
-              The engagement is built around depth, not deliverables.
+              I embed in your business, review your calls, audit your numbers, and own the revenue outcome.
             </p>
             <div className="mt-8">
               <Link

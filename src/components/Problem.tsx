@@ -60,8 +60,8 @@ export default function Problem() {
             },
             {
               number: "04",
-              title: "You don't own what you think you own",
-              body: "Many contractors discover when they try to leave an agency that the website goes with them. Years of content, reviews, and SEO equity: gone.",
+              title: "You don't own your own marketing assets",
+              body: "Many contractors discover when they try to leave an agency that the website goes with them. Years of content, reviews, and SEO equity disappear with them.",
             },
           ].map((item) => (
             <div
@@ -75,6 +75,15 @@ export default function Problem() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a href="/marketing-leak-calculator" className="inline-flex items-center gap-2 text-sm font-semibold text-[#3A9E6A] hover:text-[#6FCF97] transition-colors">
+            How much is your pipeline leaking? Try the free calculator
+            <svg aria-hidden="true" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
         </div>
 
       </div>

@@ -12,7 +12,7 @@ const badFit = [
   "Looking for the cheapest SEO package available",
   "Just need someone to \"run your Google Ads\"",
   "Not willing to share booking data, call recordings, and financials",
-  "Want a vendor to check in with once a month, not a partner embedded in the business",
+  "Want a vendor to check in with once a month, not someone embedded in your business",
 ];
 
 export default function WhoIsItFor() {
@@ -25,12 +25,11 @@ export default function WhoIsItFor() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <p className="section-overline mb-4">Is This a Fit?</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
-              Built for operators.{" "}
-              <span className="text-[#1A5C3A]">Not for shoppers.</span>
+              Built for contractors doing $2M to $15M{" "}
+              <span className="text-[#1A5C3A]">who are done cycling through agencies.</span>
             </h2>
             <p className="mt-5 text-base text-gray-500 leading-relaxed">
-              Ten clients at a time. That constraint is intentional: it&rsquo;s what lets
-              every client get the same depth of attention that produced four Inc 5000
+              Every client gets the same depth of attention that produced four Inc 5000
               rankings at Balanced Comfort.
             </p>
             <div className="mt-8 flex flex-col gap-3">

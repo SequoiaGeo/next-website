@@ -83,23 +83,16 @@ export default function Hero() {
           {/* Left: Copy */}
           <div>
             <p className="section-overline text-[#3A9E6A] mb-6">
-              Growth Operations for Home Services
+              Fractional CMO for Home Service Contractors
             </p>
 
             <h1 className="text-5xl font-extrabold text-white sm:text-6xl lg:text-[4.25rem] leading-[1.06] tracking-tight">
-              What would your marketing look like if the person running it had{" "}
-              <em className="not-italic text-[#3A9E6A]">P&L responsibility?</em>
+              I built a home service company to $10M and 130 employees. Now I run marketing for{" "}
+              <em className="not-italic text-[#3A9E6A]">10 contractors at a time.</em>
             </h1>
 
             <p className="mt-8 text-lg text-[#C8EDD2]/70 leading-relaxed max-w-2xl">
-              An agency sends you a leads report. An operator asks why revenue didn&rsquo;t move.
-              Marketing and sales aren&rsquo;t two separate things. They&rsquo;re the same pipeline.
-              If one end is leaking, it doesn&rsquo;t matter how much you pour in the other.
-            </p>
-
-            <p className="mt-4 text-base text-[#C8EDD2]/45 max-w-xl">
-              13 years running a home service company to 130+ employees and 4x Inc 5000.
-              Now working with 10 contractors at a time.
+              After 13 years and 4 consecutive Inc 5000 rankings at Balanced Comfort, I sold the company in 2024. Now I do for a small number of contractors what I spent a decade figuring out for myself: connect marketing spend to booked jobs, not vanity metrics.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-3">
@@ -107,7 +100,7 @@ export default function Hero() {
                 href="#contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3A9E6A]"
               >
-                Book a Strategy Call
+                Get Your Free Pipeline Audit
                 <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -119,6 +112,10 @@ export default function Hero() {
                 See the Proof
               </Link>
             </div>
+
+            <p className="mt-4 text-sm text-[#C8EDD2]/40">
+              15 min. No pitch. You&rsquo;ll leave with at least one thing to fix Monday.
+            </p>
 
             <a
               href="tel:5595213122"
@@ -174,10 +171,6 @@ export default function Hero() {
             <span>CA Licensed Contractor B &middot; C-2 &middot; C-20 HVAC &middot; C-36 Plumbing</span>
             <span className="hidden sm:inline text-white/10">|</span>
             <span>Fresno, CA &middot; Serving Nationwide</span>
-            <span className="hidden sm:inline text-white/10">|</span>
-            <span>10 clients at a time &middot; Currently{" "}
-              <span className="text-[#3A9E6A]/80">accepting applications</span>
-            </span>
           </div>
         </div>
       </div>

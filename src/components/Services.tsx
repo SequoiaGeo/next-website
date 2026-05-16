@@ -13,7 +13,7 @@ const services = [
     ),
   },
   {
-    title: "Local SEO & GEO",
+    title: "Local SEO & AI Search Visibility",
     description:
       "Rank where homeowners search, including in AI-powered results. Service pages, citations, and content that drives calls.",
     href: "/local-seo-fresno",
@@ -61,7 +61,7 @@ const services = [
   {
     title: "Fractional CMO",
     description:
-      "Executive-level marketing strategy without the $250K salary. Own the revenue outcome across all your channels, not just one of them.",
+      "Executive-level marketing strategy without the full-time salary. Own the revenue outcome across all your channels, not just one of them.",
     href: "/fractional-cmo",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -114,8 +114,8 @@ export default function Services() {
         <div className="max-w-2xl mb-14">
           <p className="section-overline mb-4">What We Do</p>
           <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
-            Every channel connected{" "}
-            <span className="text-[#1A5C3A]">to booked jobs.</span>
+            Google Ads. SEO. LSAs. GBP.{" "}
+            <span className="text-[#1A5C3A]">All tracked to booked revenue.</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-gray-500">
             These aren&rsquo;t standalone packages. They&rsquo;re the channels managed as part of

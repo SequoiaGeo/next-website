@@ -6,6 +6,8 @@ interface InlineCTAProps {
   headline?: string;
   subtext?: string;
   variant?: "dark" | "green" | "light";
+  buttonText?: string;
+  buttonHref?: string;
 }
 
 function trackCTA(action: string, label: string) {
@@ -25,6 +27,8 @@ export default function InlineCTA({
   headline = "Ready to see where your revenue is leaking?",
   subtext = "15 minutes. No pitch deck. Real operator-level feedback.",
   variant = "green",
+  buttonText = "Book a Strategy Call",
+  buttonHref = "#contact",
 }: InlineCTAProps) {
   const bg =
     variant === "dark"
@@ -52,11 +56,11 @@ export default function InlineCTA({
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
           <Link
-            href="#contact"
+            href={buttonHref}
             onClick={() => trackCTA("cta_click", headline || "inline_cta")}
             className={`inline-flex items-center justify-center rounded-lg px-6 py-3.5 text-sm font-semibold transition ${btnBg}`}
           >
-            Book a Strategy Call
+            {buttonText}
             <svg
               aria-hidden="true"
               className="ml-2 h-3.5 w-3.5"
