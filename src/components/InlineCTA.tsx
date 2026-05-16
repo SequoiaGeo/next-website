@@ -1,9 +1,20 @@
+"use client";
+
 import Link from "next/link";
 
 interface InlineCTAProps {
   headline?: string;
   subtext?: string;
   variant?: "dark" | "green" | "light";
+}
+
+function trackCTA(action: string, label: string) {
+  if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+    (window as any).gtag("event", action, {
+      event_category: "CTA",
+      event_label: label,
+    });
+  }
 }
 
 /**
@@ -42,6 +53,7 @@ export default function InlineCTA({
         <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
           <Link
             href="#contact"
+            onClick={() => trackCTA("cta_click", headline || "inline_cta")}
             className={`inline-flex items-center justify-center rounded-lg px-6 py-3.5 text-sm font-semibold transition ${btnBg}`}
           >
             Book a Strategy Call
@@ -62,6 +74,7 @@ export default function InlineCTA({
           </Link>
           <a
             href="tel:5595213122"
+            onClick={() => trackCTA("phone_click", headline || "inline_cta")}
             className={`inline-flex items-center gap-2 text-sm font-medium transition-colors ${phoneLinkColor}`}
           >
             <svg

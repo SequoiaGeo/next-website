@@ -171,16 +171,16 @@ export default function RootLayout({
         <main id="main-content" className="flex-1">{children}</main>
         <Footer />
 
-        {/* GA4 Consent Mode v2 — set defaults BEFORE the GA4 script loads.
-            analytics_storage defaults to denied until user accepts cookies.
-            GA4 still initializes so it can model conversions in consent-denied mode. */}
+        {/* GA4 Consent Mode v2: analytics_storage granted by default (B2B site,
+            low traffic, need every data point). Ad storage stays denied until
+            cookie consent. CookieBanner upgrades ad_storage on acceptance. */}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <Script
               id="ga4-consent-defaults"
               strategy="beforeInteractive"
               dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});`,
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});`,
               }}
             />
             <Script

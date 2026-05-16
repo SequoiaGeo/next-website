@@ -2,6 +2,15 @@
 
 import { useState, useEffect } from "react";
 
+function trackCTA(action: string, label: string) {
+  if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+    (window as any).gtag("event", action, {
+      event_category: "CTA",
+      event_label: label,
+    });
+  }
+}
+
 /**
  * Sticky bottom bar on mobile (hidden on desktop).
  * Appears after the user scrolls past the hero (~600px).
@@ -26,6 +35,7 @@ export default function StickyMobileCTA() {
       <div className="bg-[#0D2318] border-t border-[#3A9E6A]/30 px-4 py-3 flex items-center gap-3">
         <a
           href="tel:5595213122"
+          onClick={() => trackCTA("phone_click", "sticky_mobile")}
           className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
         >
           <svg
@@ -46,6 +56,7 @@ export default function StickyMobileCTA() {
         </a>
         <a
           href="#contact"
+          onClick={() => trackCTA("cta_click", "sticky_mobile_book")}
           className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-[#3A9E6A] px-4 py-3 text-sm font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
         >
           Book a Call

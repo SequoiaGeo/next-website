@@ -86,83 +86,83 @@ export default function Home() {
 
       <Services />
 
-      {/* What Home Services Marketing Actually Covers */}
+      {/* What I actually look at when I take over marketing */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What <strong>Home Services Marketing</strong> Actually Covers
+              What I Actually Look at When I Take Over Your Marketing
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              <strong>Digital marketing for home service companies</strong> is not a single channel. It is a coordinated system designed to generate <strong>qualified leads</strong> across the full customer journey, from the moment a homeowner searches for help to the moment they book.
+              Most agencies hand you a report full of impressions and clicks. I start with your P&L, your booking rate, and your average ticket. The marketing channels matter, but only after we know the numbers behind them.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {[
               {
-                title: "Local SEO and Google Business Profile",
-                body: "<strong>Local SEO</strong> is the foundation of <strong>home services marketing</strong> for any company that depends on local customers. <strong>Search engine optimization</strong> for contractors builds <strong>organic traffic</strong> from homeowners actively searching for your services. A fully optimized <strong>Google Business Profile</strong> puts you in the Map Pack for <strong>local search</strong> results, the position that generates more <strong>phone calls</strong> than any other channel for most <strong>home service businesses</strong>. <strong>Local businesses</strong> that invest in <strong>local SEO</strong> consistently outperform competitors relying solely on <strong>paid advertising</strong>.",
+                title: "Your Google Business Profile and Local Visibility",
+                body: "I audit your GBP listing, your Map Pack position, and how many calls actually come from it. One client had a dead phone number in their LSA profile for three months. Their agency never noticed because they were tracking impressions, not answered calls. That is the kind of gap I close in the first week.",
               },
               {
-                title: "Paid Advertising and Google Local Services Ads",
-                body: "<strong>Google Local Services Ads</strong> and <strong>pay-per-click advertising</strong> generate <strong>high quality leads</strong> immediately, before <strong>organic search</strong> rankings compound. <strong>Google Ads</strong> for <strong>home service companies</strong> work best when campaigns are built around job type, seasonality, and <strong>average ticket</strong>, not just keyword rankings. <strong>Paid advertising</strong> fills the pipeline while <strong>local SEO</strong> builds the long-term <strong>online presence</strong> that reduces <strong>cost per lead</strong> over time.",
+                title: "Your Ad Spend and What It Actually Produces",
+                body: "I connect your Google Ads and LSA accounts to your CRM so we can see cost per booked job, not cost per lead. A $45 lead that books at 80% is worth more than a $12 lead that books at 15%. Most agencies optimize for the $12 lead because it looks better on a report. I optimize for the one that puts a tech in a truck.",
               },
               {
-                title: "Reputation Management and Online Reviews",
-                body: "Your <strong>online reputation</strong> is the most important conversion factor in <strong>home services marketing</strong>. <strong>Potential customers</strong> comparing providers in the Map Pack look at star ratings before they call. A systematic <strong>review generation</strong> process that produces consistent <strong>new reviews</strong> improves your position in <strong>search results</strong> and converts more <strong>website visitors</strong> into calls. <strong>Brand visibility</strong> in local search is built through <strong>building relationships</strong> with past customers, not one-time campaigns.",
+                title: "Your Reviews and Reputation Velocity",
+                body: "Star ratings are table stakes. What matters is review velocity: how many new reviews you get per month relative to competitors. I build automated review request sequences that run through your CRM so techs don't have to remember to ask. One client went from 4 reviews/month to 22 without adding any manual steps.",
               },
               {
-                title: "Attribution and Marketing ROI",
-                body: "The most overlooked element of <strong>contractor marketing</strong> is <strong>marketing attribution</strong>: connecting every <strong>ad spend dollar</strong> to a <strong>booked job</strong>. Without <strong>call tracking</strong>, <strong>Google Analytics</strong>, and CRM integration, you cannot measure true <strong>marketing ROI</strong>. Most <strong>marketing agencies</strong> report on <strong>website traffic</strong> and <strong>cost per lead</strong>. A properly built <strong>digital marketing strategy</strong> reports on <strong>cost per booked job</strong> by channel, the only metric that tells you whether your <strong>marketing investment</strong> is producing revenue.",
+                title: "Your Revenue Attribution (The Part Everyone Skips)",
+                body: "If you cannot tell me the cost per booked job for each marketing channel, you are guessing where to spend money. I wire call tracking into your dispatch system so every dollar of ad spend connects to a real job. This is the single change that has the biggest impact on marketing ROI, and most agencies never do it because it requires access they do not ask for.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
                 <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why contractor marketing underperforms */}
+      {/* Why your current marketing isn't working */}
       <section className="bg-[#fafaf8] py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Why Most <strong>Contractor Marketing Programs</strong> Underperform
+              Four Reasons Your Marketing Isn&rsquo;t Producing Revenue
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              The gap between <strong>home service companies</strong> that grow and those that stay flat is rarely the <strong>marketing channel</strong>. It is almost always the connection, or lack of one, between the <strong>marketing strategy</strong>, the sales process, and the operations side of the business.
+              After auditing dozens of contractor marketing programs, the same patterns show up over and over. The channel is rarely the problem. The gap is almost always between your marketing, your phones, and your dispatch board.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {[
               {
                 number: "01",
-                title: "No Revenue Attribution",
-                body: "<strong>Digital marketing agencies</strong> for contractors report on <strong>website visitors</strong>, <strong>organic traffic</strong>, and <strong>cost per lead</strong>. Without <strong>call tracking</strong> connected to your dispatch system, none of those numbers tells you whether the <strong>marketing effort</strong> is producing <strong>booked jobs</strong>. <strong>Business owners</strong> in the <strong>home services industry</strong> who measure every channel by <strong>cost per closed job</strong> consistently outperform those who measure by lead volume.",
+                title: "You Measure Leads, Not Booked Jobs",
+                body: "Your agency sends a report showing 200 leads last month. Great. How many of those booked? How many showed up? What was the average ticket? If you cannot answer those questions by channel, you are spending blind. I had a client spending $14K/month on Google Ads. When we connected call tracking to ServiceTitan, we found 40% of their leads were going to voicemail during business hours.",
               },
               {
                 number: "02",
-                title: "Siloed Channel Management",
-                body: "When your <strong>SEO company</strong>, <strong>Google Ads</strong> manager, and <strong>social media marketing</strong> team each optimize their own channel independently, nobody owns the revenue outcome. <strong>Email marketing</strong> to past customers, <strong>content marketing</strong> for <strong>organic search</strong>, and <strong>paid advertising</strong> for immediate leads all produce different results depending on how well they are coordinated. The <strong>home service companies</strong> that grow fastest have a single operator responsible for the full <strong>digital marketing strategy</strong>.",
+                title: "Three Vendors, Nobody Owns the Outcome",
+                body: "Your SEO company says rankings are up. Your PPC manager says cost per click is down. Your web designer says traffic increased. Revenue is flat. Nobody owns the number that matters because each vendor optimizes their own silo. The companies that grow fastest have one person accountable for the full picture, from ad click to dispatched job.",
               },
               {
                 number: "03",
-                title: "Weak Phone and Booking Conversion",
-                body: "A <strong>home services marketing</strong> program that generates <strong>qualified leads</strong> but has a 35% CSR booking rate is leaving more than half of its <strong>marketing investment</strong> on the table. <strong>Potential customers</strong> who call and do not book are <strong>new customers</strong> your business already paid to generate. <strong>Phone handling</strong>, booking scripts, and <strong>CSR performance</strong> are part of the <strong>marketing strategy</strong>, not separate from it.",
+                title: "Your Phones Are Leaking Revenue",
+                body: "A 35% CSR booking rate means you are losing more than half the leads you already paid for. I listen to call recordings, score booking performance, and build scripts that raise conversion rates. This is not a marketing problem on paper, but it is the fastest way to double your marketing ROI without spending another dollar on ads.",
               },
               {
                 number: "04",
-                title: "No Repeat Customer System",
-                body: "<strong>Repeat customers</strong> convert at higher rates, have higher <strong>average tickets</strong>, and generate more referrals than <strong>new customers</strong>. Most <strong>contractor marketing programs</strong> focus entirely on new leads and ignore the past customer database. <strong>Email marketing</strong> campaigns and seasonal re-engagement sequences produce some of the highest <strong>marketing ROI</strong> available to any <strong>home service business</strong>, and most <strong>marketing agencies</strong> never build them.",
+                title: "Your Past Customers Are Being Ignored",
+                body: "Your existing customer database is the highest-converting, lowest-cost marketing channel you have. Past customers book at 2-3x the rate of new leads and spend more per visit. Most contractors have thousands of past customers sitting in their CRM with zero outreach. A seasonal email campaign to that list costs almost nothing and consistently produces the best ROI of any channel I manage.",
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-white p-7">
                 <div className="mb-4 text-4xl font-black text-[#C8EDD2]">{item.number}</div>
                 <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
               </div>
             ))}
           </div>
