@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
@@ -266,10 +266,19 @@ export default function MarketingLeakCalculator() {
                 The first conversation is a free audit. Bring your numbers and we&rsquo;ll tell you exactly what the gap is and how to close it.
               </p>
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center w-full rounded-lg bg-[#1A5C3A] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
-                Book a Free Strategy Call
+                Submit Your Info for a Free Audit
+                <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+              <Link
+                href="/how-it-works"
+                className="inline-flex items-center justify-center w-full mt-3 rounded-lg border border-gray-200 px-6 py-3.5 text-sm font-medium text-gray-600 transition hover:border-[#3A9E6A] hover:text-[#1A5C3A]"
+              >
+                Learn how I fix these leaks
                 <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>

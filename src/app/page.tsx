@@ -20,7 +20,6 @@ import Testimonials from "@/components/Testimonials";
 import FirstThirtyDays from "@/components/FirstThirtyDays";
 import LSABanner from "@/components/LSABanner";
 import YouTubeFacade from "@/components/YouTubeFacade";
-import BookingCalendar from "@/components/BookingCalendar";
 
 // Lazy-load below-fold interactive components — defers their JS until
 // after the critical rendering path completes.
@@ -194,38 +193,6 @@ export default function Home() {
 
       <LSABanner />
 
-      {/* Inline booking calendar — primary conversion path */}
-      <section className="bg-[#fafaf8] pt-16 pb-0">
-        <div className="mx-auto max-w-2xl px-6 lg:px-8 text-center">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A] mb-3">Book a Call</p>
-          <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-            Tell Me What You&rsquo;re Spending. I&rsquo;ll Tell You What It&rsquo;s Producing.
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Pick a time below for a free 15-minute strategy call. No pitch deck. Just your numbers.
-          </p>
-          <div className="mt-3 inline-flex items-center gap-2 text-sm text-gray-500">
-            <svg className="h-4 w-4 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            15 minutes &bull; No pitch deck &bull; Real operator-level feedback
-          </div>
-        </div>
-      </section>
-      <section className="bg-[#fafaf8] py-10">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <BookingCalendar />
-        </div>
-      </section>
-
-      {/* Form as fallback */}
-      <div className="mx-auto max-w-3xl px-6">
-        <div className="flex items-center gap-4 py-4">
-          <div className="flex-1 border-t border-gray-200" />
-          <span className="text-sm text-gray-400">or fill out the form below</span>
-          <div className="flex-1 border-t border-gray-200" />
-        </div>
-      </div>
       <ContactForm />
 
       {/* Sticky mobile CTA bar: phone + book, appears after scrolling past hero */}

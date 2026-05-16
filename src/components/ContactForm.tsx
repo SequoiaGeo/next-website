@@ -10,7 +10,6 @@ export default function ContactForm() {
     name: "",
     phone: "",
     email: "",
-    message: "",
     smsConsent: false,
   });
 
@@ -194,20 +193,6 @@ export default function ContactForm() {
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-[#1a1a1a]">
-                    What&rsquo;s your biggest marketing challenge right now?
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="mt-1.5 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
-                    placeholder="e.g. Spending $10K/month on ads but revenue isn't growing..."
-                  />
-                </div>
-
                 <div className="flex items-start gap-3">
                   <input
                     id="smsConsent"
@@ -230,7 +215,7 @@ export default function ContactForm() {
                   disabled={loading}
                   className="w-full rounded-lg bg-[#1A5C3A] px-6 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318] hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A] disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Sending…" : "Book a Free Strategy Call"}
+                  {loading ? "Sending…" : "Get Your Free Audit"}
                 </button>
               </form>
             )}

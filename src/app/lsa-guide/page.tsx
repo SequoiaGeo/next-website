@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import PdfDownload from "./pdf-download";
 
@@ -107,7 +107,7 @@ export default function LSAGuidePage() {
                   <p className="text-xs font-semibold text-[#1a1a1a] mb-2">Want someone to audit your LSA?</p>
                   <p className="text-xs text-gray-500 mb-4">We check the basics most agencies skip: call tracking, profile accuracy, bid strategy, dispute history.</p>
                   <Link
-                    href="/#contact"
+                    href="/contact"
                     className="block w-full text-center rounded-lg bg-[#1A5C3A] px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-[#0D2318]"
                   >
                     Book a Free Audit
@@ -384,10 +384,16 @@ export default function LSAGuidePage() {
               </svg>
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg border-2 border-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-[#1A5C3A] transition hover:bg-[#1A5C3A] hover:text-white"
             >
-              Book a Free Strategy Call
+              Submit Your Info for a Free Audit
+            </Link>
+            <Link
+              href="/how-it-works"
+              className="inline-flex items-center justify-center rounded-lg border border-gray-200 px-7 py-3.5 text-sm font-medium text-gray-600 transition hover:border-[#3A9E6A] hover:text-[#1A5C3A]"
+            >
+              Learn more about how I work
             </Link>
           </div>
         </div>
