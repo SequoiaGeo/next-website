@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { cities } from "./city-data";
 
@@ -66,7 +66,7 @@ export default function HvacMarketingIndexPage() {
           <h2 className="text-xl font-extrabold text-[#1a1a1a] mb-6">Why We Focus on These Markets</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { title: "Less agency saturation", desc: "National agencies pour budget into Dallas, Phoenix, and Chicago. Fresno, Spokane, and Wichita are underserved. Local SEO authority is still buildable." },
+              { title: "Less agency saturation", desc: "National agencies pour budget into Dallas, Phoenix, and Chicago. Markets like Spokane, Knoxville, and Wichita are underserved. Local SEO authority is still buildable." },
               { title: "High HVAC demand", desc: "We prioritize markets with extreme climates. Hot summers or cold winters (or both) mean HVAC is not optional. These markets generate the service call volume that supports contractor growth." },
               { title: "Real homeowner base", desc: "Mid-size cities have stable homeownership rates and housing stock old enough to generate consistent replacement demand rather than only new install work." },
             ].map((item) => (
@@ -253,7 +253,7 @@ export default function HvacMarketingIndexPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call

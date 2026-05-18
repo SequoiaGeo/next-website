@@ -23,7 +23,6 @@ const resources = [
 ];
 
 const markets = [
-  { label: "Fresno, CA", href: "/hvac-marketing/fresno-ca" },
   { label: "Boise, ID", href: "/hvac-marketing/boise-id" },
   { label: "Colorado Springs, CO", href: "/hvac-marketing/colorado-springs-co" },
   { label: "Knoxville, TN", href: "/hvac-marketing/knoxville-tn" },

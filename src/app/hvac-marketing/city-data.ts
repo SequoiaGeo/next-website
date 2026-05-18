@@ -16,31 +16,6 @@ export interface CityData {
 
 export const cities: CityData[] = [
   {
-    slug: "fresno-ca",
-    city: "Fresno",
-    state: "California",
-    stateAbbr: "CA",
-    population: "545,000",
-    metroPopulation: "811,000",
-    climate: "Extreme heat, cooling-dominant",
-    climateDetail:
-      "Fresno summers routinely reach 105 to 110°F from June through September, with cooling loads among the highest in California outside the desert. Tule fog winters are cold enough to drive heating demand but the real demand driver is the summer heat. AC units run hard for five to six months per year, compressing equipment lifespan and driving replacement cycles faster than the national average.",
-    housingNote:
-      "A large inventory of 1960s through 1990s tract housing with sustained heat stress means replacement demand is steady. Median home values have risen, but Fresno remains more affordable than coastal California, and homeowners do invest in systems rather than deferring.",
-    marketOpportunity:
-      "Fresno is the ninth-largest city in California and one of the highest-volume HVAC markets in the state by service call frequency. National agencies focused on LA and the Bay Area consistently underinvest in Fresno-specific campaigns, leaving contractors competing in a market where local SEO authority and targeted paid media can still be won.",
-    agencyLandscape:
-      "The Fresno market has a handful of generalist digital agencies but very few with genuine HVAC or plumbing marketing depth. Contractors here frequently work with agencies based in LA or Sacramento who do not understand the local market dynamics or the seasonal demand patterns.",
-    existingClient:
-      "Sequoia GEO is based in Fresno. This is our home market and we understand the local contractor landscape, seasonal demand cycles, and what it actually takes to win new customers here.",
-    keyStats: [
-      { label: "Summer peak temp", value: "105–110°F" },
-      { label: "City population", value: "545,000" },
-      { label: "Metro population", value: "811,000" },
-      { label: "HVAC demand profile", value: "Extreme cooling" },
-    ],
-  },
-  {
     slug: "boise-id",
     city: "Boise",
     state: "Idaho",
@@ -123,7 +98,7 @@ export const cities: CityData[] = [
     housingNote:
       "A mix of 1970s through 1990s tract housing plus newer growth. Older equipment stock is significant given the climate stress on units. Bakersfield is the ninth-largest city in California by population and has been growing at 1.2% annually, the fastest of any major California city.",
     marketOpportunity:
-      "Agencies focused on coastal California largely pass over Bakersfield. The agricultural economy base and large blue-collar homeowner population generate consistent HVAC demand with fewer agencies competing for local SEO authority than you would find in LA, San Diego, or the Bay Area. Central Valley market knowledge from the Fresno market transfers directly.",
+      "Agencies focused on coastal California largely pass over Bakersfield. The agricultural economy base and large blue-collar homeowner population generate consistent HVAC demand with fewer agencies competing for local SEO authority than you would find in LA, San Diego, or the Bay Area. Central Valley market knowledge transfers directly.",
     agencyLandscape:
       "Bakersfield's marketing agency ecosystem skews toward generalists. Very few agencies with contractor-specific HVAC marketing depth are actively building local authority in this market. Most contractors here work with LA-based or Sacramento-based agencies that do not understand the local climate-driven demand profile.",
     keyStats: [
