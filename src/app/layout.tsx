@@ -5,6 +5,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import AiReferrerTracker from "@/components/AiReferrerTracker";
 
 
 const inter = Inter({
@@ -202,6 +203,9 @@ export default function RootLayout({
 
         {/* Cookie consent banner — gates Clarity behind user acceptance */}
         <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
+
+        {/* AI referrer tracker: fires ai_referrer_seen GA4 event when visitor arrives from a known AI engine */}
+        {process.env.NEXT_PUBLIC_GA_ID && <AiReferrerTracker />}
 
         {/* GHL Chat Widget is NOT in the root layout.
             It lives on inner pages only (/contact, /services, /about, /v2)
