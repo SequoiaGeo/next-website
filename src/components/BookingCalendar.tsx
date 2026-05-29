@@ -24,7 +24,7 @@ export default function BookingCalendar({ className }: { className?: string }) {
           rel="noopener noreferrer"
           className="inline-block bg-[#2D6A4F] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1B4332] transition-colors"
         >
-          Book a Strategy Call
+          Get Your Free Audit
         </a>
       </noscript>
     </div>

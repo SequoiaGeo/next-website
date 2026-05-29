@@ -254,7 +254,7 @@ export default function Navigation() {
             href="/contact"
             className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
           >
-            Book a Strategy Call
+            Get Your Free Audit
           </Link>
         </div>
 
@@ -397,7 +397,7 @@ export default function Navigation() {
               onClick={() => setMobileOpen(false)}
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-[#0D2318] w-full"
             >
-              Book a Strategy Call
+              Get Your Free Audit
             </Link>
           </div>
         </div>

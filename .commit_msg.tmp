@@ -1,0 +1,6 @@
+Unify CTA copy across site to "Get Your Free Audit"
+
+- Header (desktop + mobile) now says "Get Your Free Audit" instead of "Book a Strategy Call"
+- 14 page-level + component files updated: contact, roofing-seo, hvac-seo, plumbing-seo, restoration-seo, fractional-cmo, case-studies, sales-training, blog, blog/[slug], InlineCTA default, FirstThirtyDays, BookingCalendar fallback
+- Replaces mixed CTA copy ("Book a Strategy Call", "Get a Full Picture Audit") with one consistent action across the site
+- Reinforces the single primary CTA introduced in the hero consolidation

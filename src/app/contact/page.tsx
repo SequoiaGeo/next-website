@@ -3,9 +3,9 @@ import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Sequoia GEO: Book a Strategy Call",
+  title: "Contact | Get Your Free Audit | Sequoia GEO",
   description:
-    "Ready to find out what your marketing is actually producing? Book a 15-minute strategy call with Aaron Husak. No pitch deck, no pressure, just a real operator's read on your situation.",
+    "Ready to find out what your marketing is actually producing? Get a free 15-minute audit with Aaron Husak. No pitch deck, no pressure, just a real operator's read on your situation.",
   alternates: {
     canonical: "https://www.sequoiageo.com/contact",
   },
@@ -19,7 +19,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl">
-              Book a Strategy Call
+              Get Your Free Audit
             </h1>
             <p className="mt-4 text-lg text-gray-600">
               Tell me what you&rsquo;re spending on marketing. I&rsquo;ll tell you what it&rsquo;s actually producing.

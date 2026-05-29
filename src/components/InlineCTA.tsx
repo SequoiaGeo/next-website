@@ -27,7 +27,7 @@ export default function InlineCTA({
   headline = "Ready to see where your revenue is leaking?",
   subtext = "15 minutes. No pitch deck. Real operator-level feedback.",
   variant = "green",
-  buttonText = "Book a Strategy Call",
+  buttonText = "Get Your Free Audit",
   buttonHref = "#contact",
 }: InlineCTAProps) {
   const bg =
