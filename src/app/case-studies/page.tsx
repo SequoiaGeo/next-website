@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import YouTubeFacade from "@/components/YouTubeFacade";
 
 export const metadata: Metadata = {
   title: "Case Studies | Sequoia GEO",
@@ -32,6 +33,53 @@ export default function CaseStudiesPage() {
               Not simulated projections or agency-inflated metrics. Here&rsquo;s what the work
               actually produces.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Client video testimonials */}
+      <section className="bg-[#1a1a1a] py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mb-12 max-w-xl">
+            <p className="section-overline mb-4 text-[#3A9E6A]">In Their Words</p>
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl leading-[1.1]">
+              Owners on what it&rsquo;s like to work with us.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10">
+            {/* Michael */}
+            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 sm:p-8">
+              <div className="mx-auto w-full max-w-[280px]">
+                <div className="relative w-full overflow-hidden rounded-xl bg-black shadow-2xl" style={{ paddingBottom: "177.78%" }}>
+                  <YouTubeFacade
+                    videoId="IpbCaelX2jo"
+                    title="Michael Bissett of KABAM Plumbing on working with Sequoia GEO"
+                    isShort
+                  />
+                </div>
+              </div>
+              <footer className="mt-6 border-t border-white/10 pt-5 text-center">
+                <p className="text-sm font-semibold text-white">Michael Bissett</p>
+                <p className="text-xs text-gray-500">Owner, KABAM Plumbing Services</p>
+                <p className="text-xs text-gray-500">Sun City Center, FL</p>
+              </footer>
+            </div>
+            {/* Oscar */}
+            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 sm:p-8">
+              <div className="mx-auto w-full max-w-[280px]">
+                <div className="relative w-full overflow-hidden rounded-xl bg-black shadow-2xl" style={{ paddingBottom: "177.78%" }}>
+                  <YouTubeFacade
+                    videoId="Agn4YmIFMo4"
+                    title="Oscar Nunez of Benjamin Franklin Plumbing on working with Sequoia GEO"
+                    isShort
+                  />
+                </div>
+              </div>
+              <footer className="mt-6 border-t border-white/10 pt-5 text-center">
+                <p className="text-sm font-semibold text-white">Oscar Nunez</p>
+                <p className="text-xs text-gray-500">Owner, Benjamin Franklin Plumbing of Huntington Beach</p>
+              </footer>
+            </div>
           </div>
         </div>
       </section>
