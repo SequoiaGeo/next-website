@@ -79,19 +79,19 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: Intro video */}
-          <div>
+          {/* Right: Client video testimonial */}
+          <div className="mx-auto w-full max-w-[320px] lg:max-w-[340px]">
             <div
-              className="relative w-full overflow-hidden rounded-2xl shadow-2xl border border-gray-100"
-              style={{ paddingBottom: "56.25%" }}
+              className="relative w-full overflow-hidden rounded-2xl shadow-2xl border border-gray-100 bg-black"
+              style={{ paddingBottom: "177.78%" }}
             >
               <YouTubeFacade
-                videoId="f3ApuJI74Iw"
-                title="Introduction to Sequoia GEO by Aaron Husak"
+                videoId="IpbCaelX2jo"
+                title="Michael Bissett of KABAM Plumbing on working with Sequoia GEO"
               />
             </div>
             <p className="mt-3 text-sm text-gray-500 text-center">
-              2-minute intro. Who I am and how I work.
+              Michael Bissett, owner of KABAM Plumbing, Sun City Center FL.
             </p>
           </div>
 

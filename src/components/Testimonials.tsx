@@ -1,11 +1,15 @@
-import YouTubeFacade from "@/components/YouTubeFacade";
-
 const testimonials = [
   {
     name: "Martin Livingston",
     company: "Blue Kangaroo Packoutz",
     role: "Owner",
     text: "Sequoia GEO completely transformed our Google Business Profile and helped us stand out in a competitive market. We went from invisible to the first call customers make.",
+  },
+  {
+    name: "Michael Bissett",
+    company: "KABAM Plumbing Services",
+    role: "Owner",
+    text: "From our website to SEO to call volume, the results were real and measurable. Not reports that look good. Actual jobs booked.",
   },
   {
     name: "Salvador Ponce",
@@ -40,39 +44,7 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        {/* Featured video testimonial */}
-        <div className="mb-10 rounded-2xl border border-white/10 bg-white/[0.04] p-6 sm:p-8 lg:p-10">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr] lg:gap-12 items-center">
-            <div className="mx-auto w-full max-w-[280px] lg:mx-0">
-              <div className="relative w-full overflow-hidden rounded-xl bg-black shadow-2xl" style={{ paddingBottom: "177.78%" }}>
-                <YouTubeFacade
-                  videoId="IpbCaelX2jo"
-                  title="Michael Bissett of KABAM Plumbing on working with Sequoia GEO"
-                />
-              </div>
-            </div>
-            <div>
-              <p className="section-overline mb-3 text-[#3A9E6A]">Video Testimonial</p>
-              <StarRating />
-              <blockquote className="mt-5">
-                <p className="text-xl font-medium leading-relaxed text-white lg:text-2xl">
-                  &ldquo;From our website to SEO to call volume, the results were real and measurable. Not reports that look good. Actual jobs booked.&rdquo;
-                </p>
-              </blockquote>
-              <footer className="mt-6 flex items-center gap-4 border-t border-white/10 pt-5">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1A5C3A] text-sm font-bold text-white">
-                  MB
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white">Michael Bissett</p>
-                  <p className="text-xs text-gray-500">Owner, KABAM Plumbing Services (Sun City Center, FL)</p>
-                </div>
-              </footer>
-            </div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
 
           {/* Supporting testimonials */}
           {testimonials.map((t) => (
