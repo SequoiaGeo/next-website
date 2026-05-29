@@ -22,7 +22,7 @@ export default function Hero() {
             </p>
 
             <h1 className="text-4xl font-extrabold text-[#111111] sm:text-5xl lg:text-[3.5rem] leading-[1.06] tracking-tight">
-              <span className="text-[#1A5C3A]">4x Inc 5000.</span> Built from zero to 130 employees. Now I run the marketing for{" "}
+              I built a <span className="text-[#1A5C3A]">home service company</span> from zero to 130 employees and <span className="text-[#1A5C3A]">4x Inc 5000.</span> Now I run the marketing for{" "}
               <span className="text-[#1A5C3A]">10 contractors at a time.</span>
             </h1>
 
