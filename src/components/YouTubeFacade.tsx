@@ -6,6 +6,8 @@ import Image from "next/image";
 interface Props {
   videoId: string;
   title: string;
+  /** Set true for YouTube Shorts (vertical). Uses oardefault.jpg which returns the real 1080x1920 thumbnail. */
+  isShort?: boolean;
 }
 
 /**
@@ -13,10 +15,12 @@ interface Props {
  * Prevents YouTube from loading ~500KB of JS on initial page load.
  * Saves ~400ms TBT on mobile, which is worth ~10-15 PageSpeed points.
  */
-export default function YouTubeFacade({ videoId, title }: Props) {
+export default function YouTubeFacade({ videoId, title, isShort = false }: Props) {
   const [active, setActive] = useState(false);
   const [thumbSrc, setThumbSrc] = useState(
-    `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`
+    isShort
+      ? `https://i.ytimg.com/vi/${videoId}/oardefault.jpg`
+      : `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`
   );
 
   if (active) {

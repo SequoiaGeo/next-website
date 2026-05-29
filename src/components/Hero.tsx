@@ -88,6 +88,7 @@ export default function Hero() {
               <YouTubeFacade
                 videoId="IpbCaelX2jo"
                 title="Michael Bissett of KABAM Plumbing on working with Sequoia GEO"
+                isShort
               />
             </div>
             <p className="mt-3 text-sm text-gray-500 text-center">
