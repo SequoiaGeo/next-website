@@ -15,7 +15,9 @@ interface Props {
  */
 export default function YouTubeFacade({ videoId, title }: Props) {
   const [active, setActive] = useState(false);
-  const thumb = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+  const [thumbSrc, setThumbSrc] = useState(
+    `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`
+  );
 
   if (active) {
     return (
@@ -37,11 +39,17 @@ export default function YouTubeFacade({ videoId, title }: Props) {
       aria-label={`Play video: ${title}`}
     >
       <Image
-        src={thumb}
+        src={thumbSrc}
         alt={title}
         fill
         className="object-cover"
         sizes="(max-width: 768px) 100vw, 896px"
+        onError={() => {
+          // YouTube Shorts and some videos don't expose maxresdefault.jpg.
+          // hqdefault.jpg is generated for every YouTube video.
+          setThumbSrc(`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`);
+        }}
+        unoptimized
       />
       {/* Play button overlay */}
       <span className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
