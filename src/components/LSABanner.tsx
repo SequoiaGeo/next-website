@@ -14,7 +14,7 @@ export default function LSABanner() {
             </div>
             <div>
               <p className="text-sm font-bold text-white">Free Guide: Google Local Service Ads</p>
-              <p className="mt-0.5 text-sm text-gray-400">
+              <p className="mt-0.5 text-sm text-gray-500">
                 11 pages covering setup, lead management, credits, reviews, and the daily checklist contractors actually use.
                 The same guide that gets people banned from the comment section.
               </p>

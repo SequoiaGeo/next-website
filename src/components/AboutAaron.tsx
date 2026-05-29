@@ -29,7 +29,7 @@ export default function AboutAaron() {
                   </span>
                   <div>
                     <p className="text-xs font-bold text-[#1a1a1a]">4x Inc 5000</p>
-                    <p className="text-xs text-gray-400">2020 &ndash; 2023</p>
+                    <p className="text-xs text-gray-500">2020 &ndash; 2023</p>
                   </div>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function AboutAaron() {
                 </span>
               ))}
             </div>
-            <p className="text-xs text-gray-400 text-center lg:text-left">CA Contractor Licenses</p>
+            <p className="text-xs text-gray-500 text-center lg:text-left">CA Contractor Licenses</p>
           </div>
 
           {/* Right: copy */}
@@ -67,14 +67,14 @@ export default function AboutAaron() {
               </p>
               <p>
                 After <strong>13 years</strong> building a <strong>home services company</strong> from startup to <strong>4x Inc 5000</strong>,
-                the one thing that separated growth years from flat years wasn&rsquo;t the
+                the one thing that separated growth years from flat years wasn&rsquo;t the{" "}
                 <strong>agency</strong> we hired. It was whether <strong>marketing</strong>, operations, and sales were
                 connected or siloed.
               </p>
               <p>
                 That&rsquo;s what <strong>Sequoia GEO</strong> is built around: the full picture. Not just
                 your <strong>ad spend</strong>, but your <strong>booking rate</strong>, your <strong>average ticket</strong>, your appointment
-                notes, your phones on Saturday morning. The things your current <strong>agencies</strong>
+                notes, your phones on Saturday morning. The things your current <strong>agencies</strong>{" "}
                 aren&rsquo;t looking at because it&rsquo;s &ldquo;not their department.&rdquo;
               </p>
             </div>
@@ -167,13 +167,13 @@ export default function AboutAaron() {
               />
             </div>
           </div>
-          <p className="text-center text-sm text-gray-400">
-            Balanced Comfort, Fresno CA &mdash; 50+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318 (C36 Plumbing, B General Building)
+          <p className="text-center text-sm text-gray-500">
+            Balanced Comfort, Fresno CA &bull; 50+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318 (C36 Plumbing, B General Building)
           </p>
 
           {/* Industry connections */}
           <div className="pt-4">
-            <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">In the rooms where home services decisions get made</p>
+            <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4">In the rooms where home services decisions get made</p>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="overflow-hidden rounded-2xl shadow-sm">
                 <Image
@@ -185,7 +185,7 @@ export default function AboutAaron() {
                 />
                 <div className="px-4 py-3 bg-white border-t border-gray-100">
                   <p className="text-xs font-semibold text-[#1a1a1a]">Joe Crisera</p>
-                  <p className="text-xs text-gray-400">Home services industry leader</p>
+                  <p className="text-xs text-gray-500">Home services industry leader</p>
                 </div>
               </div>
               <div className="overflow-hidden rounded-2xl shadow-sm">
@@ -198,7 +198,7 @@ export default function AboutAaron() {
                 />
                 <div className="px-4 py-3 bg-white border-t border-gray-100">
                   <p className="text-xs font-semibold text-[#1a1a1a]">Tommy Mello</p>
-                  <p className="text-xs text-gray-400">Founder, A1 Garage Door Service</p>
+                  <p className="text-xs text-gray-500">Founder, A1 Garage Door Service</p>
                 </div>
               </div>
               <div className="overflow-hidden rounded-2xl shadow-sm">
@@ -211,7 +211,7 @@ export default function AboutAaron() {
                 />
                 <div className="px-4 py-3 bg-white border-t border-gray-100">
                   <p className="text-xs font-semibold text-[#1a1a1a]">Michelle Van Beek</p>
-                  <p className="text-xs text-gray-400">Home services growth leader</p>
+                  <p className="text-xs text-gray-500">Home services growth leader</p>
                 </div>
               </div>
             </div>
@@ -230,7 +230,7 @@ export default function AboutAaron() {
             </div>
             <div className="flex flex-col justify-between rounded-2xl border border-gray-200 bg-white p-6">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">As Featured On</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">As Featured On</p>
                 <div className="space-y-3">
                   <a
                     href="https://www.thefirstclick.net/ep-320-using-ai-to-increase-website-clarity-with-aaron-husak/"
@@ -244,8 +244,8 @@ export default function AboutAaron() {
                       </svg>
                     </span>
                     <div>
-                      <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">Digital Marketing Therapy &mdash; Ep. 320</p>
-                      <p className="text-xs text-gray-400">Using AI to Increase Website Clarity</p>
+                      <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">Digital Marketing Therapy, Ep. 320</p>
+                      <p className="text-xs text-gray-500">Using AI to Increase Website Clarity</p>
                     </div>
                   </a>
                   <a
@@ -261,13 +261,13 @@ export default function AboutAaron() {
                     </span>
                     <div>
                       <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">Grow Nearby Podcast</p>
-                      <p className="text-xs text-gray-400">The Success Story of Aaron Husak</p>
+                      <p className="text-xs text-gray-500">The Success Story of Aaron Husak</p>
                     </div>
                   </a>
                 </div>
               </div>
               <div className="mt-6 border-t border-gray-100 pt-4">
-                <p className="text-xs text-gray-400 leading-relaxed">Started in a 400 sq ft office in Fresno, CA. Grew to 130 employees, 4,000+ five-star reviews, and four consecutive Inc 5000 rankings before founding Sequoia GEO.</p>
+                <p className="text-xs text-gray-500 leading-relaxed">Started in a 400 sq ft office in Fresno, CA. Grew to 130 employees, 4,000+ five-star reviews, and four consecutive Inc 5000 rankings before founding Sequoia GEO.</p>
               </div>
             </div>
           </div>

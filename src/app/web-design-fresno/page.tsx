@@ -1,5 +1,4 @@
-import Link from "next/link";
-import GHLWidget from "@/components/GHLWidget";
+﻿import Link from "next/link";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
@@ -101,7 +100,7 @@ export default function WebDesignFresnoPage() {
       <section className="bg-[#FAF7F2] py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-[#2D6A4F] mb-4">
-            Web Design — Fresno, CA
+            Web Design, Fresno, CA
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-6 leading-tight">
             Fresno Website Designer That Builds for Google Rankings and Actual Revenue
@@ -137,7 +136,7 @@ export default function WebDesignFresnoPage() {
           ].map((item) => (
             <div key={item.label}>
               <div className="text-2xl font-bold text-white mb-1">{item.stat}</div>
-              <div className="text-sm text-gray-400">{item.label}</div>
+              <div className="text-sm text-gray-500">{item.label}</div>
             </div>
           ))}
         </div>
@@ -156,7 +155,7 @@ export default function WebDesignFresnoPage() {
             {[
               {
                 title: "Built for Looks, Not for Search",
-                body: "Beautiful design that Google cannot parse. No local keyword signals, missing schema markup, no Google Business Profile integration. The site ranks for the company name and nothing else — which means it only gets visited by people who already know you exist."
+                body: "Beautiful design that Google cannot parse. No local keyword signals, missing schema markup, no Google Business Profile integration. The site ranks for the company name and nothing else, which means it only gets visited by people who already know you exist."
               },
               {
                 title: "Slow Load Times Killing Conversions",
@@ -211,7 +210,7 @@ export default function WebDesignFresnoPage() {
               {
                 icon: "📱",
                 title: "Mobile-First Build",
-                body: "More than 70% of local searches happen on mobile. We design for mobile first, then scale up to desktop — not the other way around. Your site works on every device, every screen size."
+                body: "More than 70% of local searches happen on mobile. We design for mobile first, then scale up to desktop, not the other way around. Your site works on every device, every screen size."
               },
               {
                 icon: "🔗",
@@ -221,7 +220,7 @@ export default function WebDesignFresnoPage() {
               {
                 icon: "📊",
                 title: "Analytics and Attribution",
-                body: "We connect Google Analytics, Search Console, call tracking, and your CRM so you can see exactly what your website produces. Not just traffic — actual leads and their source."
+                body: "We connect Google Analytics, Search Console, call tracking, and your CRM so you can see exactly what your website produces. Not just traffic, actual leads and their source."
               },
             ].map((service) => (
               <div key={service.title} className="bg-white rounded-xl p-6 shadow-sm">
@@ -240,16 +239,16 @@ export default function WebDesignFresnoPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-[#1A1A1A] mb-6">
-                We Built a Website That Drove 4x Inc 5000 Growth — Now We Build Yours
+                We Built a Website That Drove 4x Inc 5000 Growth, Now We Build Yours
               </h2>
               <p className="text-gray-600 mb-4">
-                Sequoia GEO was founded by Aaron Husak after running a home services company from the ground up to 4x Inc 5000 status. We built and rebuilt that company's digital presence through every growth stage — and learned what separates a website that generates pipeline from one that just takes up a domain.
+                Sequoia GEO was founded by Aaron Husak after running a home services company from the ground up to 4x Inc 5000 status. We built and rebuilt that company's digital presence through every growth stage, and learned what separates a website that generates pipeline from one that just takes up a domain.
               </p>
               <p className="text-gray-600 mb-4">
                 The lesson: a website is not a marketing channel on its own. It is the destination that makes every other channel work. A weak website makes your Google Ads more expensive, your SEO harder, and your word-of-mouth referrals less likely to convert.
               </p>
               <p className="text-gray-600">
-                We are based in Fresno and focused on the Central Valley. We understand local market dynamics here — the competitive landscape, the neighborhoods, the seasonality — in a way that a San Francisco or Los Angeles agency never will.
+                We are based in Fresno and focused on the Central Valley. We understand local market dynamics here, the competitive landscape, the neighborhoods, the seasonality, in a way that a San Francisco or Los Angeles agency never will.
               </p>
             </div>
             <div className="bg-[#FAF7F2] rounded-2xl p-8">
@@ -340,11 +339,11 @@ export default function WebDesignFresnoPage() {
               },
               {
                 q: "Will our site work for Google Ads landing pages?",
-                a: "We design with paid traffic in mind. If you plan to run Google Ads, we build dedicated landing pages structured for high Quality Scores and conversion — not just aesthetics."
+                a: "We design with paid traffic in mind. If you plan to run Google Ads, we build dedicated landing pages structured for high Quality Scores and conversion, not just aesthetics."
               },
               {
                 q: "Do you write the content for the website?",
-                a: "Yes. Copywriting is included in most of our engagements. We research how your customers search, write to match that intent, and create content that both ranks and converts. We do not repurpose your old copy — we rebuild it from the ground up."
+                a: "Yes. Copywriting is included in most of our engagements. We research how your customers search, write to match that intent, and create content that both ranks and converts. We do not repurpose your old copy, we rebuild it from the ground up."
               },
             ].map((item) => (
               <div key={item.q} className="border border-gray-200 rounded-xl p-6">
@@ -362,7 +361,7 @@ export default function WebDesignFresnoPage() {
           <h2 className="text-3xl font-bold text-white mb-4">
             Get a Free Website Audit for Your Fresno Business
           </h2>
-          <p className="text-gray-300 mb-8">
+          <p className="text-gray-400 mb-8">
             We will review your current site and tell you exactly what is holding back your rankings and conversions. If a rebuild makes sense, we will show you what that looks like. No pressure, no generic advice.
           </p>
           <Link

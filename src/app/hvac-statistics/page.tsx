@@ -1,10 +1,10 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HVAC Industry Statistics 2026 | Market Size, Employment & Consumer Data",
+  title: "30+ HVAC Industry Statistics for 2026 (Verified Sources)",
   description:
-    "30+ sourced HVAC industry statistics for 2026: market size, employment, average ticket, seasonal demand, heat pump adoption, and how homeowners find HVAC contractors. Data from IBISWorld, BLS, and more.",
+    "30+ HVAC industry statistics for 2026, with sources: market size, employment, average ticket, seasonal demand, heat pump adoption, and how homeowners find contractors.",
   alternates: {
     canonical: "https://www.sequoiageo.com/hvac-statistics",
   },
@@ -92,7 +92,7 @@ export default function HvacStatisticsPage() {
               },
               {
                 n: 3,
-                stat: "The U.S. residential HVAC market was $15.4 billion in 2024 and is projected to reach $31.4 billion by 2034 — a 7.5% CAGR.",
+                stat: "The U.S. residential HVAC market was $15.4 billion in 2024 and is projected to reach $31.4 billion by 2034, a 7.5% CAGR.",
                 source: "GM Insights, U.S. Residential HVAC Market, 2024",
               },
               {
@@ -107,7 +107,7 @@ export default function HvacStatisticsPage() {
               },
               {
                 n: 6,
-                stat: "An estimated 8 million HVAC units are replaced annually in the U.S., versus 1 to 1.5 million units in new construction — a roughly 6:1 ratio.",
+                stat: "An estimated 8 million HVAC units are replaced annually in the U.S., versus 1 to 1.5 million units in new construction, a roughly 6:1 ratio.",
                 source: "The Chill Brothers, citing industry estimates",
               },
               {
@@ -120,7 +120,7 @@ export default function HvacStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -142,12 +142,12 @@ export default function HvacStatisticsPage() {
               },
               {
                 n: 9,
-                stat: "The BLS projects 8% job growth for HVAC mechanics and installers from 2024 to 2034, generating approximately 40,100 openings per year — classified as \"much faster than average.\"",
+                stat: "The BLS projects 8% job growth for HVAC mechanics and installers from 2024 to 2034, generating approximately 40,100 openings per year, classified as \"much faster than average.\"",
                 source: "U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, 2024",
               },
               {
                 n: 10,
-                stat: "The HVAC industry faces a current shortage of 110,000 technicians — the gap between open positions and qualified workers.",
+                stat: "The HVAC industry faces a current shortage of 110,000 technicians, the gap between open positions and qualified workers.",
                 source: "ACHR News / ServiceTitan, 2024",
               },
               {
@@ -160,7 +160,7 @@ export default function HvacStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -182,12 +182,12 @@ export default function HvacStatisticsPage() {
               },
               {
                 n: 13,
-                stat: "HVAC equipment prices increased approximately 40% since 2020, with manufacturers raising prices 2–13% in 2024 alone — driving up average ticket sizes significantly.",
+                stat: "HVAC equipment prices increased approximately 40% since 2020, with manufacturers raising prices 2–13% in 2024 alone, driving up average ticket sizes significantly.",
                 source: "ACHR News / ServiceTitan, 2024",
               },
               {
                 n: 14,
-                stat: "Customer lifetime value for an HVAC customer averages $15,340, against a customer acquisition cost of $296–$350 — a 44x+ return on acquisition spend.",
+                stat: "Customer lifetime value for an HVAC customer averages $15,340, against a customer acquisition cost of $296–$350, a 44x+ return on acquisition spend.",
                 source: "Leads4Build, citing industry benchmarks, 2024",
               },
               {
@@ -200,7 +200,7 @@ export default function HvacStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -227,7 +227,7 @@ export default function HvacStatisticsPage() {
               },
               {
                 n: 18,
-                stat: "Only 30% of homeowners schedule preventative HVAC maintenance annually — the other 70% are reactive, emergency-driven customers.",
+                stat: "Only 30% of homeowners schedule preventative HVAC maintenance annually, the other 70% are reactive, emergency-driven customers.",
                 source: "DuraPlas, cited in ServiceTitan HVAC Statistics, 2024",
               },
             ].map((item) => (
@@ -235,7 +235,7 @@ export default function HvacStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -252,17 +252,17 @@ export default function HvacStatisticsPage() {
             {[
               {
                 n: 19,
-                stat: "In 2024, manufacturers shipped 4.1 million heat pump units versus 3.1 million gas furnaces — heat pumps outsold gas furnaces by 32%.",
+                stat: "In 2024, manufacturers shipped 4.1 million heat pump units versus 3.1 million gas furnaces, heat pumps outsold gas furnaces by 32%.",
                 source: "Rocky Mountain Institute (RMI), 2024",
               },
               {
                 n: 20,
-                stat: "In the first half of 2025, electric heat pumps outsold gas furnaces by 25% — the trend is accelerating.",
+                stat: "In the first half of 2025, electric heat pumps outsold gas furnaces by 25%, the trend is accelerating.",
                 source: "Rocky Mountain Institute (RMI), 2025",
               },
               {
                 n: 21,
-                stat: "Heat pump adoption has increased 50% from 2020 levels, yet fewer than 20% of U.S. households currently use a heat pump — significant growth runway remains.",
+                stat: "Heat pump adoption has increased 50% from 2020 levels, yet fewer than 20% of U.S. households currently use a heat pump, significant growth runway remains.",
                 source: "U.S. Department of Energy / Canary Media, 2024",
               },
               {
@@ -275,7 +275,7 @@ export default function HvacStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -307,12 +307,12 @@ export default function HvacStatisticsPage() {
               },
               {
                 n: 26,
-                stat: "38% of consumers rank reliability as their single top priority when choosing an HVAC contractor — not price.",
+                stat: "38% of consumers rank reliability as their single top priority when choosing an HVAC contractor, not price.",
                 source: "PickHVAC, cited in ServiceTitan HVAC Statistics, 2024",
               },
               {
                 n: 27,
-                stat: "34% of consumers are currently delaying HVAC services due to economic strain — representing a significant pool of deferred demand that HVAC marketing can reach.",
+                stat: "34% of consumers are currently delaying HVAC services due to economic strain, representing a significant pool of deferred demand that HVAC marketing can reach.",
                 source: "ACHR News, 2024, cited in ServiceTitan HVAC Statistics",
               },
             ].map((item) => (
@@ -320,7 +320,7 @@ export default function HvacStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -367,7 +367,7 @@ export default function HvacStatisticsPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call

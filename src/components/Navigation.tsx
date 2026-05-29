@@ -92,7 +92,6 @@ export default function Navigation() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
-  // Close dropdowns when clicking outside
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(e.target as Node)) {
@@ -108,8 +107,8 @@ export default function Navigation() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled ? "header-blur border-b border-gray-200/50 shadow-sm" : "bg-transparent"
+      className={`sticky top-0 z-50 w-full bg-white transition-all duration-300 ${
+        scrolled ? "border-b border-gray-200 shadow-sm" : "border-b border-gray-100"
       }`}
     >
       <nav aria-label="Main navigation" className="container-narrow flex items-center justify-between py-3 lg:py-4">
@@ -124,10 +123,10 @@ export default function Navigation() {
             priority
           />
           <div className="flex flex-col">
-            <span className="text-lg font-bold text-dark-green leading-tight tracking-tight">
+            <span className="text-lg font-bold text-[#1A5C3A] leading-tight tracking-tight">
               Sequoia GEO
             </span>
-            <span className="text-xs text-light-green hidden sm:block leading-tight">
+            <span className="text-xs text-gray-500 hidden sm:block leading-tight">
               Growth Operations for Home Services
             </span>
           </div>
@@ -139,7 +138,7 @@ export default function Navigation() {
           <div className="relative" ref={servicesDropdownRef}>
             <button
               onClick={() => { setServicesOpen(!servicesOpen); setResourcesOpen(false); }}
-              className="flex items-center gap-1 text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
+              className="flex items-center gap-1 text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
               aria-expanded={servicesOpen}
               aria-haspopup="true"
             >
@@ -156,7 +155,7 @@ export default function Navigation() {
             </button>
 
             {servicesOpen && (
-              <div className="absolute top-full left-0 mt-2 w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/10 py-3 z-50">
+              <div className="absolute top-full left-0 mt-2 w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/20 py-3 z-50">
                 {serviceLinks.map((group) => (
                   <div key={group.group} className="px-2 mb-1 last:mb-0">
                     <p className="px-3 py-1.5 text-xs font-bold text-[#1A5C3A] uppercase tracking-wider">
@@ -180,7 +179,7 @@ export default function Navigation() {
 
           <Link
             href="/case-studies"
-            className="text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
+            className="text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
           >
             Case Studies
           </Link>
@@ -189,7 +188,7 @@ export default function Navigation() {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => { setResourcesOpen(!resourcesOpen); setServicesOpen(false); }}
-              className="flex items-center gap-1 text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
+              className="flex items-center gap-1 text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
               aria-expanded={resourcesOpen}
               aria-haspopup="true"
             >
@@ -206,7 +205,7 @@ export default function Navigation() {
             </button>
 
             {resourcesOpen && (
-              <div className="absolute top-full right-0 mt-2 w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/10 py-3 z-50">
+              <div className="absolute top-full right-0 mt-2 w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/20 py-3 z-50">
                 {resourceLinks.map((group) => (
                   <div key={group.group} className="px-2 mb-1 last:mb-0">
                     <p className="px-3 py-1.5 text-xs font-bold text-[#1A5C3A] uppercase tracking-wider">
@@ -243,7 +242,7 @@ export default function Navigation() {
 
           <Link
             href="/blog"
-            className="text-sm font-medium text-dark-text hover:text-accent-green transition-colors"
+            className="text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
           >
             Blog
           </Link>
@@ -251,7 +250,10 @@ export default function Navigation() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
-          <Link href="#contact" className="btn btn-primary text-sm">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
+          >
             Book a Strategy Call
           </Link>
         </div>
@@ -264,15 +266,15 @@ export default function Navigation() {
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
         >
-          <span className={`block w-6 h-0.5 bg-dark-green transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-dark-green transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-dark-green transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-[#1A5C3A] transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-[#1A5C3A] transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-[#1A5C3A] transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </nav>
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden fixed inset-x-0 top-[60px] bottom-0 bg-white/95 backdrop-blur-md transition-all duration-300 z-40 overflow-y-auto ${
+        className={`lg:hidden fixed inset-x-0 top-[60px] bottom-0 bg-white border-t border-gray-200 transition-all duration-300 z-40 overflow-y-auto ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -280,7 +282,7 @@ export default function Navigation() {
           {/* Mobile Services accordion */}
           <button
             onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-            className="flex items-center justify-between text-lg font-medium text-dark-text hover:text-accent-green py-3 border-b border-gray-100 transition-colors w-full text-left"
+            className="flex items-center justify-between text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors w-full text-left"
           >
             Services
             <svg
@@ -298,7 +300,7 @@ export default function Navigation() {
             <div className="pl-4 space-y-1 pb-2">
               {serviceLinks.map((group) => (
                 <div key={group.group} className="mb-3">
-                  <p className="text-xs font-bold text-[#1A5C3A] uppercase tracking-wider py-1">{group.group}</p>
+                  <p className="text-xs font-bold text-[#3A9E6A] uppercase tracking-wider py-1">{group.group}</p>
                   {group.items.map((item) => (
                     <Link
                       key={item.href}
@@ -317,7 +319,7 @@ export default function Navigation() {
           <Link
             href="/case-studies"
             onClick={() => setMobileOpen(false)}
-            className="text-lg font-medium text-dark-text hover:text-accent-green py-3 border-b border-gray-100 transition-colors"
+            className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
             Case Studies
           </Link>
@@ -325,7 +327,7 @@ export default function Navigation() {
           {/* Mobile Resources accordion */}
           <button
             onClick={() => setMobileResourcesOpen(!mobileResourcesOpen)}
-            className="flex items-center justify-between text-lg font-medium text-dark-text hover:text-accent-green py-3 border-b border-gray-100 transition-colors w-full text-left"
+            className="flex items-center justify-between text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors w-full text-left"
           >
             Resources
             <svg
@@ -343,7 +345,7 @@ export default function Navigation() {
             <div className="pl-4 space-y-1 pb-2">
               {resourceLinks.map((group) => (
                 <div key={group.group} className="mb-3">
-                  <p className="text-xs font-bold text-[#1A5C3A] uppercase tracking-wider py-1">{group.group}</p>
+                  <p className="text-xs font-bold text-[#3A9E6A] uppercase tracking-wider py-1">{group.group}</p>
                   {group.items.map((item) => (
                     "external" in item && item.external ? (
                       <a
@@ -375,7 +377,7 @@ export default function Navigation() {
           <Link
             href="/blog"
             onClick={() => setMobileOpen(false)}
-            className="text-lg font-medium text-dark-text hover:text-accent-green py-3 border-b border-gray-100 transition-colors"
+            className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
             Blog
           </Link>
@@ -383,7 +385,7 @@ export default function Navigation() {
           <div className="mt-6 flex flex-col gap-4">
             <a
               href="tel:5595213122"
-              className="inline-flex items-center justify-center gap-2 text-base font-medium text-medium-green text-center"
+              className="inline-flex items-center justify-center gap-2 text-base font-medium text-gray-500 text-center"
             >
               <svg aria-hidden="true" className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -391,9 +393,9 @@ export default function Navigation() {
               (559) 521-3122
             </a>
             <Link
-              href="#contact"
+              href="/contact"
               onClick={() => setMobileOpen(false)}
-              className="btn btn-primary text-base w-full"
+              className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-[#0D2318] w-full"
             >
               Book a Strategy Call
             </Link>

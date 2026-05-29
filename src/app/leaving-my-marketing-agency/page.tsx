@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -51,7 +51,7 @@ const checklistItems = [
   { item: "Hosting account", detail: "You should be able to transfer or point DNS without their help" },
   { item: "Analytics & Search Console", detail: "Full access, not read-only sharing" },
   { item: "Social media accounts", detail: "You are the admin, they are a manager at most" },
-  { item: "Review platform logins", detail: "GBP, Yelp, BBB — you own the credentials" },
+  { item: "Review platform logins", detail: "GBP, Yelp, BBB, you own the credentials" },
 ];
 
 const timeline = [
@@ -161,7 +161,7 @@ export default function LeavingMyMarketingAgencyPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Get a Free Transition Audit
@@ -228,7 +228,7 @@ export default function LeavingMyMarketingAgencyPage() {
             </div>
             <p className="mt-6 text-sm text-gray-500 text-center">
               If you&rsquo;re missing access to any of these, that&rsquo;s the first thing we fix.{" "}
-              <Link href="/#contact" className="text-[#1A5C3A] font-medium hover:underline">
+              <Link href="/contact" className="text-[#1A5C3A] font-medium hover:underline">
                 We&rsquo;ll do this audit with you for free.
               </Link>
             </p>
@@ -366,9 +366,9 @@ export default function LeavingMyMarketingAgencyPage() {
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
               <span>4x Inc 5000 (2020&ndash;2023)</span>
-              <span className="text-gray-300">|</span>
+              <span className="text-gray-400">|</span>
               <span>CA Licensed Contractor B, C-2, C-20, C-36</span>
-              <span className="text-gray-300">|</span>
+              <span className="text-gray-400">|</span>
               <span>13 Years HVAC &amp; Plumbing Operations</span>
             </div>
           </div>
@@ -467,7 +467,7 @@ export default function LeavingMyMarketingAgencyPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-[#2E8055]"
               >
                 Request Your Free Transition Audit

@@ -1,5 +1,4 @@
 ﻿import Link from "next/link";
-import GHLWidget from "@/components/GHLWidget";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -181,7 +180,7 @@ export default function HowItWorksPage() {
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call
@@ -195,7 +194,6 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-      <GHLWidget />
     </>
   );
 }

@@ -7,17 +7,14 @@ export default function Problem() {
         <div className="mx-auto max-w-3xl">
           <p className="section-overline mb-4">The Problem</p>
           <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl leading-[1.05]">
-            You can generate 200 leads a month{" "}
-            <span className="text-[#3A9E6A]">and still lose money.</span>
+            Why are you generating 200 leads a month{" "}
+            <span className="text-[#3A9E6A]">and still losing money?</span>
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-gray-400">
-            Marketing and sales aren&rsquo;t two separate things. They&rsquo;re the same pipeline.
-            If one end is leaking, it doesn&rsquo;t matter how much you pour in the other end.
+          <p className="mt-6 text-lg leading-relaxed text-gray-300">
+            You are losing money because your marketing agencies operate in silos, optimizing for vanity metrics like clicks and impressions rather than full-pipeline revenue. <strong className="text-white">Marketing and sales are the same pipeline.</strong> If one end is leaking, it does not matter how much you pour in the other end.
           </p>
-          <p className="mt-4 text-lg leading-relaxed text-gray-400">
-            Your agencies don&rsquo;t see the whole pipeline. They see their piece of it,
-            they optimize their metrics, and they send you a report that shows growth while
-            your revenue stays flat.
+          <p className="mt-4 text-lg leading-relaxed text-gray-300">
+            Your agencies do not see the whole pipeline. They see their piece of it, they optimize their metrics, and they send you a report that shows growth while your revenue stays flat.
           </p>
         </div>
 
@@ -31,9 +28,8 @@ export default function Problem() {
               <p className="text-base font-semibold text-white">
                 of calls your marketing generates walk away without booking.
               </p>
-              <p className="mt-2 text-sm text-gray-500">
-                The industry average CSR booking rate is 42%. No agency will tell you
-                that, because it&rsquo;s &ldquo;not their department.&rdquo;
+              <p className="mt-2 text-sm text-gray-300">
+                The industry average <strong className="text-gray-200">CSR booking rate</strong> is 42%. No agency will tell you that, because it&rsquo;s &ldquo;not their department.&rdquo;
               </p>
               <p className="mt-3 text-base font-bold text-[#3A9E6A]">It is mine.</p>
             </div>
@@ -70,7 +66,7 @@ export default function Problem() {
             >
               <span className="text-3xl font-black text-white/10">{item.number}</span>
               <h3 className="mt-3 text-base font-bold text-white">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-gray-500">
+              <p className="mt-2 text-sm leading-relaxed text-gray-300">
                 {item.body}
               </p>
             </div>

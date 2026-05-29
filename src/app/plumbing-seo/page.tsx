@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -115,7 +115,7 @@ export default function PlumbingSeoPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Get a Full Picture Audit
@@ -236,15 +236,15 @@ export default function PlumbingSeoPage() {
               },
               {
                 title: "Plumbing SEO Strategy and Keyword Research",
-                body: "A real plumbing SEO strategy starts with understanding how potential customers find plumbing services in your market. SEO for plumbers means mapping the right target keywords to each page — emergency queries, job-type queries, and location terms — and then building content that matches what those potential customers are searching for. Plumbing business owners who try to rank for every plumbing service on a single generic page consistently underperform competitors who build a deliberate seo strategy across their whole site.",
+                body: "A real plumbing SEO strategy starts with understanding how potential customers find plumbing services in your market. SEO for plumbers means mapping the right target keywords to each page, emergency queries, job-type queries, and location terms, and then building content that matches what those potential customers are searching for. Plumbing business owners who try to rank for every plumbing service on a single generic page consistently underperform competitors who build a deliberate seo strategy across their whole site.",
               },
               {
                 title: "Digital Marketing and Internet Marketing Integration",
-                body: "Plumbing SEO does not operate in isolation. A complete digital marketing strategy for plumbing companies connects SEO to paid advertising, review management, and social media through a unified tracking framework. Internet marketing works best when all marketing channels feed into the same attribution system — so you can see which online marketing investment is reaching potential customers and which is generating noise. We manage the full digital marketing mix so no channel operates blind.",
+                body: "Plumbing SEO does not operate in isolation. A complete digital marketing strategy for plumbing companies connects SEO to paid advertising, review management, and social media through a unified tracking framework. Internet marketing works best when all marketing channels feed into the same attribution system, so you can see which online marketing investment is reaching potential customers and which is generating noise. We manage the full digital marketing mix so no channel operates blind.",
               },
               {
                 title: "Online Reputation and Visibility Management",
-                body: "Online visibility for a plumbing business is built through two interconnected systems: review generation and brand authority. Your online reputation — the volume, recency, and quality of your reviews — directly influences both local search rankings and how many potential customers choose to call you. Plumbing business owners who encourage customer reviews and systematically build their business online across search engines, directories, and review platforms reach significantly more potential customers than those who rely on word of mouth alone.",
+                body: "Online visibility for a plumbing business is built through two interconnected systems: review generation and brand authority. Your online reputation, the volume, recency, and quality of your reviews, directly influences both local search rankings and how many potential customers choose to call you. Plumbing business owners who encourage customer reviews and systematically build their business online across search engines, directories, and review platforms reach significantly more potential customers than those who rely on word of mouth alone.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -314,7 +314,7 @@ export default function PlumbingSeoPage() {
               },
               {
                 title: "Technical SEO and Website Performance",
-                body: "Technical SEO issues suppress rankings regardless of how good the content is. Search engines cannot rank pages they cannot crawl. I consistently find plumbing websites with pages excluded from indexing, sitemap errors, slow mobile load times, and broken internal links. More than 60% of plumbing searches happen on mobile devices — and a site that isn&rsquo;t mobile friendly and user friendly on small screens loses those callers before they read a single word. These issues are the norm across the plumbing industry, and they are fixable in weeks, not months.",
+                body: "Technical SEO issues suppress rankings regardless of how good the content is. Search engines cannot rank pages they cannot crawl. I consistently find plumbing websites with pages excluded from indexing, sitemap errors, slow mobile load times, and broken internal links. More than 60% of plumbing searches happen on mobile devices, and a site that isn&rsquo;t mobile friendly and user friendly on small screens loses those callers before they read a single word. These issues are the norm across the plumbing industry, and they are fixable in weeks, not months.",
               },
               {
                 title: "Keyword Research Across the Full Job Mix",
@@ -322,7 +322,7 @@ export default function PlumbingSeoPage() {
               },
               {
                 title: "Off-Page SEO and Reputation Management",
-                body: "Your domain authority is built through high quality backlinks from supplier directories, trade associations, local news, and relevant websites. Reputation management is the other half: review recency is a direct ranking factor — Google weights it heavily. A plumbing company with a steady drip of new reviews outranks a competitor with more reviews but a flat profile. Both require active management, not a one-time setup.",
+                body: "Your domain authority is built through high quality backlinks from supplier directories, trade associations, local news, and relevant websites. Reputation management is the other half: review recency is a direct ranking factor, Google weights it heavily. A plumbing company with a steady drip of new reviews outranks a competitor with more reviews but a flat profile. Both require active management, not a one-time setup.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -361,7 +361,7 @@ export default function PlumbingSeoPage() {
               {
                 number: "03",
                 title: "Listings Management Across Every Directory",
-                body: "Optimized listings across every citation, local business directory, and data aggregator require your business name, address, and phone number to be identical everywhere. Inconsistent listings management suppresses local pack rankings because search engines cannot confidently confirm your business location. Most plumbing companies have 15 to 30 inconsistencies they have never cleaned up — and these are fixable in a single audit pass.",
+                body: "Optimized listings across every citation, local business directory, and data aggregator require your business name, address, and phone number to be identical everywhere. Inconsistent listings management suppresses local pack rankings because search engines cannot confidently confirm your business location. Most plumbing companies have 15 to 30 inconsistencies they have never cleaned up, and these are fixable in a single audit pass.",
               },
               {
                 number: "04",
@@ -430,8 +430,8 @@ export default function PlumbingSeoPage() {
               What Plumbing SEO Actually Involves
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Search engine optimization for plumbing companies is a local discipline. Every component
-              — from web design and page speed to content and link building — works together to produce
+              Search engine optimization for plumbing companies is a local discipline. Every component,
+              from web design and page speed to content and link building, works together to produce
               organic search visibility that beats your local competition and generates phone calls from
               homeowners who are ready to book right now.
             </p>
@@ -490,7 +490,7 @@ export default function PlumbingSeoPage() {
               {
                 number: "01",
                 title: "Keyword Research Mapped to Job Types",
-                body: "Effective keyword research for plumbing companies maps search queries to specific job types: emergency service calls, installation projects, repair jobs, and maintenance work each have different buyer intent and average ticket values. Beyond primary service keywords, targeting secondary keywords — problem-based queries, symptom searches, and long-tail location terms — is how you generate more traffic and high quality leads from organic search over time. Creating content for each service and city you cover compounds the return. Each page builds on the last — and the plumbing companies doing this consistently outrank those who built one generic page and stopped.",
+                body: "Effective keyword research for plumbing companies maps search queries to specific job types: emergency service calls, installation projects, repair jobs, and maintenance work each have different buyer intent and average ticket values. Beyond primary service keywords, targeting secondary keywords, problem-based queries, symptom searches, and long-tail location terms, is how you generate more traffic and high quality leads from organic search over time. Creating content for each service and city you cover compounds the return. Each page builds on the last, and the plumbing companies doing this consistently outrank those who built one generic page and stopped.",
               },
               {
                 number: "02",
@@ -500,7 +500,7 @@ export default function PlumbingSeoPage() {
               {
                 number: "03",
                 title: "Reputation Management and Online Reviews",
-                body: "Online reviews influence both search rankings and call conversion for plumbing companies. Your online reputation and brand visibility in local search are shaped by review volume, recency, and response rate — all of which Google weights as ranking signals. Homeowners evaluating multiple plumbers in the Map Pack default to the company with the most reviews and the fastest response times. Building relationships with past customers through follow-up and review requests is one of the key elements that separates consistently growing plumbing companies from those stuck at the same volume year over year. A review generation system built into your dispatch workflow is the most reliable way to maintain that momentum.",
+                body: "Online reviews influence both search rankings and call conversion for plumbing companies. Your online reputation and brand visibility in local search are shaped by review volume, recency, and response rate, all of which Google weights as ranking signals. Homeowners evaluating multiple plumbers in the Map Pack default to the company with the most reviews and the fastest response times. Building relationships with past customers through follow-up and review requests is one of the key elements that separates consistently growing plumbing companies from those stuck at the same volume year over year. A review generation system built into your dispatch workflow is the most reliable way to maintain that momentum.",
               },
               {
                 number: "04",
@@ -534,11 +534,11 @@ export default function PlumbingSeoPage() {
             {[
               {
                 title: "Real Experience With Plumbing Contractors",
-                body: "SEO for plumbing contractors is different from SEO for e-commerce or national brands. The plumbing industry has specific search patterns — potential customers search for plumbing help in moments of urgency, not during casual browsing — and a generalist agency will not understand that dynamic. Look for an SEO company that has worked with service businesses and can speak specifically to your job mix, your service area, and the local search rankings that drive real calls.",
+                body: "SEO for plumbing contractors is different from SEO for e-commerce or national brands. The plumbing industry has specific search patterns, potential customers search for plumbing help in moments of urgency, not during casual browsing, and a generalist agency will not understand that dynamic. Look for an SEO company that has worked with service businesses and can speak specifically to your job mix, your service area, and the local search rankings that drive real calls.",
               },
               {
                 title: "Revenue Reporting, Not Just Search Engine Rankings",
-                body: "An SEO company that reports on impressions and click positions without connecting those numbers to booked jobs is not managing your plumbing business effectively. Meaningful SEO performance reporting shows the line from potential customers finding you in search engine rankings, to calls, to revenue. Plumbing business owners deserve to know whether their SEO investment is generating work — not just website traffic.",
+                body: "An SEO company that reports on impressions and click positions without connecting those numbers to booked jobs is not managing your plumbing business effectively. Meaningful SEO performance reporting shows the line from potential customers finding you in search engine rankings, to calls, to revenue. Plumbing business owners deserve to know whether their SEO investment is generating work, not just website traffic.",
               },
               {
                 title: "A Clear Local SEO Strategy for Your Market",
@@ -550,7 +550,7 @@ export default function PlumbingSeoPage() {
               },
               {
                 title: "Content Built Around How Customers Search",
-                body: "The best plumbing SEO companies build high quality content around how customers search — not how industry insiders talk. That means writing about specific plumbing problems, service types, and local neighborhoods rather than producing generic plumbing tips. Marketing strategies built around real customer search behavior generate calls. Generic content that was not written for search engine optimization generates nothing.",
+                body: "The best plumbing SEO companies build high quality content around how customers search, not how industry insiders talk. That means writing about specific plumbing problems, service types, and local neighborhoods rather than producing generic plumbing tips. Marketing strategies built around real customer search behavior generate calls. Generic content that was not written for search engine optimization generates nothing.",
               },
               {
                 title: "Backlinks from Reputable Websites and Local Sources",
@@ -594,7 +594,7 @@ export default function PlumbingSeoPage() {
               },
               {
                 q: "How do I know if an SEO company truly understands the plumbing industry?",
-                a: "Ask about their experience with plumbing contractors specifically — not just general home services. A company that understands the plumbing industry knows that search engine optimization for service businesses is local by nature, that emergency query volume shifts seasonally, and that the plumbing job mix (drain cleaning vs. repipes vs. sewer line work) requires different keyword strategies. If they also manage HVAC SEO for HVAC contractors or similar trade work alongside plumbing SEO, that is a strong positive signal. Generic digital marketing experience does not translate to plumbing business results without industry-specific knowledge.",
+                a: "Ask about their experience with plumbing contractors specifically, not just general home services. A company that understands the plumbing industry knows that search engine optimization for service businesses is local by nature, that emergency query volume shifts seasonally, and that the plumbing job mix (drain cleaning vs. repipes vs. sewer line work) requires different keyword strategies. If they also manage HVAC SEO for HVAC contractors or similar trade work alongside plumbing SEO, that is a strong positive signal. Generic digital marketing experience does not translate to plumbing business results without industry-specific knowledge.",
               },
               {
                 q: "What internet marketing channels matter most for a plumbing business?",
@@ -671,7 +671,7 @@ export default function PlumbingSeoPage() {
             before we spend a dollar on anything new.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link href="/#contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
+            <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
               Book a Strategy Call
             </Link>
             <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">(559) 521-3122</a>

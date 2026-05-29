@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ const strategies = [
   {
     title: "Google Business Profile",
     description:
-      "A fully optimized GBP with consistent posting, Q&A management, and photo strategy. One of the most-reviewed HVAC companies in California — built through process, not luck.",
+      "A fully optimized GBP with consistent posting, Q&A management, and photo strategy. One of the most-reviewed HVAC companies in California, built through process, not luck.",
   },
 ];
 
@@ -211,7 +211,7 @@ export default function BalancedComfortCaseStudy() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
               <div className="text-4xl font-extrabold text-[#3A9E6A]">$17M+</div>
               <div className="mt-3 text-base font-semibold text-white">Annual Revenue</div>
-              <p className="mt-3 text-sm leading-relaxed text-gray-400">
+              <p className="mt-3 text-sm leading-relaxed text-gray-500">
                 From energy audits to a multi-service home services company with $17M+ in annual
                 revenue at exit.
               </p>
@@ -219,7 +219,7 @@ export default function BalancedComfortCaseStudy() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
               <div className="text-4xl font-extrabold text-[#3A9E6A]">4,000+</div>
               <div className="mt-3 text-base font-semibold text-white">5-Star Reviews</div>
-              <p className="mt-3 text-sm leading-relaxed text-gray-400">
+              <p className="mt-3 text-sm leading-relaxed text-gray-500">
                 Earned through consistent service and a systematic approach to reputation
                 management. Not purchased. Not incentivized.
               </p>
@@ -227,7 +227,7 @@ export default function BalancedComfortCaseStudy() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
               <div className="text-4xl font-extrabold text-[#3A9E6A]">4x</div>
               <div className="mt-3 text-base font-semibold text-white">Inc 5000</div>
-              <p className="mt-3 text-sm leading-relaxed text-gray-400">
+              <p className="mt-3 text-sm leading-relaxed text-gray-500">
                 Named to the Inc 5000 list of fastest-growing private companies four consecutive
                 years: 2020, 2021, 2022, and 2023.
               </p>
@@ -235,7 +235,7 @@ export default function BalancedComfortCaseStudy() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
               <div className="text-4xl font-extrabold text-[#3A9E6A]">3x</div>
               <div className="mt-3 text-base font-semibold text-white">Best Place to Work</div>
-              <p className="mt-3 text-sm leading-relaxed text-gray-400">
+              <p className="mt-3 text-sm leading-relaxed text-gray-500">
                 Certified three years in a row. Culture, retention, and team quality were
                 competitive advantages, not afterthoughts.
               </p>
@@ -292,7 +292,7 @@ export default function BalancedComfortCaseStudy() {
           </h2>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
             >
               Book a Free Strategy Call

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import GHLWidget from "@/components/GHLWidget";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 

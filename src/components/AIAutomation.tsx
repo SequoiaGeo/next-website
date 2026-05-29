@@ -86,7 +86,7 @@ export default function AIAutomation() {
         </h2>
 
         {/* Subtext */}
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-gray-300">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-gray-400">
           Your competitors answer on the first ring, even at 2 AM. With our
           AI-powered automation suite, you get a 24/7 AI chatbot, missed call
           text back, a professional AI voice agent, and automated review
@@ -104,7 +104,7 @@ export default function AIAutomation() {
                 {feature.icon}
               </div>
               <h3 className="text-lg font-bold text-white">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-gray-400">
+              <p className="mt-2 text-sm leading-relaxed text-gray-500">
                 {feature.description}
               </p>
             </div>
@@ -132,7 +132,7 @@ export default function AIAutomation() {
               />
             </svg>
           </Link>
-          <p className="mt-5 text-sm text-gray-400">
+          <p className="mt-5 text-sm text-gray-500">
             Free demo &middot; No commitment &middot; See results in 30 days
           </p>
           <div className="mt-6 inline-flex items-center gap-3 rounded-full border border-[#3A9E6A]/30 bg-[#3A9E6A]/10 px-6 py-3">

@@ -1,10 +1,10 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Google Local Services Ads Statistics 2026 | LSA Cost, Conversion & Benchmarks",
+  title: "22 Google LSA Statistics for 2026 (Cost, Conversion, Benchmarks)",
   description:
-    "22+ sourced Google Local Services Ads statistics for 2026: cost per lead by trade, booking rates, dispute rates, response time impact, and contractor adoption. Data from Blue Grid Media, The Media Captain, and more.",
+    "22 verified Local Services Ads statistics for 2026: cost per lead by trade, booking rates, dispute rates, and how response time impacts your CPL.",
   alternates: {
     canonical: "https://www.sequoiageo.com/local-services-ads-statistics",
   },
@@ -88,7 +88,7 @@ export default function LsaStatisticsPage() {
               },
               {
                 n: 2,
-                stat: "LSA's 31% booking rate compares to 18% on Thumbtack and 12% on Angi — making Google LSA the highest-converting paid lead platform for home services.",
+                stat: "LSA's 31% booking rate compares to 18% on Thumbtack and 12% on Angi, making Google LSA the highest-converting paid lead platform for home services.",
                 source: "Blue Grid Media, LSA vs. HomeAdvisor comparison, 2025/2026",
               },
               {
@@ -113,7 +113,7 @@ export default function LsaStatisticsPage() {
               },
               {
                 n: 7,
-                stat: "70% to 80% of all LSA phone calls go to the top 3 LSA positions — making top-3 ranking the single most important factor in LSA performance.",
+                stat: "70% to 80% of all LSA phone calls go to the top 3 LSA positions, making top-3 ranking the single most important factor in LSA performance.",
                 source: "Blue Grid Media, 2025/2026",
               },
             ].map((item) => (
@@ -121,7 +121,7 @@ export default function LsaStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -164,7 +164,7 @@ export default function LsaStatisticsPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-gray-400 -mt-8 mb-10">Source: Blue Grid Media, 50 LSA Statistics 2026; The Media Captain LSA Cost Per Lead Data, based on 100+ client accounts.</p>
+          <p className="text-xs text-gray-500 -mt-8 mb-10">Source: Blue Grid Media, 50 LSA Statistics 2026; The Media Captain LSA Cost Per Lead Data, based on 100+ client accounts.</p>
 
           <ol className="space-y-6" start={8}>
             {[
@@ -175,7 +175,7 @@ export default function LsaStatisticsPage() {
               },
               {
                 n: 9,
-                stat: "During heat waves and cold snaps, HVAC contractors on LSA receive 3x to 4x more leads than baseline — the platform amplifies seasonal demand surges.",
+                stat: "During heat waves and cold snaps, HVAC contractors on LSA receive 3x to 4x more leads than baseline, the platform amplifies seasonal demand surges.",
                 source: "Blue Grid Media, HVAC LSA Cost Per Lead benchmarks, 2026",
               },
             ].map((item) => (
@@ -183,7 +183,7 @@ export default function LsaStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -195,12 +195,12 @@ export default function LsaStatisticsPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-2xl font-extrabold text-[#1a1a1a] mb-2">LSA Lead Quality, Dispute Rates, and Credit Recovery</h2>
-          <p className="text-gray-500 text-sm mb-10 border-b border-gray-100 pb-6">The data on what percentage of LSA leads are actually worth paying for — and how much you can recover through disputes.</p>
+          <p className="text-gray-500 text-sm mb-10 border-b border-gray-100 pb-6">The data on what percentage of LSA leads are actually worth paying for, and how much you can recover through disputes.</p>
           <ol className="space-y-6" start={10}>
             {[
               {
                 n: 10,
-                stat: "Approximately 45% of all LSA leads are unbookable — spam calls, wrong numbers, out-of-area calls, or duplicates that still trigger a charge without active dispute management.",
+                stat: "Approximately 45% of all LSA leads are unbookable, spam calls, wrong numbers, out-of-area calls, or duplicates that still trigger a charge without active dispute management.",
                 source: "Blue Grid Media, 50 LSA Statistics 2026",
               },
               {
@@ -210,12 +210,12 @@ export default function LsaStatisticsPage() {
               },
               {
                 n: 12,
-                stat: "Businesses typically recover 6–7% of their total LSA spend back in credits for unqualified leads — without active dispute management, that money is permanently lost.",
+                stat: "Businesses typically recover 6–7% of their total LSA spend back in credits for unqualified leads, without active dispute management, that money is permanently lost.",
                 source: "The Media Captain, Google LSA Statistics, based on 100+ client account analysis",
               },
               {
                 n: 13,
-                stat: "Businesses that maintain a dispute rate below 10% and a credit rate below 5% have leads being counted fairly — meaning their stated cost per lead reflects real cost per lead.",
+                stat: "Businesses that maintain a dispute rate below 10% and a credit rate below 5% have leads being counted fairly, meaning their stated cost per lead reflects real cost per lead.",
                 source: "Blue Grid Media, How Much Does Google LSA Cost, 2026",
               },
               {
@@ -228,7 +228,7 @@ export default function LsaStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -255,7 +255,7 @@ export default function LsaStatisticsPage() {
               },
               {
                 n: 17,
-                stat: "LSA ads appear above both Google Search Ads and all organic results — giving verified contractors the highest-visibility position on the search results page.",
+                stat: "LSA ads appear above both Google Search Ads and all organic results, giving verified contractors the highest-visibility position on the search results page.",
                 source: "Blue Grid Media, industry consensus, 2025/2026",
               },
               {
@@ -265,7 +265,7 @@ export default function LsaStatisticsPage() {
               },
               {
                 n: 19,
-                stat: "Clients running both LSA and traditional PPC allocate their budgets approximately 60% to LSA and 40% to PPC — reflecting LSA's stronger ROI per dollar spent.",
+                stat: "Clients running both LSA and traditional PPC allocate their budgets approximately 60% to LSA and 40% to PPC, reflecting LSA's stronger ROI per dollar spent.",
                 source: "The Media Captain, Google LSA Statistics",
               },
               {
@@ -275,7 +275,7 @@ export default function LsaStatisticsPage() {
               },
               {
                 n: 21,
-                stat: "All LSA providers must still pass a background check to display the Google Verified badge — this verification requirement remains the core trust signal for consumers even without the guarantee.",
+                stat: "All LSA providers must still pass a background check to display the Google Verified badge, this verification requirement remains the core trust signal for consumers even without the guarantee.",
                 source: "Blue Grid Media, Google Guaranteed for Contractors Guide, 2026",
               },
               {
@@ -288,7 +288,7 @@ export default function LsaStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -331,11 +331,11 @@ export default function LsaStatisticsPage() {
             Running LSA without active dispute management?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
-            Most contractors pay for 45% of leads they never should have been charged for. We audit your LSA account before the first call — no pitch, just numbers.
+            Most contractors pay for 45% of leads they never should have been charged for. We audit your LSA account before the first call, no pitch, just numbers.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free LSA Audit

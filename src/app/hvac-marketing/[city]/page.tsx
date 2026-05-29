@@ -109,7 +109,7 @@ export default async function CityPage({
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1A5C3A]"
               >
                 Get a Free Audit
@@ -272,7 +272,7 @@ export default async function CityPage({
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call

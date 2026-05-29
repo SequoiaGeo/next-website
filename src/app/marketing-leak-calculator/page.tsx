@@ -37,7 +37,7 @@ function Slider({
           background: `linear-gradient(to right, #1A5C3A ${((value - min) / (max - min)) * 100}%, #e5e7eb ${((value - min) / (max - min)) * 100}%)`,
         }}
       />
-      <div className="flex justify-between text-xs text-gray-400">
+      <div className="flex justify-between text-xs text-gray-500">
         <span>{format(min)}</span>
         <span>{format(max)}</span>
       </div>
@@ -167,7 +167,7 @@ export default function MarketingLeakCalculator() {
                   background: `linear-gradient(to right, ${leakColor} ${((bookingRate - 10) / 80) * 100}%, #e5e7eb ${((bookingRate - 10) / 80) * 100}%)`,
                 }}
               />
-              <div className="flex justify-between text-xs text-gray-400">
+              <div className="flex justify-between text-xs text-gray-500">
                 <span>10%</span>
                 <span className="text-gray-500">Industry avg: 42%</span>
                 <span>90%</span>
@@ -185,7 +185,7 @@ export default function MarketingLeakCalculator() {
 
             {/* Industry context */}
             <div className="rounded-xl bg-[#fafaf8] border border-gray-100 p-4">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Industry benchmarks</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Industry benchmarks</p>
               <div className="grid grid-cols-3 gap-3 text-center">
                 {[
                   { label: "Average", value: "42%" },
@@ -194,7 +194,7 @@ export default function MarketingLeakCalculator() {
                 ].map((b) => (
                   <div key={b.label}>
                     <p className="text-base font-extrabold text-[#1a1a1a]">{b.value}</p>
-                    <p className="text-xs text-gray-400">{b.label}</p>
+                    <p className="text-xs text-gray-500">{b.label}</p>
                   </div>
                 ))}
               </div>
@@ -229,7 +229,7 @@ export default function MarketingLeakCalculator() {
 
             {/* What it could be */}
             <div className="rounded-2xl border border-gray-200 bg-white p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">What the same spend could produce</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">What the same spend could produce</p>
               <div className="space-y-3">
                 {[
                   { label: "At industry average (42%)", value: results.industryAvgRevenue, highlight: false },

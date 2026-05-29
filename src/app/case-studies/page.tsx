@@ -1,5 +1,4 @@
 ﻿import Link from "next/link";
-import GHLWidget from "@/components/GHLWidget";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -99,7 +98,7 @@ export default function CaseStudiesPage() {
             </div>
 
             {/* Client results note */}
-            <p className="mt-8 text-sm text-gray-400 text-center">
+            <p className="mt-8 text-sm text-gray-500 text-center">
               Client case studies added as they&rsquo;re completed. Results are anonymized by
               default.
             </p>
@@ -107,7 +106,7 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* Audit case study — Midwest HVAC/Plumbing */}
+      {/* Audit case study, Midwest HVAC/Plumbing */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -136,7 +135,7 @@ export default function CaseStudiesPage() {
             ].map((item) => (
               <div key={item.label} className="rounded-xl bg-[#fafaf8] border border-gray-200 px-6 py-5 text-center">
                 <div className="text-2xl font-extrabold text-[#0D2318]">{item.value}</div>
-                <div className="mt-1 text-xs text-gray-400">{item.label}</div>
+                <div className="mt-1 text-xs text-gray-500">{item.label}</div>
               </div>
             ))}
           </div>
@@ -163,7 +162,7 @@ export default function CaseStudiesPage() {
                   <p className="text-sm font-semibold text-[#1a1a1a]">Google Ads: 22 actual booked jobs</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
                     The Google Ads agency reported 16,962 conversions. Reality: 22 booked jobs. Three of five
-                    conversion goals were misconfigured — page views and scroll events were counting as
+                    conversion goals were misconfigured, page views and scroll events were counting as
                     conversions. Every report showed green. The agency had no idea what a booked job actually
                     cost because they were never connected to dispatch data. The client had no reason to
                     question it because the numbers looked good on paper.
@@ -202,7 +201,7 @@ export default function CaseStudiesPage() {
                 <div>
                   <p className="text-sm font-semibold text-[#1a1a1a]">SEO company billing monthly while Google couldn&rsquo;t see their site</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
-                    265 pages — including their primary plumbing service pages — were not indexed by Google.
+                    265 pages, including their primary plumbing service pages, were not indexed by Google.
                     The SEO company was producing monthly deliverables and billing on schedule. Nobody had
                     checked Google Search Console to verify that the content they were creating was
                     actually visible in search results. The residential plumbing pages they needed to rank
@@ -226,7 +225,7 @@ export default function CaseStudiesPage() {
               producing revenue?
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
-              This is what a Full Picture Audit surfaces. Not a critique of the agencies — an honest
+              This is what a Full Picture Audit surfaces. Not a critique of the agencies, an honest
               accounting of what is working, what is wasting money, and what needs to be fixed before
               another dollar gets spent.
             </p>
@@ -235,7 +234,7 @@ export default function CaseStudiesPage() {
           {/* CTA inline */}
           <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
             >
               Get a Full Picture Audit
@@ -243,13 +242,13 @@ export default function CaseStudiesPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </Link>
-            <p className="text-sm text-gray-400">48-hour turnaround. No pitch deck. Just your numbers.</p>
+            <p className="text-sm text-gray-500">48-hour turnaround. No pitch deck. Just your numbers.</p>
           </div>
 
         </div>
       </section>
 
-      {/* Case study — Franchise Google Ads URL */}
+      {/* Case study, Franchise Google Ads URL */}
       <section className="bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -330,14 +329,14 @@ export default function CaseStudiesPage() {
               location&rsquo;s leads aren&rsquo;t converting, because that&rsquo;s not the contract.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
-              Catching it requires someone looking at your account specifically — not the template,
-              not the franchise standard — and asking where the clicks are actually going.
+              Catching it requires someone looking at your account specifically, not the template,
+              not the franchise standard, and asking where the clicks are actually going.
             </p>
           </div>
 
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
             >
               Get a Full Picture Audit
@@ -345,13 +344,13 @@ export default function CaseStudiesPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </Link>
-            <p className="text-sm text-gray-400">48-hour turnaround. No pitch deck. Just your numbers.</p>
+            <p className="text-sm text-gray-500">48-hour turnaround. No pitch deck. Just your numbers.</p>
           </div>
 
         </div>
       </section>
 
-      {/* Case study — Appointment notes / hydrojet */}
+      {/* Case study, Appointment notes / hydrojet */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -370,12 +369,12 @@ export default function CaseStudiesPage() {
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 mb-8">
             <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">What the note said</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">What the note said</p>
               <blockquote className="border-l-2 border-[#3A9E6A] pl-5">
                 <p className="text-base font-medium italic text-gray-700 leading-relaxed">
                   &ldquo;If the hydrojet doesn&rsquo;t work, there&rsquo;s no charge.&rdquo;
                 </p>
-                <footer className="mt-3 text-xs text-gray-400">Tech&rsquo;s appointment note &mdash; plumbing client</footer>
+                <footer className="mt-3 text-xs text-gray-500">Tech&rsquo;s appointment note, plumbing client</footer>
               </blockquote>
               <p className="mt-5 text-sm leading-relaxed text-gray-500">
                 That&rsquo;s not how pricing works. The tech made a verbal commitment on the truck
@@ -385,7 +384,7 @@ export default function CaseStudiesPage() {
             </div>
 
             <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">What it actually cost</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">What it actually cost</p>
               <p className="text-sm leading-relaxed text-gray-500">
                 A hydrojetting job runs $300 to $600 depending on the line length and condition.
                 That job was paid for by the marketing budget that generated the lead, the CSR
@@ -405,7 +404,7 @@ export default function CaseStudiesPage() {
             <p className="text-base leading-relaxed text-[#C8EDD2]/80">
               Your marketing agency doesn&rsquo;t have access to your appointment notes. They
               don&rsquo;t sit in dispatch. They don&rsquo;t review job completions. They send
-              you a leads report and call it a week. That&rsquo;s not a criticism — it&rsquo;s
+              you a leads report and call it a week. That&rsquo;s not a criticism, it&rsquo;s
               the scope of what they&rsquo;re hired to do.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
@@ -418,7 +417,7 @@ export default function CaseStudiesPage() {
 
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
             >
               Talk to someone who reads the notes
@@ -426,13 +425,13 @@ export default function CaseStudiesPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </Link>
-            <p className="text-sm text-gray-400">No pitch deck. A real conversation about your numbers.</p>
+            <p className="text-sm text-gray-500">No pitch deck. A real conversation about your numbers.</p>
           </div>
 
         </div>
       </section>
 
-      {/* Case study — LSA setup wrong by large SEO firm */}
+      {/* Case study, LSA setup wrong by large SEO firm */}
       <section className="bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -464,11 +463,11 @@ export default function CaseStudiesPage() {
                   <div className="text-xs text-red-400 leading-tight">Wrong<br/>number</div>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1a1a1a]">The phone number was wrong — calls dropped instantly</p>
+                  <p className="text-sm font-semibold text-[#1a1a1a]">The phone number was wrong, calls dropped instantly</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
                     The phone number on the LSA profile was incorrect. Every call Google routed to that
-                    number dropped immediately. Google Guaranteed leads — the highest-intent calls a
-                    plumbing company can receive — were going to a line that disconnected on contact.
+                    number dropped immediately. Google Guaranteed leads, the highest-intent calls a
+                    plumbing company can receive, were going to a line that disconnected on contact.
                     The owner assumed the campaign just wasn&rsquo;t working. The real answer was that
                     it was working fine; the calls just weren&rsquo;t landing anywhere.
                     Nobody at the SEO firm had ever called the number to verify it connected.
@@ -503,7 +502,7 @@ export default function CaseStudiesPage() {
                   <p className="text-sm font-semibold text-[#1a1a1a]">The owner had never been told lead management exists</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
                     Google Local Services Ads requires active lead management inside the LSA portal.
-                    Every lead that comes in needs to be marked — booked, archived, or disputed. When
+                    Every lead that comes in needs to be marked, booked, archived, or disputed. When
                     you dispute an invalid lead within 30 days, Google credits the charge. When you
                     consistently mark leads as booked, Google&rsquo;s algorithm improves your ranking.
                     The owner had no idea this portal existed, let alone that it needed weekly
@@ -540,7 +539,7 @@ export default function CaseStudiesPage() {
             <div>
               <p className="text-sm font-semibold text-[#1a1a1a]">Free LSA Management Guide</p>
               <p className="mt-1 text-sm text-gray-500">
-                11 pages covering how to set up, manage, and dispute leads in your Google Local Services Ads account — the same process we use for every client.
+                11 pages covering how to set up, manage, and dispute leads in your Google Local Services Ads account, the same process we use for every client.
               </p>
               <Link href="/lsa-guide" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors">
                 Download the guide
@@ -553,7 +552,7 @@ export default function CaseStudiesPage() {
 
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
             >
               Get a Full Picture Audit
@@ -561,7 +560,7 @@ export default function CaseStudiesPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </Link>
-            <p className="text-sm text-gray-400">48-hour turnaround. No pitch deck. Just your numbers.</p>
+            <p className="text-sm text-gray-500">48-hour turnaround. No pitch deck. Just your numbers.</p>
           </div>
 
         </div>
@@ -576,7 +575,7 @@ export default function CaseStudiesPage() {
               Live audit: Daddario Roofing
             </h2>
             <p className="mt-3 text-base text-gray-500 max-w-xl mx-auto">
-              A full marketing audit walkthrough — GBP, Google Ads, LSA, website, and tracking —
+              A full marketing audit walkthrough, GBP, Google Ads, LSA, website, and tracking —
               the same process run for every new client.
             </p>
           </div>
@@ -604,7 +603,7 @@ export default function CaseStudiesPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call
@@ -612,7 +611,6 @@ export default function CaseStudiesPage() {
           </div>
         </div>
       </section>
-      <GHLWidget />
     </>
   );
 }

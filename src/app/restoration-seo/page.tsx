@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -315,7 +315,7 @@ export default function RestorationSeoPage() {
             <p className="mt-4 text-lg text-gray-600">
               Restoration SEO is specialized search engine optimization for restoration companies. The four
               components every restoration business needs to compete for search engine rankings are distinct
-              from standard contractor SEO — because the dual demand pattern changes everything.
+              from standard contractor SEO, because the dual demand pattern changes everything.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -330,7 +330,7 @@ export default function RestorationSeoPage() {
               },
               {
                 title: "Technical SEO and Site Speed",
-                body: "A slow restoration website loses emergency calls before anyone even reads your offer. Page speed is a direct search engine ranking signal. Technical SEO ensures search engines can crawl and index your restoration website correctly. Mobile optimization matters especially for emergency searches — most water damage and fire damage calls originate from a phone. I use Google Analytics and Google Search Console to baseline website traffic and search rankings before any work begins. Technical debt silently suppresses search engine rankings for years and most restoration companies have never done a thorough audit.",
+                body: "A slow restoration website loses emergency calls before anyone even reads your offer. Page speed is a direct search engine ranking signal. Technical SEO ensures search engines can crawl and index your restoration website correctly. Mobile optimization matters especially for emergency searches, most water damage and fire damage calls originate from a phone. I use Google Analytics and Google Search Console to baseline website traffic and search rankings before any work begins. Technical debt silently suppresses search engine rankings for years and most restoration companies have never done a thorough audit.",
               },
               {
                 title: "Link Building and Reputation",
@@ -451,7 +451,7 @@ export default function RestorationSeoPage() {
               emergency calls from homeowners with active water damage or fire damage, and insurance-driven
               jobs where adjusters and policyholders are researching restoration services days after the event.
               Water damage restoration services and fire damage restoration work require different search visibility
-              strategies — and most SEO companies do not understand either.
+              strategies, and most SEO companies do not understand either.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -561,7 +561,7 @@ export default function RestorationSeoPage() {
               },
               {
                 q: "What should I look for in a restoration marketing company?",
-                a: "Look for a restoration marketing company that offers SEO services built specifically for the restoration industry. The right partner for restoration businesses understands the difference between insurance job flow and emergency retail calls, knows the platforms restoration companies use for job management, and reports success in terms of dispatched jobs and Google Analytics data — not just website traffic and keyword rankings. A general digital marketing agency does not have the restoration knowledge to build a strategy for restoration companies that captures both demand types. Ask any company you evaluate for restoration-specific case studies with revenue outcomes.",
+                a: "Look for a restoration marketing company that offers SEO services built specifically for the restoration industry. The right partner for restoration businesses understands the difference between insurance job flow and emergency retail calls, knows the platforms restoration companies use for job management, and reports success in terms of dispatched jobs and Google Analytics data, not just website traffic and keyword rankings. A general digital marketing agency does not have the restoration knowledge to build a strategy for restoration companies that captures both demand types. Ask any company you evaluate for restoration-specific case studies with revenue outcomes.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -592,7 +592,7 @@ export default function RestorationSeoPage() {
               <p className="text-sm leading-relaxed text-gray-600">
                 Restoration digital marketing is different from standard contractor marketing because the purchase
                 decision is driven by emergency circumstances, not comparison shopping. Property owners experiencing
-                water damage or fire damage are not reading blog posts and comparing prices &mdash; they are calling the
+                water damage or fire damage are not reading blog posts and comparing prices, they are calling the
                 first credible restoration business that appears on their phone screen. An effective restoration
                 digital marketing strategy combines online visibility in Google search, paid Google Ads coverage for
                 high-intent queries, and a conversion-optimized website that turns visitors into calls.
@@ -604,14 +604,14 @@ export default function RestorationSeoPage() {
             <div>
               <h3 className="text-lg font-bold text-[#1a1a1a] mb-3">Google Ads for Your Restoration Business</h3>
               <p className="text-sm leading-relaxed text-gray-600">
-                Google Ads produce results for your restoration business immediately &mdash; before organic SEO has had
+                Google Ads produce results for your restoration business immediately, before organic SEO has had
                 time to build search engine rankings. For restoration businesses entering a new market or recovering
                 from a period of limited online visibility, Google Ads bridge the gap between starting and generating
                 sufficient call volume from organic sources. The most effective Google Ads campaigns target
                 high-intent emergency keywords: &ldquo;water damage restoration near me,&rdquo;
                 &ldquo;fire damage cleanup,&rdquo; &ldquo;emergency flood service.&rdquo; These keywords generate
                 leads with the highest conversion rates because the caller has an active emergency. Running
-                Google Ads without a mobile-friendly landing page wastes most of the budget &mdash; emergency callers
+                Google Ads without a mobile-friendly landing page wastes most of the budget, emergency callers
                 are on phones, and a slow or hard-to-navigate page kills conversions before they happen. Google Ads
                 campaigns need 24/7 scheduling, call extensions, and ad copy optimized for emergency response
                 positioning to generate leads at scale.
@@ -625,13 +625,13 @@ export default function RestorationSeoPage() {
                 Google Business Profile for Map Pack visibility, and Local Service Ads for verified-lead credibility.
                 Each channel generates leads with different characteristics and different average values. Businesses
                 that rely on a single source are vulnerable to any change in that
-                channel &mdash; a Google algorithm update, a rising cost-per-click, or a competitor entering the market.
+                channel, a Google algorithm update, a rising cost-per-click, or a competitor entering the market.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
                 Building a diversified lead generation system means each channel can be measured independently.
                 I track cost per acquired job by source so restoration businesses always know which channels produce
                 the highest-margin work. The goal is to generate leads from channels that produce the specific job
-                types &mdash; water damage, fire damage, mold &mdash; that match the company&rsquo;s capacity and
+                types, water damage, fire damage, mold, that match the company&rsquo;s capacity and
                 target margin. A restoration business that tries to generate leads from every channel at once without
                 measurement ends up spending money on volume that does not convert to revenue.
               </p>
@@ -639,7 +639,7 @@ export default function RestorationSeoPage() {
             <div>
               <h3 className="text-lg font-bold text-[#1a1a1a] mb-3">Mobile-Friendly Websites and Online Visibility</h3>
               <p className="text-sm leading-relaxed text-gray-600">
-                A mobile-friendly website is not a feature &mdash; it is a requirement for any restoration business.
+                A mobile-friendly website is not a feature, it is a requirement for any restoration business.
                 Water damage and fire damage emergency searches happen overwhelmingly on mobile devices. A website that
                 is not mobile-friendly loses emergency callers before they find the phone number. Mobile-friendly
                 design includes fast page load speed, large tap targets for phone numbers, and no content that
@@ -661,7 +661,7 @@ export default function RestorationSeoPage() {
                 Internal links are one of the most underleveraged tools in restoration digital marketing. Most
                 restoration websites are built without a deliberate internal linking strategy, which means search
                 engines cannot efficiently discover and index all the pages the site contains. Internal links
-                pass authority from high-traffic pages &mdash; typically the homepage and a few top-level pages &mdash;
+                pass authority from high-traffic pages, typically the homepage and a few top-level pages &mdash;
                 to deeper service area pages and specialty pages that would otherwise rank poorly.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">

@@ -34,6 +34,7 @@ export interface Stage {
 export interface Service {
   name: string;
   note: string;
+  href?: string;
 }
 
 export const STAGES: Stage[] = [
@@ -51,7 +52,7 @@ export const STAGES: Stage[] = [
     name: "Sapling",
     age: "Year 1–3",
     height: "6 in – 12 ft.",
-    summary: "Word-of-mouth works — but you can’t predict next month. Time to build a pipeline.",
+    summary: "Word-of-mouth works, but you can’t predict next month. Time to build a pipeline.",
     who: "First-stage local businesses",
     services: ["GEO / AI Search", "PPC campaigns", "LSA management", "Content strategy"],
   },
@@ -76,17 +77,17 @@ export const STAGES: Stage[] = [
 ];
 
 export const SERVICES: Service[] = [
-  { name: "Website builds",        note: "Fast, indexable, built to be cited by AI." },
-  { name: "GEO / AI Search",       note: "How ChatGPT, Perplexity & AI Overviews see you." },
-  { name: "Local SEO",             note: "Map pack, reviews, citations, schema." },
-  { name: "Content",               note: "Written to answer real customer questions." },
-  { name: "Analysis & Audits",     note: "Rank tracking, AI-visibility diagnostics." },
-  { name: "Marketing consulting",  note: "Strategy with a senior operator." },
-  { name: "Management consulting", note: "From a founder who has been in the seat." },
-  { name: "Fractional CMO",        note: "Executive marketing leadership, part-time." },
-  { name: "PPC campaigns",         note: "Google Ads built for ROAS, not vanity." },
-  { name: "LSA management",        note: "Local Service Ads that earn their spend." },
-  { name: "Meta ads",              note: "Paid social that supports the funnel." },
+  { name: "Website builds",        note: "Fast, indexable, built to be cited by AI.",           href: "/websites" },
+  { name: "GEO / AI Search",       note: "How ChatGPT, Perplexity & AI Overviews see you.",    href: "/geo-agency" },
+  { name: "Local SEO",             note: "Map pack, reviews, citations, schema.",               href: "/hvac-seo" },
+  { name: "Content",               note: "Written to answer real customer questions.",          href: "/contact" },
+  { name: "Analysis & Audits",     note: "Rank tracking, AI-visibility diagnostics.",          href: "/contact" },
+  { name: "Marketing consulting",  note: "Strategy with a senior operator.",                   href: "/fractional-cmo" },
+  { name: "Management consulting", note: "From a founder who has been in the seat.",           href: "/fractional-cmo" },
+  { name: "Fractional CMO",        note: "Executive marketing leadership, part-time.",         href: "/fractional-cmo" },
+  { name: "PPC campaigns",         note: "Google Ads built for ROAS, not vanity.",             href: "/contact" },
+  { name: "LSA management",        note: "Local Service Ads that earn their spend.",           href: "/lsa-management" },
+  { name: "Meta ads",              note: "Paid social that supports the funnel.",              href: "/contact" },
 ];
 
 export const HIGHLIGHT_RINGS = [22, 16, 9, 3];

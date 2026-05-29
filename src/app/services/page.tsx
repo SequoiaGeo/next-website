@@ -1,5 +1,4 @@
-import Link from "next/link";
-import GHLWidget from "@/components/GHLWidget";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,42 +14,42 @@ const services = [
   {
     title: "Google Ads & Local Service Ads",
     description: "Managed to revenue, not leads. Every campaign tied to booked jobs, average ticket, and cost per closed call, not cost per click.",
-    href: "/#contact",
+    href: "/contact",
   },
   {
     title: "Local SEO & Google Business Profile",
     description: "Map Pack presence built on real signals: reviews, citations, content, and GBP optimization. No keyword stuffing, no fake tactics.",
-    href: "/#contact",
+    href: "/contact",
   },
   {
     title: "Website Optimization",
     description: "Conversion-focused, not just pretty. Page speed, booking flow, trust signals, and call tracking, every element tied to phone calls and form submissions.",
-    href: "/#contact",
+    href: "/contact",
   },
   {
     title: "Review Generation Systems",
     description: "Built around how techs actually work. Integrated with your dispatch workflow so reviews happen automatically after every closed job.",
-    href: "/#contact",
+    href: "/contact",
   },
   {
     title: "Marketing Attribution",
     description: "Connecting ad spend to booked jobs. Call tracking, form tracking, and CRM integration so you know exactly which channel produced which revenue.",
-    href: "/#contact",
+    href: "/contact",
   },
   {
     title: "AI Search Visibility (GEO)",
     description: "Positioning your business in ChatGPT, Perplexity, and Gemini responses when homeowners ask about HVAC, plumbing, or roofing services.",
-    href: "/#contact",
+    href: "/contact",
   },
   {
     title: "Vendor Management",
     description: "Already have an SEO company or PPC manager? I evaluate their work against revenue outcomes and hold them accountable to metrics that matter.",
-    href: "/#contact",
+    href: "/contact",
   },
   {
     title: "Operational Insights",
     description: "Booking rate analysis, phone handling audits, average ticket review, and CSR performance feedback. The stuff no agency will tell you.",
-    href: "/#contact",
+    href: "/contact",
   },
 ];
 
@@ -288,7 +287,7 @@ export default function ServicesPage() {
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Start With the Audit
@@ -299,7 +298,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <GHLWidget />
     </>
   );
 }

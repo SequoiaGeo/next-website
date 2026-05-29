@@ -70,7 +70,7 @@ export default function FullPicture() {
           <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-lg">
             {/* Header */}
             <div className="grid grid-cols-2">
-              <div className="bg-gray-100 px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-gray-400 border-r border-gray-200">
+              <div className="bg-gray-100 px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-gray-500 border-r border-gray-200">
                 Your agency reports on
               </div>
               <div className="bg-[#0D2318] px-5 py-4 text-center text-xs font-bold uppercase tracking-widest text-[#3A9E6A]">
@@ -91,7 +91,7 @@ export default function FullPicture() {
               <React.Fragment key={i}>
                 <div className="flex items-start gap-3 border-t border-gray-200 bg-white px-5 py-4 border-r">
                   <span className="mt-0.5 flex-shrink-0 text-red-400 font-bold text-sm">✕</span>
-                  <span className="text-sm text-gray-400 line-through leading-snug">{agency}</span>
+                  <span className="text-sm text-gray-500 line-through leading-snug">{agency}</span>
                 </div>
                 <div className="flex items-start gap-3 border-t border-gray-200 bg-[#0D2318] px-5 py-4">
                   <span className="mt-0.5 flex-shrink-0 text-[#3A9E6A] font-bold text-sm">✓</span>

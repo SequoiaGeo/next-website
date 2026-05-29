@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -93,7 +93,7 @@ export default function PlumbingStatisticsPage() {
               },
               {
                 n: 3,
-                stat: "Nonresidential (commercial) work accounts for just over two-thirds of plumbing industry revenue — though residential is where the majority of small plumbing contractors compete.",
+                stat: "Nonresidential (commercial) work accounts for just over two-thirds of plumbing industry revenue, though residential is where the majority of small plumbing contractors compete.",
                 source: "IBISWorld, cited in ServiceTitan Plumbing Industry Statistics",
               },
             ].map((item) => (
@@ -101,7 +101,7 @@ export default function PlumbingStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -128,17 +128,17 @@ export default function PlumbingStatisticsPage() {
               },
               {
                 n: 6,
-                stat: "The plumbing job market is expected to grow 6% through 2033, adding approximately 26,300 new jobs — faster than the average for all occupations.",
+                stat: "The plumbing job market is expected to grow 6% through 2033, adding approximately 26,300 new jobs, faster than the average for all occupations.",
                 source: "U.S. Bureau of Labor Statistics, cited in RevenueMemo and Getjobber, 2024",
               },
               {
                 n: 7,
-                stat: "The U.S. is projected to face a shortage of 550,000 plumbers by 2027 — creating significant pricing power for established plumbing businesses.",
+                stat: "The U.S. is projected to face a shortage of 550,000 plumbers by 2027, creating significant pricing power for established plumbing businesses.",
                 source: "Morning Brew / NewsNation, cited in ServiceTitan and Comrade Digital Marketing, 2024",
               },
               {
                 n: 8,
-                stat: "More than 20% of the current plumbing workforce is aged 55 or older — a retirement wave is imminent, which will intensify the shortage.",
+                stat: "More than 20% of the current plumbing workforce is aged 55 or older, a retirement wave is imminent, which will intensify the shortage.",
                 source: "2023 Current Population Survey, cited in Getjobber Plumbing Industry Statistics",
               },
               {
@@ -151,7 +151,7 @@ export default function PlumbingStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -191,7 +191,7 @@ export default function PlumbingStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -218,7 +218,7 @@ export default function PlumbingStatisticsPage() {
               },
               {
                 n: 16,
-                stat: "83% of plumbing service searches are local intent — consumers are seeking an immediate, location-based solution, not a national brand.",
+                stat: "83% of plumbing service searches are local intent, consumers are seeking an immediate, location-based solution, not a national brand.",
                 source: "SEO Sandwitch / Comrade Digital, 2025",
               },
               {
@@ -228,7 +228,7 @@ export default function PlumbingStatisticsPage() {
               },
               {
                 n: 18,
-                stat: "27% of calls to home services businesses go unanswered — and 95% of callers who reach voicemail immediately call a competitor instead of leaving a message.",
+                stat: "27% of calls to home services businesses go unanswered, and 95% of callers who reach voicemail immediately call a competitor instead of leaving a message.",
                 source: "Invoca (unanswered call data); Suzee AI (voicemail behavior), 2024",
               },
               {
@@ -241,7 +241,7 @@ export default function PlumbingStatisticsPage() {
                 <span className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-black text-[#0D2318]">{item.n}</span>
                 <div>
                   <p className="text-base font-semibold text-[#1a1a1a] leading-snug">{item.stat}</p>
-                  <p className="mt-1 text-xs text-gray-400">Source: {item.source}</p>
+                  <p className="mt-1 text-xs text-gray-500">Source: {item.source}</p>
                 </div>
               </li>
             ))}
@@ -288,7 +288,7 @@ export default function PlumbingStatisticsPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call

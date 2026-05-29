@@ -75,13 +75,13 @@ export default function Testimonials() {
               <div>
                 <StarRating />
                 <blockquote className="mt-5">
-                  <p className="text-base leading-relaxed text-gray-300">
+                  <p className="text-base leading-relaxed text-gray-400">
                     &ldquo;{t.text}&rdquo;
                   </p>
                 </blockquote>
               </div>
               <footer className="mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
-                <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-xs font-bold text-gray-300">
+                <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-xs font-bold text-gray-400">
                   {t.name.split(" ").map(n => n[0]).join("")}
                 </div>
                 <div>

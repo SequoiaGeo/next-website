@@ -1,5 +1,4 @@
-import Link from "next/link";
-import GHLWidget from "@/components/GHLWidget";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -86,13 +85,13 @@ export default function LsaManagementPage() {
               <span className="text-[#1A5C3A]">Disputes Bad Leads</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Most contractors pay for every LSA lead that comes in — including wrong numbers,
+              Most contractors pay for every LSA lead that comes in, including wrong numbers,
               out-of-area calls, and leads for services they don&rsquo;t offer. We dispute
               aggressively, optimize your profile, and track cost per booked job, not cost per lead.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Get an LSA Audit
@@ -124,7 +123,7 @@ export default function LsaManagementPage() {
             {[
               {
                 title: "Undisputed junk leads",
-                body: "Wrong service type, wrong area, hang-ups — Google will credit them if you dispute within 30 days. Most contractors don't. That's money left on the table every month.",
+                body: "Wrong service type, wrong area, hang-ups, Google will credit them if you dispute within 30 days. Most contractors don't. That's money left on the table every month.",
               },
               {
                 title: "Budget set-and-forget",
@@ -170,7 +169,7 @@ export default function LsaManagementPage() {
               {
                 icon: "📍",
                 title: "Service Area Optimization",
-                body: "We map your profitable service radius based on your actual job data and adjust your LSA coverage to match — keeping you out of the zones that drain margin.",
+                body: "We map your profitable service radius based on your actual job data and adjust your LSA coverage to match, keeping you out of the zones that drain margin.",
               },
               {
                 icon: "💰",
@@ -185,7 +184,7 @@ export default function LsaManagementPage() {
               {
                 icon: "📊",
                 title: "Cost Per Booked Job Tracking",
-                body: "We connect your LSA performance to your CRM or ServiceTitan data so you see cost per booked job — not just cost per lead. That's the number that matters.",
+                body: "We connect your LSA performance to your CRM or ServiceTitan data so you see cost per booked job, not just cost per lead. That's the number that matters.",
               },
               {
                 icon: "🔔",
@@ -214,7 +213,7 @@ export default function LsaManagementPage() {
               <p>
                 Before Sequoia GEO, I ran Balanced Comfort Heating &amp; Air for over a decade and grew it to 130+
                 employees and four consecutive Inc. 5000 appearances. I managed Google LSAs as a
-                business owner — not as an agency account manager. Building relationships with the right lead channels while tracking each one to booked revenue is what that experience taught me.
+                business owner, not as an agency account manager. Building relationships with the right lead channels while tracking each one to booked revenue is what that experience taught me.
               </p>
               <p>
                 That means I know that a no-heat call in January booked same day is worth five times
@@ -228,7 +227,7 @@ export default function LsaManagementPage() {
             </div>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Talk to Aaron
@@ -293,7 +292,7 @@ export default function LsaManagementPage() {
               {
                 step: "01",
                 title: "LSA Profile Audit",
-                body: "We review your Google Local Services Ads account from the ground up — phone number verification, service categories, service area boundaries, budget pacing, and lead history. Most contractors have at least one profile issue that is suppressing lead volume or inflating cost per lead.",
+                body: "We review your Google Local Services Ads account from the ground up, phone number verification, service categories, service area boundaries, budget pacing, and lead history. Most contractors have at least one profile issue that is suppressing lead volume or inflating cost per lead.",
               },
               {
                 step: "02",
@@ -303,12 +302,12 @@ export default function LsaManagementPage() {
               {
                 step: "03",
                 title: "Budget and Bid Optimization",
-                body: "Local Services Ads use a weekly budget model. We adjust your spend cap based on your current booking rate, seasonal demand patterns, and your capacity to handle additional jobs. More budget does not always mean more booked jobs — it means more leads you may not be able to convert.",
+                body: "Local Services Ads use a weekly budget model. We adjust your spend cap based on your current booking rate, seasonal demand patterns, and your capacity to handle additional jobs. More budget does not always mean more booked jobs, it means more leads you may not be able to convert.",
               },
               {
                 step: "04",
                 title: "Ongoing Monitoring and Reporting",
-                body: "We monitor your Local Services Ads profile weekly, respond to any Google verification requests within 24 hours, and track cost per booked job — not cost per lead. Monthly reporting connects your LSA spend to actual dispatched jobs so you know exactly what your Google Ads investment is producing.",
+                body: "We monitor your Local Services Ads profile weekly, respond to any Google verification requests within 24 hours, and track cost per booked job, not cost per lead. Monthly reporting connects your LSA spend to actual dispatched jobs so you know exactly what your Google Ads investment is producing.",
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6 rounded-2xl border border-gray-100 bg-white p-7 shadow-sm">
@@ -338,19 +337,19 @@ export default function LsaManagementPage() {
             {[
               {
                 title: "LSAs vs. Organic Search",
-                body: "Organic search and Local Services Ads serve different moments in the buyer journey. Organic search results capture homeowners researching and comparing companies. Local Services Ads capture homeowners who have already decided to call — right now. The Google Guaranteed badge builds trust for new customers who have never heard of your company, which is why LSA call conversion rates are typically higher than organic search calls for the same keywords. Both channels are necessary: LSAs fill the immediate pipeline while local SEO compounds over time.",
+                body: "Organic search and Local Services Ads serve different moments in the buyer journey. Organic search results capture homeowners researching and comparing companies. Local Services Ads capture homeowners who have already decided to call, right now. The Google Guaranteed badge builds trust for new customers who have never heard of your company, which is why LSA call conversion rates are typically higher than organic search calls for the same keywords. Both channels are necessary: LSAs fill the immediate pipeline while local SEO compounds over time.",
               },
               {
                 title: "LSAs and Online Reputation",
-                body: "Your online reputation directly influences your LSA ranking and conversion rate. Google weights review count and recency in its LSA ranking algorithm, and homeowners comparing providers in the LSA unit look at star ratings before deciding who to call. A company with 200 reviews and a 4.8 rating gets more high quality leads from the same LSA position than a competitor with 40 reviews. Reputation management and LSA management are inseparable — brand visibility in local search is built through both.",
+                body: "Your online reputation directly influences your LSA ranking and conversion rate. Google weights review count and recency in its LSA ranking algorithm, and homeowners comparing providers in the LSA unit look at star ratings before deciding who to call. A company with 200 reviews and a 4.8 rating gets more high quality leads from the same LSA position than a competitor with 40 reviews. Reputation management and LSA management are inseparable, brand visibility in local search is built through both.",
               },
               {
                 title: "LSAs on Mobile Devices",
-                body: "Most emergency home service searches happen on mobile devices. When a homeowner searches for a plumber or HVAC repair on their phone, Local Services Ads appear at the very top of the screen before any organic results. Mobile users making emergency calls are not scrolling — they are clicking the first trusted result they see. A fast response time, a Google Guaranteed badge, and a mobile-friendly experience are the critical factors that determine whether you get the call.",
+                body: "Most emergency home service searches happen on mobile devices. When a homeowner searches for a plumber or HVAC repair on their phone, Local Services Ads appear at the very top of the screen before any organic results. Mobile users making emergency calls are not scrolling, they are clicking the first trusted result they see. A fast response time, a Google Guaranteed badge, and a mobile-friendly experience are the critical factors that determine whether you get the call.",
               },
               {
                 title: "Tracking LSAs as Part of Your Full Marketing ROI",
-                body: "Most digital marketing reporting treats LSA leads in a separate bucket from organic search, direct calls, and paid Google Ads. A properly managed program connects all channels: website visitors from organic search, LSA calls, and paid ad calls should all trace back to dispatched jobs and revenue. Only then can you measure marketing ROI across channels and allocate budget toward the mix that generates the most qualified leads at the lowest cost per booked job — the number that actually drives business growth.",
+                body: "Most digital marketing reporting treats LSA leads in a separate bucket from organic search, direct calls, and paid Google Ads. A properly managed program connects all channels: website visitors from organic search, LSA calls, and paid ad calls should all trace back to dispatched jobs and revenue. Only then can you measure marketing ROI across channels and allocate budget toward the mix that generates the most qualified leads at the lowest cost per booked job, the number that actually drives business growth.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -476,15 +475,15 @@ export default function LsaManagementPage() {
             {[
               {
                 q: "What are Google Local Services Ads?",
-                a: "Google Local Services Ads are a pay-per-lead advertising format that appears at the very top of search results for local service queries. Unlike standard Google Ads where you pay per click, Local Services Ads charge per lead — phone calls and message requests from potential customers. Google Guaranteed and Google Screened badges appear on Local Services Ads accounts that pass background checks and license verification, which increases the click-through rate significantly over standard ads.",
+                a: "Google Local Services Ads are a pay-per-lead advertising format that appears at the very top of search results for local service queries. Unlike standard Google Ads where you pay per click, Local Services Ads charge per lead, phone calls and message requests from potential customers. Google Guaranteed and Google Screened badges appear on Local Services Ads accounts that pass background checks and license verification, which increases the click-through rate significantly over standard ads.",
               },
               {
                 q: "How are Local Services Ads different from Google Ads?",
-                a: "Standard Google Ads charge per click regardless of whether the person calling is a real prospect. Local Services Ads charge per lead — a phone call or message to your business. This means you only pay when someone contacts you directly. The tradeoff is that Local Services Ads have less targeting control than Google Ads, but the intent signal is higher. A well-managed Local Services Ads program focuses on aggressive lead dispute management to ensure you only pay for contacts that could realistically become booked jobs.",
+                a: "Standard Google Ads charge per click regardless of whether the person calling is a real prospect. Local Services Ads charge per lead, a phone call or message to your business. This means you only pay when someone contacts you directly. The tradeoff is that Local Services Ads have less targeting control than Google Ads, but the intent signal is higher. A well-managed Local Services Ads program focuses on aggressive lead dispute management to ensure you only pay for contacts that could realistically become booked jobs.",
               },
               {
                 q: "How much do Local Services Ads cost?",
-                a: "Local Services Ads cost varies by market and service category. Lead prices typically range from $25 to $150 per lead for HVAC, plumbing, electrical, and roofing trades in most markets. The relevant number is not cost per lead but cost per booked job — which depends on your lead quality, CSR conversion rate, and how aggressively you dispute invalid leads. Our LSA management clients typically recover 15 to 25 percent of their spend through dispute management alone.",
+                a: "Local Services Ads cost varies by market and service category. Lead prices typically range from $25 to $150 per lead for HVAC, plumbing, electrical, and roofing trades in most markets. The relevant number is not cost per lead but cost per booked job, which depends on your lead quality, CSR conversion rate, and how aggressively you dispute invalid leads. Our LSA management clients typically recover 15 to 25 percent of their spend through dispute management alone.",
               },
               {
                 q: "What makes LSA leads lower quality than other channels?",
@@ -492,7 +491,7 @@ export default function LsaManagementPage() {
               },
               {
                 q: "How does Google rank Local Services Ads?",
-                a: "Google ranks Local Services Ads based on six primary factors: proximity to the searcher, review count and rating, responsiveness to leads, business hours, license and insurance verification, and overall account history. Of these, the ones you can actively improve are review velocity, response time to incoming leads, and keeping your profile complete and verified. A slow response to Local Services Ads leads — even a few hours — directly reduces how many leads Google sends you versus your competitors.",
+                a: "Google ranks Local Services Ads based on six primary factors: proximity to the searcher, review count and rating, responsiveness to leads, business hours, license and insurance verification, and overall account history. Of these, the ones you can actively improve are review velocity, response time to incoming leads, and keeping your profile complete and verified. A slow response to Local Services Ads leads, even a few hours, directly reduces how many leads Google sends you versus your competitors.",
               },
               {
                 q: "Should I run Local Services Ads and Google Ads at the same time?",
@@ -546,7 +545,7 @@ export default function LsaManagementPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              Get an LSA Audit — No Charge
+              Get an LSA Audit, No Charge
             </h2>
             <p className="mt-4 text-lg text-[#C8EDD2]/80">
               We&rsquo;ll review your current profile, flag any disputes you&rsquo;ve missed, and give
@@ -554,7 +553,7 @@ export default function LsaManagementPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-[#2d7d53]"
               >
                 Request the Audit
@@ -573,7 +572,6 @@ export default function LsaManagementPage() {
         </div>
       </section>
 
-      <GHLWidget />
     </>
   );
 }

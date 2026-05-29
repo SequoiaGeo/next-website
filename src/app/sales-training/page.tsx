@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 import SalesTrainingFeedback from "@/components/SalesTrainingFeedback";
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const benefits = [
   {
     title: "Practice real objections",
-    body: "Work through the calls that cost you jobs — price objections, competitor comparisons, scheduling pushback. The scenarios are built around actual conversations home service CSRs and technicians face every day.",
+    body: "Work through the calls that cost you jobs, price objections, competitor comparisons, scheduling pushback. The scenarios are built around actual conversations home service CSRs and technicians face every day.",
   },
   {
     title: "No risk, no judgment",
@@ -34,8 +34,8 @@ const useCases = [
 ];
 
 const steps = [
-  { number: "01", title: "Choose a scenario", body: "Select the type of conversation you want to practice — inbound booking, price objection, competitor comparison, emergency call, or follow-up. Each scenario drops you into a realistic conversation from the first message. The tool covers the full sales cycle from first contact through booking." },
-  { number: "02", title: "Run the conversation", body: "Respond as you would on a real call. The AI plays the customer role with realistic pushback, questions, and objections. There are no railroaded answers — the conversation goes where your responses take it. This is how sales skills actually develop: through reps and real-time feedback on what worked." },
+  { number: "01", title: "Choose a scenario", body: "Select the type of conversation you want to practice, inbound booking, price objection, competitor comparison, emergency call, or follow-up. Each scenario drops you into a realistic conversation from the first message. The tool covers the full sales cycle from first contact through booking." },
+  { number: "02", title: "Run the conversation", body: "Respond as you would on a real call. The AI plays the customer role with realistic pushback, questions, and objections. There are no railroaded answers, the conversation goes where your responses take it. This is how sales skills actually develop: through reps and real-time feedback on what worked." },
   { number: "03", title: "Review and repeat", body: "After each session, identify where the conversation went off track and what you would do differently. Repetition is what builds the muscle memory that carries into real calls. Most sales professionals who improve their close rates do so through deliberate repetition, not a single training session." },
 ];
 
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "How is this different from sales coaching software like HubSpot Sales Hub or other platforms?",
-    a: "Most sales coaching software and sales coaching tools are built for B2B sales teams running long sales cycles and pipeline management. Talk N Sell Pro is built specifically for home service contractors: the scenarios, the objections, and the sales process are all modeled on HVAC, plumbing, roofing, and restoration calls. Construction sales conversations are different from software demos — the tool reflects that. No setup, no CRM integration required to get started.",
+    a: "Most sales coaching software and sales coaching tools are built for B2B sales teams running long sales cycles and pipeline management. Talk N Sell Pro is built specifically for home service contractors: the scenarios, the objections, and the sales process are all modeled on HVAC, plumbing, roofing, and restoration calls. Construction sales conversations are different from software demos, the tool reflects that. No setup, no CRM integration required to get started.",
   },
   {
     q: "How often should our sales team use the tool?",
@@ -77,7 +77,7 @@ const faqs = [
   },
   {
     q: "Can I use this for technician sales training, not just CSRs?",
-    a: "Yes. The tool is useful for technicians who present options at the job site, handle objections in person, or upsell services during a service call. The sales skills involved — presenting value, handling price resistance, moving toward a decision — are the same whether the conversation happens on the phone or in a customer's home.",
+    a: "Yes. The tool is useful for technicians who present options at the job site, handle objections in person, or upsell services during a service call. The sales skills involved, presenting value, handling price resistance, moving toward a decision, are the same whether the conversation happens on the phone or in a customer's home.",
   },
   {
     q: "What is included in a custom sales training app?",
@@ -181,7 +181,7 @@ export default function SalesTrainingPage() {
             <p className="mt-4 text-lg text-gray-600">
               Every trade has its own objections, its own customer psychology, and its own conversion
               dynamics. Talk N Sell Pro covers the conversations that matter in each one. The sales process
-              for an HVAC company is different from a restoration company — and the training scenarios
+              for an HVAC company is different from a restoration company, and the training scenarios
               reflect that.
             </p>
           </div>
@@ -196,7 +196,7 @@ export default function SalesTrainingPage() {
         </div>
       </section>
 
-      {/* The Tool — iframe */}
+      {/* The Tool, iframe */}
       <section id="tool" className="bg-white py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-8 text-center">
           <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
@@ -210,7 +210,7 @@ export default function SalesTrainingPage() {
           <div className="w-full rounded-none lg:rounded-2xl overflow-hidden border-0 lg:border lg:border-gray-200 shadow-none lg:shadow-xl">
             <iframe
               src="https://talk-n-sell-pro.lovable.app"
-              title="Talk N Sell Pro — AI Sales Training Tool for Home Service Contractors"
+              title="Talk N Sell Pro, AI Sales Training Tool for Home Service Contractors"
               className="w-full"
               style={{ height: "calc(100vh - 120px)", minHeight: "650px", border: "none" }}
               allow="microphone; camera"
@@ -256,8 +256,8 @@ export default function SalesTrainingPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               The sales skills your team develops through practice on Talk N Sell Pro are the same ones
-              that determine whether inbound calls become booked jobs. These are not abstract sales techniques
-              — they are the specific competencies your sales representatives need to convert the leads you
+              that determine whether inbound calls become booked jobs. These are not abstract sales techniques.
+              They are the specific competencies your sales representatives need to convert the leads you
               are already paying for.
             </p>
           </div>

@@ -1,10 +1,10 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Roofing SEO & Marketing | Sequoia GEO: Revenue-Focused Growth",
+  title: "Roofing SEO That Books Jobs, Not Just Leads | Sequoia GEO",
   description:
-    "Roofing marketing managed to booked jobs, not leads. 13 years as a licensed home services operator. I connect your ad spend to actual closed revenue, not impressions.",
+    "Roofing companies don't need more leads, they need more booked jobs. I manage roofing SEO to revenue, not impressions. Built by a 13-year home services operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/roofing-seo",
   },
@@ -226,7 +226,7 @@ export default function RoofingSeoPage() {
               },
               {
                 title: "On-Page SEO and Meta Descriptions",
-                body: "On page SEO for roofing websites means writing and optimizing title tags, meta descriptions, header structure, and internal linking for every service page. Meta descriptions directly affect click-through rates from search engine results pages. Every roofing service page — roof replacement, roof repair, storm damage, commercial roofing — needs individually optimized on page SEO elements to compete in search engines.",
+                body: "On page SEO for roofing websites means writing and optimizing title tags, meta descriptions, header structure, and internal linking for every service page. Meta descriptions directly affect click-through rates from search engine results pages. Every roofing service page, roof replacement, roof repair, storm damage, commercial roofing, needs individually optimized on page SEO elements to compete in search engines.",
               },
               {
                 title: "Technical SEO Audit",
@@ -234,7 +234,7 @@ export default function RoofingSeoPage() {
               },
               {
                 title: "Keyword Strategy and Content",
-                body: "Effective roofer SEO requires targeting the relevant keywords homeowners actually search: roof replacement cost, hail damage roof repair, emergency tarping, and local city variants. SEO services that skip proper keyword research produce content that ranks for zero-volume queries. The right keywords — mapped to dedicated service pages — are the foundation of roofing SEO services that generate revenue, not just impressions.",
+                body: "Effective roofer SEO requires targeting the relevant keywords homeowners actually search: roof replacement cost, hail damage roof repair, emergency tarping, and local city variants. SEO services that skip proper keyword research produce content that ranks for zero-volume queries. The right keywords, mapped to dedicated service pages, are the foundation of roofing SEO services that generate revenue, not just impressions.",
               },
               {
                 title: "Google Maps and Citation Building",
@@ -299,7 +299,7 @@ export default function RoofingSeoPage() {
               },
               {
                 title: "Technical SEO and On-Page SEO",
-                body: "Technical SEO and on page SEO address the infrastructure of your roofing website. Missing meta descriptions, duplicate title tags, broken internal links, slow site speed, and improper mobile optimization are ranking suppressors that silently undermine every other SEO effort. Search engines crawl, index, and rank based on technical signals &mdash; pages that fail technical standards don&rsquo;t appear in search engine results regardless of content quality. More than 60% of roofing searches happen on mobile devices &ndash; a slow roofing website is a direct revenue leak.",
+                body: "Technical SEO and on page SEO address the infrastructure of your roofing website. Missing meta descriptions, duplicate title tags, broken internal links, slow site speed, and improper mobile optimization are ranking suppressors that silently undermine every other SEO effort. Search engines crawl, index, and rank based on technical signals, pages that fail technical standards don&rsquo;t appear in search engine results regardless of content quality. More than 60% of roofing searches happen on mobile devices &ndash; a slow roofing website is a direct revenue leak.",
               },
               {
                 title: "Link Building and Online Reputation",
@@ -422,7 +422,7 @@ export default function RoofingSeoPage() {
             <p className="mt-4 text-lg text-gray-600">
               Search engine optimization for roofing companies spans local SEO, on-page content, technical
               performance, and off-page authority. Each component serves a different purpose in the buyer journey
-              from roof damage awareness to calling a roofing contractor — and each drives a different mix of website traffic.
+              from roof damage awareness to calling a roofing contractor, and each drives a different mix of website traffic.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -495,7 +495,7 @@ export default function RoofingSeoPage() {
               {
                 number: "04",
                 title: "Roofing SEO Reporting That Tracks Revenue",
-                body: "Most roofing <strong>SEO</strong> reports track rankings and <strong>organic traffic</strong>. Revenue-focused reporting connects <strong>organic search</strong> sessions to <strong>phone calls</strong>, calls to booked appointments, and appointments to contracted roofing jobs. That tracking infrastructure requires <strong>Google Analytics</strong>, Google Search Console, <strong>call tracking</strong> with keyword attribution, and CRM integration. <strong>Marketing ROI</strong> measured at the job level &mdash; not the click level &mdash; is the only number that tells you whether your <strong>marketing investment</strong> is producing <strong>revenue</strong>.",
+                body: "Most roofing <strong>SEO</strong> reports track rankings and <strong>organic traffic</strong>. Revenue-focused reporting connects <strong>organic search</strong> sessions to <strong>phone calls</strong>, calls to booked appointments, and appointments to contracted roofing jobs. That tracking infrastructure requires <strong>Google Analytics</strong>, Google Search Console, <strong>call tracking</strong> with keyword attribution, and CRM integration. <strong>Marketing ROI</strong> measured at the job level, not the click level, is the only number that tells you whether your <strong>marketing investment</strong> is producing <strong>revenue</strong>.",
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -524,7 +524,7 @@ export default function RoofingSeoPage() {
             {[
               {
                 title: "Roofing Industry Expertise",
-                body: "A roofing SEO company that also works with law firms, restaurants, and e-commerce brands does not have roofing industry expertise. The roofing industry has unique seasonal demand patterns, storm-driven lead spikes, insurance claim workflows, and high-ticket sales cycles that generalist SEO companies consistently miss. Ask for roofing-specific case studies with revenue outcomes — not just ranking screenshots.",
+                body: "A roofing SEO company that also works with law firms, restaurants, and e-commerce brands does not have roofing industry expertise. The roofing industry has unique seasonal demand patterns, storm-driven lead spikes, insurance claim workflows, and high-ticket sales cycles that generalist SEO companies consistently miss. Ask for roofing-specific case studies with revenue outcomes, not just ranking screenshots.",
               },
               {
                 title: "Revenue Reporting, Not Just Rankings",
@@ -540,11 +540,11 @@ export default function RoofingSeoPage() {
               },
               {
                 title: "Local SEO Strategies Built for Your Market",
-                body: "Roofing companies in Fresno have different competitive landscapes than those in Miami or Denver. The right roofing SEO company customizes local SEO strategies to your specific market — the right keywords your area actually searches, your real Map Pack competitors, and the digital marketing tools that produce results in your geography. Cookie-cutter local SEO strategies applied identically across every market produce below-average outcomes in most of them.",
+                body: "Roofing companies in Fresno have different competitive landscapes than those in Miami or Denver. The right roofing SEO company customizes local SEO strategies to your specific market, the right keywords your area actually searches, your real Map Pack competitors, and the digital marketing tools that produce results in your geography. Cookie-cutter local SEO strategies applied identically across every market produce below-average outcomes in most of them.",
               },
               {
                 title: "Transparent Access to Your Own Accounts",
-                body: "Credible roofing SEO webmasters share which digital marketing tools they use — keyword research tools like Ahrefs or Semrush, rank tracking platforms, Google Search Console access, and call tracking software. You should always retain full ownership of your Google Business Profile, your Search Console property, your roofing business website, and any advertising accounts. A trustworthy SEO company never holds your digital assets hostage when you choose to leave.",
+                body: "Credible roofing SEO webmasters share which digital marketing tools they use, keyword research tools like Ahrefs or Semrush, rank tracking platforms, Google Search Console access, and call tracking software. You should always retain full ownership of your Google Business Profile, your Search Console property, your roofing business website, and any advertising accounts. A trustworthy SEO company never holds your digital assets hostage when you choose to leave.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -580,15 +580,15 @@ export default function RoofingSeoPage() {
               },
               {
                 q: "What are the most important factors in roofing SEO that most agencies overlook?",
-                a: "The factors most agencies overlook are the ones that connect search visibility to actual revenue. Optimized listings across local business directories ensure consistent NAP data that local search algorithms depend on. High quality leads from organic search convert at higher rates than paid leads — but only if the roofing website loads fast on mobile devices and the phone is answered correctly. Online reputation management, including systematic review generation and building relationships with past customers for referrals, drives the brand visibility that compounds local search rankings over time. Most roofing SEO agencies optimize the website and forget the full picture.",
+                a: "The factors most agencies overlook are the ones that connect search visibility to actual revenue. Optimized listings across local business directories ensure consistent NAP data that local search algorithms depend on. High quality leads from organic search convert at higher rates than paid leads, but only if the roofing website loads fast on mobile devices and the phone is answered correctly. Online reputation management, including systematic review generation and building relationships with past customers for referrals, drives the brand visibility that compounds local search rankings over time. Most roofing SEO agencies optimize the website and forget the full picture.",
               },
               {
                 q: "Should I run Google Ads and roofing SEO at the same time?",
-                a: "Yes — Google Ads and roofing SEO serve different functions and work best together. Google Ads produce immediate visibility for roof repair, storm damage, and replacement queries while your organic SEO rankings build. As organic search results grow over 6 to 12 months, Google Ads spend can be reduced on terms where you now rank organically, lowering your blended cost per roofing lead. A digital marketing strategy that combines both channels gives you short-term Google Ads volume and long-term roofing SEO compounding. The mistake most roofing companies make is treating Google Ads and SEO as either/or decisions instead of a coordinated digital marketing investment.",
+                a: "Yes, Google Ads and roofing SEO serve different functions and work best together. Google Ads produce immediate visibility for roof repair, storm damage, and replacement queries while your organic SEO rankings build. As organic search results grow over 6 to 12 months, Google Ads spend can be reduced on terms where you now rank organically, lowering your blended cost per roofing lead. A digital marketing strategy that combines both channels gives you short-term Google Ads volume and long-term roofing SEO compounding. The mistake most roofing companies make is treating Google Ads and SEO as either/or decisions instead of a coordinated digital marketing investment.",
               },
               {
                 q: "What happens to my roof repair and emergency service SEO?",
-                a: "Roof repair and emergency roofing queries are some of the highest-converting searches a roofing company can rank for — homeowners searching for roof repair or emergency tarping are ready to call immediately. Dedicated roof repair service pages with clear location targeting and fast site speed outperform generic pages that lump all roofing services together. A well-structured roofing website has separate, optimized pages for roof replacement, roof repair, storm damage, and emergency services — each targeting the specific search intent of that buyer rather than competing with itself.",
+                a: "Roof repair and emergency roofing queries are some of the highest-converting searches a roofing company can rank for, homeowners searching for roof repair or emergency tarping are ready to call immediately. Dedicated roof repair service pages with clear location targeting and fast site speed outperform generic pages that lump all roofing services together. A well-structured roofing website has separate, optimized pages for roof replacement, roof repair, storm damage, and emergency services, each targeting the specific search intent of that buyer rather than competing with itself.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-white p-7">

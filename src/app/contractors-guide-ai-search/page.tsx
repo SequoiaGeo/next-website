@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -104,13 +104,13 @@ export default function ContractorsGuideAISearchPage() {
           <h2>What Is GEO (Generative Engine Optimization)?</h2>
 
           <p>
-            SEO &mdash; Search Engine Optimization &mdash; is about ranking on Google&rsquo;s list. When a
+            SEO, Search Engine Optimization, is about ranking on Google&rsquo;s list. When a
             homeowner searches &ldquo;AC repair near me,&rdquo; SEO determines whether your company appears
             in the results.
           </p>
 
           <p>
-            GEO &mdash; Generative Engine Optimization &mdash; is about being the answer that AI gives.
+            GEO, Generative Engine Optimization, is about being the answer that AI gives.
             When that same homeowner skips Google entirely and asks ChatGPT, &ldquo;Who should I call for
             AC repair in Fresno?&rdquo; GEO determines whether the AI recommends your company by name.
           </p>
@@ -124,25 +124,25 @@ export default function ContractorsGuideAISearchPage() {
           <h3>The AI Search Platforms That Matter Right Now</h3>
 
           <p>
-            <strong>ChatGPT</strong> &mdash; 900 million weekly users, processing 2+ billion queries per
+            <strong>ChatGPT</strong>, 900 million weekly users, processing 2+ billion queries per
             day. The largest AI platform and growing fast. When people say &ldquo;I asked AI,&rdquo; they
             usually mean ChatGPT.
           </p>
 
           <p>
-            <strong>Google AI Overviews (Gemini)</strong> &mdash; Google&rsquo;s own AI-generated answers
+            <strong>Google AI Overviews (Gemini)</strong>, Google&rsquo;s own AI-generated answers
             that appear at the top of search results. These now appear in up to 60% of U.S. searches.
             Your potential customers see this before they see your website listing.
           </p>
 
           <p>
-            <strong>Perplexity</strong> &mdash; An AI-native search engine processing 1.2&ndash;1.5 billion
+            <strong>Perplexity</strong>, An AI-native search engine processing 1.2&ndash;1.5 billion
             queries per month. It cites its sources, which means if your business is mentioned, users
             can click through to your website. Growing 800% year-over-year.
           </p>
 
           <p>
-            <strong>Microsoft Copilot</strong> &mdash; Built into Windows, Microsoft Edge, and Bing.
+            <strong>Microsoft Copilot</strong>, Built into Windows, Microsoft Edge, and Bing.
             Every Windows user has access to this.
           </p>
 
@@ -156,7 +156,7 @@ export default function ContractorsGuideAISearchPage() {
           </p>
 
           <p>
-            ChatGPT responds with specific company recommendations by name &mdash; not a list of ten
+            ChatGPT responds with specific company recommendations by name, not a list of ten
             links. If your company wasn&rsquo;t mentioned, you didn&rsquo;t just miss a ranking position.
             You were completely invisible in that interaction.
           </p>
@@ -173,10 +173,10 @@ export default function ContractorsGuideAISearchPage() {
           <p><strong>The numbers:</strong></p>
           <ul>
             <li>Gartner predicts traditional search volume will drop 25% by the end of 2026</li>
-            <li>ChatGPT&rsquo;s weekly users doubled in one year &mdash; from 400 million to 900 million</li>
+            <li>ChatGPT&rsquo;s weekly users doubled in one year, from 400 million to 900 million</li>
             <li>Perplexity grew 800% year-over-year</li>
             <li>
-              Google AI Overviews now appear in up to 60% of searches &mdash; and when they do, organic
+              Google AI Overviews now appear in up to 60% of searches, and when they do, organic
               click-through rates drop by 61%
             </li>
             <li>
@@ -209,7 +209,7 @@ export default function ContractorsGuideAISearchPage() {
           <p>
             Right now, most of your competitors don&rsquo;t even know GEO exists. In my experience
             scaling a contracting company, the contractors who moved first on every platform change
-            &mdash; Google My Business, Local Service Ads, review platforms &mdash; captured market share that
+            (Google My Business, Local Service Ads, review platforms) captured market share that
             took their competitors years to claw back. The same window is open right now with AI
             search, and I estimate it&rsquo;s a 12 to 18 month window before the industry catches up.
           </p>
@@ -252,7 +252,7 @@ export default function ContractorsGuideAISearchPage() {
           <h3>3. Content That Answers Real Questions</h3>
 
           <p>
-            Your website might have a page that says &ldquo;We offer AC repair services&rdquo; &mdash; but that
+            Your website might have a page that says &ldquo;We offer AC repair services&rdquo;, but that
             doesn&rsquo;t help AI answer the question &ldquo;How much does AC repair cost in Phoenix?&rdquo; or
             &ldquo;What are the signs my AC needs to be replaced?&rdquo; AI evaluates whether your content
             actually answers the questions homeowners are asking.
@@ -263,9 +263,9 @@ export default function ContractorsGuideAISearchPage() {
           <p>
             Google introduced these quality guidelines for traditional search, but they&rsquo;re even
             more important for AI recommendations. When I ran my contracting company, the things
-            that made us successful &mdash; earning thousands of five-star reviews, maintaining BBB
+            that made us successful, earning thousands of five-star reviews, maintaining BBB
             accreditation, getting mentioned in trade publications, keeping our website updated with
-            real job photos and detailed service descriptions &mdash; are exactly the signals that AI
+            real job photos and detailed service descriptions, are exactly the signals that AI
             now uses to decide who to recommend.
           </p>
 
@@ -297,7 +297,7 @@ export default function ContractorsGuideAISearchPage() {
                 </ul>
                 <p>
                   Document what you find. Are you mentioned? Are your competitors? This baseline is
-                  critical &mdash; you can&rsquo;t improve what you don&rsquo;t measure.
+                  critical, you can&rsquo;t improve what you don&rsquo;t measure.
                 </p>
               </div>
             </div>
@@ -366,18 +366,18 @@ export default function ContractorsGuideAISearchPage() {
                 </p>
                 <ul>
                   <li>
-                    <strong>Volume matters</strong> &mdash; 500 reviews beats 50 at the same star rating
+                    <strong>Volume matters</strong>, 500 reviews beats 50 at the same star rating
                   </li>
                   <li>
-                    <strong>Recency matters</strong> &mdash; consistent 2026 reviews outperform a burst
+                    <strong>Recency matters</strong>, consistent 2026 reviews outperform a burst
                     from 2022
                   </li>
                   <li>
-                    <strong>Sentiment keywords matter</strong> &mdash; reviewers mentioning specific
+                    <strong>Sentiment keywords matter</strong>, reviewers mentioning specific
                     services helps AI match you to relevant queries
                   </li>
                   <li>
-                    <strong>Responses matter</strong> &mdash; replying to every review signals an active,
+                    <strong>Responses matter</strong>, replying to every review signals an active,
                     engaged business
                   </li>
                 </ul>
@@ -504,14 +504,14 @@ export default function ContractorsGuideAISearchPage() {
             <Link href="/roofing-seo" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] underline underline-offset-2">
               roofing
             </Link>
-            , the GEO layer builds directly on that foundation. You&rsquo;re not starting over &mdash; you&rsquo;re
+            , the GEO layer builds directly on that foundation. You&rsquo;re not starting over, you&rsquo;re
             extending what you already have.
           </p>
 
           {/* Common Mistakes */}
           <h2>Common Mistakes Contractors Make With AI Search</h2>
 
-          <h3>&ldquo;AI Search Will Pass &mdash; I&rsquo;ll Wait&rdquo;</h3>
+          <h3>&ldquo;AI Search Will Pass, I&rsquo;ll Wait&rdquo;</h3>
 
           <p>
             This is the same thing contractors said about Google Maps in 2010. Waiting is not a
@@ -542,7 +542,7 @@ export default function ContractorsGuideAISearchPage() {
           <p>
             Every review is a data point AI processes. Not generating new reviews means your data
             is going stale. Not responding to reviews signals a business that doesn&rsquo;t engage
-            with its customers &mdash; which AI interprets as a credibility risk.
+            with its customers, which AI interprets as a credibility risk.
           </p>
 
           <h3>Using a Template Website That Looks Like Everyone Else</h3>
@@ -550,8 +550,8 @@ export default function ContractorsGuideAISearchPage() {
           <p>
             When AI evaluates multiple contractors and three of them have nearly identical website
             content, it has no basis to differentiate or recommend one over another. Original,
-            specific content about your company &mdash; your actual service area, your team, your
-            process, your real job photos &mdash; is what gives AI a reason to recommend you over
+            specific content about your company, your actual service area, your team, your
+            process, your real job photos, is what gives AI a reason to recommend you over
             the next guy.
           </p>
 
@@ -566,7 +566,7 @@ export default function ContractorsGuideAISearchPage() {
           <p>
             Start with the audit in Step 1. It costs you 15 minutes and gives you an honest
             picture of where you stand. Most contractors who do it are surprised by what they
-            find &mdash; either completely absent from AI results, or appearing in ways they never
+            find, either completely absent from AI results, or appearing in ways they never
             intentionally set up. Either way, knowing is the starting point.
           </p>
 
@@ -591,7 +591,7 @@ export default function ContractorsGuideAISearchPage() {
                 Aaron scaled an HVAC and plumbing company to 130+ employees and 4x Inc. 5000
                 recognition before founding Sequoia GEO. He now helps home service contractors
                 build the kind of digital presence that gets them recommended by both Google and
-                AI &mdash; not just found.
+                AI, not just found.
               </p>
             </div>
           </div>
@@ -611,7 +611,7 @@ export default function ContractorsGuideAISearchPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] shadow-lg shadow-black/20 transition hover:bg-[#6FCF97] hover:-translate-y-0.5"
             >
               Book a Free Audit

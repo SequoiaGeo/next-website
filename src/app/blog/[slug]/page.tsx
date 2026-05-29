@@ -1526,8 +1526,8 @@ const posts: Record<string, Post> = {
         <h2>What This Adds Up To</h2>
         <p>
           None of these features are complicated. They&rsquo;re all achievable on any modern website
-          platform. The contractor websites that produce the most calls aren&rsquo;t the fanciest , 
-          they&rsquo;re the ones that make it obvious what you do, who you are, why you&rsquo;re credible,
+          platform. The contractor websites that produce the most calls aren&rsquo;t the fanciest.
+          They&rsquo;re the ones that make it obvious what you do, who you are, why you&rsquo;re credible,
           and how to reach you.
         </p>
         <p>
@@ -4648,7 +4648,7 @@ const posts: Record<string, Post> = {
         <p>
           If you want someone to go through the full setup end to end, that&rsquo;s what the 30-day engagement
           is. The dead phone number is usually not the only thing we find.{" "}
-          <a href="/#contact" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">
+          <a href="/contact" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">
             Start here.
           </a>
         </p>
@@ -4787,7 +4787,7 @@ const posts: Record<string, Post> = {
         <p>
           If you want to know what your marketing is actually producing before you spend another month at
           the same rate,{" "}
-          <a href="/#contact" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">
+          <a href="/contact" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">
             start here.
           </a>
         </p>
@@ -5020,7 +5020,7 @@ const posts: Record<string, Post> = {
             Request a free AI visibility audit and I&rsquo;ll check your profile across ChatGPT, Perplexity, Gemini, and Claude. No sales pressure. Just data.
           </p>
           <Link
-            href="/#contact"
+            href="/contact"
             className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3 text-base font-semibold text-white transition hover:bg-[#0D2318]"
           >
             Get Your Free AI Visibility Audit
@@ -5297,7 +5297,7 @@ const posts: Record<string, Post> = {
             I offer a free AI visibility audit for home service and professional service businesses. I&rsquo;ll check your profile across ChatGPT, Perplexity, Gemini, and Claude and give you a realistic picture of where you stand. No sales pressure. Just data.
           </p>
           <Link
-            href="/#contact"
+            href="/contact"
             className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3 text-base font-semibold text-white transition hover:bg-[#0D2318]"
           >
             Get Your Free AI Visibility Audit
@@ -5462,7 +5462,7 @@ export default async function BlogPostPage({
           </p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-7 py-3.5 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Strategy Call

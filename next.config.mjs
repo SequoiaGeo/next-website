@@ -1,9 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "i.ytimg.com" },
+    ],
+  },
   async redirects() {
     return [
       // === ABOUT ===
       { source: "/about", destination: "/about-sequoia-geo", permanent: true },
+
+      // === V2 — A/B test variant removed, redirect to main homepage ===
+      { source: "/v2", destination: "/", permanent: false },
 
       // === GEO SERVICE PAGES ===
       { source: "/services/plumbing-geo", destination: "/plumbing-seo", permanent: true },

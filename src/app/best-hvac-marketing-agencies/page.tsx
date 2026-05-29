@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,9 +22,9 @@ const agencies = [
     pricing: "Public: $3,500–$15,000+/month (annual commitment required)",
     teamScale: "~30 in-house staff",
     summary:
-      "Hook Agency is a home services-only marketing agency that has made a deliberate bet on Google — SEO, Ads, and Maps — and nothing else. They serve contractors in the $1M–$15M revenue range with transparent, publicly-listed retainer pricing, which is rare in this industry. Their proprietary RankMap.AI platform targets Google Maps rankings specifically, and their published team-to-client ratio of roughly 1:3 is lower than most competitors. With 170+ five-star Google reviews and an Inc 5000 ranking, they are one of the most visible agencies in the home services space.",
+      "Hook Agency is a home services-only marketing agency that has made a deliberate bet on Google, SEO, Ads, and Maps, and nothing else. They serve contractors in the $1M–$15M revenue range with transparent, publicly-listed retainer pricing, which is rare in this industry. Their proprietary RankMap.AI platform targets Google Maps rankings specifically, and their published team-to-client ratio of roughly 1:3 is lower than most competitors. With 170+ five-star Google reviews and an Inc 5000 ranking, they are one of the most visible agencies in the home services space.",
     strengths: [
-      "Publicly published pricing — no discovery call required to get a number",
+      "Publicly published pricing, no discovery call required to get a number",
       "Proprietary RankMap.AI tool for Google Maps optimization",
       "Google-only focus means deep specialization, not diluted generalist services",
       "Documented case studies with specific ranking and traffic metrics",
@@ -46,7 +46,7 @@ const agencies = [
     pricing: "$10,000+ minimum project size; specific retainers not public",
     teamScale: "50–249+ employees (merged entity)",
     summary:
-      "Blue Corona (founded 2007) and RYNO Strategic Solutions merged in late 2024 to form one of the largest home-services-focused marketing operations in the country, now backed by private equity under EverService Holdings. Together they offer digital marketing plus operational services — including 24/7 live call answering, CSR coaching via their TRAXION program, and ServiceTitan-integrated analytics through their proprietary Polaris dashboard. Their RYNOtrax2.0 platform integrates with ServiceTitan and 30+ marketing platforms for revenue attribution across 300+ KPIs. For contractors managing multiple locations or preparing for an acquisition event, this combination of marketing and operational infrastructure is genuinely differentiated.",
+      "Blue Corona (founded 2007) and RYNO Strategic Solutions merged in late 2024 to form one of the largest home-services-focused marketing operations in the country, now backed by private equity under EverService Holdings. Together they offer digital marketing plus operational services, including 24/7 live call answering, CSR coaching via their TRAXION program, and ServiceTitan-integrated analytics through their proprietary Polaris dashboard. Their RYNOtrax2.0 platform integrates with ServiceTitan and 30+ marketing platforms for revenue attribution across 300+ KPIs. For contractors managing multiple locations or preparing for an acquisition event, this combination of marketing and operational infrastructure is genuinely differentiated.",
     strengths: [
       "Proprietary Polaris dashboard with 300+ KPIs and CRM integration",
       "On-staff 24/7 live call answering (Lead Capture Live)",
@@ -56,7 +56,7 @@ const agencies = [
     considerations: [
       "$10K+ minimum makes this inaccessible for smaller contractors",
       "PE-backed structure means growth priorities may not always align with individual client needs",
-      "Mixed reviews on Clutch — some clients report difficulty exiting contracts",
+      "Mixed reviews on Clutch, some clients report difficulty exiting contracts",
     ],
   },
   {
@@ -78,7 +78,7 @@ const agencies = [
       "Broad service scope including video production and CTV advertising",
     ],
     considerations: [
-      "Pricing is not transparent — requires full sales process to get a number",
+      "Pricing is not transparent, requires full sales process to get a number",
       "Clutch reviews note aggressive contract terms and lead quality variability",
       "Better suited for large operators than for contractors under $2M–$3M in revenue",
     ],
@@ -94,15 +94,15 @@ const agencies = [
     pricing: "Not publicly listed; custom proposals via strategy session",
     teamScale: "40+ staff (Virginia Beach, VA)",
     summary:
-      "Rival Digital was founded in 2020 with an exclusive focus on home service contractors and has grown to a 40+ person team in five years — unusually fast for a trades-focused agency. Their published framework, The HOME Advantage (available as a book on Amazon), gives them a content-marketing presence and industry credibility that goes beyond typical agency positioning. They partner with Nexstar Network and Home Service Freedom, placing them inside the contractor education ecosystem rather than just adjacent to it. Their model positions them as an internal marketing team replacement rather than an outside vendor.",
+      "Rival Digital was founded in 2020 with an exclusive focus on home service contractors and has grown to a 40+ person team in five years, unusually fast for a trades-focused agency. Their published framework, The HOME Advantage (available as a book on Amazon), gives them a content-marketing presence and industry credibility that goes beyond typical agency positioning. They partner with Nexstar Network and Home Service Freedom, placing them inside the contractor education ecosystem rather than just adjacent to it. Their model positions them as an internal marketing team replacement rather than an outside vendor.",
     strengths: [
       "Full-stack scope: website, SEO, paid ads, social, email, and PR under one retainer",
       "Published methodology (The HOME Advantage) demonstrates systematic thinking",
-      "Partner of Nexstar Network — embedded in contractor education community",
+      "Partner of Nexstar Network, embedded in contractor education community",
       "Home services exclusive focus since founding",
     ],
     considerations: [
-      "Pricing not public — requires strategy call to evaluate fit",
+      "Pricing not public, requires strategy call to evaluate fit",
       "Currently booking for June 2026, indicating capacity constraints",
       "Case study metrics not as granular as some competitors",
     ],
@@ -114,14 +114,14 @@ const agencies = [
     displayUrl: "lemonseedmarketing.com",
     tag: "Best for brand-first contractors",
     tagColor: "bg-yellow-100 text-yellow-800",
-    idealFor: "Established HVAC and trades companies that want to build a recognizable brand — not just lead generation — and understand that their truck wrap and logo are part of their marketing",
+    idealFor: "Established HVAC and trades companies that want to build a recognizable brand, not just lead generation, and understand that their truck wrap and logo are part of their marketing",
     pricing: "Not publicly listed; custom engagements",
     teamScale: "Boutique",
     summary:
-      "Lemon Seed Marketing is a boutique branding and marketing firm founded by Crystal Williams, whose family owned a multi-generation HVAC and plumbing company (McWilliams Heating, Cooling & Plumbing). That inside perspective shapes their approach: brand comes first, lead generation follows. Their differentiation is brand-building strategy — vehicle wraps, storytelling, direct mail, legacy identity work — as the foundation for growth, rather than treating brand as an afterthought to Google Ads. They serve contractors across HVAC, plumbing, and electrical nationwide and operate a contractor-focused podcast. For contractors who have the leads but feel invisible, Lemon Seed is a different kind of engagement.",
+      "Lemon Seed Marketing is a boutique branding and marketing firm founded by Crystal Williams, whose family owned a multi-generation HVAC and plumbing company (McWilliams Heating, Cooling & Plumbing). That inside perspective shapes their approach: brand comes first, lead generation follows. Their differentiation is brand-building strategy, vehicle wraps, storytelling, direct mail, legacy identity work, as the foundation for growth, rather than treating brand as an afterthought to Google Ads. They serve contractors across HVAC, plumbing, and electrical nationwide and operate a contractor-focused podcast. For contractors who have the leads but feel invisible, Lemon Seed is a different kind of engagement.",
     strengths: [
       "Founder Crystal Williams grew up in and managed marketing for a family HVAC company",
-      "Brand strategy, wraps, and direct mail — channels most digital agencies skip",
+      "Brand strategy, wraps, and direct mail, channels most digital agencies skip",
       "Boutique model means clients work directly with senior practitioners",
       "Active podcast builds community credibility in the trades space",
     ],
@@ -138,19 +138,19 @@ const agencies = [
     displayUrl: "contractorcommerce.com",
     tag: "Best marketing technology add-on",
     tagColor: "bg-gray-100 text-gray-700",
-    idealFor: "HVAC and plumbing contractors who want to capture revenue from website traffic that isn't converting — particularly after-hours and replacement quotes",
+    idealFor: "HVAC and plumbing contractors who want to capture revenue from website traffic that isn't converting, particularly after-hours and replacement quotes",
     pricing: "SaaS tiers (Launch, Grow, Scale); 12-month minimum; pricing requires demo",
     teamScale: "2,000+ contractor clients",
     summary:
-      "Contractor Commerce is not a traditional marketing agency — it is a revenue-conversion platform that turns contractor websites into 24/7 sales tools. Their system enables online Good/Better/Best pricing presentation, AI-guided customer shopping, self-service checkout, and appointment booking. The premise is data-backed: contractors who show transparent pricing online close at higher rates because customers arrive at the consultation already educated. Their case studies are strong — one contractor generated $450K from 259 quote submissions; another drove $5M in system replacement sales through their online estimating tool. Worth considering as a complement to any marketing investment, not a replacement for it.",
+      "Contractor Commerce is not a traditional marketing agency, it is a revenue-conversion platform that turns contractor websites into 24/7 sales tools. Their system enables online Good/Better/Best pricing presentation, AI-guided customer shopping, self-service checkout, and appointment booking. The premise is data-backed: contractors who show transparent pricing online close at higher rates because customers arrive at the consultation already educated. Their case studies are strong, one contractor generated $450K from 259 quote submissions; another drove $5M in system replacement sales through their online estimating tool. Worth considering as a complement to any marketing investment, not a replacement for it.",
     strengths: [
       "Captures revenue from after-hours traffic without adding staff",
       "Transparent pricing presentation proven to increase close rates",
-      "Integrates with existing websites — no full rebuild required",
+      "Integrates with existing websites, no full rebuild required",
       "Strong documented case studies with specific revenue numbers",
     ],
     considerations: [
-      "A technology product, not a marketing strategy — needs an agency or in-house team alongside it",
+      "A technology product, not a marketing strategy, needs an agency or in-house team alongside it",
       "12-month minimum commitment",
       "Better for replacement/installation revenue than service call volume",
     ],
@@ -166,7 +166,7 @@ const agencies = [
     pricing: "Not publicly listed; demo required",
     teamScale: "Not disclosed",
     summary:
-      "Hatch is an AI communication platform that sits between lead acquisition and job booking — automating the follow-up layer that most HVAC companies handle inconsistently or not at all. Their Voice AI handles inbound calls 24/7, their Messaging AI manages SMS and email follow-up sequences, and their Journey Builder orchestrates multi-channel automation across the customer lifecycle. They integrate with ServiceTitan and major lead marketplaces (Angi, Thumbtack, Yelp). Contractors using Hatch report 3x conversion lifts on after-hours leads, and the platform's focus on unsold estimate rehash has helped clients recover millions in dormant pipeline. Like Contractor Commerce, it is best understood as a force multiplier that converts more of the leads an agency generates — not a standalone marketing solution.",
+      "Hatch is an AI communication platform that sits between lead acquisition and job booking, automating the follow-up layer that most HVAC companies handle inconsistently or not at all. Their Voice AI handles inbound calls 24/7, their Messaging AI manages SMS and email follow-up sequences, and their Journey Builder orchestrates multi-channel automation across the customer lifecycle. They integrate with ServiceTitan and major lead marketplaces (Angi, Thumbtack, Yelp). Contractors using Hatch report 3x conversion lifts on after-hours leads, and the platform's focus on unsold estimate rehash has helped clients recover millions in dormant pipeline. Like Contractor Commerce, it is best understood as a force multiplier that converts more of the leads an agency generates, not a standalone marketing solution.",
     strengths: [
       "Voice AI + SMS AI + email automation in one platform",
       "Deep ServiceTitan integration for dispatch and job tracking",
@@ -175,7 +175,7 @@ const agencies = [
     ],
     considerations: [
       "A technology platform, not a full-service marketing agency",
-      "Requires existing lead flow — not a lead generation tool on its own",
+      "Requires existing lead flow, not a lead generation tool on its own",
       "Pricing structure not transparent without a sales call",
     ],
   },
@@ -186,15 +186,15 @@ const agencies = [
     displayUrl: "sequoiageo.com",
     tag: "Best for operator-led accountability",
     tagColor: "bg-[#C8EDD2] text-[#0D2318]",
-    idealFor: "HVAC and home service contractors who want a marketing partner that has actually operated and scaled the same kind of business — and can be held accountable to revenue, not just clicks",
+    idealFor: "HVAC and home service contractors who want a marketing partner that has actually operated and scaled the same kind of business, and can be held accountable to revenue, not just clicks",
     pricing: "Varies by engagement; fractional CMO, paid media, and SEO retainers available",
     teamScale: "Boutique",
     summary:
-      "Sequoia GEO is a boutique home services marketing agency founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17.2M in peak revenue and earned four consecutive Inc 5000 rankings (2020–2023) before founding the agency. The core differentiator is operator credibility — Aaron built and scaled the exact type of business their clients run, which means recommendations come from someone who has answered for both the marketing spend and the bottom line simultaneously. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, website development, and fractional CMO engagements. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
+      "Sequoia GEO is a boutique home services marketing agency founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17.2M in peak revenue and earned four consecutive Inc 5000 rankings (2020–2023) before founding the agency. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, which means recommendations come from someone who has answered for both the marketing spend and the bottom line simultaneously. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, website development, and fractional CMO engagements. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
     strengths: [
-      "Founder scaled an HVAC company to $17.2M with four Inc 5000 rankings — not a marketer who learned the trades from the outside",
+      "Founder scaled an HVAC company to $17.2M with four Inc 5000 rankings, not a marketer who learned the trades from the outside",
       "Fractional CMO model gives smaller contractors access to strategic leadership without a full-time hire",
-      "Audit-first process — every engagement starts with a free marketing audit before any proposal",
+      "Audit-first process, every engagement starts with a free marketing audit before any proposal",
       "LSA dispute management expertise backed by operational understanding of lead quality",
     ],
     considerations: [
@@ -241,7 +241,7 @@ export default function BestHvacMarketingAgenciesPage() {
             Best HVAC Marketing Agencies 2026
           </h1>
           <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80 max-w-2xl mx-auto">
-            8 agencies reviewed side by side — pricing, differentiators, and who each one
+            8 agencies reviewed side by side, pricing, differentiators, and who each one
             is actually built for. Includes full-service agencies, boutique firms, and
             marketing technology platforms worth knowing.
           </p>
@@ -303,15 +303,15 @@ export default function BestHvacMarketingAgenciesPage() {
               {/* Meta row */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 p-4 rounded-xl bg-[#fafaf8] text-sm">
                 <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Best For</p>
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Best For</p>
                   <p className="text-[#1a1a1a] leading-snug">{agency.idealFor}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Pricing</p>
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Pricing</p>
                   <p className="text-[#1a1a1a]">{agency.pricing}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Team Scale</p>
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Team Scale</p>
                   <p className="text-[#1a1a1a]">{agency.teamScale}</p>
                 </div>
               </div>
@@ -335,7 +335,7 @@ export default function BestHvacMarketingAgenciesPage() {
                   </ul>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">Considerations</p>
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Considerations</p>
                   <ul className="space-y-2">
                     {agency.considerations.map((c) => (
                       <li key={c} className="flex items-start gap-2 text-sm text-gray-600">
@@ -366,7 +366,7 @@ export default function BestHvacMarketingAgenciesPage() {
               },
               {
                 q: "$1M–$5M in revenue",
-                a: "This is the range where SEO and paid search start compounding meaningfully. Hook Agency, Rival Digital, and Sequoia GEO are all built for this tier. Prioritize agencies with documented case studies in your specific revenue range — an agency that works primarily with $10M+ companies will optimize for different things than you need.",
+                a: "This is the range where SEO and paid search start compounding meaningfully. Hook Agency, Rival Digital, and Sequoia GEO are all built for this tier. Prioritize agencies with documented case studies in your specific revenue range, an agency that works primarily with $10M+ companies will optimize for different things than you need.",
               },
               {
                 q: "$5M–$15M in revenue",
@@ -378,7 +378,7 @@ export default function BestHvacMarketingAgenciesPage() {
               },
               {
                 q: "What questions should I ask any agency before hiring?",
-                a: "Ask for case studies from companies at your exact revenue stage. Ask how they define success — if they lead with impressions or rankings rather than booked jobs, that tells you something. Ask who manages your account day-to-day and how often you can reach them. Ask what happens if results don't materialize. Ask whether they have experience with your specific HVAC software stack (ServiceTitan, Jobber, etc.). And ask for a client reference you can actually call.",
+                a: "Ask for case studies from companies at your exact revenue stage. Ask how they define success, if they lead with impressions or rankings rather than booked jobs, that tells you something. Ask who manages your account day-to-day and how often you can reach them. Ask what happens if results don't materialize. Ask whether they have experience with your specific HVAC software stack (ServiceTitan, Jobber, etc.). And ask for a client reference you can actually call.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -425,11 +425,11 @@ export default function BestHvacMarketingAgenciesPage() {
             Not sure which agency fits where you are right now?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
-            We audit your current marketing before the first conversation. You'll see exactly what is and isn't working — and whether we're the right fit.
+            We audit your current marketing before the first conversation. You'll see exactly what is and isn't working, and whether we're the right fit.
           </p>
           <div className="mt-8">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call

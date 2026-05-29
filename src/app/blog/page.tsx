@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -272,7 +272,7 @@ export default function BlogPage() {
                     <span className="rounded-full bg-[#C8EDD2] px-3 py-1 text-xs font-semibold text-[#0D2318]">
                       {post.category}
                     </span>
-                    <span className="text-xs text-gray-400">{post.date}</span>
+                    <span className="text-xs text-gray-500">{post.date}</span>
                   </div>
                   <h2 className="text-base font-extrabold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors leading-snug flex-1">
                     {post.title}
@@ -280,7 +280,7 @@ export default function BlogPage() {
                   <p className="mt-3 text-sm leading-relaxed text-gray-600 line-clamp-3">
                     {post.excerpt}
                   </p>
-                  <div className="mt-5 flex items-center justify-between text-xs text-gray-400">
+                  <div className="mt-5 flex items-center justify-between text-xs text-gray-500">
                     <span>{post.readTime}</span>
                     <span className="flex items-center gap-1 font-semibold text-[#1A5C3A]">
                       Read
@@ -308,7 +308,7 @@ export default function BlogPage() {
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Strategy Call

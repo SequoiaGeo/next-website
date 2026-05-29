@@ -1,5 +1,4 @@
-import Link from "next/link";
-import GHLWidget from "@/components/GHLWidget";
+﻿import Link from "next/link";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
@@ -65,7 +64,7 @@ export default function GoogleAdsFresnoPage() {
                 "name": "Do you work with any type of Fresno business?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We work with local service businesses across Fresno and the Central Valley. Our experience is deepest in high-ticket local services where the economics of paid search make the most sense — businesses where a single closed customer generates enough margin to justify the cost per click."
+                  "text": "We work with local service businesses across Fresno and the Central Valley. Our experience is deepest in high-ticket local services where the economics of paid search make the most sense, businesses where a single closed customer generates enough margin to justify the cost per click."
                 }
               },
               {
@@ -101,13 +100,13 @@ export default function GoogleAdsFresnoPage() {
       <section className="bg-[#FAF7F2] py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-[#2D6A4F] mb-4">
-            Google Ads Management — Fresno, CA
+            Google Ads Management, Fresno, CA
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-6 leading-tight">
             Google Ads Agency in Fresno That Tracks Revenue, Not Just Clicks
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Most Google Ads agencies optimize for cost per click. We optimize for booked jobs and closed revenue. Built by a Fresno operator who scaled a local service business to 4x Inc 5000 — then brought that system to other businesses.
+            Most Google Ads agencies optimize for cost per click. We optimize for booked jobs and closed revenue. Built by a Fresno operator who scaled a local service business to 4x Inc 5000, then brought that system to other businesses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -133,11 +132,11 @@ export default function GoogleAdsFresnoPage() {
             { stat: "4x", label: "Inc 5000 Honoree" },
             { stat: "Fresno", label: "Central Valley Based" },
             { stat: "Revenue", label: "Tied Attribution" },
-            { stat: "Small", label: "Roster — Real Attention" },
+            { stat: "Small", label: "Roster, Real Attention" },
           ].map((item) => (
             <div key={item.label}>
               <div className="text-2xl font-bold text-white mb-1">{item.stat}</div>
-              <div className="text-sm text-gray-400">{item.label}</div>
+              <div className="text-sm text-gray-500">{item.label}</div>
             </div>
           ))}
         </div>
@@ -164,7 +163,7 @@ export default function GoogleAdsFresnoPage() {
               },
               {
                 title: "Generic Ad Copy with No Local Signal",
-                body: "Ads that could run for any business in any city. Fresno searchers are local — your copy should mention Fresno, your service area, and your specific differentiator. Generic ads get skipped."
+                body: "Ads that could run for any business in any city. Fresno searchers are local, your copy should mention Fresno, your service area, and your specific differentiator. Generic ads get skipped."
               },
               {
                 title: "Ignoring the Landing Page",
@@ -188,7 +187,7 @@ export default function GoogleAdsFresnoPage() {
               What Our Fresno Google Ads Management Includes
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Every engagement starts with understanding your actual business economics — what a customer is worth, what close rate looks like, what a phone call costs to generate.
+              Every engagement starts with understanding your actual business economics, what a customer is worth, what close rate looks like, what a phone call costs to generate.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -311,7 +310,7 @@ export default function GoogleAdsFresnoPage() {
             {[
               {
                 q: "How much does Google Ads management cost in Fresno?",
-                a: "Our management fees are based on campaign scope, not a percentage of what we spend. We price this way deliberately — a percentage-of-spend model creates an incentive to spend more of your money rather than spend it better."
+                a: "Our management fees are based on campaign scope, not a percentage of what we spend. We price this way deliberately, a percentage-of-spend model creates an incentive to spend more of your money rather than spend it better."
               },
               {
                 q: "What ad spend do you recommend to start?",
@@ -323,7 +322,7 @@ export default function GoogleAdsFresnoPage() {
               },
               {
                 q: "How do you measure success?",
-                a: "Cost per booked job is our primary metric. We set up tracking to see which keywords generate calls, which calls convert to jobs, and what those jobs are worth. Everything else — impressions, CTR, Quality Score — is supporting data."
+                a: "Cost per booked job is our primary metric. We set up tracking to see which keywords generate calls, which calls convert to jobs, and what those jobs are worth. Everything else, impressions, CTR, Quality Score, is supporting data."
               },
               {
                 q: "Can you take over an existing Google Ads account?",
@@ -345,8 +344,8 @@ export default function GoogleAdsFresnoPage() {
           <h2 className="text-3xl font-bold text-white mb-4">
             Get a Free Google Ads Audit for Your Fresno Business
           </h2>
-          <p className="text-gray-300 mb-8">
-            We will review your current campaigns or build a projection for what a new campaign could produce. No obligation, no sales pressure — just an honest read on whether Google Ads makes sense for your business right now.
+          <p className="text-gray-400 mb-8">
+            We will review your current campaigns or build a projection for what a new campaign could produce. No obligation, no sales pressure, just an honest read on whether Google Ads makes sense for your business right now.
           </p>
           <Link
             href="/contact"
@@ -362,7 +361,7 @@ export default function GoogleAdsFresnoPage() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-[#1A1A1A] mb-4">Schedule Your Free Google Ads Audit</h2>
           <p className="text-gray-600 mb-8">
-            Pick a time that works for you. 30 minutes, no pitch — just an honest conversation about your Google Ads situation.
+            Pick a time that works for you. 30 minutes, no pitch, just an honest conversation about your Google Ads situation.
           </p>
           <BookingCalendar />
         </div>

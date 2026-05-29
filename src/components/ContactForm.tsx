@@ -143,7 +143,7 @@ export default function ContactForm() {
                     >
                       <div>
                         <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">{link.label}</p>
-                        <p className="text-xs text-gray-400 mt-0.5">{link.desc}</p>
+                        <p className="text-xs text-gray-500 mt-0.5">{link.desc}</p>
                       </div>
                       <svg className="h-4 w-4 text-gray-300 group-hover:text-[#3A9E6A] transition-colors shrink-0 ml-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -201,7 +201,7 @@ export default function ContactForm() {
                     onChange={(e) => setForm({ ...form, smsConsent: e.target.checked })}
                     className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#1A5C3A] focus:ring-[#3A9E6A]"
                   />
-                  <label htmlFor="smsConsent" className="text-xs leading-relaxed text-gray-400">
+                  <label htmlFor="smsConsent" className="text-xs leading-relaxed text-gray-500">
                     I agree to receive SMS messages from Sequoia GEO. Message and data rates may apply. You can opt out at any time.
                   </label>
                 </div>

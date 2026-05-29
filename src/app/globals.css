@@ -14,10 +14,9 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-fraunces), ui-serif, Georgia, serif;
-  letter-spacing: -0.02em;
-}
+/* Headings use Inter (sans-serif) by default via Tailwind.
+   Fraunces serif is opt-in — apply font-serif or the fraunces variable class directly
+   on individual elements that need a display serif (e.g. blog prose h2/h3 below). */
 
 p, li, span, a, label, input, textarea, button {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -25,7 +24,8 @@ p, li, span, a, label, input, textarea, button {
 
 /* Section overline — replaces pill badges */
 .section-overline {
-  @apply text-xs font-semibold uppercase tracking-[0.15em] text-[#3A9E6A];
+  /* #1A5C3A on white = 8.3:1 contrast (WCAG AA pass). Override with text-[#3A9E6A] only on dark backgrounds. */
+  @apply text-xs font-semibold uppercase tracking-[0.15em] text-[#1A5C3A];
 }
 
 /* Buttons */

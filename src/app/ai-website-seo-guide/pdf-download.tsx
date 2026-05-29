@@ -81,7 +81,7 @@ export default function PdfDownload() {
       >
         {loading ? "Sending..." : "Get the PDF Version"}
       </button>
-      <p className="text-xs text-gray-400 text-center">No spam. Occasional insights from Aaron. Unsubscribe anytime.</p>
+      <p className="text-xs text-gray-500 text-center">No spam. Occasional insights from Aaron. Unsubscribe anytime.</p>
     </form>
   );
 }

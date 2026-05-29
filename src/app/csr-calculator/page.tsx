@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
@@ -37,7 +37,7 @@ function Slider({
           background: `linear-gradient(to right, #1A5C3A ${((value - min) / (max - min)) * 100}%, #e5e7eb ${((value - min) / (max - min)) * 100}%)`,
         }}
       />
-      <div className="flex justify-between text-xs text-gray-400">
+      <div className="flex justify-between text-xs text-gray-500">
         <span>{format(min)}</span>
         <span>{format(max)}</span>
       </div>
@@ -159,7 +159,7 @@ export default function CSRCalculator() {
 
             {/* Industry context */}
             <div className="rounded-xl bg-[#fafaf8] border border-gray-100 p-4">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Industry benchmarks</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Industry benchmarks</p>
               <div className="grid grid-cols-3 gap-3 text-center">
                 {[
                   { label: "Average", value: "38–42%" },
@@ -168,7 +168,7 @@ export default function CSRCalculator() {
                 ].map((b) => (
                   <div key={b.label}>
                     <p className="text-base font-extrabold text-[#1a1a1a]">{b.value}</p>
-                    <p className="text-xs text-gray-400">{b.label}</p>
+                    <p className="text-xs text-gray-500">{b.label}</p>
                   </div>
                 ))}
               </div>
@@ -195,7 +195,7 @@ export default function CSRCalculator() {
 
             {/* Improvement scenarios */}
             <div className="rounded-2xl border border-gray-200 bg-white p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">What each 5-point improvement produces</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">What each 5-point improvement produces</p>
               <div className="space-y-3">
                 {[
                   {
@@ -231,10 +231,10 @@ export default function CSRCalculator() {
                       <span className={`text-sm font-semibold ${row.highlight ? "text-[#0D2318]" : "text-gray-700"}`}>
                         {row.label}
                         {row.capped && (
-                          <span className="ml-2 text-xs font-normal text-gray-400">At max (90%)</span>
+                          <span className="ml-2 text-xs font-normal text-gray-500">At max (90%)</span>
                         )}
                         {!row.capped && (
-                          <span className={`ml-2 text-xs font-normal ${row.highlight ? "text-[#1A5C3A]" : "text-gray-400"}`}>
+                          <span className={`ml-2 text-xs font-normal ${row.highlight ? "text-[#1A5C3A]" : "text-gray-500"}`}>
                             → {row.rate} booking rate
                           </span>
                         )}
@@ -244,7 +244,7 @@ export default function CSRCalculator() {
                       </span>
                     </div>
                     <div className="flex justify-end">
-                      <span className={`text-xs ${row.highlight ? "text-[#1A5C3A] font-semibold" : "text-gray-400"}`}>
+                      <span className={`text-xs ${row.highlight ? "text-[#1A5C3A] font-semibold" : "text-gray-500"}`}>
                         +{formatCurrency(row.annual)}/yr
                       </span>
                     </div>
@@ -315,7 +315,7 @@ export default function CSRCalculator() {
             We review actual call recordings as part of the audit. One call review often finds more opportunity than a full month of optimization.
           </p>
           <Link
-            href="/#contact"
+            href="/contact"
             className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
           >
             Book a Free Audit

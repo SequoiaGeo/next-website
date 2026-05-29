@@ -48,7 +48,7 @@ export default function ROICalculator() {
                   onChange={(e) => setBudget(Number(e.target.value))}
                   className="mt-3 h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 accent-[#1A5C3A]"
                 />
-                <div className="mt-1 flex justify-between text-xs text-gray-400">
+                <div className="mt-1 flex justify-between text-xs text-gray-500">
                   <span>$1,000</span>
                   <span>$10,000</span>
                 </div>
@@ -90,7 +90,7 @@ export default function ROICalculator() {
                   onChange={(e) => setCloseRate(Number(e.target.value))}
                   className="mt-3 h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 accent-[#1A5C3A]"
                 />
-                <div className="mt-1 flex justify-between text-xs text-gray-400">
+                <div className="mt-1 flex justify-between text-xs text-gray-500">
                   <span>10%</span>
                   <span>50%</span>
                 </div>
@@ -142,7 +142,7 @@ export default function ROICalculator() {
         </div>
 
         {/* Disclaimer */}
-        <p className="mx-auto mt-6 max-w-2xl text-center text-xs text-gray-400">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-xs text-gray-500">
           * These are rough estimates based on industry averages for contractor
           marketing. Actual results may vary depending on market, competition,
           and other factors.

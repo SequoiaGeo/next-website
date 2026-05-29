@@ -148,7 +148,7 @@ export default function Services() {
                 templates. Not page builders. Purpose-built to rank in local search, load in
                 under two seconds, and turn visitors into booked calls.
               </p>
-              <p className="mt-4 text-sm text-gray-400">
+              <p className="mt-4 text-sm text-gray-500">
                 The site you&rsquo;re on right now is an example of what we build.
               </p>
             </div>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import SequoiaCrossSection from "@/components/illustrations/SequoiaCrossSection";
 import { ATLAS, MONO_STYLE, STAGES, HIGHLIGHT_RINGS } from "./data";
@@ -211,7 +211,7 @@ function AtlasResult({ stage, reset }: { stage: number; reset: () => void }) {
         </div>
         <div style={{ marginTop: 28, display: "flex", gap: 12, flexWrap: "wrap" }}>
           <a
-            href="/#contact"
+            href="/contact"
             style={{
               display: "inline-block",
               background: ATLAS.ink,

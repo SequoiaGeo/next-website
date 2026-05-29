@@ -1,5 +1,4 @@
-import ContactForm from "@/components/ContactForm";
-import GHLWidget from "@/components/GHLWidget";
+﻿import ContactForm from "@/components/ContactForm";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
@@ -35,7 +34,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Inline calendar — primary conversion path */}
+      {/* Inline calendar, primary conversion path */}
       <section className="bg-[#fafaf8] py-10">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <BookingCalendar />
@@ -46,14 +45,13 @@ export default function ContactPage() {
       <div className="mx-auto max-w-3xl px-6">
         <div className="flex items-center gap-4 py-4">
           <div className="flex-1 border-t border-gray-200" />
-          <span className="text-sm text-gray-400">or fill out the form below</span>
+          <span className="text-sm text-gray-500">or fill out the form below</span>
           <div className="flex-1 border-t border-gray-200" />
         </div>
       </div>
 
       {/* Form as fallback */}
       <ContactForm />
-      <GHLWidget />
     </>
   );
 }

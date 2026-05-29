@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { ATLAS, type Service } from "./data";
 
 interface Props {
@@ -10,22 +11,22 @@ interface Props {
 export default function AtlasServiceLine({ service: sv, index: i }: Props) {
   const [hover, setHover] = useState(false);
 
-  return (
-    <div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      style={{
-        display: "grid",
-        gridTemplateColumns: "60px 1fr 2fr 40px",
-        gap: 28,
-        padding: "32px 0",
-        borderBottom: `1px solid ${ATLAS.rule}`,
-        alignItems: "center",
-        cursor: "pointer",
-        background: hover ? `linear-gradient(90deg, ${ATLAS.paperDim} 0%, transparent 100%)` : "transparent",
-        transition: "background 300ms",
-      }}
-    >
+  const rowStyle: React.CSSProperties = {
+    display: "grid",
+    gridTemplateColumns: "60px 1fr 2fr 40px",
+    gap: 28,
+    padding: "32px 0",
+    borderBottom: `1px solid ${ATLAS.rule}`,
+    alignItems: "center",
+    cursor: "pointer",
+    background: hover ? `linear-gradient(90deg, ${ATLAS.paperDim} 0%, transparent 100%)` : "transparent",
+    transition: "background 300ms",
+    textDecoration: "none",
+    color: "inherit",
+  };
+
+  const inner = (
+    <>
       <div
         style={{
           fontFamily: "var(--f-mono)",
@@ -73,6 +74,25 @@ export default function AtlasServiceLine({ service: sv, index: i }: Props) {
       >
         →
       </div>
+    </>
+  );
+
+  return sv.href ? (
+    <Link
+      href={sv.href}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={rowStyle}
+    >
+      {inner}
+    </Link>
+  ) : (
+    <div
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={rowStyle}
+    >
+      {inner}
     </div>
   );
 }

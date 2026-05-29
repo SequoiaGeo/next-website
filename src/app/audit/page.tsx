@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ const auditItems = [
   },
   {
     title: "Average Ticket & Revenue per Lead",
-    desc: "Not just cost-per-lead — revenue per dollar spent. The number that actually matters.",
+    desc: "Not just cost-per-lead, revenue per dollar spent. The number that actually matters.",
   },
   {
     title: "Google Business Profile Health",
@@ -143,7 +143,7 @@ export default function AuditPage() {
               The 12-point audit
             </h2>
             <p className="mt-4 text-base text-gray-500 leading-relaxed">
-              The 12-point audit covers every layer of the marketing pipeline — from the first
+              The 12-point audit covers every layer of the marketing pipeline, from the first
               impression to the booked job.
             </p>
           </div>
@@ -270,7 +270,7 @@ export default function AuditPage() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white transition hover:bg-[#245a42]"
               >
                 Apply for a Free Audit

@@ -1,5 +1,4 @@
 ﻿import Link from "next/link";
-import GHLWidget from "@/components/GHLWidget";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -120,14 +119,14 @@ export default function HvacSeoPage() {
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               I spent 13 years running Balanced Comfort Heating &amp; Air. I know your seasonality,
               your CSR challenges, your average ticket, and what an emergency call is worth.
-              That context shapes every digital marketing decision I make for your HVAC business &mdash;
+              That context shapes every digital marketing decision I make for your HVAC business,
               from search engine optimization to online visibility in your local market.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-500">
               Most vendors treat SEO for HVAC companies as a checklist: update meta tags, build
               citations, move on. What search engines actually reward is relevance, authority, and
               content that matches what your customers are searching when their equipment fails.
-              My HVAC SEO approach ties every tactic to a business outcome &mdash; not just organic
+              My HVAC SEO approach ties every tactic to a business outcome, not just organic
               traffic numbers.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -185,7 +184,7 @@ export default function HvacSeoPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               These aren&rsquo;t standalone HVAC services. They&rsquo;re the integrated SEO
-              and marketing services I manage as part of your complete HVAC business growth operation &mdash;
+              and marketing services I manage as part of your complete HVAC business growth operation,
               every channel tracked back to your dispatch board. Most companies in the HVAC industry
               run fragmented marketing efforts across three or four vendors with no one accountable for
               the combined result. This is the full-picture alternative.
@@ -674,7 +673,6 @@ export default function HvacSeoPage() {
           </div>
         </div>
       </section>
-      <GHLWidget />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function GeoAgencyPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Get a Free AI Visibility Audit
@@ -65,7 +65,7 @@ export default function GeoAgencyPage() {
             {[
               {
                 title: "AI search visibility monitoring",
-                body: "A GEO agency tracks whether your business is being referenced by ChatGPT, Perplexity, Gemini, and Claude when someone asks relevant questions. This is the new version of rank tracking — instead of keyword positions, you track brand mentions in AI responses.",
+                body: "A GEO agency tracks whether your business is being referenced by ChatGPT, Perplexity, Gemini, and Claude when someone asks relevant questions. This is the new version of rank tracking, instead of keyword positions, you track brand mentions in AI responses.",
               },
               {
                 title: "Authority content that gets cited",
@@ -205,7 +205,7 @@ export default function GeoAgencyPage() {
                   spent 13 years operating in home services, growing from startup to 130+ employees
                   and $10M+ in annual revenue before launching this agency. That background means
                   Sequoia GEO understands how contractors actually make decisions, what their customers
-                  search for, and what kinds of AI mentions translate into real jobs — not just impressions.
+                  search for, and what kinds of AI mentions translate into real jobs, not just impressions.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   For home service contractors and local businesses, GEO is not an abstract opportunity.
@@ -531,7 +531,7 @@ export default function GeoAgencyPage() {
             {[
               {
                 q: "Is GEO the same as SEO?",
-                a: "No, though they overlap. SEO optimizes for search engines that return a list of links — you try to be one of the clicks. GEO optimizes for AI tools that return a synthesized answer — you try to be mentioned inside the answer. The underlying signals that drive both have some overlap (content quality, authority, structured data) but the specific techniques and measurement approaches diverge significantly.",
+                a: "No, though they overlap. SEO optimizes for search engines that return a list of links, you try to be one of the clicks. GEO optimizes for AI tools that return a synthesized answer, you try to be mentioned inside the answer. The underlying signals that drive both have some overlap (content quality, authority, structured data) but the specific techniques and measurement approaches diverge significantly.",
               },
               {
                 q: "How long does GEO work take to show results?",
@@ -539,11 +539,11 @@ export default function GeoAgencyPage() {
               },
               {
                 q: "Do I still need SEO if I hire a GEO agency?",
-                a: "Yes. GEO does not replace traditional SEO or local search work — it adds a layer on top. In fact, strong SEO foundations (quality content, technical health, authoritative backlinks) support GEO because AI tools pull heavily from the same signals that drive organic rankings. A real GEO agency coordinates with your SEO strategy rather than treating it as competition.",
+                a: "Yes. GEO does not replace traditional SEO or local search work, it adds a layer on top. In fact, strong SEO foundations (quality content, technical health, authoritative backlinks) support GEO because AI tools pull heavily from the same signals that drive organic rankings. A real GEO agency coordinates with your SEO strategy rather than treating it as competition.",
               },
               {
                 q: "What AI tools does GEO optimization target?",
-                a: "The primary AI search platforms to optimize for are ChatGPT (including search mode), Perplexity, Google Gemini and AI Overviews, Claude, and Microsoft Copilot. Each platform has slightly different content preferences and update cycles, but the foundational GEO work — entity authority, structured data, citation-worthy content, brand consistency — improves visibility across all of them.",
+                a: "The primary AI search platforms to optimize for are ChatGPT (including search mode), Perplexity, Google Gemini and AI Overviews, Claude, and Microsoft Copilot. Each platform has slightly different content preferences and update cycles, but the foundational GEO work, entity authority, structured data, citation-worthy content, brand consistency, improves visibility across all of them.",
               },
               {
                 q: "What does the free AI visibility audit include?",
@@ -575,7 +575,7 @@ export default function GeoAgencyPage() {
             your situation. No pitch, no package, just data.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link href="/#contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
+            <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
               Get the Free Audit
             </Link>
             <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">(559) 521-3122</a>

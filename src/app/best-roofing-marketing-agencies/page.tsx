@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -313,7 +313,7 @@ export default function BestRoofingAgenciesPage() {
                   </span>
                   <div>
                     <h2 className="text-xl font-extrabold text-[#1a1a1a]">{agency.name}</h2>
-                    <p className="text-xs text-gray-400">{agency.url}</p>
+                    <p className="text-xs text-gray-500">{agency.url}</p>
                   </div>
                 </div>
                 <span className={`shrink-0 rounded-full border px-3 py-1 text-xs font-semibold ${agency.tagColor}`}>
@@ -326,7 +326,7 @@ export default function BestRoofingAgenciesPage() {
               <div className="flex flex-wrap gap-3 mb-5">
                 {agency.meta.map((m) => (
                   <div key={m.label} className="rounded-lg bg-[#fafaf8] border border-gray-200 px-3 py-2">
-                    <p className="text-xs text-gray-400">{m.label}</p>
+                    <p className="text-xs text-gray-500">{m.label}</p>
                     <p className="text-xs font-semibold text-[#1a1a1a] mt-0.5">{m.value}</p>
                   </div>
                 ))}
@@ -349,7 +349,7 @@ export default function BestRoofingAgenciesPage() {
                   </ul>
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Considerations</p>
+                  <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Considerations</p>
                   <ul className="space-y-2">
                     {agency.considerations.map((c) => (
                       <li key={c} className="flex items-start gap-2 text-sm text-gray-600">
@@ -424,7 +424,7 @@ export default function BestRoofingAgenciesPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call
