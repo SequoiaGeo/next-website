@@ -22,12 +22,11 @@ export default function Hero() {
             </p>
 
             <h1 className="text-4xl font-extrabold text-[#111111] sm:text-5xl lg:text-[3.5rem] leading-[1.06] tracking-tight">
-              I built a <span className="text-[#1A5C3A]">home service company</span> from zero to 130 employees and <span className="text-[#1A5C3A]">4x Inc 5000.</span> Now I run the marketing for{" "}
-              <span className="text-[#1A5C3A]">10 contractors at a time.</span>
+              More <span className="text-[#1A5C3A]">booked jobs</span> on your calendar. Not more clicks, leads, and reports.
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              13 years running Balanced Comfort taught me exactly what connects marketing spend to booked jobs. Now I do that for a small number of contractors. Not impressions. Not clicks. Booked jobs.
+              I built a home service company. 130 employees, a $17M exit, 4x Inc 5000. Now I run marketing for 10 contractors at a time and I watch the whole pipeline: the ads, the phones, the booking rate. An agency only sees its one channel.
             </p>
 
             <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">
