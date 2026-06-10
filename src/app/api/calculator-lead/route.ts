@@ -1,21 +1,55 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { checkEmailLead, verifyRecaptcha, escapeHtml } from "@/lib/spam-protection";
 
 function fmt(n: number) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
+}
+
+/** Coerce an untrusted value to a finite number, else undefined. */
+function num(value: unknown): number | undefined {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : undefined;
 }
 
 export async function POST(req: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await req.json();
-    const { name, email, monthlySpend, monthlyCalls, bookingRate, avgTicket, currentRevenue, annualGap } = body;
 
-    if (!email || !name) {
-      return NextResponse.json({ error: "Name and email are required" }, { status: 400 });
+    // Honeypot + timing + name/email validation (same layers as /api/contact).
+    const check = checkEmailLead(body, Date.now());
+    if (!check.ok) {
+      if (check.silentDrop) {
+        console.warn("[calculator-lead] dropped:", check.reason);
+        // Respond success so bots get no feedback.
+        return NextResponse.json({ success: true });
+      }
+      return NextResponse.json({ error: check.reason }, { status: 400 });
     }
 
-    const gapText = typeof annualGap === "number" ? fmt(annualGap) : "your revenue gap";
+    const captchaOk = await verifyRecaptcha(String(body.recaptchaToken ?? ""), {
+      expectedAction: "calculator_lead",
+    });
+    if (!captchaOk) {
+      console.warn("[calculator-lead] dropped: recaptcha failed");
+      return NextResponse.json({ success: true });
+    }
+
+    const { name, email } = check.clean;
+    // Escape before interpolating into email HTML so lead values can't inject markup.
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+
+    // Calculator numbers are untrusted input too: coerce or drop.
+    const monthlySpend = num(body.monthlySpend);
+    const monthlyCalls = num(body.monthlyCalls);
+    const bookingRate = num(body.bookingRate);
+    const avgTicket = num(body.avgTicket);
+    const currentRevenue = num(body.currentRevenue);
+    const annualGap = num(body.annualGap);
+
+    const gapText = annualGap !== undefined ? fmt(annualGap) : "your revenue gap";
 
     // 1. Send the breakdown to the prospect
     await resend.emails.send({
@@ -27,16 +61,16 @@ export async function POST(req: Request) {
           <div style="margin-bottom: 24px;">
             <img src="https://sequoiageo.com/logo.png" alt="Sequoia GEO" style="height: 36px;" onerror="this.style.display='none'" />
           </div>
-          <h1 style="font-size: 22px; font-weight: 700; margin: 0 0 12px;">Hey ${name}, here is your marketing leak breakdown.</h1>
+          <h1 style="font-size: 22px; font-weight: 700; margin: 0 0 12px;">Hey ${safeName}, here is your marketing leak breakdown.</h1>
           <p style="color: #555; line-height: 1.6; margin: 0 0 16px;">
             Based on the numbers you entered, here is where your marketing pipeline stands today:
           </p>
           <table style="width: 100%; border-collapse: collapse; margin: 0 0 20px;">
-            <tr><td style="padding: 6px 0; color: #555;">Monthly marketing spend</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${typeof monthlySpend === "number" ? fmt(monthlySpend) : "-"}</td></tr>
+            <tr><td style="padding: 6px 0; color: #555;">Monthly marketing spend</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${monthlySpend !== undefined ? fmt(monthlySpend) : "-"}</td></tr>
             <tr><td style="padding: 6px 0; color: #555;">Monthly inbound calls</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${monthlyCalls ?? "-"}</td></tr>
             <tr><td style="padding: 6px 0; color: #555;">Booking rate</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${bookingRate ?? "-"}%</td></tr>
-            <tr><td style="padding: 6px 0; color: #555;">Average ticket</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${typeof avgTicket === "number" ? fmt(avgTicket) : "-"}</td></tr>
-            <tr><td style="padding: 6px 0; color: #555;">Current monthly revenue from marketing</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${typeof currentRevenue === "number" ? fmt(currentRevenue) : "-"}</td></tr>
+            <tr><td style="padding: 6px 0; color: #555;">Average ticket</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${avgTicket !== undefined ? fmt(avgTicket) : "-"}</td></tr>
+            <tr><td style="padding: 6px 0; color: #555;">Current monthly revenue from marketing</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</td></tr>
           </table>
           <div style="background: #0D2318; border-radius: 10px; padding: 20px 24px; margin: 0 0 24px;">
             <p style="color: #6FCF97; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 6px;">Annual revenue gap</p>
@@ -49,7 +83,7 @@ export async function POST(req: Request) {
             Want me to look at where yours is actually leaking? The first conversation is a free audit. I will pull your numbers apart and tell you exactly where the gap is and how to close it.
           </p>
           <p style="margin: 0 0 24px;">
-            <a href="https://calendar.app.google/Ks81vE1H3J9mAmvY7" style="display: inline-block; background: #1A5C3A; color: white; font-weight: 600; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-size: 15px;">
+            <a href="https://www.sequoiageo.com/contact" style="display: inline-block; background: #1A5C3A; color: white; font-weight: 600; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-size: 15px;">
               Book your free audit
             </a>
           </p>
@@ -70,13 +104,13 @@ export async function POST(req: Request) {
       html: `
         <div style="font-family: -apple-system, sans-serif; padding: 24px; color: #1a1a1a;">
           <h2 style="margin: 0 0 16px;">New Marketing Leak Calculator lead</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Monthly spend:</strong> ${typeof monthlySpend === "number" ? fmt(monthlySpend) : "-"}</p>
+          <p><strong>Name:</strong> ${safeName}</p>
+          <p><strong>Email:</strong> ${safeEmail}</p>
+          <p><strong>Monthly spend:</strong> ${monthlySpend !== undefined ? fmt(monthlySpend) : "-"}</p>
           <p><strong>Monthly calls:</strong> ${monthlyCalls ?? "-"}</p>
           <p><strong>Booking rate:</strong> ${bookingRate ?? "-"}%</p>
-          <p><strong>Average ticket:</strong> ${typeof avgTicket === "number" ? fmt(avgTicket) : "-"}</p>
-          <p><strong>Current monthly revenue:</strong> ${typeof currentRevenue === "number" ? fmt(currentRevenue) : "-"}</p>
+          <p><strong>Average ticket:</strong> ${avgTicket !== undefined ? fmt(avgTicket) : "-"}</p>
+          <p><strong>Current monthly revenue:</strong> ${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</p>
           <p><strong>Annual gap:</strong> ${gapText}</p>
           <p><strong>Source:</strong> sequoiageo.com/marketing-leak-calculator</p>
         </div>
@@ -90,8 +124,8 @@ export async function POST(req: Request) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          firstName: String(name).split(" ")[0],
-          lastName: String(name).split(" ").slice(1).join(" ") || "",
+          firstName: name.split(" ")[0],
+          lastName: name.split(" ").slice(1).join(" ") || "",
           email,
           source: "Marketing Leak Calculator",
           tags: ["marketing-leak-calculator", "website-lead"],

@@ -1,15 +1,36 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { checkEmailLead, verifyRecaptcha, escapeHtml } from "@/lib/spam-protection";
 
 export async function POST(req: Request) {
   // Instantiate inside the handler so missing env vars don't crash the build
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
-    const { name, email } = await req.json();
+    const body = await req.json();
 
-    if (!email || !name) {
-      return NextResponse.json({ error: "Name and email are required" }, { status: 400 });
+    // Honeypot + timing + name/email validation (same layers as /api/contact).
+    const check = checkEmailLead(body, Date.now());
+    if (!check.ok) {
+      if (check.silentDrop) {
+        console.warn("[guide-capture] dropped:", check.reason);
+        // Respond success so bots get no feedback.
+        return NextResponse.json({ success: true });
+      }
+      return NextResponse.json({ error: check.reason }, { status: 400 });
     }
+
+    const captchaOk = await verifyRecaptcha(String(body.recaptchaToken ?? ""), {
+      expectedAction: "guide_capture",
+    });
+    if (!captchaOk) {
+      console.warn("[guide-capture] dropped: recaptcha failed");
+      return NextResponse.json({ success: true });
+    }
+
+    const { name, email } = check.clean;
+    // Escape before interpolating into email HTML so lead values can't inject markup.
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
 
     // 1. Send delivery email to subscriber via Resend
     await resend.emails.send({
@@ -21,7 +42,7 @@ export async function POST(req: Request) {
           <div style="margin-bottom: 24px;">
             <img src="https://sequoiageo.com/logo.png" alt="Sequoia GEO" style="height: 36px;" onerror="this.style.display='none'" />
           </div>
-          <h1 style="font-size: 22px; font-weight: 700; margin: 0 0 12px;">Hey ${name}, here's your LSA guide.</h1>
+          <h1 style="font-size: 22px; font-weight: 700; margin: 0 0 12px;">Hey ${safeName}, here's your LSA guide.</h1>
           <p style="color: #555; line-height: 1.6; margin: 0 0 20px;">
             11 pages covering everything you need to manage your Google Local Service Ads account
             and stop paying for leads that go nowhere.
@@ -56,8 +77,8 @@ export async function POST(req: Request) {
       html: `
         <div style="font-family: -apple-system, sans-serif; padding: 24px; color: #1a1a1a;">
           <h2 style="margin: 0 0 16px;">New LSA guide download</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Name:</strong> ${safeName}</p>
+          <p><strong>Email:</strong> ${safeEmail}</p>
           <p><strong>Source:</strong> sequoiageo.com/lsa-guide</p>
         </div>
       `,

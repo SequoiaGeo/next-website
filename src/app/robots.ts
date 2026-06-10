@@ -9,9 +9,10 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           "/api/",
           "/_next/",
-          "/v2",                   // A/B test variant — serve to users, not indexable
-          "/csr-calculator",       // Internal tool
-          "/marketing-leak-calculator", // Internal tool
+          "/v2", // A/B test variant — serve to users, not indexable
+          // Calculators are intentionally indexable: both are in the sitemap,
+          // the leak calculator is a homepage CTA destination with lead
+          // capture, and the old disallows contradicted the sitemap.
         ],
       },
     ],

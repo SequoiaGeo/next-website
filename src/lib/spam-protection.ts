@@ -161,4 +161,58 @@ export function checkLead(fields: LeadFields, now: number): SpamCheckResult {
   };
 }
 
+export type EmailLeadFields = {
+  name?: unknown;
+  email?: unknown;
+  // anti-bot fields (not stored / not emailed)
+  website?: unknown; // honeypot — must stay empty
+  renderedAt?: unknown; // client epoch-ms when the form mounted
+  recaptchaToken?: unknown; // reCAPTCHA v3 token
+};
+
+export type EmailLeadCheckResult =
+  | { ok: true; clean: { name: string; email: string } }
+  | { ok: false; silentDrop: true; reason: string }
+  | { ok: false; silentDrop: false; reason: string };
+
+/**
+ * Honeypot, timing, and field validation for name+email-only lead magnets
+ * (calculator breakdown, guide downloads). Same layers as checkLead minus
+ * the phone/message fields those forms don't collect. Does NOT run
+ * reCAPTCHA — call verifyRecaptcha separately.
+ */
+export function checkEmailLead(fields: EmailLeadFields, now: number): EmailLeadCheckResult {
+  // 1. Honeypot: any value = bot. Drop silently.
+  const honeypot = asString(fields.website);
+  if (honeypot) {
+    return { ok: false, silentDrop: true, reason: "honeypot filled" };
+  }
+
+  // 2. Timing: reject impossibly fast or stale/forged timestamps.
+  const renderedAt = Number(fields.renderedAt);
+  if (!Number.isFinite(renderedAt)) {
+    return { ok: false, silentDrop: true, reason: "missing form timestamp" };
+  }
+  const elapsed = now - renderedAt;
+  if (elapsed < MIN_SUBMIT_MS) {
+    return { ok: false, silentDrop: true, reason: `submitted too fast (${elapsed}ms)` };
+  }
+  if (elapsed > MAX_FORM_AGE_MS || elapsed < 0) {
+    return { ok: false, silentDrop: true, reason: "stale or invalid form timestamp" };
+  }
+
+  // 3. Validation + sanitization.
+  const name = asString(fields.name);
+  const email = asString(fields.email);
+
+  if (name.length < LIMITS.name.min || name.length > LIMITS.name.max) {
+    return { ok: false, silentDrop: false, reason: "invalid name length" };
+  }
+  if (email.length < LIMITS.email.min || email.length > LIMITS.email.max || !EMAIL_RE.test(email)) {
+    return { ok: false, silentDrop: false, reason: "invalid email" };
+  }
+
+  return { ok: true, clean: { name, email } };
+}
+
 export const SPAM_LIMITS = LIMITS;

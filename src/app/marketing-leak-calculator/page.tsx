@@ -1,8 +1,10 @@
 ﻿"use client";
 
-import { useState, useMemo, FormEvent } from "react";
+import { useState, useMemo, useEffect, useRef, FormEvent } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { trackLead, trackEvent } from "@/lib/analytics";
+import { RECAPTCHA_SITE_KEY, getRecaptchaToken } from "@/lib/recaptcha";
 
 function formatCurrency(n: number) {
   if (n >= 1000000) return `$${(n / 1000000).toFixed(1)}M`;
@@ -52,10 +54,17 @@ export default function MarketingLeakCalculator() {
   const [bookingRate, setBookingRate] = useState(38);
   const [avgTicket, setAvgTicket] = useState(650);
 
-  // Inline capture (does not gate results, fires on submit)
-  const [capture, setCapture] = useState({ name: "", email: "" });
+  // Inline capture (does not gate results, fires on submit).
+  // "website" is a honeypot: real users never see or fill it.
+  const [capture, setCapture] = useState({ name: "", email: "", website: "" });
   const [captureLoading, setCaptureLoading] = useState(false);
   const [captureDone, setCaptureDone] = useState(false);
+
+  // Timestamp of when the page mounted, used server-side for the timing check.
+  const renderedAtRef = useRef<number>(0);
+  useEffect(() => {
+    renderedAtRef.current = Date.now();
+  }, []);
 
   const results = useMemo(() => {
     const currentJobs = monthlyCalls * (bookingRate / 100);
@@ -99,12 +108,16 @@ export default function MarketingLeakCalculator() {
     e.preventDefault();
     setCaptureLoading(true);
     try {
+      const recaptchaToken = await getRecaptchaToken("calculator_lead");
       await fetch("/api/calculator-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: capture.name,
           email: capture.email,
+          website: capture.website,
+          renderedAt: renderedAtRef.current,
+          recaptchaToken,
           monthlySpend,
           monthlyCalls,
           bookingRate,
@@ -310,6 +323,37 @@ export default function MarketingLeakCalculator() {
                     I&rsquo;ll send your full breakdown plus a short note on the fastest way to close that gap. No spam, no obligation.
                   </p>
                   <form onSubmit={handleCapture} className="space-y-3">
+                    {/* reCAPTCHA v3 — loads only when a site key is configured. */}
+                    {RECAPTCHA_SITE_KEY && (
+                      <Script
+                        src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
+                        strategy="afterInteractive"
+                      />
+                    )}
+                    {/* Honeypot: hidden from real users (off-screen, no tab stop,
+                        autocomplete off). Bots that fill every field trip it. */}
+                    <div
+                      aria-hidden="true"
+                      style={{
+                        position: "absolute",
+                        left: "-9999px",
+                        top: "-9999px",
+                        height: 0,
+                        width: 0,
+                        overflow: "hidden",
+                      }}
+                    >
+                      <label htmlFor="calc-website">Website</label>
+                      <input
+                        id="calc-website"
+                        name="website"
+                        type="text"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={capture.website}
+                        onChange={(e) => setCapture({ ...capture, website: e.target.value })}
+                      />
+                    </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <input
                         type="text"
