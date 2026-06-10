@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 
 function trackCTA(action: string, label: string) {
-  if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
-    (window as any).gtag("event", action, {
+  if (typeof window !== "undefined" && typeof window.gtag === "function") {
+    window.gtag("event", action, {
       event_category: "CTA",
       event_label: label,
     });
@@ -55,7 +55,7 @@ export default function StickyMobileCTA() {
           Call Now
         </a>
         <a
-          href="#contact"
+          href="/contact"
           onClick={() => trackCTA("cta_click", "sticky_mobile_book")}
           className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-[#3A9E6A] px-4 py-3 text-sm font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
         >

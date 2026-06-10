@@ -114,7 +114,7 @@ export default function AIAutomation() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <Link
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-10 py-4 text-lg font-bold text-[#0D2318] shadow-lg shadow-[#3A9E6A]/25 transition hover:bg-[#6FCF97] hover:shadow-xl hover:shadow-[#3A9E6A]/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3A9E6A]"
           >
             Get AI Automation for Your Business

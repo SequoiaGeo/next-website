@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { trackLead } from "@/lib/analytics";
 
 export default function PdfDownload() {
   const [submitted, setSubmitted] = useState(false);
@@ -19,6 +20,7 @@ export default function PdfDownload() {
     } catch {
       // show download even if API fails
     }
+    trackLead({ source: "lsa_guide" });
     setLoading(false);
     setSubmitted(true);
   };

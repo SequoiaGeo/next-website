@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const goodFit = [
-  "Spending $5K–$20K/month on marketing with revenue that isn't growing proportionally",
+  "Spending $5K–$30K/month on marketing with revenue that isn't growing proportionally",
   "Can't answer \"which channel produces our most profitable jobs\" in 30 seconds",
   "Been through 2–3 agencies in the last few years and none of them moved the needle",
   "Want someone who understands your P&L, not just your click-through rate",
@@ -34,7 +34,7 @@ export default function WhoIsItFor() {
             </p>
             <div className="mt-8 flex flex-col gap-3">
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
                 Apply for a Spot

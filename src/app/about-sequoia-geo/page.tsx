@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Sequoia GEO | Aaron Husak, Home Services Marketing Operator",
   description:
-    "Aaron Husak spent 13 years building Balanced Comfort from one truck to $10M+ and 4x Inc 5000. Now he runs Sequoia GEO, working with 10 home service contractors at a time.",
+    "Aaron Husak spent 13 years building Balanced Comfort from one truck to $17M+ and 4x Inc 5000. Now he runs Sequoia GEO, working with 10 home service contractors at a time.",
   alternates: { canonical: "https://www.sequoiageo.com/about-sequoia-geo" },
 };
 
@@ -197,7 +197,7 @@ export default function AboutPage() {
             </div>
 
             <p className="text-center text-sm text-gray-500">
-              Balanced Comfort, Fresno CA, 50+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318
+              Balanced Comfort, Fresno CA, 130+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318
             </p>
           </div>
         </div>
@@ -252,8 +252,8 @@ export default function AboutPage() {
               attention. That level of engagement isn&rsquo;t possible at agency scale.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              The contractors we work with are typically doing $2M to $15M in annual revenue, spending at
-              least $3K/month on marketing, and frustrated that their current setup produces leads without
+              The contractors we work with are typically doing $2M to $15M in annual revenue, spending $5K
+              to $30K per month on marketing, and frustrated that their current setup produces leads without
               producing growth. They don&rsquo;t need more vendors. They need someone who reads the full
               picture.
             </p>

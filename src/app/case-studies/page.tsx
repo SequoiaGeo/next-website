@@ -46,7 +46,7 @@ export default function CaseStudiesPage() {
               Owners on what it&rsquo;s like to work with us.
             </h2>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10">
+          <div className="mx-auto max-w-sm">
             {/* Michael */}
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 sm:p-8">
               <div className="mx-auto w-full max-w-[280px]">
@@ -62,22 +62,6 @@ export default function CaseStudiesPage() {
                 <p className="text-sm font-semibold text-white">Michael Bissett</p>
                 <p className="text-xs text-gray-500">Owner, KABAM Plumbing Services</p>
                 <p className="text-xs text-gray-500">Sun City Center, FL</p>
-              </footer>
-            </div>
-            {/* Oscar */}
-            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 sm:p-8">
-              <div className="mx-auto w-full max-w-[280px]">
-                <div className="relative w-full overflow-hidden rounded-xl bg-black shadow-2xl" style={{ paddingBottom: "177.78%" }}>
-                  <YouTubeFacade
-                    videoId="Agn4YmIFMo4"
-                    title="Oscar Nunez of Benjamin Franklin Plumbing on working with Sequoia GEO"
-                    isShort
-                  />
-                </div>
-              </div>
-              <footer className="mt-6 border-t border-white/10 pt-5 text-center">
-                <p className="text-sm font-semibold text-white">Oscar Nunez</p>
-                <p className="text-xs text-gray-500">Owner, Benjamin Franklin Plumbing of Huntington Beach</p>
               </footer>
             </div>
           </div>

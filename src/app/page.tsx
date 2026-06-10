@@ -39,7 +39,7 @@ export default function Home() {
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-6 sm:p-8">
             <p className="section-overline mb-3 text-[#1A5C3A]">TL;DR</p>
             <ul className="space-y-2 text-base text-gray-700">
-              <li><strong>Who we are:</strong> Sequoia GEO is a fractional CMO and growth operator for home service companies, run by a 13-year operator who built Balanced Comfort to $10M and 130+ employees (4x Inc 5000).</li>
+              <li><strong>Who we are:</strong> Sequoia GEO is a fractional CMO and growth operator for home service companies, run by a 13-year operator who built Balanced Comfort to $17M and 130+ employees (4x Inc 5000).</li>
               <li><strong>Who we serve:</strong> HVAC, plumbing, roofing, and restoration contractors doing $2M to $15M in revenue with $5K to $30K per month in marketing spend.</li>
               <li><strong>What we do:</strong> Connect every <strong>marketing</strong> dollar to a booked job. We optimize for <strong>cost per booked job</strong>, <strong>CSR booking rate</strong>, and revenue, not impressions or clicks. We integrate <strong>Google Ads</strong>, <strong>LSA</strong>, <strong>GBP</strong>, and <strong>ServiceTitan</strong> attribution into a single pipeline view.</li>
               <li><strong>How we work:</strong> 30-day diagnostic sprint, no long contracts, starting at $2,500 per month. Limited to 10 contractors at a time.</li>

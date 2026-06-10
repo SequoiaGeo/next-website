@@ -76,7 +76,7 @@ export default function FirstThirtyDays() {
 
             <div className="mt-10">
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
               >
                 Get Your Free Audit

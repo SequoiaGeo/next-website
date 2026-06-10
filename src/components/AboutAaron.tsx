@@ -168,7 +168,7 @@ export default function AboutAaron() {
             </div>
           </div>
           <p className="text-center text-sm text-gray-500">
-            Balanced Comfort, Fresno CA &bull; 50+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318 (C36 Plumbing, B General Building)
+            Balanced Comfort, Fresno CA &bull; 130+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318 (C36 Plumbing, B General Building)
           </p>
 
           {/* Industry connections */}

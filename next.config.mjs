@@ -21,14 +21,17 @@ const nextConfig = {
       { source: "/services/roofing-geo", destination: "/roofing-seo", permanent: true },
 
       // === OLD MANUS URL STRUCTURES ===
+      // Specific high-impression plumbing deep URLs → topical matches (must come BEFORE the catch-all below)
+      { source: "/sequoia-geo-seo-services/plumbing-seo-local-seo-for-plumbers/best-plumbing-seo-keywords-and-content-strategy", destination: "/blog/best-plumbing-seo-keywords", permanent: true },
+      { source: "/sequoia-geo-seo-services/plumbing-seo-local-seo-for-plumbers/local-seo-for-plumbers-and-google-map-pack-rankings", destination: "/blog/local-seo-for-plumbers", permanent: true },
+      { source: "/sequoia-geo-seo-services/plumbing-seo-local-seo-for-plumbers/on-page-seo-for-plumbing-websites", destination: "/plumbing-seo", permanent: true },
       { source: "/seo-ppc-trade-pages/:path*", destination: "/services", permanent: true },
       { source: "/sequoia-geo-seo-services/:path*", destination: "/services", permanent: true },
       { source: "/services-seo-ppc/:path*", destination: "/services", permanent: true },
       { source: "/service-page/:path*", destination: "/services", permanent: true },
 
       // === GEO LANDING PAGES ===
-      // /geo-agency now has its own page — no redirect needed
-      { source: "/geo-for-plumbers", destination: "/plumbing-seo", permanent: true },
+      // /geo-agency and /geo-for-plumbers now have their own pages — no redirect needed
       { source: "/geo-audit", destination: "/contact", permanent: true },
       { source: "/geo-agency-seattle", destination: "/", permanent: true },
 
@@ -94,6 +97,8 @@ const nextConfig = {
       { source: "/post/transform-your-leads-effective-marketing-for-contractors", destination: "/blog", permanent: true },
       // Old /blog/ slugs that changed on the new site
       { source: "/blog/general-marketing-agency-vs-contractor-specialist-why-your-hvac-or-plumbing-business-needs-an-expe", destination: "/blog/which-marketing-agency-specializes-in-contractors", permanent: true },
+      // No matching blog post at the same slug — point to /blog to avoid a 404 (was 308->404)
+      { source: "/post/competitor-brand-bidding-google-ads", destination: "/blog", permanent: true },
       // Catch-all for /post/* that DO have matching blog posts at the same slug
       { source: "/post/:slug*", destination: "/blog/:slug*", permanent: true },
 

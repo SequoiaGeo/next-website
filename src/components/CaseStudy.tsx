@@ -23,7 +23,7 @@ export default function CaseStudy() {
                 Case Study
               </p>
               <h3 className="mt-4 text-center text-2xl font-bold leading-snug">
-                From Solo Technician to $10M+ Operation
+                From Solo Technician to $17M+ Operation
               </h3>
               <p className="mt-3 text-center text-sm text-white/70">
                 Balanced Comfort &bull; Fresno, CA &bull; Since 2012
@@ -42,7 +42,7 @@ export default function CaseStudy() {
               {/* Stats */}
               <div className="mt-8 grid grid-cols-2 gap-6">
                 {[
-                  { stat: "$10M+", label: "Annual Revenue" },
+                  { stat: "$17M+", label: "Annual Revenue" },
                   { stat: "4,000+", label: "Google Reviews" },
                   { stat: "Inc. 5000", label: "4x Honoree" },
                   { stat: "Dec 2024", label: "Acquired" },

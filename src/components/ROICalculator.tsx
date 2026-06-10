@@ -132,7 +132,7 @@ export default function ROICalculator() {
 
               {/* CTA */}
               <Link
-                href="#contact"
+                href="/contact"
                 className="mt-10 inline-flex w-full items-center justify-center rounded-lg bg-[#3A9E6A] px-6 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#C8EDD2]"
               >
                 Book Your Free Consultation

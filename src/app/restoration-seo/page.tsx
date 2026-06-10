@@ -111,7 +111,11 @@ export default function RestorationSeoPage() {
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               Insurance jobs, TPA relationships, retail emergency calls, storm surges: restoration marketing
               is not the same as HVAC or plumbing. Most agencies treat it like it is. I&rsquo;ve operated in
-              home services long enough to know the difference matters.
+              home services long enough to know the difference matters. Want to be the company{" "}
+              <Link href="/geo-for-restoration" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
+                AI recommends after a flood or fire
+              </Link>
+              ? That is GEO.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link

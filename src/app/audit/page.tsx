@@ -75,7 +75,7 @@ const deliverables = [
 ];
 
 const goodFit = [
-  "Spending $3K+ per month on marketing",
+  "Spending $5K-$30K per month on marketing",
   "Have at least one active lead channel",
   "Want to understand your actual numbers",
   "Currently working with at least one vendor or agency",

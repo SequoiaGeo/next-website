@@ -4,7 +4,7 @@ import YouTubeFacade from "@/components/YouTubeFacade";
 const credentials = [
   "4x Inc 5000",
   "130+ employees built",
-  "$10M+ revenue at exit",
+  "$17M+ revenue at exit",
   "13 years in the field",
   "10 clients max",
 ];
@@ -36,7 +36,7 @@ export default function Hero() {
 
             <div className="mt-8">
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
               >
                 Get Your Free Audit

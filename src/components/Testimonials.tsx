@@ -1,5 +1,3 @@
-import YouTubeFacade from "@/components/YouTubeFacade";
-
 const testimonials = [
   {
     name: "Martin Livingston",
@@ -44,39 +42,6 @@ export default function Testimonials() {
             What contractors say{" "}
             <span className="text-[#3A9E6A]">after 90 days.</span>
           </h2>
-        </div>
-
-        {/* Featured video testimonial (Oscar) */}
-        <div className="mb-10 rounded-2xl border border-white/10 bg-white/[0.04] p-6 sm:p-8 lg:p-10">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr] lg:gap-12 items-center">
-            <div className="mx-auto w-full max-w-[280px] lg:mx-0">
-              <div className="relative w-full overflow-hidden rounded-xl bg-black shadow-2xl" style={{ paddingBottom: "177.78%" }}>
-                <YouTubeFacade
-                  videoId="Agn4YmIFMo4"
-                  title="Oscar Nunez of Benjamin Franklin Plumbing on working with Sequoia GEO"
-                  isShort
-                />
-              </div>
-            </div>
-            <div>
-              <p className="section-overline mb-3 text-[#3A9E6A]">Video Testimonial</p>
-              <StarRating />
-              <blockquote className="mt-5">
-                <p className="text-xl font-medium leading-relaxed text-white lg:text-2xl">
-                  &ldquo;Before I even gave him his first paycheck, he had already gone to work and dug up a whole lot of the items that were affecting our GBP and our digital marketing.&rdquo;
-                </p>
-              </blockquote>
-              <footer className="mt-6 flex items-center gap-4 border-t border-white/10 pt-5">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1A5C3A] text-sm font-bold text-white">
-                  ON
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white">Oscar Nunez</p>
-                  <p className="text-xs text-gray-500">Owner, Benjamin Franklin Plumbing of Huntington Beach</p>
-                </div>
-              </footer>
-            </div>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">

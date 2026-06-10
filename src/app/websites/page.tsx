@@ -259,7 +259,7 @@ export default function WebsitesPage() {
           <div className="text-center mb-10">
             <p className="section-overline mb-3">Every Build Includes</p>
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a]">
-              The same checklist I used to scale to $10M+
+              The same checklist I used to scale to $17M+
             </h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">

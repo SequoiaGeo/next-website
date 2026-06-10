@@ -111,7 +111,11 @@ export default function PlumbingSeoPage() {
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               Your agency sees leads. I see why $7,000/month in Angi leads is producing $475 in booked
               revenue. I&rsquo;m a California licensed C-36 Plumbing Contractor. I know your business
-              from the inside.
+              from the inside. Want to be the plumber{" "}
+              <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
+                AI tools recommend
+              </Link>{" "}
+              too? That is GEO.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link

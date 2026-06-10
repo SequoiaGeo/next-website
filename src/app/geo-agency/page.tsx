@@ -2,9 +2,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GEO Agency for Contractors & Local Businesses | Sequoia GEO",
+  title: "GEO Agency: Get Your Business Recommended in AI Search | Sequoia GEO",
   description:
-    "Sequoia GEO is a GEO agency built around one discipline: making contractors and local businesses visible and recommendable in ChatGPT, Perplexity, Gemini, and AI search. GEO is our core work, not a bolt-on.",
+    "Sequoia GEO is a GEO agency built around one discipline: making service businesses visible and recommendable in ChatGPT, Perplexity, Gemini, and AI search. GEO is our core work, not a bolt-on.",
   alternates: {
     canonical: "https://www.sequoiageo.com/geo-agency",
   },
@@ -27,8 +27,9 @@ export default function GeoAgencyPage() {
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               Sequoia GEO was named after the discipline it was built around: Generative Engine Optimization.
-              Not a bolt-on. Not a rebrand. A real GEO agency focused on making contractors and local
-              businesses visible in ChatGPT, Perplexity, Gemini, and Claude.
+              Not a bolt-on. Not a rebrand. A real GEO agency focused on making service businesses
+              visible in ChatGPT, Perplexity, Gemini, and Claude. We go deepest in home services, where
+              our team operated for 13 years, and apply the same discipline for local and professional service brands.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -203,7 +204,7 @@ export default function GeoAgencyPage() {
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   The team behind Sequoia GEO holds a California B General Contractor License and
                   spent 13 years operating in home services, growing from startup to 130+ employees
-                  and $10M+ in annual revenue before launching this agency. That background means
+                  and $17M+ in annual revenue before launching this agency. That background means
                   Sequoia GEO understands how contractors actually make decisions, what their customers
                   search for, and what kinds of AI mentions translate into real jobs, not just impressions.
                 </p>

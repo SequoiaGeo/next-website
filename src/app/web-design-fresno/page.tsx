@@ -149,7 +149,11 @@ export default function WebDesignFresnoPage() {
             Why Most Local Business Websites in Fresno Fail to Produce Leads
           </h2>
           <p className="text-gray-600 mb-6 text-lg">
-            When we audit the websites of local Fresno businesses, we find the same problems repeatedly. None of them are design problems. They are strategy problems.
+            When we audit the websites of local Fresno businesses, we find the same problems repeatedly. None of them are design problems. They are strategy problems. Web design is one part of what our{" "}
+            <Link href="/seo-agency-fresno" className="font-medium text-[#2D6A4F] underline hover:text-[#0D2318]">
+              Fresno SEO agency
+            </Link>{" "}
+            does.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[

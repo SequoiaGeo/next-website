@@ -134,7 +134,11 @@ export default function LocalSeoFresnoPage() {
               Most SEO agencies send you a monthly PDF with rankings and traffic numbers.
               We connect every search optimization decision to actual business outcomes: phone calls,
               form submissions, and customers. If we cannot show you how our work is producing revenue,
-              we are not doing our job.
+              we are not doing our job. Local SEO is one piece of what our{" "}
+              <Link href="/seo-agency-fresno" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
+                Fresno SEO agency
+              </Link>{" "}
+              does.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -170,7 +174,7 @@ export default function LocalSeoFresnoPage() {
           <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-5 sm:grid-cols-2">
             {[
               {
-                title: "4x Inc 5000 (2020–2023)",
+                title: "4x Inc 5000 (2020 to 2023)",
                 body: "Aaron grew Balanced Comfort in Fresno to four consecutive Inc 5000 appearances. The same marketing infrastructure that drove that growth is what we build for our clients."
               },
               {

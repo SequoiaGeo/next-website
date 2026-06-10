@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { blogPostsMeta } from "@/data/blog-posts";
+import { cities } from "./hvac-marketing/city-data";
 
 const BASE_URL = "https://www.sequoiageo.com";
 
@@ -15,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Service pages
     { url: `${BASE_URL}/geo-agency`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/geo-for-plumbers`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/geo-for-restoration`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/fractional-cmo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/lsa-management`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/ai-automation`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
@@ -26,6 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/roofing-seo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/restoration-seo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/hvac-marketing`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
+
+    // Fresno local pages
+    { url: `${BASE_URL}/seo-agency-fresno`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/local-seo-fresno`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/google-ads-fresno`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/web-design-fresno`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
 
     // Trade-specific comparison pages
     { url: `${BASE_URL}/best-hvac-marketing-agencies`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
@@ -57,6 +66,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog`, lastModified: "2026-04-18", changeFrequency: "weekly", priority: 0.6 },
   ];
 
+  // Programmatic HVAC city pages, generated from the same source list that
+  // generates the pages so the sitemap never drifts out of sync.
+  const cityPages: MetadataRoute.Sitemap = cities.map((c) => ({
+    url: `${BASE_URL}/hvac-marketing/${c.slug}`,
+    lastModified: "2026-06-09",
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   // Individual blog post pages, generated from the shared blog metadata
   const blogPages: MetadataRoute.Sitemap = blogPostsMeta.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
@@ -65,5 +83,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...blogPages];
+  return [...staticPages, ...cityPages, ...blogPages];
 }

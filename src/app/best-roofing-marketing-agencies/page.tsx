@@ -232,7 +232,7 @@ const agencies = [
       { label: "Team scale", value: "10-client cap, principal-led" },
     ],
     summary:
-      "Sequoia GEO is a boutique fractional CMO and growth operations firm founded by Aaron Husak, who built Balanced Comfort HVAC to $17.2M in revenue and four consecutive Inc. 5000 rankings before a 2024 exit. While the firm's core case study base is in HVAC and plumbing, the operator-level marketing systems developed through that process translate directly to roofing contractors facing the same conversion and lead quality challenges. The firm caps at 10 active clients and offers a 30-day trial with no long-term contract.",
+      "Sequoia GEO is a boutique fractional CMO and growth operations firm founded by Aaron Husak, who built Balanced Comfort HVAC to $17M+ in revenue and four consecutive Inc. 5000 rankings before a 2024 exit. While the firm's core case study base is in HVAC and plumbing, the operator-level marketing systems developed through that process translate directly to roofing contractors facing the same conversion and lead quality challenges. The firm caps at 10 active clients and offers a 30-day trial with no long-term contract.",
     strengths: [
       "Only agency on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
       "Revenue attribution extends past lead counts to booking rates, CSR quality, and appointment data",

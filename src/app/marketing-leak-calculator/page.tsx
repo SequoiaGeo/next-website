@@ -1,7 +1,8 @@
 ﻿"use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, FormEvent } from "react";
 import Link from "next/link";
+import { trackLead, trackEvent } from "@/lib/analytics";
 
 function formatCurrency(n: number) {
   if (n >= 1000000) return `$${(n / 1000000).toFixed(1)}M`;
@@ -51,6 +52,11 @@ export default function MarketingLeakCalculator() {
   const [bookingRate, setBookingRate] = useState(38);
   const [avgTicket, setAvgTicket] = useState(650);
 
+  // Inline capture (does not gate results, fires on submit)
+  const [capture, setCapture] = useState({ name: "", email: "" });
+  const [captureLoading, setCaptureLoading] = useState(false);
+  const [captureDone, setCaptureDone] = useState(false);
+
   const results = useMemo(() => {
     const currentJobs = monthlyCalls * (bookingRate / 100);
     const currentRevenue = currentJobs * avgTicket;
@@ -88,6 +94,32 @@ export default function MarketingLeakCalculator() {
   const leakSeverity = bookingRate < 35 ? "critical" : bookingRate < 50 ? "moderate" : "good";
   const leakColor = leakSeverity === "critical" ? "#ef4444" : leakSeverity === "moderate" ? "#f59e0b" : "#22c55e";
   const leakLabel = leakSeverity === "critical" ? "Significant leak" : leakSeverity === "moderate" ? "Room to improve" : "Above average";
+
+  const handleCapture = async (e: FormEvent) => {
+    e.preventDefault();
+    setCaptureLoading(true);
+    try {
+      await fetch("/api/calculator-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: capture.name,
+          email: capture.email,
+          monthlySpend,
+          monthlyCalls,
+          bookingRate,
+          avgTicket,
+          currentRevenue: Math.round(results.currentRevenue),
+          annualGap: Math.round(results.annualGap),
+        }),
+      });
+    } catch {
+      // still confirm to the user even if the API call fails
+    }
+    trackLead({ source: "marketing_leak_calculator", value: Math.round(results.annualGap) });
+    setCaptureLoading(false);
+    setCaptureDone(true);
+  };
 
   return (
     <main className="min-h-screen bg-[#fafaf8]">
@@ -259,6 +291,55 @@ export default function MarketingLeakCalculator() {
               </div>
             )}
 
+            {/* Inline capture: appears at the gap reveal, does NOT gate results */}
+            {results.annualGap > 0 && (
+              captureDone ? (
+                <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#C8EDD2]/40 p-6 text-center">
+                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#C8EDD2] mb-3">
+                    <svg className="h-6 w-6 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                  </div>
+                  <p className="text-base font-semibold text-[#0D2318]">Check your email. Your breakdown is on its way.</p>
+                  <p className="mt-1 text-sm text-gray-600">I included a link to book your free audit if you want me to look at where yours is actually leaking.</p>
+                </div>
+              ) : (
+                <div className="rounded-2xl border border-gray-200 bg-white p-6">
+                  <p className="text-base font-semibold text-[#1a1a1a] mb-1">Want this breakdown emailed to you?</p>
+                  <p className="text-sm text-gray-500 mb-4">
+                    I&rsquo;ll send your full breakdown plus a short note on the fastest way to close that gap. No spam, no obligation.
+                  </p>
+                  <form onSubmit={handleCapture} className="space-y-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <input
+                        type="text"
+                        required
+                        value={capture.name}
+                        onChange={(e) => setCapture({ ...capture, name: e.target.value })}
+                        placeholder="First name"
+                        className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
+                      />
+                      <input
+                        type="email"
+                        required
+                        value={capture.email}
+                        onChange={(e) => setCapture({ ...capture, email: e.target.value })}
+                        placeholder="you@company.com"
+                        className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      disabled={captureLoading}
+                      className="w-full rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318] disabled:opacity-60"
+                    >
+                      {captureLoading ? "Sending..." : "Email Me This Breakdown"}
+                    </button>
+                  </form>
+                </div>
+              )
+            )}
+
             {/* CTA */}
             <div className="rounded-2xl border border-gray-200 bg-white p-6">
               <p className="text-base font-semibold text-[#1a1a1a] mb-1">Want to know specifically where yours is leaking?</p>
@@ -267,6 +348,7 @@ export default function MarketingLeakCalculator() {
               </p>
               <Link
                 href="/contact"
+                onClick={() => trackEvent("calculator_cta_click", { lead_source: "marketing_leak_calculator", annual_gap: Math.round(results.annualGap) })}
                 className="inline-flex items-center justify-center w-full rounded-lg bg-[#1A5C3A] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
                 Submit Your Info for a Free Audit

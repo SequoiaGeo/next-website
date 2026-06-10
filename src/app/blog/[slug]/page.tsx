@@ -218,9 +218,9 @@ const posts: Record<string, Post> = {
   },
 
   "local-seo-competitor-analysis": {
-    title: "Local SEO Competitor Analysis for Contractors: Step-by-Step Playbook",
+    title: "Local SEO Competitor Analysis: Find Who's Outranking You (2026)",
     description:
-      "Find out exactly who is outranking you in local search, what they are doing differently, and how to close the gap. The full local SEO strategy used for HVAC, plumbing, and roofing contractors.",
+      "See exactly who is beating you in local search, the moves they are making, and the step-by-step playbook to pass them. Built from real HVAC, plumbing, and roofing campaigns.",
     date: "January 2026",
     dateISO: "2026-01-20",
     readTime: "14 min read",
@@ -687,9 +687,9 @@ const posts: Record<string, Post> = {
   },
 
   "gmb-multi-location-strategy": {
-    title: "Google Business Profile for Multi-Location Contractors: The Complete Strategy",
+    title: "How to Manage Google Business Profiles for Multiple Locations (2026)",
     description:
-      "How to manage Google Business Profiles for service area businesses with multiple locations, when to have separate listings, how to avoid duplicate content penalties, and the review strategy that works across multiple GBPs.",
+      "When to create separate listings, how to avoid duplicate-content penalties, and the review strategy that works across multiple Google Business Profiles. A field-tested playbook for multi-location service businesses.",
     date: "December 2025",
     dateISO: "2025-12-10",
     readTime: "8 min read",
@@ -1540,9 +1540,9 @@ const posts: Record<string, Post> = {
   },
 
   "best-plumbing-seo-keywords": {
-    title: "The Plumbing SEO Keywords That Actually Drive Booked Jobs",
+    title: "Plumbing SEO Keywords That Drive Booked Jobs (2026 Guide)",
     description:
-      "Most plumbing SEO campaigns target the wrong keywords. Here's the keyword framework built over 13 years running Balanced Comfort, organized by intent, tied to revenue.",
+      "Most plumbing SEO campaigns target the wrong keywords. Here is the keyword framework built over 13 years running a home services company, organized by search intent and tied to booked revenue.",
     date: "April 2026",
     dateISO: "2026-04-18",
     readTime: "14 min read",
@@ -2265,7 +2265,7 @@ const posts: Record<string, Post> = {
           January can cost you $15,000 in revenue and a service agreement renewal.
         </p>
         <p>
-          After 13 years running Balanced Comfort in Fresno, growing from a two-man shop to $10M+ with 130 employees
+          After 13 years running Balanced Comfort in Fresno, growing from a two-man shop to $17M+ with 130 employees
           and 4x Inc 5000 recognition, I now run Sequoia GEO doing fractional CMO work for home service contractors. I
           have a strong opinion about this decision, and I want to give you a straight comparison so you can make the
           right call for your company.

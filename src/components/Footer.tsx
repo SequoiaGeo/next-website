@@ -8,6 +8,7 @@ const services = [
   { label: "LSA Management", href: "/lsa-management" },
   { label: "Fractional CMO", href: "/fractional-cmo" },
   { label: "AI Automation", href: "/ai-automation" },
+  { label: "Fresno SEO Agency", href: "/seo-agency-fresno" },
 ];
 
 const resources = [
@@ -60,7 +61,7 @@ export default function Footer() {
               Founded by Aaron Husak, 4x Inc 5000 honoree and 13-year home services operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">
-              4x Inc 5000 (2020&ndash;2023) &middot; CA Licensed Contractor B, C-2, C-20, C-36 &middot; Fresno, CA &middot; Serving Nationwide
+              4x Inc 5000 (2020 to 2023) &middot; CA Licensed Contractor B, C-2, C-20, C-36 &middot; Fresno, CA &middot; Serving Nationwide
             </p>
             <div className="flex flex-col gap-2 text-sm">
               <a href="tel:5595213122" className="text-pale-green/70 hover:text-white transition-colors">

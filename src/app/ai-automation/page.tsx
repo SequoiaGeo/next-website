@@ -2,16 +2,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Home Service Contractors | Sequoia GEO",
+  title: "AI Automation for Contractors: Recover the Leads You're Losing",
   description:
-    "AI automation for HVAC, plumbing, and roofing companies. Missed call follow-up, review requests, unsold estimate rehash, and appointment confirmation  -  all automated.",
+    "Automate missed-call follow-up, review requests, and unsold estimate rehash for your HVAC, plumbing, or roofing company. Recover revenue that slips through the cracks every month.",
   alternates: { canonical: "https://www.sequoiageo.com/ai-automation" },
 };
 
 const automations = [
   {
     title: "Missed Call Follow-Up",
-    body: "When a call goes unanswered, an automated text goes out within 60 seconds. \u201cHey, we just missed your call \u2014 is there anything we can help with?\u201d Most customers respond. Most competitors never call back.",
+    body: "When a call goes unanswered, an automated text goes out within 60 seconds. \u201cHey, we just missed your call, is there anything we can help with?\u201d Most customers respond. Most competitors never call back.",
   },
   {
     title: "Post-Job Review Requests",
@@ -19,7 +19,7 @@ const automations = [
   },
   {
     title: "Unsold Estimate Rehash",
-    body: "Customers who received an estimate and went silent get a follow-up sequence over 7\u201314 days. Not pushy. Just present. A meaningful percentage of these come back and book \u2014 revenue that would otherwise be lost.",
+    body: "Customers who received an estimate and went silent get a follow-up sequence over 7 to 14 days. Not pushy. Just present. A meaningful percentage of these come back and book, recovering revenue that would otherwise be lost.",
   },
   {
     title: "Appointment Confirmations and Reminders",
@@ -44,7 +44,7 @@ export default function AiAutomationPage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="section-overline mb-6">AI Automation</div>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              The jobs your team doesn&rsquo;t have time to do -- automated.
+              The jobs your team doesn&rsquo;t have time to do, automated.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
               Every contractor has the same list: follow up with missed calls, ask for reviews after the

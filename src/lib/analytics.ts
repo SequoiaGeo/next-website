@@ -1,0 +1,38 @@
+// Lightweight GA4 + Google Ads event helper.
+// gtag is loaded globally in layout.tsx (GA4 config + AW-1042937332 Google Ads).
+// Safe to call before gtag loads or during SSR: it no-ops instead of throwing.
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+type LeadParams = {
+  // Where the lead came from, e.g. "contact_form", "lsa_guide", "marketing_leak_calculator"
+  source: string;
+  // Optional intent/value signal (e.g. calculated annual revenue gap)
+  value?: number;
+  [key: string]: unknown;
+};
+
+/**
+ * Fire a GA4 + Google Ads "generate_lead" conversion event.
+ * Use this on every successful lead capture so both GA4 key events and
+ * Google Ads conversion tracking can optimize toward real conversions.
+ */
+export function trackLead({ source, value, ...rest }: LeadParams) {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "generate_lead", {
+    currency: "USD",
+    value: value ?? 0,
+    lead_source: source,
+    ...rest,
+  });
+}
+
+/** Fire an arbitrary GA4 event (engagement, clicks, etc.). */
+export function trackEvent(name: string, params: Record<string, unknown> = {}) {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", name, params);
+}

@@ -149,13 +149,17 @@ export default function GoogleAdsFresnoPage() {
             Why Most Fresno Businesses Waste Money on Google Ads
           </h2>
           <p className="text-gray-600 mb-6 text-lg">
-            Google Ads is one of the most powerful customer acquisition channels available to a local business. It is also one of the easiest to run badly. The most common failure patterns we see when auditing Fresno accounts:
+            Google Ads is one of the most powerful customer acquisition channels available to a local business. It is also one of the easiest to run badly. Paid search is one part of what our{" "}
+            <Link href="/seo-agency-fresno" className="font-medium text-[#2D6A4F] underline hover:text-[#0D2318]">
+              Fresno SEO agency
+            </Link>{" "}
+            does. The most common failure patterns we see when auditing Fresno accounts:
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
                 title: "Broad Match Keywords Eating Budget",
-                body: "Campaigns targeting loose keyword variations that attract the wrong searches. A plumber in Clovis showing ads for 'DIY pipe repair videos.' A dental office paying for 'dental school near me.'"
+                body: "Campaigns targeting loose keyword variations that attract the wrong searches. A roofer in Clovis showing ads for 'DIY roof repair videos.' A dental office paying for 'dental school near me.'"
               },
               {
                 title: "No Conversion Tracking Worth Trusting",
