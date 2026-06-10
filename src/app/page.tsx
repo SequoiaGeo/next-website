@@ -55,7 +55,7 @@ export default function Home() {
       <InlineCTA
         headline="Find out what your marketing is actually producing."
         subtext="15-minute call. No pitch deck. Just your numbers and what they mean."
-        buttonText="Get Your Free Audit"
+        buttonText="Review My Numbers"
         variant="green"
       />
 
@@ -210,12 +210,14 @@ export default function Home() {
         subtext="Enter your spend, calls, and booking rate. Takes 60 seconds."
         buttonText="Try the Free Calculator"
         buttonHref="/marketing-leak-calculator"
-        variant="green"
+        variant="light"
       />
 
-      <LSABanner />
-
       <ContactForm />
+
+      {/* LSA guide is a top-of-funnel lead magnet; placed after the form so two
+          stacked lead magnets (calculator + guide) don't dilute the booking push. */}
+      <LSABanner />
 
       {/* Sticky mobile CTA bar: phone + book, appears after scrolling past hero */}
       <StickyMobileCTA />

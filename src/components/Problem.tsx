@@ -22,14 +22,14 @@ export default function Problem() {
         <div className="mx-auto mt-14 max-w-3xl rounded-2xl border border-white/8 bg-white/[0.04] p-8 sm:p-10">
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <div className="shrink-0">
-              <span className="text-6xl font-black text-[#3A9E6A] sm:text-7xl leading-none">58%</span>
+              <span className="text-6xl font-black text-[#3A9E6A] sm:text-7xl leading-none">Half</span>
             </div>
             <div>
               <p className="text-base font-semibold text-white">
-                of calls your marketing generates walk away without booking.
+                of the calls your marketing pays for never get booked.
               </p>
               <p className="mt-2 text-sm text-gray-300">
-                The industry average <strong className="text-gray-200">CSR booking rate</strong> is 42%. No agency will tell you that, because it&rsquo;s &ldquo;not their department.&rdquo;
+                Most home service companies I audit book fewer than half the calls they pay for. That gap is your <strong className="text-gray-200">CSR booking rate</strong>, and it lives between your marketing and your phones. No agency will tell you, because it&rsquo;s &ldquo;not their department.&rdquo;
               </p>
               <p className="mt-3 text-base font-bold text-[#3A9E6A]">It is mine.</p>
             </div>
