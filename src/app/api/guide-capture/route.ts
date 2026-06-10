@@ -35,7 +35,7 @@ export async function POST(req: Request) {
             on the table, that's what the first conversation is for.
           </p>
           <p style="margin: 0 0 24px;">
-            <a href="https://sequoiageo.com/#contact" style="color: #1A5C3A; font-weight: 600;">
+            <a href="https://sequoiageo.com/contact" style="color: #1A5C3A; font-weight: 600;">
               Book a free strategy call →
             </a>
           </p>

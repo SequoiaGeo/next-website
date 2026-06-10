@@ -28,7 +28,7 @@ export default function InlineCTA({
   subtext = "15 minutes. No pitch deck. Real operator-level feedback.",
   variant = "green",
   buttonText = "Get Your Free Audit",
-  buttonHref = "#contact",
+  buttonHref = "/contact",
 }: InlineCTAProps) {
   const bg =
     variant === "dark"
