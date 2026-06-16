@@ -9,7 +9,7 @@ const MELS_VIDEO_ID = "odPENhsu9lU";
 // saved and the copy below is approved. Grid map + precise top-3 % to be added
 // after the next local-ranking scan runs (the current scan is labeled baseline,
 // so we are not publishing it; ~11 days out as of 2026-06-16).
-const LUMA_READY = false;
+const LUMA_READY = true;
 // ---------------------------------------------------------------------------
 
 export default function ClientResults() {
@@ -75,9 +75,9 @@ export default function ClientResults() {
                 <Image
                   src="/clients/luma-exteriors.png"
                   alt="Luma Exteriors"
-                  width={140}
-                  height={70}
-                  className="h-12 w-auto"
+                  width={107}
+                  height={101}
+                  className="h-14 w-auto"
                   unoptimized
                 />
                 <div>
