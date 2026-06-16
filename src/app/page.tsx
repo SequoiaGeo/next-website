@@ -19,6 +19,7 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import FirstThirtyDays from "@/components/FirstThirtyDays";
 import ClientVideoGrid from "@/components/ClientVideoGrid";
+import ClientResults from "@/components/ClientResults";
 import LSABanner from "@/components/LSABanner";
 import YouTubeFacade from "@/components/YouTubeFacade";
 
@@ -47,6 +48,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Client result, right under the hero: promise then proof. Renders only
+          once Mel's YouTube ID is set in ClientResults.tsx. */}
+      <ClientResults />
 
       <Problem />
       <AboutAaron />
