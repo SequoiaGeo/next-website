@@ -198,10 +198,19 @@ export default function RootLayout({
           </>
         )}
 
-        {/* Microsoft Clarity — loaded by CookieBanner only after user accepts.
-            Removed from here to prevent tracking before consent is given. */}
+        {/* Microsoft Clarity — loads for everyone, same posture as GA4 above
+            (analytics on by default for a US/B2B audience; the banner still
+            governs ad_storage). Previously gated behind cookie-accept, which
+            left Clarity recording ~nothing and CRO decisions blind. */}
+        {process.env.NEXT_PUBLIC_CLARITY_ID && (
+          <Script
+            id="ms-clarity"
+            src={`https://www.clarity.ms/tag/${process.env.NEXT_PUBLIC_CLARITY_ID}`}
+            strategy="afterInteractive"
+          />
+        )}
 
-        {/* Cookie consent banner — gates Clarity behind user acceptance */}
+        {/* Cookie consent banner — upgrades ad consent on acceptance */}
         <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
 
         {/* AI referrer tracker: fires ai_referrer_seen GA4 event when visitor arrives from a known AI engine */}

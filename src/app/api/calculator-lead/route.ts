@@ -137,7 +137,14 @@ export async function POST(req: Request) {
             annual_gap: annualGap,
           },
         }),
-      });
+      })
+        .then((r) => {
+          if (!r.ok) console.error(`[calculator-lead] GHL webhook returned ${r.status} for ${email}`);
+        })
+        .catch((err) => {
+          // Lead already emailed; log so CRM drops are visible instead of silent.
+          console.error("[calculator-lead] GHL webhook error:", err);
+        });
     }
 
     return NextResponse.json({ success: true });

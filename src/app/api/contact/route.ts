@@ -38,11 +38,18 @@ export async function POST(req: Request) {
     }
 
     const { name, phone, email, message, smsConsent } = spam.clean;
+    // Optional per-page source tag from inline lead forms (e.g. "hvac_seo_page").
+    // Sanitized to a safe slug; falls back to the generic contact-form label.
+    const source =
+      String(body.source || "contact_form")
+        .replace(/[^a-zA-Z0-9 _-]/g, "")
+        .slice(0, 60) || "contact_form";
     // Escaped copies for safe interpolation into the notification email HTML.
     const safeName = escapeHtml(name);
     const safePhone = escapeHtml(phone);
     const safeEmail = escapeHtml(email);
     const safeMessage = escapeHtml(message);
+    const safeSource = escapeHtml(source);
 
     // Send notification email to Aaron
     await resend.emails.send({
@@ -77,6 +84,10 @@ export async function POST(req: Request) {
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888;">SMS Consent</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; color: #1a1a1a;">${smsConsent ? "Yes" : "No"}</td>
             </tr>
+            <tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888;">Source</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; color: #1a1a1a;">${safeSource}</td>
+            </tr>
             ${safeMessage ? `
             <tr>
               <td style="padding: 10px 0; font-size: 13px; color: #888; vertical-align: top;">Message</td>
@@ -107,12 +118,17 @@ export async function POST(req: Request) {
           email,
           phone,
           message,
-          source: "Contact Form",
-          tags: ["contact-form", "website-lead"],
+          source,
+          tags: ["contact-form", "website-lead", source],
         }),
-      }).catch(() => {
-        // Don't fail the response if GHL webhook errors
-      });
+      })
+        .then((r) => {
+          if (!r.ok) console.error(`[contact] GHL webhook returned ${r.status} for ${email}`);
+        })
+        .catch((err) => {
+          // Don't fail the response, but leave a trace so silent CRM drops are visible in logs.
+          console.error("[contact] GHL webhook error:", err);
+        });
     }
 
     return NextResponse.json({ success: true });

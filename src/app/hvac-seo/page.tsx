@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
   title: "HVAC SEO & Marketing | Sequoia GEO: Built by an HVAC Operator",
@@ -673,6 +674,13 @@ export default function HvacSeoPage() {
           </div>
         </div>
       </section>
+
+      {/* On-page capture: request the audit without leaving the page */}
+      <InlineLeadForm
+        source="hvac_seo_page"
+        heading="Get your free HVAC marketing audit"
+        subtext="Tell us where to send it. We review your rankings, your ads, and your booking path before the call. No pitch deck."
+      />
     </>
   );
 }

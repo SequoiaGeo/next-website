@@ -32,22 +32,48 @@ export async function POST(req: Request) {
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
 
+    // Both guide forms post here. Branch content on the client-sent source so
+    // AI-guide subscribers stop receiving the LSA guide email by mistake.
+    const isAiGuide = /ai/i.test(String(body.source || ""));
+    const guide = isAiGuide
+      ? {
+          subject: "Your AI Website SEO Guide",
+          heading: `Hey ${safeName}, here's your AI SEO guide.`,
+          blurb:
+            "A practical guide to getting your website found in AI search (ChatGPT, Gemini, AI Overviews) as well as classic Google results.",
+          pdfUrl: "https://sequoiageo.com/ai-website-seo-guide.pdf",
+          notifSubject: `New AI SEO guide download: ${name}`,
+          notifSource: "sequoiageo.com/ai-website-seo-guide",
+          ghlSource: "AI SEO Guide Download",
+          ghlTag: "ai-seo-guide",
+        }
+      : {
+          subject: "Your Google LSA Guide",
+          heading: `Hey ${safeName}, here's your LSA guide.`,
+          blurb:
+            "11 pages covering everything you need to manage your Google Local Service Ads account and stop paying for leads that go nowhere.",
+          pdfUrl: "https://sequoiageo.com/lsa-guide.pdf",
+          notifSubject: `New LSA guide download: ${name}`,
+          notifSource: "sequoiageo.com/lsa-guide",
+          ghlSource: "LSA Guide Download",
+          ghlTag: "lsa-guide",
+        };
+
     // 1. Send delivery email to subscriber via Resend
     await resend.emails.send({
       from: "Aaron Husak <aaron@sequoiageo.com>",
       to: email,
-      subject: "Your Google LSA Guide",
+      subject: guide.subject,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 560px; margin: 0 auto; padding: 32px 24px; color: #1a1a1a;">
           <div style="margin-bottom: 24px;">
             <img src="https://sequoiageo.com/logo.png" alt="Sequoia GEO" style="height: 36px;" onerror="this.style.display='none'" />
           </div>
-          <h1 style="font-size: 22px; font-weight: 700; margin: 0 0 12px;">Hey ${safeName}, here's your LSA guide.</h1>
+          <h1 style="font-size: 22px; font-weight: 700; margin: 0 0 12px;">${guide.heading}</h1>
           <p style="color: #555; line-height: 1.6; margin: 0 0 20px;">
-            11 pages covering everything you need to manage your Google Local Service Ads account
-            and stop paying for leads that go nowhere.
+            ${guide.blurb}
           </p>
-          <a href="https://sequoiageo.com/lsa-guide.pdf"
+          <a href="${guide.pdfUrl}"
              style="display: inline-block; background: #1A5C3A; color: white; font-weight: 600; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-size: 15px; margin-bottom: 28px;">
             Download the Guide (PDF)
           </a>
@@ -73,13 +99,13 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: "Sequoia GEO Site <aaron@sequoiageo.com>",
       to: "Aaron@sequoiageo.com",
-      subject: `New LSA guide download: ${name}`,
+      subject: guide.notifSubject,
       html: `
         <div style="font-family: -apple-system, sans-serif; padding: 24px; color: #1a1a1a;">
-          <h2 style="margin: 0 0 16px;">New LSA guide download</h2>
+          <h2 style="margin: 0 0 16px;">New guide download</h2>
           <p><strong>Name:</strong> ${safeName}</p>
           <p><strong>Email:</strong> ${safeEmail}</p>
-          <p><strong>Source:</strong> sequoiageo.com/lsa-guide</p>
+          <p><strong>Source:</strong> ${guide.notifSource}</p>
         </div>
       `,
     });
@@ -94,10 +120,17 @@ export async function POST(req: Request) {
           firstName: name.split(" ")[0],
           lastName: name.split(" ").slice(1).join(" ") || "",
           email,
-          source: "LSA Guide Download",
-          tags: ["lsa-guide", "website-lead"],
+          source: guide.ghlSource,
+          tags: [guide.ghlTag, "website-lead"],
         }),
-      });
+      })
+        .then((r) => {
+          if (!r.ok) console.error(`[guide-capture] GHL webhook returned ${r.status} for ${email}`);
+        })
+        .catch((err) => {
+          // Lead already emailed; log so CRM drops are visible instead of silent.
+          console.error("[guide-capture] GHL webhook error:", err);
+        });
     }
 
     return NextResponse.json({ success: true });

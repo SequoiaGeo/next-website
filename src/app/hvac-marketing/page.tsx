@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
+import InlineLeadForm from "@/components/InlineLeadForm";
 import { cities } from "./city-data";
 
 export const metadata: Metadata = {
@@ -261,6 +262,13 @@ export default function HvacMarketingIndexPage() {
           </div>
         </div>
       </section>
+
+      {/* On-page capture: request the audit without leaving the page */}
+      <InlineLeadForm
+        source="hvac_marketing_page"
+        heading="Get your free HVAC marketing audit"
+        subtext="Tell us where to send it. We review your rankings, your ads, and your booking path before the call. No pitch deck."
+      />
     </>
   );
 }

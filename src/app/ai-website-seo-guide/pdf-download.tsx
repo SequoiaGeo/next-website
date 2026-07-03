@@ -1,21 +1,40 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, useEffect, useRef, FormEvent } from "react";
+import Script from "next/script";
 import { trackLead } from "@/lib/analytics";
+import { RECAPTCHA_SITE_KEY, getRecaptchaToken } from "@/lib/recaptcha";
 
 export default function PdfDownload() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    // Honeypot. Real users never see or fill this; bots that auto-fill inputs do.
+    website: "",
+  });
+
+  // Timestamp of when the form mounted, used server-side for the timing check.
+  const renderedAtRef = useRef<number>(0);
+  useEffect(() => {
+    renderedAtRef.current = Date.now();
+  }, []);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
     try {
+      const recaptchaToken = await getRecaptchaToken("guide_capture");
       await fetch("/api/guide-capture", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, source: "AI Website SEO Guide" }),
+        body: JSON.stringify({
+          ...form,
+          source: "AI Website SEO Guide",
+          renderedAt: renderedAtRef.current,
+          recaptchaToken,
+        }),
       });
     } catch {
       // show download even if API fails
@@ -50,6 +69,37 @@ export default function PdfDownload() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {/* reCAPTCHA v3 — loads only when a site key is configured. */}
+      {RECAPTCHA_SITE_KEY && (
+        <Script
+          src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
+          strategy="afterInteractive"
+        />
+      )}
+      {/* Honeypot: hidden from real users (off-screen, no tab stop, autocomplete
+          off). Bots that fill every field trip it and get silently dropped. */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          top: "-9999px",
+          height: 0,
+          width: 0,
+          overflow: "hidden",
+        }}
+      >
+        <label htmlFor="ai-dl-website">Website</label>
+        <input
+          id="ai-dl-website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={form.website}
+          onChange={(e) => setForm({ ...form, website: e.target.value })}
+        />
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="ai-dl-name" className="block text-sm font-medium text-[#1a1a1a] mb-1.5">First name</label>

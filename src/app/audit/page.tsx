@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
+import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
   title: "Free Marketing Audit for Home Service Contractors | Sequoia GEO",
@@ -291,6 +292,14 @@ export default function AuditPage() {
           </div>
         </div>
       </div>
+
+      {/* On-page capture: apply without leaving the page */}
+      <InlineLeadForm
+        source="audit_page"
+        heading="Apply for your free audit"
+        subtext="Tell us where to send it. We review your marketing before the call. 10 audits a month, first come, first served."
+        buttonText="Apply for a Free Audit"
+      />
 
     </main>
   );
