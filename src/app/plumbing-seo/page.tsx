@@ -3,9 +3,9 @@ import InlineLeadForm from "@/components/InlineLeadForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plumbing SEO & Marketing | Sequoia GEO: Operator-Led Growth",
+  title: "Plumbing SEO That Books Jobs, Not Just Rankings | Sequoia GEO",
   description:
-    "Plumbing marketing that connects your ad spend to booked jobs. CA Licensed C-36 Plumbing Contractor. 13 years operating home services. I see your booking rate, your average ticket, and where the revenue is leaking.",
+    "Plumbing SEO from a CA-licensed C-36 plumbing contractor with 13 years operating home services. Rankings tied to booked jobs and tracked revenue. Free audit.",
   alternates: {
     canonical: "https://www.sequoiageo.com/plumbing-seo",
   },

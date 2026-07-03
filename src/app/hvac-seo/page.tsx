@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
-  title: "HVAC SEO & Marketing | Sequoia GEO: Built by an HVAC Operator",
+  title: "HVAC SEO & Marketing That Books Jobs | Sequoia GEO",
   description:
-    "HVAC marketing managed by someone who ran an HVAC company for 13 years and grew it to 130+ employees. I see your booking rate, your average ticket, and why your phones aren't ringing, not just your impressions.",
+    "HVAC SEO from an operator who ran an HVAC company for 13 years and grew it to 130+ employees. Rankings that turn into booked calls, tracked to revenue. Free audit.",
   alternates: {
     canonical: "https://www.sequoiageo.com/hvac-seo",
   },
