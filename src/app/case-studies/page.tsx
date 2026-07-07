@@ -129,6 +129,68 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
+            {/* AFCS case study card */}
+            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+              {/* Card header */}
+              <div className="bg-[#0D2318] px-8 py-10 sm:px-12">
+                <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
+                  Client Case Study
+                </span>
+                <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
+                  A Fireman&rsquo;s Chimney Sweep
+                </h2>
+                <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
+                  A firefighter-owned chimney company in Emmett, Idaho with 367 Google reviews and
+                  a website that had never measured anything. We rebuilt it, protected every
+                  ranking it had earned, and put it on page one within three weeks of launch.
+                </p>
+              </div>
+
+              {/* Stats row */}
+              <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {[
+                    { value: "367", label: "Google reviews at a 4.8" },
+                    { value: "3 weeks", label: "To page one" },
+                    { value: "5.8", label: "Avg position, month one" },
+                    { value: "56 → 87", label: "Lighthouse mobile score" },
+                  ].map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-xl bg-[#C8EDD2] px-4 py-4 text-center"
+                    >
+                      <div className="text-xl font-extrabold text-[#0D2318]">{item.value}</div>
+                      <div className="mt-1 text-xs text-[#1A5C3A] leading-snug">{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Card footer */}
+              <div className="px-8 py-6 sm:px-12">
+                <Link
+                  href="/case-studies/firemans-chimney-sweep"
+                  className="inline-flex items-center gap-2 text-base font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+                >
+                  Read the full story
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
             {/* Client results note */}
             <p className="mt-8 text-sm text-gray-500 text-center">
               Client case studies added as they&rsquo;re completed. Results are anonymized by

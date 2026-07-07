@@ -164,6 +164,16 @@ export default function HowItWorksPage() {
                 find in the audit.
               </p>
             </div>
+            <p className="mt-6 text-sm text-gray-500">
+              Want to see what this process produces?{" "}
+              <Link
+                href="/case-studies/firemans-chimney-sweep"
+                className="font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+              >
+                Read how a chimney company&rsquo;s rebuilt site hit page one in its first month
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
