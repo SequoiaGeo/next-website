@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import YouTubeFacade from "@/components/YouTubeFacade";
 
 // --- Asset readiness flags -------------------------------------------------
@@ -107,6 +108,22 @@ export default function ClientResults() {
               <p className="mt-5 text-base leading-relaxed text-gray-700">
                 Calls and website traffic are climbing right alongside it.
               </p>
+              <Link
+                href="/case-studies/luma-exteriors"
+                className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+              >
+                Read the full case study
+                <svg
+                  className="h-3.5 w-3.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
             </div>
           </div>
         )}

@@ -42,9 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/best-roofing-marketing-agencies`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
 
     // Case studies
-    { url: `${BASE_URL}/case-studies`, lastModified: "2026-07-07", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/case-studies`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/balanced-comfort`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/firemans-chimney-sweep`, lastModified: "2026-07-07", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/case-studies/kabam-plumbing`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/case-studies/luma-exteriors`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/case-studies/window-insulation-company`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
 
     // Guides and resources
     { url: `${BASE_URL}/lsa-guide`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },

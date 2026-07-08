@@ -356,6 +356,42 @@ export default function LeavingMyMarketingAgencyPage() {
         </div>
       </section>
 
+      {/* Case study proof strip */}
+      <section className="bg-white pt-16 pb-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7 sm:p-8">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A] mb-3">
+              What Honest Measurement Looks Like
+            </p>
+            <p className="text-lg font-bold text-[#1a1a1a]">
+              A $28,000-a-month ad account whose dashboard was grading its own homework
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-gray-500">
+              Inflated conversion values, budget optimizing toward junk, and a chatbot funnel
+              nobody could measure. We rebuilt what counted as a conversion, told the client
+              the numbers would look worse because they would finally be real, and cut the
+              spend to about $7,500 while real inquiries kept arriving.
+            </p>
+            <Link
+              href="/case-studies/window-insulation-company"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            >
+              Read the case study
+              <svg
+                className="h-3.5 w-3.5"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Operator credibility strip */}
       <section className="bg-[#F5FAF7] border-y border-[#3A9E6A]/20 py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

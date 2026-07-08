@@ -191,10 +191,185 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
+            {/* KABAM case study card */}
+            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+              <div className="bg-[#0D2318] px-8 py-10 sm:px-12">
+                <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
+                  Client Case Study
+                </span>
+                <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
+                  KABAM Plumbing Services
+                </h2>
+                <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
+                  An independent, owner-operated plumber in Sun City Center, Florida, holding a
+                  perfect 5.0 across 154 Google reviews in a market full of private equity
+                  brands. A managed profile, a rebuilt website, and numbers watched closely
+                  enough to answer &ldquo;are calls down?&rdquo; with data.
+                </p>
+              </div>
+              <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {[
+                    { value: "5.0", label: "Across 154 reviews" },
+                    { value: "116", label: "Profile calls in 6 months" },
+                    { value: "18.8K", label: "Search impressions, climbing" },
+                    { value: "100%", label: "Rankings kept through rebuild" },
+                  ].map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-xl bg-[#C8EDD2] px-4 py-4 text-center"
+                    >
+                      <div className="text-xl font-extrabold text-[#0D2318]">{item.value}</div>
+                      <div className="mt-1 text-xs text-[#1A5C3A] leading-snug">{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="px-8 py-6 sm:px-12">
+                <Link
+                  href="/case-studies/kabam-plumbing"
+                  className="inline-flex items-center gap-2 text-base font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+                >
+                  Read the full story
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Luma case study card */}
+            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+              <div className="bg-[#0D2318] px-8 py-10 sm:px-12">
+                <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
+                  Client Case Study
+                </span>
+                <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
+                  Luma Exteriors
+                </h2>
+                <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
+                  A premium exteriors company in Austin, Texas that went from 9 Google reviews
+                  to 28 at a straight 5.0 and took the top 3 of the map pack across 88 to 96
+                  percent of its service area. Review velocity, posting cadence, and Local
+                  Services Ads leads watched like they cost money, because they do.
+                </p>
+              </div>
+              <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {[
+                    { value: "9 → 28", label: "Reviews, all 5.0" },
+                    { value: "88-96%", label: "Territory in map pack top 3" },
+                    { value: "+39%", label: "June interactions vs May" },
+                    { value: "~49", label: "Directories in sync" },
+                  ].map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-xl bg-[#C8EDD2] px-4 py-4 text-center"
+                    >
+                      <div className="text-xl font-extrabold text-[#0D2318]">{item.value}</div>
+                      <div className="mt-1 text-xs text-[#1A5C3A] leading-snug">{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="px-8 py-6 sm:px-12">
+                <Link
+                  href="/case-studies/luma-exteriors"
+                  className="inline-flex items-center gap-2 text-base font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+                >
+                  Read the full story
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Window/insulation case study card */}
+            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+              <div className="bg-[#0D2318] px-8 py-10 sm:px-12">
+                <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
+                  Anonymized Case Study
+                </span>
+                <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
+                  The $28,000-a-Month Question
+                </h2>
+                <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
+                  A Central Valley window and insulation company spending $28,000 a month on
+                  ads graded by their own inflated dashboard. We rebuilt what counted as a
+                  conversion, told the client the numbers would look worse because they would
+                  finally be real, and cut the spend to about $7,500 while inquiries kept
+                  arriving.
+                </p>
+              </div>
+              <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {[
+                    { value: "$28K+", label: "Peak monthly ad spend" },
+                    { value: "~$7,500", label: "Spend after cleanup" },
+                    { value: "~$60K", label: "Co-op funds accrued" },
+                    { value: "Weekly", label: "Sales-marketing meeting" },
+                  ].map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-xl bg-[#C8EDD2] px-4 py-4 text-center"
+                    >
+                      <div className="text-xl font-extrabold text-[#0D2318]">{item.value}</div>
+                      <div className="mt-1 text-xs text-[#1A5C3A] leading-snug">{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="px-8 py-6 sm:px-12">
+                <Link
+                  href="/case-studies/window-insulation-company"
+                  className="inline-flex items-center gap-2 text-base font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+                >
+                  Read the full story
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
             {/* Client results note */}
             <p className="mt-8 text-sm text-gray-500 text-center">
-              Client case studies added as they&rsquo;re completed. Results are anonymized by
-              default.
+              Client case studies added as they&rsquo;re completed, with each client&rsquo;s
+              approval. Anonymized when the client prefers it.
             </p>
           </div>
         </div>
@@ -567,7 +742,7 @@ export default function CaseStudiesPage() {
               Live audit: Daddario Roofing
             </h2>
             <p className="mt-3 text-base text-gray-500 max-w-xl mx-auto">
-              A full marketing audit walkthrough, GBP, Google Ads, LSA, website, and tracking —
+              A full marketing audit walkthrough, GBP, Google Ads, LSA, website, and tracking,
               the same process run for every new client.
             </p>
           </div>
