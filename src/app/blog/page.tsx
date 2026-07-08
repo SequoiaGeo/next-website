@@ -12,6 +12,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "what-we-find-inside-contractor-marketing-accounts",
+    title: "What We Find Inside Contractor Marketing Accounts",
+    excerpt:
+      "Six findings from this year's audits: 16,962 conversions that never happened, website traffic that was 71 percent bots, a Google Guaranteed account that could not deliver a call, and the three questions that would have caught all of it.",
+    date: "July 2026",
+    readTime: "5 min read",
+    category: "Audits",
+  },
+  {
     slug: "dead-phone-number-lsa",
     title: "We Found a Dead Phone Number in a Live LSA Campaign. The Agency Never Noticed.",
     excerpt:
@@ -24,7 +33,7 @@ const posts = [
     slug: "three-agencies-one-report",
     title: "Three Agencies. All Reporting Green. Here's What We Actually Found.",
     excerpt:
-      "A contractor was spending $20,000 a month across three marketing vendors. Every monthly report showed strong performance. 16,962 tracked conversions. 22 actual phone calls. Here's what the gap looked like.",
+      "A contractor was spending $20,000 a month across three marketing vendors. Every monthly report showed strong performance. 16,962 tracked conversions. 21 actual phone calls. Here's what the gap looked like.",
     date: "April 2026",
     readTime: "8 min read",
     category: "Attribution",
@@ -211,7 +220,7 @@ const posts = [
   },
 ];
 
-const categories = ["All", "GBP", "Local SEO", "LSA", "Attribution", "AI Search", "Generative Engine Optimization", "Roofing", "Reputation", "Fractional CMO", "Website", "Google Ads"];
+const categories = ["All", "Audits", "GBP", "Local SEO", "LSA", "Attribution", "AI Search", "Generative Engine Optimization", "Roofing", "Reputation", "Fractional CMO", "Website", "Google Ads"];
 
 export default function BlogPage() {
   return (

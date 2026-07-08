@@ -164,6 +164,27 @@ export default function AuditPage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-8 rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7">
+            <p className="section-overline mb-2">From Real Audits</p>
+            <p className="text-lg font-bold text-[#1a1a1a]">
+              16,962 reported conversions. 21 real ones.
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-gray-500">
+              Six findings from this year&rsquo;s audits: conversions that never happened, website traffic
+              that was 71 percent bots, and a Google Guaranteed account that could not deliver a call.
+              Names removed, numbers real.
+            </p>
+            <Link
+              href="/blog/what-we-find-inside-contractor-marketing-accounts"
+              className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            >
+              Read what we find
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </div>
 

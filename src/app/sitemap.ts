@@ -62,12 +62,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Tools
     { url: `${BASE_URL}/sales-training`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/audit`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/audit`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/csr-calculator`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/marketing-leak-calculator`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 
     // Blog index
-    { url: `${BASE_URL}/blog`, lastModified: "2026-04-18", changeFrequency: "weekly", priority: 0.6 },
+    { url: `${BASE_URL}/blog`, lastModified: "2026-07-08", changeFrequency: "weekly", priority: 0.6 },
   ];
 
   // Programmatic HVAC city pages, generated from the same source list that

@@ -7,6 +7,7 @@ export interface BlogPostMeta {
 }
 
 export const blogPostsMeta: BlogPostMeta[] = [
+  { slug: "what-we-find-inside-contractor-marketing-accounts", dateISO: "2026-07-08" },
   { slug: "google-removed-call-button-gbp", dateISO: "2026-03-12" },
   { slug: "remove-negative-google-reviews", dateISO: "2026-02-18" },
   { slug: "local-seo-competitor-analysis", dateISO: "2026-01-20" },

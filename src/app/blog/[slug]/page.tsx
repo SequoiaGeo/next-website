@@ -13,6 +13,177 @@ interface Post {
 }
 
 const posts: Record<string, Post> = {
+  "what-we-find-inside-contractor-marketing-accounts": {
+    title: "What We Find Inside Contractor Marketing Accounts",
+    description:
+      "Six findings from real 2026 audits of contractor marketing accounts: 16,962 conversions that never happened, website traffic that was 71 percent bots, a Google Guaranteed account that could not deliver a call, and the three questions that would have caught all of it.",
+    date: "July 2026",
+    dateISO: "2026-07-08",
+    readTime: "5 min read",
+    category: "Audits",
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <p>
+          I audit the marketing accounts of home service companies for a living. HVAC, plumbing, roofing,
+          chimney sweeps. Some are one-truck operations. Some spend $20,000 a month across agencies, ads,
+          and lead platforms.
+        </p>
+        <p>
+          Here is what this year&rsquo;s audits actually turned up. Names removed, numbers real.
+        </p>
+
+        <h2>16,962 conversions that never happened</h2>
+        <p>
+          A Midwest HVAC and plumbing company was spending close to $20,000 a month across two agencies
+          and a stack of lead platforms. Their Google Ads account reported thousands of conversions. It
+          felt like winning.
+        </p>
+        <p>
+          Three of the five conversion goals in the account were misconfigured. The big one was counting
+          page views as conversions. Somebody loads the contact page, that is a &ldquo;conversion.&rdquo;
+          16,962 of them.
+        </p>
+        <p>
+          The real number of search conversions in the period we reviewed: 21. At the account&rsquo;s
+          spend, that worked out to $482 per real conversion, before anyone answered the phone.
+        </p>
+        <p>
+          Nobody inside the company knew, because the report the agency sent every month was built on the
+          inflated number. The dashboard was not lying, exactly. It was just measuring applause instead of
+          revenue. That account&rsquo;s full breakdown is{" "}
+          <a
+            href="/blog/three-agencies-one-report"
+            className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors"
+          >
+            its own story
+          </a>
+          .
+        </p>
+
+        <h2>The website traffic that was 71 percent robots</h2>
+        <p>
+          A Texas HVAC company&rsquo;s agency dashboard showed hundreds of website visitors a month.
+          Steady line, up and to the right.
+        </p>
+        <p>
+          We pulled the raw analytics. 71 percent of the traffic came from two data centers, one in
+          Oregon, one in Virginia. Server farms visiting the website. Actual local homeowners in a month:
+          about twelve.
+        </p>
+        <p>
+          The company had been making budget decisions on that traffic line for years. When your baseline
+          is fiction, every decision built on it inherits the fiction.
+        </p>
+
+        <h2>The Google Guaranteed account with the wrong phone number</h2>
+        <p>
+          Same Texas company. Their Local Services Ads account was verified, carried the Google Guaranteed
+          badge, and had weekly budget allocated behind it. Through the first three and a half months of
+          the year it produced two leads, and the owner assumed the market was slow.
+        </p>
+        <p>
+          The account had the agency&rsquo;s tracking phone number on it, and the routing was broken.
+          Several job types were switched off entirely. The platform was set up to spend and all but
+          unable to deliver a call.
+        </p>
+        <p>
+          This one took a fifty-minute call with Google to unwind. The fix was not clever. Someone just
+          had to look. We have found{" "}
+          <a
+            href="/blog/dead-phone-number-lsa"
+            className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors"
+          >
+            broken phone numbers in live LSA campaigns
+          </a>{" "}
+          more than once, which is why calling the number is the first check in every LSA audit we run.
+        </p>
+
+        <h2>$7,783 a month into a lead platform returning $475</h2>
+        <p>
+          The Midwest company again. One line item: $7,783 a month going to a home-services lead
+          marketplace. We matched the leads against booked revenue using their own call reports. The
+          return was about $475 a month.
+        </p>
+        <p>
+          Not every lead platform is a scam. Their plumbing leads actually penciled. But nobody had ever
+          split the number by trade, so the profitable slice was subsidizing a fire pit.
+        </p>
+
+        <h2>The company whose own domain belonged to its lead vendor</h2>
+        <p>
+          A young home services company went to cancel its lead-generation vendor and discovered the
+          vendor controlled its domain. Cancel the service, lose the website and everything attached to
+          it.
+        </p>
+        <p>
+          This is the quiet cousin of the agency-owns-your-website contract. Nobody reads the fine print
+          on who registered the domain until the relationship ends. By then the leverage runs one
+          direction. The fix is sequencing: secure your own domain, your own website, and your own
+          Business Profile first, and only then make the cancellation call. Cancel first and you negotiate
+          for your own name from zero.
+        </p>
+
+        <h2>The company where nothing was measured at all</h2>
+        <p>
+          A Northwest service company had a website for years. No analytics on it. Not broken analytics,
+          none. No tracking on calls, none on forms. Every marketing decision the owner had ever made was
+          made on feel.
+        </p>
+        <p>
+          He is not an outlier. A surprising share of the companies we audit are measuring nothing at all.
+          Their agencies still send reports.
+        </p>
+
+        <h2>The pattern</h2>
+        <p>
+          Four companies, one pattern:{" "}
+          <strong>
+            the report and the reality had come apart, and nobody inside the building had the access or
+            the time to check.
+          </strong>
+        </p>
+        <p>
+          None of these owners were careless. They run crews, they answer emergencies, they carry
+          payroll. They did what owners do: they trusted the dashboard. The dashboard was measuring page
+          views, robots, and a phone number that did not ring.
+        </p>
+
+        <h2>The three questions that would have caught all of it</h2>
+        <ol>
+          <li>
+            <strong>What exactly counts as a &ldquo;conversion&rdquo; in my account?</strong> If nobody
+            can answer in one sentence, that number is decoration.
+          </li>
+          <li>
+            <strong>How much of my website traffic is human, and local?</strong> If your report cannot
+            split that, it is not a report.
+          </li>
+          <li>
+            <strong>If I call the number on my own ads right now, what happens?</strong> Try it. Today.
+          </li>
+        </ol>
+        <p>
+          We run these checks, and a much longer list behind them, in the audit we do before we ever
+          propose anything. It is free, it takes about 15 minutes of your time to start, and you keep the
+          findings whether or not we ever work together.
+        </p>
+        <div className="mt-8">
+          <Link
+            href="/audit"
+            className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3 text-base font-semibold text-white transition hover:bg-[#0D2318]"
+          >
+            Get Your Free Audit
+          </Link>
+        </div>
+        <p className="mt-10 text-sm italic text-gray-500">
+          All figures come from audits performed inside the companies&rsquo; own Google Ads, Google
+          Analytics, Local Services Ads, and call reporting accounts in 2026, with owner permission.
+          Companies anonymized.
+        </p>
+      </div>
+    ),
+  },
+
   "google-removed-call-button-gbp": {
     title: "Google Just Removed the Call Button from Your GBP Listing: What Contractors Need to Know",
     description:
@@ -4659,7 +4830,7 @@ const posts: Record<string, Post> = {
   "three-agencies-one-report": {
     title: "Three Agencies. All Reporting Green. Here&rsquo;s What We Actually Found.",
     description:
-      "A contractor was spending $20,000 a month across three marketing vendors. Every monthly report showed strong performance. 16,962 tracked conversions. 22 actual phone calls. Here's what the gap looked like.",
+      "A contractor was spending $20,000 a month across three marketing vendors. Every monthly report showed strong performance. 16,962 tracked conversions. 21 actual phone calls. Here's what the gap looked like.",
     date: "April 2026",
     dateISO: "2026-04-07",
     readTime: "8 min read",
@@ -4675,12 +4846,12 @@ const posts: Record<string, Post> = {
           When we got into the accounts, here&rsquo;s what we found.
         </p>
         <p>
-          16,962 tracked conversions. 22 were actual phone calls.
+          16,962 tracked conversions. 21 were actual phone calls.
         </p>
 
         <h2>What Those Numbers Mean</h2>
         <p>
-          The remaining 16,940 &ldquo;conversions&rdquo; were things like someone clicking a button on the
+          The remaining 16,941 &ldquo;conversions&rdquo; were things like someone clicking a button on the
           website, someone visiting two pages in a row, someone scrolling past 50% of a page. These counted
           as conversions in the dashboards. They went into the reports. The reports showed strong numbers.
           Nobody asked what a conversion actually was.
