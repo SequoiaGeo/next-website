@@ -51,8 +51,67 @@ export async function POST(req: Request) {
 
     const gapText = annualGap !== undefined ? fmt(annualGap) : "your revenue gap";
 
-    // 1. Send the breakdown to the prospect
-    await resend.emails.send({
+    // Capture the lead FIRST (notify Aaron + push to GHL), each isolated in its own
+    // try/catch so one channel failing can never swallow the lead. The prospect
+    // breakdown email is secondary: if the sender domain hiccups in Resend, we still
+    // keep the lead. This is the fix for the silent-drop that hid broken capture.
+
+    // 1. Notify Aaron (highest priority — never lose the lead to an email/CRM hiccup)
+    try {
+      await resend.emails.send({
+        from: "Sequoia GEO Site <aaron@sequoiageo.com>",
+        to: "Aaron@sequoiageo.com",
+        subject: `Calculator lead: ${name} (gap ${gapText})`,
+        html: `
+          <div style="font-family: -apple-system, sans-serif; padding: 24px; color: #1a1a1a;">
+            <h2 style="margin: 0 0 16px;">New Marketing Leak Calculator lead</h2>
+            <p><strong>Name:</strong> ${safeName}</p>
+            <p><strong>Email:</strong> ${safeEmail}</p>
+            <p><strong>Monthly spend:</strong> ${monthlySpend !== undefined ? fmt(monthlySpend) : "-"}</p>
+            <p><strong>Monthly calls:</strong> ${monthlyCalls ?? "-"}</p>
+            <p><strong>Booking rate:</strong> ${bookingRate ?? "-"}%</p>
+            <p><strong>Average ticket:</strong> ${avgTicket !== undefined ? fmt(avgTicket) : "-"}</p>
+            <p><strong>Current monthly revenue:</strong> ${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</p>
+            <p><strong>Annual gap:</strong> ${gapText}</p>
+            <p><strong>Source:</strong> sequoiageo.com/marketing-leak-calculator</p>
+          </div>
+        `,
+      });
+    } catch (err) {
+      console.error("[calculator-lead] Aaron notify email failed:", err);
+    }
+
+    // 2. Push to GHL (isolated — a CRM outage must not lose the lead either)
+    const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;
+    if (ghlWebhookUrl) {
+      try {
+        const r = await fetch(ghlWebhookUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            firstName: name.split(" ")[0],
+            lastName: name.split(" ").slice(1).join(" ") || "",
+            email,
+            source: "Marketing Leak Calculator",
+            tags: ["marketing-leak-calculator", "website-lead"],
+            customField: {
+              monthly_spend: monthlySpend,
+              monthly_calls: monthlyCalls,
+              booking_rate: bookingRate,
+              avg_ticket: avgTicket,
+              annual_gap: annualGap,
+            },
+          }),
+        });
+        if (!r.ok) console.error(`[calculator-lead] GHL webhook returned ${r.status} for ${email}`);
+      } catch (err) {
+        console.error("[calculator-lead] GHL webhook error:", err);
+      }
+    }
+
+    // 3. Send the breakdown to the prospect (secondary — failure here must not abort capture)
+    try {
+      await resend.emails.send({
       from: "Aaron Husak <aaron@sequoiageo.com>",
       to: email,
       subject: "Your marketing leak breakdown",
@@ -94,57 +153,9 @@ export async function POST(req: Request) {
           </p>
         </div>
       `,
-    });
-
-    // 2. Notify Aaron with the full lead detail
-    await resend.emails.send({
-      from: "Sequoia GEO Site <aaron@sequoiageo.com>",
-      to: "Aaron@sequoiageo.com",
-      subject: `Calculator lead: ${name} (gap ${gapText})`,
-      html: `
-        <div style="font-family: -apple-system, sans-serif; padding: 24px; color: #1a1a1a;">
-          <h2 style="margin: 0 0 16px;">New Marketing Leak Calculator lead</h2>
-          <p><strong>Name:</strong> ${safeName}</p>
-          <p><strong>Email:</strong> ${safeEmail}</p>
-          <p><strong>Monthly spend:</strong> ${monthlySpend !== undefined ? fmt(monthlySpend) : "-"}</p>
-          <p><strong>Monthly calls:</strong> ${monthlyCalls ?? "-"}</p>
-          <p><strong>Booking rate:</strong> ${bookingRate ?? "-"}%</p>
-          <p><strong>Average ticket:</strong> ${avgTicket !== undefined ? fmt(avgTicket) : "-"}</p>
-          <p><strong>Current monthly revenue:</strong> ${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</p>
-          <p><strong>Annual gap:</strong> ${gapText}</p>
-          <p><strong>Source:</strong> sequoiageo.com/marketing-leak-calculator</p>
-        </div>
-      `,
-    });
-
-    // 3. Push to GHL
-    const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;
-    if (ghlWebhookUrl) {
-      await fetch(ghlWebhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          firstName: name.split(" ")[0],
-          lastName: name.split(" ").slice(1).join(" ") || "",
-          email,
-          source: "Marketing Leak Calculator",
-          tags: ["marketing-leak-calculator", "website-lead"],
-          customField: {
-            monthly_spend: monthlySpend,
-            monthly_calls: monthlyCalls,
-            booking_rate: bookingRate,
-            avg_ticket: avgTicket,
-            annual_gap: annualGap,
-          },
-        }),
-      })
-        .then((r) => {
-          if (!r.ok) console.error(`[calculator-lead] GHL webhook returned ${r.status} for ${email}`);
-        })
-        .catch((err) => {
-          // Lead already emailed; log so CRM drops are visible instead of silent.
-          console.error("[calculator-lead] GHL webhook error:", err);
-        });
+      });
+    } catch (emailErr) {
+      console.error("[calculator-lead] prospect breakdown email failed:", emailErr);
     }
 
     return NextResponse.json({ success: true });
