@@ -2,11 +2,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Roofing SEO That Books Jobs, Not Just Leads | Sequoia GEO",
+  title: "Roofing SEO That Books Jobs, Run by an Operator | Sequoia GEO",
   description:
-    "Roofing companies don't need more leads, they need more booked jobs. I manage roofing SEO to revenue, not impressions. Built by a 13-year home services operator.",
+    "Most roofing SEO reports rankings. I run it to booked jobs and revenue, tracked from first call to signed contract. Built by a 4x Inc 5000 home services operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/roofing-seo",
+  },
+  openGraph: {
+    title: "Roofing SEO That Books Jobs, Run by an Operator",
+    description:
+      "Most roofing SEO reports rankings. I run it to booked jobs and revenue, tracked from first call to signed contract. Built by a 4x Inc 5000 home services operator.",
+    url: "https://www.sequoiageo.com/roofing-seo",
+    type: "website",
   },
 };
 
