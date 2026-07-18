@@ -129,6 +129,11 @@ export default function HvacSeoPage() {
               content that matches what your customers are searching when their equipment fails.
               My HVAC SEO approach ties every tactic to a business outcome, not just organic
               traffic numbers.
+              {" "}The market data behind that approach is on our{" "}
+              <Link href="/hvac-statistics" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
+                HVAC industry statistics
+              </Link>{" "}
+              page: market size, the technician shortage, seasonal demand swings, and how homeowners pick a contractor.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -304,6 +309,8 @@ export default function HvacSeoPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               After working with HVAC companies across competitive markets, these are the patterns that consistently hold businesses back from ranking where they should.
+              {" "}The market data behind these patterns is in our{" "}
+              <Link href="/hvac-statistics" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">2026 HVAC industry statistics</Link>.
             </p>
           </div>
 
@@ -450,7 +457,7 @@ export default function HvacSeoPage() {
               },
               {
                 q: "What makes HVAC SEO different from general SEO?",
-                a: "HVAC SEO is local by definition: every job requires physical proximity. It is seasonal: demand spikes in summer and winter and craters in spring and fall. It is emergency-driven: the highest-intent searches happen when equipment fails, not when homeowners are planning ahead. These constraints shape keyword research, content strategy, and campaign management differently than they would for a national brand or B2B company. SEO for HVAC companies that does not account for these dynamics produces generic results that look good in reports but do not move the dispatch board. Every HVAC business has different peak seasons, different service mixes, and different competitive pressures — a successful HVAC SEO campaign is built around those specifics.",
+                a: "HVAC SEO is local by definition: every job requires physical proximity. It is seasonal: demand spikes in summer and winter and craters in spring and fall. It is emergency-driven: the highest-intent searches happen when equipment fails, not when homeowners are planning ahead. These constraints shape keyword research, content strategy, and campaign management differently than they would for a national brand or B2B company. SEO for HVAC companies that does not account for these dynamics produces generic results that look good in reports but do not move the dispatch board. Every HVAC business has different peak seasons, different service mixes, and different competitive pressures. A successful HVAC SEO campaign is built around those specifics.",
               },
               {
                 q: "Do I need both paid advertising and organic SEO for my HVAC company?",
@@ -466,7 +473,7 @@ export default function HvacSeoPage() {
               },
               {
                 q: "How do I measure whether my HVAC SEO is working?",
-                a: "The right metrics are phone calls and booked jobs from organic search, not rankings alone. Build your tracking infrastructure first: Google Analytics for web page behavior, Google Search Console for search query data, and call tracking to connect organic website traffic to actual phone calls. Once that infrastructure is in place, you can measure SEO performance against real business outcomes rather than vanity metrics. HVAC services range widely in ticket value — AC repair visits, maintenance agreements, and full system replacements each have different economics, and your attribution should reflect that. If your HVAC SEO program cannot show a clear line from search rankings to dispatched jobs, the program is not being managed correctly.",
+                a: "The right metrics are phone calls and booked jobs from organic search, not rankings alone. Build your tracking infrastructure first: Google Analytics for web page behavior, Google Search Console for search query data, and call tracking to connect organic website traffic to actual phone calls. Once that infrastructure is in place, you can measure SEO performance against real business outcomes rather than vanity metrics. HVAC services range widely in ticket value: AC repair visits, maintenance agreements, and full system replacements each have different economics, and your attribution should reflect that. If your HVAC SEO program cannot show a clear line from search rankings to dispatched jobs, the program is not being managed correctly.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -495,7 +502,7 @@ export default function HvacSeoPage() {
             {[
               {
                 title: "Local SEO and Google Business Profile",
-                body: "Local SEO is the highest-ROI channel for most HVAC contractors. Google Business Profile optimization drives Map Pack visibility, which captures the majority of clicks on emergency HVAC queries. Accurate NAP citations, consistent review velocity, and service area configuration are the foundation of search rankings that produce phone calls from homeowners ready to book. For HVAC companies competing in dense markets, online visibility in the Map Pack determines whether your phone rings or a competitor's does — the difference between the first and fourth result in the Map Pack is often the majority of available clicks.",
+                body: "Local SEO is the highest-ROI channel for most HVAC contractors. Google Business Profile optimization drives Map Pack visibility, which captures the majority of clicks on emergency HVAC queries. Accurate NAP citations, consistent review velocity, and service area configuration are the foundation of search rankings that produce phone calls from homeowners ready to book. For HVAC companies competing in dense markets, online visibility in the Map Pack determines whether your phone rings or a competitor's does. The difference between the first and fourth result in the Map Pack is often the majority of available clicks.",
               },
               {
                 title: "On-Page SEO and Service Pages",
@@ -503,7 +510,7 @@ export default function HvacSeoPage() {
               },
               {
                 title: "Technical SEO and Website Performance",
-                body: "Technical SEO covers the infrastructure that search engines use to crawl, index, and rank your web pages. For HVAC companies, this includes website speed optimization, mobile page speed, Core Web Vitals, schema markup for local businesses, and proper site architecture. Website speed matters specifically because most emergency HVAC searches happen on mobile — a slow-loading HVAC website loses potential customers before they read a single line. Search engines use page experience signals as ranking factors, and a fast, well-structured HVAC website tells search engines your business deserves to outrank competitors with slower, less organized sites.",
+                body: "Technical SEO covers the infrastructure that search engines use to crawl, index, and rank your web pages. For HVAC companies, this includes website speed optimization, mobile page speed, Core Web Vitals, schema markup for local businesses, and proper site architecture. Website speed matters specifically because most emergency HVAC searches happen on mobile. A slow-loading HVAC website loses potential customers before they read a single line. Search engines use page experience signals as ranking factors, and a fast, well-structured HVAC website tells search engines your business deserves to outrank competitors with slower, less organized sites.",
               },
               {
                 title: "Off-Page SEO and Online Reputation Management",

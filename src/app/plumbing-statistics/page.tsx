@@ -259,6 +259,7 @@ export default function PlumbingStatisticsPage() {
               { label: "Local Services Ads", href: "/lsa-management" },
               { label: "LSA Statistics 2026", href: "/local-services-ads-statistics" },
               { label: "HVAC Statistics", href: "/hvac-statistics" },
+              { label: "Best Plumbing SEO Keywords", href: "/blog/best-plumbing-seo-keywords" },
               { label: "Fractional CMO", href: "/fractional-cmo" },
               { label: "Free LSA Guide", href: "/lsa-guide" },
             ].map((link) => (

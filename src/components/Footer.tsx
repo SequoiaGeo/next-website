@@ -8,6 +8,9 @@ const services = [
   { label: "LSA Management", href: "/lsa-management" },
   { label: "Fractional CMO", href: "/fractional-cmo" },
   { label: "AI Automation", href: "/ai-automation" },
+  { label: "GEO / AI Search", href: "/geo-agency" },
+  { label: "GEO for Plumbers", href: "/geo-for-plumbers" },
+  { label: "GEO for Restoration", href: "/geo-for-restoration" },
   { label: "Fresno SEO Agency", href: "/seo-agency-fresno" },
 ];
 

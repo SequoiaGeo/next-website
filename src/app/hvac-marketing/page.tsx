@@ -96,6 +96,8 @@ export default function HvacMarketingIndexPage() {
             rather than operating in isolation. The HVAC industry requires a different approach
             than most industries because HVAC services are need-driven, seasonal, and local
             by nature, making channel coordination critical to consistent HVAC lead flow.
+            {" "}The demand and seasonality numbers behind this approach are in our{" "}
+            <Link href="/hvac-statistics" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">2026 HVAC industry statistics</Link>.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[

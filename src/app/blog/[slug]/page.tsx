@@ -1376,6 +1376,11 @@ const posts: Record<string, Post> = {
           frequently they appear in AI-generated recommendations. The window to build this infrastructure
           before your competitors do is still open, but it&rsquo;s closing.
         </p>
+        <p>
+          If you would rather have this built for you, that is what our{" "}
+          <Link href="/geo-for-plumbers" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">GEO for plumbers service</Link>{" "}
+          covers.
+        </p>
       </div>
     ),
   },
@@ -5416,6 +5421,13 @@ const posts: Record<string, Post> = {
         </p>
         <p>
           GEO is a new category but the work is real. The businesses that take it seriously now are going to be the ones still thriving when traditional SEO becomes a smaller slice of the pie.
+        </p>
+        <p>
+          How we run this in practice is on the{" "}
+          <Link href="/geo-agency" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">GEO agency services page</Link>
+          , with trade breakdowns for{" "}
+          <Link href="/geo-for-plumbers" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">plumbers</Link>{" "}and{" "}
+          <Link href="/geo-for-restoration" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">restoration companies</Link>.
         </p>
 
         <h2>Frequently Asked Questions</h2>

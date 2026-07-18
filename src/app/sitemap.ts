@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/leaving-my-marketing-agency`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 
     // Statistics pages
-    { url: `${BASE_URL}/hvac-statistics`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/hvac-statistics`, lastModified: "2026-07-18", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/plumbing-statistics`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/local-services-ads-statistics`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 

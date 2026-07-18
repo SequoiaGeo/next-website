@@ -257,13 +257,18 @@ export default function AboutPage() {
               producing growth. They don&rsquo;t need more vendors. They need someone who reads the full
               picture.
             </p>
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">
+              Sequoia GEO is based in Fresno, California and works with contractors nationwide.
+              Fresno businesses can start with our{" "}
+              <Link href="/seo-agency-fresno" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">Fresno SEO services</Link>.
+            </p>
           </div>
 
           {/* Stats bar */}
           <div className="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
             {[
               { stat: "Max 10", label: "clients" },
-              { stat: "$2M–$15M", label: "revenue range" },
+              { stat: "$2M to $15M", label: "revenue range" },
               { stat: "30-day", label: "engagement start" },
               { stat: "No long-term", label: "contract required" },
             ].map((item) => (

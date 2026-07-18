@@ -40,7 +40,7 @@ export default function RoofingSeoPage() {
                 "name": "How much does roofing SEO cost?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Roofing SEO cost typically ranges from $1,500 to $5,000 per month for a full-service engagement that includes keyword research, content development, technical SEO, link building, and Google Business Profile management. The right question is not how much does roofing SEO cost but what does roofing SEO produce - because a well-executed roofing SEO program should produce a positive return on investment within 12 months."
+                  "text": "My engagements start at $2,500 per month. What that covers depends on your market and how much ground there is to make up, which is why every engagement starts with an audit. The better question is what the program produces. A roofing SEO program that cannot show you booked jobs by month 12 was not worth any price."
                 }
               },
               {
@@ -185,7 +185,7 @@ export default function RoofingSeoPage() {
             {[
               {
                 title: "Lead-to-booked job conversion",
-                body: "How many of your roofing leads actually become scheduled inspections? The industry average is under 50%. If yours is worse, more ad spend makes the problem bigger, not smaller.",
+                body: "How many of your roofing leads actually become scheduled inspections? If your booking rate is broken, more ad spend makes the problem bigger, not smaller.",
               },
               {
                 title: "Average ticket by channel",
@@ -341,11 +341,11 @@ export default function RoofingSeoPage() {
               },
               {
                 title: "Technical SEO and On-Page SEO",
-                body: "Technical SEO and on page SEO address the infrastructure of your roofing website. Missing meta descriptions, duplicate title tags, broken internal links, slow site speed, and improper mobile optimization are ranking suppressors that silently undermine every other SEO effort. Search engines crawl, index, and rank based on technical signals, pages that fail technical standards don&rsquo;t appear in search engine results regardless of content quality. More than 60% of roofing searches happen on mobile devices &ndash; a slow roofing website is a direct revenue leak.",
+                body: "Technical SEO and on page SEO address the infrastructure of your roofing website. Missing meta descriptions, duplicate title tags, broken internal links, slow site speed, and improper mobile optimization are ranking suppressors that silently undermine every other SEO effort. Search engines crawl, index, and rank based on technical signals, pages that fail technical standards don&rsquo;t appear in search engine results regardless of content quality. A slow roofing website is a direct revenue leak.",
               },
               {
                 title: "Link Building and Online Reputation",
-                body: "High quality backlinks from local and roofing-industry sources signal trust to search engines. Roofing companies that earn 2&ndash;3 new backlinks per month consistently outrank competitors with similar websites but weaker link profiles. Online reviews compound this effect &ndash; review velocity directly affects both Map Pack rankings and conversion rates from every traffic source.",
+                body: "High quality backlinks from local and roofing-industry sources signal trust to search engines. Steady month over month link building beats short bursts. Online reviews compound this effect: review velocity directly affects both Map Pack rankings and conversion rates from every traffic source.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -387,7 +387,7 @@ export default function RoofingSeoPage() {
               {
                 step: "02",
                 title: "Earn Reviews Faster Than Your Closest Competitors",
-                body: "Google Maps rankings are heavily influenced by review recency, not just total count. A roofing company with 200 reviews and 10 in the last 30 days will outrank a competitor with 800 reviews and 2 in the last 30 days. Build a system that asks every satisfied roofing customer for a review within 24 hours of job completion. Consistent review velocity is one of the most powerful local SEO signals a roofing business can build.",
+                body: "Google Maps rankings are heavily influenced by review recency, not just total count. Build a system that asks every satisfied roofing customer for a review within 24 hours of job completion. Consistent review velocity is one of the most powerful local SEO signals a roofing business can build.",
               },
               {
                 step: "03",
@@ -397,7 +397,7 @@ export default function RoofingSeoPage() {
               {
                 step: "04",
                 title: "Invest in Mobile Speed Before Anything Else",
-                body: "More than 60% of roofing searches happen on mobile devices. If your roofing website loads slowly on cellular or is difficult to navigate on a phone, you are losing potential customers before they ever read your offer. Page speed is a direct ranking signal in Google&rsquo;s algorithm. Improving mobile performance is often the highest-ROI technical SEO investment a roofing company can make, and it is frequently the most neglected.",
+                body: "If your roofing website loads slowly on cellular or is difficult to navigate on a phone, you are losing potential customers before they ever read your offer. Page speed is a direct ranking signal in Google&rsquo;s algorithm. Improving mobile performance is often the highest-ROI technical SEO investment a roofing company can make, and it is frequently the most neglected.",
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6">
@@ -430,7 +430,7 @@ export default function RoofingSeoPage() {
               },
               {
                 q: "How much does roofing SEO cost?",
-                a: "Pricing for roofing SEO typically ranges from $1,500 to $5,000 per month for a full-service engagement that includes keyword research, content development, technical SEO, link building, and Google Business Profile management. The right question is not &ldquo;how much does roofing SEO cost&rdquo; but &ldquo;what does roofing SEO produce&rdquo; &ndash; because a well-executed roofing SEO program should produce a positive return on investment within 12 months.",
+                a: "My engagements start at $2,500 per month. What that covers depends on your market and how much ground there is to make up, which is why every engagement starts with an audit. The better question is what the program produces. A roofing SEO program that cannot show you booked jobs by month 12 was not worth any price.",
               },
               {
                 q: "Do I need roofing SEO if I&rsquo;m already running Google Ads?",

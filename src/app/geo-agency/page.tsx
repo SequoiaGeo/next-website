@@ -183,6 +183,16 @@ export default function GeoAgencyPage() {
               </div>
             ))}
           </div>
+          <p className="mt-8 text-center text-sm text-gray-600 max-w-2xl mx-auto">
+            GEO work is trade specific. See how it applies to{" "}
+            <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">plumbing companies</Link>
+            ,{" "}
+            <Link href="/geo-for-restoration" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">restoration companies</Link>
+            , and{" "}
+            <Link href="/roofing-seo" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">roofing companies</Link>
+            , or read the full{" "}
+            <Link href="/contractors-guide-ai-search" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">Contractor&rsquo;s Guide to AI Search</Link>.
+          </p>
         </div>
       </section>
 

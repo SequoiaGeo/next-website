@@ -506,6 +506,9 @@ export default function ContractorsGuideAISearchPage() {
             </Link>
             , the GEO layer builds directly on that foundation. You&rsquo;re not starting over, you&rsquo;re
             extending what you already have.
+            {" "}For the trade-specific version of this playbook, see{" "}
+            <Link href="/geo-for-plumbers" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] underline underline-offset-2">GEO for plumbers</Link>{" "}and{" "}
+            <Link href="/geo-for-restoration" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] underline underline-offset-2">GEO for restoration companies</Link>.
           </p>
 
           {/* Common Mistakes */}

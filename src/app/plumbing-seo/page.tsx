@@ -667,6 +667,7 @@ export default function PlumbingSeoPage() {
               { label: "HVAC SEO", href: "/hvac-seo" },
               { label: "Roofing SEO", href: "/roofing-seo" },
               { label: "Fractional CMO", href: "/fractional-cmo" },
+              { label: "Best Plumbing SEO Keywords", href: "/blog/best-plumbing-seo-keywords" },
               { label: "Leaving Your Agency?", href: "/leaving-my-marketing-agency" },
             ].map((link) => (
               <Link
