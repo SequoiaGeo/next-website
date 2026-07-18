@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Trade-specific SEO pages
     { url: `${BASE_URL}/hvac-seo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/plumbing-seo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/roofing-seo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/roofing-seo`, lastModified: "2026-07-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/restoration-seo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/hvac-marketing`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
 

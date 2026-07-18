@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,6 +17,37 @@ export const metadata: Metadata = {
   },
 };
 
+const roofingFaqs = [
+  {
+    q: "How long does roofing SEO take to produce results?",
+    a: "Plan on 3 to 6 months before rankings move in a meaningful way, and 6 to 12 months before the revenue impact is obvious. Smaller markets move faster. Competitive metros take longer. Anyone promising page one in 30 days is selling something they cannot control.",
+  },
+  {
+    q: "How much does roofing SEO cost?",
+    a: "My engagements start at $2,500 per month. What that covers depends on your market and how much ground there is to make up, which is why every engagement starts with an audit. The better question is what the program produces. A roofing SEO program that cannot show you booked jobs by month 12 was not worth any price.",
+  },
+  {
+    q: "Do I need roofing SEO if I am already running Google Ads?",
+    a: "Yes, and they work best together. Ads produce volume today and stop the moment you stop paying. SEO compounds. As organic rankings build over 6 to 12 months, you can pull ad spend off the terms you now own and lower your blended cost per lead. Treating them as an either-or decision is the most common mistake I see roofing companies make.",
+  },
+  {
+    q: "What makes roofing SEO different from general SEO?",
+    a: "Roofing has extreme seasonality, storm-driven demand spikes, an insurance-versus-retail split that changes the entire keyword universe, and job tickets that run from a small repair to a full replacement. A generalist agency applies the same template it uses for law firms and restaurants and misses all of it. Ask for proof from the trades before you sign anything.",
+  },
+  {
+    q: "How does storm damage affect roofing SEO strategy?",
+    a: "When hail or high winds move through a market, search demand spikes within hours, and the companies that already rank capture it at no added cost. You cannot start SEO after the storm and catch that wave. The whole strategy is building visibility before the season so the spike lands on you instead of your competitors.",
+  },
+  {
+    q: "What is AI SEO for roofing companies?",
+    a: "Homeowners now ask ChatGPT, Perplexity, and Google’s AI results who to call instead of scrolling a list of links. AI SEO, also called generative engine optimization or GEO, is the work of making your roofing company one of the names those tools give: entity clarity, structured data, consistent citations across the sources AI tools trust, and content written to be cited. It is the discipline this practice was named after.",
+  },
+  {
+    q: "How do I know if my roofing SEO company is performing?",
+    a: "Ask for reporting that connects organic traffic to booked roofing jobs, not click and impression charts. A performing program shows growing calls from organic search and a declining cost per acquired customer. If your agency cannot produce those numbers, the program is not being managed to revenue.",
+  },
+];
+
 export default function RoofingSeoPage() {
   return (
     <>
@@ -26,81 +57,15 @@ export default function RoofingSeoPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How long does roofing SEO take to produce results?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Roofing SEO typically produces measurable ranking improvements within 3 to 6 months, with significant revenue impact at the 6 to 12 month mark. Roofing companies in smaller markets often see faster results. In highly competitive urban markets, plan for a 9 to 12 month runway before organic search surpasses paid advertising as a lead volume driver."
-                }
+            mainEntity: roofingFaqs.map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.a,
               },
-              {
-                "@type": "Question",
-                "name": "How much does roofing SEO cost?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "My engagements start at $2,500 per month. What that covers depends on your market and how much ground there is to make up, which is why every engagement starts with an audit. The better question is what the program produces. A roofing SEO program that cannot show you booked jobs by month 12 was not worth any price."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Do I need roofing SEO if I am already running Google Ads?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Google Ads delivers immediate visibility but stops producing leads the moment you stop paying. Roofing SEO builds sustainable organic rankings that generate consistent traffic without ongoing per-click costs. Roofing companies that invest in SEO alongside paid search build a diversified lead generation foundation that is more resilient and more cost-effective long-term. Organic search results typically convert at higher rates than paid ads because potential customers trust them more."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What makes a roofing SEO agency different from a general SEO agency?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A roofing SEO agency understands the seasonal demand patterns, storm-driven lead spikes, insurance claim workflows, and high-ticket sales cycles specific to the roofing industry. A general SEO agency applies the same template across every industry and misses the nuances that matter in roofing markets. Ask any SEO agency you evaluate for roofing-specific case studies with revenue outcomes before you commit."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What roofing SEO results should I realistically expect?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "For most roofing companies starting from a weak organic baseline, realistic targets include page one rankings for 10 to 15 primary roofing keywords within 6 months, measurable increases in organic traffic and phone call volume by month 3, and a positive revenue return on SEO investment within 12 months."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What roofing keywords should I be targeting first?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Start with the keywords that produce the highest-margin jobs in your market: roof replacement, roof installation, and hail damage repair generate the highest average tickets and justify the SEO investment fastest. Emergency keywords like roof leak repair and emergency roofing produce faster conversions but at lower ticket values. A complete roofing keyword research strategy maps both high-ticket and high-urgency queries to dedicated service pages so you capture demand at every buyer stage."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does storm damage affect roofing SEO strategy?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Storm events create temporary search demand spikes that roofing companies with strong existing organic visibility capture at zero additional cost. Companies without organic rankings cannot build them fast enough to benefit after a storm. The strategy is to build local search visibility and domain authority before storm season so that when search volume spikes, your roofing company appears above competitors who only relied on paid advertising."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do I know if my roofing SEO agency is actually performing?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ask for reporting that connects organic traffic to booked roofing jobs, not just click and impression data. A performing roofing SEO program shows increasing organic traffic to service pages, growing phone call volume from organic search, and a declining cost per acquired roofing customer over time. If your agency cannot show you these numbers, the program is not being managed with revenue accountability."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What are the most important factors in roofing SEO that most agencies overlook?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The factors most agencies overlook are the ones that connect search visibility to actual revenue. Optimized listings across local business directories ensure consistent NAP data that local search algorithms depend on. High quality leads from organic search convert at higher rates than paid leads - but only if the roofing website loads fast on mobile devices and the phone is answered correctly. Online reputation management, including systematic review generation and building relationships with past customers for referrals, drives the brand visibility that compounds local search rankings over time."
-                }
-              }
-            ]
-          })
+            })),
+          }),
         }}
       />
       {/* Hero */}
@@ -109,16 +74,16 @@ export default function RoofingSeoPage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
               <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
-              Roofing Marketing
+              Roofing SEO
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
-              Roofing SEO That Connects to{" "}
-              <span className="text-[#1A5C3A]">Revenue, Not Reports</span>
+              Roofing SEO Services That Book Jobs,{" "}
+              <span className="text-[#1A5C3A]">Not Just Rankings</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Most roofing marketing agencies report on rankings and leads. I report on cost per booked job,
-              booking rate by lead source, and average ticket by channel. That&rsquo;s the difference between
-              an agency and someone who&rsquo;s run a home services company.
+              Most roofing SEO reports on rankings and traffic. I report on cost per booked job,
+              booking rate by lead source, and average ticket by channel. I ran a home services
+              company for 13 years before I ever sold marketing. That changes what gets measured.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -149,9 +114,11 @@ export default function RoofingSeoPage() {
               An exteriors company in the map pack top 3 across 88 to 96 percent of its territory
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              The same local discipline applied to an Austin exteriors company: reviews grown
-              from 9 to 28 at a straight 5.0, listings synced across ~49 directories, and every
-              Local Services Ads lead watched, with wrong-fit leads disputed for credit.
+              Luma Exteriors is not a roofing company. It is a premium Austin siding, windows, and
+              doors contractor, and the same map pack discipline decides who gets the call in both
+              trades. Reviews grew from 9 to 28 at a straight 5.0, listings stayed synced across
+              roughly 49 directories, and every Local Services Ads lead got watched, with wrong-fit
+              leads disputed for credit.
             </p>
             <Link
               href="/case-studies/luma-exteriors"
@@ -173,118 +140,93 @@ export default function RoofingSeoPage() {
         </div>
       </section>
 
-      {/* What's different */}
-      <section className="bg-[#0D2318] py-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              What Your Roofing Marketing Is Missing
-            </h2>
-          </div>
-          <div className="mx-auto max-w-4xl grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {[
-              {
-                title: "Lead-to-booked job conversion",
-                body: "How many of your roofing leads actually become scheduled inspections? If your booking rate is broken, more ad spend makes the problem bigger, not smaller.",
-              },
-              {
-                title: "Average ticket by channel",
-                body: "Storm leads close at different tickets than organic search leads. Insurance vs. retail vs. maintenance: I track which channels produce your most profitable work.",
-              },
-              {
-                title: "Review velocity vs. competitors",
-                body: "In roofing, review recency matters more than total count. I'll show you exactly how your review pace compares to the top 3 Map Pack competitors in your market.",
-              },
-              {
-                title: "Off-season lead strategy",
-                body: "Most roofing companies go quiet in winter. I build the pipeline now so you're first when spring hits. Organic visibility compounds. Paid ads don't.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <h3 className="text-base font-bold text-[#3A9E6A]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services list */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Roofing Marketing, End to End
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Every channel tied to closed revenue, not just lead volume.
-            </p>
-          </div>
-          <div className="mx-auto max-w-4xl grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Google Ads for roof replacement & repair",
-              "Local Service Ads management",
-              "Google Business Profile optimization",
-              "Map Pack ranking strategy",
-              "Storm season campaign surge management",
-              "Review generation systems",
-              "Roofing web design and site speed optimization",
-              "Website conversion optimization",
-              "Local business listings and citation management",
-              "Lead source ROI tracking",
-              "AI search visibility (ChatGPT, Perplexity)",
-              "Insurance lead strategy",
-              "Call tracking & booking rate analysis",
-              "Off-season organic pipeline building",
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-3 rounded-xl border border-gray-200 bg-[#fafaf8] px-4 py-3">
-                <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-                <span className="text-sm text-gray-700">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Roofing SEO Services breakdown */}
+      {/* What a Roofing SEO Engagement Covers */}
       <section className="bg-[#fafaf8] py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Roofing SEO Services: What&rsquo;s Actually Included
+              What a Roofing SEO Engagement Covers
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Not all roofing SEO services are the same. Here is exactly what a full-service roofing SEO program covers
-              and what each component produces for your roofing business.
+              Six areas of work. Each one exists because it moves a number a roofing owner actually
+              cares about.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "Local SEO for Roofing",
-                body: "Local SEO for roofing companies focuses on Google Maps rankings, Google Business Profile management, and city-specific landing pages. These SEO services drive phone calls from homeowners actively searching for roofing contractors in their area. A roofing company that dominates Google Maps in its market generates more leads than most paid advertising budgets can match at the same cost.",
+                title: "Local SEO and Google Business Profile",
+                body: (
+                  <>
+                    The map pack gets the calls. Everyone below the fold splits the leftovers. This
+                    work is Business Profile management, review velocity, consistent listings across
+                    every directory Google checks, and a profile that stays active week after week.
+                    It is the same system that put Luma Exteriors in the top 3 across 88 to 96
+                    percent of its service area.
+                  </>
+                ),
               },
               {
-                title: "On-Page SEO and Meta Descriptions",
-                body: "On page SEO for roofing websites means writing and optimizing title tags, meta descriptions, header structure, and internal linking for every service page. Meta descriptions directly affect click-through rates from search engine results pages. Every roofing service page, roof replacement, roof repair, storm damage, commercial roofing, needs individually optimized on page SEO elements to compete in search engines.",
+                title: "Service Pages That Match How Homeowners Search",
+                body: (
+                  <>
+                    Roof replacement, roof repair, storm damage, and emergency tarping are different
+                    searches from different buyers, and each needs its own page. Same for every city
+                    you serve. One generic {"“"}services{"”"} page ranks for nothing and
+                    forces your best prospects to guess whether you do their job in their town.
+                  </>
+                ),
               },
               {
-                title: "Technical SEO Audit",
-                body: "A complete SEO audit of your roofing website identifies the issues suppressing your rankings: slow site speed on mobile, crawl errors, duplicate content, broken schema markup, and missing canonical tags. Roofing companies that fix technical SEO issues before investing in content see faster ranking improvements. Many roofing websites carry technical problems that no amount of new content can overcome.",
+                title: "Technical Health",
+                body: (
+                  <>
+                    Slow mobile pages, crawl errors, duplicate content, and broken schema quietly
+                    cap every other effort. I audit and fix the technical layer first, because
+                    content on a broken site is money spent twice.
+                  </>
+                ),
               },
               {
-                title: "Keyword Strategy and Content",
-                body: "Effective roofer SEO requires targeting the relevant keywords homeowners actually search: roof replacement cost, hail damage roof repair, emergency tarping, and local city variants. SEO services that skip proper keyword research produce content that ranks for zero-volume queries. The right keywords, mapped to dedicated service pages, are the foundation of roofing SEO services that generate revenue, not just impressions.",
+                title: "Content Built Around the Roofing Buyer",
+                body: (
+                  <>
+                    Roofing demand comes in four flavors: aging-roof research, replacement shopping,
+                    storm emergencies, and insurance claims. The content plan maps pages to each
+                    stage before the season, because the companies that win after a storm are the
+                    ones who ranked before it. Generic content mills cannot write this; I spent 13
+                    years inside home services and it shows in the work. I published the full
+                    framework in the{" "}
+                    <Link
+                      href="/blog/roofing-seo-complete-guide-to-ranking"
+                      className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]"
+                    >
+                      complete roofing SEO guide
+                    </Link>
+                    .
+                  </>
+                ),
               },
               {
-                title: "Google Maps and Citation Building",
-                body: "Roofer SEO for local markets depends heavily on Google Maps visibility and consistent citations across local directories. Inconsistent NAP data across directories directly suppresses Google Maps rankings for roofing companies. SEO for roofing companies in competitive markets requires both Google Maps optimization and citation cleanup before other local SEO work will produce stable results.",
+                title: "Authority and Reputation",
+                body: (
+                  <>
+                    Links from local sources, manufacturer certification pages, and coverage that AI
+                    tools and Google both trust. Plus a review engine that keeps recency up, because
+                    a profile that went quiet reads as a company that went quiet.
+                  </>
+                ),
               },
               {
-                title: "AI Search and Answer Engine Optimization",
-                body: "Answer engine optimization is the fastest-growing component of roofer SEO services. ChatGPT, Perplexity, and Google AI Overviews now answer roofing questions directly in search results. Roofing businesses that appear in these AI-generated answers gain online visibility that no paid advertising can replicate. Structured content, Q&amp;A formatting, and schema markup are the foundations of answer engine optimization for the roofing industry.",
+                title: "Tracking to Revenue, Not Rankings",
+                body: (
+                  <>
+                    Search Console, call tracking, and your CRM wired together so we both know which
+                    queries produce booked jobs and what each channel{"’"}s average ticket is.
+                    If a report cannot answer {"“"}what did this cost per booked job,{"”"}{" "}
+                    it is not a report. It is a receipt.
+                  </>
+                ),
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -296,120 +238,201 @@ export default function RoofingSeoPage() {
         </div>
       </section>
 
-      {/* Credentials */}
-      <section className="bg-[#fafaf8] py-16">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="rounded-2xl border border-[#3A9E6A]/20 bg-white p-8 shadow-sm text-center">
-            <h2 className="text-xl font-extrabold text-[#1a1a1a]">About Aaron Husak</h2>
-            <p className="mt-3 text-base leading-relaxed text-gray-600 max-w-2xl mx-auto">
-              California Licensed Contractor (B General, C-2, C-20 HVAC, C-36 Plumbing). I built{" "}
-              <strong>Balanced Comfort</strong> from a one-truck startup to <strong>130+ employees</strong> over a decade in <strong>home services</strong>.{" "}
-              <strong>4x Inc 5000</strong> honoree. I started <strong>Sequoia GEO</strong> to provide{" "}
-              <strong>digital marketing</strong> services built around operator metrics: <strong>closed jobs</strong>,{" "}
-              <strong>cost per booked job</strong>, and <strong>revenue</strong> per channel. Not impressions. Not rankings alone.
-            </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
-              {["B General", "C-2", "C-20 HVAC", "C-36 Plumbing", "4x Inc 5000"].map((c) => (
-                <span key={c} className="rounded-full bg-[#C8EDD2] px-4 py-1.5 text-sm font-medium text-[#0D2318]">{c}</span>
-              ))}
+      {/* Run by an Operator */}
+      <section className="bg-[#0D2318] py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+              Run by an Operator, Not an Account Manager
+            </h2>
+          </div>
+          <div className="mx-auto max-w-4xl grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {[
+              {
+                title: "Lead-to-booked-job conversion",
+                body: "How many of your roofing leads become scheduled inspections? Most owners cannot answer that number. If your booking rate is broken, more traffic makes the problem bigger, not smaller. I check this before recommending you spend anything.",
+              },
+              {
+                title: "Average ticket by channel",
+                body: "Storm leads close at different tickets than organic leads. Insurance versus retail versus maintenance: I track which channels produce your most profitable work, not just the most calls.",
+              },
+              {
+                title: "Review velocity vs. competitors",
+                body: "In roofing, review recency matters more than lifetime count. I benchmark your review pace against the top 3 map pack competitors in your market and build the system that closes the gap.",
+              },
+              {
+                title: "Off-season pipeline",
+                body: "Most roofing companies go quiet in winter. Organic visibility compounds, paid ads do not. The pipeline you build in the slow months is the one that answers when spring hits.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <h3 className="text-base font-bold text-[#3A9E6A]">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mx-auto max-w-4xl mt-10">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
+              <h3 className="text-xl font-extrabold text-white">About Aaron Husak</h3>
+              <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80 max-w-2xl mx-auto">
+                California licensed contractor (B General, C-2, C-20 HVAC, C-36 Plumbing). I built
+                Balanced Comfort from one truck to 130+ employees over 13 years in home services.
+                4x Inc 5000. I started Sequoia GEO to run marketing on operator metrics: closed
+                jobs, cost per booked job, and revenue by channel. Not impressions. Not rankings
+                alone.
+              </p>
+              <div className="mt-6 flex flex-wrap justify-center gap-3">
+                {["B General", "C-2", "C-20 HVAC", "C-36 Plumbing", "4x Inc 5000"].map((c) => (
+                  <span key={c} className="rounded-full bg-[#C8EDD2] px-4 py-1.5 text-sm font-medium text-[#0D2318]">{c}</span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What Roofing SEO Requires */}
+      {/* AI SEO for Roofing Companies */}
       <section className="bg-white py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              AI SEO for Roofing Companies
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Homeowners have started asking ChatGPT, Perplexity, and Google{"’"}s AI results
+              who to call for a roof. When the answer names two or three companies and yours is not
+              one of them, you lost the job before a search results page ever loaded.
+            </p>
+          </div>
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-gray-600">
+              Roofing contractors already know this is coming. I can see it in my own Search
+              Console: roofers are searching for AI SEO help. Most agencies added {"“"}AI
+              {"”"} to their services page last year. This practice is named Sequoia GEO
+              because generative engine optimization is the discipline it was built around, not a
+              bolt-on.
+            </p>
+            <p className="text-base leading-relaxed text-gray-600">
+              The work is different from classic SEO. AI tools do not rank pages, they name
+              businesses. Getting named takes entity clarity, schema and structured data,
+              consistent citations across the sources AI tools cross-reference, and content with
+              enough first-hand depth to be worth citing. The local SEO foundation above feeds it
+              directly: the same reviews, listings, and authority signals that move the map pack
+              are what AI tools check before they recommend anyone.
+            </p>
+          </div>
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/geo-agency"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            >
+              How our GEO practice works
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+            <Link
+              href="/contractors-guide-ai-search"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            >
+              The Contractor&rsquo;s Guide to AI Search
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* How to Choose a Roofing SEO Company */}
+      <section className="bg-[#fafaf8] py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What Roofing SEO Actually Requires
+              How to Choose a Roofing SEO Company
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Roofing SEO is a specialized discipline. Here are the four pillars that determine whether roofing
-              companies rank or get buried.
+              Most roofing contractors have been burned at least once by an SEO company that
+              promised rankings and delivered reports. Here is what to check before you sign
+              anything, with any company, including this one.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {[
               {
-                title: "Local SEO and Google Business Profile",
-                body: "Local SEO is the foundation of roofing SEO. Map Pack rankings require a fully optimized Google Business Profile, consistent local citations, and location-specific service pages for every city you serve. Roofing companies that skip local SEO fundamentals cannot compete in organic search regardless of how good their roofing website looks.",
+                title: "Proof from the trades",
+                body: (
+                  <>
+                    An agency that also serves law firms and e-commerce brands is not wrong to
+                    exist, but roofing seasonality, storm spikes, and insurance workflows are blind
+                    spots you will pay to have them learn. Ask for home services proof with real
+                    numbers, not ranking screenshots. Mine is published: the{" "}
+                    <Link
+                      href="/case-studies/luma-exteriors"
+                      className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]"
+                    >
+                      Luma Exteriors case study
+                    </Link>
+                    , with the methodology and the caveats in writing.
+                  </>
+                ),
               },
               {
-                title: "Roofing Keyword Research",
-                body: "Effective roofing keyword research targets three categories: high-intent transactional keywords (&ldquo;roof replacement cost&rdquo;), informational roofing keywords (&ldquo;how long does roof replacement take&rdquo;), and local roofing keywords (&ldquo;roofing contractors in [city]&rdquo;). Targeting only the highest-volume keywords misses the most profitable search opportunities.",
+                title: "Reporting that reaches revenue",
+                body: (
+                  <>
+                    Any company can show a ranking chart. Ask whether their reporting connects
+                    search visibility to booked inspections and closed jobs. If the answer involves
+                    impressions, keep asking. If it cannot get past clicks, that is the blind spot
+                    that will hide a failing program for a year.
+                  </>
+                ),
               },
               {
-                title: "Technical SEO and On-Page SEO",
-                body: "Technical SEO and on page SEO address the infrastructure of your roofing website. Missing meta descriptions, duplicate title tags, broken internal links, slow site speed, and improper mobile optimization are ranking suppressors that silently undermine every other SEO effort. Search engines crawl, index, and rank based on technical signals, pages that fail technical standards don&rsquo;t appear in search engine results regardless of content quality. A slow roofing website is a direct revenue leak.",
+                title: "You own everything",
+                body: (
+                  <>
+                    Your Business Profile, your Search Console property, your website, your ad
+                    accounts. All of it should live in accounts you control, with the agency added
+                    as a manager. Ask any company what happens to your content and rankings if you
+                    leave. My answer: everything stays with you, because it was yours the whole
+                    time.
+                  </>
+                ),
               },
               {
-                title: "Link Building and Online Reputation",
-                body: "High quality backlinks from local and roofing-industry sources signal trust to search engines. Steady month over month link building beats short bursts. Online reviews compound this effect: review velocity directly affects both Map Pack rankings and conversion rates from every traffic source.",
+                title: "An audit before a contract",
+                body: (
+                  <>
+                    A company confident in its work will look at your market, your site, and your
+                    current numbers before asking you to commit. If the sales process starts with a
+                    contract instead of an audit, the program will start with invoices instead of a
+                    plan.
+                  </>
+                ),
               },
             ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-                <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
-                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
-                  </div>
-                </div>
+              <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
+                <h3 className="text-base font-bold text-[#1a1a1a] mb-3">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-gray-600">{item.body}</p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Roofing SEO Tips */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Roofing SEO Tips That Actually Move the Needle
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Tactical improvements roofing business owners can implement now.
+          <div className="mt-10 rounded-2xl border border-[#3A9E6A]/30 bg-white p-7 sm:p-8">
+            <p className="text-base leading-relaxed text-gray-700">
+              I published a ranked comparison of nine roofing marketing agencies, and I put Sequoia
+              GEO ninth on my own list, because a list built to sell you is not research. If you
+              are shopping, start there and read it with your revenue size in mind.
             </p>
-          </div>
-          <div className="space-y-8">
-            {[
-              {
-                step: "01",
-                title: "Build a City-Specific Service Page for Every Market You Serve",
-                body: "A single &ldquo;service area&rdquo; page does not rank for city-specific roofing queries. Roofing companies that serve multiple cities need a dedicated landing page for each one, targeting local keywords like &ldquo;roofing contractors in [city]&rdquo; and &ldquo;roof replacement [city].&rdquo; These local pages are the highest-converting pages on any roofing website because they capture search traffic from potential customers who are specifically looking for roofing companies in their city.",
-              },
-              {
-                step: "02",
-                title: "Earn Reviews Faster Than Your Closest Competitors",
-                body: "Google Maps rankings are heavily influenced by review recency, not just total count. Build a system that asks every satisfied roofing customer for a review within 24 hours of job completion. Consistent review velocity is one of the most powerful local SEO signals a roofing business can build.",
-              },
-              {
-                step: "03",
-                title: "Track Every Lead Back to Revenue, Not Just Clicks",
-                body: "Roofing SEO success is not measured in organic traffic or keyword rankings alone. Connect your SEO program to call tracking and CRM data so you know exactly which roofing keywords are producing booked jobs, what the average ticket is by channel, and whether your SEO investment is generating a positive return. Digital marketing strategies that cannot demonstrate ROI at the revenue level should not survive budget reviews.",
-              },
-              {
-                step: "04",
-                title: "Invest in Mobile Speed Before Anything Else",
-                body: "If your roofing website loads slowly on cellular or is difficult to navigate on a phone, you are losing potential customers before they ever read your offer. Page speed is a direct ranking signal in Google&rsquo;s algorithm. Improving mobile performance is often the highest-ROI technical SEO investment a roofing company can make, and it is frequently the most neglected.",
-              },
-            ].map((item) => (
-              <div key={item.step} className="flex gap-6">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#1A5C3A] text-sm font-bold text-white">
-                  {item.step}
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-[#1a1a1a]">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
-                </div>
-              </div>
-            ))}
+            <Link
+              href="/best-roofing-marketing-agencies"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            >
+              Best Roofing Marketing Agencies, Ranked
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
@@ -419,223 +442,47 @@ export default function RoofingSeoPage() {
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Roofing SEO Questions I Get Asked Every Week
+              Roofing SEO Questions, Answered Straight
             </h2>
           </div>
           <div className="space-y-6">
-            {[
-              {
-                q: "How long does roofing SEO take to produce results?",
-                a: "Roofing SEO typically produces measurable ranking improvements within 3 to 6 months, with significant revenue impact at the 6 to 12 month mark. Roofing companies in smaller markets often see faster results. In highly competitive urban markets, plan for a 9 to 12 month runway before organic search surpasses paid advertising as a lead volume driver.",
-              },
-              {
-                q: "How much does roofing SEO cost?",
-                a: "My engagements start at $2,500 per month. What that covers depends on your market and how much ground there is to make up, which is why every engagement starts with an audit. The better question is what the program produces. A roofing SEO program that cannot show you booked jobs by month 12 was not worth any price.",
-              },
-              {
-                q: "Do I need roofing SEO if I&rsquo;m already running Google Ads?",
-                a: "Yes. Google Ads delivers immediate visibility but stops producing leads the moment you stop paying. Roofing SEO builds sustainable organic rankings that generate consistent traffic without ongoing per-click costs. Roofing companies that invest in SEO alongside paid search build a diversified lead generation foundation that is more resilient and more cost-effective long-term. Organic search results typically convert at higher rates than paid ads because potential customers trust them more.",
-              },
-              {
-                q: "What makes a specialized roofing SEO company different from a general SEO agency?",
-                a: "A roofing SEO company that specializes in contractors understands the seasonal demand patterns, storm-driven lead spikes, insurance claim workflows, and high-ticket sales cycles specific to the roofing industry. A general SEO agency applies the same template across every industry and misses the nuances that matter in roofing markets. Ask any SEO agency you evaluate for roofing-specific case studies with revenue outcomes before you commit.",
-              },
-              {
-                q: "What roofing SEO results should I realistically expect?",
-                a: "For most roofing companies starting from a weak organic baseline, realistic targets include page one rankings for 10 to 15 primary roofing keywords within 6 months, measurable increases in website traffic and phone call volume by month 3, and a positive revenue return on SEO investment within 12 months. I use Google Search Console and call tracking to measure SEO success at every stage so there are never surprises.",
-              },
-            ].map((item) => (
+            {roofingFaqs.map((item, i) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 p-7">
-                <h3 className="text-base font-bold text-[#1a1a1a]" dangerouslySetInnerHTML={{ __html: item.q }} />
-                <p className="mt-3 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.a }} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What Roofing SEO Involves */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What Roofing SEO Actually Involves
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Search engine optimization for roofing companies spans local SEO, on-page content, technical
-              performance, and off-page authority. Each component serves a different purpose in the buyer journey
-              from roof damage awareness to calling a roofing contractor, and each drives a different mix of website traffic.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {[
-              {
-                title: "Local SEO and Google Business Profile",
-                body: "<strong>Local SEO</strong> is the highest-ROI channel for most roofing companies. <strong>Google Business Profile</strong> optimization drives Map Pack visibility for the queries homeowners use when they notice roof damage or start evaluating replacement costs. Consistent reviews, accurate service categories, and service area configuration are the foundation of <strong>local search</strong> rankings that produce <strong>phone calls</strong> and convert <strong>website visitors</strong> into <strong>qualified leads</strong> before any other channel.",
-              },
-              {
-                title: "On-Page SEO and Roofing Service Pages",
-                body: "On-page <strong>SEO</strong> for roofing websites means building dedicated service pages for residential roof replacement, commercial roofing, storm damage repair, roof inspections, and emergency tarping. Each page targets the specific <strong>secondary keywords</strong> homeowners and insurance adjusters use when searching for roofing services. Thin, generic roofing pages that try to cover everything rank for nothing and convert <strong>potential customers</strong> at far lower rates.",
-              },
-              {
-                title: "Storm Damage and Insurance SEO",
-                body: "Roofing <strong>SEO</strong> must account for storm-driven demand spikes that are different from any other home service vertical. When hail storms or high winds move through a market, search volume for roofing services spikes within hours. Roofing companies with strong local search visibility capture that demand at zero incremental ad cost. Insurance claim content and storm damage landing pages are critical components of a roofing <strong>SEO strategy</strong> that converts <strong>high quality leads</strong>.",
-              },
-              {
-                title: "Link Building and Online Reputation",
-                body: "<strong>Link building</strong> for roofing companies earns <strong>high quality</strong> backlinks from local business directories, manufacturer certifications and partner pages, home improvement platforms, and local media coverage of storm events. <strong>Online reputation</strong> management and <strong>building relationships</strong> with past customers through review requests builds the <strong>brand visibility</strong> that converts <strong>search results</strong> traffic into calls. Domain authority accumulated through consistent link building determines which roofing companies rank above their competitors.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
-                <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
-                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Roofing SEO Strategy */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Roofing SEO Strategy: Ranking Before the Storm Hits
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              The roofing companies that win after storm events are the ones who built their organic search
-              visibility before any damage occurred. You cannot start SEO after hail hits and expect to benefit
-              from the search volume spike.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {[
-              {
-                number: "01",
-                title: "Keyword Research for Roofing Buyer Intent",
-                body: "Roofing <strong>keyword research</strong> covers four buyer stages: awareness (damage signs, roof age questions), consideration (cost estimates, contractor evaluation), emergency (storm damage, active leak), and insurance (claim process, adjuster questions). Each stage requires different content and different service pages targeting <strong>secondary keywords</strong>. A complete roofing <strong>SEO strategy</strong> builds qualified traffic across the full buyer journey, capturing <strong>potential customers</strong> at every stage.",
-              },
-              {
-                number: "02",
-                title: "Content Marketing for Long-Form Authority",
-                body: "<strong>Content marketing</strong> for roofing companies builds <strong>organic search</strong> traffic through informational content that answers the questions homeowners ask before calling a roofer: how long does a roof last, what does hail damage look like, how does a roofing insurance claim work. This content builds domain authority, attracts <strong>high quality</strong> backlinks, and builds <strong>brand visibility</strong> that positions the company as the most credible roofing contractor in the <strong>local search</strong> results.",
-              },
-              {
-                number: "03",
-                title: "Reputation Management and Review Strategy",
-                body: "<strong>Online reputation</strong> management is a conversion signal and a local ranking signal for roofing companies. Homeowners evaluating roofing contractors compare reviews before calling. <strong>Building relationships</strong> with past customers through a systematic review generation process consistently builds the <strong>online reputation</strong> that converts <strong>search results</strong> traffic to <strong>phone calls</strong>. Review velocity and recency matter more than total count for most roofing <strong>local SEO</strong> programs.",
-              },
-              {
-                number: "04",
-                title: "Roofing SEO Reporting That Tracks Revenue",
-                body: "Most roofing <strong>SEO</strong> reports track rankings and <strong>organic traffic</strong>. Revenue-focused reporting connects <strong>organic search</strong> sessions to <strong>phone calls</strong>, calls to booked appointments, and appointments to contracted roofing jobs. That tracking infrastructure requires <strong>Google Analytics</strong>, Google Search Console, <strong>call tracking</strong> with keyword attribution, and CRM integration. <strong>Marketing ROI</strong> measured at the job level, not the click level, is the only number that tells you whether your <strong>marketing investment</strong> is producing <strong>revenue</strong>.",
-              },
-            ].map((item) => (
-              <div key={item.number} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-                <div className="mb-4 text-4xl font-black text-[#C8EDD2]">{item.number}</div>
-                <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Choosing a Roofing SEO Company */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What to Look For in a Roofing SEO Company
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Most roofing contractors have been burned by an SEO company that promised rankings and delivered reports.
-              Here is how to evaluate any roofing SEO company before signing a contract.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {[
-              {
-                title: "Roofing Industry Expertise",
-                body: "A roofing SEO company that also works with law firms, restaurants, and e-commerce brands does not have roofing industry expertise. The roofing industry has unique seasonal demand patterns, storm-driven lead spikes, insurance claim workflows, and high-ticket sales cycles that generalist SEO companies consistently miss. Ask for roofing-specific case studies with revenue outcomes, not just ranking screenshots.",
-              },
-              {
-                title: "Revenue Reporting, Not Just Rankings",
-                body: "Any SEO company can show you a ranking report. Demand reporting that connects search visibility to roofing leads, booked inspections, and closed revenue. Roofing SEO experts who are accountable to business outcomes use Google Search Console, call tracking, and CRM integration to show the full picture from first search to signed contract. If an SEO company cannot produce revenue-level reporting, they are not running a measurable program.",
-              },
-              {
-                title: "No Long-Term Lock-In Contracts",
-                body: "A roofing SEO company that requires 12 or 24-month contracts is protecting their revenue, not yours. Strong SEO companies earn retention through results, not paperwork. Month-to-month agreements with 30-day out clauses are the standard for roofing SEO specialists who are confident in their work. Ask any roofing SEO company you evaluate what happens to your content, your rankings, and your Google Business Profile if you decide to leave.",
-              },
-              {
-                title: "Free SEO Audit Before Commitment",
-                body: "Reputable roofing SEO companies offer a free SEO audit before you commit to anything. A free SEO audit for your roofing business website should identify your current SEO ranking position, your top competitors in local search results, the technical issues on your roofing company's website, and the content gaps blocking your online visibility. If an SEO company will not audit your site before selling you a program, find roofing SEO experts who will.",
-              },
-              {
-                title: "Local SEO Strategies Built for Your Market",
-                body: "Roofing companies in Fresno have different competitive landscapes than those in Miami or Denver. The right roofing SEO company customizes local SEO strategies to your specific market, the right keywords your area actually searches, your real Map Pack competitors, and the digital marketing tools that produce results in your geography. Cookie-cutter local SEO strategies applied identically across every market produce below-average outcomes in most of them.",
-              },
-              {
-                title: "Transparent Access to Your Own Accounts",
-                body: "Credible roofing SEO webmasters share which digital marketing tools they use, keyword research tools like Ahrefs or Semrush, rank tracking platforms, Google Search Console access, and call tracking software. You should always retain full ownership of your Google Business Profile, your Search Console property, your roofing business website, and any advertising accounts. A trustworthy SEO company never holds your digital assets hostage when you choose to leave.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-                <h3 className="text-base font-bold text-[#1a1a1a] mb-3">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-gray-600">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Roofing SEO Extended FAQ */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              More Roofing SEO Questions
-            </h2>
-          </div>
-          <div className="space-y-5">
-            {[
-              {
-                q: "What roofing keywords should I be targeting first?",
-                a: "Start with the keywords that produce the highest-margin jobs in your market: roof replacement, roof installation, and hail damage repair generate the highest average tickets and justify the SEO investment fastest. Emergency keywords like 'roof leak repair' and 'emergency roofing' produce faster conversions but at lower ticket values. A complete roofing keyword research strategy maps both high-ticket and high-urgency queries to dedicated service pages so you capture demand at every buyer stage. This is the foundation of search engine optimization that produces revenue, not just rankings.",
-              },
-              {
-                q: "How does storm damage affect roofing SEO strategy?",
-                a: "Storm events create temporary search demand spikes that roofing companies with strong existing organic visibility capture at zero additional cost. Companies without organic rankings cannot build them fast enough to benefit after a storm. The strategy is to build local search visibility and domain authority before storm season so that when search volume spikes, your roofing company appears above competitors who only relied on paid advertising.",
-              },
-              {
-                q: "How do I know if my roofing SEO agency is actually performing?",
-                a: "Ask for reporting that connects organic traffic to booked roofing jobs, not just click and impression data. A performing roofing SEO program shows increasing organic traffic to service pages, growing phone call volume from organic search, and a declining cost per acquired roofing customer over time. If your agency cannot show you these numbers, the program is not being managed with revenue accountability.",
-              },
-              {
-                q: "What are the most important factors in roofing SEO that most agencies overlook?",
-                a: "The factors most agencies overlook are the ones that connect search visibility to actual revenue. Optimized listings across local business directories ensure consistent NAP data that local search algorithms depend on. High quality leads from organic search convert at higher rates than paid leads, but only if the roofing website loads fast on mobile devices and the phone is answered correctly. Online reputation management, including systematic review generation and building relationships with past customers for referrals, drives the brand visibility that compounds local search rankings over time. Most roofing SEO agencies optimize the website and forget the full picture.",
-              },
-              {
-                q: "Should I run Google Ads and roofing SEO at the same time?",
-                a: "Yes, Google Ads and roofing SEO serve different functions and work best together. Google Ads produce immediate visibility for roof repair, storm damage, and replacement queries while your organic SEO rankings build. As organic search results grow over 6 to 12 months, Google Ads spend can be reduced on terms where you now rank organically, lowering your blended cost per roofing lead. A digital marketing strategy that combines both channels gives you short-term Google Ads volume and long-term roofing SEO compounding. The mistake most roofing companies make is treating Google Ads and SEO as either/or decisions instead of a coordinated digital marketing investment.",
-              },
-              {
-                q: "What happens to my roof repair and emergency service SEO?",
-                a: "Roof repair and emergency roofing queries are some of the highest-converting searches a roofing company can rank for, homeowners searching for roof repair or emergency tarping are ready to call immediately. Dedicated roof repair service pages with clear location targeting and fast site speed outperform generic pages that lump all roofing services together. A well-structured roofing website has separate, optimized pages for roof replacement, roof repair, storm damage, and emergency services, each targeting the specific search intent of that buyer rather than competing with itself.",
-              },
-            ].map((item) => (
-              <div key={item.q} className="rounded-2xl border border-gray-200 bg-white p-7">
                 <h3 className="text-base font-bold text-[#1a1a1a]">{item.q}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.a}</p>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                  {i === 1 ? (
+                    <>
+                      My engagements{" "}
+                      <Link
+                        href="/how-it-works"
+                        className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]"
+                      >
+                        start at $2,500 per month
+                      </Link>
+                      . What that covers depends on your market and how much ground there is to
+                      make up, which is why every engagement starts with an audit. The better
+                      question is what the program produces. A roofing SEO program that cannot show
+                      you booked jobs by month 12 was not worth any price.
+                    </>
+                  ) : i === 5 ? (
+                    <>
+                      Homeowners now ask ChatGPT, Perplexity, and Google{"’"}s AI results who
+                      to call instead of scrolling a list of links. AI SEO, also called{" "}
+                      <Link
+                        href="/geo-agency"
+                        className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]"
+                      >
+                        generative engine optimization
+                      </Link>{" "}
+                      or GEO, is the work of making your roofing company one of the names those
+                      tools give: entity clarity, structured data, consistent citations across the
+                      sources AI tools trust, and content written to be cited. It is the discipline
+                      this practice was named after.
+                    </>
+                  ) : (
+                    item.a
+                  )}
+                </p>
               </div>
             ))}
           </div>
@@ -653,12 +500,13 @@ export default function RoofingSeoPage() {
               Roofing SEO works best as part of a coordinated digital marketing strategy.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { label: "Local Services Ads", href: "/lsa-management" },
+              { label: "GEO Agency", href: "/geo-agency" },
               { label: "HVAC SEO", href: "/hvac-seo" },
+              { label: "Restoration SEO", href: "/restoration-seo" },
               { label: "Plumbing SEO", href: "/plumbing-seo" },
-              { label: "Fractional CMO", href: "/fractional-cmo" },
+              { label: "Local Services Ads", href: "/lsa-management" },
               { label: "Leaving Your Agency?", href: "/leaving-my-marketing-agency" },
             ].map((link) => (
               <Link
