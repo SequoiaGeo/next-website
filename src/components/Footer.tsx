@@ -60,7 +60,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-pale-green/80 text-sm leading-relaxed max-w-md mb-4">
-              Growth operations for home service companies doing $2M&ndash;$15M.
+              Growth operations for home service companies doing $2M to $15M.
               Founded by Aaron Husak, 4x Inc 5000 honoree and 13-year home services operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">
@@ -148,7 +148,7 @@ export default function Footer() {
                 Business Hours
               </p>
               <p className="text-sm text-pale-green/70">
-                Mon &ndash; Fri, 9AM &ndash; 7PM Pacific
+                Mon to Fri, 9AM to 7PM Pacific
               </p>
             </div>
           </div>
