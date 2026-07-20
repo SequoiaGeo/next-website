@@ -15,7 +15,7 @@ declare global {
 
 /**
  * Fetch a reCAPTCHA v3 token for the given action. Returns "" when the key
- * isn't configured or the script failed to load, so forms keep working —
+ * isn't configured or the script failed to load, so forms keep working, 
  * the server's honeypot + timing layers still run regardless.
  */
 export async function getRecaptchaToken(action: string): Promise<string> {

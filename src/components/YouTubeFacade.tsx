@@ -11,7 +11,7 @@ interface Props {
 }
 
 /**
- * YouTube facade — shows a static thumbnail until the user clicks play.
+ * YouTube facade, shows a static thumbnail until the user clicks play.
  * Prevents YouTube from loading ~500KB of JS on initial page load.
  * Saves ~400ms TBT on mobile, which is worth ~10-15 PageSpeed points.
  */

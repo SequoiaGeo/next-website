@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const goodFit = [
-  "Spending $5K–$30K/month on marketing with revenue that isn't growing proportionally",
+  "Spending $5K to $30K/month on marketing with revenue that isn't growing proportionally",
   "Can't answer \"which channel produces our most profitable jobs\" in 30 seconds",
-  "Been through 2–3 agencies in the last few years and none of them moved the needle",
+  "Been through 2 to 3 agencies in the last few years and none of them moved the needle",
   "Want someone who understands your P&L, not just your click-through rate",
-  "Doing $2M–$15M and need executive marketing leadership without the $300K salary",
+  "Doing $2M to $15M and need executive marketing leadership without the $300K salary",
 ];
 
 const badFit = [

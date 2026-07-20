@@ -56,7 +56,7 @@ export async function POST(req: Request) {
     // breakdown email is secondary: if the sender domain hiccups in Resend, we still
     // keep the lead. This is the fix for the silent-drop that hid broken capture.
 
-    // 1. Notify Aaron (highest priority — never lose the lead to an email/CRM hiccup)
+    // 1. Notify Aaron (highest priority, never lose the lead to an email/CRM hiccup)
     try {
       await resend.emails.send({
         from: "Sequoia GEO Site <aaron@sequoiageo.com>",
@@ -81,7 +81,7 @@ export async function POST(req: Request) {
       console.error("[calculator-lead] Aaron notify email failed:", err);
     }
 
-    // 2. Push to GHL (isolated — a CRM outage must not lose the lead either)
+    // 2. Push to GHL (isolated, a CRM outage must not lose the lead either)
     const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;
     if (ghlWebhookUrl) {
       try {
@@ -109,7 +109,7 @@ export async function POST(req: Request) {
       }
     }
 
-    // 3. Send the breakdown to the prospect (secondary — failure here must not abort capture)
+    // 3. Send the breakdown to the prospect (secondary, failure here must not abort capture)
     try {
       await resend.emails.send({
       from: "Aaron Husak <aaron@sequoiageo.com>",

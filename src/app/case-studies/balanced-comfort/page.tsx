@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const stats = [
   { value: "$17M+", label: "Annual revenue at exit" },
   { value: "4,000+", label: "5-star Google reviews" },
-  { value: "4x", label: "Inc 5000 (2020–2023)" },
+  { value: "4x", label: "Inc 5000 (2020 to 2023)" },
   { value: "3x", label: "Best Place to Work certified" },
 ];
 

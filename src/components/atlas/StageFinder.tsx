@@ -15,8 +15,8 @@ const QUESTIONS = [
     q: "How old is the business?",
     opts: [
       { v: "<1yr", l: "Under 1 year" },
-      { v: "1-3yr", l: "1–3 years" },
-      { v: "3-10yr", l: "3–10 years" },
+      { v: "1-3yr", l: "1 to 3 years" },
+      { v: "3-10yr", l: "3 to 10 years" },
       { v: "10+yr", l: "10+ years" },
     ],
   },
@@ -25,8 +25,8 @@ const QUESTIONS = [
     q: "Rough annual revenue?",
     opts: [
       { v: "<250k", l: "Under $250K" },
-      { v: "250k-1m", l: "$250K – $1M" },
-      { v: "1-5m", l: "$1M – $5M" },
+      { v: "250k-1m", l: "$250K to $1M" },
+      { v: "1-5m", l: "$1M to $5M" },
       { v: "5m+", l: "$5M+" },
     ],
   },

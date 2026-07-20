@@ -147,13 +147,13 @@ export default function LsaStatisticsPage() {
               </thead>
               <tbody className="divide-y divide-gray-100 bg-white">
                 {[
-                  { trade: "Water Damage / Restoration", range: "$80–$180", avg: "~$130" },
-                  { trade: "HVAC", range: "$45–$110", avg: "~$80" },
-                  { trade: "Roofing", range: "$60–$130", avg: "~$95" },
-                  { trade: "Plumbing", range: "$35–$85", avg: "~$69" },
-                  { trade: "Electrical", range: "$30–$70", avg: "~$50" },
-                  { trade: "Landscaping", range: "$20–$55", avg: "~$37" },
-                  { trade: "House Cleaning", range: "$12–$30", avg: "~$21" },
+                  { trade: "Water Damage / Restoration", range: "$80 to $180", avg: "~$130" },
+                  { trade: "HVAC", range: "$45 to $110", avg: "~$80" },
+                  { trade: "Roofing", range: "$60 to $130", avg: "~$95" },
+                  { trade: "Plumbing", range: "$35 to $85", avg: "~$69" },
+                  { trade: "Electrical", range: "$30 to $70", avg: "~$50" },
+                  { trade: "Landscaping", range: "$20 to $55", avg: "~$37" },
+                  { trade: "House Cleaning", range: "$12 to $30", avg: "~$21" },
                 ].map((row) => (
                   <tr key={row.trade} className="hover:bg-[#fafaf8]">
                     <td className="px-6 py-4 text-sm font-semibold text-[#1a1a1a]">{row.trade}</td>
@@ -170,7 +170,7 @@ export default function LsaStatisticsPage() {
             {[
               {
                 n: 8,
-                stat: "Response time dramatically affects LSA booking rate: contractors responding within 1 hour book 31% of leads; 1–4 hour response books 27%; 24+ hour response books only 15%.",
+                stat: "Response time dramatically affects LSA booking rate: contractors responding within 1 hour book 31% of leads; 1 to 4 hour response books 27%; 24+ hour response books only 15%.",
                 source: "Blue Grid Media, 50 LSA Statistics 2026",
               },
               {
@@ -210,7 +210,7 @@ export default function LsaStatisticsPage() {
               },
               {
                 n: 12,
-                stat: "Businesses typically recover 6–7% of their total LSA spend back in credits for unqualified leads, without active dispute management, that money is permanently lost.",
+                stat: "Businesses typically recover 6 to 7% of their total LSA spend back in credits for unqualified leads, without active dispute management, that money is permanently lost.",
                 source: "The Media Captain, Google LSA Statistics, based on 100+ client account analysis",
               },
               {

@@ -18,11 +18,11 @@ const agencies = [
     displayUrl: "hookagency.com",
     tag: "Best for Google-only contractors",
     tagColor: "bg-blue-100 text-blue-800",
-    idealFor: "$1M–$15M HVAC and roofing companies that want Google Search, Maps, and Ads managed under one roof",
-    pricing: "Public: $3,500–$15,000+/month (annual commitment required)",
+    idealFor: "$1M to $15M HVAC and roofing companies that want Google Search, Maps, and Ads managed under one roof",
+    pricing: "Public: $3,500 to $15,000+/month (annual commitment required)",
     teamScale: "~30 in-house staff",
     summary:
-      "Hook Agency is a home services-only marketing agency that has made a deliberate bet on Google, SEO, Ads, and Maps, and nothing else. They serve contractors in the $1M–$15M revenue range with transparent, publicly-listed retainer pricing, which is rare in this industry. Their proprietary RankMap.AI platform targets Google Maps rankings specifically, and their published team-to-client ratio of roughly 1:3 is lower than most competitors. With 170+ five-star Google reviews and an Inc 5000 ranking, they are one of the most visible agencies in the home services space.",
+      "Hook Agency is a home services-only marketing agency that has made a deliberate bet on Google, SEO, Ads, and Maps, and nothing else. They serve contractors in the $1M to $15M revenue range with transparent, publicly-listed retainer pricing, which is rare in this industry. Their proprietary RankMap.AI platform targets Google Maps rankings specifically, and their published team-to-client ratio of roughly 1:3 is lower than most competitors. With 170+ five-star Google reviews and an Inc 5000 ranking, they are one of the most visible agencies in the home services space.",
     strengths: [
       "Publicly published pricing, no discovery call required to get a number",
       "Proprietary RankMap.AI tool for Google Maps optimization",
@@ -44,7 +44,7 @@ const agencies = [
     tagColor: "bg-purple-100 text-purple-800",
     idealFor: "Multi-location operators, franchise groups, and PE-backed home service companies needing full-stack marketing plus operational support",
     pricing: "$10,000+ minimum project size; specific retainers not public",
-    teamScale: "50–249+ employees (merged entity)",
+    teamScale: "50 to 249+ employees (merged entity)",
     summary:
       "Blue Corona (founded 2007) and RYNO Strategic Solutions merged in late 2024 to form one of the largest home-services-focused marketing operations in the country, now backed by private equity under EverService Holdings. Together they offer digital marketing plus operational services, including 24/7 live call answering, CSR coaching via their TRAXION program, and ServiceTitan-integrated analytics through their proprietary Polaris dashboard. Their RYNOtrax2.0 platform integrates with ServiceTitan and 30+ marketing platforms for revenue attribution across 300+ KPIs. For contractors managing multiple locations or preparing for an acquisition event, this combination of marketing and operational infrastructure is genuinely differentiated.",
     strengths: [
@@ -67,7 +67,7 @@ const agencies = [
     tag: "Best for franchise & multi-location brands",
     tagColor: "bg-orange-100 text-orange-800",
     idealFor: "Franchise operators and large multi-location home service brands that need enterprise marketing infrastructure and AI-powered lead management",
-    pricing: "Not published; third-party reviews indicate $10,000–$25,000+/month with 12–24 month contracts",
+    pricing: "Not published; third-party reviews indicate $10,000 to $25,000+/month with 12 to 24 month contracts",
     teamScale: "Large; claims 20,000+ clients",
     summary:
       "Scorpion is one of the largest marketing platforms serving local businesses in the U.S., with a stated 20,000+ clients across home services, legal, and healthcare. They are particularly well-suited for franchises and multi-location operators who need enterprise-level infrastructure and a unified platform built around revenue attribution rather than vanity metrics. Their AI-powered advertising, lead scoring, and voice/messaging automation tools (branded Convert) extend beyond typical agency services. Pricing is enterprise-tier and contracts are on the longer end, which has generated mixed reviews among smaller contractors who feel locked in.",
@@ -80,7 +80,7 @@ const agencies = [
     considerations: [
       "Pricing is not transparent, requires full sales process to get a number",
       "Clutch reviews note aggressive contract terms and lead quality variability",
-      "Better suited for large operators than for contractors under $2M–$3M in revenue",
+      "Better suited for large operators than for contractors under $2M to $3M in revenue",
     ],
   },
   {
@@ -90,7 +90,7 @@ const agencies = [
     displayUrl: "rivaldigital.com",
     tag: "Best full-stack boutique partner",
     tagColor: "bg-teal-100 text-teal-800",
-    idealFor: "HVAC, plumbing, and home service contractors in the $1M–$10M range who want a dedicated team managing the full digital marketing stack under one engagement",
+    idealFor: "HVAC, plumbing, and home service contractors in the $1M to $10M range who want a dedicated team managing the full digital marketing stack under one engagement",
     pricing: "Not publicly listed; custom proposals via strategy session",
     teamScale: "40+ staff (Virginia Beach, VA)",
     summary:
@@ -190,7 +190,7 @@ const agencies = [
     pricing: "Varies by engagement; fractional CMO, paid media, and SEO retainers available",
     teamScale: "Boutique",
     summary:
-      "Sequoia GEO is a boutique home services marketing agency founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2020–2023) before founding the agency. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, which means recommendations come from someone who has answered for both the marketing spend and the bottom line simultaneously. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, website development, and fractional CMO engagements. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
+      "Sequoia GEO is a boutique home services marketing agency founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2020 to 2023) before founding the agency. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, which means recommendations come from someone who has answered for both the marketing spend and the bottom line simultaneously. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, website development, and fractional CMO engagements. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
     strengths: [
       "Founder scaled an HVAC company to $17M+ with four Inc 5000 rankings, not a marketer who learned the trades from the outside",
       "Fractional CMO model gives smaller contractors access to strategic leadership without a full-time hire",
@@ -365,16 +365,16 @@ export default function BestHvacMarketingAgenciesPage() {
                 a: "Most full-service agencies are priced above what makes sense at this stage. Start with Google Business Profile optimization, Local Services Ads, and a well-structured website. A fractional CMO engagement or LSA-focused boutique firm will deliver better ROI than a $5K+/month retainer before your revenue base can support it.",
               },
               {
-                q: "$1M–$5M in revenue",
+                q: "$1M to $5M in revenue",
                 a: "This is the range where SEO and paid search start compounding meaningfully. Hook Agency, Rival Digital, and Sequoia GEO are all built for this tier. Prioritize agencies with documented case studies in your specific revenue range, an agency that works primarily with $10M+ companies will optimize for different things than you need.",
               },
               {
-                q: "$5M–$15M in revenue",
+                q: "$5M to $15M in revenue",
                 a: "At this scale, you need integrated tracking from search click to booked job, not just campaign reports. Look for agencies with revenue attribution infrastructure (not just lead tracking) and experience managing multi-channel campaigns without siloing paid, organic, and LSA into disconnected programs.",
               },
               {
                 q: "$15M+ or multi-location",
-                a: "Scorpion, Blue Corona/RYNO, and Hook Agency's enterprise tier are the appropriate tier here. Franchise infrastructure, PE-readiness, and ServiceTitan integration become meaningful factors. Expect $10K–$25K+/month and longer contract terms.",
+                a: "Scorpion, Blue Corona/RYNO, and Hook Agency's enterprise tier are the appropriate tier here. Franchise infrastructure, PE-readiness, and ServiceTitan integration become meaningful factors. Expect $10K to $25K+/month and longer contract terms.",
               },
               {
                 q: "What questions should I ask any agency before hiring?",

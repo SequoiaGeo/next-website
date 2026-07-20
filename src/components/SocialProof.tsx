@@ -1,7 +1,7 @@
 const stats = [
   {
     label: "Inc. 5000 4x Winner",
-    detail: "Balanced Comfort 2021–2024",
+    detail: "Balanced Comfort 2021 to 2024",
     icon: (
       <svg aria-hidden="true" className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-4.5A3.75 3.75 0 0012 10.5a3.75 3.75 0 00-4.5 3.75v4.5m9 0h-9M12 3.75l.75 2.25h2.25l-1.875 1.5.75 2.25L12 8.25l-1.875 1.5.75-2.25L9 6h2.25L12 3.75z" />

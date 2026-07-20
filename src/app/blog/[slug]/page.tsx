@@ -271,8 +271,8 @@ const posts: Record<string, Post> = {
 
         <h2>The Budget Question</h2>
         <p>
-          For a mid-sized HVAC or plumbing contractor ($1M&ndash;$3M annual revenue), a realistic starting
-          point is $2,000&ndash;$3,000/month in LSAs and $1,500&ndash;$2,500/month in Local Pack Ads. At
+          For a mid-sized HVAC or plumbing contractor ($1M to $3M annual revenue), a realistic starting
+          point is $2,000 to $3,000/month in LSAs and $1,500 to $2,500/month in Local Pack Ads. At
           industry-average booking rates and average tickets, that budget range typically produces strong
           positive ROI. But every market is different, which is why the math has to be done before
           committing to spend.
@@ -665,7 +665,7 @@ const posts: Record<string, Post> = {
         <p>
           Yes, for the most part. The local pack analysis, Google Business Profile benchmarking, and
           competitors&rsquo; websites checklist require no paid tools. Google Search Console gives you
-          your own local search rankings and backlink data for free. BrightLocal ($30&ndash;$50/month)
+          your own local search rankings and backlink data for free. BrightLocal ($30 to $50/month)
           is the main paid tool worth the investment for grid-based local pack tracking. Whitespark
           ($20/month) is useful for a thorough citation audit.
         </p>
@@ -740,7 +740,7 @@ const posts: Record<string, Post> = {
           The roofing company with 89 reviews getting 8 new ones per month is often outranking the
           company with 312 reviews getting 1 per month. Google treats recent reviews as a freshness
           signal, evidence that the business is actively operating. Set up an automated review
-          request at every job close. This alone moves rankings within 60&ndash;90 days.
+          request at every job close. This alone moves rankings within 60 to 90 days.
         </p>
 
         <h3>GBP category selection</h3>
@@ -952,7 +952,7 @@ const posts: Record<string, Post> = {
         </p>
         <p>
           Set up review monitoring alerts for every GBP in your portfolio. I recommend responding to
-          all reviews within 24&ndash;48 hours. Negative reviews should be prioritized for same-day
+          all reviews within 24 to 48 hours. Negative reviews should be prioritized for same-day
           response when possible.
         </p>
 
@@ -1043,26 +1043,26 @@ const posts: Record<string, Post> = {
           Pricing typically falls into three ranges based on time commitment and scope:
         </p>
 
-        <h3>$2,000&ndash;$4,000/month: Advisory level</h3>
+        <h3>$2,000 to $4,000/month: Advisory level</h3>
         <p>
-          Usually 4&ndash;8 hours per month. Strategy sessions, gut-checks on decisions, high-level
+          Usually 4 to 8 hours per month. Strategy sessions, gut-checks on decisions, high-level
           recommendations. This works if you have a capable internal team that can execute and just
           needs senior guidance. It doesn&rsquo;t work if you need someone embedded in your operations.
         </p>
 
-        <h3>$4,000&ndash;$8,000/month: Operational engagement</h3>
+        <h3>$4,000 to $8,000/month: Operational engagement</h3>
         <p>
-          Usually 10&ndash;20 hours per month. Regular strategy sessions, vendor management and
+          Usually 10 to 20 hours per month. Regular strategy sessions, vendor management and
           accountability, budget decisions, hiring support. This is the range where a Fractional CMO
           engagement genuinely replaces the need for a full-time hire for most companies doing
-          $2M&ndash;$10M revenue.
+          $2M to $10M revenue.
         </p>
 
-        <h3>$8,000&ndash;$15,000+/month: Senior leadership replacement</h3>
+        <h3>$8,000 to $15,000+/month: Senior leadership replacement</h3>
         <p>
-          20+ hours per month, sometimes structured as a 3&ndash;4 day per week commitment. Full
+          20+ hours per month, sometimes structured as a 3 to 4 day per week commitment. Full
           marketing leadership, team management, board-level reporting. At this range you&rsquo;re
-          comparing against a full-time CMO hire ($150K&ndash;$250K+ salary plus benefits and equity).
+          comparing against a full-time CMO hire ($150K to $250K+ salary plus benefits and equity).
         </p>
 
         <h2>How to Evaluate Whether It&rsquo;s Worth It</h2>
@@ -1074,7 +1074,7 @@ const posts: Record<string, Post> = {
         <ul>
           <li>Is your booking rate below 50%? Fixing phone handling alone could be worth 10x the monthly CMO fee.</li>
           <li>Do you have 2+ agencies with no one connecting their work to your revenue? Vendor accountability typically pays for itself.</li>
-          <li>Are you making ad spend decisions based on gut or anecdotal feedback? Attribution work typically uncovers 20&ndash;40% waste in most contractor marketing budgets.</li>
+          <li>Are you making ad spend decisions based on gut or anecdotal feedback? Attribution work typically uncovers 20 to 40% waste in most contractor marketing budgets.</li>
         </ul>
         <p>
           The Fractional CMO engagement pays for itself when it improves the ROI of your existing spend
@@ -1108,7 +1108,7 @@ const posts: Record<string, Post> = {
 
         <h2>The Right Use Case</h2>
         <p>
-          A Fractional CMO engagement works best for home service companies doing $2M&ndash;$15M revenue
+          A Fractional CMO engagement works best for home service companies doing $2M to $15M revenue
           that have outgrown founder-led marketing but aren&rsquo;t yet at the scale to justify a full-time
           marketing executive. If you&rsquo;re spending more than $5,000/month on marketing and don&rsquo;t
           have clear attribution to revenue, the engagement will almost certainly pay for itself.
@@ -1364,12 +1364,12 @@ const posts: Record<string, Post> = {
         <h2>The Timeline for AI Search Results</h2>
         <p>
           Unlike paid ads, AI search visibility doesn&rsquo;t happen overnight. It&rsquo;s built on
-          compounding signals over 3&ndash;6 months:
+          compounding signals over 3 to 6 months:
         </p>
         <ul>
           <li>Month 1: Citation audit and cleanup, schema markup implementation, review velocity system launch</li>
-          <li>Month 2&ndash;3: Content depth improvements, directory profile expansion, review velocity compounding</li>
-          <li>Month 4&ndash;6: AI system crawls pick up improved signals, recommendation frequency increases</li>
+          <li>Month 2 to 3: Content depth improvements, directory profile expansion, review velocity compounding</li>
+          <li>Month 4 to 6: AI system crawls pick up improved signals, recommendation frequency increases</li>
         </ul>
         <p>
           The companies that started this work in mid-2025 are already seeing the results in how
@@ -1428,7 +1428,7 @@ const posts: Record<string, Post> = {
         <p>
           <strong>Review velocity:</strong> This is the most heavily weighted signal and the most
           actionable one. A plumber with 80 reviews getting 10 new ones per month will outrank a
-          competitor with 250 reviews getting 1 per month in most markets within 60&ndash;90 days.
+          competitor with 250 reviews getting 1 per month in most markets within 60 to 90 days.
           Build an automated review request into your job close workflow. Make it happen within 2
           hours of job completion, not 3 days later.
         </p>
@@ -2556,7 +2556,7 @@ const posts: Record<string, Post> = {
             </thead>
             <tbody>
               {[
-                ["Monthly cost", "$3,000&ndash;$8,000", "$1,500&ndash;$8,000 + ad spend", "$7,000&ndash;$10,000 fully loaded"],
+                ["Monthly cost", "$3,000 to $8,000", "$1,500 to $8,000 + ad spend", "$7,000 to $10,000 fully loaded"],
                 ["Seniority level", "C-suite equivalent", "Account manager level", "Coordinator to manager"],
                 ["Strategy ownership", "Yes", "Limited, scope-bound", "Limited, needs direction"],
                 ["Execution", "No, manages vendors", "Yes", "Yes"],
@@ -5616,7 +5616,7 @@ export default async function BlogPostPage({
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
                   13 years building Balanced Comfort Heating &amp; Air from startup to 130+ employees.
-                  4x Inc 5000 (2020&ndash;2023). CA Licensed Contractor B, C-2, C-20, C-36.
+                  4x Inc 5000 (2020 to 2023). CA Licensed Contractor B, C-2, C-20, C-36.
                   Now working with 10 home service companies at a time as a growth operator and Fractional CMO.
                 </p>
                 <Link

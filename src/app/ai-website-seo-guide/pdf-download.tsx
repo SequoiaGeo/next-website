@@ -69,7 +69,7 @@ export default function PdfDownload() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      {/* reCAPTCHA v3 — loads only when a site key is configured. */}
+      {/* reCAPTCHA v3, loads only when a site key is configured. */}
       {RECAPTCHA_SITE_KEY && (
         <Script
           src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}

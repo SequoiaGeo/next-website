@@ -52,7 +52,7 @@ export default function AboutPage() {
                 </div>
                 <div className="absolute -bottom-3 -right-3 rounded-xl border border-[#3A9E6A]/30 bg-white px-3 py-2 shadow-lg">
                   <p className="text-xs font-bold text-[#1a1a1a]">4x Inc 5000</p>
-                  <p className="text-xs text-gray-500">2020&ndash;2023</p>
+                  <p className="text-xs text-gray-500">2020 to 2023</p>
                 </div>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function AboutPage() {
             </div>
 
             <p className="text-center text-sm text-gray-500">
-              Balanced Comfort, Fresno CA, 130+ employees at peak &bull; 4x Inc 5000 (2020&ndash;2023) &bull; CSLB License #1027318
+              Balanced Comfort, Fresno CA, 130+ employees at peak &bull; 4x Inc 5000 (2020 to 2023) &bull; CSLB License #1027318
             </p>
           </div>
         </div>

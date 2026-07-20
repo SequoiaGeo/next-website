@@ -244,7 +244,7 @@ export default function ServicesPage() {
               },
               {
                 q: "How long do digital marketing strategies take to work?",
-                a: "PPC advertising and Google Local Service Ads generate qualified leads within days of launch. Search engine optimization SEO strategies and content marketing take 3&ndash;6 months to produce significant results in organic search engine results, but they create compounding website traffic and lead generation over time. The most effective contractor digital marketing programs combine both: paid digital marketing campaigns for immediate qualified leads while SEO strategies build the long-term organic asset.",
+                a: "PPC advertising and Google Local Service Ads generate qualified leads within days of launch. Search engine optimization SEO strategies and content marketing take 3 to 6 months to produce significant results in organic search engine results, but they create compounding website traffic and lead generation over time. The most effective contractor digital marketing programs combine both: paid digital marketing campaigns for immediate qualified leads while SEO strategies build the long-term organic asset.",
               },
               {
                 q: "What makes marketing for contractors different from general business marketing?",
@@ -252,7 +252,7 @@ export default function ServicesPage() {
               },
               {
                 q: "How should I budget for digital marketing?",
-                a: "Digital marketing budgets for contractors typically run 5&ndash;12% of revenue depending on growth goals and market competitiveness. Contractors in competitive markets or those entering new service areas need to invest at the higher end to build initial visibility. As SEO strategies mature and your digital marketing program produces organic website traffic, the cost per qualified lead decreases and your marketing investment becomes more efficient over time.",
+                a: "Digital marketing budgets for contractors typically run 5 to 12% of revenue depending on growth goals and market competitiveness. Contractors in competitive markets or those entering new service areas need to invest at the higher end to build initial visibility. As SEO strategies mature and your digital marketing program produces organic website traffic, the cost per qualified lead decreases and your marketing investment becomes more efficient over time.",
               },
               {
                 q: "What is the difference between inbound marketing and paid advertising for contractors?",

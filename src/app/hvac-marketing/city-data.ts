@@ -34,7 +34,7 @@ export const cities: CityData[] = [
     existingClient:
       "Sequoia GEO has an active client in the Boise market and understands local contractor dynamics, seasonal demand peaks, and how homeowners in this market make HVAC decisions.",
     keyStats: [
-      { label: "Summer peak temp", value: "95–100°F" },
+      { label: "Summer peak temp", value: "95 to 100°F" },
       { label: "City population", value: "237,000" },
       { label: "Metro growth rate", value: "2.2% annually" },
       { label: "HVAC demand profile", value: "Balanced four-season" },
@@ -102,7 +102,7 @@ export const cities: CityData[] = [
     agencyLandscape:
       "Bakersfield's marketing agency ecosystem skews toward generalists. Very few agencies with contractor-specific HVAC marketing depth are actively building local authority in this market. Most contractors here work with LA-based or Sacramento-based agencies that do not understand the local climate-driven demand profile.",
     keyStats: [
-      { label: "Summer peak temp", value: "105–110°F" },
+      { label: "Summer peak temp", value: "105 to 110°F" },
       { label: "City population", value: "419,000" },
       { label: "Growth rate", value: "1.2% annually" },
       { label: "HVAC demand profile", value: "Extreme cooling" },
@@ -125,7 +125,7 @@ export const cities: CityData[] = [
     agencyLandscape:
       "Seattle agencies dominate contractor marketing in Washington state but provide minimal Spokane-specific content or local SEO investment. The competitive gap between what Seattle agencies invest in Seattle versus what they invest in Spokane creates a real local authority opportunity for contractors willing to build it.",
     keyStats: [
-      { label: "Summer peak temp", value: "90–100°F" },
+      { label: "Summer peak temp", value: "90 to 100°F" },
       { label: "Winter profile", value: "Sub-freezing, snowfall" },
       { label: "City population", value: "230,000" },
       { label: "HVAC demand profile", value: "Balanced, growing AC" },
@@ -171,7 +171,7 @@ export const cities: CityData[] = [
     agencyLandscape:
       "Wichita has almost no contractors working with agencies that have specific HVAC marketing depth. The dominant pattern is either national agencies treating Wichita as an afterthought or local generalist agencies with no trade-specific methodology.",
     keyStats: [
-      { label: "Summer peak temp", value: "95–105°F" },
+      { label: "Summer peak temp", value: "95 to 105°F" },
       { label: "Winter lows", value: "-10 to 20°F" },
       { label: "City population", value: "395,000" },
       { label: "HVAC demand profile", value: "Extreme balanced" },
@@ -193,8 +193,8 @@ export const cities: CityData[] = [
     agencyLandscape:
       "Phoenix agencies serve Tucson clients as an extension of their Phoenix operations, without Tucson-specific content or local SEO investment. The market is large enough to support dedicated contractor marketing but has almost none. Contractors who build local authority here face less entrenched competition than they would in Phoenix.",
     keyStats: [
-      { label: "Summer peak temp", value: "105–110°F" },
-      { label: "Season length", value: "5–6 months above 100°F" },
+      { label: "Summer peak temp", value: "105 to 110°F" },
+      { label: "Season length", value: "5 to 6 months above 100°F" },
       { label: "City population", value: "548,000" },
       { label: "HVAC demand profile", value: "Extreme cooling" },
     ],
@@ -216,7 +216,7 @@ export const cities: CityData[] = [
     agencyLandscape:
       "Las Vegas agencies do not serve Reno well. Local Reno marketing agencies are generalists. Contractors who build local SEO authority and targeted paid media specifically for the Reno market are building a position in a growing market before it becomes contested.",
     keyStats: [
-      { label: "Summer peak temp", value: "95–100°F" },
+      { label: "Summer peak temp", value: "95 to 100°F" },
       { label: "Metro growth", value: "2.7% annually" },
       { label: "Median home price", value: "$547,000" },
       { label: "HVAC demand profile", value: "Balanced four-season" },

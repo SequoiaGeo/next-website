@@ -29,18 +29,18 @@ export default function CookiePolicyPage() {
             <div className="flex items-start justify-between gap-4 mb-2">
               <h3 className="font-semibold text-base">Google Analytics (GA4)</h3>
               <span className="text-xs font-medium bg-yellow-50 text-yellow-800 border border-yellow-200 px-2 py-0.5 rounded-full whitespace-nowrap">
-                Analytics — requires consent
+                Analytics: requires consent
               </span>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
               We use Google Analytics 4 to understand how visitors navigate the
-              site — which pages are viewed, how long people stay, and where
+              site, which pages are viewed, how long people stay, and where
               traffic comes from. This data is aggregated and anonymous. No
               advertising or remarketing is enabled.
             </p>
             <p className="text-gray-500 text-xs mt-2">
               Cookie names: <code className="bg-gray-50 px-1 rounded">_ga</code>,{" "}
-              <code className="bg-gray-50 px-1 rounded">_ga_*</code> — Duration: 2
+              <code className="bg-gray-50 px-1 rounded">_ga_*</code>. Duration: 2
               years
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function CookiePolicyPage() {
             <div className="flex items-start justify-between gap-4 mb-2">
               <h3 className="font-semibold text-base">Microsoft Clarity</h3>
               <span className="text-xs font-medium bg-yellow-50 text-yellow-800 border border-yellow-200 px-2 py-0.5 rounded-full whitespace-nowrap">
-                Analytics — requires consent
+                Analytics: requires consent
               </span>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
@@ -60,7 +60,7 @@ export default function CookiePolicyPage() {
             <p className="text-gray-500 text-xs mt-2">
               Cookie names: <code className="bg-gray-50 px-1 rounded">_clck</code>,{" "}
               <code className="bg-gray-50 px-1 rounded">_clsk</code>,{" "}
-              <code className="bg-gray-50 px-1 rounded">MUID</code> — Duration: up
+              <code className="bg-gray-50 px-1 rounded">MUID</code>. Duration: up
               to 1 year
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function CookiePolicyPage() {
             <div className="flex items-start justify-between gap-4 mb-2">
               <h3 className="font-semibold text-base">Live Chat Widget (GoHighLevel)</h3>
               <span className="text-xs font-medium bg-blue-50 text-blue-800 border border-blue-200 px-2 py-0.5 rounded-full whitespace-nowrap">
-                Functional — required for chat
+                Functional: required for chat
               </span>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
@@ -90,7 +90,7 @@ export default function CookiePolicyPage() {
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           To change your preference at any time, clear your browser cookies for{" "}
-          <strong>sequoiageo.com</strong> and reload the page — the consent
+          <strong>sequoiageo.com</strong> and reload the page, and the consent
           banner will appear again.
         </p>
         <p className="text-gray-700 leading-relaxed">

@@ -23,7 +23,7 @@ import ClientResults from "@/components/ClientResults";
 import LSABanner from "@/components/LSABanner";
 import YouTubeFacade from "@/components/YouTubeFacade";
 
-// Lazy-load below-fold interactive components — defers their JS until
+// Lazy-load below-fold interactive components, defers their JS until
 // after the critical rendering path completes.
 const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: true });
 const ContactForm = dynamic(() => import("@/components/ContactForm"), { ssr: true });
@@ -34,7 +34,7 @@ export default function Home() {
     <>
       <Hero />
 
-      {/* TL;DR — for AI extraction and time-strapped operators */}
+      {/* TL;DR, for AI extraction and time-strapped operators */}
       <section className="bg-white py-12 border-b border-gray-100">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-6 sm:p-8">

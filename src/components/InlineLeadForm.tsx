@@ -13,7 +13,7 @@ import { trackLead } from "@/lib/analytics";
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 type Props = {
-  source: string; // e.g. "hvac_seo_page" — lands in GA4 lead_source + the lead email
+  source: string; // e.g. "hvac_seo_page", lands in GA4 lead_source + the lead email
   heading?: string;
   subtext?: string;
   buttonText?: string;

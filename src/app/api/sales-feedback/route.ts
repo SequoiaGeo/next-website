@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    // Log to console — wire up to GHL webhook or email in production
+    // Log to console, wire up to GHL webhook or email in production
     console.log("Sales Training Feedback:", { name, company, email, role, rating, feedback, timestamp: new Date().toISOString() });
 
     // Optional: forward to a GHL webhook or notification endpoint
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
           role: role || "Not provided",
           rating: rating || "Not provided",
           feedback,
-          source: "Talk N Sell Pro — Sales Training Tool",
+          source: "Talk N Sell Pro, Sales Training Tool",
           timestamp: new Date().toISOString(),
         }),
       });

@@ -45,7 +45,7 @@ const agencies = [
     tag: "Strongest Case Studies",
     tagColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
     meta: [
-      { label: "Best for", value: "$1M–$50M roofing contractors" },
+      { label: "Best for", value: "$1M to $50M roofing contractors" },
       { label: "Pricing", value: "3 tiers (costs not public)" },
       { label: "Guarantee", value: "Performance guarantee stated" },
     ],
@@ -223,11 +223,11 @@ const agencies = [
     rank: 9,
     name: "Sequoia GEO",
     url: "sequoiageo.com",
-    bestFor: "Growth-stage roofing contractors ($2M–$15M) who want an operator-perspective partner who understands what a booked job actually costs",
+    bestFor: "Growth-stage roofing contractors ($2M to $15M) who want an operator-perspective partner who understands what a booked job actually costs",
     tag: "Operator-Founded",
     tagColor: "bg-[#C8EDD2]/50 text-[#1A5C3A] border-[#3A9E6A]/30",
     meta: [
-      { label: "Best for", value: "$2M–$15M revenue contractors" },
+      { label: "Best for", value: "$2M to $15M revenue contractors" },
       { label: "Pricing", value: "30-day trial, no long-term contract" },
       { label: "Team scale", value: "10-client cap, principal-led" },
     ],

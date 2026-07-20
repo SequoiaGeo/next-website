@@ -238,7 +238,7 @@ export default function BlogPage() {
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               No agency fluff. Real analysis from someone who ran a home services company for 13 years
-              and now manages marketing for contractors doing $2M&ndash;$15M.
+              and now manages marketing for contractors doing $2M to $15M.
             </p>
             <div className="mt-4 flex items-center justify-center gap-3 text-sm text-gray-500">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0D2318]">

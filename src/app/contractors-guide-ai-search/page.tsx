@@ -136,7 +136,7 @@ export default function ContractorsGuideAISearchPage() {
           </p>
 
           <p>
-            <strong>Perplexity</strong>, An AI-native search engine processing 1.2&ndash;1.5 billion
+            <strong>Perplexity</strong>, An AI-native search engine processing 1.2 to 1.5 billion
             queries per month. It cites its sources, which means if your business is mentioned, users
             can click through to your website. Growing 800% year-over-year.
           </p>
@@ -426,7 +426,7 @@ export default function ContractorsGuideAISearchPage() {
                 </ul>
                 <p>
                   Structure these with the question as an H2 or H3 heading, followed by a thorough
-                  100&ndash;200 word answer. This format is what AI models extract most efficiently.
+                  100 to 200 word answer. This format is what AI models extract most efficiently.
                   It also tends to perform well in traditional search, which means this investment
                   works on two fronts simultaneously.
                 </p>

@@ -75,7 +75,7 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="bg-white py-20 sm:py-28">
-      {/* reCAPTCHA v3 — loads only when a site key is configured. Invisible to
+      {/* reCAPTCHA v3, loads only when a site key is configured. Invisible to
           users; provides the token verified server-side before a lead is sent. */}
       {RECAPTCHA_SITE_KEY && (
         <Script
@@ -153,7 +153,7 @@ export default function ContactForm() {
                     </svg>
                   </div>
                   <h3 className="mt-5 text-xl font-bold text-[#1a1a1a]">
-                    Got it &mdash; we&rsquo;ll be in touch as soon as possible.
+                    Got it. We&rsquo;ll be in touch as soon as possible.
                   </h3>
                   <p className="mt-2 text-sm text-gray-500">
                     While you wait, here&rsquo;s a look at what we do and how we do it.

@@ -375,12 +375,12 @@ export default function RestorationSeoPage() {
               {
                 step: "01",
                 title: "Build Service Area Pages for Every City You Serve",
-                body: "A restoration company that serves 15 cities needs 15 dedicated service area pages to rank in local searches. One generic service area page will not rank in search results for city-specific queries. Pages built around local keywords like &ldquo;water damage restoration in [city]&rdquo; capture emergency search traffic from homeowners actively searching for restoration services in their specific location &ndash; the highest-converting search traffic a restoration website can earn.",
+                body: "A restoration company that serves 15 cities needs 15 dedicated service area pages to rank in local searches. One generic service area page will not rank in search results for city-specific queries. Pages built around local keywords like &ldquo;water damage restoration in [city]&rdquo; capture emergency search traffic from homeowners actively searching for restoration services in their specific location, the highest-converting search traffic a restoration website can earn.",
               },
               {
                 step: "02",
                 title: "Time Review Requests to Project Completion, Not Job Close",
-                body: "Property owners who just experienced water damage or a house fire are not emotionally ready to leave reviews immediately after the job closes. The emotional arc of a restoration project is longer than a standard home service call. I build review workflows timed to project completion &ndash; typically 2 to 3 weeks after the restoration work is finished &ndash; because that is when customer sentiment peaks and review conversion rates are highest.",
+                body: "Property owners who just experienced water damage or a house fire are not emotionally ready to leave reviews immediately after the job closes. The emotional arc of a restoration project is longer than a standard home service call. I build review workflows timed to project completion (typically 2 to 3 weeks after the restoration work is finished) because that is when customer sentiment peaks and review conversion rates are highest.",
               },
               {
                 step: "03",
@@ -665,7 +665,7 @@ export default function RestorationSeoPage() {
                 Internal links are one of the most underleveraged tools in restoration digital marketing. Most
                 restoration websites are built without a deliberate internal linking strategy, which means search
                 engines cannot efficiently discover and index all the pages the site contains. Internal links
-                pass authority from high-traffic pages, typically the homepage and a few top-level pages &mdash;
+                pass authority from high-traffic pages, typically the homepage and a few top-level pages,
                 to deeper service area pages and specialty pages that would otherwise rank poorly.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">

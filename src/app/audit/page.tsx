@@ -214,7 +214,7 @@ export default function AuditPage() {
           </div>
 
           <p className="mt-10 text-sm text-white/30 border-t border-white/10 pt-8">
-            The audit typically takes 3&ndash;5 business days. The strategy call is 45&ndash;60 minutes.
+            The audit typically takes 3 to 5 business days. The strategy call is 45 to 60 minutes.
           </p>
         </div>
       </div>

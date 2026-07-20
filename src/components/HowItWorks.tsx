@@ -14,7 +14,7 @@ const steps = [
     ),
   },
   {
-    month: "Months 2–3",
+    month: "Months 2 to 3",
     number: "02",
     title: "Fix and Build",
     description:

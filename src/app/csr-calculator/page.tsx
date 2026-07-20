@@ -162,8 +162,8 @@ export default function CSRCalculator() {
               <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Industry benchmarks</p>
               <div className="grid grid-cols-3 gap-3 text-center">
                 {[
-                  { label: "Average", value: "38–42%" },
-                  { label: "Good", value: "55–60%" },
+                  { label: "Average", value: "38 to 42%" },
+                  { label: "Good", value: "55 to 60%" },
                   { label: "Top ops", value: "65%+" },
                 ].map((b) => (
                   <div key={b.label}>
@@ -301,7 +301,7 @@ export default function CSRCalculator() {
               ))}
             </ul>
             <p className="mt-8 text-sm text-gray-500 border-l-2 border-[#3A9E6A] pl-4">
-              Industry average is 38&ndash;42%. Good CSR operations run 55&ndash;65%.
+              Industry average is 38 to 42%. Good CSR operations run 55 to 65%.
             </p>
           </div>
         </div>

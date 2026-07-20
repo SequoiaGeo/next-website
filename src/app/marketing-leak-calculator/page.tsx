@@ -323,7 +323,7 @@ export default function MarketingLeakCalculator() {
                     I&rsquo;ll send your full breakdown plus a short note on the fastest way to close that gap. No spam, no obligation.
                   </p>
                   <form onSubmit={handleCapture} className="space-y-3">
-                    {/* reCAPTCHA v3 — loads only when a site key is configured. */}
+                    {/* reCAPTCHA v3, loads only when a site key is configured. */}
                     {RECAPTCHA_SITE_KEY && (
                       <Script
                         src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}

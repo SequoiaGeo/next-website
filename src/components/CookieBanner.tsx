@@ -37,10 +37,10 @@ export default function CookieBanner({ clarityId }: { clarityId?: string }) {
   useEffect(() => {
     const stored = localStorage.getItem(CONSENT_KEY);
     if (stored === "accepted") {
-      // Returning visitor who already accepted — re-grant and load Clarity
+      // Returning visitor who already accepted, re-grant and load Clarity
       grantConsent(clarityId);
     } else if (stored === null) {
-      // First visit — show banner
+      // First visit, show banner
       setVisible(true);
     }
     // "declined" → do nothing; GA4 stays in consent-denied mode

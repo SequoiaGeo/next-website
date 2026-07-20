@@ -151,7 +151,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <head>
-        {/* Preconnect to GA4/GTM to cut 100–200ms from DNS+TLS on first load */}
+        {/* Preconnect to GA4/GTM to cut 100 to 200ms from DNS+TLS on first load */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
@@ -163,7 +163,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased font-sans min-h-screen flex flex-col">
-        {/* Skip to main content — accessibility / keyboard nav */}
+        {/* Skip to main content, accessibility / keyboard nav */}
         <a href="#main-content" className="skip-to-content">
           Skip to main content
         </a>
@@ -198,7 +198,7 @@ export default function RootLayout({
           </>
         )}
 
-        {/* Microsoft Clarity — loads for everyone, same posture as GA4 above
+        {/* Microsoft Clarity, loads for everyone, same posture as GA4 above
             (analytics on by default for a US/B2B audience; the banner still
             governs ad_storage). Previously gated behind cookie-accept, which
             left Clarity recording ~nothing and CRO decisions blind. */}
@@ -210,7 +210,7 @@ export default function RootLayout({
           />
         )}
 
-        {/* Meta Pixel — dataset 1394557232154617 ("AI Automation Cold" in Events Manager).
+        {/* Meta Pixel, dataset 1394557232154617 ("AI Automation Cold" in Events Manager).
             Same default-on posture as GA4/Clarity above. Base PageView on every page;
             feeds retargeting for the call campaign and the future CAPI/Conversion Leads setup. */}
         <Script
@@ -231,7 +231,7 @@ export default function RootLayout({
           />
         </noscript>
 
-        {/* Cookie consent banner — upgrades ad consent on acceptance */}
+        {/* Cookie consent banner, upgrades ad consent on acceptance */}
         <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
 
         {/* AI referrer tracker: fires ai_referrer_seen GA4 event when visitor arrives from a known AI engine */}

@@ -15,14 +15,14 @@ body {
 
 /* Typography */
 /* Headings use Inter (sans-serif) by default via Tailwind.
-   Fraunces serif is opt-in — apply font-serif or the fraunces variable class directly
+   Fraunces serif is opt-in, apply font-serif or the fraunces variable class directly
    on individual elements that need a display serif (e.g. blog prose h2/h3 below). */
 
 p, li, span, a, label, input, textarea, button {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
-/* Section overline — replaces pill badges */
+/* Section overline, replaces pill badges */
 .section-overline {
   /* #1A5C3A on white = 8.3:1 contrast (WCAG AA pass). Override with text-[#3A9E6A] only on dark backgrounds. */
   @apply text-xs font-semibold uppercase tracking-[0.15em] text-[#1A5C3A];
@@ -99,7 +99,7 @@ p, li, span, a, label, input, textarea, button {
   background-color: rgba(250, 250, 248, 0.92);
 }
 
-/* Skip to main content — visually hidden until focused (WCAG 2.4.1) */
+/* Skip to main content, visually hidden until focused (WCAG 2.4.1) */
 .skip-to-content {
   position: absolute;
   top: -9999px;

@@ -4,7 +4,7 @@
 // direct POST to the endpoint hits the same checks the browser form does.
 
 const MIN_SUBMIT_MS = 3000; // bots fill+submit near-instantly; humans take a few seconds
-const MAX_FORM_AGE_MS = 60 * 60 * 1000; // 1 hour — stale/forged timestamps get rejected
+const MAX_FORM_AGE_MS = 60 * 60 * 1000; // 1 hour, stale/forged timestamps get rejected
 
 // Field length bounds. Generous enough for real leads, tight enough to stop dumps.
 const LIMITS = {
@@ -25,7 +25,7 @@ export type LeadFields = {
   message?: unknown;
   smsConsent?: unknown;
   // anti-bot fields (not stored / not emailed)
-  website?: unknown; // honeypot — must stay empty
+  website?: unknown; // honeypot, must stay empty
   renderedAt?: unknown; // client epoch-ms when the form mounted
   recaptchaToken?: unknown; // reCAPTCHA v3 token
 };
@@ -34,7 +34,7 @@ export type SpamCheckResult =
   | { ok: true; clean: { name: string; phone: string; email: string; message: string; smsConsent: boolean } }
   // silentDrop = looks like a bot; respond 200 so the bot gets no feedback, but don't send the lead.
   | { ok: false; silentDrop: true; reason: string }
-  // hard validation failure — safe to surface a 400 to the real user.
+  // hard validation failure, safe to surface a 400 to the real user.
   | { ok: false; silentDrop: false; reason: string };
 
 /** Escape HTML so lead values can't inject markup into the notification email. */
@@ -54,7 +54,7 @@ function asString(value: unknown): string {
 /**
  * Verify a reCAPTCHA v3 token with Google. Returns true when the token is valid
  * and scores above threshold. If no secret key is configured, verification is
- * skipped (returns true) so the form keeps working until keys are added — the
+ * skipped (returns true) so the form keeps working until keys are added, the
  * honeypot, timing, and validation layers still run regardless.
  */
 export async function verifyRecaptcha(
@@ -63,7 +63,7 @@ export async function verifyRecaptcha(
 ): Promise<boolean> {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
   if (!secret) {
-    console.warn("[spam-protection] RECAPTCHA_SECRET_KEY not set — skipping captcha verification.");
+    console.warn("[spam-protection] RECAPTCHA_SECRET_KEY not set, skipping captcha verification.");
     return true;
   }
   if (!token) return false;
@@ -100,7 +100,7 @@ export async function verifyRecaptcha(
     }
     return true;
   } catch (err) {
-    // Don't let a transient Google outage block real leads — fail open here,
+    // Don't let a transient Google outage block real leads, fail open here,
     // since honeypot + timing already filtered the obvious bots.
     console.error("[spam-protection] reCAPTCHA verify error:", err);
     return true;
@@ -109,7 +109,7 @@ export async function verifyRecaptcha(
 
 /**
  * Run honeypot, timing, and field validation against an incoming lead payload.
- * Does NOT run reCAPTCHA (that's async/network — call verifyRecaptcha separately).
+ * Does NOT run reCAPTCHA (that's async/network, call verifyRecaptcha separately).
  */
 export function checkLead(fields: LeadFields, now: number): SpamCheckResult {
   // 1. Honeypot: real users never see or fill this. Any value = bot. Drop silently.
@@ -165,7 +165,7 @@ export type EmailLeadFields = {
   name?: unknown;
   email?: unknown;
   // anti-bot fields (not stored / not emailed)
-  website?: unknown; // honeypot — must stay empty
+  website?: unknown; // honeypot, must stay empty
   renderedAt?: unknown; // client epoch-ms when the form mounted
   recaptchaToken?: unknown; // reCAPTCHA v3 token
 };
@@ -179,7 +179,7 @@ export type EmailLeadCheckResult =
  * Honeypot, timing, and field validation for name+email-only lead magnets
  * (calculator breakdown, guide downloads). Same layers as checkLead minus
  * the phone/message fields those forms don't collect. Does NOT run
- * reCAPTCHA — call verifyRecaptcha separately.
+ * reCAPTCHA, call verifyRecaptcha separately.
  */
 export function checkEmailLead(fields: EmailLeadFields, now: number): EmailLeadCheckResult {
   // 1. Honeypot: any value = bot. Drop silently.

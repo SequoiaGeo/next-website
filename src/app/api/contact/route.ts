@@ -16,7 +16,7 @@ export async function POST(req: Request) {
         console.warn(`[contact] dropped bot submission: ${spam.reason}`);
         return NextResponse.json({ success: true });
       }
-      // Real validation failure — tell the user what to fix.
+      // Real validation failure, tell the user what to fix.
       return NextResponse.json(
         { error: "Please enter a valid name, phone, and email." },
         { status: 400 }
@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     });
     if (!humanLike) {
       console.warn("[contact] dropped submission: reCAPTCHA failed");
-      // Silent drop — same 200 so bots can't tune against the score.
+      // Silent drop, same 200 so bots can't tune against the score.
       return NextResponse.json({ success: true });
     }
 
@@ -98,7 +98,7 @@ export async function POST(req: Request) {
 
           <div style="margin-top: 28px; padding: 16px 20px; background: #f5faf7; border-radius: 8px; border-left: 3px solid #3A9E6A;">
             <p style="margin: 0; font-size: 13px; color: #555;">
-              Submitted from <strong>sequoiageo.com</strong> — reply directly to this email or call the number above.
+              Submitted from <strong>sequoiageo.com</strong>. Reply directly to this email or call the number above.
             </p>
           </div>
         </div>
