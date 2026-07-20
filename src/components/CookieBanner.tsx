@@ -5,7 +5,15 @@ import Link from "next/link";
 const CONSENT_KEY = "cookie_consent";
 
 function loadClarity(id: string) {
-  if (typeof window === "undefined" || (window as any).clarity) return;
+  const w = window as any;
+  if (typeof window === "undefined" || w.clarity) return;
+  // Define the clarity() queue function BEFORE loading the tag. The tag script
+  // calls window.clarity(...) on execution and does nothing if it is undefined.
+  w.clarity =
+    w.clarity ||
+    function (...args: unknown[]) {
+      (w.clarity.q = w.clarity.q || []).push(args);
+    };
   const s = document.createElement("script");
   s.async = true;
   s.src = `https://www.clarity.ms/tag/${id}`;
