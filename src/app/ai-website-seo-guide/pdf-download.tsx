@@ -1,9 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import Script from "next/script";
 import { trackLead } from "@/lib/analytics";
-import { RECAPTCHA_SITE_KEY, getRecaptchaToken } from "@/lib/recaptcha";
 
 export default function PdfDownload() {
   const [submitted, setSubmitted] = useState(false);
@@ -25,7 +23,6 @@ export default function PdfDownload() {
     e.preventDefault();
     setLoading(true);
     try {
-      const recaptchaToken = await getRecaptchaToken("guide_capture");
       await fetch("/api/guide-capture", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -33,7 +30,6 @@ export default function PdfDownload() {
           ...form,
           source: "AI Website SEO Guide",
           renderedAt: renderedAtRef.current,
-          recaptchaToken,
         }),
       });
     } catch {
@@ -69,13 +65,6 @@ export default function PdfDownload() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      {/* reCAPTCHA v3, loads only when a site key is configured. */}
-      {RECAPTCHA_SITE_KEY && (
-        <Script
-          src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
-          strategy="afterInteractive"
-        />
-      )}
       {/* Honeypot: hidden from real users (off-screen, no tab stop, autocomplete
           off). Bots that fill every field trip it and get silently dropped. */}
       <div

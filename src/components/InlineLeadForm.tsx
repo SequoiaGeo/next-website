@@ -2,15 +2,12 @@
 
 // Compact on-page lead form for SEO landing pages (/audit, /hvac-seo, etc.).
 // Same capture path and anti-bot layers as the main ContactForm (honeypot,
-// render-timestamp, reCAPTCHA v3, server validation), posting to /api/contact
-// with a per-page `source` tag so GA4 and the lead email show which page
-// converted. Exists so money pages capture on-page instead of hopping to /contact.
+// render-timestamp, server validation), posting to /api/contact with a
+// per-page `source` tag so GA4 and the lead email show which page converted.
+// Exists so money pages capture on-page instead of hopping to /contact.
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import Script from "next/script";
 import { trackLead } from "@/lib/analytics";
-
-const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 type Props = {
   source: string; // e.g. "hvac_seo_page", lands in GA4 lead_source + the lead email
@@ -41,21 +38,11 @@ export default function InlineLeadForm({
     renderedAtRef.current = Date.now();
   }, []);
 
-  const getRecaptchaToken = async (): Promise<string> => {
-    if (!RECAPTCHA_SITE_KEY || !window.grecaptcha) return "";
-    try {
-      return await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "contact" });
-    } catch {
-      return "";
-    }
-  };
-
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
     try {
-      const recaptchaToken = await getRecaptchaToken();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -63,7 +50,6 @@ export default function InlineLeadForm({
           ...form,
           source,
           renderedAt: renderedAtRef.current,
-          recaptchaToken,
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
@@ -78,12 +64,6 @@ export default function InlineLeadForm({
 
   return (
     <section className="bg-[#0D2318] py-16 sm:py-20">
-      {RECAPTCHA_SITE_KEY && (
-        <Script
-          src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
-          strategy="afterInteractive"
-        />
-      )}
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <div className="rounded-2xl border border-[#1A5C3A] bg-white p-8 shadow-xl sm:p-10">
           {submitted ? (

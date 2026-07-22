@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
-import { checkEmailLead, verifyRecaptcha, escapeHtml } from "@/lib/spam-protection";
+import { checkEmailLead, escapeHtml } from "@/lib/spam-protection";
 
 export async function POST(req: Request) {
   // Instantiate inside the handler so missing env vars don't crash the build
@@ -17,14 +17,6 @@ export async function POST(req: Request) {
         return NextResponse.json({ success: true });
       }
       return NextResponse.json({ error: check.reason }, { status: 400 });
-    }
-
-    const captchaOk = await verifyRecaptcha(String(body.recaptchaToken ?? ""), {
-      expectedAction: "guide_capture",
-    });
-    if (!captchaOk) {
-      console.warn("[guide-capture] dropped: recaptcha failed");
-      return NextResponse.json({ success: true });
     }
 
     const { name, email } = check.clean;

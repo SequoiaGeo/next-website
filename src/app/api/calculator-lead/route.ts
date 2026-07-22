@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
-import { checkEmailLead, verifyRecaptcha, escapeHtml } from "@/lib/spam-protection";
+import { checkEmailLead, escapeHtml } from "@/lib/spam-protection";
 
 function fmt(n: number) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
@@ -26,14 +26,6 @@ export async function POST(req: Request) {
         return NextResponse.json({ success: true });
       }
       return NextResponse.json({ error: check.reason }, { status: 400 });
-    }
-
-    const captchaOk = await verifyRecaptcha(String(body.recaptchaToken ?? ""), {
-      expectedAction: "calculator_lead",
-    });
-    if (!captchaOk) {
-      console.warn("[calculator-lead] dropped: recaptcha failed");
-      return NextResponse.json({ success: true });
     }
 
     const { name, email } = check.clean;

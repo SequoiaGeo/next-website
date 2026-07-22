@@ -2,9 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef, FormEvent } from "react";
 import Link from "next/link";
-import Script from "next/script";
 import { trackLead, trackEvent } from "@/lib/analytics";
-import { RECAPTCHA_SITE_KEY, getRecaptchaToken } from "@/lib/recaptcha";
 
 function formatCurrency(n: number) {
   if (n >= 1000000) return `$${(n / 1000000).toFixed(1)}M`;
@@ -108,7 +106,6 @@ export default function MarketingLeakCalculator() {
     e.preventDefault();
     setCaptureLoading(true);
     try {
-      const recaptchaToken = await getRecaptchaToken("calculator_lead");
       await fetch("/api/calculator-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -117,7 +114,6 @@ export default function MarketingLeakCalculator() {
           email: capture.email,
           website: capture.website,
           renderedAt: renderedAtRef.current,
-          recaptchaToken,
           monthlySpend,
           monthlyCalls,
           bookingRate,
@@ -323,13 +319,6 @@ export default function MarketingLeakCalculator() {
                     I&rsquo;ll send your full breakdown plus a short note on the fastest way to close that gap. No spam, no obligation.
                   </p>
                   <form onSubmit={handleCapture} className="space-y-3">
-                    {/* reCAPTCHA v3, loads only when a site key is configured. */}
-                    {RECAPTCHA_SITE_KEY && (
-                      <Script
-                        src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
-                        strategy="afterInteractive"
-                      />
-                    )}
                     {/* Honeypot: hidden from real users (off-screen, no tab stop,
                         autocomplete off). Bots that fill every field trip it. */}
                     <div

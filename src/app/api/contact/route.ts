@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
-import { checkLead, verifyRecaptcha, escapeHtml } from "@/lib/spam-protection";
+import { checkLead, escapeHtml } from "@/lib/spam-protection";
 
 export async function POST(req: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
@@ -21,20 +21,6 @@ export async function POST(req: Request) {
         { error: "Please enter a valid name, phone, and email." },
         { status: 400 }
       );
-    }
-
-    // --- reCAPTCHA v3 token verification ---
-    const remoteIp =
-      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || undefined;
-    const humanLike = await verifyRecaptcha(String(body.recaptchaToken || ""), {
-      expectedAction: "contact",
-      minScore: 0.5,
-      remoteIp,
-    });
-    if (!humanLike) {
-      console.warn("[contact] dropped submission: reCAPTCHA failed");
-      // Silent drop, same 200 so bots can't tune against the score.
-      return NextResponse.json({ success: true });
     }
 
     const { name, phone, email, message, smsConsent } = spam.clean;

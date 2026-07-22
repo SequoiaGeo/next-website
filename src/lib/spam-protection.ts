@@ -1,10 +1,14 @@
 // Server-side spam / bot protection shared across lead-capture API routes.
-// Layers: honeypot field, submit-timing check, reCAPTCHA v3 token verification,
-// and basic field validation + sanitization. Each layer is independent so a
-// direct POST to the endpoint hits the same checks the browser form does.
+// Layers: honeypot field, a submit-timing guard, and field validation +
+// sanitization. Each layer is independent so a direct POST to the endpoint
+// hits the same checks the browser form does.
+//
+// DESIGN RULE: a dropped real lead can cost a client worth thousands; a spam
+// email costs seconds to delete. So every ambiguous case fails OPEN. The
+// honeypot is the only near-zero-false-positive signal, so it is the only
+// thing that silently discards a submission.
 
-const MIN_SUBMIT_MS = 3000; // bots fill+submit near-instantly; humans take a few seconds
-const MAX_FORM_AGE_MS = 60 * 60 * 1000; // 1 hour, stale/forged timestamps get rejected
+const MIN_SUBMIT_MS = 1500; // bots submit near-instantly; browser autofill makes humans fast too
 
 // Field length bounds. Generous enough for real leads, tight enough to stop dumps.
 const LIMITS = {
@@ -27,7 +31,6 @@ export type LeadFields = {
   // anti-bot fields (not stored / not emailed)
   website?: unknown; // honeypot, must stay empty
   renderedAt?: unknown; // client epoch-ms when the form mounted
-  recaptchaToken?: unknown; // reCAPTCHA v3 token
 };
 
 export type SpamCheckResult =
@@ -52,64 +55,7 @@ function asString(value: unknown): string {
 }
 
 /**
- * Verify a reCAPTCHA v3 token with Google. Returns true when the token is valid
- * and scores above threshold. If no secret key is configured, verification is
- * skipped (returns true) so the form keeps working until keys are added, the
- * honeypot, timing, and validation layers still run regardless.
- */
-export async function verifyRecaptcha(
-  token: string,
-  opts: { expectedAction?: string; minScore?: number; remoteIp?: string } = {}
-): Promise<boolean> {
-  const secret = process.env.RECAPTCHA_SECRET_KEY;
-  if (!secret) {
-    console.warn("[spam-protection] RECAPTCHA_SECRET_KEY not set, skipping captcha verification.");
-    return true;
-  }
-  if (!token) return false;
-
-  const { expectedAction, minScore = 0.5, remoteIp } = opts;
-
-  try {
-    const params = new URLSearchParams({ secret, response: token });
-    if (remoteIp) params.set("remoteip", remoteIp);
-
-    const res = await fetch("https://www.google.com/recaptcha/api/siteverify", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: params.toString(),
-    });
-    const data = (await res.json()) as {
-      success?: boolean;
-      score?: number;
-      action?: string;
-      "error-codes"?: string[];
-    };
-
-    if (!data.success) {
-      console.warn("[spam-protection] reCAPTCHA failed:", data["error-codes"]);
-      return false;
-    }
-    if (expectedAction && data.action && data.action !== expectedAction) {
-      console.warn(`[spam-protection] reCAPTCHA action mismatch: got ${data.action}`);
-      return false;
-    }
-    if (typeof data.score === "number" && data.score < minScore) {
-      console.warn(`[spam-protection] reCAPTCHA low score: ${data.score}`);
-      return false;
-    }
-    return true;
-  } catch (err) {
-    // Don't let a transient Google outage block real leads, fail open here,
-    // since honeypot + timing already filtered the obvious bots.
-    console.error("[spam-protection] reCAPTCHA verify error:", err);
-    return true;
-  }
-}
-
-/**
  * Run honeypot, timing, and field validation against an incoming lead payload.
- * Does NOT run reCAPTCHA (that's async/network, call verifyRecaptcha separately).
  */
 export function checkLead(fields: LeadFields, now: number): SpamCheckResult {
   // 1. Honeypot: real users never see or fill this. Any value = bot. Drop silently.
@@ -118,18 +64,15 @@ export function checkLead(fields: LeadFields, now: number): SpamCheckResult {
     return { ok: false, silentDrop: true, reason: "honeypot filled" };
   }
 
-  // 2. Timing: reject submissions that arrive impossibly fast or with a
-  //    missing/forged/stale timestamp.
+  // 2. Timing: only enforced when the client sent a usable timestamp. A missing,
+  //    stale, or skewed timestamp is an app/hydration/clock problem, NOT a bot
+  //    signal, so it must never cost a real lead. Fail open in those cases.
   const renderedAt = Number(fields.renderedAt);
-  if (!Number.isFinite(renderedAt)) {
-    return { ok: false, silentDrop: true, reason: "missing form timestamp" };
-  }
-  const elapsed = now - renderedAt;
-  if (elapsed < MIN_SUBMIT_MS) {
-    return { ok: false, silentDrop: true, reason: `submitted too fast (${elapsed}ms)` };
-  }
-  if (elapsed > MAX_FORM_AGE_MS || elapsed < 0) {
-    return { ok: false, silentDrop: true, reason: "stale or invalid form timestamp" };
+  if (Number.isFinite(renderedAt)) {
+    const elapsed = now - renderedAt;
+    if (elapsed >= 0 && elapsed < MIN_SUBMIT_MS) {
+      return { ok: false, silentDrop: true, reason: `submitted too fast (${elapsed}ms)` };
+    }
   }
 
   // 3. Validation + sanitization of the real fields.
@@ -167,7 +110,6 @@ export type EmailLeadFields = {
   // anti-bot fields (not stored / not emailed)
   website?: unknown; // honeypot, must stay empty
   renderedAt?: unknown; // client epoch-ms when the form mounted
-  recaptchaToken?: unknown; // reCAPTCHA v3 token
 };
 
 export type EmailLeadCheckResult =
@@ -178,8 +120,7 @@ export type EmailLeadCheckResult =
 /**
  * Honeypot, timing, and field validation for name+email-only lead magnets
  * (calculator breakdown, guide downloads). Same layers as checkLead minus
- * the phone/message fields those forms don't collect. Does NOT run
- * reCAPTCHA, call verifyRecaptcha separately.
+ * the phone/message fields those forms don't collect.
  */
 export function checkEmailLead(fields: EmailLeadFields, now: number): EmailLeadCheckResult {
   // 1. Honeypot: any value = bot. Drop silently.
@@ -188,17 +129,13 @@ export function checkEmailLead(fields: EmailLeadFields, now: number): EmailLeadC
     return { ok: false, silentDrop: true, reason: "honeypot filled" };
   }
 
-  // 2. Timing: reject impossibly fast or stale/forged timestamps.
+  // 2. Timing: enforced only when a usable timestamp arrives (see checkLead).
   const renderedAt = Number(fields.renderedAt);
-  if (!Number.isFinite(renderedAt)) {
-    return { ok: false, silentDrop: true, reason: "missing form timestamp" };
-  }
-  const elapsed = now - renderedAt;
-  if (elapsed < MIN_SUBMIT_MS) {
-    return { ok: false, silentDrop: true, reason: `submitted too fast (${elapsed}ms)` };
-  }
-  if (elapsed > MAX_FORM_AGE_MS || elapsed < 0) {
-    return { ok: false, silentDrop: true, reason: "stale or invalid form timestamp" };
+  if (Number.isFinite(renderedAt)) {
+    const elapsed = now - renderedAt;
+    if (elapsed >= 0 && elapsed < MIN_SUBMIT_MS) {
+      return { ok: false, silentDrop: true, reason: `submitted too fast (${elapsed}ms)` };
+    }
   }
 
   // 3. Validation + sanitization.

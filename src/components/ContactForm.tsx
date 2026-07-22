@@ -1,19 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import Script from "next/script";
 import { trackLead } from "@/lib/analytics";
-
-const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
-
-declare global {
-  interface Window {
-    grecaptcha?: {
-      ready: (cb: () => void) => void;
-      execute: (siteKey: string, opts: { action: string }) => Promise<string>;
-    };
-  }
-}
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -34,32 +22,18 @@ export default function ContactForm() {
     renderedAtRef.current = Date.now();
   }, []);
 
-  // Fetch a reCAPTCHA v3 token. No-ops (returns "") if the key isn't configured,
-  // so the form still works before keys are added or if the script fails to load.
-  const getRecaptchaToken = async (): Promise<string> => {
-    if (!RECAPTCHA_SITE_KEY || !window.grecaptcha) return "";
-    try {
-      return await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "contact" });
-    } catch {
-      return "";
-    }
-  };
-
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
 
     try {
-      const recaptchaToken = await getRecaptchaToken();
-
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...form,
           renderedAt: renderedAtRef.current,
-          recaptchaToken,
         }),
       });
 
@@ -75,14 +49,6 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="bg-white py-20 sm:py-28">
-      {/* reCAPTCHA v3, loads only when a site key is configured. Invisible to
-          users; provides the token verified server-side before a lead is sent. */}
-      {RECAPTCHA_SITE_KEY && (
-        <Script
-          src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
-          strategy="afterInteractive"
-        />
-      )}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-5xl gap-16 lg:grid-cols-2 lg:items-start">
 
