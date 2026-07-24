@@ -1,5 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import CalculatorBanner from "@/components/CalculatorBanner";
+import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
   title: "26 HVAC Industry Statistics for 2026 (Verified Sources)",
@@ -376,6 +378,16 @@ export default function HvacStatisticsPage() {
           </div>
         </div>
       </section>
+
+      {/* Free tool: see what the numbers mean for YOUR business */}
+      <CalculatorBanner />
+
+      {/* On-page capture: request the audit without leaving the page */}
+      <InlineLeadForm
+        source="hvac_statistics_page"
+        heading="See where your HVAC business stands against these numbers"
+        subtext="Tell us where to send your free audit. We compare your marketing against the benchmarks on this page before the call. No pitch deck."
+      />
     </>
   );
 }

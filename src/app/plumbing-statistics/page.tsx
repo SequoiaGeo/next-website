@@ -1,5 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import CalculatorBanner from "@/components/CalculatorBanner";
+import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
   title: "Plumbing Industry Statistics 2026 | Market Size, Employment & Consumer Data",
@@ -297,6 +299,16 @@ export default function PlumbingStatisticsPage() {
           </div>
         </div>
       </section>
+
+      {/* Free tool: see what the numbers mean for YOUR business */}
+      <CalculatorBanner />
+
+      {/* On-page capture: request the audit without leaving the page */}
+      <InlineLeadForm
+        source="plumbing_statistics_page"
+        heading="See where your plumbing business stands against these numbers"
+        subtext="Tell us where to send your free audit. We compare your marketing against the benchmarks on this page before the call. No pitch deck."
+      />
     </>
   );
 }

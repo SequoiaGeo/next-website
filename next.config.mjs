@@ -10,7 +10,7 @@ const nextConfig = {
       // === ABOUT ===
       { source: "/about", destination: "/about-sequoia-geo", permanent: true },
 
-      // === V2 — A/B test variant removed, redirect to main homepage ===
+      // === V2, A/B test variant removed, redirect to main homepage ===
       { source: "/v2", destination: "/", permanent: false },
 
       // === GEO SERVICE PAGES ===
@@ -31,13 +31,13 @@ const nextConfig = {
       { source: "/service-page/:path*", destination: "/services", permanent: true },
 
       // === GEO LANDING PAGES ===
-      // /geo-agency and /geo-for-plumbers now have their own pages — no redirect needed
+      // /geo-agency and /geo-for-plumbers now have their own pages, no redirect needed
       { source: "/geo-audit", destination: "/contact", permanent: true },
       { source: "/geo-agency-seattle", destination: "/", permanent: true },
 
       // === SERVICE PAGES with no dedicated page yet ===
       { source: "/google-business-profile", destination: "/services", permanent: true },
-      // /ai-automation, /fractional-cmo, /restoration-seo now have real pages — no redirect needed
+      // /ai-automation, /fractional-cmo, /restoration-seo now have real pages, no redirect needed
       { source: "/website-design", destination: "/websites", permanent: true },
       { source: "/website-design-landing", destination: "/websites", permanent: true },
       { source: "/business-automation", destination: "/ai-automation", permanent: true },
@@ -47,7 +47,7 @@ const nextConfig = {
       { source: "/pest-control-seo", destination: "/services", permanent: true },
       { source: "/garage-door-seo", destination: "/services", permanent: true },
       { source: "/electrical-seo", destination: "/services", permanent: true },
-      // /hvac-marketing now has its own index page — no redirect needed
+      // /hvac-marketing now has its own index page, no redirect needed
       { source: "/google-ads-management", destination: "/services", permanent: true },
       { source: "/local-service-ads", destination: "/lsa-management", permanent: true },
       { source: "/social-media-marketing", destination: "/services", permanent: true },
@@ -78,7 +78,18 @@ const nextConfig = {
       { source: "/factory", destination: "/", permanent: true },
       { source: "/launch-day-sequoia-geo", destination: "/about-sequoia-geo", permanent: true },
 
-      // === BLOG — redirect /post/* to correct destinations ===
+      // === EVENTS URLS THAT NEVER EXISTED ===
+      // Clarity (wk of 7/17-7/24/26) showed ~26 sessions hitting these as 404s.
+      // Same treatment as workshops: send them home instead of a dead end.
+      { source: "/events", destination: "/", permanent: true },
+      { source: "/webinars", destination: "/", permanent: true },
+      { source: "/learn/events", destination: "/", permanent: true },
+      { source: "/resources/events", destination: "/", permanent: true },
+      { source: "/company/events", destination: "/", permanent: true },
+      { source: "/about/events", destination: "/", permanent: true },
+      { source: "/news/events", destination: "/", permanent: true },
+
+      // === BLOG, redirect /post/* to correct destinations ===
       // Specific /post/ URLs → matching new blog post slugs
       { source: "/post/which-digital-marketing-agency-specializes-in-contractors-near-me", destination: "/blog/which-marketing-agency-specializes-in-contractors", permanent: true },
       { source: "/post/utm-tags-for-plumbing-and-hvac-companies-how-to-track-every-click-call", destination: "/blog/gbp-utm-tracking-ga4", permanent: true },
@@ -97,7 +108,7 @@ const nextConfig = {
       { source: "/post/transform-your-leads-effective-marketing-for-contractors", destination: "/blog", permanent: true },
       // Old /blog/ slugs that changed on the new site
       { source: "/blog/general-marketing-agency-vs-contractor-specialist-why-your-hvac-or-plumbing-business-needs-an-expe", destination: "/blog/which-marketing-agency-specializes-in-contractors", permanent: true },
-      // No matching blog post at the same slug — point to /blog to avoid a 404 (was 308->404)
+      // No matching blog post at the same slug, point to /blog to avoid a 404 (was 308->404)
       { source: "/post/competitor-brand-bidding-google-ads", destination: "/blog", permanent: true },
       // Catch-all for /post/* that DO have matching blog posts at the same slug
       { source: "/post/:slug*", destination: "/blog/:slug*", permanent: true },
@@ -105,7 +116,7 @@ const nextConfig = {
       // === BLOG CATEGORY PAGES ===
       { source: "/blog/categories/:path*", destination: "/blog", permanent: true },
 
-      // === LOCATION PAGES — redirect to relevant service pages ===
+      // === LOCATION PAGES, redirect to relevant service pages ===
       { source: "/plumber-seo-stockton", destination: "/plumbing-seo", permanent: true },
       { source: "/hvac-seo-stockton", destination: "/hvac-seo", permanent: true },
       { source: "/plumber-seo-riverside", destination: "/plumbing-seo", permanent: true },

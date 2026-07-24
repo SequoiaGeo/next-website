@@ -1,5 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import CalculatorBanner from "@/components/CalculatorBanner";
+import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
   title: "22 Google LSA Statistics for 2026 (Cost, Conversion, Benchmarks)",
@@ -349,6 +351,16 @@ export default function LsaStatisticsPage() {
           </div>
         </div>
       </section>
+
+      {/* Free tool: see what the numbers mean for YOUR business */}
+      <CalculatorBanner />
+
+      {/* On-page capture: request the audit without leaving the page */}
+      <InlineLeadForm
+        source="lsa_statistics_page"
+        heading="See how your LSA performance stacks up"
+        subtext="Tell us where to send your free audit. We review your Local Services Ads against the benchmarks on this page before the call. No pitch deck."
+      />
     </>
   );
 }

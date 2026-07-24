@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import CalculatorBanner from "@/components/CalculatorBanner";
+import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
   title: "Roofing SEO That Books Jobs, Run by an Operator | Sequoia GEO",
@@ -564,6 +566,16 @@ export default function RoofingSeoPage() {
           </div>
         </div>
       </section>
+
+      {/* Free tool: see what the numbers mean for YOUR business */}
+      <CalculatorBanner />
+
+      {/* On-page capture: request the audit without leaving the page */}
+      <InlineLeadForm
+        source="roofing_seo_page"
+        heading="Get your free roofing marketing audit"
+        subtext="Tell us where to send it. We review your rankings, your ads, and your booking path before the call. No pitch deck."
+      />
     </>
   );
 }
