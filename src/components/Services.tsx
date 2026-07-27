@@ -114,7 +114,7 @@ export default function Services() {
         <div className="max-w-2xl mb-14">
           <p className="section-overline mb-4">What We Do</p>
           <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
-            Google Ads. SEO. LSAs. GBP.{" "}
+            Google Ads. ChatGPT Ads. SEO. LSAs. GBP.{" "}
             <span className="text-[#1A5C3A]">All tracked to booked revenue.</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-gray-500">
@@ -123,6 +123,65 @@ export default function Services() {
             booked, and jobs closed.
           </p>
         </div>
+
+        {/* Featured: ChatGPT Ads */}
+        <Link
+          href="/chatgpt-ads"
+          className="group mb-8 flex flex-col lg:flex-row overflow-hidden rounded-2xl border border-[#3A9E6A]/30 bg-white transition hover:border-[#3A9E6A]/60 hover:shadow-xl hover:shadow-[#3A9E6A]/10"
+        >
+          {/* Content */}
+          <div className="flex flex-col justify-between p-8 lg:p-10 lg:max-w-lg">
+            <div>
+              <span className="inline-block rounded-full bg-[#C8EDD2] px-3 py-1 text-xs font-semibold text-[#0D2318] mb-4">
+                New Channel
+              </span>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0D2318] text-[#3A9E6A]">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-[#1a1a1a]">ChatGPT Ads Management</h3>
+              </div>
+              <p className="text-base leading-relaxed text-gray-600">
+                OpenAI opened ChatGPT advertising to businesses of every size in July 2026, and
+                most marketers are still reading about it. We already operate in the channel:
+                pixel installation, conversion tracking, ad copy, and full campaign management.
+              </p>
+              <p className="mt-4 text-sm text-gray-500">
+                Our own ChatGPT ad campaign points at the site you&rsquo;re reading right now.
+              </p>
+            </div>
+            <div className="mt-8 inline-flex items-center text-sm font-semibold text-[#1A5C3A] transition group-hover:text-[#0D2318]">
+              See how ChatGPT ads work
+              <svg className="ml-2 h-4 w-4 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Visual panel */}
+          <div className="flex-1 min-h-[200px] lg:min-h-0 bg-[#0D2318] flex items-center justify-center p-10">
+            <div className="w-full max-w-sm space-y-3">
+              {/* Chat mockup */}
+              <div className="ml-auto w-3/4 rounded-2xl rounded-br-sm bg-white/10 px-4 py-3 text-xs leading-relaxed text-white/60">
+                Who should I hire to get my business more customers?
+              </div>
+              <div className="rounded-2xl rounded-bl-sm bg-white/5 px-4 py-3 space-y-2">
+                <div className="h-2.5 w-full rounded bg-white/10" />
+                <div className="h-2.5 w-5/6 rounded bg-white/10" />
+                <div className="h-2.5 w-2/3 rounded bg-white/10" />
+              </div>
+              <div className="rounded-xl border border-[#3A9E6A]/50 bg-[#3A9E6A]/10 px-4 py-3">
+                <div className="text-[10px] font-semibold uppercase tracking-wider text-[#3A9E6A] mb-2">
+                  Sponsored
+                </div>
+                <div className="h-2.5 w-3/4 rounded bg-[#3A9E6A]/40" />
+                <div className="mt-2 h-2.5 w-1/2 rounded bg-white/10" />
+              </div>
+            </div>
+          </div>
+        </Link>
 
         {/* Featured: Website Design */}
         <Link

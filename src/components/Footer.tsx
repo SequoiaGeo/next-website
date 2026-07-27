@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const services = [
+  { label: "ChatGPT Ads", href: "/chatgpt-ads" },
   { label: "HVAC SEO", href: "/hvac-seo" },
   { label: "Plumbing SEO", href: "/plumbing-seo" },
   { label: "Roofing SEO", href: "/roofing-seo" },

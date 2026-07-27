@@ -12,6 +12,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "what-are-chatgpt-ads",
+    title: "What Are ChatGPT Ads and Should Your Business Run Them?",
+    excerpt:
+      "OpenAI opened ChatGPT advertising to businesses of every size in July 2026. I installed the conversion pixel, wired the tracking, and launched campaigns, including one for my own business. Here is how the platform actually works and an honest answer on whether you should test it.",
+    date: "July 2026",
+    readTime: "9 min read",
+    category: "ChatGPT Ads",
+  },
+  {
     slug: "what-we-find-inside-contractor-marketing-accounts",
     title: "What We Find Inside Contractor Marketing Accounts",
     excerpt:
@@ -220,7 +229,7 @@ const posts = [
   },
 ];
 
-const categories = ["All", "Audits", "GBP", "Local SEO", "LSA", "Attribution", "AI Search", "Generative Engine Optimization", "Roofing", "Reputation", "Fractional CMO", "Website", "Google Ads"];
+const categories = ["All", "Audits", "GBP", "Local SEO", "LSA", "Attribution", "AI Search", "Generative Engine Optimization", "Roofing", "Reputation", "Fractional CMO", "Website", "Google Ads", "ChatGPT Ads"];
 
 export default function BlogPage() {
   return (

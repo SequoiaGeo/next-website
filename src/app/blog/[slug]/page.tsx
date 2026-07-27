@@ -13,6 +13,257 @@ interface Post {
 }
 
 const posts: Record<string, Post> = {
+  "what-are-chatgpt-ads": {
+    title: "What Are ChatGPT Ads and Should Your Business Run Them?",
+    description:
+      "OpenAI opened ChatGPT advertising to businesses of every size in July 2026. A first-hand explainer from someone who installed the conversion pixel, wired the tracking, and launched live campaigns: how the platform works, what it costs, and an honest framework for deciding whether to test it.",
+    date: "July 2026",
+    dateISO: "2026-07-27",
+    readTime: "9 min read",
+    category: "ChatGPT Ads",
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <p>
+          ChatGPT ads are sponsored placements that appear alongside ChatGPT&rsquo;s responses for
+          people using the free and Go tiers of the product. OpenAI began testing them in early
+          2026 and opened its advertising platform to businesses of every size in July 2026.
+        </p>
+        <p>
+          I run a small marketing practice, and I am writing this from inside the platform, not
+          from press coverage. I have installed OpenAI&rsquo;s conversion pixel on two websites,
+          wired lead conversion tracking into real forms, built a campaign for a B2B software
+          client, and launched a test campaign for my own business on July 27, 2026. This is what
+          I know so far, what is verified fact about the platform, and an honest answer to the
+          question in the title.
+        </p>
+
+        <h2>What are ChatGPT ads?</h2>
+        <p>
+          When someone on ChatGPT&rsquo;s free tier or its lower-cost Go tier asks a question, an
+          ad can appear with the response. The ad sits in a clearly labeled sponsored unit,
+          visually separate from the answer itself. It carries a business name, a headline, a
+          description, and an image.
+        </p>
+        <p>
+          Two things matter about that placement. First, the ad is not woven into the answer.
+          OpenAI states that ads do not change what ChatGPT says, and the sponsored unit rides
+          alongside the conversation rather than inside it. Second, the ad shows up at the moment
+          someone is actively working through a problem. That is a different moment than scrolling
+          a social feed, and arguably a better one.
+        </p>
+        <p>
+          Who does not see ads: subscribers on Plus, Pro, Business, and Enterprise plans. OpenAI
+          also excludes users under 18 and conversations it classifies as sensitive. That still
+          leaves the bulk of ChatGPT&rsquo;s audience, because most people use the product without
+          paying for the higher tiers.
+        </p>
+
+        <h2>How did we get here?</h2>
+        <p>
+          OpenAI spent years publicly reluctant about advertising. Then it moved fast. Testing
+          began in early 2026 with sponsored placements for US users. A self-serve platform
+          followed in the spring, and in July 2026 OpenAI opened advertising broadly, with
+          availability in the US and a handful of other markets. The practical meaning for a
+          business owner: as of July 2026, you no longer need an enterprise budget or an invitation
+          to run ads in ChatGPT. You need an account, a campaign, and a way to measure results.
+        </p>
+
+        <h2>How does targeting work?</h2>
+        <p>
+          This is the part that surprised me most when I built my first campaign. There is no
+          keyword auction. You do not bid on &ldquo;plumber near me&rdquo; or &ldquo;best CRM for
+          contractors.&rdquo;
+        </p>
+        <p>Instead, targeting combines two layers:</p>
+        <ul>
+          <li>
+            <strong>Geography.</strong> Country, region, metro area, down to postal codes. Familiar
+            territory if you have run Google or Meta ads.
+          </li>
+          <li>
+            <strong>Conversational context.</strong> At the ad group level you describe, in plain
+            language, who you want to reach. The system matches your ads to conversations where
+            that description fits.
+          </li>
+        </ul>
+        <p>
+          Writing that audience description is closer to describing your best customer to a
+          colleague than operating a bidding dashboard. It rewards businesses that genuinely
+          understand who they serve, and it punishes lazy targeting. When I wrote the description
+          for my own campaign, I rewrote it three times before it stopped sounding like a category
+          and started sounding like a person.
+        </p>
+        <p>
+          There are also customer-list audiences for advertisers who upload their own first-party
+          data, though the minimum matched-list sizes are large enough that this is mostly a tool
+          for bigger databases.
+        </p>
+
+        <h2>What do ChatGPT ads cost?</h2>
+        <p>
+          The platform supports cost-per-click, cost-per-impression, and cost-per-conversion
+          bidding. As of July 2026, campaigns require a minimum daily budget of $25, and you
+          control total spend with your own caps.
+        </p>
+        <p>
+          What I will not do is quote you an average cost per click or a benchmark cost per lead,
+          because that data does not meaningfully exist yet. The platform opened to all advertisers
+          weeks ago. Anyone publishing &ldquo;average ChatGPT ads CPC&rdquo; numbers right now is
+          working from a sample measured in days, or making it up. Treat those articles the way you
+          would treat a restaurant review written before the kitchen opened.
+        </p>
+
+        <h2>What I learned actually setting them up</h2>
+        <p>
+          Reading about a platform and operating in it are different things. Here is what the setup
+          actually involved, from my own accounts.
+        </p>
+        <h3>The conversion pixel comes first</h3>
+        <p>
+          OpenAI provides a conversion pixel: a small script that loads from OpenAI&rsquo;s servers
+          and initializes with your account&rsquo;s pixel ID. I installed it on two sites,
+          including the one you are reading. The pixel has a debug mode that prints events to the
+          browser console, so you can watch each event fire while you test. I left debug on for
+          launch week, watched the events land, and verified the setup end to end before spending
+          anything.
+        </p>
+        <p>
+          The pixel alone is not enough. You also wire conversion events for the actions that
+          matter. On this site, a lead form submission fires a &ldquo;lead created&rdquo; event to
+          OpenAI alongside the same event our other analytics receive. That means every form fill
+          traces back to the campaign that produced it, from the first dollar.
+        </p>
+        <h3>Campaign setup is genuinely self-serve</h3>
+        <p>
+          The flow is what you would expect if you have used other ad platforms: set a budget and a
+          goal, build your creative, launch, and monitor. I built a campaign for a B2B software
+          client and then a test campaign for my own business: a $200 budget and three ad
+          variations, launched July 27, 2026. Three variations instead of one because a test
+          should produce learning, not just spend.
+        </p>
+        <h3>The copy has to work harder</h3>
+        <p>
+          A ChatGPT ad is compact: business name, headline, description, image. There are no
+          sitelinks, callouts, or extensions to lean on. The headline either speaks to the
+          conversation the person is already having or it gets ignored. Writing for this format
+          feels less like search advertising and more like earning a referral mid-conversation.
+        </p>
+        <h3>What about results?</h3>
+        <p>
+          My campaigns are days old. I have no results worth reporting, and I will not pretend
+          otherwise. When there is real data, I will write about it. That is the honest cost of
+          being early: you trade proof for position.
+        </p>
+
+        <h2>Should your business run ChatGPT ads?</h2>
+        <p>
+          Here is the framework I use with my own clients, applied to a channel I am spending my
+          own money on.
+        </p>
+        <h3>Run a controlled test if:</h3>
+        <ul>
+          <li>
+            Your customers ask ChatGPT the questions your business answers. If you sell software,
+            services, or expertise, they almost certainly do.
+          </li>
+          <li>
+            You have a landing page that converts and lead capture with tracking already in place.
+            A new channel pointed at a broken page just measures the breakage faster.
+          </li>
+          <li>
+            You can put a test budget at risk without pain. This is discovery spending, and it
+            should be sized so a total loss teaches you something instead of hurting you.
+          </li>
+          <li>
+            You want account history and category learnings before your competitors show up. Early
+            advertisers on Google and Facebook bought customers at prices that look imaginary
+            today. Nobody can promise that pattern repeats here, but if it does, it will favor the
+            businesses already in the room.
+          </li>
+        </ul>
+        <h3>Wait if:</h3>
+        <ul>
+          <li>
+            You have no conversion tracking. Fix that first, on every channel, before spending
+            anywhere new.
+          </li>
+          <li>
+            You need a guaranteed cost per lead this quarter. A weeks-old platform cannot give you
+            a guarantee, and neither can anyone managing it for you.
+          </li>
+          <li>
+            Your follow-up leaks. If leads sit unanswered today, a new lead source will not fix
+            that. It will fund it.
+          </li>
+        </ul>
+
+        <h2>What to have in place before you spend a dollar</h2>
+        <ol>
+          <li>
+            <strong>The OpenAI conversion pixel installed and verified.</strong> Watch the events
+            fire in debug mode before launch. Do not take the installation on faith.
+          </li>
+          <li>
+            <strong>A defined conversion event.</strong> Decide what a conversion is for your
+            business, a lead form, a purchase, a booked call, and wire that specific event.
+          </li>
+          <li>
+            <strong>A landing page that can close.</strong> The ad earns the click. The page earns
+            the lead.
+          </li>
+          <li>
+            <strong>UTM discipline.</strong> Tag the campaign traffic so your analytics separate
+            this channel from everything else you run.
+          </li>
+          <li>
+            <strong>A decision rule, written down before launch.</strong> What number kills the
+            test. What number scales it. Deciding this in advance is what separates a test from a
+            hobby.
+          </li>
+        </ol>
+
+        <h2>The bottom line</h2>
+        <p>
+          ChatGPT ads are real, live, and open to any business as of July 2026. The targeting model
+          is built on conversation context instead of keywords, the entry budgets are within reach
+          of a small business, and the competitive window is open precisely because most businesses
+          have not moved yet. Nobody, including me, can show you long-term performance data, and
+          anyone who claims they can is selling something other than results.
+        </p>
+        <p>
+          My position: I believe in the channel enough to spend my own money in it, and I believe
+          in honesty enough to tell you it is a test, not a sure thing. If that combination
+          matches how you like to make decisions, this is a good moment to look at it.
+        </p>
+        <p>
+          I manage ChatGPT ads end to end: pixel installation, conversion tracking, ad copy, and
+          campaign management. The details are on the{" "}
+          <Link
+            href="/chatgpt-ads"
+            className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors"
+          >
+            ChatGPT Ads management page
+          </Link>
+          , or you can ask me directly whether the channel fits your business.
+        </p>
+        <div className="mt-8">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3 text-base font-semibold text-white transition hover:bg-[#0D2318]"
+          >
+            Ask About a ChatGPT Ads Test
+          </Link>
+        </div>
+        <p className="mt-10 text-sm italic text-gray-500">
+          Platform facts in this article are current as of July 27, 2026 and drawn from
+          OpenAI&rsquo;s published materials, current industry coverage, and direct use of the ads
+          platform. OpenAI is changing the product month to month; verify the current state before
+          making decisions on any single detail.
+        </p>
+      </div>
+    ),
+  },
+
   "what-we-find-inside-contractor-marketing-accounts": {
     title: "What We Find Inside Contractor Marketing Accounts",
     description:

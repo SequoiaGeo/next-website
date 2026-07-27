@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/services`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
 
     // Service pages
+    { url: `${BASE_URL}/chatgpt-ads`, lastModified: "2026-07-27", changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/geo-agency`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/geo-for-plumbers`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/geo-for-restoration`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
