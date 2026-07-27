@@ -5,6 +5,8 @@
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
+    // OpenAI Ads (ChatGPT) pixel, loaded by OaiqPixel in layout.tsx
+    oaiq?: (...args: unknown[]) => void;
   }
 }
 
@@ -22,13 +24,27 @@ type LeadParams = {
  * Google Ads conversion tracking can optimize toward real conversions.
  */
 export function trackLead({ source, value, ...rest }: LeadParams) {
-  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-  window.gtag("event", "generate_lead", {
-    currency: "USD",
-    value: value ?? 0,
-    lead_source: source,
-    ...rest,
-  });
+  if (typeof window === "undefined") return;
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "generate_lead", {
+      currency: "USD",
+      value: value ?? 0,
+      lead_source: source,
+      ...rest,
+    });
+  }
+  // Same lead moment, second destination: OpenAI Ads "Lead created" conversion
+  // so ChatGPT ad spend gets attribution. Guarded independently of gtag on
+  // purpose: an ad blocker eating GA must not also eat this signal.
+  // amount stays 0: leads have no verified dollar value, and the calculator's
+  // modeled annual-gap number must not masquerade as conversion value.
+  if (typeof window.oaiq === "function") {
+    window.oaiq("measure", "lead_created", {
+      type: "customer_action",
+      amount: 0,
+      currency: "USD",
+    });
+  }
 }
 
 /** Fire an arbitrary GA4 event (engagement, clicks, etc.). */

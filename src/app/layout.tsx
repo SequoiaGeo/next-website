@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import AiReferrerTracker from "@/components/AiReferrerTracker";
+import OaiqPixel from "@/components/OaiqPixel";
 
 
 const inter = Inter({
@@ -232,6 +233,11 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=1394557232154617&ev=PageView&noscript=1"
           />
         </noscript>
+
+        {/* OpenAI Ads (ChatGPT) pixel for the chatgpt-test-2026-07 campaign.
+            Inert until the base snippet from the OpenAI console is pasted into
+            OaiqPixel.tsx. lead_created fires from trackLead in lib/analytics. */}
+        <OaiqPixel />
 
         {/* Cookie consent banner, upgrades ad consent on acceptance */}
         <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
