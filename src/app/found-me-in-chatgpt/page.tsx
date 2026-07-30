@@ -32,15 +32,15 @@ export default function FoundMeInChatGPT() {
   return (
     <div className="min-h-screen bg-[#0D2318] pb-24">
       <section className="mx-auto max-w-2xl px-5 pt-4 sm:px-6 sm:pt-10">
-        <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#3A9E6A]">
+        <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#3A9E6A] sm:text-sm">
           You found me inside ChatGPT
         </p>
 
-        <h1 className="mt-1.5 text-[22px] font-extrabold leading-[1.12] tracking-tight text-white sm:text-4xl">
+        <h1 className="mt-1.5 text-[26px] font-extrabold leading-[1.1] tracking-tight text-white [@media(max-height:700px)]:text-[21px] sm:text-5xl lg:text-6xl">
           Now let&rsquo;s get your customers finding you the same way.
         </h1>
 
-        <p className="mt-2 text-[14px] leading-snug text-[#C8EDD2] sm:text-lg">
+        <p className="mt-3 text-[15px] leading-snug text-[#C8EDD2] [@media(max-height:700px)]:mt-2 [@media(max-height:700px)]:text-[13.5px] sm:text-xl">
           I put service businesses in front of people asking AI who to hire. You just watched it work.
         </p>
       </section>
@@ -57,8 +57,8 @@ export default function FoundMeInChatGPT() {
             marketing practice, a few clients at a time, and I do the work myself.
           </p>
           <p className="mt-3 text-[13px] leading-relaxed text-[#b9d4c4]">
-            HVAC, plumbing, roofing, and restoration. Google Ads, local SEO, AI search visibility,
-            and the conversion work in between.
+            HVAC, plumbing, roofing, and restoration. Websites, Google Ads, local SEO, AI search
+            visibility, and the conversion work in between.
           </p>
         </div>
 
