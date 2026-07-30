@@ -48,7 +48,38 @@ export default function FoundMeInChatGPT() {
       <section className="mx-auto mt-4 max-w-2xl px-5 sm:px-6">
         <LeadForm />
 
-        <div className="mt-6 rounded-2xl bg-[#12301f] p-5">
+        {/* Trust bar sits directly under the form, where the hesitation happens.
+            Every claim here is verifiable: the Inc. 5000 years, the company he
+            actually built, and the fact that he does the work himself. Nothing
+            aspirational, nothing that needs an asterisk. */}
+        <dl className="mt-4 grid grid-cols-3 gap-2 rounded-xl border border-[#1e4a33] bg-[#12301f]/60 px-2 py-3.5 sm:gap-4 sm:px-4">
+          <div className="border-r border-[#1e4a33] px-1 text-center sm:px-2">
+            <dt className="text-[13px] font-extrabold leading-tight text-white sm:text-base">
+              4x Inc. 5000
+            </dt>
+            <dd className="mt-0.5 text-[10px] leading-tight text-[#8fb8a1] sm:text-xs">
+              2020 to 2023
+            </dd>
+          </div>
+          <div className="border-r border-[#1e4a33] px-1 text-center sm:px-2">
+            <dt className="text-[13px] font-extrabold leading-tight text-white sm:text-base">
+              13 years in HVAC
+            </dt>
+            <dd className="mt-0.5 text-[10px] leading-tight text-[#8fb8a1] sm:text-xs">
+              Built it to 130+ employees
+            </dd>
+          </div>
+          <div className="px-1 text-center sm:px-2">
+            <dt className="text-[13px] font-extrabold leading-tight text-white sm:text-base">
+              Owner operated
+            </dt>
+            <dd className="mt-0.5 text-[10px] leading-tight text-[#8fb8a1] sm:text-xs">
+              You work with me, not a rep
+            </dd>
+          </div>
+        </dl>
+
+        <div className="mt-4 rounded-2xl bg-[#12301f] p-5">
           <p className="text-[13px] leading-relaxed text-[#b9d4c4]">
             <span className="font-bold text-white">Who you are talking to.</span> I spent 13 years
             running Balanced Comfort Heating &amp; Air, growing it to 130+ employees and four
