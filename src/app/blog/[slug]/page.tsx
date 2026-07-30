@@ -16,7 +16,7 @@ const posts: Record<string, Post> = {
   "what-are-chatgpt-ads": {
     title: "What Are ChatGPT Ads and Should Your Business Run Them?",
     description:
-      "OpenAI opened ChatGPT advertising to businesses of every size in July 2026. A first-hand explainer from someone who installed the conversion pixel, wired the tracking, and launched live campaigns: how the platform works, what it costs, and an honest framework for deciding whether to test it.",
+      "OpenAI opened self-serve ChatGPT advertising in beta in May 2026. A first-hand explainer from someone who installed the conversion pixel, wired the tracking, and launched live campaigns: how the platform works, what it costs, and an honest framework for deciding whether to test it.",
     date: "July 2026",
     dateISO: "2026-07-27",
     readTime: "9 min read",
@@ -26,7 +26,7 @@ const posts: Record<string, Post> = {
         <p>
           ChatGPT ads are sponsored placements that appear alongside ChatGPT&rsquo;s responses for
           people using the free and Go tiers of the product. OpenAI began testing them in early
-          2026 and opened its advertising platform to businesses of every size in July 2026.
+          2026 and opened self-serve access in beta in May 2026.
         </p>
         <p>
           I run a small marketing practice, and I am writing this from inside the platform, not
@@ -61,11 +61,11 @@ const posts: Record<string, Post> = {
         <h2>How did we get here?</h2>
         <p>
           OpenAI spent years publicly reluctant about advertising. Then it moved fast. Testing
-          began in early 2026 with sponsored placements for US users. A self-serve platform
-          followed in the spring, and in July 2026 OpenAI opened advertising broadly, with
-          availability in the US and a handful of other markets. The practical meaning for a
-          business owner: as of July 2026, you no longer need an enterprise budget or an invitation
-          to run ads in ChatGPT. You need an account, a campaign, and a way to measure results.
+          began in early 2026 with sponsored placements for US users, running as a focused pilot
+          through the spring. Self-serve onboarding in Ads Manager Beta followed, starting with US
+          businesses, and OpenAI has been widening access gradually since. The practical meaning for a business owner: as of July 2026, you no
+          longer need an enterprise budget or an invitation to run ads in ChatGPT. You need an
+          account, a campaign, and a way to measure results.
         </p>
 
         <h2>How does targeting work?</h2>

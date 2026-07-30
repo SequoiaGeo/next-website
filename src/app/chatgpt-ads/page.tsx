@@ -78,7 +78,7 @@ export default function ChatGptAdsPage() {
                 "name": "What are ChatGPT ads?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "ChatGPT ads are sponsored placements that appear alongside ChatGPT's responses for people using the free and Go tiers of ChatGPT. Each ad is clearly labeled as sponsored and displayed separately from the answer itself. OpenAI began testing ads in early 2026 and opened the platform to advertisers of every size in July 2026."
+                  "text": "ChatGPT ads are sponsored placements that appear alongside ChatGPT's responses for people using the free and Go tiers of ChatGPT. Each ad is clearly labeled as sponsored and displayed separately from the answer itself. OpenAI began testing ads in early 2026 and opened self-serve access in beta in May 2026."
                 }
               },
               {
@@ -110,7 +110,7 @@ export default function ChatGptAdsPage() {
                 "name": "Can you show ROI numbers from ChatGPT ads?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Not yet, and neither can anyone else being honest. The platform opened to all advertisers in July 2026. What we do instead is wire the OpenAI conversion pixel and a defined conversion event before any money is spent, so every dollar is measured from day one, and report exactly what the campaign produced. If the numbers do not work, we say so and stop."
+                  "text": "Not yet, and neither can anyone else being honest. Self-serve access opened in beta in May 2026 and is still widening. What we do instead is wire the OpenAI conversion pixel and a defined conversion event before any money is spent, so every dollar is measured from day one, and report exactly what the campaign produced. If the numbers do not work, we say so and stop."
                 }
               },
               {
@@ -139,8 +139,9 @@ export default function ChatGptAdsPage() {
               <span className="text-[#1A5C3A]">Already Running Them</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              OpenAI opened ChatGPT advertising to businesses of every size in July 2026. Most
-              marketers are still reading about it. We have live campaigns, working pixels, and
+              OpenAI opened self-serve ChatGPT advertising in beta in May 2026, and access has been
+              widening since. Most marketers are still reading about it. We have live campaigns,
+              working pixels, and
               conversion tracking wired on real websites, including the one you are on right now.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -178,7 +179,7 @@ export default function ChatGptAdsPage() {
             {[
               {
                 title: "Low competition, for now",
-                body: "The platform opened to all advertisers in July 2026. Most businesses have not moved yet. Fewer advertisers competing for the same placements is a structural advantage that will not last.",
+                body: "Self-serve access opened in beta in May 2026 and is still widening. Most businesses have not moved yet. Fewer advertisers competing for the same placements is a structural advantage that will not last.",
               },
               {
                 title: "Your buyers are already there",
@@ -344,8 +345,8 @@ export default function ChatGptAdsPage() {
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
                 I run a small marketing practice. A few clients at a time, and I do the work
-                myself. When OpenAI opened ChatGPT advertising in July 2026, I did not write a
-                thought piece about it. I opened an account, installed the pixel on this website,
+                myself. Rather than write a thought piece about ChatGPT advertising, I opened an
+                account, installed the pixel on this website,
                 wired the lead conversion event, and launched a campaign promoting my own business.
               </p>
               <p>
@@ -475,7 +476,7 @@ export default function ChatGptAdsPage() {
             {[
               {
                 q: "What are ChatGPT ads?",
-                a: "ChatGPT ads are sponsored placements that appear alongside ChatGPT's responses for people using the free and Go tiers of ChatGPT. Each ad is clearly labeled as sponsored and displayed separately from the answer itself. OpenAI began testing ads in early 2026 and opened the platform to advertisers of every size in July 2026.",
+                a: "ChatGPT ads are sponsored placements that appear alongside ChatGPT's responses for people using the free and Go tiers of ChatGPT. Each ad is clearly labeled as sponsored and displayed separately from the answer itself. OpenAI began testing ads in early 2026 and opened self-serve access in beta in May 2026.",
               },
               {
                 q: "Who sees ads in ChatGPT?",
@@ -491,7 +492,7 @@ export default function ChatGptAdsPage() {
               },
               {
                 q: "Can you show ROI numbers from ChatGPT ads?",
-                a: "Not yet, and neither can anyone else being honest. The platform opened to all advertisers in July 2026. What we do instead is wire the OpenAI conversion pixel and a defined conversion event before any money is spent, so every dollar is measured from day one, and report exactly what the campaign produced. If the numbers do not work, we say so and stop.",
+                a: "Not yet, and neither can anyone else being honest. Self-serve access opened in beta in May 2026 and is still widening. What we do instead is wire the OpenAI conversion pixel and a defined conversion event before any money is spent, so every dollar is measured from day one, and report exactly what the campaign produced. If the numbers do not work, we say so and stop.",
               },
               {
                 q: "Why should we start now instead of waiting?",

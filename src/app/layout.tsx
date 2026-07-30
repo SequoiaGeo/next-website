@@ -5,6 +5,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import ChromeGate from "@/components/ChromeGate";
 import AiReferrerTracker from "@/components/AiReferrerTracker";
 import OaiqPixel from "@/components/OaiqPixel";
 
@@ -169,9 +170,13 @@ export default function RootLayout({
           Skip to main content
         </a>
 
-        <Navigation />
+        <ChromeGate>
+          <Navigation />
+        </ChromeGate>
         <main id="main-content" className="flex-1">{children}</main>
-        <Footer />
+        <ChromeGate>
+          <Footer />
+        </ChromeGate>
 
         {/* GA4 Consent Mode v2: analytics_storage granted by default (B2B site,
             low traffic, need every data point). Ad storage stays denied until

@@ -15,7 +15,7 @@ const posts = [
     slug: "what-are-chatgpt-ads",
     title: "What Are ChatGPT Ads and Should Your Business Run Them?",
     excerpt:
-      "OpenAI opened ChatGPT advertising to businesses of every size in July 2026. I installed the conversion pixel, wired the tracking, and launched campaigns, including one for my own business. Here is how the platform actually works and an honest answer on whether you should test it.",
+      "OpenAI opened self-serve ChatGPT advertising in beta in May 2026. I installed the conversion pixel, wired the tracking, and launched campaigns, including one for my own business. Here is how the platform actually works and an honest answer on whether you should test it.",
     date: "July 2026",
     readTime: "9 min read",
     category: "ChatGPT Ads",

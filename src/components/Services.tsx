@@ -144,7 +144,7 @@ export default function Services() {
                 <h3 className="text-xl font-bold text-[#1a1a1a]">ChatGPT Ads Management</h3>
               </div>
               <p className="text-base leading-relaxed text-gray-600">
-                OpenAI opened ChatGPT advertising to businesses of every size in July 2026, and
+                OpenAI opened self-serve ChatGPT advertising in beta in May 2026, and
                 most marketers are still reading about it. We already operate in the channel:
                 pixel installation, conversion tracking, ad copy, and full campaign management.
               </p>
