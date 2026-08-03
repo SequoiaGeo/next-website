@@ -39,7 +39,7 @@ export default function HvacStatisticsPage() {
               "name": "Sequoia GEO",
               "url": "https://www.sequoiageo.com"
             },
-            "dateModified": "2026-07-18",
+            "dateModified": "2026-08-03",
             "mainEntityOfPage": "https://www.sequoiageo.com/hvac-statistics"
           })
         }}
@@ -57,8 +57,89 @@ export default function HvacStatisticsPage() {
             seasonal demand patterns, heat pump adoption, and how homeowners actually find contractors.
           </p>
           <p className="mt-4 text-sm text-[#C8EDD2]/50">
-            Sources: IBISWorld, U.S. Bureau of Labor Statistics, U.S. Census Bureau, NAHB, RMI, ServiceTitan. Last updated July 2026.
+            Sources: IBISWorld, U.S. Bureau of Labor Statistics, U.S. Census Bureau, NAHB, RMI, ServiceTitan, plus first-party benchmarks from client accounts I manage. Last updated August 2026.
           </p>
+        </div>
+      </section>
+
+      {/* Operator benchmarks: first-party account data */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <p className="section-overline mb-4">Operator Benchmarks</p>
+          <h2 className="text-2xl font-extrabold text-[#1a1a1a] mb-2">Real Numbers From Accounts I Manage</h2>
+          <p className="text-gray-500 text-sm mb-10 border-b border-gray-100 pb-6">
+            Every other stat on this page comes from published research anyone can copy. These do not. They come
+            from client accounts I manage, pulled Aug 2026, anonymized to trade and state.
+          </p>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 mb-12">
+            <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-6">
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Google Ads cost per lead</p>
+              <p className="text-3xl font-black text-[#1A5C3A]">$41.03</p>
+              <p className="mt-2 text-sm font-semibold text-[#1a1a1a]">Chimney service, Boise, Idaho, July 2026</p>
+              <p className="mt-1 text-sm text-gray-600">
+                9 phone call leads on $369.27 in spend. 55 clicks at $6.71 average CPC.
+              </p>
+              <p className="mt-3 text-xs text-gray-500">From client accounts I manage, pulled Aug 2026.</p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-6">
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">LSA average cost per charged lead</p>
+              <p className="text-3xl font-black text-[#1A5C3A]">$63.16</p>
+              <p className="mt-2 text-sm font-semibold text-[#1a1a1a]">HVAC contractor, Texas metro, lifetime Sep 2025 to Jul 2026</p>
+              <p className="mt-1 text-sm text-gray-600">
+                19 charged leads, $1,200.14 total. Phone: 7 leads at $68.00 average. Message: 12 leads at $60.35 average.
+              </p>
+              <p className="mt-3 text-xs text-gray-500">From client accounts I manage, pulled Aug 2026.</p>
+            </div>
+          </div>
+
+          <h3 className="text-lg font-bold text-[#1a1a1a] mb-4">Google review counts across managed profiles</h3>
+          <div className="overflow-x-auto rounded-2xl border border-gray-200 mb-3">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-[#0D2318]">
+                <tr>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-white">Trade (State)</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-[#C8EDD2]">Google Reviews</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-[#C8EDD2]">Rating</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 bg-white">
+                {[
+                  { trade: "HVAC (Texas)", reviews: "912", rating: "4.9" },
+                  { trade: "Chimney (Idaho)", reviews: "370", rating: "4.8" },
+                  { trade: "Plumbing (Florida)", reviews: "163", rating: "5.0" },
+                  { trade: "Exteriors (Texas)", reviews: "28", rating: "5.0" },
+                  { trade: "Detailing (Georgia)", reviews: "78", rating: "4.9" },
+                ].map((row) => (
+                  <tr key={row.trade} className="hover:bg-[#fafaf8]">
+                    <td className="px-6 py-4 text-sm font-semibold text-[#1a1a1a]">{row.trade}</td>
+                    <td className="px-6 py-4 text-sm text-gray-600">{row.reviews}</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-[#1A5C3A]">{row.rating}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 mb-10">From client accounts I manage, pulled Aug 2026.</p>
+
+          <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#fafaf8] p-6">
+            <h3 className="text-lg font-bold text-[#1a1a1a] mb-2">What a real $17M HVAC company spent on marketing</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Before Sequoia GEO, I operated Balanced Comfort for 13 years and built it to $17M+ in annual revenue
+              and 130+ employees at exit, with four straight Inc 5000 appearances (2020 to 2023). I managed annual
+              ad spend in the low seven figures. Run the derivation: low seven figures against $17M+ in revenue
+              lands in the 6 to 10 percent of revenue band. That is what it took at that scale.
+            </p>
+            <Link
+              href="/how-much-should-hvac-companies-spend-on-marketing"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#1A5C3A] hover:underline"
+            >
+              See the full budget breakdown for HVAC companies
+              <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -334,6 +415,33 @@ export default function HvacStatisticsPage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Questions contractors ask */}
+      <section className="bg-[#fafaf8] py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-xl font-extrabold text-[#1a1a1a] mb-6">Questions Contractors Ask</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {[
+              { label: "How much should HVAC companies spend on marketing?", href: "/how-much-should-hvac-companies-spend-on-marketing" },
+              { label: "How much should plumbers spend on marketing?", href: "/how-much-should-plumbers-spend-on-marketing" },
+              { label: "How much do HVAC and plumbing leads cost?", href: "/how-much-do-hvac-plumbing-leads-cost" },
+              { label: "How much does SEO cost for contractors?", href: "/how-much-does-seo-cost-for-contractors" },
+              { label: "What is changing with Google LSA in 2026?", href: "/google-lsa-changes-2026" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-4 text-sm font-semibold text-[#1A5C3A] shadow-sm hover:border-[#3A9E6A]/40 hover:shadow-md transition"
+              >
+                {link.label}
+                <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

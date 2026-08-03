@@ -56,6 +56,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/contractors-guide-ai-search`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/leaving-my-marketing-agency`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 
+    // Question pages (answer-first, built for the queries contractors type into ChatGPT and Google)
+    { url: `${BASE_URL}/how-much-should-hvac-companies-spend-on-marketing`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/how-much-should-plumbers-spend-on-marketing`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/how-much-do-hvac-plumbing-leads-cost`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/how-much-does-seo-cost-for-contractors`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/google-lsa-changes-2026`, lastModified: "2026-08-03", changeFrequency: "weekly", priority: 0.8 },
+
     // Statistics pages
     { url: `${BASE_URL}/hvac-statistics`, lastModified: "2026-07-18", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/plumbing-statistics`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },

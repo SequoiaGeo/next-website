@@ -32,7 +32,7 @@ export default function LsaStatisticsPage() {
               "name": "Sequoia GEO",
               "url": "https://www.sequoiageo.com"
             },
-            "dateModified": "2026-04-22",
+            "dateModified": "2026-08-03",
             "mainEntityOfPage": "https://www.sequoiageo.com/local-services-ads-statistics"
           })
         }}
@@ -51,12 +51,121 @@ export default function LsaStatisticsPage() {
             and contractor adoption trends.
           </p>
           <p className="mt-4 text-sm text-[#C8EDD2]/50">
-            Sources: Blue Grid Media, The Media Captain, Coalmarch, MarketingCode.com. Last updated April 2026.
+            Sources: Blue Grid Media, The Media Captain, Coalmarch, MarketingCode.com, plus first-party charged-lead data from client accounts I manage. Last updated August 2026.
           </p>
         </div>
       </section>
 
-      {/* Quick Stats Strip */}
+      {/* Operator benchmarks: first-party charged-lead data */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <p className="section-overline mb-4">Operator Benchmarks</p>
+          <h2 className="text-2xl font-extrabold text-[#1a1a1a] mb-2">What LSA Leads Actually Cost: Real Charged-Lead Data</h2>
+          <p className="text-gray-500 text-sm mb-10 border-b border-gray-100 pb-6">
+            Everything below this section is third-party research anyone can republish. This section is not.
+            These are real charged-lead prices from client accounts I manage, pulled Aug 2026, anonymized to
+            trade and state. LSA charges per lead and Google bills the client directly. Prices vary by trade
+            and market. These are charged prices, not estimates.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1a1a1a] mb-4">Exteriors contractor (windows, siding, roofing), Texas metro</h3>
+          <div className="overflow-x-auto rounded-2xl border border-gray-200 mb-3">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-[#0D2318]">
+                <tr>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-white">Month (2026)</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-[#C8EDD2]">Charged Leads</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-[#C8EDD2]">Total Charged</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-[#C8EDD2]">Cost Per Lead</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 bg-white">
+                {[
+                  { month: "March", leads: "2", total: "$450.42", cpl: "$225.21" },
+                  { month: "April", leads: "3", total: "$414.18", cpl: "$138.06" },
+                  { month: "May", leads: "6", total: "$976.38", cpl: "$162.73" },
+                  { month: "June", leads: "16", total: "$2,001.31", cpl: "$125.08" },
+                  { month: "July", leads: "11", total: "$1,883.58", cpl: "$171.23" },
+                ].map((row) => (
+                  <tr key={row.month} className="hover:bg-[#fafaf8]">
+                    <td className="px-6 py-4 text-sm font-semibold text-[#1a1a1a]">{row.month}</td>
+                    <td className="px-6 py-4 text-sm text-gray-600">{row.leads}</td>
+                    <td className="px-6 py-4 text-sm text-gray-600">{row.total}</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-[#1A5C3A]">{row.cpl}</td>
+                  </tr>
+                ))}
+                <tr className="bg-[#fafaf8]">
+                  <td className="px-6 py-4 text-sm font-black text-[#1a1a1a]">Mar to Jul total</td>
+                  <td className="px-6 py-4 text-sm font-bold text-[#1a1a1a]">38</td>
+                  <td className="px-6 py-4 text-sm font-bold text-[#1a1a1a]">$5,725.87</td>
+                  <td className="px-6 py-4 text-sm font-black text-[#1A5C3A]">$150.68 avg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 mb-10">
+            From client accounts I manage, pulled Aug 2026. July mix: 7 phone leads, 4 message leads.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1a1a1a] mb-4">HVAC contractor, Texas metro (lifetime, Sep 2025 to Jul 2026)</h3>
+          <div className="overflow-x-auto rounded-2xl border border-gray-200 mb-3">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-[#0D2318]">
+                <tr>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-white">Lead Type</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-[#C8EDD2]">Charged Leads</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-[#C8EDD2]">Average Cost Per Lead</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 bg-white">
+                <tr className="hover:bg-[#fafaf8]">
+                  <td className="px-6 py-4 text-sm font-semibold text-[#1a1a1a]">Phone</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">7</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-[#1A5C3A]">$68.00</td>
+                </tr>
+                <tr className="hover:bg-[#fafaf8]">
+                  <td className="px-6 py-4 text-sm font-semibold text-[#1a1a1a]">Message</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">12</td>
+                  <td className="px-6 py-4 text-sm font-semibold text-[#1A5C3A]">$60.35</td>
+                </tr>
+                <tr className="bg-[#fafaf8]">
+                  <td className="px-6 py-4 text-sm font-black text-[#1a1a1a]">All leads</td>
+                  <td className="px-6 py-4 text-sm font-bold text-[#1a1a1a]">19</td>
+                  <td className="px-6 py-4 text-sm font-black text-[#1A5C3A]">$63.16 avg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 mb-10">
+            From client accounts I manage, pulled Aug 2026. $1,200.14 total charged across the life of the account.
+            Message leads cost less than phone leads in this account.
+          </p>
+
+          {/* LSA to Performance Max migration note */}
+          <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#fafaf8] p-6">
+            <h3 className="text-lg font-bold text-[#1a1a1a] mb-2">LSA is folding into Google Ads</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Google begins a phased migration in August 2026 for select US home-services advertisers. LSA becomes
+              a Performance Max pay-per-lead campaign type inside Google Ads. Lead history migrates. Campaign-level
+              performance metrics and cost history do not, and the old LSA dashboard becomes inaccessible once an
+              account migrates. Google emails account admins 14 days before their migration date, plus a 7-day
+              reminder. We completed full pre-migration exports for three client accounts in July 2026. As of Aug 2,
+              no migration notice has arrived on any account we manage.
+            </p>
+            <Link
+              href="/google-lsa-changes-2026"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#1A5C3A] hover:underline"
+            >
+              Read the full breakdown: Google LSA changes in 2026
+              <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Stat strip */}
       <section className="bg-[#1A5C3A] py-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm font-medium text-[#C8EDD2]/80">
@@ -295,6 +404,33 @@ export default function LsaStatisticsPage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Questions contractors ask */}
+      <section className="bg-[#fafaf8] py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-xl font-extrabold text-[#1a1a1a] mb-6">Questions Contractors Ask</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {[
+              { label: "How much should HVAC companies spend on marketing?", href: "/how-much-should-hvac-companies-spend-on-marketing" },
+              { label: "How much should plumbers spend on marketing?", href: "/how-much-should-plumbers-spend-on-marketing" },
+              { label: "How much do HVAC and plumbing leads cost?", href: "/how-much-do-hvac-plumbing-leads-cost" },
+              { label: "How much does SEO cost for contractors?", href: "/how-much-does-seo-cost-for-contractors" },
+              { label: "What is changing with Google LSA in 2026?", href: "/google-lsa-changes-2026" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-5 py-4 text-sm font-semibold text-[#1A5C3A] shadow-sm hover:border-[#3A9E6A]/40 hover:shadow-md transition"
+              >
+                {link.label}
+                <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

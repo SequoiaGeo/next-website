@@ -1,6 +1,6 @@
-﻿import type { Metadata } from "next";
-import Link from "next/link";
+import type { Metadata } from "next";
 import InlineLeadForm from "@/components/InlineLeadForm";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Free Marketing Audit for Home Service Contractors | Sequoia GEO",
@@ -9,14 +9,35 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.sequoiageo.com/audit" },
 };
 
+const heroDeliverables = [
+  {
+    label: "What I check",
+    desc: "LSA setup, conversion tracking, ad spend against booked jobs, GBP health, call handling, and 7 more areas. 12 total, by hand.",
+  },
+  {
+    label: "What you get back",
+    desc: "A written findings report with what each problem is costing you, plus the 5 fixes with the highest ROI, in order.",
+  },
+  {
+    label: "How fast",
+    desc: "3 to 5 business days, then a 45 to 60 minute call to walk through it. You keep the report either way.",
+  },
+];
+
+const proofChips = [
+  "4x Inc 5000",
+  "13 years as an operator",
+  "$17M+ annual revenue at exit",
+];
+
 const auditItems = [
   {
     title: "LSA Setup & Phone Verification",
-    desc: "We call the phone number attached to your LSA campaign. You'd be surprised how often it doesn't work.",
+    desc: "I call the phone number attached to your LSA campaign. You'd be surprised how often it doesn't work.",
   },
   {
     title: "Conversion Tracking Accuracy",
-    desc: "Most dashboards show thousands of 'conversions' that aren't phone calls or form fills. We find the real number.",
+    desc: "Most dashboards show thousands of 'conversions' that aren't phone calls or form fills. I find the real number.",
   },
   {
     title: "Website Ownership",
@@ -24,11 +45,11 @@ const auditItems = [
   },
   {
     title: "Ad Spend Attribution",
-    desc: "Where is your budget actually going? We break down every channel and what it's producing in booked jobs.",
+    desc: "Where is your budget actually going? I break down every channel and what it's producing in booked jobs.",
   },
   {
     title: "Booking Rate Analysis",
-    desc: "We look at calls versus booked jobs. Most agencies don't have this number. We make it unavoidable.",
+    desc: "I look at calls versus booked jobs. Most agencies don't have this number. I make it unavoidable.",
   },
   {
     title: "Average Ticket & Revenue per Lead",
@@ -40,11 +61,11 @@ const auditItems = [
   },
   {
     title: "CSR Call Handling",
-    desc: "We listen to calls. One call review often finds more revenue opportunity than a full month of optimization.",
+    desc: "I listen to calls. One call review often finds more revenue opportunity than a full month of optimization.",
   },
   {
     title: "Website Speed & Technical Health",
-    desc: "Slow pages lose calls before anyone reads a word. We measure it against your actual competitors.",
+    desc: "Slow pages lose calls before anyone reads a word. I measure it against your actual competitors.",
   },
   {
     title: "Review Strategy",
@@ -71,12 +92,12 @@ const deliverables = [
   },
   {
     title: "A straight conversation",
-    desc: "We go through it together. You ask questions. We give direct answers. No upsell pressure.",
+    desc: "We go through it together. You ask questions. I give direct answers. No upsell pressure.",
   },
 ];
 
 const goodFit = [
-  "Spending $5K-$30K per month on marketing",
+  "Spending $5K to $30K per month on marketing",
   "Have at least one active lead channel",
   "Want to understand your actual numbers",
   "Currently working with at least one vendor or agency",
@@ -92,44 +113,110 @@ export default function AuditPage() {
   return (
     <main className="min-h-screen bg-[#fafaf8]">
 
-      {/* Nav strip */}
-      <div className="border-b border-gray-200 bg-white px-6 py-4">
-        <div className="mx-auto max-w-7xl">
-          <Link
-            href="/"
-            className="text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
-          >
-            ← Back to Sequoia GEO
-          </Link>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Free Audit", url: "https://www.sequoiageo.com/audit" },
+        ]}
+      />
+
+      {/* Hero + capture: everything a cold click needs in the first viewport */}
+      <div id="audit-form" className="scroll-mt-20 bg-[#0D2318]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 sm:py-16">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14 lg:items-start">
+
+            {/* Left: the offer */}
+            <div>
+              <p className="section-overline text-[#3A9E6A] mb-4">Free Marketing Audit</p>
+              <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl leading-[1.08]">
+                I&rsquo;ll audit your marketing for free and show you what your spend actually produces.
+              </h1>
+              <p className="mt-4 text-base text-[#C8EDD2]/70 leading-relaxed">
+                No pitch. No obligation. Real numbers pulled from your own accounts.
+              </p>
+
+              <ul className="mt-7 space-y-4">
+                {heroDeliverables.map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <svg aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <p className="text-sm leading-relaxed text-[#C8EDD2]/80">
+                      <span className="font-bold text-white">{item.label}: </span>
+                      {item.desc}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-7 flex flex-wrap gap-3">
+                {proofChips.map((chip, i) => (
+                  <span
+                    key={i}
+                    className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-[#3A9E6A]/10 px-4 py-2 text-sm font-medium text-[#3A9E6A]"
+                  >
+                    <svg aria-hidden="true" className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    {chip}
+                  </span>
+                ))}
+              </div>
+
+              <p className="mt-7 text-sm text-[#C8EDD2]/60">
+                Rather talk than type?{" "}
+                <a href="tel:5595213122" className="font-semibold text-white hover:text-[#C8EDD2] transition-colors">
+                  Call me at (559) 521-3122
+                </a>
+                .
+              </p>
+            </div>
+
+            {/* Right: the capture. Section chrome stripped so the card sits in the hero. */}
+            <div className="[&>section]:bg-transparent [&>section]:py-0 [&>section>div]:max-w-none [&>section>div]:px-0">
+              <InlineLeadForm
+                source="audit_page"
+                heading="Get your free audit"
+                subtext="Tell me where to send it. I take 10 audits a month, first come, first served."
+                buttonText="Get My Free Audit"
+              />
+            </div>
+
+          </div>
         </div>
       </div>
 
-      {/* Hero */}
-      <div className="bg-[#0D2318]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
-          <div className="max-w-3xl">
-            <p className="section-overline text-[#3A9E6A] mb-4">Free Audit</p>
-            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl leading-[1.06]">
-              Find out exactly what&rsquo;s leaking before you spend another dollar.
-            </h1>
-            <p className="mt-6 text-lg text-[#C8EDD2]/70 leading-relaxed max-w-2xl">
-              Most contractors we talk to have the same experience: multiple agencies, regular
-              reports, and no clear picture of what&rsquo;s actually working. The audit exists to
-              fix that.
+      {/* What an audit found: real figures, already published, names removed */}
+      <div className="bg-[#fafaf8]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
+          <div className="max-w-2xl mb-10">
+            <p className="section-overline mb-3">From One Audit</p>
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl leading-[1.08]">
+              What an audit found
+            </h2>
+            <p className="mt-4 text-base text-gray-500 leading-relaxed">
+              One plumbing company. Numbers pulled from their own accounts, published with the name removed.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <span className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-[#3A9E6A]/10 px-4 py-2 text-sm font-medium text-[#3A9E6A]">
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-                No pitch. No obligation.
-              </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-[#3A9E6A]/10 px-4 py-2 text-sm font-medium text-[#3A9E6A]">
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-                We check 12 specific areas.
-              </span>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div className="rounded-2xl border border-gray-200 bg-white p-8">
+              <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A] tabular-nums">
+                $7,783<span className="text-xl font-bold text-gray-400">/mo</span>
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-gray-500">
+                What they were paying Angi every month. Tracked booked revenue coming back
+                from it: <span className="font-semibold text-[#1a1a1a]">$475</span>.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-white p-8">
+              <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A] tabular-nums">
+                131 <span className="text-xl font-bold text-gray-400">of 4,009</span>
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-gray-500">
+                Same audit. I went through 4,009 tracked calls.{" "}
+                <span className="font-semibold text-[#1a1a1a]">131 were new customers</span>.
+              </p>
             </div>
           </div>
         </div>
@@ -139,7 +226,7 @@ export default function AuditPage() {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
           <div className="max-w-2xl mb-12">
-            <p className="section-overline mb-3">What We Examine</p>
+            <p className="section-overline mb-3">What I Examine</p>
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl leading-[1.08]">
               The 12-point audit
             </h2>
@@ -163,27 +250,6 @@ export default function AuditPage() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-8 rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7">
-            <p className="section-overline mb-2">From Real Audits</p>
-            <p className="text-lg font-bold text-[#1a1a1a]">
-              16,962 reported conversions. 21 real ones.
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              Six findings from this year&rsquo;s audits: conversions that never happened, website traffic
-              that was 71 percent bots, and a Google Guaranteed account that could not deliver a call.
-              Names removed, numbers real.
-            </p>
-            <Link
-              href="/blog/what-we-find-inside-contractor-marketing-accounts"
-              className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
-            >
-              Read what we find
-              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
           </div>
         </div>
       </div>
@@ -234,7 +300,7 @@ export default function AuditPage() {
             <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#C8EDD2]/30 p-8">
               <div className="mb-6 flex items-center gap-3">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1A5C3A]">
-                  <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <svg aria-hidden="true" className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
@@ -243,7 +309,7 @@ export default function AuditPage() {
               <ul className="space-y-3">
                 {goodFit.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <svg aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                     <span className="text-sm leading-relaxed text-[#1a1a1a]">{item}</span>
@@ -256,7 +322,7 @@ export default function AuditPage() {
             <div className="rounded-2xl border border-gray-200 bg-white p-8">
               <div className="mb-6 flex items-center gap-3">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-200">
-                  <svg className="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <svg aria-hidden="true" className="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </div>
@@ -265,7 +331,7 @@ export default function AuditPage() {
               <ul className="space-y-3">
                 {notGoodFit.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <svg aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                     <span className="text-sm leading-relaxed text-gray-500">{item}</span>
@@ -277,7 +343,7 @@ export default function AuditPage() {
         </div>
       </div>
 
-      {/* CTA */}
+      {/* Bottom CTA: scrolls back to the form, never off the page */}
       <div className="bg-[#0D2318]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
           <div className="max-w-2xl">
@@ -286,25 +352,25 @@ export default function AuditPage() {
               10 audits per month. First come, first served.
             </h2>
             <p className="mt-5 text-lg text-[#C8EDD2]/70 leading-relaxed">
-              We limit the number of audits we run each month so we can actually be thorough.
-              If there&rsquo;s a spot available, it costs nothing and takes about 15 minutes of
-              your time to get started.
+              I limit the number of audits I run each month so I can actually be thorough.
+              If a spot is open, it costs nothing. The form takes a minute, and you&rsquo;ll
+              hear from me within one business day.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <Link
-                href="/contact"
+              <a
+                href="#audit-form"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white transition hover:bg-[#245a42]"
               >
-                Apply for a Free Audit
-                <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                Get My Free Audit
+                <svg aria-hidden="true" className="ml-2 h-4 w-4 rotate-[-90deg]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
-              </Link>
+              </a>
               <a
                 href="tel:5595213122"
                 className="inline-flex items-center gap-2 text-sm font-medium text-[#C8EDD2]/60 hover:text-[#C8EDD2] transition-colors"
               >
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <svg aria-hidden="true" className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
                 (559) 521-3122
@@ -313,14 +379,6 @@ export default function AuditPage() {
           </div>
         </div>
       </div>
-
-      {/* On-page capture: apply without leaving the page */}
-      <InlineLeadForm
-        source="audit_page"
-        heading="Apply for your free audit"
-        subtext="Tell us where to send it. We review your marketing before the call. 10 audits a month, first come, first served."
-        buttonText="Apply for a Free Audit"
-      />
 
     </main>
   );

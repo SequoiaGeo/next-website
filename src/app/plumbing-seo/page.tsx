@@ -1,5 +1,6 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import type { Metadata } from "next";
 
@@ -12,6 +13,54 @@ export const metadata: Metadata = {
   },
 };
 
+const faqs = [
+  {
+    question: "How long does plumbing SEO take to produce results?",
+    answer:
+      "It depends on your market and your starting point, and anyone who promises a specific date is guessing. Technical fixes and Google Business Profile work tend to move first. Content and authority building take longer, and a competitive metro takes longer than a small market. What I commit to instead is measurement from the start: every month you see phone calls and booked jobs from organic search, so you know whether the program is working well before the rankings chart looks impressive.",
+  },
+  {
+    question: "Should I invest in SEO or paid advertising for my plumbing company?",
+    answer:
+      "Both, in the right proportion. Paid advertising produces phone calls now and stops the day you stop spending. SEO compounds and keeps lowering your cost per lead as rankings build. The structure that works runs paid to capture emergency demand while organic authority builds, then shifts budget off the keywords you rank for and into new service areas or higher margin work. Before you commit budget anywhere, know what a lead should cost in your trade and market.",
+  },
+  {
+    question: "How do I evaluate whether my current plumbing SEO is working?",
+    answer:
+      "Count phone calls and booked jobs from organic search. Not rankings, not impressions, not traffic. The plumbing company I audited was spending $7,783 a month on Angi leads that returned $475 in booked revenue, and the owner received a marketing report every month. The reports looked fine. Nobody had connected spend to jobs. If your provider cannot draw a straight line from their invoice to your dispatch board, that is the finding.",
+  },
+  {
+    question: "What is the difference between plumbing SEO and general SEO?",
+    answer:
+      "Plumbing SEO is local by definition. You cannot dispatch a truck across the state, so every ranking that matters is local: the Map Pack, your Google Business Profile, and the service pages that show up when someone in your area is searching with water on the floor. A firm that manages national brands is optimizing a different game. The proposal may look the same. The work is not.",
+  },
+  {
+    question: "What keywords should a plumbing company target?",
+    answer:
+      "Four categories: emergency queries like burst pipe repair near me, job type queries like water heater installation or sewer line replacement, location queries like plumber plus your city or neighborhood, and problem queries like low water pressure in house. Each category carries different intent and different ticket values, so each deserves its own pages. A single page that chases all of them ranks for none of them.",
+  },
+  {
+    question: "What does plumbing SEO cost with Sequoia GEO?",
+    answer:
+      "Engagements start at $2,500 a month with a 3 month initial term, then month to month. Ad spend is separate and stays yours: Google bills you directly, and nothing is marked up or routed through me. You own your domain, your analytics, your ad accounts, and every page we build.",
+  },
+  {
+    question: "Do you replace my current SEO company or work with them?",
+    answer:
+      "Either. Sometimes the audit shows your current provider is doing real work and the problem is measurement, so we build the tracking and hold the numbers up monthly. Sometimes the work is not there, and we handle a clean transition where you keep everything you paid for. Either way, you get an honest read before anything changes.",
+  },
+  {
+    question: "Are Local Services Ads worth it for plumbers?",
+    answer:
+      "Usually, as one measured channel among several. LSA charges per lead rather than per click, Google bills you directly, and real charged prices vary widely by trade and market. One Florida plumbing account I manage took 5 charged phone leads across June and July 2026. Treat it like any lead seller: track what each charged lead books, dispute what deserves disputing, and compare it against what your organic calls cost you.",
+  },
+  {
+    question: "Does plumbing SEO still matter now that AI tools answer questions?",
+    answer:
+      "Yes, because AI assistants recommend plumbers based on the same signals Google reads: reviews, service pages, and consistent listings. The work overlaps heavily, and ranking well organically is the entry fee to being recommended. That is why AI search visibility is built into every engagement instead of sold as a separate product.",
+  },
+];
+
 export default function PlumbingSeoPage() {
   return (
     <>
@@ -21,89 +70,7 @@ export default function PlumbingSeoPage() {
           { name: "Plumbing SEO", url: "https://www.sequoiageo.com/plumbing-seo" },
         ]}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How long does plumbing SEO take to produce results?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Local SEO results for plumbing companies in lower-competition markets typically show within 3 to 4 months. In competitive metro markets with established plumbing companies dominating local search, it takes 6 to 12 months to build the domain authority needed to compete at the top of search engine results. Technical SEO fixes and Google Business Profile optimization produce the fastest results, often within 30 to 60 days."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the difference between plumbing SEO and general SEO?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Plumbing SEO is local by definition. Every job requires physical proximity: you cannot dispatch a plumber to a customer 200 miles away. General SEO for national brands has different objectives and strategies. Plumber SEO is optimized for local search visibility, Google Business Profile prominence, service area coverage, and emergency query capture. A digital marketing agency that manages national brands is not built to manage plumber SEO, regardless of what their proposal says."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Should I invest in SEO or paid advertising for my plumbing company?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Both, in the right proportion. Plumbing SEO builds organic traffic and local search visibility that compounds over time and lowers cost per lead year over year. Paid advertising produces immediate phone calls but stops when you stop spending. The right strategy is to run paid advertising to capture emergency demand while SEO builds the organic foundation. As local search rankings improve, you reduce ad spend on keywords where you rank organically and redirect that budget to new service areas or higher-margin jobs."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What keywords should a plumbing company target?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A complete keyword research strategy for plumbing companies spans four categories: emergency service queries such as burst pipe repair near me or emergency plumber, job-type queries such as water heater installation or sewer line replacement, location-specific queries such as plumber by neighborhood or drain cleaning by city, and problem-based queries such as water heater making noise or low water pressure in house. Mapping each category to dedicated landing pages is what drives consistent search visibility that compounds."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do I evaluate whether my current plumbing SEO is working?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The right metrics are phone calls and booked jobs from organic search, not rankings alone. If your current SEO services provider reports on impressions and click positions but cannot show a clear line from those rankings to your dispatch board, the program is not being managed correctly. A properly instrumented plumbing SEO program uses Google Analytics, Google Search Console, and call tracking to connect every organic search session to actual revenue."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What are the critical factors that determine whether plumbing SEO generates results?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The critical factors are: a fully optimized Google Business Profile with consistent review velocity, web design and page speed that keeps visitors engaged on mobile devices, optimized listings across all major directories, secondary keywords mapped to dedicated content pages, and attribution that connects search results to booked jobs. Most plumbing companies have two or three of these working in isolation. Getting all of them active at the same time is what produces high quality leads from organic search on a consistent basis."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the most important local SEO factor for plumbing companies?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Google Business Profile optimization is the highest-impact starting point for plumbing local SEO. A fully optimized GBP with accurate categories, consistent NAP information, and regular review generation drives Map Pack visibility for the emergency queries that produce the highest-converting phone calls. GBP optimization produces measurable ranking changes faster than most other SEO tactics."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do I get more plumbing customers from organic search?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Getting more plumbing customers from organic search requires three things working together: service pages that rank for the keywords your customers use, a Google Business Profile that appears in the Map Pack for local queries, and a website that converts the click into a phone call. Most plumbing websites fail on the third point. Fast load speed, a prominent phone number above the fold, and trust signals like license numbers and reviews are what turn search traffic into booked jobs."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does plumbing SEO differ between competitive and less competitive markets?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "In less competitive markets, a well-optimized GBP and solid on-page SEO can produce ranking results within 60 to 90 days. In competitive metros where multiple plumbing companies have been investing in SEO for years, building enough domain authority to compete at the top of the Map Pack takes 6 to 12 months of consistent link building, review generation, and content development. Paid advertising fills the gap while organic authority builds."
-                }
-              }
-            ]
-          })
-        }}
-      />
+      <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -117,8 +84,8 @@ export default function PlumbingSeoPage() {
               <span className="text-[#1A5C3A]">the Full Revenue Picture</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Your agency sees leads. I see why $7,000/month in Angi leads is producing $475 in booked
-              revenue. I held California&rsquo;s C-36 Plumbing license while running my own company.
+              Your agency sees leads. I see why $7,783 a month in Angi leads returned $475 in
+              booked revenue. I held California&rsquo;s C-36 Plumbing license while running my own company.
               I know your business from the inside. Want to be the plumber{" "}
               <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
                 AI tools recommend
@@ -153,20 +120,19 @@ export default function PlumbingSeoPage() {
             <div className="space-y-5">
               {[
                 {
-                  finding: "$7,783/month on Angi leads",
-                  result: "Generated approximately $475/month in booked revenue. A -94% return. The agency managing it never connected lead spend to actual jobs booked.",
+                  finding: "$7,783 a month on Angi leads",
+                  result:
+                    "It returned $475 in booked revenue. The vendor managing it never connected lead spend to jobs booked, and the monthly reports never surfaced it.",
                 },
                 {
-                  finding: "265 pages not indexed by Google",
-                  result: "Including the main plumbing services page. The SEO company had been billing monthly while Google literally didn't know their most important pages existed.",
+                  finding: "131 of 4,009 tracked calls were new customers",
+                  result:
+                    "Nobody was separating new callers from repeat callers, so every channel looked busier than it was. Marketing was being graded on call volume instead of new business.",
                 },
                 {
-                  finding: "Only 131 new customer calls out of 4,009 total",
-                  result: "A 3.3% new customer acquisition rate from all marketing combined over 6 months. Nobody was tracking the difference between new and repeat callers.",
-                },
-                {
-                  finding: "Sitemap redirecting to staging server",
-                  result: "Google was trying to crawl the site and getting redirected to a test environment. The SEO company didn't catch it. We found it in 48 hours.",
+                  finding: "The sitemap redirected to a staging server",
+                  result:
+                    "Google was being sent to a test environment every time it tried to crawl the site. The SEO company billing monthly never caught it. It surfaced in the first pass of our audit.",
                 },
               ].map((item) => (
                 <div key={item.finding} className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -176,14 +142,71 @@ export default function PlumbingSeoPage() {
               ))}
             </div>
             <p className="mt-8 text-center text-sm text-[#C8EDD2]/50">
-              None of this required special tools. It required someone who knows what to look for because they&rsquo;ve lived it from the other side of the dispatch board.
+              None of this required special tools. It required someone who knows what to look for
+              because they&rsquo;ve lived it from the other side of the dispatch board.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Budget resources */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-3xl">
+              Know the Numbers Before You Buy Anything
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-600">
+              Angi was not the problem at that company. Running it for months with nobody checking
+              what came back was the problem. Lead sellers, ads, and SEO are all channels, and
+              channels get measured. These two breakdowns are built from accounts I manage, not
+              from industry averages.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
+              <h3 className="text-base font-bold text-[#1a1a1a]">
+                How Much Should Plumbers Spend on Marketing?
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                What I actually spent as an operator, and how to set a budget from your revenue
+                instead of a vendor&rsquo;s pitch deck.
+              </p>
+              <Link
+                href="/how-much-should-plumbers-spend-on-marketing"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+              >
+                Read the breakdown
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
+              <h3 className="text-base font-bold text-[#1a1a1a]">
+                How Much Do HVAC and Plumbing Leads Cost?
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                Real charged lead prices from Local Services Ads and Google Ads accounts I manage,
+                broken out by trade and market. One Florida plumber&rsquo;s account logged 5 charged
+                phone leads across June and July 2026.
+              </p>
+              <Link
+                href="/how-much-do-hvac-plumbing-leads-cost"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+              >
+                See real lead costs
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Case study proof strip */}
-      <section className="bg-white pt-16">
+      <section className="bg-white pb-4">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7 sm:p-8">
             <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A] mb-3">
@@ -217,92 +240,6 @@ export default function PlumbingSeoPage() {
         </div>
       </section>
 
-      {/* What I manage */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Plumbing Marketing, End to End
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Every channel connected to booked jobs, not just lead counts.
-            </p>
-          </div>
-
-          <div className="mx-auto max-w-4xl grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Google Ads for emergency & scheduled plumbing",
-              "Local Service Ads management",
-              "Google Business Profile optimization",
-              "Map Pack ranking for high-value plumbing keywords",
-              "Emergency call ad scheduling",
-              "Review generation tied to job completion",
-              "Website conversion optimization",
-              "Lead source ROI tracking (Angi, HomeAdvisor, etc.)",
-              "AI search visibility (ChatGPT, Perplexity)",
-              "Call tracking & booking rate analysis",
-              "CSR phone handling audit",
-              "Vendor accountability for existing agencies",
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-3 rounded-xl border border-gray-200 bg-[#fafaf8] px-4 py-3">
-                <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-                <span className="text-sm text-gray-700">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Plumbing SEO Services */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Plumbing SEO Services: What&rsquo;s Actually Included
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Not all plumbing SEO services are the same. Here is exactly what a full-service plumbing SEO program covers
-              and what each component produces for your plumbing business.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Local SEO for Plumbing Businesses",
-                body: "Local SEO is what gets your plumbing business into the Map Pack when potential customers need a plumber in your area. For plumbing contractors, local search is where the highest-converting calls come from. Improving local search visibility means optimizing your Google Business Profile, building citations across local directories, and targeting the location-based queries that homeowners run when they need help right now. Local plumbing businesses that invest in local SEO consistently reach more potential customers than those relying on paid advertising alone.",
-              },
-              {
-                title: "On-Page SEO and Plumbing Website Optimization",
-                body: "Your plumbing website needs to be optimized for the keywords your target audience actually uses. On-page SEO for a plumbing site means writing content that targets seo keywords like 'water heater repair near me' or 'drain cleaning [city],' adding SEO-friendly meta descriptions that improve click-through from search engine results pages, and structuring each page so search engines can understand what plumbing services you offer. Most plumbing websites are missing the relevant keywords that would move them up in local search results and help potential customers find them.",
-              },
-              {
-                title: "Technical SEO Audit and Site Health",
-                body: "A technical SEO audit identifies the indexation errors, slow load times, and crawlability issues that prevent your plumbing website from ranking even when the content is strong. SEO tools reveal problems that most plumbing business owners never see: pages blocked from search engines, missing schema markup, broken links, and mobile speed issues. Fixing these issues is often the fastest-impact work in any plumbing SEO engagement because the results show up in search engine rankings within weeks.",
-              },
-              {
-                title: "Plumbing SEO Strategy and Keyword Research",
-                body: "A real plumbing SEO strategy starts with understanding how potential customers find plumbing services in your market. SEO for plumbers means mapping the right target keywords to each page, emergency queries, job-type queries, and location terms, and then building content that matches what those potential customers are searching for. Plumbing business owners who try to rank for every plumbing service on a single generic page consistently underperform competitors who build a deliberate seo strategy across their whole site.",
-              },
-              {
-                title: "Digital Marketing and Internet Marketing Integration",
-                body: "Plumbing SEO does not operate in isolation. A complete digital marketing strategy for plumbing companies connects SEO to paid advertising, review management, and social media through a unified tracking framework. Internet marketing works best when all marketing channels feed into the same attribution system, so you can see which online marketing investment is reaching potential customers and which is generating noise. We manage the full digital marketing mix so no channel operates blind.",
-              },
-              {
-                title: "Online Reputation and Visibility Management",
-                body: "Online visibility for a plumbing business is built through two interconnected systems: review generation and brand authority. Your online reputation, the volume, recency, and quality of your reviews, directly influences both local search rankings and how many potential customers choose to call you. Plumbing business owners who encourage customer reviews and systematically build their business online across search engines, directories, and review platforms reach significantly more potential customers than those who rely on word of mouth alone.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
-                <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Credentials */}
       <section className="bg-[#fafaf8] py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
@@ -318,9 +255,10 @@ export default function PlumbingSeoPage() {
                   I&rsquo;m not guessing at what matters.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I ran a company that did plumbing alongside HVAC for over a decade. I know the difference
-                  between a $150 drain clear and a $12,000 repipe. I know which keywords have margin and
-                  which ones attract price shoppers.
+                  I ran a company that did plumbing alongside HVAC for over a decade and managed
+                  annual ad spend in the low seven figures against $17M in revenue, which works out
+                  to the 6 to 10 percent of revenue band. I know what a drain clear pays and what a
+                  repipe pays, and which keywords carry margin instead of price shoppers.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -341,267 +279,35 @@ export default function PlumbingSeoPage() {
         </div>
       </section>
 
-      {/* What Plumbing SEO Requires */}
+      {/* Services */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What Plumbing SEO Actually Requires
+              Plumbing SEO Services, End to End
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Most plumbing companies have one or two of these working. The ones that rank consistently have all four active at the same time.
+              One program. Every channel connected to booked jobs, not lead counts.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {[
               {
-                title: "Local SEO and Google Business Profile",
-                body: "Your Google Business Profile drives more inbound calls than your website for most plumbing companies. A properly optimized listing includes complete service categories, weekly posts, photo uploads tied to completed jobs, and a systematic review generation process integrated with your dispatch workflow. Local SEO without GBP optimization leaves half your local search visibility on the table.",
+                title: "Google Business Profile and the Map Pack",
+                body: "For most plumbing companies the profile drives more calls than the website. I manage categories, service areas, photos from completed jobs, and a review request flow wired into dispatch, because review recency moves rankings and a stale profile stalls them. This is where emergency searches are won or lost.",
               },
               {
-                title: "Technical SEO and Website Performance",
-                body: "Technical SEO issues suppress rankings regardless of how good the content is. Search engines cannot rank pages they cannot crawl. I consistently find plumbing websites with pages excluded from indexing, sitemap errors, slow mobile load times, and broken internal links. More than 60% of plumbing searches happen on mobile devices, and a site that isn&rsquo;t mobile friendly and user friendly on small screens loses those callers before they read a single word. These issues are the norm across the plumbing industry, and they are fixable in weeks, not months.",
+                title: "Service Pages Built Around Your Job Mix",
+                body: "A dedicated page for each job type and each city you serve: water heaters, drain cleaning, sewer lines, repipes, leak detection. Written around how homeowners search when something is broken, with the phone number where a panicked caller can find it. A generic page that chases every keyword ranks for nothing, and most plumbing sites are one generic page.",
               },
               {
-                title: "Keyword Research Across the Full Job Mix",
-                body: "Emergency queries like &ldquo;burst pipe repair&rdquo; convert at different rates than scheduled service queries. Water heater replacement keywords attract a different customer than drain cleaning keywords. Plumbing SEO that maps each relevant keyword to the right page, across emergency, job-type, location, and problem-based queries, builds organic traffic across all your services that compounds year over year.",
+                title: "Technical Health and Indexation",
+                body: "Sitemap errors, pages excluded from the index, slow mobile loads, broken internal links. This is the least visible work and often the fastest payoff, because Google cannot rank pages it cannot crawl. The staging server redirect above is exactly the class of failure this catches, and it had been sitting there while an SEO invoice went out every month.",
               },
               {
-                title: "Off-Page SEO and Reputation Management",
-                body: "Your domain authority is built through high quality backlinks from supplier directories, trade associations, local news, and relevant websites. Reputation management is the other half: review recency is a direct ranking factor, Google weights it heavily. A plumbing company with a steady drip of new reviews outranks a competitor with more reviews but a flat profile. Both require active management, not a one-time setup.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-                <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Plumbing SEO Tips */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What Separates Plumbing Companies That Rank from Ones That Don&rsquo;t
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              After auditing plumbing marketing programs across competitive markets, these are the consistent patterns.
-            </p>
-          </div>
-
-          <div className="space-y-5">
-            {[
-              {
-                number: "01",
-                title: "Location Pages, Not a Generic Service Area Page",
-                body: "A plumbing company servicing eight cities should have eight dedicated location pages with unique content, local keywords, and service-specific information for each market. Most plumbing companies have a single service area page with light content that does not rank. Specific web page content built around local search intent does.",
-              },
-              {
-                number: "02",
-                title: "Review Velocity, Not Just Review Count",
-                body: "Google&rsquo;s algorithm weights review recency as heavily as total count. HVAC contractors and plumbing companies with 200 reviews where 180 are two years old will be outranked by a competitor with 80 reviews but a steady weekly drip of new ones. The fix is systematic: every completed job triggers a review request timed to send within four hours of completion.",
-              },
-              {
-                number: "03",
-                title: "Listings Management Across Every Directory",
-                body: "Optimized listings across every citation, local business directory, and data aggregator require your business name, address, and phone number to be identical everywhere. Inconsistent listings management suppresses local pack rankings because search engines cannot confidently confirm your business location. Most plumbing companies have 15 to 30 inconsistencies they have never cleaned up, and these are fixable in a single audit pass.",
-              },
-              {
-                number: "04",
-                title: "Attribution That Connects SEO to Dispatched Jobs",
-                body: "Website traffic is not a success metric. Phone calls are. The right plumbing SEO program builds tracking infrastructure first: Google Analytics, Google Search Console, and call tracking software that isolates organic search calls from paid advertising calls. Without this, you are managing a ranking program with no way to measure whether it is producing revenue.",
-              },
-            ].map((item) => (
-              <div key={item.number} className="flex gap-6 rounded-2xl border border-gray-200 bg-white p-7">
-                <div className="shrink-0 text-3xl font-extrabold text-[#3A9E6A]/40">{item.number}</div>
-                <div>
-                  <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.body }} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Plumbing SEO FAQ */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Plumbing SEO FAQ
-            </h2>
-          </div>
-
-          <div className="space-y-5">
-            {[
-              {
-                q: "How long does plumbing SEO take to produce results?",
-                a: "Local SEO results for plumbing companies in lower-competition markets typically show within 3 to 4 months. In competitive metro markets with established plumbing companies dominating local search, it takes 6 to 12 months to build the domain authority needed to compete at the top of search engine results. Technical SEO fixes and Google Business Profile optimization produce the fastest results, often within 30 to 60 days.",
-              },
-              {
-                q: "What&rsquo;s the difference between plumbing SEO and general SEO?",
-                a: "Plumbing SEO is local by definition. Every job requires physical proximity: you cannot dispatch a plumber to a customer 200 miles away. General SEO for national brands has different objectives and strategies. Plumber SEO is optimized for local search visibility, Google Business Profile prominence, service area coverage, and emergency query capture. A digital marketing agency that manages national brands is not built to manage plumber SEO, regardless of what their proposal says.",
-              },
-              {
-                q: "Should I invest in SEO or paid advertising for my plumbing company?",
-                a: "Both, in the right proportion. Plumbing SEO builds local search visibility and organic rankings that compound over time and lower cost per lead year over year. Paid advertising produces immediate phone calls but stops when you stop spending. The right strategy is to run paid advertising to capture emergency demand while SEO builds the organic foundation. As local search rankings improve, you reduce ad spend on keywords where you rank organically and redirect that budget to new service areas or higher-margin jobs like sewer line replacement.",
-              },
-              {
-                q: "What keywords should a plumbing company target?",
-                a: "A complete keyword research strategy for plumbing companies spans four categories: emergency service queries (&ldquo;burst pipe repair near me,&rdquo; &ldquo;emergency plumber [city]&rdquo;), job-type queries (&ldquo;water heater installation,&rdquo; &ldquo;sewer line replacement&rdquo;), location-specific queries (&ldquo;plumber [neighborhood],&rdquo; &ldquo;drain cleaning [city]&rdquo;), and problem-based queries (&ldquo;water heater making noise,&rdquo; &ldquo;low water pressure in house&rdquo;). Mapping each category to dedicated landing pages is what drives lasting search visibility that compounds.",
-              },
-              {
-                q: "How do I evaluate whether my current plumbing SEO is working?",
-                a: "The right metrics are phone calls and booked jobs from organic search, not rankings alone. If your current SEO services provider reports on impressions and click positions but cannot show a clear line from those rankings to your dispatch board, the program is not being managed correctly. A properly instrumented plumbing SEO program uses Google Analytics, Google Search Console, and call tracking to connect every organic search session to actual revenue.",
-              },
-            ].map((item) => (
-              <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-                <h3 className="text-base font-bold text-[#1a1a1a]" dangerouslySetInnerHTML={{ __html: item.q }} />
-                <p className="mt-3 text-sm leading-relaxed text-gray-600" dangerouslySetInnerHTML={{ __html: item.a }} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What Plumbing SEO Involves */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What Plumbing SEO Actually Involves
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Search engine optimization for plumbing companies is a local discipline. Every component,
-              from web design and page speed to content and link building, works together to produce
-              organic search visibility that beats your local competition and generates phone calls from
-              homeowners who are ready to book right now.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {[
-              {
-                title: "Local SEO and Google Business Profile",
-                body: "Local SEO is the primary driver of phone calls for plumbing companies. As a service area business, your Google Business Profile optimization determines whether you appear in the Map Pack for emergency queries like 'plumber near me' or 'burst pipe repair.' Accurate business information, review velocity, and proper service area configuration are the foundation of local search visibility that generates calls before homeowners scroll past the map.",
-              },
-              {
-                title: "On-Page SEO and Service Pages",
-                body: "On-page SEO for plumbing websites means building dedicated service pages for every major job type: water heater installation, drain cleaning, sewer line repair, leak detection, water softener installation, and emergency plumbing. The website&rsquo;s content on each page should target specific keywords, answer the questions homeowners ask before calling, and include meta descriptions that improve click-through rates from search results. Generic plumbing pages that try to rank for everything rank for nothing.",
-              },
-              {
-                title: "Technical SEO and Indexation",
-                body: "Technical SEO covers the infrastructure issues that prevent plumbing websites from ranking even when the content is solid. Indexation problems, slow mobile load speeds, broken internal links, and missing schema markup are common issues that keep plumbing service pages out of search results. Technical SEO audits identify and fix these problems so that your on-page content can actually rank.",
-              },
-              {
-                title: "Link Building and Local Authority",
-                body: "Link building for plumbing companies focuses on earning high-quality backlinks from local business directories, trade associations, home service platforms, and local media. Combined with consistent review generation and citation management, link building builds the domain authority that allows plumbing companies to outrank competitors who have been in the market longer.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
-                <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
-                    <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Plumbing SEO Strategy */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Plumbing SEO Strategy: How Organic Traffic Compounds
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              A plumbing SEO strategy that connects organic traffic to booked jobs requires more than
-              keyword optimization. It requires understanding how homeowners search, call, and convert.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {[
-              {
-                number: "01",
-                title: "Keyword Research Mapped to Job Types",
-                body: "Effective keyword research for plumbing companies maps search queries to specific job types: emergency service calls, installation projects, repair jobs, and maintenance work each have different buyer intent and average ticket values. Beyond primary service keywords, targeting secondary keywords, problem-based queries, symptom searches, and long-tail location terms, is how you generate more traffic and high quality leads from organic search over time. Creating content for each service and city you cover compounds the return. Each page builds on the last, and the plumbing companies doing this consistently outrank those who built one generic page and stopped.",
-              },
-              {
-                number: "02",
-                title: "Emergency Search Capture",
-                body: "Emergency plumbing queries convert at the highest rates of any search category. Homeowners with a burst pipe, a backed-up sewer, or a failed water heater are calling the first company that shows up and looks trustworthy. Fast-loading service pages, a prominently displayed phone number, and Map Pack visibility on mobile are the three factors that determine who gets that call.",
-              },
-              {
-                number: "03",
-                title: "Reputation Management and Online Reviews",
-                body: "Online reviews influence both search rankings and call conversion for plumbing companies. Your online reputation and brand visibility in local search are shaped by review volume, recency, and response rate, all of which Google weights as ranking signals. Homeowners evaluating multiple plumbers in the Map Pack default to the company with the most reviews and the fastest response times. Building relationships with past customers through follow-up and review requests is one of the key elements that separates consistently growing plumbing companies from those stuck at the same volume year over year. A review generation system built into your dispatch workflow is the most reliable way to maintain that momentum.",
-              },
-              {
-                number: "04",
-                title: "Tracking from Search to Booked Job",
-                body: "Most plumbing SEO programs report on rankings and organic traffic. A properly managed program tracks from first click to booked job. Website visitors from organic search become phone calls, phone calls become qualified leads, and qualified leads become dispatched jobs. That tracking requires Google Analytics for website behavior, Google Search Console for search query data, call tracking tied to organic landing pages, and CRM integration. Only then can you measure marketing ROI with confidence and know whether your plumbing SEO is producing real revenue.",
-              },
-            ].map((item) => (
-              <div key={item.number} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-                <div className="mb-4 text-4xl font-black text-[#C8EDD2]">{item.number}</div>
-                <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What to Look For in a Plumbing SEO Company */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What to Look For in a Plumbing SEO Company
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Most plumbing companies hire the wrong SEO partner because they evaluate proposals instead of results.
-              Here is what actually separates capable SEO companies from those who produce reports and collect retainers.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Real Experience With Plumbing Contractors",
-                body: "SEO for plumbing contractors is different from SEO for e-commerce or national brands. The plumbing industry has specific search patterns, potential customers search for plumbing help in moments of urgency, not during casual browsing, and a generalist agency will not understand that dynamic. Look for an SEO company that has worked with service businesses and can speak specifically to your job mix, your service area, and the local search rankings that drive real calls.",
-              },
-              {
-                title: "Revenue Reporting, Not Just Search Engine Rankings",
-                body: "An SEO company that reports on impressions and click positions without connecting those numbers to booked jobs is not managing your plumbing business effectively. Meaningful SEO performance reporting shows the line from potential customers finding you in search engine rankings, to calls, to revenue. Plumbing business owners deserve to know whether their SEO investment is generating work, not just website traffic.",
-              },
-              {
-                title: "A Clear Local SEO Strategy for Your Market",
-                body: "Every plumbing market is different. The local SEO strategy for a solo plumber in a mid-size city looks different from a multi-location operation competing in a major metro. Look for an SEO company that builds a local seo strategy specific to your competitive landscape, your service area, and the target keywords your customers actually use when they search for plumbing services online.",
-              },
-              {
-                title: "Access to the Right SEO Tools and Reporting",
-                body: "Effective SEO efforts require the right infrastructure: Google Search Console, Google Analytics, call tracking, and local ranking tools that show exactly where your plumbing site stands in local search results. An SEO company that cannot give you access to your own data is a company that does not want you to see the full picture. Transparent reporting across all marketing channels is the baseline for any legitimate plumbing SEO engagement.",
-              },
-              {
-                title: "Content Built Around How Customers Search",
-                body: "The best plumbing SEO companies build high quality content around how customers search, not how industry insiders talk. That means writing about specific plumbing problems, service types, and local neighborhoods rather than producing generic plumbing tips. Marketing strategies built around real customer search behavior generate calls. Generic content that was not written for search engine optimization generates nothing.",
-              },
-              {
-                title: "Backlinks from Reputable Websites and Local Sources",
-                body: "Off-page SEO for plumbing companies means earning backlinks from reputable websites: trade associations, local media, home services industry directories, and local business platforms. Service businesses that pair high quality content with legitimate link sources outrank those relying on low-quality directories. Building online reputation through quality links and citations is what sustains long-term search engine optimization results.",
+                title: "Authority, Reviews, and Accountability",
+                body: "Links from real local sources and trade directories. Review velocity managed as an operational process, not a request someone remembers on Fridays. And call tracking that separates organic from paid and new customers from repeat callers, so your monthly report shows booked jobs instead of a rankings screenshot. If a channel cannot prove its keep, we cut it.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -610,47 +316,151 @@ export default function PlumbingSeoPage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-10">
+            <p className="text-center text-xs font-bold uppercase tracking-widest text-[#1A5C3A] mb-4">
+              Also Under Management
+            </p>
+            <div className="mx-auto max-w-4xl grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                "Google Ads for emergency and scheduled plumbing",
+                "Local Services Ads management",
+                "Review generation tied to job completion",
+                "Website conversion optimization",
+                "Lead source ROI tracking across Angi, HomeAdvisor, and the rest",
+                "AI search visibility (ChatGPT, Perplexity)",
+                "Call tracking and booking rate analysis",
+                "CSR phone handling audits",
+                "Vendor accountability for existing agencies",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3 rounded-xl border border-gray-200 bg-[#fafaf8] px-4 py-3">
+                  <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <span className="text-sm text-gray-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Plumbing SEO Extended FAQ */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+      {/* How it starts */}
+      <section className="bg-[#0D2318] py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              More Plumbing SEO Questions
+            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+              How an Engagement Starts
             </h2>
           </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {[
+              {
+                number: "01",
+                title: "The Full Picture Audit",
+                body: "Rankings, ads, lead sellers, call handling, and the booking path, each connected to booked jobs. You get findings like the ones at the top of this page, for your own company, before you commit to anything.",
+              },
+              {
+                number: "02",
+                title: "Fix Order by Payoff",
+                body: "Tracking and technical problems get fixed first, because everything else is guesswork until Google can crawl the site and calls are being measured. Then the profile, the service pages, and authority building, in that order.",
+              },
+              {
+                number: "03",
+                title: "A Report Built on Booked Jobs",
+                body: "Every month: calls by channel, new customers versus repeat callers, and what got booked. If you can read a dispatch board, you can read my report.",
+              },
+            ].map((item) => (
+              <div key={item.number} className="rounded-2xl border border-white/10 bg-white/5 p-7">
+                <div className="mb-3 text-3xl font-extrabold text-[#3A9E6A]/60">{item.number}</div>
+                <h3 className="text-base font-bold text-white">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Patterns */}
+      <section className="bg-[#fafaf8] py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              What Separates Plumbing Companies That Rank from Ones That Don&rsquo;t
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              The same patterns show up in every plumbing audit I run.
+            </p>
+          </div>
+
           <div className="space-y-5">
             {[
               {
-                q: "What are the critical factors that determine whether plumbing SEO generates results?",
-                a: "The critical factors are: a fully optimized Google Business Profile with consistent review velocity, web design and page speed that keeps website visitors engaged on mobile devices, optimized listings across all major directories, secondary keywords mapped to targeted content pages, and attribution that connects search results to booked jobs. Most plumbing companies have two or three of these working in isolation. Getting all of them active at the same time is what produces high quality leads from organic search on a consistent basis and builds the compounding return that makes plumbing SEO worth the investment.",
+                number: "01",
+                title: "Location Pages, Not One Service Area Page",
+                body: "A company serving multiple cities needs a dedicated page for each one, built around that market and its searches. Almost everyone has a single thin service area page instead. Thin pages do not rank, and no amount of link building fixes a page with nothing on it.",
               },
               {
-                q: "What is the most important local SEO factor for plumbing companies?",
-                a: "GBP optimization is the highest-impact starting point for plumbing local SEO. A fully optimized profile with accurate categories, consistent NAP information, and regular review generation drives Map Pack visibility for the emergency queries that produce the highest-converting phone calls. GBP optimization produces measurable ranking changes faster than most other SEO tactics and is the first thing I address in any plumbing SEO engagement.",
+                number: "02",
+                title: "Review Velocity, Not Review Count",
+                body: "Google weights recency heavily. A steady flow of fresh reviews beats a larger but stale total, which is why the request has to fire as part of closing out the job. Companies that treat reviews as a monthly campaign lose to companies that treat them as part of the work order.",
               },
               {
-                q: "How do I get more plumbing customers from organic search?",
-                a: "Getting more plumbing customers from organic search requires three things working together: service pages that rank for the keywords your customers use, a Google Business Profile that appears in the Map Pack for local queries, and a website that converts the click into a phone call. Most plumbing websites fail on the third point. Fast load speed, a prominent phone number above the fold, and trust signals like license numbers and reviews are what turn search results visitors into booked jobs.",
+                number: "03",
+                title: "Identical Listings Everywhere",
+                body: "Your name, address, and phone number have to match across every directory and data aggregator. Mismatches make Google less certain about your business, and less certainty means a lower Map Pack position. Most companies carry years of old addresses and tracking numbers they never cleaned up. One thorough pass fixes it.",
               },
               {
-                q: "How does plumbing SEO differ between competitive and less competitive markets?",
-                a: "In less competitive markets, a well-optimized GBP and solid on-page SEO can produce ranking results within 60 to 90 days. In competitive metros where multiple plumbing companies have been investing in SEO for years, building enough domain authority to compete at the top of the Map Pack takes 6 to 12 months of consistent link building, review generation, and content development. Paid advertising fills the gap while organic authority builds.",
-              },
-              {
-                q: "How do I know if an SEO company truly understands the plumbing industry?",
-                a: "Ask about their experience with plumbing contractors specifically, not just general home services. A company that understands the plumbing industry knows that search engine optimization for service businesses is local by nature, that emergency query volume shifts seasonally, and that the plumbing job mix (drain cleaning vs. repipes vs. sewer line work) requires different keyword strategies. If they also manage HVAC SEO for HVAC contractors or similar trade work alongside plumbing SEO, that is a strong positive signal. Generic digital marketing experience does not translate to plumbing business results without industry-specific knowledge.",
-              },
-              {
-                q: "What internet marketing channels matter most for a plumbing business?",
-                a: "For most plumbing businesses, the highest-priority internet marketing channels are organic local search (Google Map Pack and search results), Google Ads for immediate lead capture, and review management for conversion and trust. Online visibility across all three channels compounds: potential customers search for plumbing help in moments of urgency, checking the Map Pack, clicking the first organic result, and reading reviews before calling. Plumbing businesses visible across all three touchpoints convert at significantly higher rates than those that depend on a single channel. Mobile users account for more than 60% of plumbing searches, so every online marketing investment needs to perform on small screens first.",
+                number: "04",
+                title: "Attribution Before Optimization",
+                body: "Tracking gets built first: analytics, Search Console, and call tracking that isolates organic calls from paid ones and new customers from repeat callers. The 131 out of 4,009 finding above existed because nobody had built this. You cannot manage what nobody is measuring.",
               },
             ].map((item) => (
-              <div key={item.q} className="rounded-2xl border border-gray-200 bg-white p-7">
-                <h3 className="text-base font-bold text-[#1a1a1a]">{item.q}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.a}</p>
+              <div key={item.number} className="flex gap-6 rounded-2xl border border-gray-200 bg-white p-7">
+                <div className="shrink-0 text-3xl font-extrabold text-[#3A9E6A]/40">{item.number}</div>
+                <div>
+                  <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* LSA migration note */}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7 sm:p-8">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A] mb-3">
+              If You Run Local Services Ads
+            </p>
+            <p className="text-sm leading-relaxed text-gray-600">
+              Google begins folding LSA into Google Ads as a Performance Max pay-per-lead campaign
+              type in August 2026, phased in for select US home services advertisers. Lead history
+              migrates. Cost history does not, and the old LSA dashboard closes once an account
+              moves. We completed full charged-lead exports for three client accounts in July 2026,
+              before any migration notices landed. If nobody is archiving your numbers, they are
+              gone.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-[#fafaf8] py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              Plumbing SEO FAQ
+            </h2>
+          </div>
+
+          <div className="space-y-5">
+            {faqs.map((item) => (
+              <div key={item.question} className="rounded-2xl border border-gray-200 bg-white p-7">
+                <h3 className="text-base font-bold text-[#1a1a1a]">{item.question}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.answer}</p>
               </div>
             ))}
           </div>
@@ -658,7 +468,7 @@ export default function PlumbingSeoPage() {
       </section>
 
       {/* Related services */}
-      <section className="bg-[#fafaf8] py-16">
+      <section className="bg-white py-16">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
@@ -715,8 +525,9 @@ export default function PlumbingSeoPage() {
             Find out what your plumbing marketing is actually producing
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            The Full Picture Audit takes 48 hours. You&rsquo;ll know exactly where your revenue is leaking
-            before we spend a dollar on anything new.
+            The Full Picture Audit looks at your rankings, your ads, your lead sellers, and your
+            booking path, and connects each one to booked jobs. You&rsquo;ll know exactly where your
+            revenue is leaking before we spend a dollar on anything new.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
