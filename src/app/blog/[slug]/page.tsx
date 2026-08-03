@@ -1653,9 +1653,9 @@ const posts: Record<string, Post> = {
           plumber they find. Local SEO is the system that makes sure they find you first.
         </p>
         <p>
-          I ran a home services company that included plumbing for 13 years. I&rsquo;m a California
-          licensed C-36 Plumbing Contractor. This guide is what I would have built around 10 years ago
-          if I&rsquo;d understood it then. Here&rsquo;s the complete framework.
+          I ran a home services company that included plumbing for 13 years and held California&rsquo;s
+          C-36 Plumbing license as its operator. This guide is what I would have built around 10 years
+          ago if I&rsquo;d understood it then. Here&rsquo;s the complete framework.
         </p>
 
         <h2>The Three Pillars of Plumbing Local SEO</h2>

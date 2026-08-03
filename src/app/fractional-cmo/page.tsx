@@ -286,8 +286,8 @@ export default function FractionalCmoPage() {
                   and connected every dollar of <strong>marketing</strong> to dispatch data, <strong>revenue</strong>, and margin.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I&rsquo;m a California Licensed Contractor (B General, C-2, C-20 HVAC, C-36 Plumbing).
-                  That background isn&rsquo;t just context. It&rsquo;s the reason I see things other
+                  I held California contractor licenses (B General, C-2, C-20 HVAC, C-36 Plumbing)
+                  while running my own company. That background isn&rsquo;t just context. It&rsquo;s the reason I see things other
                   <strong>marketing leaders</strong> miss, from <strong>qualified leads</strong> to <strong>booking rate</strong> to <strong>marketing ROI</strong>.
                 </p>
               </div>

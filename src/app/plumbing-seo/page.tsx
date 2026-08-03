@@ -118,8 +118,8 @@ export default function PlumbingSeoPage() {
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               Your agency sees leads. I see why $7,000/month in Angi leads is producing $475 in booked
-              revenue. I&rsquo;m a California licensed C-36 Plumbing Contractor. I know your business
-              from the inside. Want to be the plumber{" "}
+              revenue. I held California&rsquo;s C-36 Plumbing license while running my own company.
+              I know your business from the inside. Want to be the plumber{" "}
               <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
                 AI tools recommend
               </Link>{" "}
@@ -310,12 +310,12 @@ export default function PlumbingSeoPage() {
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
-                  I&rsquo;m a Licensed Plumbing Contractor
+                  I Ran a Licensed Plumbing Company
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  California C-36 Plumbing License. That means I understand your jobs, your pricing, your
-                  technicians, and your customers. When I look at your marketing, I&rsquo;m not guessing at
-                  what matters.
+                  I held California&rsquo;s C-36 Plumbing license as an operator. I understand your jobs,
+                  your pricing, your technicians, and your customers. When I look at your marketing,
+                  I&rsquo;m not guessing at what matters.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I ran a company that did plumbing alongside HVAC for over a decade. I know the difference
@@ -325,7 +325,7 @@ export default function PlumbingSeoPage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { stat: "C-36", label: "CA Plumbing License" },
+                  { stat: "$17M", label: "Annual revenue at exit" },
                   { stat: "13 yrs", label: "Home services operator" },
                   { stat: "4x", label: "Inc 5000 (2020-2023)" },
                   { stat: "130+", label: "Employees at peak" },

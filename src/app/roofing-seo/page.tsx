@@ -284,8 +284,9 @@ export default function RoofingSeoPage() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
               <h3 className="text-xl font-extrabold text-white">About Aaron Husak</h3>
               <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80 max-w-2xl mx-auto">
-                California licensed contractor (B General, C-2, C-20 HVAC, C-36 Plumbing). I built
-                Balanced Comfort from one truck to 130+ employees over 13 years in home services.
+                I held California contractor licenses (B General, C-2, C-20 HVAC, C-36 Plumbing)
+                while building Balanced Comfort from one truck to 130+ employees over 13 years in
+                home services.
                 4x Inc 5000. I started Sequoia GEO to run marketing on operator metrics: closed
                 jobs, cost per booked job, and revenue by channel. Not impressions. Not rankings
                 alone.

@@ -277,7 +277,7 @@ export default function HvacSeoPage() {
                   to run aggressive AC campaigns and when to start pre-season furnace tune-up pushes.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I&rsquo;m a California licensed C-20 HVAC contractor. This isn&rsquo;t just marketing context:
+                  I held California&rsquo;s C-20 HVAC license while running my own company. This isn&rsquo;t just marketing context:
                   it&rsquo;s the reason I see things in your HVAC business that a typical
                   marketing agency never will.
                 </p>
