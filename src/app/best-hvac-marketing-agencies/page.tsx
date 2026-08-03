@@ -1,10 +1,11 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Best HVAC Marketing Agencies 2026 | Reviewed & Compared",
   description:
-    "8 HVAC marketing agencies reviewed for 2026: Hook Agency, Scorpion, Rival Digital, Lemon Seed, Blue Corona/RYNO, Contractor Commerce, Hatch, and Sequoia GEO. Pricing, differentiators, and who each agency is best for.",
+    "8 HVAC marketing companies reviewed by a 13-year HVAC operator: pricing, differentiators, and who each one fits. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-hvac-marketing-agencies",
   },
@@ -187,10 +188,10 @@ const agencies = [
     tag: "Best for operator-led accountability",
     tagColor: "bg-[#C8EDD2] text-[#0D2318]",
     idealFor: "HVAC and home service contractors who want a marketing partner that has actually operated and scaled the same kind of business, and can be held accountable to revenue, not just clicks",
-    pricing: "Varies by engagement; fractional CMO, paid media, and SEO retainers available",
+    pricing: "From $2,500 a month, 3-month initial term, month to month after",
     teamScale: "Boutique",
     summary:
-      "Sequoia GEO is a boutique home services marketing agency founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2020 to 2023) before founding the agency. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, which means recommendations come from someone who has answered for both the marketing spend and the bottom line simultaneously. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, website development, and fractional CMO engagements. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
+      "Sequoia GEO is a boutique home services marketing practice founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2020 to 2023) before founding the practice. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, which means recommendations come from someone who has answered for both the marketing spend and the bottom line simultaneously. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, website development, and fractional CMO engagements. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
     strengths: [
       "Founder scaled an HVAC company to $17M+ with four Inc 5000 rankings, not a marketer who learned the trades from the outside",
       "Fractional CMO model gives smaller contractors access to strategic leadership without a full-time hire",
@@ -209,6 +210,12 @@ const agencies = [
 export default function BestHvacMarketingAgenciesPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Best HVAC Marketing Agencies", url: "https://www.sequoiageo.com/best-hvac-marketing-agencies" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

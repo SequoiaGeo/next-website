@@ -6,6 +6,7 @@ import { trackLead } from "@/lib/analytics";
 export default function PdfDownload() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -19,11 +20,15 @@ export default function PdfDownload() {
     renderedAtRef.current = Date.now();
   }, []);
 
+  // Honest capture: the success screen and the lead event only fire once the
+  // server confirmed the capture. A failed POST shows the direct-contact
+  // fallback instead of pretending the lead landed.
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError(null);
     try {
-      await fetch("/api/guide-capture", {
+      const res = await fetch("/api/guide-capture", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -31,12 +36,14 @@ export default function PdfDownload() {
           renderedAt: renderedAtRef.current,
         }),
       });
+      if (!res.ok) throw new Error("Submission failed");
+      trackLead({ source: "lsa_guide" });
+      setSubmitted(true);
     } catch {
-      // show download even if API fails
+      setError("failed");
+    } finally {
+      setLoading(false);
     }
-    trackLead({ source: "lsa_guide" });
-    setLoading(false);
-    setSubmitted(true);
   };
 
   if (submitted) {
@@ -58,6 +65,16 @@ export default function PdfDownload() {
           </svg>
           Download the LSA Guide (PDF)
         </a>
+        <p className="mt-4 text-sm text-gray-500">
+          You will hear from me within one business day, usually much faster.
+        </p>
+        <p className="mt-2 text-sm text-gray-500">
+          Want your LSA account looked at instead of just the guide?{" "}
+          <a href="/contact#book" className="font-semibold text-[#1A5C3A] underline underline-offset-2 hover:text-[#0D2318]">
+            Pick a time now
+          </a>
+          .
+        </p>
       </div>
     );
   }
@@ -114,6 +131,13 @@ export default function PdfDownload() {
           />
         </div>
       </div>
+      {error && (
+        <p className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600">
+          Something broke on my end. Call or text{" "}
+          <a href="tel:5595213122" className="font-semibold underline">(559) 521-3122</a>, or email{" "}
+          <a href="mailto:aaron@sequoiageo.com" className="font-semibold underline">aaron@sequoiageo.com</a>.
+        </p>
+      )}
       <button
         type="submit"
         disabled={loading}

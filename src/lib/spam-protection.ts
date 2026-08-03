@@ -15,6 +15,7 @@ const LIMITS = {
   name: { min: 1, max: 100 },
   phone: { min: 7, max: 30 },
   email: { min: 5, max: 254 }, // 254 = max email length per RFC 5321
+  company: { min: 0, max: 150 }, // optional server-side; only some forms collect it
   message: { min: 0, max: 2000 },
 } as const;
 
@@ -26,6 +27,7 @@ export type LeadFields = {
   name?: unknown;
   phone?: unknown;
   email?: unknown;
+  company?: unknown; // optional: only forms that promise a business check collect it
   message?: unknown;
   smsConsent?: unknown;
   // anti-bot fields (not stored / not emailed)
@@ -34,7 +36,7 @@ export type LeadFields = {
 };
 
 export type SpamCheckResult =
-  | { ok: true; clean: { name: string; phone: string; email: string; message: string; smsConsent: boolean } }
+  | { ok: true; clean: { name: string; phone: string; email: string; company: string; message: string; smsConsent: boolean } }
   // silentDrop = looks like a bot; respond 200 so the bot gets no feedback, but don't send the lead.
   | { ok: false; silentDrop: true; reason: string }
   // hard validation failure, safe to surface a 400 to the real user.
@@ -79,6 +81,7 @@ export function checkLead(fields: LeadFields, now: number): SpamCheckResult {
   const name = asString(fields.name);
   const phone = asString(fields.phone);
   const email = asString(fields.email);
+  const company = asString(fields.company).slice(0, LIMITS.company.max);
   const message = asString(fields.message);
 
   if (name.length < LIMITS.name.min || name.length > LIMITS.name.max) {
@@ -100,7 +103,7 @@ export function checkLead(fields: LeadFields, now: number): SpamCheckResult {
 
   return {
     ok: true,
-    clean: { name, phone, email, message, smsConsent: Boolean(fields.smsConsent) },
+    clean: { name, phone, email, company, message, smsConsent: Boolean(fields.smsConsent) },
   };
 }
 

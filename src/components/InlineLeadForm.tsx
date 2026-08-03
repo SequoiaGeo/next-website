@@ -74,10 +74,22 @@ export default function InlineLeadForm({
                 </svg>
               </div>
               <h3 className="mt-5 text-xl font-bold text-[#1a1a1a]">
-                Got it. We&rsquo;ll be in touch as soon as possible.
+                Got it. Your audit is in my queue.
               </h3>
               <p className="mt-2 text-sm text-gray-500">
-                Want to talk sooner? Call{" "}
+                You will hear from me within one business day, usually much faster.
+              </p>
+              <a
+                href="/contact#book"
+                className="mt-5 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
+              >
+                Pick a time now
+                <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+              <p className="mt-3 text-sm text-gray-500">
+                Prefer to talk? Call{" "}
                 <a href="tel:5595213122" className="font-semibold text-[#1A5C3A]">(559) 521-3122</a>.
               </p>
             </div>
@@ -172,7 +184,7 @@ export default function InlineLeadForm({
                 </button>
 
                 <p className="text-center text-xs text-gray-400">
-                  Prefer to talk now? <a href="tel:5595213122" className="font-medium text-[#1A5C3A]">(559) 521-3122</a>
+                  Prefer to talk? <a href="tel:5595213122" className="font-medium text-[#1A5C3A]">(559) 521-3122</a>
                 </p>
               </form>
             </>

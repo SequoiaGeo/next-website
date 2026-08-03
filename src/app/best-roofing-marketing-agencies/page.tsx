@@ -1,10 +1,11 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Best Roofing Marketing Agencies 2026 | Ranked and Reviewed",
   description:
-    "9 roofing marketing agencies ranked for 2026: Hook Agency, Rival Digital, Contractor Marketing Pros, RYNO, Roofing Webmasters, JobNimbus, Profit Roofing Systems, Built-Right Digital, and Sequoia GEO.",
+    "9 roofing marketing companies ranked by a 13-year home services operator, with pricing where it exists. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-roofing-marketing-agencies",
   },
@@ -228,20 +229,20 @@ const agencies = [
     tagColor: "bg-[#C8EDD2]/50 text-[#1A5C3A] border-[#3A9E6A]/30",
     meta: [
       { label: "Best for", value: "$2M to $15M revenue contractors" },
-      { label: "Pricing", value: "30-day trial, no long-term contract" },
+      { label: "Pricing", value: "From $2,500 a month, 3-month initial term, month to month after" },
       { label: "Team scale", value: "10-client cap, principal-led" },
     ],
     summary:
-      "Sequoia GEO is a boutique fractional CMO and growth operations firm founded by Aaron Husak, who built Balanced Comfort HVAC to $17M+ in revenue and four consecutive Inc. 5000 rankings before a 2024 exit. While the firm's core case study base is in HVAC and plumbing, the operator-level marketing systems developed through that process translate directly to roofing contractors facing the same conversion and lead quality challenges. The firm caps at 10 active clients and offers a 30-day trial with no long-term contract.",
+      "Sequoia GEO is a boutique fractional CMO and growth operations practice founded by Aaron Husak, who built Balanced Comfort HVAC to $17M+ in revenue and four consecutive Inc. 5000 rankings before a 2024 exit. While the practice's core case study base is in HVAC and plumbing, the operator-level marketing systems developed through that process translate directly to roofing contractors facing the same conversion and lead quality challenges. The practice caps at 10 active clients. Engagements start at $2,500 a month with a 3-month initial term, month to month after.",
     strengths: [
-      "Only agency on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
+      "Only practice on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
       "Revenue attribution extends past lead counts to booking rates, CSR quality, and appointment data",
       "10-client cap ensures principal-level attention rather than handoffs to junior account managers",
     ],
     considerations: [
       "Primary case study background is HVAC and plumbing rather than roofing specifically",
       "Limited client capacity means availability may be restricted at any given time",
-      "Newer brand with less name recognition than agencies who have been marketing themselves for a decade",
+      "Newer brand with less name recognition than companies who have been marketing themselves for a decade",
     ],
     isOwnAgency: true,
   },
@@ -257,6 +258,12 @@ const howToChoose = [
 export default function BestRoofingAgenciesPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Best Roofing Marketing Agencies", url: "https://www.sequoiageo.com/best-roofing-marketing-agencies" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -293,7 +300,7 @@ export default function BestRoofingAgenciesPage() {
       <section className="bg-amber-50 border-b border-amber-200">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 py-4">
           <p className="text-sm text-amber-800">
-            <strong>Disclosure:</strong> Sequoia GEO is ranked last on this list and is the agency that produced this research. We ranked other agencies first because this list is designed to be genuinely useful, not self-promotional. Read it accordingly.
+            <strong>Disclosure:</strong> Sequoia GEO produced this research and is ranked last on purpose. The list is built to be useful, not self-promotional. Read the other eight first.
           </p>
         </div>
       </section>

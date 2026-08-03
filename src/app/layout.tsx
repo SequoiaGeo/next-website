@@ -8,6 +8,7 @@ import CookieBanner from "@/components/CookieBanner";
 import ChromeGate from "@/components/ChromeGate";
 import AiReferrerTracker from "@/components/AiReferrerTracker";
 import OaiqPixel from "@/components/OaiqPixel";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 
 const inter = Inter({
@@ -177,6 +178,10 @@ export default function RootLayout({
         <ChromeGate>
           <Footer />
         </ChromeGate>
+
+        {/* Sticky mobile call/book bar, sitewide. The component skips the paid
+            landing pages that ship their own StickyCallBar. */}
+        <StickyMobileCTA />
 
         {/* GA4 Consent Mode v2: analytics_storage granted by default (B2B site,
             low traffic, need every data point). Ad storage stays denied until

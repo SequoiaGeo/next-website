@@ -1,30 +1,31 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { trackCallIntent, trackEvent } from "@/lib/analytics";
 
-function trackCTA(action: string, label: string) {
-  if (typeof window !== "undefined" && typeof window.gtag === "function") {
-    window.gtag("event", action, {
-      event_category: "CTA",
-      event_label: label,
-    });
-  }
-}
+// Paid landing pages ship their own StickyCallBar. Rendering this bar there
+// would stack two fixed bottom bars on top of each other, so skip them.
+const EXCLUDED_ROUTES = new Set<string>(["/found-me-in-chatgpt", "/immanuel"]);
 
 /**
- * Sticky bottom bar on mobile (hidden on desktop).
- * Appears after the user scrolls past the hero (~600px).
+ * Sticky bottom bar on mobile (hidden on desktop), mounted sitewide in
+ * layout.tsx. Appears after a short scroll (~200px) so call and book are
+ * always one tap away on every page except the bare paid landing pages.
  * Two buttons: call and book.
  */
 export default function StickyMobileCTA() {
   const [visible, setVisible] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 600);
+    const onScroll = () => setVisible(window.scrollY > 200);
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  if (pathname && EXCLUDED_ROUTES.has(pathname)) return null;
 
   return (
     <div
@@ -35,7 +36,7 @@ export default function StickyMobileCTA() {
       <div className="bg-[#0D2318] border-t border-[#3A9E6A]/30 px-4 py-3 flex items-center gap-3">
         <a
           href="tel:5595213122"
-          onClick={() => trackCTA("phone_click", "sticky_mobile")}
+          onClick={() => trackCallIntent("sticky_mobile")}
           className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
         >
           <svg
@@ -56,7 +57,7 @@ export default function StickyMobileCTA() {
         </a>
         <a
           href="/contact"
-          onClick={() => trackCTA("cta_click", "sticky_mobile_book")}
+          onClick={() => trackEvent("cta_click", { event_category: "CTA", event_label: "sticky_mobile_book" })}
           className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-[#3A9E6A] px-4 py-3 text-sm font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
         >
           Book a Call

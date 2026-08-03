@@ -51,8 +51,13 @@ export async function POST(req: Request) {
           ghlTag: "lsa-guide",
         };
 
-    // 1. Send delivery email to subscriber via Resend
-    await resend.emails.send({
+    // 1 + 2. Send the subscriber delivery email AND Aaron's lead notification
+    // with Promise.allSettled so one failing can never prevent the other from
+    // being attempted. The old sequential version sent the subscriber email
+    // first; if it threw, Aaron's notification never went out and the lead was
+    // lost entirely. Now the API returns ok if EITHER email landed, and any
+    // failure is logged.
+    const subscriberEmail = resend.emails.send({
       from: "Aaron Husak <aaron@sequoiageo.com>",
       to: email,
       subject: guide.subject,
@@ -87,8 +92,7 @@ export async function POST(req: Request) {
       `,
     });
 
-    // 2. Send lead notification to Aaron
-    await resend.emails.send({
+    const notificationEmail = resend.emails.send({
       from: "Sequoia GEO Site <aaron@sequoiageo.com>",
       to: "Aaron@sequoiageo.com",
       subject: guide.notifSubject,
@@ -100,6 +104,23 @@ export async function POST(req: Request) {
           <p><strong>Source:</strong> ${guide.notifSource}</p>
         </div>
       `,
+    });
+
+    const emailResults = await Promise.allSettled([subscriberEmail, notificationEmail]);
+    const labels = ["subscriber delivery", "Aaron notification"] as const;
+    const landed = emailResults.map((result, i) => {
+      if (result.status === "rejected") {
+        console.error(`[guide-capture] ${labels[i]} email failed:`, result.reason);
+        return false;
+      }
+      // The Resend SDK resolves with { data, error } instead of throwing on
+      // API-level errors, so a fulfilled promise still needs its error checked.
+      const apiError = (result.value as { error?: unknown } | null)?.error;
+      if (apiError) {
+        console.error(`[guide-capture] ${labels[i]} email error:`, apiError);
+        return false;
+      }
+      return true;
     });
 
     // 3. Push contact to GHL via webhook
@@ -125,6 +146,11 @@ export async function POST(req: Request) {
         });
     }
 
+    // ok if either email landed; only a total email failure surfaces an error
+    // so the client can show the direct-contact fallback.
+    if (!landed[0] && !landed[1]) {
+      return NextResponse.json({ error: "Failed to process" }, { status: 500 });
+    }
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error("Guide capture error:", err);

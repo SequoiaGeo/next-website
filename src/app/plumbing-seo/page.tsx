@@ -1,11 +1,12 @@
 ﻿import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plumbing SEO That Books Jobs, Not Just Rankings | Sequoia GEO",
+  title: "Plumbing SEO by an Operator, Not an Account Manager",
   description:
-    "Plumbing SEO from a CA-licensed C-36 plumbing contractor with 13 years operating home services. Rankings tied to booked jobs and tracked revenue. Free audit.",
+    "13 years running a home services company. I found one plumber spending $7,783 a month on leads that returned $475. SEO managed to booked jobs.",
   alternates: {
     canonical: "https://www.sequoiageo.com/plumbing-seo",
   },
@@ -14,6 +15,12 @@ export const metadata: Metadata = {
 export default function PlumbingSeoPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Plumbing SEO", url: "https://www.sequoiageo.com/plumbing-seo" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

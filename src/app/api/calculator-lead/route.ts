@@ -29,9 +29,34 @@ export async function POST(req: Request) {
     }
 
     const { name, email } = check.clean;
+    // Optional phone (the CSR calculator collects it; the marketing leak
+    // calculator does not). Untrusted input: coerce, trim, cap.
+    const phone = typeof body.phone === "string" ? body.phone.trim().slice(0, 30) : "";
+    // Which calculator sent the lead. Sanitized to a safe slug.
+    const sourceSlug =
+      String(body.source || "marketing_leak_calculator")
+        .replace(/[^a-zA-Z0-9 _-]/g, "")
+        .slice(0, 60) || "marketing_leak_calculator";
+    const isCsr = sourceSlug === "csr_calculator";
+    const labels = isCsr
+      ? {
+          subjectPrefix: "CSR calculator lead",
+          emailHeading: "New CSR Booking Rate Calculator lead",
+          sourceLine: "sequoiageo.com/csr-calculator",
+          ghlSource: "CSR Calculator",
+          ghlTag: "csr-calculator",
+        }
+      : {
+          subjectPrefix: "Calculator lead",
+          emailHeading: "New Marketing Leak Calculator lead",
+          sourceLine: "sequoiageo.com/marketing-leak-calculator",
+          ghlSource: "Marketing Leak Calculator",
+          ghlTag: "marketing-leak-calculator",
+        };
     // Escape before interpolating into email HTML so lead values can't inject markup.
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
+    const safePhone = escapeHtml(phone);
 
     // Calculator numbers are untrusted input too: coerce or drop.
     const monthlySpend = num(body.monthlySpend);
@@ -53,19 +78,20 @@ export async function POST(req: Request) {
       await resend.emails.send({
         from: "Sequoia GEO Site <aaron@sequoiageo.com>",
         to: "Aaron@sequoiageo.com",
-        subject: `Calculator lead: ${name} (gap ${gapText})`,
+        subject: `${labels.subjectPrefix}: ${name} (gap ${gapText})`,
         html: `
           <div style="font-family: -apple-system, sans-serif; padding: 24px; color: #1a1a1a;">
-            <h2 style="margin: 0 0 16px;">New Marketing Leak Calculator lead</h2>
+            <h2 style="margin: 0 0 16px;">${labels.emailHeading}</h2>
             <p><strong>Name:</strong> ${safeName}</p>
             <p><strong>Email:</strong> ${safeEmail}</p>
+            ${safePhone ? `<p><strong>Phone:</strong> <a href="tel:${phone.replace(/\D/g, "")}">${safePhone}</a></p>` : ""}
             <p><strong>Monthly spend:</strong> ${monthlySpend !== undefined ? fmt(monthlySpend) : "-"}</p>
             <p><strong>Monthly calls:</strong> ${monthlyCalls ?? "-"}</p>
             <p><strong>Booking rate:</strong> ${bookingRate ?? "-"}%</p>
             <p><strong>Average ticket:</strong> ${avgTicket !== undefined ? fmt(avgTicket) : "-"}</p>
             <p><strong>Current monthly revenue:</strong> ${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</p>
             <p><strong>Annual gap:</strong> ${gapText}</p>
-            <p><strong>Source:</strong> sequoiageo.com/marketing-leak-calculator</p>
+            <p><strong>Source:</strong> ${labels.sourceLine}</p>
           </div>
         `,
       });
@@ -84,8 +110,9 @@ export async function POST(req: Request) {
             firstName: name.split(" ")[0],
             lastName: name.split(" ").slice(1).join(" ") || "",
             email,
-            source: "Marketing Leak Calculator",
-            tags: ["marketing-leak-calculator", "website-lead"],
+            phone: phone || undefined,
+            source: labels.ghlSource,
+            tags: [labels.ghlTag, "website-lead"],
             customField: {
               monthly_spend: monthlySpend,
               monthly_calls: monthlyCalls,
@@ -101,9 +128,13 @@ export async function POST(req: Request) {
       }
     }
 
-    // 3. Send the breakdown to the prospect (secondary, failure here must not abort capture)
-    try {
-      await resend.emails.send({
+    // 3. Send the breakdown to the prospect (secondary, failure here must not
+    //    abort capture). Marketing leak calculator only: that form promises an
+    //    emailed breakdown. The CSR calculator promises a call instead, so its
+    //    leads get no automated email.
+    if (!isCsr) {
+      try {
+        await resend.emails.send({
       from: "Aaron Husak <aaron@sequoiageo.com>",
       to: email,
       subject: "Your marketing leak breakdown",
@@ -145,9 +176,10 @@ export async function POST(req: Request) {
           </p>
         </div>
       `,
-      });
-    } catch (emailErr) {
-      console.error("[calculator-lead] prospect breakdown email failed:", emailErr);
+        });
+      } catch (emailErr) {
+        console.error("[calculator-lead] prospect breakdown email failed:", emailErr);
+      }
     }
 
     return NextResponse.json({ success: true });

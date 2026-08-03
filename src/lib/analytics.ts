@@ -47,6 +47,21 @@ export function trackLead({ source, value, ...rest }: LeadParams) {
   }
 }
 
+/**
+ * Fire a GA4 "phone_click" event for a tap on a tel: link.
+ * Call intent is NOT a captured lead: no generate_lead, no Ads conversion,
+ * no oaiq lead_created. Those stay reserved for real form captures so the
+ * lead numbers in GA4 and the ad platforms stay honest.
+ */
+export function trackCallIntent(source: string) {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "phone_click", {
+    event_category: "CTA",
+    event_label: source,
+    source,
+  });
+}
+
 /** Fire an arbitrary GA4 event (engagement, clicks, etc.). */
 export function trackEvent(name: string, params: Record<string, unknown> = {}) {
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;

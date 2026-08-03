@@ -1,10 +1,12 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
-  title: "Best Plumbing Marketing Agencies 2026 | Ranked and Reviewed",
+  title: "Best Plumbing Marketing Agencies 2026 Ranked by an Operator",
   description:
-    "8 plumbing marketing agencies ranked for 2026: Hook Agency, Rival Digital, Plumbing & HVAC SEO, RYNO, Scorpion, Strictly Plumbers, Built-Right Digital, and Sequoia GEO. Strengths, pricing, and who each agency is best for.",
+    "8 plumbing marketing companies ranked by a 13-year home services operator, with pricing where it exists. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-plumbing-marketing-agencies",
   },
@@ -202,20 +204,20 @@ const agencies = [
     tagColor: "bg-[#C8EDD2]/50 text-[#1A5C3A] border-[#3A9E6A]/30",
     meta: [
       { label: "Best for", value: "$2M to $15M revenue contractors" },
-      { label: "Pricing", value: "30-day trial, no long-term contract" },
+      { label: "Pricing", value: "From $2,500 a month, 3-month initial term, month to month after" },
       { label: "Team scale", value: "10-client cap, principal-led" },
     ],
     summary:
-      "Sequoia GEO is a boutique fractional CMO and growth operations firm founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2020 to 2023). The firm serves HVAC, plumbing, and home service contractors doing $2M to $15M, with a deliberate cap of 10 active clients to maintain hands-on attention. Marketing services include Google Ads, LSA, local SEO, GBP management, and web design, but the core differentiator is treating marketing as a revenue pipeline and auditing booking rates, CSR performance, and conversion gaps alongside campaign execution.",
+      "Full disclosure: this one is mine. I put it last on purpose. Read the other seven first. Sequoia GEO is a boutique fractional CMO and growth operations practice founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2020 to 2023). The practice serves HVAC, plumbing, and home service contractors doing $2M to $15M, with a deliberate cap of 10 active clients to maintain hands-on attention. Marketing services include Google Ads, LSA, local SEO, GBP management, and web design, but the core differentiator is treating marketing as a revenue pipeline and auditing booking rates, CSR performance, and conversion gaps alongside campaign execution.",
     strengths: [
-      "Only agency on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
+      "Only shop on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
       "10-client cap ensures principal-level attention rather than junior account manager handoffs",
       "Revenue attribution connects past the lead: booking rates, CSR call quality, and appointment data",
     ],
     considerations: [
       "Intentionally limited capacity means availability may be restricted at any given time",
-      "Boutique structure means fewer proprietary technology tools and platform integrations than larger agencies",
-      "Newer brand with less market recognition than agencies who have been marketing themselves for a decade",
+      "Boutique structure means fewer proprietary technology tools and platform integrations than the bigger names on this list",
+      "Newer brand with less market recognition than companies who have been marketing themselves for a decade",
     ],
     isOwnAgency: true,
   },
@@ -228,9 +230,82 @@ const howToChoose = [
   { tier: "$15M+ or multi-location", rec: "Scorpion and RYNO are the natural fits at this scale. The technology infrastructure and team depth they offer matches the operational complexity of a large multi-location plumbing operation." },
 ];
 
+type Agency = (typeof agencies)[number];
+
+function AgencyCard({ agency }: { agency: Agency }) {
+  return (
+    <div
+      className={`rounded-2xl border p-8 shadow-sm ${agency.isOwnAgency ? "border-[#3A9E6A]/40 ring-2 ring-[#3A9E6A]/20" : "border-gray-200"}`}
+    >
+      <div className="flex items-start justify-between gap-4 mb-5">
+        <div className="flex items-center gap-3">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0D2318] text-sm font-black text-white shrink-0">
+            {agency.rank}
+          </span>
+          <div>
+            <h2 className="text-xl font-extrabold text-[#1a1a1a]">{agency.name}</h2>
+            <p className="text-xs text-gray-500">{agency.url}</p>
+          </div>
+        </div>
+        <span className={`shrink-0 rounded-full border px-3 py-1 text-xs font-semibold ${agency.tagColor}`}>
+          {agency.tag}
+        </span>
+      </div>
+
+      <p className="text-sm font-semibold text-[#1A5C3A] mb-4">{agency.bestFor}</p>
+
+      <div className="flex flex-wrap gap-3 mb-5">
+        {agency.meta.map((m) => (
+          <div key={m.label} className="rounded-lg bg-[#fafaf8] border border-gray-200 px-3 py-2">
+            <p className="text-xs text-gray-500">{m.label}</p>
+            <p className="text-xs font-semibold text-[#1a1a1a] mt-0.5">{m.value}</p>
+          </div>
+        ))}
+      </div>
+
+      <p className="text-sm text-gray-600 leading-relaxed mb-5">{agency.summary}</p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <p className="text-xs font-bold text-[#1A5C3A] uppercase tracking-wider mb-2">Strengths</p>
+          <ul className="space-y-2">
+            {agency.strengths.map((s) => (
+              <li key={s} className="flex items-start gap-2 text-sm text-gray-700">
+                <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                {s}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Considerations</p>
+          <ul className="space-y-2">
+            {agency.considerations.map((c) => (
+              <li key={c} className="flex items-start gap-2 text-sm text-gray-600">
+                <svg className="mt-0.5 h-4 w-4 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {c}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function BestPlumbingAgenciesPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Best Plumbing Marketing Agencies", url: "https://www.sequoiageo.com/best-plumbing-marketing-agencies" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -241,8 +316,26 @@ export default function BestPlumbingAgenciesPage() {
             "description": "8 plumbing marketing agencies ranked and reviewed for 2026, with strengths, considerations, and who each agency is best for by revenue size.",
             "author": { "@type": "Organization", "name": "Sequoia GEO" },
             "publisher": { "@type": "Organization", "name": "Sequoia GEO", "url": "https://www.sequoiageo.com" },
-            "dateModified": "2026-04-22",
+            "dateModified": "2026-08-03",
             "mainEntityOfPage": "https://www.sequoiageo.com/best-plumbing-marketing-agencies"
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Best Plumbing Marketing Agencies 2026",
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "numberOfItems": agencies.length,
+            "itemListElement": agencies.map((agency) => ({
+              "@type": "ListItem",
+              "position": agency.rank,
+              "name": agency.name,
+              "url": `https://${agency.url}`,
+            })),
           })
         }}
       />
@@ -258,7 +351,7 @@ export default function BestPlumbingAgenciesPage() {
             8 agencies ranked and reviewed: what each one is best at, who they are the right fit for, and where they fall short. Based on direct research across agency websites, case studies, and public pricing.
           </p>
           <p className="mt-4 text-sm text-[#C8EDD2]/50">
-            Last updated April 2026.
+            Last updated August 2026.
           </p>
         </div>
       </section>
@@ -267,76 +360,33 @@ export default function BestPlumbingAgenciesPage() {
       <section className="bg-amber-50 border-b border-amber-200">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 py-4">
           <p className="text-sm text-amber-800">
-            <strong>Disclosure:</strong> Sequoia GEO is ranked last on this list and is the agency that produced this research. We ranked other agencies first because this list is designed to be genuinely useful, not self-promotional. Read it accordingly.
+            <strong>Disclosure:</strong> Sequoia GEO produced this research and is ranked last on purpose. The list is built to be useful, not self-promotional. Read the other seven first.
           </p>
         </div>
       </section>
 
-      {/* Agency cards */}
-      <section className="bg-white py-16">
+      {/* Agency cards, ranks 1 to 3 */}
+      <section className="bg-white pt-16 pb-12">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 space-y-12">
-          {agencies.map((agency) => (
-            <div
-              key={agency.rank}
-              className={`rounded-2xl border p-8 shadow-sm ${agency.isOwnAgency ? "border-[#3A9E6A]/40 ring-2 ring-[#3A9E6A]/20" : "border-gray-200"}`}
-            >
-              <div className="flex items-start justify-between gap-4 mb-5">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0D2318] text-sm font-black text-white shrink-0">
-                    {agency.rank}
-                  </span>
-                  <div>
-                    <h2 className="text-xl font-extrabold text-[#1a1a1a]">{agency.name}</h2>
-                    <p className="text-xs text-gray-500">{agency.url}</p>
-                  </div>
-                </div>
-                <span className={`shrink-0 rounded-full border px-3 py-1 text-xs font-semibold ${agency.tagColor}`}>
-                  {agency.tag}
-                </span>
-              </div>
+          {agencies.slice(0, 3).map((agency) => (
+            <AgencyCard key={agency.rank} agency={agency} />
+          ))}
+        </div>
+      </section>
 
-              <p className="text-sm font-semibold text-[#1A5C3A] mb-4">{agency.bestFor}</p>
+      {/* Mid-list lead capture */}
+      <InlineLeadForm
+        source="best_plumbing_agencies_midlist"
+        heading="Want an honest read before you pick one?"
+        subtext="I audit your current plumbing marketing before the first call. You see what is working, what is not, and which of these eight actually fits your company."
+        buttonText="Get Your Free Audit"
+      />
 
-              <div className="flex flex-wrap gap-3 mb-5">
-                {agency.meta.map((m) => (
-                  <div key={m.label} className="rounded-lg bg-[#fafaf8] border border-gray-200 px-3 py-2">
-                    <p className="text-xs text-gray-500">{m.label}</p>
-                    <p className="text-xs font-semibold text-[#1a1a1a] mt-0.5">{m.value}</p>
-                  </div>
-                ))}
-              </div>
-
-              <p className="text-sm text-gray-600 leading-relaxed mb-5">{agency.summary}</p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <p className="text-xs font-bold text-[#1A5C3A] uppercase tracking-wider mb-2">Strengths</p>
-                  <ul className="space-y-2">
-                    {agency.strengths.map((s) => (
-                      <li key={s} className="flex items-start gap-2 text-sm text-gray-700">
-                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Considerations</p>
-                  <ul className="space-y-2">
-                    {agency.considerations.map((c) => (
-                      <li key={c} className="flex items-start gap-2 text-sm text-gray-600">
-                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        {c}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
+      {/* Agency cards, ranks 4 to 8 */}
+      <section className="bg-white pt-12 pb-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 space-y-12">
+          {agencies.slice(3).map((agency) => (
+            <AgencyCard key={agency.rank} agency={agency} />
           ))}
         </div>
       </section>

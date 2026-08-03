@@ -1967,7 +1967,7 @@ const posts: Record<string, Post> = {
   },
 
   "best-plumbing-seo-keywords": {
-    title: "Plumbing SEO Keywords That Drive Booked Jobs (2026 Guide)",
+    title: "Plumbing SEO Keywords That Book Jobs (2026)",
     description:
       "Most plumbing SEO campaigns target the wrong keywords. Here is the keyword framework built over 13 years running a home services company, organized by search intent and tied to booked revenue.",
     date: "April 2026",
@@ -5751,7 +5751,7 @@ export async function generateMetadata({
   const post = posts[slug];
   if (!post) return { title: "Post Not Found" };
   return {
-    title: `${post.title} | Sequoia GEO Blog`,
+    title: `${post.title} | Sequoia GEO`,
     description: post.description,
     alternates: {
       canonical: `https://www.sequoiageo.com/blog/${slug}`,

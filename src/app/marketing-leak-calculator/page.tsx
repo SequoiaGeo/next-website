@@ -57,6 +57,7 @@ export default function MarketingLeakCalculator() {
   const [capture, setCapture] = useState({ name: "", email: "", website: "" });
   const [captureLoading, setCaptureLoading] = useState(false);
   const [captureDone, setCaptureDone] = useState(false);
+  const [captureError, setCaptureError] = useState<string | null>(null);
 
   // Timestamp of when the page mounted, used server-side for the timing check.
   const renderedAtRef = useRef<number>(0);
@@ -102,11 +103,15 @@ export default function MarketingLeakCalculator() {
   const leakColor = leakSeverity === "critical" ? "#ef4444" : leakSeverity === "moderate" ? "#f59e0b" : "#22c55e";
   const leakLabel = leakSeverity === "critical" ? "Significant leak" : leakSeverity === "moderate" ? "Room to improve" : "Above average";
 
+  // Honest capture: success UI and the lead event fire only when the server
+  // confirmed the capture. A failed POST used to show "check your email" and
+  // count a generate_lead anyway, which hid broken capture behind good numbers.
   const handleCapture = async (e: FormEvent) => {
     e.preventDefault();
     setCaptureLoading(true);
+    setCaptureError(null);
     try {
-      await fetch("/api/calculator-lead", {
+      const res = await fetch("/api/calculator-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -122,12 +127,14 @@ export default function MarketingLeakCalculator() {
           annualGap: Math.round(results.annualGap),
         }),
       });
+      if (!res.ok) throw new Error("Submission failed");
+      trackLead({ source: "marketing_leak_calculator", value: Math.round(results.annualGap) });
+      setCaptureDone(true);
     } catch {
-      // still confirm to the user even if the API call fails
+      setCaptureError("failed");
+    } finally {
+      setCaptureLoading(false);
     }
-    trackLead({ source: "marketing_leak_calculator", value: Math.round(results.annualGap) });
-    setCaptureLoading(false);
-    setCaptureDone(true);
   };
 
   return (
@@ -310,7 +317,16 @@ export default function MarketingLeakCalculator() {
                     </svg>
                   </div>
                   <p className="text-base font-semibold text-[#0D2318]">Check your email. Your breakdown is on its way.</p>
-                  <p className="mt-1 text-sm text-gray-600">I included a link to book your free audit if you want me to look at where yours is actually leaking.</p>
+                  <p className="mt-1 text-sm text-gray-600">You will hear from me within one business day, usually much faster.</p>
+                  <a
+                    href="/contact#book"
+                    className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
+                  >
+                    Pick a time now
+                    <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               ) : (
                 <div className="rounded-2xl border border-gray-200 bg-white p-6">
@@ -361,6 +377,13 @@ export default function MarketingLeakCalculator() {
                         className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
                       />
                     </div>
+                    {captureError && (
+                      <p className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600">
+                        Something broke on my end. Call or text{" "}
+                        <a href="tel:5595213122" className="font-semibold underline">(559) 521-3122</a>, or email{" "}
+                        <a href="mailto:aaron@sequoiageo.com" className="font-semibold underline">aaron@sequoiageo.com</a>.
+                      </p>
+                    )}
                     <button
                       type="submit"
                       disabled={captureLoading}

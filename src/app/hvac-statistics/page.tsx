@@ -1,12 +1,13 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import CalculatorBanner from "@/components/CalculatorBanner";
 import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
-  title: "26 HVAC Industry Statistics for 2026 (Verified Sources)",
+  title: "26 HVAC Industry Statistics for 2026 (BLS, IBISWorld, RMI)",
   description:
-    "26 HVAC industry statistics for 2026, with sources: market size, employment, average ticket, seasonal demand, heat pump adoption, and how homeowners find contractors.",
+    "The U.S. HVAC industry does $156.2 billion a year, is short 110,000 technicians, and heat pumps outsold gas furnaces by 32% in 2024. All 26 stats sourced.",
   alternates: {
     canonical: "https://www.sequoiageo.com/hvac-statistics",
   },
@@ -15,6 +16,12 @@ export const metadata: Metadata = {
 export default function HvacStatisticsPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "HVAC Industry Statistics", url: "https://www.sequoiageo.com/hvac-statistics" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

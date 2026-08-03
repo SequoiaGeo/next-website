@@ -1,7 +1,8 @@
 ﻿"use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef, FormEvent } from "react";
 import Link from "next/link";
+import { trackLead } from "@/lib/analytics";
 
 function formatDollar(n: number) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
@@ -50,6 +51,19 @@ export default function CSRCalculator() {
   const [bookingRate, setBookingRate] = useState(38);
   const [avgTicket, setAvgTicket] = useState(650);
 
+  // Inline capture under the results (does not gate them).
+  // "website" is a honeypot: real users never see or fill it.
+  const [capture, setCapture] = useState({ name: "", phone: "", email: "", website: "" });
+  const [captureLoading, setCaptureLoading] = useState(false);
+  const [captureDone, setCaptureDone] = useState(false);
+  const [captureError, setCaptureError] = useState<string | null>(null);
+
+  // Timestamp of when the page mounted, used server-side for the timing check.
+  const renderedAtRef = useRef<number>(0);
+  useEffect(() => {
+    renderedAtRef.current = Date.now();
+  }, []);
+
   const results = useMemo(() => {
     const currentJobs = monthlyCalls * (bookingRate / 100);
     const currentRevenue = currentJobs * avgTicket;
@@ -92,6 +106,41 @@ export default function CSRCalculator() {
     };
   }, [monthlyCalls, bookingRate, avgTicket]);
 
+  // Honest capture: success UI and the lead event fire only when the server
+  // confirmed the capture (res.ok). A failed POST shows the direct-contact
+  // fallback instead of pretending the lead landed.
+  const handleCapture = async (e: FormEvent) => {
+    e.preventDefault();
+    setCaptureLoading(true);
+    setCaptureError(null);
+    try {
+      const res = await fetch("/api/calculator-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: capture.name,
+          phone: capture.phone,
+          email: capture.email,
+          website: capture.website,
+          renderedAt: renderedAtRef.current,
+          source: "csr_calculator",
+          monthlyCalls,
+          bookingRate,
+          avgTicket,
+          currentRevenue: Math.round(results.currentRevenue),
+          annualGap: Math.round(results.plus5AnnualGain),
+        }),
+      });
+      if (!res.ok) throw new Error("Submission failed");
+      trackLead({ source: "csr_calculator", value: Math.round(results.plus5AnnualGain) });
+      setCaptureDone(true);
+    } catch {
+      setCaptureError("failed");
+    } finally {
+      setCaptureLoading(false);
+    }
+  };
+
   return (
     <main className="min-h-screen bg-[#fafaf8]">
 
@@ -113,7 +162,7 @@ export default function CSRCalculator() {
             <span className="text-[#3A9E6A]">actually worth?</span>
           </h1>
           <p className="mt-4 text-base text-[#C8EDD2]/60 max-w-xl leading-relaxed">
-            CSRs are the most underleveraged person in most contracting operations. This calculator shows you the dollar value of closing the gap.
+            The CSR is the most underused seat in most contracting operations. This calculator shows you the dollar value of closing the gap.
           </p>
         </div>
       </div>
@@ -261,6 +310,107 @@ export default function CSRCalculator() {
                 That doesn&rsquo;t require more leads. It requires better call handling. Most contractors never measure this.
               </p>
             </div>
+
+            {/* Inline capture: appears with the annual number, does NOT gate results */}
+            {captureDone ? (
+              <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#C8EDD2]/40 p-6 text-center">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#C8EDD2] mb-3">
+                  <svg className="h-6 w-6 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <p className="text-base font-semibold text-[#0D2318]">Got it. Your number is in front of me.</p>
+                <p className="mt-1 text-sm text-gray-600">You will hear from me within one business day, usually much faster.</p>
+                <a
+                  href="/contact#book"
+                  className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
+                >
+                  Pick a time now
+                  <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
+              </div>
+            ) : (
+              <div className="rounded-2xl border border-gray-200 bg-white p-6">
+                <p className="text-base font-semibold text-[#1a1a1a] mb-1">Want this number fixed? Leave your info and I will call you.</p>
+                <p className="text-sm text-gray-500 mb-4">
+                  I listen to real calls, score the booking performance, and tell you where the points are. No pitch deck.
+                </p>
+                <form onSubmit={handleCapture} className="space-y-3">
+                  {/* Honeypot: hidden from real users (off-screen, no tab stop,
+                      autocomplete off). Bots that fill every field trip it. */}
+                  <div
+                    aria-hidden="true"
+                    style={{
+                      position: "absolute",
+                      left: "-9999px",
+                      top: "-9999px",
+                      height: 0,
+                      width: 0,
+                      overflow: "hidden",
+                    }}
+                  >
+                    <label htmlFor="csr-calc-website">Website</label>
+                    <input
+                      id="csr-calc-website"
+                      name="website"
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={capture.website}
+                      onChange={(e) => setCapture({ ...capture, website: e.target.value })}
+                    />
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <input
+                      type="text"
+                      required
+                      aria-label="Your name"
+                      autoComplete="name"
+                      value={capture.name}
+                      onChange={(e) => setCapture({ ...capture, name: e.target.value })}
+                      placeholder="Your name"
+                      className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
+                    />
+                    <input
+                      type="tel"
+                      required
+                      aria-label="Your phone number"
+                      autoComplete="tel"
+                      value={capture.phone}
+                      onChange={(e) => setCapture({ ...capture, phone: e.target.value })}
+                      placeholder="Phone"
+                      className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    required
+                    aria-label="Your email address"
+                    autoComplete="email"
+                    value={capture.email}
+                    onChange={(e) => setCapture({ ...capture, email: e.target.value })}
+                    placeholder="you@company.com"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
+                  />
+                  {captureError && (
+                    <p className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600">
+                      Something broke on my end. Call or text{" "}
+                      <a href="tel:5595213122" className="font-semibold underline">(559) 521-3122</a>, or email{" "}
+                      <a href="mailto:aaron@sequoiageo.com" className="font-semibold underline">aaron@sequoiageo.com</a>.
+                    </p>
+                  )}
+                  <button
+                    type="submit"
+                    disabled={captureLoading}
+                    className="w-full rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318] disabled:opacity-60"
+                  >
+                    {captureLoading ? "Sending..." : "Call Me About This Number"}
+                  </button>
+                </form>
+              </div>
+            )}
 
           </div>
         </div>

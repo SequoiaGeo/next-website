@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { cities, getCityData } from "../city-data";
 
 export async function generateStaticParams() {
@@ -75,6 +76,13 @@ export default async function CityPage({
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "HVAC Marketing", url: "https://www.sequoiageo.com/hvac-marketing" },
+          { name: `${data.city}, ${data.stateAbbr}`, url: `https://www.sequoiageo.com/hvac-marketing/${slug}` },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -104,7 +112,7 @@ export default async function CityPage({
               <span className="text-[#3A9E6A]">{data.city}, {data.stateAbbr}</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              Google Ads, Local Service Ads, and local SEO built for HVAC and plumbing contractors in the {data.city} market. Operator-founded. No long-term contracts. Free audit before the first call.
+              Google Ads, Local Service Ads, and local SEO built for HVAC and plumbing contractors in the {data.city} market. Operator-founded. No annual contracts. Free audit before the first call.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -219,7 +227,7 @@ export default async function CityPage({
             </div>
             <div className="space-y-3">
               {[
-                { label: "No long-term contracts", desc: "30-day trial. Month-to-month after that." },
+                { label: "No annual contracts", desc: "3-month initial term. Month to month after." },
                 { label: "Free audit before the first call", desc: "We review your current setup before we pitch anything." },
                 { label: "Operator perspective", desc: "Built on real HVAC business growth, not just ad management." },
                 { label: "10-client cap", desc: "Senior-level attention on every account, every week." },

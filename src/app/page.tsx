@@ -22,12 +22,12 @@ import ClientVideoGrid from "@/components/ClientVideoGrid";
 import ClientResults from "@/components/ClientResults";
 import LSABanner from "@/components/LSABanner";
 import YouTubeFacade from "@/components/YouTubeFacade";
+import InlineLeadForm from "@/components/InlineLeadForm";
 
 // Lazy-load below-fold interactive components, defers their JS until
 // after the critical rendering path completes.
 const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: true });
 const ContactForm = dynamic(() => import("@/components/ContactForm"), { ssr: true });
-const StickyMobileCTA = dynamic(() => import("@/components/StickyMobileCTA"), { ssr: false });
 
 export default function Home() {
   return (
@@ -48,6 +48,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Lead capture in the first three sections. The old first form sat 22
+          sections down; most homepage visitors never saw a form at all. */}
+      <InlineLeadForm
+        source="homepage_top"
+        heading="Get more booked jobs from the marketing you already pay for."
+        subtext="Three fields. I review your marketing myself and call you with what I find. No pitch deck."
+      />
 
       {/* Client result, right under the hero: promise then proof. Renders only
           once Mel's YouTube ID is set in ClientResults.tsx. */}
@@ -224,8 +232,7 @@ export default function Home() {
           stacked lead magnets (calculator + guide) don't dilute the booking push. */}
       <LSABanner />
 
-      {/* Sticky mobile CTA bar: phone + book, appears after scrolling past hero */}
-      <StickyMobileCTA />
+      {/* Sticky mobile call/book bar now mounts sitewide in layout.tsx */}
     </>
   );
 }

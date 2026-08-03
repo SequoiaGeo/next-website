@@ -1,19 +1,20 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import CalculatorBanner from "@/components/CalculatorBanner";
 import InlineLeadForm from "@/components/InlineLeadForm";
 
 export const metadata: Metadata = {
-  title: "Roofing SEO That Books Jobs, Run by an Operator | Sequoia GEO",
+  title: "Roofing SEO From a 13-Year Home Services Operator",
   description:
-    "Most roofing SEO reports rankings. I run it to booked jobs and revenue, tracked from first call to signed contract. Built by a 4x Inc 5000 home services operator.",
+    "I ran a 4x Inc 5000 home services company for 13 years. Roofing SEO managed to booked jobs, with real client numbers published. From $2,500 a month.",
   alternates: {
     canonical: "https://www.sequoiageo.com/roofing-seo",
   },
   openGraph: {
-    title: "Roofing SEO That Books Jobs, Run by an Operator",
+    title: "Roofing SEO From a 13-Year Home Services Operator",
     description:
-      "Most roofing SEO reports rankings. I run it to booked jobs and revenue, tracked from first call to signed contract. Built by a 4x Inc 5000 home services operator.",
+      "I ran a 4x Inc 5000 home services company for 13 years. Roofing SEO managed to booked jobs, with real client numbers published. From $2,500 a month.",
     url: "https://www.sequoiageo.com/roofing-seo",
     type: "website",
   },
@@ -53,6 +54,12 @@ const roofingFaqs = [
 export default function RoofingSeoPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Roofing SEO", url: "https://www.sequoiageo.com/roofing-seo" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

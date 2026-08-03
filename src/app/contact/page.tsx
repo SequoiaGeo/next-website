@@ -61,8 +61,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Inline calendar, primary conversion path */}
-      <section className="bg-[#fafaf8] py-10">
+      {/* Inline calendar, primary conversion path. id="book" is the anchor
+          success screens across the site link to ("Pick a time now"). */}
+      <section id="book" className="bg-[#fafaf8] py-10 scroll-mt-20">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <BookingCalendar />
         </div>

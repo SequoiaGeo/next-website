@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, FormEvent } from "react";
 import { trackLead } from "@/lib/analytics";
+import BookingCalendar from "@/components/BookingCalendar";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -119,51 +120,17 @@ export default function ContactForm() {
                     </svg>
                   </div>
                   <h3 className="mt-5 text-xl font-bold text-[#1a1a1a]">
-                    Got it. We&rsquo;ll be in touch as soon as possible.
+                    Got it. Your audit is in my queue.
                   </h3>
                   <p className="mt-2 text-sm text-gray-500">
-                    While you wait, here&rsquo;s a look at what we do and how we do it.
+                    You will hear from me within one business day, usually much faster.
+                  </p>
+                  <p className="mt-4 text-sm font-semibold text-[#1a1a1a]">
+                    Want to skip the wait? Pick a time now.
                   </p>
                 </div>
 
-                <div className="space-y-3">
-                  {[
-                    {
-                      label: "Case Studies",
-                      desc: "See how Balanced Comfort grew to 4x Inc 5000",
-                      href: "/case-studies",
-                    },
-                    {
-                      label: "How It Works",
-                      desc: "The Full Picture Audit, Fix & Build, and Scale process",
-                      href: "/how-it-works",
-                    },
-                    {
-                      label: "Free LSA Guide",
-                      desc: "11-page guide to managing Google Local Services Ads",
-                      href: "/lsa-guide",
-                    },
-                    {
-                      label: "Services Overview",
-                      desc: "Every channel we manage and how they connect",
-                      href: "/services",
-                    },
-                  ].map((link) => (
-                    <a
-                      key={link.href}
-                      href={link.href}
-                      className="flex items-center justify-between rounded-xl border border-gray-200 bg-white px-4 py-3.5 hover:border-[#3A9E6A]/40 hover:shadow-sm transition group"
-                    >
-                      <div>
-                        <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">{link.label}</p>
-                        <p className="text-xs text-gray-500 mt-0.5">{link.desc}</p>
-                      </div>
-                      <svg className="h-4 w-4 text-gray-300 group-hover:text-[#3A9E6A] transition-colors shrink-0 ml-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </a>
-                  ))}
-                </div>
+                <BookingCalendar />
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">

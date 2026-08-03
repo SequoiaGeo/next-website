@@ -7,12 +7,14 @@
 // serve this one. The duplication costs little; breaking a running test does not.
 //
 // Two conversion moments, tagged separately:
-//   immanuel_lp_form = a submitted lead
+//   immanuel_lp_form = a submitted lead, fires trackLead
 //   immanuel_lp_call = a tap on the call bar, which is intent to call, not a
-//                      completed call. Never conflate the two.
+//                      completed call and not a captured lead. Fires
+//                      trackCallIntent (phone_click only). Never conflate the two.
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { trackLead } from "@/lib/analytics";
+import { trackLead, trackCallIntent } from "@/lib/analytics";
+import BookingCalendar from "@/components/BookingCalendar";
 
 const PHONE_DISPLAY = "(559) 521-3122";
 const PHONE_HREF = "tel:5595213122";
@@ -22,7 +24,7 @@ export function StickyCallBar() {
     <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#1A5C3A] bg-[#0D2318]/95 px-4 py-2.5 backdrop-blur">
       <a
         href={PHONE_HREF}
-        onClick={() => trackLead({ source: "immanuel_lp_call" })}
+        onClick={() => trackCallIntent("immanuel_lp_call")}
         className="mx-auto flex max-w-2xl items-center justify-center gap-2 rounded-xl bg-[#3A9E6A] px-6 py-3 text-[16px] font-bold text-[#04150d] shadow-lg transition hover:bg-[#C8EDD2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
       >
         <svg aria-hidden="true" className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2.2} stroke="currentColor">
@@ -81,20 +83,27 @@ export default function LeadForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-2xl border border-[#C8EDD2] bg-white p-7 text-center shadow-lg">
-        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#C8EDD2]">
-          <svg aria-hidden="true" className="h-6 w-6 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-          </svg>
+      <div className="rounded-2xl border border-[#C8EDD2] bg-white p-7 shadow-lg">
+        <div className="text-center">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#C8EDD2]">
+            <svg aria-hidden="true" className="h-6 w-6 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+          </div>
+          <h2 className="mt-4 text-xl font-bold text-[#1a1a1a]">Got it. I will run the check myself.</h2>
+          <p className="mt-2 text-sm leading-relaxed text-gray-600">
+            You will hear from me within one business day, usually much faster. If you would rather
+            talk now, call or text{" "}
+            <a href={PHONE_HREF} className="font-semibold text-[#1A5C3A]">
+              {PHONE_DISPLAY}
+            </a>
+            .
+          </p>
+          <p className="mt-4 text-sm font-semibold text-[#1a1a1a]">
+            Or pick a time now and we will walk through it together.
+          </p>
         </div>
-        <h2 className="mt-4 text-xl font-bold text-[#1a1a1a]">Got it. I will run the check myself.</h2>
-        <p className="mt-2 text-sm leading-relaxed text-gray-600">
-          You will hear back from me, not an assistant. If you would rather talk now, call or text{" "}
-          <a href={PHONE_HREF} className="font-semibold text-[#1A5C3A]">
-            {PHONE_DISPLAY}
-          </a>
-          .
-        </p>
+        <BookingCalendar className="mt-4" />
       </div>
     );
   }

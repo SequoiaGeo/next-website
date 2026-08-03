@@ -23,7 +23,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const { name, phone, email, message, smsConsent } = spam.clean;
+    const { name, phone, email, company, message, smsConsent } = spam.clean;
     // Optional per-page source tag from inline lead forms (e.g. "hvac_seo_page").
     // Sanitized to a safe slug; falls back to the generic contact-form label.
     const source =
@@ -34,6 +34,7 @@ export async function POST(req: Request) {
     const safeName = escapeHtml(name);
     const safePhone = escapeHtml(phone);
     const safeEmail = escapeHtml(email);
+    const safeCompany = escapeHtml(company);
     const safeMessage = escapeHtml(message);
     const safeSource = escapeHtml(source);
 
@@ -66,6 +67,12 @@ export async function POST(req: Request) {
                 <a href="mailto:${safeEmail}" style="color: #1A5C3A;">${safeEmail}</a>
               </td>
             </tr>
+            ${safeCompany ? `
+            <tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888;">Company</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; font-weight: 600; color: #1a1a1a;">${safeCompany}</td>
+            </tr>
+            ` : ""}
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888;">SMS Consent</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; color: #1a1a1a;">${smsConsent ? "Yes" : "No"}</td>
@@ -103,6 +110,7 @@ export async function POST(req: Request) {
           lastName: name.split(" ").slice(1).join(" ") || "",
           email,
           phone,
+          companyName: company || undefined,
           message,
           source,
           tags: ["contact-form", "website-lead", source],

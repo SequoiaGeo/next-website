@@ -86,6 +86,7 @@ const nextConfig = {
       { source: "/learn/events", destination: "/", permanent: true },
       { source: "/resources/events", destination: "/", permanent: true },
       { source: "/company/events", destination: "/", permanent: true },
+      { source: "/community/events", destination: "/", permanent: true },
       { source: "/about/events", destination: "/", permanent: true },
       { source: "/news/events", destination: "/", permanent: true },
 
