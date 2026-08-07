@@ -113,15 +113,26 @@ function CheerSign() {
           type="button"
           aria-label="Close the sign"
           onClick={() => setShowing(false)}
-          className="fixed inset-0 z-50 block h-full w-full cursor-pointer overflow-hidden bg-black"
+          className="dragonwrap fixed inset-x-0 top-0 z-50 flex w-full cursor-pointer items-center overflow-hidden bg-black"
         >
-          <style>{`@keyframes dragonmarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}`}</style>
+          {/* dvh, not vh: mobile browsers size vh to the layout viewport, which is
+              taller than what is visible while the URL bar shows, so a vh-centered
+              sign sits at the bottom edge in landscape. dvh tracks the visible
+              viewport; the plain-vh rules are the fallback for old browsers. */}
+          <style>{`
+            .dragonwrap{height:100vh}
+            .dragonsign{font-size:min(38vw,55vh)}
+            @supports (height:100dvh){
+              .dragonwrap{height:100dvh}
+              .dragonsign{font-size:min(38vw,55dvh)}
+            }
+            @keyframes dragonmarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+          `}</style>
           <span
-            className="absolute top-1/2 left-0 flex -translate-y-1/2 whitespace-nowrap font-extrabold"
+            className="dragonsign flex flex-none whitespace-nowrap font-extrabold"
             style={{
               animation: `dragonmarquee ${duration}s linear infinite`,
               color,
-              fontSize: "min(38vw, 55vh)",
               lineHeight: 1,
               textShadow: `0 0 18px ${color}, 0 0 70px ${color}, 0 0 120px ${color}`,
             }}
@@ -129,7 +140,7 @@ function CheerSign() {
             <span>{chunk}</span>
             <span>{chunk}</span>
           </span>
-          <span className="absolute bottom-4 left-0 right-0 text-center text-[11px] text-white/40">
+          <span className="absolute bottom-3 left-0 right-0 text-center text-[11px] text-white/40">
             tap anywhere to close &middot; turn your phone sideways &middot;
             sequoiageo.com/dragons
           </span>
