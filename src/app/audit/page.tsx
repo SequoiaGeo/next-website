@@ -5,29 +5,29 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Free Marketing Audit for Home Service Contractors | Sequoia GEO",
   description:
-    "12-point marketing audit for HVAC, plumbing, and roofing contractors. We check LSA setup, conversion tracking accuracy, booking rate, website ownership, and 8 more areas. No pitch. No obligation.",
+    "Start with a hand-reviewed public-surface marketing scorecard for your home service business. No account access is needed to begin. Deeper verification is optional.",
   alternates: { canonical: "https://www.sequoiageo.com/audit" },
 };
 
 const heroDeliverables = [
   {
-    label: "What I check",
-    desc: "LSA setup, conversion tracking, ad spend against booked jobs, GBP health, call handling, and 7 more areas. 12 total, by hand.",
+    label: "How it starts",
+    desc: "I score the eight things customers, Google, and AI systems can see before anyone shares a password: positioning, conversion, SEO, content, local consistency, reputation, and distribution.",
+  },
+  {
+    label: "What happens next",
+    desc: "You get the public findings first. If one issue needs account-level verification, we decide together what access is actually necessary.",
   },
   {
     label: "What you get back",
     desc: "A written findings report with the source and confidence behind each issue, plus the 5 fixes that should come first.",
-  },
-  {
-    label: "How fast",
-    desc: "3 to 5 business days, then a 45 to 60 minute call to walk through it. You keep the report either way.",
   },
 ];
 
 const proofChips = [
   "4x Inc 5000",
   "13 years as an operator",
-  "$17M+ annual revenue at exit",
+  "You work with me, not an account manager",
 ];
 
 const auditItems = [
@@ -100,13 +100,13 @@ const goodFit = [
   "Spending $5K to $30K per month on marketing",
   "Have at least one active lead channel",
   "Want to understand your actual numbers",
-  "Currently working with at least one vendor or agency",
+  "Want one marketing problem verified before approving more work",
 ];
 
 const notGoodFit = [
   "Just starting out with no marketing budget",
   "Looking for a surface-level SEO report",
-  "Not willing to share access to accounts",
+  "Want account-level conclusions without providing the underlying evidence",
 ];
 
 export default function AuditPage() {
@@ -129,10 +129,10 @@ export default function AuditPage() {
             <div>
               <p className="section-overline text-[#3A9E6A] mb-4">Free Marketing Audit</p>
               <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl leading-[1.08]">
-                I&rsquo;ll audit your marketing for free and show you what your spend actually produces.
+                I&rsquo;ll build the public-surface scorecard for your business and show you what customers, Google, and AI can see.
               </h1>
               <p className="mt-4 text-base text-[#C8EDD2]/70 leading-relaxed">
-                No pitch. No obligation. Real numbers pulled from your own accounts.
+                No account access to start. No manufactured problems. If the public evidence is clean, I will tell you that.
               </p>
 
               <ul className="mt-7 space-y-4">
@@ -176,9 +176,9 @@ export default function AuditPage() {
             <div className="[&>section]:bg-transparent [&>section]:py-0 [&>section>div]:max-w-none [&>section>div]:px-0">
               <InlineLeadForm
                 source="audit_page"
-                heading="Get your free audit"
-                subtext="Tell me where to send it. I take 10 audits a month, first come, first served."
-                buttonText="Get My Free Audit"
+                heading="Request your public-surface scorecard"
+                subtext="Tell me where to send it. I review every request personally. No account access is needed to start."
+                buttonText="Request My Scorecard"
               />
             </div>
 
@@ -232,8 +232,8 @@ export default function AuditPage() {
               The 12-point audit
             </h2>
             <p className="mt-4 text-base text-gray-500 leading-relaxed">
-              The 12-point audit covers every layer of the marketing pipeline, from the first
-              impression to the booked job.
+              The first eight dimensions use public evidence. Account-level steps require access
+              only after you see what the public surface shows.
             </p>
           </div>
 
@@ -350,19 +350,19 @@ export default function AuditPage() {
           <div className="max-w-2xl">
             <p className="section-overline text-[#3A9E6A] mb-4">Limited Availability</p>
             <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl leading-[1.08]">
-              10 audits per month. First come, first served.
+              I complete up to 10 full audits each month.
             </h2>
             <p className="mt-5 text-lg text-[#C8EDD2]/70 leading-relaxed">
-              I limit the number of audits I run each month so I can actually be thorough.
-              If a spot is open, it costs nothing. The form takes a minute, and you&rsquo;ll
-              hear from me within one business day.
+              The public-surface scorecard comes first, and no account access is needed to begin.
+              If the findings justify a deeper review, we decide what access is necessary. You
+              will hear from me within one business day.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a
                 href="#audit-form"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white transition hover:bg-[#245a42]"
               >
-                Get My Free Audit
+                Request My Scorecard
                 <svg aria-hidden="true" className="ml-2 h-4 w-4 rotate-[-90deg]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
