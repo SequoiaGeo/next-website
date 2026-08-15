@@ -1,6 +1,6 @@
 # Public-Surface Audit Campaign
 
-Status: ready after production attribution verification
+Status: blocked on HighLevel workflow remediation and the production test matrix
 
 Campaign: `public_surface_audit_august`
 
@@ -8,7 +8,7 @@ Offer: the existing 12-point audit at `/audit`
 
 Primary distribution: Aaron's personal LinkedIn and Facebook profiles, where prior posts have already produced reach, comments, follows, shares, and direct inquiries.
 
-Launch window: Monday, August 17. LinkedIn at 8:00 AM Pacific. Facebook at 11:30 AM Pacific. Do not publish an identical Sequoia company-page post at the same time. Reuse the idea on the company page at least 24 hours later with a company-voice introduction.
+Conditional launch window: Monday, August 17. LinkedIn at 8:00 AM Pacific. Facebook at 11:30 AM Pacific. Launch only if the HighLevel gate passes by Sunday, August 16. Otherwise move the campaign rather than publishing into a known-bad workflow. Do not publish an identical Sequoia company-page post at the same time. Reuse the idea on the company page at least 24 hours later with a company-voice introduction.
 
 ## Offer taxonomy
 
@@ -79,10 +79,27 @@ The campaign store records first tagged touch within the same browser tab. It do
 
 Use these sources:
 
-1. Accepted forms and their submission IDs in the notification email and HighLevel are the lead-level source of truth.
+1. Accepted forms and their submission IDs in the notification email are the lead-level attribution source until the HighLevel remediation below is verified.
 2. GA4 campaign sessions and lead events are a directional cross-check.
 3. Search Console branded clicks and direct traffic during the post week are secondary lift signals, not attributable leads.
 4. Comments, reactions, shares, and profile follows are distribution signals, not leads.
+
+### HighLevel remediation gate
+
+The August 15 production test created the synthetic audit contact successfully, but HighLevel applied the stale `lsa-guide` tag and stored none of the website source, lead ID, campaign, or AI-referral fields. The synthetic contact was retagged `internal-attribution-test` and must be excluded from reporting.
+
+Before campaign launch, edit the workflow receiving `GHL_WEBHOOK_URL`:
+
+1. Remove the hard-coded `lsa-guide` tag.
+2. Audit every action in the cloned workflow for stale LSA-guide email, SMS, pipeline, assignment, or nurture steps.
+3. Add `website-lead`, `contact-form`, and the allowlisted `websiteSource` value.
+4. Create and map contact fields for `websiteLeadId`, `websiteSource`, `utmSource`, `utmMedium`, `utmCampaign`, `utmContent`, `campaignLandingPath`, `aiEngineSource`, `aiReferrerHost`, and `aiLandingPath`.
+5. Populate first-touch fields only when empty. Append a note with the full attribution tuple and lead ID on every accepted submission.
+6. Run the fresh tagged, same-contact resubmission, and fresh untagged test matrix in `docs/growth/highlevel-attribution-remediation-2026-08-15.md`.
+7. Replay one identical webhook payload and verify that it does not create a second contact or duplicate submission note.
+8. Confirm the notification email, HighLevel fields, submission note, tags, and contact activity match the test expectations before launch.
+
+The website sends the flat fields listed above as the sole HighLevel mapping contract.
 
 ## Evidence used on the landing page
 

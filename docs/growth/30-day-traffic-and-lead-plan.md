@@ -16,6 +16,8 @@ At a 3% qualified visit-to-lead rate, 30 visits produce approximately 0.9 qualif
 
 SEO is a core growth channel, but it is unlikely to create the entire additional traffic requirement within 30 days. The first month therefore combines controlled SEO improvements with founder-led distribution, referral traffic, and verified account-based outreach.
 
+The 15-minute Marketing Baseline Review remains the live website entry offer. The separate 12-point audit campaign stays paused until the HighLevel workflow remediation passes. This keeps a defined conversion path live without sending campaign traffic into a known-bad CRM workflow.
+
 ## Channel target by day 60
 
 These are planning targets, not forecasts.
@@ -131,6 +133,7 @@ Change one material conversion variable at a time after the initial seven-day ba
 - Pause an outreach segment when two consecutive 25-account samples produce no positive replies and no qualified visits.
 - Do not start paid media until accepted forms, completed bookings, calls, and qualified leads reconcile reliably for two consecutive weeks.
 - Do not declare a new industry superior from impressions, likes, AI mentions, or one sales call. Require verified demand, a viable offer, relevant proof, and a shorter or stronger path to a qualified conversation.
+- Classify the top 50 home-service Search Console query rows by buyer intent before using their impressions as the qualified-traffic denominator.
 
 ## Evidence sources
 

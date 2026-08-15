@@ -38,7 +38,7 @@ GA4 is a diagnostic source, not the sole lead ledger. Browser privacy tools can 
 
 Reconcile accepted form IDs between notification email and HighLevel. Compare GA4 by aggregate count and timestamp because `lead_id` is intentionally not registered as a high-cardinality GA4 custom dimension. An ID-level GA4 join would require BigQuery export and is not part of the initial weekly process.
 
-Campaign and AI-referral fields in the accepted-form email and HighLevel payload are the lead-level attribution record. Campaign attribution is first tagged touch within the same browser tab, so it reports a floor. GA4 native session attribution uses different rules and is a directional cross-check, not an ID-level source of truth. A later branded search, direct return, copied link, or new in-app browser can lose the first-touch tag.
+Campaign and AI-referral fields in the accepted-form email are the current lead-level attribution record. The website also sends a flat HighLevel mapping contract, but the August 15 production test proved that the receiving workflow does not yet store it. Until the workflow remediation is verified, HighLevel is the qualification ledger but not the attribution source. Campaign attribution is first tagged touch within the same browser tab, so it reports a floor. GA4 native session attribution uses different rules and is a directional cross-check, not an ID-level source of truth. A later branded search, direct return, copied link, or new in-app browser can lose the first-touch tag.
 
 ## Funnel math
 
@@ -135,8 +135,10 @@ Complete every Monday for the preceding Monday through Sunday.
 - [ ] Verify `generate_lead` and `lead_id` in GA4 Realtime.
 - [ ] Register or verify event-scoped reporting fields for `cta_contract`, `lead_source`, `ai_engine_source`, `referrer_host`, and `landing_path`.
 - [ ] Keep `lead_id` available for event-level reconciliation, but do not register it as a GA4 custom dimension because every value is unique.
-- [ ] Confirm HighLevel stores `lead_id` and website source from the webhook.
+- [ ] Correct the HighLevel workflow that currently tags website forms as `lsa-guide`, then confirm it stores `websiteLeadId`, `websiteSource`, campaign fields, and AI referral fields from the webhook.
 - [ ] Store every submission-level `lead_id` in a HighLevel note or other append-only history, not a single contact field that gets overwritten on resubmission.
+- [ ] Verify identical webhook replays are idempotent by lead ID and do not create duplicate contacts, notes, opportunities, or outbound messages.
+- [ ] Verify a tagged `utm_source=chatgpt.com` submission records the allowlisted AI source without a query string or full referrer.
 - [ ] Establish completed-booking reconciliation.
 - [ ] Establish website-call attribution.
 
@@ -174,3 +176,5 @@ Compare at least these clusters:
 ## Decision rule
 
 Home services remains the primary market during the first 30 days because roofing and plumbing already have verified page-two visibility. Expand to a second vertical only when its demand packet shows stronger near-term commercial intent or a materially shorter path to a qualified sales conversation.
+
+Before treating the existing impression volume as an addressable traffic denominator, classify the top 50 home-service query rows as consumer, business-owner, agency-research, or ambiguous. The current verified examples are commercial agency terms, but the full mix must be majority in-ICP before it is used to forecast qualified visits.

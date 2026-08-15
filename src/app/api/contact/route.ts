@@ -27,6 +27,27 @@ const AI_ENGINES = new Set([
   "you",
 ]);
 
+const FORM_SOURCES = new Set([
+  "contact_form",
+  "homepage_top",
+  "audit_page",
+  "hvac_seo_page",
+  "plumbing_seo_page",
+  "roofing_seo_page",
+  "hvac_marketing_page",
+  "best_plumbing_agencies_midlist",
+  "how_much_does_seo_cost_for_contractors",
+  "how_much_should_plumbers_spend_on_marketing",
+  "how_much_should_hvac_companies_spend_on_marketing",
+  "how_much_do_hvac_plumbing_leads_cost",
+  "lsa_statistics_page",
+  "hvac_statistics_page",
+  "plumbing_statistics_page",
+  "google_lsa_changes_2026",
+  "chatgpt_lp_form",
+  "immanuel_lp_form",
+]);
+
 function sanitizeCampaignValue(value: unknown, maxLength = 100): string {
   return String(value || "")
     .trim()
@@ -98,10 +119,11 @@ export async function POST(req: Request) {
     const leadId = randomUUID();
     // Optional per-page source tag from inline lead forms (e.g. "hvac_seo_page").
     // Sanitized to a safe slug; falls back to the generic contact-form label.
-    const source =
+    const requestedSource =
       String(body.source || "contact_form")
         .replace(/[^a-zA-Z0-9 _-]/g, "")
         .slice(0, 60) || "contact_form";
+    const source = FORM_SOURCES.has(requestedSource) ? requestedSource : "contact_form";
     const campaignAttribution = readCampaignAttribution(body.campaignAttribution);
     const aiAttribution = readAiAttribution(body.aiAttribution);
     // Escaped copies for safe interpolation into the notification email HTML.
@@ -237,8 +259,17 @@ export async function POST(req: Request) {
           message,
           leadId,
           source,
-          campaignAttribution: campaignAttribution || undefined,
-          aiAttribution: aiAttribution || undefined,
+          // Flat fields are the sole HighLevel workflow mapping contract.
+          websiteLeadId: leadId,
+          websiteSource: source,
+          utmSource: campaignAttribution?.utm_source || "",
+          utmMedium: campaignAttribution?.utm_medium || "",
+          utmCampaign: campaignAttribution?.utm_campaign || "",
+          utmContent: campaignAttribution?.utm_content || "",
+          campaignLandingPath: campaignAttribution?.landing_path || "",
+          aiEngineSource: aiAttribution?.ai_engine_source || "",
+          aiReferrerHost: aiAttribution?.referrer_host || "",
+          aiLandingPath: aiAttribution?.landing_path || "",
           tags: ["contact-form", "website-lead", source],
         }),
       })
