@@ -10,7 +10,7 @@ Primary objective: three qualified website leads per week
 
 Keep home services as the primary acquisition market for the next 30 days. Test multi-location listing governance as a secondary offer without repositioning the entire site around healthcare. Productize the AI recommendation diagnostic as the differentiator across both markets, not as a broad standalone promise that AI systems will recommend every client.
 
-This is a provisional decision. Fresh Keyword Planner data remains a required gate before a second vertical receives a dedicated landing page.
+The top-50 Search Console buyer-intent classification strengthens this decision. Fresh Keyword Planner data remains a required gate before a second vertical receives a dedicated landing page.
 
 ## Evidence hierarchy
 
@@ -26,7 +26,7 @@ The current decision is supported by levels one through three. Level four is pen
 
 | Candidate | Verified Sequoia demand | Offer fit | Likely 30-day sales speed | Main risk | Current decision |
 |---|---|---|---|---|---|
-| Plumbing, roofing, and HVAC marketing | Strong. Roofing and plumbing SEO pages generated 53,742 combined impressions in 28 days, with average positions 13.7 and 16.4 | Strong operator credibility and existing content depth | Highest among tested candidates | Competitive SERPs and contractor distrust of SEO vendors | Primary acquisition market |
+| Plumbing, roofing, and HVAC marketing | Strong. Commercial queries account for 48,255 impressions across 46 of the visible top 50 query rows. Roofing and plumbing are the closest large clusters to page one. | Strong operator credibility and existing content depth | Highest among tested candidates | Competitive SERPs and contractor distrust of SEO vendors | Primary acquisition market |
 | AI recommendation and entity diagnostic for established local businesses | One documented AI-sourced paving inquiry progressed into accepted project work | Strong fit with the public-surface audit and entity correction method | Promising, but one case is not a conversion-rate estimate | Free audit tools and unprovable recommendation promises can commoditize the category | Differentiator and bounded entry project |
 | Multi-location healthcare listing governance | One inbound WIC location-ownership opportunity with a defined multi-location problem | Strong operational fit for ownership, eligibility, data governance, and location pages | Lower because procurement and internal approvals are material | Longer sales cycle, compliance review, and unclear search demand for agency services | Secondary account-based offer, not sitewide positioning |
 | Franchise and multi-location brand governance | One initial brand-side conversation, no verified opportunity yet | Conceptually strong and similar to the WIC problem | Unproven | Corporate ownership, incumbent vendors, and access politics | Research and outbound hypothesis only |
@@ -42,6 +42,20 @@ Source: Sequoia GEO Search Console, July 17 through August 13, 2026, read August
 - The two pages have existing ranking history and can be improved without building a market from zero.
 
 The current weakness is not market relevance. It is that most impressions occur below the high-click positions, and the existing pages have mixed offer language and limited click-through.
+
+### Buyer-intent classification
+
+Source: `docs/growth/search-console-buyer-intent-classification-2026-08-15.md`, based on the same in-account 28-day Search Console period.
+
+- The top 50 query rows contained 49,023 impressions and 44 clicks, representing 37.5% of all impressions and 36.7% of all clicks.
+- Forty-six in-ICP commercial service queries generated 48,255 impressions, or 98.4% of top-50 impression volume, but only 13 clicks.
+- Roofing contained 19,102 commercial impressions at a weighted average position of 15.5.
+- Plumbing contained 14,890 commercial impressions at a weighted average position of 17.6 and produced six clicks.
+- HVAC contained 12,389 commercial impressions, but its weighted average position was 34.1 and it produced no clicks.
+
+This evidence does not prove that every impression is a qualified business owner. It does reject the claim that the visible demand is mainly consumer or irrelevant traffic. Plumbing receives the first controlled refresh because it demonstrates stronger click capture. Roofing follows one week later because it has a larger impression pool but a larger unexplained click deficit. HVAC is not the first 30-day SEO wedge unless the pending demand research changes the decision.
+
+The page and query mapping in `docs/growth/search-console-page-query-map-2026-08-15.md` confirms that `/roofing-seo` owns the core roofing service queries. It also shows material overlap between `/plumbing-seo` and `/best-plumbing-marketing-agencies`. Preserve the comparison page, treat plumbing as a combined query cluster, and avoid subtractive comparison-page edits in the first release.
 
 ## Verified AI-search evidence
 

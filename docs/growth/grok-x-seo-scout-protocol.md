@@ -8,6 +8,8 @@ Purpose: use current X discussion to find SEO and GEO experiments worth verifyin
 
 Run one Grok `trends` scan each Thursday covering the previous 14 days. Keep the brief sanitized and ask for no more than five candidate tactics for a solo agency seeking qualified B2B website leads.
 
+Automation created August 15, 2026: `Scout Sequoia SEO strategies from X`. It runs in this Sequoia task each Thursday at 8:00 AM Pacific, reports the evidence and rejected hype, and prepares a scoped test brief for no more than one passing tactic. It does not change the public site or campaign automatically.
+
 Require for each candidate:
 
 1. The public X link and post date
@@ -47,6 +49,8 @@ Google's current guidance supports the underlying direction: foundational SEO st
 - https://developers.google.com/search/docs/fundamentals/creating-helpful-content
 - https://developers.google.com/search/docs/appearance/title-link
 - https://developers.google.com/search/docs/appearance/snippet
+
+August 15 focused retry: a narrower Grok `trends` request for title and snippet capture, internal linking, comparison-versus-service intent, and AI citation tactics stalled at the external search layer and was stopped. The subsequent tool-free health check passed in 2.5 seconds. No new X claim was added from the failed request, and the existing queue remains unchanged until the scheduled scout returns usable source links.
 
 ## Reporting rule
 

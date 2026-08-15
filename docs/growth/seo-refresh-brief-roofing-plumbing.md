@@ -6,7 +6,12 @@ Publish gate: after seven complete days of stable conversion measurement
 
 Test pages: `/roofing-seo` and `/plumbing-seo`
 
-Control rule: apply the same treatment to both pages and do not include the plumbing-agency comparison page
+Registered release order:
+
+1. `/plumbing-seo` on August 23, 2026
+2. `/roofing-seo` on August 30, 2026
+
+Both dates require a healthy measurement gate. Apply the same treatment to both service pages. Preserve the plumbing-agency comparison page during the first release. Keep `/hvac-seo` content and inbound links unchanged as the fixed comparator.
 
 ## Why these two pages
 
@@ -19,9 +24,11 @@ Source: Sequoia GEO Search Console property, Search results, July 17 through Aug
 
 Both pages have established query relevance and page-two visibility. The test is intended to improve ranking eligibility, title-link appeal, and commercial relevance without changing the conversion experience during the measurement window.
 
+The page mapping in `docs/growth/search-console-page-query-map-2026-08-15.md` changed the release order before either treatment shipped. `/roofing-seo` owns the core roofing service queries, but its classified commercial cluster produced only one click. Plumbing demonstrates stronger click capture, while `/plumbing-seo` and `/best-plumbing-marketing-agencies` overlap on several service-selection queries. Plumbing therefore ships first, the comparison page remains unchanged, and roofing ships one week later after a focused title-link, snippet, device, and SERP-fit review.
+
 ## Shared treatment
 
-Each page receives all seven changes in one release:
+Each service page receives all seven changes on its registered release date:
 
 1. Target query in the title, H1, and first paragraph.
 2. A 40-to-80-word direct definition under the hero.
@@ -144,13 +151,15 @@ Heading: `How Sequoia GEO Runs Plumbing SEO`
 ### Internal-link assignments
 
 - Link from `/plumbing-statistics` using an anchor such as `plumbing SEO services`.
-- Link from `/best-plumbing-marketing-agencies` using an anchor such as `operator-led plumbing SEO`.
+- Preserve the existing `/best-plumbing-marketing-agencies` link labeled `Plumbing SEO Services`. Do not make a subtractive edit to the comparison page in this treatment.
 - Link from `/geo-for-plumbers` with a distinction between traditional search visibility and AI recommendation visibility.
 - Link to `/contact#book` with `Choose a Time With Aaron`.
 
 ## Measurement plan
 
-Record the release timestamp and request recrawling for both URLs. Compare the 28 complete days after treatment with the preceding 28 complete days, while retaining the same weekday mix. Use `/hvac-seo` as the template-level comparator because it receives the same conversion release but is excluded from the roofing and plumbing content treatment. Compare the roofing and plumbing deltas against the HVAC delta before attributing movement to the content treatment.
+Record each release timestamp and request recrawling for the treated URL. Compare the 28 complete days after each treatment with the preceding 28 complete days, while retaining the same weekday mix. Use `/hvac-seo` as the template-level comparator because it receives the same conversion release but is excluded from the roofing and plumbing content treatment. Compare each treated page's delta against the HVAC delta before attributing movement to the content treatment.
+
+For plumbing, report both per-URL performance and the combined query-cluster performance across `/plumbing-seo` and `/best-plumbing-marketing-agencies`. A Google ranking swap between Sequoia's two pages is not a loss when combined nonbranded clicks and qualified leads improve.
 
 Primary page-level measures:
 
@@ -173,4 +182,4 @@ Do not declare the test successful from impressions alone. Do not declare it uns
 
 The conversion release changes the treatment pages before the content treatment. Therefore, conversion outcomes belong to the combined program. Only the page-level search delta against the HVAC comparator can be used to estimate the incremental effect of the later content refresh.
 
-The August 15 continuation aligns the first-step offer and CTA language across roofing, plumbing, and HVAC. Those edits belong to the shared pre-treatment window for all three pages. The later content treatment remains limited to roofing and plumbing.
+The August 15 continuation aligns the first-step offer and CTA language across roofing, plumbing, and HVAC. Those edits belong to the shared pre-treatment window for all three pages. The later content treatment remains limited to the plumbing and roofing service pages on their registered dates. Internal-link additions belong to the corresponding treatment and must not be added mid-window. Links to `/hvac-seo` remain frozen until both reads are complete.

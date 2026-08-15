@@ -34,7 +34,9 @@ Do not count bots, internal traffic, job seekers, vendors, or unrelated consumer
 
 ## Positioning and industry decision
 
-Keep home services as the primary market for the first 30 days. This is supported by existing Search Console visibility for roofing SEO and plumbing SEO, current proof, and recent commercial conversations. Do not replace home-services positioning with a broad industry message.
+Keep home services as the primary market for the first 30 days. The top-50 Search Console classification found 48,255 impressions across 46 in-ICP commercial agency and service queries, equal to 98.4% of the classified impression volume. Those rows produced only 13 clicks, a 0.027% CTR. This is stronger evidence for a ranking, title and snippet, and conversion-capture problem than for a wrong-industry problem. The classification covers 37.5% of total property impressions, so it is decisive for the visible priority pool but not a claim about every query.
+
+Publish the plumbing refresh first because it has 14,890 commercial impressions, a weighted average position of 17.6, and six clicks. Publish roofing one week later because it has 19,102 impressions at a weighted average position of 15.5 but only one classified-query click. The page and query mapping confirms that `/roofing-seo` is the correct target URL. HVAC demand is real, but its 12,389 impressions sit at a weighted average position of 34.1 and produced no clicks, so it is not the fastest 30-day SEO wedge.
 
 Use this cross-industry differentiator where relevant:
 
@@ -73,7 +75,7 @@ Do not use unverified conversion-tracking claims as a cold-call opener.
 
 ### Search and AI visibility
 
-During the seven complete days following the measurement release, leave the priority SEO content unchanged and record the baseline. Then apply the predefined refresh to the roofing and plumbing SEO pages together.
+During the seven complete days following the measurement release, leave the priority SEO content unchanged and record the baseline. Then apply the same predefined treatment as a staggered release: `/plumbing-seo` on August 23 and `/roofing-seo` on August 30, provided the measurement gate remains healthy.
 
 The refresh must include:
 
@@ -86,6 +88,8 @@ The refresh must include:
 7. A Search Console recrawl request.
 
 Track a fixed set of 10 commercially relevant prompts across ChatGPT, Google AI features, and other AI answer engines once per week. Record whether Sequoia GEO is mentioned or cited, which sources are used, and which competitors appear. Treat this as a citation diagnostic, not a precise market-share metric.
+
+Preserve `/best-plumbing-marketing-agencies` during the first treatment. Evaluate the plumbing query cluster across both the service and comparison URLs so a ranking swap between Sequoia's own pages is not counted as a loss. Bundle each treatment page's contextual internal links with its release date. Freeze `/hvac-seo` content and links pointing to it until both treatment reads are complete.
 
 Run the weekly X discovery process in `docs/growth/grok-x-seo-scout-protocol.md`. X supplies hypotheses, not conclusions. Verify the mechanism through a canonical source and add no more than one new X-derived treatment per week.
 
@@ -103,13 +107,17 @@ Review Clarity sessions weekly for:
 
 Change one material conversion variable at a time after the initial seven-day baseline.
 
+Keep GBP search-surface clicks separate from nonbranded organic web clicks. Search Console currently reports the exact tagged homepage destination, while URL Inspection shows that URL is not indexed. The parameters are useful attribution, not a duplicate-index signal.
+
+Repeat the desktop trade-page to contact to calendar walkthrough after each SEO release. The August 15 production check passed for `/plumbing-seo`: all visible scheduling links reached `/contact#book`, and the Google appointment iframe rendered at desktop width.
+
 ## 30-day calendar
 
 | Week | Work | Release condition |
 |---|---|---|
 | Week 1 | Deploy measurement, verify accepted form IDs, completed bookings, and call attribution. Record seven complete days of page-level behavior. Prepare first anchor post and 25-account research set. | No form success without a lead ID. HighLevel can distinguish qualified and disqualified inquiries. |
-| Week 2 | Publish the roofing and plumbing refresh together. Request recrawl. Publish one anchor post and two derivatives. Begin verified outreach. | Measurement gate remains healthy. SEO copy matches the approved brief. |
-| Week 3 | Review landing-page and Clarity behavior. Improve one observed conversion friction point. Publish the next anchor post and an anonymized diagnostic. Continue outreach. | Change is tied to observed behavior, not preference. |
+| Week 2 | Publish the plumbing service-page refresh on August 23 and request recrawl. Preserve the comparison page. Publish one anchor post and two derivatives. Begin verified outreach. | Measurement gate remains healthy. The plumbing treatment and its internal links match the registered brief. |
+| Week 3 | Publish the roofing service-page refresh on August 30 and request recrawl. Review landing-page and Clarity behavior. Publish the next anchor post and an anonymized diagnostic. Continue outreach. | The roofing snippet and SERP-fit review is complete, and HVAC content and inbound links remain unchanged. |
 | Week 4 | Compare channel visits, captured leads, qualified leads, and held meetings. Complete the industry demand packet. Decide whether to create a multi-location healthcare test page. | Decision uses fresh Keyword Planner data, Search Console, SERP evidence, offer fit, and proof. |
 
 ## Weekly scorecard
@@ -118,6 +126,7 @@ Change one material conversion variable at a time after the initial seven-day ba
 |---|---|---|
 | Qualified visits | 100 to 150 per week by day 60 | GA4 checked against Clarity |
 | Nonbranded organic clicks | Increasing by priority page | Search Console |
+| GBP search-surface clicks | Report separately from nonbranded organic | Search Console tagged homepage row and campaign attribution |
 | Social and outreach landing visits | Increasing, campaign-tagged | GA4 |
 | Phone, booking, and form intent | Diagnostic | GA4 |
 | Accepted form leads | Reconciled by submission-level lead ID | Notification email and HighLevel |
@@ -135,7 +144,7 @@ Change one material conversion variable at a time after the initial seven-day ba
 - Pause an outreach segment when two consecutive 25-account samples produce no positive replies and no qualified visits.
 - Do not start paid media until accepted forms, completed bookings, calls, and qualified leads reconcile reliably for two consecutive weeks.
 - Do not declare a new industry superior from impressions, likes, AI mentions, or one sales call. Require verified demand, a viable offer, relevant proof, and a shorter or stronger path to a qualified conversation.
-- Classify the top 50 home-service Search Console query rows by buyer intent before using their impressions as the qualified-traffic denominator.
+- Reclassify the top 50 Search Console query rows monthly. The August 15 baseline is documented in `docs/growth/search-console-buyer-intent-classification-2026-08-15.md`.
 
 ## Evidence sources
 
@@ -143,5 +152,7 @@ Change one material conversion variable at a time after the initial seven-day ba
 - Sequoia GEO Search Console property, Google generative AI features, last 28 days, read August 15, 2026.
 - Sequoia GEO Clarity project, August 13 through August 15, 2026 partial day, read August 15, 2026.
 - Sequoia GEO HighLevel account, contacts and opportunities, previous 28 days, read August 15, 2026.
+- `docs/growth/search-console-buyer-intent-classification-2026-08-15.md`, based on the visible top 50 Search Console query rows for July 17 through August 13, 2026.
+- `docs/growth/search-console-page-query-map-2026-08-15.md`, based on in-account page filters, query filters, device filters, and URL Inspection on August 15, 2026.
 - Google Search Central guidance: creating helpful, reliable, people-first content; title links; snippets; and AI features and the website.
 - Grok trends review, August 15, 2026. X was used to discover tactics, not to establish performance claims. The useful hypotheses were page-two refreshes, extractable answer blocks, first-party information gain, and a fixed-prompt AI citation diagnostic.

@@ -111,6 +111,7 @@ Complete every Monday for the preceding Monday through Sunday.
 |---|---:|---:|---:|---|
 | Qualified website visits |  |  | 100 to 150 | GA4 and Clarity |
 | Nonbranded organic clicks |  |  | Increasing | Search Console |
+| GBP search-surface clicks |  |  | Report separately | Search Console tagged homepage row and campaign attribution |
 | Form starts |  |  | Diagnostic only | GA4 |
 | Form responses missing a lead ID |  |  | 0 | GA4 event `form_response_missing_lead_id` |
 | Accepted form leads |  |  |  | Lead IDs and HighLevel |
@@ -119,6 +120,8 @@ Complete every Monday for the preceding Monday through Sunday.
 | Qualified website leads |  |  | 3 per week | HighLevel |
 | Held meetings |  |  | Increasing | HighLevel and calendar |
 | Jobs booked |  |  | Increasing | HighLevel |
+
+Do not include the GBP-tagged homepage row in the nonbranded organic web-click total. Search Console URL Inspection verified on August 15 that the tagged URL was unknown to Google and not indexed. Treat its performance row as GBP search-surface traffic unless a later inspection changes that evidence.
 
 ## Release gates
 
@@ -144,7 +147,12 @@ Complete every Monday for the preceding Monday through Sunday.
 
 ### Controlled SEO gate
 
-Keep the conversion experience unchanged for seven complete days after the August 15 release. During that period, prepare but do not publish the roofing and plumbing content changes. Publish the same predefined treatment to both eligible pages after the measurement gate is operational:
+Keep the conversion experience unchanged for seven complete days after the August 15 release. During that period, prepare but do not publish the roofing and plumbing content changes. After the measurement gate is operational, publish the same predefined treatment as a staggered release:
+
+- August 23: `/plumbing-seo`
+- August 30: `/roofing-seo`
+
+The dates are earliest eligible dates, not unconditional publication promises. A failed measurement gate delays the release.
 
 1. Query-matched title, H1, and first paragraph.
 2. A 40-to-80-word direct answer near the top.
@@ -153,6 +161,8 @@ Keep the conversion experience unchanged for seven complete days after the Augus
 5. Commercially relevant FAQs.
 6. Descriptive internal links to the baseline review and related evidence pages.
 7. Search Console recrawl request after deployment.
+
+Bundle each page's internal-link additions with its treatment date. Keep `/hvac-seo` and links pointing to it unchanged until both treatment reads are complete. Preserve `/best-plumbing-marketing-agencies` during the first plumbing treatment and evaluate combined plumbing-cluster clicks and leads across both plumbing URLs in addition to per-page results.
 
 Evaluate page-level nonbranded clicks, CTR, average position, and Google generative AI impressions. Do not use the 30-day lead total as the sole SEO verdict.
 
@@ -175,6 +185,8 @@ Compare at least these clusters:
 
 ## Decision rule
 
-Home services remains the primary market during the first 30 days because roofing and plumbing already have verified page-two visibility. Expand to a second vertical only when its demand packet shows stronger near-term commercial intent or a materially shorter path to a qualified sales conversation.
+Home services remains the primary market during the first 30 days. The buyer-intent classification in `docs/growth/search-console-buyer-intent-classification-2026-08-15.md` found that 46 commercial in-ICP queries accounted for 48,255 impressions, or 98.4% of the visible top-50 impression volume, but only 13 clicks. This supports a ranking, title and snippet, and conversion-capture diagnosis rather than an industry pivot.
 
-Before treating the existing impression volume as an addressable traffic denominator, classify the top 50 home-service query rows as consumer, business-owner, agency-research, or ambiguous. The current verified examples are commercial agency terms, but the full mix must be majority in-ICP before it is used to forecast qualified visits.
+Publish plumbing first because its commercial cluster has 14,890 impressions, a weighted average position of 17.6, and six clicks. Publish roofing one week later because it has the larger 19,102-impression pool but only one click in the classified query cluster. The page mapping confirms that `/roofing-seo` is the correct service URL, so the second release focuses on its title link, snippet, and content fit rather than changing the target URL. HVAC remains a real opportunity, but its weighted average position of 34.1 makes it less likely to produce the fastest 30-day organic gain.
+
+Expand to a second vertical only when its demand packet shows stronger near-term commercial intent or a materially shorter path to a qualified sales conversation. The classification covers 37.5% of total impressions, so it supports the near-term decision without establishing the intent of every query in the property.
