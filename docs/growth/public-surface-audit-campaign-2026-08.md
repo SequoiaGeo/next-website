@@ -1,12 +1,14 @@
 # Public-Surface Audit Campaign
 
-Status: blocked on the temporary Gmail-to-HighLevel reconciliation test matrix
+Status: ready for the Monday, August 17 launch under the verified temporary reconciliation control
 
 Campaign: `public_surface_audit_august`
 
 Offer: the existing 12-point audit at `/audit`
 
 Primary distribution: Aaron's personal LinkedIn and Facebook profiles, where prior posts have already produced reach, comments, follows, shares, and direct inquiries.
+
+HighLevel social-account check on August 15: the Sequoia LinkedIn company page is connected, but the Sequoia Facebook page connection is expired. Personal profiles are not available through the connector. Aaron must publish the Monday personal posts. Reconnect the Facebook page before scheduling a company-page derivative, and wait at least 24 hours after the personal post before reusing the idea on either company page.
 
 Conditional launch window: Monday, August 17. LinkedIn at 8:00 AM Pacific. Facebook at 11:30 AM Pacific. Launch only if the HighLevel gate passes by Sunday, August 16. Otherwise move the campaign rather than publishing into a known-bad workflow. Do not publish an identical Sequoia company-page post at the same time. Reuse the idea on the company page at least 24 hours later with a company-voice introduction.
 
@@ -20,6 +22,8 @@ Sequoia GEO has two distinct entry paths:
 | 12-point marketing audit | A hand-reviewed written report, delivered in 3 to 5 business days, followed by a 45-to-60-minute walkthrough | Submit the audit request form | 10 completed audits per month |
 
 The public-surface scorecard is the first section of the deeper 12-point audit. It does not require account access. Account access is requested only if the prospect proceeds to the deeper measurement sections.
+
+The temporary reconciliation gate passed on August 15. Five synthetic notification messages reconciled cleanly, including a same-contact resubmission with two different lead IDs, and the controlled tag mutation produced no conversation, opportunity, task, source, or assignment side effect. The native HighLevel custom-field repair remains open.
 
 ## Facebook and LinkedIn post
 

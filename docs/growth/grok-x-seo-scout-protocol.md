@@ -8,7 +8,7 @@ Purpose: use current X discussion to find SEO and GEO experiments worth verifyin
 
 Run one Grok `trends` scan each Thursday covering the previous 14 days. Keep the brief sanitized and ask for no more than five candidate tactics for a solo agency seeking qualified B2B website leads.
 
-Automation created August 15, 2026: `Scout Sequoia SEO strategies from X`. It runs in this Sequoia task each Thursday at 8:00 AM Pacific, reports the evidence and rejected hype, and prepares a scoped test brief for no more than one passing tactic. It does not change the public site or campaign automatically.
+Automation updated August 15, 2026: `Operate Sequoia lead and SEO system`. It runs website-lead reconciliation at 7:30 AM and 4:30 PM Pacific. The Thursday morning cycle also runs this X scout, reports the evidence and rejected hype, and prepares a scoped test brief for no more than one passing tactic. It does not change the public site or campaign automatically from X findings.
 
 Require for each candidate:
 

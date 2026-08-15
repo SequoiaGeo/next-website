@@ -2,7 +2,7 @@
 
 Prepared: 2026-08-15
 
-Status: registered temporary control, launch blocked until the three-case test passes
+Status: active temporary control. Production test matrix passed August 15, 2026
 
 ## Purpose
 
@@ -72,7 +72,9 @@ Anything outside the applicable vocabulary receives one `attribution-unclassifie
 
 ## Reconciliation procedure
 
-Run at 8:15 AM and 4:15 PM Pacific.
+Run at 7:30 AM and 4:30 PM Pacific.
+
+The active Codex heartbeat `Operate Sequoia lead and SEO system` runs the reconciliation at both times. The Thursday morning cycle also runs the Grok X SEO scout. The Monday, August 17 morning cycle prepares the personal LinkedIn post and first comment before the planned 8:00 AM launch. The direct notification email to Aaron remains an out-of-band alert if the reconciler is delayed, and the weekly scorecard compares all notification messages with the reconciliation label.
 
 1. Search Gmail at the message level for `label:Sequoia/Website Leads -label:Sequoia/Lead Reconciled newer_than:14d`. Do not treat a reply or another message in the same thread as a lead notification.
 2. Read the text part of each candidate email and parse the record type, full lead ID, contact identity, website source, campaign tuple, landing path, AI source, and timestamp.
@@ -113,11 +115,11 @@ The weekly scorecard counts distinct prospect companies with `qualified-website-
 Use synthetic `example.com` addresses and the reserved `555-010` phone range.
 
 1. [x] Tag-mutation side-effect test. On August 15, the existing synthetic native-created contact received `lsa-guide`, then the exact proposed reconciliation tag set, then had `lsa-guide` removed. Repeated checks found zero conversations, opportunities, or tasks, with no source or assignment change. The reconciliation tags were removed after the test, leaving only the internal test tag.
-2. Fresh tagged audit submission. Require a `[TEST]` subject, full attribution in Gmail, a single HighLevel contact, no conversation or opportunity, the internal test tag, and no stale tag.
-3. Same synthetic contact, different registered campaign content. Require one HighLevel contact and two separate Gmail submission messages with different lead IDs. The reconciler must not overwrite the first source.
-4. Fresh untagged submission. Require empty campaign and AI values in Gmail, one HighLevel contact, no campaign or AI tags, and no stale tag.
-5. Retry test. Complete the HighLevel writes but deliberately leave one Gmail message unreconciled, then rerun. Require no duplicate contact, no duplicate tag, and no return of `needs-qualification` after a terminal qualification tag is present.
-6. Vocabulary test. Feed one unregistered campaign and one unregistered AI value. Require one `attribution-unclassified` tag and no tag containing the raw value.
+2. [x] Fresh tagged audit submission. Production returned a `[TEST]` subject, a full lead ID and registered Facebook tuple in Gmail, one HighLevel contact, no conversation or opportunity, the internal test tag, and no stale tag after reconciliation.
+3. [x] Same synthetic contact, different registered campaign content. Production created two separate Gmail messages with different lead IDs and Facebook versus LinkedIn tuples while HighLevel retained one contact. The resubmission re-added `lsa-guide`, and reconciliation removed it again without changing contact identity.
+4. [x] Fresh untagged submission. Production recorded no campaign or AI tuple in Gmail, created one HighLevel contact, and retained only the internal test tag after reconciliation.
+5. [x] Retry test. CRM writes were completed while one Gmail message was deliberately left unreconciled. A second pass produced no duplicate tags and did not add `needs-qualification` after `qualified-website-lead` was present. The synthetic tags were removed after the test.
+6. [x] Vocabulary test. `scripts/lead-reconciliation-policy.test.mjs` verifies that an unregistered campaign and AI value produce one `attribution-unclassified` tag and no tag containing a raw value. All six policy tests passed.
 
 Run the reconciler twice against the form-submission cases. The second pass must make no additional contact and no tag changes. Keep every synthetic record excluded from the scorecard.
 
@@ -129,4 +131,4 @@ Run the reconciler twice against the form-submission cases. The second pass must
 - The process depends on the recurring runner and Gmail availability.
 - Calendar bookings and website calls still require separate reconciliation.
 
-The public-surface audit campaign can launch only after the three cases pass. Native HighLevel fields and per-submission notes remain the permanent repair target.
+The temporary launch gate passed on August 15. Five synthetic notification messages were present in both Gmail labels, with zero unreconciled messages, and every synthetic HighLevel contact was excluded from reporting. Native HighLevel fields and per-submission notes remain the permanent repair target.

@@ -1,6 +1,6 @@
 # HighLevel Attribution Remediation
 
-Status: native repair pending. Temporary Gmail-to-HighLevel control registered in `docs/growth/website-lead-reconciliation-runbook.md`
+Status: native repair pending. Temporary Gmail-to-HighLevel control verified and active
 
 Verified: 2026-08-15 through a synthetic production submission to the tagged `/audit` URL
 
@@ -58,7 +58,7 @@ Then run three regression cases:
 
 Use synthetic addresses for every QA case. Never use a real prospect's email for an internal or replay test, so a test cannot become the write-once first touch on a real contact.
 
-Timebox this remediation for completion by Sunday, August 16. If it is not verified, move the audit campaign. The separate 15-minute Marketing Baseline Review remains live, so pausing this campaign does not remove the website's conversion path.
+Continue the native remediation after the temporary launch control is active. The campaign no longer depends on native custom fields, but HighLevel must not become the attribution source of truth until the native gate passes.
 
 Do not call HighLevel the attribution source of truth until this gate passes.
 
@@ -66,8 +66,8 @@ Do not call HighLevel the attribution source of truth until this gate passes.
 
 Direct connector verification on August 15 found that the synthetic contact had no conversations, outbound messages, opportunities, notes, tasks, or appointments. This materially reduces the risk that the stale workflow will contact or route a campaign lead incorrectly.
 
-Until native fields and notes are available, Gmail remains the submission-level attribution ledger and HighLevel remains the qualification ledger. The temporary reconciler may remove the stale tag, set the standard source only when empty, add controlled low-cardinality tags, and upsert a contact when the webhook missed it. It must never send a message or create an opportunity.
+Until native fields and notes are available, Gmail remains the submission-level attribution archive and HighLevel remains the qualification ledger. The temporary reconciler may remove the stale tag, set the standard source only when empty or known stale, add controlled low-cardinality tags, and upsert a contact when the webhook missed it. It must never send a message or create an opportunity.
 
-The audit campaign remains blocked until the fresh tagged, same-contact resubmission, and fresh untagged cases in `docs/growth/website-lead-reconciliation-runbook.md` pass twice. Passing the temporary gate authorizes the campaign. It does not close this native remediation item.
+The temporary production gate passed on August 15. The fresh tagged, same-contact resubmission, fresh untagged, tag-side-effect, retry, and vocabulary cases are documented in `docs/growth/website-lead-reconciliation-runbook.md`. This authorizes the campaign under the temporary control. It does not close this native remediation item.
 
 The exact proposed tag mutation was tested on the native-created synthetic contact on August 15. Adding the reconciliation tags and removing `lsa-guide` produced no conversation, opportunity, task, source change, or assignment change in repeated connector checks. The test tags were then removed. This clears the tag-side-effect case for the tested vocabulary, but not the remaining form, resubmission, retry, and vocabulary cases.

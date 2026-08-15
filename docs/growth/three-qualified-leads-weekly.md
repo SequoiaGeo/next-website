@@ -144,6 +144,8 @@ Do not include the GBP-tagged homepage row in the nonbranded organic web-click t
 - [ ] Verify a tagged `utm_source=chatgpt.com` submission records the allowlisted AI source without a query string or full referrer.
 - [ ] Establish completed-booking reconciliation.
 - [ ] Establish website-call attribution.
+- [x] Activate the temporary Gmail-to-HighLevel reconciliation control and pass its production test matrix.
+- [x] Record qualification through `needs-qualification`, `qualified-website-lead`, and `disqualified-website-lead` while the native fields remain unavailable.
 
 ### Controlled SEO gate
 

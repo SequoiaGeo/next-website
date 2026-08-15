@@ -16,7 +16,7 @@ At a 3% qualified visit-to-lead rate, 30 visits produce approximately 0.9 qualif
 
 SEO is a core growth channel, but it is unlikely to create the entire additional traffic requirement within 30 days. The first month therefore combines controlled SEO improvements with founder-led distribution, referral traffic, and verified account-based outreach.
 
-The 15-minute Marketing Baseline Review remains the live website entry offer. The separate 12-point audit campaign stays paused until the HighLevel workflow remediation passes. This keeps a defined conversion path live without sending campaign traffic into a known-bad CRM workflow.
+The 15-minute Marketing Baseline Review remains the live website entry offer. The separate 12-point audit campaign is ready for the Monday, August 17 launch under the verified Gmail-to-HighLevel reconciliation control. Native HighLevel custom fields and submission notes remain a permanent repair item, but the temporary production matrix now protects attribution and qualification without triggering messages or opportunities.
 
 ## Channel target by day 60
 
