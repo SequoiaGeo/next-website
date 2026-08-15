@@ -27,7 +27,7 @@ Changes:
 
 The two homepage `InlineCTA` event labels remain comparable because they use the unchanged CTA headlines as their analytics source, not the button text. The former bare `/contact` fit CTA was not included in the new sitewide CTA-intent matcher. Its replacement `/contact#book` begins a newly measurable schedule-intent series and should not be treated as a historical increase.
 
-Day zero for the seven-complete-day measurement baseline begins after this correction is verified on production. No further conversion copy or layout change belongs in that window.
+Production verification completed on August 15, 2026. The seven complete baseline days are August 16 through August 22. The earliest controlled roofing and plumbing SEO publication date is August 23, provided the measurement gate remains healthy. No further conversion copy or layout change belongs in that window.
 
 ## Deferred noun debt
 
