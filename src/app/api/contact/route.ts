@@ -94,6 +94,18 @@ function readAiAttribution(value: unknown): AiAttribution | null {
   };
 }
 
+function isSyntheticAttributionTest(name: string, email: string, phone: string): boolean {
+  const normalizedName = name.trim().toLowerCase();
+  const normalizedEmail = email.trim().toLowerCase();
+  const phoneDigits = phone.replace(/\D/g, "");
+
+  return (
+    normalizedName.startsWith("internal attribution qa ") &&
+    normalizedEmail.endsWith("@example.com") &&
+    phoneDigits.startsWith("555010")
+  );
+}
+
 export async function POST(req: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -126,6 +138,7 @@ export async function POST(req: Request) {
     const source = FORM_SOURCES.has(requestedSource) ? requestedSource : "contact_form";
     const campaignAttribution = readCampaignAttribution(body.campaignAttribution);
     const aiAttribution = readAiAttribution(body.aiAttribution);
+    const isSyntheticTest = isSyntheticAttributionTest(name, email, phone);
     // Escaped copies for safe interpolation into the notification email HTML.
     const safeName = escapeHtml(name);
     const safePhone = escapeHtml(phone);
@@ -154,7 +167,7 @@ export async function POST(req: Request) {
     const notification = await resend.emails.send({
       from: "Sequoia GEO Site <aaron@sequoiageo.com>",
       to: "Aaron@sequoiageo.com",
-      subject: `New website lead ${leadId.slice(0, 8)}: ${safeName}`,
+      subject: `${isSyntheticTest ? "[TEST] " : ""}New website lead ${leadId.slice(0, 8)}: ${safeName}`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 560px; margin: 0 auto; padding: 32px 24px; color: #1a1a1a;">
           <div style="background: #0D2318; border-radius: 12px; padding: 20px 24px; margin-bottom: 24px;">
@@ -166,6 +179,10 @@ export async function POST(req: Request) {
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888; width: 100px;">Lead ID</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; font-weight: 600; color: #1a1a1a;">${leadId}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888;">Record type</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; color: #1a1a1a;">${isSyntheticTest ? "Internal attribution test" : "Website inquiry"}</td>
             </tr>
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888; width: 100px;">Name</td>
@@ -270,7 +287,10 @@ export async function POST(req: Request) {
           aiEngineSource: aiAttribution?.ai_engine_source || "",
           aiReferrerHost: aiAttribution?.referrer_host || "",
           aiLandingPath: aiAttribution?.landing_path || "",
-          tags: ["contact-form", "website-lead", source],
+          isSyntheticTest,
+          tags: isSyntheticTest
+            ? ["internal-attribution-test"]
+            : ["contact-form", "website-lead", source],
         }),
       })
         .then((r) => {

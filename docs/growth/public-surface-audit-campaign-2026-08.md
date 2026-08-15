@@ -1,6 +1,6 @@
 # Public-Surface Audit Campaign
 
-Status: blocked on HighLevel workflow remediation and the production test matrix
+Status: blocked on the temporary Gmail-to-HighLevel reconciliation test matrix
 
 Campaign: `public_surface_audit_august`
 
@@ -84,11 +84,21 @@ Use these sources:
 3. Search Console branded clicks and direct traffic during the post week are secondary lift signals, not attributable leads.
 4. Comments, reactions, shares, and profile follows are distribution signals, not leads.
 
-### HighLevel remediation gate
+### Lead reconciliation gate
 
 The August 15 production test created the synthetic audit contact successfully, but HighLevel applied the stale `lsa-guide` tag and stored none of the website source, lead ID, campaign, or AI-referral fields. The synthetic contact was retagged `internal-attribution-test` and must be excluded from reporting.
 
-Before campaign launch, edit the workflow receiving `GHL_WEBHOOK_URL`:
+The native workflow repair remains required, but direct connector verification found no conversation, outbound message, opportunity, task, or appointment on the synthetic record. Campaign launch can therefore use the temporary control in `docs/growth/website-lead-reconciliation-runbook.md` after its three-case test passes.
+
+The temporary control must:
+
+1. Keep Gmail as the submission-level attribution ledger.
+2. Upsert a missing HighLevel contact, set source only when empty, and use a fixed tag vocabulary.
+3. Remove `lsa-guide` without sending a message or creating an opportunity.
+4. Mark every real contact `needs-qualification` until Aaron records `qualified-website-lead` or `disqualified-website-lead`.
+5. Pass the fresh tagged, same-contact resubmission, and fresh untagged cases twice.
+
+The permanent workflow repair still must:
 
 1. Remove the hard-coded `lsa-guide` tag.
 2. Audit every action in the cloned workflow for stale LSA-guide email, SMS, pipeline, assignment, or nurture steps.
