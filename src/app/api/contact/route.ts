@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     const safeSource = escapeHtml(source);
 
     // Send notification email to Aaron
-    await resend.emails.send({
+    const notification = await resend.emails.send({
       from: "Sequoia GEO Site <aaron@sequoiageo.com>",
       to: "Aaron@sequoiageo.com",
       subject: `New contact form submission: ${safeName}`,
@@ -98,6 +98,14 @@ export async function POST(req: Request) {
       `,
       replyTo: email,
     });
+
+    if (notification?.error) {
+      console.error("[contact] notification email error:", notification.error);
+      return NextResponse.json(
+        { error: "Failed to send message" },
+        { status: 500 }
+      );
+    }
 
     // Also push to GHL webhook if configured
     const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;

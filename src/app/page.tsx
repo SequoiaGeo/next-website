@@ -40,10 +40,10 @@ export default function Home() {
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-6 sm:p-8">
             <p className="section-overline mb-3 text-[#1A5C3A]">TL;DR</p>
             <ul className="space-y-2 text-base text-gray-700">
-              <li><strong>Who we are:</strong> Sequoia GEO is a fractional CMO and growth operator for home service companies, run by a 13-year operator who built Balanced Comfort to $17M and 130+ employees (4x Inc 5000).</li>
+              <li><strong>Who we are:</strong> Sequoia GEO is an operator-led marketing agency for home service companies. Aaron Husak leads every engagement after spending 13 years building Balanced Comfort to $17M and 130+ employees (4x Inc 5000).</li>
               <li><strong>Who we serve:</strong> HVAC, plumbing, roofing, and restoration contractors doing $2M to $15M in revenue with $5K to $30K per month in marketing spend.</li>
               <li><strong>What we do:</strong> Connect every <strong>marketing</strong> dollar to a booked job. We optimize for <strong>cost per booked job</strong>, <strong>CSR booking rate</strong>, and revenue, not impressions or clicks. We integrate <strong>Google Ads</strong>, <strong>LSA</strong>, <strong>GBP</strong>, and <strong>ServiceTitan</strong> attribution into a single pipeline view.</li>
-              <li><strong>How we work:</strong> 30-day diagnostic sprint, no long contracts, starting at $2,500 per month. Limited to 10 contractors at a time.</li>
+              <li><strong>How we work:</strong> We verify the baseline, fix the first constraint, and measure qualified calls and jobs booked. Engagements start at $2,500 per month with a three-month initial term, then month to month.</li>
             </ul>
           </div>
         </div>
@@ -69,6 +69,8 @@ export default function Home() {
         headline="Find out what your marketing is actually producing."
         subtext="15-minute call. No pitch deck. Just your numbers and what they mean."
         buttonText="Review My Numbers"
+        buttonHref="/contact#book"
+        ctaContract="schedule"
         variant="green"
       />
 
@@ -113,11 +115,13 @@ export default function Home() {
 
       <Services />
 
-      {/* CTA #2: Scarcity, medium commitment */}
+      {/* CTA #2: direct-access differentiator */}
       <InlineCTA
-        headline="Only 10 spots. See if yours is open."
-        subtext="If there's a fit, I'll tell you. If not, I'll tell you that too."
-        buttonText="Check Availability"
+        headline="You work with me, not an account manager."
+        subtext="Choose a time and talk directly with the operator who will lead the work."
+        buttonText="Choose a Time"
+        buttonHref="/contact#book"
+        ctaContract="schedule"
         variant="dark"
       />
 
@@ -209,8 +213,10 @@ export default function Home() {
       {/* CTA #3: Social proof momentum, ready to act */}
       <InlineCTA
         headline="They started with one call. Most never left."
-        subtext="No contracts. No pitch. Just your numbers reviewed by someone who's been in your seat."
+        subtext="No pitch deck. Just your numbers reviewed by someone who's been in your seat."
         buttonText="Book Your 15-Minute Call"
+        buttonHref="/contact#book"
+        ctaContract="schedule"
         variant="light"
       />
 

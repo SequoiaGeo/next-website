@@ -205,17 +205,17 @@ const agencies = [
     meta: [
       { label: "Best for", value: "$2M to $15M revenue contractors" },
       { label: "Pricing", value: "From $2,500 a month, 3-month initial term, month to month after" },
-      { label: "Team scale", value: "10-client cap, principal-led" },
+      { label: "Team scale", value: "Principal-led" },
     ],
     summary:
-      "Full disclosure: this one is mine. I put it last on purpose. Read the other seven first. Sequoia GEO is a boutique fractional CMO and growth operations practice founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2020 to 2023). The practice serves HVAC, plumbing, and home service contractors doing $2M to $15M, with a deliberate cap of 10 active clients to maintain hands-on attention. Marketing services include Google Ads, LSA, local SEO, GBP management, and web design, but the core differentiator is treating marketing as a revenue pipeline and auditing booking rates, CSR performance, and conversion gaps alongside campaign execution.",
+      "Full disclosure: this one is mine. I put it last on purpose. Read the other seven first. Sequoia GEO is an operator-led marketing practice founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2020 to 2023). The practice serves HVAC, plumbing, and home service contractors doing $2M to $15M. Marketing services include Google Ads, LSA, local SEO, GBP management, and web design, but the core differentiator is direct access to Aaron and a focus on booking rates, CSR performance, and conversion gaps alongside campaign execution.",
     strengths: [
       "Only shop on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
-      "10-client cap ensures principal-level attention rather than junior account manager handoffs",
+      "Aaron leads every engagement rather than handing the relationship to a junior account manager",
       "Revenue attribution connects past the lead: booking rates, CSR call quality, and appointment data",
     ],
     considerations: [
-      "Intentionally limited capacity means availability may be restricted at any given time",
+      "Principal-led structure means scope and communication expectations should be defined before work begins",
       "Boutique structure means fewer proprietary technology tools and platform integrations than the bigger names on this list",
       "Newer brand with less market recognition than companies who have been marketing themselves for a decade",
     ],
@@ -486,7 +486,7 @@ export default function BestPlumbingAgenciesPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/contact"
+              href="/contact#book"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call

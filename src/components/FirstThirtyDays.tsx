@@ -27,9 +27,9 @@ const deliverables = [
   },
   {
     step: "05",
-    title: "You decide at day 30",
+    title: "Month two priorities are set",
     description:
-      "Continue because you can see it working. Stop if it's not. Either way, you leave with a complete audit and real improvements already live.",
+      "The first month ends with an evidence-backed priority list for the rest of the initial term, not another report that sits unread.",
   },
 ];
 
@@ -43,13 +43,13 @@ export default function FirstThirtyDays() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <p className="section-overline mb-4 text-[#3A9E6A]">The Offer</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-[1.08]">
-              Start with 30 days.{" "}
-              <span className="text-[#3A9E6A]">No commitment required.</span>
+              What happens in the first 30 days.{" "}
+              <span className="text-[#3A9E6A]">Evidence before expansion.</span>
             </h2>
             <p className="mt-5 text-base text-[#C8EDD2]/70 leading-relaxed">
-              The first 30 days are a real working engagement, not a pitch or a proposal.
-              You see exactly how we work, what we find, and what we fix. Then you decide
-              whether to continue.
+              The first 30 days establish the baseline, correct the first approved constraint,
+              and document what changed. The work continues through the three-month initial
+              term so we can measure whether the fix produced the intended result.
             </p>
             <p className="mt-4 text-base text-[#C8EDD2]/70 leading-relaxed">
               Most clients find more value in the first 30 days than they expected, because
@@ -61,7 +61,7 @@ export default function FirstThirtyDays() {
               {[
                 "Nothing changes without your approval",
                 "You own all accounts and data",
-                "No long-term contract to start",
+                "Three-month initial term, then month to month",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#3A9E6A]/20">
@@ -76,10 +76,10 @@ export default function FirstThirtyDays() {
 
             <div className="mt-10">
               <Link
-                href="/contact"
+                href="/contact#book"
                 className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
               >
-                Get Your Free Audit
+                Choose a Time
                 <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -107,7 +107,7 @@ export default function FirstThirtyDays() {
             <div className="pt-8">
               <div className="rounded-xl border border-white/10 bg-white/[0.04] px-6 py-5">
                 <p className="text-sm font-semibold text-white">
-                  What you have at day 30, regardless of what you decide:
+                  What you have after the first 30 days:
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/50">
                   A complete audit of every marketing channel, specific findings tied to revenue

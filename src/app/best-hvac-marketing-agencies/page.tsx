@@ -191,10 +191,10 @@ const agencies = [
     pricing: "From $2,500 a month, 3-month initial term, month to month after",
     teamScale: "Boutique",
     summary:
-      "Sequoia GEO is a boutique home services marketing practice founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2020 to 2023) before founding the practice. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, which means recommendations come from someone who has answered for both the marketing spend and the bottom line simultaneously. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, website development, and fractional CMO engagements. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
+      "Sequoia GEO is an operator-led home services marketing practice founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2020 to 2023) before founding the practice. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, leads every engagement, and has answered for both marketing spend and the bottom line. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, and website development. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
     strengths: [
       "Founder scaled an HVAC company to $17M+ with four Inc 5000 rankings, not a marketer who learned the trades from the outside",
-      "Fractional CMO model gives smaller contractors access to strategic leadership without a full-time hire",
+      "Aaron leads every engagement rather than handing the relationship to a junior account manager",
       "Audit-first process, every engagement starts with a free marketing audit before any proposal",
       "LSA dispute management expertise backed by operational understanding of lead quality",
     ],
@@ -432,11 +432,11 @@ export default function BestHvacMarketingAgenciesPage() {
             Not sure which agency fits where you are right now?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
-            We audit your current marketing before the first conversation. You'll see exactly what is and isn't working, and whether we're the right fit.
+            We audit your current marketing before the first conversation. You&rsquo;ll see exactly what is and isn&rsquo;t working, and whether we&rsquo;re the right fit.
           </p>
           <div className="mt-8">
             <Link
-              href="/contact"
+              href="/contact#book"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call

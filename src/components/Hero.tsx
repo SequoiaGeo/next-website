@@ -6,7 +6,7 @@ const credentials = [
   "130+ employees built",
   "$17M+ revenue at exit",
   "13 years in the field",
-  "10 clients max",
+  "You work with me, not an account manager",
 ];
 
 export default function Hero() {
@@ -18,7 +18,7 @@ export default function Hero() {
           {/* Left: Copy */}
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#1A5C3A] mb-6">
-              Fractional CMO for Home Service Contractors
+              Operator-Led Marketing for Home Service Contractors
             </p>
 
             <h1 className="text-4xl font-extrabold text-[#111111] sm:text-5xl lg:text-[3.5rem] leading-[1.06] tracking-tight">
@@ -26,19 +26,19 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              I built a home service company. 130 employees, a $17M exit, 4x Inc 5000. Now I run marketing for 10 contractors at a time and I watch the whole pipeline: the ads, the phones, the booking rate. An agency only sees its one channel.
+              I built a home service company. 130 employees, a $17M exit, 4x Inc 5000. Now I lead every Sequoia engagement and remain your point of contact. I watch the whole pipeline: the ads, the phones, and the booking rate. Most agencies are accountable for their channel. I am accountable for the booked job.
             </p>
 
             <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">
-              Engagements start at $2,500/mo. Limited to 10 contractors at a time.
+              Engagements start at $2,500/mo with a three-month initial term, then month to month.
             </p>
 
             <div className="mt-8">
               <Link
-                href="/contact"
+                href="/contact#book"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
               >
-                Get Your Free Audit
+                Choose a Time With Aaron
                 <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -46,7 +46,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-3 text-sm text-gray-400">
-              15 min. No pitch. You&rsquo;ll leave with at least one thing to fix Monday.
+              15 minutes. No pitch deck. You work directly with me.
             </p>
 
             <p className="mt-3 text-sm text-gray-500">

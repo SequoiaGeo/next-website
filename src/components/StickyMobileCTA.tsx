@@ -16,6 +16,7 @@ const EXCLUDED_ROUTES = new Set<string>(["/found-me-in-chatgpt", "/immanuel", "/
  */
 export default function StickyMobileCTA() {
   const [visible, setVisible] = useState(false);
+  const [calendarVisible, setCalendarVisible] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -25,7 +26,22 @@ export default function StickyMobileCTA() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (pathname && EXCLUDED_ROUTES.has(pathname)) return null;
+  useEffect(() => {
+    if (pathname !== "/contact" || typeof IntersectionObserver === "undefined") return;
+
+    const calendar = document.getElementById("book");
+    if (!calendar) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setCalendarVisible(entry.isIntersecting),
+      { threshold: 0.05 }
+    );
+    observer.observe(calendar);
+    return () => observer.disconnect();
+  }, [pathname]);
+
+  if ((pathname && EXCLUDED_ROUTES.has(pathname)) || (pathname === "/contact" && calendarVisible)) return null;
+
+  const bookingHref = pathname === "/contact" ? "#book" : "/contact#book";
 
   return (
     <div
@@ -56,11 +72,15 @@ export default function StickyMobileCTA() {
           Call Now
         </a>
         <a
-          href="/contact"
-          onClick={() => trackEvent("cta_click", { event_category: "CTA", event_label: "sticky_mobile_book" })}
+          href={bookingHref}
+          onClick={() => trackEvent("cta_click", {
+            event_category: "CTA",
+            event_label: "sticky_mobile_book",
+            cta_contract: "schedule",
+          })}
           className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-[#3A9E6A] px-4 py-3 text-sm font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
         >
-          Book a Call
+          Choose a Time
           <svg
             aria-hidden="true"
             className="h-3.5 w-3.5"

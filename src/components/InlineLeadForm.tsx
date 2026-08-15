@@ -7,7 +7,7 @@
 // Exists so money pages capture on-page instead of hopping to /contact.
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { trackLead } from "@/lib/analytics";
+import { trackCallIntent, trackEvent, trackLead } from "@/lib/analytics";
 
 type Props = {
   source: string; // e.g. "hvac_seo_page", lands in GA4 lead_source + the lead email
@@ -18,9 +18,9 @@ type Props = {
 
 export default function InlineLeadForm({
   source,
-  heading = "Get your free audit",
-  subtext = "Tell us where to send it. We review your marketing before the call, no pitch deck, no pressure.",
-  buttonText = "Get Your Free Audit",
+  heading = "Request a marketing baseline review",
+  subtext = "Share the context. Aaron reviews the marketing and booking path himself before he calls.",
+  buttonText = "Request the Baseline Review",
 }: Props) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -34,9 +34,36 @@ export default function InlineLeadForm({
   });
 
   const renderedAtRef = useRef<number>(0);
+  const sectionRef = useRef<HTMLElement>(null);
+  const formStartedRef = useRef(false);
+  const formViewedRef = useRef(false);
   useEffect(() => {
     renderedAtRef.current = Date.now();
   }, []);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section || typeof IntersectionObserver === "undefined") return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting || formViewedRef.current) return;
+        formViewedRef.current = true;
+        trackEvent("form_view", { source, cta_contract: "intake" });
+        observer.disconnect();
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, [source]);
+
+  function trackFormStart() {
+    if (formStartedRef.current) return;
+    formStartedRef.current = true;
+    trackEvent("form_start", { source, cta_contract: "intake" });
+  }
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -53,9 +80,13 @@ export default function InlineLeadForm({
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
-      trackLead({ source });
+      if (!form.website) {
+        trackLead({ source, cta_contract: "intake" });
+        trackEvent("form_success", { source, cta_contract: "intake" });
+      }
       setSubmitted(true);
     } catch {
+      trackEvent("form_error", { source, cta_contract: "intake" });
       setError("Something went wrong. Please call (559) 521-3122 or email Aaron@sequoiageo.com directly.");
     } finally {
       setLoading(false);
@@ -63,7 +94,7 @@ export default function InlineLeadForm({
   };
 
   return (
-    <section className="bg-[#0D2318] py-16 sm:py-20">
+    <section ref={sectionRef} className="bg-[#0D2318] py-16 sm:py-20">
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <div className="rounded-2xl border border-[#1A5C3A] bg-white p-8 shadow-xl sm:p-10">
           {submitted ? (
@@ -74,23 +105,24 @@ export default function InlineLeadForm({
                 </svg>
               </div>
               <h3 className="mt-5 text-xl font-bold text-[#1a1a1a]">
-                Got it. Your audit is in my queue.
+                Got it. I have your context.
               </h3>
               <p className="mt-2 text-sm text-gray-500">
                 You will hear from me within one business day, usually much faster.
               </p>
               <a
                 href="/contact#book"
+                onClick={() => trackEvent("cta_click", { source: `${source}_success`, cta_contract: "schedule" })}
                 className="mt-5 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
-                Pick a time now
+                Choose a Time
                 <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </a>
               <p className="mt-3 text-sm text-gray-500">
                 Prefer to talk? Call{" "}
-                <a href="tel:5595213122" className="font-semibold text-[#1A5C3A]">(559) 521-3122</a>.
+                <a href="tel:5595213122" onClick={() => trackCallIntent(`${source}_success`)} className="font-semibold text-[#1A5C3A]">(559) 521-3122</a>.
               </p>
             </div>
           ) : (
@@ -100,7 +132,7 @@ export default function InlineLeadForm({
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-gray-600">{subtext}</p>
 
-              <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+              <form onSubmit={handleSubmit} onFocusCapture={trackFormStart} className="mt-6 space-y-4">
                 {/* Honeypot: hidden from real users; bots that fill it get dropped server-side. */}
                 <div
                   aria-hidden="true"
@@ -123,6 +155,8 @@ export default function InlineLeadForm({
                     <label htmlFor={`name-${source}`} className="block text-sm font-medium text-[#1a1a1a]">Name</label>
                     <input
                       id={`name-${source}`}
+                      name="name"
+                      autoComplete="name"
                       type="text"
                       required
                       value={form.name}
@@ -135,6 +169,8 @@ export default function InlineLeadForm({
                     <label htmlFor={`phone-${source}`} className="block text-sm font-medium text-[#1a1a1a]">Phone</label>
                     <input
                       id={`phone-${source}`}
+                      name="phone"
+                      autoComplete="tel"
                       type="tel"
                       required
                       value={form.phone}
@@ -149,6 +185,8 @@ export default function InlineLeadForm({
                   <label htmlFor={`email-${source}`} className="block text-sm font-medium text-[#1a1a1a]">Email</label>
                   <input
                     id={`email-${source}`}
+                    name="email"
+                    autoComplete="email"
                     type="email"
                     required
                     value={form.email}
@@ -167,7 +205,8 @@ export default function InlineLeadForm({
                     className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#1A5C3A] focus:ring-[#3A9E6A]"
                   />
                   <label htmlFor={`smsConsent-${source}`} className="text-xs leading-relaxed text-gray-500">
-                    I agree to receive SMS messages from Sequoia GEO. Message and data rates may apply. You can opt out at any time.
+                    I agree to receive SMS messages from Sequoia GEO. Message and data rates may apply. You can opt out at any time. See our{" "}
+                    <a href="/privacy-policy" className="underline hover:text-[#1A5C3A]">privacy policy</a>.
                   </label>
                 </div>
 
@@ -184,7 +223,7 @@ export default function InlineLeadForm({
                 </button>
 
                 <p className="text-center text-xs text-gray-400">
-                  Prefer to talk? <a href="tel:5595213122" className="font-medium text-[#1A5C3A]">(559) 521-3122</a>
+                  Prefer to talk? <a href="tel:5595213122" onClick={() => trackCallIntent(`${source}_inline_form`)} className="font-medium text-[#1A5C3A]">(559) 521-3122</a>
                 </p>
               </form>
             </>

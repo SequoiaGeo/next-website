@@ -29,7 +29,10 @@ export default function BookingCalendar({ className }: { className?: string }) {
       if (engaged.current) return;
       if (document.activeElement === iframeRef.current) {
         engaged.current = true;
-        trackEvent("calendar_engagement", { source: "booking_calendar" });
+        trackEvent("calendar_engagement", {
+          source: "booking_calendar",
+          cta_contract: "schedule",
+        });
       }
     };
     window.addEventListener("blur", onBlur);
@@ -56,7 +59,10 @@ export default function BookingCalendar({ className }: { className?: string }) {
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-[#1A5C3A] underline-offset-2 hover:underline"
-          onClick={() => trackEvent("calendar_fallback_click", { source: "booking_calendar" })}
+          onClick={() => trackEvent("calendar_fallback_click", {
+            source: "booking_calendar",
+            cta_contract: "schedule",
+          })}
         >
           Open it in a new tab
         </a>
@@ -70,7 +76,7 @@ export default function BookingCalendar({ className }: { className?: string }) {
           rel="noopener noreferrer"
           className="inline-block bg-[#2D6A4F] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1B4332] transition-colors"
         >
-          Get Your Free Audit
+          Choose a Time
         </a>
       </noscript>
     </div>

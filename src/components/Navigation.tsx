@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { trackCallIntent } from "@/lib/analytics";
+import { trackCallIntent, trackEvent } from "@/lib/analytics";
 
 const serviceLinks = [
   {
@@ -12,7 +12,7 @@ const serviceLinks = [
       { label: "GEO / AI Search Visibility", href: "/geo-agency" },
       { label: "LSA Management", href: "/lsa-management" },
       { label: "AI Automation", href: "/ai-automation" },
-      { label: "Fractional CMO", href: "/fractional-cmo" },
+      { label: "Operator-Led Marketing", href: "/fractional-cmo" },
       { label: "Website Design", href: "/websites" },
     ],
   },
@@ -263,10 +263,11 @@ export default function Navigation() {
             (559) 521-3122
           </a>
           <Link
-            href="/contact"
+            href="/contact#book"
+            onClick={() => trackEvent("cta_click", { source: "header_desktop", cta_contract: "schedule" })}
             className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
           >
-            Get Your Free Audit
+            Choose a Time
           </Link>
         </div>
 
@@ -405,11 +406,14 @@ export default function Navigation() {
               (559) 521-3122
             </a>
             <Link
-              href="/contact"
-              onClick={() => setMobileOpen(false)}
+              href="/contact#book"
+              onClick={() => {
+                setMobileOpen(false);
+                trackEvent("cta_click", { source: "header_mobile", cta_contract: "schedule" });
+              }}
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-[#0D2318] w-full"
             >
-              Get Your Free Audit
+              Choose a Time
             </Link>
           </div>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { trackLead } from "@/lib/analytics";
+import { trackCallIntent, trackEvent, trackLead } from "@/lib/analytics";
 import BookingCalendar from "@/components/BookingCalendar";
 
 export default function ContactForm() {
@@ -19,9 +19,36 @@ export default function ContactForm() {
 
   // Timestamp of when the form mounted, used server-side for the timing check.
   const renderedAtRef = useRef<number>(0);
+  const sectionRef = useRef<HTMLElement>(null);
+  const formStartedRef = useRef(false);
+  const formViewedRef = useRef(false);
   useEffect(() => {
     renderedAtRef.current = Date.now();
   }, []);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section || typeof IntersectionObserver === "undefined") return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting || formViewedRef.current) return;
+        formViewedRef.current = true;
+        trackEvent("form_view", { source: "contact_form", cta_contract: "intake" });
+        observer.disconnect();
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  function trackFormStart() {
+    if (formStartedRef.current) return;
+    formStartedRef.current = true;
+    trackEvent("form_start", { source: "contact_form", cta_contract: "intake" });
+  }
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -39,9 +66,13 @@ export default function ContactForm() {
       });
 
       if (!res.ok) throw new Error("Submission failed");
-      trackLead({ source: "contact_form" });
+      if (!form.website) {
+        trackLead({ source: "contact_form", cta_contract: "intake" });
+        trackEvent("form_success", { source: "contact_form", cta_contract: "intake" });
+      }
       setSubmitted(true);
     } catch {
+      trackEvent("form_error", { source: "contact_form", cta_contract: "intake" });
       setError("Something went wrong. Please call (559) 521-3122 or email Aaron@sequoiageo.com directly.");
     } finally {
       setLoading(false);
@@ -49,7 +80,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="bg-white py-20 sm:py-28">
+    <section ref={sectionRef} id="contact" className="bg-white py-20 sm:py-28 scroll-mt-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-5xl gap-16 lg:grid-cols-2 lg:items-start">
 
@@ -61,16 +92,16 @@ export default function ContactForm() {
               <span className="text-[#1A5C3A]">revenue is leaking.</span>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-gray-600">
-              The first conversation is an audit, not a sales call. Tell us what
-              you&rsquo;re spending and what it&rsquo;s producing. We&rsquo;ll tell you
-              what we see and whether we can help.
+              Tell me what you are seeing before we talk. I review the marketing
+              and booking path myself, separate the evidence from the assumptions,
+              and tell you whether I can help.
             </p>
 
             <div className="mt-8 divide-y divide-gray-100">
               {[
-                { label: "Free GBP audit", desc: "We review your listing before the call" },
-                { label: "No pitch deck", desc: "A real conversation about your numbers" },
-                { label: "No long-term contracts", desc: "Stay because it works, not because you're locked in" },
+                { label: "Evidence before recommendations", desc: "I review the marketing and booking path before the call" },
+                { label: "No pitch deck", desc: "A real conversation about the constraint you are seeing" },
+                { label: "Clear engagement terms", desc: "Three months initially, then month to month" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4 py-4 first:pt-0">
                   <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
@@ -90,6 +121,7 @@ export default function ContactForm() {
             <div className="mt-8 pt-8 border-t border-gray-100 space-y-3">
               <a
                 href="tel:5595213122"
+                onClick={() => trackCallIntent("contact_section")}
                 className="flex items-center gap-3 text-sm font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
               >
                 <svg aria-hidden="true" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -120,7 +152,7 @@ export default function ContactForm() {
                     </svg>
                   </div>
                   <h3 className="mt-5 text-xl font-bold text-[#1a1a1a]">
-                    Got it. Your audit is in my queue.
+                    Got it. I have your context.
                   </h3>
                   <p className="mt-2 text-sm text-gray-500">
                     You will hear from me within one business day, usually much faster.
@@ -133,7 +165,7 @@ export default function ContactForm() {
                 <BookingCalendar />
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} onFocusCapture={trackFormStart} className="space-y-5">
                 {/* Honeypot: hidden from real users (off-screen, no tab stop,
                     autocomplete off). Bots that fill every field trip it and
                     get silently dropped server-side. */}
@@ -164,6 +196,8 @@ export default function ContactForm() {
                   <label htmlFor="name" className="block text-sm font-medium text-[#1a1a1a]">Name</label>
                   <input
                     id="name"
+                    name="name"
+                    autoComplete="name"
                     type="text"
                     required
                     value={form.name}
@@ -177,6 +211,8 @@ export default function ContactForm() {
                   <label htmlFor="phone" className="block text-sm font-medium text-[#1a1a1a]">Phone</label>
                   <input
                     id="phone"
+                    name="phone"
+                    autoComplete="tel"
                     type="tel"
                     required
                     value={form.phone}
@@ -190,6 +226,8 @@ export default function ContactForm() {
                   <label htmlFor="email" className="block text-sm font-medium text-[#1a1a1a]">Email</label>
                   <input
                     id="email"
+                    name="email"
+                    autoComplete="email"
                     type="email"
                     required
                     value={form.email}
@@ -208,7 +246,11 @@ export default function ContactForm() {
                     className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#1A5C3A] focus:ring-[#3A9E6A]"
                   />
                   <label htmlFor="smsConsent" className="text-xs leading-relaxed text-gray-500">
-                    I agree to receive SMS messages from Sequoia GEO. Message and data rates may apply. You can opt out at any time.
+                    I agree to receive SMS messages from Sequoia GEO. Message and data rates may apply. You can opt out at any time. See our{" "}
+                    <a href="/privacy-policy" className="underline hover:text-[#1A5C3A]">
+                      privacy policy
+                    </a>
+                    .
                   </label>
                 </div>
 
@@ -221,7 +263,7 @@ export default function ContactForm() {
                   disabled={loading}
                   className="w-full rounded-lg bg-[#1A5C3A] px-6 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318] hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A] disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Sending…" : "Get Your Free Audit"}
+                  {loading ? "Sending..." : "Request the Baseline Review"}
                 </button>
               </form>
             )}

@@ -2,6 +2,8 @@
 // gtag is loaded globally in layout.tsx (GA4 config + AW-1042937332 Google Ads).
 // Safe to call before gtag loads or during SSR: it no-ops instead of throwing.
 
+import { readAiAttribution } from "@/lib/ai-attribution";
+
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
@@ -25,11 +27,13 @@ type LeadParams = {
  */
 export function trackLead({ source, value, ...rest }: LeadParams) {
   if (typeof window === "undefined") return;
+  const aiAttribution = readAiAttribution();
   if (typeof window.gtag === "function") {
     window.gtag("event", "generate_lead", {
       currency: "USD",
       value: value ?? 0,
       lead_source: source,
+      ...(aiAttribution ?? {}),
       ...rest,
     });
   }

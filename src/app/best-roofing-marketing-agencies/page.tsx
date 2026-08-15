@@ -230,18 +230,18 @@ const agencies = [
     meta: [
       { label: "Best for", value: "$2M to $15M revenue contractors" },
       { label: "Pricing", value: "From $2,500 a month, 3-month initial term, month to month after" },
-      { label: "Team scale", value: "10-client cap, principal-led" },
+      { label: "Team scale", value: "Principal-led" },
     ],
     summary:
-      "Sequoia GEO is a boutique fractional CMO and growth operations practice founded by Aaron Husak, who built Balanced Comfort HVAC to $17M+ in revenue and four consecutive Inc. 5000 rankings before a 2024 exit. While the practice's core case study base is in HVAC and plumbing, the operator-level marketing systems developed through that process translate directly to roofing contractors facing the same conversion and lead quality challenges. The practice caps at 10 active clients. Engagements start at $2,500 a month with a 3-month initial term, month to month after.",
+      "Sequoia GEO is an operator-led marketing practice founded by Aaron Husak, who built Balanced Comfort HVAC to $17M+ in revenue and four consecutive Inc. 5000 rankings before a 2024 exit. While the practice's core case study base is in HVAC and plumbing, the operator-level marketing systems developed through that process translate directly to roofing contractors facing the same conversion and lead quality challenges. Aaron leads every engagement. Engagements start at $2,500 a month with a 3-month initial term, month to month after.",
     strengths: [
       "Only practice on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
       "Revenue attribution extends past lead counts to booking rates, CSR quality, and appointment data",
-      "10-client cap ensures principal-level attention rather than handoffs to junior account managers",
+      "Aaron leads every engagement rather than handing the relationship to a junior account manager",
     ],
     considerations: [
       "Primary case study background is HVAC and plumbing rather than roofing specifically",
-      "Limited client capacity means availability may be restricted at any given time",
+      "Principal-led structure means scope and communication expectations should be defined before work begins",
       "Newer brand with less name recognition than companies who have been marketing themselves for a decade",
     ],
     isOwnAgency: true,
@@ -431,7 +431,7 @@ export default function BestRoofingAgenciesPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/contact"
+              href="/contact#book"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
               Book a Free Strategy Call

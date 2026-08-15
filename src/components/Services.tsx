@@ -59,9 +59,9 @@ const services = [
     ),
   },
   {
-    title: "Fractional CMO",
+    title: "Operator-Led Marketing",
     description:
-      "Executive-level marketing strategy without the full-time salary. Own the revenue outcome across all your channels, not just one of them.",
+      "Senior strategy and execution led directly by Aaron. One accountable operator across the channels, calls, and booking path.",
     href: "/fractional-cmo",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -115,12 +115,12 @@ export default function Services() {
           <p className="section-overline mb-4">What We Do</p>
           <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
             Google Ads. ChatGPT Ads. SEO. LSAs. GBP.{" "}
-            <span className="text-[#1A5C3A]">All tracked to booked revenue.</span>
+            <span className="text-[#1A5C3A]">All tracked to qualified leads and jobs booked.</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-gray-500">
             These aren&rsquo;t standalone packages. They&rsquo;re the channels managed as part of
-            a single revenue strategy, each one tracked back to calls answered, appointments
-            booked, and jobs closed.
+            one acquisition system, each tracked back to calls answered, appointments booked,
+            and jobs closed.
           </p>
         </div>
 

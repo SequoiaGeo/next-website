@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 interface InlineCTAProps {
   headline?: string;
@@ -8,15 +9,15 @@ interface InlineCTAProps {
   variant?: "dark" | "green" | "light";
   buttonText?: string;
   buttonHref?: string;
+  ctaContract?: "schedule" | "intake" | "resource";
 }
 
-function trackCTA(action: string, label: string) {
-  if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
-    (window as any).gtag("event", action, {
-      event_category: "CTA",
-      event_label: label,
-    });
-  }
+function trackCTA(action: string, label: string, ctaContract?: string) {
+  trackEvent(action, {
+    event_category: "CTA",
+    event_label: label,
+    ...(ctaContract ? { cta_contract: ctaContract } : {}),
+  });
 }
 
 /**
@@ -29,6 +30,7 @@ export default function InlineCTA({
   variant = "green",
   buttonText = "Get Your Free Audit",
   buttonHref = "/contact",
+  ctaContract,
 }: InlineCTAProps) {
   const bg =
     variant === "dark"
@@ -57,7 +59,7 @@ export default function InlineCTA({
         <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
           <Link
             href={buttonHref}
-            onClick={() => trackCTA("cta_click", headline || "inline_cta")}
+            onClick={() => trackCTA("cta_click", headline || "inline_cta", ctaContract)}
             className={`inline-flex items-center justify-center rounded-lg px-6 py-3.5 text-sm font-semibold transition ${btnBg}`}
           >
             {buttonText}

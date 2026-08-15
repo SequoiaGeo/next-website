@@ -7,7 +7,7 @@ const services = [
   { label: "Plumbing SEO", href: "/plumbing-seo" },
   { label: "Roofing SEO", href: "/roofing-seo" },
   { label: "LSA Management", href: "/lsa-management" },
-  { label: "Fractional CMO", href: "/fractional-cmo" },
+  { label: "Operator-Led Marketing", href: "/fractional-cmo" },
   { label: "AI Automation", href: "/ai-automation" },
   { label: "GEO / AI Search", href: "/geo-agency" },
   { label: "GEO for Plumbers", href: "/geo-for-plumbers" },
@@ -68,8 +68,8 @@ export default function Footer() {
               4x Inc 5000 (2020 to 2023) &middot; CA Licensed Contractor B, C-2, C-20, C-36 &middot; Fresno, CA &middot; Serving Nationwide
             </p>
             <div className="flex flex-col gap-2 text-sm">
-              <Link href="/contact" className="font-semibold text-white hover:text-accent-green transition-colors">
-                Get Your Free Audit
+              <Link href="/contact#book" className="font-semibold text-white hover:text-accent-green transition-colors">
+                Choose a Time With Aaron
               </Link>
               <a href="tel:5595213122" className="text-pale-green/70 hover:text-white transition-colors">
                 (559) 521-3122

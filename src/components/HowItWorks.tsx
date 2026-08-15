@@ -18,7 +18,7 @@ const steps = [
     number: "02",
     title: "Fix and Build",
     description:
-      "We fix what&apos;s broken first (<strong>wasted spend</strong>, <strong>misconfigured tracking</strong>, <strong>phone gaps</strong>), then build what&apos;s missing (<strong>proper attribution</strong>, <strong>conversion-optimized pages</strong>, <strong>review systems</strong>, <strong>local SEO</strong>). If you have existing agencies, I hold them accountable to <strong>revenue metrics</strong>, not vanity metrics.",
+      "We fix what&apos;s broken first (<strong>wasted spend</strong>, <strong>misconfigured tracking</strong>, <strong>phone gaps</strong>), then build what&apos;s missing (<strong>proper attribution</strong>, <strong>conversion-optimized pages</strong>, <strong>review systems</strong>, <strong>local SEO</strong>). I lead the work and measure it against <strong>qualified leads</strong> and <strong>jobs booked</strong>, not vanity metrics.",
     icon: (
       <svg aria-hidden="true" className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
@@ -50,15 +50,15 @@ export default function HowItWorks() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <p className="section-overline mb-4">How it works</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
-              Not an agency.{" "}
-              <span className="text-[#1A5C3A]">A fractional CMO who&rsquo;s been in your shoes.</span>
+              Not handed to an account manager.{" "}
+              <span className="text-[#1A5C3A]">Led by an operator who&rsquo;s been in your shoes.</span>
             </h2>
             <p className="mt-5 text-base text-gray-500 leading-relaxed">
-              I embed in your business, review your calls, audit your numbers, and own the revenue outcome.
+              I lead the work, review your calls, audit the numbers, and stay accountable to qualified leads and jobs booked.
             </p>
             <div className="mt-8">
               <Link
-                href="/contact"
+                href="/contact#book"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
                 Start With the Full Picture Audit
@@ -71,7 +71,7 @@ export default function HowItWorks() {
 
           {/* Right: steps */}
           <div className="space-y-0 divide-y divide-gray-100">
-            {steps.map((step, index) => (
+            {steps.map((step) => (
               <div key={step.month} className="flex gap-8 py-10 first:pt-0">
                 {/* Number */}
                 <div className="shrink-0 pt-1">

@@ -3,9 +3,9 @@ import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Get Your Free Audit | Sequoia GEO",
+  title: "Contact | Request a Marketing Baseline Review | Sequoia GEO",
   description:
-    "Ready to find out what your marketing is actually producing? Get a free 15-minute audit with Aaron Husak. No pitch deck, no pressure, just a real operator's read on your situation.",
+    "Find out what your marketing is actually producing. Request a 15-minute baseline review with Aaron Husak, built around leads, jobs booked, and the handoffs between them.",
   alternates: {
     canonical: "https://www.sequoiageo.com/contact",
   },
@@ -19,7 +19,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl">
-              Get Your Free Audit
+              Request a Marketing Baseline Review
             </h1>
             <p className="mt-4 text-lg text-gray-600">
               Tell me what you&rsquo;re spending on marketing. I&rsquo;ll tell you what it&rsquo;s actually producing.
@@ -65,6 +65,10 @@ export default function ContactPage() {
           success screens across the site link to ("Pick a time now"). */}
       <section id="book" className="bg-[#fafaf8] py-10 scroll-mt-20">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
+          <div className="mb-6 text-center">
+            <h2 className="text-2xl font-bold text-[#1a1a1a]">Choose a time for your call</h2>
+            <p className="mt-2 text-sm text-gray-600">The baseline review takes 15 minutes and is held directly with Aaron.</p>
+          </div>
           <BookingCalendar />
         </div>
       </section>
@@ -73,7 +77,7 @@ export default function ContactPage() {
       <div className="mx-auto max-w-3xl px-6">
         <div className="flex items-center gap-4 py-4">
           <div className="flex-1 border-t border-gray-200" />
-          <span className="text-sm text-gray-500">or fill out the form below</span>
+          <span className="text-sm text-gray-500">Prefer to share the context first?</span>
           <div className="flex-1 border-t border-gray-200" />
         </div>
       </div>
