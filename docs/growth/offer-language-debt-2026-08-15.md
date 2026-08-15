@@ -1,0 +1,46 @@
+# Sequoia GEO Offer-Language Release Note and Debt Log
+
+Prepared: 2026-08-15
+
+## Canonical conversion language
+
+| User action | Canonical label |
+|---|---|
+| Open the scheduling section or calendar | Choose a Time With Aaron |
+| Submit a marketing review form | Request the Baseline Review |
+| Name the first diagnostic step | Marketing Baseline Review |
+| Space-constrained mobile navigation | Choose a Time |
+
+"Full picture" remains valid positioning language. Only the legacy product name "Full Picture Audit" changes. Generic editorial uses of the word audit should be reviewed in context, not replaced mechanically.
+
+## August 15 pre-baseline correction
+
+The final homepage correction affects `/` only. `HowItWorks` and `WhoIsItFor` are imported only by the homepage.
+
+Changes:
+
+- `Review My Numbers` becomes `Choose a Time With Aaron`.
+- `Book Your 15-Minute Call` becomes `Choose a Time With Aaron`.
+- `Apply for a Spot` becomes `Choose a Time With Aaron`, and its destination becomes `/contact#book`.
+- `Start With the Full Picture Audit` becomes `Choose a Time With Aaron`.
+- The first-step heading `The Full Picture Audit` becomes `The Marketing Baseline Review`.
+
+The two homepage `InlineCTA` event labels remain comparable because they use the unchanged CTA headlines as their analytics source, not the button text. The former bare `/contact` fit CTA was not included in the new sitewide CTA-intent matcher. Its replacement `/contact#book` begins a newly measurable schedule-intent series and should not be treated as a historical increase.
+
+Day zero for the seven-complete-day measurement baseline begins after this correction is verified on production. No further conversion copy or layout change belongs in that window.
+
+## Deferred noun debt
+
+A source sweep on August 15 found `free audit` or `Full Picture Audit` in 27 files outside the homepage and priority trade-page release. These references include dedicated audit pages, educational resources, lead magnets, article copy, service pages, location templates, and transactional email copy.
+
+Defer them until after the seven-day instrumentation window. Review them route by route because some describe a genuinely free resource while others describe the paid first-step service. Do not use a global replacement.
+
+Priority review order:
+
+1. `/audit`, `/fractional-cmo`, `/services`, and `/geo-agency`
+2. Shared resource and capture paths: LSA guide, calculator, and capture email copy
+3. Case studies and agency comparison pages
+4. HVAC city templates and statistics pages
+5. Blog index and article-body references
+
+Release rule: group the approved corrections into one later release, document the affected routes, and start a fresh observation window if a priority conversion page changes.

@@ -68,7 +68,7 @@ export default function Home() {
       <InlineCTA
         headline="Find out what your marketing is actually producing."
         subtext="15-minute call. No pitch deck. Just your numbers and what they mean."
-        buttonText="Review My Numbers"
+        buttonText="Choose a Time With Aaron"
         buttonHref="/contact#book"
         ctaContract="schedule"
         variant="green"
@@ -214,7 +214,7 @@ export default function Home() {
       <InlineCTA
         headline="They started with one call. Most never left."
         subtext="No pitch deck. Just your numbers reviewed by someone who's been in your seat."
-        buttonText="Book Your 15-Minute Call"
+        buttonText="Choose a Time With Aaron"
         buttonHref="/contact#book"
         ctaContract="schedule"
         variant="light"

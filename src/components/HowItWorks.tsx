@@ -4,7 +4,7 @@ const steps = [
   {
     month: "Month 1",
     number: "01",
-    title: "The Full Picture Audit",
+    title: "The Marketing Baseline Review",
     description:
       "I audit everything: your <strong>marketing spend</strong> and <strong>ROI by channel</strong>, your <strong>phone handling</strong>, your <strong>booking rate</strong>, your <strong>review velocity</strong>, your <strong>website conversion paths</strong>, your competitive position, and where <strong>revenue is leaking</strong>. You get a complete playbook, not a pitch deck.",
     icon: (
@@ -61,7 +61,7 @@ export default function HowItWorks() {
                 href="/contact#book"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
-                Start With the Full Picture Audit
+                Choose a Time With Aaron
                 <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
