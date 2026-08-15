@@ -8,6 +8,8 @@ Base: `origin/main` at `ebac031`
 
 Purpose: start the seven-day measurement bake without publishing the scheduled plumbing, GEO, HVAC, or comparison-page treatments.
 
+Independent raw-source review of the final delta is unavailable because the privacy boundary correctly blocked exporting private repository code. Verification therefore relies on the local source audit, recorded empty-diff output, deterministic suites, compiled-handler tests, production build, and the production behavioral gates below.
+
 ## Proven before commit
 
 - [x] The release was assembled in a clean worktree based directly on `origin/main`.
@@ -35,11 +37,13 @@ Purpose: start the seven-day measurement bake without publishing the scheduled p
 - [ ] Record the deployment commit and timestamp in the measurement log.
 - [ ] Confirm the production deployment contains this measurement commit and no scheduled SEO treatment.
 - [ ] Open a fresh production browser context and submit one reserved synthetic contact fixture.
-- [ ] Submit one reserved synthetic guide or calculator fixture.
+- [ ] Submit one reserved synthetic guide fixture.
+- [ ] Submit one reserved synthetic calculator fixture.
 - [ ] Confirm each notification includes a full lead ID and the internal-test classification.
 - [ ] Confirm HighLevel accepts `websiteLeadId`, `isSyntheticTest`, and the internal-test tag without creating a conversation, opportunity, task, or normal lead-source value.
 - [ ] Confirm no synthetic fixture emits `generate_lead`, `form_success`, or `lead_created`.
-- [ ] Confirm the reconciler labels and excludes both synthetic fixtures.
+- [ ] Confirm the reconciler labels and excludes all three synthetic fixtures.
+- [ ] On the first real production lead, confirm one internal record, one accepted browser conversion, the `accepted-v2` marker in GA4, and the expected account-side delivery diagnostics.
 
 The production synthetic fixtures intentionally pass through the real notification and CRM sinks with `isSyntheticTest: true`. Their browser conversion events remain suppressed. A valid launch check therefore requires both real internal records and zero analytics or advertising conversion events.
 
