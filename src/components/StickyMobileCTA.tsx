@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { trackCallIntent, trackEvent } from "@/lib/analytics";
+import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
 // Paid landing pages ship their own StickyCallBar. Rendering this bar there
 // would stack two fixed bottom bars on top of each other, so skip them.
@@ -73,11 +73,7 @@ export default function StickyMobileCTA() {
         </a>
         <a
           href={bookingHref}
-          onClick={() => trackEvent("cta_click", {
-            event_category: "CTA",
-            event_label: "sticky_mobile_book",
-            cta_contract: "schedule",
-          })}
+          onClick={() => trackCtaIntent("sticky_mobile_book", "schedule")}
           className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-[#3A9E6A] px-4 py-3 text-sm font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
         >
           Choose a Time

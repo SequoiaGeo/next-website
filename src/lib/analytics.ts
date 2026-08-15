@@ -20,6 +20,9 @@ type LeadParams = {
   [key: string]: unknown;
 };
 
+let lastPhoneIntentAt = 0;
+let lastCtaClickAt = 0;
+
 /**
  * Fire a GA4 + Google Ads "generate_lead" conversion event.
  * Use this on every successful lead capture so both GA4 key events and
@@ -58,11 +61,31 @@ export function trackLead({ source, value, ...rest }: LeadParams) {
  * lead numbers in GA4 and the ad platforms stay honest.
  */
 export function trackCallIntent(source: string) {
+  lastPhoneIntentAt = Date.now();
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
   window.gtag("event", "phone_click", {
     event_category: "CTA",
     event_label: source,
     source,
+  });
+}
+
+export function phoneIntentWasTrackedRecently(maxAgeMs = 250) {
+  return Date.now() - lastPhoneIntentAt <= maxAgeMs;
+}
+
+export function ctaClickWasTrackedRecently(maxAgeMs = 250) {
+  return Date.now() - lastCtaClickAt <= maxAgeMs;
+}
+
+export function trackCtaIntent(source: string, ctaContract?: string) {
+  lastCtaClickAt = Date.now();
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "cta_click", {
+    event_category: "CTA",
+    event_label: source,
+    source,
+    ...(ctaContract ? { cta_contract: ctaContract } : {}),
   });
 }
 

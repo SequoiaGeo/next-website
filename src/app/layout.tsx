@@ -8,6 +8,7 @@ import CookieBanner from "@/components/CookieBanner";
 import ChromeGate from "@/components/ChromeGate";
 import AiReferrerTracker from "@/components/AiReferrerTracker";
 import OaiqPixel from "@/components/OaiqPixel";
+import SitewideIntentTracker from "@/components/SitewideIntentTracker";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 
@@ -254,6 +255,7 @@ export default function RootLayout({
 
         {/* AI referrer tracker: fires ai_referrer_seen GA4 event when visitor arrives from a known AI engine */}
         {process.env.NEXT_PUBLIC_GA_ID && <AiReferrerTracker />}
+        {process.env.NEXT_PUBLIC_GA_ID && <SitewideIntentTracker />}
 
       </body>
     </html>

@@ -6,7 +6,7 @@ import FaqJsonLd from "@/components/FaqJsonLd";
 export const metadata: Metadata = {
   title: "HVAC SEO & Marketing That Books Jobs | Sequoia GEO",
   description:
-    "HVAC SEO from an operator who ran an HVAC company for 13 years and grew it to 130+ employees. Rankings that turn into booked calls and revenue. Free audit.",
+    "HVAC SEO from an operator who ran an HVAC company for 13 years and grew it to 130+ employees. Rankings tied to qualified calls and jobs booked.",
   alternates: {
     canonical: "https://www.sequoiageo.com/hvac-seo",
   },
@@ -82,10 +82,10 @@ export default function HvacSeoPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/contact"
+                href="/contact#book"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
-                Get Your Free Audit
+                Choose a Time With Aaron
                 <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -484,16 +484,16 @@ export default function HvacSeoPage() {
             Ready to see what your HVAC marketing is actually producing?
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            Every engagement starts with a Full Picture Audit. I look at your spend, your booking rate,
+            Every engagement starts with a Marketing Baseline Review. I look at your spend, your booking rate,
             your phone handling, and your revenue, before touching a single campaign. Engagements
             start at $2,500 a month.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="/contact"
+              href="/contact#book"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
-              Get Your Free Audit
+              Choose a Time With Aaron
             </Link>
             <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">
               (559) 521-3122
@@ -505,7 +505,7 @@ export default function HvacSeoPage() {
       {/* On-page capture: request the audit without leaving the page */}
       <InlineLeadForm
         source="hvac_seo_page"
-        heading="Get your free HVAC marketing audit"
+        heading="Request an HVAC marketing baseline review"
         subtext="Tell us where to send it. We review your rankings, your ads, and your booking path before the call. No pitch deck."
       />
     </>

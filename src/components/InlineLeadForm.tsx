@@ -1,13 +1,13 @@
 "use client";
 
 // Compact on-page lead form for SEO landing pages (/audit, /hvac-seo, etc.).
-// Same capture path and anti-bot layers as the main ContactForm (honeypot,
-// render-timestamp, server validation), posting to /api/contact with a
+// Same capture path and anti-bot layers as the main ContactForm (honeypot and
+// server validation), posting to /api/contact with a
 // per-page `source` tag so GA4 and the lead email show which page converted.
 // Exists so money pages capture on-page instead of hopping to /contact.
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { trackCallIntent, trackEvent, trackLead } from "@/lib/analytics";
+import { trackCallIntent, trackCtaIntent, trackEvent, trackLead } from "@/lib/analytics";
 
 type Props = {
   source: string; // e.g. "hvac_seo_page", lands in GA4 lead_source + the lead email
@@ -33,13 +33,9 @@ export default function InlineLeadForm({
     website: "", // honeypot
   });
 
-  const renderedAtRef = useRef<number>(0);
   const sectionRef = useRef<HTMLElement>(null);
   const formStartedRef = useRef(false);
   const formViewedRef = useRef(false);
-  useEffect(() => {
-    renderedAtRef.current = Date.now();
-  }, []);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -76,13 +72,24 @@ export default function InlineLeadForm({
         body: JSON.stringify({
           ...form,
           source,
-          renderedAt: renderedAtRef.current,
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
-      if (!form.website) {
-        trackLead({ source, cta_contract: "intake" });
-        trackEvent("form_success", { source, cta_contract: "intake" });
+      const result = (await res.json().catch(() => ({}))) as { leadId?: unknown };
+      const leadId = typeof result.leadId === "string" ? result.leadId : "";
+      if (!form.website && leadId) {
+        const measurement = {
+          source,
+          cta_contract: "intake",
+          lead_id: leadId,
+        };
+        trackLead(measurement);
+        trackEvent("form_success", measurement);
+      } else if (!form.website) {
+        trackEvent("form_response_missing_lead_id", {
+          source,
+          cta_contract: "intake",
+        });
       }
       setSubmitted(true);
     } catch {
@@ -112,7 +119,7 @@ export default function InlineLeadForm({
               </p>
               <a
                 href="/contact#book"
-                onClick={() => trackEvent("cta_click", { source: `${source}_success`, cta_contract: "schedule" })}
+                onClick={() => trackCtaIntent(`${source}_success`, "schedule")}
                 className="mt-5 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
                 Choose a Time

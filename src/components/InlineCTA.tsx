@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { trackEvent } from "@/lib/analytics";
+import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
 interface InlineCTAProps {
   headline?: string;
@@ -12,14 +12,6 @@ interface InlineCTAProps {
   ctaContract?: "schedule" | "intake" | "resource";
 }
 
-function trackCTA(action: string, label: string, ctaContract?: string) {
-  trackEvent(action, {
-    event_category: "CTA",
-    event_label: label,
-    ...(ctaContract ? { cta_contract: ctaContract } : {}),
-  });
-}
-
 /**
  * Reusable mid-page CTA strip. Drop between homepage sections
  * to give visitors a conversion path without scrolling to the bottom.
@@ -28,9 +20,9 @@ export default function InlineCTA({
   headline = "Ready to see where your revenue is leaking?",
   subtext = "15 minutes. No pitch deck. Real operator-level feedback.",
   variant = "green",
-  buttonText = "Get Your Free Audit",
-  buttonHref = "/contact",
-  ctaContract,
+  buttonText = "Choose a Time With Aaron",
+  buttonHref = "/contact#book",
+  ctaContract = "schedule",
 }: InlineCTAProps) {
   const bg =
     variant === "dark"
@@ -59,7 +51,7 @@ export default function InlineCTA({
         <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
           <Link
             href={buttonHref}
-            onClick={() => trackCTA("cta_click", headline || "inline_cta", ctaContract)}
+            onClick={() => trackCtaIntent(headline || "inline_cta", ctaContract)}
             className={`inline-flex items-center justify-center rounded-lg px-6 py-3.5 text-sm font-semibold transition ${btnBg}`}
           >
             {buttonText}
@@ -80,7 +72,7 @@ export default function InlineCTA({
           </Link>
           <a
             href="tel:5595213122"
-            onClick={() => trackCTA("phone_click", headline || "inline_cta")}
+            onClick={() => trackCallIntent(headline || "inline_cta")}
             className={`inline-flex items-center gap-2 text-sm font-medium transition-colors ${phoneLinkColor}`}
           >
             <svg

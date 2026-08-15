@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { trackCallIntent, trackEvent } from "@/lib/analytics";
+import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
 const serviceLinks = [
   {
@@ -264,7 +264,7 @@ export default function Navigation() {
           </a>
           <Link
             href="/contact#book"
-            onClick={() => trackEvent("cta_click", { source: "header_desktop", cta_contract: "schedule" })}
+            onClick={() => trackCtaIntent("header_desktop", "schedule")}
             className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
           >
             Choose a Time
@@ -409,7 +409,7 @@ export default function Navigation() {
               href="/contact#book"
               onClick={() => {
                 setMobileOpen(false);
-                trackEvent("cta_click", { source: "header_mobile", cta_contract: "schedule" });
+                trackCtaIntent("header_mobile", "schedule");
               }}
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-[#0D2318] w-full"
             >

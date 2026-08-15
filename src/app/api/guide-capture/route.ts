@@ -8,8 +8,8 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    // Honeypot + timing + name/email validation (same layers as /api/contact).
-    const check = checkEmailLead(body, Date.now());
+    // Honeypot plus name/email validation (same checks as /api/contact).
+    const check = checkEmailLead(body);
     if (!check.ok) {
       if (check.silentDrop) {
         console.warn("[guide-capture] dropped:", check.reason);

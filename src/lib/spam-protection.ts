@@ -1,14 +1,12 @@
 // Server-side spam / bot protection shared across lead-capture API routes.
-// Layers: honeypot field, a submit-timing guard, and field validation +
-// sanitization. Each layer is independent so a direct POST to the endpoint
-// hits the same checks the browser form does.
+// Layers: honeypot field plus field validation and sanitization. Each layer is
+// independent so a direct POST to the endpoint hits the same checks the browser
+// form does.
 //
 // DESIGN RULE: a dropped real lead can cost a client worth thousands; a spam
 // email costs seconds to delete. So every ambiguous case fails OPEN. The
 // honeypot is the only near-zero-false-positive signal, so it is the only
 // thing that silently discards a submission.
-
-const MIN_SUBMIT_MS = 1500; // bots submit near-instantly; browser autofill makes humans fast too
 
 // Field length bounds. Generous enough for real leads, tight enough to stop dumps.
 const LIMITS = {
@@ -32,7 +30,7 @@ export type LeadFields = {
   smsConsent?: unknown;
   // anti-bot fields (not stored / not emailed)
   website?: unknown; // honeypot, must stay empty
-  renderedAt?: unknown; // client epoch-ms when the form mounted
+  renderedAt?: unknown; // legacy field, ignored so browser autofill never costs a real lead
 };
 
 export type SpamCheckResult =
@@ -57,27 +55,17 @@ function asString(value: unknown): string {
 }
 
 /**
- * Run honeypot, timing, and field validation against an incoming lead payload.
+ * Run honeypot and field validation against an incoming lead payload.
  */
-export function checkLead(fields: LeadFields, now: number): SpamCheckResult {
+export function checkLead(fields: LeadFields): SpamCheckResult {
   // 1. Honeypot: real users never see or fill this. Any value = bot. Drop silently.
   const honeypot = asString(fields.website);
   if (honeypot) {
     return { ok: false, silentDrop: true, reason: "honeypot filled" };
   }
 
-  // 2. Timing: only enforced when the client sent a usable timestamp. A missing,
-  //    stale, or skewed timestamp is an app/hydration/clock problem, NOT a bot
-  //    signal, so it must never cost a real lead. Fail open in those cases.
-  const renderedAt = Number(fields.renderedAt);
-  if (Number.isFinite(renderedAt)) {
-    const elapsed = now - renderedAt;
-    if (elapsed >= 0 && elapsed < MIN_SUBMIT_MS) {
-      return { ok: false, silentDrop: true, reason: `submitted too fast (${elapsed}ms)` };
-    }
-  }
-
-  // 3. Validation + sanitization of the real fields.
+  // 2. Validation + sanitization of the real fields. Submission timing is not
+  //    used as a rejection signal because browser autofill can make humans fast.
   const name = asString(fields.name);
   const phone = asString(fields.phone);
   const email = asString(fields.email);
@@ -112,7 +100,7 @@ export type EmailLeadFields = {
   email?: unknown;
   // anti-bot fields (not stored / not emailed)
   website?: unknown; // honeypot, must stay empty
-  renderedAt?: unknown; // client epoch-ms when the form mounted
+  renderedAt?: unknown; // legacy field, ignored so browser autofill never costs a real lead
 };
 
 export type EmailLeadCheckResult =
@@ -121,27 +109,19 @@ export type EmailLeadCheckResult =
   | { ok: false; silentDrop: false; reason: string };
 
 /**
- * Honeypot, timing, and field validation for name+email-only lead magnets
- * (calculator breakdown, guide downloads). Same layers as checkLead minus
+ * Honeypot and field validation for name+email-only lead magnets
+ * (calculator breakdown, guide downloads). Same checks as checkLead minus
  * the phone/message fields those forms don't collect.
  */
-export function checkEmailLead(fields: EmailLeadFields, now: number): EmailLeadCheckResult {
+export function checkEmailLead(fields: EmailLeadFields): EmailLeadCheckResult {
   // 1. Honeypot: any value = bot. Drop silently.
   const honeypot = asString(fields.website);
   if (honeypot) {
     return { ok: false, silentDrop: true, reason: "honeypot filled" };
   }
 
-  // 2. Timing: enforced only when a usable timestamp arrives (see checkLead).
-  const renderedAt = Number(fields.renderedAt);
-  if (Number.isFinite(renderedAt)) {
-    const elapsed = now - renderedAt;
-    if (elapsed >= 0 && elapsed < MIN_SUBMIT_MS) {
-      return { ok: false, silentDrop: true, reason: `submitted too fast (${elapsed}ms)` };
-    }
-  }
-
-  // 3. Validation + sanitization.
+  // 2. Validation + sanitization. Submission timing is intentionally not used
+  //    as a rejection signal because browser autofill can make humans fast.
   const name = asString(fields.name);
   const email = asString(fields.email);
 

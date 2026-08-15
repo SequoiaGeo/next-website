@@ -27,7 +27,7 @@ const roofingFaqs = [
   },
   {
     q: "How much does roofing SEO cost?",
-    a: "My engagements start at $2,500 per month. What that covers depends on your market and how much ground there is to make up, which is why every engagement starts with an audit. The better question is what the program produces. A roofing SEO program that cannot show you booked jobs by month 12 was not worth any price.",
+    a: "My engagements start at $2,500 per month. What that covers depends on your market and how much ground there is to make up, which is why every engagement starts with a marketing baseline review. The better question is what the program produces. A roofing SEO program that cannot show you booked jobs by month 12 was not worth any price.",
   },
   {
     q: "Do I need roofing SEO if I am already running Google Ads?",
@@ -96,10 +96,10 @@ export default function RoofingSeoPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/contact"
+                href="/contact#book"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
-                Get Your Free Audit
+                Choose a Time With Aaron
                 <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -411,7 +411,7 @@ export default function RoofingSeoPage() {
                 ),
               },
               {
-                title: "An audit before a contract",
+                title: "A baseline review before a contract",
                 body: (
                   <>
                     A company confident in its work will look at your market, your site, and your
@@ -470,7 +470,7 @@ export default function RoofingSeoPage() {
                         start at $2,500 per month
                       </Link>
                       . What that covers depends on your market and how much ground there is to
-                      make up, which is why every engagement starts with an audit. The better
+                      make up, which is why every engagement starts with a marketing baseline review. The better
                       question is what the program produces. A roofing SEO program that cannot show
                       you booked jobs by month 12 was not worth any price.
                     </>
@@ -563,12 +563,12 @@ export default function RoofingSeoPage() {
             Find out what your roofing marketing is actually producing
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            Start with the Full Picture Audit. I&rsquo;ll look at your spend, your booking rate, your
+            Start with the Marketing Baseline Review. I&rsquo;ll look at your spend, your booking rate, your
             phone handling, and your revenue. You&rsquo;ll know exactly where the leaks are before we spend anything new.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
-              Get Your Free Audit
+            <Link href="/contact#book" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
+              Choose a Time With Aaron
             </Link>
             <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">(559) 521-3122</a>
           </div>
@@ -581,7 +581,7 @@ export default function RoofingSeoPage() {
       {/* On-page capture: request the audit without leaving the page */}
       <InlineLeadForm
         source="roofing_seo_page"
-        heading="Get your free roofing marketing audit"
+        heading="Request a roofing marketing baseline review"
         subtext="Tell us where to send it. We review your rankings, your ads, and your booking path before the call. No pitch deck."
       />
     </>

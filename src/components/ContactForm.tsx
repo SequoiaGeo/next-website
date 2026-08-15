@@ -17,14 +17,9 @@ export default function ContactForm() {
     website: "",
   });
 
-  // Timestamp of when the form mounted, used server-side for the timing check.
-  const renderedAtRef = useRef<number>(0);
   const sectionRef = useRef<HTMLElement>(null);
   const formStartedRef = useRef(false);
   const formViewedRef = useRef(false);
-  useEffect(() => {
-    renderedAtRef.current = Date.now();
-  }, []);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -59,16 +54,25 @@ export default function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...form,
-          renderedAt: renderedAtRef.current,
-        }),
+        body: JSON.stringify(form),
       });
 
       if (!res.ok) throw new Error("Submission failed");
-      if (!form.website) {
-        trackLead({ source: "contact_form", cta_contract: "intake" });
-        trackEvent("form_success", { source: "contact_form", cta_contract: "intake" });
+      const result = (await res.json().catch(() => ({}))) as { leadId?: unknown };
+      const leadId = typeof result.leadId === "string" ? result.leadId : "";
+      if (!form.website && leadId) {
+        const measurement = {
+          source: "contact_form",
+          cta_contract: "intake",
+          lead_id: leadId,
+        };
+        trackLead(measurement);
+        trackEvent("form_success", measurement);
+      } else if (!form.website) {
+        trackEvent("form_response_missing_lead_id", {
+          source: "contact_form",
+          cta_contract: "intake",
+        });
       }
       setSubmitted(true);
     } catch {
