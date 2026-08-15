@@ -7,13 +7,13 @@
 // serve this one. The duplication costs little; breaking a running test does not.
 //
 // Two conversion moments, tagged separately:
-//   immanuel_lp_form = a submitted lead, fires trackLead
+//   immanuel_lp_form = a server-confirmed lead passed to the guarded conversion entry point
 //   immanuel_lp_call = a tap on the call bar, which is intent to call, not a
 //                      completed call and not a captured lead. Fires
 //                      trackCallIntent (phone_click only). Never conflate the two.
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { trackLead, trackCallIntent } from "@/lib/analytics";
+import { trackCapturedLead, trackCallIntent } from "@/lib/analytics";
 import BookingCalendar from "@/components/BookingCalendar";
 
 const PHONE_DISPLAY = "(559) 521-3122";
@@ -72,7 +72,8 @@ export default function LeadForm() {
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
-      trackLead({ source: "immanuel_lp_form" });
+      const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
+      trackCapturedLead(result, { source: "immanuel_lp_form", cta_contract: "intake" });
       setSubmitted(true);
     } catch {
       setError(`Something went wrong. Call or text ${PHONE_DISPLAY} and I will pick it up from there.`);

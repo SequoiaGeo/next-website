@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef, FormEvent } from "react";
 import Link from "next/link";
-import { trackLead, trackEvent } from "@/lib/analytics";
+import { trackCapturedLead, trackEvent } from "@/lib/analytics";
 
 function formatCurrency(n: number) {
   if (n >= 1000000) return `$${(n / 1000000).toFixed(1)}M`;
@@ -128,7 +128,11 @@ export default function MarketingLeakCalculator() {
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
-      trackLead({ source: "marketing_leak_calculator", value: Math.round(results.annualGap) });
+      const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
+      trackCapturedLead(result, {
+        source: "marketing_leak_calculator",
+        cta_contract: "calculator",
+      });
       setCaptureDone(true);
     } catch {
       setCaptureError("failed");

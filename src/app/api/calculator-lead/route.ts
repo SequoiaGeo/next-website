@@ -1,6 +1,8 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { randomUUID } from "crypto";
 import { checkEmailLead, escapeHtml } from "@/lib/spam-protection";
+import { isSyntheticAttributionTest } from "@/lib/lead-capture-policy.mjs";
 
 function fmt(n: number) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
@@ -32,6 +34,8 @@ export async function POST(req: Request) {
     // Optional phone (the CSR calculator collects it; the marketing leak
     // calculator does not). Untrusted input: coerce, trim, cap.
     const phone = typeof body.phone === "string" ? body.phone.trim().slice(0, 30) : "";
+    const leadId = randomUUID();
+    const isSyntheticTest = isSyntheticAttributionTest({ name, email, phone });
     // Which calculator sent the lead. Sanitized to a safe slug.
     const sourceSlug =
       String(body.source || "marketing_leak_calculator")
@@ -73,15 +77,18 @@ export async function POST(req: Request) {
     // breakdown email is secondary: if the sender domain hiccups in Resend, we still
     // keep the lead. This is the fix for the silent-drop that hid broken capture.
 
-    // 1. Notify Aaron (highest priority, never lose the lead to an email/CRM hiccup)
+    // 1. Notify Aaron and record whether an internal lead record exists.
+    let notificationCaptured = false;
     try {
-      await resend.emails.send({
+      const notification = await resend.emails.send({
         from: "Sequoia GEO Site <aaron@sequoiageo.com>",
         to: "Aaron@sequoiageo.com",
-        subject: `${labels.subjectPrefix}: ${name} (gap ${gapText})`,
+        subject: `${isSyntheticTest ? "[TEST] " : ""}${labels.subjectPrefix}: ${name} (gap ${gapText})`,
         html: `
           <div style="font-family: -apple-system, sans-serif; padding: 24px; color: #1a1a1a;">
             <h2 style="margin: 0 0 16px;">${labels.emailHeading}</h2>
+            <p><strong>Lead ID:</strong> ${leadId}</p>
+            <p><strong>Record type:</strong> ${isSyntheticTest ? "Internal attribution test" : "Calculator capture"}</p>
             <p><strong>Name:</strong> ${safeName}</p>
             <p><strong>Email:</strong> ${safeEmail}</p>
             ${safePhone ? `<p><strong>Phone:</strong> <a href="tel:${phone.replace(/\D/g, "")}">${safePhone}</a></p>` : ""}
@@ -95,24 +102,36 @@ export async function POST(req: Request) {
           </div>
         `,
       });
+      if (notification?.error) {
+        console.error("[calculator-lead] Aaron notification email error:", notification.error);
+      } else {
+        notificationCaptured = true;
+      }
     } catch (err) {
       console.error("[calculator-lead] Aaron notify email failed:", err);
     }
 
-    // 2. Push to GHL (isolated, a CRM outage must not lose the lead either)
+    // 2. Push to GHL and record whether the CRM accepted the lead.
     const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;
+    let ghlCaptured = false;
     if (ghlWebhookUrl) {
       try {
         const r = await fetch(ghlWebhookUrl, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
+          signal: AbortSignal.timeout(5000),
           body: JSON.stringify({
             firstName: name.split(" ")[0],
             lastName: name.split(" ").slice(1).join(" ") || "",
             email,
             phone: phone || undefined,
-            source: labels.ghlSource,
-            tags: [labels.ghlTag, "website-lead"],
+            source: isSyntheticTest ? undefined : labels.ghlSource,
+            leadId,
+            websiteLeadId: leadId,
+            isSyntheticTest,
+            tags: isSyntheticTest
+              ? ["internal-attribution-test"]
+              : [labels.ghlTag, "website-lead"],
             customField: {
               monthly_spend: monthlySpend,
               monthly_calls: monthlyCalls,
@@ -122,9 +141,12 @@ export async function POST(req: Request) {
             },
           }),
         });
-        if (!r.ok) console.error(`[calculator-lead] GHL webhook returned ${r.status} for ${email}`);
+        ghlCaptured = r.ok;
+        if (!r.ok) {
+          console.error(`[calculator-lead] GHL webhook returned ${r.status} for lead ${leadId}`);
+        }
       } catch (err) {
-        console.error("[calculator-lead] GHL webhook error:", err);
+        console.error(`[calculator-lead] GHL webhook error for lead ${leadId}:`, err);
       }
     }
 
@@ -132,7 +154,7 @@ export async function POST(req: Request) {
     //    abort capture). Marketing leak calculator only: that form promises an
     //    emailed breakdown. The CSR calculator promises a call instead, so its
     //    leads get no automated email.
-    if (!isCsr) {
+    if (!isCsr && !isSyntheticTest) {
       try {
         await resend.emails.send({
       from: "Aaron Husak <aaron@sequoiageo.com>",
@@ -182,7 +204,11 @@ export async function POST(req: Request) {
       }
     }
 
-    return NextResponse.json({ success: true });
+    if (!notificationCaptured && !ghlCaptured) {
+      return NextResponse.json({ error: "Failed to process" }, { status: 500 });
+    }
+
+    return NextResponse.json({ success: true, captured: true, leadId, isSyntheticTest });
   } catch (err) {
     console.error("Calculator lead error:", err);
     return NextResponse.json({ error: "Failed to process" }, { status: 500 });

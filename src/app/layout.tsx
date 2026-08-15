@@ -248,7 +248,7 @@ export default function RootLayout({
 
         {/* OpenAI Ads (ChatGPT) pixel for the chatgpt-test-2026-07 campaign.
             Inert until the base snippet from the OpenAI console is pasted into
-            OaiqPixel.tsx. lead_created fires from trackLead in lib/analytics. */}
+            OaiqPixel.tsx. lead_created fires from trackCapturedLead in lib/analytics. */}
         <OaiqPixel />
 
         {/* Cookie consent banner, upgrades ad consent on acceptance */}

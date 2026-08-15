@@ -4,7 +4,8 @@
 //
 // Two conversion moments, both tagged distinctly so GA4 can tell them apart:
 //   chatgpt_lp_form  = a real captured lead (name/phone/email/company submitted),
-//                      fires trackLead (generate_lead + oaiq lead_created)
+//                      passes the accepted server response to the guarded
+//                      generate_lead + oaiq lead_created entry point
 //   chatgpt_lp_call  = a tap on the call button, which is INTENT to call, not a
 //                      completed call and not a captured lead. Fires
 //                      trackCallIntent (phone_click only) so lead counts in GA4
@@ -14,7 +15,7 @@
 // render-timestamp, server validation, Resend email + GHL webhook).
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { trackLead, trackCallIntent } from "@/lib/analytics";
+import { trackCapturedLead, trackCallIntent } from "@/lib/analytics";
 import BookingCalendar from "@/components/BookingCalendar";
 
 const PHONE_DISPLAY = "(559) 521-3122";
@@ -77,7 +78,8 @@ export default function LeadForm() {
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
-      trackLead({ source: "chatgpt_lp_form" });
+      const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
+      trackCapturedLead(result, { source: "chatgpt_lp_form", cta_contract: "intake" });
       setSubmitted(true);
     } catch {
       setError(`Something went wrong. Call or text ${PHONE_DISPLAY} and I will pick it up from there.`);

@@ -1,6 +1,8 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { randomUUID } from "crypto";
 import { checkEmailLead, escapeHtml } from "@/lib/spam-protection";
+import { isSyntheticAttributionTest } from "@/lib/lead-capture-policy.mjs";
 
 export async function POST(req: Request) {
   // Instantiate inside the handler so missing env vars don't crash the build
@@ -20,6 +22,8 @@ export async function POST(req: Request) {
     }
 
     const { name, email } = check.clean;
+    const leadId = randomUUID();
+    const isSyntheticTest = isSyntheticAttributionTest({ name, email });
     // Escape before interpolating into email HTML so lead values can't inject markup.
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
@@ -55,9 +59,8 @@ export async function POST(req: Request) {
     // with Promise.allSettled so one failing can never prevent the other from
     // being attempted. The old sequential version sent the subscriber email
     // first; if it threw, Aaron's notification never went out and the lead was
-    // lost entirely. Now the API returns ok if EITHER email landed, and any
-    // failure is logged.
-    const subscriberEmail = resend.emails.send({
+    // lost entirely. Both sends are attempted, and any failure is logged.
+    const subscriberEmail = isSyntheticTest ? Promise.resolve(null) : resend.emails.send({
       from: "Aaron Husak <aaron@sequoiageo.com>",
       to: email,
       subject: guide.subject,
@@ -95,10 +98,12 @@ export async function POST(req: Request) {
     const notificationEmail = resend.emails.send({
       from: "Sequoia GEO Site <aaron@sequoiageo.com>",
       to: "Aaron@sequoiageo.com",
-      subject: guide.notifSubject,
+      subject: `${isSyntheticTest ? "[TEST] " : ""}${guide.notifSubject}`,
       html: `
         <div style="font-family: -apple-system, sans-serif; padding: 24px; color: #1a1a1a;">
           <h2 style="margin: 0 0 16px;">New guide download</h2>
+          <p><strong>Lead ID:</strong> ${leadId}</p>
+          <p><strong>Record type:</strong> ${isSyntheticTest ? "Internal attribution test" : "Guide capture"}</p>
           <p><strong>Name:</strong> ${safeName}</p>
           <p><strong>Email:</strong> ${safeEmail}</p>
           <p><strong>Source:</strong> ${guide.notifSource}</p>
@@ -115,7 +120,8 @@ export async function POST(req: Request) {
       }
       // The Resend SDK resolves with { data, error } instead of throwing on
       // API-level errors, so a fulfilled promise still needs its error checked.
-      const apiError = (result.value as { error?: unknown } | null)?.error;
+      if (result.value === null) return false;
+      const apiError = (result.value as { error?: unknown })?.error;
       if (apiError) {
         console.error(`[guide-capture] ${labels[i]} email error:`, apiError);
         return false;
@@ -123,35 +129,43 @@ export async function POST(req: Request) {
       return true;
     });
 
-    // 3. Push contact to GHL via webhook
+    // 3. Push contact to GHL via webhook and record whether the CRM accepted it.
+    // A subscriber delivery is not an internal lead record, so the API reports
+    // capture only when Aaron's notification or the CRM webhook succeeds.
     const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;
+    let ghlCaptured = false;
     if (ghlWebhookUrl) {
-      await fetch(ghlWebhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          firstName: name.split(" ")[0],
-          lastName: name.split(" ").slice(1).join(" ") || "",
-          email,
-          source: guide.ghlSource,
-          tags: [guide.ghlTag, "website-lead"],
-        }),
-      })
-        .then((r) => {
-          if (!r.ok) console.error(`[guide-capture] GHL webhook returned ${r.status} for ${email}`);
-        })
-        .catch((err) => {
-          // Lead already emailed; log so CRM drops are visible instead of silent.
-          console.error("[guide-capture] GHL webhook error:", err);
+      try {
+        const response = await fetch(ghlWebhookUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          signal: AbortSignal.timeout(5000),
+          body: JSON.stringify({
+            firstName: name.split(" ")[0],
+            lastName: name.split(" ").slice(1).join(" ") || "",
+            email,
+            source: isSyntheticTest ? undefined : guide.ghlSource,
+            leadId,
+            websiteLeadId: leadId,
+            isSyntheticTest,
+            tags: isSyntheticTest
+              ? ["internal-attribution-test"]
+              : [guide.ghlTag, "website-lead"],
+          }),
         });
+        ghlCaptured = response.ok;
+        if (!response.ok) {
+          console.error(`[guide-capture] GHL webhook returned ${response.status} for lead ${leadId}`);
+        }
+      } catch (err) {
+        console.error(`[guide-capture] GHL webhook error for lead ${leadId}:`, err);
+      }
     }
 
-    // ok if either email landed; only a total email failure surfaces an error
-    // so the client can show the direct-contact fallback.
-    if (!landed[0] && !landed[1]) {
+    if (!landed[1] && !ghlCaptured) {
       return NextResponse.json({ error: "Failed to process" }, { status: 500 });
     }
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, captured: true, leadId, isSyntheticTest });
   } catch (err) {
     console.error("Guide capture error:", err);
     return NextResponse.json({ error: "Failed to process" }, { status: 500 });

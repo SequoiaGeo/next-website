@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef, FormEvent } from "react";
 import Link from "next/link";
-import { trackLead } from "@/lib/analytics";
+import { trackCapturedLead } from "@/lib/analytics";
 
 function formatDollar(n: number) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
@@ -132,7 +132,8 @@ export default function CSRCalculator() {
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
-      trackLead({ source: "csr_calculator", value: Math.round(results.plus5AnnualGain) });
+      const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
+      trackCapturedLead(result, { source: "csr_calculator", cta_contract: "calculator" });
       setCaptureDone(true);
     } catch {
       setCaptureError("failed");

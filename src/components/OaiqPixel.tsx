@@ -5,7 +5,7 @@ import Script from "next/script";
 // pasted verbatim minus the outer <script> tags. debug:true is deliberate for
 // launch week so event firing is visible in the browser console; flip to false
 // once the Lead created conversion verifies in the OpenAI dashboard.
-// lead_created firing lives in lib/analytics.ts (trackLead), which every lead
+// lead_created firing lives in lib/analytics.ts (trackCapturedLead), which every lead
 // capture on the site already calls.
 const OAIQ_BASE_SNIPPET = `!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"6Msga3a42xZqxa2qY1vCYy",debug:true});`;
 

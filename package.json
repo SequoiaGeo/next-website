@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "test:lead-policy": "node --test scripts/lead-reconciliation-policy.test.mjs",
-    "test:public-tracking": "node --test scripts/public-tracking-scan.test.mjs"
+    "test:public-tracking": "node --test scripts/public-tracking-scan.test.mjs",
+    "test:synthetic-lead": "node --test scripts/synthetic-lead-tracking-contract.test.mjs",
+    "test:api-compat": "node --test scripts/lead-api-compatibility.test.mjs"
   },
   "dependencies": {
     "next": "^14.2.35",

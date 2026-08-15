@@ -24,8 +24,9 @@ The Gmail notification is the submission-level archive and processing queue. Gma
 
 ## Gmail labels
 
-- `Sequoia/Website Leads`: every message with the subject pattern `New website lead` from the site notification sender.
+- `Sequoia/Website Leads`: every real or server-classified test message with the subject pattern `New website lead` from the site notification sender. This is a mixed processing queue, never a lead-count metric.
 - `Sequoia/Lead Reconciled`: applied only after every required HighLevel write succeeds, or after a server-marked synthetic test is verified and excluded.
+- `Sequoia/Synthetic Tests`: applied to every verified synthetic notification at reconciliation so QA records can be audited without weakening the completeness of the processing queue.
 
 Never mark a real lead email reconciled before the contact exists, the stale tag is removed, and the required low-cardinality tags are present.
 
@@ -102,8 +103,8 @@ The active Codex heartbeat `Operate Sequoia lead and SEO system` runs the reconc
 
 1. Search Gmail at the message level for `label:Sequoia/Website Leads -label:Sequoia/Lead Reconciled newer_than:14d`. Do not treat a reply or another message in the same thread as a lead notification.
 2. Read the text part of each candidate email and parse the record type, full lead ID, contact identity, website source, campaign tuple, landing path, AI source, and timestamp.
-3. If the subject begins `[TEST]` and the body says `Record type Internal attribution test`, verify the test record and keep it excluded from lead counts. Do not infer test status from a person's name alone.
-4. Validate every source, campaign, and AI value against the controlled vocabulary before creating tags.
+3. If the subject begins `[TEST]` and the body says `Record type Internal attribution test`, verify that the reserved QA values also match the test pattern: an internal-attribution QA name, an `example.com` address, and a `555-010x` number. If the server classification and reserved values disagree, stop and alert. For a verified synthetic record, leave the HighLevel source empty, retain only `internal-attribution-test`, remove `lsa-guide`, verify zero conversations, opportunities, and tasks, apply `Sequoia/Synthetic Tests` plus `Sequoia/Lead Reconciled`, then stop. Do not add real-lead tags or qualification status.
+4. For a real notification, validate every source, campaign, and AI value against the controlled vocabulary before creating tags.
 5. Find the HighLevel contact by exact email. If it is missing, upsert it from the notification data and add `reconciler-created`.
 6. If the HighLevel standard source field is empty or equals the known stale value `lsa-guide`, set it to the validated website source. Never overwrite another nonempty source.
 7. Add `website-lead`, `contact-form`, and `website-source-<source>`. Add `needs-qualification` only when neither `qualified-website-lead` nor `disqualified-website-lead` is already present.
@@ -129,9 +130,13 @@ The weekly scorecard counts distinct prospect companies with `qualified-website-
 
 ## Monitoring
 
+- Register `measurement_contract` as an event-scoped GA4 custom dimension before the seven-day bake. Count only `accepted-v2` events in bake analysis. Monitor unmarked `form_success` events after deployment and close the cached-client skew window only after they remain at zero for 48 hours.
 - A separate daily audit searches all lead notification messages from the last 14 days and compares them with the reconciled label. Alert when a real website lead email remains unreconciled for more than 24 hours.
 - Alert when a reconciled contact still has `lsa-guide`.
 - Alert when a reconciled real contact lacks both `qualified-website-lead` and `disqualified-website-lead` after seven days.
+- Alert when a HighLevel website-lead contact has no matching notification in the Gmail archive. A CRM webhook may succeed even when the notification channel fails.
+- Alert when the same email, phone, and source produce different lead IDs within ten minutes. The browser suppresses duplicate dispatch of one accepted lead ID, but a user retry after an unknown network outcome can create a second internal record.
+- Alert when a `[TEST]` notification lacks `Sequoia/Synthetic Tests`, or when its server classification disagrees with the reserved QA values.
 - Report zero candidates as a normal run, not a failure.
 
 ## Launch test matrix

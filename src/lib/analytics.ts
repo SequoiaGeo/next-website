@@ -3,6 +3,10 @@
 // Safe to call before gtag loads or during SSR: it no-ops instead of throwing.
 
 import { readAiAttribution } from "@/lib/ai-attribution";
+import {
+  dispatchCapturedLead,
+  type LeadCaptureResponse,
+} from "@/lib/lead-capture-policy.mjs";
 
 declare global {
   interface Window {
@@ -22,13 +26,20 @@ type LeadParams = {
 
 let lastPhoneIntentAt = 0;
 let lastCtaClickAt = 0;
+const emittedLeadIds = new Set<string>();
+
+function claimLeadForBrowserSession(leadId: string) {
+  if (emittedLeadIds.has(leadId)) return false;
+  emittedLeadIds.add(leadId);
+  return true;
+}
 
 /**
  * Fire a GA4 + Google Ads "generate_lead" conversion event.
  * Use this on every successful lead capture so both GA4 key events and
  * Google Ads conversion tracking can optimize toward real conversions.
  */
-export function trackLead({ source, value, ...rest }: LeadParams) {
+function emitLeadConversion({ source, value, ...rest }: LeadParams) {
   if (typeof window === "undefined") return;
   const aiAttribution = readAiAttribution();
   if (typeof window.gtag === "function") {
@@ -67,6 +78,14 @@ export function trackCallIntent(source: string) {
     event_category: "CTA",
     event_label: source,
     source,
+  });
+}
+
+export function trackCapturedLead(response: LeadCaptureResponse, params: LeadParams) {
+  return dispatchCapturedLead(response, params, {
+    claimLead: claimLeadForBrowserSession,
+    conversion: emitLeadConversion,
+    event: trackEvent,
   });
 }
 

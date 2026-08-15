@@ -27,9 +27,9 @@ export default function SitewideIntentTracker() {
         return;
       }
 
-      const ctaContract = href.includes("#book")
+      const ctaContract = link.hash === "#book"
         ? "schedule"
-        : href.includes("#contact")
+        : link.hash === "#contact"
           ? "intake"
           : null;
       if (!ctaContract || ctaClickWasTrackedRecently()) return;

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { trackCallIntent, trackEvent, trackLead } from "@/lib/analytics";
+import { trackCallIntent, trackCapturedLead, trackEvent } from "@/lib/analytics";
 import { readCampaignAttribution } from "@/lib/campaign-attribution";
 import { readAiAttribution } from "@/lib/ai-attribution";
 import BookingCalendar from "@/components/BookingCalendar";
@@ -64,21 +64,9 @@ export default function ContactForm() {
       });
 
       if (!res.ok) throw new Error("Submission failed");
-      const result = (await res.json().catch(() => ({}))) as { leadId?: unknown };
-      const leadId = typeof result.leadId === "string" ? result.leadId : "";
-      if (!form.website && leadId) {
-        const measurement = {
-          source: "contact_form",
-          cta_contract: "intake",
-          lead_id: leadId,
-        };
-        trackLead(measurement);
-        trackEvent("form_success", measurement);
-      } else if (!form.website) {
-        trackEvent("form_response_missing_lead_id", {
-          source: "contact_form",
-          cta_contract: "intake",
-        });
+      const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
+      if (!form.website) {
+        trackCapturedLead(result, { source: "contact_form", cta_contract: "intake" });
       }
       setSubmitted(true);
     } catch {

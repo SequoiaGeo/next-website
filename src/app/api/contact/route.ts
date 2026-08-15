@@ -2,6 +2,7 @@ import { Resend } from "resend";
 import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
 import { checkLead, escapeHtml } from "@/lib/spam-protection";
+import { isSyntheticAttributionTest } from "@/lib/lead-capture-policy.mjs";
 
 type CampaignAttribution = {
   utm_source: string;
@@ -94,18 +95,6 @@ function readAiAttribution(value: unknown): AiAttribution | null {
   };
 }
 
-function isSyntheticAttributionTest(name: string, email: string, phone: string): boolean {
-  const normalizedName = name.trim().toLowerCase();
-  const normalizedEmail = email.trim().toLowerCase();
-  const phoneDigits = phone.replace(/\D/g, "");
-
-  return (
-    normalizedName.startsWith("internal attribution qa ") &&
-    normalizedEmail.endsWith("@example.com") &&
-    phoneDigits.startsWith("555010")
-  );
-}
-
 export async function POST(req: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -138,7 +127,7 @@ export async function POST(req: Request) {
     const source = FORM_SOURCES.has(requestedSource) ? requestedSource : "contact_form";
     const campaignAttribution = readCampaignAttribution(body.campaignAttribution);
     const aiAttribution = readAiAttribution(body.aiAttribution);
-    const isSyntheticTest = isSyntheticAttributionTest(name, email, phone);
+    const isSyntheticTest = isSyntheticAttributionTest({ name, email, phone });
     // Escaped copies for safe interpolation into the notification email HTML.
     const safeName = escapeHtml(name);
     const safePhone = escapeHtml(phone);
@@ -302,7 +291,7 @@ export async function POST(req: Request) {
         });
     }
 
-    return NextResponse.json({ success: true, leadId });
+    return NextResponse.json({ success: true, captured: true, leadId, isSyntheticTest });
   } catch (err) {
     console.error("Contact form error:", err);
     return NextResponse.json({ error: "Failed to send message" }, { status: 500 });

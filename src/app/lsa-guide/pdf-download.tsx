@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { trackLead } from "@/lib/analytics";
+import { trackCapturedLead } from "@/lib/analytics";
 
 export default function PdfDownload() {
   const [submitted, setSubmitted] = useState(false);
@@ -37,7 +37,8 @@ export default function PdfDownload() {
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
-      trackLead({ source: "lsa_guide" });
+      const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
+      trackCapturedLead(result, { source: "lsa_guide", cta_contract: "download" });
       setSubmitted(true);
     } catch {
       setError("failed");
