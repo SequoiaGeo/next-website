@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef, FormEvent } from "react";
 import { trackCallIntent, trackEvent, trackLead } from "@/lib/analytics";
+import { readCampaignAttribution } from "@/lib/campaign-attribution";
+import { readAiAttribution } from "@/lib/ai-attribution";
 import BookingCalendar from "@/components/BookingCalendar";
 
 export default function ContactForm() {
@@ -54,7 +56,11 @@ export default function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          ...form,
+          campaignAttribution: readCampaignAttribution(),
+          aiAttribution: readAiAttribution(),
+        }),
       });
 
       if (!res.ok) throw new Error("Submission failed");

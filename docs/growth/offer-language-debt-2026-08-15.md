@@ -13,6 +13,8 @@ Prepared: 2026-08-15
 
 "Full picture" remains valid positioning language. Only the legacy product name "Full Picture Audit" changes. Generic editorial uses of the word audit should be reviewed in context, not replaced mechanically.
 
+The `/audit` route is intentionally a separate offer, not noun debt. It promises a hand-reviewed 12-point written audit in 3 to 5 business days plus a 45-to-60-minute walkthrough, capped at 10 completed audits per month. The Marketing Baseline Review is a 15-minute conversation. Keep those promises and actions distinct.
+
 ## August 15 pre-baseline correction
 
 The final homepage correction affects `/` only. `HowItWorks` and `WhoIsItFor` are imported only by the homepage.
@@ -37,7 +39,7 @@ Defer them until after the seven-day instrumentation window. Review them route b
 
 Priority review order:
 
-1. `/audit`, `/fractional-cmo`, `/services`, and `/geo-agency`
+1. `/fractional-cmo`, `/services`, and `/geo-agency`
 2. Shared resource and capture paths: LSA guide, calculator, and capture email copy
 3. Case studies and agency comparison pages
 4. HVAC city templates and statistics pages

@@ -39,7 +39,7 @@ const faqs = [
   {
     question: "What should SEO reporting show me?",
     answer:
-      "Calls, booked jobs, and what each cost. If a report cannot connect the work to booked revenue, it is a receipt, not a report. I ran a home services company for 13 years before I sold marketing, and that standard is the reason this practice exists.",
+      "Calls, booked jobs, and what each cost. If a report cannot connect the work to jobs booked, it is a receipt, not a report. I ran a home services company for 13 years before I sold marketing, and that standard is the reason this practice exists.",
   },
 ];
 

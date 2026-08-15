@@ -131,7 +131,7 @@ const agencies = [
     summary:
       "RYNO Strategic Solutions, formed by the 2024 merger of Blue Corona and RYNO, brings enterprise marketing infrastructure to roofing contractors. Their RYNOtrax2.0 platform integrates with ServiceTitan and 30+ ad channels to connect every lead to a booked job with full revenue attribution. Clients own their websites and all data outright. They layer CSR coaching on top of marketing to address conversion rate gaps. Their baseline investment of $5,000+/month is published on their roofing industry page.",
     strengths: [
-      "ServiceTitan integration connects marketing spend to booked revenue, not just lead counts",
+      "ServiceTitan integration connects marketing spend to jobs booked, not just lead counts",
       "Client retains full ownership of all digital assets with no platform lock-in",
       "CSR coaching alongside marketing addresses the conversion gaps that most agencies ignore",
     ],

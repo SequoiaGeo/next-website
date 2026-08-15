@@ -16,7 +16,7 @@ const heroDeliverables = [
   },
   {
     label: "What you get back",
-    desc: "A written findings report with what each problem is costing you, plus the 5 fixes with the highest ROI, in order.",
+    desc: "A written findings report with the source and confidence behind each issue, plus the 5 fixes that should come first.",
   },
   {
     label: "How fast",
@@ -52,8 +52,8 @@ const auditItems = [
     desc: "I look at calls versus booked jobs. Most agencies don't have this number. I make it unavoidable.",
   },
   {
-    title: "Average Ticket & Revenue per Lead",
-    desc: "Not just cost-per-lead, revenue per dollar spent. The number that actually matters.",
+    title: "Lead Quality & Jobs Booked",
+    desc: "Not just cost per lead. I reconcile which sources produce qualified calls and jobs booked.",
   },
   {
     title: "Google Business Profile Health",
@@ -84,11 +84,11 @@ const auditItems = [
 const deliverables = [
   {
     title: "Written findings report",
-    desc: "Every finding documented with the source, why it matters, and what it's costing you in estimated revenue.",
+    desc: "Every finding documented with the source, confidence level, why it matters, and the next action it supports.",
   },
   {
     title: "Prioritized action list",
-    desc: "Not a 47-point wishlist. The 5 things with the highest ROI, in order.",
+    desc: "Not a 47-point wishlist. The 5 actions with the strongest evidence and clearest next step, in order.",
   },
   {
     title: "A straight conversation",
@@ -195,18 +195,19 @@ export default function AuditPage() {
               What an audit found
             </h2>
             <p className="mt-4 text-base text-gray-500 leading-relaxed">
-              One plumbing company. Numbers pulled from their own accounts, published with the name removed.
+              One home service company. Numbers pulled from its own accounts, published with the name removed.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="rounded-2xl border border-gray-200 bg-white p-8">
               <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A] tabular-nums">
-                $7,783<span className="text-xl font-bold text-gray-400">/mo</span>
+                16,962
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-500">
-                What they were paying Angi every month. Tracked booked revenue coming back
-                from it: <span className="font-semibold text-[#1a1a1a]">$475</span>.
+                Conversion events reported by the ad account. The account review found only{" "}
+                <span className="font-semibold text-[#1a1a1a]">21 measured search conversions</span>{" "}
+                in the reviewed period. They were not confirmed booked jobs.
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-white p-8">

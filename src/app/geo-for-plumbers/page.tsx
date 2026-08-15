@@ -98,7 +98,7 @@ export default function GeoForPlumbersPage() {
               <span className="text-[#1A5C3A]">AI Recommends</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              When a homeowner asks ChatGPT, Perplexity, Gemini, or Google's AI Overview who to call
+              When a homeowner asks ChatGPT, Perplexity, Gemini, or Google&apos;s AI Overview who to call
               for a plumber, a few company names come back. GEO (Generative Engine Optimization) is
               the work that makes yours one of them. We make plumbing companies visible and
               recommendable in AI search, not just ranked on a list of links.

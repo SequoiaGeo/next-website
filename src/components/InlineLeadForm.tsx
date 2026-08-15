@@ -8,6 +8,8 @@
 
 import { useState, useEffect, useRef, FormEvent } from "react";
 import { trackCallIntent, trackCtaIntent, trackEvent, trackLead } from "@/lib/analytics";
+import { readCampaignAttribution } from "@/lib/campaign-attribution";
+import { readAiAttribution } from "@/lib/ai-attribution";
 
 type Props = {
   source: string; // e.g. "hvac_seo_page", lands in GA4 lead_source + the lead email
@@ -72,6 +74,8 @@ export default function InlineLeadForm({
         body: JSON.stringify({
           ...form,
           source,
+          campaignAttribution: readCampaignAttribution(),
+          aiAttribution: readAiAttribution(),
         }),
       });
       if (!res.ok) throw new Error("Submission failed");

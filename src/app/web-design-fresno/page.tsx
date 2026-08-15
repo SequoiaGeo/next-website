@@ -106,7 +106,7 @@ export default function WebDesignFresnoPage() {
             Fresno Website Designer That Builds for Google Rankings and Actual Revenue
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            A website that looks good but does not rank is a brochure. We build Fresno business websites that are fast, mobile-first, and structured to show up when local customers are searching. Then we track what the site produces in leads, calls, and booked revenue.
+            A website that looks good but does not rank is a brochure. We build Fresno business websites that are fast, mobile-first, and structured to show up when local customers are searching. Then we track what the site produces in leads, calls, and jobs booked.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -246,7 +246,7 @@ export default function WebDesignFresnoPage() {
                 We Built a Website That Drove 4x Inc 5000 Growth, Now We Build Yours
               </h2>
               <p className="text-gray-600 mb-4">
-                Sequoia GEO was founded by Aaron Husak after running a home services company from the ground up to 4x Inc 5000 status. We built and rebuilt that company's digital presence through every growth stage, and learned what separates a website that generates pipeline from one that just takes up a domain.
+                Sequoia GEO was founded by Aaron Husak after running a home services company from the ground up to 4x Inc 5000 status. We built and rebuilt that company&apos;s digital presence through every growth stage, and learned what separates a website that generates pipeline from one that just takes up a domain.
               </p>
               <p className="text-gray-600 mb-4">
                 The lesson: a website is not a marketing channel on its own. It is the destination that makes every other channel work. A weak website makes your Google Ads more expensive, your SEO harder, and your word-of-mouth referrals less likely to convert.

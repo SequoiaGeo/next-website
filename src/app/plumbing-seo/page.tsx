@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "How do I evaluate whether my current plumbing SEO is working?",
     answer:
-      "Count phone calls and booked jobs from organic search. Not rankings, not impressions, not traffic. The plumbing company I audited was spending $7,783 a month on Angi leads that returned $475 in booked revenue, and the owner received a marketing report every month. The reports looked fine. Nobody had connected spend to jobs. If your provider cannot draw a straight line from their invoice to your dispatch board, that is the finding.",
+      "Count phone calls and booked jobs from organic search. Not rankings, not impressions, not traffic. The plumbing company I audited was spending $7,783 a month on Angi at a cost of $865 per booked job, and the owner received a marketing report every month. The reports looked fine. Nobody had connected spend to jobs. If your provider cannot draw a straight line from their invoice to your dispatch board, that is the finding.",
   },
   {
     question: "What is the difference between plumbing SEO and general SEO?",
@@ -84,8 +84,8 @@ export default function PlumbingSeoPage() {
               <span className="text-[#1A5C3A]">the Full Revenue Picture</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Your agency sees leads. I see why $7,783 a month in Angi leads returned $475 in
-              booked revenue. I held California&rsquo;s C-36 Plumbing license while running my own company.
+              Your agency sees leads. I see why $7,783 a month in Angi leads cost $865 per
+              booked job. I held California&rsquo;s C-36 Plumbing license while running my own company.
               I know your business from the inside. Want to be the plumber{" "}
               <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
                 AI tools recommend
@@ -122,7 +122,7 @@ export default function PlumbingSeoPage() {
                 {
                   finding: "$7,783 a month on Angi leads",
                   result:
-                    "It returned $475 in booked revenue. The vendor managing it never connected lead spend to jobs booked, and the monthly reports never surfaced it.",
+                    "The reconciled cost was $865 per booked job. The vendor managing it never connected lead spend to jobs booked, and the monthly reports never surfaced it.",
                 },
                 {
                   finding: "131 of 4,009 tracked calls were new customers",

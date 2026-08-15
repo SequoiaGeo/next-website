@@ -134,7 +134,7 @@ export default function LsaManagementPage() {
                 body: "Google's radius defaults are often wrong. If your LSA profile covers towns your trucks can't reach profitably, you're paying for leads you'll never close.",
               },
               {
-                title: "No connection to booked revenue",
+                title: "No connection to jobs booked",
                 body: "LSA reports cost per lead. That number is meaningless without knowing how many of those leads your CSR team actually converted into scheduled jobs.",
               },
             ].map((item) => (
@@ -248,7 +248,7 @@ export default function LsaManagementPage() {
               <p>
                 Before Sequoia GEO, I ran Balanced Comfort Heating &amp; Air for over a decade and grew it to 130+
                 employees and four consecutive Inc. 5000 appearances. I managed Google LSAs as a
-                business owner, not as an agency account manager. Building relationships with the right lead channels while tracking each one to booked revenue is what that experience taught me.
+                business owner, not as an agency account manager. Building relationships with the right lead channels while tracking each one to jobs booked is what that experience taught me.
               </p>
               <p>
                 That means I know that a no-heat call in January booked same day is worth five times
@@ -296,7 +296,7 @@ export default function LsaManagementPage() {
               "Contractors who got their LSA profile limited or suspended",
               "Plumbing and electrical companies entering LSA for the first time",
               "Multi-location operators needing separate LSA profiles managed consistently",
-              "Companies whose current agency isn't tracking leads to booked revenue",
+              "Companies whose current agency isn't tracking leads to jobs booked",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 rounded-xl border border-gray-100 bg-[#fafaf8] p-4">
                 <span className="mt-0.5 flex-shrink-0 h-5 w-5 rounded-full bg-[#3A9E6A] flex items-center justify-center">

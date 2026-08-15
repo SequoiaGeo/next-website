@@ -3,14 +3,14 @@ import React from "react";
 export default function FullPicture() {
   const findings = [
     {
-      amount: "$7,783/mo",
-      label: "on Angi leads",
-      result: "Less than $2,000 in booked revenue. The agency managing it never connected lead spend to actual jobs.",
+      amount: "$865",
+      label: "per booked Angi job",
+      result: "The trade-level picture differed. Plumbing performed better than HVAC, but the reporting had not separated the two.",
     },
     {
       amount: "16,962",
       label: "reported conversions",
-      result: "Reality: 22 booked jobs. Three of five conversion goals were misconfigured: page views counted as conversions. The report showed green. Revenue didn't move.",
+      result: "The review found 21 measured search conversions in the period, not confirmed booked jobs. Three of five conversion goals were misconfigured, including page views counted as conversions.",
     },
     {
       amount: "265 pages",

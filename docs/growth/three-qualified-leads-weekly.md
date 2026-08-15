@@ -38,6 +38,8 @@ GA4 is a diagnostic source, not the sole lead ledger. Browser privacy tools can 
 
 Reconcile accepted form IDs between notification email and HighLevel. Compare GA4 by aggregate count and timestamp because `lead_id` is intentionally not registered as a high-cardinality GA4 custom dimension. An ID-level GA4 join would require BigQuery export and is not part of the initial weekly process.
 
+Campaign and AI-referral fields in the accepted-form email and HighLevel payload are the lead-level attribution record. Campaign attribution is first tagged touch within the same browser tab, so it reports a floor. GA4 native session attribution uses different rules and is a directional cross-check, not an ID-level source of truth. A later branded search, direct return, copied link, or new in-app browser can lose the first-touch tag.
+
 ## Funnel math
 
 | Qualified visit-to-lead rate | Qualified visits required per week |

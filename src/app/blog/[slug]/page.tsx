@@ -267,7 +267,7 @@ const posts: Record<string, Post> = {
   "what-we-find-inside-contractor-marketing-accounts": {
     title: "What We Find Inside Contractor Marketing Accounts",
     description:
-      "Six findings from real 2026 audits of contractor marketing accounts: 16,962 conversions that never happened, website traffic that was 71 percent bots, a Google Guaranteed account that could not deliver a call, and the three questions that would have caught all of it.",
+      "Six findings from real 2026 audits of contractor marketing accounts: 16,962 conversion events that were not leads, website traffic that was 71 percent bots, a Google Guaranteed account that could not deliver a call, and the three questions that would have caught all of it.",
     date: "July 2026",
     dateISO: "2026-07-08",
     readTime: "5 min read",
@@ -283,7 +283,7 @@ const posts: Record<string, Post> = {
           Here is what this year&rsquo;s audits actually turned up. Names removed, numbers real.
         </p>
 
-        <h2>16,962 conversions that never happened</h2>
+        <h2>16,962 conversion events that were not leads</h2>
         <p>
           A Midwest HVAC and plumbing company was spending close to $20,000 a month across two agencies
           and a stack of lead platforms. Their Google Ads account reported thousands of conversions. It
@@ -302,12 +302,12 @@ const posts: Record<string, Post> = {
           Nobody inside the company knew, because the report the agency sent every month was built on the
           inflated number. The dashboard was not lying, exactly. It was just measuring applause instead of
           revenue. That account&rsquo;s full breakdown is{" "}
-          <a
+          <Link
             href="/blog/three-agencies-one-report"
             className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors"
           >
             its own story
-          </a>
+          </Link>
           .
         </p>
 
@@ -340,20 +340,20 @@ const posts: Record<string, Post> = {
         <p>
           This one took a fifty-minute call with Google to unwind. The fix was not clever. Someone just
           had to look. We have found{" "}
-          <a
+          <Link
             href="/blog/dead-phone-number-lsa"
             className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors"
           >
             broken phone numbers in live LSA campaigns
-          </a>{" "}
+          </Link>{" "}
           more than once, which is why calling the number is the first check in every LSA audit we run.
         </p>
 
-        <h2>$7,783 a month into a lead platform returning $475</h2>
+        <h2>$865 per booked job from a lead platform</h2>
         <p>
           The Midwest company again. One line item: $7,783 a month going to a home-services lead
-          marketplace. We matched the leads against booked revenue using their own call reports. The
-          return was about $475 a month.
+          marketplace. We matched the leads against jobs booked using their own call reports. The
+          cost was $865 per booked job.
         </p>
         <p>
           Not every lead platform is a scam. Their plumbing leads actually penciled. But nobody had ever
@@ -1969,7 +1969,7 @@ const posts: Record<string, Post> = {
   "best-plumbing-seo-keywords": {
     title: "Plumbing SEO Keywords That Book Jobs (2026)",
     description:
-      "Most plumbing SEO campaigns target the wrong keywords. Here is the keyword framework built over 13 years running a home services company, organized by search intent and tied to booked revenue.",
+      "Most plumbing SEO campaigns target the wrong keywords. Here is the keyword framework built over 13 years running a home services company, organized by search intent and tied to calls and jobs booked.",
     date: "April 2026",
     dateISO: "2026-04-18",
     readTime: "14 min read",
@@ -5086,7 +5086,7 @@ const posts: Record<string, Post> = {
   "three-agencies-one-report": {
     title: "Three Agencies. All Reporting Green. Here&rsquo;s What We Actually Found.",
     description:
-      "A contractor was spending $20,000 a month across three marketing vendors. Every monthly report showed strong performance. 16,962 tracked conversions. 21 actual phone calls. Here's what the gap looked like.",
+      "A contractor was spending $20,000 a month across three marketing vendors. Every monthly report showed strong performance. 16,962 tracked conversion events. The review found 21 measured search conversions, not confirmed booked jobs.",
     date: "April 2026",
     dateISO: "2026-04-07",
     readTime: "8 min read",
@@ -5102,21 +5102,20 @@ const posts: Record<string, Post> = {
           When we got into the accounts, here&rsquo;s what we found.
         </p>
         <p>
-          16,962 tracked conversions. 21 were actual phone calls.
+          16,962 tracked conversion events. The account review found 21 measured search conversions in the
+          reviewed period. Those were potential leads, not confirmed booked jobs.
         </p>
 
         <h2>What Those Numbers Mean</h2>
         <p>
-          The remaining 16,941 &ldquo;conversions&rdquo; were things like someone clicking a button on the
-          website, someone visiting two pages in a row, someone scrolling past 50% of a page. These counted
-          as conversions in the dashboards. They went into the reports. The reports showed strong numbers.
+          Three of five conversion goals were misconfigured. One counted a page view as a conversion, so
+          someone could load a page and appear in the reports as a result. The reports showed strong numbers.
           Nobody asked what a conversion actually was.
         </p>
         <p>
-          This is not an edge case. This is how most home service marketing accounts are configured. The
-          default GA4 setup counts engagement events as conversions unless someone deliberately builds it
-          differently. Most agencies do not rebuild it. The standard setup produces impressive-looking
-          numbers. Impressive numbers justify the invoice.
+          The problem was not Google Ads inventing results. The account had been configured to treat a page
+          view as a conversion, and that event flowed into the reporting. A dashboard can be numerically
+          accurate while the definition underneath the number is wrong.
         </p>
 
         <h2>The Angi Problem</h2>

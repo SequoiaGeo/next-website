@@ -11,7 +11,7 @@ const deliverables = [
     step: "02",
     title: "Complete audit with real findings",
     description:
-      "Every channel audited against one metric: what is it actually producing in booked revenue? Not clicks. Not leads. Jobs.",
+      "Every channel audited against the outcomes that matter: qualified leads, jobs booked, and the cost of each one.",
   },
   {
     step: "03",

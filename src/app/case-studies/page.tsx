@@ -428,11 +428,12 @@ export default function CaseStudiesPage() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1a1a1a]">Google Ads: 22 actual booked jobs</p>
+                  <p className="text-sm font-semibold text-[#1a1a1a]">Google Ads: 21 measured search conversions</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
-                    The Google Ads agency reported 16,962 conversions. Reality: 22 booked jobs. Three of five
-                    conversion goals were misconfigured, page views and scroll events were counting as
-                    conversions. Every report showed green. The agency had no idea what a booked job actually
+                    The Google Ads agency reported 16,962 conversion events. The account review found 21
+                    measured search conversions in the reviewed period, not confirmed booked jobs. Three of five
+                    conversion goals were misconfigured, including a page view counted as a conversion.
+                    Every report showed green. The agency had no idea what a booked job actually
                     cost because they were never connected to dispatch data. The client had no reason to
                     question it because the numbers looked good on paper.
                   </p>
@@ -448,11 +449,10 @@ export default function CaseStudiesPage() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1a1a1a]">Angi producing less than $2,000 in booked revenue</p>
+                  <p className="text-sm font-semibold text-[#1a1a1a]">Angi costing $865 per booked job</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
-                    The Angi rep was collecting $7,783 per month. The actual jobs booked from those leads
-                    were producing less than $2,000 in revenue. Nobody had ever connected the Angi spend
-                    to dispatch data to calculate the real cost per booked job. The agency managing ads
+                    The company was spending $7,783 per month. When the calls were reconciled to jobs booked,
+                    the cost was $865 per booked job. Nobody had separated the result by trade. The agency managing ads
                     didn&rsquo;t look at Angi. The Angi rep wasn&rsquo;t going to flag it. The client
                     assumed that if leads were coming in, something was working.
                   </p>

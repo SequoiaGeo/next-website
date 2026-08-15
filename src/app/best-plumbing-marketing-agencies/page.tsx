@@ -108,7 +108,7 @@ const agencies = [
     strengths: [
       "Full-funnel approach: marketing plus CSR coaching plus revenue attribution in one partner",
       "Client owns their website and all digital assets with no platform lock-in",
-      "Deep ServiceTitan integration connects ad spend to booked revenue",
+      "Deep ServiceTitan integration connects ad spend to jobs booked",
     ],
     considerations: [
       "Scale of the combined agency may mean less personalized attention for single-location operators",
@@ -226,7 +226,7 @@ const agencies = [
 const howToChoose = [
   { tier: "Under $1M revenue", rec: "Look at Built-Right Digital (transparent pricing, lower entry point) or Strictly Plumbers (plumbing-only with operational coaching). Avoid agencies with $5K+/month minimums until the revenue supports the investment." },
   { tier: "$1M to $5M revenue", rec: "Hook Agency, Rival Digital, and Plumbing & HVAC SEO are all solid options with documented contractor track records. Sequoia GEO is worth a conversation if you are actively trying to scale and want an operator-perspective partner, not just a vendor." },
-  { tier: "$5M to $15M revenue", rec: "At this scale, attribution becomes critical. RYNO's ServiceTitan integration and CSR coaching layer make sense if you need to connect marketing spend to booked revenue, not just lead counts. Sequoia GEO fills a similar gap if you want a principal-level relationship rather than account managers." },
+  { tier: "$5M to $15M revenue", rec: "At this scale, attribution becomes critical. RYNO's ServiceTitan integration and CSR coaching layer make sense if you need to connect marketing spend to jobs booked, not just lead counts. Sequoia GEO fills a similar gap if you want a principal-level relationship rather than account managers." },
   { tier: "$15M+ or multi-location", rec: "Scorpion and RYNO are the natural fits at this scale. The technology infrastructure and team depth they offer matches the operational complexity of a large multi-location plumbing operation." },
 ];
 

@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "Is Angi worth it for plumbers?",
     answer:
-      "It can be, if the spend is tracked to booked revenue. The company in my audit was paying $7,783 a month and booking $475, and nobody knew until we tied the call log to the invoice. The platform did not hide anything. The tracking was never built. Whatever lead source you buy, buy the tracking first.",
+      "It can be, if the spend is tracked to jobs booked. The company in my audit was paying $7,783 a month at a cost of $865 per booked job, and nobody knew until we tied the call log to the invoice. The platform did not hide anything. The tracking was never built. Whatever lead source you buy, buy the tracking first.",
   },
   {
     question: "How many leads should Local Services Ads produce for a plumber?",
@@ -100,7 +100,7 @@ export default function PlumberMarketingBudgetPage() {
             <p className="text-base leading-relaxed text-gray-600">
               Percent-of-revenue budgeting assumes the dollars inside the budget work.
               Often they do not, and nobody notices. One plumbing company I audited paid
-              Angi $7,783 in a single month. Tracked booked revenue from that spend: $475.
+              Angi $7,783 in a single month. The reconciled cost was $865 per booked job.
               The same audit tracked 4,009 calls. 131 of them were new customers. The rest
               were not.
             </p>
@@ -114,8 +114,8 @@ export default function PlumberMarketingBudgetPage() {
             </p>
             <p className="text-base leading-relaxed text-gray-600">
               This is the cautionary number I want stuck in your head when a rep quotes you
-              a per-lead price: the price of the lead tells you nothing. The booked revenue
-              behind it tells you everything.
+              a per-lead price: the price of the lead tells you nothing. Jobs booked and the
+              cost per booked job tell you whether the source worked.
             </p>
           </div>
         </div>

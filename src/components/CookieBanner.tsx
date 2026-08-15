@@ -4,16 +4,24 @@ import Link from "next/link";
 
 const CONSENT_KEY = "cookie_consent";
 
+type ClarityFunction = ((...args: unknown[]) => void) & { q?: unknown[][] };
+
+declare global {
+  interface Window {
+    clarity?: ClarityFunction;
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 function loadClarity(id: string) {
-  const w = window as any;
-  if (typeof window === "undefined" || w.clarity) return;
+  if (typeof window === "undefined" || window.clarity) return;
   // Define the clarity() queue function BEFORE loading the tag. The tag script
   // calls window.clarity(...) on execution and does nothing if it is undefined.
-  w.clarity =
-    w.clarity ||
-    function (...args: unknown[]) {
-      (w.clarity.q = w.clarity.q || []).push(args);
-    };
+  const clarity: ClarityFunction = (...args: unknown[]) => {
+    clarity.q = clarity.q || [];
+    clarity.q.push(args);
+  };
+  window.clarity = clarity;
   const s = document.createElement("script");
   s.async = true;
   s.src = `https://www.clarity.ms/tag/${id}`;
@@ -27,8 +35,8 @@ export function hasAnalyticsConsent(): boolean {
 }
 
 export function grantConsent(clarityId?: string) {
-  if (typeof (window as any).gtag === "function") {
-    (window as any).gtag("consent", "update", {
+  if (typeof window.gtag === "function") {
+    window.gtag("consent", "update", {
       analytics_storage: "granted",
       ad_storage: "denied",
       ad_user_data: "denied",
@@ -49,7 +57,8 @@ export default function CookieBanner({ clarityId }: { clarityId?: string }) {
       grantConsent(clarityId);
     } else if (stored === null) {
       // First visit, show banner
-      setVisible(true);
+      const timer = window.setTimeout(() => setVisible(true), 0);
+      return () => window.clearTimeout(timer);
     }
     // "declined" → do nothing; GA4 stays in consent-denied mode
   }, [clarityId]);

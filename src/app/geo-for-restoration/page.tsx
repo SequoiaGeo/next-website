@@ -98,7 +98,7 @@ export default function GeoForRestorationPage() {
               <span className="text-[#1A5C3A]">AI Recommends in a Crisis</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              When a property owner asks ChatGPT, Perplexity, Gemini, or Google's AI Overview who to
+              When a property owner asks ChatGPT, Perplexity, Gemini, or Google&apos;s AI Overview who to
               call for water, fire, or mold damage, a few company names come back. GEO (Generative
               Engine Optimization) is the work that makes yours one of them. We make restoration
               companies visible and recommendable in AI search, not just ranked on a list of links.

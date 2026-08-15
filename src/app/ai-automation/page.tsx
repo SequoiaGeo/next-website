@@ -233,7 +233,7 @@ export default function AiAutomationPage() {
               },
               {
                 q: "What makes AI automation worth the investment for a home service company?",
-                a: "The financial case is straightforward: recovered missed calls, re-engaged unsold estimates, and consistent online review generation each have direct revenue impact that is measurable. If your company misses 20 calls per week and converts even 15% of the follow-up texts, that is 3 additional booked jobs per week from leads you were already paying to generate. Unsold estimate recovery routinely adds 5 to 15% to booked revenue with no additional marketing spend. Review generation improves your local search ranking and your conversion rate from every channel. The marketing ROI on automation compounds, every system runs indefinitely once it is built.",
+                a: "The case is measurable: recovered missed calls, re-engaged unsold estimates, and consistent review requests can all be tracked to calls and jobs booked. Missed-call follow-up and unsold-estimate recovery work opportunities you already paid to generate. Review requests can strengthen the public proof customers see. Each workflow should be judged on accepted leads and jobs booked, not whether the automation ran.",
               },
               {
                 q: "Do I need a large team to make this work?",

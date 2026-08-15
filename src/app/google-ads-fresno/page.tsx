@@ -72,7 +72,7 @@ export default function GoogleAdsFresnoPage() {
                 "name": "What makes your Google Ads management different?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We built and scaled a home services company to 4x Inc 5000 status. That means we understand what a real lead looks like and what it costs to close one. We tie our campaigns to booked revenue, not just form fills or phone calls. If a campaign is not producing closed jobs, we treat it as a failure regardless of impressions or CTR."
+                  "text": "We built and scaled a home services company to 4x Inc 5000 status. That means we understand what a real lead looks like and what it costs to close one. We tie our campaigns to qualified leads and jobs booked, not just form fills or phone calls. If a campaign is not producing closed jobs, we treat it as a failure regardless of impressions or CTR."
                 }
               },
               {
