@@ -14,7 +14,7 @@ Sequoia GEO received 120 organic clicks in the 28 days from July 17 through Augu
 
 At a 3% qualified visit-to-lead rate, 30 visits produce approximately 0.9 qualified leads per week. Reaching three qualified leads per week at the same conversion rate requires approximately 100 qualified visits per week, or 3.3 times the current organic click volume. At a 2% rate, the requirement is 150 qualified visits per week.
 
-SEO is a core growth channel, but it is unlikely to create the entire additional traffic requirement within 30 days. The first month therefore combines controlled SEO improvements with founder-led distribution, referral traffic, and verified account-based outreach.
+SEO is a core growth channel, but it is unlikely to create the entire additional traffic requirement within 30 days. The first month therefore combines controlled SEO improvements with founder-led distribution, referral traffic, and evidence-led account-based outreach.
 
 The 15-minute Marketing Baseline Review remains the live website entry offer. The separate 12-point audit campaign is ready for the Monday, August 17 launch under the verified Gmail-to-HighLevel reconciliation control. Native HighLevel custom fields and submission notes remain a permanent repair item, but the temporary production matrix now protects attribution and qualification without triggering messages or opportunities.
 
@@ -22,12 +22,14 @@ The 15-minute Marketing Baseline Review remains the live website entry offer. Th
 
 These are planning targets, not forecasts.
 
+The table is a day-60 allocation to validate, not evidence that the traffic already exists. Monday's social post and the first 25-company call batch are channel tests inside the plan. They cannot establish a three-lead weekly system by themselves. Replace each target with observed qualified visits and qualified leads every Monday, and do not treat the total as closed until the source rows are supported by four consecutive weeks of evidence.
+
 | Weekly source | Qualified visits | Purpose |
 |---|---:|---|
 | Organic search | 60 to 80 | Compound existing roofing, plumbing, HVAC, local SEO, and AI visibility demand |
 | Founder-led social | 20 to 30 | Convert Aaron's proven data-led posts into attributable site visits |
 | Referral, AI, and partner traffic | 10 to 20 | Capture recommendation-driven prospects and professional referrals |
-| Verified account-based outreach | 10 to 20 | Send high-fit businesses to a relevant proof or diagnostic page |
+| Evidence-led account-based outreach | 10 to 20 | Send high-fit businesses to a relevant proof or diagnostic page |
 | Total | 100 to 150 | Support three qualified leads per week at a 2% to 3% rate |
 
 Do not count bots, internal traffic, job seekers, vendors, or unrelated consumers as qualified visits.
@@ -60,18 +62,20 @@ Create two derivative posts from each anchor post. One should explain the diagno
 
 Each week, choose one post that can naturally send a reader to a relevant Sequoia GEO page. Use a campaign-tagged link with `utm_source`, `utm_medium`, and `utm_campaign`. Do not force an external link into every post. When the link would weaken the post, place it in Aaron's profile or a clearly labeled first comment and measure both the post and landing page.
 
-### Verified account-based traffic
+### Evidence-led account-based traffic
 
-Research 25 high-fit companies per week. Contact only companies where Sequoia GEO can verify one meaningful public issue, such as conflicting entity data, an untracked conversion path, a missing location record, a weak AI recommendation footprint, or a high-impression page with poor search capture.
+Research 25 high-fit companies per week. Contact only companies where Sequoia GEO can verify one relevant public signal or frame one consequential uncertainty honestly, such as conflicting entity data, a conversion path whose booked-job reporting cannot be verified publicly, a missing location record, a weak AI recommendation footprint, or a high-impression page with poor search capture.
 
 Every message must:
 
-1. Describe the verified issue without overstating certainty.
+1. Describe the verified public signal or unresolved question without overstating certainty.
 2. Explain the business consequence.
 3. Link to one relevant Sequoia GEO proof, diagnostic, or offer page with campaign tags.
 4. Invite a baseline review or a 15-minute conversation with Aaron.
 
 Do not use unverified conversion-tracking claims as a cold-call opener.
+
+The first 25-company implementation is documented in `docs/growth/tracking-question-outreach-first-25-2026-08-15.md`. It uses the separate `tracking_question_outreach_august` campaign and the exact tuple `direct_outreach / phone / tracking_question_outreach_august / tracking_question`. Aaron's already-open callbacks use `direct_outreach / phone / warm_pipeline_followup_august / promised_followup`. Keep cold outreach, warm follow-up, and `public_surface_audit_august` separate so each can be evaluated independently.
 
 ### Search and AI visibility
 
@@ -115,8 +119,8 @@ Repeat the desktop trade-page to contact to calendar walkthrough after each SEO 
 
 | Week | Work | Release condition |
 |---|---|---|
-| Week 1 | Deploy measurement, verify accepted form IDs, completed bookings, and call attribution. Record seven complete days of page-level behavior. Prepare first anchor post and 25-account research set. | No form success without a lead ID. HighLevel can distinguish qualified and disqualified inquiries. |
-| Week 2 | Publish the plumbing service-page refresh on August 23 and request recrawl. Preserve the comparison page. Publish one anchor post and two derivatives. Begin verified outreach. | Measurement gate remains healthy. The plumbing treatment and its internal links match the registered brief. |
+| Week 1 | Deploy measurement, verify accepted form IDs, completed bookings, and call attribution. Record seven complete days of page-level behavior. Prepare first anchor post and 25-account evidence-led research set. | No form success without a lead ID. HighLevel can distinguish qualified and disqualified inquiries. |
+| Week 2 | Publish the plumbing service-page refresh on August 23 and request recrawl. Preserve the comparison page. Publish one anchor post and two derivatives. Begin evidence-led outreach. | Measurement gate remains healthy. The plumbing treatment and its internal links match the registered brief. |
 | Week 3 | Publish the roofing service-page refresh on August 30 and request recrawl. Review landing-page and Clarity behavior. Publish the next anchor post and an anonymized diagnostic. Continue outreach. | The roofing snippet and SERP-fit review is complete, and HVAC content and inbound links remain unchanged. |
 | Week 4 | Compare channel visits, captured leads, qualified leads, and held meetings. Complete the industry demand packet. Decide whether to create a multi-location healthcare test page. | Decision uses fresh Keyword Planner data, Search Console, SERP evidence, offer fit, and proof. |
 
@@ -154,5 +158,7 @@ Repeat the desktop trade-page to contact to calendar walkthrough after each SEO 
 - Sequoia GEO HighLevel account, contacts and opportunities, previous 28 days, read August 15, 2026.
 - `docs/growth/search-console-buyer-intent-classification-2026-08-15.md`, based on the visible top 50 Search Console query rows for July 17 through August 13, 2026.
 - `docs/growth/search-console-page-query-map-2026-08-15.md`, based on in-account page filters, query filters, device filters, and URL Inspection on August 15, 2026.
+- `docs/growth/public-tracking-first-25-2026-08-15.json` and `docs/growth/public-tracking-first-25-2026-08-15.md`, based on public website and container scans on August 15, 2026.
+- `docs/growth/tracking-question-outreach-first-25-2026-08-15.md`, the claim-safe caller handoff and campaign registration for the first 25-company set.
 - Google Search Central guidance: creating helpful, reliable, people-first content; title links; snippets; and AI features and the website.
 - Grok trends review, August 15, 2026. X was used to discover tactics, not to establish performance claims. The useful hypotheses were page-two refreshes, extractable answer blocks, first-party information gain, and a fixed-prompt AI citation diagnostic.

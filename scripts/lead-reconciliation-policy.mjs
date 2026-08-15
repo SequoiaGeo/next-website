@@ -35,6 +35,8 @@ const TERMINAL_QUALIFICATION_TAGS = new Set([
 ]);
 
 const PUBLIC_SURFACE_CAMPAIGN = "public_surface_audit_august";
+const TRACKING_QUESTION_CAMPAIGN = "tracking_question_outreach_august";
+const WARM_PIPELINE_CAMPAIGN = "warm_pipeline_followup_august";
 
 function clean(value) {
   return String(value || "").trim().toLowerCase();
@@ -75,9 +77,29 @@ export function classifyLeadAttribution(input, existingTags = [], existingSource
       utmContent === "first_comment" &&
       campaignLandingPath === "/audit";
 
+    const registeredTrackingQuestionTuple =
+      utmSource === "direct_outreach" &&
+      utmMedium === "phone" &&
+      utmCampaign === TRACKING_QUESTION_CAMPAIGN &&
+      utmContent === "tracking_question" &&
+      campaignLandingPath === "/audit";
+
+    const registeredWarmPipelineTuple =
+      utmSource === "direct_outreach" &&
+      utmMedium === "phone" &&
+      utmCampaign === WARM_PIPELINE_CAMPAIGN &&
+      utmContent === "promised_followup" &&
+      campaignLandingPath === "/audit";
+
     if (registeredPublicSurfaceTuple) {
       tags.add(`campaign-${PUBLIC_SURFACE_CAMPAIGN.replaceAll("_", "-")}`);
       tags.add(`channel-${utmSource}`);
+    } else if (registeredTrackingQuestionTuple) {
+      tags.add(`campaign-${TRACKING_QUESTION_CAMPAIGN.replaceAll("_", "-")}`);
+      tags.add("channel-direct-outreach");
+    } else if (registeredWarmPipelineTuple) {
+      tags.add(`campaign-${WARM_PIPELINE_CAMPAIGN.replaceAll("_", "-")}`);
+      tags.add("channel-direct-outreach");
     } else {
       unclassified = true;
     }
@@ -115,5 +137,7 @@ export function classifyLeadAttribution(input, existingTags = [], existingSource
 export const reconciliationVocabulary = {
   aiEngines: Array.from(AI_ENGINES),
   publicSurfaceCampaign: PUBLIC_SURFACE_CAMPAIGN,
+  trackingQuestionCampaign: TRACKING_QUESTION_CAMPAIGN,
+  warmPipelineCampaign: WARM_PIPELINE_CAMPAIGN,
   websiteSources: Array.from(WEBSITE_SOURCES),
 };

@@ -64,6 +64,30 @@ The reconciler accepts only the same source values that the contact API allows:
 | UTM content | `first_comment` |
 | Landing path | `/audit` |
 
+### Current tracking-question outreach campaign
+
+| Field | Accepted value |
+|---|---|
+| UTM source | `direct_outreach` |
+| UTM medium | `phone` |
+| UTM campaign | `tracking_question_outreach_august` |
+| UTM content | `tracking_question` |
+| Landing path | `/audit` |
+
+This tuple is separate from the social public-surface campaign. Add `campaign-tracking-question-outreach-august` and `channel-direct-outreach` only when the full tuple passes validation. The caller-created prospect contact is not a website lead. A later accepted `/audit` form is the website lead and remains `needs-qualification` until Aaron records a terminal qualification tag.
+
+### Current warm-pipeline follow-up campaign
+
+| Field | Accepted value |
+|---|---|
+| UTM source | `direct_outreach` |
+| UTM medium | `phone` |
+| UTM campaign | `warm_pipeline_followup_august` |
+| UTM content | `promised_followup` |
+| Landing path | `/audit` |
+
+This tuple keeps Aaron's already-open conversations separate from Jose's cold batch. Add `campaign-warm-pipeline-followup-august` and `channel-direct-outreach` only when the full tuple passes validation.
+
 ### AI source
 
 Accepted AI engines are `chatgpt`, `google_aio`, `gemini`, `perplexity`, `claude`, `copilot`, and `you`.
@@ -83,7 +107,7 @@ The active Codex heartbeat `Operate Sequoia lead and SEO system` runs the reconc
 5. Find the HighLevel contact by exact email. If it is missing, upsert it from the notification data and add `reconciler-created`.
 6. If the HighLevel standard source field is empty or equals the known stale value `lsa-guide`, set it to the validated website source. Never overwrite another nonempty source.
 7. Add `website-lead`, `contact-form`, and `website-source-<source>`. Add `needs-qualification` only when neither `qualified-website-lead` nor `disqualified-website-lead` is already present.
-8. For the registered campaign, add `campaign-public-surface-audit-august` and either `channel-facebook` or `channel-linkedin` only when the full tuple passes validation.
+8. For the registered social campaign, add `campaign-public-surface-audit-august` and either `channel-facebook` or `channel-linkedin` only when the full tuple passes validation. For the registered tracking-question campaign, add `campaign-tracking-question-outreach-august` and `channel-direct-outreach`. For the registered warm-pipeline campaign, add `campaign-warm-pipeline-followup-august` and `channel-direct-outreach`. Do not reuse one campaign's tags for another tuple.
 9. Add `ai-source-<engine>` only for an allowlisted AI engine.
 10. Remove `lsa-guide` from the contact.
 11. Do not create an opportunity, send an email or SMS, or change assignment.
@@ -119,7 +143,11 @@ Use synthetic `example.com` addresses and the reserved `555-010` phone range.
 3. [x] Same synthetic contact, different registered campaign content. Production created two separate Gmail messages with different lead IDs and Facebook versus LinkedIn tuples while HighLevel retained one contact. The resubmission re-added `lsa-guide`, and reconciliation removed it again without changing contact identity.
 4. [x] Fresh untagged submission. Production recorded no campaign or AI tuple in Gmail, created one HighLevel contact, and retained only the internal test tag after reconciliation.
 5. [x] Retry test. CRM writes were completed while one Gmail message was deliberately left unreconciled. A second pass produced no duplicate tags and did not add `needs-qualification` after `qualified-website-lead` was present. The synthetic tags were removed after the test.
-6. [x] Vocabulary test. `scripts/lead-reconciliation-policy.test.mjs` verifies that an unregistered campaign and AI value produce one `attribution-unclassified` tag and no tag containing a raw value. All six policy tests passed.
+6. [x] Vocabulary test. `scripts/lead-reconciliation-policy.test.mjs` verifies that an unregistered campaign and AI value produce one `attribution-unclassified` tag and no tag containing a raw value. All nine policy tests passed.
+7. [x] Caller-created contact test. A synthetic direct-outreach contact was created on August 15 with source `tracking_question_outreach_august` and the registered campaign and channel tags. After the workflow window it retained the intended source and tags, stayed unassigned, and had zero conversations, opportunities, or tasks. The contact remains marked `internal-attribution-test` and is excluded from reporting.
+8. [x] Mobile conversion-path test. At a 390-by-844 viewport, `/plumbing-seo` displayed the booking CTA, routed to `/contact#book`, and rendered the Google booking calendar with available dates. The tagged `/audit` form accepted a synthetic mobile submission, showed its success state, and delivered a `[TEST]` notification with a full lead ID plus the exact `direct_outreach / phone / tracking_question_outreach_august / tracking_question` tuple. HighLevel reused the existing internal test contact, the stale `lsa-guide` tag was removed, and verification found zero conversations, opportunities, or tasks. The Gmail message was added to both reconciliation labels.
+
+After the direct-outreach tuples were registered, the deterministic policy suite increased from six to nine passing cases. The new cases accept the exact cold and warm tuples, keep their campaign tags separate, and reject the direct-outreach source and medium when incorrectly paired with the social campaign name.
 
 Run the reconciler twice against the form-submission cases. The second pass must make no additional contact and no tag changes. Keep every synthetic record excluded from the scorecard.
 

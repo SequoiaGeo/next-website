@@ -34,6 +34,56 @@ test("classifies the registered LinkedIn audit campaign", () => {
   assert.ok(!result.tags.includes("channel-facebook"));
 });
 
+test("classifies the registered direct-outreach tracking question", () => {
+  const result = classifyLeadAttribution({
+    websiteSource: "audit_page",
+    utmSource: "direct_outreach",
+    utmMedium: "phone",
+    utmCampaign: "tracking_question_outreach_august",
+    utmContent: "tracking_question",
+    campaignLandingPath: "/audit",
+    aiEngineSource: "",
+  });
+
+  assert.equal(result.unclassified, false);
+  assert.ok(result.tags.includes("campaign-tracking-question-outreach-august"));
+  assert.ok(result.tags.includes("channel-direct-outreach"));
+  assert.ok(!result.tags.includes("channel-facebook"));
+  assert.ok(!result.tags.includes("channel-linkedin"));
+});
+
+test("keeps warm follow-up separate from the cold tracking question", () => {
+  const result = classifyLeadAttribution({
+    websiteSource: "audit_page",
+    utmSource: "direct_outreach",
+    utmMedium: "phone",
+    utmCampaign: "warm_pipeline_followup_august",
+    utmContent: "promised_followup",
+    campaignLandingPath: "/audit",
+    aiEngineSource: "",
+  });
+
+  assert.equal(result.unclassified, false);
+  assert.ok(result.tags.includes("campaign-warm-pipeline-followup-august"));
+  assert.ok(result.tags.includes("channel-direct-outreach"));
+  assert.ok(!result.tags.includes("campaign-tracking-question-outreach-august"));
+});
+
+test("rejects a direct-outreach tuple under the social campaign name", () => {
+  const result = classifyLeadAttribution({
+    websiteSource: "audit_page",
+    utmSource: "direct_outreach",
+    utmMedium: "phone",
+    utmCampaign: "public_surface_audit_august",
+    utmContent: "tracking_question",
+    campaignLandingPath: "/audit",
+  });
+
+  assert.equal(result.unclassified, true);
+  assert.ok(result.tags.includes("attribution-unclassified"));
+  assert.ok(!result.tags.includes("channel-direct-outreach"));
+});
+
 test("keeps an untagged audit submission out of campaign tags", () => {
   const result = classifyLeadAttribution({ websiteSource: "audit_page" });
 

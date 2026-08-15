@@ -12,6 +12,22 @@ HighLevel social-account check on August 15: the Sequoia LinkedIn company page i
 
 Conditional launch window: Monday, August 17. LinkedIn at 8:00 AM Pacific. Facebook at 11:30 AM Pacific. Launch only if the HighLevel gate passes by Sunday, August 16. Otherwise move the campaign rather than publishing into a known-bad workflow. Do not publish an identical Sequoia company-page post at the same time. Reuse the idea on the company page at least 24 hours later with a company-voice introduction.
 
+## Pre-registered pilot read
+
+Read the first seven complete days on Monday, August 24. This is a channel pilot, not proof that Sequoia GEO has reached three qualified website leads per week.
+
+Use this decision table:
+
+| Observed result by August 24 | Decision |
+|---|---|
+| At least one qualified website lead carrying the exact social tuple | Continue the post format and create one derivative. Treat it as a successful pilot, not a stable rate. |
+| At least one accepted lead, but every lead is disqualified | Keep the traffic evidence, revise the audience or offer fit, and do not credit a qualified lead. |
+| At least 20 nonbot campaign-tagged visits and no accepted lead | Review the tagged sessions in Clarity and change one conversion variable only if a repeatable friction point is visible. Do not estimate a stable conversion rate from this sample. |
+| Fewer than 20 nonbot campaign-tagged visits and no accepted lead | Treat the distribution sample as insufficient. Revise the post or distribution before changing the landing page. |
+| Attribution is missing, duplicated, or unreconciled | Do not grade the campaign. Repair measurement, document the affected window, and rerun. |
+
+Do not use comments, reactions, shares, profile follows, form starts, button clicks, or calendar clicks as qualified leads. Wait for a captured form, attributable real-prospect call, or completed booking, then apply the pre-registered qualification rule.
+
 ## Offer taxonomy
 
 Sequoia GEO has two distinct entry paths:

@@ -1,0 +1,3515 @@
+[
+  {
+    "domain": "dmaroofing.com",
+    "checkedAt": "2026-08-15T17:06:58.842Z",
+    "homepage": {
+      "requestedUrl": "https://dmaroofing.com/",
+      "finalUrl": "https://dmaroofing.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://dmaroofing.com/",
+        "finalUrl": "https://dmaroofing.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "9544297663",
+            "5619605325",
+            "8008071381"
+          ],
+          "publicPhones": [
+            "9544297663",
+            "5619605325",
+            "8008071381"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://dmaroofing.com/pages/contact",
+        "finalUrl": "https://dmaroofing.com/pages/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "9544297663",
+            "5619605325",
+            "8008071381"
+          ],
+          "publicPhones": [
+            "9544297663",
+            "5619605325",
+            "8008071381"
+          ],
+          "forms": 2
+        }
+      },
+      {
+        "requestedUrl": "https://dmaroofing.com/contact",
+        "finalUrl": "https://dmaroofing.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://dmaroofing.com/contact-us",
+        "finalUrl": "https://dmaroofing.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://dmaroofing.com/request-a-quote",
+        "finalUrl": "https://dmaroofing.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "9544297663",
+            "5619605325",
+            "8008071381"
+          ],
+          "publicPhones": [
+            "9544297663",
+            "5619605325",
+            "8008071381"
+          ],
+          "forms": 1
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "9544297663",
+        "5619605325",
+        "8008071381"
+      ],
+      "publicPhones": [
+        "9544297663",
+        "5619605325",
+        "8008071381"
+      ],
+      "forms": 4
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "pgroofingnj.com",
+    "checkedAt": "2026-08-15T17:07:01.574Z",
+    "homepage": {
+      "requestedUrl": "https://pgroofingnj.com/",
+      "finalUrl": "https://www.pgroofingnj.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://pgroofingnj.com/",
+        "finalUrl": "https://www.pgroofingnj.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(609) 733-4058"
+          ],
+          "publicPhones": [
+            "6097334058"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.pgroofingnj.com/request-appointment",
+        "finalUrl": "https://www.pgroofingnj.com/request-appointment",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(609) 733-4058"
+          ],
+          "publicPhones": [
+            "6097334058"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.pgroofingnj.com/contact",
+        "finalUrl": "https://www.pgroofingnj.com/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(609) 733-4058"
+          ],
+          "publicPhones": [
+            "6097334058"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.pgroofingnj.com/contact-us",
+        "finalUrl": "https://www.pgroofingnj.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(609) 733-4058"
+          ],
+          "publicPhones": [
+            "6097334058"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.pgroofingnj.com/request-a-quote",
+        "finalUrl": "https://www.pgroofingnj.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(609) 733-4058"
+          ],
+          "publicPhones": [
+            "6097334058"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "(609) 733-4058"
+      ],
+      "publicPhones": [
+        "6097334058"
+      ],
+      "forms": 3
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "qa-roofing.com",
+    "checkedAt": "2026-08-15T17:07:03.076Z",
+    "homepage": {
+      "requestedUrl": "https://qa-roofing.com/",
+      "finalUrl": "https://www.qa-roofing.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://qa-roofing.com/",
+        "finalUrl": "https://www.qa-roofing.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8066418841"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.qa-roofing.com/contact-us",
+        "finalUrl": "https://www.qa-roofing.com/contact-us",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8066418841"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.qa-roofing.com/contact",
+        "finalUrl": "https://www.qa-roofing.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8066418841"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.qa-roofing.com/request-a-quote",
+        "finalUrl": "https://www.qa-roofing.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8066418841"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.qa-roofing.com/thank-you",
+        "finalUrl": "https://www.qa-roofing.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8066418841"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "8066418841"
+      ],
+      "forms": 1
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "rbjroofing.net",
+    "checkedAt": "2026-08-15T17:07:04.985Z",
+    "homepage": {
+      "requestedUrl": "https://rbjroofing.net/",
+      "finalUrl": "https://rbjroofing.net/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://rbjroofing.net/",
+        "finalUrl": "https://rbjroofing.net/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8006179421"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://rbjroofing.net/index.php/contact-us/",
+        "finalUrl": "https://rbjroofing.net/index.php/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8006179421",
+            "9726377563"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://rbjroofing.net/contact",
+        "finalUrl": "https://rbjroofing.net/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8006179421"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://rbjroofing.net/contact-us",
+        "finalUrl": "https://rbjroofing.net/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8006179421"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://rbjroofing.net/request-a-quote",
+        "finalUrl": "https://rbjroofing.net/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8006179421"
+          ],
+          "forms": 1
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "8006179421",
+        "9726377563"
+      ],
+      "forms": 3
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "roofingzip.com",
+    "checkedAt": "2026-08-15T17:07:06.201Z",
+    "homepage": {
+      "requestedUrl": "https://roofingzip.com/",
+      "finalUrl": "https://roofingzip.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://roofingzip.com/",
+        "finalUrl": "https://roofingzip.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [
+              "GTM-MGDLPBFF"
+            ],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+18888960269"
+          ],
+          "publicPhones": [
+            "8888960269"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://roofingzip.com/contact.html",
+        "finalUrl": "https://roofingzip.com/contact.html",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [
+              "GTM-MGDLPBFF"
+            ],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+18888960269"
+          ],
+          "publicPhones": [
+            "8888960269"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://roofingzip.com/quote.html",
+        "finalUrl": "https://roofingzip.com/quote.html",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [
+              "GTM-MGDLPBFF"
+            ],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+18888960269"
+          ],
+          "publicPhones": [
+            "8888960269"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://roofingzip.com/contact",
+        "finalUrl": "https://roofingzip.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://roofingzip.com/contact-us",
+        "finalUrl": "https://roofingzip.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [
+      {
+        "id": "GTM-MGDLPBFF",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MGDLPBFF",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [
+              "GTM-MGDLPBFF"
+            ],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "8888960269"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [
+          "GTM-MGDLPBFF"
+        ],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "+18888960269"
+      ],
+      "publicPhones": [
+        "8888960269"
+      ],
+      "forms": 1
+    },
+    "verdict": "ANALYTICS_PRESENT_ADS_TAG_NOT_FOUND",
+    "outreachRule": "Ask whether booked-job conversions are reaching Google Ads. Do not state that conversion tracking is absent.",
+    "confidence": "medium",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "ulroofing.com",
+    "checkedAt": "2026-08-15T17:07:07.140Z",
+    "homepage": {
+      "requestedUrl": "https://ulroofing.com/",
+      "finalUrl": "https://www.ulroofing.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://ulroofing.com/",
+        "finalUrl": "https://www.ulroofing.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "4156585358"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.ulroofing.com/contact",
+        "finalUrl": "https://www.ulroofing.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.ulroofing.com/contact-us",
+        "finalUrl": "https://www.ulroofing.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.ulroofing.com/request-a-quote",
+        "finalUrl": "https://www.ulroofing.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.ulroofing.com/thank-you",
+        "finalUrl": "https://www.ulroofing.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "4156585358"
+      ],
+      "forms": 0
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "603nhconcrete.com",
+    "checkedAt": "2026-08-15T17:07:07.980Z",
+    "homepage": {
+      "requestedUrl": "https://603nhconcrete.com/",
+      "finalUrl": "https://www.603nhconcrete.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://603nhconcrete.com/",
+        "finalUrl": "https://www.603nhconcrete.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "6034060879"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.603nhconcrete.com/contact",
+        "finalUrl": "https://www.603nhconcrete.com/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "6034060879"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.603nhconcrete.com/contact-us",
+        "finalUrl": "https://www.603nhconcrete.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.603nhconcrete.com/request-a-quote",
+        "finalUrl": "https://www.603nhconcrete.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.603nhconcrete.com/thank-you",
+        "finalUrl": "https://www.603nhconcrete.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "6034060879"
+      ],
+      "forms": 1
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "ancconcrete.net",
+    "checkedAt": "2026-08-15T17:07:10.481Z",
+    "homepage": {
+      "requestedUrl": "https://ancconcrete.net/",
+      "finalUrl": "https://ancconcrete.net/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://ancconcrete.net/",
+        "finalUrl": "https://ancconcrete.net/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+1402-317-1927",
+            "+14023171927"
+          ],
+          "publicPhones": [
+            "4023171927"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://ancconcrete.net/contact",
+        "finalUrl": "https://ancconcrete.net/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "402-317-1927",
+            "+1402-317-1927"
+          ],
+          "publicPhones": [
+            "4023171927"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://ancconcrete.net/contact-us",
+        "finalUrl": "https://ancconcrete.net/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+1402-317-1927"
+          ],
+          "publicPhones": [
+            "4023171927"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://ancconcrete.net/request-a-quote",
+        "finalUrl": "https://ancconcrete.net/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+1402-317-1927"
+          ],
+          "publicPhones": [
+            "4023171927"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://ancconcrete.net/thank-you",
+        "finalUrl": "https://ancconcrete.net/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+1402-317-1927"
+          ],
+          "publicPhones": [
+            "4023171927"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "+1402-317-1927",
+        "+14023171927",
+        "402-317-1927"
+      ],
+      "publicPhones": [
+        "4023171927"
+      ],
+      "forms": 2
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "concreteacs.com",
+    "checkedAt": "2026-08-15T17:07:12.638Z",
+    "homepage": {
+      "requestedUrl": "https://concreteacs.com/",
+      "finalUrl": "https://www.concreteacs.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://concreteacs.com/",
+        "finalUrl": "https://www.concreteacs.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "4407141987"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.concreteacs.com/contact",
+        "finalUrl": "https://www.concreteacs.com/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "4407141987"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.concreteacs.com/contact-us",
+        "finalUrl": "https://www.concreteacs.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.concreteacs.com/request-a-quote",
+        "finalUrl": "https://www.concreteacs.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.concreteacs.com/thank-you",
+        "finalUrl": "https://www.concreteacs.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "4407141987"
+      ],
+      "forms": 1
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "concrete-now.com",
+    "checkedAt": "2026-08-15T17:07:13.796Z",
+    "homepage": {
+      "requestedUrl": "https://concrete-now.com/",
+      "finalUrl": "https://concrete-now.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://concrete-now.com/",
+        "finalUrl": "https://concrete-now.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "301 931 3030",
+            "301 937 1447"
+          ],
+          "publicPhones": [
+            "3019313030",
+            "3019371447"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://concrete-now.com/contact",
+        "finalUrl": "https://concrete-now.com/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "301 931 3030"
+          ],
+          "publicPhones": [
+            "3019313030",
+            "3019371447"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://concrete-now.com/contact-us",
+        "finalUrl": "https://concrete-now.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://concrete-now.com/request-a-quote",
+        "finalUrl": "https://concrete-now.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://concrete-now.com/thank-you",
+        "finalUrl": "https://concrete-now.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "301 931 3030",
+        "301 937 1447"
+      ],
+      "publicPhones": [
+        "3019313030",
+        "3019371447"
+      ],
+      "forms": 1
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "coverconcrete.com",
+    "checkedAt": "2026-08-15T17:07:16.318Z",
+    "homepage": {
+      "requestedUrl": "https://coverconcrete.com/",
+      "finalUrl": "https://coverconcrete.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://coverconcrete.com/",
+        "finalUrl": "https://coverconcrete.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9196101231"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://coverconcrete.com/contact",
+        "finalUrl": "https://coverconcrete.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9196101231"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://coverconcrete.com/contact-us",
+        "finalUrl": "https://coverconcrete.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9196101231"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://coverconcrete.com/request-a-quote",
+        "finalUrl": "https://coverconcrete.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9196101231"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://coverconcrete.com/thank-you",
+        "finalUrl": "https://coverconcrete.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9196101231"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "9196101231"
+      ],
+      "forms": 0
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "ecs-concrete.com",
+    "checkedAt": "2026-08-15T17:07:17.510Z",
+    "homepage": {
+      "requestedUrl": "https://ecs-concrete.com/",
+      "finalUrl": "https://www.ecs-concrete.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://ecs-concrete.com/",
+        "finalUrl": "https://www.ecs-concrete.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "9044866536"
+          ],
+          "publicPhones": [
+            "9044866536"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.ecs-concrete.com/contact-1",
+        "finalUrl": "https://www.ecs-concrete.com/contact-1",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "9044866536"
+          ],
+          "publicPhones": [
+            "9044866536"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.ecs-concrete.com/contact",
+        "finalUrl": "https://www.ecs-concrete.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9044866536"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.ecs-concrete.com/contact-us",
+        "finalUrl": "https://www.ecs-concrete.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9044866536"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.ecs-concrete.com/request-a-quote",
+        "finalUrl": "https://www.ecs-concrete.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9044866536"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "9044866536"
+      ],
+      "publicPhones": [
+        "9044866536"
+      ],
+      "forms": 0
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "gbrosconcrete.com",
+    "checkedAt": "2026-08-15T17:07:18.076Z",
+    "homepage": {
+      "requestedUrl": "https://gbrosconcrete.com/",
+      "finalUrl": "https://gbrosconcrete.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://gbrosconcrete.com/",
+        "finalUrl": "https://gbrosconcrete.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "8179144166"
+          ],
+          "publicPhones": [
+            "8179144166"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://gbrosconcrete.com/contact.php",
+        "finalUrl": "https://gbrosconcrete.com/contact.php",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "8179144166"
+          ],
+          "publicPhones": [
+            "8179144166"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://gbrosconcrete.com/contact",
+        "finalUrl": "https://gbrosconcrete.com/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "8179144166"
+          ],
+          "publicPhones": [
+            "8179144166"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://gbrosconcrete.com/contact-us",
+        "finalUrl": "https://gbrosconcrete.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://gbrosconcrete.com/request-a-quote",
+        "finalUrl": "https://gbrosconcrete.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "8179144166"
+      ],
+      "publicPhones": [
+        "8179144166"
+      ],
+      "forms": 3
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "rodsconcrete.com",
+    "checkedAt": "2026-08-15T17:07:20.628Z",
+    "homepage": {
+      "requestedUrl": "https://rodsconcrete.com/",
+      "finalUrl": "https://rodsconcrete.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://rodsconcrete.com/",
+        "finalUrl": "https://rodsconcrete.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(980)271-1885"
+          ],
+          "publicPhones": [
+            "9802711885"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://rodsconcrete.com/contact",
+        "finalUrl": "https://rodsconcrete.com/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(980)271-1885"
+          ],
+          "publicPhones": [
+            "9802711885"
+          ],
+          "forms": 2
+        }
+      },
+      {
+        "requestedUrl": "https://rodsconcrete.com/contact-us",
+        "finalUrl": "https://rodsconcrete.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://rodsconcrete.com/request-a-quote",
+        "finalUrl": "https://rodsconcrete.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://rodsconcrete.com/thank-you",
+        "finalUrl": "https://rodsconcrete.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "(980)271-1885"
+      ],
+      "publicPhones": [
+        "9802711885"
+      ],
+      "forms": 3
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "dacrestoration.com",
+    "checkedAt": "2026-08-15T17:07:25.957Z",
+    "homepage": {
+      "requestedUrl": "https://dacrestoration.com/",
+      "finalUrl": "https://dacrestoration.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://dacrestoration.com/",
+        "finalUrl": "https://dacrestoration.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "8032786050",
+            "%208036347002",
+            "8036347002"
+          ],
+          "publicPhones": [
+            "8032786050",
+            "8036347002"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://dacrestoration.com/contact-us/",
+        "finalUrl": "https://dacrestoration.com/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "8032786050",
+            "%208036347002"
+          ],
+          "publicPhones": [
+            "8032786050",
+            "8036347002"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://dacrestoration.com/contact",
+        "finalUrl": "https://dacrestoration.com/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "8032786050",
+            "%208036347002"
+          ],
+          "publicPhones": [
+            "8032786050",
+            "8036347002"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://dacrestoration.com/contact-us",
+        "finalUrl": "https://dacrestoration.com/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "8032786050",
+            "%208036347002"
+          ],
+          "publicPhones": [
+            "8032786050",
+            "8036347002"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://dacrestoration.com/request-a-quote",
+        "finalUrl": "https://dacrestoration.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "8032786050",
+            "%208036347002"
+          ],
+          "publicPhones": [
+            "8032786050",
+            "8036347002"
+          ],
+          "forms": 1
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "8032786050",
+        "%208036347002",
+        "8036347002"
+      ],
+      "publicPhones": [
+        "8032786050",
+        "8036347002"
+      ],
+      "forms": 5
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "dlrestoration.com",
+    "checkedAt": "2026-08-15T17:07:26.694Z",
+    "homepage": {
+      "requestedUrl": "https://dlrestoration.com/",
+      "finalUrl": "https://dlrestoration.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://dlrestoration.com/",
+        "finalUrl": "https://dlrestoration.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "7182753995"
+          ],
+          "publicPhones": [
+            "7182753995"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://dlrestoration.com/contact-style-1/",
+        "finalUrl": "https://dlrestoration.com/contact-style-1/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "7182753995"
+          ],
+          "publicPhones": [
+            "7182753995"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://dlrestoration.com/contact",
+        "finalUrl": "https://dlrestoration.com/contact-style-1/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "7182753995"
+          ],
+          "publicPhones": [
+            "7182753995"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://dlrestoration.com/contact-us",
+        "finalUrl": "https://dlrestoration.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "7182753995"
+          ],
+          "publicPhones": [
+            "7182753995"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://dlrestoration.com/request-a-quote",
+        "finalUrl": "https://dlrestoration.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "7182753995"
+          ],
+          "publicPhones": [
+            "7182753995"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "7182753995"
+      ],
+      "publicPhones": [
+        "7182753995"
+      ],
+      "forms": 2
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "gfmrestoration.com",
+    "checkedAt": "2026-08-15T17:07:28.439Z",
+    "homepage": {
+      "requestedUrl": "https://gfmrestoration.com/",
+      "finalUrl": "https://www.gfmrestoration.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://gfmrestoration.com/",
+        "finalUrl": "https://www.gfmrestoration.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "4254206246"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.gfmrestoration.com/contact",
+        "finalUrl": "https://www.gfmrestoration.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.gfmrestoration.com/contact-us",
+        "finalUrl": "https://www.gfmrestoration.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.gfmrestoration.com/request-a-quote",
+        "finalUrl": "https://www.gfmrestoration.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.gfmrestoration.com/thank-you",
+        "finalUrl": "https://www.gfmrestoration.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "4254206246"
+      ],
+      "forms": 0
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "restorationow.com",
+    "checkedAt": "2026-08-15T17:07:29.652Z",
+    "homepage": {
+      "requestedUrl": "https://restorationow.com/",
+      "finalUrl": "https://restorationow.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://restorationow.com/",
+        "finalUrl": "https://restorationow.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "4025027277"
+          ],
+          "publicPhones": [
+            "4025027277"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://restorationow.com/contact/",
+        "finalUrl": "https://restorationow.com/contact/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "4025027277",
+            "(402) 502-7277"
+          ],
+          "publicPhones": [
+            "4025027277"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://restorationow.com/contact",
+        "finalUrl": "https://restorationow.com/contact/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "4025027277",
+            "(402) 502-7277"
+          ],
+          "publicPhones": [
+            "4025027277"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://restorationow.com/contact-us",
+        "finalUrl": "https://restorationow.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://restorationow.com/request-a-quote",
+        "finalUrl": "https://restorationow.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "4025027277",
+        "(402) 502-7277"
+      ],
+      "publicPhones": [
+        "4025027277"
+      ],
+      "forms": 2
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "aalandscaping.net",
+    "checkedAt": "2026-08-15T17:07:42.030Z",
+    "homepage": {
+      "requestedUrl": "https://aalandscaping.net/",
+      "finalUrl": "https://aalandscaping.net/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://aalandscaping.net/",
+        "finalUrl": "https://aalandscaping.net/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "6302021312"
+          ],
+          "publicPhones": [
+            "6302021312"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://aalandscaping.net/contact-us/",
+        "finalUrl": "https://aalandscaping.net/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "6302021312"
+          ],
+          "publicPhones": [
+            "6302021312"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://aalandscaping.net/contact-us",
+        "finalUrl": "https://aalandscaping.net/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "6302021312"
+          ],
+          "publicPhones": [
+            "6302021312"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://aalandscaping.net/contact",
+        "finalUrl": "https://aalandscaping.net/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "6302021312"
+          ],
+          "publicPhones": [
+            "6302021312"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://aalandscaping.net/request-a-quote",
+        "finalUrl": "https://aalandscaping.net/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "6302021312"
+          ],
+          "publicPhones": [
+            "6302021312"
+          ],
+          "forms": 1
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "6302021312"
+      ],
+      "publicPhones": [
+        "6302021312"
+      ],
+      "forms": 4
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "dchlandscaping.com",
+    "checkedAt": "2026-08-15T17:07:42.804Z",
+    "homepage": {
+      "requestedUrl": "https://dchlandscaping.com/",
+      "finalUrl": "https://www.dchlandscaping.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://dchlandscaping.com/",
+        "finalUrl": "https://www.dchlandscaping.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "6092289070"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.dchlandscaping.com/contact",
+        "finalUrl": "https://www.dchlandscaping.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.dchlandscaping.com/contact-us",
+        "finalUrl": "https://www.dchlandscaping.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.dchlandscaping.com/request-a-quote",
+        "finalUrl": "https://www.dchlandscaping.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.dchlandscaping.com/thank-you",
+        "finalUrl": "https://www.dchlandscaping.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "6092289070"
+      ],
+      "forms": 1
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "geolandscaping.com",
+    "checkedAt": "2026-08-15T17:07:43.718Z",
+    "homepage": {
+      "requestedUrl": "https://geolandscaping.com/",
+      "finalUrl": "https://www.geolandscaping.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://geolandscaping.com/",
+        "finalUrl": "https://www.geolandscaping.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "4082701929"
+          ],
+          "forms": 3
+        }
+      },
+      {
+        "requestedUrl": "https://www.geolandscaping.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.5",
+        "finalUrl": "https://www.geolandscaping.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.5",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.geolandscaping.com/contact-us/",
+        "finalUrl": "https://www.geolandscaping.com/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "4082701929",
+            "4085930926"
+          ],
+          "forms": 3
+        }
+      },
+      {
+        "requestedUrl": "https://www.geolandscaping.com/contact",
+        "finalUrl": "https://www.geolandscaping.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "4082701929"
+          ],
+          "forms": 2
+        }
+      },
+      {
+        "requestedUrl": "https://www.geolandscaping.com/contact-us",
+        "finalUrl": "https://www.geolandscaping.com/contact-us/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "4082701929",
+            "4085930926"
+          ],
+          "forms": 3
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "4082701929",
+        "4085930926"
+      ],
+      "forms": 11
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "govelandscaping.com",
+    "checkedAt": "2026-08-15T17:07:44.537Z",
+    "homepage": {
+      "requestedUrl": "https://govelandscaping.com/",
+      "finalUrl": "https://www.govelandscaping.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://govelandscaping.com/",
+        "finalUrl": "https://www.govelandscaping.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [
+            "9168011035"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.govelandscaping.com/contact",
+        "finalUrl": "https://www.govelandscaping.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.govelandscaping.com/contact-us",
+        "finalUrl": "https://www.govelandscaping.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.govelandscaping.com/request-a-quote",
+        "finalUrl": "https://www.govelandscaping.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.govelandscaping.com/thank-you",
+        "finalUrl": "https://www.govelandscaping.com/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [],
+      "publicPhones": [
+        "9168011035"
+      ],
+      "forms": 1
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "kbklandscaping.com",
+    "checkedAt": "2026-08-15T17:07:45.326Z",
+    "homepage": {
+      "requestedUrl": "https://kbklandscaping.com/",
+      "finalUrl": "https://kbklandscaping.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://kbklandscaping.com/",
+        "finalUrl": "https://kbklandscaping.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+18884080320"
+          ],
+          "publicPhones": [
+            "8884080320"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://kbklandscaping.com/contact",
+        "finalUrl": "https://kbklandscaping.com/contact/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+18884080320"
+          ],
+          "publicPhones": [
+            "8884080320"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://kbklandscaping.com/contact-us",
+        "finalUrl": "https://kbklandscaping.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+18884080320"
+          ],
+          "publicPhones": [
+            "8884080320"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://kbklandscaping.com/request-a-quote",
+        "finalUrl": "https://kbklandscaping.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+18884080320"
+          ],
+          "publicPhones": [
+            "8884080320"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://kbklandscaping.com/thank-you",
+        "finalUrl": "https://kbklandscaping.com/thank-you/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "+18884080320"
+          ],
+          "publicPhones": [
+            "8884080320"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "+18884080320"
+      ],
+      "publicPhones": [
+        "8884080320"
+      ],
+      "forms": 0
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "maylandscaping.net",
+    "checkedAt": "2026-08-15T17:07:46.582Z",
+    "homepage": {
+      "requestedUrl": "https://maylandscaping.net/",
+      "finalUrl": "https://www.maylandscaping.net/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://maylandscaping.net/",
+        "finalUrl": "https://www.maylandscaping.net/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(706) 550-7753"
+          ],
+          "publicPhones": [
+            "7065507753"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.maylandscaping.net/contact",
+        "finalUrl": "https://www.maylandscaping.net/contact",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(706) 550-7753"
+          ],
+          "publicPhones": [
+            "7065507753"
+          ],
+          "forms": 1
+        }
+      },
+      {
+        "requestedUrl": "https://www.maylandscaping.net/contact-us",
+        "finalUrl": "https://www.maylandscaping.net/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(706) 550-7753"
+          ],
+          "publicPhones": [
+            "7065507753"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.maylandscaping.net/request-a-quote",
+        "finalUrl": "https://www.maylandscaping.net/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(706) 550-7753"
+          ],
+          "publicPhones": [
+            "7065507753"
+          ],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.maylandscaping.net/thank-you",
+        "finalUrl": "https://www.maylandscaping.net/thank-you",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "(706) 550-7753"
+          ],
+          "publicPhones": [
+            "7065507753"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "(706) 550-7753"
+      ],
+      "publicPhones": [
+        "7065507753"
+      ],
+      "forms": 2
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  },
+  {
+    "domain": "pjslandscaping.com",
+    "checkedAt": "2026-08-15T17:07:47.657Z",
+    "homepage": {
+      "requestedUrl": "https://pjslandscaping.com/",
+      "finalUrl": "https://www.pjslandscaping.com/",
+      "ok": true,
+      "status": 200
+    },
+    "pages": [
+      {
+        "requestedUrl": "https://pjslandscaping.com/",
+        "finalUrl": "https://www.pjslandscaping.com/",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "321-961-8139"
+          ],
+          "publicPhones": [
+            "3219618139"
+          ],
+          "forms": 2
+        }
+      },
+      {
+        "requestedUrl": "https://www.pjslandscaping.com/contact",
+        "finalUrl": "https://www.pjslandscaping.com/contact",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.pjslandscaping.com/contact-us",
+        "finalUrl": "https://www.pjslandscaping.com/contact-us",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.pjslandscaping.com/request-a-quote",
+        "finalUrl": "https://www.pjslandscaping.com/request-a-quote",
+        "ok": false,
+        "status": 404,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [],
+          "publicPhones": [],
+          "forms": 0
+        }
+      },
+      {
+        "requestedUrl": "https://www.pjslandscaping.com/thank-you",
+        "finalUrl": "https://www.pjslandscaping.com/thank-you",
+        "ok": true,
+        "status": 200,
+        "inspection": {
+          "tags": {
+            "googleAds": [],
+            "ga4": [],
+            "gtm": [],
+            "googleTag": []
+          },
+          "callTracking": [],
+          "telLinks": [
+            "321-961-8139"
+          ],
+          "publicPhones": [
+            "3219618139"
+          ],
+          "forms": 0
+        }
+      }
+    ],
+    "containers": [],
+    "observed": {
+      "tags": {
+        "googleAds": [],
+        "ga4": [],
+        "gtm": [],
+        "googleTag": []
+      },
+      "callTracking": [],
+      "telLinks": [
+        "321-961-8139"
+      ],
+      "publicPhones": [
+        "3219618139"
+      ],
+      "forms": 2
+    },
+    "verdict": "SUPPORTED_TAG_NOT_FOUND",
+    "outreachRule": "Only say the supported public scan did not find a tag. Treat runtime, consent-gated, server-side, CRM-imported, or non-Google measurement as unverified.",
+    "confidence": "low",
+    "limitations": [
+      "A public tag scan cannot verify Google Ads account settings, GA4 key events, offline imports, CRM-to-Ads uploads, consent-gated runtime tags, or server-side measurement.",
+      "A tag being present does not prove it fires correctly or records qualified leads or jobs booked.",
+      "A tag not being found is not proof that no measurement exists."
+    ]
+  }
+]
