@@ -87,6 +87,8 @@ The refresh must include:
 
 Track a fixed set of 10 commercially relevant prompts across ChatGPT, Google AI features, and other AI answer engines once per week. Record whether Sequoia GEO is mentioned or cited, which sources are used, and which competitors appear. Treat this as a citation diagnostic, not a precise market-share metric.
 
+Run the weekly X discovery process in `docs/growth/grok-x-seo-scout-protocol.md`. X supplies hypotheses, not conclusions. Verify the mechanism through a canonical source and add no more than one new X-derived treatment per week.
+
 ### Conversion path
 
 Use one primary commercial outcome across priority pages: request a Marketing Baseline Review or choose a time with Aaron. Keep the promise consistent from the post or outreach message through the landing page and thank-you state.
