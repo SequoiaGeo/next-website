@@ -3,24 +3,24 @@ import React from "react";
 export default function FullPicture() {
   const findings = [
     {
-      amount: "$865",
-      label: "per booked Angi job",
-      result: "The trade-level picture differed. Plumbing performed better than HVAC, but the reporting had not separated the two.",
+      amount: "No job match",
+      label: "for lead-platform spend",
+      result: "Lead volume was reported, but the invoice was not connected to booked-job results by trade.",
     },
     {
-      amount: "16,962",
-      label: "reported conversions",
-      result: "The review found 21 measured search conversions in the period, not confirmed booked jobs. Three of five conversion goals were misconfigured, including page views counted as conversions.",
+      amount: "Page views",
+      label: "counted as conversions",
+      result: "Nonlead actions inflated the dashboard while booked-job outcomes remained unverified.",
     },
     {
-      amount: "265 pages",
-      label: "not indexed by Google",
+      amount: "Primary pages",
+      label: "missing from search",
       result: "Including their main service page. Their SEO company billed monthly while Google literally couldn't see their most important content.",
     },
     {
-      amount: "1 full month",
-      label: "GBP offline",
-      result: "After a web migration, their Google Business Profile went dark. Nobody noticed. A full month of \"plumber near me\" searches, invisible.",
+      amount: "GBP offline",
+      label: "after a migration",
+      result: "The Google Business Profile went dark after a web migration and the monthly reporting did not surface it.",
     },
     {
       amount: "Dead phone number",
@@ -103,17 +103,17 @@ export default function FullPicture() {
         </div>
       </div>
 
-      {/* Section 2: Real findings */}
+      {/* Section 2: Audit checks */}
       <div className="bg-[#0D2318]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 sm:py-28">
           <div className="mx-auto max-w-3xl text-center mb-14">
-            <p className="section-overline mb-4 text-[#3A9E6A]">Real Findings</p>
+            <p className="section-overline mb-4 text-[#3A9E6A]">Audit Checks</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-[1.08]">
-              What we find in the first 48 hours{" "}
-              <span className="text-[#3A9E6A]">that agencies miss for months</span>
+              What we verify across the system{" "}
+              <span className="text-[#3A9E6A]">before trusting the dashboard</span>
             </h2>
             <p className="mt-4 text-base text-[#C8EDD2]/50">
-              Multiple clients. Multiple agencies. All reporting green.
+              Every finding must connect to an account record, call, form, booking, or search-platform result.
             </p>
           </div>
 

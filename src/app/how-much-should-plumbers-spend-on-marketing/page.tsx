@@ -7,14 +7,14 @@ import InlineLeadForm from "@/components/InlineLeadForm";
 export const metadata: Metadata = {
   title: "How Much Should Plumbers Spend on Marketing?",
   description:
-    "Plan on 6 to 10 percent of gross revenue. One plumbing company we audited paid Angi $7,783 in a month and booked $475. Where the budget should go instead.",
+    "Plan a plumbing marketing budget around capacity, job mix, and attributable jobs booked. See how to find untracked lead-platform spend before adding budget.",
   alternates: {
     canonical: "https://www.sequoiageo.com/how-much-should-plumbers-spend-on-marketing",
   },
   openGraph: {
     title: "How Much Should Plumbers Spend on Marketing?",
     description:
-      "Plan on 6 to 10 percent of gross revenue. One plumbing company we audited paid Angi $7,783 in a month and booked $475. Where the budget should go instead.",
+      "Plan a plumbing marketing budget around capacity, job mix, and attributable jobs booked. See how to find untracked lead-platform spend before adding budget.",
     url: "https://www.sequoiageo.com/how-much-should-plumbers-spend-on-marketing",
     type: "website",
   },
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "Is Angi worth it for plumbers?",
     answer:
-      "It can be, if the spend is tracked to jobs booked. The company in my audit was paying $7,783 a month at a cost of $865 per booked job, and nobody knew until we tied the call log to the invoice. The platform did not hide anything. The tracking was never built. Whatever lead source you buy, buy the tracking first.",
+      "It can be, if the spend is tracked to jobs booked. A full-picture audit matches recurring lead-platform invoices to qualified calls and booked-job results by trade. Whatever lead source you buy, establish the tracking first.",
   },
   {
     question: "How many leads should Local Services Ads produce for a plumber?",
@@ -94,15 +94,14 @@ export default function PlumberMarketingBudgetPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a]">
-            The $7,783 Month That Booked $475
+            The Lead-Platform Invoice Nobody Matched to Jobs
           </h2>
           <div className="mt-6 space-y-5">
             <p className="text-base leading-relaxed text-gray-600">
               Percent-of-revenue budgeting assumes the dollars inside the budget work.
-              Often they do not, and nobody notices. One plumbing company I audited paid
-              Angi $7,783 in a single month. The reconciled cost was $865 per booked job.
-              The same audit tracked 4,009 calls. 131 of them were new customers. The rest
-              were not.
+              Often they do not, and nobody notices. A full-picture audit matches recurring
+              lead-platform spend to booked-job results by trade, then separates new-customer
+              calls from repeat and nonlead activity.
             </p>
             <p className="text-base leading-relaxed text-gray-600">
               The owner was not careless and the platform was not lying. The company had a

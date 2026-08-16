@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Plumbing SEO by an Operator, Not an Account Manager",
   description:
-    "13 years running a home services company. I found one plumber spending $7,783 a month on leads that returned $475. SEO managed to booked jobs.",
+    "Plumbing SEO managed around qualified calls and jobs booked. Work directly with a former C-36 plumbing contractor and home services operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/plumbing-seo",
   },
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "How do I evaluate whether my current plumbing SEO is working?",
     answer:
-      "Count phone calls and booked jobs from organic search. Not rankings, not impressions, not traffic. The plumbing company I audited was spending $7,783 a month on Angi at a cost of $865 per booked job, and the owner received a marketing report every month. The reports looked fine. Nobody had connected spend to jobs. If your provider cannot draw a straight line from their invoice to your dispatch board, that is the finding.",
+      "Count qualified calls and jobs booked from organic search, not rankings, impressions, or traffic alone. A full-picture audit matches recurring lead-platform spend to booked-job results by trade. If your provider cannot draw a straight line from the invoice to the dispatch board, that is the finding.",
   },
   {
     question: "What is the difference between plumbing SEO and general SEO?",
@@ -84,8 +84,8 @@ export default function PlumbingSeoPage() {
               <span className="text-[#1A5C3A]">the Full Revenue Picture</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Your agency sees leads. I see why $7,783 a month in Angi leads cost $865 per
-              booked job. I held California&rsquo;s C-36 Plumbing license while running my own company.
+              Your agency sees leads. I look at whether lead-platform spend becomes qualified calls
+              and jobs booked by trade. I held California&rsquo;s C-36 Plumbing license while running my own company.
               I know your business from the inside. Want to be the plumber{" "}
               <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
                 AI tools recommend
@@ -120,12 +120,12 @@ export default function PlumbingSeoPage() {
             <div className="space-y-5">
               {[
                 {
-                  finding: "$7,783 a month on Angi leads",
+                  finding: "Lead-platform spend without booked-job reporting",
                   result:
-                    "The reconciled cost was $865 per booked job. The vendor managing it never connected lead spend to jobs booked, and the monthly reports never surfaced it.",
+                    "The account was being graded on leads delivered. Its monthly reporting did not connect that spend to which leads became booked jobs by trade.",
                 },
                 {
-                  finding: "131 of 4,009 tracked calls were new customers",
+                  finding: "Tracked calls mixed new customers with nonlead activity",
                   result:
                     "Nobody was separating new callers from repeat callers, so every channel looked busier than it was. Marketing was being graded on call volume instead of new business.",
                 },
@@ -389,7 +389,7 @@ export default function PlumbingSeoPage() {
               What Separates Plumbing Companies That Rank from Ones That Don&rsquo;t
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              The same patterns show up in every plumbing audit I run.
+              These are the patterns the plumbing audit is designed to detect.
             </p>
           </div>
 
@@ -413,7 +413,7 @@ export default function PlumbingSeoPage() {
               {
                 number: "04",
                 title: "Attribution Before Optimization",
-                body: "Tracking gets built first: analytics, Search Console, and call tracking that isolates organic calls from paid ones and new customers from repeat callers. The 131 out of 4,009 finding above existed because nobody had built this. You cannot manage what nobody is measuring.",
+                body: "Tracking gets built first: analytics, Search Console, and call tracking that isolates organic calls from paid ones and new customers from repeat callers. You cannot manage what nobody is measuring.",
               },
             ].map((item) => (
               <div key={item.number} className="flex gap-6 rounded-2xl border border-gray-200 bg-white p-7">

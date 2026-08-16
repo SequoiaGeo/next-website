@@ -39,7 +39,7 @@ const faqs = [
   {
     question: "What is the most common HVAC marketing budget mistake?",
     answer:
-      "Untracked lead-seller spend. One plumbing company I audited paid Angi $7,783 in a month at a cost of $865 per booked job. Nothing about that account was unusual except that nobody had ever connected the invoice to jobs booked. Close that blind spot before you change the budget.",
+      "Untracked lead-seller spend. A full-picture audit matches recurring lead-platform invoices to qualified calls and booked-job results by trade. Close that blind spot before you change the budget.",
   },
 ];
 
@@ -165,10 +165,10 @@ export default function HvacMarketingBudgetPage() {
           <div className="mt-6 space-y-5">
             <p className="text-base leading-relaxed text-gray-600">
               The percent question gets the attention. The leak question decides the
-              outcome. One plumbing company I audited paid Angi $7,783 in a single month.
-              The reconciled cost was $865 per booked job. The same audit found 131 new
-              customers across 4,009 tracked calls. The owner was not reckless. The spend
-              was never tied to booked jobs, so nobody saw the gap. That blind spot
+              outcome. A full-picture audit matches recurring lead-platform spend to booked-job
+              results by trade, then separates new-customer calls from repeat and nonlead activity.
+              Without that reconciliation, the gap can persist while each channel report looks
+              healthy. That blind spot
               exists in HVAC companies at every revenue size, and it makes any budget
               percentage meaningless until it is closed.
             </p>

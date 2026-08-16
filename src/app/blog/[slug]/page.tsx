@@ -267,7 +267,7 @@ const posts: Record<string, Post> = {
   "what-we-find-inside-contractor-marketing-accounts": {
     title: "What We Find Inside Contractor Marketing Accounts",
     description:
-      "Six findings from real 2026 audits of contractor marketing accounts: 16,962 conversion events that were not leads, website traffic that was 71 percent bots, a Google Guaranteed account that could not deliver a call, and the three questions that would have caught all of it.",
+      "Six findings from real contractor marketing audits: page views counted as conversions, bot traffic, a Google Guaranteed account that could not deliver a call, and the three questions that would have caught all of it.",
     date: "July 2026",
     dateISO: "2026-07-08",
     readTime: "5 min read",
@@ -276,32 +276,29 @@ const posts: Record<string, Post> = {
       <div className="prose prose-lg max-w-none">
         <p>
           I audit the marketing accounts of home service companies for a living. HVAC, plumbing, roofing,
-          chimney sweeps. Some are one-truck operations. Some spend $20,000 a month across agencies, ads,
-          and lead platforms.
+          chimney sweeps. Some are one-truck operations. Some use multiple agencies, ad platforms,
+          and lead sellers.
         </p>
         <p>
-          Here is what this year&rsquo;s audits actually turned up. Names removed, numbers real.
+          Here is what recent audits actually turned up. Identifying details removed.
         </p>
 
-        <h2>16,962 conversion events that were not leads</h2>
+        <h2>Page views counted as conversions</h2>
         <p>
-          A Midwest HVAC and plumbing company was spending close to $20,000 a month across two agencies
-          and a stack of lead platforms. Their Google Ads account reported thousands of conversions. It
-          felt like winning.
+          A full-picture audit starts by opening the conversion settings instead of accepting the
+          total shown on the dashboard.
         </p>
         <p>
-          Three of the five conversion goals in the account were misconfigured. The big one was counting
-          page views as conversions. Somebody loads the contact page, that is a &ldquo;conversion.&rdquo;
-          16,962 of them.
+          Page views, button interactions, and other intent signals can be configured as conversions.
+          Each one needs to be separated from an accepted form, attributable call, or completed booking.
         </p>
         <p>
-          The real number of search conversions in the period we reviewed: 21. At the account&rsquo;s
-          spend, that worked out to $482 per real conversion, before anyone answered the phone.
+          The remaining search events are still potential leads until they are reconciled to qualified
+          inquiries and jobs booked.
         </p>
         <p>
-          Nobody inside the company knew, because the report the agency sent every month was built on the
-          inflated number. The dashboard was not lying, exactly. It was just measuring applause instead of
-          revenue. That account&rsquo;s full breakdown is{" "}
+          A dashboard can be numerically accurate while the definition underneath the number is wrong.
+          The full review method is{" "}
           <Link
             href="/blog/three-agencies-one-report"
             className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors"
@@ -349,15 +346,14 @@ const posts: Record<string, Post> = {
           more than once, which is why calling the number is the first check in every LSA audit we run.
         </p>
 
-        <h2>$865 per booked job from a lead platform</h2>
+        <h2>A lead-platform invoice no one tied to booked jobs</h2>
         <p>
-          The Midwest company again. One line item: $7,783 a month going to a home-services lead
-          marketplace. We matched the leads against jobs booked using their own call reports. The
-          cost was $865 per booked job.
+          The audit matches recurring lead-platform invoices to qualified calls and jobs booked by
+          trade. A monthly report that stops at leads delivered cannot answer that question.
         </p>
         <p>
-          Not every lead platform is a scam. Their plumbing leads actually penciled. But nobody had ever
-          split the number by trade, so the profitable slice was subsidizing a fire pit.
+          A lead platform can perform differently by trade and market. Blended reporting can hide that
+          difference, so the reconciliation has to happen below the account total.
         </p>
 
         <h2>The company whose own domain belonged to its lead vendor</h2>
@@ -1797,10 +1793,8 @@ const posts: Record<string, Post> = {
           <li><strong>Review velocity</strong> (new reviews per month vs. top 3 Map Pack competitors)</li>
         </ul>
         <p>
-          When I audited a plumbing company last year, I found that only 131 out of 4,009 total calls
-          over 6 months were new customers, a 3.3% new customer acquisition rate from all
-          marketing combined. Nobody was tracking the difference between new and repeat callers. All
-          the marketing spend was essentially maintaining existing customers rather than growing the business.
+          The review separates new customers from repeat callers and nonlead activity before any
+          marketing source receives credit for demand.
         </p>
         <p>
           You can&rsquo;t fix what you don&rsquo;t measure. Pull these numbers monthly. The trends
@@ -5084,9 +5078,9 @@ const posts: Record<string, Post> = {
   },
 
   "three-agencies-one-report": {
-    title: "Three Agencies. All Reporting Green. Here&rsquo;s What We Actually Found.",
+    title: "Three Agencies. Three Reports. How to Find the Missing Answer.",
     description:
-      "A contractor was spending $20,000 a month across three marketing vendors. Every monthly report showed strong performance. 16,962 tracked conversion events. The review found 21 measured search conversions, not confirmed booked jobs.",
+      "Three vendors can each report strong channel performance while nobody connects the combined system to qualified calls and jobs booked. Here is the audit method.",
     date: "April 2026",
     dateISO: "2026-04-07",
     readTime: "8 min read",
@@ -5094,33 +5088,31 @@ const posts: Record<string, Post> = {
     content: (
       <div className="prose prose-lg max-w-none">
         <p>
-          A contractor was spending $20,000 a month on marketing. Three vendors. Every one of them sending
-          monthly reports. All three reports looked fine. Leads were up. Conversions were strong. Performance
-          was on track.
+          Three marketing vendors can each send a healthy channel report while no one owns the
+          combined answer. Leads can be up and conversions can look strong without a verified line
+          to qualified calls and jobs booked.
         </p>
         <p>
-          When we got into the accounts, here&rsquo;s what we found.
+          The full-picture review checks three things first.
         </p>
         <p>
-          16,962 tracked conversion events. The account review found 21 measured search conversions in the
-          reviewed period. Those were potential leads, not confirmed booked jobs.
+          First, inspect every conversion definition and separate nonlead actions from accepted forms,
+          attributable calls, and completed bookings.
         </p>
 
         <h2>What Those Numbers Mean</h2>
         <p>
-          Three of five conversion goals were misconfigured. One counted a page view as a conversion, so
-          someone could load a page and appear in the reports as a result. The reports showed strong numbers.
-          Nobody asked what a conversion actually was.
+          A page view can appear in reports as a result if the conversion definition allows it. The
+          review verifies the definition before evaluating the number.
         </p>
         <p>
-          The problem was not Google Ads inventing results. The account had been configured to treat a page
-          view as a conversion, and that event flowed into the reporting. A dashboard can be numerically
-          accurate while the definition underneath the number is wrong.
+          The platform does not need to invent results for the report to mislead. A dashboard can be
+          numerically accurate while the definition underneath the number is wrong.
         </p>
 
         <h2>The Angi Problem</h2>
         <p>
-          The second finding: $7,783 going to Angi every month.
+          Second, match recurring lead-platform spend to qualified calls and jobs booked by trade.
         </p>
         <p>
           Angi sells the same lead to multiple contractors. The contractor was paying for leads they were
@@ -5135,30 +5127,27 @@ const posts: Record<string, Post> = {
           three reports. The line item on the report just said leads delivered.
         </p>
 
-        <h2>265 Pages Not Indexed</h2>
+        <h2>Primary Service Pages Missing From Search</h2>
         <p>
-          The third finding: 265 pages on the website not indexed by Google. The contractor had been paying
-          for SEO for over a year. The SEO agency had been building pages. The pages existed. Google didn&rsquo;t
-          know about them.
+          Third, verify that primary service pages are indexed by Google. Publishing a page does not
+          establish that Google can find or serve it.
         </p>
         <p>
-          The agency&rsquo;s report showed deliverables completed. It showed pages published, word counts
-          hit, internal links added. Work done. Nobody had checked whether Google had actually crawled and
-          indexed the pages. Running a quick report in Google Search Console would have surfaced this in
-          five minutes. It had not been run. Or if it had been run, the results had not been acted on and
-          had not made it into the report.
+          A deliverables report can show pages published, word counts completed, and internal links
+          added. Search Console provides the separate evidence that the intended pages are visible in
+          search.
         </p>
 
         <h2>The Same Root Cause Behind All Three</h2>
         <p>
-          Each finding came from the same structural problem. The vendors were managing their own channels
-          and reporting their own metrics. The SEO agency reported on SEO metrics. The paid ads agency
-          reported on paid ads metrics. The lead gen vendor reported on leads delivered. Nobody was
-          looking at the full picture. Nobody was asking what this is producing in booked jobs.
+          The structural problem appears when vendors manage separate channels and report separate
+          metrics. SEO reports on visibility, paid media reports on platform conversions, and lead
+          sellers report leads delivered. The business still needs one owner connecting those records
+          to qualified calls and jobs booked.
         </p>
         <p>
-          Each vendor had a clean dashboard. The combined picture was a mess. Three green reports. No
-          clear answer on what $20,000 a month was actually producing in revenue.
+          Clean channel dashboards do not create a combined answer. The audit supplies that missing
+          reconciliation.
         </p>
 
         <h2>What Gets Reported vs. What Actually Matters</h2>

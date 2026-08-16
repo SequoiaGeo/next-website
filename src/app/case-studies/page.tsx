@@ -375,32 +375,31 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* Audit case study, Midwest HVAC/Plumbing */}
+      {/* Full-picture audit method */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
           {/* Header */}
           <div className="mb-12">
             <span className="inline-block rounded-full bg-[#C8EDD2] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#1A5C3A] mb-4">
-              Audit Findings
+              Audit Method
             </span>
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              $20K/Month. Three Agencies. 22 Booked Jobs.
+              Three Vendors. Three Dashboards. No Unified Answer.
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-gray-600 max-w-3xl">
-              An established commercial HVAC contractor in the Midwest had spent 18 months
-              trying to break into residential HVAC and plumbing. They couldn&rsquo;t keep one
-              plumber busy. Three agencies were collecting checks and reporting green. Here&rsquo;s
-              what the audit found in 48 hours.
+              When separate vendors manage separate channels, each report can look healthy while
+              nobody connects the combined system to qualified calls and jobs booked. The
+              full-picture audit verifies the definitions, joins the records, and finds the gap.
             </p>
           </div>
 
           {/* Context strip */}
           <div className="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
             {[
-              { label: "Monthly marketing spend", value: "$20,000" },
-              { label: "Agencies involved", value: "3 vendors" },
-              { label: "Time struggling", value: "18 months" },
+              { label: "Reporting structure", value: "Siloed" },
+              { label: "Primary outcome", value: "Jobs booked" },
+              { label: "Review approach", value: "Cross-channel" },
             ].map((item) => (
               <div key={item.label} className="rounded-xl bg-[#fafaf8] border border-gray-200 px-6 py-5 text-center">
                 <div className="text-2xl font-extrabold text-[#0D2318]">{item.value}</div>
@@ -413,7 +412,7 @@ export default function CaseStudiesPage() {
           <div className="rounded-2xl border border-gray-200 overflow-hidden">
             <div className="bg-[#0D2318] px-7 py-5">
               <h3 className="text-sm font-bold uppercase tracking-widest text-[#3A9E6A]">
-                What the audit found
+                What the audit verifies
               </h3>
             </div>
 
@@ -423,19 +422,16 @@ export default function CaseStudiesPage() {
               <div className="grid grid-cols-1 gap-4 px-7 py-6 sm:grid-cols-[auto_1fr]">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 rounded-lg bg-red-50 px-3 py-2 text-center">
-                    <div className="text-lg font-extrabold text-red-500">16,962</div>
-                    <div className="text-xs text-red-400 leading-tight">reported<br/>conversions</div>
+                    <div className="text-lg font-extrabold text-red-500">Page views</div>
+                    <div className="text-xs text-red-400 leading-tight">reported as<br/>conversions</div>
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1a1a1a]">Google Ads: 21 measured search conversions</p>
+                  <p className="text-sm font-semibold text-[#1a1a1a]">Google Ads: nonlead events inflated the report</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
-                    The Google Ads agency reported 16,962 conversion events. The account review found 21
-                    measured search conversions in the reviewed period, not confirmed booked jobs. Three of five
-                    conversion goals were misconfigured, including a page view counted as a conversion.
-                    Every report showed green. The agency had no idea what a booked job actually
-                    cost because they were never connected to dispatch data. The client had no reason to
-                    question it because the numbers looked good on paper.
+                    The review identifies page views and other nonlead actions inside conversion
+                    reporting, then verifies the remaining events against accepted forms, calls,
+                    completed bookings, and dispatch data.
                   </p>
                 </div>
               </div>
@@ -444,17 +440,15 @@ export default function CaseStudiesPage() {
               <div className="grid grid-cols-1 gap-4 px-7 py-6 sm:grid-cols-[auto_1fr]">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 rounded-lg bg-red-50 px-3 py-2 text-center">
-                    <div className="text-lg font-extrabold text-red-500">$7,783</div>
-                    <div className="text-xs text-red-400 leading-tight">per month<br/>to Angi</div>
+                    <div className="text-lg font-extrabold text-red-500">Unmatched</div>
+                    <div className="text-xs text-red-400 leading-tight">lead-platform<br/>spend</div>
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1a1a1a]">Angi costing $865 per booked job</p>
+                  <p className="text-sm font-semibold text-[#1a1a1a]">Lead-platform spend was not tied to booked jobs</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
-                    The company was spending $7,783 per month. When the calls were reconciled to jobs booked,
-                    the cost was $865 per booked job. Nobody had separated the result by trade. The agency managing ads
-                    didn&rsquo;t look at Angi. The Angi rep wasn&rsquo;t going to flag it. The client
-                    assumed that if leads were coming in, something was working.
+                    The review matches lead-platform invoices to qualified calls and jobs booked by
+                    trade. A report that stops at leads delivered does not establish performance.
                   </p>
                 </div>
               </div>
@@ -463,19 +457,16 @@ export default function CaseStudiesPage() {
               <div className="grid grid-cols-1 gap-4 px-7 py-6 sm:grid-cols-[auto_1fr]">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 rounded-lg bg-red-50 px-3 py-2 text-center">
-                    <div className="text-lg font-extrabold text-red-500">265</div>
-                    <div className="text-xs text-red-400 leading-tight">pages not<br/>indexed</div>
+                    <div className="text-lg font-extrabold text-red-500">Primary</div>
+                    <div className="text-xs text-red-400 leading-tight">pages missing<br/>from search</div>
                   </div>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#1a1a1a]">SEO company billing monthly while Google couldn&rsquo;t see their site</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
-                    265 pages, including their primary plumbing service pages, were not indexed by Google.
-                    The SEO company was producing monthly deliverables and billing on schedule. Nobody had
-                    checked Google Search Console to verify that the content they were creating was
-                    actually visible in search results. The residential plumbing pages they needed to rank
-                    were invisible. That&rsquo;s why one plumber couldn&rsquo;t stay busy: the demand
-                    existed, but Google literally could not find the pages targeting it.
+                    The review checks whether primary service pages are indexed by Google, not merely
+                    published. Search Console evidence determines whether the intended search audience
+                    can reach the content.
                   </p>
                 </div>
               </div>
@@ -487,11 +478,9 @@ export default function CaseStudiesPage() {
           <div className="mt-8 rounded-2xl bg-[#0D2318] px-8 py-7">
             <p className="text-sm font-bold uppercase tracking-widest text-[#3A9E6A] mb-3">The actual problem</p>
             <p className="text-base leading-relaxed text-[#C8EDD2]/80">
-              This wasn&rsquo;t a channel problem. It was a visibility problem. Three vendors each owned a
-              piece and optimized it in isolation. None of them had access to dispatch data. None of them
-              knew what a booked plumbing job actually cost. The client was spending $20,000 per month
-              and had no way to answer the only question that matters: which dollar of marketing spend is
-              producing revenue?
+              This is not always a channel problem. It can be a visibility problem. Separate vendors
+              each own a piece and optimize it in isolation. If no one can reconcile dispatch data,
+              nobody can answer which marketing source is producing qualified calls and jobs booked.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
               This is what a Full Picture Audit surfaces. Not a critique of the agencies, an honest

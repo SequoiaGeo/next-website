@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Sequoia GEO",
     title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
     description:
-      "Your marketing agency sees clicks. I see your booking rate, average ticket, and why $7K/mo in leads produces $475 in revenue. 13 years as a home services operator. 4x Inc 5000.",
+      "Your marketing agency sees clicks. I trace calls, booking rate, and jobs booked across the full marketing system. 13 years as a home services operator. 4x Inc 5000.",
     images: [
       {
         url: "/og-image.png",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Home Services Marketing That Looks at the Full Picture | Sequoia GEO",
     description:
-      "Your marketing agency sees clicks. I see your booking rate, average ticket, and why $7K/mo in leads produces $475 in revenue. 4x Inc 5000.",
+      "Your marketing agency sees clicks. I trace calls, booking rate, and jobs booked across the full marketing system. 4x Inc 5000.",
   },
   metadataBase: new URL("https://www.sequoiageo.com"),
 };

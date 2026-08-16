@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "Should HVAC companies buy leads from Angi or other lead sellers?",
     answer:
-      "Audit the math first. One plumbing company I audited was spending $7,783 a month on Angi at a cost of $865 per booked job. The same audit found 131 new customers in 4,009 tracked calls. Lead sellers can fill a slow week, but if you cannot tie every lead fee to a booked job, you are funding someone else's marketing.",
+      "Audit the math first. A full-picture review matches recurring lead-platform spend to qualified calls and jobs booked by trade, then separates new customers from repeat and nonlead activity. Lead sellers can fill a slow week, but every lead fee still needs to connect to a qualified call and job booked.",
   },
   {
     question: "Does AI search matter for HVAC companies yet?",

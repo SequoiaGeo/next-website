@@ -133,7 +133,7 @@ The website sends the flat fields listed above as the sole HighLevel mapping con
 
 ## Evidence used on the landing page
 
-The `16,962` reported conversion events are documented in `C:/Users/Aaron/Documents/2AARON/Wiki/Prospects/Star Heating.md` and the published audit article in `src/app/blog/[slug]/page.tsx`. The controlling source for the `21` measured search conversions is `C:/Users/Aaron/Documents/2AARON/Sources/transcripts/2026-04-01-Star-Heating-Marketing-Meeting.md`, especially lines 41 and 102 through 106. The transcript calls the 21 potential leads and explicitly says they were not confirmed booked jobs. It also identifies three of five conversion goals as misconfigured, including a page view counted as a conversion. The `22 booked jobs` wording in the prospect wiki and `C:/Users/Aaron/Documents/2AARON/Wiki/Strategy/Writing-Style-Guide.md` is stale and must not be reused.
+The landing page presents the audit method, not a prospect&rsquo;s account-level results. It explains how the review checks conversion definitions, separates new-customer demand from repeat and nonlead activity, reconciles lead-platform spend to jobs booked by trade, and verifies service-page indexation. Prospect evidence and internal source locations remain outside the public repository.
 
 ## Seven-day read
 

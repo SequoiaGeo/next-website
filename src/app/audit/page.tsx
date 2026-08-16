@@ -186,37 +186,36 @@ export default function AuditPage() {
         </div>
       </div>
 
-      {/* What an audit found: real figures, already published, names removed */}
+      {/* Audit verification method */}
       <div className="bg-[#fafaf8]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
           <div className="max-w-2xl mb-10">
             <p className="section-overline mb-3">From One Audit</p>
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl leading-[1.08]">
-              What an audit found
+              What the audit verifies
             </h2>
             <p className="mt-4 text-base text-gray-500 leading-relaxed">
-              One home service company. Numbers pulled from its own accounts, published with the name removed.
+              These are the failure patterns the review is designed to verify, not results attributed to a named company.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="rounded-2xl border border-gray-200 bg-white p-8">
-              <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A] tabular-nums">
-                16,962
+              <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A]">
+                False conversions
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-500">
-                Conversion events reported by the ad account. The account review found only{" "}
-                <span className="font-semibold text-[#1a1a1a]">21 measured search conversions</span>{" "}
-                in the reviewed period. They were not confirmed booked jobs.
+                The review inspects every conversion action, excludes page views and other nonlead
+                events, and verifies whether the remaining actions became qualified inquiries.
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-white p-8">
-              <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A] tabular-nums">
-                131 <span className="text-xl font-bold text-gray-400">of 4,009</span>
+              <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A]">
+                Mixed call data
               </p>
               <p className="mt-3 text-sm leading-relaxed text-gray-500">
-                Same audit. I went through 4,009 tracked calls.{" "}
-                <span className="font-semibold text-[#1a1a1a]">131 were new customers</span>.
+                The review separates new-customer calls from repeat callers and nonlead activity
+                before any source is credited with demand.
               </p>
             </div>
           </div>

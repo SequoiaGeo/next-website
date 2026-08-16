@@ -39,7 +39,7 @@ const faqs = [
   {
     question: "What about buying leads from Angi and similar sellers?",
     answer:
-      "Track it before you trust it. One plumbing company I audited paid Angi $7,783 in a month at a cost of $865 per booked job, and the same audit found 131 new customers across 4,009 tracked calls. The per-lead price meant nothing without the jobs booked.",
+      "Track it before you trust it. A full-picture audit matches lead-platform spend to qualified calls and booked-job results by trade, then separates new customers from repeat and nonlead activity. The per-lead price means little without the jobs booked.",
   },
 ];
 
@@ -198,10 +198,9 @@ export default function LeadCostPage() {
           <div className="mt-6 space-y-5">
             <p className="text-base leading-relaxed text-gray-600">
               Low-priced leads and premium leads both hide the numbers that matter:
-              jobs booked and the cost of each one. One plumbing company I audited paid Angi $7,783
-              in a single month at a cost of $865 per booked job. The same audit tracked
-              4,009 calls and found 131 new customers. Nobody inside the company had tied
-              the invoice to the booked-job number, so the spend ran on autopilot.
+              jobs booked and the cost of each one. A full-picture audit matches recurring
+              lead-platform invoices to booked-job results by trade, then separates new customers
+              from repeat and nonlead activity.
             </p>
             <p className="text-base leading-relaxed text-gray-600">
               That is the standard I hold every row in the tables above to. A $41.03 phone

@@ -10,7 +10,8 @@
     "test:lead-policy": "node --test scripts/lead-reconciliation-policy.test.mjs",
     "test:public-tracking": "node --test scripts/public-tracking-scan.test.mjs",
     "test:synthetic-lead": "node --test scripts/synthetic-lead-tracking-contract.test.mjs",
-    "test:api-compat": "node --test scripts/lead-api-compatibility.test.mjs"
+    "test:api-compat": "node --test scripts/lead-api-compatibility.test.mjs",
+    "test:public-claims": "node --test scripts/public-claims-policy.test.mjs"
   },
   "dependencies": {
     "next": "^14.2.35",
