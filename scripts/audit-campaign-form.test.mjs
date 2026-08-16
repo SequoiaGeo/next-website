@@ -1,6 +1,23 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
+import path from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
+
+const appRoot = fileURLToPath(new URL("../src/app", import.meta.url));
+
+async function pageFiles(directory) {
+  const entries = await readdir(directory, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const fullPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) files.push(...(await pageFiles(fullPath)));
+    if (entry.isFile() && entry.name === "page.tsx") files.push(fullPath);
+  }
+
+  return files;
+}
 
 const auditPage = await readFile(new URL("../src/app/audit/page.tsx", import.meta.url), "utf8");
 const formComponent = await readFile(
@@ -25,15 +42,15 @@ test("the shared form sends company while keeping the field opt in", () => {
 });
 
 test("no non-audit page opts into the campaign qualification field", async () => {
-  const otherInlineFormPages = [
-    "../src/app/page.tsx",
-    "../src/app/hvac-seo/page.tsx",
-    "../src/app/plumbing-seo/page.tsx",
-    "../src/app/roofing-seo/page.tsx",
-  ];
+  const inlineFormPages = [];
 
-  for (const relativePath of otherInlineFormPages) {
-    const source = await readFile(new URL(relativePath, import.meta.url), "utf8");
-    assert.doesNotMatch(source, /collectCompany|companyRequired/);
+  for (const filename of await pageFiles(appRoot)) {
+    const source = await readFile(filename, "utf8");
+    if (!source.includes("InlineLeadForm")) continue;
+    inlineFormPages.push(path.relative(appRoot, filename));
+    if (path.normalize(filename) === path.join(appRoot, "audit", "page.tsx")) continue;
+    assert.doesNotMatch(source, /collectCompany|companyRequired/, filename);
   }
+
+  assert.equal(inlineFormPages.length, 15);
 });
