@@ -404,8 +404,9 @@ export default function BestPlumbingAgenciesPage() {
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
               Before comparing agencies, look at what the work produces. KABAM Plumbing in Sun
               City Center, Florida: a managed profile, a rebuilt website around his real service
-              area, 116 documented profile calls in six months, and a perfect score that held
-              while the review count grew.
+              area, 116 Google Business Profile call-button clicks over six months, and a perfect
+              score that held while the review count grew. The Google metric measures clicks on
+              the call button, not completed calls, qualified leads, or jobs booked.
             </p>
             <Link
               href="/case-studies/kabam-plumbing"

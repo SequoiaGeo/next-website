@@ -211,7 +211,7 @@ export default function CaseStudiesPage() {
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                   {[
                     { value: "5.0", label: "Across 154 reviews" },
-                    { value: "116", label: "Profile calls in 6 months" },
+                    { value: "116", label: "Profile call-button clicks, 6 months" },
                     { value: "18.8K", label: "Search impressions, climbing" },
                     { value: "100%", label: "Rankings kept through rebuild" },
                   ].map((item) => (

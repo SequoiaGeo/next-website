@@ -72,3 +72,28 @@ test("restricted prospect proof is absent from public source", () => {
     `restricted prospect proof appears in: ${violations.join(", ")}`,
   );
 });
+
+test("Google Business Profile call clicks are not presented as completed or qualified calls", () => {
+  const proofFiles = [
+    "src/app/best-plumbing-marketing-agencies/page.tsx",
+    "src/app/case-studies/kabam-plumbing/page.tsx",
+    "src/app/case-studies/page.tsx",
+    "src/app/plumbing-seo/page.tsx",
+  ];
+
+  for (const sourcePath of proofFiles) {
+    const source = readFileSync(join(root, sourcePath), "utf8");
+    assert.doesNotMatch(source, /\bprofile calls\b/i, sourcePath);
+    assert.doesNotMatch(source, /\b116 calls\b/i, sourcePath);
+  }
+
+  const caseStudy = readFileSync(
+    join(root, "src/app/case-studies/kabam-plumbing/page.tsx"),
+    "utf8",
+  );
+  assert.match(caseStudy, /116 Google Business Profile call-button clicks/);
+  assert.match(
+    caseStudy,
+    /does not establish completed calls, unique callers,\s+qualified leads, or jobs booked/,
+  );
+});

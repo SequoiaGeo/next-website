@@ -210,15 +210,16 @@ export default function PlumbingSeoPage() {
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7 sm:p-8">
             <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A] mb-3">
-              Proof, Not Promises
+              Documented Public Evidence
             </p>
             <p className="text-lg font-bold text-[#1a1a1a]">
-              An independent plumber holding a 5.0 across 154 Google reviews
+              116 Google Business Profile call-button clicks over six months
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              Owner-operated, up against the consolidated brands. A managed profile, a rebuilt
-              website carrying his real service area, and 116 documented profile calls in six
-              months. Real numbers, published with his permission.
+              KABAM Plumbing is owner-operated and held a 5.0 across 154 Google reviews when
+              verified July 8, 2026. Google Business Profile performance reported 116 clicks on
+              the profile&rsquo;s call button over the six months through May 2026. That metric does
+              not establish completed calls, unique callers, qualified leads, or jobs booked.
             </p>
             <Link
               href="/case-studies/kabam-plumbing"

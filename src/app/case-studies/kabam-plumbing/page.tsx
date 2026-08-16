@@ -27,13 +27,13 @@ const articleJsonLd = {
     "@id": "https://www.sequoiageo.com/#organization",
   },
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
+  dateModified: "2026-08-15",
   mainEntityOfPage: "https://www.sequoiageo.com/case-studies/kabam-plumbing",
 };
 
 const stats = [
   { value: "5.0", label: "Across 154 Google reviews" },
-  { value: "116", label: "Profile calls in six months" },
+  { value: "116", label: "Profile call-button clicks in six months" },
   { value: "16.9K → 18.8K", label: "Search impressions in under a month" },
   { value: "1,200+", label: "Impressions on a single service-area page" },
 ];
@@ -180,9 +180,10 @@ export default function KabamPlumbingCaseStudy() {
                 independent&rsquo;s counterpunch.
               </p>
               <p>
-                <strong>Steady, documented call flow from the profile:</strong> 116 calls over
-                the six months through May, with May up over April. For an owner-operator, that
-                profile is producing a meaningful share of his pipeline on its own.
+                <strong>116 Google Business Profile call-button clicks:</strong> Google&rsquo;s
+                performance metric counted 116 clicks on the profile&rsquo;s call button over the
+                six months through May. It does not establish completed calls, unique callers,
+                qualified leads, or jobs booked.
               </p>
               <p>
                 <strong>The rebuilt site indexed cleanly and is climbing.</strong> Search
@@ -194,9 +195,9 @@ export default function KabamPlumbingCaseStudy() {
               <p>
                 The honest part: KABAM&rsquo;s rankings for the big head terms are still
                 climbing, page 2 to 3 and moving, and we said so to Mike directly rather than
-                dressing up impressions as leads. What is already banked is the part that
-                converts: the 5.0 profile, the steady calls, and a site that carries his real
-                service area instead of fighting it.
+                dressing up impressions as leads. What is already documented is the 5.0 profile,
+                the call-button interaction count, and a site that carries his real service area
+                instead of fighting it.
               </p>
             </div>
           </div>
