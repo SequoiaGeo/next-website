@@ -138,9 +138,12 @@ test("accepted API responses require an internal notification or CRM record", as
   const guide = await readRepoFile("src/app/api/guide-capture/route.ts");
   const calculator = await readRepoFile("src/app/api/calculator-lead/route.ts");
 
-  assert.match(contact, /if \(notification\?\.error\)/);
-  assert.match(guide, /if \(!landed\[1\] && !ghlCaptured\)/);
-  assert.match(calculator, /if \(!notificationCaptured && !ghlCaptured\)/);
+  assert.match(contact, /if \(!notificationCaptured && !crmCapture\.durable\)/);
+  assert.match(guide, /if \(!landed\[1\] && !crmCapture\.durable\)/);
+  assert.match(calculator, /if \(!notificationCaptured && !crmCapture\.durable\)/);
+  for (const source of [contact, guide, calculator]) {
+    assert.match(source, /captureWebsiteLead\(/);
+  }
 });
 
 test("all capture clients use the single guarded analytics entry point", async () => {

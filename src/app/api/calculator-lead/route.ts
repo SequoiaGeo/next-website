@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { randomUUID } from "crypto";
 import { checkEmailLead, escapeHtml } from "@/lib/spam-protection";
 import { isSyntheticAttributionTest } from "@/lib/lead-capture-policy.mjs";
+import { captureWebsiteLead } from "@/lib/highlevel-lead-capture.mjs";
 
 function fmt(n: number) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
@@ -111,44 +112,48 @@ export async function POST(req: Request) {
       console.error("[calculator-lead] Aaron notify email failed:", err);
     }
 
-    // 2. Push to GHL and record whether the CRM accepted the lead.
+    // 2. Record the contact and append-only lead evidence in HighLevel. The
+    // legacy webhook is used only when direct credentials are entirely absent.
     const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;
-    let ghlCaptured = false;
-    if (ghlWebhookUrl) {
-      try {
-        const r = await fetch(ghlWebhookUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          signal: AbortSignal.timeout(5000),
-          body: JSON.stringify({
-            firstName: name.split(" ")[0],
-            lastName: name.split(" ").slice(1).join(" ") || "",
-            email,
-            phone: phone || undefined,
-            source: isSyntheticTest ? undefined : labels.ghlSource,
-            leadId,
-            websiteLeadId: leadId,
-            isSyntheticTest,
-            tags: isSyntheticTest
-              ? ["internal-attribution-test"]
-              : [labels.ghlTag, "website-lead"],
-            customField: {
-              monthly_spend: monthlySpend,
-              monthly_calls: monthlyCalls,
-              booking_rate: bookingRate,
-              avg_ticket: avgTicket,
-              annual_gap: annualGap,
-            },
-          }),
-        });
-        ghlCaptured = r.ok;
-        if (!r.ok) {
-          console.error(`[calculator-lead] GHL webhook returned ${r.status} for lead ${leadId}`);
-        }
-      } catch (err) {
-        console.error(`[calculator-lead] GHL webhook error for lead ${leadId}:`, err);
-      }
-    }
+    const firstName = name.split(" ")[0];
+    const lastName = name.split(" ").slice(1).join(" ") || "";
+    const legacyWebhookPayload = {
+      firstName,
+      lastName,
+      email,
+      phone: phone || undefined,
+      source: isSyntheticTest ? undefined : labels.ghlSource,
+      leadId,
+      websiteLeadId: leadId,
+      isSyntheticTest,
+      tags: isSyntheticTest
+        ? ["internal-attribution-test"]
+        : [labels.ghlTag, "website-lead"],
+      customField: {
+        monthly_spend: monthlySpend,
+        monthly_calls: monthlyCalls,
+        booking_rate: bookingRate,
+        avg_ticket: avgTicket,
+        annual_gap: annualGap,
+      },
+    };
+    const crmCapture = await captureWebsiteLead(
+      {
+        leadId,
+        captureKind: "calculator",
+        firstName,
+        lastName,
+        email,
+        phone,
+        source: sourceSlug,
+        landingPath: isCsr ? "/csr-calculator" : "/marketing-leak-calculator",
+        isSyntheticTest,
+      },
+      {
+        legacyWebhookUrl: ghlWebhookUrl,
+        legacyWebhookPayload,
+      },
+    );
 
     // 3. Send the breakdown to the prospect (secondary, failure here must not
     //    abort capture). Marketing leak calculator only: that form promises an
@@ -204,7 +209,7 @@ export async function POST(req: Request) {
       }
     }
 
-    if (!notificationCaptured && !ghlCaptured) {
+    if (!notificationCaptured && !crmCapture.durable) {
       return NextResponse.json({ error: "Failed to process" }, { status: 500 });
     }
 

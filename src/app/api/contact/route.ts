@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
 import { checkLead, escapeHtml } from "@/lib/spam-protection";
 import { isSyntheticAttributionTest } from "@/lib/lead-capture-policy.mjs";
+import { captureWebsiteLead } from "@/lib/highlevel-lead-capture.mjs";
 
 type CampaignAttribution = {
   utm_source: string;
@@ -152,8 +153,11 @@ export async function POST(req: Request) {
         }
       : null;
 
-    // Send notification email to Aaron
-    const notification = await resend.emails.send({
+    // Send the durable notification first, but still attempt CRM capture if the
+    // mail provider fails. Either internal record is sufficient for acceptance.
+    let notificationCaptured = false;
+    try {
+      const notification = await resend.emails.send({
       from: "Sequoia GEO Site <aaron@sequoiageo.com>",
       to: "Aaron@sequoiageo.com",
       subject: `${isSyntheticTest ? "[TEST] " : ""}New website lead ${leadId.slice(0, 8)}: ${safeName}`,
@@ -239,56 +243,67 @@ export async function POST(req: Request) {
         </div>
       `,
       replyTo: email,
-    });
-
-    if (notification?.error) {
-      console.error("[contact] notification email error:", notification.error);
-      return NextResponse.json(
-        { error: "Failed to send message" },
-        { status: 500 }
-      );
+      });
+      if (notification?.error) {
+        console.error("[contact] notification email error:", notification.error);
+      } else {
+        notificationCaptured = true;
+      }
+    } catch (err) {
+      console.error("[contact] notification email failed:", err);
     }
 
-    // Also push to GHL webhook if configured
+    // Prefer the direct HighLevel contact-plus-note ledger when securely
+    // configured. The legacy webhook remains a dormant compatibility fallback.
     const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;
-    if (ghlWebhookUrl) {
-      await fetch(ghlWebhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        signal: AbortSignal.timeout(5000),
-        body: JSON.stringify({
-          firstName: name.split(" ")[0],
-          lastName: name.split(" ").slice(1).join(" ") || "",
-          email,
-          phone,
-          companyName: company || undefined,
-          message,
-          leadId,
-          source,
-          // Flat fields are the sole HighLevel workflow mapping contract.
-          websiteLeadId: leadId,
-          websiteSource: source,
-          utmSource: campaignAttribution?.utm_source || "",
-          utmMedium: campaignAttribution?.utm_medium || "",
-          utmCampaign: campaignAttribution?.utm_campaign || "",
-          utmContent: campaignAttribution?.utm_content || "",
-          campaignLandingPath: campaignAttribution?.landing_path || "",
-          aiEngineSource: aiAttribution?.ai_engine_source || "",
-          aiReferrerHost: aiAttribution?.referrer_host || "",
-          aiLandingPath: aiAttribution?.landing_path || "",
-          isSyntheticTest,
-          tags: isSyntheticTest
-            ? ["internal-attribution-test"]
-            : ["contact-form", "website-lead", source],
-        }),
-      })
-        .then((r) => {
-          if (!r.ok) console.error(`[contact] GHL webhook returned ${r.status} for lead ${leadId}`);
-        })
-        .catch((err) => {
-          // Don't fail the response, but leave a trace so silent CRM drops are visible in logs.
-          console.error(`[contact] GHL webhook error for lead ${leadId}:`, err);
-        });
+    const legacyWebhookPayload = {
+      firstName: name.split(" ")[0],
+      lastName: name.split(" ").slice(1).join(" ") || "",
+      email,
+      phone,
+      companyName: company || undefined,
+      message,
+      leadId,
+      source,
+      websiteLeadId: leadId,
+      websiteSource: source,
+      utmSource: campaignAttribution?.utm_source || "",
+      utmMedium: campaignAttribution?.utm_medium || "",
+      utmCampaign: campaignAttribution?.utm_campaign || "",
+      utmContent: campaignAttribution?.utm_content || "",
+      campaignLandingPath: campaignAttribution?.landing_path || "",
+      aiEngineSource: aiAttribution?.ai_engine_source || "",
+      aiReferrerHost: aiAttribution?.referrer_host || "",
+      aiLandingPath: aiAttribution?.landing_path || "",
+      isSyntheticTest,
+      tags: isSyntheticTest
+        ? ["internal-attribution-test"]
+        : ["contact-form", "website-lead", source],
+    };
+    const crmCapture = await captureWebsiteLead(
+      {
+        leadId,
+        captureKind: "contact",
+        firstName: legacyWebhookPayload.firstName,
+        lastName: legacyWebhookPayload.lastName,
+        email,
+        phone,
+        companyName: company || "",
+        source,
+        campaign: campaignAttribution,
+        ai: aiAttribution,
+        smsConsent: Boolean(smsConsent),
+        landingPath: campaignAttribution?.landing_path || aiAttribution?.landing_path || "",
+        isSyntheticTest,
+      },
+      {
+        legacyWebhookUrl: ghlWebhookUrl,
+        legacyWebhookPayload,
+      },
+    );
+
+    if (!notificationCaptured && !crmCapture.durable) {
+      return NextResponse.json({ error: "Failed to send message" }, { status: 500 });
     }
 
     return NextResponse.json({ success: true, captured: true, leadId, isSyntheticTest });

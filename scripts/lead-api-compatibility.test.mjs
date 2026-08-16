@@ -7,8 +7,11 @@ const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 const originalFetch = globalThis.fetch;
 const originalResendKey = process.env.RESEND_API_KEY;
 const originalWebhookUrl = process.env.GHL_WEBHOOK_URL;
+const originalHighLevelToken = process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+const originalHighLevelLocation = process.env.HIGHLEVEL_LOCATION_ID;
 const outboundCalls = [];
 let deliveryMode = "success";
+let directContactCounter = 0;
 
 const LEGACY_CASES = [
   {
@@ -56,12 +59,14 @@ const LEGACY_CASES = [
 before(() => {
   process.env.RESEND_API_KEY = "re_contract_test";
   process.env.GHL_WEBHOOK_URL = "https://ghl.invalid.test/lead";
+  delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+  delete process.env.HIGHLEVEL_LOCATION_ID;
   globalThis.fetch = async (input, init) => {
     const url = typeof input === "string" ? input : input.url;
     outboundCalls.push({ url, init });
 
     if (url.startsWith("https://api.resend.com/")) {
-      if (deliveryMode === "failure") {
+      if (deliveryMode !== "success") {
         return new Response(JSON.stringify({ message: "fixture failure" }), {
           status: 503,
           headers: { "Content-Type": "application/json" },
@@ -71,6 +76,34 @@ before(() => {
         status: 200,
         headers: { "Content-Type": "application/json" },
       });
+    }
+    if (url.startsWith("https://services.leadconnectorhq.com/contacts/")) {
+      const parsed = new URL(url);
+      if (parsed.pathname === "/contacts/" && !init?.method) {
+        return new Response(JSON.stringify({ contacts: [] }), {
+          status: 200,
+          headers: { "Content-Type": "application/json" },
+        });
+      }
+      if (parsed.pathname === "/contacts/" && init?.method === "POST") {
+        directContactCounter += 1;
+        return new Response(JSON.stringify({ contact: { id: `direct_${directContactCounter}` } }), {
+          status: 201,
+          headers: { "Content-Type": "application/json" },
+        });
+      }
+      if (parsed.pathname.endsWith("/notes") && !init?.method) {
+        return new Response(JSON.stringify({ notes: [] }), {
+          status: 200,
+          headers: { "Content-Type": "application/json" },
+        });
+      }
+      if (parsed.pathname.endsWith("/notes") && init?.method === "POST") {
+        return new Response(JSON.stringify({ note: { id: "direct_note" } }), {
+          status: deliveryMode === "direct_failure" ? 503 : 201,
+          headers: { "Content-Type": "application/json" },
+        });
+      }
     }
     if (url === process.env.GHL_WEBHOOK_URL) {
       return new Response(null, { status: deliveryMode === "success" ? 200 : 503 });
@@ -86,6 +119,10 @@ after(() => {
   else process.env.RESEND_API_KEY = originalResendKey;
   if (originalWebhookUrl === undefined) delete process.env.GHL_WEBHOOK_URL;
   else process.env.GHL_WEBHOOK_URL = originalWebhookUrl;
+  if (originalHighLevelToken === undefined) delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+  else process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN = originalHighLevelToken;
+  if (originalHighLevelLocation === undefined) delete process.env.HIGHLEVEL_LOCATION_ID;
+  else process.env.HIGHLEVEL_LOCATION_ID = originalHighLevelLocation;
 });
 
 async function loadPostHandler(routePath) {
@@ -139,6 +176,45 @@ test("compiled APIs do not claim capture when every internal channel fails", asy
       assert.notEqual(payload.captured, true);
     }
   } finally {
+    deliveryMode = "success";
+  }
+});
+
+test("compiled APIs accept capture when email fails but the direct CRM note succeeds", async () => {
+  process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN = "pit_direct_fixture";
+  process.env.HIGHLEVEL_LOCATION_ID = "location_direct_fixture";
+  deliveryMode = "direct_success";
+  try {
+    for (const fixture of LEGACY_CASES) {
+      const callStart = outboundCalls.length;
+      await postLegacyBody(fixture.routePath, fixture.body);
+      const calls = outboundCalls.slice(callStart);
+      assert.ok(calls.some((call) => call.url.startsWith("https://services.leadconnectorhq.com/contacts/")));
+      assert.ok(!calls.some((call) => call.url === process.env.GHL_WEBHOOK_URL));
+    }
+  } finally {
+    delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+    delete process.env.HIGHLEVEL_LOCATION_ID;
+    deliveryMode = "success";
+  }
+});
+
+test("compiled APIs do not accept capture when email and the direct CRM note both fail", async () => {
+  process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN = "pit_direct_fixture";
+  process.env.HIGHLEVEL_LOCATION_ID = "location_direct_fixture";
+  deliveryMode = "direct_failure";
+  try {
+    for (const fixture of LEGACY_CASES) {
+      const callStart = outboundCalls.length;
+      const { payload, response } = await invokeLegacyBody(fixture.routePath, fixture.body);
+      const calls = outboundCalls.slice(callStart);
+      assert.equal(response.status, 500);
+      assert.notEqual(payload.captured, true);
+      assert.ok(!calls.some((call) => call.url === process.env.GHL_WEBHOOK_URL));
+    }
+  } finally {
+    delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+    delete process.env.HIGHLEVEL_LOCATION_ID;
     deliveryMode = "success";
   }
 });

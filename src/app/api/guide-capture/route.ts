@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { randomUUID } from "crypto";
 import { checkEmailLead, escapeHtml } from "@/lib/spam-protection";
 import { isSyntheticAttributionTest } from "@/lib/lead-capture-policy.mjs";
+import { captureWebsiteLead } from "@/lib/highlevel-lead-capture.mjs";
 
 export async function POST(req: Request) {
   // Instantiate inside the handler so missing env vars don't crash the build
@@ -129,40 +130,44 @@ export async function POST(req: Request) {
       return true;
     });
 
-    // 3. Push contact to GHL via webhook and record whether the CRM accepted it.
+    // 3. Record the contact and append-only lead evidence in HighLevel. The
+    // legacy webhook is used only when direct credentials are entirely absent.
     // A subscriber delivery is not an internal lead record, so the API reports
-    // capture only when Aaron's notification or the CRM webhook succeeds.
+    // capture only when Aaron's notification or the CRM ledger succeeds.
     const ghlWebhookUrl = process.env.GHL_WEBHOOK_URL;
-    let ghlCaptured = false;
-    if (ghlWebhookUrl) {
-      try {
-        const response = await fetch(ghlWebhookUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          signal: AbortSignal.timeout(5000),
-          body: JSON.stringify({
-            firstName: name.split(" ")[0],
-            lastName: name.split(" ").slice(1).join(" ") || "",
-            email,
-            source: isSyntheticTest ? undefined : guide.ghlSource,
-            leadId,
-            websiteLeadId: leadId,
-            isSyntheticTest,
-            tags: isSyntheticTest
-              ? ["internal-attribution-test"]
-              : [guide.ghlTag, "website-lead"],
-          }),
-        });
-        ghlCaptured = response.ok;
-        if (!response.ok) {
-          console.error(`[guide-capture] GHL webhook returned ${response.status} for lead ${leadId}`);
-        }
-      } catch (err) {
-        console.error(`[guide-capture] GHL webhook error for lead ${leadId}:`, err);
-      }
-    }
+    const firstName = name.split(" ")[0];
+    const lastName = name.split(" ").slice(1).join(" ") || "";
+    const source = isAiGuide ? "ai_seo_guide" : "lsa_guide";
+    const legacyWebhookPayload = {
+      firstName,
+      lastName,
+      email,
+      source: isSyntheticTest ? undefined : guide.ghlSource,
+      leadId,
+      websiteLeadId: leadId,
+      isSyntheticTest,
+      tags: isSyntheticTest
+        ? ["internal-attribution-test"]
+        : [guide.ghlTag, "website-lead"],
+    };
+    const crmCapture = await captureWebsiteLead(
+      {
+        leadId,
+        captureKind: "guide",
+        firstName,
+        lastName,
+        email,
+        source,
+        landingPath: isAiGuide ? "/ai-website-seo-guide" : "/lsa-guide",
+        isSyntheticTest,
+      },
+      {
+        legacyWebhookUrl: ghlWebhookUrl,
+        legacyWebhookPayload,
+      },
+    );
 
-    if (!landed[1] && !ghlCaptured) {
+    if (!landed[1] && !crmCapture.durable) {
       return NextResponse.json({ error: "Failed to process" }, { status: 500 });
     }
     return NextResponse.json({ success: true, captured: true, leadId, isSyntheticTest });
