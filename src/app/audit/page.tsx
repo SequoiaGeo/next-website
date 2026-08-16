@@ -179,6 +179,9 @@ export default function AuditPage() {
                 heading="Request your public-surface scorecard"
                 subtext="Tell me where to send it. I review every request personally. No account access is needed to start."
                 buttonText="Request My Scorecard"
+                collectCompany
+                companyLabel="Business name"
+                companyPlaceholder="Acme Plumbing"
               />
             </div>
 

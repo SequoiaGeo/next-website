@@ -16,6 +16,9 @@ type Props = {
   heading?: string;
   subtext?: string;
   buttonText?: string;
+  collectCompany?: boolean;
+  companyLabel?: string;
+  companyPlaceholder?: string;
 };
 
 export default function InlineLeadForm({
@@ -23,6 +26,9 @@ export default function InlineLeadForm({
   heading = "Request a marketing baseline review",
   subtext = "Share the context. Aaron reviews the marketing and booking path himself before he calls.",
   buttonText = "Request the Baseline Review",
+  collectCompany = false,
+  companyLabel = "Business name",
+  companyPlaceholder = "Your business",
 }: Props) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -31,6 +37,7 @@ export default function InlineLeadForm({
     name: "",
     phone: "",
     email: "",
+    company: "",
     smsConsent: false,
     website: "", // honeypot
   });
@@ -194,6 +201,24 @@ export default function InlineLeadForm({
                     placeholder="you@company.com"
                   />
                 </div>
+
+                {collectCompany && (
+                  <div>
+                    <label htmlFor={`company-${source}`} className="block text-sm font-medium text-[#1a1a1a]">
+                      {companyLabel}
+                    </label>
+                    <input
+                      id={`company-${source}`}
+                      name="company"
+                      autoComplete="organization"
+                      type="text"
+                      value={form.company}
+                      onChange={(e) => setForm({ ...form, company: e.target.value })}
+                      className="mt-1.5 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
+                      placeholder={companyPlaceholder}
+                    />
+                  </div>
+                )}
 
                 <div className="flex items-start gap-3">
                   <input
