@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   alternates: {
@@ -74,14 +73,31 @@ export default function Home() {
         variant="green"
       />
 
-      {/* ── Google Reviews (Elfsight) ─────────────────────────────────── */}
+      {/* Independently verifiable review proof without a third-party runtime. */}
       <section className="bg-[#fafaf8] py-12">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <p className="text-center text-xs font-bold uppercase tracking-widest text-[#3A9E6A] mb-3">
-            What clients say
-          </p>
-          <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
-          <div className="elfsight-app-42ab95f5-d53f-4800-be57-33d24a8d29cf" data-elfsight-app-lazy />
+          <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 text-center shadow-sm sm:px-10">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A]">
+              Independent reviews
+            </p>
+            <h2 className="mt-3 text-2xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-3xl">
+              Read the reviews directly on Google.
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-gray-600">
+              Open Sequoia GEO&rsquo;s public profile to see the current rating and every review at the source.
+            </p>
+            <a
+              href="https://www.google.com/maps?cid=5823435747371480489"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
+            >
+              See Sequoia GEO Reviews on Google
+              <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
