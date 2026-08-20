@@ -19,6 +19,7 @@ const resources = [
   { label: "Free LSA Guide", href: "/lsa-guide" },
   { label: "AI SEO Guide", href: "/ai-website-seo-guide" },
   { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },
+  { label: "GitHub Tools for Home Services", href: "/github-repos-home-service-businesses" },
   { label: "HVAC Statistics 2026", href: "/hvac-statistics" },
   { label: "Plumbing Statistics 2026", href: "/plumbing-statistics" },
   { label: "LSA Statistics 2026", href: "/local-services-ads-statistics" },

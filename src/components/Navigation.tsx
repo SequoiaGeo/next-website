@@ -58,6 +58,7 @@ const resourceLinks = [
     group: "Tools",
     items: [
       { label: "Sales Training Tool", href: "/sales-training" },
+      { label: "GitHub Tools for Home Services", href: "/github-repos-home-service-businesses" },
     ],
   },
 ];
