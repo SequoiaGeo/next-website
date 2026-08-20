@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Service pages
     { url: `${BASE_URL}/chatgpt-ads`, lastModified: "2026-07-27", changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/geo-agency`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/geo-agency`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/geo-for-plumbers`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/geo-for-restoration`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/fractional-cmo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.9 },
@@ -38,9 +38,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/web-design-fresno`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
 
     // Trade-specific comparison pages
-    { url: `${BASE_URL}/best-hvac-marketing-agencies`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/best-plumbing-marketing-agencies`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/best-roofing-marketing-agencies`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/best-hvac-marketing-agencies`, lastModified: "2026-08-19", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/best-plumbing-marketing-agencies`, lastModified: "2026-08-19", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/best-roofing-marketing-agencies`, lastModified: "2026-08-19", changeFrequency: "monthly", priority: 0.7 },
 
     // Case studies
     { url: `${BASE_URL}/case-studies`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
@@ -61,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/how-much-should-plumbers-spend-on-marketing`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/how-much-do-hvac-plumbing-leads-cost`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/how-much-does-seo-cost-for-contractors`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/ai-seo-pricing`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/google-lsa-changes-2026`, lastModified: "2026-08-03", changeFrequency: "weekly", priority: 0.8 },
 
     // Statistics pages

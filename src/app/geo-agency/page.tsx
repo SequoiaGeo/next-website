@@ -6,7 +6,7 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "GEO Agency: Get Your Business Recommended in AI Search | Sequoia GEO",
   description:
-    "Sequoia GEO is a GEO agency built around one discipline: making service businesses visible and recommendable in ChatGPT, Perplexity, Gemini, and AI search. GEO is our core work, not a bolt-on.",
+    "Sequoia GEO is an operator-led GEO agency for service businesses that need clearer, more credible visibility across search and AI answers. GEO is core work, not a bolt-on.",
   alternates: {
     canonical: "https://www.sequoiageo.com/geo-agency",
   },
@@ -24,7 +24,7 @@ export default function GeoAgencyPage() {
       />
       <ServiceJsonLd
         serviceType={"Generative Engine Optimization"}
-        description={"Generative Engine Optimization for home service contractors. We make your company visible and recommendable in ChatGPT, Perplexity, Google AI Overviews, and Gemini."}
+        description={"Generative Engine Optimization for home service contractors. We improve how a business, its evidence, and its public information are understood across search and AI answers."}
         url={"https://www.sequoiageo.com/geo-agency"}
       />
       {/* Hero */}
@@ -41,9 +41,12 @@ export default function GeoAgencyPage() {
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
               Sequoia GEO was named after the discipline it was built around: Generative Engine Optimization.
-              Not a bolt-on. Not a rebrand. A real GEO agency focused on making service businesses
-              visible in ChatGPT, Perplexity, Gemini, and Claude. We go deepest in home services, where
-              our team operated for 13 years, and apply the same discipline for local and professional service brands.
+              Not a bolt-on. Not a rebrand. Aaron Husak&apos;s operator-led practice focuses on making service
+              businesses easier for search engines and AI tools to understand, verify, and surface. The deepest
+              experience is in home services, where Aaron operated for 13 years.
+            </p>
+            <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">
+              Engagements start at $2,500 a month with a three-month initial term, then month to month.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -59,6 +62,9 @@ export default function GeoAgencyPage() {
                 (559) 521-3122
               </a>
             </div>
+            <Link href="/ai-seo-pricing" className="mt-5 inline-block text-sm font-semibold text-[#1A5C3A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#0D2318]">
+              See GEO and AI SEO pricing
+            </Link>
           </div>
         </div>
       </section>
@@ -226,11 +232,10 @@ export default function GeoAgencyPage() {
                   the same thing as building around it from day one.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  The team behind Sequoia GEO holds a California B General Contractor License and
-                  spent 13 years operating in home services, growing from startup to 130+ employees
-                  and $17M+ in annual revenue before launching this agency. That background means
-                  Sequoia GEO understands how contractors actually make decisions, what their customers
-                  search for, and what kinds of AI mentions translate into real jobs, not just impressions.
+                  Aaron holds a California B General Contractor License and spent 13 years operating in
+                  home services, building a company from startup to more than 130 employees and earning
+                  four Inc. 5000 recognitions. That background means he understands how contractors make
+                  decisions, what their customers search for, and what signals are worth measuring.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   For home service contractors and local businesses, GEO is not an abstract opportunity.

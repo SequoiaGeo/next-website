@@ -133,7 +133,11 @@ export default function ContractorSeoCostPage() {
             <Link href="/plumbing-seo" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
               plumbing SEO
             </Link>{" "}
-            pages.
+            pages. If you are evaluating the same starting point for GEO or AI-search work,
+            read the{" "}
+            <Link href="/ai-seo-pricing" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
+              GEO and AI SEO pricing guide
+            </Link>.
           </p>
         </div>
       </section>
