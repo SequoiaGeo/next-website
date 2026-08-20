@@ -110,6 +110,25 @@ export default function AiSeoPricingPage() {
         </div>
       </section>
 
+      <section className="bg-[#FAF7F2] py-16">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-8 sm:p-10">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+              <div>
+                <p className="section-overline mb-3">Website projects</p>
+                <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a]">Website Foundation starts at $2,500</h2>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">One-time project pricing for a credible, responsive service-business site on Sequoia GEO&rsquo;s existing Next.js component system.</p>
+              </div>
+              <div className="text-sm leading-relaxed text-gray-700">
+                <p>One location, up to five standard pages, a contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff.</p>
+                <p className="mt-3">Custom applications, booking systems, e-commerce, migrations, nonstandard integrations, and ongoing maintenance are separately scoped or declined when they are not a fit.</p>
+                <Link href="/web-design-fresno" className="mt-5 inline-block font-semibold text-[#1A5C3A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#0D2318]">See Website Foundation details</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">

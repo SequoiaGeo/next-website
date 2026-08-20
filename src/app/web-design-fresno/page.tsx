@@ -56,7 +56,7 @@ export default function WebDesignFresnoPage() {
                 "name": "How much does a website cost in Fresno?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "A professionally built website for a local Fresno business typically ranges from $3,000 to $12,000 depending on the number of pages, functionality needed, and whether SEO and content are included. We give fixed-price proposals so there are no surprises."
+                  "text": "Website Foundation starts at $2,500 for one location and up to five standard pages on Sequoia GEO's existing Next.js component system. It includes a responsive build, contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff. Custom applications, booking systems, migrations, and advanced integrations are scoped separately."
                 }
               },
               {
@@ -64,7 +64,7 @@ export default function WebDesignFresnoPage() {
                 "name": "Do your websites rank on Google?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We build every site with local SEO as a foundation, not an afterthought. That means proper technical structure, fast load times, schema markup, Google Business Profile integration, and content written to match how Fresno customers actually search. Rankings take time, but the site is built to earn them."
+                  "text": "Website Foundation includes technical search basics: page titles, metadata, sitemap, robots directives, structured data where the supplied information supports it, and a responsive build. It does not include a promise of rankings, a full content SEO program, or an ongoing SEO retainer."
                 }
               },
               {
@@ -80,7 +80,7 @@ export default function WebDesignFresnoPage() {
                 "name": "Will I be able to update the website myself?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. We build on platforms that give you full editing access with no technical knowledge required. You can update your content, add photos, change hours, and publish new pages without touching code."
+                  "text": "You own the domain, hosting, analytics, and source assets delivered for the project. Website Foundation is built as a managed Next.js site, so post-launch edits, maintenance, and new pages are not included unless a separate care or marketing scope is agreed."
                 }
               },
               {
@@ -183,6 +183,27 @@ export default function WebDesignFresnoPage() {
         </div>
       </section>
 
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="rounded-2xl border border-[#2D6A4F]/30 bg-[#FAF7F2] p-8 sm:p-10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#2D6A4F] mb-3">Website pricing, published</p>
+            <div className="grid gap-8 md:grid-cols-[0.75fr_1.25fr] md:items-start">
+              <div>
+                <h2 className="text-3xl font-bold text-[#1A1A1A]">Website Foundation</h2>
+                <p className="mt-4 text-5xl font-extrabold tracking-tight text-[#1A1A1A]">$2,500</p>
+                <p className="mt-1 text-sm font-semibold text-gray-600">one-time starting price</p>
+                <p className="mt-5 text-sm leading-relaxed text-gray-600">Built for a service business that needs a credible, responsive site without commissioning a custom software project.</p>
+              </div>
+              <div>
+                <p className="text-base leading-relaxed text-gray-700">The Foundation includes one location, up to five standard pages, brand-adapted layouts from Sequoia GEO&rsquo;s existing Next.js component system, a contact form, basic analytics, technical search setup, two written revision rounds, launch, and handoff.</p>
+                <p className="mt-4 text-sm leading-relaxed text-gray-600">The client supplies brand assets, factual service information, and feedback. Custom applications, booking systems, e-commerce, migrations, nonstandard integrations, ongoing maintenance, and work outside the existing component system are separately scoped or declined when they are not a fit.</p>
+                <p className="mt-4 text-sm leading-relaxed text-gray-600">Fifty percent is due before production begins. The project pauses when required content or consolidated feedback is not available.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services */}
       <section className="py-20 px-6 bg-[#FAF7F2]">
         <div className="max-w-5xl mx-auto">
@@ -198,8 +219,8 @@ export default function WebDesignFresnoPage() {
             {[
               {
                 icon: "🏗️",
-                title: "Custom Design",
-                body: "No templates. We design to your brand, your market position, and the expectations of Fresno customers in your category. Every layout decision is made with conversion and readability in mind."
+                title: "Brand-Adapted Design",
+                body: "We adapt a proven component system to your brand, market position, and the expectations of Fresno customers in your category. Every layout decision is made with conversion and readability in mind."
               },
               {
                 icon: "⚡",
@@ -219,7 +240,7 @@ export default function WebDesignFresnoPage() {
               {
                 icon: "🔗",
                 title: "Conversion-Optimized Pages",
-                body: "Clear calls to action, click-to-call phone numbers, booking integrations, and trust signals placed where they matter. Every service page is designed to turn a visitor into a contact."
+                body: "Clear calls to action, click-to-call phone numbers, a contact form, and trust signals placed where they matter. Advanced booking or workflow integrations are scoped separately."
               },
               {
                 icon: "📊",
@@ -296,7 +317,7 @@ export default function WebDesignFresnoPage() {
               {
                 step: "03",
                 title: "Design and Development",
-                body: "We build in stages with your review at each milestone. Design mockup first, then development, then content population. No surprises at the end."
+                body: "We build from the agreed site map and component system, then apply two consolidated written revision rounds. This keeps the project collaborative without turning it into an open-ended custom build."
               },
               {
                 step: "04",
@@ -305,8 +326,8 @@ export default function WebDesignFresnoPage() {
               },
               {
                 step: "05",
-                title: "Launch and Ongoing Support",
-                body: "We handle the launch and stay involved during the initial indexing period. Monthly check-ins available for clients who want ongoing optimization as the site starts ranking."
+                title: "Launch and Handoff",
+                body: "We launch the agreed build and verify the contact path and basic technical setup. Post-launch edits, maintenance, and ongoing optimization are available only under a separate agreed scope."
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6 items-start">
@@ -331,11 +352,11 @@ export default function WebDesignFresnoPage() {
             {[
               {
                 q: "How much does a website cost in Fresno?",
-                a: "Local business sites we build typically range from $3,000 to $12,000. That range covers everything from a streamlined 5-page service site to a multi-location, feature-heavy build with booking integrations. We give fixed-price proposals before any work starts."
+                a: "Website Foundation starts at $2,500 for one location and up to five standard pages. It includes a responsive Next.js build from our existing component system, a contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff. Advanced functionality is separately scoped or declined when it is not a fit."
               },
               {
                 q: "Do you offer website hosting and maintenance?",
-                a: "Yes. We offer hosting and maintenance plans that cover updates, security patches, speed monitoring, and backup. You own your domain and assets regardless of whether you stay on our hosting or move elsewhere."
+                a: "Website Foundation includes launch and handoff, not ongoing maintenance. You own your domain, hosting, analytics, and delivered source assets. A separate care or marketing scope is required for post-launch edits, monitoring, or optimization."
               },
               {
                 q: "Can you redesign a website we already have?",
@@ -347,7 +368,7 @@ export default function WebDesignFresnoPage() {
               },
               {
                 q: "Do you write the content for the website?",
-                a: "Yes. Copywriting is included in most of our engagements. We research how your customers search, write to match that intent, and create content that both ranks and converts. We do not repurpose your old copy, we rebuild it from the ground up."
+                a: "Website Foundation uses the factual service information and brand assets you provide. Editing or reorganizing that information within the agreed pages is included. A larger content strategy, substantial copywriting, or a broader SEO content program is scoped separately."
               },
             ].map((item) => (
               <div key={item.q} className="border border-gray-200 rounded-xl p-6">
