@@ -189,15 +189,15 @@ export default function GitHubReposForHomeServiceBusinessesPage() {
               Top 10 GitHub Repositories for Home Service Businesses
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]/80">
-              The public-code projects worth knowing if you want more control over the systems
-              behind estimates, follow-up, automation, customer communication, analytics, and
-              SEO research.
+              A technical-owner resource for evaluating public-code projects behind estimates,
+              follow-up, automation, customer communication, analytics, and SEO research.
             </p>
             <p className="mx-auto mt-7 max-w-3xl rounded-xl border border-[#C8EDD2]/15 bg-white/5 px-5 py-4 text-sm leading-relaxed text-[#C8EDD2]/70">
               This is a practical fit list, not a ranking by GitHub stars or a recommendation to
               replace a working field-service platform. We reviewed public repository
-              documentation on August 20, 2026. Every project needs an accountable technical
-              owner before it touches customer or operational data.
+              documentation on August 20, 2026. Use it to ask better evaluation questions, not
+              to choose operational software from a list. Every project needs an accountable
+              technical owner before it touches customer or operational data.
             </p>
             <p className="mt-5 text-sm text-[#C8EDD2]/55">By Aaron Husak · August 20, 2026</p>
           </div>
