@@ -5,7 +5,7 @@ import PdfDownload from "./pdf-download";
 export const metadata: Metadata = {
   title: "AI Search Visibility Guide for Contractors 2026 | Sequoia GEO",
   description:
-    "Why your contractor website is invisible to ChatGPT, Perplexity, and Google AI Overviews, and what to fix. Free guide covering the 5 signals AI uses to recommend businesses.",
+    "How contractors can improve crawl access, entity clarity, public corroboration, and useful content for AI-assisted search.",
   alternates: {
     canonical: "https://www.sequoiageo.com/ai-website-seo-guide",
   },
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 
 const chapters = [
   { id: "how-ai-search-works", title: "Why AI search works differently" },
-  { id: "five-signals", title: "The 5 signals AI uses to evaluate your website" },
+  { id: "five-signals", title: "The 5 surfaces an AI visibility audit reviews" },
   { id: "thin-website", title: "The thin website problem" },
   { id: "schema-markup", title: "Schema markup for contractors" },
   { id: "content-ai-cites", title: "Content that AI actually cites" },
-  { id: "thirty-day-checklist", title: "The 30-day AI visibility checklist" },
+  { id: "thirty-day-checklist", title: "The 30-day foundation checklist" },
 ];
 
 export default function AIWebsiteSEOGuidePage() {
@@ -30,14 +30,14 @@ export default function AIWebsiteSEOGuidePage() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Is Your Website Invisible to AI Search? The Fix Starts Here.",
-            "description": "Why contractor websites get ignored by ChatGPT, Perplexity, and Google AI Overviews, and what to fix. Covers the 5 AI visibility signals, schema markup, and a 30-day checklist.",
+            "description": "How contractors can improve crawl access, entity clarity, public corroboration, useful content, and measurement for AI-assisted search.",
             "author": { "@type": "Person", "name": "Aaron Husak" },
             "publisher": {
               "@type": "Organization",
               "name": "Sequoia GEO",
               "url": "https://www.sequoiageo.com"
             },
-            "dateModified": "2026-04-22",
+            "dateModified": "2026-08-20",
             "mainEntityOfPage": "https://www.sequoiageo.com/ai-website-seo-guide"
           })
         }}
@@ -57,20 +57,19 @@ export default function AIWebsiteSEOGuidePage() {
         <div className="mx-auto max-w-4xl px-6 lg:px-8 py-16 sm:py-20 text-center">
           <p className="section-overline text-[#3A9E6A] mb-4">Free Guide</p>
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-[1.08]">
-            Is Your Website Invisible to AI Search?{" "}
-            <span className="text-[#3A9E6A]">The Fix Starts Here.</span>
+            Can AI Search Understand{" "}
+            <span className="text-[#3A9E6A]">and Verify Your Business?</span>
           </h1>
           <p className="mt-6 text-lg text-[#C8EDD2]/70 leading-relaxed max-w-2xl mx-auto">
-            A roofing contractor in Phoenix had 47 pages on his website. His agency was proud of it.
-            When we asked ChatGPT who to call for roofing in Phoenix, he wasn&rsquo;t mentioned.
-            Not ranking lower. Completely absent. Three of his competitors were named by name.
-            His website had the traffic. It didn&rsquo;t have the authority signals AI uses to make recommendations.
+            A contractor can have dozens of indexed pages and still be absent from a recommendation.
+            The website may be crawlable while the business entity remains unclear, unsupported, or
+            contradicted across the public web. This guide shows what to inspect before adding more content.
           </p>
           <p className="mt-4 text-base text-[#C8EDD2]/50">
             This guide covers what those signals are and how to build them.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm font-medium text-[#C8EDD2]/60">
-            {["6 chapters", "12 pages", "30-day checklist", "No email required"].map((s) => (
+            {["6 chapters", "Source-backed guidance", "30-day foundation", "No email required"].map((s) => (
               <span key={s} className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#3A9E6A]" />
                 {s}
@@ -127,16 +126,16 @@ export default function AIWebsiteSEOGuidePage() {
                 </div>
                 <div className="prose prose-gray max-w-none space-y-4 text-[15px] leading-relaxed text-gray-700">
                   <p>
-                    Google&rsquo;s search engine ranks web pages. ChatGPT, Perplexity, and Google&rsquo;s AI Overviews do not rank pages. They recommend businesses. That is a fundamental difference that most contractors and their agencies have not caught up to yet.
+                    Conventional search often presents ranked links, maps, and other search features. AI-assisted search can instead synthesize an answer and cite selected sources. Some answers name businesses, while others provide information without recommending a provider.
                   </p>
                   <p>
-                    When someone types &ldquo;best HVAC company in Fresno&rdquo; into Google, Google shows a ranked list of pages. When someone asks ChatGPT or Perplexity the same question, the AI gives a direct recommendation with reasoning attached. If your business is not in its training data or current index with sufficient authority signals, you are not in the answer at all. There is no page 2 in AI search. There is mentioned or not mentioned.
+                    A recommendation answer can change with the assistant, prompt wording, date, available search index, user context, and sources retrieved. That makes one prompt run an observation, not a stable ranking position.
                   </p>
                   <p>
-                    AI tools build their answers from a combination of sources: their training data from before a knowledge cutoff date, real-time web access for tools like Perplexity and Bing Chat, and Google&rsquo;s index for AI Overviews. Being indexed is necessary but not sufficient. Being indexed with clear authority signals for your specific service in your specific geography is what gets you recommended.
+                    The controllable foundation is familiar: important pages must be crawlable and indexable, the business entity must be clear, and the public evidence must support what the website claims. Those conditions improve eligibility, but they do not guarantee a citation or recommendation.
                   </p>
                   <p>
-                    The other key difference is that AI search is conversational. &ldquo;Who should I call for a leaking water heater in Boise?&rdquo; is a very different query than typing &ldquo;water heater repair Boise.&rdquo; AI answers the conversational version, and the businesses that get recommended are the ones whose content mirrors how homeowners actually describe their problems. Short-form service pages optimized for exact-match keywords are not enough.
+                    AI search is also conversational. &ldquo;Who should I call for a leaking water heater in Boise?&rdquo; includes a problem, location, and hiring intent. Pages should answer that intent with useful first-hand detail, while the rest of the public web corroborates the business name, service, and geography.
                   </p>
                 </div>
               </section>
@@ -147,38 +146,38 @@ export default function AIWebsiteSEOGuidePage() {
               <section id="five-signals" className="scroll-mt-8 mb-14">
                 <div className="flex items-center gap-3 mb-5">
                   <span className="text-3xl font-black text-[#1A5C3A]/12 leading-none">02</span>
-                  <h2 className="text-2xl font-extrabold text-[#1a1a1a]">The 5 Signals AI Uses to Evaluate Your Website</h2>
+                  <h2 className="text-2xl font-extrabold text-[#1a1a1a]">The 5 Surfaces an AI Visibility Audit Reviews</h2>
                 </div>
                 <div className="prose prose-gray max-w-none space-y-4 text-[15px] leading-relaxed text-gray-700">
                   <p>
-                    After analyzing hundreds of contractor websites against their AI search visibility, these five signals consistently determine whether a business gets recommended or ignored:
+                    No five-item list determines every AI answer. These are five controllable surfaces worth reviewing because they affect whether a business is understandable, retrievable, and credible:
                   </p>
                   <div className="space-y-5 mt-4 not-prose">
                     {[
                       {
                         n: 1,
                         label: "Content depth",
-                        desc: "Does your website have substantive pages about each service you offer? Not 200-word placeholders but real explanations of the process, what homeowners should expect, how you price, and what makes your approach different. Thin pages get ignored. Pages that answer real questions get cited."
+                        desc: "Do the important service pages explain the process, customer decision, pricing factors, and first-hand experience? Page length alone is not the test. The question is whether the page adds useful information."
                       },
                       {
                         n: 2,
                         label: "Topical authority",
-                        desc: "Do you cover your service area comprehensively? A website with pages on every service, FAQ pages, neighborhood-specific content, and comparison guides signals authority on the topic. One that has a homepage and four service pages signals a brochure."
+                        desc: "Does the site answer the important questions around its actual services and service area? Location and service pages should exist because they help a buyer, not because a template can generate them at scale."
                       },
                       {
                         n: 3,
                         label: "Entity clarity",
-                        desc: "Does AI know exactly who you are, what you do, and where you operate? Your business name, services, and service area should be unmistakably clear from your homepage, About page, and structured data. Ambiguity hurts you."
+                        desc: "Are the business name, operator, services, locations, contact details, and relationships explicit and consistent on the website and public profiles? Contradictions weaken confidence."
                       },
                       {
                         n: 4,
                         label: "Structured data (schema markup)",
-                        desc: "Machine-readable signals that tell AI explicitly: this is a plumbing company, they serve the Phoenix metro, their phone is X, they have 247 Google reviews. Without schema, AI has to infer these facts from your content and sometimes gets them wrong or ignores you entirely."
+                        desc: "Accurate structured data can reduce ambiguity when it matches the visible page. Google does not require special schema for its generative AI features, and markup does not guarantee a citation."
                       },
                       {
                         n: 5,
                         label: "Trust signals",
-                        desc: "Reviews referenced on your site, industry associations listed, years in business stated, named employees and photos, before-and-after project documentation. AI tools are trained to recommend businesses that appear established and legitimate. Generic stock photo websites rarely clear this bar."
+                        desc: "Licenses, reviews, associations, named team members, project documentation, and independent coverage should support the claims a business makes. Every detail needs to be current and verifiable."
                       },
                     ].map((item) => (
                       <div key={item.n} className="flex gap-4 p-4 bg-white rounded-xl border border-gray-200">
@@ -203,16 +202,16 @@ export default function AIWebsiteSEOGuidePage() {
                 </div>
                 <div className="prose prose-gray max-w-none space-y-4 text-[15px] leading-relaxed text-gray-700">
                   <p>
-                    Here is the test: open your website and count pages that have more than 400 words of real content. Service pages, About pages, FAQ pages, location pages. Count only pages where a homeowner would learn something they did not already know. If you have fewer than 20 of those pages, you have a thin website, and AI search has almost nothing to build a recommendation from.
+                    Here is the test: inventory the pages that help a customer make a decision. For each important service, ask whether the page answers cost factors, options, process, timing, risks, and what is different about the company&apos;s approach. A page can be long and still add very little. There is no universal word-count or page-count threshold for AI visibility.
                   </p>
                   <p>
                     Compare your website to what a fully built-out contractor presence looks like: individual service pages (not one page listing all services), FAQ pages answering specific homeowner questions by service type, location or neighborhood pages for the cities in your service area, process pages explaining how estimates work and what to expect on a first visit, comparison content (heat pump vs. furnace, tankless vs. tank water heater), and content that addresses the real anxiety homeowners have before calling a contractor.
                   </p>
                   <p>
-                    Most contractor websites were built in two weeks by an agency that wanted to ship something and get paid. They are fine for ranking on Google for a handful of exact-match keywords. They are not enough to be recommended by AI to someone asking a natural-language question about who to trust with a $8,000 HVAC replacement.
+                    A site built around short keyword templates may leave important buyer questions unanswered. The response is not to attack the prior builder or publish more template pages. It is to identify the missing decisions and add first-hand evidence where it helps the customer.
                   </p>
                   <p>
-                    The fix is not a redesign. It is adding content systematically over 90 days. Start with your highest-revenue services. Write pages that answer the ten questions homeowners actually search before hiring someone for that job. Use the specific language homeowners use, not trade terminology. Each page becomes a citation candidate. None of it requires a new website.
+                    The fix may not require a redesign. Start with the services that matter most, use questions from real calls and search data, and add the details only the operator can provide. Measure crawl and index status first, then compare recommendation observations over 60 to 90 days.
                   </p>
                 </div>
               </section>
@@ -227,24 +226,24 @@ export default function AIWebsiteSEOGuidePage() {
                 </div>
                 <div className="prose prose-gray max-w-none space-y-4 text-[15px] leading-relaxed text-gray-700">
                   <p>
-                    Schema markup is code on your website that tells search engines and AI tools exactly what your business is. It is not visible to visitors but it is one of the clearest authority signals you can give to AI search. Most contractor websites have none.
+                    Schema markup is machine-readable data that can help search engines interpret facts already visible on the page. It can reduce ambiguity, but it is not an authority score and it does not instruct an assistant to recommend the business.
                   </p>
                   <p>
-                    The three schema types that matter most for contractors:
+                    Three schema types commonly used by contractor websites are:
                   </p>
                   <div className="space-y-4 not-prose mt-4">
                     {[
                       {
                         type: "LocalBusiness (or HVACBusiness, Plumber, etc.)",
-                        desc: "Declares your business name, address, phone number, service area, hours, and review data in machine-readable format. This is the foundation. Every contractor website should have this on the homepage."
+                        desc: "Represents supported business facts such as the name, address, phone number, service area, and hours. Add only properties a visitor can verify on the page, and use the most accurate business subtype available."
                       },
                       {
                         type: "Service schema",
-                        desc: "Describes specific services you offer. An HVAC company should have Service schema on each service page: AC installation, furnace repair, heat pump installation, and so on. This tells AI exactly what work you do, not just that you are in the HVAC business."
+                        desc: "Can describe a service covered by the visible page. It helps express the relationship between the provider, service, and service area, but does not replace useful service content."
                       },
                       {
                         type: "FAQPage schema",
-                        desc: "Marks up question-and-answer content so AI can directly pull your answers into its responses. A plumbing company with FAQPage schema on their water heater page, answering \"how long does tankless water heater installation take\" and \"what size unit do I need,\" is positioned to have their answer cited when someone asks ChatGPT those questions."
+                        desc: "Represents visible question-and-answer content when the page meets the platform's eligibility rules. It does not make an AI assistant pull or cite an answer, and Google limits FAQ rich results to selected authoritative sites."
                       },
                     ].map((item) => (
                       <div key={item.type} className="flex gap-3 p-4 bg-[#F5FAF7] rounded-xl border border-[#C8EDD2]">
@@ -259,7 +258,19 @@ export default function AIWebsiteSEOGuidePage() {
                     ))}
                   </div>
                   <p className="mt-4">
-                    You do not need a developer to implement basic schema. Next.js, WordPress, and most modern website platforms make it straightforward to add JSON-LD schema in the head section of your pages. Start with LocalBusiness schema on your homepage, then add FAQPage schema to your top three service pages. Add Service schema page by page as you build out your content.
+                    Validate structured data before publishing it, and keep it synchronized with the visible page and public profiles. Start with accurate Organization or LocalBusiness data. Add other types only when the page genuinely supports them. Google says no special schema markup is required for its generative AI features.
+                  </p>
+                  <p>
+                    Read the current first-party guidance from{" "}
+                    <a
+                      href="https://developers.google.com/search/docs/appearance/ai-features"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-semibold text-[#1A5C3A] underline underline-offset-2"
+                    >
+                      Google Search Central
+                    </a>
+                    .
                   </p>
                 </div>
               </section>
@@ -274,7 +285,7 @@ export default function AIWebsiteSEOGuidePage() {
                 </div>
                 <div className="prose prose-gray max-w-none space-y-4 text-[15px] leading-relaxed text-gray-700">
                   <p>
-                    There is a specific type of content that AI tools reliably reference and recommend. It has three characteristics that separate it from the content AI ignores.
+                    No content format is reliably cited by every assistant. Useful sources often share three characteristics that also help human buyers evaluate the answer.
                   </p>
                   <p>
                     <strong>It answers a specific question with a specific answer.</strong> &ldquo;How much does HVAC replacement cost?&rdquo; answered with a price range, what drives the price up or down, and what a homeowner should expect to pay in your market. Not &ldquo;it depends on many factors.&rdquo; AI tools are built to answer questions directly. They prefer sources that do the same.
@@ -283,10 +294,10 @@ export default function AIWebsiteSEOGuidePage() {
                     <strong>It includes verifiable details.</strong> Named brands you install, actual price ranges with context, specific data points, the year you were founded, how many jobs you have completed. AI tools are trained on the internet and they know what a real, credible answer looks like versus a vague marketing statement. Specificity is credibility.
                   </p>
                   <p>
-                    <strong>It reads like it was written by someone with hands-on experience, not someone who researched what to say.</strong> First-person operational knowledge. Real trade decisions. The contractor whose FAQ page explains why they stopped recommending a specific brand after seeing repeated failures in their climate zone gets recommended. The contractor whose page says &ldquo;we offer all HVAC services for all your needs&rdquo; does not.
+                    <strong>It includes first-hand experience.</strong> Explain real trade decisions, operating constraints, and what changed the company&apos;s recommendation. That gives the page information a generic summary cannot supply.
                   </p>
                   <p>
-                    The practical application: for each of your top five services, write a page that answers the ten questions homeowners actually ask before hiring someone. Use the language homeowners use when they search. Be specific about pricing expectations, what the job entails, how long it takes, and what makes your market different. That content is what AI search pulls from.
+                    The practical application: for each important service, answer questions customers actually ask before hiring. Use their language. Include pricing factors, what the job entails, how long it can take, and what makes the local market different. Then verify whether the page is crawled, indexed, cited, and associated with the right business entity.
                   </p>
                 </div>
               </section>
@@ -297,52 +308,52 @@ export default function AIWebsiteSEOGuidePage() {
               <section id="thirty-day-checklist" className="scroll-mt-8 mb-14">
                 <div className="flex items-center gap-3 mb-5">
                   <span className="text-3xl font-black text-[#1A5C3A]/12 leading-none">06</span>
-                  <h2 className="text-2xl font-extrabold text-[#1a1a1a]">The 30-Day AI Visibility Checklist</h2>
+                  <h2 className="text-2xl font-extrabold text-[#1a1a1a]">The 30-Day AI Search Foundation Checklist</h2>
                 </div>
                 <div className="space-y-5">
                   {[
                     {
                       period: "Week 1",
-                      label: "Structured data foundation",
+                      label: "Crawl, index, and entity foundation",
                       color: "bg-[#F5FAF7] border-[#C8EDD2]",
                       items: [
-                        "Add LocalBusiness JSON-LD schema to your homepage with complete business name, address, phone, hours, service area, and review data",
-                        "Verify your name, address, and phone number are identical on your website, Google Business Profile, Yelp, and any other directory listings",
-                        "Add your top 3 to 5 services to your Google Business Profile services section with descriptions",
-                        "Confirm your Google Business Profile has at least 10 photos and a complete business description",
+                        "Verify that Google, Bing, and permitted AI search crawlers can fetch the important pages",
+                        "Inspect index coverage in Google Search Console and Bing Webmaster Tools",
+                        "Compare the business name, contact details, services, operator, and geography across the website and major profiles",
+                        "Validate Organization or LocalBusiness structured data against the visible page",
                       ],
                     },
                     {
                       period: "Week 2",
-                      label: "Content audit and rebuild",
+                      label: "Buyer questions and first-hand evidence",
                       color: "bg-[#EEF7FF] border-[#BFDBFE]",
                       items: [
-                        "List every service page on your website and note the word count",
-                        "Identify your top 3 revenue-generating services and assess whether each page answers real homeowner questions",
-                        "Write or substantially rewrite those 3 pages: 600 words minimum, an FAQ section, what to expect during the job, and pricing context",
-                        "Submit those rewritten pages to Google Search Console for indexing",
+                        "Collect questions from sales calls, estimates, customer emails, Search Console, and People Also Ask",
+                        "Identify the three service pages with the largest gap between buyer intent and useful answers",
+                        "Add pricing factors, process, timing, alternatives, proof, and named operator experience where supported",
+                        "Strengthen internal links and submit materially changed pages for indexing",
                       ],
                     },
                     {
                       period: "Week 3",
-                      label: "FAQ and schema expansion",
+                      label: "Recommendation and citation baseline",
                       color: "bg-[#FFF7ED] border-[#FED7AA]",
                       items: [
-                        "Add FAQPage schema to your top 3 service pages",
-                        "Write 5 to 8 Q&As per page using questions from Google's People Also Ask section for your service category and city",
-                        "Check that each FAQ answer is specific, not vague. If it contains the phrase 'it depends' without a follow-up explanation, rewrite it",
-                        "Submit the updated pages to Google Search Console",
+                        "Freeze a small set of buyer prompts by service, problem, and geography",
+                        "Run each prompt repeatedly in a controlled environment and keep platforms separate",
+                        "Record mentions, recommendations, primary position, citations, date, and prompt wording",
+                        "Inspect cited sources and correct material contradictions on sources the business can legitimately manage",
                       ],
                     },
                     {
                       period: "Week 4",
-                      label: "Trust and authority signals",
+                      label: "Demand measurement and next decision",
                       color: "bg-[#F5F3FF] border-[#DDD6FE]",
                       items: [
-                        "Text review requests to your last 20 completed customers",
-                        "Add any industry certifications, manufacturer authorizations, or association memberships to your About page with specific names and years",
-                        "Add a team page or owner bio with real background, not generic marketing copy",
-                        "After 30 days, test your visibility: ask ChatGPT 'who should I call for [your service] in [your city]?' and note whether you appear. Run monthly.",
+                        "Confirm that a captured form or call is the conversion event, not an AI-referred visit",
+                        "Preserve known assistant referrals and voluntarily reported recommendation evidence without overwriting source uncertainty",
+                        "Separate visibility, recommendation, referral, inquiry, qualified lead, and job booked in reporting",
+                        "Choose the next 60 to 90 day test from the largest verified constraint, not from one favorable answer",
                       ],
                     },
                   ].map((block) => (
@@ -375,7 +386,7 @@ export default function AIWebsiteSEOGuidePage() {
                     <p className="text-xs font-bold text-[#1A5C3A] uppercase tracking-widest mb-2">Offline Version</p>
                     <h2 className="text-xl font-bold text-[#1a1a1a] mb-1">Get the PDF version</h2>
                     <p className="text-sm text-gray-500 mb-6">
-                      12 pages. Start with the checklist in chapter six. Optional email capture to get occasional operator insights from Aaron.
+                      8 pages. Start with the foundation checklist in chapter six. Optional email capture to get occasional operator insights from Aaron.
                     </p>
                     <PdfDownload />
                   </div>
@@ -391,14 +402,14 @@ export default function AIWebsiteSEOGuidePage() {
       <div className="border-t border-gray-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-base font-semibold text-[#1a1a1a]">Want us to check your AI visibility?</p>
-            <p className="text-sm text-gray-500 mt-1">We audit where your business appears across ChatGPT, Gemini, Perplexity, and Google AI Overviews. 3 business days. No pitch attached.</p>
+            <p className="text-base font-semibold text-[#1a1a1a]">Want to see what AI assistants can verify about your business?</p>
+            <p className="text-sm text-gray-500 mt-1">The public-surface audit separates crawl access, entity consistency, source coverage, website evidence, and recommendation observations.</p>
           </div>
           <Link
             href="/contact"
             className="shrink-0 inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
           >
-            Book a Free Strategy Call
+            Request a Public-Surface Audit
             <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>

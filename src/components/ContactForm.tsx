@@ -5,6 +5,9 @@ import { trackCallIntent, trackCapturedLead, trackEvent } from "@/lib/analytics"
 import { readCampaignAttribution } from "@/lib/campaign-attribution";
 import { readAiAttribution } from "@/lib/ai-attribution";
 import BookingCalendar from "@/components/BookingCalendar";
+import DiscoverySourceFields, {
+  type DiscoveryEvidence,
+} from "@/components/DiscoverySourceFields";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -14,6 +17,9 @@ export default function ContactForm() {
     name: "",
     phone: "",
     email: "",
+    discoverySource: "",
+    reportedAiAssistant: "",
+    reportedAiQuestion: "",
     smsConsent: false,
     // Honeypot. Real users never see or fill this; bots that auto-fill inputs do.
     website: "",
@@ -66,7 +72,16 @@ export default function ContactForm() {
       if (!res.ok) throw new Error("Submission failed");
       const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
       if (!form.website) {
-        trackCapturedLead(result, { source: "contact_form", cta_contract: "intake" });
+        trackCapturedLead(result, {
+          source: "contact_form",
+          cta_contract: "intake",
+          ...(form.discoverySource
+            ? { reported_discovery_source: form.discoverySource }
+            : {}),
+          ...(form.reportedAiAssistant
+            ? { reported_ai_assistant: form.reportedAiAssistant }
+            : {}),
+        });
       }
       setSubmitted(true);
     } catch {
@@ -234,6 +249,12 @@ export default function ContactForm() {
                     placeholder="you@company.com"
                   />
                 </div>
+
+                <DiscoverySourceFields
+                  idPrefix="contact"
+                  value={form as DiscoveryEvidence}
+                  onChange={(evidence) => setForm({ ...form, ...evidence })}
+                />
 
                 <div className="flex items-start gap-3">
                   <input

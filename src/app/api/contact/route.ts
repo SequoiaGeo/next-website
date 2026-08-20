@@ -19,6 +19,12 @@ type AiAttribution = {
   landing_path: string;
 };
 
+type ReportedDiscoveryEvidence = {
+  discovery_source: string;
+  ai_assistant: string;
+  ai_question: string;
+};
+
 const AI_ENGINES = new Set([
   "chatgpt",
   "google_aio",
@@ -27,6 +33,24 @@ const AI_ENGINES = new Set([
   "claude",
   "copilot",
   "you",
+]);
+
+const DISCOVERY_SOURCES = new Set([
+  "ai_assistant",
+  "google_search",
+  "referral",
+  "social",
+  "other",
+]);
+
+const REPORTED_AI_ASSISTANTS = new Set([
+  "chatgpt",
+  "google_ai",
+  "gemini",
+  "perplexity",
+  "claude",
+  "copilot",
+  "other",
 ]);
 
 const FORM_SOURCES = new Set([
@@ -96,6 +120,39 @@ function readAiAttribution(value: unknown): AiAttribution | null {
   };
 }
 
+function readReportedDiscovery(body: Record<string, unknown>): ReportedDiscoveryEvidence | null {
+  const discoverySource = String(body.discoverySource || "")
+    .trim()
+    .toLowerCase();
+  if (!DISCOVERY_SOURCES.has(discoverySource)) return null;
+
+  if (discoverySource !== "ai_assistant") {
+    return {
+      discovery_source: discoverySource,
+      ai_assistant: "",
+      ai_question: "",
+    };
+  }
+
+  const requestedAssistant = String(body.reportedAiAssistant || "")
+    .trim()
+    .toLowerCase();
+  const aiAssistant = REPORTED_AI_ASSISTANTS.has(requestedAssistant)
+    ? requestedAssistant
+    : "";
+  const aiQuestion = String(body.reportedAiQuestion || "")
+    .replace(/[\u0000-\u001F\u007F]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 500);
+
+  return {
+    discovery_source: discoverySource,
+    ai_assistant: aiAssistant,
+    ai_question: aiQuestion,
+  };
+}
+
 export async function POST(req: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -128,6 +185,7 @@ export async function POST(req: Request) {
     const source = FORM_SOURCES.has(requestedSource) ? requestedSource : "contact_form";
     const campaignAttribution = readCampaignAttribution(body.campaignAttribution);
     const aiAttribution = readAiAttribution(body.aiAttribution);
+    const reportedDiscovery = readReportedDiscovery(body);
     const isSyntheticTest = isSyntheticAttributionTest({ name, email, phone });
     // Escaped copies for safe interpolation into the notification email HTML.
     const safeName = escapeHtml(name);
@@ -150,6 +208,13 @@ export async function POST(req: Request) {
           ai_engine_source: escapeHtml(aiAttribution.ai_engine_source),
           referrer_host: escapeHtml(aiAttribution.referrer_host),
           landing_path: escapeHtml(aiAttribution.landing_path),
+        }
+      : null;
+    const safeReportedDiscovery = reportedDiscovery
+      ? {
+          discovery_source: escapeHtml(reportedDiscovery.discovery_source),
+          ai_assistant: escapeHtml(reportedDiscovery.ai_assistant),
+          ai_question: escapeHtml(reportedDiscovery.ai_question),
         }
       : null;
 
@@ -227,6 +292,16 @@ export async function POST(req: Request) {
               </td>
             </tr>
             ` : ""}
+            ${safeReportedDiscovery ? `
+            <tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888;">Reported discovery</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; color: #1a1a1a;">
+                ${safeReportedDiscovery.discovery_source}
+                ${safeReportedDiscovery.ai_assistant ? `<br><span style="color: #777;">Assistant: ${safeReportedDiscovery.ai_assistant}</span>` : ""}
+                ${safeReportedDiscovery.ai_question ? `<br><span style="color: #777;">Question: ${safeReportedDiscovery.ai_question}</span>` : ""}
+              </td>
+            </tr>
+            ` : ""}
             ${safeMessage ? `
             <tr>
               <td style="padding: 10px 0; font-size: 13px; color: #888; vertical-align: top;">Message</td>
@@ -275,6 +350,9 @@ export async function POST(req: Request) {
       aiEngineSource: aiAttribution?.ai_engine_source || "",
       aiReferrerHost: aiAttribution?.referrer_host || "",
       aiLandingPath: aiAttribution?.landing_path || "",
+      reportedDiscoverySource: reportedDiscovery?.discovery_source || "",
+      reportedAiAssistant: reportedDiscovery?.ai_assistant || "",
+      reportedAiQuestion: reportedDiscovery?.ai_question || "",
       isSyntheticTest,
       tags: isSyntheticTest
         ? ["internal-attribution-test"]
@@ -292,6 +370,7 @@ export async function POST(req: Request) {
         source,
         campaign: campaignAttribution,
         ai: aiAttribution,
+        reportedDiscovery,
         smsConsent: Boolean(smsConsent),
         landingPath: campaignAttribution?.landing_path || aiAttribution?.landing_path || "",
         isSyntheticTest,

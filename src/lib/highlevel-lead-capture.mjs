@@ -82,6 +82,7 @@ function notesFromResponse(payload) {
 function evidenceNote(input, now) {
   const campaign = input.campaign || {};
   const ai = input.ai || {};
+  const reportedDiscovery = input.reportedDiscovery || {};
   const lines = [
     "Sequoia website capture",
     `lead_id: ${cleanLabel(input.leadId, 64)}`,
@@ -104,6 +105,15 @@ function evidenceNote(input, now) {
 
   const aiLine = [cleanLabel(ai.ai_engine_source), cleanLabel(ai.referrer_host)].filter(Boolean).join(" / ");
   if (aiLine) lines.push(`ai_referral: ${aiLine}`);
+
+  const reportedSource = cleanLabel(reportedDiscovery.discovery_source, 60);
+  if (reportedSource) lines.push(`reported_discovery_source: ${reportedSource}`);
+  const reportedAssistant = cleanLabel(reportedDiscovery.ai_assistant, 60);
+  if (reportedAssistant) lines.push(`reported_ai_assistant: ${reportedAssistant}`);
+  const reportedQuestion = cleanText(reportedDiscovery.ai_question, 500)
+    .replace(/[\r\n]+/g, " ")
+    .replace(/\s+/g, " ");
+  if (reportedQuestion) lines.push(`reported_ai_question: ${reportedQuestion}`);
 
   if (input.smsConsent === true) lines.push("sms_consent: granted");
   else if (input.smsConsent === false) lines.push("sms_consent: not_granted");

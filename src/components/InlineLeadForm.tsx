@@ -10,6 +10,9 @@ import { useState, useEffect, useRef, FormEvent } from "react";
 import { trackCallIntent, trackCapturedLead, trackCtaIntent, trackEvent } from "@/lib/analytics";
 import { readCampaignAttribution } from "@/lib/campaign-attribution";
 import { readAiAttribution } from "@/lib/ai-attribution";
+import DiscoverySourceFields, {
+  type DiscoveryEvidence,
+} from "@/components/DiscoverySourceFields";
 
 type Props = {
   source: string; // e.g. "hvac_seo_page", lands in GA4 lead_source + the lead email
@@ -38,6 +41,9 @@ export default function InlineLeadForm({
     phone: "",
     email: "",
     company: "",
+    discoverySource: "",
+    reportedAiAssistant: "",
+    reportedAiQuestion: "",
     smsConsent: false,
     website: "", // honeypot
   });
@@ -88,7 +94,16 @@ export default function InlineLeadForm({
       if (!res.ok) throw new Error("Submission failed");
       const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
       if (!form.website) {
-        trackCapturedLead(result, { source, cta_contract: "intake" });
+        trackCapturedLead(result, {
+          source,
+          cta_contract: "intake",
+          ...(form.discoverySource
+            ? { reported_discovery_source: form.discoverySource }
+            : {}),
+          ...(form.reportedAiAssistant
+            ? { reported_ai_assistant: form.reportedAiAssistant }
+            : {}),
+        });
       }
       setSubmitted(true);
     } catch {
@@ -219,6 +234,12 @@ export default function InlineLeadForm({
                     />
                   </div>
                 )}
+
+                <DiscoverySourceFields
+                  idPrefix={source}
+                  value={form as DiscoveryEvidence}
+                  onChange={(evidence) => setForm({ ...form, ...evidence })}
+                />
 
                 <div className="flex items-start gap-3">
                   <input

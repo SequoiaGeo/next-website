@@ -23,6 +23,11 @@ const BASE_INPUT = {
     landing_path: "/audit",
   },
   ai: null,
+  reportedDiscovery: {
+    discovery_source: "ai_assistant",
+    ai_assistant: "chatgpt",
+    ai_question: "Who can help my company show up in AI search?",
+  },
   smsConsent: false,
   isSyntheticTest: false,
 };
@@ -179,6 +184,9 @@ test("creates a standard contact without tags, DND changes, opportunities, or ra
   const noteBody = JSON.parse(note.init.body).body;
   assert.match(noteBody, /lead_id: 11111111-2222-4333-8444-555555555555/);
   assert.match(noteBody, /campaign: facebook \/ organic_social \/ public_surface_audit_august/);
+  assert.match(noteBody, /reported_discovery_source: ai_assistant/);
+  assert.match(noteBody, /reported_ai_assistant: chatgpt/);
+  assert.match(noteBody, /reported_ai_question: Who can help my company show up in AI search\?/);
   assert.doesNotMatch(noteBody, /Lead@example\.com/i);
   assert.doesNotMatch(noteBody, /559-555-1212/);
   assert.doesNotMatch(noteBody, /Example Company/);

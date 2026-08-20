@@ -14,6 +14,20 @@ Purpose: distinguish a site being cited from Sequoia GEO being named as a vendor
 
 Do not report a cited URL, referral session, form start, or booked calendar slot as a vendor recommendation or qualified inquiry.
 
+## Reported recommendation evidence
+
+A prospect reporting that an AI assistant recommended Sequoia GEO is valuable first-party intake evidence. It is not proof of a repeatable acquisition channel or of why the assistant made the recommendation.
+
+For each report, privately record only what the prospect voluntarily provides:
+
+- Platform or assistant, approximate date, and the prospect's own wording of how they found us.
+- The original share link or screenshot if available, plus the exact prompt and response if the prospect is willing to provide them.
+- Visible cited sources and whether Sequoia GEO was mentioned, recommended, primary, or merely cited.
+- Whether the artifact is original, reconstructed, recalled, unavailable, or incomplete.
+- The business outcome under the normal qualification rules, including disqualified and no-decision outcomes.
+
+Request this evidence once in a short follow-up, never as a condition of a meeting, assessment, or service. A screenshot, recalled prompt, or recreated answer cannot be represented as the original recommendation event. Do not publish a customer's reported recommendation, artifact, or business identity without direct written approval.
+
 ## Baseline panel
 
 Run the ChatGPT-with-search panel before the new pricing page is published, then repeat after a sufficient discovery window. Keep Perplexity and Copilot observations in a separate contextual log. Do not average them into the ChatGPT result.

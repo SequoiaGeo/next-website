@@ -109,8 +109,8 @@ const organizationSchema = {
     name: "United States",
   },
   sameAs: [
-    "https://www.linkedin.com/company/sequoiageo",
-    "https://www.facebook.com/sequoiageo",
+    "https://www.linkedin.com/company/sequoia-geo/",
+    "https://www.facebook.com/SequoiaGeoMarketingAgency",
   ],
   member: {
     "@type": "Person",

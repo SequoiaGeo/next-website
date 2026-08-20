@@ -10,6 +10,13 @@ The public LinkedIn company profile still describes a retired 45-day promise and
 
 The public site now positions Sequoia GEO as operator-led and directs prospects to work with Aaron, not an account manager. Leaving the LinkedIn language unchanged creates a clear public contradiction.
 
+The same in-account review found two more durable contradictions:
+
+- Facebook's live page is `https://www.facebook.com/SequoiaGeoMarketingAgency`, but the website's organization schema linked to the unavailable `https://www.facebook.com/sequoiageo` URL. The live Facebook bio says, "Contractor turned marketing agency for local service businesses. We specialize in Google Business Profile, Local SEO, PPC & LSA for local businesses."
+- The Google Business Profile description uses team-style language, lists fractional CMO services, and describes Sequoia GEO as a plumbing and HVAC contractor turned agency. Its LinkedIn and Facebook social-profile URLs do not match the verified live profile URLs.
+
+Source: direct in-account reads of Facebook and the Sequoia GEO Google Business Profile on 2026-08-20. The website organization schema was corrected in `src/app/layout.tsx` during this refresh.
+
 ## Proposed LinkedIn company profile
 
 ### Tagline
@@ -47,11 +54,25 @@ Based in Fresno, serving home service businesses nationally.
 - Lead Tracking
 - Operator-Led Marketing
 
+## Proposed Facebook bio
+
+Operator-led SEO and AI search visibility for home service businesses. Clients work directly with Aaron Husak, not an account manager.
+
+## Proposed Google Business Profile description
+
+Sequoia GEO is Aaron Husak's operator-led marketing practice for home service companies. Aaron spent 13 years building a home services company that earned four Inc. 5000 recognitions. Clients work directly with Aaron, not an account manager, on SEO, GEO and AI search visibility, Google Business Profile and local listings, paid search, website conversion, lead tracking, and marketing measurement. Based in the Fresno area, Sequoia GEO serves home service businesses nationally.
+
+### Verified social-profile URLs for Google Business Profile
+
+- LinkedIn: `https://www.linkedin.com/company/sequoia-geo/`
+- Facebook: `https://www.facebook.com/SequoiaGeoMarketingAgency`
+- YouTube: `https://www.youtube.com/@SequoiaGEO`
+
 ## Next surfaces to verify
 
-1. Google Business Profile owner profile and services, after confirming the account that controls it.
-2. Facebook business page About section and service categories.
+1. Google Business Profile service inventory and the unexpected public-facing audience attributes, including the current "Not LGBTQ+ friendly" value, before changing either.
+2. Facebook service categories beyond the verified bio.
 3. Any agency directory or partner bio that still says "AI-powered" or repeats the 45-day promise.
-4. The site itself, after the pricing page deploy, to ensure the live page, sitemap, and LinkedIn profile use the same starting price and owner-led framing.
+4. The live site after deployment, to ensure the pricing page, sitemap, and social profiles use the same starting price and owner-led framing.
 
 Do not edit historical posts merely to make a feed look current. Correct the durable profile fields, then let future content establish the current position.

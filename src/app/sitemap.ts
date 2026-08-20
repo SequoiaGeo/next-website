@@ -54,8 +54,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Guides and resources
     { url: `${BASE_URL}/lsa-guide`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/ai-website-seo-guide`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/contractors-guide-ai-search`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/ai-website-seo-guide`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/contractors-guide-ai-search`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/leaving-my-marketing-agency`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 
     // Question pages (answer-first, built for the queries contractors type into ChatGPT and Google)

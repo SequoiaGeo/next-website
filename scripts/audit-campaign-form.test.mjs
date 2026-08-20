@@ -52,5 +52,5 @@ test("no non-audit page opts into the campaign qualification field", async () =>
     assert.doesNotMatch(source, /collectCompany|companyRequired/, filename);
   }
 
-  assert.equal(inlineFormPages.length, 15);
+  assert.equal(inlineFormPages.length, 16);
 });
