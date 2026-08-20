@@ -7,7 +7,7 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "Fractional CMO for Home Service Contractors | $17M Operator",
   description:
-    "Marketing leadership without the full-time hire. Fractional CMO who built a $17M home services company in 13 years. 4x Inc 5000. Engagements start at $2,500/mo.",
+    "Marketing leadership without the full-time hire. Fractional Marketing Lead services start at $5,000 a month. Led by a home services operator with 13 years of experience.",
   alternates: {
     canonical: "https://www.sequoiageo.com/fractional-cmo",
   },
@@ -27,7 +27,7 @@ const primaryFaqs = [
   {
     question: "How long does a fractional CMO engagement last?",
     answer:
-      "Most engagements run 12 to 24 months. The first 90 days are the audit and strategy build phase. Months four through twelve are execution and optimization. After the first year, many clients extend the engagement or transition some functions to a newly hired internal marketing team the fractional CMO helped build.",
+      "Every engagement begins with a 90-day initial term. The first 90 days establish the operating plan, measurement, ownership, and first priorities. After that, the engagement continues month to month for as long as the business needs hands-on marketing leadership.",
   },
   {
     question: "Can a fractional CMO help if I'm already working with agencies?",
@@ -37,7 +37,7 @@ const primaryFaqs = [
   {
     question: "What does fractional CMO pricing look like for home service companies?",
     answer:
-      "Fractional CMO pricing for home service companies typically ranges from $3,000 to $8,000 per month depending on scope, hours, and the number of vendor relationships being managed. Transparent pricing means knowing exactly what the monthly retainer includes before the engagement starts. The comparison that matters is not fractional CMO cost versus zero, it is fractional CMO cost versus the marketing dollars currently being wasted on unmanaged channels, or versus a full-time executive hire at $180,000 to $220,000 per year.",
+      "Fractional Marketing Lead engagements at Sequoia GEO start at $5,000 per month, with a 90-day initial term and month to month after. Complex Leadership starts at $6,500 per month when the work spans multiple markets, brands, vendors, or channels. Bounded Search Foundation work starts at $2,500 per month. Ad spend stays in your accounts, and paid-media execution is explicitly scoped rather than assumed.",
   },
   {
     question: "What industries do you work with?",
@@ -139,7 +139,7 @@ export default function FractionalCmoPage() {
               <li><strong>Who this is for:</strong> Home service companies doing $2M to $15M in revenue with no dedicated marketing leader.</li>
               <li><strong>What a fractional CMO does:</strong> Owns the marketing function part-time. Sets strategy, manages vendors, builds attribution to <strong>cost per booked job</strong>, and connects every dollar of <strong>marketing spend</strong> to revenue.</li>
               <li><strong>Why an operator matters:</strong> 13 years running Balanced Comfort to $17M, 4x Inc 5000, California Licensed Contractor. I&rsquo;ve sat in the dispatch chair, not just the marketing meeting.</li>
-              <li><strong>Pricing:</strong> $4,000 to $8,000 per month depending on complexity, versus $200K+ for a full-time hire. Lighter, single-channel engagements start at $2,500/mo.</li>
+              <li><strong>Pricing:</strong> Fractional Marketing Lead starts at $5,000 per month. Complex Leadership starts at $6,500 per month. Bounded Search Foundation work starts at $2,500 per month. Every engagement begins with a 90-day initial term.</li>
             </ul>
           </div>
         </div>

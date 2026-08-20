@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "What is included in the monthly fee?",
     answer:
-      "The starting engagement can include search and AI visibility work, content and page improvements, public entity consistency, conversion and tracking fixes, reporting, and the priorities that emerge from the baseline. The exact sequence depends on the business, market, existing assets, and access available.",
+      "Search Foundation starts at $2,500 a month and covers a bounded search, AI visibility, conversion, or public-information constraint. Fractional Marketing Lead starts at $5,000 a month when a business needs weekly marketing leadership, launch planning, measurement oversight, and cross-channel direction. Complex Leadership starts at $6,500 a month for multiple markets, brands, vendors, or a broader operating load. Every engagement has a defined scope before work begins.",
   },
   {
     question: "What is not included?",
@@ -50,6 +50,11 @@ const faqs = [
     question: "What happens in the first 30 days?",
     answer:
       "The first 30 days establish the baseline, identify the first approved constraint, make the first corrections, and document what changed. The initial three-month term gives the work time to be implemented, discovered, and evaluated without pretending a result can be promised on a fixed date.",
+  },
+  {
+    question: "Is paid media management included?",
+    answer:
+      "Ad spend is always separate and stays in your accounts. Paid media execution is defined in writing for each engagement because the workload changes with platforms, spend, creative, and reporting requirements. It is never assumed to be included just because a broader marketing leadership engagement is in place.",
   },
   {
     question: "Can you work with a company that already has an agency?",
@@ -79,9 +84,10 @@ export default function AiSeoPricingPage() {
             How Much Does GEO and AI SEO Cost?
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-700">
-            At Sequoia GEO, engagements start at <strong>$2,500 a month</strong>, with a
-            three-month initial term and month to month after. GEO and AI SEO are part of
-            the same operator-led search engagement, not a separate AI surcharge.
+            Search Foundation starts at <strong>$2,500 a month</strong>. Marketing leadership
+            starts at <strong>$5,000 a month</strong>. Both begin with a 90-day initial term,
+            then continue month to month. GEO and AI SEO are part of the work, not a separate
+            AI surcharge.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600">
             You work directly with Aaron, not an account manager. The baseline decides what
@@ -106,49 +112,79 @@ export default function AiSeoPricingPage() {
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div className="rounded-2xl bg-[#0D2318] p-8 text-white sm:p-10">
-              <p className="text-sm font-bold uppercase tracking-wider text-[#3A9E6A]">One starting point</p>
-              <p className="mt-4 text-5xl font-extrabold tracking-tight">$2,500</p>
-              <p className="mt-1 text-lg font-semibold text-[#C8EDD2]">per month</p>
-              <p className="mt-6 text-sm leading-relaxed text-[#C8EDD2]/80">
-                Three-month initial term, then month to month. The same published starting
-                point applies to the SEO work described in the contractor SEO pricing guide.
-              </p>
-              <Link
-                href="/how-much-does-seo-cost-for-contractors"
-                className="mt-6 inline-block text-sm font-semibold text-white underline decoration-[#3A9E6A] underline-offset-4 hover:text-[#C8EDD2]"
-              >
-                Read the contractor SEO pricing guide
-              </Link>
-            </div>
-            <div>
-              <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a]">
-                What the starting engagement is built to cover
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-gray-600">
-                The work is not a bundle of AI tricks. The starting engagement is a focused
-                program to make a service business easier to find, understand, trust, and
-                contact across search and AI-driven answers.
-              </p>
-              <ul className="mt-6 space-y-4">
-                {[
-                  "A documented baseline for search, public information, and conversion paths",
-                  "Page, content, and technical improvements tied to the approved priorities",
-                  "Entity and listing consistency where public information conflicts",
-                  "A fixed question set to observe AI-search visibility without confusing a citation with a recommendation",
-                  "Reporting that connects the work to qualified inquiries and jobs booked when the tracking can support it",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-gray-700">
-                    <svg aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="section-overline mb-4">Starting prices, published</p>
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              Choose the level of involvement the business actually needs
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-600">
+              These are starting points, not interchangeable bundles. The baseline tells us
+              which level fits, and the scope states what Sequoia owns before work starts.
+            </p>
           </div>
+          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
+            {[
+              {
+                name: "Search Foundation",
+                price: "$2,500",
+                description: "For one bounded search, AI visibility, conversion, or public-information constraint.",
+                items: [
+                  "Baseline and first approved priority",
+                  "Site, content, technical, entity, or tracking corrections tied to that priority",
+                  "Reporting on qualified inquiries and jobs booked where tracking supports it",
+                ],
+              },
+              {
+                name: "Fractional Marketing Lead",
+                price: "$5,000",
+                description: "For a launch or an established business that needs a marketing leader in the room every week.",
+                items: [
+                  "Weekly decision meeting and a 90-day operating plan",
+                  "Launch economics, channel sequence, measurement, conversion, and vendor direction",
+                  "Clear responsibility across marketing, sales follow-up, the website, CRM, and reputation",
+                ],
+              },
+              {
+                name: "Complex Leadership",
+                price: "$6,500",
+                description: "For multiple markets, brands, vendors, channels, or a larger operating load.",
+                items: [
+                  "Cross-channel and multi-party marketing leadership",
+                  "More frequent decision support and a wider measurement program",
+                  "A defined operating scope for the people, systems, and markets involved",
+                ],
+              },
+            ].map((tier, index) => (
+              <article
+                key={tier.name}
+                className={`rounded-2xl border p-7 ${
+                  index === 1
+                    ? "border-[#1A5C3A] bg-[#0D2318] text-white shadow-xl shadow-[#0D2318]/10"
+                    : "border-gray-200 bg-white text-[#1a1a1a]"
+                }`}
+              >
+                <p className={`text-sm font-bold uppercase tracking-wider ${index === 1 ? "text-[#3A9E6A]" : "text-[#1A5C3A]"}`}>
+                  {tier.name}
+                </p>
+                <p className="mt-4 text-5xl font-extrabold tracking-tight">{tier.price}</p>
+                <p className={`mt-1 text-sm font-semibold ${index === 1 ? "text-[#C8EDD2]" : "text-gray-600"}`}>per month, starting price</p>
+                <p className={`mt-5 text-sm leading-relaxed ${index === 1 ? "text-[#C8EDD2]/80" : "text-gray-600"}`}>{tier.description}</p>
+                <ul className="mt-6 space-y-3">
+                  {tier.items.map((item) => (
+                    <li key={item} className={`flex gap-3 text-sm leading-relaxed ${index === 1 ? "text-[#C8EDD2]" : "text-gray-700"}`}>
+                      <span aria-hidden="true" className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${index === 1 ? "bg-[#3A9E6A]" : "bg-[#1A5C3A]"}`} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 text-center text-sm leading-relaxed text-gray-600">
+            Every starting engagement has a 90-day initial term, then continues month to month.
+            Ad spend stays in your accounts. Major site builds, third-party software, and hands-on
+            paid media execution are defined separately before work begins.
+          </p>
         </div>
       </section>
 
@@ -159,8 +195,8 @@ export default function AiSeoPricingPage() {
               What changes the scope, and what stays separate
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              The starting point is public. The sequence of work changes with the facts of
-              the business, not with a hidden package ladder.
+              The starting prices are public. Scope expands only when the operating load expands,
+              not through a hidden package ladder.
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
