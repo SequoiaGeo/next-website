@@ -49,7 +49,7 @@ export default function ImmanuelBannerPage() {
           </div>
           <div className="border-r border-[#1e4a33] px-1 text-center sm:px-2">
             <dt className="text-[13px] font-extrabold leading-tight text-white sm:text-base">
-              13 years in HVAC
+              13 years in home services
             </dt>
             <dd className="mt-0.5 text-[10px] leading-tight text-[#8fb8a1] sm:text-xs">
               Built it to 130+ employees

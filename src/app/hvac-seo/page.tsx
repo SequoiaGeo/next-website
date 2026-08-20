@@ -8,7 +8,7 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "HVAC SEO & Marketing That Books Jobs | Sequoia GEO",
   description:
-    "HVAC SEO from an operator who ran an HVAC company for 13 years and grew it to 130+ employees. Rankings tied to qualified calls and jobs booked.",
+    "HVAC SEO from an operator who ran a home services company for 13 years and grew it to 130+ employees. Rankings tied to qualified calls and jobs booked.",
   alternates: {
     canonical: "https://www.sequoiageo.com/hvac-seo",
   },
