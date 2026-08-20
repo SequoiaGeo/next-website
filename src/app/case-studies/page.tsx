@@ -6,7 +6,7 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Case Studies | Sequoia GEO",
   description:
-    "Real results from Sequoia GEO. See how contractors have grown revenue, improved booking rates, and fixed what their previous agencies missed.",
+    "Verified client results and anonymized diagnostic field notes from Sequoia GEO.",
   alternates: {
     canonical: "https://www.sequoiageo.com/case-studies",
   },
@@ -34,11 +34,11 @@ export default function CaseStudiesPage() {
           <div className="mx-auto max-w-3xl text-center">
             <p className="section-overline mb-4">Case Studies</p>
             <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Real results. Real numbers.
+              Real results. Honest field notes.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              Not simulated projections or agency-inflated metrics. Here&rsquo;s what the work
-              actually produces.
+              Verified client outcomes, and clearly labeled diagnostic observations when the
+              work is still in the correction phase.
             </p>
           </div>
         </div>
@@ -373,10 +373,67 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
+            {/* AI-search readiness field note */}
+            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+              <div className="bg-[#0D2318] px-8 py-10 sm:px-12">
+                <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
+                  Anonymized GEO Field Note
+                </span>
+                <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
+                  When AI Cannot Resolve a Local Business
+                </h2>
+                <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
+                  A pre-engagement public-surface diagnosis of a local contractor whose website,
+                  profiles, historical pages, and third-party records gave conflicting answers
+                  about the same business. This is a correction plan, not a performance claim.
+                </p>
+              </div>
+              <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {[
+                    { value: "Identity", label: "Must be canonical" },
+                    { value: "Profiles", label: "Must agree" },
+                    { value: "Schema", label: "Must name the business" },
+                    { value: "Evidence", label: "Before claims" },
+                  ].map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-xl bg-[#C8EDD2] px-4 py-4 text-center"
+                    >
+                      <div className="text-xl font-extrabold text-[#0D2318]">{item.value}</div>
+                      <div className="mt-1 text-xs leading-snug text-[#1A5C3A]">{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="px-8 py-6 sm:px-12">
+                <Link
+                  href="/case-studies/ai-search-readiness"
+                  className="inline-flex items-center gap-2 text-base font-semibold text-[#1A5C3A] transition-colors hover:text-[#0D2318]"
+                >
+                  Read the field note
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
             {/* Client results note */}
             <p className="mt-8 text-sm text-gray-500 text-center">
-              Client case studies added as they&rsquo;re completed, with each client&rsquo;s
-              approval. Anonymized when the client prefers it.
+              Named case studies are added with client approval. Diagnostic field notes are
+              anonymized and distinguish current observations from verified outcomes.
             </p>
           </div>
         </div>
