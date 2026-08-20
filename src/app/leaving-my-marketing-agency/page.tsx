@@ -118,7 +118,7 @@ const faqs = [
   },
   {
     q: "How is this different from just switching to another big agency?",
-    a: "Most contractors who leave one big agency end up at another one and repeat the same cycle. The difference with us is that you work directly with Aaron, not a rotating cast of account reps. Aaron ran an HVAC company for 13 years and is a 4x Inc 5000 honoree. He understands what a booked job is worth, what a real lead looks like, and what your overhead actually means. You get someone who's operated a trade business, not someone who read a case study about one.",
+    a: "Most contractors who leave one big agency end up at another one and repeat the same cycle. The difference with us is that you work directly with Aaron, not a rotating cast of account reps. Aaron ran a home services company for 13 years and is a 4x Inc 5000 honoree. He understands what a booked job is worth, what a real lead looks like, and what your overhead actually means. You get someone who's operated a trade business, not someone who read a case study about one.",
   },
 ];
 
@@ -325,7 +325,7 @@ export default function LeavingMyMarketingAgencyPage() {
               },
               {
                 title: "You work with Aaron directly",
-                body: "Not an account rep. Not a junior strategist. Aaron ran an HVAC company for 13 years and is a 4x Inc 5000 honoree. He understands what a real lead and a booked job are worth.",
+                body: "Not an account rep. Not a junior strategist. Aaron ran a home services company for 13 years and is a 4x Inc 5000 honoree. He understands what a real lead and a booked job are worth.",
               },
               {
                 title: "Reporting that means something",
@@ -459,7 +459,7 @@ export default function LeavingMyMarketingAgencyPage() {
               It comes from ads that connect to booked jobs.
             </p>
             <p>
-              The founder of Sequoia GEO hired marketing firms for 13 years while operating an HVAC and plumbing
+              The founder of Sequoia GEO hired marketing firms for 13 years while operating a home services
               business. As a founder who built a home service company to the Inc 5000 four years running, he knows
               what it feels like to sit across from an account rep who cannot explain why the phone is not ringing.
               As a founder and operator who has been on the contractor side of the vendor relationship, he built

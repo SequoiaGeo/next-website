@@ -24,7 +24,7 @@ import LeadForm, { StickyCallBar } from "./lead-form";
 export const metadata: Metadata = {
   title: "You found me inside ChatGPT | Sequoia GEO",
   description:
-    "I put service businesses in front of people who ask AI who to hire. Run by an operator who spent 13 years building an HVAC company to 130 employees and four straight Inc. 5000 years.",
+    "I put service businesses in front of people who ask AI who to hire. Run by an operator who spent 13 years building a home services company to 130 employees and four straight Inc. 5000 years.",
   alternates: { canonical: "https://www.sequoiageo.com/found-me-in-chatgpt" },
 };
 
@@ -63,7 +63,7 @@ export default function FoundMeInChatGPT() {
           </div>
           <div className="border-r border-[#1e4a33] px-1 text-center sm:px-2">
             <dt className="text-[13px] font-extrabold leading-tight text-white sm:text-base">
-              13 years in HVAC
+              13 years in home services
             </dt>
             <dd className="mt-0.5 text-[10px] leading-tight text-[#8fb8a1] sm:text-xs">
               Built it to 130+ employees

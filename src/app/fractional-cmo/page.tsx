@@ -1,6 +1,8 @@
 ﻿import Link from "next/link";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
   title: "Fractional CMO for Home Service Contractors | $17M Operator",
@@ -80,6 +82,18 @@ const extendedFaqs = [
 export default function FractionalCmoPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "Fractional CMO", url: "https://www.sequoiageo.com/fractional-cmo" },
+        ]}
+      />
+      <ServiceJsonLd
+        serviceType={"Fractional CMO Services"}
+        description={"Fractional CMO services for home service contractors, led by an operator who grew a home services company to $17M and 130 employees."}
+        url={"https://www.sequoiageo.com/fractional-cmo"}
+      />
       <FaqJsonLd faqs={[...primaryFaqs, ...extendedFaqs]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">

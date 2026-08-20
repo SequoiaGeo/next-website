@@ -2,6 +2,7 @@
 import Link from "next/link";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import { cities } from "./city-data";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "HVAC Marketing Run by a 13-Year Home Services Operator | Sequoia GEO",
@@ -15,6 +16,12 @@ export const metadata: Metadata = {
 export default function HvacMarketingIndexPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "HVAC Marketing", url: "https://www.sequoiageo.com/hvac-marketing" },
+        ]}
+      />
       {/* Hero */}
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">

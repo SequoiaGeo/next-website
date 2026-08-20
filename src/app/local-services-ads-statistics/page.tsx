@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import CalculatorBanner from "@/components/CalculatorBanner";
 import InlineLeadForm from "@/components/InlineLeadForm";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "22 Google LSA Statistics for 2026 (Cost, Conversion, Benchmarks)",
@@ -15,6 +16,12 @@ export const metadata: Metadata = {
 export default function LsaStatisticsPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Local Services Ads Statistics", url: "https://www.sequoiageo.com/local-services-ads-statistics" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -2,11 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import FaqJsonLd from "@/components/FaqJsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
   title: "HVAC SEO & Marketing That Books Jobs | Sequoia GEO",
   description:
-    "HVAC SEO from an operator who ran an HVAC company for 13 years and grew it to 130+ employees. Rankings tied to qualified calls and jobs booked.",
+    "HVAC SEO from an operator who ran a home services company for 13 years and grew it to 130+ employees. Rankings tied to qualified calls and jobs booked.",
   alternates: {
     canonical: "https://www.sequoiageo.com/hvac-seo",
   },
@@ -53,6 +55,18 @@ const faqs = [
 export default function HvacSeoPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "HVAC SEO", url: "https://www.sequoiageo.com/hvac-seo" },
+        ]}
+      />
+      <ServiceJsonLd
+        serviceType={"HVAC SEO and Marketing"}
+        description={"SEO and marketing for HVAC contractors, connecting local search visibility to booked jobs rather than to lead counts."}
+        url={"https://www.sequoiageo.com/hvac-seo"}
+      />
       <FaqJsonLd faqs={faqs} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">

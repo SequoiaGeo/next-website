@@ -1,5 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
   title: "Restoration SEO & Marketing | Sequoia GEO: Revenue-Focused Growth",
@@ -13,6 +15,18 @@ export const metadata: Metadata = {
 export default function RestorationSeoPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "Restoration SEO", url: "https://www.sequoiageo.com/restoration-seo" },
+        ]}
+      />
+      <ServiceJsonLd
+        serviceType={"Restoration SEO and Marketing"}
+        description={"SEO and marketing for restoration contractors, focused on revenue and job volume rather than traffic."}
+        url={"https://www.sequoiageo.com/restoration-seo"}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

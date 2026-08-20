@@ -47,7 +47,7 @@ export default function DragonsPage() {
           <p className="text-[13px] leading-relaxed text-[#b8b2e6]">
             <span className="font-bold text-white">The grown-up part, kept short.</span>{" "}
             This page was built by Aaron Husak, a show parent from right here in
-            the valley. I spent 13 years running an HVAC company in Fresno,
+            the valley. I spent 13 years running a home services company in Fresno,
             grew it to 130+ employees and four straight years on the Inc. 5000,
             and now I run a small marketing practice helping local home service
             businesses get found. If you own one, or your brother does, the

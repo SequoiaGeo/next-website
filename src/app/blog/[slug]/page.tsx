@@ -1380,7 +1380,7 @@ const posts: Record<string, Post> = {
     content: (
       <div className="prose prose-lg max-w-none">
         <p>
-          I spent 13 years watching HVAC marketing evolve. Yellow Pages to Google AdWords. AdWords to
+          I spent 13 years watching home services marketing evolve. Yellow Pages to Google AdWords. AdWords to
           Google Maps. Google Maps to Local Service Ads. Every shift created winners and losers based on
           who adapted first. The AI search shift is the biggest one yet, and most HVAC companies
           are completely unaware it&rsquo;s happening.

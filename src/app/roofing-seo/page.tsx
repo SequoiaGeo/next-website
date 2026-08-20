@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import CalculatorBanner from "@/components/CalculatorBanner";
 import InlineLeadForm from "@/components/InlineLeadForm";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
   title: "Roofing SEO From a 13-Year Home Services Operator",
@@ -54,6 +55,11 @@ const roofingFaqs = [
 export default function RoofingSeoPage() {
   return (
     <>
+      <ServiceJsonLd
+        serviceType={"Roofing SEO"}
+        description={"SEO for roofing companies from a 13-year home services operator, connecting search visibility to qualified calls and signed contracts."}
+        url={"https://www.sequoiageo.com/roofing-seo"}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: "https://www.sequoiageo.com/" },
