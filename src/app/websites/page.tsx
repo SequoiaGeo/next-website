@@ -1,6 +1,8 @@
 ﻿import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
   title: "Website Designs That Grab Attention and Convert | Sequoia GEO",
@@ -111,6 +113,18 @@ const buildTypeBadge: Record<BuildType, { bg: string; text: string }> = {
 export default function WebsitesPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "Website Design", url: "https://www.sequoiageo.com/websites" },
+        ]}
+      />
+      <ServiceJsonLd
+        serviceType={"Website Design and Development"}
+        description={"Website design and development for home service contractors, built for conversion, speed, and measurable lead capture."}
+        url={"https://www.sequoiageo.com/websites"}
+      />
       {/* Header */}
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

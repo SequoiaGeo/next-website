@@ -1,5 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
   title: "AI Automation for Contractors: Recover the Leads You're Losing",
@@ -38,6 +40,18 @@ const automations = [
 export default function AiAutomationPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "AI Automation", url: "https://www.sequoiageo.com/ai-automation" },
+        ]}
+      />
+      <ServiceJsonLd
+        serviceType={"AI Automation for Contractors"}
+        description={"AI automation for home service contractors covering missed call recovery, speed to lead, and database reactivation."}
+        url={"https://www.sequoiageo.com/ai-automation"}
+      />
       {/* Hero */}
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

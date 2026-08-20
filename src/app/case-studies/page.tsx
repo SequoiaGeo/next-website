@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
 import YouTubeFacade from "@/components/YouTubeFacade";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Case Studies | Sequoia GEO",
@@ -21,6 +22,12 @@ const balancedComfortStats = [
 export default function CaseStudiesPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Case Studies", url: "https://www.sequoiageo.com/case-studies" },
+        ]}
+      />
       {/* Header */}
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "GEO for Plumbers: Get Your Plumbing Company Recommended in AI Search",
@@ -14,6 +15,13 @@ export const metadata: Metadata = {
 export default function GeoForPlumbersPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "GEO for Plumbers", url: "https://www.sequoiageo.com/geo-for-plumbers" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

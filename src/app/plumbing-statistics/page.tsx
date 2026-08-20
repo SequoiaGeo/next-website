@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import CalculatorBanner from "@/components/CalculatorBanner";
 import InlineLeadForm from "@/components/InlineLeadForm";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Plumbing Industry Statistics 2026 | Market Size, Employment & Consumer Data",
@@ -15,6 +16,12 @@ export const metadata: Metadata = {
 export default function PlumbingStatisticsPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Plumbing Industry Statistics", url: "https://www.sequoiageo.com/plumbing-statistics" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

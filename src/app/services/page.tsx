@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Services | Sequoia GEO: Growth Operations for Home Services",
@@ -65,6 +66,12 @@ const tradePages = [
 export default function ServicesPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+        ]}
+      />
       {/* Hero */}
       <section className="bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -1,5 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
   title: "GEO Agency: Get Your Business Recommended in AI Search | Sequoia GEO",
@@ -13,6 +15,18 @@ export const metadata: Metadata = {
 export default function GeoAgencyPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "GEO Agency", url: "https://www.sequoiageo.com/geo-agency" },
+        ]}
+      />
+      <ServiceJsonLd
+        serviceType={"Generative Engine Optimization"}
+        description={"Generative Engine Optimization for home service contractors. We make your company visible and recommendable in ChatGPT, Perplexity, Google AI Overviews, and Gemini."}
+        url={"https://www.sequoiageo.com/geo-agency"}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

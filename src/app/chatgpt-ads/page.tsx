@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "ChatGPT Ads Management | Sequoia GEO: OpenAI Ads for Your Business",
@@ -13,6 +14,13 @@ export const metadata: Metadata = {
 export default function ChatGptAdsPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "ChatGPT Ads", url: "https://www.sequoiageo.com/chatgpt-ads" },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

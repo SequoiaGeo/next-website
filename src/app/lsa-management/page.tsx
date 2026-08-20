@@ -1,5 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
   title: "LSA Management for HVAC & Home Service Contractors | Sequoia GEO",
@@ -13,6 +15,18 @@ export const metadata: Metadata = {
 export default function LsaManagementPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://www.sequoiageo.com/" },
+          { name: "Services", url: "https://www.sequoiageo.com/services" },
+          { name: "LSA Management", url: "https://www.sequoiageo.com/lsa-management" },
+        ]}
+      />
+      <ServiceJsonLd
+        serviceType={"Google Local Services Ads Management"}
+        description={"Google Local Services Ads management for HVAC, plumbing, and home service contractors, including profile setup, lead dispute handling, and budget management."}
+        url={"https://www.sequoiageo.com/lsa-management"}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
