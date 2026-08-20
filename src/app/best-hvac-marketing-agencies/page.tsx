@@ -5,7 +5,7 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Best HVAC Marketing Agencies 2026 | Reviewed & Compared",
   description:
-    "8 HVAC marketing companies reviewed by a 13-year HVAC operator: pricing, differentiators, and who each one fits. My own practice is on the list, disclosed.",
+    "8 HVAC marketing companies reviewed by a 13-year home services operator: pricing, differentiators, and who each one fits. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-hvac-marketing-agencies",
   },
@@ -293,14 +293,20 @@ export default function BestHvacMarketingAgenciesPage() {
                     </span>
                     <h2 className="text-xl font-extrabold text-[#1a1a1a]">{agency.name}</h2>
                   </div>
-                  <a
-                    href={agency.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-[#1A5C3A] hover:underline"
-                  >
-                    {agency.displayUrl} ↗
-                  </a>
+                  {agency.isOwnAgency ? (
+                    <Link
+                      href="/audit"
+                      className="text-sm font-semibold text-[#1A5C3A] hover:underline"
+                    >
+                      Start with the free audit
+                    </Link>
+                  ) : (
+                    /* Named, not linked. Naming competitors is what makes this a real
+                       comparison; hyperlinking them hands off the visit and the link
+                       equity. The plumbing and roofing comparison pages already work
+                       this way. */
+                    <span className="text-sm text-gray-500">{agency.displayUrl}</span>
+                  )}
                 </div>
                 <span className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${agency.tagColor}`}>
                   {agency.tag}
