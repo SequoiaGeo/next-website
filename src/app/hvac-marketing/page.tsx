@@ -4,7 +4,7 @@ import InlineLeadForm from "@/components/InlineLeadForm";
 import { cities } from "./city-data";
 
 export const metadata: Metadata = {
-  title: "HVAC Marketing Run by a 13-Year HVAC Operator | Sequoia GEO",
+  title: "HVAC Marketing Run by a 13-Year Home Services Operator | Sequoia GEO",
   description:
     "HVAC marketing from an operator who grew an HVAC company to 4x Inc 5000. Google Ads, LSA, and local SEO built city by city. Find your market and get a free audit.",
   alternates: {
