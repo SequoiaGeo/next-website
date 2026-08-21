@@ -79,7 +79,7 @@ const organizationSchema = {
   logo: "https://www.sequoiageo.com/logo.png",
   image: "https://www.sequoiageo.com/og-image.png",
   description:
-    "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, 4x Inc 5000 honoree and 13-year home services operator.",
+    "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, a home services marketer since 2006 and 13-year owner and operator.",
   foundingDate: "2024",
   founder: {
     "@type": "Person",

@@ -6,7 +6,7 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "GEO for Restoration Companies: Get Recommended in AI Search",
   description:
-    "GEO for restoration companies makes your business the one ChatGPT, Perplexity, Gemini, and Google AI name when a homeowner asks who to call after water, fire, or mold damage. Built by a 13-year home services operator. Free AI visibility check.",
+    "AI SEO for restoration companies from a home services marketer since 2006 and 13-year owner and operator. Measure mentions, recommendations, citations, visits, and qualified leads separately.",
   alternates: {
     canonical: "https://www.sequoiageo.com/geo-for-restoration",
   },
@@ -77,7 +77,7 @@ export default function GeoForRestorationPage() {
                 "name": "How long does GEO take to work for a restoration company?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Realistic timeline is 90 to 180 days for meaningful improvement in AI visibility. The first phase is foundation work: schema and entity clarity, citation cleanup, and content built to be cited. The second phase is monitoring how AI tools respond and iterating. Any agency promising AI search results in 30 days is not being honest about how AI update cycles work.",
+                  "text": "Technical corrections can be verified after deployment. Recommendation visibility is more variable, so repeated observations should be compared over 60 to 90 days after material indexing changes. Structured data can reduce ambiguity when it matches the visible page, but Google does not require special schema for its AI features and no correction guarantees a recommendation.",
                 },
               },
               {
@@ -194,8 +194,8 @@ export default function GeoForRestorationPage() {
                 body: "We query ChatGPT, Perplexity, Gemini, and Google AI Overviews with emergency questions your customers ask, and see whether your company is named and how you compare to local competitors.",
               },
               {
-                title: "Entity and schema work",
-                body: "We implement the structured data and entity clarity that let AI tools confidently understand who you are, the areas you serve, and which restoration services you offer.",
+                title: "Entity and structured-data consistency",
+                body: "We align visible business information, public profiles, and supported structured data to reduce avoidable ambiguity. Structured data must match the page and does not guarantee a citation or recommendation.",
               },
               {
                 title: "Citation and reputation signals",
@@ -349,7 +349,7 @@ export default function GeoForRestorationPage() {
               },
               {
                 q: "How long does GEO take to work for a restoration company?",
-                a: "Realistic timeline is 90 to 180 days. The first phase is foundation work: schema, entity clarity, citation cleanup, and content built to be cited. The second phase is monitoring how AI tools respond and iterating. Any agency promising AI search results in 30 days is not being honest about how AI update cycles work.",
+                a: "Technical corrections can be verified after deployment. Recommendation visibility is more variable, so repeated observations should be compared over 60 to 90 days after material indexing changes. Structured data can reduce ambiguity when it matches the visible page, but Google does not require special schema for its AI features and no correction guarantees a recommendation.",
               },
               {
                 q: "Do I still need restoration SEO if I invest in GEO?",

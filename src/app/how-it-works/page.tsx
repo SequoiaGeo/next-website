@@ -2,9 +2,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How It Works | Sequoia GEO 30-Day Engagement",
+  title: "How Sequoia GEO Engagements Work | First 90 Days",
   description:
-    "What the first 30 days with Sequoia GEO actually looks like. What we get access to, what we audit, what we fix, and what you have at the end regardless of what you decide.",
+    "What happens during the first 90 days with Sequoia GEO, from baseline and approved corrections through measurement and the month-to-month decision.",
   alternates: { canonical: "https://www.sequoiageo.com/how-it-works" },
 };
 
@@ -30,14 +30,14 @@ const steps = [
   {
     week: "Week 4",
     title: "Systems and reporting",
-    what: "We set up the reporting framework you\u2019ll use going forward \u2014 a dashboard that shows cost per booked job, booking rate, revenue by channel, and the other metrics that actually matter.",
+    what: "We set up the reporting framework you\u2019ll use going forward: a dashboard that shows cost per booked job, booking rate, revenue by channel, and the other metrics that actually matter.",
     get: "A real-time reporting setup that gives you the full picture, not just what each vendor wants you to see.",
   },
   {
     week: "Day 30",
-    title: "The decision",
-    what: "We walk through everything together. What we found, what we fixed, what\u2019s still on the list, and what continued engagement looks like if you want to move forward.",
-    get: "Everything from the 30 days is yours to keep \u2014 the findings document, the fixed accounts, the reporting setup. Regardless of what you decide.",
+    title: "The first operating review",
+    what: "We walk through what we found, what changed, what remains unresolved, and which priorities should govern months two and three.",
+    get: "A documented baseline, an approved change log, and the measurement plan for the rest of the initial term.",
   },
 ];
 
@@ -50,34 +50,33 @@ export default function HowItWorksPage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="section-overline mb-6">How It Works</div>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              30 days. Full access. No obligation after that.
+              Baseline first. Corrections next. Measurement through day 90.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              Here&rsquo;s exactly what happens when we work together -- from the first call to
-              day 30.
+              Here&rsquo;s what happens during the three-month initial term, beginning with a
+              focused first-month audit and implementation sprint.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Why 30 days */}
+      {/* Why the first 30 days matter */}
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Why 30 days?
+              Why begin with 30 days?
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Most marketing relationships start with a 12-month contract and a 90-day onboarding period
-              before anything meaningful happens. We do it differently. The first 30 days is a sprint
-              -- we get access to everything, run the full audit, make approved changes, and hand
-              you a complete picture of what&rsquo;s working and what isn&rsquo;t. You decide at day 30
-              whether to continue. No pressure. No penalty.
+              The first 30 days are for establishing the baseline, reviewing the available evidence,
+              correcting the first approved constraint, and documenting what changed. They are not a
+              separate trial or a deadline for promising results. Every starting engagement has a
+              three-month initial term, then continues month to month.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              We work this way because we&rsquo;re confident in what we find. Every contractor we&rsquo;ve
-              audited has had meaningful findings within the first two weeks. We&rsquo;d rather show you
-              the value than ask you to take it on faith.
+              Months two and three are where we verify implementation, observe the available signals,
+              and decide whether the first corrections are producing the intended result. Findings,
+              changes, and outcomes are reported as separate stages.
             </p>
           </div>
         </div>
@@ -129,18 +128,18 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* After day 30 */}
+      {/* Months two and three */}
       <section className="bg-[#fafaf8] py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              After day 30, if you continue.
+              What happens during months two and three.
             </h2>
             <div className="mt-8 space-y-4">
               {[
-                "Monthly strategy calls plus weekly check-ins.",
-                "Ongoing account management across all channels.",
-                "First call when something changes \u2014 an agency makes a move, a new platform shows up, a competitor does something worth paying attention to.",
+                "Approved priorities move from diagnosis into implementation and verification.",
+                "Reporting separates technical corrections, visibility signals, inquiries, qualified leads, and jobs booked.",
+                "Before the initial term ends, we review what is complete, what remains open, and whether continued month-to-month work is justified.",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <svg
@@ -159,9 +158,9 @@ export default function HowItWorksPage() {
             <div className="mt-8 rounded-xl border border-[#3A9E6A]/20 bg-white px-6 py-5 shadow-sm">
               <p className="text-sm font-bold text-[#1a1a1a]">Pricing</p>
               <p className="mt-1 text-sm leading-relaxed text-gray-600">
-                Monthly retainers start at $2,500/month. Scope depends on number of channels, ad spend
-                under management, and services needed. We&rsquo;ll scope it based on what we actually
-                find in the audit.
+                Engagements start at $2,500 per month with a three-month initial term, then month to
+                month. Scope is defined before work begins, and ad spend and separately approved tools
+                are not included in the monthly fee.
               </p>
             </div>
             <p className="mt-6 text-sm text-gray-500">
@@ -185,8 +184,8 @@ export default function HowItWorksPage() {
             Start with a free strategy call.
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            15 minutes. We&rsquo;ll tell you whether the 30-day engagement makes sense for your
-            situation, and if it doesn&rsquo;t, we&rsquo;ll tell you that too.
+            In 15 minutes, we can determine whether a three-month engagement fits the problem you
+            are trying to solve. If it does not, we will say so.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link

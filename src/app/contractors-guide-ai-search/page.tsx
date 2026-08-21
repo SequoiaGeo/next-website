@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Search for Contractors: A Practical GEO Guide | Sequoia GEO",
   description:
-    "An evidence-based guide to AI search visibility for HVAC, plumbing, roofing, and other home service companies, written by a 13-year home services operator.",
+    "An evidence-based guide to AI search visibility for HVAC, plumbing, roofing, and other home service companies, written by a home services marketer since 2006 and 13-year owner and operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/contractors-guide-ai-search",
   },
@@ -113,7 +113,7 @@ export default function ContractorsGuideAISearchPage() {
             across AI-assisted search.
           </p>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#C8EDD2]/75">
-            Written by Aaron Husak, a 13-year home services operator who now works one-on-one with
+            Written by Aaron Husak, in home services since 2006 and an owner and operator for 13 years, who now works one-on-one with
             businesses on search visibility, lead measurement, and the path from inquiry to booked job.
           </p>
           <p className="mt-5 text-sm tracking-wide text-[#C8EDD2]/50">

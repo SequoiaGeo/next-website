@@ -5,7 +5,7 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Best Roofing Marketing Agencies 2026 | Ranked and Reviewed",
   description:
-    "9 roofing marketing companies ranked by a 13-year home services operator, with pricing where it exists. My own practice is on the list, disclosed.",
+    "9 roofing marketing companies ranked by a home services marketer since 2006 and 13-year owner and operator, with pricing where it exists. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-roofing-marketing-agencies",
   },

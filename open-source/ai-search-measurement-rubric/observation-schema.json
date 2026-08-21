@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.sequoiageo.com/schemas/ai-search-observation-v1.json",
+  "title": "AI Search Observation",
+  "description": "A privacy-safe record for one controlled AI-assisted search observation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "observation_id",
+    "wave_id",
+    "prompt_id",
+    "platform",
+    "observed_at",
+    "run_number",
+    "evidence_state",
+    "mentioned",
+    "recommended",
+    "primary_recommendation",
+    "provider_url_cited",
+    "independent_source_cited",
+    "absent"
+  ],
+  "properties": {
+    "observation_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "wave_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "prompt_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "platform": { "type": "string" },
+    "product": { "type": "string" },
+    "search_state": { "type": "string" },
+    "geography": { "type": "string" },
+    "observed_at": { "type": "string", "format": "date-time" },
+    "run_number": { "type": "integer", "minimum": 1 },
+    "evidence_state": {
+      "type": "string",
+      "enum": ["original", "partial", "reconstructed", "recalled", "unavailable"]
+    },
+    "mentioned": { "type": "boolean" },
+    "recommended": { "type": "boolean" },
+    "primary_recommendation": { "type": "boolean" },
+    "provider_url_cited": { "type": "boolean" },
+    "independent_source_cited": { "type": "boolean" },
+    "absent": { "type": "boolean" },
+    "provider_names": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "citation_urls": { "type": "array", "items": { "type": "string", "format": "uri" }, "uniqueItems": true },
+    "source_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "provider_owned",
+          "business_profile",
+          "official_record",
+          "independent_editorial",
+          "association_or_partner",
+          "directory_or_marketplace",
+          "review_platform",
+          "forum_or_social",
+          "unsupported_or_unresolved"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "coding_notes": { "type": "string", "maxLength": 1000 }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "primary_recommendation": { "const": true } } },
+      "then": { "properties": { "recommended": { "const": true }, "mentioned": { "const": true } } }
+    },
+    {
+      "if": { "properties": { "recommended": { "const": true } } },
+      "then": { "properties": { "mentioned": { "const": true } } }
+    },
+    {
+      "if": { "properties": { "absent": { "const": true } } },
+      "then": { "properties": { "mentioned": { "const": false }, "recommended": { "const": false }, "primary_recommendation": { "const": false } } }
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blog | Sequoia GEO: Home Services Marketing Insights",
   description:
-    "Marketing insights, local SEO strategy, and real operator-level analysis for HVAC, plumbing, roofing, and restoration contractors from Aaron Husak, 13-year home services operator, 4x Inc 5000.",
+    "Marketing insights, local SEO strategy, and operator-level analysis for HVAC, plumbing, roofing, and restoration contractors from Aaron Husak, in home services since 2006 and a 4x Inc 5000 honoree.",
   alternates: {
     canonical: "https://www.sequoiageo.com/blog",
   },
@@ -126,15 +126,6 @@ const posts = [
       "AI search engines are changing how homeowners find contractors. Here's what HVAC, plumbing, and roofing companies need to know before 2027.",
     date: "April 2026",
     readTime: "9 min read",
-    category: "Generative Engine Optimization",
-  },
-  {
-    slug: "what-is-a-geo-agency",
-    title: "What Is a GEO Agency and Do You Need One?",
-    excerpt:
-      "GEO agencies help businesses show up in ChatGPT, Perplexity, and AI search. Here's what they do, who needs one, and how to pick the right one.",
-    date: "April 2026",
-    readTime: "10 min read",
     category: "Generative Engine Optimization",
   },
   {

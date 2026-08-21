@@ -102,7 +102,7 @@ const faqs = [
   },
   {
     q: "Do you require a contract?",
-    a: "No. We work month-to-month. If we're not producing, you should be able to leave. That's how it should work for every agency.",
+    a: "New engagements begin with a 90-day initial term, then continue month to month. You retain ownership of your accounts, data, domain, and work product throughout the engagement.",
   },
   {
     q: "How fast can you take over my accounts?",
@@ -316,8 +316,8 @@ export default function LeavingMyMarketingAgencyPage() {
           <div className="mx-auto max-w-4xl grid grid-cols-1 gap-5 sm:grid-cols-2">
             {[
               {
-                title: "No contracts",
-                body: "Month-to-month only. If we&rsquo;re not producing results, you should be able to leave. We don&rsquo;t believe in holding clients who aren&rsquo;t happy.",
+                title: "No annual lock-in",
+                body: "The initial term is 90 days, then the engagement continues month to month. The work still has to justify the fee.",
               },
               {
                 title: "You own everything",
@@ -519,7 +519,7 @@ export default function LeavingMyMarketingAgencyPage() {
               </a>
             </div>
             <p className="mt-6 text-sm text-[#C8EDD2]/50">
-              Month-to-month. No contracts. You own everything from day one.
+              90-day initial term. Month to month after. You own everything from day one.
             </p>
           </div>
         </div>

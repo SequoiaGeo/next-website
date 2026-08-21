@@ -240,6 +240,17 @@ export default function AiSearchReadinessFieldNote() {
                 pending or outside the company&apos;s control. Only then does it make sense to
                 evaluate whether public retrieval is becoming more consistent.
               </p>
+              <p>
+                The observation stages, repeated-session controls, and reporting limits used for
+                that evaluation are published in Sequoia GEO&apos;s{" "}
+                <Link
+                  href="/ai-search-methodology"
+                  className="font-semibold text-[#3A9E6A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#C8EDD2]"
+                >
+                  AI search measurement methodology
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>

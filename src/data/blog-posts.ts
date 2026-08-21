@@ -29,5 +29,4 @@ export const blogPostsMeta: BlogPostMeta[] = [
   { slug: "dead-phone-number-lsa", dateISO: "2026-04-14" },
   { slug: "three-agencies-one-report", dateISO: "2026-04-07" },
   { slug: "ai-search-replacing-google-home-services", dateISO: "2026-04-10" },
-  { slug: "what-is-a-geo-agency", dateISO: "2026-04-05" },
 ];

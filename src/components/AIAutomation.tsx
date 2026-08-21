@@ -133,7 +133,7 @@ export default function AIAutomation() {
             </svg>
           </Link>
           <p className="mt-5 text-sm text-gray-500">
-            Free demo &middot; No commitment &middot; See results in 30 days
+            Free demo &middot; No commitment &middot; Defined implementation scope
           </p>
           <div className="mt-6 inline-flex items-center gap-3 rounded-full border border-[#3A9E6A]/30 bg-[#3A9E6A]/10 px-6 py-3">
             <span className="relative flex h-3 w-3">

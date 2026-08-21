@@ -88,7 +88,7 @@ export default function GoogleAdsFresnoPage() {
                 "name": "Do you require long-term contracts?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We work on month-to-month agreements after the initial onboarding period. We keep clients by producing results, not by locking them into contracts."
+                  "text": "New engagements begin with a 90-day initial term, then continue month to month. Accounts and data remain client owned."
                 }
               }
             ]
@@ -262,7 +262,7 @@ export default function GoogleAdsFresnoPage() {
                   { label: "Inc 5000 Rankings (2020 to 2023)", value: "4x" },
                   { label: "Fresno & Central Valley Focus", value: "✓" },
                   { label: "Revenue-Tied Attribution", value: "Always" },
-                  { label: "Contracts Required", value: "Month-to-Month" },
+                  { label: "Engagement Terms", value: "90 days, then month to month" },
                 ].map((item) => (
                   <div key={item.label} className="flex justify-between items-center border-b border-gray-200 pb-3">
                     <span className="text-gray-600 text-sm">{item.label}</span>

@@ -1,0 +1,3 @@
+observation_id,wave_id,prompt_id,platform,product,search_state,geography,observed_at,run_number,evidence_state,mentioned,recommended,primary_recommendation,provider_url_cited,independent_source_cited,absent
+demo-001,pilot-demo-2026-08,commercial-01,Example Assistant,Search enabled,logged out,"Example City, US",2026-08-20T09:00:00-07:00,1,original,true,true,false,false,true,false
+demo-002,pilot-demo-2026-08,commercial-01,Example Assistant,Search enabled,logged out,"Example City, US",2026-08-20T09:05:00-07:00,2,original,false,false,false,true,false,true

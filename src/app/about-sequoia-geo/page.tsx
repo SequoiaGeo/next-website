@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Sequoia GEO | Aaron Husak, Home Services Marketing Operator",
   description:
-    "Aaron Husak spent 13 years building Balanced Comfort from one truck to $17M+ and 4x Inc 5000. Now he runs Sequoia GEO, working with 10 home service contractors at a time.",
+    "Aaron Husak has worked in home services since 2006, including 13 years building and running Balanced Comfort. Clients work directly with Aaron, not an account manager.",
   alternates: { canonical: "https://www.sequoiageo.com/about-sequoia-geo" },
 };
 
@@ -37,7 +37,7 @@ export default function AboutPage() {
               <div>
                 <div className="section-overline mb-4">The Background</div>
                 <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-                  13 years. 130 employees. One exit.
+                  In home services since 2006. Thirteen years as an owner and operator.
                 </h2>
               </div>
               <div className="relative w-48 lg:w-full max-w-[240px]">
@@ -60,9 +60,10 @@ export default function AboutPage() {
             {/* Right: story */}
             <div className="space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                Aaron Husak launched Balanced Comfort Heating &amp; Air in Fresno, California in 2012.
-                One truck. No employees. Competing against companies with decades of name recognition
-                and marketing budgets that dwarfed his entire operation.
+                Aaron Husak began working in home services in 2006, starting in sales and marketing
+                for a residential solar company. In 2012, he launched Balanced Comfort Heating &amp; Air
+                in Fresno, California. One truck. No employees. Competing against companies with decades
+                of name recognition and marketing budgets that dwarfed his entire operation.
               </p>
               <p>
                 Over the next 13 years, he built Balanced Comfort into one of the Central Valley&rsquo;s
@@ -71,7 +72,7 @@ export default function AboutPage() {
                 of fastest-growing private companies in America.
               </p>
               <p>
-                He didn&rsquo;t hire an agency to do it. He learned the systems himself -- local
+                He didn&rsquo;t hire an agency to do it. He learned the systems himself: local
                 SEO, Google Ads, LSAs, reputation management, call tracking, booking rate optimization,
                 CSR training. He watched what worked and what didn&rsquo;t with his own revenue on the
                 line. In December 2024, Balanced Comfort was acquired.
@@ -223,7 +224,7 @@ export default function AboutPage() {
               },
               {
                 title: "We ask why revenue didn't move",
-                body: "Monthly reports showing green metrics while revenue stagnates is not a win. We look at cost per booked job, average ticket, and booking rate  -  the numbers that connect marketing spend to actual revenue.",
+                body: "Monthly reports showing green metrics while jobs booked stagnate is not a win. We look at cost per booked job, average ticket, and booking rate, the numbers that connect marketing spend to jobs booked.",
               },
             ].map((card) => (
               <div
@@ -238,24 +239,23 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The model */}
+      {/* The working relationship */}
       <section className="bg-[#fafaf8] py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              10 contractors at a time. That&rsquo;s the whole model.
+              You work with Aaron, not an account manager.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Sequoia GEO works with a maximum of 10 home service companies at any given time. Not because
-              we can&rsquo;t scale  -  because the work we do requires actually knowing your business.
-              Understanding your market. Reading your reports. Being available when something needs
-              attention. That level of engagement isn&rsquo;t possible at agency scale.
+              Aaron leads the strategy, joins the working meetings, reviews the evidence, and remains
+              accountable for the decisions. Specialized implementation support may be added when a scope
+              requires it, but the client relationship and strategic responsibility are not handed to a
+              junior account representative.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              The contractors we work with are typically doing $2M to $15M in annual revenue, spending $5K
-              to $30K per month on marketing, and frustrated that their current setup produces leads without
-              producing growth. They don&rsquo;t need more vendors. They need someone who reads the full
-              picture.
+              The strongest fit is an established local or home service business that needs someone to
+              understand the full customer-acquisition system, not another vendor reporting only the channel
+              they manage.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
               Sequoia GEO is based in Fresno, California and works with contractors nationwide.
@@ -267,10 +267,10 @@ export default function AboutPage() {
           {/* Stats bar */}
           <div className="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
             {[
-              { stat: "Max 10", label: "clients" },
-              { stat: "$2M to $15M", label: "revenue range" },
-              { stat: "30-day", label: "engagement start" },
-              { stat: "No long-term", label: "contract required" },
+              { stat: "Direct", label: "access to Aaron" },
+              { stat: "Since 2006", label: "working in home services" },
+              { stat: "13 yrs", label: "owner and operator" },
+              { stat: "90-day", label: "initial term" },
             ].map((item) => (
               <div
                 key={item.stat}
@@ -284,26 +284,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The 30-day start */}
+      {/* The initial term */}
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Every engagement starts with 30 days.
+              The first 30 days begin a 90-day engagement.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              The first 30 days is an audit and implementation sprint. We get access to everything  -  ad
-              accounts, analytics, LSA, ServiceTitan or whatever CRM is in use. We run through all 12
-              areas. We document findings. We make approved changes. By day 30 you have a complete picture
-              of what&rsquo;s working, what&rsquo;s leaking, and what the fixes look like  -  regardless of
-              what you decide after that.
+              Month one establishes the baseline, identifies the first approved constraint, implements the
+              first corrections, and documents what changed. The remaining initial term gives those changes
+              time to be discovered, measured, and evaluated without pretending that a result can be promised
+              on a fixed date. After the initial term, the engagement continues month to month.
             </p>
             <div className="mt-10">
               <Link
-                href="/contact"
+                href="/ai-seo-pricing"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
-                Apply for Your First 30 Days
+                See Engagements and Pricing
               </Link>
             </div>
           </div>

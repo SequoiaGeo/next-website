@@ -32,6 +32,8 @@ const nextConfig = {
 
       // === GEO LANDING PAGES ===
       // /geo-agency and /geo-for-plumbers now have their own pages, no redirect needed
+      // Consolidate the superseded generic GEO explainer into the evidence-first service page.
+      { source: "/blog/what-is-a-geo-agency", destination: "/geo-agency", permanent: true },
       { source: "/geo-audit", destination: "/contact", permanent: true },
       { source: "/geo-agency-seattle", destination: "/", permanent: true },
 

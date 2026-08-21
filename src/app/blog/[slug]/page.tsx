@@ -745,7 +745,7 @@ const posts: Record<string, Post> = {
         <p><strong>City and location pages:</strong> Are there separate pages for each city or suburb they serve?</p>
         <p><strong>NAP consistency:</strong> Is their Name, Address, Phone in the footer and matching their Google Business Profile exactly?</p>
         <p><strong>Embedded Google Map:</strong> Most high-ranking local sites include one on their contact or homepage.</p>
-        <p><strong>Local business schema:</strong> Use Google&rsquo;s Rich Results Test to check whether they have LocalBusiness schema markup. Schema is a direct local SEO signal that many competitors&rsquo; websites still lack.</p>
+        <p><strong>Local business schema:</strong> Use Google&rsquo;s Rich Results Test to check whether supported structured data matches the visible page. Schema can make eligible facts machine-readable, but it is not a direct local ranking factor.</p>
         <p><strong>Page speed:</strong> Run their site through Google PageSpeed Insights. Note the mobile score specifically, since local search results skew heavily mobile.</p>
         <p><strong>Content depth:</strong> Are their service pages 200 words or 1,000 words? Thin pages rank poorly for competitive local SEO terms.</p>
         <p><strong>Blog or resource content:</strong> Do they publish content consistently? This builds topical authority and local SEO visibility over time.</p>
@@ -1464,7 +1464,7 @@ const posts: Record<string, Post> = {
           <li><strong>Review velocity becomes your top priority.</strong> Not just for Map Pack rankings, for AI recommendations. A review generation system integrated with your dispatch workflow is the highest-ROI investment in AI search visibility.</li>
           <li><strong>Content depth matters more than content volume.</strong> Two authoritative service pages written with real operator expertise outperform 20 thin pages optimized around keyword variations. The March 2026 Google Core Update already penalized the thin AI-generated content pattern.</li>
           <li><strong>Citation consistency is non-negotiable.</strong> Every directory where your business appears should show identical NAP and a complete, accurate business description. Citation inconsistency confuses AI systems just as it confuses Google&rsquo;s local algorithm.</li>
-          <li><strong>Structured data (schema) communicates directly to AI systems.</strong> LocalBusiness schema, Service schema, Review schema, these tell AI systems exactly what you are, where you serve, and what your customers say. Companies without schema markup are invisible to AI systems in a way they aren&rsquo;t in traditional search.</li>
+          <li><strong>Structured data must match visible content.</strong> Supported LocalBusiness and Service markup can reduce ambiguity when it accurately reflects the page. Google does not require special schema for its generative AI features, and missing markup does not make a company invisible to AI systems.</li>
         </ul>
 
         <h2>The Window Is Closing</h2>
@@ -1521,7 +1521,7 @@ const posts: Record<string, Post> = {
           <li>Review platform data (Google, Yelp, HomeAdvisor, Angi), both volume and recency</li>
           <li>Industry directory presence (BBB, PHCC, local chamber of commerce)</li>
           <li>Website content quality and subject matter depth</li>
-          <li>Structured data signals (schema markup that communicates directly to AI crawlers)</li>
+          <li>Structured data that accurately matches visible business information</li>
           <li>Brand mentions in local news and trusted home improvement content</li>
           <li>Consistency of business information across all platforms (NAP consistency)</li>
         </ul>
@@ -1580,10 +1580,11 @@ const posts: Record<string, Post> = {
           across all of them build the citation authority that gets you recommended.
         </p>
 
-        <h3>Structured data: talking directly to AI systems</h3>
+        <h3>Structured data: supported facts that match the page</h3>
         <p>
-          Schema markup is code on your website that tells AI systems and search engines exactly what
-          your business is. For plumbers, the most important schema types are:
+          Schema markup provides supported machine-readable facts about visible page content. It does
+          not control whether an AI system cites or recommends the business. For plumbers, relevant
+          schema types can include:
         </p>
         <ul>
           <li><strong>LocalBusiness</strong> with Plumber type: your name, address, phone, hours, and service area in structured format</li>
@@ -1592,8 +1593,8 @@ const posts: Record<string, Post> = {
           <li><strong>Review/AggregateRating</strong>: your star rating and review count, embedded in page data</li>
         </ul>
         <p>
-          Most plumbing websites have no schema markup at all. Adding it is a gap you can close in a
-          week that gives you a structured data advantage most of your competitors don&rsquo;t have.
+          Validate markup against the visible page and keep it synchronized with public profiles.
+          Google does not require special schema for its generative AI features.
         </p>
 
         <h2>Emergency Plumbing: The Highest-Intent AI Search Category</h2>
@@ -1616,7 +1617,7 @@ const posts: Record<string, Post> = {
         <ul>
           <li>Month 1: Citation audit and cleanup, schema markup implementation, review velocity system launch</li>
           <li>Month 2 to 3: Content depth improvements, directory profile expansion, review velocity compounding</li>
-          <li>Month 4 to 6: AI system crawls pick up improved signals, recommendation frequency increases</li>
+          <li>Month 4 to 6: Repeat the controlled observations and report whether recommendation frequency changed</li>
         </ul>
         <p>
           The companies that started this work in mid-2025 are already seeing the results in how
@@ -5067,8 +5068,9 @@ const posts: Record<string, Post> = {
           or rings a number nobody monitors, you now know what has been happening to your leads.
         </p>
         <p>
-          If you want someone to go through the full setup end to end, that&rsquo;s what the 30-day engagement
-          is. The dead phone number is usually not the only thing we find.{" "}
+          If you want someone to go through the full setup end to end, the first 30 days of the initial
+          term establish the baseline and first corrections. The dead phone number is usually not the only
+          thing we find.{" "}
           <a href="/contact" className="text-[#1A5C3A] font-semibold hover:text-[#0D2318] transition-colors">
             Start here.
           </a>
@@ -5188,7 +5190,7 @@ const posts: Record<string, Post> = {
           ask why.
         </p>
 
-        <h2>What the 30-Day Engagement Looks Like</h2>
+        <h2>What the First 30 Days of the Engagement Look Like</h2>
         <p>
           The engagement starts with pulling all of this apart. We go into every account, look at every
           metric definition, and translate it into actual revenue terms. We connect marketing spend to
@@ -5315,10 +5317,10 @@ const posts: Record<string, Post> = {
         <ul>
           <li><strong>Authoritative long-form content written by people with real experience.</strong> AI search tools are trained to prefer content that demonstrates expertise, experience, and subject-matter depth. A post written by an HVAC operator with 20 years of experience will be cited before a post written by a marketing agency with no field knowledge.</li>
           <li><strong>Being mentioned in third-party publications.</strong> When AI search encounters your company name in Forbes, Bob Vila, Angi editorial content, or news outlets, it weights those mentions heavily. This is why a PR strategy is becoming more valuable than a link-building strategy.</li>
-          <li><strong>Real reviews with specific details.</strong> Reviews that mention real situations, real technicians, and real outcomes are weighted more heavily than generic five-star reviews. AI search can tell the difference.</li>
-          <li><strong>Structured data and schema markup.</strong> Proper Organization, LocalBusiness, and Service schema helps AI tools accurately understand what your business does, where, and for whom. Most home service sites do not have this set up correctly.</li>
+          <li><strong>Authentic reviews with useful details.</strong> Reviews that describe real situations, technicians, and outcomes help buyers understand the experience. Do not script details or claim a known AI weighting formula.</li>
+          <li><strong>Structured data and schema markup.</strong> Supported Organization, LocalBusiness, and Service markup can reduce ambiguity when it matches the visible page. It does not guarantee AI visibility.</li>
           <li><strong>Answering real questions in depth.</strong> Content that actually answers the questions homeowners are asking gets cited by AI tools. This is a fundamental shift in how content should be written.</li>
-          <li><strong>Brand consistency across the web.</strong> AI search cross-references your business across dozens of sources. If your name, address, phone number, hours, and services are consistent everywhere, AI trusts you more. If there are inconsistencies, it gets confused and recommends a competitor instead.</li>
+          <li><strong>Brand consistency across the web.</strong> Accurate names, addresses, phone numbers, hours, and services reduce avoidable contradictions across sources. That consistency does not guarantee a recommendation.</li>
           <li><strong>Direct relationships with customers.</strong> Email lists, SMS subscribers, and repeat customers. The companies that own their audience are less dependent on search, whether it is Google or AI.</li>
         </ul>
 
@@ -5351,9 +5353,9 @@ const posts: Record<string, Post> = {
           <li><strong>Claim and optimize your Google Business Profile.</strong> This is still the foundation. AI tools pull heavily from GBP data. Make sure your categories are correct, your services are listed, your hours are accurate, and you are posting regularly.</li>
           <li><strong>Fix your NAP consistency across the web.</strong> Name, address, phone number must match exactly on your website, GBP, Yelp, BBB, Angi, Nextdoor, and any other directory you are listed on. Inconsistencies confuse AI search and cost you visibility.</li>
           <li><strong>Start writing content that answers real questions.</strong> Not keyword-focused content. Question-focused content. What are homeowners actually asking about your services? Write the definitive answers to those questions on your site.</li>
-          <li><strong>Add schema markup to your site.</strong> Organization schema, LocalBusiness schema, Service schema, FAQ schema, Review schema. If you do not know what these are, hire someone who does.</li>
-          <li><strong>Generate detailed reviews from happy customers.</strong> Ask your best customers to mention specifics in their reviews: the technician&rsquo;s name, the service performed, the outcome. These specific reviews get weighted more heavily than generic praise.</li>
-          <li><strong>Get mentioned in third-party content.</strong> Guest posts, industry publications, local news features, podcast interviews. Every time your company is mentioned in an authoritative third-party source, your AI search credibility grows.</li>
+          <li><strong>Validate supported structured data.</strong> Use Organization, LocalBusiness, or Service markup only where the visible page supports it, and do not treat markup as a recommendation guarantee.</li>
+          <li><strong>Invite authentic customer reviews.</strong> Ask customers for honest feedback without scripting sentiment, names, services, or outcomes.</li>
+          <li><strong>Earn relevant third-party coverage.</strong> Industry publications, local news, associations, partner pages, and podcasts can provide independent corroboration when the inclusion is legitimate and disclosed.</li>
           <li><strong>Build a community around your brand.</strong> Social media, email list, customer Facebook groups. The contractors who will thrive through the AI search transition are the ones who are building direct relationships with their audience.</li>
           <li><strong>Track your progress.</strong> Set up a monthly check-in where you ask the four AI tools the same questions and compare the answers over time. This is your new version of rank tracking.</li>
           <li><strong>Stop obsessing over individual keyword rankings.</strong> Google keyword rankings still matter, but they are one data point among many. The contractors who spend all their time trying to rank for &ldquo;plumber [city]&rdquo; and ignore the fact that their name is missing from ChatGPT&rsquo;s recommendations are losing the war while winning a single battle.</li>
@@ -5424,7 +5426,7 @@ const posts: Record<string, Post> = {
 
         <h3>Do I need to start over with my website and content to be AI search ready?</h3>
         <p>
-          Usually not. Most contractor websites can be updated to be more AI-friendly without a full rebuild. The priorities are: correct schema markup, fixed NAP consistency, content that answers real questions in depth, and authoritative signals like reviews and third-party mentions. A well-planned GEO update can be completed on most existing sites in 60 to 90 days.
+          Usually not. Most contractor websites can be updated without a full rebuild. Start with crawl and index access, accurate public information, content that answers real questions, supported structured data that matches the page, and legitimate independent evidence. Technical corrections can be verified after deployment; recommendation observations need a longer measurement window.
         </p>
 
         <div className="mt-10 rounded-xl bg-[#C8EDD2] p-6 text-center">
@@ -5473,7 +5475,7 @@ const posts: Record<string, Post> = {
         <ul>
           <li><strong>Monitoring your visibility in AI search.</strong> A GEO agency actively checks whether your business is being referenced by ChatGPT, Perplexity, Gemini, and Claude when someone asks relevant questions. This is the new version of rank tracking, but instead of tracking keyword positions, you are tracking brand mentions in AI responses.</li>
           <li><strong>Building authoritative content.</strong> AI search tools are trained to prefer content that demonstrates real expertise and experience. A GEO agency writes or reviews your content to make sure it reads as authoritative, specific, and trustworthy. This usually means longer, deeper content written by or with people who have genuine subject-matter experience.</li>
-          <li><strong>Structuring your data so AI can understand it.</strong> Schema markup, knowledge graphs, entity relationships. Most websites have no structured data at all, which means AI tools have to guess what the business does and who it serves. A GEO agency fixes this so AI tools can confidently understand and reference the business.</li>
+          <li><strong>Keeping visible and structured facts aligned.</strong> Supported schema can reduce ambiguity when it matches the page and public profiles. It does not guarantee that an AI product will understand, cite, or recommend the business.</li>
           <li><strong>Managing your brand presence across third-party sources.</strong> AI search tools cross-reference businesses across dozens of sites. A GEO agency cleans up inconsistent information, removes duplicate listings, and gets the business mentioned in authoritative third-party content like news articles, industry publications, and review sites.</li>
           <li><strong>Optimizing for citation-worthy content.</strong> Some AI tools, like Perplexity, actually link back to the content they cite. A GEO agency creates content designed to be cited, not just read. This is a different writing approach than traditional SEO.</li>
           <li><strong>Tracking and reporting on AI search visibility.</strong> Because traditional SEO metrics like keyword rankings do not capture AI search performance, a GEO agency develops and tracks new metrics. Things like share of voice in AI responses, brand mentions in specific AI tools, and citation frequency.</li>
@@ -5856,7 +5858,7 @@ export default async function BlogPostPage({
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
                   13 years building Balanced Comfort Heating &amp; Air from startup to 130+ employees.
                   4x Inc 5000 (2020 to 2023). CA Licensed Contractor B, C-2, C-20, C-36.
-                  Now working with 10 home service companies at a time as a growth operator and Fractional CMO.
+                  Now working directly with local and home service businesses as a growth operator and marketing lead.
                 </p>
                 <Link
                   href="/about-sequoia-geo"

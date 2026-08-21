@@ -6,7 +6,7 @@ import InlineLeadForm from "@/components/InlineLeadForm";
 export const metadata: Metadata = {
   title: "Best Plumbing Marketing Agencies 2026 Ranked by an Operator",
   description:
-    "8 plumbing marketing companies ranked by a 13-year home services operator, with pricing where it exists. My own practice is on the list, disclosed.",
+    "8 plumbing marketing companies ranked by a home services marketer since 2006 and 13-year owner and operator, with pricing where it exists. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-plumbing-marketing-agencies",
   },

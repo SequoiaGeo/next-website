@@ -9,9 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     // Core pages
     { url: BASE_URL, lastModified: "2026-04-18", changeFrequency: "weekly", priority: 1.0 },
-    { url: `${BASE_URL}/about-sequoia-geo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/about-sequoia-geo`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/contact`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/how-it-works`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/how-it-works`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/services`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/github-repos-home-service-businesses`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
 
@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/lsa-guide`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/ai-website-seo-guide`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/contractors-guide-ai-search`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/ai-search-methodology`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/leaving-my-marketing-agency`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 
     // Question pages (answer-first, built for the queries contractors type into ChatGPT and Google)

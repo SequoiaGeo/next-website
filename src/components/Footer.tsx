@@ -9,7 +9,7 @@ const services = [
   { label: "LSA Management", href: "/lsa-management" },
   { label: "Operator-Led Marketing", href: "/fractional-cmo" },
   { label: "AI Automation", href: "/ai-automation" },
-  { label: "GEO / AI Search", href: "/geo-agency" },
+  { label: "AI SEO / Search Visibility", href: "/geo-agency" },
   { label: "GEO for Plumbers", href: "/geo-for-plumbers" },
   { label: "GEO for Restoration", href: "/geo-for-restoration" },
   { label: "Fresno SEO Agency", href: "/seo-agency-fresno" },
@@ -19,6 +19,7 @@ const resources = [
   { label: "Free LSA Guide", href: "/lsa-guide" },
   { label: "AI SEO Guide", href: "/ai-website-seo-guide" },
   { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },
+  { label: "AI Search Measurement Method", href: "/ai-search-methodology" },
   { label: "GitHub Tools for Home Services", href: "/github-repos-home-service-businesses" },
   { label: "HVAC Statistics 2026", href: "/hvac-statistics" },
   { label: "Plumbing Statistics 2026", href: "/plumbing-statistics" },
@@ -64,7 +65,7 @@ export default function Footer() {
             </div>
             <p className="text-pale-green/80 text-sm leading-relaxed max-w-md mb-4">
               Growth operations for home service companies doing $2M to $15M.
-              Founded by Aaron Husak, 4x Inc 5000 honoree and 13-year home services operator.
+              Founded by Aaron Husak, a home services marketer since 2006 and 13-year owner and operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">
               4x Inc 5000 (2020 to 2023) &middot; CA Licensed Contractor B, C-2, C-20, C-36 &middot; Fresno, CA &middot; Serving Nationwide

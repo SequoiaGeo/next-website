@@ -1,140 +1,254 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
-  title: "GEO Agency: Get Your Business Recommended in AI Search | Sequoia GEO",
+  title: "AI SEO Agency for Home Services | Sequoia GEO",
   description:
-    "Sequoia GEO is an operator-led GEO agency for service businesses that need clearer, more credible visibility across search and AI answers. GEO is core work, not a bolt-on.",
+    "Evidence-first AI SEO for local and home service businesses. See what we change, how we measure AI search visibility, and what we never promise.",
   alternates: {
     canonical: "https://www.sequoiageo.com/geo-agency",
   },
 };
 
+const faqs = [
+  {
+    question: "What is AI SEO?",
+    answer:
+      "AI SEO is the work of making a business and its evidence understandable, retrievable, and useful across traditional search and AI-assisted answers. The foundation remains normal SEO: crawlable pages, helpful content, accurate public information, internal links, and measurement.",
+  },
+  {
+    question: "Is GEO different from SEO?",
+    answer:
+      "GEO, or generative engine optimization, is a label for the part of SEO concerned with generative answers. It adds recommendation and citation observation to the measurement plan, but it is not a separate ranking system and it does not replace technical SEO, local search, or useful content.",
+  },
+  {
+    question: "Does a website need special schema for AI search?",
+    answer:
+      "Google says no special schema or additional technical requirement is needed for its AI Overviews or AI Mode. Structured data can still reduce ambiguity when it accurately matches the visible page, but markup does not guarantee a citation, recommendation, or ranking.",
+  },
+  {
+    question: "How does Sequoia measure AI search visibility?",
+    answer:
+      "We keep citations, mentions, recommendations, referral visits, inquiries, qualified leads, and jobs booked as separate stages. Prompt observations use frozen questions, repeated fresh sessions, platform-specific logs, dated evidence, and an explicit limitations record.",
+  },
+  {
+    question: "Can an AI SEO agency guarantee a recommendation?",
+    answer:
+      "No. AI answers vary by platform, prompt, location, account state, model, and date. Sequoia can document the baseline, correct verifiable problems, and measure repeated observations, but no agency controls whether an assistant recommends a business.",
+  },
+  {
+    question: "How long should AI SEO be measured?",
+    answer:
+      "Technical corrections can be verified after deployment. Recommendation visibility is more variable, so Sequoia compares repeated observations over 60 to 90 days after material indexing changes instead of treating one favorable answer as proof.",
+  },
+];
+
+const workAreas = [
+  {
+    title: "Crawl and retrieval access",
+    body: "Confirm that important pages can be crawled, indexed, internally discovered, and read in textual form. For ChatGPT Search, this includes checking that OAI-SearchBot is not unintentionally blocked.",
+  },
+  {
+    title: "Business and entity consistency",
+    body: "Reconcile names, services, locations, profiles, licensing records, contact information, and structured data so owned and independent sources are not describing different businesses.",
+  },
+  {
+    title: "First-hand evidence",
+    body: "Publish useful comparisons, original statistics, methods, field observations, and named case studies only when the source and permission support the claim.",
+  },
+  {
+    title: "Independent corroboration",
+    body: "Improve legitimate profiles and pursue relevant association, partner, podcast, directory, and editorial coverage. Third-party mentions are earned, not planted.",
+  },
+  {
+    title: "Page clarity and conversion",
+    body: "Answer the buyer's question clearly, show who did the work, define what happens next, and preserve a usable path from an AI referral or search visit to an inquiry.",
+  },
+  {
+    title: "Measurement discipline",
+    body: "Track prompt observations, cited pages, referrals, inquiries, qualified leads, and jobs booked without converting one stage into another for a better-looking report.",
+  },
+];
+
+const exclusions = [
+  "A special schema type that guarantees inclusion in an AI answer",
+  "An llms.txt file presented as a ranking factor",
+  "Generic articles published only to imitate prompt variations",
+  "One favorable answer treated as a stable ranking",
+  "A citation or referral visit reported as a qualified lead",
+  "Manufactured reviews, forum mentions, profiles, or endorsements",
+];
+
 export default function GeoAgencyPage() {
   return (
     <>
+      <FaqJsonLd faqs={faqs} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: "https://www.sequoiageo.com/" },
           { name: "Services", url: "https://www.sequoiageo.com/services" },
-          { name: "GEO Agency", url: "https://www.sequoiageo.com/geo-agency" },
+          { name: "AI SEO", url: "https://www.sequoiageo.com/geo-agency" },
         ]}
       />
       <ServiceJsonLd
-        serviceType={"Generative Engine Optimization"}
-        description={"Generative Engine Optimization for home service contractors. We improve how a business, its evidence, and its public information are understood across search and AI answers."}
-        url={"https://www.sequoiageo.com/geo-agency"}
+        serviceType="AI Search Optimization and SEO"
+        description="Evidence-first AI SEO for local and home service businesses, including technical SEO, public information consistency, first-hand evidence, independent corroboration, and staged measurement."
+        url="https://www.sequoiageo.com/geo-agency"
       />
-      {/* Hero */}
+
       <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm">
               <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
-              Generative Engine Optimization
+              AI SEO and AI search visibility
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
-              A GEO Agency Built{" "}
-              <span className="text-[#1A5C3A]">Around One Discipline</span>
+              Evidence-first AI SEO for businesses that need to be understood before they can be recommended
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Sequoia GEO was named after the discipline it was built around: Generative Engine Optimization.
-              Not a bolt-on. Not a rebrand. Aaron Husak&apos;s operator-led practice focuses on making service
-              businesses easier for search engines and AI tools to understand, verify, and surface. The deepest
-              experience is in home services, where Aaron operated for 13 years.
+            <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">
+              Sequoia GEO helps local and home service businesses correct public contradictions,
+              strengthen useful evidence, and measure how they appear across search and AI-assisted
+              answers. GEO is the industry label. AI SEO is the work buyers recognize. The foundation
+              is still credible SEO, not a separate set of secret ranking tricks.
             </p>
-            <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">
-              Engagements start at $2,500 a month with a three-month initial term, then month to month.
+            <p className="mt-5 text-sm font-semibold text-[#1A5C3A]">
+              Engagements start at $2,500 per month with a three-month initial term, then month to month.
             </p>
-            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href="/contact"
+                href="/audit"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
-                Get a Free AI Visibility Audit
-                <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
+                Request a Public-Surface Review
               </Link>
-              <a href="tel:5595213122" className="text-base font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors">
-                (559) 521-3122
-              </a>
+              <Link
+                href="/ai-search-methodology"
+                className="inline-flex items-center justify-center rounded-lg border border-[#1A5C3A]/30 bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:border-[#1A5C3A]"
+              >
+                Read the Measurement Method
+              </Link>
             </div>
-            <Link href="/ai-seo-pricing" className="mt-5 inline-block text-sm font-semibold text-[#1A5C3A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#0D2318]">
-              See GEO and AI SEO pricing
+            <Link
+              href="/ai-seo-pricing"
+              className="mt-5 inline-block text-sm font-semibold text-[#1A5C3A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#0D2318]"
+            >
+              See AI SEO pricing and scope
             </Link>
           </div>
         </div>
       </section>
 
-      {/* What is GEO */}
-      <section className="bg-[#0D2318] py-20">
+      <section className="bg-[#0D2318] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              What a GEO Agency Actually Does
+          <div className="mx-auto max-w-5xl">
+            <p className="section-overline mb-4">Observed in Sequoia&rsquo;s own accounts</p>
+            <h2 className="max-w-3xl text-3xl font-extrabold text-white sm:text-4xl">
+              What the visibility reports show, and what they do not prove
             </h2>
-            <p className="mt-4 text-lg text-[#C8EDD2]/80">
-              GEO stands for Generative Engine Optimization. A GEO agency helps businesses show up
-              when someone asks ChatGPT, Perplexity, or Google Gemini a question that should produce
-              your name. That is different work from traditional SEO.
+            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[#C8EDD2]/75">
+              These are dated visibility measures for sequoiageo.com. They are not vendor
+              recommendations, inquiries, qualified leads, or jobs booked.
             </p>
-          </div>
-          <div className="mx-auto max-w-4xl grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {[
-              {
-                title: "AI search visibility monitoring",
-                body: "A GEO agency tracks whether your business is being referenced by ChatGPT, Perplexity, Gemini, and Claude when someone asks relevant questions. This is the new version of rank tracking, instead of keyword positions, you track brand mentions in AI responses.",
-              },
-              {
-                title: "Authority content that gets cited",
-                body: "AI tools are trained to prefer content that demonstrates real expertise. A GEO agency builds content designed to be cited, not just read. This is a different writing approach than traditional SEO, and it requires actual subject-matter depth.",
-              },
-              {
-                title: "Schema and structured data",
-                body: "Most websites have no structured data, which means AI tools have to guess what the business does and who it serves. A GEO agency implements schema markup and entity relationships so AI tools can confidently understand and reference the business.",
-              },
-              {
-                title: "Third-party brand presence",
-                body: "AI tools cross-reference businesses across dozens of sources. A GEO agency builds and cleans up your presence across directories, review platforms, industry publications, and local media so AI tools see a consistent, authoritative signal.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <h3 className="text-base font-bold text-[#3A9E6A]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
-              </div>
-            ))}
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              <article className="rounded-2xl border border-white/10 bg-white/5 p-7">
+                <p className="text-4xl font-extrabold text-[#3A9E6A]">2,950</p>
+                <h3 className="mt-3 text-lg font-bold text-white">Google generative AI impressions</h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#C8EDD2]/65">
+                  Across 39 pages in the Search Console Generative AI report for
+                  sc-domain:sequoiageo.com, July 22 through August 18, 2026. Read in account on
+                  August 20, 2026.
+                </p>
+              </article>
+              <article className="rounded-2xl border border-white/10 bg-white/5 p-7">
+                <p className="text-4xl font-extrabold text-[#3A9E6A]">64</p>
+                <h3 className="mt-3 text-lg font-bold text-white">Bing AI citations</h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#C8EDD2]/65">
+                  Across six cited pages in Bing Webmaster Tools AI Performance for
+                  https://www.sequoiageo.com/, July 20 through August 18, 2026. Read in account on
+                  August 20, 2026.
+                </p>
+              </article>
+            </div>
+            <p className="mt-7 max-w-4xl text-sm leading-relaxed text-[#C8EDD2]/60">
+              The leading pages were primarily agency comparisons, original statistics, and focused
+              service pages. That makes those formats worth studying. It does not establish that the
+              format caused a recommendation or a lead.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* GEO vs SEO */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              GEO vs. SEO: What&rsquo;s Actually Different
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              SEO optimizes for search engines that return a list of links. GEO optimizes for AI tools
-              that return a synthesized answer. The underlying work overlaps in some areas and diverges sharply in others.
-            </p>
+          <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="section-overline mb-4">The work</p>
+              <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+                What an evidence-first AI SEO engagement can change
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                The scope follows the verified constraint. It does not begin with a generic content quota.
+              </p>
+            </div>
+            <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {workAreas.map((item) => (
+                <article key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-6">
+                  <h3 className="text-lg font-bold text-[#0D2318]">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.body}</p>
+                </article>
+              ))}
+            </div>
           </div>
-          <div className="mx-auto max-w-4xl grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-6">
-              <h3 className="text-base font-bold text-[#1a1a1a] mb-4">Traditional SEO Agency</h3>
-              <ul className="space-y-2">
-                {[
-                  "Optimizes for ranking position in Google",
-                  "Tracks keyword rankings",
-                  "Builds backlinks",
-                  "Reports impressions and clicks",
-                  "Measures organic traffic volume",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm text-gray-500">
-                    <svg className="h-4 w-4 shrink-0 text-gray-300" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+        </div>
+      </section>
+
+      <section className="bg-[#fafaf8] py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+            <div>
+              <p className="section-overline mb-4">GEO and SEO</p>
+              <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+                AI SEO adds observations, not a separate law of search
+              </h2>
+              <div className="mt-6 space-y-5 text-base leading-relaxed text-gray-600">
+                <p>
+                  Google says the same foundational SEO practices apply to AI Overviews and AI Mode.
+                  Pages need to be crawlable, indexed, useful, internally discoverable, and eligible to
+                  appear with a snippet. Google also says no special schema is required for those features.
+                </p>
+                <p>
+                  That guidance is specific to Google. OpenAI separately documents OAI-SearchBot access
+                  for ChatGPT Search and the use of utm_source=chatgpt.com on referral links. Neither
+                  company publishes a formula that lets an agency guarantee a recommendation.
+                </p>
+                <p>
+                  Structured data still has a supporting role when it matches visible content. It can
+                  reduce ambiguity and help search features interpret a page, but it should not be sold as
+                  an AI recommendation switch.
+                </p>
+              </div>
+              <div className="mt-7 flex flex-col gap-3 text-sm">
+                <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#1A5C3A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#0D2318]">
+                  Google Search Central: AI features and your website
+                </a>
+                <a href="https://help.openai.com/en/articles/12627856-publishers-and-developers-faq" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#1A5C3A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#0D2318]">
+                  OpenAI: Publishers and Developers FAQ
+                </a>
+                <a href="https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#1A5C3A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#0D2318]">
+                  Bing Webmaster Tools: AI Performance definitions
+                </a>
+              </div>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm">
+              <h3 className="text-xl font-bold text-[#0D2318]">What we do not sell as AI SEO</h3>
+              <ul className="mt-6 space-y-4">
+                {exclusions.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-gray-600">
+                    <svg className="mt-0.5 h-5 w-5 shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                     {item}
@@ -142,118 +256,75 @@ export default function GeoAgencyPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#C8EDD2]/20 p-6">
-              <h3 className="text-base font-bold text-[#0D2318] mb-4">GEO Agency (Sequoia GEO)</h3>
-              <ul className="space-y-2">
-                {[
-                  "Optimizes for AI tool mentions and recommendations",
-                  "Tracks brand mentions in ChatGPT, Perplexity, Gemini",
-                  "Builds entity authority and citation signals",
-                  "Reports AI share of voice and mention frequency",
-                  "Measures inbound from AI-referred searches",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm text-[#0D2318]">
-                    <svg className="h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center">
+              <p className="section-overline mb-4">The measurement ladder</p>
+              <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+                A citation is not a recommendation. A visit is not a lead.
+              </h2>
+              <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-gray-600">
+                Sequoia publishes the definitions before reporting the outcome. That prevents a proxy
+                metric from quietly becoming a customer result.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                ["Mentioned", "The business appears anywhere in the answer."],
+                ["Recommended", "The answer presents the business as a plausible provider to hire."],
+                ["Primary", "The business is first or the clearest provider recommendation."],
+                ["Cited", "A URL is used as a source, whether or not the business is recommended."],
+                ["Referral visit", "A captured session arrives from an identified AI source."],
+                ["Inquiry", "A real person contacts the business about a possible need."],
+                ["Qualified lead", "A real business, addressable need, and decision-maker response or meeting are established."],
+                ["Job booked", "The business confirms a booked job under its normal operating definition."],
+              ].map(([title, body]) => (
+                <article key={title} className="rounded-xl border border-[#3A9E6A]/20 bg-[#C8EDD2]/15 p-5">
+                  <h3 className="text-base font-bold text-[#0D2318]">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600">{body}</p>
+                </article>
+              ))}
+            </div>
+            <div className="mt-9 text-center">
+              <Link href="/ai-search-methodology" className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]">
+                Read the Full AI Search Measurement Method
+              </Link>
             </div>
           </div>
-          <p className="mt-8 text-center text-sm text-gray-500 max-w-2xl mx-auto">
-            GEO does not replace traditional SEO or paid advertising. It is an additional layer on top of what works.
-            A real GEO agency coordinates with your existing marketing rather than competing with it.
-          </p>
         </div>
       </section>
 
-      {/* GEO Services */}
-      <section className="bg-[#fafaf8] py-20">
+      <section className="bg-[#0D2318] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              GEO Agency Services
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Every engagement starts with an audit. The work that follows depends on what the audit reveals.
-            </p>
-          </div>
-          <div className="mx-auto max-w-4xl grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "AI search visibility audit (ChatGPT, Perplexity, Gemini, Claude)",
-              "Schema markup and structured data implementation",
-              "Entity SEO and knowledge graph optimization",
-              "Authority content development and optimization",
-              "Third-party citation and directory cleanup",
-              "Google Business Profile optimization",
-              "Review velocity and reputation management",
-              "AI share of voice monitoring and reporting",
-              "Brand mention tracking across AI platforms",
-              "Content strategy for AI citation targeting",
-              "Local business entity building",
-              "Fractional CMO with GEO strategy leadership",
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3">
-                <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-                <span className="text-sm text-gray-700">{item}</span>
-              </div>
-            ))}
-          </div>
-          <p className="mt-8 text-center text-sm text-gray-600 max-w-2xl mx-auto">
-            GEO work is trade specific. See how it applies to{" "}
-            <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">plumbing companies</Link>
-            ,{" "}
-            <Link href="/geo-for-restoration" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">restoration companies</Link>
-            , and{" "}
-            <Link href="/roofing-seo" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">roofing companies</Link>
-            , or read the full{" "}
-            <Link href="/contractors-guide-ai-search" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">Contractor&rsquo;s Guide to AI Search</Link>.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Sequoia GEO */}
-      <section className="bg-white py-16">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-8 sm:p-12 shadow-sm">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+          <div className="mx-auto max-w-5xl rounded-2xl border border-white/10 bg-white/5 p-8 sm:p-12">
+            <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div>
-                <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
-                  Why Sequoia GEO Was Built Around This Discipline
+                <p className="section-overline mb-4">Operator led</p>
+                <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+                  You work with Aaron, not an account manager
                 </h2>
-                <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  GEO was not a rebrand. Sequoia GEO was built around that discipline specifically,
-                  from the start. Most agencies offering GEO services are traditional SEO or digital
-                  marketing firms that added it to their service list in 2024 or 2025. That is not
-                  the same thing as building around it from day one.
-                </p>
-                <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  Aaron holds a California B General Contractor License and spent 13 years operating in
-                  home services, building a company from startup to more than 130 employees and earning
-                  four Inc. 5000 recognitions. That background means he understands how contractors make
-                  decisions, what their customers search for, and what signals are worth measuring.
-                </p>
-                <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  For home service contractors and local businesses, GEO is not an abstract opportunity.
-                  AI tools are being used to find plumbers, HVAC companies, roofers, and restoration
-                  companies right now. The businesses showing up in those answers are winning jobs their
-                  competitors do not even know they are losing.
+                <p className="mt-5 text-lg leading-relaxed text-[#C8EDD2]/75">
+                  Aaron Husak spent 13 years building and running a home service company before
+                  founding Sequoia GEO. He leads the strategy, joins the working meetings, reviews the
+                  evidence, and remains accountable for the decisions. Specialized implementation
+                  support may be added, but the strategic relationship is not handed off.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { stat: "GEO", label: "Core discipline, not a bolt-on" },
-                  { stat: "B Gen", label: "CA Contractor License" },
-                  { stat: "13 yrs", label: "Home services operator" },
-                  { stat: "4x", label: "Inc 5000 (2020-2023)" },
-                ].map((item) => (
-                  <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
-                    <div className="text-2xl font-extrabold text-[#0D2318]">{item.stat}</div>
-                    <div className="mt-1 text-xs text-[#1A5C3A]">{item.label}</div>
+                  ["13 yrs", "owner and operator"],
+                  ["4x", "Inc 5000"],
+                  ["90 days", "initial term"],
+                  ["Direct", "access to Aaron"],
+                ].map(([stat, label]) => (
+                  <div key={label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
+                    <p className="text-2xl font-extrabold text-[#0D2318]">{stat}</p>
+                    <p className="mt-1 text-xs text-[#1A5C3A]">{label}</p>
                   </div>
                 ))}
               </div>
@@ -262,353 +333,41 @@ export default function GeoAgencyPage() {
         </div>
       </section>
 
-      {/* Who needs a GEO agency */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Who Genuinely Needs a GEO Agency
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Not every business needs a GEO agency right now. Here is an honest breakdown.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {[
-              {
-                label: "A good fit",
-                color: "border-[#3A9E6A]/30 bg-[#C8EDD2]/20",
-                labelColor: "text-[#1A5C3A]",
-                items: [
-                  "Home service contractors (HVAC, plumbing, roofing, restoration)",
-                  "Professional service providers where trust drives referrals",
-                  "Local businesses in markets where AI recommendations are growing",
-                  "Businesses that want to reduce dependence on paid advertising",
-                  "Companies expanding into new geographic markets",
-                  "Anyone whose competitors have not started GEO work yet",
-                ],
-                icon: "check",
-              },
-              {
-                label: "Not the right time",
-                color: "border-gray-200 bg-[#fafaf8]",
-                labelColor: "text-gray-500",
-                items: [
-                  "Businesses already at capacity from word-of-mouth",
-                  "Commodity products where buyers don't research",
-                  "No budget for ongoing marketing investment",
-                  "Major reputation issues that need to be fixed first",
-                  "Deeply regulated industries where AI is conservative about recommendations",
-                  "Looking for a one-time fix rather than an ongoing discipline",
-                ],
-                icon: "x",
-              },
-            ].map((col) => (
-              <div key={col.label} className={`rounded-2xl border p-7 ${col.color}`}>
-                <h3 className={`text-sm font-bold uppercase tracking-wide mb-4 ${col.labelColor}`}>{col.label}</h3>
-                <ul className="space-y-3">
-                  {col.items.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
-                      {col.icon === "check" ? (
-                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                      ) : (
-                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-gray-300" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                      )}
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Red flags + what to look for */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Red Flags When Choosing a GEO Agency
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              GEO is a new category. The market is full of agencies rebranding themselves as experts
-              without actually understanding the work.
-            </p>
-          </div>
-          <div className="space-y-4">
-            {[
-              {
-                flag: "They promise guaranteed rankings in AI search",
-                explain: "AI tools do not have rankings the way Google does. Nobody can guarantee that. An honest GEO agency talks about expected outcomes and strategy, not guarantees.",
-              },
-              {
-                flag: "Their strategy is just \"more content\"",
-                explain: "Writing more blog posts does not equal GEO. Content quality matters more than volume, and the strategy needs to include schema, entity building, brand authority signals, and measurement.",
-              },
-              {
-                flag: "They cannot explain how AI search tools work",
-                explain: "Ask any GEO agency how ChatGPT decides which businesses to recommend. If they dodge or use vague marketing language, they do not actually know.",
-              },
-              {
-                flag: "They use the same strategy for every client",
-                explain: "GEO work should be tailored to the specific business, industry, market, and competitive landscape. A cookie-cutter approach means they are selling a template.",
-              },
-              {
-                flag: "They have no technical capabilities",
-                explain: "Real GEO requires schema markup, structured data, entity SEO, and site architecture work. If a GEO agency is just a content shop, they are missing half the discipline.",
-              },
-              {
-                flag: "They position GEO as a replacement for your current marketing",
-                explain: "GEO does not replace SEO, local search, or paid advertising. A legitimate GEO agency builds on top of what is already working, not against it.",
-              },
-            ].map((item) => (
-              <div key={item.flag} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-6">
-                <div className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-50">
-                    <svg className="h-4 w-4 text-red-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-[#1a1a1a]">{item.flag}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-gray-600">{item.explain}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How GEO Optimization Works */}
-      <section className="bg-[#fafaf8] py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              How Generative Engine Optimization Works
-            </h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Generative engine optimization geo is a distinct discipline from traditional SEO. Understanding
-              how AI tools process and surface information explains why the work looks different from
-              anything that came before it.
-            </p>
-          </div>
-          <div className="space-y-10">
-            <div>
-              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
-                How AI Models Generate Answers
-              </h3>
-              <p className="text-base leading-relaxed text-gray-600">
-                AI models like the ones powering ChatGPT, Perplexity, and Google AI Overviews do not retrieve
-                a list of links the way traditional search engines do. They generate synthesized answers by
-                drawing on patterns in their training data, cross-referenced against real-time web signals.
-                When someone asks an AI system which plumber to call in their city, the system is not ranking
-                websites. It is constructing a response based on which businesses it has encountered most
-                consistently, with the most coherent entity information, across the most credible sources.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-gray-600">
-                This is why generative engine optimization requires a fundamentally different strategy than
-                traditional SEO. Technical optimization for search engines focuses heavily on crawlability,
-                keyword placement, and link signals. Generative engine optimization geo focuses on entity
-                clarity, citation architecture, and making your business easy for AI systems to understand
-                and describe accurately. A business that ranks well in Google search can still be invisible
-                in AI generated answers if its entity information is inconsistent, its schema is absent, or
-                its authority signals are fragmented across sources.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
-                AI Search Engines and AI Overviews
-              </h3>
-              <p className="text-base leading-relaxed text-gray-600">
-                Google AI Overviews have fundamentally changed what appears at the top of search results
-                for millions of queries. Where a user once saw ten blue links, they now see a generated
-                paragraph that synthesizes information from multiple sources and, in some cases, no longer
-                requires them to click through to any website at all. AI search engines including Perplexity
-                and ChatGPT search mode operate on the same principle at a larger scale.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-gray-600">
-                For local businesses, this creates both risk and opportunity. A contractor who is not being
-                referenced in AI generated answers is losing potential customers to competitors who are,
-                even if their traditional search engine rankings look healthy. A GEO agency that understands
-                how AI overviews select and cite sources can build the right signals into your content,
-                structured data, and brand presence to improve the odds that your business appears in those
-                answers. That work starts with a clear picture of where you stand today across AI powered
-                search platforms, not just Google.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
-                Technical SEO, Technical Optimization, and AI Readiness
-              </h3>
-              <p className="text-base leading-relaxed text-gray-600">
-                Technical SEO remains important in a GEO context, but the emphasis shifts. Standard
-                technical optimization for traditional search engines prioritizes page speed, crawl
-                efficiency, and indexation. Technical optimization for AI search adds a layer on top:
-                schema markup that clearly describes who you are and what you do, entity disambiguation
-                that connects your business to the right categories and locations, and content structure
-                that supports natural language query optimization.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-gray-600">
-                AI systems use structured data not just to understand page content but to build a model
-                of what a business is, where it operates, who it serves, and how authoritative it is
-                relative to similar businesses. Inconsistent NAP data, missing schema types, and
-                fragmented brand signals across directories and third-party sources all create noise
-                that makes it harder for AI models to confidently include your business in their
-                responses. A real GEO agency addresses this systematically, not just by publishing
-                more content.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* GEO Strategy and AI Visibility */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              GEO Strategy: Building AI Search Visibility Over Time
-            </h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              AI visibility is not a campaign. It is a compounding asset built through consistent,
-              coordinated work across content, citations, and entity authority.
-            </p>
-          </div>
-          <div className="space-y-10">
-            <div>
-              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
-                AI Citations and Brand Authority
-              </h3>
-              <p className="text-base leading-relaxed text-gray-600">
-                AI citations are the third-party references that AI systems draw on when forming their
-                responses. When a review site, industry directory, local news outlet, or authoritative
-                publication mentions your business in a way that is clear and consistent, that citation
-                becomes a signal AI systems can use. The more high-quality sources that describe your
-                business accurately and consistently, the more confident an AI system becomes about
-                including you in its responses.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-gray-600">
-                Brand authority in the GEO context is not just about backlinks or domain rating. It is
-                about the breadth and consistency of your presence across the sources that AI models
-                treat as credible. This includes structured business directories, industry associations,
-                local media coverage, customer review platforms, and partner or vendor profiles. A GEO
-                strategy maps all of these touchpoints, identifies the gaps, and builds a plan to fill
-                them systematically.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
-                AI Driven Search and Traffic from AI Platforms
-              </h3>
-              <p className="text-base leading-relaxed text-gray-600">
-                AI driven search is changing where businesses get their traffic. AI traffic from platforms
-                like Perplexity, ChatGPT, and Google AI Overviews is becoming a meaningful source of
-                referral visits and, more importantly, of demand generation that never produces a click
-                at all. A user who asks an AI system which HVAC contractor to call and receives a confident
-                recommendation may call that contractor directly, without ever visiting a website. That
-                conversion is invisible in traditional analytics, but it is real.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-gray-600">
-                Measuring AI visibility requires different tools than standard SEO reporting. The best
-                GEO agencies track brand mentions and AI generated answers across platforms, not just
-                keyword rankings and organic sessions. AI search optimization is an iterative process:
-                you build the signals, monitor how AI tools respond, identify where you are still being
-                overlooked, and adjust. This is not a set-it-and-forget-it discipline, and any agency
-                promising otherwise is not being straight with you.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">
-                What Separates the Best GEO Agencies
-              </h3>
-              <p className="text-base leading-relaxed text-gray-600">
-                The best GEO agencies have a few things in common. They can explain how AI systems
-                process entity information without resorting to vague buzzwords. They measure AI
-                visibility consistently, not just SEO metrics. They have a clear framework for building
-                citation authority rather than just producing blog content. And they are honest about
-                timelines, because generative engine optimization compounds slowly compared to paid
-                advertising but produces far more durable results.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-gray-600">
-                An AI engine competitive analysis is a useful starting point. By querying the major
-                AI platforms with the questions your target customers are asking, you can see which
-                competitors are being surfaced and what signals appear to be driving those recommendations.
-                That data shapes a GEO strategy built around closing specific gaps rather than running
-                a generic checklist. For home service contractors in competitive local markets, this
-                kind of deliberate, data-grounded approach is what creates a real and lasting advantage
-                in AI search.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="bg-white py-20">
+      <section className="bg-[#fafaf8] py-20 sm:py-24">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center">
+            <p className="section-overline mb-4">Common questions</p>
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              GEO Agency Questions
+              AI SEO and GEO questions
             </h2>
           </div>
-          <div className="space-y-6">
-            {[
-              {
-                q: "Is GEO the same as SEO?",
-                a: "No, though they overlap. SEO optimizes for search engines that return a list of links, you try to be one of the clicks. GEO optimizes for AI tools that return a synthesized answer, you try to be mentioned inside the answer. The underlying signals that drive both have some overlap (content quality, authority, structured data) but the specific techniques and measurement approaches diverge significantly.",
-              },
-              {
-                q: "How long does GEO work take to show results?",
-                a: "Realistic timeline is 90 to 180 days for meaningful improvements in AI search visibility. The first phase is foundation work: schema implementation, entity building, content authority signals. The second phase is monitoring and iteration as AI tools index and process the updated signals. Any GEO agency promising results in 30 days is not being honest about how AI training and update cycles work.",
-              },
-              {
-                q: "Do I still need SEO if I hire a GEO agency?",
-                a: "Yes. GEO does not replace traditional SEO or local search work, it adds a layer on top. In fact, strong SEO foundations (quality content, technical health, authoritative backlinks) support GEO because AI tools pull heavily from the same signals that drive organic rankings. A real GEO agency coordinates with your SEO strategy rather than treating it as competition.",
-              },
-              {
-                q: "What AI tools does GEO optimization target?",
-                a: "The primary AI search platforms to optimize for are ChatGPT (including search mode), Perplexity, Google Gemini and AI Overviews, Claude, and Microsoft Copilot. Each platform has slightly different content preferences and update cycles, but the foundational GEO work, entity authority, structured data, citation-worthy content, brand consistency, improves visibility across all of them.",
-              },
-              {
-                q: "What does the free AI visibility audit include?",
-                a: "We check your current visibility across ChatGPT, Perplexity, Gemini, and Claude using queries that should surface your business. We look at your schema and structured data implementation, your entity presence across third-party sources, and your content authority signals. You get a written summary of what we find, an honest assessment of where the gaps are, and realistic advice about what to prioritize. No sales pressure, just data.",
-              },
-              {
-                q: "Why is a GEO agency different from a general digital marketing agency?",
-                a: "Most general marketing agencies offering GEO services added it to their list in 2024 or 2025 because the term started appearing in industry publications. Real GEO expertise requires deep knowledge of how large language models process and weight information, how AI training cycles work, what structured data signals AI tools actually use, and how to build entity authority in a way that compounds over time. That is different work from traditional SEO or content marketing, and it requires a fundamentally different approach to strategy and measurement.",
-              },
-            ].map((item) => (
-              <div key={item.q} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
-                <h3 className="text-base font-bold text-[#1a1a1a]">{item.q}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.a}</p>
-              </div>
+          <div className="mt-10 space-y-5">
+            {faqs.map((faq) => (
+              <article key={faq.question} className="rounded-2xl border border-gray-200 bg-white p-7">
+                <h3 className="text-lg font-bold text-[#0D2318]">{faq.question}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{faq.answer}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
       <section className="bg-[#1A5C3A] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
-            Find out where you stand in AI search right now
+            Find the public evidence helping or confusing the answer
           </h2>
-          <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            We will check your visibility across ChatGPT, Perplexity, Gemini, and Claude, tell you
-            exactly what we find, and give you an honest picture of whether GEO work makes sense for
-            your situation. No pitch, no package, just data.
+          <p className="mt-4 text-lg leading-relaxed text-[#C8EDD2]/80">
+            Start with a hand-reviewed public-surface assessment. It documents what can be verified,
+            what remains uncertain, and which correction should come first.
           </p>
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
-              Get the Free Audit
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/audit" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
+              Request a Public-Surface Review
             </Link>
-            <a href="tel:5595213122" className="text-base font-medium text-[#C8EDD2] hover:text-white transition-colors">(559) 521-3122</a>
+            <Link href="/ai-seo-pricing" className="inline-flex items-center justify-center rounded-lg border border-white/40 px-8 py-4 text-base font-semibold text-white transition hover:border-white">
+              View Pricing
+            </Link>
           </div>
         </div>
       </section>

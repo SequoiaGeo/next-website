@@ -386,7 +386,7 @@ export default function HvacSeoPage() {
               },
               {
                 title: "Technical Performance",
-                body: "A homeowner with a dead AC is searching from a phone. Mobile speed, Core Web Vitals, and local business schema decide whether that homeowner ever reads your headline. Google indexes mobile-first, so your mobile experience is your ranking. Schema also tells search engines and AI assistants what you do and where, in a format they read without guessing.",
+                body: "A homeowner with a dead AC is often searching from a phone. Mobile usability, crawl access, page speed, and clear service information affect whether the page is eligible, usable, and persuasive. Supported structured data can reduce ambiguity when it matches the visible page, but it does not decide rankings or AI recommendations.",
               },
               {
                 title: "Authority and Measurement",

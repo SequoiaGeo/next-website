@@ -9,7 +9,7 @@ const serviceLinks = [
   {
     group: "Core Services",
     items: [
-      { label: "GEO / AI Search Visibility", href: "/geo-agency" },
+      { label: "AI SEO / Search Visibility", href: "/geo-agency" },
       { label: "LSA Management", href: "/lsa-management" },
       { label: "AI Automation", href: "/ai-automation" },
       { label: "Operator-Led Marketing", href: "/fractional-cmo" },
@@ -35,6 +35,7 @@ const resourceLinks = [
       { label: "LSA Guide for Contractors", href: "/lsa-guide" },
       { label: "AI SEO Guide", href: "/ai-website-seo-guide" },
       { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },
+      { label: "AI Search Measurement Method", href: "/ai-search-methodology" },
     ],
   },
   {
