@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { featuredAboutMedia } from "@/data/media";
 
 export const metadata: Metadata = {
   title: "About Sequoia GEO | Aaron Husak, Home Services Marketing Operator",
@@ -162,34 +163,35 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Office + podcasts */}
+            {/* Office + published media */}
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 items-stretch">
               <div className="overflow-hidden rounded-2xl shadow-sm">
                 <Image src="/first-office-exterior.webp" alt="Balanced Comfort first office, Fresno, CA" width={4000} height={3000} className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col justify-between rounded-2xl border border-gray-200 bg-white p-6">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">As Featured On</p>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">Featured Conversations and Trade Media</p>
                   <div className="space-y-3">
-                    <a href="https://www.thefirstclick.net/ep-320-using-ai-to-increase-website-clarity-with-aaron-husak/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group">
-                      <span className="mt-0.5 flex-shrink-0 h-8 w-8 rounded-full bg-[#C8EDD2] flex items-center justify-center">
-                        <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" /></svg>
-                      </span>
-                      <div>
-                        <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">Digital Marketing Therapy, Ep. 320</p>
-                        <p className="text-xs text-gray-500">Using AI to Increase Website Clarity</p>
-                      </div>
-                    </a>
-                    <a href="https://www.grownearby.com/podcast/the-success-story-of-aaron-husak/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group">
-                      <span className="mt-0.5 flex-shrink-0 h-8 w-8 rounded-full bg-[#C8EDD2] flex items-center justify-center">
-                        <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" /></svg>
-                      </span>
-                      <div>
-                        <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">Grow Nearby Podcast</p>
-                        <p className="text-xs text-gray-500">The Success Story of Aaron Husak</p>
-                      </div>
-                    </a>
+                    {featuredAboutMedia.map((item) => (
+                      <a key={item.url} href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group">
+                        <span className="mt-0.5 flex-shrink-0 h-8 w-8 rounded-full bg-[#C8EDD2] flex items-center justify-center">
+                          {item.kind === "podcast" ? (
+                            <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" /></svg>
+                          ) : (
+                            <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5A3.375 3.375 0 0010.125 2.25H8.25m0 12.75h7.5m-7.5 3H12m-1.5-15.75H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.625a9 9 0 00-9-9z" /></svg>
+                          )}
+                        </span>
+                        <div>
+                          <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">{item.outlet}</p>
+                          <p className="text-xs text-gray-500">{item.title}</p>
+                        </div>
+                      </a>
+                    ))}
                   </div>
+                  <Link href="/media" className="mt-5 inline-flex items-center gap-1 text-xs font-semibold text-[#1A5C3A] hover:text-[#0D2318]">
+                    View all media and writing
+                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+                  </Link>
                 </div>
                 <div className="mt-6 border-t border-gray-100 pt-4">
                   <p className="text-xs text-gray-500 leading-relaxed">Started in a 400 sq ft office in Fresno, CA. Grew to 130 employees, 4,000+ five-star reviews, and four consecutive Inc 5000 rankings before founding Sequoia GEO.</p>

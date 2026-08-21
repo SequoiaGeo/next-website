@@ -340,7 +340,7 @@ export default function RestorationSeoPage() {
             {[
               {
                 title: "Local SEO and Google Business Profile",
-                body: "Local SEO is the foundation of restoration SEO. Most restoration company calls come from the Map Pack, not from organic results below it. Winning local SEO means a fully optimized Google Business Profile, consistent local citations, and service area pages for every city you serve. Search engines reward businesses that demonstrate active, legitimate local presence with strong review velocity.",
+                body: "Local SEO is an important part of restoration demand capture. The baseline should separate Map Pack calls from organic-page calls before assigning credit. Accurate Business Profile information, consistent public facts, and useful service-area content improve the foundation. Google says review count and positive ratings can help local ranking, but it does not publish a review-velocity formula.",
               },
               {
                 title: "Emergency vs. Proactive Keyword Strategy",
@@ -352,7 +352,7 @@ export default function RestorationSeoPage() {
               },
               {
                 title: "Link Building and Reputation",
-                body: "Search engines use link building signals and review velocity to determine which restoration company deserves to rank. High quality backlinks from local citations, industry associations, and local media coverage build domain authority over time. Paired with a systematic review generation process timed to project completion, link building and reputation management compound into durable local SEO rankings your competitors cannot quickly match.",
+                body: "Legitimate links from industry associations, local publications, partners, and relevant directories can help search engines and buyers discover and verify a restoration company. Pair that work with a compliant post-project review request process. Neither links nor review acquisition provides a guaranteed ranking or fixed result date.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -537,12 +537,12 @@ export default function RestorationSeoPage() {
               {
                 number: "03",
                 title: "Online Reviews and Reputation Management",
-                body: "Restoration companies operate in high-stress situations where the customer experience is particularly memorable. Positive online reviews from satisfied restoration customers carry significant weight in Google rankings and conversion. A review generation system that captures feedback consistently after every completed job builds the online reputation and brand visibility that search rewards. Review recency matters because restoration jobs happen year-round and reviews from three years ago carry less weight than recent ones. Building relationships with past customers through follow-up and review requests is one of the most reliable ways to maintain consistent review velocity.",
+                body: "Restoration companies operate in high-stress situations where the customer experience is memorable. A compliant review process gives eligible customers a consistent opportunity to share honest feedback after the work is complete. Track request delivery, response rate, rating, recency, and buyer conversion separately. Google does not publish a review-velocity weighting, and customers should never be coached to write a specific result.",
               },
               {
                 number: "04",
                 title: "Attribution from Search to Dispatched Job",
-                body: "Restoration SEO success should be measured by dispatched jobs and revenue, not impressions and rankings. That requires Google Analytics for web traffic monitoring, Google Search Console for search ranking data, call tracking tied to organic landing pages, and integration with your job management system. Website visitors from organic search become inbound calls, inbound calls become qualified leads, and qualified leads become dispatched jobs. Reporting that separates emergency organic calls from insurance referrals from paid search is what lets you measure marketing ROI correctly and hold your SEO campaign accountable to actual business outcomes.",
+                body: "Restoration SEO success should be measured by valid calls, qualified leads, and dispatched jobs, not impressions and rankings alone. That requires analytics, Search Console, call tracking tied to landing pages, and integration with the job management system. Reporting should separate emergency organic calls, insurance referrals, paid search, duplicate inquiries, and unqualified contacts.",
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-gray-200 bg-white p-7">

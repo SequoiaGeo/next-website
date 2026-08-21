@@ -164,7 +164,7 @@ export default function Home() {
               },
               {
                 title: "Your Reviews and Reputation Velocity",
-                body: "Star ratings are table stakes. What matters is review velocity: how many new reviews you get per month relative to competitors. I build automated review request sequences that run through your CRM so techs don&rsquo;t have to remember to ask. One client went from 4 reviews/month to 22 without adding any manual steps.",
+                body: "Reviews help customers evaluate a business, and Google says review count and positive ratings can help local ranking. Google does not publish a review-velocity weighting. I build compliant review request systems through your CRM, then measure response rate, rating, calls, and jobs booked instead of treating one review metric as the strategy.",
               },
               {
                 title: "Your Revenue Attribution (The Part Everyone Skips)",

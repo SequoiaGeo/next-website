@@ -288,10 +288,10 @@ export default function AIWebsiteSEOGuidePage() {
                     No content format is reliably cited by every assistant. Useful sources often share three characteristics that also help human buyers evaluate the answer.
                   </p>
                   <p>
-                    <strong>It answers a specific question with a specific answer.</strong> &ldquo;How much does HVAC replacement cost?&rdquo; answered with a price range, what drives the price up or down, and what a homeowner should expect to pay in your market. Not &ldquo;it depends on many factors.&rdquo; AI tools are built to answer questions directly. They prefer sources that do the same.
+                    <strong>It answers a specific question with a specific answer.</strong> &ldquo;How much does HVAC replacement cost?&rdquo; should include a current price range, what drives the price up or down, and the market and date the range covers. That makes the page more useful to a buyer and easier to verify than an unsupported &ldquo;it depends.&rdquo;
                   </p>
                   <p>
-                    <strong>It includes verifiable details.</strong> Named brands you install, actual price ranges with context, specific data points, the year you were founded, how many jobs you have completed. AI tools are trained on the internet and they know what a real, credible answer looks like versus a vague marketing statement. Specificity is credibility.
+                    <strong>It includes verifiable details.</strong> Named brands you install, actual price ranges with context, specific data points, the year you were founded, and how many jobs you have completed. Specificity gives search systems and buyers facts they can compare across your site and other public sources. Every number should be current, attributable, and consistent wherever it appears.
                   </p>
                   <p>
                     <strong>It includes first-hand experience.</strong> Explain real trade decisions, operating constraints, and what changed the company&apos;s recommendation. That gives the page information a generic summary cannot supply.

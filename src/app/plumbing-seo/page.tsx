@@ -58,7 +58,7 @@ const faqs = [
   {
     question: "Does plumbing SEO still matter now that AI tools answer questions?",
     answer:
-      "Yes, because AI assistants recommend plumbers based on the same signals Google reads: reviews, service pages, and consistent listings. The work overlaps heavily, and ranking well organically is the entry fee to being recommended. That is why AI search visibility is built into every engagement instead of sold as a separate product.",
+      "The work overlaps, but no single public formula determines recommendations across AI assistants. Google says its normal SEO fundamentals remain relevant for AI features in Search. Crawlable service pages, accurate listings, consistent business facts, and useful local content create a stronger discovery foundation, while recommendation testing and citation review remain separate measurements. That is why AI search visibility is built into every engagement instead of sold as a separate product.",
   },
 ];
 

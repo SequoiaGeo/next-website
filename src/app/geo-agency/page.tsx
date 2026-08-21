@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "How does Sequoia measure AI search visibility?",
     answer:
-      "We keep citations, mentions, recommendations, referral visits, inquiries, qualified leads, and jobs booked as separate stages. Prompt observations use frozen questions, repeated fresh sessions, platform-specific logs, dated evidence, and an explicit limitations record.",
+      "Sequoia built its own AI Search Evidence System for the work. The current release uses dated manual question panels, public-source reconciliation, lead attribution, and separate stages for citations, mentions, recommendations, referral visits, inquiries, qualified leads, and jobs booked. An automated OpenAI query and source collector remains pilot-only until its first live observation is validated. The system is included in AI SEO engagements, not added as a separate software fee.",
   },
   {
     question: "Can an AI SEO agency guarantee a recommendation?",
@@ -201,6 +201,53 @@ export default function GeoAgencyPage() {
                   <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.body}</p>
                 </article>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#0D2318] py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-5xl">
+            <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-wider text-[#3A9E6A]">
+                  Built by Sequoia, included in the work
+                </p>
+                <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                  Our AI Search Evidence System turns observations into decisions
+                </h2>
+                <p className="mt-5 text-lg leading-relaxed text-[#C8EDD2]/75">
+                  Sequoia uses a controlled evidence process to connect dated observations to public
+                  contradictions, content gaps, conversion problems, and measurement work we can
+                  actually change.
+                </p>
+                <p className="mt-5 text-sm leading-relaxed text-[#C8EDD2]/60">
+                  The current release uses manual observation and lead attribution. Automated OpenAI
+                  query and source collection remains pilot-only until its first live observation is
+                  validated. The system is included in AI SEO engagements, with no separate collector
+                  subscription or AI surcharge.
+                </p>
+                <Link
+                  href="/ai-search-methodology"
+                  className="mt-7 inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white"
+                >
+                  See the evidence methodology
+                </Link>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {[
+                  ["Frozen questions", "We preserve the question set and date later additions so a favorable answer cannot quietly replace the baseline."],
+                  ["Source evidence", "Manual observations preserve visible citations today. Provider-returned queries and source telemetry will remain pilot evidence until the automated collector passes live validation."],
+                  ["Human recommendation coding", "A name match or citation is not automatically called a recommendation. Each stage has its own evidence rule."],
+                  ["Business outcome connection", "Visibility remains a leading indicator until tracking supports an inquiry, a qualified lead, or a job booked."],
+                ].map(([title, body]) => (
+                  <article key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                    <h3 className="font-bold text-white">{title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-[#C8EDD2]/65">{body}</p>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </div>

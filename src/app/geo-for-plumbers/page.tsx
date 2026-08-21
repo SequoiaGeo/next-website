@@ -53,7 +53,7 @@ export default function GeoForPlumbersPage() {
                 "name": "What is GEO for plumbers?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "GEO stands for Generative Engine Optimization. For plumbers, it means getting your company named when a homeowner asks an AI tool like ChatGPT, Perplexity, Google AI Overviews, or Gemini a question such as 'who is the best plumber near me' or 'who should I call for a burst pipe.' Traditional SEO competes for a spot on a list of links. GEO competes to be named inside the answer the AI gives. The work is different: it relies on entity clarity, structured data, citation authority across the sources AI tools trust, and content written to be cited, not just ranked.",
+                  "text": "GEO stands for Generative Engine Optimization. Sequoia uses AI SEO as the primary term for improving the crawlability, accuracy, usefulness, and corroboration of a plumbing company's public information, then measuring whether relevant AI products mention, cite, recommend, or refer a prospect to it. The foundation remains SEO, and no provider controls the answer an AI product gives.",
                 },
               },
               {
@@ -61,7 +61,7 @@ export default function GeoForPlumbersPage() {
                 "name": "How is GEO different from regular plumbing SEO?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Plumbing SEO optimizes for Google's list of links and the Map Pack. GEO optimizes for AI tools that return a single synthesized answer and often no list at all. They share some foundations (quality content, authority, structured data) but the techniques and measurement diverge. With SEO you track keyword positions and clicks. With GEO you track whether your plumbing company is being mentioned in AI answers, and how often, compared to competitors. GEO does not replace plumbing SEO, it adds a layer on top of it.",
+                  "text": "The foundations are shared. Google says its existing SEO guidance also applies to its AI features, with no special AI schema required. AI SEO adds controlled testing across generated answers and separates mentions, recommendations, citations, visits, inquiries, and qualified leads. It does not replace plumbing SEO.",
                 },
               },
               {
@@ -268,10 +268,10 @@ export default function GeoForPlumbersPage() {
               <h3 className="text-base font-bold text-[#0D2318] mb-4">GEO for Plumbers</h3>
               <ul className="space-y-2">
                 {[
-                  "Competes to be named inside the AI answer itself",
-                  "Tracks mentions in ChatGPT, Perplexity, Gemini",
-                  "Measures AI share of voice vs. competitors",
-                  "Wins when the AI recommends you by name",
+                  "Tests relevant buyer questions across AI products",
+                  "Separates mentions, recommendations, and citations",
+                  "Reconciles public facts and source contradictions",
+                  "Connects referral visits to qualified leads where tracking supports it",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-[#0D2318]">
                     <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
@@ -284,8 +284,8 @@ export default function GeoForPlumbersPage() {
             </div>
           </div>
           <p className="mt-8 text-center text-sm text-gray-500 max-w-2xl mx-auto">
-            GEO does not replace plumbing SEO or paid ads. It is an additional layer that captures
-            demand the link-based world is starting to miss.
+            AI SEO does not replace plumbing SEO or paid ads. It adds broader observation and
+            attribution so you can test whether AI-assisted discovery is producing qualified demand.
           </p>
         </div>
       </section>
@@ -300,8 +300,8 @@ export default function GeoForPlumbersPage() {
                   Run by a Home Services Operator, Not a Generalist Agency
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  Most agencies offering GEO added it to a service list when the term started trending.
-                  Sequoia GEO was built around the discipline from day one, and it is run by someone who
+                  Sequoia GEO was named around Generative Engine Optimization and now uses AI SEO as
+                  its primary public term. The practice is run by someone who
                   spent 13 years in the field.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
@@ -342,11 +342,11 @@ export default function GeoForPlumbersPage() {
             {[
               {
                 q: "What is GEO for plumbers?",
-                a: "GEO stands for Generative Engine Optimization. For plumbers, it means getting your company named when a homeowner asks an AI tool like ChatGPT, Perplexity, Google AI Overviews, or Gemini who to call. Traditional SEO competes for a spot on a list of links. GEO competes to be named inside the answer itself. The work relies on entity clarity, structured data, citation authority across the sources AI tools trust, and content written to be cited.",
+                a: "GEO stands for Generative Engine Optimization. Sequoia uses AI SEO as the primary term for improving the crawlability, accuracy, usefulness, and corroboration of a plumbing company's public information, then measuring mentions, recommendations, citations, visits, inquiries, and qualified leads. No provider controls the answer an AI product gives.",
               },
               {
                 q: "How is GEO different from regular plumbing SEO?",
-                a: "Plumbing SEO optimizes for Google's list of links and the Map Pack. GEO optimizes for AI tools that return one synthesized answer and often no list at all. They share some foundations but the techniques and measurement diverge. SEO tracks keyword positions and clicks. GEO tracks whether and how often your company is named in AI answers versus competitors. GEO adds a layer on top of SEO, it does not replace it.",
+                a: "The foundations are shared. Google says its existing SEO guidance also applies to its AI features, with no special AI schema required. AI SEO adds controlled testing across generated answers and separates visibility from visits and qualified demand. It does not replace plumbing SEO.",
               },
               {
                 q: "Why does GEO matter for plumbing companies now?",
@@ -358,7 +358,7 @@ export default function GeoForPlumbersPage() {
               },
               {
                 q: "Do I still need plumbing SEO if I invest in GEO?",
-                a: "Yes. Strong SEO foundations feed GEO, because AI tools pull heavily from the same signals that drive organic rankings and the Map Pack. The best results come from running both together. See our plumbing SEO and marketing page for the traditional search side.",
+                a: "Yes, but not because every system uses one shared ranking formula. Google says its existing SEO fundamentals remain relevant for AI features in Search. A crawlable website, accurate business information, useful local content, and consistent public facts improve the foundation for both traditional and AI-assisted discovery. Recommendation behavior still varies by platform and cannot be guaranteed. See our plumbing SEO and marketing page for the traditional search side.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-white p-7">

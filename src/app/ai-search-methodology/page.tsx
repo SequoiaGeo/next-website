@@ -97,7 +97,7 @@ const articleJsonLd = {
   },
   datePublished: "2026-08-20",
   dateModified: "2026-08-21",
-  version: "1.1",
+  version: "1.2",
   mainEntityOfPage: "https://www.sequoiageo.com/ai-search-methodology",
 };
 
@@ -122,13 +122,20 @@ export default function AiSearchMethodologyPage() {
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="section-overline mb-4">Public methodology, version 1.1</p>
+            <p className="section-overline mb-4">Public methodology, version 1.2</p>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
               How Sequoia GEO measures AI search without turning visibility into a lead
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]/80">
               AI answers change. Citations are not recommendations. Referral visits are not inquiries.
               This page defines every stage before Sequoia reports it.
+            </p>
+            <p className="mx-auto mt-5 max-w-3xl text-sm leading-relaxed text-[#C8EDD2]/60">
+              Sequoia built the AI Search Evidence System used inside its AI SEO engagements. The
+              current release combines dated manual question panels, public-source reconciliation,
+              lead attribution, and the evidence stages defined below. An automated OpenAI query and
+              source collector is still pilot-only until its first live observation is validated. The
+              system is included in the engagement, not sold as a separate software subscription.
             </p>
             <p className="mt-6 text-sm text-[#C8EDD2]/55">
               Published August 20, 2026. Last revised August 21, 2026.
@@ -309,6 +316,8 @@ export default function AiSearchMethodologyPage() {
           <div className="rounded-2xl border border-gray-200 p-7">
             <h2 className="text-xl font-bold text-[#0D2318]">Changelog</h2>
             <div className="mt-5 grid gap-3 text-sm text-gray-600 sm:grid-cols-[140px_1fr]">
+              <p className="font-semibold text-[#1A5C3A]">August 21, 2026</p>
+              <p>Version 1.2 documented Sequoia&rsquo;s included AI Search Evidence System, identified the automated collector as pilot-only pending live validation, and clarified that the system is delivery infrastructure rather than a separate software product.</p>
               <p className="font-semibold text-[#1A5C3A]">August 21, 2026</p>
               <p>Version 1.1 clarified that repeat runs within a prompt-platform cell measure stability and are not statistically independent trials.</p>
               <p className="font-semibold text-[#1A5C3A]">August 20, 2026</p>

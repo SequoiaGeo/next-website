@@ -378,7 +378,7 @@ export default function HvacSeoPage() {
             {[
               {
                 title: "Local SEO and Google Business Profile",
-                body: "Emergency HVAC searches get decided in the Map Pack, and GBP is what puts you there. Accurate categories, consistent citations, and steady review velocity matter more than any single tactic. Review recency matters: a profile with a steady drip of new reviews can outrank a bigger profile that went quiet two years ago. Your service-area settings and categories also decide which searches you are even eligible to appear for.",
+                body: "The Map Pack can be an important source of emergency HVAC calls. Keep categories, services, hours, service areas, and public business information accurate. Compare review count, rating, recency, responses, and request completion, but do not treat review velocity as a published ranking formula. Google describes local ranking through relevance, distance, and prominence.",
               },
               {
                 title: "On-Page Service and Location Pages",

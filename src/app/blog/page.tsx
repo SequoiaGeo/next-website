@@ -177,7 +177,7 @@ const posts = [
     slug: "hvac-geo-ai-era",
     title: "HVAC Marketing in the AI Era: How Generative Engine Optimization Changes Everything",
     excerpt:
-      "ChatGPT and Google AI are answering HVAC questions before homeowners click a result. The companies building AI search visibility now will dominate their markets in 18 months. Here's the framework.",
+      "ChatGPT and Google AI can answer HVAC questions before homeowners click a result. Here is how to improve eligibility, source coverage, and measurement without treating one AI answer as proof.",
     date: "November 2025",
     readTime: "9 min read",
     category: "AI Search",
@@ -186,7 +186,7 @@ const posts = [
     slug: "plumber-geo-ai-search-optimization",
     title: "AI Search Optimization for Plumbers: Getting Recommended by ChatGPT and Google AI",
     excerpt:
-      "The practical framework for plumbing companies to build AI search visibility: citations, content authority, review velocity, and the structured data that talks directly to AI systems.",
+      "A practical framework for plumbing companies to improve AI search visibility through crawlable content, accurate business information, source coverage, and controlled measurement.",
     date: "October 2025",
     readTime: "8 min read",
     category: "AI Search",

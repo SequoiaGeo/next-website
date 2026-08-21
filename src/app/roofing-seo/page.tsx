@@ -24,15 +24,15 @@ export const metadata: Metadata = {
 const roofingFaqs = [
   {
     q: "How long does roofing SEO take to produce results?",
-    a: "Plan on 3 to 6 months before rankings move in a meaningful way, and 6 to 12 months before the revenue impact is obvious. Smaller markets move faster. Competitive metros take longer. Anyone promising page one in 30 days is selling something they cannot control.",
+    a: "There is no universal timeline. Technical corrections can be verified after release, while crawling, indexing, local visibility, calls, qualified leads, and jobs booked move on different schedules. We establish the baseline first, document releases, and agree on an observation window that fits the market and scope. No agency can promise page one by a fixed date.",
   },
   {
     q: "How much does roofing SEO cost?",
-    a: "My engagements start at $2,500 per month. What that covers depends on your market and how much ground there is to make up, which is why every engagement starts with a marketing baseline review. The better question is what the program produces. A roofing SEO program that cannot show you booked jobs by month 12 was not worth any price.",
+    a: "My engagements start at $2,500 per month. What that covers depends on your market, website, locations, implementation access, and the size of the verified gap. The program should define what will be changed and report calls, qualified leads, and jobs booked rather than asking you to accept ranking screenshots as the result.",
   },
   {
     q: "Do I need roofing SEO if I am already running Google Ads?",
-    a: "Yes, and they work best together. Ads produce volume today and stop the moment you stop paying. SEO compounds. As organic rankings build over 6 to 12 months, you can pull ad spend off the terms you now own and lower your blended cost per lead. Treating them as an either-or decision is the most common mistake I see roofing companies make.",
+    a: "They can work together, but the right mix depends on demand, cost per qualified lead, booking rate, seasonality, and current organic visibility. Keep paid and organic attribution separate, then shift budget only when lead and booked-job data supports the decision.",
   },
   {
     q: "What makes roofing SEO different from general SEO?",
@@ -40,15 +40,15 @@ const roofingFaqs = [
   },
   {
     q: "How does storm damage affect roofing SEO strategy?",
-    a: "When hail or high winds move through a market, search demand spikes within hours, and the companies that already rank capture it at no added cost. You cannot start SEO after the storm and catch that wave. The whole strategy is building visibility before the season so the spike lands on you instead of your competitors.",
+    a: "Hail and high winds can create abrupt local demand. Before storm season, verify crawl access, location and service information, tracking, phone coverage, and the landing paths used by both organic and paid traffic. Existing visibility may help during a spike, but it does not guarantee that one company captures the demand.",
   },
   {
     q: "What is AI SEO for roofing companies?",
-    a: "Homeowners now ask ChatGPT, Perplexity, and Google’s AI results who to call instead of scrolling a list of links. AI SEO, also called generative engine optimization or GEO, is the work of making your roofing company one of the names those tools give: entity clarity, structured data, consistent citations across the sources AI tools trust, and content written to be cited. It is the discipline this practice was named after.",
+    a: "AI SEO, also called generative engine optimization or GEO, improves the crawlability, accuracy, usefulness, and corroboration of a roofing company's public information, then measures whether relevant AI products mention, cite, recommend, or refer a prospect to it. The foundation remains SEO, and no provider controls the answer an AI product gives.",
   },
   {
     q: "How do I know if my roofing SEO company is performing?",
-    a: "Ask for reporting that connects organic traffic to booked roofing jobs, not click and impression charts. A performing program shows growing calls from organic search and a declining cost per acquired customer. If your agency cannot produce those numbers, the program is not being managed to revenue.",
+    a: "Ask for reporting that connects organic visits to valid calls, qualified leads, and booked roofing jobs. Clicks and impressions describe visibility, but they do not prove demand. The report should also show what was released, what remains uncertain, and how duplicate or unqualified inquiries are handled.",
   },
 ];
 
@@ -226,18 +226,18 @@ export default function RoofingSeoPage() {
                 title: "Authority and Reputation",
                 body: (
                   <>
-                    Links from local sources, manufacturer certification pages, and coverage that AI
-                    tools and Google both trust. Plus a review engine that keeps recency up, because
-                    a profile that went quiet reads as a company that went quiet.
+                    Legitimate local links, manufacturer certification pages, accurate listings, and
+                    independent coverage help buyers and search systems verify the business. A compliant
+                    review-request process keeps feedback current without scripting what customers should say.
                   </>
                 ),
               },
               {
-                title: "Tracking to Revenue, Not Rankings",
+                title: "Tracking to Booked Jobs, Not Rankings",
                 body: (
                   <>
                     Search Console, call tracking, and your CRM wired together so we both know which
-                    queries produce booked jobs and what each channel{"’"}s average ticket is.
+                    queries produce qualified leads and booked jobs.
                     If a report cannot answer {"“"}what did this cost per booked job,{"”"}{" "}
                     it is not a report. It is a receipt.
                   </>
@@ -268,16 +268,16 @@ export default function RoofingSeoPage() {
                 body: "How many of your roofing leads become scheduled inspections? Most owners cannot answer that number. If your booking rate is broken, more traffic makes the problem bigger, not smaller. I check this before recommending you spend anything.",
               },
               {
-                title: "Average ticket by channel",
-                body: "Storm leads close at different tickets than organic leads. Insurance versus retail versus maintenance: I track which channels produce your most profitable work, not just the most calls.",
+                title: "Lead quality by channel",
+                body: "Storm, insurance, retail, repair, and maintenance inquiries do not represent the same need. I separate channels by qualified leads and booked jobs, not just call volume.",
               },
               {
-                title: "Review velocity vs. competitors",
-                body: "In roofing, review recency matters more than lifetime count. I benchmark your review pace against the top 3 map pack competitors in your market and build the system that closes the gap.",
+                title: "Review process vs. competitors",
+                body: "I benchmark review count, rating, recency, responses, and request completion against visible competitors. Google does not publish a review-velocity formula, so the goal is a compliant operating process and better customer evidence.",
               },
               {
                 title: "Off-season pipeline",
-                body: "Most roofing companies go quiet in winter. Organic visibility compounds, paid ads do not. The pipeline you build in the slow months is the one that answers when spring hits.",
+                body: "Seasonality changes both demand and media costs. The slow months are useful for correcting technical issues, improving buyer-question coverage, and validating tracking before demand rises.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -315,26 +315,23 @@ export default function RoofingSeoPage() {
               AI SEO for Roofing Companies
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Homeowners have started asking ChatGPT, Perplexity, and Google{"’"}s AI results
-              who to call for a roof. When the answer names two or three companies and yours is not
-              one of them, you lost the job before a search results page ever loaded.
+              Some homeowners use ChatGPT, Perplexity, and Google{"’"}s AI features while researching
+              roofers. The first question is whether those products return local providers for the
+              questions and locations that matter to your business.
             </p>
           </div>
           <div className="space-y-6">
             <p className="text-base leading-relaxed text-gray-600">
-              Roofing contractors already know this is coming. I can see it in my own Search
-              Console: roofers are searching for AI SEO help. Most agencies added {"“"}AI
-              {"”"} to their services page last year. This practice is named Sequoia GEO
-              because generative engine optimization is the discipline it was built around, not a
-              bolt-on.
+              Sequoia has recorded roofing-related demand for AI SEO information in its own Search
+              Console. That is evidence of interest in the topic, not evidence that every roofing buyer
+              uses AI to choose a contractor. The work begins by measuring the relevant market instead
+              of assuming the answer.
             </p>
             <p className="text-base leading-relaxed text-gray-600">
-              The work is different from classic SEO. AI tools do not rank pages, they name
-              businesses. Getting named takes entity clarity, schema and structured data,
-              consistent citations across the sources AI tools cross-reference, and content with
-              enough first-hand depth to be worth citing. The local SEO foundation above feeds it
-              directly: the same reviews, listings, and authority signals that move the map pack
-              are what AI tools check before they recommend anyone.
+              The foundation is still SEO: crawlability, indexation, accurate public information,
+              useful first-party evidence, legitimate corroboration, and supported structured data
+              that matches the page. AI SEO adds controlled observations across generated answers
+              and separates mentions, citations, recommendations, visits, inquiries, and qualified leads.
             </p>
           </div>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -482,18 +479,17 @@ export default function RoofingSeoPage() {
                     </>
                   ) : i === 5 ? (
                     <>
-                      Homeowners now ask ChatGPT, Perplexity, and Google{"’"}s AI results who
-                      to call instead of scrolling a list of links. AI SEO, also called{" "}
+                      AI SEO, also called{" "}
                       <Link
                         href="/geo-agency"
                         className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]"
                       >
                         generative engine optimization
                       </Link>{" "}
-                      or GEO, is the work of making your roofing company one of the names those
-                      tools give: entity clarity, structured data, consistent citations across the
-                      sources AI tools trust, and content written to be cited. It is the discipline
-                      this practice was named after.
+                      or GEO, improves the crawlability, accuracy, usefulness, and corroboration of
+                      your roofing company&rsquo;s public information, then measures whether relevant AI
+                      products mention, cite, recommend, or refer a prospect to it. No provider
+                      controls the answer an AI product gives.
                     </>
                   ) : (
                     item.a

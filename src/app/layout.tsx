@@ -11,6 +11,7 @@ import OaiqPixel from "@/components/OaiqPixel";
 import SitewideIntentTracker from "@/components/SitewideIntentTracker";
 import CampaignAttributionTracker from "@/components/CampaignAttributionTracker";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import { podcastAppearances, tradeMedia } from "@/data/media";
 
 
 const inter = Inter({
@@ -120,8 +121,28 @@ const organizationSchema = {
     url: "https://www.sequoiageo.com/about-sequoia-geo",
     image: "https://www.sequoiageo.com/aaron-husak.webp",
     sameAs: [
-      "https://www.thefirstclick.net/ep-320-using-ai-to-increase-website-clarity-with-aaron-husak/",
-      "https://www.grownearby.com/podcast/the-success-story-of-aaron-husak/",
+      "https://www.linkedin.com/in/ahusak/",
+      "https://www.podmatch.com/guestdetailpreview/1763585117387471addabf9c0",
+      "https://www.contractingbusiness.com/residential-hvac/contact/21275479/aaron-husak",
+    ],
+    subjectOf: [
+      ...podcastAppearances.map((appearance) => ({
+        "@type": "PodcastEpisode",
+        name: appearance.title,
+        url: appearance.url,
+        datePublished: appearance.datePublished,
+        partOfSeries: {
+          "@type": "PodcastSeries",
+          name: appearance.outlet,
+          url: appearance.seriesUrl,
+        },
+      })),
+      {
+        "@type": "Article",
+        name: tradeMedia[0].title,
+        url: tradeMedia[0].url,
+        datePublished: tradeMedia[0].datePublished,
+      },
     ],
     award: [
       "Inc. 5000 Fastest-Growing Companies 2020, Balanced Comfort",

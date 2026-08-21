@@ -27,7 +27,7 @@ const services = [
   {
     title: "Google LSA Management",
     description:
-      "Google Guaranteed placement at the top of local results. We manage bids, disputes, and review velocity to keep your cost per lead down.",
+      "Local Services Ads management with profile review, bidding, lead handling, eligible disputes, and booked-job attribution. We measure cost per valid and qualified lead instead of promising placement.",
     href: "/lsa-management",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">

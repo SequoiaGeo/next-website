@@ -1,6 +1,6 @@
 # Sequoia GEO AI prompt intelligence operating plan
 
-As of: 2026-08-20
+As of: 2026-08-21
 
 Purpose: increase the number of qualified prospects who discover Sequoia GEO through AI-assisted search without confusing visibility, citations, referrals, inquiries, and qualified leads.
 
@@ -21,10 +21,27 @@ Qualification, funnel definitions, and the verified baseline live in `docs/growt
 | GA4 | Captured `generate_lead` events, known AI referrer fields, landing pages, and aggregated acquisition behavior | Every referral, prospect identity, or qualification | Weekly |
 | Microsoft Clarity | Session friction, scroll, dead clicks, and form behavior | A completed booking or qualified lead without an identity-level join | Weekly, diagnostic only |
 | HighLevel and lead notification email | Contact record, append-only lead note, qualification, and lead-level attribution evidence | A recommendation unless the prospect reported it or supplied an artifact | Reconcile continuously |
-| Controlled manual prompt panel | Mentions, recommendations, primary position, citations, and competitors for a frozen prompt set | Search volume or a stable universal ranking | Baseline, then 60 to 90 days after material indexing changes |
+| Sequoia Fan-Out Collector | Returned OpenAI web search queries, citations, source domains, and appearance signals for a frozen prompt set | Every hidden query, stable universal rankings, consumer-interface parity, or qualified leads | Baseline, then 60 to 90 days after material indexing changes |
+| Controlled manual consumer panel | Consumer-surface mentions, recommendations, primary position, and visible citations for a frozen prompt set | Search volume, API telemetry, or a stable universal ranking | Baseline, then 60 to 90 days after material indexing changes |
 | Sales calls and intake | The buyer's own words, business problem, assistant, prompt, and reported recommendation | A repeatable channel from one anecdote | Every qualified conversation |
 
 ### Build now, activate after the conversion release gate
+
+The standalone Sequoia Fan-Out Collector now lives at `../sequoia-fanout-collector/`. It is the internal engine behind the customer-facing Sequoia AI Search Evidence System. An AI Search Query Map or AI Retrieval Evidence Report can be delivered inside an engagement when relevant. The initial configuration freezes the existing 15-prompt panel and five observations per prompt.
+
+The automated evidence class is OpenAI Responses API web search telemetry. Manual ChatGPT consumer search and Google AI Mode observations remain a separate dated annex. Do not combine the two evidence classes into one score or percentage.
+
+The collector currently has three activation gates:
+
+1. A reviewed plan and exact 75-observation cap acknowledgment.
+2. A dated review of the current OpenAI business terms.
+3. One bounded observation before a full wave.
+
+Automated Gemini grounding collection is disabled. The Gemini API Additional Terms effective March 23, 2026 restrict this collection and analysis use. Manual Google observations remain permitted as a separate research workflow subject to the current consumer terms.
+
+The collector is included in Sequoia's monthly services and is not sold as standalone software or as a separate AI surcharge. Search Foundation starts at $2,500 per month and includes a bounded baseline and remeasurement when the evidence supports it. Fractional Marketing Lead starts at $5,000 per month and can use a broader competitor, market, location, or question set when AI search is part of the operating plan. The public claim is that Sequoia built the evidence system and uses it to guide corrections and measurement, not that prompt tracking or citation monitoring is unique technology.
+
+### Activate after the conversion release gate
 
 The website now supports an optional, collapsed discovery section with these controlled fields:
 

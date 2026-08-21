@@ -54,6 +54,11 @@ const officialSources = [
     href: "https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview",
     note: "Bing's reporting connects citations, cited pages, and sampled grounding queries.",
   },
+  {
+    name: "Ahrefs Academy: Answer Engine Optimization course",
+    href: "https://ahrefs.com/academy/aeo-course",
+    note: "This course helped frame the questions addressed in this guide. Sequoia reorganized the material around its own evidence stages and checked platform-specific claims against primary documentation.",
+  },
 ];
 
 export default function ContractorsGuideAISearchPage() {
@@ -74,7 +79,7 @@ export default function ContractorsGuideAISearchPage() {
       url: "https://www.sequoiageo.com",
     },
     datePublished: "2026-04-18",
-    dateModified: "2026-08-20",
+    dateModified: "2026-08-21",
     mainEntityOfPage: "https://www.sequoiageo.com/contractors-guide-ai-search",
   };
 

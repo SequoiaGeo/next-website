@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "What is included in the monthly fee?",
     answer:
-      "Search Foundation starts at $2,500 a month and covers a bounded search, AI visibility, conversion, or public-information constraint. Fractional Marketing Lead starts at $5,000 a month when a business needs weekly marketing leadership, launch planning, measurement oversight, and cross-channel direction. Complex Leadership starts at $6,500 a month for multiple markets, brands, vendors, or a broader operating load. Every engagement has a defined scope before work begins.",
+      "Search Foundation starts at $2,500 a month and covers a bounded search, AI visibility, conversion, or public-information constraint. Sequoia's AI Search Evidence System is included when AI visibility is part of the scope, with a controlled manual baseline, public-source reconciliation, lead attribution, and remeasurement instead of a separate software fee. Automated OpenAI query and source collection remains pilot-only pending live validation. Fractional Marketing Lead starts at $5,000 a month when a business needs weekly marketing leadership, launch planning, measurement oversight, and cross-channel direction. Complex Leadership starts at $6,500 a month for multiple markets, brands, vendors, or a broader operating load. Every engagement has a defined scope before work begins.",
   },
   {
     question: "What is not included?",
@@ -121,7 +121,7 @@ export default function AiSeoPricingPage() {
               </div>
               <div className="text-sm leading-relaxed text-gray-700">
                 <p>One location, up to five standard pages, a contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff.</p>
-                <p className="mt-3">Custom applications, booking systems, e-commerce, migrations, nonstandard integrations, and ongoing maintenance are separately scoped or declined when they are not a fit.</p>
+                <p className="mt-3">Custom website projects start at $7,500 when the work requires nonstandard interfaces, applications, booking flows, migrations, e-commerce, or advanced integrations. They are separately scoped and accepted only when Sequoia is the right technical fit.</p>
                 <Link href="/web-design-fresno" className="mt-5 inline-block font-semibold text-[#1A5C3A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#0D2318]">See Website Foundation details</Link>
               </div>
             </div>
@@ -149,6 +149,7 @@ export default function AiSeoPricingPage() {
                 description: "For one bounded search, AI visibility, conversion, or public-information constraint.",
                 items: [
                   "Baseline and first approved priority",
+                  "Sequoia AI Search Evidence System manual baseline and controlled remeasurement when AI visibility is part of the scope",
                   "Site, content, technical, entity, or tracking corrections tied to that priority",
                   "Reporting on qualified inquiries and jobs booked where tracking supports it",
                 ],
@@ -159,6 +160,7 @@ export default function AiSeoPricingPage() {
                 description: "For a launch or an established business that needs a marketing leader in the room every week.",
                 items: [
                   "Weekly decision meeting and a 90-day operating plan",
+                  "Broader AI search, competitor, market, or location evidence when it supports the operating plan",
                   "Launch economics, channel sequence, measurement, conversion, and vendor direction",
                   "Clear responsibility across marketing, sales follow-up, the website, CRM, and reputation",
                 ],
@@ -204,6 +206,49 @@ export default function AiSeoPricingPage() {
             Ad spend stays in your accounts. Major site builds, third-party software, and hands-on
             paid media execution are defined separately before work begins.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-[#0D2318] py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wider text-[#3A9E6A]">
+                Built by Sequoia, included in the engagement
+              </p>
+              <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                AI search measurement is not a separate software fee
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-[#C8EDD2]/75">
+                Sequoia built its own AI Search Evidence System to run controlled manual question
+                panels, reconcile public sources, preserve visible citations, and distinguish a citation
+                from a recommendation or qualified lead.
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-[#C8EDD2]/60">
+                The automated OpenAI query and source collector remains pilot-only pending its first
+                live validation. The current system supports the work we implement and is not sold as
+                a separate collector, dashboard subscription, or AI surcharge.
+              </p>
+              <Link
+                href="/ai-search-methodology"
+                className="mt-7 inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white"
+              >
+                Read the measurement methodology
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {[
+                ["Baseline", "Freeze the relevant questions and document the starting evidence before changes are credited."],
+                ["Correction", "Use observed queries, sources, contradictions, and conversion gaps to prioritize the work."],
+                ["Remeasurement", "Repeat the controlled panel after the appropriate discovery window and keep visibility separate from business outcomes."],
+              ].map(([title, body]) => (
+                <article key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                  <h3 className="font-bold text-white">{title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[#C8EDD2]/65">{body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

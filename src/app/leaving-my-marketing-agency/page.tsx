@@ -453,10 +453,9 @@ export default function LeavingMyMarketingAgencyPage() {
               questions: what do you own, what do they control, and what will the transition cost in time and
               disruption. Our team has done this with clients across HVAC, plumbing, electrical, roofing, and other
               trades. The strategy is the same every time. Recover the accounts, document the ad history,
-              build a clean foundation, and focus the budget on revenue rather than activity. Your money should
-              produce booked jobs, not dashboards. Most contractors see better results within 90 days of leaving their
-              marketing firm than they saw in the previous year of staying. The growth is not from a larger budget.
-              It comes from ads that connect to booked jobs.
+              build a clean foundation, and focus the budget on qualified leads and booked jobs rather than activity.
+              The first 90 days are an implementation and evaluation window, not a promised result date. The company
+              should be able to see what changed, which inquiries were valid, what booked, and what remains uncertain.
             </p>
             <p>
               The founder of Sequoia GEO hired marketing firms for 13 years while operating a home services

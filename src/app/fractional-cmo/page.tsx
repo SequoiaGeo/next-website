@@ -466,8 +466,8 @@ export default function FractionalCmoPage() {
                 body: "<strong>Home service</strong> customers call. They do not fill out forms. This means <strong>call tracking</strong>, phone answer rate, and call-to-book conversion are the critical metrics. <strong>Marketing</strong> feels broken to a lot of home service owners not because their lead generation is failing but because their phone handling is failing. I diagnose that distinction and address the full funnel, turning <strong>website visitors</strong> and <strong>organic search</strong> sessions into <strong>qualified leads</strong> and booked jobs.",
               },
               {
-                title: "Reviews drive conversion rates directly",
-                body: "A home service company with 400 reviews at 4.8 stars converts <strong>search results</strong> traffic at a materially higher rate than a competitor with 80 reviews at 4.2 stars. <strong>Online reputation</strong> management, review acquisition, and <strong>building relationships</strong> with past customers are <strong>marketing</strong> functions that directly affect conversion rates and belong inside the <strong>digital marketing plan</strong>.",
+                title: "Reviews influence buyer evaluation",
+                body: "Review count, rating, recency, and the substance of customer feedback can affect how buyers compare home service companies. <strong>Online reputation</strong> management, compliant review requests, and <strong>building relationships</strong> with past customers belong inside the <strong>digital marketing plan</strong>. The actual conversion effect should be measured in the company&rsquo;s own market rather than assumed from a generic review-count formula.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-[#3A9E6A]/20 bg-white p-6 shadow-sm">

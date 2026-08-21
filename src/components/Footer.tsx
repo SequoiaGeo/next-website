@@ -86,6 +86,9 @@ export default function Footer() {
               <Link href="/about-sequoia-geo" className="text-pale-green/70 hover:text-white transition-colors">
                 About
               </Link>
+              <Link href="/media" className="text-pale-green/70 hover:text-white transition-colors">
+                Media and Writing
+              </Link>
               <Link href="/blog" className="text-pale-green/70 hover:text-white transition-colors">
                 Blog
               </Link>

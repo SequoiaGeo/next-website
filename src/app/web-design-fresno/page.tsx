@@ -56,7 +56,7 @@ export default function WebDesignFresnoPage() {
                 "name": "How much does a website cost in Fresno?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Website Foundation starts at $2,500 for one location and up to five standard pages on Sequoia GEO's existing Next.js component system. It includes a responsive build, contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff. Custom applications, booking systems, migrations, and advanced integrations are scoped separately."
+                  "text": "Website Foundation starts at $2,500 for one location and up to five standard pages on Sequoia GEO's existing Next.js component system. It includes a responsive build, contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff. Custom website projects start at $7,500 when the work requires nonstandard interfaces, applications, booking flows, migrations, e-commerce, or advanced integrations."
                 }
               },
               {
@@ -196,7 +196,7 @@ export default function WebDesignFresnoPage() {
               </div>
               <div>
                 <p className="text-base leading-relaxed text-gray-700">The Foundation includes one location, up to five standard pages, brand-adapted layouts from Sequoia GEO&rsquo;s existing Next.js component system, a contact form, basic analytics, technical search setup, two written revision rounds, launch, and handoff.</p>
-                <p className="mt-4 text-sm leading-relaxed text-gray-600">The client supplies brand assets, factual service information, and feedback. Custom applications, booking systems, e-commerce, migrations, nonstandard integrations, ongoing maintenance, and work outside the existing component system are separately scoped or declined when they are not a fit.</p>
+                <p className="mt-4 text-sm leading-relaxed text-gray-600">The client supplies brand assets, factual service information, and feedback. Custom website projects start at $7,500 when the work requires nonstandard interfaces, applications, booking flows, migrations, e-commerce, or advanced integrations. They are separately scoped and accepted only when Sequoia is the right technical fit.</p>
                 <p className="mt-4 text-sm leading-relaxed text-gray-600">Fifty percent is due before production begins. The project pauses when required content or consolidated feedback is not available.</p>
               </div>
             </div>
@@ -352,7 +352,7 @@ export default function WebDesignFresnoPage() {
             {[
               {
                 q: "How much does a website cost in Fresno?",
-                a: "Website Foundation starts at $2,500 for one location and up to five standard pages. It includes a responsive Next.js build from our existing component system, a contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff. Advanced functionality is separately scoped or declined when it is not a fit."
+                a: "Website Foundation starts at $2,500 for one location and up to five standard pages. It includes a responsive Next.js build from our existing component system, a contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff. Custom website projects start at $7,500 when the requirements extend beyond the component system and standard integrations."
               },
               {
                 q: "Do you offer website hosting and maintenance?",
