@@ -76,3 +76,15 @@ Sequoia GEO is Aaron Husak's operator-led marketing practice for home service co
 4. The live site after deployment, to ensure the pricing page, sitemap, and social profiles use the same starting price and owner-led framing.
 
 Do not edit historical posts merely to make a feed look current. Correct the durable profile fields, then let future content establish the current position.
+
+## Implementation status, 2026-08-20
+
+Source: direct in-account reads and writes on LinkedIn, Facebook, Google Business Profile, Google Search Console, and Bing Webmaster Tools on 2026-08-20.
+
+- LinkedIn is complete and verified in member view. The operator-led tagline, overview, and ten focused specialties are public. The durable profile no longer contains the 45-day promise.
+- Facebook is complete and verified. The public bio now says that Sequoia GEO is operator-led and that clients work directly with Aaron Husak, not an account manager.
+- Google Business Profile accepted the new operator-led description. The new Facebook and LinkedIn profile URLs remain in Google's pending-review state.
+- The Google Business Profile `LGBTQ+ friendly` attribute cannot be unset in the current editor. Google exposes only Yes and No. The existing No value was left unchanged rather than replacing it with an unsupported affirmative claim.
+- Google Search Console accepted recrawl requests for the homepage, `/contractors-guide-ai-search`, and `/ai-website-seo-guide`.
+- Bing Webmaster Tools accepted indexing requests for the same three URLs.
+- Vercel deployed commit `51412b0` to `www.sequoiageo.com` at 2026-08-20 4:46:34 PM Pacific. The live smoke test confirmed both refreshed guide headlines, the removed unsupported claim, the rebuilt PDF, and the corrected organization schema links.
