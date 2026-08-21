@@ -31,14 +31,18 @@ Select the pilot only after documenting:
 - The provider inclusion rule and official source list.
 - Whether publishing provider names creates a material legal or relationship risk.
 - The researcher, second coder, collection dates, and available time.
+- Fresh market-level demand evidence or a documented reason demand is not being used to select the trade.
+- A discovery smoke test showing whether the selected products return named local providers rather than only directories or generic advice.
 
-The default research design is one trade, one metro, 12 commercial prompts, 3 platforms, and 5 independent runs per prompt per platform. That produces 180 coded observations before control prompts. Change the design only before collection begins and record the reason.
+The default research design is one trade, one metro, 12 commercial prompts, 3 platforms, and 5 fresh-session repeat runs per prompt per platform. That produces 36 prompt-platform cells and 180 coded observations before control prompts. The cell is the primary analysis unit. Repeat runs measure stability and are not assumed to be statistically independent. Change the design only before collection begins and record the reason.
+
+The default platform panel is ChatGPT Search, Google AI Mode, and Perplexity. Record the exact visible product name, account state, search state, and collection date because interfaces and retrieval behavior change. A platform may be replaced before the prompt set is frozen when access or reproducibility fails, but the substitution and reason must be documented.
 
 ## Research questions
 
 1. How often does each platform name a specific local provider?
 2. How often is a named provider recommended rather than merely mentioned?
-3. How often does the primary recommendation repeat across independent runs?
+3. How often does the primary recommendation repeat within the fresh-session stability checks?
 4. Which sources are cited when a recommendation appears?
 5. How often do provider-owned pages, profiles, official records, directories, reviews, news, and forums appear as sources?
 6. Where do platforms disagree about the same trade and market?
@@ -47,10 +51,12 @@ The default research design is one trade, one metro, 12 commercial prompts, 3 pl
 ## Observation controls
 
 - Freeze all prompts before collection.
+- Before freezing the final set, run 3 to 5 provisional discovery prompts once per platform to confirm that the market produces named local providers. Archive those results, do not count them in the report, and document any resulting design change.
 - Use a fresh, logged-out session with memory disabled where available.
 - Hold the geography and device assumptions constant.
 - Record the platform, product, visible search state, date, and local time.
-- Run every prompt five independent times per platform.
+- Run every prompt five times in separate fresh sessions per platform.
+- Treat prompt-platform cells as the analysis unit and repeats as a stability measure, not independent trials.
 - Preserve the complete output privately before coding.
 - Keep platforms separate. Do not average them into one universal rank.
 - Have a second person code at least 20 percent of observations.
@@ -69,7 +75,7 @@ Every published result must include:
 
 - Prompt family.
 - Platform.
-- Total independent observations.
+- Total prompt-platform cells and repeat observations.
 - Mention count.
 - Recommendation count.
 - Primary recommendation count.
@@ -78,6 +84,8 @@ Every published result must include:
 - Source-type distribution.
 - Observed run-to-run variance.
 - Collection dates.
+
+Do not run statistical significance tests that assume the five repeats within a prompt-platform cell are independent.
 
 Do not publish a single composite score unless the formula is registered before collection and every component is visible.
 
@@ -111,6 +119,7 @@ Use these source types:
 - That one public signal caused a recommendation.
 - That a citation, referral, inquiry, or calendar booking is a qualified lead.
 - That a company is better because it appeared more often.
+- That an official license record is an endorsement or proof of service quality.
 
 ## Publication package
 
@@ -131,8 +140,8 @@ Stop or delay publication when:
 - A client or former-company conflict cannot be disclosed or avoided.
 - The sample is too incomplete to support the planned headline.
 - The report depends on private prospect or customer information without written permission.
+- Discovery prompts return no useful named local providers across the platform panel.
 
 ## Next action
 
 Choose the pilot trade and metro, run the conflict review, and freeze the 12 commercial prompts before collecting any result.
-

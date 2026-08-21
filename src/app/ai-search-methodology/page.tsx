@@ -65,7 +65,7 @@ const protocol = [
   },
   {
     title: "Repeat each observation",
-    body: "Run each frozen question five independent times per platform. A single response is an anecdote, not a stable rank. Platforms remain separate because their retrieval systems and answer behavior differ.",
+    body: "Run each frozen question five times in separate fresh sessions per platform. The prompt-platform cell is the analysis unit. The repeats measure answer stability and are not treated as statistically independent trials.",
   },
   {
     title: "Archive before coding",
@@ -96,8 +96,8 @@ const articleJsonLd = {
     "@id": "https://www.sequoiageo.com/#organization",
   },
   datePublished: "2026-08-20",
-  dateModified: "2026-08-20",
-  version: "1.0",
+  dateModified: "2026-08-21",
+  version: "1.1",
   mainEntityOfPage: "https://www.sequoiageo.com/ai-search-methodology",
 };
 
@@ -122,7 +122,7 @@ export default function AiSearchMethodologyPage() {
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="section-overline mb-4">Public methodology, version 1.0</p>
+            <p className="section-overline mb-4">Public methodology, version 1.1</p>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
               How Sequoia GEO measures AI search without turning visibility into a lead
             </h1>
@@ -131,7 +131,7 @@ export default function AiSearchMethodologyPage() {
               This page defines every stage before Sequoia reports it.
             </p>
             <p className="mt-6 text-sm text-[#C8EDD2]/55">
-              Published August 20, 2026. Last revised August 20, 2026.
+              Published August 20, 2026. Last revised August 21, 2026.
             </p>
           </div>
         </div>
@@ -210,6 +210,11 @@ export default function AiSearchMethodologyPage() {
                   Results can vary by platform, product version, prompt wording, geography, account
                   state, memory, retrieval behavior, and date. Repeated observations reduce the risk of
                   overreacting to one answer, but they do not create a market-wide ranking.
+                </p>
+                <p>
+                  Multiple runs of the same question on the same platform are correlated observations.
+                  Sequoia uses those repeats to describe stability, not to inflate the sample size or
+                  imply statistical independence.
                 </p>
                 <p>
                   Sequoia reports platforms separately and preserves misses as well as appearances.
@@ -304,6 +309,8 @@ export default function AiSearchMethodologyPage() {
           <div className="rounded-2xl border border-gray-200 p-7">
             <h2 className="text-xl font-bold text-[#0D2318]">Changelog</h2>
             <div className="mt-5 grid gap-3 text-sm text-gray-600 sm:grid-cols-[140px_1fr]">
+              <p className="font-semibold text-[#1A5C3A]">August 21, 2026</p>
+              <p>Version 1.1 clarified that repeat runs within a prompt-platform cell measure stability and are not statistically independent trials.</p>
               <p className="font-semibold text-[#1A5C3A]">August 20, 2026</p>
               <p>Version 1.0 published with stage definitions, five-run observation protocol, variance rules, source context, privacy boundaries, and publication commitments.</p>
             </div>

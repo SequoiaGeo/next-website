@@ -55,7 +55,8 @@ test("public AI search methodology contains the reporting controls", () => {
     "Inquiry",
     "Qualified lead",
     "Job booked",
-    "five independent times",
+    "five times in separate fresh sessions",
+    "not statistically independent trials",
     "Publish misses",
     "Changelog",
   ]) {
