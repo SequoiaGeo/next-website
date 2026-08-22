@@ -20,7 +20,7 @@ The two pages may still be read separately in Search Console, but those reads ar
 - Rewrite each title, description, hero, service explanation, operating process, proof language, FAQ, and conversion copy around the service query and jobs-booked measurement.
 - Preserve the August 21 authority corrections, evidence limits, Service schema, Breadcrumb schema, and current AI SEO language.
 - Keep the report CTA off plumbing, roofing, HVAC, and the roofing comparison page.
-- Ship plumbing and roofing in one commit and record one deployment timestamp.
+- Ship plumbing and roofing in commit `f433f36` and record one deployment timestamp.
 
 ## Boundaries
 
