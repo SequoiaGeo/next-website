@@ -6,11 +6,18 @@ import type { Metadata } from "next";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
-  title: "Plumbing SEO by an Operator, Not an Account Manager",
+  title: "Plumbing SEO Services Managed by a Former Plumbing Operator",
   description:
-    "Plumbing SEO managed around qualified calls and jobs booked. Work directly with a former C-36 plumbing contractor and home services operator.",
+    "Plumbing SEO for local visibility, attributable calls, and jobs booked. Work directly with Aaron Husak, a former C-36 plumbing contractor.",
   alternates: {
     canonical: "https://www.sequoiageo.com/plumbing-seo",
+  },
+  openGraph: {
+    title: "Plumbing SEO Services Managed by a Former Plumbing Operator",
+    description:
+      "Plumbing SEO for local visibility, attributable calls, and jobs booked. Work directly with Aaron Husak, a former C-36 plumbing contractor.",
+    url: "https://www.sequoiageo.com/plumbing-seo",
+    type: "website",
   },
 };
 
@@ -18,17 +25,17 @@ const faqs = [
   {
     question: "How long does plumbing SEO take to produce results?",
     answer:
-      "It depends on your market and your starting point, and anyone who promises a specific date is guessing. Technical fixes and Google Business Profile work tend to move first. Content and authority building take longer, and a competitive metro takes longer than a small market. What I commit to instead is measurement from the start: every month you see phone calls and booked jobs from organic search, so you know whether the program is working well before the rankings chart looks impressive.",
+      "It depends on your market, competition, and starting point. Technical and Google Business Profile corrections may show movement before new service pages and authority work do. Sequoia GEO establishes measurement first, then reports qualified calls and jobs booked from organic search while the longer-term search trend develops.",
   },
   {
     question: "Should I invest in SEO or paid advertising for my plumbing company?",
     answer:
-      "Both, in the right proportion. Paid advertising produces phone calls now and stops the day you stop spending. SEO compounds and keeps lowering your cost per lead as rankings build. The structure that works runs paid to capture emergency demand while organic authority builds, then shifts budget off the keywords you rank for and into new service areas or higher margin work. Before you commit budget anywhere, know what a lead should cost in your trade and market.",
+      "Often both, but the right mix depends on capacity, service area, and current visibility. Paid advertising can capture demand while organic coverage develops. SEO can reduce dependence on paid placement over time. The decision should be based on qualified calls and jobs booked by source, not a blanket percentage or a rankings report.",
   },
   {
     question: "How do I evaluate whether my current plumbing SEO is working?",
     answer:
-      "Count qualified calls and jobs booked from organic search, not rankings, impressions, or traffic alone. A full-picture audit matches recurring lead-platform spend to booked-job results by trade. If your provider cannot draw a straight line from the invoice to the dispatch board, that is the finding.",
+      "Track qualified calls, accepted form leads, completed bookings, and jobs booked from organic search. Rankings, impressions, and traffic help diagnose the channel, but they are not the business outcome. Your reporting should distinguish new customers from repeat callers and nonlead activity, then connect each qualified inquiry to its source.",
   },
   {
     question: "What is the difference between plumbing SEO and general SEO?",
@@ -38,22 +45,22 @@ const faqs = [
   {
     question: "What keywords should a plumbing company target?",
     answer:
-      "Four categories: emergency queries like burst pipe repair near me, job type queries like water heater installation or sewer line replacement, location queries like plumber plus your city or neighborhood, and problem queries like low water pressure in house. Each category carries different intent and different ticket values, so each deserves its own pages. A single page that chases all of them ranks for none of them.",
+      "Start with four categories: emergency searches, job-type searches such as water heater installation or sewer line replacement, location searches, and problem searches such as low water pressure. Prioritize the services you can fulfill profitably in the locations you can dispatch to, then build genuinely useful coverage instead of repeating one template across dozens of pages.",
   },
   {
     question: "What does plumbing SEO cost with Sequoia GEO?",
     answer:
-      "Engagements start at $2,500 a month with a 3 month initial term, then month to month. Ad spend is separate and stays yours: Google bills you directly, and nothing is marked up or routed through me. You own your domain, your analytics, your ad accounts, and every page we build.",
+      "Engagements start at $2,500 a month with an initial term of three months, then continue month to month. Ad spend is separate and stays yours. Google bills you directly, and nothing is marked up or routed through Sequoia GEO. You own your domain, analytics, ad accounts, and the pages built for your business.",
   },
   {
-    question: "Do you replace my current SEO company or work with them?",
+    question: "Can you verify one problem if I already have an agency?",
     answer:
-      "Either. Sometimes the audit shows your current provider is doing real work and the problem is measurement, so we build the tracking and hold the numbers up monthly. Sometimes the work is not there, and we handle a clean transition where you keep everything you paid for. Either way, you get an honest read before anything changes.",
+      "Yes. A scoped baseline review can verify a tracking, search visibility, or conversion problem before you decide whether a larger change is necessary. If the evidence supports your current provider, the finding will say that. If the problem requires implementation, you can decide whether Sequoia GEO should take the agency seat.",
   },
   {
     question: "Are Local Services Ads worth it for plumbers?",
     answer:
-      "Usually, as one measured channel among several. LSA charges per lead rather than per click, Google bills you directly, and real charged prices vary widely by trade and market. One Florida plumbing account I manage took 5 charged phone leads across June and July 2026. Treat it like any lead seller: track what each charged lead books, dispute what deserves disputing, and compare it against what your organic calls cost you.",
+      "They can be, as one measured channel among several. Google bills per charged lead, and prices vary by trade and market. Treat Local Services Ads like any lead source: preserve the lead history, dispute invalid charges, track which calls qualify, and compare jobs booked with the results from organic search and paid search.",
   },
   {
     question: "Does plumbing SEO still matter now that AI tools answer questions?",
@@ -78,27 +85,25 @@ export default function PlumbingSeoPage() {
       />
       <FaqJsonLd faqs={faqs} />
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-[#fafaf8] py-14 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
               <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
-              Plumbing Marketing
+              Plumbing SEO Services
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
-              Plumbing Marketing That Looks at{" "}
-              <span className="text-[#1A5C3A]">the Full Revenue Picture</span>
+              Plumbing SEO Services Built to Generate{" "}
+              <span className="text-[#1A5C3A]">Calls and Jobs Booked</span>
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Your agency sees leads. I look at whether lead-platform spend becomes qualified calls
-              and jobs booked by trade. I held California&rsquo;s C-36 Plumbing license while running my own company.
-              I know your business from the inside. Want to be the plumber{" "}
-              <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
-                AI tools recommend
-              </Link>{" "}
-              too? That is GEO.
+            <p className="mt-6 text-lg leading-relaxed text-gray-600 sm:text-xl">
+              Plumbing SEO helps a plumbing company appear when local customers search for a
+              plumber, emergency service, drain cleaning, water heaters, sewer work, and other
+              bookable jobs. The work connects Google Business Profile, service and location
+              pages, technical SEO, reviews, authority, and call attribution so you can measure
+              qualified calls and jobs booked from organic search.
             </p>
-            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <div className="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:flex-row sm:justify-center">
               <Link
                 href="/contact#book"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
@@ -112,44 +117,13 @@ export default function PlumbingSeoPage() {
                 (559) 521-3122
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The real problem */}
-      <section className="bg-[#0D2318] py-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl text-center mb-12">
-              What I Actually Found at a Plumbing Company Last Year
-            </h2>
-            <div className="space-y-5">
-              {[
-                {
-                  finding: "Lead-platform spend without booked-job reporting",
-                  result:
-                    "The account was being graded on leads delivered. Its monthly reporting did not connect that spend to which leads became booked jobs by trade.",
-                },
-                {
-                  finding: "Tracked calls mixed new customers with nonlead activity",
-                  result:
-                    "Nobody was separating new callers from repeat callers, so every channel looked busier than it was. Marketing was being graded on call volume instead of new business.",
-                },
-                {
-                  finding: "The sitemap redirected to a staging server",
-                  result:
-                    "Google was being sent to a test environment every time it tried to crawl the site. The SEO company billing monthly never caught it. It surfaced in the first pass of our audit.",
-                },
-              ].map((item) => (
-                <div key={item.finding} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                  <p className="font-bold text-[#3A9E6A]">{item.finding}</p>
-                  <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.result}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-8 text-center text-sm text-[#C8EDD2]/50">
-              None of this required special tools. It required someone who knows what to look for
-              because they&rsquo;ve lived it from the other side of the dispatch board.
+            <p className="mt-6 text-base leading-relaxed text-gray-500 sm:text-lg">
+              You work directly with Aaron, a 13-year home services operator and former C-36
+              plumbing contractor, not an account manager. Looking to become a plumber{" "}
+              <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
+                AI tools recommend
+              </Link>{" "}
+              too? That requires a related AI visibility discipline beyond traditional search.
             </p>
           </div>
         </div>
@@ -163,10 +137,9 @@ export default function PlumbingSeoPage() {
               Know the Numbers Before You Buy Anything
             </h2>
             <p className="mt-4 text-base leading-relaxed text-gray-600">
-              Angi was not the problem at that company. Running it for months with nobody checking
-              what came back was the problem. Lead sellers, ads, and SEO are all channels, and
-              channels get measured. These two breakdowns are built from accounts I manage, not
-              from industry averages.
+              Lead sellers, ads, and SEO are channels, and every channel needs the same test:
+              which inquiries qualified, which jobs booked, and what should change next. These
+              resources explain how to judge the numbers before adding more spend.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -175,8 +148,8 @@ export default function PlumbingSeoPage() {
                 How Much Should Plumbers Spend on Marketing?
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                What I actually spent as an operator, and how to set a budget from your revenue
-                instead of a vendor&rsquo;s pitch deck.
+                What I actually spent as an operator, and how to set a budget from capacity,
+                service mix, and measurable acquisition targets.
               </p>
               <Link
                 href="/how-much-should-plumbers-spend-on-marketing"
@@ -193,9 +166,8 @@ export default function PlumbingSeoPage() {
                 How Much Do HVAC and Plumbing Leads Cost?
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                Real charged lead prices from Local Services Ads and Google Ads accounts I manage,
-                broken out by trade and market. One Florida plumber&rsquo;s account logged 5 charged
-                phone leads across June and July 2026.
+                A breakdown of how charged leads differ from clicks, calls, qualified leads, and
+                jobs booked, with trade and market context.
               </p>
               <Link
                 href="/how-much-do-hvac-plumbing-leads-cost"
@@ -254,26 +226,25 @@ export default function PlumbingSeoPage() {
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
-                  I Ran a Licensed Plumbing Company
+                  Plumbing SEO Managed by a Former Plumbing Operator
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I held California&rsquo;s C-36 Plumbing license as an operator. I understand your jobs,
-                  your pricing, your technicians, and your customers. When I look at your marketing,
-                  I&rsquo;m not guessing at what matters.
+                  I spent 13 years operating a home services company that included plumbing and
+                  HVAC, and formerly held California&rsquo;s C-36 plumbing classification. You work
+                  directly with me, not an account manager.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  I ran a company that did plumbing alongside HVAC for over a decade and managed
-                  annual ad spend in the low seven figures against $17M in revenue, which works out
-                  to the 6 to 10 percent of revenue band. I know what a drain clear pays and what a
-                  repipe pays, and which keywords carry margin instead of price shoppers.
+                  That means the strategy accounts for dispatchable service areas, service mix,
+                  call handling, technician capacity, and whether qualified calls become booked
+                  jobs. Those constraints shape the keyword plan and the reporting.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { stat: "$17M", label: "Annual revenue at exit" },
+                  { stat: "Former", label: "C-36 plumbing contractor" },
                   { stat: "13 yrs", label: "Home services operator" },
                   { stat: "4x", label: "Inc 5000 (2020-2023)" },
-                  { stat: "130+", label: "Employees at peak" },
+                  { stat: "1:1", label: "Work directly with Aaron" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
                     <div className="text-2xl font-extrabold text-[#0D2318]">{item.stat}</div>
@@ -302,19 +273,19 @@ export default function PlumbingSeoPage() {
             {[
               {
                 title: "Google Business Profile and the Map Pack",
-                body: "For most plumbing companies the profile drives more calls than the website. I manage categories, service areas, photos from completed jobs, and a review request flow wired into dispatch, because review recency moves rankings and a stale profile stalls them. This is where emergency searches are won or lost.",
+                body: "For many local plumbing searches, the profile is a major path to the call. I manage categories, service areas, services, photos from completed jobs, and a review request flow tied to job completion. The website and profile should reinforce the same business facts.",
               },
               {
                 title: "Service Pages Built Around Your Job Mix",
-                body: "A dedicated page for each job type and each city you serve: water heaters, drain cleaning, sewer lines, repipes, leak detection. Written around how homeowners search when something is broken, with the phone number where a panicked caller can find it. A generic page that chases every keyword ranks for nothing, and most plumbing sites are one generic page.",
+                body: "Coverage for the jobs and locations you can fulfill: water heaters, drain cleaning, sewer lines, repipes, leak detection, and the markets your team serves. Each page should answer the customer's real question and provide a clear call or booking path, not repeat a city-name template.",
               },
               {
                 title: "Technical Health and Indexation",
-                body: "Sitemap errors, pages excluded from the index, slow mobile loads, broken internal links. This is the least visible work and often the fastest payoff, because Google cannot rank pages it cannot crawl. The staging server redirect above is exactly the class of failure this catches, and it had been sitting there while an SEO invoice went out every month.",
+                body: "Sitemap errors, pages excluded from the index, slow mobile loads, duplicate URLs, and broken internal links can prevent useful pages from competing. The staging-server redirect above is the class of crawl failure this review is designed to find.",
               },
               {
                 title: "Authority, Reviews, and Accountability",
-                body: "Links from real local sources and trade directories. Review velocity managed as an operational process, not a request someone remembers on Fridays. And call tracking that separates organic from paid and new customers from repeat callers, so your monthly report shows booked jobs instead of a rankings screenshot. If a channel cannot prove its keep, we cut it.",
+                body: "Credible local and trade references, a repeatable review process, and call attribution that separates organic from paid and new customers from repeat callers. The monthly report centers qualified calls and jobs booked, with rankings used as supporting evidence.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -352,30 +323,40 @@ export default function PlumbingSeoPage() {
         </div>
       </section>
 
-      {/* How it starts */}
+      {/* Operating process */}
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              How an Engagement Starts
+              How Sequoia GEO Runs Plumbing SEO
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
             {[
-              {
-                number: "01",
-                title: "The Marketing Baseline Review",
-                body: "Rankings, ads, lead sellers, call handling, and the booking path, each connected to booked jobs. You get findings like the ones at the top of this page, for your own company, before you commit to anything.",
-              },
-              {
-                number: "02",
-                title: "Fix Order by Payoff",
-                body: "Tracking and technical problems get fixed first, because everything else is guesswork until Google can crawl the site and calls are being measured. Then the profile, the service pages, and authority building, in that order.",
-              },
-              {
-                number: "03",
-                title: "A Report Built on Booked Jobs",
-                body: "Every month: calls by channel, new customers versus repeat callers, and what got booked. If you can read a dispatch board, you can read my report.",
+                {
+                  number: "01",
+                  title: "Verify the Baseline",
+                  body: "Measure organic rankings, Google Business Profile activity, calls, forms, and jobs booked before changing the program.",
+                },
+                {
+                  number: "02",
+                  title: "Separate Real Demand",
+                  body: "Distinguish new-customer inquiries from repeat callers, vendors, job seekers, and other nonlead activity.",
+                },
+                {
+                  number: "03",
+                  title: "Fix the Foundations",
+                  body: "Correct crawlability, entity consistency, core service pages, tracking, and conversion obstacles in priority order.",
+                },
+                {
+                  number: "04",
+                  title: "Build Service Coverage",
+                  body: "Create useful coverage around profitable plumbing services and the locations your team can actually dispatch to.",
+                },
+                {
+                  number: "05",
+                  title: "Report and Prioritize",
+                  body: "Report qualified calls and jobs booked by source, then focus the next month on the largest verified constraint.",
               },
             ].map((item) => (
               <div key={item.number} className="rounded-2xl border border-white/10 bg-white/5 p-7">
@@ -396,7 +377,7 @@ export default function PlumbingSeoPage() {
               What Separates Plumbing Companies That Rank from Ones That Don&rsquo;t
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              These are the patterns the plumbing audit is designed to detect.
+              The same patterns show up in every plumbing audit I run.
             </p>
           </div>
 
@@ -404,23 +385,23 @@ export default function PlumbingSeoPage() {
             {[
               {
                 number: "01",
-                title: "Location Pages, Not One Service Area Page",
-                body: "A company serving multiple cities needs a dedicated page for each one, built around that market and its searches. Almost everyone has a single thin service area page instead. Thin pages do not rank, and no amount of link building fixes a page with nothing on it.",
+                title: "Useful Location Coverage, Not Templates",
+                body: "A location page should help a customer understand service availability, local conditions, proof, and the next step. Repeating the same page with a city name swapped in does not create useful local coverage.",
               },
               {
                 number: "02",
-                title: "Review Velocity, Not Review Count",
-                body: "Google weights recency heavily. A steady flow of fresh reviews beats a larger but stale total, which is why the request has to fire as part of closing out the job. Companies that treat reviews as a monthly campaign lose to companies that treat them as part of the work order.",
+                title: "Recent, Genuine Reviews",
+                body: "A steady flow of recent customer feedback gives prospects current proof and keeps the reputation record from going stale. The request works best when it is built into the completed-job process.",
               },
               {
                 number: "03",
                 title: "Identical Listings Everywhere",
-                body: "Your name, address, and phone number have to match across every directory and data aggregator. Mismatches make Google less certain about your business, and less certainty means a lower Map Pack position. Most companies carry years of old addresses and tracking numbers they never cleaned up. One thorough pass fixes it.",
+                body: "Your business name, address, phone, services, and service area should agree across the website, Google Business Profile, and major third-party listings. Contradictions weaken customer trust and make the entity harder for search and AI systems to interpret.",
               },
               {
                 number: "04",
                 title: "Attribution Before Optimization",
-                body: "Tracking gets built first: analytics, Search Console, and call tracking that isolates organic calls from paid ones and new customers from repeat callers. You cannot manage what nobody is measuring.",
+                body: "Tracking comes first: analytics, Search Console, and call attribution that isolate organic inquiries from paid traffic and new customers from repeat callers. Optimization begins after the business can distinguish a visit from a qualified lead.",
               },
             ].map((item) => (
               <div key={item.number} className="flex gap-6 rounded-2xl border border-gray-200 bg-white p-7">
@@ -443,12 +424,12 @@ export default function PlumbingSeoPage() {
               If You Run Local Services Ads
             </p>
             <p className="text-sm leading-relaxed text-gray-600">
-              Google begins folding LSA into Google Ads as a Performance Max pay-per-lead campaign
-              type in August 2026, phased in for select US home services advertisers. Lead history
-              migrates. Cost history does not, and the old LSA dashboard closes once an account
-              moves. We completed full charged-lead exports for three client accounts in July 2026,
-              before any migration notices landed. If nobody is archiving your numbers, they are
-              gone.
+              If Google has sent your account a migration notice, preserve the historical cost and
+              lead records before the old dashboard closes. Read the full breakdown of the{" "}
+              <Link href="/google-lsa-changes-2026" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
+                2026 Local Services Ads changes
+              </Link>{" "}
+              and verify the date shown inside your own account before acting.
             </p>
           </div>
         </div>
@@ -490,9 +471,9 @@ export default function PlumbingSeoPage() {
               { label: "Local Services Ads", href: "/lsa-management" },
               { label: "HVAC SEO", href: "/hvac-seo" },
               { label: "Roofing SEO", href: "/roofing-seo" },
-              { label: "Fractional CMO", href: "/fractional-cmo" },
+              { label: "AI Search Visibility", href: "/geo-for-plumbers" },
               { label: "Best Plumbing SEO Keywords", href: "/blog/best-plumbing-seo-keywords" },
-              { label: "Leaving Your Agency?", href: "/leaving-my-marketing-agency" },
+              { label: "Marketing Baseline Review", href: "/audit" },
             ].map((link) => (
               <Link
                 key={link.href}
@@ -509,18 +490,18 @@ export default function PlumbingSeoPage() {
         </div>
       </section>
 
-      {/* Switching agencies callout */}
+      {/* Scoped verification callout */}
       <section className="bg-[#fafaf8] border-y border-gray-200 py-12">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-sm font-bold uppercase tracking-wider text-[#1A5C3A] mb-1">Already with an agency?</p>
+            <p className="text-sm font-bold uppercase tracking-wider text-[#1A5C3A] mb-1">Already have an agency, but need one problem verified?</p>
             <p className="text-base text-gray-700">
-              If your current plumbing SEO company isn&rsquo;t producing, we can audit what you own and what a clean
-              transition looks like before you commit to anything new.
+              Use the baseline review to verify a tracking, search visibility, or conversion issue
+              before deciding what changes and who should own the work.
             </p>
           </div>
-          <Link href="/leaving-my-marketing-agency" className="shrink-0 inline-flex items-center gap-2 rounded-lg border border-[#1A5C3A] px-6 py-3 text-sm font-semibold text-[#1A5C3A] hover:bg-[#1A5C3A] hover:text-white transition-colors">
-            Thinking about switching?
+          <Link href="/contact#book" className="shrink-0 inline-flex items-center gap-2 rounded-lg border border-[#1A5C3A] px-6 py-3 text-sm font-semibold text-[#1A5C3A] hover:bg-[#1A5C3A] hover:text-white transition-colors">
+            Choose a Time With Aaron
           </Link>
         </div>
       </section>
@@ -529,12 +510,12 @@ export default function PlumbingSeoPage() {
       <section className="bg-[#1A5C3A] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
-            Find out what your plumbing marketing is actually producing
+            See What Your Plumbing SEO Is Producing
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            The Marketing Baseline Review looks at your rankings, your ads, your lead sellers, and your
-            booking path, and connects each one to booked jobs. You&rsquo;ll know exactly where your
-            revenue is leaking before we spend a dollar on anything new.
+            The Marketing Baseline Review connects search visibility, Google Business Profile,
+            calls, and the booking path to qualified leads and jobs booked. You work directly with
+            Aaron to verify the largest constraint before anything changes.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link href="/contact#book" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
@@ -548,8 +529,8 @@ export default function PlumbingSeoPage() {
       {/* On-page capture: request the audit without leaving the page */}
       <InlineLeadForm
         source="plumbing_seo_page"
-        heading="Request a plumbing marketing baseline review"
-        subtext="Tell us where to send it. We review your rankings, your ads, and your booking path before the call. No pitch deck."
+        heading="Request a plumbing SEO baseline review"
+        subtext="Tell us where to send it. We review your search visibility, Google Business Profile, and booking path before the call. No pitch deck."
       />
     </>
   );

@@ -126,7 +126,7 @@ test("every accepted capture API returns the fail-closed tracking contract", asy
     assert.match(source, /isSyntheticAttributionTest\(\{/);
     assert.match(
       source,
-      /NextResponse\.json\(\{\s*success:\s*true,\s*captured:\s*true,\s*leadId,\s*isSyntheticTest\s*\}\)/,
+      /NextResponse\.json\(\{\s*success:\s*true,\s*captured:\s*true,\s*leadId,\s*isSyntheticTest[\s\S]*?\}\)/,
     );
     assert.match(source, /return NextResponse\.json\(\{ success: true \}\);/);
     assert.doesNotMatch(source, /body\.(?:captured|leadId|isSyntheticTest)/);

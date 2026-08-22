@@ -385,7 +385,19 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Failed to send message" }, { status: 500 });
     }
 
-    return NextResponse.json({ success: true, captured: true, leadId, isSyntheticTest });
+    return NextResponse.json({
+      success: true,
+      captured: true,
+      leadId,
+      isSyntheticTest,
+      ...(isSyntheticTest
+        ? {
+            crmConfigured: crmCapture.configured,
+            crmDurable: crmCapture.durable,
+            crmStatus: crmCapture.status,
+          }
+        : {}),
+    });
   } catch (err) {
     console.error("Contact form error:", err);
     return NextResponse.json({ error: "Failed to send message" }, { status: 500 });

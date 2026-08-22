@@ -3,6 +3,7 @@
 // Safe to call before gtag loads or during SSR: it no-ops instead of throwing.
 
 import { readAiAttribution } from "@/lib/ai-attribution";
+import { readCampaignAttribution } from "@/lib/campaign-attribution";
 import {
   dispatchCapturedLead,
   type LeadCaptureResponse,
@@ -74,10 +75,16 @@ function emitLeadConversion({ source, value, ...rest }: LeadParams) {
 export function trackCallIntent(source: string) {
   lastPhoneIntentAt = Date.now();
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  const campaignAttribution = readCampaignAttribution();
+  const aiAttribution = readAiAttribution();
   window.gtag("event", "phone_click", {
     event_category: "CTA",
     event_label: source,
     source,
+    cta_contract: "call",
+    landing_path: window.location.pathname,
+    ...(campaignAttribution ?? {}),
+    ...(aiAttribution ?? {}),
   });
 }
 

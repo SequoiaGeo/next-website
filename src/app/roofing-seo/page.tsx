@@ -6,16 +6,16 @@ import InlineLeadForm from "@/components/InlineLeadForm";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
-  title: "Roofing SEO From a 13-Year Home Services Operator",
+  title: "Roofing SEO Services Managed by a Home Services Operator",
   description:
-    "I ran a 4x Inc 5000 home services company for 13 years. Roofing SEO managed to booked jobs, with real client numbers published. From $2,500 a month.",
+    "Roofing SEO built around local visibility, attributable calls, and jobs booked. Work directly with Aaron Husak, a 13-year home services operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/roofing-seo",
   },
   openGraph: {
-    title: "Roofing SEO From a 13-Year Home Services Operator",
+    title: "Roofing SEO Services Managed by a Home Services Operator",
     description:
-      "I ran a 4x Inc 5000 home services company for 13 years. Roofing SEO managed to booked jobs, with real client numbers published. From $2,500 a month.",
+      "Roofing SEO built around local visibility, attributable calls, and jobs booked. Work directly with Aaron Husak, a 13-year home services operator.",
     url: "https://www.sequoiageo.com/roofing-seo",
     type: "website",
   },
@@ -28,7 +28,7 @@ const roofingFaqs = [
   },
   {
     q: "How much does roofing SEO cost?",
-    a: "My engagements start at $2,500 per month. What that covers depends on your market, website, locations, implementation access, and the size of the verified gap. The program should define what will be changed and report calls, qualified leads, and jobs booked rather than asking you to accept ranking screenshots as the result.",
+    a: "Engagements start at $2,500 per month with an initial term of three months, then continue month to month. The scope depends on the market, the starting point, and the verified constraints. Ad spend is separate, and the business retains ownership of its domain, analytics, ad accounts, and published pages.",
   },
   {
     q: "Do I need roofing SEO if I am already running Google Ads?",
@@ -36,7 +36,7 @@ const roofingFaqs = [
   },
   {
     q: "What makes roofing SEO different from general SEO?",
-    a: "Roofing has extreme seasonality, storm-driven demand spikes, an insurance-versus-retail split that changes the entire keyword universe, and job tickets that run from a small repair to a full replacement. A generalist agency applies the same template it uses for law firms and restaurants and misses all of it. Ask for proof from the trades before you sign anything.",
+    a: "Roofing search demand is local, seasonal, and divided across repairs, replacements, storm work, and insurance-related questions. A useful program maps those distinct needs to the services and locations the company can fulfill, then measures which organic inquiries qualify and become booked jobs.",
   },
   {
     q: "How does storm damage affect roofing SEO strategy?",
@@ -84,21 +84,23 @@ export default function RoofingSeoPage() {
         }}
       />
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#fafaf8] py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-[#fafaf8] py-14 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
               <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
-              Roofing SEO
+              Roofing SEO Services
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
-              Roofing SEO Services That Book Jobs,{" "}
-              <span className="text-[#1A5C3A]">Not Just Rankings</span>
+              Roofing SEO Services Built to Generate{" "}
+              <span className="text-[#1A5C3A]">Calls and Jobs Booked</span>
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Most roofing SEO reports on rankings and traffic. I report on cost per booked job,
-              booking rate by lead source, and average ticket by channel. I ran a home services
-              company for 13 years before I ever sold marketing. That changes what gets measured.
+            <p className="mt-6 text-lg leading-relaxed text-gray-600 sm:text-xl">
+              Roofing SEO helps a roofing company appear when homeowners search for roof repair,
+              replacement, storm damage, and local contractors. The work combines Google Business
+              Profile optimization, service and location pages, technical SEO, reviews, authority
+              building, and attribution. Sequoia GEO measures whether organic visibility produces
+              qualified calls and jobs booked, not whether a ranking report looks busy.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -123,17 +125,17 @@ export default function RoofingSeoPage() {
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7 sm:p-8">
             <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A] mb-3">
-              Proof, Not Promises
+              Documented Public Evidence
             </p>
             <p className="text-lg font-bold text-[#1a1a1a]">
-              An exteriors company in the map pack top 3 across 88 to 96 percent of its territory
+              Top 3 map-pack coverage across 88% to 96% of the measured service area
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
               Luma Exteriors is not a roofing company. It is a premium Austin siding, windows, and
-              doors contractor, and the same map pack discipline decides who gets the call in both
-              trades. Reviews grew from 9 to 28 at a straight 5.0, listings stayed synced across
-              roughly 49 directories, and every Local Services Ads lead got watched, with wrong-fit
-              leads disputed for credit.
+              doors contractor. A May 28, 2026 geo-grid scan placed it in the top three across 88%
+              to 96% of its measured service area for two siding queries. Reviews grew from 9 to
+              28 while holding a 5.0 rating. This is local-search operating evidence from an
+              adjacent exterior trade, not a claim about roofing leads or jobs booked.
             </p>
             <Link
               href="/case-studies/luma-exteriors"
@@ -173,11 +175,10 @@ export default function RoofingSeoPage() {
                 title: "Local SEO and Google Business Profile",
                 body: (
                   <>
-                    The map pack gets the calls. Everyone below the fold splits the leftovers. This
-                    work is Business Profile management, review velocity, consistent listings across
-                    every directory Google checks, and a profile that stays active week after week.
-                    It is the same system that put Luma Exteriors in the top 3 across 88 to 96
-                    percent of its service area.
+                    The Google Business Profile and website should present the same services,
+                    service area, contact information, and proof. The work includes categories,
+                    services, reviews, photos, and consistent third-party listings, with profile
+                    activity measured separately from completed calls and jobs booked.
                   </>
                 ),
               },
@@ -186,9 +187,10 @@ export default function RoofingSeoPage() {
                 body: (
                   <>
                     Roof replacement, roof repair, storm damage, and emergency tarping are different
-                    searches from different buyers, and each needs its own page. Same for every city
-                    you serve. One generic {"“"}services{"”"} page ranks for nothing and
-                    forces your best prospects to guess whether you do their job in their town.
+                    searches from different buyers. Coverage should match the roofing services and
+                    locations the company can actually fulfill, answer the customer&rsquo;s real
+                    question, and provide a clear call or booking path without repeating a thin
+                    city-name template.
                   </>
                 ),
               },
@@ -208,9 +210,8 @@ export default function RoofingSeoPage() {
                   <>
                     Roofing demand comes in four flavors: aging-roof research, replacement shopping,
                     storm emergencies, and insurance claims. The content plan maps pages to each
-                    stage before the season, because the companies that win after a storm are the
-                    ones who ranked before it. Generic content mills cannot write this; I spent 13
-                    years inside home services and it shows in the work. I published the full
+                    stage before the season, with first-hand service details and useful answers
+                    instead of generic production copy. I published the full
                     framework in the{" "}
                     <Link
                       href="/blog/roofing-seo-complete-guide-to-ranking"
@@ -233,13 +234,12 @@ export default function RoofingSeoPage() {
                 ),
               },
               {
-                title: "Tracking to Booked Jobs, Not Rankings",
+                title: "Tracking to Leads and Jobs Booked",
                 body: (
                   <>
-                    Search Console, call tracking, and your CRM wired together so we both know which
-                    queries produce qualified leads and booked jobs.
-                    If a report cannot answer {"“"}what did this cost per booked job,{"”"}{" "}
-                    it is not a report. It is a receipt.
+                    Search Console, call attribution, accepted forms, completed bookings, and the
+                    CRM are reconciled so the report separates visibility from qualified inquiries
+                    and jobs booked. Rankings remain diagnostic evidence, not the final outcome.
                   </>
                 ),
               },
@@ -253,34 +253,44 @@ export default function RoofingSeoPage() {
         </div>
       </section>
 
-      {/* Run by an Operator */}
+      {/* Operating process */}
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              Run by an Operator, Not an Account Manager
+              How Sequoia GEO Runs Roofing SEO
             </h2>
           </div>
-          <div className="mx-auto max-w-4xl grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="mx-auto max-w-5xl grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {[
               {
-                title: "Lead-to-booked-job conversion",
-                body: "How many of your roofing leads become scheduled inspections? Most owners cannot answer that number. If your booking rate is broken, more traffic makes the problem bigger, not smaller. I check this before recommending you spend anything.",
+                number: "01",
+                title: "Verify the Baseline",
+                body: "Measure rankings, Google Business Profile activity, calls, forms, and jobs booked before changing the program.",
               },
               {
-                title: "Lead quality by channel",
-                body: "Storm, insurance, retail, repair, and maintenance inquiries do not represent the same need. I separate channels by qualified leads and booked jobs, not just call volume.",
+                number: "02",
+                title: "Fix the Foundations",
+                body: "Correct crawlability, entity consistency, service coverage, tracking, and conversion obstacles in priority order.",
               },
               {
-                title: "Review process vs. competitors",
-                body: "I benchmark review count, rating, recency, responses, and request completion against visible competitors. Google does not publish a review-velocity formula, so the goal is a compliant operating process and better customer evidence.",
+                number: "03",
+                title: "Build Service Coverage",
+                body: "Improve pages around the roofing services and locations the company can fulfill, including seasonal and storm demand.",
               },
               {
-                title: "Off-season pipeline",
-                body: "Seasonality changes both demand and media costs. The slow months are useful for correcting technical issues, improving buyer-question coverage, and validating tracking before demand rises.",
+                number: "04",
+                title: "Strengthen Authority",
+                body: "Build recent reviews, accurate listings, internal links, and credible local or trade references. Google does not publish a review-velocity formula, so the work is reported as an operating process rather than a claimed ranking weight.",
+              },
+              {
+                number: "05",
+                title: "Report and Prioritize",
+                body: "Report qualified calls and jobs booked by source, then focus the next month on the largest verified constraint.",
               },
             ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <div key={item.number} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <p className="text-sm font-bold text-[#3A9E6A]">{item.number}</p>
                 <h3 className="text-base font-bold text-[#3A9E6A]">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">{item.body}</p>
               </div>
@@ -290,12 +300,11 @@ export default function RoofingSeoPage() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
               <h3 className="text-xl font-extrabold text-white">About Aaron Husak</h3>
               <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80 max-w-2xl mx-auto">
-                I held California contractor licenses (B General, C-2, C-20 HVAC, C-36 Plumbing)
-                while building Balanced Comfort from one truck to 130+ employees over 13 years in
-                home services.
-                4x Inc 5000. I started Sequoia GEO to run marketing on operator metrics: closed
-                jobs, cost per booked job, and revenue by channel. Not impressions. Not rankings
-                alone.
+                I spent 13 years operating a home services company and formerly held California
+                contractor classifications including B General, C-2, C-20 HVAC, and C-36
+                Plumbing. You work directly with me, not an account manager. The reporting centers
+                qualified inquiries and jobs booked, with impressions and rankings used as
+                supporting evidence.
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
                 {["B General", "C-2", "C-20 HVAC", "C-36 Plumbing", "4x Inc 5000"].map((c) => (
@@ -391,13 +400,13 @@ export default function RoofingSeoPage() {
                 ),
               },
               {
-                title: "Reporting that reaches revenue",
+                title: "Reporting that reaches qualified leads",
                 body: (
                   <>
                     Any company can show a ranking chart. Ask whether their reporting connects
                     search visibility to booked inspections and closed jobs. If the answer involves
-                    impressions, keep asking. If it cannot get past clicks, that is the blind spot
-                    that will hide a failing program for a year.
+                    only impressions, keep asking. Visibility metrics explain what changed. They do
+                    not replace qualification and jobs-booked reporting.
                   </>
                 ),
               },
@@ -433,9 +442,10 @@ export default function RoofingSeoPage() {
           </div>
           <div className="mt-10 rounded-2xl border border-[#3A9E6A]/30 bg-white p-7 sm:p-8">
             <p className="text-base leading-relaxed text-gray-700">
-              I published a ranked comparison of nine roofing marketing agencies, and I put Sequoia
-              GEO ninth on my own list, because a list built to sell you is not research. If you
-              are shopping, start there and read it with your revenue size in mind.
+              I published a comparison of roofing marketing agencies and included the criteria,
+              evidence limits, and fit considerations in the page. If you are shopping, use it to
+              compare operating model, category experience, proof, and ownership before choosing a
+              provider.
             </p>
             <Link
               href="/best-roofing-marketing-agencies"
@@ -459,42 +469,10 @@ export default function RoofingSeoPage() {
             </h2>
           </div>
           <div className="space-y-6">
-            {roofingFaqs.map((item, i) => (
+            {roofingFaqs.map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 p-7">
                 <h3 className="text-base font-bold text-[#1a1a1a]">{item.q}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  {i === 1 ? (
-                    <>
-                      My engagements{" "}
-                      <Link
-                        href="/how-it-works"
-                        className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]"
-                      >
-                        start at $2,500 per month
-                      </Link>
-                      . What that covers depends on your market and how much ground there is to
-                      make up, which is why every engagement starts with a marketing baseline review. The better
-                      question is what the program produces. A roofing SEO program that cannot show
-                      you booked jobs by month 12 was not worth any price.
-                    </>
-                  ) : i === 5 ? (
-                    <>
-                      AI SEO, also called{" "}
-                      <Link
-                        href="/geo-agency"
-                        className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]"
-                      >
-                        generative engine optimization
-                      </Link>{" "}
-                      or GEO, improves the crawlability, accuracy, usefulness, and corroboration of
-                      your roofing company&rsquo;s public information, then measures whether relevant AI
-                      products mention, cite, recommend, or refer a prospect to it. No provider
-                      controls the answer an AI product gives.
-                    </>
-                  ) : (
-                    item.a
-                  )}
-                </p>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.a}</p>
               </div>
             ))}
           </div>
@@ -519,7 +497,7 @@ export default function RoofingSeoPage() {
               { label: "Restoration SEO", href: "/restoration-seo" },
               { label: "Plumbing SEO", href: "/plumbing-seo" },
               { label: "Local Services Ads", href: "/lsa-management" },
-              { label: "Leaving Your Agency?", href: "/leaving-my-marketing-agency" },
+              { label: "Marketing Baseline Review", href: "/audit" },
             ].map((link) => (
               <Link
                 key={link.href}
@@ -536,21 +514,21 @@ export default function RoofingSeoPage() {
         </div>
       </section>
 
-      {/* Switching agencies callout */}
+      {/* Scoped verification callout */}
       <section className="bg-[#fafaf8] border-y border-gray-200 py-12">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-sm font-bold uppercase tracking-wider text-[#1A5C3A] mb-1">Already with an agency?</p>
+            <p className="text-sm font-bold uppercase tracking-wider text-[#1A5C3A] mb-1">Already have an agency, but need one problem verified?</p>
             <p className="text-base text-gray-700">
-              If your current roofing SEO company isn&rsquo;t producing, we can audit what you own and what a clean
-              transition looks like before you commit to anything new.
+              Use the baseline review to verify a tracking, search visibility, or conversion issue
+              before deciding what changes and who should own the work.
             </p>
           </div>
           <Link
-            href="/leaving-my-marketing-agency"
+            href="/contact#book"
             className="shrink-0 inline-flex items-center gap-2 rounded-lg border border-[#1A5C3A] px-6 py-3 text-sm font-semibold text-[#1A5C3A] hover:bg-[#1A5C3A] hover:text-white transition-colors"
           >
-            Thinking about switching?
+            Choose a Time With Aaron
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
@@ -562,11 +540,12 @@ export default function RoofingSeoPage() {
       <section className="bg-[#1A5C3A] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
-            Find out what your roofing marketing is actually producing
+            See What Your Roofing SEO Is Producing
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            Start with the Marketing Baseline Review. I&rsquo;ll look at your spend, your booking rate, your
-            phone handling, and your revenue. You&rsquo;ll know exactly where the leaks are before we spend anything new.
+            The Marketing Baseline Review connects search visibility, Google Business Profile,
+            calls, and the booking path to qualified leads and jobs booked. You work directly with
+            Aaron to verify the largest constraint before anything changes.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link href="/contact#book" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
@@ -583,8 +562,8 @@ export default function RoofingSeoPage() {
       {/* On-page capture: request the audit without leaving the page */}
       <InlineLeadForm
         source="roofing_seo_page"
-        heading="Request a roofing marketing baseline review"
-        subtext="Tell us where to send it. We review your rankings, your ads, and your booking path before the call. No pitch deck."
+        heading="Request a roofing SEO baseline review"
+        subtext="Tell us where to send it. We review your search visibility, Google Business Profile, and booking path before the call. No pitch deck."
       />
     </>
   );

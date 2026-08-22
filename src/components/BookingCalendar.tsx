@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import { trackEvent } from "@/lib/analytics";
+import { readCampaignAttribution } from "@/lib/campaign-attribution";
+import { readAiAttribution } from "@/lib/ai-attribution";
 
 // Official Google Calendar appointment-schedule EMBED URL (?gv=true).
 // Do NOT use the calendar.app.google short link here: it serves
@@ -32,6 +34,9 @@ export default function BookingCalendar({ className }: { className?: string }) {
         trackEvent("calendar_engagement", {
           source: "booking_calendar",
           cta_contract: "schedule",
+          landing_path: window.location.pathname,
+          ...(readCampaignAttribution() ?? {}),
+          ...(readAiAttribution() ?? {}),
         });
       }
     };
@@ -62,6 +67,9 @@ export default function BookingCalendar({ className }: { className?: string }) {
           onClick={() => trackEvent("calendar_fallback_click", {
             source: "booking_calendar",
             cta_contract: "schedule",
+            landing_path: window.location.pathname,
+            ...(readCampaignAttribution() ?? {}),
+            ...(readAiAttribution() ?? {}),
           })}
         >
           Open it in a new tab

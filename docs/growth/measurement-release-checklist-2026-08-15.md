@@ -33,7 +33,7 @@ Independent raw-source review of the final delta is unavailable because the priv
 
 ## Required before production deployment
 
-- [ ] Register `measurement_contract` as an event-scoped GA4 custom dimension.
+- [x] Register `measurement_contract` as an event-scoped GA4 custom dimension. Verified in the Sequoia GA4 property on August 22, 2026.
 - [ ] Record the deployment commit and timestamp in the measurement log.
 - [ ] Confirm the production deployment contains this measurement commit and no scheduled SEO treatment.
 - [ ] Open a fresh production browser context and submit one reserved synthetic contact fixture.
@@ -43,7 +43,7 @@ Independent raw-source review of the final delta is unavailable because the priv
 - [ ] Confirm HighLevel accepts `websiteLeadId`, `isSyntheticTest`, and the internal-test tag without creating a conversation, opportunity, task, or normal lead-source value.
 - [ ] Confirm no synthetic fixture emits `generate_lead`, `form_success`, or `lead_created`.
 - [ ] Confirm the reconciler labels and excludes all three synthetic fixtures.
-- [ ] On the first real production lead, confirm one internal record, one accepted browser conversion, the `accepted-v2` marker in GA4, and the expected account-side delivery diagnostics.
+- [ ] On the first real production lead, confirm one internal record, one accepted browser conversion, the `accepted-v2` marker in GA4, and the expected account-side delivery diagnostics. The August 22 reserved synthetic test passed the form and notification layers but did not create a HighLevel contact automatically, so the CRM portion remains open.
 
 The production synthetic fixtures intentionally pass through the real notification and CRM sinks with `isSyntheticTest: true`. Their browser conversion events remain suppressed. A valid launch check therefore requires both real internal records and zero analytics or advertising conversion events.
 
