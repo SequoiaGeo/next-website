@@ -1,6 +1,6 @@
 # Service Page Refresh, August 22, 2026
 
-Status: pre-registered combined treatment, prepared but not deployed while the automatic CRM capture gate is failing
+Status: deployed as one combined treatment, with the recommendation-report launch held while the automatic CRM capture gate is failing
 
 Owner: Aaron Husak, Sequoia GEO
 
@@ -25,7 +25,7 @@ The two pages may still be read separately in Search Console, but those reads ar
 ## Boundaries
 
 1. Production authority boundary: `ca8fffb`, August 21, 2026 at 3:38:41 PM Pacific.
-2. Combined service-page boundary: the deployment timestamp and commit will be added after the release gate passes.
+2. Combined service-page boundary: service content commit `f433f36`, release boundary commit `f85dda5`, verified live on August 22, 2026 at 6:52 AM Pacific.
 
 The July 17 through August 13 Search Console window remains the planning reference, not a clean experimental baseline for this release.
 
@@ -56,3 +56,5 @@ Rollback one affected page when it is deindexed or its established head-query vi
 4. The public claims, service refresh, lead policy, lint, TypeScript, and production build checks pass.
 
 Gate 1 passed on August 22. Gate 2 failed because the synthetic form did not create a HighLevel contact automatically. The notification was manually reconciled as an internal test, but manual reconciliation does not satisfy the production gate.
+
+The plumbing and roofing refreshes were allowed to publish after Gate 1 because they use the existing accepted-form path and do not add a new conversion source. The Home Services AI Recommendation Report page, its service-page CTAs, source registration, and sitemap entry remain withheld from production until Gate 2 passes.
