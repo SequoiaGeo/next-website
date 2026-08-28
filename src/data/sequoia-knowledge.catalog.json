@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalogVersion": "2026-08-28.1",
+  "status": "approved_for_public_use",
+  "approvedOn": "2026-08-28",
+  "reviewValidUntil": "2026-09-27",
+  "owner": "Sequoia GEO",
+  "externalModelSpendLimitUsd": 0,
+  "publicBoundary": "This interface reports approved public facts only. It does not claim to improve or control rankings, citations, or recommendations in ChatGPT, Gemini, or any other answer system.",
+  "sources": {
+    "services": {
+      "label": "Services",
+      "path": "/services",
+      "sourceFile": "src/app/services/page.tsx",
+      "sourceAnchors": [
+        "Not standalone services: channels I manage as your growth operator.",
+        "Google Ads & Local Service Ads",
+        "Local SEO & Google Business Profile",
+        "Marketing Attribution",
+        "Operational Insights"
+      ]
+    },
+    "pricing": {
+      "label": "Published pricing and conditions",
+      "path": "/ai-seo-pricing",
+      "sourceFile": "src/app/ai-seo-pricing/page.tsx",
+      "sourceAnchors": [
+        "Search Foundation starts at",
+        "Fractional Marketing Lead starts at $5,000",
+        "Complex Leadership starts at $6,500",
+        "Custom website projects start at $7,500",
+        "Every starting engagement has a 90-day initial term, then continues month to month.",
+        "Guaranteed rankings, citations, recommendations, lead volume, or timing"
+      ]
+    },
+    "methodology": {
+      "label": "AI search measurement methodology",
+      "path": "/ai-search-methodology",
+      "sourceFile": "src/app/ai-search-methodology/page.tsx",
+      "sourceAnchors": [
+        "Public methodology, version 1.2",
+        "five times in separate fresh sessions",
+        "not statistically independent trials",
+        "Publish misses and absences",
+        "A cited Sequoia page does not automatically create a Sequoia recommendation."
+      ]
+    },
+    "contact": {
+      "label": "Contact Sequoia GEO",
+      "path": "/contact",
+      "sourceFile": "src/components/ContactForm.tsx",
+      "sourceAnchors": [
+        "(559) 521-3122",
+        "Aaron@sequoiageo.com",
+        "Request the Baseline Review"
+      ]
+    },
+    "kabam_case": {
+      "label": "KABAM Plumbing case study",
+      "path": "/case-studies/kabam-plumbing",
+      "sourceFile": "src/app/case-studies/kabam-plumbing/page.tsx",
+      "sourceAnchors": [
+        "5.0",
+        "116 Google Business Profile call-button clicks",
+        "does not establish completed calls, unique callers",
+        "Review count and rating verified on the live Google Business Profile July 8, 2026.",
+        "with their permission"
+      ]
+    },
+    "chimney_case": {
+      "label": "A Fireman's Chimney Sweep case study",
+      "path": "/case-studies/firemans-chimney-sweep",
+      "sourceFile": "src/app/case-studies/firemans-chimney-sweep/page.tsx",
+      "sourceAnchors": [
+        "3 weeks",
+        "Average search position, first month",
+        "Lighthouse mobile performance score",
+        "Review count and search positions verified July 7, 2026.",
+        "Published with the"
+      ]
+    }
+  },
+  "services": [
+    {
+      "id": "paid_search",
+      "name": "Google Ads and Local Service Ads",
+      "summary": "Campaign management connected to calls, booking handoffs, and jobs booked where the operating data supports that connection.",
+      "sourceIds": ["services"]
+    },
+    {
+      "id": "local_search",
+      "name": "Local SEO and Google Business Profile",
+      "summary": "Local search work across the website, business profile, citations, content, and public business information.",
+      "sourceIds": ["services"]
+    },
+    {
+      "id": "website_optimization",
+      "name": "Website optimization",
+      "summary": "Page speed, booking flow, trust signals, call tracking, and form tracking for service-business websites.",
+      "sourceIds": ["services"]
+    },
+    {
+      "id": "review_systems",
+      "name": "Review generation systems",
+      "summary": "Review-request workflows designed around the service and dispatch process.",
+      "sourceIds": ["services"]
+    },
+    {
+      "id": "attribution",
+      "name": "Marketing attribution",
+      "summary": "Call, form, CRM, and channel measurement that keeps inquiries, qualified leads, and jobs booked as separate stages.",
+      "sourceIds": ["services", "methodology"]
+    },
+    {
+      "id": "ai_search_evidence",
+      "name": "AI search visibility and evidence",
+      "summary": "A documented baseline, public-source reconciliation, controlled observations, and remeasurement when AI visibility is part of the agreed scope.",
+      "sourceIds": ["pricing", "methodology"]
+    },
+    {
+      "id": "vendor_management",
+      "name": "Vendor management",
+      "summary": "Evaluation and coordination of existing marketing vendors against agreed operating and measurement outcomes.",
+      "sourceIds": ["services"]
+    },
+    {
+      "id": "operational_insights",
+      "name": "Operational insights",
+      "summary": "Booking-rate analysis, phone-handling review, and CSR feedback connected to the marketing handoff.",
+      "sourceIds": ["services"]
+    }
+  ],
+  "publishedStartingPrices": [
+    {
+      "id": "search_foundation",
+      "name": "Search Foundation",
+      "amountUsd": 2500,
+      "billing": "per_month_starting_price",
+      "conditions": "One bounded search, AI visibility, conversion, or public-information constraint. Monthly engagements begin with a 90-day initial term, then continue month to month.",
+      "notAQuote": true,
+      "sourceIds": ["pricing"]
+    },
+    {
+      "id": "fractional_marketing_lead",
+      "name": "Fractional Marketing Lead",
+      "amountUsd": 5000,
+      "billing": "per_month_starting_price",
+      "conditions": "For a launch or established business that needs weekly marketing leadership. Monthly engagements begin with a 90-day initial term, then continue month to month.",
+      "notAQuote": true,
+      "sourceIds": ["pricing"]
+    },
+    {
+      "id": "complex_leadership",
+      "name": "Complex Leadership",
+      "amountUsd": 6500,
+      "billing": "per_month_starting_price",
+      "conditions": "For multiple markets, brands, vendors, channels, or a larger operating load. Monthly engagements begin with a 90-day initial term, then continue month to month.",
+      "notAQuote": true,
+      "sourceIds": ["pricing"]
+    },
+    {
+      "id": "website_foundation",
+      "name": "Website Foundation",
+      "amountUsd": 2500,
+      "billing": "one_time_starting_price",
+      "conditions": "One location, up to five standard pages, a contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff.",
+      "notAQuote": true,
+      "sourceIds": ["pricing"]
+    },
+    {
+      "id": "custom_website",
+      "name": "Custom website project",
+      "amountUsd": 7500,
+      "billing": "one_time_starting_price",
+      "conditions": "For nonstandard interfaces, applications, booking flows, migrations, e-commerce, or advanced integrations. Scope is reviewed separately.",
+      "notAQuote": true,
+      "sourceIds": ["pricing"]
+    }
+  ],
+  "pricingConditions": [
+    "Starting prices are not quotes. Scope is defined before work begins.",
+    "Ad spend stays in the client's advertising accounts and is billed by the platform.",
+    "Third-party software and major website work are discussed separately.",
+    "Rankings, citations, recommendations, lead volume, and timing are not guaranteed."
+  ],
+  "serviceFit": {
+    "potentialFit": [
+      "A home-service or service business has one bounded search, visibility, conversion, tracking, or public-information constraint.",
+      "An established business needs a marketing leader involved in weekly decisions.",
+      "A business has multiple markets, brands, vendors, or channels that require coordinated marketing leadership.",
+      "The business accepts that independently controlled rankings, citations, recommendations, lead volume, and timing cannot be guaranteed."
+    ],
+    "notFit": [
+      "The requested outcome depends on a guaranteed ranking, citation, recommendation, lead volume, or deadline.",
+      "The visitor wants an inquiry submitted, a meeting booked, or a message sent without personal review.",
+      "The work requires a service or budget that has not been reviewed against the published scope and starting conditions."
+    ],
+    "humanReviewRequired": "A tool result is only a preliminary fit check. Sequoia reviews the business, constraint, access, scope, and operating conditions before accepting work.",
+    "sourceIds": ["services", "pricing"]
+  },
+  "methodology": {
+    "version": "1.2",
+    "summary": "Sequoia separates mentions, recommendations, primary recommendations, citations, referral visits, inquiries, qualified leads, and jobs booked. A result is never promoted to a later stage without the required evidence.",
+    "stages": [
+      "Mentioned",
+      "Recommended",
+      "Primary recommendation",
+      "Cited",
+      "Referral visit",
+      "Inquiry",
+      "Qualified lead",
+      "Job booked"
+    ],
+    "protocol": [
+      "Freeze the question set and inclusion rules before observing answers.",
+      "Control session, geography, product, device assumptions, and date where the platform permits it.",
+      "Run each frozen question five times in separate fresh sessions per platform.",
+      "Treat repeats as stability observations, not statistically independent trials.",
+      "Archive the complete response and visible citations before coding the result.",
+      "Publish misses and limitations alongside favorable observations."
+    ],
+    "limitations": [
+      "AI answers vary by platform, product version, prompt wording, geography, account state, memory, retrieval behavior, and date.",
+      "A citation is not automatically a recommendation.",
+      "A referral visit is not automatically an inquiry.",
+      "An inquiry is not automatically a qualified lead or job booked.",
+      "Repeated observations do not create a universal ranking."
+    ],
+    "sourceIds": ["methodology"]
+  },
+  "caseStudyEvidence": [
+    {
+      "id": "kabam_plumbing",
+      "name": "KABAM Plumbing",
+      "evidence": [
+        "The public case study reports a 5.0 Google rating across 154 reviews, verified on the live profile July 8, 2026.",
+        "The Business Profile performance panel reported 116 call-button clicks over the six months through May 2026.",
+        "The page states that those clicks do not establish completed calls, unique callers, qualified leads, or jobs booked.",
+        "The public case study reports Search Console impressions moving from 16.9K to 18.8K in under a month, based on pulls dated May 31 and June 25, 2026."
+      ],
+      "approval": "The public case study states that client numbers are published with permission.",
+      "sourceIds": ["kabam_case"]
+    },
+    {
+      "id": "firemans_chimney_sweep",
+      "name": "A Fireman's Chimney Sweep",
+      "evidence": [
+        "The public case study reports three weeks to page one for core chimney terms and a 5.8 average search position in the first month.",
+        "The page reports a Lighthouse mobile performance score change from 56 to 87.",
+        "The page says first-month clicks were modest during the seasonal quiet period and does not present position as a lead or job result.",
+        "The page identifies Google Search Console, Google Business Profile, and Lighthouse as the sources and says review count and search positions were verified July 7, 2026."
+      ],
+      "approval": "The public case study states that it was published with the owner's permission.",
+      "sourceIds": ["chimney_case"]
+    }
+  ],
+  "contactOptions": [
+    {
+      "id": "contact_form",
+      "label": "Request a baseline review",
+      "kind": "review_and_submit_form",
+      "value": "/contact#contact",
+      "sourceIds": ["contact"]
+    },
+    {
+      "id": "phone",
+      "label": "Call Sequoia GEO",
+      "kind": "phone",
+      "value": "+1-559-521-3122",
+      "displayValue": "(559) 521-3122",
+      "sourceIds": ["contact"]
+    },
+    {
+      "id": "email",
+      "label": "Email Sequoia GEO",
+      "kind": "email",
+      "value": "Aaron@sequoiageo.com",
+      "sourceIds": ["contact"]
+    }
+  ],
+  "refusal": "I can only answer from Sequoia GEO's approved public catalog about services, published starting prices and conditions, service fit, measurement methodology, approved case-study evidence, and contact options. I do not have approved information for that question."
+}
