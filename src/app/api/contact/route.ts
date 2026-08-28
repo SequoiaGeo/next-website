@@ -55,6 +55,7 @@ const REPORTED_AI_ASSISTANTS = new Set([
 
 const FORM_SOURCES = new Set([
   "contact_form",
+  "sequoia_knowledge_interface",
   "homepage_top",
   "audit_page",
   "hvac_seo_page",
