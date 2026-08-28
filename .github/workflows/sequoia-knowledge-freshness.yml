@@ -1,6 +1,7 @@
 name: Sequoia knowledge freshness
 
 on:
+  pull_request:
   schedule:
     - cron: "23 16 * * 1"
   workflow_dispatch:

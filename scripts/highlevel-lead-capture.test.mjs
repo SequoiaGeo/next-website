@@ -157,7 +157,7 @@ test("creates a standard contact without tags, DND changes, opportunities, or ra
     throw new Error(`Unexpected request ${init.method || "GET"} ${url}`);
   };
 
-  const result = await captureWebsiteLead(BASE_INPUT, {
+  const result = await captureWebsiteLead({ ...BASE_INPUT, source: "sequoia_knowledge_interface" }, {
     env: DIRECT_ENV,
     fetchImpl,
     now: () => new Date("2026-08-15T12:00:00.000Z"),
@@ -172,7 +172,7 @@ test("creates a standard contact without tags, DND changes, opportunities, or ra
     firstName: "Lead",
     lastName: "Example",
     email: "lead@example.com",
-    source: "audit_page",
+    source: "sequoia_knowledge_interface",
     phone: "559-555-1212",
     companyName: "Example Company",
   });

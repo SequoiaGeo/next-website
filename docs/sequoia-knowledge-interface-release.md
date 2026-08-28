@@ -61,7 +61,7 @@ Raw questions, answer text, contact fields, draft text, email addresses, phone n
 
 ## Scheduled freshness check
 
-`.github/workflows/sequoia-knowledge-freshness.yml` runs the catalog test every Monday and on manual request. The test fails when:
+`.github/workflows/sequoia-knowledge-freshness.yml` runs the catalog test on every pull request, every Monday, and on manual request. The test fails when:
 
 - the review-valid-until date expires;
 - a visible source file or route disappears;

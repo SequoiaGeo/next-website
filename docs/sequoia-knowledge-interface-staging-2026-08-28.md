@@ -13,6 +13,8 @@ Reference: [OpenAI Site tools documentation](https://learn.chatgpt.com/docs/webm
 | Focused test suite | Pass | All Sequoia Knowledge Interface catalog, source, safety, analytics, and prepare-only assertions passed. |
 | Lint | Pass | The repository lint command completed without an error. |
 | Production build | Pass | Next.js compiled, type checked, and generated the site successfully with the feature off by default. |
+| Complete repository tests | Pass | All 75 repository tests passed after the production build produced the compiled API fixtures. |
+| Audit campaign regression | Reconciled | The earlier `collectCompany` failure came from an unrelated untracked scorecard page on the dirty development branch. The clean release branch is based on verified `origin/main`, excludes that page, and passes `scripts/audit-campaign-form.test.mjs`. |
 | Feature-off status | Pass | The status route returned disabled, no-store, and noindex behavior when the opt-in flag was absent. |
 | Site-tool discovery | Pass | The Codex desktop built-in browser listed all seven top-level site tools on the enabled local build. |
 | Cited read tools | Pass | Published pricing and service-fit calls returned the catalog version, public boundary, and visible-page citations. |
@@ -28,8 +30,7 @@ Reference: [OpenAI Site tools documentation](https://learn.chatgpt.com/docs/webm
 1. Confirm live analytics delivery in staging for each separate event stage. Registration remains labeled as a discovery opportunity proxy, not confirmed agent discovery.
 2. Run an authorized synthetic contact submission through the durable lead-capture path. Confirm the knowledge source tag and confirm that the browser does not fire the qualified-lead event.
 3. Exercise the kill switch against an already-open staging page after the release environment supports changing runtime flags. Confirm tool removal, launcher removal, Ask-page disablement, and stored-draft clearing after the next status check.
-4. Resolve or explicitly reconcile the unrelated existing repository test failure in `scripts/audit-campaign-form.test.mjs`, which currently objects to `collectCompany` on `src/app/home-service-marketing-scorecard/page.tsx`.
-5. Complete Aaron's review of the human experience and cited facts.
+4. Complete Aaron's review of the human experience and cited facts.
 
 ## Production hold
 
