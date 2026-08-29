@@ -6,7 +6,7 @@ Status: staging candidate only. Do not deploy to production until Aaron reviews 
 
 The interface uses one bundled, version-controlled catalog at `src/data/sequoia-knowledge.catalog.json`. The catalog is imported into the site bundle. It is not exposed as a JSON endpoint.
 
-Ask Sequoia is deterministic. It does not call an AI model or external answer service. External model spend is capped at zero. Questions and answers remain in React state and never enter a URL. The page is noindex, and operational API responses are no-store with an `X-Robots-Tag` noindex header.
+Ask Sequoia is deterministic. It does not call an AI model or external answer service. External model spend is capped at zero. Questions and answers remain in React state and never enter a URL. The dedicated `/ask-sequoia` page is noindex. The homepage remains indexable, but no visitor-specific answer is rendered until a visitor asks a question. Operational API responses are no-store with an `X-Robots-Tag` noindex header.
 
 Release one does not include remote MCP, NLWeb, A2A, or a published `HEARTBEAT.md` file.
 
@@ -110,4 +110,4 @@ Run all gates with a staging or local build, never by changing production first.
 
 ## Production hold
 
-Production remains blocked until the build, security, source-consistency, analytics, and rollback gates pass, the supported ChatGPT site-tool test is documented, and Aaron approves the interface. A production rollback starts with the kill switch. Removing `<SequoiaKnowledgeInterface />` from the root layout is the code rollback.
+Production remains blocked until the build, security, source-consistency, analytics, and rollback gates pass, the supported ChatGPT site-tool test is documented, and Aaron approves the interface. The environment kill switch takes effect through a Vercel redeployment, so the operational rollback is to enable the kill switch and redeploy or restore the previously verified Production deployment, whichever is faster. Removing `<SequoiaKnowledgeInterface />` from the root layout and the guarded homepage panel from `src/app/page.tsx` is the code rollback.
