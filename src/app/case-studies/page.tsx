@@ -255,29 +255,28 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Luma case study card */}
+            {/* Luma engagement spotlight card */}
             <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
               <div className="bg-[#0D2318] px-8 py-10 sm:px-12">
                 <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
-                  Client Case Study
+                  Client Engagement Spotlight
                 </span>
                 <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
                   Luma Exteriors
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
-                  A premium exteriors company in Austin, Texas that went from 9 Google reviews
-                  to 28 at a straight 5.0 and took the top 3 of the map pack across 88 to 96
-                  percent of its service area. Review velocity, posting cadence, and Local
-                  Services Ads leads watched like they cost money, because they do.
+                  A look at how Sequoia runs Local Services Ads and Google Business Profile
+                  oversight, reconciles activity against the platform record, and keeps billing
+                  states separate from lead outcomes.
                 </p>
               </div>
               <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                   {[
-                    { value: "9 → 28", label: "Reviews, all 5.0" },
-                    { value: "88-96%", label: "Territory in map pack top 3" },
-                    { value: "+39%", label: "June interactions vs May" },
-                    { value: "~49", label: "Directories in sync" },
+                    { value: "LSA", label: "Platform-record oversight" },
+                    { value: "GBP", label: "Public-profile oversight" },
+                    { value: "Review", label: "Weekly operating cadence" },
+                    { value: "Report", label: "Monthly client record" },
                   ].map((item) => (
                     <div
                       key={item.label}
@@ -294,7 +293,7 @@ export default function CaseStudiesPage() {
                   href="/case-studies/luma-exteriors"
                   className="inline-flex items-center gap-2 text-base font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
                 >
-                  Read the full story
+                  Read the engagement spotlight
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

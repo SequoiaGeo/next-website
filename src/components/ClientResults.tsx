@@ -6,10 +6,8 @@ import YouTubeFacade from "@/components/YouTubeFacade";
 // Mel's BBQ video testimonial. Paste the YouTube video ID once the captioned
 // video is uploaded, then redeploy.
 const MELS_VIDEO_ID = "odPENhsu9lU";
-// Luma Exteriors card. Flip to true once /public/clients/luma-exteriors.png is
-// saved and the copy below is approved. Grid map + precise top-3 % to be added
-// after the next local-ranking scan runs (the current scan is labeled baseline,
-// so we are not publishing it; ~11 days out as of 2026-06-16).
+// Luma Exteriors engagement spotlight. The revised copy is method-led and must
+// remain in protected Preview until the named-client wording is approved.
 const LUMA_READY = true;
 // ---------------------------------------------------------------------------
 
@@ -20,9 +18,9 @@ export default function ClientResults() {
     <section className="bg-[#fafaf8] py-16 sm:py-20 border-y border-gray-100">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="text-center mb-10">
-          <p className="section-overline mb-3 text-[#1A5C3A]">Real Results</p>
+          <p className="section-overline mb-3 text-[#1A5C3A]">Client Work</p>
           <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl leading-tight">
-            Real businesses. Real outcomes.
+            Documented work, with the claim boundaries in writing.
           </h2>
         </div>
 
@@ -68,7 +66,7 @@ export default function ClientResults() {
           </div>
         )}
 
-        {/* Luma Exteriors, GBP category repositioning + reviews */}
+        {/* Luma Exteriors, lead-accountability engagement spotlight */}
         {LUMA_READY && (
           <div className={`${MELS_VIDEO_ID ? "mt-12 pt-12 border-t border-gray-200" : ""} max-w-4xl mx-auto`}>
             <div className="rounded-2xl bg-white border border-gray-100 shadow-md p-7 sm:p-9">
@@ -87,32 +85,31 @@ export default function ClientResults() {
                 </div>
               </div>
               <p className="text-base leading-relaxed text-gray-700">
-                Their Google profile sat in a broad &ldquo;remodeler&rdquo; category, buried against
-                every general contractor in the market. We moved them into a category that fits what
-                they do best, siding and exteriors, where their customers are actually searching.
+                Sequoia provides Local Services Ads and Google Business Profile oversight for
+                Luma Exteriors. The work separates billing states from business outcomes, keeps
+                public actions approval-gated, and reports only what the available record supports.
               </p>
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="rounded-xl bg-[#fafaf8] p-5">
-                  <p className="text-3xl font-extrabold text-[#1A5C3A]">9 to 28</p>
+                  <p className="text-base font-extrabold text-[#1A5C3A]">Platform record first</p>
                   <p className="mt-1 text-sm text-gray-600">
-                    Five-star Google reviews. They did the work, we coached the ask.
+                    Lead activity is reconciled against the Local Services ledger, not inferred
+                    from a notification.
                   </p>
                 </div>
                 <div className="rounded-xl bg-[#fafaf8] p-5">
-                  <p className="text-3xl font-extrabold text-[#1A5C3A]">Top 3</p>
+                  <p className="text-base font-extrabold text-[#1A5C3A]">Outcomes kept separate</p>
                   <p className="mt-1 text-sm text-gray-600">
-                    Across about 90% of their service area for siding searches.
+                    A billing state is reported as a billing state. It is not presented as a
+                    qualified lead or booked job.
                   </p>
                 </div>
               </div>
-              <p className="mt-5 text-base leading-relaxed text-gray-700">
-                Calls and website traffic are climbing right alongside it.
-              </p>
               <Link
                 href="/case-studies/luma-exteriors"
                 className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
               >
-                Read the full case study
+                Read the engagement spotlight
                 <svg
                   className="h-3.5 w-3.5"
                   fill="none"

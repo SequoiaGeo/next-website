@@ -216,26 +216,26 @@ export default function LsaManagementPage() {
         </div>
       </section>
 
-      {/* Case study proof strip */}
+      {/* Engagement-method strip */}
       <section className="bg-white pt-16 pb-4">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7 sm:p-8">
             <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A] mb-3">
-              Proof, Not Promises
+              How The Work Is Run
             </p>
             <p className="text-lg font-bold text-[#1a1a1a]">
-              LSA managed with teeth: leads watched, wrong-fit charges disputed
+              Lead billing states stay separate from business outcomes
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              For an Austin exteriors client, every Local Services Ads lead gets a fast response
-              because Google ranks responsiveness, and the leads that never should have been
-              charged get flagged and submitted for billing credit the same week.
+              On a named exterior-remodeling engagement, Sequoia reconciles Local Services Ads
+              activity against the platform record itself. Charged, not charged, in review,
+              submitted for dispute, and credited are reported as billing states, not jobs.
             </p>
             <Link
               href="/case-studies/luma-exteriors"
               className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
             >
-              Read the case study
+              Read the engagement spotlight
               <svg
                 className="h-3.5 w-3.5"
                 fill="none"

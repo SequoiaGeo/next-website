@@ -22,6 +22,7 @@
     "test:amazing-air-case-study": "node --test scripts/amazing-air-case-study-policy.test.mjs",
     "test:firemans-case-study": "node --test scripts/firemans-chimney-sweep-case-study-policy.test.mjs",
     "test:kabam-case-study": "node --test scripts/kabam-plumbing-case-study-policy.test.mjs",
+    "test:luma-engagement-spotlight": "node --test scripts/luma-engagement-spotlight-policy.test.mjs",
     "test:stage-based-marketing-system-preview": "node --test scripts/stage-based-marketing-system-preview-policy.test.mjs"
   },
   "dependencies": {

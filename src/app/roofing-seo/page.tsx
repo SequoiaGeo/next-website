@@ -120,28 +120,28 @@ export default function RoofingSeoPage() {
         </div>
       </section>
 
-      {/* Case study proof strip */}
+      {/* Related home-services operating-method strip */}
       <section className="bg-white pt-16 pb-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-7 sm:p-8">
             <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A] mb-3">
-              Documented Public Evidence
+              Operating Evidence From The Trades
             </p>
             <p className="text-lg font-bold text-[#1a1a1a]">
-              Top 3 map-pack coverage across 88% to 96% of the measured service area
+              A billing state is not a booked job
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              Luma Exteriors is not a roofing company. It is a premium Austin siding, windows, and
-              doors contractor. A May 28, 2026 geo-grid scan placed it in the top three across 88%
-              to 96% of its measured service area for two siding queries. Reviews grew from 9 to
-              28 while holding a 5.0 rating. This is local-search operating evidence from an
-              adjacent exterior trade, not a claim about roofing leads or jobs booked.
+              Luma Exteriors is not a roofing company. It is an exterior-remodeling contractor
+              whose engagement shows how Sequoia reconciles Local Services Ads activity against
+              the platform record and keeps billing states separate from lead outcomes. This is
+              operating methodology from an adjacent exterior trade, not a claim about roofing
+              leads or jobs booked.
             </p>
             <Link
               href="/case-studies/luma-exteriors"
               className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
             >
-              Read the case study
+              Read the engagement spotlight
               <svg
                 className="h-3.5 w-3.5"
                 fill="none"
@@ -387,15 +387,15 @@ export default function RoofingSeoPage() {
                   <>
                     An agency that also serves law firms and e-commerce brands is not wrong to
                     exist, but roofing seasonality, storm spikes, and insurance workflows are blind
-                    spots you will pay to have them learn. Ask for home services proof with real
-                    numbers, not ranking screenshots. Mine is published: the{" "}
+                    spots you will pay to have them learn. Ask how the agency distinguishes
+                    platform activity, billing states, qualified leads, and booked jobs. Our{" "}
                     <Link
                       href="/case-studies/luma-exteriors"
                       className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]"
                     >
-                      Luma Exteriors case study
+                      Luma Exteriors engagement spotlight
                     </Link>
-                    , with the methodology and the caveats in writing.
+                    {" "}puts that methodology and its claim boundaries in writing.
                   </>
                 ),
               },

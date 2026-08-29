@@ -2,21 +2,24 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Luma Exteriors Case Study | Sequoia GEO",
+  title: "Luma Exteriors Engagement Spotlight | Sequoia GEO",
   description:
-    "How an Austin exteriors company went from 9 Google reviews to 28 at a 5.0 and took the top 3 of the map pack across 88 to 96 percent of its service area.",
+    "How Sequoia GEO verifies Local Services Ads activity against the platform record and keeps billing states separate from lead outcomes.",
   alternates: {
     canonical: "https://www.sequoiageo.com/case-studies/luma-exteriors",
+  },
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline:
-    "Owning the map: how an Austin exteriors company took the top 3 across its service area",
+  headline: "Lead oversight built around the platform record",
   description:
-    "How Luma Exteriors in Austin, Texas went from 9 Google reviews to 28 at a 5.0 rating and took the top 3 of the map pack across 88 to 96 percent of its service area through Google Business Profile and Local Services Ads management.",
+    "A client engagement spotlight on Local Services Ads and Google Business Profile oversight, billing-state reconciliation, approval controls, and accountable reporting.",
   author: {
     "@type": "Person",
     "@id": "https://www.sequoiageo.com/#aaron-husak",
@@ -26,15 +29,36 @@ const articleJsonLd = {
     "@id": "https://www.sequoiageo.com/#organization",
   },
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
+  dateModified: "2026-08-29",
   mainEntityOfPage: "https://www.sequoiageo.com/case-studies/luma-exteriors",
 };
 
-const stats = [
-  { value: "9 → 28", label: "Google reviews, all at a 5.0" },
-  { value: "88-96%", label: "Of the service area in the map pack top 3" },
-  { value: "61", label: "June profile interactions, up 39% over May" },
-  { value: "~49", label: "Directories kept in sync" },
+const scope = [
+  "Local Services Ads oversight",
+  "Business Profile oversight",
+  "Approval-gated public actions",
+  "Monthly client reporting",
+];
+
+const method = [
+  {
+    number: "01",
+    title: "Reconcile against the platform record",
+    body:
+      "A notification is a summary, not the ledger. We use the Local Services platform record itself when reviewing lead activity and billing status.",
+  },
+  {
+    number: "02",
+    title: "Keep billing states separate",
+    body:
+      "Charged, not charged, in review, submitted for dispute, and credited describe different points in the billing record. None of them proves a booked job.",
+  },
+  {
+    number: "03",
+    title: "Preserve what is still unknown",
+    body:
+      "We report what the available record supports, what remains unknown, and what is awaiting action. Missing evidence does not become an assumed outcome.",
+  },
 ];
 
 export default function LumaExteriorsCaseStudy() {
@@ -45,12 +69,17 @@ export default function LumaExteriorsCaseStudy() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
 
-      {/* Nav strip */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4">
+      <div className="border-b border-amber-200 bg-amber-50">
+        <div className="mx-auto max-w-7xl px-6 py-3 text-center text-sm font-semibold text-amber-950 lg:px-8">
+          Protected Preview draft. This revised named-client copy is not approved for Production.
+        </div>
+      </div>
+
+      <div className="border-b border-gray-100 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
           <Link
             href="/case-studies"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[#1A5C3A] transition-colors hover:text-[#0D2318]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,188 +95,181 @@ export default function LumaExteriorsCaseStudy() {
             >
               <path d="M19 12H5M12 5l-7 7 7 7" />
             </svg>
-            Back to Case Studies
+            Back to Client Work
           </Link>
         </div>
       </div>
 
-      {/* Hero */}
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="section-overline mb-4">Client Case Study</p>
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="section-overline mb-4">Client Engagement Spotlight</p>
             <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Luma Exteriors
+              Lead oversight built around the platform record
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              Owning the map: how an Austin exteriors company took the top 3 of the map pack
-              across its service area. Premium siding, windows, and doors in one of the most
-              competitive home improvement markets in Texas.
+              Luma Exteriors engages Sequoia GEO for Local Services Ads and Google Business
+              Profile oversight. The work centers on separating billing states from business
+              outcomes, maintaining approval visibility, and reporting only what the record
+              supports.
             </p>
             <p className="mt-4 text-sm text-[#C8EDD2]/60">
-              By Aaron Husak · Published July 8, 2026
+              By Aaron Husak. Originally published July 8, 2026. Revised August 29, 2026.
             </p>
           </div>
 
-          {/* Stats */}
-          <div className="mx-auto mt-14 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
-            {stats.map((item) => (
+          <div className="mx-auto mt-14 grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {scope.map((item) => (
               <div
-                key={item.label}
-                className="rounded-xl border border-white/10 bg-white/5 p-5 text-center"
+                key={item}
+                className="rounded-xl border border-white/10 bg-white/5 px-5 py-6 text-center text-sm font-semibold leading-snug text-[#C8EDD2]"
               >
-                <div className="text-2xl font-extrabold text-[#3A9E6A]">{item.value}</div>
-                <div className="mt-1 text-xs text-[#C8EDD2]/70 leading-snug">{item.label}</div>
+                {item}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 1 - Where they started */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
-            <p className="text-sm font-semibold text-[#1A5C3A] mb-4">
-              Engagement: Google Business Profile management, Local Services Ads management
-            </p>
+            <p className="mb-4 text-sm font-semibold text-[#1A5C3A]">Why verification matters</p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Where they started
+              A charged lead is not a booked job.
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                Luma does high-end exterior work, siding, windows, and doors with Pella, James
-                Hardie, and Sherwin Williams products, in one of the most competitive home
-                improvement markets in Texas. When we took over their local presence, the
-                business had 9 Google reviews. The work deserved better than the profile showed,
-                and in local search, the profile is the storefront.
+                Paid local lead records answer several different questions. Was the lead charged?
+                Is Google still reviewing it? Was it submitted for dispute? Did the platform later
+                issue a credit? Those are billing questions. They do not establish whether the
+                person was qualified, scheduled, or became a customer.
               </p>
               <p>
-                For an exteriors company, the map is the battlefield. When an Austin homeowner
-                searches &ldquo;siding contractor,&rdquo; the three businesses in the map pack
-                get the calls. Everyone below the fold splits the leftovers.
+                Sequoia treats verification as its own operating discipline. Before a contractor
+                is asked to spend more, the record should show what can be proved, what remains
+                unresolved, and where the next action belongs.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 2 - What we did */}
       <section className="bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
+            <p className="mb-4 text-sm font-semibold text-[#1A5C3A]">What this engagement covers</p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What we did
+              Oversight across the lead and public-profile record
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                No secret weapon, just the disciplines that move a Business Profile, run as a
-                standing weekly system:
+                The contracted scope covers Local Services Ads and Google Business Profile
+                oversight. That includes reviewing paid lead billing states, monitoring the
+                profile and public review surfaces for changes, maintaining visibility into
+                approval queues, and producing recurring client reporting.
               </p>
-              <ul className="space-y-4 list-disc pl-6">
-                <li>
-                  <strong>Reviews, treated as the number one ranking input.</strong> We built
-                  the ask into the rhythm of the business and kept it running.
-                </li>
-                <li>
-                  <strong>Posting cadence.</strong> Project showcases, before and afters,
-                  seasonal content, several times a week, every week, with the client&rsquo;s
-                  real photos.
-                </li>
-                <li>
-                  <strong>Listings consistency.</strong> Name, address, and phone synced across
-                  roughly 49 directories so Google never sees a conflicting signal.
-                </li>
-                <li>
-                  <strong>LSA management with teeth.</strong> We monitor every Local Services
-                  Ads lead as it arrives, respond fast because Google ranks responsiveness, and
-                  dispute the leads that should never have been charged. When a lead came in
-                  this June that did not fit Luma&rsquo;s work, we flagged it and submitted it
-                  to Google for a billing credit the same week.
-                </li>
-              </ul>
+              <p>
+                The purpose is not to turn platform activity into a flattering number. It is to
+                maintain a dependable operating record that distinguishes attention, billing,
+                follow-up evidence, and business outcomes.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 3 - What happened */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="mb-4 text-sm font-semibold text-[#1A5C3A]">How the reconciliation works</p>
+              <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+                Keep each stage in its proper place
+              </h2>
+            </div>
+            <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+              {method.map((item) => (
+                <div key={item.number} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
+                  <p className="text-sm font-extrabold text-[#3A9E6A]">{item.number}</p>
+                  <h3 className="mt-3 text-xl font-bold text-[#1a1a1a]">{item.title}</h3>
+                  <p className="mt-3 text-base leading-relaxed text-gray-600">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#1a1a1a] py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 lg:grid-cols-2 lg:items-start">
+            <div>
+              <p className="section-overline mb-4">Operating Rhythm</p>
+              <h2 className="font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                Monitoring, review, and reporting have different jobs.
+              </h2>
+            </div>
+            <div className="space-y-6 text-lg leading-relaxed text-gray-300">
+              <p>
+                The operating rhythm includes daily lead and review checks, a weekly operating
+                review, and monthly client reporting. Not every layer is a client-facing report.
+                The earlier layers help surface questions and pending actions before the monthly
+                record is prepared.
+              </p>
+              <p>
+                Public actions on the Business Profile remain approval-gated. Monitoring does not
+                silently become publishing, and an unresolved state does not silently become a
+                completed outcome.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fafaf8] py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-white p-8 sm:p-10">
+            <p className="mb-4 text-sm font-semibold text-[#1A5C3A]">The claim boundary</p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What happened
+              What this page covers, and what it does not
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                <strong>Reviews grew from 9 to 28, every one of them at a 5.0 rating.</strong>{" "}
-                Tripled, with not a single star dropped along the way.
+                This page documents a verification and oversight method plus a contracted service
+                scope. It does not report lead volume, rankings, review growth, lead outcomes,
+                booked jobs, or financial outcomes.
               </p>
               <p>
-                <strong>
-                  A grid scan of their service area shows Luma in the top 3 of the map pack
-                  across 88 to 96 percent of their territory
-                </strong>{" "}
-                for their core searches, &ldquo;siding contractor&rdquo; and &ldquo;siding
-                installer near me.&rdquo; That is not a single lucky pin position. That is the
-                map, owned, across the area they actually serve.
-              </p>
-              <p>
-                <strong>June 2026 was their best month of the year for profile activity:</strong>{" "}
-                61 customer interactions (calls, direction requests, website clicks, messages),
-                up 39 percent over May.
-              </p>
-              <p>
-                The honest caveat we would want if we were the ones reading this: top-3 map
-                coverage is measured against a May 2026 baseline scan and holds on their core
-                terms; the material-specific searches (vinyl siding installation, fiber cement
-                siding installation) still have room to climb, and that is exactly where the
-                review velocity gets pointed next.
+                Sequoia reports job-level measurement only where a connected CRM and call-tracking
+                record exists and has been verified against the platform record. Until that chain
+                is established, billing activity and business outcomes remain separate.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 4 - The takeaway */}
-      <section className="bg-[#1a1a1a] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <p className="section-overline mb-4">The Takeaway</p>
-            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              Local search is not won with a trick.
-            </h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-400">
-              <p>
-                It is won with review velocity, a profile that stays active, consistent data,
-                and somebody actually watching the leads. Do those four things relentlessly and
-                the map pack follows. Luma&rsquo;s crews did the work that earned 5.0 stars. Our
-                job was making sure Google, and every homeowner searching, could see it.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Attribution + CTA */}
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-3xl font-extrabold text-white">
-            Want your map owned like this?
+            What does your paid lead record actually prove?
           </h2>
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
-            >
-              Book a Free Strategy Call
-            </Link>
-          </div>
-          <p className="mt-10 text-xs leading-relaxed text-[#C8EDD2]/50">
-            Review count and rating verified on the live Google Business Profile July 8, 2026.
-            Map positions from an 88-point grid scan of the service area, baselined May 28,
-            2026. Interaction figures from the Business Profile performance panel for June
-            2026. Published with the client&rsquo;s approval.
+          <p className="mt-4 text-lg leading-relaxed text-[#C8EDD2]/80">
+            We can review the available record, separate billing states from business outcomes,
+            and show you what deserves action next.
+          </p>
+          <Link
+            href="/contact"
+            className="mt-8 inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
+          >
+            See How We Would Reconcile It
+          </Link>
+          <p className="mt-10 text-sm leading-relaxed text-[#C8EDD2]/55">
+            Source basis: executed service scope, documented operating configuration, monthly
+            reporting files, and platform reconciliation records. Client naming was previously
+            approved in writing for a website story. This revised copy requires written approval
+            before Production.
           </p>
         </div>
       </section>
