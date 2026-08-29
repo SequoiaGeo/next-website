@@ -60,8 +60,10 @@ test("roofing refresh contains the registered search and conversion elements", (
 test("the combined refresh preserves approved proof limits and current authority language", () => {
   assert.match(plumbing, /116 Google Business Profile call-button clicks over six months/);
   assert.match(plumbing, /does\s+not establish completed calls, unique callers,\s+qualified leads, or jobs booked/);
-  assert.match(roofing, /Top 3 map-pack coverage across 88% to 96%/);
-  assert.match(roofing, /not a claim about roofing leads or jobs booked/);
+  assert.match(roofing, /A billing state is not a booked job/);
+  assert.match(roofing, /keeps billing states separate from lead outcomes/);
+  assert.match(roofing, /not a claim about roofing\s+leads or jobs booked/);
+  assert.doesNotMatch(roofing, /Top 3 map-pack coverage across 88% to 96%/);
   assert.match(roofing, /no provider controls the answer an AI product gives/i);
   assert.doesNotMatch(plumbing + roofing, /<<<<<<<|=======|>>>>>>>/);
 });

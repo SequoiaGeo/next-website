@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "A Fireman's Chimney Sweep Case Study | Sequoia GEO",
+  title: "A Fireman's Chimney Sweep Website Rebuild | Sequoia GEO",
   description:
-    "A new website that hit page one in its first month, for a firefighter-owned chimney company that had never measured anything. Website rebuild, local SEO, and measurement from day one.",
+    "How Sequoia GEO rebuilt an unmeasured chimney-service website, improved a dated mobile lab result, corrected crawl issues, and established honest measurement.",
   alternates: {
     canonical: "https://www.sequoiageo.com/case-studies/firemans-chimney-sweep",
   },
@@ -13,10 +13,9 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline:
-    "A new website that hit page one in its first month, for a company that had never measured anything",
+  headline: "A Fireman's Chimney Sweep website rebuild",
   description:
-    "How A Fireman's Chimney Sweep in Emmett, Idaho went from an unmeasured template site to a page-one presence in its first month, with analytics, call tracking, and form tracking wired from day one.",
+    "A named case study about rebuilding an unmeasured local-service website, improving its mobile lab performance, correcting crawl issues, and establishing measurement without inventing a before-and-after growth story.",
   author: {
     "@type": "Person",
     "@id": "https://www.sequoiageo.com/#aaron-husak",
@@ -26,15 +25,42 @@ const articleJsonLd = {
     "@id": "https://www.sequoiageo.com/#organization",
   },
   datePublished: "2026-07-07",
-  dateModified: "2026-07-07",
+  dateModified: "2026-08-28",
   mainEntityOfPage: "https://www.sequoiageo.com/case-studies/firemans-chimney-sweep",
 };
 
 const stats = [
-  { value: "367", label: "Google reviews at a 4.8 rating" },
-  { value: "3 weeks", label: "To page one for core chimney terms" },
-  { value: "5.8", label: "Average search position, first month" },
-  { value: "56 → 87", label: "Lighthouse mobile performance score" },
+  {
+    value: "56 to 87",
+    label: "Mobile Lighthouse performance, June 6 lab runs",
+  },
+  {
+    value: "10.1s to 2.8s",
+    label: "LCP in the same homepage lab runs",
+  },
+  {
+    value: "8,090",
+    label: "Search impressions in the 28 days ending July 7",
+  },
+  {
+    value: "5.8",
+    label: "Average position across all queries in that window",
+  },
+];
+
+const workItems = [
+  {
+    title: "Mapped the migration",
+    body: "Legacy Wix routes were mapped to current equivalents and verified after launch so customers and crawlers would continue reaching relevant pages.",
+  },
+  {
+    title: "Corrected crawl defects",
+    body: "Post-launch QA found invalid service-area combinations and non-canonical URLs in the generated sitemap. We corrected the defect and verified 214 sitemap URLs returned live pages.",
+  },
+  {
+    title: "Matched the real service area",
+    body: "Service and location coverage was built around 28 towns the owner confirmed, rather than an invented list of markets.",
+  },
 ];
 
 export default function FiremansChimneySweepCaseStudy() {
@@ -45,12 +71,11 @@ export default function FiremansChimneySweepCaseStudy() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
 
-      {/* Nav strip */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4">
+      <div className="border-b border-gray-100 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
           <Link
             href="/case-studies"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[#1A5C3A] transition-colors hover:text-[#0D2318]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,169 +96,219 @@ export default function FiremansChimneySweepCaseStudy() {
         </div>
       </div>
 
-      {/* Hero */}
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="section-overline mb-4">Client Case Study</p>
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="section-overline mb-4">Named Client Case Study</p>
             <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              A Fireman&rsquo;s Chimney Sweep
+              A Fireman&rsquo;s Chimney Sweep website rebuild
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              A new website that hit page one in its first month, for a company that had never
-              measured anything. Firefighter-owned, based in Emmett, Idaho, serving Boise and 27
-              surrounding towns.
+            <p className="mt-6 text-2xl font-semibold leading-relaxed text-[#C8EDD2]">
+              The business already had the reputation. The website needed to catch up.
             </p>
-            <p className="mt-4 text-sm text-[#C8EDD2]/60">
-              By Aaron Husak · Published July 7, 2026
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-[#C8EDD2]/80">
+              Sequoia GEO rebuilt an unmeasured Wix site, corrected a mobile image-delivery defect
+              after launch, aligned the new pages to the real service area, and created a record of
+              what happened next.
+            </p>
+            <p className="mt-5 text-sm text-[#C8EDD2]/70">
+              By Aaron Husak · Published July 7, 2026 · Updated August 28, 2026
             </p>
           </div>
 
-          {/* Stats */}
-          <div className="mx-auto mt-14 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
+          <div className="mx-auto mt-10 max-w-4xl rounded-2xl border border-[#3A9E6A]/40 bg-white/5 p-6 text-left sm:p-8">
+            <p className="text-sm font-bold uppercase tracking-[0.14em] text-[#6FCF97]">
+              What this evidence means
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-white/85">
+              The previous site did not provide a dependable pre-launch analytics baseline. This
+              case study does not claim traffic growth, lead growth, return on investment, or cost
+              per job. It reports dated measurements and verified work completed after the June 5
+              launch.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-8 grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((item) => (
               <div
                 key={item.label}
                 className="rounded-xl border border-white/10 bg-white/5 p-5 text-center"
               >
-                <div className="text-2xl font-extrabold text-[#3A9E6A]">{item.value}</div>
-                <div className="mt-1 text-xs text-[#C8EDD2]/70 leading-snug">{item.label}</div>
+                <div className="text-2xl font-extrabold text-[#6FCF97]">{item.value}</div>
+                <div className="mt-2 text-sm leading-snug text-[#C8EDD2]/75">{item.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 1 - Where they started */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
-            <p className="text-sm font-semibold text-[#1A5C3A] mb-4">
-              Engagement: website rebuild, local SEO, Google Business Profile management, review
-              management, analytics
+            <p className="mb-4 text-sm font-semibold text-[#1A5C3A]">
+              Website rebuild · Local SEO · Google Business Profile · Analytics
             </p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Where they started
+              A strong reputation, earned before the rebuild
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                Bryan runs a chimney company built on reputation: 367 Google reviews at a 4.8,
-                earned one fireplace at a time. His website did not match the business. It was a
-                dated template site, and in all the years it had been up, nothing had ever been
-                measured. No analytics. No conversion tracking. No way to know if the website
-                produced a single job.
+                A Fireman&rsquo;s Chimney Sweep was already well regarded locally. Its Google
+                Business Profile showed a 4.8 rating across 367 reviews when verified June 16,
+                2026. That credibility was earned through years of customer work, not by Sequoia
+                GEO and not by the new website.
               </p>
               <p>
-                That is more common than most contractors think. The phone rings, the trucks stay
-                busy, and nobody can say which dollar of marketing did it.
+                The gap was the website. The previous Wix site was not supported by dependable
+                pre-launch analytics available to us, and its customer path did not reflect all of
+                the information the owner needed to prepare an accurate estimate. That means there
+                is no honest before-and-after traffic or lead chart for this project.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 2 - What we did */}
+      <section className="bg-[#fafaf8] py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              A website migration, not a visual swap
+            </h2>
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-600">
+              The new site launched June 5, 2026. The work was organized around search continuity,
+              usable service coverage, and post-launch verification.
+            </p>
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {workItems.map((item) => (
+                <article key={item.title} className="rounded-2xl border border-gray-200 bg-white p-6">
+                  <h3 className="text-lg font-bold text-[#0D2318]">{item.title}</h3>
+                  <p className="mt-3 text-base leading-relaxed text-gray-600">{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <p className="section-overline mb-4">Dated Technical Evidence</p>
+            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              The mobile performance work has an inspectable record
+            </h2>
+            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
+              <p>
+                On June 6, 2026, a Lighthouse mobile lab run on the live homepage scored 56 for
+                performance, with a Largest Contentful Paint of 10.1 seconds. The main cause was an
+                oversized hero image delivered without the image optimization expected from the new
+                build.
+              </p>
+              <p>
+                We corrected the image configuration, served responsive modern image formats, and
+                deferred analytics loading. A second Lighthouse mobile lab run on the same homepage
+                later that day scored 87, with a 2.8-second Largest Contentful Paint.
+              </p>
+              <div className="rounded-xl border border-[#1A5C3A]/20 bg-[#E8F3EC] p-5 text-base leading-relaxed text-[#0D2318]">
+                These are dated single lab runs surrounding one deployment. They are not field Core
+                Web Vitals, a guarantee of future test scores, or a comparison with the retired Wix
+                site.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
+            <p className="section-overline mb-4">Early Search Visibility</p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What we did
+              What Google Search Console showed after launch
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                We rebuilt the site from scratch and treated the launch like a migration, not a
-                redo. Every page of the old site that had standing in Google got a permanent
-                redirect to its replacement, so the rankings the business had earned were carried
-                over instead of thrown away.
+                In the 28 days ending July 7, 2026, Google Search Console recorded 8,090 impressions
+                at an average position of 5.8 across all queries, including searches for the
+                business name.
               </p>
               <p>
-                The new build: a page for every service, a page for every one of the 28 towns
-                Bryan actually serves, written with real local detail instead of copy-pasted
-                templates. Mobile performance went from a 56 to an 87 on Google&rsquo;s own
-                Lighthouse test, because a chimney customer on a phone does not wait ten seconds
-                for a hero image.
-              </p>
-              <p>
-                Then we turned the lights on: analytics, call tracking, and form tracking wired
-                from day one, so every lead has a source. When Bryan asked for the service-request
-                form to require the customer&rsquo;s address so he could quote accurately on the
-                first call, it was live the same day.
+                That is a snapshot of the site&rsquo;s visibility after launch. It is not evidence
+                that impressions or rankings increased, because a dependable pre-launch comparison
+                is not available. It also is not evidence of inquiries or booked work.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 3 - What happened */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
+            <p className="section-overline mb-4">Built Around the Business</p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What happened
+              The form changed when the quoting process changed
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                Within three weeks of launch, Google had the new site on page one for the searches
-                that matter to this business: chimney cleaning, chimney inspection, and chimney
-                sweep terms in the Boise area. Across its first full month, the site averaged
-                position 5.8 for every query it appeared on, and Google showed it in results more
-                than 8,000 times.
+                On June 29, the owner asked that website inquiries require a service address so he
+                could prepare a more accurate estimate without calling back for the missing detail.
+                The required field, validation, and linked address in the lead notification email
+                were updated, deployed, and verified the same day.
               </p>
               <p>
-                We will be straight about the volume: chimney work is seasonal, and summer is the
-                quiet season. The clicks in month one were modest, and anyone who promises
-                otherwise in June is selling you something. What the first month proved is
-                position. The site enters the busy season ranking, indexed, and measured, which is
-                the entire point of building in the off-season.
-              </p>
-              <p>
-                Service requests now come through the site with everything Bryan needs to quote,
-                and he can see where each one came from.
+                That change did not prove more leads. It made each completed inquiry more useful to
+                the person responsible for responding to it.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 4 - The takeaway */}
       <section className="bg-[#1a1a1a] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
-            <p className="section-overline mb-4">The Takeaway</p>
+            <p className="section-overline mb-4">Measurement With Limits</p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              You do not need a decade of SEO history to rank.
+              We built the record before making the claim
             </h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-400">
+            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-300">
               <p>
-                You need a technically clean site, pages that reflect the real business, a launch
-                that protects what you already earned, and measurement from day one. Reputation
-                did the rest here, because 367 Google reviews at a 4.8 were always the strongest
-                asset this company had. The website finally caught up to it.
+                Analytics and lead-event tracking were configured during the build, creating a
+                record of website activity the previous site did not provide to us.
+              </p>
+              <p>
+                First-touch attribution and CRM reconciliation were not complete in the latest
+                verified project record. We therefore cannot say that every lead has a source, and
+                this case study makes no claim about lead volume or business outcomes.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Attribution + CTA */}
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-3xl font-extrabold text-white">
-            Ready for a website that earns its keep?
+            Need a website that can be measured honestly?
           </h2>
+          <p className="mt-5 text-lg leading-relaxed text-[#C8EDD2]/80">
+            Sequoia GEO builds the customer path, search foundation, and measurement record needed
+            to make better marketing decisions.
+          </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
             >
-              Book a Free Strategy Call
+              Request a Free Assessment
             </Link>
           </div>
-          <p className="mt-10 text-xs leading-relaxed text-[#C8EDD2]/50">
-            Every number in this case study comes from the client&rsquo;s own Google Search
-            Console, Google Business Profile, and Lighthouse tests, not from an agency dashboard.
-            Review count and search positions verified July 7, 2026. Published with the
-            owner&rsquo;s permission.
+          <p className="mt-10 text-sm leading-relaxed text-[#C8EDD2]/60">
+            Sources: the client&rsquo;s Google Search Console, Google Business Profile, June 6
+            Lighthouse reports, deployment records, and project change log. Search figures were
+            verified July 7, 2026. The owner approved being named. No private quote is used.
           </p>
         </div>
       </section>

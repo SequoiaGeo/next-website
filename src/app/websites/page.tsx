@@ -336,12 +336,12 @@ export default function WebsitesPage() {
               Case Study
             </p>
             <p className="text-lg font-bold text-[#1a1a1a]">
-              A rebuild that hit page one in its first month
+              A website rebuild with dated proof and honest limits
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              A firefighter-owned chimney company came to us with a dated template site and zero
-              measurement. We rebuilt it as a migration, protected every ranking it had earned,
-              and Google had it on page one within three weeks of launch.
+              A local chimney contractor came to us without a dependable website baseline. We
+              rebuilt the site, corrected crawl and image-delivery defects, and documented dated
+              post-launch measurements without presenting them as growth.
             </p>
             <Link
               href="/case-studies/firemans-chimney-sweep"

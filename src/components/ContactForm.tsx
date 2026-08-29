@@ -8,15 +8,26 @@ import BookingCalendar from "@/components/BookingCalendar";
 import DiscoverySourceFields, {
   type DiscoveryEvidence,
 } from "@/components/DiscoverySourceFields";
+import {
+  CONSULTATION_DRAFT_EVENT,
+  clearConsultationDraft,
+  consultationDraftMessage,
+  readConsultationDraft,
+  type ConsultationDraft,
+} from "@/lib/sequoia-consultation-draft";
+import { trackKnowledgeStage } from "@/lib/sequoia-knowledge-analytics";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [hasPreparedDraft, setHasPreparedDraft] = useState(false);
   const [form, setForm] = useState({
     name: "",
     phone: "",
     email: "",
+    company: "",
+    message: "",
     discoverySource: "",
     reportedAiAssistant: "",
     reportedAiQuestion: "",
@@ -28,6 +39,8 @@ export default function ContactForm() {
   const sectionRef = useRef<HTMLElement>(null);
   const formStartedRef = useRef(false);
   const formViewedRef = useRef(false);
+  const knowledgeOriginRef = useRef(false);
+  const preparedMessageRef = useRef<string | null>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -47,10 +60,40 @@ export default function ContactForm() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    function applyPreparedDraft(draft: ConsultationDraft | null) {
+      if (!draft) {
+        setForm((current) => ({
+          ...current,
+          message: current.message === preparedMessageRef.current ? "" : current.message,
+        }));
+        preparedMessageRef.current = null;
+        knowledgeOriginRef.current = false;
+        setHasPreparedDraft(false);
+        return;
+      }
+      const preparedMessage = consultationDraftMessage(draft);
+      preparedMessageRef.current = preparedMessage;
+      setForm((current) => ({ ...current, message: preparedMessage }));
+      knowledgeOriginRef.current = true;
+      setHasPreparedDraft(true);
+    }
+
+    applyPreparedDraft(readConsultationDraft());
+    const onPreparedDraft = (event: Event) => {
+      applyPreparedDraft((event as CustomEvent<ConsultationDraft>).detail || null);
+    };
+    window.addEventListener(CONSULTATION_DRAFT_EVENT, onPreparedDraft);
+    return () => window.removeEventListener(CONSULTATION_DRAFT_EVENT, onPreparedDraft);
+  }, []);
+
   function trackFormStart() {
     if (formStartedRef.current) return;
     formStartedRef.current = true;
     trackEvent("form_start", { source: "contact_form", cta_contract: "intake" });
+    if (knowledgeOriginRef.current) {
+      trackKnowledgeStage("form_start", { surface: "contact_form" });
+    }
   }
 
   const handleSubmit = async (e: FormEvent) => {
@@ -64,6 +107,9 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...form,
+          source: knowledgeOriginRef.current
+            ? "sequoia_knowledge_interface"
+            : "contact_form",
           campaignAttribution: readCampaignAttribution(),
           aiAttribution: readAiAttribution(),
         }),
@@ -72,8 +118,10 @@ export default function ContactForm() {
       if (!res.ok) throw new Error("Submission failed");
       const result = (await res.json().catch(() => ({}))) as Record<string, unknown>;
       if (!form.website) {
-        trackCapturedLead(result, {
-          source: "contact_form",
+        const captured = trackCapturedLead(result, {
+          source: knowledgeOriginRef.current
+            ? "sequoia_knowledge_interface"
+            : "contact_form",
           cta_contract: "intake",
           ...(form.discoverySource
             ? { reported_discovery_source: form.discoverySource }
@@ -82,6 +130,11 @@ export default function ContactForm() {
             ? { reported_ai_assistant: form.reportedAiAssistant }
             : {}),
         });
+        if (captured && knowledgeOriginRef.current) {
+          trackKnowledgeStage("accepted_submission", { surface: "contact_form" });
+          clearConsultationDraft();
+          setHasPreparedDraft(false);
+        }
       }
       setSubmitted(true);
     } catch {
@@ -179,6 +232,21 @@ export default function ContactForm() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} onFocusCapture={trackFormStart} className="space-y-5">
+                {hasPreparedDraft && (
+                  <div data-clarity-mask="true" className="rounded-xl border border-[#3A9E6A]/30 bg-[#C8EDD2]/20 p-4">
+                    <p className="text-sm font-bold text-[#0D2318]">Consultation context prepared</p>
+                    <p className="mt-1 text-sm leading-relaxed text-gray-600">
+                      Review and edit the context below before submitting. Nothing has been sent.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={clearConsultationDraft}
+                      className="mt-3 text-sm font-semibold text-[#1A5C3A] underline underline-offset-4"
+                    >
+                      Clear prepared context
+                    </button>
+                  </div>
+                )}
                 {/* Honeypot: hidden from real users (off-screen, no tab stop,
                     autocomplete off). Bots that fill every field trip it and
                     get silently dropped server-side. */}
@@ -249,6 +317,39 @@ export default function ContactForm() {
                     placeholder="you@company.com"
                   />
                 </div>
+
+                {hasPreparedDraft && (
+                  <>
+                    <div>
+                      <label htmlFor="company" className="block text-sm font-medium text-[#1a1a1a]">Company <span className="text-gray-400">(optional)</span></label>
+                      <input
+                        id="company"
+                        name="company"
+                        autoComplete="organization"
+                        type="text"
+                        maxLength={120}
+                        value={form.company}
+                        onChange={(e) => setForm({ ...form, company: e.target.value })}
+                        className="mt-1.5 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
+                        placeholder="Company name"
+                      />
+                    </div>
+
+                    <div data-clarity-mask="true">
+                      <label htmlFor="message" className="block text-sm font-medium text-[#1a1a1a]">What should Sequoia review? <span className="text-gray-400">(optional)</span></label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows={6}
+                        maxLength={2000}
+                        value={form.message}
+                        onChange={(e) => setForm({ ...form, message: e.target.value })}
+                        className="mt-1.5 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm leading-relaxed text-[#1a1a1a] placeholder-gray-400 focus:border-[#3A9E6A] focus:outline-none focus:ring-2 focus:ring-[#3A9E6A]/20"
+                        placeholder="Share the constraint, what has been tried, and what you want to understand."
+                      />
+                    </div>
+                  </>
+                )}
 
                 <DiscoverySourceFields
                   idPrefix="contact"

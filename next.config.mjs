@@ -140,6 +140,18 @@ const nextConfig = {
       { source: "/blank-4", destination: "/", permanent: true },
     ];
   },
+  async headers() {
+    return [
+      {
+        source: "/case-studies/stage-based-marketing-system",
+        headers: [
+          { key: "Cache-Control", value: "private, no-store, max-age=0" },
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive, nosnippet" },
+          { key: "Referrer-Policy", value: "no-referrer" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

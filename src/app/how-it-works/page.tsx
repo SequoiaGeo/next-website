@@ -169,7 +169,7 @@ export default function HowItWorksPage() {
                 href="/case-studies/firemans-chimney-sweep"
                 className="font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
               >
-                Read how a chimney company&rsquo;s rebuilt site hit page one in its first month
+                Read how a chimney company rebuilt an unmeasured site and documented what happened next
               </Link>
               .
             </p>

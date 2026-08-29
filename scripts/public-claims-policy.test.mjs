@@ -97,3 +97,14 @@ test("Google Business Profile call clicks are not presented as completed or qual
     /does not establish completed calls, unique callers,\s+qualified leads, or jobs booked/,
   );
 });
+
+test("homepage does not promise universal closed-loop attribution", () => {
+  const homepage = readFileSync(join(root, "src/app/page.tsx"), "utf8");
+  const hero = readFileSync(join(root, "src/components/Hero.tsx"), "utf8");
+
+  assert.doesNotMatch(homepage, /connect every.*marketing.*dollar to a booked job/i);
+  assert.doesNotMatch(homepage, /single pipeline view/i);
+  assert.doesNotMatch(homepage, /connect marketing sources to qualified leads and jobs booked/i);
+  assert.doesNotMatch(hero, /I am accountable for the booked job/i);
+  assert.match(hero, /find the marketing constraint that deserves attention first/i);
+});

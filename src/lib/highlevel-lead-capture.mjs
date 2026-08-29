@@ -5,6 +5,7 @@ const REQUEST_TIMEOUT_MS = 4500;
 const CAPTURE_KINDS = new Set(["contact", "guide", "calculator"]);
 const FORM_SOURCES = new Set([
   "contact_form",
+  "sequoia_knowledge_interface",
   "homepage_top",
   "audit_page",
   "hvac_seo_page",
