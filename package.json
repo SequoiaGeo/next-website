@@ -16,7 +16,8 @@
     "test:public-claims": "node --test scripts/public-claims-policy.test.mjs",
     "test:authority-claims": "node --test scripts/authority-claims-policy.test.mjs",
     "test:booking-call-policy": "node --test scripts/booking-call-reconciliation-policy.test.mjs",
-    "test:service-refresh": "node --test scripts/service-page-refresh-2026-08-22.test.mjs"
+    "test:service-refresh": "node --test scripts/service-page-refresh-2026-08-22.test.mjs",
+    "test:central-hvac-case-study": "node --test scripts/central-hvac-case-study-policy.test.mjs"
   },
   "dependencies": {
     "next": "^14.2.35",
