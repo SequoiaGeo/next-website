@@ -44,6 +44,7 @@ test("catalog covers every approved topic and all seven required tools", () => {
   assert.ok(catalog.publishedStartingPrices.length > 0);
   assert.ok(catalog.serviceFit.potentialFit.length > 0);
   assert.ok(catalog.methodology.stages.length === 8);
+  assert.ok(catalog.freeAudit.afterRequest.length > 0);
   assert.ok(catalog.caseStudyEvidence.length > 0);
   assert.ok(catalog.contactOptions.length > 0);
 
@@ -98,6 +99,22 @@ test("answers are deterministic, cited, and refuse unsupported or instruction-sh
   assert.equal(aiSearch.refused, false);
   assert.equal(aiSearch.intent, "methodology");
   assert.ok(aiSearch.citations.some((citation) => citation.path === "/ai-search-methodology"));
+
+  const suggestionExpectations = [
+    ["What does working with Sequoia cost?", "pricing", "/ai-seo-pricing"],
+    ["Is Sequoia right for my business?", "service_fit", "/services"],
+    ["How does Sequoia measure AI search visibility?", "methodology", "/ai-search-methodology"],
+    ["What happens after I request my free audit?", "free_audit", "/audit"],
+  ];
+  for (const [question, intent, citationPath] of suggestionExpectations) {
+    const response = answerSequoiaQuestion(catalog, question);
+    assert.equal(response.refused, false, `${question} should be answered`);
+    assert.equal(response.intent, intent, `${question} should use the ${intent} intent`);
+    assert.ok(
+      response.citations.some((citation) => citation.path === citationPath),
+      `${question} should cite ${citationPath}`,
+    );
+  }
 });
 
 test("read tools return only catalog material and visible citations", () => {

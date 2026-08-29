@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-08-28.1",
+  "catalogVersion": "2026-08-28.2",
   "status": "approved_for_public_use",
   "approvedOn": "2026-08-28",
   "reviewValidUntil": "2026-09-27",
@@ -53,6 +53,17 @@
         "(559) 521-3122",
         "Aaron@sequoiageo.com",
         "Request the Baseline Review"
+      ]
+    },
+    "audit": {
+      "label": "Free Marketing Audit",
+      "path": "/audit",
+      "sourceFile": "src/app/audit/page.tsx",
+      "sourceAnchors": [
+        "Free Marketing Audit",
+        "No account access to start.",
+        "You get the public findings first.",
+        "A written findings report with the source and confidence behind each issue, plus the 5 fixes that should come first."
       ]
     },
     "kabam_case": {
@@ -228,6 +239,19 @@
     ],
     "sourceIds": ["methodology"]
   },
+  "freeAudit": {
+    "name": "Free Marketing Audit",
+    "summary": "The free marketing audit begins with a hand-reviewed public-surface scorecard showing what customers, Google, and AI systems can see before account access is requested.",
+    "afterRequest": [
+      "Sequoia reviews the website and public business information first. No account access is needed to begin.",
+      "You receive written findings with the source and confidence behind each issue, plus the five fixes that should come first.",
+      "If an issue needs account-level verification, Sequoia discusses the necessary access with you before going deeper."
+    ],
+    "limitations": [
+      "Requesting the audit does not automatically book a meeting, submit information to an AI model, or guarantee that Sequoia will accept an engagement."
+    ],
+    "sourceIds": ["audit"]
+  },
   "caseStudyEvidence": [
     {
       "id": "kabam_plumbing",
@@ -278,5 +302,5 @@
       "sourceIds": ["contact"]
     }
   ],
-  "refusal": "I can only answer from Sequoia GEO's approved public catalog about services, published starting prices and conditions, service fit, measurement methodology, approved case-study evidence, and contact options. I do not have approved information for that question."
+  "refusal": "I can only answer from Sequoia GEO's approved public catalog about services, published starting prices and conditions, service fit, the free marketing audit, measurement methodology, approved case-study evidence, and contact options. I do not have approved information for that question."
 }
