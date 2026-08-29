@@ -286,6 +286,16 @@ export function answerSequoiaQuestion(catalog, question) {
     );
   }
 
+  if (/\b(?:free audit|marketing audit|audit|assessment|baseline review|public-surface scorecard)\b/.test(value)) {
+    return answer(
+      catalog,
+      "free_audit",
+      catalog.freeAudit.summary,
+      [...catalog.freeAudit.afterRequest, ...catalog.freeAudit.limitations],
+      catalog.freeAudit.sourceIds,
+    );
+  }
+
   if (/\b(?:fit|right for|who.*for|business type|company type|qualify|qualified)\b/.test(value)) {
     return answer(
       catalog,

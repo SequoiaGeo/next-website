@@ -75,6 +75,8 @@ Raw questions, answer text, contact fields, draft text, email addresses, phone n
 
 When the release flag is active and the kill switch is not active, the homepage renders the shared question panel after the early lead form and client proof. The hero, early lead form, and proof order remain unchanged. The homepage surface and the dedicated `/ask-sequoia` page use the same deterministic engine, catalog, citations, refusal rules, question limit, rate limits, masking, and status checks.
 
+The four homepage suggestions route to separate approved answers: published pricing, preliminary service fit, AI-search measurement methodology, and the free marketing audit. The free-audit answer is sourced to `/audit` and explains the public-surface review, the written findings, the five prioritized fixes, and when deeper account access may be discussed. A suggestion is not a form submission or a booking.
+
 The homepage identifies analytics with `surface: homepage_inline`; the dedicated page uses `surface: ask_sequoia`. The floating launcher is suppressed on the homepage to avoid two entry points and to avoid competing with the fixed mobile call and booking bar. If the feature is off, the server does not render the homepage panel. If a later status check disables the feature, the embedded client returns no interactive surface.
 
 The prompt tells visitors not to enter contact, account, payment, or confidential information. Local deterministic input checks refuse common email addresses, phone numbers, and payment-card-shaped numbers. The text still stays in temporary page state and is never sent to an answer service.

@@ -16,10 +16,10 @@ type SequoiaQuestionPanelProps = {
 };
 
 const suggestions = [
-  "How does Sequoia approach AI search visibility?",
-  "What does working together cost?",
+  "What does working with Sequoia cost?",
   "Is Sequoia right for my business?",
-  "Show me approved client results.",
+  "How does Sequoia measure AI search visibility?",
+  "What happens after I request my free audit?",
 ];
 
 function limitedAnswer(reason: string): Answer {
@@ -153,7 +153,7 @@ export default function SequoiaQuestionPanel({
               What would you like to know about Sequoia GEO?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
-              Ask about AI search, services, published pricing, fit, methodology, or approved client evidence.
+              Ask about AI search, services, published pricing, fit, the free marketing audit, methodology, or approved client evidence.
               Every supported answer cites a visible Sequoia page.
             </p>
           </div>
@@ -198,7 +198,7 @@ export default function SequoiaQuestionPanel({
                 required
                 rows={3}
                 className="w-full resize-none border-0 bg-transparent px-2 py-2 text-base leading-relaxed text-[#1a1a1a] placeholder:text-gray-400 focus:outline-none focus:ring-0 sm:text-lg"
-                placeholder="Ask about AI Search, pricing, services, case studies, or whether Sequoia is right for your business..."
+                placeholder="Ask about AI search, pricing, the free audit, services, case studies, or whether Sequoia is right for your business..."
               />
               <div className="mt-3 flex flex-col gap-3 border-t border-gray-100 pt-4 sm:flex-row sm:items-center sm:justify-between">
                 <div className="text-sm leading-relaxed text-gray-500">
