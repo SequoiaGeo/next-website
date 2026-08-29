@@ -398,12 +398,12 @@ export default function LeavingMyMarketingAgencyPage() {
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-lg font-semibold text-[#1A5C3A] mb-2">Why This Matters Coming From Us</p>
             <p className="text-gray-700 leading-relaxed">
-              Aaron Husak ran Balanced Comfort, an HVAC and plumbing company in Fresno, CA, for 13 years. He hired marketing agencies. He got burned by them. He built his own systems, scaled to the Inc 5000 four years in a row (2020 to 2023), and eventually sold. Sequoia GEO exists because the marketing industry treats home service contractors as revenue, not as operators building real businesses. We know the difference.
+              Aaron Husak ran Balanced Comfort, an HVAC and plumbing company in Fresno, CA, for 13 years. He hired marketing agencies. He got burned by them. He built his own systems, scaled to the Inc 5000 four years in a row (2021 to 2024), and eventually sold. Sequoia GEO exists because the marketing industry treats home service contractors as revenue, not as operators building real businesses. We know the difference.
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
-              <span>4x Inc 5000 (2020 to 2023)</span>
+              <span>4x Inc 5000 (2021 to 2024)</span>
               <span className="text-gray-400">|</span>
-              <span>CA Licensed Contractor B, C-2, C-20, C-36</span>
+              <span>Former California contractor qualifier</span>
               <span className="text-gray-400">|</span>
               <span>13 Years HVAC &amp; Plumbing Operations</span>
             </div>

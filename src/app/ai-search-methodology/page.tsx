@@ -96,8 +96,8 @@ const articleJsonLd = {
     "@id": "https://www.sequoiageo.com/#organization",
   },
   datePublished: "2026-08-20",
-  dateModified: "2026-08-21",
-  version: "1.2",
+  dateModified: "2026-08-29",
+  version: "1.3",
   mainEntityOfPage: "https://www.sequoiageo.com/ai-search-methodology",
 };
 
@@ -122,7 +122,7 @@ export default function AiSearchMethodologyPage() {
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="section-overline mb-4">Public methodology, version 1.2</p>
+            <p className="section-overline mb-4">Public methodology, version 1.3</p>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
               How Sequoia GEO measures AI search without turning visibility into a lead
             </h1>
@@ -138,7 +138,14 @@ export default function AiSearchMethodologyPage() {
               system is included in the engagement, not sold as a separate software subscription.
             </p>
             <p className="mt-6 text-sm text-[#C8EDD2]/55">
-              Published August 20, 2026. Last revised August 21, 2026.
+              Published August 20, 2026. Last revised August 29, 2026.
+            </p>
+            <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-[#C8EDD2]/70">
+              This AI-specific method operates under the broader{" "}
+              <Link href="/proof-system" className="font-bold text-white underline decoration-[#3A9E6A] underline-offset-4">
+                Sequoia Proof System
+              </Link>
+              , which governs evidence classes, corrections, verification, causation, and publication limits across all client work.
             </p>
           </div>
         </div>
@@ -154,6 +161,10 @@ export default function AiSearchMethodologyPage() {
             <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-600">
               A result can move through several stages, but it is counted once at each stage and never
               promoted without the required evidence.
+            </p>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-600">
+              This page applies Sequoia&rsquo;s own pipeline qualification rule as a business-specific
+              instance of the general qualification rule in the Sequoia Proof System.
             </p>
             <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200">
               <div className="hidden grid-cols-[0.55fr_1.15fr_1.15fr] gap-6 bg-[#0D2318] px-6 py-4 text-xs font-bold uppercase tracking-wider text-white md:grid">
@@ -316,6 +327,8 @@ export default function AiSearchMethodologyPage() {
           <div className="rounded-2xl border border-gray-200 p-7">
             <h2 className="text-xl font-bold text-[#0D2318]">Changelog</h2>
             <div className="mt-5 grid gap-3 text-sm text-gray-600 sm:grid-cols-[140px_1fr]">
+              <p className="font-semibold text-[#1A5C3A]">August 29, 2026</p>
+              <p>Version 1.3 placed this channel-specific method under the Sequoia Proof System and clarified how Sequoia&rsquo;s pipeline qualification rule relates to the general proof standard.</p>
               <p className="font-semibold text-[#1A5C3A]">August 21, 2026</p>
               <p>Version 1.2 documented Sequoia&rsquo;s included AI Search Evidence System, identified the automated collector as pilot-only pending live validation, and clarified that the system is delivery infrastructure rather than a separate software product.</p>
               <p className="font-semibold text-[#1A5C3A]">August 21, 2026</p>

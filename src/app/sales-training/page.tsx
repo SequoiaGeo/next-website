@@ -475,7 +475,7 @@ export default function SalesTrainingPage() {
                 {[
                   { stat: "13 yrs", label: "Running a home service company" },
                   { stat: "$17M+", label: "Annual revenue at exit" },
-                  { stat: "4x", label: "Inc 5000 (2020-2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021-2024)" },
                   { stat: "130+", label: "Employees at peak" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">

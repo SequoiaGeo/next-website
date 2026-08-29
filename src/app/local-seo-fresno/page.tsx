@@ -174,7 +174,7 @@ export default function LocalSeoFresnoPage() {
           <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-5 sm:grid-cols-2">
             {[
               {
-                title: "4x Inc 5000 (2020 to 2023)",
+                title: "4x Inc 5000 (2021 to 2024)",
                 body: "Aaron grew Balanced Comfort in Fresno to four consecutive Inc 5000 appearances. The same marketing infrastructure that drove that growth is what we build for our clients."
               },
               {

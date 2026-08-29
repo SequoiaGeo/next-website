@@ -316,7 +316,7 @@ export default function GeoForPlumbersPage() {
                 {[
                   { stat: "GEO", label: "Core discipline, not a bolt-on" },
                   { stat: "13 yrs", label: "Home services operator" },
-                  { stat: "4x", label: "Inc 5000 (2020 to 2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021 to 2024)" },
                   { stat: "130+", label: "Team built from scratch" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">

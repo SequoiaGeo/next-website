@@ -58,7 +58,7 @@ export default function FoundMeInChatGPT() {
               4x Inc. 5000
             </dt>
             <dd className="mt-0.5 text-[10px] leading-tight text-[#8fb8a1] sm:text-xs">
-              2020 to 2023
+              2021 to 2024
             </dd>
           </div>
           <div className="border-r border-[#1e4a33] px-1 text-center sm:px-2">

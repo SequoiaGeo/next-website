@@ -6,17 +6,17 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Case Studies | Sequoia GEO",
   description:
-    "Verified client results and anonymized diagnostic field notes from Sequoia GEO.",
+    "Client implementation records, founder operating history, and diagnostic field notes from Sequoia GEO.",
   alternates: {
     canonical: "https://www.sequoiageo.com/case-studies",
   },
 };
 
 const balancedComfortStats = [
-  { value: "$17M+", label: "Annual revenue at exit" },
-  { value: "4,000+", label: "5-star Google reviews" },
-  { value: "4x", label: "Inc 5000 honoree" },
-  { value: "3x", label: "Best Place to Work certified" },
+  { value: "13 years", label: "Owner and operator" },
+  { value: "4,000+", label: "5-star reviews reported" },
+  { value: "4x", label: "Inc 5000 (2021 to 2024)" },
+  { value: "2024", label: "Great Place to Work profile" },
 ];
 
 export default function CaseStudiesPage() {
@@ -34,11 +34,11 @@ export default function CaseStudiesPage() {
           <div className="mx-auto max-w-3xl text-center">
             <p className="section-overline mb-4">Case Studies</p>
             <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Real results. Honest field notes.
+              What was true. What we changed. What we could verify.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              Verified client outcomes, and clearly labeled diagnostic observations when the
-              work is still in the correction phase.
+              Founder operating history, client implementation records, and diagnostic field
+              notes, each labeled to the level of evidence available.
             </p>
           </div>
         </div>
@@ -89,10 +89,11 @@ export default function CaseStudiesPage() {
                   Balanced Comfort Heating &amp; Air
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
-                  From one truck to $17M+ annual revenue, 4,000+ 5-star Google reviews, four
-                  Inc 5000 appearances, three Best Place to Work certifications, and a successful
-                  exit. This is the company Aaron Husak built before starting Sequoia GEO. Every
-                  strategy deployed for clients was tested here first.
+                  Thirteen years building and operating a multi-service home services company.
+                  The record includes four Inc 5000 appearances, a company-site claim checked
+                  August 29, 2026, of more than 4,000 five-star reviews, and a Great Place to Work
+                  profile updated in April 2024. This is founder operating history, not a Sequoia
+                  GEO client result.
                 </p>
               </div>
 

@@ -244,7 +244,7 @@ export default function BlogPage() {
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0D2318]">
                 <span className="text-xs font-bold text-white">AH</span>
               </div>
-              <span>Written by Aaron Husak &middot; 4x Inc 5000 &middot; CA Licensed Contractor B, C-2, C-20, C-36</span>
+              <span>Written by Aaron Husak &middot; 4x Inc 5000 &middot; Former California contractor qualifier</span>
             </div>
           </div>
         </div>

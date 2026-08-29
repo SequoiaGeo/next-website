@@ -138,7 +138,7 @@ export default function FractionalCmoPage() {
             <ul className="space-y-2 text-base text-gray-700">
               <li><strong>Who this is for:</strong> Home service companies doing $2M to $15M in revenue with no dedicated marketing leader.</li>
               <li><strong>What a fractional CMO does:</strong> Owns the marketing function part-time. Sets strategy, manages vendors, builds attribution to <strong>cost per booked job</strong>, and connects every dollar of <strong>marketing spend</strong> to revenue.</li>
-              <li><strong>Why an operator matters:</strong> 13 years running Balanced Comfort to $17M, 4x Inc 5000, California Licensed Contractor. I&rsquo;ve sat in the dispatch chair, not just the marketing meeting.</li>
+              <li><strong>Why an operator matters:</strong> 13 years running Balanced Comfort to $17M, 4x Inc 5000, and former California contractor qualifier. I&rsquo;ve sat in the dispatch chair, not just the marketing meeting.</li>
               <li><strong>Pricing:</strong> Fractional Marketing Lead starts at $5,000 per month. Complex Leadership starts at $6,500 per month. Bounded Search Foundation work starts at $2,500 per month. Every engagement begins with a 90-day initial term.</li>
             </ul>
           </div>
@@ -309,7 +309,7 @@ export default function FractionalCmoPage() {
                 {[
                   { stat: "13 years", label: "Running home services" },
                   { stat: "$17M+", label: "Annual revenue at peak" },
-                  { stat: "4x", label: "Inc 5000 (2020-2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021-2024)" },
                   { stat: "130+", label: "Employees at peak" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">

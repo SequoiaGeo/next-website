@@ -190,7 +190,7 @@ export default function HvacSeoPage() {
                 {[
                   { stat: "13 years", label: "Running an HVAC company" },
                   { stat: "130+", label: "Employees at peak" },
-                  { stat: "4x", label: "Inc 5000 (2020-2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021-2024)" },
                   { stat: "C-20", label: "CA HVAC license held" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">

@@ -19,6 +19,7 @@ const resources = [
   { label: "Free LSA Guide", href: "/lsa-guide" },
   { label: "AI SEO Guide", href: "/ai-website-seo-guide" },
   { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },
+  { label: "Sequoia Proof System", href: "/proof-system" },
   { label: "AI Search Measurement Method", href: "/ai-search-methodology" },
   { label: "GitHub Tools for Home Services", href: "/github-repos-home-service-businesses" },
   { label: "HVAC Statistics 2026", href: "/hvac-statistics" },
@@ -68,7 +69,7 @@ export default function Footer() {
               Founded by Aaron Husak, a home services marketer since 2006 and 13-year owner and operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">
-              4x Inc 5000 (2020 to 2023) &middot; CA Licensed Contractor B, C-2, C-20, C-36 &middot; Fresno, CA &middot; Serving Nationwide
+              4x Inc 5000 (2021 to 2024) &middot; Former California contractor qualifier &middot; Fresno, CA &middot; Serving Nationwide
             </p>
             <div className="flex flex-col gap-2 text-sm">
               <Link href="/contact#book" className="font-semibold text-white hover:text-accent-green transition-colors">

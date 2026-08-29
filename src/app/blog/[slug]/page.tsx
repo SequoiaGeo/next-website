@@ -5792,7 +5792,7 @@ export default async function BlogPostPage({
       name: "Aaron Husak",
       url: "https://www.sequoiageo.com/about-sequoia-geo",
       jobTitle: "Founder, Sequoia GEO",
-      description: "California Licensed Contractor (B, C-2, C-20, C-36). 13 years running Balanced Comfort Heating & Air. 4x Inc 5000 honoree.",
+      description: "Former California contractor qualifier. 13 years running Balanced Comfort Heating & Air. 4x Inc 5000 honoree.",
     },
     publisher: {
       "@type": "Organization",
@@ -5876,7 +5876,7 @@ export default async function BlogPostPage({
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
                   13 years building Balanced Comfort Heating &amp; Air from startup to 130+ employees.
-                  4x Inc 5000 (2020 to 2023). CA Licensed Contractor B, C-2, C-20, C-36.
+                  4x Inc 5000 (2021 to 2024). Former California contractor qualifier.
                   Now working directly with local and home service businesses as a growth operator and marketing lead.
                 </p>
                 <Link

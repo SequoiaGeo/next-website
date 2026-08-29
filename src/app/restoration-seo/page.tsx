@@ -6,7 +6,7 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "Restoration SEO & Marketing | Sequoia GEO: Revenue-Focused Growth",
   description:
-    "Water and fire damage restoration marketing managed to booked jobs. B General Licensed Contractor. I understand insurance jobs vs. retail, TPA relationships, and storm surge marketing, because I've operated in home services for 13 years.",
+    "Water and fire damage restoration marketing informed by 13 years operating in home services and former experience as a California B General contractor qualifier.",
   alternates: {
     canonical: "https://www.sequoiageo.com/restoration-seo",
   },
@@ -287,12 +287,12 @@ export default function RestorationSeoPage() {
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <h2 className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
-                  I Have a B General Contractor License
+                  I Held a B General Contractor Classification
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  California B General License covers the structural and general contracting work that
-                  runs alongside restoration projects. That license means I&rsquo;ve been in the trenches
-                  of home services long enough to understand how your jobs actually work.
+                  I held the California B General classification while operating Balanced Comfort.
+                  That historical experience informs how I evaluate the customer journey and operating
+                  handoffs around restoration work.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I know the difference between a mitigation-only job and a full rebuild. I know why
@@ -307,9 +307,9 @@ export default function RestorationSeoPage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { stat: "B Gen", label: "CA Contractor License" },
+                  { stat: "B Gen", label: "Former CA qualifier" },
                   { stat: "13 yrs", label: "Industry operator" },
-                  { stat: "4x", label: "Inc 5000 (2020-2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021-2024)" },
                   { stat: "130+", label: "Employees at peak" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">

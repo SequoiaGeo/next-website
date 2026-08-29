@@ -6,8 +6,8 @@ export default function ContractorAdvantage() {
       them: "No field experience",
     },
     {
-      label: "Contractor Licenses",
-      us: "B General, C-2, C-20 HVAC, C-36 Plumbing",
+      label: "Former CA License Classes",
+      us: "Held B General, C-2, C-20 HVAC, C-36 Plumbing",
       them: "No licenses",
     },
     {
@@ -27,7 +27,7 @@ export default function ContractorAdvantage() {
     },
     {
       label: "Proven Service Culture",
-      us: "4,000+ five-star reviews, Great Place to Work 3x",
+      us: "4,000+ five-star reviews, Great Place to Work 2024 profile",
       them: "No operational track record",
     },
   ];

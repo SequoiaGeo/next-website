@@ -2,46 +2,46 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Balanced Comfort Case Study | Sequoia GEO",
+  title: "Balanced Comfort Founder Story | Sequoia GEO",
   description:
-    "How Balanced Comfort grew from energy audits to $17M+ in annual revenue, four Inc 5000 appearances, three Best Place to Work certifications, and a successful exit. The company Aaron Husak built before starting Sequoia GEO.",
+    "The operating experience Aaron Husak built over 13 years at Balanced Comfort, including four Inc 5000 appearances, more than 4,000 five-star reviews reported on the company site, and a 2024 Great Place to Work profile.",
   alternates: {
     canonical: "https://www.sequoiageo.com/case-studies/balanced-comfort",
   },
 };
 
 const stats = [
-  { value: "$17M+", label: "Annual revenue at exit" },
-  { value: "4,000+", label: "5-star Google reviews" },
-  { value: "4x", label: "Inc 5000 (2020 to 2023)" },
-  { value: "3x", label: "Best Place to Work certified" },
+  { value: "13 years", label: "Owner and operator" },
+  { value: "4,000+", label: "5-star reviews reported" },
+  { value: "4x", label: "Inc 5000 (2021 to 2024)" },
+  { value: "2024", label: "Great Place to Work profile" },
 ];
 
 const strategies = [
   {
     title: "Local SEO",
     description:
-      "Balanced Comfort built organic dominance for high-intent HVAC, plumbing, and restoration searches across Fresno and the Central Valley. Multi-location optimization, technical SEO, and content that matched how customers actually searched.",
+      "Search visibility, service pages, local content, and business listings were treated as parts of one operating system rather than isolated marketing tasks.",
   },
   {
     title: "Reputation at scale",
     description:
-      "4,000+ five-star Google reviews built through consistent follow-up systems and a team that delivered on the promise. Review velocity became a competitive moat no competitor could easily replicate.",
+      "On August 29, 2026, Balanced Comfort's website reported more than 4,000 five-star reviews. That reputation belongs to the company and team, and is presented here as founder operating history.",
   },
   {
     title: "Conversion-focused web presence",
     description:
-      "The website was built to convert visitors into booked calls. Page speed, mobile experience, CTA placement, and trust signals were tested and refined over years of real performance data.",
+      "Website decisions were evaluated against the customer journey, including mobile use, calls to action, trust signals, and the handoff from a visit to a phone call or booking path.",
   },
   {
-    title: "Paid advertising with tracked ROI",
+    title: "Paid advertising with operating context",
     description:
-      "Google Ads, Local Service Ads, and Facebook campaigns run with full attribution tracking. Every dollar traced from click to booked job, with budget calibrated to revenue per channel.",
+      "Google Ads, Local Service Ads, and Facebook campaigns were reviewed alongside calls, booked work, operating capacity, and customer experience rather than judged by clicks alone.",
   },
   {
     title: "Google Business Profile",
     description:
-      "A fully optimized GBP with consistent posting, Q&A management, and photo strategy. One of the most-reviewed HVAC companies in California, built through process, not luck.",
+      "Business information, reviews, photos, and service details were managed as customer-facing operating information, not only as a search listing.",
   },
 ];
 
@@ -83,9 +83,9 @@ export default function BalancedComfortCaseStudy() {
               Balanced Comfort Heating &amp; Air
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              From energy audits to $17M+ in annual revenue, four Inc 5000 appearances, and a
-              successful exit. This is the company Aaron Husak built before starting Sequoia GEO.
-              Every strategy deployed for clients was tested here first.
+              Thirteen years of building and operating a multi-service home services company,
+              including four Inc 5000 appearances and a 2024 Great Place to Work profile.
+              This is founder operating history, not a Sequoia GEO client result.
             </p>
           </div>
 
@@ -113,10 +113,9 @@ export default function BalancedComfortCaseStudy() {
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                Aaron Husak founded Balanced Comfort in 2012 to partner with PG&E and the City of
-                Fresno on a residential energy efficiency program. At peak, the company was
-                completing 200 to 300 energy audits per month, helping homeowners across the Fresno
-                area reduce consumption and improve the efficiency of their homes.
+                Aaron Husak founded Balanced Comfort in 2012 around residential energy efficiency
+                work in Fresno. The company later expanded into additional technical and home
+                service lines as programs and market conditions changed.
               </p>
               <p>
                 When that program funding ended, Balanced Comfort pivoted into energy code
@@ -125,10 +124,9 @@ export default function BalancedComfortCaseStudy() {
                 ever entered the picture.
               </p>
               <p>
-                In 2019, the company was selected to participate in the Energy Savings Assistance
-                Program through PG&E. This weatherization program delivered energy efficiency
-                upgrades to qualifying households at no cost, and Balanced Comfort scaled its team
-                to meet the demand.
+                That history matters because the business had to adapt its offer, team, customer
+                experience, and marketing more than once. The lessons came from operating through
+                those changes, not from reviewing a dashboard after the fact.
               </p>
             </div>
           </div>
@@ -140,28 +138,24 @@ export default function BalancedComfortCaseStudy() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              March 2020: the pivot that changed everything
+              From energy efficiency to multi-service home services
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                When the coronavirus outbreak forced Balanced Comfort to halt ESA program work,
-                the company had 25 employees on payroll and its main revenue stream had stopped.
-                Most businesses in that position cut staff and waited.
+                In 2020, a disruption to weatherization work forced Balanced Comfort to reconsider
+                how it reached and served homeowners.
               </p>
               <p>
                 Balanced Comfort pivoted to HVAC instead.
               </p>
               <p>
-                By hiring skilled technicians and retraining the existing workforce, the company
-                launched heating and air conditioning services across the Central Valley in the
-                middle of a pandemic. The team adapted. Demand was immediate. Protective equipment
-                protocols were put in place and customers responded with trust.
+                The company expanded into heating and air conditioning across the Central Valley,
+                then added plumbing and restoration services over the following years.
               </p>
               <p>
-                That decision launched a different kind of company. Over the following years,
-                Balanced Comfort expanded into plumbing and restoration while continuing to grow
-                the HVAC and weatherization divisions. The marketing engine that drove that
-                growth was built from scratch and refined over years of real performance data.
+                The practical lesson was that marketing could not be separated from the phones,
+                capacity, dispatch, customer experience, reputation, and follow-up. Each part
+                affected whether demand became work the company could actually serve.
               </p>
             </div>
           </div>
@@ -173,12 +167,12 @@ export default function BalancedComfortCaseStudy() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl mb-14">
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              The marketing system behind the growth
+              The marketing and operating system behind the company
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Revenue growth at Balanced Comfort was not accidental. It came from a compounding
-              marketing system built for home service contractors and tested with real money on
-              the line.
+              Balanced Comfort was not built through one channel or one campaign. Marketing,
+              customer experience, reputation, hiring, dispatch, and measurement had to work as
+              one operating system.
             </p>
           </div>
           <div className="mx-auto max-w-5xl grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -198,30 +192,29 @@ export default function BalancedComfortCaseStudy() {
         </div>
       </section>
 
-      {/* Section 4 - The Numbers */}
+      {/* Section 4 - The Operating Record */}
       <section className="bg-[#1a1a1a] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-14">
-            <p className="section-overline mb-4">The Numbers</p>
+            <p className="section-overline mb-4">The operating record</p>
             <h2 className="font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              Results that compound over time
+              Experience built inside a service business
             </h2>
           </div>
           <div className="mx-auto max-w-5xl grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-              <div className="text-4xl font-extrabold text-[#3A9E6A]">$17M+</div>
-              <div className="mt-3 text-base font-semibold text-white">Annual Revenue</div>
+              <div className="text-4xl font-extrabold text-[#3A9E6A]">13 years</div>
+              <div className="mt-3 text-base font-semibold text-white">Owner and Operator</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-500">
-                From energy audits to a multi-service home services company with $17M+ in annual
-                revenue at exit.
+                Building teams and systems across energy efficiency, HVAC, plumbing, and restoration.
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
               <div className="text-4xl font-extrabold text-[#3A9E6A]">4,000+</div>
               <div className="mt-3 text-base font-semibold text-white">5-Star Reviews</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-500">
-                Earned through consistent service and a systematic approach to reputation
-                management. Not purchased. Not incentivized.
+                Reported on Balanced Comfort&rsquo;s current public website. This is company reputation,
+                not a result credited to Sequoia GEO.
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
@@ -229,15 +222,15 @@ export default function BalancedComfortCaseStudy() {
               <div className="mt-3 text-base font-semibold text-white">Inc 5000</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-500">
                 Named to the Inc 5000 list of fastest-growing private companies four consecutive
-                years: 2020, 2021, 2022, and 2023.
+                years: 2021, 2022, 2023, and 2024.
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-              <div className="text-4xl font-extrabold text-[#3A9E6A]">3x</div>
-              <div className="mt-3 text-base font-semibold text-white">Best Place to Work</div>
+              <div className="text-4xl font-extrabold text-[#3A9E6A]">2024</div>
+              <div className="mt-3 text-base font-semibold text-white">Great Place to Work</div>
               <p className="mt-3 text-sm leading-relaxed text-gray-500">
-                Certified three years in a row. Culture, retention, and team quality were
-                competitive advantages, not afterthoughts.
+                The official company profile records its Great Place to Work certification and
+                employee survey result in April 2024.
               </p>
             </div>
           </div>
@@ -253,28 +246,25 @@ export default function BalancedComfortCaseStudy() {
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                Most marketing agencies have never dispatched a truck, handled a warranty call,
-                or rebuilt a business model under pressure. They apply templates built for
-                e-commerce or retail and wonder why they don&rsquo;t move the needle for
-                contractors.
-              </p>
-              <p>
                 Sequoia GEO was built by someone who ran a service company for over a decade.
-                Every campaign structure, every SEO strategy, every reputation management
-                process has been tested against real business outcomes, not agency benchmarks.
+                Sequoia&rsquo;s approach is informed by the operating questions a dashboard cannot
+                answer on its own: Was the phone answered? Was the lead qualified? Was the job booked?
               </p>
               <p>
-                The strategies that produced four Inc 5000 appearances and $17M+ in annual
-                revenue at Balanced Comfort are the same ones deployed for clients today.
+                Balanced Comfort is evidence of Aaron&rsquo;s operating experience. Client results are
+                reported separately under the{" "}
+                <Link href="/proof-system" className="font-bold text-[#1A5C3A] underline underline-offset-4">
+                  Sequoia Proof System
+                </Link>{" "}
+                and only to the level the client records support.
               </p>
             </div>
 
             {/* Pull quote */}
             <blockquote className="mt-10 border-l-4 border-[#3A9E6A] pl-6">
               <p className="text-xl font-medium italic leading-relaxed text-[#1a1a1a]">
-                &ldquo;Most marketing agencies will tell you what should work. We can tell you what
-                actually works, because we used it to build a company that made the Inc 5000 four
-                years in a row.&rdquo;
+                &ldquo;Running a service company taught me to ask what happened after the lead, because
+                a dashboard cannot tell you whether the phone was answered or the job was booked.&rdquo;
               </p>
               <footer className="mt-4 text-sm font-semibold text-[#1A5C3A]">
                 Aaron Husak, Founder, Sequoia GEO
@@ -284,11 +274,49 @@ export default function BalancedComfortCaseStudy() {
         </div>
       </section>
 
+      <section className="bg-[#fafaf8] py-16">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+          <p className="section-overline mb-4">Evidence note</p>
+          <h2 className="font-serif text-2xl font-extrabold text-[#1a1a1a]">
+            What supports this founder history
+          </h2>
+          <ul className="mt-6 space-y-4 leading-relaxed text-gray-600">
+            <li>
+              Aaron&rsquo;s 13-year tenure and the company&rsquo;s service history are founder-attested and
+              were reconfirmed for Sequoia&rsquo;s operating record on August 21, 2026.
+            </li>
+            <li>
+              <a href="https://www.inc.com/profile/balanced-comfort" className="font-bold text-[#1A5C3A] underline underline-offset-4">
+                Inc.&rsquo;s official company profile
+              </a>{" "}
+              lists Balanced Comfort in 2021, 2022, 2023, and 2024.
+            </li>
+            <li>
+              <a href="https://www.greatplacetowork.com/en/certified-company/7046556" className="font-bold text-[#1A5C3A] underline underline-offset-4">
+                Great Place to Work&rsquo;s official company profile
+              </a>{" "}
+              records the certification page updated in April 2024.
+            </li>
+            <li>
+              <a href="https://balancedcomfort.com/" className="font-bold text-[#1A5C3A] underline underline-offset-4">
+                Balanced Comfort&rsquo;s current website
+              </a>{" "}
+              reports more than 4,000 five-star reviews. That is an inherited company strength,
+              not a Sequoia GEO client outcome.
+            </li>
+          </ul>
+          <p className="mt-6 text-sm leading-relaxed text-gray-500">
+            Public sources checked August 29, 2026. This page describes founder operating history.
+            It does not claim that any single marketing action caused the company&rsquo;s growth.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-3xl font-extrabold text-white">
-            Ready to put proven strategy to work for your business?
+            Ready to apply operator-led marketing discipline to your business?
           </h2>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
