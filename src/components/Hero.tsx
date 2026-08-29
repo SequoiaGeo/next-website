@@ -26,7 +26,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              I built a home service company. 130 employees, a $17M exit, 4x Inc 5000. Now I lead every Sequoia engagement and remain your point of contact. I watch the whole pipeline: the ads, the phones, and the booking rate. Most agencies are accountable for their channel. I am accountable for the booked job.
+              I built a home service company. 130 employees, a $17M exit, 4x Inc 5000. Now I lead every Sequoia engagement and remain your point of contact. I look across AI search, traditional search, paid media, your website, tracking, and the booking handoff to find the marketing constraint that deserves attention first.
             </p>
 
             <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">
