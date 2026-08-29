@@ -1,6 +1,7 @@
 import { trackEvent } from "@/lib/analytics";
 
 export type KnowledgeStage =
+  | "panel_view"
   | "tool_availability"
   | "tool_discovery_proxy"
   | "tool_call"
@@ -9,11 +10,13 @@ export type KnowledgeStage =
   | "answer"
   | "refusal"
   | "citation_click"
+  | "handoff_click"
   | "form_start"
   | "accepted_submission"
   | "qualified_lead";
 
 const EVENT_NAMES: Record<KnowledgeStage, string> = {
+  panel_view: "sequoia_knowledge_panel_view",
   tool_availability: "sequoia_tool_availability",
   tool_discovery_proxy: "sequoia_tool_discovery_proxy",
   tool_call: "sequoia_tool_call",
@@ -22,6 +25,7 @@ const EVENT_NAMES: Record<KnowledgeStage, string> = {
   answer: "sequoia_knowledge_answer",
   refusal: "sequoia_knowledge_refusal",
   citation_click: "sequoia_citation_click",
+  handoff_click: "sequoia_knowledge_handoff_click",
   form_start: "sequoia_consultation_form_start",
   accepted_submission: "sequoia_consultation_accepted_submission",
   qualified_lead: "sequoia_qualified_lead",

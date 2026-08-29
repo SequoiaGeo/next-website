@@ -58,6 +58,12 @@ const INJECTION_PATTERNS = [
   /\b(?:reveal|print|return)\b.{0,40}\b(?:private data|internal file|environment variable|credential)\b/i,
 ];
 
+const PRIVATE_INPUT_PATTERNS = [
+  /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i,
+  /(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}\b/,
+  /\b(?:\d[ -]*?){13,19}\b/,
+];
+
 function unique(values) {
   return [...new Set(values)];
 }
@@ -208,6 +214,9 @@ function normalizedQuestion(question) {
   if (INJECTION_PATTERNS.some((pattern) => pattern.test(normalized))) {
     return { ok: false, reason: "instruction_shaped_input" };
   }
+  if (PRIVATE_INPUT_PATTERNS.some((pattern) => pattern.test(normalized))) {
+    return { ok: false, reason: "private_or_contact_information" };
+  }
   return { ok: true, value: normalized.toLowerCase() };
 }
 
@@ -216,9 +225,14 @@ function answer(catalog, intent, summary, details, sourceIds) {
 }
 
 function refusal(catalog, reason) {
+  const summary = reason === "private_or_contact_information"
+    ? "Do not enter contact, account, payment, or confidential information here. Use Sequoia's contact form when you are ready to speak with a person."
+    : reason === "instruction_shaped_input"
+      ? "Ask a factual question about Sequoia's approved public services, pricing, methodology, fit, case evidence, or contact options."
+      : catalog.refusal;
   return result(
     catalog,
-    { refused: true, intent: "unsupported", reason, summary: catalog.refusal, details: [] },
+    { refused: true, intent: "unsupported", reason, summary, details: [] },
     [],
   );
 }
@@ -252,7 +266,7 @@ export function answerSequoiaQuestion(catalog, question) {
     );
   }
 
-  if (/\b(?:method|methodology|measure|measurement|citation|mentioned|observation|prompt|evidence system)\b/.test(value)) {
+  if (/\b(?:ai search|ai visibility|search visibility|geo|method|methodology|measure|measurement|citation|mentioned|observation|prompt|evidence system)\b/.test(value)) {
     return answer(
       catalog,
       "methodology",

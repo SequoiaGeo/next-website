@@ -41,10 +41,21 @@ The root client component registers these tools through top-level `document.mode
 
 Every tool result includes the catalog version, the public boundary statement, and visible-page citations when a supported fact is returned. Inputs use narrow schemas with `additionalProperties: false`. The consultation tool accepts enums only.
 
+| Tool | Privilege and side effect |
+| --- | --- |
+| `get_sequoia_services` | Read-only bundled catalog lookup. |
+| `get_published_starting_prices` | Read-only bundled catalog lookup. Starting prices are not quotes. |
+| `check_service_fit` | Read-only deterministic evaluation of structured published criteria. Human review remains required. |
+| `get_ai_search_methodology` | Read-only bundled catalog lookup. |
+| `get_case_study_evidence` | Read-only bundled catalog lookup with approved visible citations. |
+| `get_contact_options` | Read-only bundled catalog lookup. It does not contact Sequoia. |
+| `prepare_consultation_request` | Writes structured enum selections to same-tab `sessionStorage` for up to 30 minutes. It makes no request, sends no message, books nothing, and requires the visitor to review and submit the normal form. |
+
 ## Analytics stages
 
 | Event | Meaning | Not evidence of |
 | --- | --- | --- |
+| `sequoia_knowledge_panel_view` | The enabled question panel became available on a named surface once per tab session. | A question, answer, inquiry, or lead. |
 | `sequoia_tool_availability` | All seven tools registered without throwing in a supported browser. | An agent discovering or calling a tool. |
 | `sequoia_tool_discovery_proxy` | Registration completed, used as an explicitly labeled discovery opportunity proxy. | Confirmed agent discovery. |
 | `sequoia_tool_call` | A registered handler was invoked. | A useful answer, inquiry, or lead. |
@@ -53,11 +64,20 @@ Every tool result includes the catalog version, the public boundary statement, a
 | `sequoia_knowledge_answer` | The catalog returned a supported answer or tool result. | A recommendation, inquiry, or lead. |
 | `sequoia_knowledge_refusal` | Ask Sequoia refused unsupported or instruction-shaped input. | A tool failure. |
 | `sequoia_citation_click` | A person opened a cited visible page. | A form start. |
+| `sequoia_knowledge_handoff_click` | A person used the human handoff after an answer or refusal. | A submitted inquiry, booking, or qualified lead. |
 | `sequoia_consultation_form_start` | A visitor began the contact form after a knowledge draft was applied. | An accepted submission. |
 | `sequoia_consultation_accepted_submission` | The existing lead policy confirmed a durable accepted capture with a lead id. | A qualified lead. |
 | `sequoia_qualified_lead` | The operating system later confirms the written qualified-lead definition. | A browser form success alone. |
 
 Raw questions, answer text, contact fields, draft text, email addresses, phone numbers, and names are excluded from the knowledge analytics. The Ask input, answer region, and prepared message field are marked for Clarity masking.
+
+## Homepage surface
+
+When the release flag is active and the kill switch is not active, the homepage renders the shared question panel after the early lead form and client proof. The hero, early lead form, and proof order remain unchanged. The homepage surface and the dedicated `/ask-sequoia` page use the same deterministic engine, catalog, citations, refusal rules, question limit, rate limits, masking, and status checks.
+
+The homepage identifies analytics with `surface: homepage_inline`; the dedicated page uses `surface: ask_sequoia`. The floating launcher is suppressed on the homepage to avoid two entry points and to avoid competing with the fixed mobile call and booking bar. If the feature is off, the server does not render the homepage panel. If a later status check disables the feature, the embedded client returns no interactive surface.
+
+The prompt tells visitors not to enter contact, account, payment, or confidential information. Local deterministic input checks refuse common email addresses, phone numbers, and payment-card-shaped numbers. The text still stays in temporary page state and is never sent to an answer service.
 
 ## Scheduled freshness check
 

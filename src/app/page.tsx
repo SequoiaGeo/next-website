@@ -22,6 +22,7 @@ import ClientResults from "@/components/ClientResults";
 import LSABanner from "@/components/LSABanner";
 import YouTubeFacade from "@/components/YouTubeFacade";
 import InlineLeadForm from "@/components/InlineLeadForm";
+import SequoiaQuestionPanel from "@/components/SequoiaQuestionPanel";
 
 // Lazy-load below-fold interactive components, defers their JS until
 // after the critical rendering path completes.
@@ -29,6 +30,10 @@ const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: true });
 const ContactForm = dynamic(() => import("@/components/ContactForm"), { ssr: true });
 
 export default function Home() {
+  const knowledgeEnabled =
+    process.env.SEQUOIA_KNOWLEDGE_ENABLED === "true" &&
+    process.env.SEQUOIA_KNOWLEDGE_KILL_SWITCH !== "true";
+
   return (
     <>
       <Hero />
@@ -59,6 +64,10 @@ export default function Home() {
       {/* Client result, right under the hero: promise then proof. Renders only
           once Mel's YouTube ID is set in ClientResults.tsx. */}
       <ClientResults />
+
+      {knowledgeEnabled && (
+        <SequoiaQuestionPanel surface="homepage_inline" embedded />
+      )}
 
       <Problem />
       <AboutAaron />
