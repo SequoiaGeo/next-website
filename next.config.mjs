@@ -60,6 +60,7 @@ const nextConfig = {
       { source: "/contractor-seo-services", destination: "/services", permanent: true },
 
       // === RESOURCE / GUIDE PAGES ===
+      { source: "/proof", destination: "/proof-system", permanent: true },
       { source: "/free-seo-checklist", destination: "/blog", permanent: true },
       { source: "/nearby-city-ranking-guide", destination: "/blog", permanent: true },
       { source: "/lsa-ppc-changes-2026", destination: "/blog", permanent: true },
