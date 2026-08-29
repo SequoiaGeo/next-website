@@ -6,14 +6,14 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Case Studies | Sequoia GEO",
   description:
-    "Verified client results and anonymized diagnostic field notes from Sequoia GEO.",
+    "Documented client work showing what Sequoia GEO found, changed, verified, and left outside the evidence.",
   alternates: {
     canonical: "https://www.sequoiageo.com/case-studies",
   },
 };
 
 const balancedComfortStats = [
-  { value: "$17M+", label: "Annual revenue at exit" },
+  { value: "13 years", label: "Owner and operator" },
   { value: "4,000+", label: "5-star Google reviews" },
   { value: "4x", label: "Inc 5000 honoree" },
   { value: "3x", label: "Best Place to Work certified" },
@@ -34,11 +34,11 @@ export default function CaseStudiesPage() {
           <div className="mx-auto max-w-3xl text-center">
             <p className="section-overline mb-4">Case Studies</p>
             <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Real results. Honest field notes.
+              The work behind stronger marketing systems.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              Verified client outcomes, and clearly labeled diagnostic observations when the
-              work is still in the correction phase.
+              Each story shows what we found, what we changed, how we verified it, and what
+              remains outside the evidence.
             </p>
           </div>
         </div>
@@ -69,6 +69,11 @@ export default function CaseStudiesPage() {
                 <p className="text-sm font-semibold text-white">Michael Bissett</p>
                 <p className="text-xs text-gray-500">Owner, KABAM Plumbing Services</p>
                 <p className="text-xs text-gray-500">Sun City Center, FL</p>
+                <p className="mt-3 text-xs leading-relaxed text-gray-500">
+                  This testimonial describes the client experience. Financial statements in the
+                  video are the client&rsquo;s account and are not presented here as verified
+                  Sequoia GEO results.
+                </p>
               </footer>
             </div>
           </div>
@@ -89,10 +94,10 @@ export default function CaseStudiesPage() {
                   Balanced Comfort Heating &amp; Air
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
-                  From one truck to $17M+ annual revenue, 4,000+ 5-star Google reviews, four
-                  Inc 5000 appearances, three Best Place to Work certifications, and a successful
-                  exit. This is the company Aaron Husak built before starting Sequoia GEO. Every
-                  strategy deployed for clients was tested here first.
+                  This is the company Aaron Husak built and operated before starting Sequoia GEO.
+                  The story explains the operating experience behind Sequoia&rsquo;s work across
+                  marketing, customer experience, hiring, and measurement. It is founder
+                  background, not a Sequoia GEO client result.
                 </p>
               </div>
 
@@ -319,23 +324,22 @@ export default function CaseStudiesPage() {
                   Anonymized Case Study
                 </span>
                 <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
-                  The $28,000-a-Month Question
+                  Rebuilding the Marketing Record Before Spending More
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
-                  A Central Valley window and insulation company spending $28,000 a month on
-                  ads graded by their own inflated dashboard. We rebuilt what counted as a
-                  conversion, told the client the numbers would look worse because they would
-                  finally be real, and cut the spend to about $7,500 while inquiries kept
-                  arriving.
+                  A Central Valley window and insulation company had high advertising spend and
+                  reporting that overstated performance. We rebuilt conversion definitions,
+                  established spend controls, tracked manufacturer co-op funding, and created a
+                  weekly sales and marketing review.
                 </p>
               </div>
               <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                   {[
-                    { value: "$28K+", label: "Peak monthly ad spend" },
-                    { value: "~$7,500", label: "Spend after cleanup" },
-                    { value: "~$60K", label: "Co-op funds accrued" },
-                    { value: "Weekly", label: "Sales-marketing meeting" },
+                    { value: "Measure", label: "Conversion definitions rebuilt" },
+                    { value: "Control", label: "Advertising spend reviewed" },
+                    { value: "Track", label: "Co-op funding documented" },
+                    { value: "Review", label: "Weekly operating meeting" },
                   ].map((item) => (
                     <div
                       key={item.label}
@@ -813,18 +817,18 @@ export default function CaseStudiesPage() {
       <section className="bg-[#1A5C3A] py-16">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-serif text-2xl font-extrabold text-white sm:text-3xl">
-            Want results like these for your company?
+            Want a stronger marketing system?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[#C8EDD2]/80">
-            Every engagement starts with understanding your numbers. Let&rsquo;s find where
-            your marketing is leaking revenue.
+            Every engagement starts by establishing what is working, what needs correction, and
+            what can be measured reliably.
           </p>
           <div className="mt-8">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
             >
-              Book a Free Strategy Call
+              See What We Would Examine
             </Link>
           </div>
         </div>
