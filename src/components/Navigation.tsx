@@ -29,12 +29,13 @@ const serviceLinks = [
 
 const resourceLinks = [
   {
-    group: "Free Guides",
+    group: "Guides and Standards",
     items: [
       { label: "Marketing Leak Calculator", href: "/marketing-leak-calculator" },
       { label: "LSA Guide for Contractors", href: "/lsa-guide" },
       { label: "AI SEO Guide", href: "/ai-website-seo-guide" },
       { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },
+      { label: "Sequoia Proof System", href: "/proof-system" },
       { label: "AI Search Measurement Method", href: "/ai-search-methodology" },
     ],
   },
