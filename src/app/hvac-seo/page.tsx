@@ -296,12 +296,12 @@ export default function HvacSeoPage() {
               Proof, Not Promises
             </p>
             <p className="text-lg font-bold text-[#1a1a1a]">
-              Page one in the first month, measured from day one
+              Technical work with the measurement limits stated
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              The same local SEO process in action: a home services company with a dated,
-              unmeasured site rebuilt into a page-one presence within three weeks of launch, with
-              analytics, call tracking, and form tracking wired from the start.
+              A home services example with an unmeasured Wix site, a documented mobile
+              image-delivery correction, verified crawl cleanup, and a post-launch Search Console
+              snapshot that is not presented as growth.
             </p>
             <Link
               href="/case-studies/firemans-chimney-sweep"

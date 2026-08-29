@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-08-28.2",
+  "catalogVersion": "2026-08-28.3",
   "status": "approved_for_public_use",
   "approvedOn": "2026-08-28",
   "reviewValidUntil": "2026-09-27",
@@ -83,11 +83,11 @@
       "path": "/case-studies/firemans-chimney-sweep",
       "sourceFile": "src/app/case-studies/firemans-chimney-sweep/page.tsx",
       "sourceAnchors": [
-        "3 weeks",
-        "Average search position, first month",
-        "Lighthouse mobile performance score",
-        "Review count and search positions verified July 7, 2026.",
-        "Published with the"
+        "56 to 87",
+        "10.1s to 2.8s",
+        "28 days ending July 7",
+        "What this evidence means",
+        "The owner approved being named."
       ]
     }
   },
@@ -269,12 +269,13 @@
       "id": "firemans_chimney_sweep",
       "name": "A Fireman's Chimney Sweep",
       "evidence": [
-        "The public case study reports three weeks to page one for core chimney terms and a 5.8 average search position in the first month.",
-        "The page reports a Lighthouse mobile performance score change from 56 to 87.",
-        "The page says first-month clicks were modest during the seasonal quiet period and does not present position as a lead or job result.",
-        "The page identifies Google Search Console, Google Business Profile, and Lighthouse as the sources and says review count and search positions were verified July 7, 2026."
+        "The business's Google Business Profile showed a 4.8 rating across 367 reviews when verified June 16, 2026. The page identifies that reputation as earned before Sequoia GEO's involvement.",
+        "Same-day Lighthouse mobile lab runs on the live homepage surrounding an image-delivery correction moved the performance score from 56 to 87 and Largest Contentful Paint from 10.1 seconds to 2.8 seconds. The page says these are single lab runs, not field Core Web Vitals or a comparison with the retired site.",
+        "In the 28 days ending July 7, 2026, Google Search Console recorded 8,090 impressions at an average position of 5.8 across all queries, including searches for the business name.",
+        "The page says the Search Console figures are a post-launch snapshot, not evidence of increased impressions, rankings, inquiries, or booked work.",
+        "On June 29, the required service-address field, validation, and linked address in the lead notification email were updated, deployed, and verified the same day. The page does not claim that the change increased lead volume."
       ],
-      "approval": "The public case study states that it was published with the owner's permission.",
+      "approval": "The public case study states that the owner approved being named and that no private quote is used.",
       "sourceIds": ["chimney_case"]
     }
   ],

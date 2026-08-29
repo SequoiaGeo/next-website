@@ -23,6 +23,12 @@ Status: protected Preview revision. Production is unchanged.
 - Omitted the page-one-in-three-weeks statement because the preserved record does not include the query set, date, location, device, or test method.
 - Kept paid-call jobs, estimates, cost per job, revenue, ROI, and the private praise quote off the page.
 
+## Dependency reconciliation
+
+- Updated the case-study index card, Websites callout, HVAC SEO proof callout, and How It Works link so they no longer repeat the unconfirmed ownership claim, the absolute ranking-preservation statement, or the unsupported page-one timing.
+- Updated the public Knowledge Interface catalog to version `2026-08-28.3` with anchors and evidence that match the revised public page.
+- Updated the sitemap modification date to August 28, 2026.
+
 ## External review positions
 
 - Claude supported moving the missing-baseline limitation into the opening, removing inherited reviews from the results tiles, and replacing abstract “lead system” language with the specific form and tracking work. Claude recommended omitting the page-one claim unless the query-level method is reconstructed.

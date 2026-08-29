@@ -82,7 +82,7 @@ export default function CaseStudiesPage() {
             <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
               {/* Card header */}
               <div className="bg-[#0D2318] px-8 py-10 sm:px-12">
-                <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
+                <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-[#3A9E6A]">
                   Founder&rsquo;s Story
                 </span>
                 <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
@@ -147,9 +147,9 @@ export default function CaseStudiesPage() {
                   A Fireman&rsquo;s Chimney Sweep
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
-                  A firefighter-owned chimney company in Emmett, Idaho with 367 Google reviews and
-                  a website that had never measured anything. We rebuilt it, protected every
-                  ranking it had earned, and put it on page one within three weeks of launch.
+                  A local chimney contractor already had a strong reputation. We rebuilt its
+                  unmeasured Wix site, corrected crawl and image-delivery defects, and documented
+                  what happened after launch without inventing a growth comparison.
                 </p>
               </div>
 
@@ -157,17 +157,17 @@ export default function CaseStudiesPage() {
               <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                   {[
-                    { value: "367", label: "Google reviews at a 4.8" },
-                    { value: "3 weeks", label: "To page one" },
-                    { value: "5.8", label: "Avg position, month one" },
-                    { value: "56 → 87", label: "Lighthouse mobile score" },
+                    { value: "56 to 87", label: "June 6 Lighthouse lab" },
+                    { value: "10.1s to 2.8s", label: "LCP in the same runs" },
+                    { value: "8,090", label: "GSC impressions, 28 days" },
+                    { value: "5.8", label: "Avg position, includes brand" },
                   ].map((item) => (
                     <div
                       key={item.label}
                       className="rounded-xl bg-[#C8EDD2] px-4 py-4 text-center"
                     >
                       <div className="text-xl font-extrabold text-[#0D2318]">{item.value}</div>
-                      <div className="mt-1 text-xs text-[#1A5C3A] leading-snug">{item.label}</div>
+                      <div className="mt-1 text-sm leading-snug text-[#1A5C3A]">{item.label}</div>
                     </div>
                   ))}
                 </div>

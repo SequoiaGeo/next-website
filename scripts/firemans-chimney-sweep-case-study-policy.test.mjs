@@ -6,6 +6,11 @@ const pagePath = new URL(
   "../src/app/case-studies/firemans-chimney-sweep/page.tsx",
   import.meta.url,
 );
+const indexPath = new URL("../src/app/case-studies/page.tsx", import.meta.url);
+const websitesPath = new URL("../src/app/websites/page.tsx", import.meta.url);
+const hvacPath = new URL("../src/app/hvac-seo/page.tsx", import.meta.url);
+const processPath = new URL("../src/app/how-it-works/page.tsx", import.meta.url);
+const catalogPath = new URL("../src/data/sequoia-knowledge.catalog.json", import.meta.url);
 
 test("Fireman's Chimney Sweep case study keeps the dated evidence exact", async () => {
   const page = await readFile(pagePath, "utf8");
@@ -57,4 +62,24 @@ test("Fireman's Chimney Sweep case study follows Sequoia writing constraints", a
   assert.doesNotMatch(page, /[\u2013\u2014]/);
   assert.doesNotMatch(page, /\b(simple|quick|easy|affordable|inexpensive)\b/i);
   assert.doesNotMatch(page, /text-xs/);
+});
+
+test("Fireman's Chimney Sweep corrections propagate across public callouts and the knowledge catalog", async () => {
+  const [index, websites, hvac, process, catalog] = await Promise.all([
+    readFile(indexPath, "utf8"),
+    readFile(websitesPath, "utf8"),
+    readFile(hvacPath, "utf8"),
+    readFile(processPath, "utf8"),
+    readFile(catalogPath, "utf8"),
+  ]);
+  const publicDependencies = [index, websites, hvac, process, catalog].join("\n");
+
+  assert.doesNotMatch(publicDependencies, /firefighter-owned chimney company/i);
+  assert.doesNotMatch(publicDependencies, /protected every\s+ranking/i);
+  assert.doesNotMatch(publicDependencies, /page one within three weeks/i);
+  assert.doesNotMatch(publicDependencies, /Average search position, first month/i);
+  assert.doesNotMatch(publicDependencies, /To page one/i);
+  assert.match(catalog, /"catalogVersion": "2026-08-28\.3"/);
+  assert.match(catalog, /28 days ending July 7/);
+  assert.match(catalog, /owner approved being named/);
 });
