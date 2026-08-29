@@ -71,11 +71,12 @@
       "path": "/case-studies/kabam-plumbing",
       "sourceFile": "src/app/case-studies/kabam-plumbing/page.tsx",
       "sourceAnchors": [
-        "5.0",
+        "5.0 Google rating across 166 reviews",
         "116 Google Business Profile call-button clicks",
         "does not establish completed calls, unique callers",
-        "Review count and rating verified on the live Google Business Profile July 8, 2026.",
-        "with their permission"
+        "104-URL sitemap",
+        "Discovered is not the same as indexed",
+        "KABAM Plumbing is an ongoing paying client of Sequoia GEO"
       ]
     },
     "chimney_case": {
@@ -257,12 +258,14 @@
       "id": "kabam_plumbing",
       "name": "KABAM Plumbing",
       "evidence": [
-        "The public case study reports a 5.0 Google rating across 154 reviews, verified on the live profile July 8, 2026.",
+        "The public case study reports a 5.0 Google rating across 166 reviews, verified August 14, 2026, after dated counts of 141 in May and 154 on July 8.",
         "The Business Profile performance panel reported 116 call-button clicks over the six months through May 2026.",
         "The page states that those clicks do not establish completed calls, unique callers, qualified leads, or jobs booked.",
-        "The public case study reports Search Console impressions moving from 16.9K to 18.8K in under a month, based on pulls dated May 31 and June 25, 2026."
+        "The August 14 sitemap was submitted and processed with 104 discovered URLs, which the page distinguishes from indexing, ranking, traffic, and leads.",
+        "The page treats the May 31 and June 25 Search Console readings as overlapping historical diagnostics, not a before-and-after trend or causal result.",
+        "Duplicate form event names were replaced with one success-only event, and the page warns that corrected counts may be lower without representing a decline."
       ],
-      "approval": "The public case study states that client numbers are published with permission.",
+      "approval": "KABAM is disclosed as an ongoing paying client, and the embedded video is used with documented permission.",
       "sourceIds": ["kabam_case"]
     },
     {

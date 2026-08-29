@@ -208,19 +208,18 @@ export default function CaseStudiesPage() {
                   KABAM Plumbing Services
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
-                  An independent, owner-operated plumber in Sun City Center, Florida, holding a
-                  perfect 5.0 across 154 Google reviews in a market full of private equity
-                  brands. A managed profile, a rebuilt website, and numbers watched closely
-                  enough to answer &ldquo;are calls down?&rdquo; with data.
+                  After a disappointing agency experience, an independent plumber found a partner
+                  who understood the trades, repaired the verified problems inside Lovable, and
+                  did not force another website rebuild before the evidence justified one.
                 </p>
               </div>
               <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                   {[
-                    { value: "5.0", label: "Across 154 reviews" },
-                    { value: "116", label: "Profile call-button clicks, 6 months" },
-                    { value: "18.8K", label: "Search impressions, climbing" },
-                    { value: "100%", label: "Rankings kept through rebuild" },
+                    { value: "5.0", label: "Across 166 reviews, Aug. 14" },
+                    { value: "104", label: "Sitemap URLs discovered" },
+                    { value: "1 page", label: "Directive confirmed by Google" },
+                    { value: "1 event", label: "Success-only form measurement" },
                   ].map((item) => (
                     <div
                       key={item.label}

@@ -48,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/case-studies`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/balanced-comfort`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/firemans-chimney-sweep`, lastModified: "2026-08-28", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/case-studies/kabam-plumbing`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/case-studies/kabam-plumbing`, lastModified: "2026-08-28", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/luma-exteriors`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/window-insulation-company`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/ai-search-readiness`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },

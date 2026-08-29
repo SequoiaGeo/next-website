@@ -194,8 +194,8 @@ export default function PlumbingSeoPage() {
               116 Google Business Profile call-button clicks over six months
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              KABAM Plumbing is owner-operated and held a 5.0 across 154 Google reviews when
-              verified July 8, 2026. Google Business Profile performance reported 116 clicks on
+              KABAM Plumbing is owner-operated and held a 5.0 across 166 Google reviews when
+              verified August 14, 2026. Google Business Profile performance reported 116 clicks on
               the profile&rsquo;s call button over the six months through May 2026. That metric does
               not establish completed calls, unique callers, qualified leads, or jobs booked.
             </p>

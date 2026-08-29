@@ -20,7 +20,8 @@
     "test:central-hvac-case-study": "node --test scripts/central-hvac-case-study-policy.test.mjs",
     "test:car-and-air-case-study": "node --test scripts/car-and-air-case-study-policy.test.mjs",
     "test:amazing-air-case-study": "node --test scripts/amazing-air-case-study-policy.test.mjs",
-    "test:firemans-case-study": "node --test scripts/firemans-chimney-sweep-case-study-policy.test.mjs"
+    "test:firemans-case-study": "node --test scripts/firemans-chimney-sweep-case-study-policy.test.mjs",
+    "test:kabam-case-study": "node --test scripts/kabam-plumbing-case-study-policy.test.mjs"
   },
   "dependencies": {
     "next": "^14.2.35",

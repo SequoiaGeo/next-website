@@ -399,14 +399,15 @@ export default function BestPlumbingAgenciesPage() {
               What Working With Us Looks Like
             </p>
             <p className="text-lg font-bold text-[#1a1a1a]">
-              An independent plumber holding a 5.0 across 154 Google reviews
+              An independent plumber holding a 5.0 across 166 Google reviews
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
               Before comparing agencies, look at what the work produces. KABAM Plumbing in Sun
-              City Center, Florida: a managed profile, a rebuilt website around his real service
-              area, 116 Google Business Profile call-button clicks over six months, and a perfect
-              score that held while the review count grew. The Google metric measures clicks on
-              the call button, not completed calls, qualified leads, or jobs booked.
+              City Center, Florida: a client-earned 5.0 rating across 166 reviews when verified
+              August 14, 2026, an evidence-led decision to repair the Lovable site before forcing
+              another rebuild, and 116 Google Business Profile call-button clicks over the six
+              months through May. The Google metric measures clicks on the call button, not
+              completed calls, qualified leads, or jobs booked.
             </p>
             <Link
               href="/case-studies/kabam-plumbing"
