@@ -11,6 +11,7 @@ import OaiqPixel from "@/components/OaiqPixel";
 import SitewideIntentTracker from "@/components/SitewideIntentTracker";
 import CampaignAttributionTracker from "@/components/CampaignAttributionTracker";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import SequoiaKnowledgeInterface from "@/components/SequoiaKnowledgeInterface";
 import { podcastAppearances, tradeMedia } from "@/data/media";
 
 
@@ -279,6 +280,7 @@ export default function RootLayout({
         {process.env.NEXT_PUBLIC_GA_ID && <AiReferrerTracker />}
         {process.env.NEXT_PUBLIC_GA_ID && <SitewideIntentTracker />}
         <CampaignAttributionTracker />
+        <SequoiaKnowledgeInterface />
 
       </body>
     </html>
