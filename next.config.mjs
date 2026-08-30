@@ -5,6 +5,16 @@ const nextConfig = {
       { protocol: "https", hostname: "i.ytimg.com" },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/ask-sequoia",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, follow" },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       // === ABOUT ===

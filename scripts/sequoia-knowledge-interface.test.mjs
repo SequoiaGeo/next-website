@@ -185,6 +185,10 @@ test("feature flag, kill switch, noindex, and no-cache controls are explicit", (
 
   const askPage = read("src/app/ask-sequoia/page.tsx");
   assert.match(askPage, /index: false/);
+  const nextConfig = read("next.config.mjs");
+  assert.match(nextConfig, /source: "\/ask-sequoia"/);
+  assert.match(nextConfig, /X-Robots-Tag/);
+  assert.match(nextConfig, /noindex, follow/);
   const questionPanel = read("src/components/SequoiaQuestionPanel.tsx");
   assert.doesNotMatch(questionPanel, /URLSearchParams|searchParams|router\.push/);
   assert.match(questionPanel, /data-clarity-mask="true"/);
