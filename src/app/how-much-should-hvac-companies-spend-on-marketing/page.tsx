@@ -70,7 +70,7 @@ export default function HvacMarketingBudgetPage() {
             $17 million in annual revenue with more than 130 employees, and our annual ad
             spend ran in the low seven figures. Low seven figures against $17 million lands
             in the 6 to 10 percent band. That spend rate carried the company onto the Inc
-            5000 list four years straight, 2020 through 2023.
+            5000 list four years straight, 2021 through 2024.
           </p>
           <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Link

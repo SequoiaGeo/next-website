@@ -70,7 +70,7 @@ export default function PlumberMarketingBudgetPage() {
             licenses, including C-36 Plumbing, while I operated it. We built past $17
             million in annual revenue with more than 130 employees, spending low seven
             figures a year on advertising. Low seven figures against $17 million is 6 to 10
-            percent. Four straight Inc 5000 lists, 2020 through 2023, came out of that
+            percent. Four straight Inc 5000 lists, 2021 through 2024, came out of that
             spend rate.
           </p>
           <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">

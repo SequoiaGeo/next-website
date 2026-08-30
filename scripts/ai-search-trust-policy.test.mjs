@@ -66,7 +66,7 @@ test("AI and client data policy contains the minimum safeguards", () => {
 
 test("public source blocks obsolete award years and unconditional attribution claims", () => {
   const source = readTree("src");
-  assert.doesNotMatch(source, /2020 to 2023|2020-2023|2020–2023/);
+  assert.doesNotMatch(source, /2020\s+(?:to|through|and)\s+2023|2020[-–]2023|2020,\s*2021,\s*2022,\s*(?:and\s*)?2023/i);
   assert.doesNotMatch(source, /connect(?:s|ed)? every (?:marketing )?dollar[^.\n]{0,140}(?:job|revenue)/i);
   assert.doesNotMatch(source, /every dollar[^.\n]{0,140}(?:tracked|traced|connect)[^.\n]{0,140}(?:booked|revenue|outcome)/i);
   assert.doesNotMatch(source, /single pipeline view/i);

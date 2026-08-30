@@ -159,7 +159,7 @@ export default function HvacSeoPage() {
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   Balanced Comfort Heating &amp; Air grew from a startup to 130+ employees and
-                  $17M+ in annual revenue before the exit. We made the Inc 5000 four years running: 2020, 2021, 2022, 2023.
+                  $17M+ in annual revenue before the exit. We made the Inc 5000 four years running: 2021, 2022, 2023, 2024.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I didn&rsquo;t just market the company. I dispatched technicians. I listened to call

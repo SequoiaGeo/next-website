@@ -146,10 +146,10 @@ const organizationSchema = {
       },
     ],
     award: [
-      "Inc. 5000 Fastest-Growing Companies 2020, Balanced Comfort",
       "Inc. 5000 Fastest-Growing Companies 2021, Balanced Comfort (#817, 595% growth)",
       "Inc. 5000 Fastest-Growing Companies 2022, Balanced Comfort (#511)",
       "Inc. 5000 Fastest-Growing Companies 2023, Balanced Comfort",
+      "Inc. 5000 Fastest-Growing Companies 2024, Balanced Comfort",
     ],
     knowsAbout: [
       "Home services marketing",

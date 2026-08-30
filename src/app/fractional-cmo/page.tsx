@@ -291,8 +291,8 @@ export default function FractionalCmoPage() {
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I built <strong>Balanced Comfort Heating &amp; Air</strong> from a one-truck startup to <strong>130+ employees</strong>{" "}
-                  and <strong>$17M+ in annual revenue</strong> over a decade in <strong>home services</strong>. We made the <strong>Inc 5000</strong> four consecutive years: 2020, 2021,
-                  2022, and 2023.
+                  and <strong>$17M+ in annual revenue</strong> over a decade in <strong>home services</strong>. We made the <strong>Inc 5000</strong> four consecutive years: 2021, 2022,
+                  2023, and 2024.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I was the <strong>marketing decision-maker</strong> for that entire run. I hired and fired <strong>agencies</strong>,
