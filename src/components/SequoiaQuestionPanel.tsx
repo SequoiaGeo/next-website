@@ -237,7 +237,7 @@ export default function SequoiaQuestionPanel({
                     setQuestion(suggestion);
                     ask(suggestion);
                   }}
-                  className="rounded-full border border-[#1A5C3A]/25 bg-white px-4 py-2 text-sm font-semibold text-[#1A5C3A] transition hover:border-[#1A5C3A] hover:bg-[#F0F8F3]"
+                  className="min-h-11 rounded-full border border-[#1A5C3A]/25 bg-white px-4 py-2 text-sm font-semibold text-[#1A5C3A] transition hover:border-[#1A5C3A] hover:bg-[#F0F8F3]"
                 >
                   {suggestion}
                 </button>
