@@ -5876,7 +5876,7 @@ export default async function BlogPostPage({
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
                   13 years building Balanced Comfort Heating &amp; Air from startup to 130+ employees.
-                  4x Inc 5000 (2020 to 2023). CA Licensed Contractor B, C-2, C-20, C-36.
+                  4x Inc 5000 (2021 to 2024). CA Licensed Contractor B, C-2, C-20, C-36.
                   Now working directly with local and home service businesses as a growth operator and marketing lead.
                 </p>
                 <Link

@@ -2,9 +2,10 @@ import Link from "next/link";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import TradeAiSearchNav from "@/components/TradeAiSearchNav";
 
 export const metadata: Metadata = {
-  title: "GEO for Plumbers: Get Your Plumbing Company Recommended in AI Search",
+  title: "AI SEO for Plumbers | Plumbing AI Search Visibility",
   description:
     "AI SEO for plumbers from a home services marketer since 2006 and 13-year owner and operator. Measure mentions, recommendations, citations, visits, and qualified leads separately.",
   alternates: {
@@ -37,7 +38,7 @@ export default function GeoForPlumbersPage() {
             },
             "areaServed": { "@type": "Country", "name": "United States" },
             "description":
-              "GEO (Generative Engine Optimization) for plumbing companies. We make plumbers visible and recommendable in ChatGPT, Perplexity, Google AI Overviews, and Gemini.",
+            "Evidence-first AI SEO for plumbing companies, built on crawlability, accurate public business information, first-hand plumbing evidence, independent corroboration, and staged measurement.",
           }),
         }}
       />
@@ -69,7 +70,7 @@ export default function GeoForPlumbersPage() {
                 "name": "Why does GEO matter for plumbing companies now?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "A growing share of homeowners now ask AI tools who to call before they ever see a list of links. When ChatGPT or Google's AI Overview names two or three plumbers and yours is not one of them, you lose the job before the customer even searches the normal way. Most plumbing companies have done nothing to be visible in those answers, which means the ones that start now build a lead while their competitors are not even aware the shift is happening.",
+                  "text": "Some homeowners now ask AI products who to call instead of beginning with a page of links. That creates another surface where a plumbing company may be mentioned, cited, or recommended. The responsible first step is to establish a repeatable baseline and inspect the public sources behind the answers before claiming business impact.",
                 },
               },
               {
@@ -85,7 +86,7 @@ export default function GeoForPlumbersPage() {
                 "name": "Who runs GEO for plumbers at Sequoia GEO?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Sequoia GEO was built around the GEO discipline, not a traditional agency that added it to a list in 2024. Founder Aaron Husak spent 13 years running a home services company to more than 130 employees and four Inc 5000 appearances, so the strategy is filtered through how a contractor actually wins jobs, not just how an AI gets a mention. That operator lens is what separates GEO that produces booked plumbing jobs from GEO that produces vanity mentions.",
+                  "text": "Founder Aaron Husak spent 13 years running a home services company to more than 130 employees and four Inc 5000 appearances. That operator experience keeps the work focused on accurate measurement, qualified inquiries, and jobs booked instead of treating an AI mention as a business result.",
                 },
               },
             ],
@@ -99,29 +100,28 @@ export default function GeoForPlumbersPage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
               <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
-              GEO · Plumbing Companies
+              AI SEO · Plumbing Companies
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
-              GEO for Plumbers: Be the Name{" "}
-              <span className="text-[#1A5C3A]">AI Recommends</span>
+              AI SEO for Plumbers: Build a Verifiable{" "}
+              <span className="text-[#1A5C3A]">AI Search Foundation</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              When a homeowner asks ChatGPT, Perplexity, Gemini, or Google&apos;s AI Overview who to call
-              for a plumber, a few company names come back. GEO (Generative Engine Optimization) is
-              the work that makes yours one of them. We make plumbing companies visible and
-              recommendable in AI search, not just ranked on a list of links.
+              Sequoia GEO establishes what is true, corrects conflicting public information, strengthens
+              first-hand plumbing evidence, and measures how the business appears across conventional
+              and AI-assisted search. GEO and AEO are industry labels. AI SEO is the broader work.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-500">
               Built by Aaron Husak, who spent 13 years running a home services company to 4x Inc 5000.
-              Every recommendation is filtered through what actually books a plumbing job, not what
-              earns a vanity mention.
+              The work is filtered through what helps a contractor evaluate qualified inquiries and jobs
+              booked, without treating visibility as a guaranteed outcome.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/contact"
+                href="/ai-search-assessment"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
-                Get a Free AI Visibility Check
+                Request an AI Search Visibility Review
                 <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -134,36 +134,37 @@ export default function GeoForPlumbersPage() {
         </div>
       </section>
 
+      <TradeAiSearchNav currentHref="/geo-for-plumbers" />
+
       {/* Why it matters */}
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              Homeowners Are Asking AI Who to Call
+              AI-Assisted Search Creates Another Place Customers Can Ask Who to Call
             </h2>
             <p className="mt-4 text-lg text-[#C8EDD2]/80">
-              The search box is no longer the only front door. More plumbing leads start with a
-              question typed into an AI tool, and the answer names a short list of companies. If you
-              are not on it, you lose the job before the homeowner ever sees a Google result.
+              A generated answer may mention a company, cite its page, or recommend it. Those are
+              different observations, and none of them proves that an inquiry or booked job followed.
             </p>
           </div>
           <div className="mx-auto max-w-4xl grid grid-cols-1 gap-5 sm:grid-cols-2">
             {[
               {
-                title: "AI answers name a few, not a page of ten",
-                body: "A list of links gives you ten chances to be seen. An AI answer names two or three plumbers. The math is brutal, and being invisible costs more than it used to.",
+                title: "Generated answers are selective",
+                body: "A generated answer may surface only a small provider set. Record what appears, what is cited, and whether the observation repeats before drawing a conclusion.",
               },
               {
                 title: "Your reviews and reputation feed the answer",
-                body: "AI tools cross-reference your Google Business Profile, reviews, directories, and local mentions. A plumber with strong, consistent signals gets named. A fragmented presence gets skipped.",
+                body: "AI products can draw from websites, business profiles, reviews, directories, and other public sources. Conflicts across those sources create avoidable ambiguity.",
               },
               {
-                title: "Most plumbers have done nothing here",
-                body: "Almost no plumbing company has worked on AI visibility. That is the opportunity. The ones who start now build a lead while competitors do not know the shift is happening.",
+                title: "The baseline comes before the intervention",
+                body: "Freeze the commercial questions, products, geography, and observation rules before changing the website or public profiles.",
               },
               {
-                title: "It compounds, it does not reset",
-                body: "Unlike paid ads that stop the day you stop paying, GEO authority builds over time. The entity and citation work you do now keeps paying off as AI tools update.",
+                title: "Corrections can be verified",
+                body: "Technical releases and public-source corrections can be documented. Recommendation behavior remains variable and must be observed separately over time.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -307,16 +308,16 @@ export default function GeoForPlumbersPage() {
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   Aaron Husak grew a home services company to more than 130 employees and four Inc 5000
                   appearances before launching this agency. He knows what a booked plumbing job is worth,
-                  what homeowners actually search, and why an AI mention only matters if it puts a tech in
-                  a truck. That lens is what separates GEO that produces revenue from GEO that produces
-                  a screenshot.
+                  what homeowners actually search, and why visibility must be kept separate from qualified
+                  inquiries and jobs booked. That lens keeps the work centered on verified corrections and
+                  accountable measurement instead of treating a screenshot as commercial proof.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { stat: "GEO", label: "Core discipline, not a bolt-on" },
                   { stat: "13 yrs", label: "Home services operator" },
-                  { stat: "4x", label: "Inc 5000 (2020 to 2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021 to 2024)" },
                   { stat: "130+", label: "Team built from scratch" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
@@ -350,7 +351,7 @@ export default function GeoForPlumbersPage() {
               },
               {
                 q: "Why does GEO matter for plumbing companies now?",
-                a: "A growing share of homeowners ask AI tools who to call before they see a list of links. When an AI names two or three plumbers and yours is not one of them, you lose the job before the normal search even happens. Most plumbing companies have done nothing here, so the ones who start now build a real lead.",
+                  a: "Some homeowners ask AI products who to call instead of beginning with a page of links. That creates another surface where a plumbing company may be mentioned, cited, or recommended. Establish the baseline first and inspect the sources behind the answer before claiming business impact.",
               },
               {
                 q: "How long does GEO take to work for a plumbing company?",

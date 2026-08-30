@@ -33,7 +33,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
   description:
-    "Home services marketing connected to booked jobs. 13-year operator, 4x Inc 5000. I see your booking rate, average ticket, and where revenue leaks. Not just your lead count.",
+    "Operator-led marketing for home service companies across AI Search, SEO, websites, paid media, public profiles, tracking, and the booking handoff.",
   keywords: [
     "fractional CMO home services",
     "home services marketing",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Sequoia GEO",
     title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
     description:
-      "Your marketing agency sees clicks. I trace calls, booking rate, and jobs booked across the full marketing system. 13 years as a home services operator. 4x Inc 5000.",
+      "Operator-led marketing across AI Search, SEO, websites, paid media, tracking, and the booking handoff. Direct access to a 13-year home services operator.",
     images: [
       {
         url: "/og-image.png",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Home Services Marketing That Looks at the Full Picture | Sequoia GEO",
     description:
-      "Your marketing agency sees clicks. I trace calls, booking rate, and jobs booked across the full marketing system. 4x Inc 5000.",
+      "Operator-led marketing across AI Search, SEO, websites, paid media, tracking, and the booking handoff. 4x Inc 5000.",
   },
   metadataBase: new URL("https://www.sequoiageo.com"),
 };

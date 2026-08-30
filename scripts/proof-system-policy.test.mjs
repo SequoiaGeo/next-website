@@ -130,8 +130,8 @@ test("proof system is visible from public discovery surfaces", () => {
 
 test("AI search methodology names the proof system as its parent standard", () => {
   const methodology = read("src/app/ai-search-methodology/page.tsx");
-  assert.match(methodology, /version: "1\.3"/);
-  assert.match(methodology, /Public methodology, version 1\.3/);
+  assert.match(methodology, /version: "1\.4"/);
+  assert.match(methodology, /Public methodology, version 1\.4/);
   assert.match(methodology, /general qualification rule in the Sequoia Proof System/);
 });
 

@@ -208,7 +208,7 @@ const agencies = [
       { label: "Team scale", value: "Principal-led" },
     ],
     summary:
-      "Full disclosure: this one is mine. I put it last on purpose. Read the other seven first. Sequoia GEO is an operator-led marketing practice founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2020 to 2023). The practice serves HVAC, plumbing, and home service contractors doing $2M to $15M. Marketing services include Google Ads, LSA, local SEO, GBP management, and web design, but the core differentiator is direct access to Aaron and a focus on booking rates, CSR performance, and conversion gaps alongside campaign execution.",
+      "Full disclosure: this one is mine. I put it last on purpose. Read the other seven first. Sequoia GEO is an operator-led marketing practice founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2021 to 2024). The practice serves HVAC, plumbing, and home service contractors doing $2M to $15M. Marketing services include Google Ads, LSA, local SEO, GBP management, and web design, but the core differentiator is direct access to Aaron and a focus on booking rates, CSR performance, and conversion gaps alongside campaign execution.",
     strengths: [
       "Only shop on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
       "Aaron leads every engagement rather than handing the relationship to a junior account manager",

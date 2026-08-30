@@ -47,7 +47,7 @@ export default function Home() {
               <li><strong>Who we are:</strong> Sequoia GEO is an operator-led marketing agency for home service companies. Aaron Husak leads every engagement after spending 13 years building Balanced Comfort to $17M and 130+ employees (4x Inc 5000).</li>
               <li><strong>Who we serve:</strong> HVAC, plumbing, roofing, and restoration contractors doing $2M to $15M in revenue with $5K to $30K per month in marketing spend.</li>
               <li><strong>What we do:</strong> Find and address the gaps that keep prospective customers from finding, trusting, contacting, and booking a home service company. Depending on the engagement, that can include <strong>AI search visibility</strong>, <strong>SEO</strong>, <strong>paid media</strong>, websites, listings, conversion tracking, and the handoff from inquiry to booked job.</li>
-              <li><strong>How we work:</strong> We verify the baseline, fix the first constraint, and measure qualified calls and jobs booked. Engagements start at $2,500 per month with a three-month initial term, then month to month.</li>
+              <li><strong>How we work:</strong> We verify the baseline, fix the first constraint, and measure qualified calls and jobs booked when the available systems and evidence support those stages. Engagements start at $2,500 per month with a three-month initial term, then month to month.</li>
             </ul>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
               What do you actually look at when you take over a contractor&rsquo;s marketing?
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              I start with your P&amp;L, your <strong>CSR booking rate</strong>, and your average ticket, then trace every dollar of <strong>marketing spend</strong> to a booked job. Most agencies hand you a report full of impressions and clicks. The channels matter, but only after we know the numbers behind them.
+              I start with the operating and marketing evidence you can verify, which may include your P&amp;L, <strong>CSR booking rate</strong>, average ticket, channel data, call records, and CRM stages. When those systems can be joined reliably, we evaluate spend through qualified leads and jobs booked instead of stopping at impressions and clicks.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -169,15 +169,15 @@ export default function Home() {
               },
               {
                 title: "Your Ad Spend and What It Actually Produces",
-                body: "I connect your <strong>Google Ads</strong> and <strong>LSA</strong> accounts to your CRM so we can see <strong>cost per booked job</strong>, not cost per lead. A $45 lead that books at 80% is worth more than a $12 lead that books at 15%. Most agencies optimize for the $12 lead because it looks better on a report. I optimize for the one that puts a tech in a truck.",
+                body: "I reconcile your <strong>Google Ads</strong> and <strong>LSA</strong> activity with call, form, and CRM evidence when access and data quality allow it. That lets us distinguish platform conversions from real inquiries and, where the join is dependable, compare <strong>cost per booked job</strong> instead of stopping at cost per lead.",
               },
               {
                 title: "Your Reviews and Reputation Velocity",
                 body: "Reviews help customers evaluate a business, and Google says review count and positive ratings can help local ranking. Google does not publish a review-velocity weighting. I build compliant review request systems through your CRM, then measure response rate, rating, calls, and jobs booked instead of treating one review metric as the strategy.",
               },
               {
-                title: "Your Revenue Attribution (The Part Everyone Skips)",
-                body: "If you cannot tell me the <strong>cost per booked job</strong> for each marketing channel, you are guessing where to spend money. I wire <strong>call tracking</strong> into your dispatch system (<strong>ServiceTitan</strong>, Housecall Pro, or similar) so every dollar of ad spend connects to a real job. This is the single change that has the biggest impact on <strong>marketing ROI</strong>, and most agencies never do it because it requires access they do not ask for.",
+                title: "Your Attribution Gaps (The Part Everyone Skips)",
+                body: "If you cannot tell which channels produced qualified inquiries or jobs booked, budget decisions remain uncertain. I inspect the available <strong>call tracking</strong>, advertising, analytics, and dispatch data in systems such as <strong>ServiceTitan</strong>, Housecall Pro, or Jobber, then document the strongest defensible connection. Missing or conflicting joins stay labeled instead of being filled by assumption.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">

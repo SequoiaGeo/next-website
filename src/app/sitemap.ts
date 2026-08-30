@@ -18,9 +18,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Service pages
     { url: `${BASE_URL}/chatgpt-ads`, lastModified: "2026-07-27", changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/geo-agency`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/geo-for-plumbers`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/geo-for-restoration`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/geo-agency`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/ai-search-assessment`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/geo-for-plumbers`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/geo-for-restoration`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/ai-seo-for-hvac`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/ai-seo-for-roofers`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/geo-agency/fresno-ca`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/geo-agency/colorado-springs-co`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/geo-agency/boise-id`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/geo-agency/chattanooga-tn`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/geo-agency/reno-nv`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/fractional-cmo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/lsa-management`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/ai-automation`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
@@ -43,15 +51,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/best-hvac-marketing-agencies`, lastModified: "2026-08-19", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/best-plumbing-marketing-agencies`, lastModified: "2026-08-19", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/best-roofing-marketing-agencies`, lastModified: "2026-08-19", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/best-ai-seo-agencies-home-services`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.8 },
 
     // Case studies
-    { url: `${BASE_URL}/case-studies`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/case-studies`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/case-studies/balanced-comfort`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/firemans-chimney-sweep`, lastModified: "2026-07-07", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/kabam-plumbing`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/luma-exteriors`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/window-insulation-company`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/case-studies/ai-search-readiness`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/case-studies/ai-search-readiness`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.8 },
 
     // Guides and resources
     { url: `${BASE_URL}/lsa-guide`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
@@ -59,6 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/contractors-guide-ai-search`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/proof-system`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/ai-search-methodology`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/ai-and-client-data-policy`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/leaving-my-marketing-agency`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 
     // Question pages (answer-first, built for the queries contractors type into ChatGPT and Google)
@@ -76,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Tools
     { url: `${BASE_URL}/sales-training`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/audit`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/audit`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/csr-calculator`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/marketing-leak-calculator`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 

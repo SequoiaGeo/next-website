@@ -22,11 +22,11 @@ export default function Hero() {
             </p>
 
             <h1 className="text-4xl font-extrabold text-[#111111] sm:text-5xl lg:text-[3.5rem] leading-[1.06] tracking-tight">
-              More <span className="text-[#1A5C3A]">booked jobs</span> on your calendar. Not more clicks, leads, and reports.
+              Fix what keeps customers from <span className="text-[#1A5C3A]">finding, trusting, and contacting</span> your business.
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              I built a home service company. 130 employees, a $17M exit, 4x Inc 5000. Now I lead every Sequoia engagement and remain your point of contact. I look across AI search, traditional search, paid media, your website, tracking, and the booking handoff to find the marketing constraint that deserves attention first.
+              I built and operated a home service company for 13 years. Now I lead every Sequoia engagement and remain your point of contact. I look across AI search, traditional search, paid media, your website, tracking, and the booking handoff to find the marketing constraint that deserves attention first.
             </p>
 
             <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">

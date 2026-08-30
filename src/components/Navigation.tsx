@@ -10,6 +10,8 @@ const serviceLinks = [
     group: "Core Services",
     items: [
       { label: "AI SEO / Search Visibility", href: "/geo-agency" },
+      { label: "AI Search Assessment", href: "/ai-search-assessment" },
+      { label: "AI SEO by Market", href: "/geo-agency#markets" },
       { label: "LSA Management", href: "/lsa-management" },
       { label: "AI Automation", href: "/ai-automation" },
       { label: "Operator-Led Marketing", href: "/fractional-cmo" },
@@ -25,6 +27,15 @@ const serviceLinks = [
       { label: "Restoration SEO", href: "/restoration-seo" },
     ],
   },
+  {
+    group: "AI Search by Trade",
+    items: [
+      { label: "AI SEO for HVAC", href: "/ai-seo-for-hvac" },
+      { label: "AI SEO for Plumbing", href: "/geo-for-plumbers" },
+      { label: "AI SEO for Roofing", href: "/ai-seo-for-roofers" },
+      { label: "AI SEO for Restoration", href: "/geo-for-restoration" },
+    ],
+  },
 ];
 
 const resourceLinks = [
@@ -37,6 +48,9 @@ const resourceLinks = [
       { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },
       { label: "Sequoia Proof System", href: "/proof-system" },
       { label: "AI Search Measurement Method", href: "/ai-search-methodology" },
+      { label: "AI and Client Data Policy", href: "/ai-and-client-data-policy" },
+      { label: "Hicks Paving AI Search Snapshot", href: "/case-studies/ai-search-readiness" },
+      { label: "AI SEO Agency Comparison", href: "/best-ai-seo-agencies-home-services" },
     ],
   },
   {
@@ -53,6 +67,7 @@ const resourceLinks = [
       { label: "Best HVAC Marketing Agencies", href: "/best-hvac-marketing-agencies" },
       { label: "Best Plumbing Marketing Agencies", href: "/best-plumbing-marketing-agencies" },
       { label: "Best Roofing Marketing Agencies", href: "/best-roofing-marketing-agencies" },
+      { label: "AI SEO Agencies for Home Services", href: "/best-ai-seo-agencies-home-services" },
       { label: "Leaving Your Marketing Agency?", href: "/leaving-my-marketing-agency" },
     ],
   },

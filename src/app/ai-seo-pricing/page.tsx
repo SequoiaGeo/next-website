@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import InlineLeadForm from "@/components/InlineLeadForm";
+import AiSearchTrustPanel from "@/components/AiSearchTrustPanel";
 
 export const metadata: Metadata = {
   title: "GEO and AI SEO Pricing for Service Businesses | Sequoia GEO",
@@ -354,6 +355,8 @@ export default function AiSeoPricingPage() {
           </div>
         </div>
       </section>
+
+      <AiSearchTrustPanel />
 
       <InlineLeadForm
         source="ai_seo_pricing"

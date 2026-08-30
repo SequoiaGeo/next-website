@@ -243,7 +243,7 @@ export default function PlumbingSeoPage() {
                 {[
                   { stat: "Former", label: "C-36 plumbing contractor" },
                   { stat: "13 yrs", label: "Home services operator" },
-                  { stat: "4x", label: "Inc 5000 (2020-2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021 to 2024)" },
                   { stat: "1:1", label: "Work directly with Aaron" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">

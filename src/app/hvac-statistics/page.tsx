@@ -126,7 +126,7 @@ export default function HvacStatisticsPage() {
             <h3 className="text-lg font-bold text-[#1a1a1a] mb-2">What a real $17M HVAC company spent on marketing</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
               Before Sequoia GEO, I operated Balanced Comfort for 13 years and built it to $17M+ in annual revenue
-              and 130+ employees at exit, with four straight Inc 5000 appearances (2020 to 2023). I managed annual
+              and 130+ employees at exit, with four straight Inc 5000 appearances (2021 to 2024). I managed annual
               ad spend in the low seven figures. Run the derivation: low seven figures against $17M+ in revenue
               lands in the 6 to 10 percent of revenue band. That is what it took at that scale.
             </p>

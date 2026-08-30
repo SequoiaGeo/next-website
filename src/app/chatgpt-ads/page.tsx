@@ -118,7 +118,7 @@ export default function ChatGptAdsPage() {
                 "name": "Can you show ROI numbers from ChatGPT ads?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Not yet, and neither can anyone else being honest. Self-serve access opened in beta in May 2026 and is still widening. What we do instead is wire the OpenAI conversion pixel and a defined conversion event before any money is spent, so every dollar is measured from day one, and report exactly what the campaign produced. If the numbers do not work, we say so and stop."
+                  "text": "Not yet, and neither can anyone else being honest. Self-serve access opened in beta in May 2026 and is still widening. What we do instead is install the available conversion measurement before spend begins, separate platform events from verified inquiries, and report the strongest outcome the evidence supports. If the numbers do not work, we say so and stop."
                 }
               },
               {
@@ -500,7 +500,7 @@ export default function ChatGptAdsPage() {
               },
               {
                 q: "Can you show ROI numbers from ChatGPT ads?",
-                a: "Not yet, and neither can anyone else being honest. Self-serve access opened in beta in May 2026 and is still widening. What we do instead is wire the OpenAI conversion pixel and a defined conversion event before any money is spent, so every dollar is measured from day one, and report exactly what the campaign produced. If the numbers do not work, we say so and stop.",
+                a: "Not yet, and neither can anyone else being honest. Self-serve access opened in beta in May 2026 and is still widening. What we do instead is install the available conversion measurement before spend begins, separate platform events from verified inquiries, and report the strongest outcome the evidence supports. If the numbers do not work, we say so and stop.",
               },
               {
                 q: "Why should we start now instead of waiting?",

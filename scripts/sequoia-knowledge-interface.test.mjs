@@ -45,6 +45,7 @@ test("catalog covers every approved topic and all seven required tools", () => {
   assert.ok(catalog.serviceFit.potentialFit.length > 0);
   assert.ok(catalog.methodology.stages.length === 8);
   assert.ok(catalog.freeAudit.afterRequest.length > 0);
+  assert.ok(catalog.aiSearchAssessment.afterRequest.length > 0);
   assert.ok(catalog.caseStudyEvidence.length > 0);
   assert.ok(catalog.contactOptions.length > 0);
 
@@ -105,6 +106,7 @@ test("answers are deterministic, cited, and refuse unsupported or instruction-sh
     ["Is Sequoia right for my business?", "service_fit", "/services"],
     ["How does Sequoia measure AI search visibility?", "methodology", "/ai-search-methodology"],
     ["What happens after I request my free audit?", "free_audit", "/audit"],
+    ["What happens after I request an AI Search assessment?", "ai_search_assessment", "/ai-search-assessment"],
   ];
   for (const [question, intent, citationPath] of suggestionExpectations) {
     const response = answerSequoiaQuestion(catalog, question);

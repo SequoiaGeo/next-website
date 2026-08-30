@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-08-29.1",
+  "catalogVersion": "2026-08-30.3",
   "status": "approved_for_public_use",
-  "approvedOn": "2026-08-28",
-  "reviewValidUntil": "2026-09-27",
+  "approvedOn": "2026-08-30",
+  "reviewValidUntil": "2026-09-29",
   "owner": "Sequoia GEO",
   "externalModelSpendLimitUsd": 0,
   "publicBoundary": "This interface reports approved public facts only. It does not claim to improve or control rankings, citations, or recommendations in ChatGPT, Gemini, or any other answer system.",
@@ -39,7 +39,7 @@
       "path": "/ai-search-methodology",
       "sourceFile": "src/app/ai-search-methodology/page.tsx",
       "sourceAnchors": [
-        "Public methodology, version 1.3",
+        "Public methodology, version 1.4",
         "five times in separate fresh sessions",
         "not statistically independent trials",
         "Publish misses and absences",
@@ -57,14 +57,69 @@
       ]
     },
     "audit": {
-      "label": "Free Marketing Audit",
+      "label": "Free Marketing Scorecard",
       "path": "/audit",
       "sourceFile": "src/app/audit/page.tsx",
       "sourceAnchors": [
-        "Free Marketing Audit",
-        "No account access to start.",
-        "You get the public findings first.",
-        "A written findings report with the source and confidence behind each issue, plus the 5 fixes that should come first."
+        "Free Marketing Scorecard",
+        "no advertising, CRM, or analytics access is needed to begin.",
+        "Eight dimensions customers can encounter before they contact you",
+        "A decision document, not a dashboard screenshot"
+      ]
+    },
+    "ai_assessment": {
+      "label": "Free AI Search Snapshot",
+      "path": "/ai-search-assessment",
+      "sourceFile": "src/app/ai-search-assessment/page.tsx",
+      "sourceAnchors": [
+        "Free AI Search Snapshot",
+        "See what AI search can actually verify about your business.",
+        "Six surfaces behind an AI-generated answer",
+        "Visibility and business outcomes are different stages.",
+        "Your AI Search Snapshot"
+      ]
+    },
+    "proof_system": {
+      "label": "Sequoia Proof System",
+      "path": "/proof-system",
+      "sourceFile": "src/app/proof-system/page.tsx",
+      "sourceAnchors": [
+        "We establish what is true, correct what is broken, and verify the result before we",
+        "Causation is a separate claim",
+        "We do not use a client's financial performance as Sequoia proof"
+      ]
+    },
+    "ai_data_policy": {
+      "label": "AI and Client Data Policy",
+      "path": "/ai-and-client-data-policy",
+      "sourceFile": "src/app/ai-and-client-data-policy/page.tsx",
+      "sourceAnchors": [
+        "Credentials stay out of model prompts",
+        "Customer data is not public prompt material",
+        "Human review remains required",
+        "Named examples require approval",
+        "Clients retain ownership"
+      ]
+    },
+    "hicks_case": {
+      "label": "Hicks Paving AI Search readiness snapshot",
+      "path": "/case-studies/ai-search-readiness",
+      "sourceFile": "src/app/case-studies/ai-search-readiness/page.tsx",
+      "sourceAnchors": [
+        "Permissioned named example",
+        "Five conflicts that had to be separated",
+        "What was not measured",
+        "No controlled ChatGPT, Gemini, or Google AI recommendation panel was run"
+      ]
+    },
+    "media": {
+      "label": "Media, trade writing, and supporting education",
+      "path": "/media",
+      "sourceFile": "src/app/media/page.tsx",
+      "sourceAnchors": [
+        "Media and Writing",
+        "AI Search training, labeled for what it proves",
+        "It does not establish client results"
       ]
     },
     "kabam_case": {
@@ -211,8 +266,8 @@
     "sourceIds": ["services", "pricing"]
   },
   "methodology": {
-    "version": "1.3",
-    "summary": "Sequoia separates mentions, recommendations, primary recommendations, citations, referral visits, inquiries, qualified leads, and jobs booked. A result is never promoted to a later stage without the required evidence.",
+    "version": "1.4",
+    "summary": "Sequoia separates mentions, recommendations, primary recommendations, citations, referral visits, inquiries, qualified leads, and jobs booked. Findings are labeled Recorded, Observed, Inferred, or Unknown, and a result is never promoted to a later stage without the required evidence.",
     "stages": [
       "Mentioned",
       "Recommended",
@@ -225,7 +280,7 @@
     ],
     "protocol": [
       "Freeze the question set and inclusion rules before observing answers.",
-      "Control session, geography, product, device assumptions, and date where the platform permits it.",
+      "Record platform, visible product, app or web surface, account state, search or browse state, device, geography, location method, and date.",
       "Run each frozen question five times in separate fresh sessions per platform.",
       "Treat repeats as stability observations, not statistically independent trials.",
       "Archive the complete response and visible citations before coding the result.",
@@ -236,24 +291,66 @@
       "A citation is not automatically a recommendation.",
       "A referral visit is not automatically an inquiry.",
       "An inquiry is not automatically a qualified lead or job booked.",
-      "Repeated observations do not create a universal ranking."
+      "Repeated observations do not create a universal ranking.",
+      "Most AI products do not preserve an identity-level join from a generated answer to a later visitor."
     ],
     "sourceIds": ["methodology"]
   },
   "freeAudit": {
-    "name": "Free Marketing Audit",
-    "summary": "The free marketing audit begins with a hand-reviewed public-surface scorecard showing what customers, Google, and AI systems can see before account access is requested.",
+    "name": "Free Marketing Scorecard",
+    "summary": "The free marketing scorecard is a hand-reviewed public-surface assessment of positioning, website conversion, SEO, content, local identity, reputation, and distribution before account access is requested.",
     "afterRequest": [
-      "Sequoia reviews the website and public business information first. No account access is needed to begin.",
-      "You receive written findings with the source and confidence behind each issue, plus the five fixes that should come first.",
-      "If an issue needs account-level verification, Sequoia discusses the necessary access with you before going deeper."
+      "Sequoia reviews the website, search presence, public profiles, reputation, positioning, and conversion path first.",
+      "You receive an eight-dimension scorecard with evidence sources, confidence, and five prioritized corrections.",
+      "If a finding needs account-level verification, Sequoia identifies the exact system and record needed before presenting a deeper conclusion."
     ],
     "limitations": [
       "Requesting the audit does not automatically book a meeting, submit information to an AI model, or guarantee that Sequoia will accept an engagement."
     ],
     "sourceIds": ["audit"]
   },
+  "aiSearchAssessment": {
+    "name": "Free AI Search Snapshot",
+    "summary": "The free AI Search Snapshot documents what public facts, pages, sources, citations, and recommendation observations can be verified about a business before account access is requested.",
+    "afterRequest": [
+      "Sequoia reviews public business identity, retrieval and citations, recommendation questions, independent corroboration, website evidence, and the measurement path.",
+      "The assessment keeps mentions, recommendations, primary recommendations, citations, referral visits, inquiries, qualified leads, and jobs booked as separate stages.",
+      "You receive a documented AI Search Snapshot and prioritized correction path. Account access is requested only when a specific finding requires deeper verification."
+    ],
+    "limitations": [
+      "The assessment does not guarantee a recommendation, citation, lead, job, or permanent rank in an independently controlled AI product."
+    ],
+    "sourceIds": ["ai_assessment", "methodology"]
+  },
+  "trustPolicies": {
+    "summary": "Sequoia publishes a named assessment example, a measurement method, proof rules, data safeguards, primary-source media links, an issuer record for its four Inc. 5000 years, and a training credential labeled as education rather than outcome proof.",
+    "dataSafeguards": [
+      "Credentials are not copied into model prompts.",
+      "Personal customer and lead data is not placed into public AI chat tools.",
+      "AI output requires human review before it becomes a client-facing claim or live change.",
+      "Named client examples require permission.",
+      "Third-party retention and deletion controls vary by provider and configuration, so Sequoia does not promise zero retention without verification."
+    ],
+    "limitations": [
+      "Existing testimonials describe the broader client experience and marketing work. They do not prove an increase in AI recommendations.",
+      "A training credential confirms education, not a client result."
+    ],
+    "sourceIds": ["proof_system", "ai_data_policy", "hicks_case", "media"]
+  },
   "caseStudyEvidence": [
+    {
+      "id": "hicks_paving_ai_readiness",
+      "name": "Hicks Paving AI Search readiness snapshot",
+      "evidence": [
+        "The permissioned public example records five public-identity and website conflicts observed on August 14, 2026.",
+        "The observations expire as current evidence after November 12, 2026 unless they are reverified.",
+        "The assessment found a split current and legacy identity, separate public profiles, conflicting machine-readable organization data, legacy URL errors, and divided review equity.",
+        "The page labels official primary records separately from Sequoia's self-recorded public observations.",
+        "The page states that no controlled ChatGPT, Gemini, or Google AI recommendation panel was run and claims no recommendation, lead, job, or causation result."
+      ],
+      "approval": "The page states that the client approved use of Hicks Paving as the named example. Sequoia's public policy requires removal from current public pages and the public catalog if named-example permission is withdrawn.",
+      "sourceIds": ["hicks_case"]
+    },
     {
       "id": "kabam_plumbing",
       "name": "KABAM Plumbing",

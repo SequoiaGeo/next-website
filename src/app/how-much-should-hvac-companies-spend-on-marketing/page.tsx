@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "Should a new HVAC company spend more than 10 percent?",
     answer:
-      "Sometimes, and briefly. When nobody knows your name, awareness costs more than it returns for a while. What I watch is not the percent. It is whether every dollar is tracked to a call and every call to a booked job. A small untracked budget wastes more than a large tracked one.",
+      "Sometimes, and briefly. When nobody knows your name, awareness costs more than it returns for a while. What I watch is not only the percent. It is how much spend can be reconciled to calls, qualified inquiries, and jobs booked without filling data gaps by assumption.",
   },
   {
     question: "What do HVAC leads cost right now?",
@@ -136,7 +136,7 @@ export default function HvacMarketingBudgetPage() {
             {[
               {
                 title: "Nobody knows your name yet",
-                body: "Plan for the top of the band and expect it to feel heavy. Awareness is bought before it pays. The discipline that saves you is tracking, not thrift: every dollar tied to a call, every call tied to a booked job, from day one.",
+                body: "Plan for the top of the band and expect it to feel heavy. Awareness is bought before it pays. The discipline that protects the budget is staged measurement: spend, calls, qualified inquiries, and jobs booked, with missing joins reported honestly.",
               },
               {
                 title: "Referrals carry the trucks",

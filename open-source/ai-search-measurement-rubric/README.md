@@ -25,12 +25,14 @@ Each field records one observable stage. Never infer one stage from another.
 
 1. Freeze the prompts and inclusion rules.
 2. Use a fresh session with memory disabled where available.
-3. Record platform, product, visible search state, geography, date, and time.
-4. Run each prompt five independent times.
+3. Record platform, product, app or web surface, account state, visible search state, device, geography, location method, date, and time.
+4. Run each frozen prompt in separate fresh sessions. Treat repeats as correlated stability observations, not independent trials.
 5. Archive the full response privately before coding.
 6. Record visible citations and provider names.
-7. Have a second person code a sample.
+7. Have a second person independently code at least 20 percent of observations and preserve both decisions.
 8. Report misses and observed variance.
+
+Use a pre-registered frozen core for longitudinal comparison and a separate rotating arm for new questions. Never pool the two panels into one trend line. A neutral panel is a controlled condition, not a measure of total homeowner behavior or total AI demand.
 
 ## Privacy
 
