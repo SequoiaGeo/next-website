@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-08-28.2",
+  "catalogVersion": "2026-08-29.1",
   "status": "approved_for_public_use",
   "approvedOn": "2026-08-28",
   "reviewValidUntil": "2026-09-27",
@@ -39,7 +39,7 @@
       "path": "/ai-search-methodology",
       "sourceFile": "src/app/ai-search-methodology/page.tsx",
       "sourceAnchors": [
-        "Public methodology, version 1.2",
+        "Public methodology, version 1.3",
         "five times in separate fresh sessions",
         "not statistically independent trials",
         "Publish misses and absences",
@@ -211,7 +211,7 @@
     "sourceIds": ["services", "pricing"]
   },
   "methodology": {
-    "version": "1.2",
+    "version": "1.3",
     "summary": "Sequoia separates mentions, recommendations, primary recommendations, citations, referral visits, inquiries, qualified leads, and jobs booked. A result is never promoted to a later stage without the required evidence.",
     "stages": [
       "Mentioned",
