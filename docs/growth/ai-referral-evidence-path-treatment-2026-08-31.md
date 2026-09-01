@@ -6,7 +6,7 @@ Status: ready for preview validation
 
 ## Purpose
 
-Add one identical evidence-path component to two pages that have received ChatGPT referral entries, then read each page against its own prior period. This is a low-volume diagnostic treatment, not a causal experiment.
+Add one identical evidence-path component to two pages that have received ChatGPT referral entries, then read the on-site visitor path for each page against its own prior period. This is a low-volume navigation and conversion-path diagnostic, not an AI-visibility experiment and not a causal experiment.
 
 ## Treated pages
 
@@ -43,3 +43,5 @@ For each treated page, compare descriptive counts before and after publication:
 - qualified leads
 
 Keep raw counts visible. The current traffic base is too small for a decision threshold or causal claim. Do not pool the two pages and do not describe a page-to-page difference as treatment lift.
+
+This treatment cannot measure whether either page became more likely to be retrieved, cited, or recommended by an AI assistant. Describe the change as an evidence-path component shipped to two pages. Do not describe the pages themselves as proof of improved AI-search visibility.

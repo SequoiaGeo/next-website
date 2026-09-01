@@ -15,9 +15,9 @@ const EMBED_URL =
 // Shareable short link, used for open-in-new-tab fallbacks only.
 const SHORT_LINK = "https://calendar.app.google/BTSVH4o5pF3FsY58A";
 
-type BookingSignal = "widget_view" | "calendar_focus" | "fallback_click";
+type BookingInteraction = "widget_view" | "calendar_focus" | "fallback_click";
 
-function bookingEventParams(intentType: BookingSignal) {
+function bookingEventParams(interactionType: BookingInteraction) {
   const campaign = readCampaignAttribution();
   const ai = readAiAttribution();
   const { landing_path: campaignLandingPath, ...campaignFields } = campaign ?? {};
@@ -28,15 +28,15 @@ function bookingEventParams(intentType: BookingSignal) {
     ...aiFields,
     source: "booking_calendar",
     cta_contract: "schedule",
-    intent_type: intentType,
+    interaction_type: interactionType,
     page_path: window.location.pathname,
     first_touch_landing_path: aiLandingPath || campaignLandingPath || window.location.pathname,
   };
 }
 
-function trackBookingIntent(intentType: "calendar_focus" | "fallback_click") {
-  const params = bookingEventParams(intentType);
-  trackEvent("booking_intent", params);
+function trackBookingInteraction(interactionType: "calendar_focus" | "fallback_click") {
+  const params = bookingEventParams(interactionType);
+  trackEvent("booking_interaction", params);
   return params;
 }
 
@@ -56,7 +56,7 @@ export default function BookingCalendar({ className }: { className?: string }) {
       if (engaged.current) return;
       if (document.activeElement === iframeRef.current) {
         engaged.current = true;
-        trackEvent("calendar_engagement", trackBookingIntent("calendar_focus"));
+        trackEvent("calendar_engagement", trackBookingInteraction("calendar_focus"));
       }
     };
 
@@ -110,7 +110,7 @@ export default function BookingCalendar({ className }: { className?: string }) {
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-[#1A5C3A] underline-offset-2 hover:underline"
-          onClick={() => trackEvent("calendar_fallback_click", trackBookingIntent("fallback_click"))}
+          onClick={() => trackEvent("calendar_fallback_click", trackBookingInteraction("fallback_click"))}
         >
           Open it in a new tab
         </a>

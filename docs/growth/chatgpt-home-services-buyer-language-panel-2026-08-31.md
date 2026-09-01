@@ -82,3 +82,9 @@ The first-coder pass completed 30 valid observations, five per prompt, on August
 The strongest first-wave retrieval was the explicit trade-specialist question, BL-02. Questions asking whom to hire, BL-01 and BL-03, often returned category guidance instead of a named provider. The implementation question, BL-05, consistently returned guidance rather than an agency recommendation. Sequoia-owned pages supported the captured Sequoia appearances; no independent third-party support for Sequoia was visible in the coded rows.
 
 Do not publish this wave as research. The screen-level answers were coded live, but a complete answer archive was not retained, so the rows cannot receive the required independent 20% recode. The next scheduled wave must preserve the full visible answer for every run, then assign at least six randomly selected observations to a second coder before any public reporting or before-and-after comparison.
+
+## Hard reuse prohibition
+
+The counts in this wave are not approved for the website, proposals, pitch decks, sales emails, sales calls, social posts, podcast appearances, press materials, or client reporting. Do not cite the 4/5 cell, the 7/30 total, or any derived percentage outside this internal operating note. The counts remain blocked until a complete answer archive exists, the coding rubric can be applied to every answer, and at least 20% of observations receive an independent second-code review.
+
+Until those gates pass, the only approved external statement is: `Sequoia is testing a frozen buyer-language prompt panel, and no publishable result is available yet.`

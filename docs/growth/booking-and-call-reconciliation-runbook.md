@@ -8,7 +8,7 @@ Status: booking capture verified, automatic CRM delivery and deterministic websi
 
 - A `phone_click` is website call intent. It is not a completed call, inquiry, qualified lead, or job booked.
 - A `booking_widget_view` means at least half of the scheduler remained visible for one second. It is the denominator for scheduler interaction, not intent or a lead.
-- A `booking_intent` is the first focus interaction with the booking calendar or a fallback-link click. It is not a completed booking, inquiry, qualified lead, or job booked.
+- A `booking_interaction` is the first focus interaction with the booking calendar or a fallback-link click. It is not proof of buying intent, a completed booking, inquiry, qualified lead, or job booked.
 - A Google Calendar appointment notice is a captured booking. It is not automatically website-originated or qualified.
 - A completed HighLevel call is a captured call only when the call record establishes that the call connected.
 - A website lead requires an identity-level join between the captured booking or call and website-origin evidence, plus the written business-need and qualification rules.
@@ -17,7 +17,7 @@ The deterministic policy is implemented in `scripts/booking-call-reconciliation-
 
 ## Booking procedure
 
-1. Preserve `booking_widget_view` and `booking_intent` as separate GA4 events. Record `intent_type`, the current `page_path`, `first_touch_landing_path`, first-tagged campaign fields, and privacy-safe AI first-touch fields when they exist.
+1. Preserve `booking_widget_view` and `booking_interaction` as separate GA4 events. Record `interaction_type`, the current `page_path`, `first_touch_landing_path`, first-tagged campaign fields, and privacy-safe AI first-touch fields when they exist.
 2. Search Gmail at the message level for original appointment notices with `subject:"Appointment booked:" -subject:"Re:" newer_than:14d`.
 3. Read the original notice and capture the appointment time, attendee identity, and scheduler description privately.
 4. Find the exact-email HighLevel contact. Upsert it when missing and add `captured-booking`.
@@ -30,7 +30,7 @@ The deterministic policy is implemented in `scripts/booking-call-reconciliation-
 
 The current Google Calendar appointment iframe is cross-origin. It cannot report booking completion to the Sequoia site, and the current appointment schedule does not accept hidden landing-page, campaign, or AI-referrer fields. Therefore:
 
-- Keep `booking_intent` analytics separate from captured bookings.
+- Keep `booking_interaction` analytics separate from captured bookings.
 - Do not copy anonymous browser attribution into a named booking by time-window guesswork.
 - When a scheduler or CRM later supports first-party hidden fields, carry `landing_path`, `ai_engine_source`, `referrer_host`, `captured_at`, and campaign fields into the booking record directly.
 - Until then, record AI-source details from the prospect in first-call notes as prospect-reported evidence. Do not treat those answers as an identity-level browser join.

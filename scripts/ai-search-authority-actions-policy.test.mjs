@@ -24,13 +24,13 @@ test("founder positioning separates career start from owner and operator tenure"
   assert.doesNotMatch(combined, /13 years of experience/i);
 });
 
-test("booking intent stays separate and preserves privacy-safe attribution fields", () => {
+test("booking interaction stays separate and preserves privacy-safe attribution fields", () => {
   const component = read("src/components/BookingCalendar.tsx");
   const runbook = read("docs/growth/booking-and-call-reconciliation-runbook.md");
 
-  assert.match(component, /trackEvent\("booking_intent"/);
+  assert.match(component, /trackEvent\("booking_interaction"/);
   assert.match(component, /trackEvent\("booking_widget_view"/);
-  assert.match(component, /intent_type/);
+  assert.match(component, /interaction_type/);
   assert.match(component, /page_path/);
   assert.match(component, /first_touch_landing_path/);
   assert.match(component, /landing_path: campaignLandingPath/);
@@ -82,6 +82,8 @@ test("buyer-language panel is frozen without GEO and requires five repetitions",
   assert.doesNotMatch(promptSection, /\bGEO\b/);
   assert.match(protocol, /Run each prompt five times/);
   assert.match(protocol, /appearance rate/);
+  assert.match(protocol, /Hard reuse prohibition/);
+  assert.match(protocol, /not approved for the website, proposals, pitch decks, sales emails, sales calls, social posts, podcast appearances/);
 });
 
 test("the approved starting price remains public", () => {
