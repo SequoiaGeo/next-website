@@ -7,7 +7,7 @@ import TradeAiSearchNav from "@/components/TradeAiSearchNav";
 export const metadata: Metadata = {
   title: "AI SEO for Plumbers | Plumbing AI Search Visibility",
   description:
-    "AI SEO for plumbers from a home services marketer since 2006 and 13-year owner and operator. Measure mentions, recommendations, citations, visits, and qualified leads separately.",
+    "AI SEO for plumbers from a founder whose home-services career began in 2006 and includes 13 years as an owner and operator. Measure each evidence stage separately.",
   alternates: {
     canonical: "https://www.sequoiageo.com/geo-for-plumbers",
   },
@@ -303,7 +303,7 @@ export default function GeoForPlumbersPage() {
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   Sequoia GEO was named around Generative Engine Optimization and now uses AI SEO as
                   its primary public term. The practice is run by someone who
-                  spent 13 years in the field.
+                  began working in home services in 2006 and spent 13 years as an owner and operator.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   Aaron Husak grew a home services company to more than 130 employees and four Inc 5000

@@ -7,7 +7,7 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "Fractional CMO for Home Service Contractors | $17M Operator",
   description:
-    "Marketing leadership without the full-time hire. Fractional Marketing Lead services start at $5,000 a month. Led by a home services operator with 13 years of experience.",
+    "Marketing leadership without the full-time hire. Fractional Marketing Lead services start at $5,000 a month. Led by a founder with a home-services career that began in 2006, including 13 years as an owner and operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/fractional-cmo",
   },
@@ -42,7 +42,7 @@ const primaryFaqs = [
   {
     question: "What industries do you work with?",
     answer:
-      "Fractional CMO services at Sequoia GEO are built specifically for home service companies: HVAC contractors, plumbing businesses, roofing contractors, water damage and restoration companies, and other trade-based home service operations. The marketing dynamics are similar across trades (local search, phone-first conversion, seasonal demand, review-driven reputation), though each trade has channel-specific nuances that 13 years of operating in home services makes immediately familiar.",
+      "Fractional CMO services at Sequoia GEO are built specifically for home service companies: HVAC contractors, plumbing businesses, roofing contractors, water damage and restoration companies, and other trade-based home service operations. The marketing dynamics are similar across trades (local search, phone-first conversion, seasonal demand, review-driven reputation). Aaron's home-services career began in 2006 and includes 13 years as an owner and operator.",
   },
 ];
 
@@ -307,7 +307,7 @@ export default function FractionalCmoPage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { stat: "13 years", label: "Running home services" },
+                  { stat: "13 years", label: "Owner and operator" },
                   { stat: "$17M+", label: "Annual revenue at peak" },
                   { stat: "4x", label: "Inc 5000 (2021 to 2024)" },
                   { stat: "130+", label: "Employees at peak" },

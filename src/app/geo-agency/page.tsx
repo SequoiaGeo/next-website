@@ -362,7 +362,7 @@ export default function GeoAgencyPage() {
                   You work with Aaron, not an account manager
                 </h2>
                 <p className="mt-5 text-lg leading-relaxed text-[#C8EDD2]/75">
-                  Aaron Husak spent 13 years building and running a home service company before
+                  Aaron Husak spent 13 years building and running a home service company, in an industry career that began in 2006, before
                   founding Sequoia GEO. He leads the strategy, joins the working meetings, reviews the
                   evidence, and remains accountable for the decisions. Specialized implementation
                   support may be added, but the strategic relationship is not handed off.

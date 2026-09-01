@@ -5,7 +5,7 @@ import { cities } from "./city-data";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "HVAC Marketing Run by a 13-Year Home Services Operator | Sequoia GEO",
+  title: "HVAC Marketing Led by a Home Services Owner | Sequoia GEO",
   description:
     "HVAC marketing from an operator who grew an HVAC company to 4x Inc 5000. Google Ads, LSA, and local SEO built city by city. Find your market and get a free audit.",
   alternates: {

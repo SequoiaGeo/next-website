@@ -8,14 +8,14 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "Roofing SEO Services Managed by a Home Services Operator",
   description:
-    "Roofing SEO built around local visibility, attributable calls, and jobs booked. Work directly with Aaron Husak, a 13-year home services operator.",
+    "Roofing SEO built around local visibility, attributable calls, and jobs booked. Aaron Husak's home-services career began in 2006 and includes 13 years as an owner and operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/roofing-seo",
   },
   openGraph: {
     title: "Roofing SEO Services Managed by a Home Services Operator",
     description:
-      "Roofing SEO built around local visibility, attributable calls, and jobs booked. Work directly with Aaron Husak, a 13-year home services operator.",
+      "Roofing SEO built around local visibility, attributable calls, and jobs booked. Aaron Husak's home-services career began in 2006 and includes 13 years as an owner and operator.",
     url: "https://www.sequoiageo.com/roofing-seo",
     type: "website",
   },
@@ -57,7 +57,7 @@ export default function RoofingSeoPage() {
     <>
       <ServiceJsonLd
         serviceType={"Roofing SEO"}
-        description={"SEO for roofing companies from a 13-year home services operator, connecting search visibility to qualified calls and signed contracts."}
+        description={"SEO for roofing companies led by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator."}
         url={"https://www.sequoiageo.com/roofing-seo"}
       />
       <BreadcrumbJsonLd

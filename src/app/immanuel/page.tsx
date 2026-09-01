@@ -49,7 +49,7 @@ export default function ImmanuelBannerPage() {
           </div>
           <div className="border-r border-[#1e4a33] px-1 text-center sm:px-2">
             <dt className="text-[13px] font-extrabold leading-tight text-white sm:text-base">
-              13 years in home services
+              13 years as an owner
             </dt>
             <dd className="mt-0.5 text-[10px] leading-tight text-[#8fb8a1] sm:text-xs">
               Built it to 130+ employees
@@ -68,7 +68,7 @@ export default function ImmanuelBannerPage() {
         <div className="mt-4 rounded-2xl bg-[#12301f] p-5">
           <p className="text-[13px] leading-relaxed text-[#b9d4c4]">
             <span className="font-bold text-white">Who you are talking to.</span> I am Aaron Husak.
-            I spent 13 years running Balanced Comfort Heating &amp; Air here in the valley, growing
+            My home-services career began in 2006. I spent 13 years running Balanced Comfort Heating &amp; Air here in the valley, growing
             it to 130+ employees and four straight years on the Inc. 5000. I bought advertising as
             an owner spending my own margin, not as an account manager spending someone
             else&rsquo;s. Now I run a small marketing practice out of Sanger, a few clients at a

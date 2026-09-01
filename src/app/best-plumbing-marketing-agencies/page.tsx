@@ -2,11 +2,12 @@
 import Link from "next/link";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import InlineLeadForm from "@/components/InlineLeadForm";
+import AiSearchEvidencePath from "@/components/AiSearchEvidencePath";
 
 export const metadata: Metadata = {
   title: "Best Plumbing Marketing Agencies 2026 Ranked by an Operator",
   description:
-    "8 plumbing marketing companies ranked by a home services marketer since 2006 and 13-year owner and operator, with pricing where it exists. My own practice is on the list, disclosed.",
+    "8 plumbing marketing companies ranked by a founder whose home-services career began in 2006 and includes 13 years as an owner and operator. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-plumbing-marketing-agencies",
   },
@@ -316,7 +317,7 @@ export default function BestPlumbingAgenciesPage() {
             "description": "8 plumbing marketing agencies ranked and reviewed for 2026, with strengths, considerations, and who each agency is best for by revenue size.",
             "author": { "@type": "Organization", "name": "Sequoia GEO" },
             "publisher": { "@type": "Organization", "name": "Sequoia GEO", "url": "https://www.sequoiageo.com" },
-            "dateModified": "2026-08-03",
+            "dateModified": "2026-08-31",
             "mainEntityOfPage": "https://www.sequoiageo.com/best-plumbing-marketing-agencies"
           })
         }}
@@ -427,6 +428,8 @@ export default function BestPlumbingAgenciesPage() {
           </div>
         </div>
       </section>
+
+      <AiSearchEvidencePath />
 
       {/* How to choose */}
       <section className="bg-[#fafaf8] py-16">

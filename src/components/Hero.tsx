@@ -5,7 +5,7 @@ const credentials = [
   "4x Inc 5000",
   "130+ employees built",
   "$17M+ revenue at exit",
-  "13 years in the field",
+  "13 years as an owner and operator",
   "You work with me, not an account manager",
 ];
 
@@ -26,7 +26,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              I built and operated a home service company for 13 years. Now I lead every Sequoia engagement and remain your point of contact. I look across AI search, traditional search, paid media, your website, tracking, and the booking handoff to find the marketing constraint that deserves attention first.
+              My home-services career began in 2006, including 13 years building and operating a home service company. Now I lead every Sequoia engagement and remain your point of contact. I look across AI search, traditional search, paid media, your website, tracking, and the booking handoff to find the marketing constraint that deserves attention first.
             </p>
 
             <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">

@@ -53,7 +53,7 @@ export default function ContactPage() {
             </p>
           </div>
           <p className="mt-4 text-sm text-gray-500">
-            13 years running marketing inside home-service companies, including four straight years on the Inc. 5000.{" "}
+            A home-services career that began in 2006, including 13 years building and running Balanced Comfort and four straight years on the Inc. 5000.{" "}
             <a href="/case-studies" className="font-medium text-[#1A5C3A] underline underline-offset-2 hover:text-[#3A9E6A]">
               See the case studies
             </a>

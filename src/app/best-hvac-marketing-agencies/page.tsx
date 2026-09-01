@@ -5,7 +5,7 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Best HVAC Marketing Agencies 2026 | Reviewed & Compared",
   description:
-    "8 HVAC marketing companies reviewed by a home services marketer since 2006 and 13-year owner and operator: pricing, differentiators, and who each one fits. My own practice is on the list, disclosed.",
+    "8 HVAC marketing companies reviewed by a founder whose home-services career began in 2006 and includes 13 years as an owner and operator. Pricing, differentiators, and fit are disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-hvac-marketing-agencies",
   },

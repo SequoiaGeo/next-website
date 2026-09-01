@@ -40,6 +40,8 @@ Reconcile accepted form IDs between notification email and HighLevel. Compare GA
 
 Campaign and AI-referral fields in the accepted-form email are the current lead-level attribution record. The website also sends a flat HighLevel mapping contract, but the August 15 production test proved that the receiving workflow does not yet store it. Until the workflow remediation is verified, HighLevel is the qualification ledger but not the attribution source. Campaign attribution is first tagged touch within the same browser tab, so it reports a floor. GA4 native session attribution uses different rules and is a directional cross-check, not an ID-level source of truth. A later branded search, direct return, copied link, or new in-app browser can lose the first-touch tag.
 
+For first calls with prospects who report finding Sequoia through an AI assistant, use `docs/growth/ai-source-first-call-capture.md`. Platform, approximate question, recommendation position, and cited URL remain prospect-reported evidence unless an identity-level browser or booking join independently verifies them.
+
 ## Funnel math
 
 | Qualified visit-to-lead rate | Qualified visits required per week |
@@ -164,7 +166,9 @@ The dates are earliest eligible dates, not unconditional publication promises. A
 6. Descriptive internal links to the baseline review and related evidence pages.
 7. Search Console recrawl request after deployment.
 
-Bundle each page's internal-link additions with its treatment date. Keep `/hvac-seo` and links pointing to it unchanged until both treatment reads are complete. Preserve `/best-plumbing-marketing-agencies` during the first plumbing treatment and evaluate combined plumbing-cluster clicks and leads across both plumbing URLs in addition to per-page results.
+Bundle each page's internal-link additions with its treatment date. Keep `/hvac-seo` and links pointing to it unchanged until both treatment reads are complete.
+
+Measurement amendment, August 31, 2026: the combined plumbing-cluster read that required `/best-plumbing-marketing-agencies` to remain unchanged is retired. The comparison page is now part of a separately registered AI-referral evidence-path treatment. Continue reading `/plumbing-seo` at the page level. Do not attribute a cluster-level change to the plumbing SEO refresh after this amendment.
 
 Evaluate page-level nonbranded clicks, CTR, average position, and Google generative AI impressions. Do not use the 30-day lead total as the sole SEO verdict.
 

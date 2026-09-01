@@ -44,7 +44,7 @@ export default function Home() {
           <div className="rounded-2xl border border-[#3A9E6A]/20 bg-[#fafaf8] p-6 sm:p-8">
             <p className="section-overline mb-3 text-[#1A5C3A]">TL;DR</p>
             <ul className="space-y-2 text-base text-gray-700">
-              <li><strong>Who we are:</strong> Sequoia GEO is an operator-led marketing agency for home service companies. Aaron Husak leads every engagement after spending 13 years building Balanced Comfort to $17M and 130+ employees (4x Inc 5000).</li>
+              <li><strong>Who we are:</strong> Sequoia GEO is an operator-led marketing agency for home service companies. Aaron Husak leads every engagement after 13 years building and running Balanced Comfort, in a home-services career that began in 2006. Balanced Comfort reached 130+ employees and made the Inc. 5000 four times.</li>
               <li><strong>Who we serve:</strong> HVAC, plumbing, roofing, and restoration contractors doing $2M to $15M in revenue with $5K to $30K per month in marketing spend.</li>
               <li><strong>What we do:</strong> Find and address the gaps that keep prospective customers from finding, trusting, contacting, and booking a home service company. Depending on the engagement, that can include <strong>AI search visibility</strong>, <strong>SEO</strong>, <strong>paid media</strong>, websites, listings, conversion tracking, and the handoff from inquiry to booked job.</li>
               <li><strong>How we work:</strong> We verify the baseline, fix the first constraint, and measure qualified calls and jobs booked when the available systems and evidence support those stages. Engagements start at $2,500 per month with a three-month initial term, then month to month.</li>

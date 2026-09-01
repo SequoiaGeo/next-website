@@ -74,7 +74,7 @@ export default function Footer() {
             </div>
             <p className="text-pale-green/80 text-sm leading-relaxed max-w-md mb-4">
               Growth operations for home service companies doing $2M to $15M.
-              Founded by Aaron Husak, a home services marketer since 2006 and 13-year owner and operator.
+              Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">
               4x Inc 5000 (2021 to 2024) &middot; Former California contractor qualifier &middot; Fresno, CA &middot; Serving Nationwide

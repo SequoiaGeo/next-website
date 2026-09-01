@@ -118,7 +118,7 @@ export default function PlumbingSeoPage() {
               </a>
             </div>
             <p className="mt-6 text-base leading-relaxed text-gray-500 sm:text-lg">
-              You work directly with Aaron, a 13-year home services operator and former C-36
+              You work directly with Aaron, whose home-services career began in 2006 and includes 13 years as an owner and operator, and who is a former C-36
               plumbing contractor, not an account manager. Looking to become a plumber{" "}
               <Link href="/geo-for-plumbers" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
                 AI tools recommend

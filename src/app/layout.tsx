@@ -31,7 +31,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
+  title: "Home Services Marketing by a 13-Year Owner and Operator | Sequoia GEO",
   description:
     "Operator-led marketing for home service companies across AI Search, SEO, websites, paid media, public profiles, tracking, and the booking handoff.",
   keywords: [
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.sequoiageo.com",
     siteName: "Sequoia GEO",
-    title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
+    title: "Home Services Marketing by a 13-Year Owner and Operator | Sequoia GEO",
     description:
-      "Operator-led marketing across AI Search, SEO, websites, paid media, tracking, and the booking handoff. Direct access to a 13-year home services operator.",
+      "Operator-led marketing across AI Search, SEO, websites, paid media, tracking, and the booking handoff. Aaron's home-services career began in 2006 and includes 13 years as an owner and operator.",
     images: [
       {
         url: "/og-image.png",
@@ -81,7 +81,7 @@ const organizationSchema = {
   logo: "https://www.sequoiageo.com/logo.png",
   image: "https://www.sequoiageo.com/og-image.png",
   description:
-    "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, a home services marketer since 2006 and 13-year owner and operator.",
+    "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.",
   foundingDate: "2024",
   founder: {
     "@type": "Person",

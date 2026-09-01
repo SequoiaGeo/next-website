@@ -55,6 +55,25 @@ const sequence = [
   "Only then run a controlled AI Search observation panel and report mentions, recommendations, citations, and absences separately.",
 ] as const;
 
+const deliverables = [
+  {
+    title: "Evidence register",
+    description: "A dated source list separating official records, direct public observations, owner statements, and items that still required account access.",
+  },
+  {
+    title: "Public-surface scorecard",
+    description: "An eight-dimension assessment that made entity consistency, reputation, technical defects, and measurement limits visible without combining them into one vague claim.",
+  },
+  {
+    title: "Prioritized correction sequence",
+    description: "A documented order for confirming the business identity, correcting owned surfaces, protecting legitimate review history, and preparing source-specific submissions.",
+  },
+  {
+    title: "Measurement boundary and recheck date",
+    description: "A written record of what was observed, what was not measured, and when the public evidence becomes too old to rely on without another check.",
+  },
+] as const;
+
 export default function HicksPavingAiSearchReadinessPage() {
   return (
     <main>
@@ -64,6 +83,22 @@ export default function HicksPavingAiSearchReadinessPage() {
           { name: "Case Studies", url: "https://www.sequoiageo.com/case-studies" },
           { name: "Hicks Paving AI Search Readiness Snapshot", url: "https://www.sequoiageo.com/case-studies/ai-search-readiness" },
         ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Hicks Paving AI Search Readiness Snapshot",
+            description: "A permissioned example of a public-surface assessment, verified identity conflicts, and the correction sequence Sequoia GEO produced.",
+            author: { "@type": "Organization", name: "Sequoia GEO" },
+            publisher: { "@type": "Organization", name: "Sequoia GEO", url: "https://www.sequoiageo.com" },
+            datePublished: "2026-08-30",
+            dateModified: "2026-08-31",
+            mainEntityOfPage: "https://www.sequoiageo.com/case-studies/ai-search-readiness",
+          }),
+        }}
       />
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
@@ -80,6 +115,9 @@ export default function HicksPavingAiSearchReadinessPage() {
             sequence it produced. It does not show a change in AI assistant recommendations, leads,
             jobs, or business results. Those outcomes were not measured in this assessment.
           </div>
+          <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#C8EDD2]/70">
+            Sequoia GEO performs this evidence-led AI-search readiness work for home-service and local-service businesses. Review the <Link href="/ai-search-methodology" className="font-bold text-white underline underline-offset-4">public methodology</Link> or <Link href="/ai-search-assessment" className="font-bold text-white underline underline-offset-4">request a free assessment</Link>.
+          </p>
         </div>
       </section>
       <section className="bg-white py-20 sm:py-24">
@@ -96,6 +134,18 @@ export default function HicksPavingAiSearchReadinessPage() {
                 <p className="mt-3 text-sm leading-relaxed text-gray-700">{value}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-14">
+            <p className="section-overline mb-4">What Sequoia produced</p>
+            <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Four documented outputs from the assessment</h2>
+            <div className="mt-8 grid gap-5 md:grid-cols-2">
+              {deliverables.map((item) => (
+                <article key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-6">
+                  <h3 className="text-lg font-bold text-[#0D2318]">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-700">{item.description}</p>
+                </article>
+              ))}
+            </div>
           </div>
           <div className="mt-14">
             <p className="section-overline mb-4">What the evidence showed</p>
@@ -158,7 +208,7 @@ export default function HicksPavingAiSearchReadinessPage() {
             </div>
           </div>
           <p className="mt-10 text-sm leading-relaxed text-gray-500">
-            Last reviewed August 30, 2026. Public records and profiles can change after the evidence date.
+            Last reviewed August 31, 2026. Public records and profiles can change after the evidence date.
             Treat these observations as historical after November 12, 2026 unless they are reverified.
             This is a marketing and public-surface assessment, not a legal opinion.
           </p>
