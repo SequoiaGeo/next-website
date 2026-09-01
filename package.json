@@ -22,7 +22,8 @@
     "test:ai-city-system": "node --test scripts/ai-city-system-policy.test.mjs",
     "test:ai-search-conversion": "node --test scripts/ai-search-conversion-pages-policy.test.mjs",
     "test:ai-search-trust": "node --test scripts/ai-search-trust-policy.test.mjs",
-    "test:ai-search-authority-actions": "node --test scripts/ai-search-authority-actions-policy.test.mjs"
+    "test:ai-search-authority-actions": "node --test scripts/ai-search-authority-actions-policy.test.mjs",
+    "test:knowledge-query-recording": "node --test scripts/sequoia-knowledge-query-recording.test.mjs"
   },
   "dependencies": {
     "next": "^14.2.35",

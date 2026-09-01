@@ -19,4 +19,4 @@ jobs:
         with:
           node-version: 20
       - name: Verify catalog freshness and public sources
-        run: node --test scripts/sequoia-knowledge-interface.test.mjs
+        run: node --test scripts/sequoia-knowledge-interface.test.mjs scripts/sequoia-knowledge-query-recording.test.mjs
