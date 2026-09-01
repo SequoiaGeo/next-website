@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "How do I measure whether my HVAC SEO is working?",
     answer:
-      "Phone calls and booked jobs from organic search. Not rankings, not traffic. That requires call tracking, Google Analytics, and Search Console wired in before the work starts, so every dollar can be traced to an outcome. If your current program cannot draw a line from rankings to the dispatch board, it is not being managed.",
+      "Qualified calls and jobs booked are stronger business outcomes than rankings or traffic alone. Call tracking, Google Analytics, Search Console, and CRM evidence can improve that connection, but only when the systems preserve a dependable source-to-outcome join.",
   },
   {
     question: "Should HVAC companies buy leads from Angi or other lead sellers?",
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "Does AI search matter for HVAC companies yet?",
     answer:
-      "Yes, and it rewards the same fundamentals. When a homeowner asks ChatGPT or Perplexity who to call, those tools lean on the signals real customers already left behind: reviews, consistent business information, and pages that state plainly what you do and where. There is no separate trick to buy. Companies with strong local SEO foundations are the ones AI assistants recommend, which is why I track AI referrals in every account I manage.",
+      "Yes, but a strong search foundation does not guarantee an AI recommendation. Clear service and location information, consistent business details, credible reviews, and corroborating sources can make an HVAC company easier for search and AI systems to understand. Sequoia measures mentions, citations, referral visits, inquiries, and qualified leads as separate stages.",
   },
   {
     question: "What does HVAC SEO cost with Sequoia GEO?",
@@ -159,7 +159,7 @@ export default function HvacSeoPage() {
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   Balanced Comfort Heating &amp; Air grew from a startup to 130+ employees and
-                  $17M+ in annual revenue before the exit. We made the Inc 5000 four years running: 2020, 2021, 2022, 2023.
+                  $17M+ in annual revenue before the exit. We made the Inc 5000 four years running: 2021, 2022, 2023, 2024.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   I didn&rsquo;t just market the company. I dispatched technicians. I listened to call
@@ -190,7 +190,7 @@ export default function HvacSeoPage() {
                 {[
                   { stat: "13 years", label: "Running an HVAC company" },
                   { stat: "130+", label: "Employees at peak" },
-                  { stat: "4x", label: "Inc 5000 (2020-2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021 to 2024)" },
                   { stat: "C-20", label: "CA HVAC license held" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
@@ -331,25 +331,25 @@ export default function HvacSeoPage() {
               The Full Picture for HVAC Companies
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              These aren&rsquo;t standalone HVAC services. They&rsquo;re one integrated program,
-              every channel tracked back to your dispatch board, with one person accountable for
-              the combined result.
+              These services can operate as one coordinated program. When your systems and data
+              support it, Sequoia connects source activity to qualified leads and jobs booked while
+              keeping uncertain attribution clearly labeled.
             </p>
           </div>
 
           <div className="mx-auto max-w-4xl grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              "Google Ads managed to cost-per-booked-job",
+              "Google Ads management with lead and booked-job reconciliation",
               "Local Services Ads setup & dispute management",
               "Google Business Profile optimization",
               "Map Pack ranking strategy",
               "Seasonal keyword campaigns (AC repair, heating & cooling)",
               "Emergency service ad scheduling",
-              "Review generation integrated with dispatch",
+              "Review-system planning tied to completed service",
               "HVAC website conversion optimization",
               "AI search visibility (ChatGPT, Perplexity)",
-              "Marketing attribution & call tracking",
-              "CSR booking rate analysis",
+              "Marketing attribution and call tracking",
+              "Call-handling and booking-stage analysis",
               "Vendor accountability (if you have existing agencies)",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 rounded-xl border border-gray-200 bg-[#fafaf8] px-4 py-3">
@@ -360,6 +360,13 @@ export default function HvacSeoPage() {
               </div>
             ))}
           </div>
+          <p className="mx-auto mt-8 max-w-3xl text-center text-base text-gray-600">
+            Looking specifically at ChatGPT, Gemini, Google AI, and other answer systems? See our{" "}
+            <Link href="/ai-seo-for-hvac" className="font-semibold text-[#1A5C3A] hover:underline">
+              AI SEO for HVAC companies
+            </Link>{" "}
+            approach.
+          </p>
         </div>
       </section>
 

@@ -150,7 +150,7 @@ const posts = [
     slug: "roofing-seo-complete-guide-to-ranking",
     title: "Roofing SEO: The Complete Guide to Ranking in 2026",
     excerpt:
-      "Insurance vs. retail leads, storm surge management, Map Pack ranking signals, and how AI search is changing roofing lead generation. A framework built from 13 years in home services.",
+      "Insurance vs. retail leads, storm surge management, Map Pack ranking signals, and how AI search is changing roofing lead generation. A framework built from 13 years as a home-services owner and operator.",
     date: "February 2026",
     readTime: "11 min read",
     category: "Roofing",

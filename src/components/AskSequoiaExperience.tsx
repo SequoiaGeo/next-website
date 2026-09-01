@@ -16,8 +16,8 @@ export default function AskSequoiaExperience() {
               public case-study evidence, or contact options.
             </p>
             <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[#C8EDD2]/60">
-              {catalog.publicBoundary} Questions and answers stay in this page state. They are not
-              sent to an AI model, added to a URL, or stored by a Sequoia answer service.
+              {catalog.publicBoundary} Submitted questions may be reviewed to improve Ask Sequoia
+              and this website. Questions are not sent to an AI model or added to a URL.
             </p>
           </div>
         </div>

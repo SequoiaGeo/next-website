@@ -2,11 +2,12 @@ import Link from "next/link";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import TradeAiSearchNav from "@/components/TradeAiSearchNav";
 
 export const metadata: Metadata = {
-  title: "GEO for Restoration Companies: Get Recommended in AI Search",
+  title: "AI SEO for Restoration Companies | AI Search Visibility",
   description:
-    "AI SEO for restoration companies from a home services marketer since 2006 and 13-year owner and operator. Measure mentions, recommendations, citations, visits, and qualified leads separately.",
+    "AI SEO for restoration companies from a founder whose home-services career began in 2006 and includes 13 years as an owner and operator. Measure each evidence stage separately.",
   alternates: {
     canonical: "https://www.sequoiageo.com/geo-for-restoration",
   },
@@ -37,7 +38,7 @@ export default function GeoForRestorationPage() {
             },
             "areaServed": { "@type": "Country", "name": "United States" },
             "description":
-              "GEO (Generative Engine Optimization) for water, fire, and mold restoration companies. We make restoration businesses visible and recommendable in ChatGPT, Perplexity, Google AI Overviews, and Gemini.",
+            "Evidence-first AI SEO for water, fire, and mold restoration companies, built on crawlability, accurate public business information, first-hand evidence, independent corroboration, and staged measurement.",
           }),
         }}
       />
@@ -61,7 +62,7 @@ export default function GeoForRestorationPage() {
                 "name": "Why does GEO matter for restoration companies specifically?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Restoration is an emergency purchase. A homeowner standing in two inches of water is not browsing ten links, they want one name fast, and more of them now ask an AI tool for it. When ChatGPT or Google's AI Overview names two or three restoration companies and yours is not one of them, you lose a high-value job, often an insurance job, before the homeowner ever scrolls a search page. Speed-to-answer is everything in restoration, and AI answers are the new front of that race.",
+                  "text": "Restoration is often an urgent purchase, and some property owners now ask AI products who to call. That creates another surface where a company may be mentioned, cited, or recommended. Those observations should be measured separately from referral visits, inquiries, qualified leads, and dispatched work.",
                 },
               },
               {
@@ -85,7 +86,7 @@ export default function GeoForRestorationPage() {
                 "name": "Who runs GEO for restoration companies at Sequoia GEO?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Sequoia GEO was built around the GEO discipline, not a traditional agency that added it to a list when the term started trending. Founder Aaron Husak spent 13 years running a home services company to more than 130 employees and four Inc 5000 appearances, so the strategy is filtered through how a contractor actually wins jobs. For restoration that means understanding emergency intent, insurance work, and why an AI mention only matters if it produces a dispatched crew.",
+                  "text": "Founder Aaron Husak spent 13 years running a home services company to more than 130 employees and four Inc 5000 appearances. For restoration, that operator experience keeps the work focused on urgent intent, accurate service information, qualified inquiries, and dispatched work without treating an AI mention as a business result.",
                 },
               },
             ],
@@ -99,29 +100,28 @@ export default function GeoForRestorationPage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
               <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
-              GEO · Restoration Companies
+              AI SEO · Restoration Companies
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
-              GEO for Restoration: Be the Name{" "}
-              <span className="text-[#1A5C3A]">AI Recommends in a Crisis</span>
+              AI SEO for Restoration: Build a Verifiable{" "}
+              <span className="text-[#1A5C3A]">Emergency Search Foundation</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              When a property owner asks ChatGPT, Perplexity, Gemini, or Google&apos;s AI Overview who to
-              call for water, fire, or mold damage, a few company names come back. GEO (Generative
-              Engine Optimization) is the work that makes yours one of them. We make restoration
-              companies visible and recommendable in AI search, not just ranked on a list of links.
+              Sequoia GEO establishes what is true, corrects conflicting public information, strengthens
+              first-hand restoration evidence, and measures how the business appears across conventional
+              and AI-assisted search. GEO and AEO are industry labels. AI SEO is the broader work.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-500">
               Built by Aaron Husak, who spent 13 years running a home services company to 4x Inc 5000.
-              Every recommendation is filtered through what actually produces a dispatched crew and a
-              paid job, not what earns a vanity mention.
+              The work is filtered through what helps a restoration operator evaluate qualified inquiries
+              and dispatched work, without treating visibility as a guaranteed outcome.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="/contact"
+                href="/ai-search-assessment"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
-                Get a Free AI Visibility Check
+                Request an AI Search Visibility Review
                 <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -134,36 +134,37 @@ export default function GeoForRestorationPage() {
         </div>
       </section>
 
+      <TradeAiSearchNav currentHref="/geo-for-restoration" />
+
       {/* Why it matters */}
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              Restoration Is an Emergency. AI Answers Are the New First Call.
+              Restoration Is Urgent. AI-Assisted Search Adds Another Decision Surface.
             </h2>
             <p className="mt-4 text-lg text-[#C8EDD2]/80">
-              A homeowner with a flooded basement is not comparing ten links. They want one name, now,
-              and more of them are asking an AI tool for it. If you are not in that answer, you lose a
-              high-value job before the normal search even begins.
+              A generated answer may mention a company, cite its page, or recommend it during an urgent
+              situation. Those are different observations, and none proves that an inquiry, claim, or job followed.
             </p>
           </div>
           <div className="mx-auto max-w-4xl grid grid-cols-1 gap-5 sm:grid-cols-2">
             {[
               {
-                title: "AI answers name a few, not a page of ten",
-                body: "A list of links gives you ten chances to be seen. An AI answer names two or three restoration companies. Being invisible in that answer costs you the emergency jobs that pay the most.",
+                title: "Generated answers are selective",
+                body: "A generated answer may surface only a small provider set. Record what appears, what is cited, and whether the observation repeats before drawing a conclusion.",
               },
               {
-                title: "Insurance jobs go to who gets called first",
-                body: "Restoration revenue is often insurance work, and the company called first usually wins the claim. AI recommendations are increasingly that first touch.",
+                title: "Emergency intent changes the question",
+                body: "Water, fire, and mold questions can carry different urgency, geography, insurance, and service requirements. The observation panel should preserve those differences.",
               },
               {
                 title: "Your reviews and 24/7 signals feed the answer",
-                body: "AI tools cross-reference your Google Business Profile, reviews, response time, and directory presence. A restoration company with strong, consistent signals gets named. A fragmented presence gets skipped.",
+                body: "AI products can draw from websites, business profiles, reviews, directories, and other public sources. Conflicts across those sources create avoidable ambiguity.",
               },
               {
-                title: "Almost no restoration company has done this",
-                body: "AI visibility is wide open in restoration. The companies that start now build a lead while competitors do not know the shift is happening.",
+                title: "The baseline comes before the intervention",
+                body: "Freeze the commercial questions, products, geography, and observation rules before changing the website or public profiles.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -298,20 +299,21 @@ export default function GeoForRestorationPage() {
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   Sequoia GEO was named around Generative Engine Optimization and now uses AI SEO as
                   its primary public term. The practice is run by someone who
-                  spent 13 years in the field.
+                  began working in home services in 2006 and spent 13 years as an owner and operator.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600">
                   Aaron Husak grew a home services company to more than 130 employees and four Inc 5000
                   appearances before launching this agency. He understands emergency response, insurance
-                  work, and why an AI mention only matters if it puts a crew on site. That lens is what
-                  separates GEO that produces jobs from GEO that produces a screenshot.
+                  work, and why visibility must be kept separate from qualified inquiries and dispatched
+                  work. That lens keeps the work centered on verified corrections and accountable
+                  measurement instead of treating a screenshot as commercial proof.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { stat: "GEO", label: "Core discipline, not a bolt-on" },
                   { stat: "13 yrs", label: "Home services operator" },
-                  { stat: "4x", label: "Inc 5000 (2020 to 2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021 to 2024)" },
                   { stat: "130+", label: "Team built from scratch" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">
@@ -341,7 +343,7 @@ export default function GeoForRestorationPage() {
               },
               {
                 q: "Why does GEO matter for restoration specifically?",
-                a: "Restoration is an emergency purchase. A homeowner standing in water is not browsing ten links, they want one name fast, and more of them now ask an AI tool. When an AI names two or three companies and yours is not one of them, you lose a high-value, often insurance-funded job before the normal search even starts. Speed-to-answer is everything in restoration.",
+                  a: "Restoration is often an urgent purchase, and some property owners now ask AI products who to call. That creates another surface where a company may be mentioned, cited, or recommended. Those observations should be measured separately from referral visits, inquiries, qualified leads, and dispatched work.",
               },
               {
                 q: "How is GEO different from restoration SEO?",

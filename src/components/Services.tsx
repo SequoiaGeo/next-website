@@ -4,7 +4,7 @@ const services = [
   {
     title: "Google PPC Management",
     description:
-      "High-intent Google Ads campaigns built around contractor margins and seasonality. Every dollar tracked to booked jobs, not impressions.",
+      "High-intent Google Ads campaigns built around contractor margins and seasonality, with lead and booked-job reconciliation where the available systems support it.",
     href: "/google-ads-fresno",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -115,12 +115,12 @@ export default function Services() {
           <p className="section-overline mb-4">What We Do</p>
           <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
             Google Ads. ChatGPT Ads. SEO. LSAs. GBP.{" "}
-            <span className="text-[#1A5C3A]">All tracked to qualified leads and jobs booked.</span>
+            <span className="text-[#1A5C3A]">Measured at the strongest stage the evidence supports.</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-gray-500">
             These aren&rsquo;t standalone packages. They&rsquo;re the channels managed as part of
-            one acquisition system, each tracked back to calls answered, appointments booked,
-            and jobs closed.
+            one acquisition system. Reporting separates platform activity, real inquiries,
+            qualified leads, and jobs booked instead of treating them as the same result.
           </p>
         </div>
 

@@ -10,8 +10,11 @@ const services = [
   { label: "Operator-Led Marketing", href: "/fractional-cmo" },
   { label: "AI Automation", href: "/ai-automation" },
   { label: "AI SEO / Search Visibility", href: "/geo-agency" },
-  { label: "GEO for Plumbers", href: "/geo-for-plumbers" },
-  { label: "GEO for Restoration", href: "/geo-for-restoration" },
+  { label: "AI Search Assessment", href: "/ai-search-assessment" },
+  { label: "AI SEO for HVAC", href: "/ai-seo-for-hvac" },
+  { label: "AI SEO for Plumbers", href: "/geo-for-plumbers" },
+  { label: "AI SEO for Roofers", href: "/ai-seo-for-roofers" },
+  { label: "AI SEO for Restoration", href: "/geo-for-restoration" },
   { label: "Fresno SEO Agency", href: "/seo-agency-fresno" },
 ];
 
@@ -21,6 +24,9 @@ const resources = [
   { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },
   { label: "Sequoia Proof System", href: "/proof-system" },
   { label: "AI Search Measurement Method", href: "/ai-search-methodology" },
+  { label: "AI and Client Data Policy", href: "/ai-and-client-data-policy" },
+  { label: "Hicks Paving AI Search Snapshot", href: "/case-studies/ai-search-readiness" },
+  { label: "AI SEO Agency Comparison", href: "/best-ai-seo-agencies-home-services" },
   { label: "GitHub Tools for Home Services", href: "/github-repos-home-service-businesses" },
   { label: "HVAC Statistics 2026", href: "/hvac-statistics" },
   { label: "Plumbing Statistics 2026", href: "/plumbing-statistics" },
@@ -32,6 +38,7 @@ const resources = [
 ];
 
 const markets = [
+  { label: "AI SEO Markets", href: "/geo-agency#markets" },
   { label: "Boise, ID", href: "/hvac-marketing/boise-id" },
   { label: "Colorado Springs, CO", href: "/hvac-marketing/colorado-springs-co" },
   { label: "Knoxville, TN", href: "/hvac-marketing/knoxville-tn" },
@@ -41,6 +48,7 @@ const markets = [
 
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "AI and Client Data Policy", href: "/ai-and-client-data-policy" },
   { label: "Terms & Conditions", href: "/terms-conditions" },
 ];
 
@@ -66,7 +74,7 @@ export default function Footer() {
             </div>
             <p className="text-pale-green/80 text-sm leading-relaxed max-w-md mb-4">
               Growth operations for home service companies doing $2M to $15M.
-              Founded by Aaron Husak, a home services marketer since 2006 and 13-year owner and operator.
+              Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">
               4x Inc 5000 (2021 to 2024) &middot; Former California contractor qualifier &middot; Fresno, CA &middot; Serving Nationwide

@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         <p className="text-sm text-gray-500 mb-12">
-          Last Updated: March 17, 2026
+          Last Updated: August 31, 2026
         </p>
 
         <div className="prose prose-lg max-w-none space-y-10 text-gray-700">
@@ -36,6 +36,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Fill out a contact form or request a consultation</li>
+              <li>Submit a question through the Ask Sequoia knowledge search</li>
               <li>Subscribe to our newsletter or marketing communications</li>
               <li>Engage us for marketing services</li>
               <li>Communicate with us via email, phone, or live chat</li>
@@ -44,6 +45,15 @@ export default function PrivacyPolicy() {
               This information may include your name, email address, phone
               number, business name, website URL, and any other details you
               choose to provide.
+            </p>
+            <p className="mt-3">
+              When you submit a question through Ask Sequoia, we may retain and
+              review the submitted question, whether it was typed or selected
+              from a suggestion, the page where it was submitted, the answer or
+              refusal category, and the public sources returned. Questions may
+              be reviewed to improve Ask Sequoia and this website. Please do not
+              enter contact, account, private, or confidential information in
+              the knowledge search.
             </p>
             <p className="mt-3">
               We also automatically collect certain information when you visit
@@ -72,6 +82,10 @@ export default function PrivacyPolicy() {
                 Analyze website usage and trends to enhance the user experience
               </li>
               <li>
+                Review submitted knowledge-search questions to identify visitor
+                needs and improve our website content and Ask Sequoia experience
+              </li>
+              <li>
                 Generate aggregated, anonymized analytics to improve our
                 offerings
               </li>
@@ -79,6 +93,22 @@ export default function PrivacyPolicy() {
                 Comply with applicable laws, regulations, and legal processes
               </li>
             </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">
+              Submitted Knowledge Searches
+            </h2>
+            <p>
+              Submitted Ask Sequoia questions are recorded separately from our
+              general website analytics. We do not send the question text to
+              Google Analytics or use it as advertising audience data. We use
+              these records for the legitimate business purpose of understanding
+              what visitors want to know and improving our website and knowledge
+              experience. We retain submitted questions only for as long as they
+              are reasonably needed for those purposes, after which they may be
+              deleted or retained only in aggregated or de-identified form.
+            </p>
           </div>
 
           <div>
@@ -128,6 +158,7 @@ export default function PrivacyPolicy() {
               </li>
               <li>Customer relationship management (CRM) tools</li>
               <li>Email marketing platforms</li>
+              <li>Transactional email and website hosting providers</li>
               <li>Payment processors</li>
             </ul>
             <p className="mt-3">

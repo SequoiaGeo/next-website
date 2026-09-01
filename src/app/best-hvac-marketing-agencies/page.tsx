@@ -5,7 +5,7 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Best HVAC Marketing Agencies 2026 | Reviewed & Compared",
   description:
-    "8 HVAC marketing companies reviewed by a home services marketer since 2006 and 13-year owner and operator: pricing, differentiators, and who each one fits. My own practice is on the list, disclosed.",
+    "8 HVAC marketing companies reviewed by a founder whose home-services career began in 2006 and includes 13 years as an owner and operator. Pricing, differentiators, and fit are disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-hvac-marketing-agencies",
   },
@@ -191,7 +191,7 @@ const agencies = [
     pricing: "From $2,500 a month, 3-month initial term, month to month after",
     teamScale: "Boutique",
     summary:
-      "Sequoia GEO is an operator-led home services marketing practice founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2020 to 2023) before founding the practice. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, leads every engagement, and has answered for both marketing spend and the bottom line. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, and website development. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
+      "Sequoia GEO is an operator-led home services marketing practice founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2021 to 2024) before founding the practice. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, leads every engagement, and has answered for both marketing spend and the bottom line. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, and website development. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",
     strengths: [
       "Founder scaled an HVAC company to $17M+ with four Inc 5000 rankings, not a marketer who learned the trades from the outside",
       "Aaron leads every engagement rather than handing the relationship to a junior account manager",

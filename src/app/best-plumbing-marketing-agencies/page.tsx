@@ -2,11 +2,12 @@
 import Link from "next/link";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import InlineLeadForm from "@/components/InlineLeadForm";
+import AiSearchEvidencePath from "@/components/AiSearchEvidencePath";
 
 export const metadata: Metadata = {
   title: "Best Plumbing Marketing Agencies 2026 Ranked by an Operator",
   description:
-    "8 plumbing marketing companies ranked by a home services marketer since 2006 and 13-year owner and operator, with pricing where it exists. My own practice is on the list, disclosed.",
+    "8 plumbing marketing companies ranked by a founder whose home-services career began in 2006 and includes 13 years as an owner and operator. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-plumbing-marketing-agencies",
   },
@@ -208,7 +209,7 @@ const agencies = [
       { label: "Team scale", value: "Principal-led" },
     ],
     summary:
-      "Full disclosure: this one is mine. I put it last on purpose. Read the other seven first. Sequoia GEO is an operator-led marketing practice founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2020 to 2023). The practice serves HVAC, plumbing, and home service contractors doing $2M to $15M. Marketing services include Google Ads, LSA, local SEO, GBP management, and web design, but the core differentiator is direct access to Aaron and a focus on booking rates, CSR performance, and conversion gaps alongside campaign execution.",
+      "Full disclosure: this one is mine. I put it last on purpose. Read the other seven first. Sequoia GEO is an operator-led marketing practice founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2021 to 2024). The practice serves HVAC, plumbing, and home service contractors doing $2M to $15M. Marketing services include Google Ads, LSA, local SEO, GBP management, and web design, but the core differentiator is direct access to Aaron and a focus on booking rates, CSR performance, and conversion gaps alongside campaign execution.",
     strengths: [
       "Only shop on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
       "Aaron leads every engagement rather than handing the relationship to a junior account manager",
@@ -316,7 +317,7 @@ export default function BestPlumbingAgenciesPage() {
             "description": "8 plumbing marketing agencies ranked and reviewed for 2026, with strengths, considerations, and who each agency is best for by revenue size.",
             "author": { "@type": "Organization", "name": "Sequoia GEO" },
             "publisher": { "@type": "Organization", "name": "Sequoia GEO", "url": "https://www.sequoiageo.com" },
-            "dateModified": "2026-08-03",
+            "dateModified": "2026-08-31",
             "mainEntityOfPage": "https://www.sequoiageo.com/best-plumbing-marketing-agencies"
           })
         }}
@@ -427,6 +428,8 @@ export default function BestPlumbingAgenciesPage() {
           </div>
         </div>
       </section>
+
+      <AiSearchEvidencePath />
 
       {/* How to choose */}
       <section className="bg-[#fafaf8] py-16">

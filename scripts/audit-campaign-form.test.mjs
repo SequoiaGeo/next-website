@@ -20,6 +20,10 @@ async function pageFiles(directory) {
 }
 
 const auditPage = await readFile(new URL("../src/app/audit/page.tsx", import.meta.url), "utf8");
+const aiAssessmentPage = await readFile(
+  new URL("../src/app/ai-search-assessment/page.tsx", import.meta.url),
+  "utf8",
+);
 const formComponent = await readFile(
   new URL("../src/components/InlineLeadForm.tsx", import.meta.url),
   "utf8",
@@ -32,6 +36,13 @@ test("the audit campaign asks which business should be reviewed", () => {
   assert.doesNotMatch(auditPage, /companyRequired/);
 });
 
+test("the AI Search assessment asks which business should be reviewed", () => {
+  assert.match(aiAssessmentPage, /source="ai_search_assessment_page"/);
+  assert.match(aiAssessmentPage, /collectCompany/);
+  assert.match(aiAssessmentPage, /companyLabel="Business name"/);
+  assert.doesNotMatch(aiAssessmentPage, /companyRequired/);
+});
+
 test("the shared form sends company while keeping the field opt in", () => {
   assert.match(formComponent, /collectCompany = false/);
   assert.match(formComponent, /company: ""/);
@@ -41,16 +52,19 @@ test("the shared form sends company while keeping the field opt in", () => {
   assert.match(formComponent, /autoComplete="organization"/);
 });
 
-test("no non-audit page opts into the campaign qualification field", async () => {
+test("only the two assessment pages opt into the campaign qualification field", async () => {
   const inlineFormPages = [];
 
   for (const filename of await pageFiles(appRoot)) {
     const source = await readFile(filename, "utf8");
     if (!source.includes("InlineLeadForm")) continue;
     inlineFormPages.push(path.relative(appRoot, filename));
-    if (path.normalize(filename) === path.join(appRoot, "audit", "page.tsx")) continue;
+    if (
+      path.normalize(filename) === path.join(appRoot, "audit", "page.tsx") ||
+      path.normalize(filename) === path.join(appRoot, "ai-search-assessment", "page.tsx")
+    ) continue;
     assert.doesNotMatch(source, /collectCompany|companyRequired/, filename);
   }
 
-  assert.equal(inlineFormPages.length, 16);
+  assert.equal(inlineFormPages.length, 17);
 });

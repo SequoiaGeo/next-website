@@ -29,7 +29,7 @@ export default function AboutAaron() {
                   </span>
                   <div>
                     <p className="text-xs font-bold text-[#1a1a1a]">4x Inc 5000</p>
-                    <p className="text-xs text-gray-500">2020 to 2023</p>
+                    <p className="text-xs text-gray-500">2021 to 2024</p>
                   </div>
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function AboutAaron() {
             </div>
           </div>
           <p className="text-center text-sm text-gray-500">
-            Balanced Comfort, Fresno CA &bull; 130+ employees at peak &bull; 4x Inc 5000 (2020 to 2023) &bull; CSLB License #1027318 (C36 Plumbing, B General Building)
+            Balanced Comfort, Fresno CA &bull; 130+ employees at peak &bull; 4x Inc 5000 (2021 to 2024) &bull; CSLB License #1027318 (C36 Plumbing, B General Building)
           </p>
 
           {/* Industry connections */}

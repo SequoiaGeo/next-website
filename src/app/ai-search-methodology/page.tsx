@@ -57,11 +57,11 @@ const definitions = [
 const protocol = [
   {
     title: "Freeze the question set",
-    body: "Record the commercial questions, control questions, geography, and inclusion rules before the observation wave begins. Do not rewrite the questions after seeing the answers.",
+    body: "Pre-register a frozen core of commercial and control questions, plus a separately reported rotating set. Record the geography and inclusion rules before the wave begins. Do not rewrite questions after seeing the answers.",
   },
   {
     title: "Control the session",
-    body: "Use a fresh, logged-out session with memory disabled where the product permits it. Hold geography and device assumptions constant and record the visible platform, product, search state, and date.",
+    body: "Use a fresh session with memory disabled where the product permits it. Record the platform, visible product, app or web surface, account state, search or browse state, device, geography, location method, and date.",
   },
   {
     title: "Repeat each observation",
@@ -77,9 +77,31 @@ const protocol = [
   },
   {
     title: "Check coding reliability",
-    body: "Have a second reviewer code a sample before drawing a conclusion. Record disagreements and resolve them against the public definition, not the desired result.",
+    body: "Have an independent second reviewer code at least 20 percent of observations before drawing a conclusion. Preserve both decisions, report disagreements by field, and stop publication when a material code cannot be resolved against the public definition.",
   },
 ];
+
+const confidenceLevels = [
+  {
+    label: "Recorded",
+    definition: "Directly logged inside a named instrument, within that instrument's stated coverage.",
+  },
+  {
+    label: "Observed",
+    definition: "Preserved under a documented prompt and session protocol on a stated date.",
+  },
+  {
+    label: "Inferred",
+    definition: "Supported by evidence only when the assumption connecting the evidence is stated.",
+  },
+  {
+    label: "Unknown",
+    definition: "No available instrument or identity-level join can verify the claim.",
+  },
+];
+
+const answerEvidenceChain = ["Eligibility", "Citation", "Mention", "Recommendation"];
+const businessEvidenceChain = ["Identifiable referral", "Inquiry", "Qualified lead", "Job booked"];
 
 const articleJsonLd = {
   "@context": "https://schema.org",
@@ -96,8 +118,8 @@ const articleJsonLd = {
     "@id": "https://www.sequoiageo.com/#organization",
   },
   datePublished: "2026-08-20",
-  dateModified: "2026-08-29",
-  version: "1.3",
+  dateModified: "2026-08-30",
+  version: "1.4",
   mainEntityOfPage: "https://www.sequoiageo.com/ai-search-methodology",
 };
 
@@ -122,7 +144,7 @@ export default function AiSearchMethodologyPage() {
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="section-overline mb-4">Public methodology, version 1.3</p>
+            <p className="section-overline mb-4">Public methodology, version 1.4</p>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
               How Sequoia GEO measures AI search without turning visibility into a lead
             </h1>
@@ -138,7 +160,7 @@ export default function AiSearchMethodologyPage() {
               system is included in the engagement, not sold as a separate software subscription.
             </p>
             <p className="mt-6 text-sm text-[#C8EDD2]/55">
-              Published August 20, 2026. Last revised August 29, 2026.
+              Published August 20, 2026. Last revised August 30, 2026.
             </p>
             <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-[#C8EDD2]/70">
               This AI-specific method operates under the broader{" "}
@@ -147,6 +169,75 @@ export default function AiSearchMethodologyPage() {
               </Link>
               , which governs evidence classes, corrections, verification, causation, and publication limits across all client work.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fafaf8] py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-5xl">
+            <p className="section-overline mb-4">Confidence and coverage</p>
+            <h2 className="max-w-4xl text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+              How confident can an AI visibility assessment be?
+            </h2>
+            <p className="mt-5 max-w-4xl text-lg leading-relaxed text-gray-600">
+              We document where your business appears, how consistently it appears, which sources
+              support the answer, and what the evidence can actually prove. A controlled prompt panel
+              measures the conditions we record. It does not represent every question, user, location,
+              or AI session.
+            </p>
+
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {confidenceLevels.map((item) => (
+                <article key={item.label} className="rounded-2xl border border-gray-200 bg-white p-6">
+                  <h3 className="text-lg font-bold text-[#0D2318]">{item.label}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.definition}</p>
+                </article>
+              ))}
+            </div>
+
+            <div className="mt-10 rounded-2xl border border-[#3A9E6A]/25 bg-white p-6 sm:p-8">
+              <div className="grid gap-6 lg:grid-cols-[1fr_auto_1fr] lg:items-center">
+                <div>
+                  <p className="text-sm font-extrabold uppercase tracking-wider text-[#1A5C3A]">
+                    Generated-answer evidence
+                  </p>
+                  <div className="mt-4 grid grid-cols-2 gap-3">
+                    {answerEvidenceChain.map((stage) => (
+                      <div key={stage} className="rounded-lg bg-[#C8EDD2]/45 px-3 py-3 text-center text-sm font-semibold text-[#0D2318]">
+                        {stage}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-dashed border-[#1A5C3A]/40 bg-[#fafaf8] px-5 py-4 text-center lg:max-w-[220px]">
+                  <p className="font-bold text-[#0D2318]">Measurement gap</p>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                    Most AI products do not preserve an identity-level join from a generated answer to
+                    the person who later visits or contacts the business.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-sm font-extrabold uppercase tracking-wider text-[#1A5C3A]">
+                    Business-outcome evidence
+                  </p>
+                  <div className="mt-4 grid grid-cols-2 gap-3">
+                    {businessEvidenceChain.map((stage) => (
+                      <div key={stage} className="rounded-lg bg-[#0D2318] px-3 py-3 text-center text-sm font-semibold text-white">
+                        {stage}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="mt-6 text-sm leading-relaxed text-gray-600">
+                Sequoia reports both chains, but does not fill the gap with an assumed attribution.
+                A change is described as movement only when the comparison uses a frozen panel and an
+                appropriate reference, such as untreated pages, reference prompts, or a no-intervention arm.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -253,7 +344,8 @@ export default function AiSearchMethodologyPage() {
                   "Business or property measured",
                   "Platform, account report, and metric definition",
                   "Exact date range and read date",
-                  "Prompt set, repetitions, and session controls when prompts are involved",
+                  "Prompt panel, frozen or rotating arm, repetitions, and session controls",
+                  "App or web surface, account state, device, geography, and location method",
                   "Whether the result is observed, self-reported, reconstructed, or unavailable",
                   "Explicit statement of what the metric does not establish",
                 ].map((item) => (
@@ -327,6 +419,8 @@ export default function AiSearchMethodologyPage() {
           <div className="rounded-2xl border border-gray-200 p-7">
             <h2 className="text-xl font-bold text-[#0D2318]">Changelog</h2>
             <div className="mt-5 grid gap-3 text-sm text-gray-600 sm:grid-cols-[140px_1fr]">
+              <p className="font-semibold text-[#1A5C3A]">August 30, 2026</p>
+              <p>Version 1.4 added explicit confidence labels, documented the gap between generated-answer evidence and identifiable business outcomes, and expanded prompt-panel and session controls.</p>
               <p className="font-semibold text-[#1A5C3A]">August 29, 2026</p>
               <p>Version 1.3 placed this channel-specific method under the Sequoia Proof System and clarified how Sequoia&rsquo;s pipeline qualification rule relates to the general proof standard.</p>
               <p className="font-semibold text-[#1A5C3A]">August 21, 2026</p>
@@ -352,8 +446,8 @@ export default function AiSearchMethodologyPage() {
             <Link href="/geo-agency" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
               View the AI SEO Evidence Page
             </Link>
-            <Link href="/audit" className="inline-flex items-center justify-center rounded-lg border border-white/40 px-8 py-4 text-base font-semibold text-white transition hover:border-white">
-              Request an Assessment
+            <Link href="/ai-search-assessment" className="inline-flex items-center justify-center rounded-lg border border-white/40 px-8 py-4 text-base font-semibold text-white transition hover:border-white">
+              Request an AI Search Snapshot
             </Link>
           </div>
         </div>

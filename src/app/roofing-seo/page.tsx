@@ -8,14 +8,14 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "Roofing SEO Services Managed by a Home Services Operator",
   description:
-    "Roofing SEO built around local visibility, attributable calls, and jobs booked. Work directly with Aaron Husak, a 13-year home services operator.",
+    "Roofing SEO built around local visibility, attributable calls, and jobs booked. Aaron Husak's home-services career began in 2006 and includes 13 years as an owner and operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/roofing-seo",
   },
   openGraph: {
     title: "Roofing SEO Services Managed by a Home Services Operator",
     description:
-      "Roofing SEO built around local visibility, attributable calls, and jobs booked. Work directly with Aaron Husak, a 13-year home services operator.",
+      "Roofing SEO built around local visibility, attributable calls, and jobs booked. Aaron Husak's home-services career began in 2006 and includes 13 years as an owner and operator.",
     url: "https://www.sequoiageo.com/roofing-seo",
     type: "website",
   },
@@ -57,7 +57,7 @@ export default function RoofingSeoPage() {
     <>
       <ServiceJsonLd
         serviceType={"Roofing SEO"}
-        description={"SEO for roofing companies from a 13-year home services operator, connecting search visibility to qualified calls and signed contracts."}
+        description={"SEO for roofing companies led by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator."}
         url={"https://www.sequoiageo.com/roofing-seo"}
       />
       <BreadcrumbJsonLd
@@ -316,53 +316,24 @@ export default function RoofingSeoPage() {
         </div>
       </section>
 
-      {/* AI SEO for Roofing Companies */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              AI SEO for Roofing Companies
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Some homeowners use ChatGPT, Perplexity, and Google{"’"}s AI features while researching
-              roofers. The first question is whether those products return local providers for the
-              questions and locations that matter to your business.
-            </p>
-          </div>
-          <div className="space-y-6">
-            <p className="text-base leading-relaxed text-gray-600">
-              Sequoia has recorded roofing-related demand for AI SEO information in its own Search
-              Console. That is evidence of interest in the topic, not evidence that every roofing buyer
-              uses AI to choose a contractor. The work begins by measuring the relevant market instead
-              of assuming the answer.
-            </p>
-            <p className="text-base leading-relaxed text-gray-600">
-              The foundation is still SEO: crawlability, indexation, accurate public information,
-              useful first-party evidence, legitimate corroboration, and supported structured data
-              that matches the page. AI SEO adds controlled observations across generated answers
-              and separates mentions, citations, recommendations, visits, inquiries, and qualified leads.
-            </p>
-          </div>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/geo-agency"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
-            >
-              How our GEO practice works
-              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
-            <Link
-              href="/contractors-guide-ai-search"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
-            >
-              The Contractor&rsquo;s Guide to AI Search
-              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
-          </div>
+      {/* Keep AI-specific intent on the dedicated roofing AI SEO pillar. */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#1A5C3A]">AI-assisted search</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
+            Roofing AI SEO extends the same search foundation
+          </h2>
+          <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-gray-600">
+            Crawlability, accurate public information, first-hand evidence, and independent
+            corroboration support both conventional and AI-assisted search. The dedicated roofing AI
+            SEO page explains how Sequoia observes generated answers without treating visibility as a lead.
+          </p>
+          <Link
+            href="/ai-seo-for-roofers"
+            className="mt-7 inline-flex items-center justify-center rounded-lg border border-[#1A5C3A]/30 px-6 py-3 font-semibold text-[#1A5C3A] hover:border-[#1A5C3A]"
+          >
+            Explore AI SEO for Roofers
+          </Link>
         </div>
       </section>
 

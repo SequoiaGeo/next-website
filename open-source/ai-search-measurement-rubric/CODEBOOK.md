@@ -39,6 +39,17 @@ Public benchmark results should use `original` observations. The other states be
 
 Record both codes before discussion. Resolve against this codebook. Preserve the disagreement count in the quality-control summary.
 
+At least 20 percent of controlled observations should receive an independent second code. Preserve the initial code, second code, adjudicated code, reviewer identifiers, and reason for any change.
+
+## Confidence labels
+
+- `recorded`: directly logged inside a named instrument, within that instrument's stated coverage.
+- `observed`: preserved under a documented prompt and session protocol on a stated date.
+- `inferred`: supported by evidence only when the assumption connecting the evidence is stated.
+- `unknown`: no available instrument or identity-level join can verify the claim.
+
+These labels describe the claim, not the quality of the business. Do not promote `inferred` or `unknown` evidence to `recorded` or `observed` because the conclusion seems likely.
+
 ## Commercial outcomes
 
 Commercial outcomes should live in a separate operating system. Join them to a prompt observation only when an identity-level source artifact supports the connection. Do not infer a qualified lead from a Clarity event, analytics referral, or calendar interaction.

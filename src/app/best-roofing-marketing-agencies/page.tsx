@@ -1,11 +1,12 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import AiSearchEvidencePath from "@/components/AiSearchEvidencePath";
 
 export const metadata: Metadata = {
   title: "Best Roofing Marketing Agencies 2026 | Ranked and Reviewed",
   description:
-    "9 roofing marketing companies ranked by a home services marketer since 2006 and 13-year owner and operator, with pricing where it exists. My own practice is on the list, disclosed.",
+    "9 roofing marketing companies ranked by a founder whose home-services career began in 2006 and includes 13 years as an owner and operator. My own practice is on the list, disclosed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/best-roofing-marketing-agencies",
   },
@@ -274,9 +275,27 @@ export default function BestRoofingAgenciesPage() {
             "description": "9 roofing marketing agencies ranked and reviewed for 2026, with strengths, considerations, and who each agency is best for by revenue size and specialization.",
             "author": { "@type": "Organization", "name": "Sequoia GEO" },
             "publisher": { "@type": "Organization", "name": "Sequoia GEO", "url": "https://www.sequoiageo.com" },
-            "dateModified": "2026-04-22",
+            "dateModified": "2026-08-31",
             "mainEntityOfPage": "https://www.sequoiageo.com/best-roofing-marketing-agencies"
           })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Best Roofing Marketing Agencies 2026",
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "numberOfItems": agencies.length,
+            "itemListElement": agencies.map((agency) => ({
+              "@type": "ListItem",
+              "position": agency.rank,
+              "name": agency.name,
+              "url": `https://${agency.url}`,
+            })),
+          }),
         }}
       />
 
@@ -291,7 +310,7 @@ export default function BestRoofingAgenciesPage() {
             9 agencies ranked and reviewed: roofing specialists, home services generalists, and everything in between. Who each agency is best for, what they are strong at, and where they fall short.
           </p>
           <p className="mt-4 text-sm text-[#C8EDD2]/50">
-            Last updated April 2026.
+            Last updated August 2026.
           </p>
         </div>
       </section>
@@ -373,6 +392,8 @@ export default function BestRoofingAgenciesPage() {
           ))}
         </div>
       </section>
+
+      <AiSearchEvidencePath />
 
       {/* How to choose */}
       <section className="bg-[#fafaf8] py-16">

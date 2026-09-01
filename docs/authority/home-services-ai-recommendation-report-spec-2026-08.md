@@ -38,6 +38,8 @@ The default research design is one trade, one metro, 12 commercial prompts, 3 pl
 
 The default platform panel is ChatGPT Search, Google AI Mode, and Perplexity. Record the exact visible product name, account state, search state, and collection date because interfaces and retrieval behavior change. A platform may be replaced before the prompt set is frozen when access or reproducibility fails, but the substitution and reason must be documented.
 
+Run this specification through `docs/authority/ai-search-measurement-operations/MEASUREMENT-RUNBOOK.md`. Use the package templates for panel registration, wave controls, second-coder review, client-visible evidence, and claim limits.
+
 ## Research questions
 
 1. How often does each platform name a specific local provider?
@@ -50,17 +52,19 @@ The default platform panel is ChatGPT Search, Google AI Mode, and Perplexity. Re
 
 ## Observation controls
 
-- Freeze all prompts before collection.
+- Pre-register a frozen longitudinal core and a separately reported rotating arm. Never pool the two panels into one trend line.
+- Include emergency or planned work, price, trust, neighborhood or metro language, provider comparison, and bilingual language when appropriate to the market.
 - Before freezing the final set, run 3 to 5 provisional discovery prompts once per platform to confirm that the market produces named local providers. Archive those results, do not count them in the report, and document any resulting design change.
 - Use a fresh, logged-out session with memory disabled where available.
-- Hold the geography and device assumptions constant.
-- Record the platform, product, visible search state, date, and local time.
+- Hold geography and device assumptions constant.
+- Record the platform, visible product, app or web surface, account state, search or browse state, device, geography, location method, date, and local time.
 - Run every prompt five times in separate fresh sessions per platform.
 - Treat prompt-platform cells as the analysis unit and repeats as a stability measure, not independent trials.
 - Preserve the complete output privately before coding.
 - Keep platforms separate. Do not average them into one universal rank.
 - Have a second person code at least 20 percent of observations.
-- Resolve coding disagreement against the public codebook.
+- Preserve both coding decisions, then resolve disagreement against the public codebook.
+- Establish reference prompts, untreated pages, or a no-intervention arm before describing post-work movement.
 
 ## Provider inclusion rules
 

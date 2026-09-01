@@ -4,9 +4,9 @@ import YouTubeFacade from "@/components/YouTubeFacade";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "Case Studies | Sequoia GEO",
+  title: "Marketing and AI Search Case Studies | Sequoia GEO",
   description:
-    "Client implementation records, founder operating history, and diagnostic field notes from Sequoia GEO.",
+    "Review Sequoia GEO's founder operating history, client implementation records, and evidence-labeled AI Search diagnostic work.",
   alternates: {
     canonical: "https://www.sequoiageo.com/case-studies",
   },
@@ -32,14 +32,75 @@ export default function CaseStudiesPage() {
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="section-overline mb-4">Case Studies</p>
+            <p className="section-overline mb-4">The Sequoia Proof Library</p>
             <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              What was true. What we changed. What we could verify.
+              Establish what is true. Correct what is broken. Verify the result.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
               Founder operating history, client implementation records, and diagnostic field
-              notes, each labeled to the level of evidence available.
+              notes, each labeled to the level of evidence available. We report only what follows
+              from the record.
             </p>
+            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+              <Link href="/proof-system" className="rounded-lg bg-white px-6 py-3 font-semibold text-[#1A5C3A]">
+                Read the proof standard
+              </Link>
+              <Link href="/ai-search-assessment" className="rounded-lg border border-white/25 px-6 py-3 font-semibold text-white">
+                Request an AI Search assessment
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid gap-6 lg:grid-cols-3">
+            {[
+              {
+                label: "Founder operating history",
+                title: "Experience earned inside a home service company",
+                body: "This record explains the operating context Aaron brings to marketing decisions. It is labeled separately from work completed for Sequoia clients.",
+                href: "/case-studies/balanced-comfort",
+                cta: "Read the founder story",
+              },
+              {
+                label: "Client implementation records",
+                title: "Work completed, evidence checked, limits preserved",
+                body: "These pages document websites, search foundations, local identity, measurement, lead accountability, and operating improvements without forcing every engagement into a revenue claim.",
+                href: "#client-records",
+                cta: "Review implementation records",
+              },
+              {
+                label: "AI Search diagnostic evidence",
+                title: "Hicks Paving AI Search readiness snapshot",
+                body: "This permissioned, dated example shows how conflicting entities, profiles, official records, and website data can make a business difficult for a search system to resolve. It does not claim recommendation or business-outcome gains.",
+                href: "/case-studies/ai-search-readiness",
+                cta: "Read the named assessment example",
+              },
+            ].map((item) => (
+              <article key={item.label} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A]">{item.label}</p>
+                <h2 className="mt-4 text-xl font-extrabold text-[#0D2318]">{item.title}</h2>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.body}</p>
+                <Link href={item.href} className="mt-5 inline-flex font-semibold text-[#1A5C3A] underline underline-offset-4">
+                  {item.cta}
+                </Link>
+              </article>
+            ))}
+          </div>
+          <div className="mt-6 rounded-2xl border border-[#3A9E6A]/25 bg-[#C8EDD2]/25 p-7 sm:flex sm:items-center sm:justify-between sm:gap-8">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-[#1A5C3A]">Original Research In Development</p>
+              <h2 className="mt-2 text-xl font-extrabold text-[#0D2318]">Home Services AI Recommendation Report pilot</h2>
+              <p className="mt-2 max-w-3xl text-sm leading-relaxed text-[#0D2318]/70">
+                The protocol is registered. Results have not been published. The pre-publication page
+                explains the sample, coding rules, limitations, and remaining decision gate.
+              </p>
+            </div>
+            <Link href="/home-services-ai-recommendation-report" className="mt-5 inline-flex shrink-0 rounded-lg bg-[#1A5C3A] px-6 py-3 font-semibold text-white sm:mt-0">
+              Review the pilot method
+            </Link>
           </div>
         </div>
       </section>
@@ -76,7 +137,7 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Featured case study */}
-      <section className="bg-[#fafaf8] py-20 sm:py-28">
+      <section id="client-records" className="scroll-mt-20 bg-[#fafaf8] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
@@ -412,7 +473,7 @@ export default function CaseStudiesPage() {
                   href="/case-studies/ai-search-readiness"
                   className="inline-flex items-center gap-2 text-base font-semibold text-[#1A5C3A] transition-colors hover:text-[#0D2318]"
                 >
-                  Read the field note
+                  Read the Hicks Paving snapshot
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

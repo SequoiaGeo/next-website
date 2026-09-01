@@ -309,7 +309,7 @@ export default function RestorationSeoPage() {
                 {[
                   { stat: "B Gen", label: "CA Contractor License" },
                   { stat: "13 yrs", label: "Industry operator" },
-                  { stat: "4x", label: "Inc 5000 (2020-2023)" },
+                  { stat: "4x", label: "Inc 5000 (2021 to 2024)" },
                   { stat: "130+", label: "Employees at peak" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-xl bg-[#C8EDD2] p-5 text-center">

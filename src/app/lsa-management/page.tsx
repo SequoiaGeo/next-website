@@ -6,7 +6,7 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "LSA Management for HVAC & Home Service Contractors | Sequoia GEO",
   description:
-    "Google Local Services Ads management by someone who ran a home services company for 13 years. We handle your LSA profile, dispute bad leads, and track every dollar back to booked jobs.",
+    "Google Local Services Ads management by someone who ran a home services company for 13 years. Profile oversight, eligible lead disputes, and outcome reconciliation where the available data supports it.",
   alternates: {
     canonical: "https://www.sequoiageo.com/lsa-management",
   },

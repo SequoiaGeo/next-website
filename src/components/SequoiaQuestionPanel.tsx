@@ -9,6 +9,7 @@ import { trackKnowledgeStage } from "@/lib/sequoia-knowledge-analytics";
 
 type Answer = ReturnType<typeof answerSequoiaQuestion>;
 type KnowledgeSurface = "ask_sequoia" | "homepage_inline";
+type KnowledgeInputMethod = "typed" | "suggestion";
 
 type SequoiaQuestionPanelProps = {
   surface: KnowledgeSurface;
@@ -48,6 +49,24 @@ function trackPanelViewOnce(surface: KnowledgeSurface) {
     surface,
     catalog_version: catalog.catalogVersion,
   });
+}
+
+async function recordSubmittedQuestion(
+  question: string,
+  surface: KnowledgeSurface,
+  inputMethod: KnowledgeInputMethod,
+) {
+  try {
+    await fetch("/api/sequoia-knowledge/query", {
+      method: "POST",
+      cache: "no-store",
+      keepalive: true,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question, surface, input_method: inputMethod }),
+    });
+  } catch {
+    // Recording is best effort and must never block the visitor's answer.
+  }
 }
 
 export default function SequoiaQuestionPanel({
@@ -104,11 +123,12 @@ export default function SequoiaQuestionPanel({
     if (status === "enabled") trackPanelViewOnce(surface);
   }, [status, surface]);
 
-  function ask(nextQuestion: string) {
+  function ask(nextQuestion: string, inputMethod: KnowledgeInputMethod) {
     const trimmedQuestion = nextQuestion.trim();
     if (!trimmedQuestion) return;
 
     setSubmittedQuestion(trimmedQuestion);
+    void recordSubmittedQuestion(trimmedQuestion, surface, inputMethod);
     const budget = consumeKnowledgeBudget("ask");
     if (!budget.ok) {
       setAnswer(limitedAnswer(budget.reason));
@@ -132,7 +152,7 @@ export default function SequoiaQuestionPanel({
 
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    ask(question);
+    ask(question, "typed");
   }
 
   if (embedded && status !== "enabled") return null;
@@ -203,7 +223,7 @@ export default function SequoiaQuestionPanel({
               <div className="mt-3 flex flex-col gap-3 border-t border-gray-100 pt-4 sm:flex-row sm:items-center sm:justify-between">
                 <div className="text-sm leading-relaxed text-gray-500">
                   <p>Approved public topics only. Do not enter contact, account, or confidential information.</p>
-                  <p className="mt-1">Your question stays in this page and is not sent to an AI model.</p>
+                  <p className="mt-1">Questions may be reviewed to improve Ask Sequoia and this website. They are not sent to an AI model.</p>
                 </div>
                 <div className="flex shrink-0 items-center justify-between gap-3 sm:justify-end">
                   <span className="text-sm tabular-nums text-gray-400">{question.length}/280</span>
@@ -235,7 +255,7 @@ export default function SequoiaQuestionPanel({
                   type="button"
                   onClick={() => {
                     setQuestion(suggestion);
-                    ask(suggestion);
+                    ask(suggestion, "suggestion");
                   }}
                   className="min-h-11 rounded-full border border-[#1A5C3A]/25 bg-white px-4 py-2 text-sm font-semibold text-[#1A5C3A] transition hover:border-[#1A5C3A] hover:bg-[#F0F8F3]"
                 >
@@ -298,7 +318,7 @@ export default function SequoiaQuestionPanel({
                     <div className="mt-6 border-t border-gray-200 pt-5">
                       <p className="text-sm leading-relaxed text-gray-500">{answer.boundary}</p>
                       <p className="mt-3 text-sm font-semibold leading-relaxed text-[#0D2318]">
-                        This does not send your question or contact information.
+                        This answer uses approved public facts and does not send your question to an AI model.
                       </p>
                       <Link
                         href="/contact#book"

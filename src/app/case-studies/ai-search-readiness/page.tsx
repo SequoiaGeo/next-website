@@ -1,287 +1,226 @@
-import Link from "next/link";
 import type { Metadata } from "next";
+import Link from "next/link";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "When AI Cannot Resolve a Local Business | Sequoia GEO",
+  title: "Hicks Paving AI Search Readiness Snapshot | Sequoia GEO",
   description:
-    "An anonymized public-surface diagnostic showing how conflicting identity, profile, website, and directory information can make a local business harder for AI search to understand.",
-  alternates: {
-    canonical: "https://www.sequoiageo.com/case-studies/ai-search-readiness",
-  },
+    "A permissioned, dated example of how Sequoia GEO audits conflicting public business information before making AI Search claims.",
+  alternates: { canonical: "https://www.sequoiageo.com/case-studies/ai-search-readiness" },
 };
 
-const conflictLayers = [
+const findings = [
   {
-    number: "01",
-    title: "The business identity did not have one source of truth",
-    text: "The current business, its former public identity, and its legal record were all visible online without a clear transition story. A person can sometimes infer the relationship. A retrieval system should not have to guess.",
+    title: "The public identity was split",
+    finding:
+      "The current LLC and the prior operating identity appeared across separate profiles, phone numbers, addresses, review records, and directory pages. A search system had to infer which record represented the current business.",
+    source: "Public profiles and direct Google Maps observations",
+    sourceType: "Self-recorded public observation",
   },
   {
-    number: "02",
-    title: "Local profiles told different versions of the story",
-    text: "Profiles, phone numbers, addresses, and review equity were divided across more than one record. That creates uncertainty about which profile is current and which proof belongs to it.",
+    title: "Official records needed entity-level context",
+    finding:
+      "Virginia records distinguish the current Hicks Paving LLC Class A license from an older sole-proprietor record. Several public surfaces did not clearly distinguish the current LLC from the legacy identity.",
+    source: "Virginia Department of Professional and Occupational Regulation",
+    sourceType: "Official primary record",
   },
   {
-    number: "03",
-    title: "The website gave machines the wrong identity",
-    text: "The visible site described one company, while machine-readable organization data identified unrelated businesses. This is not cosmetic metadata. It is an instruction about who the site represents.",
+    title: "The website described the wrong organizations to machines",
+    finding:
+      "The homepage structured data named two unrelated companies. The visible website said Hicks Paving, while the machine-readable identity said something else.",
+    source: "Live homepage source captured during the audit",
+    sourceType: "Self-recorded public observation",
   },
   {
-    number: "04",
-    title: "Old content was still competing to define the business",
-    text: "Legacy URLs, cached pages, and outdated claims remained discoverable after a rebuild. New pages cannot fully establish the current record while stale pages are left to answer the same questions.",
+    title: "Legacy URLs and indexation created avoidable noise",
+    finding:
+      "Priority legacy pages returned errors instead of reaching current equivalents, while the thank-you page was indexable and included in the sitemap.",
+    source: "Direct URL, robots, and sitemap checks",
+    sourceType: "Self-recorded public observation",
   },
   {
-    number: "05",
-    title: "Third-party proof was contradictory",
-    text: "Directories and review surfaces repeated old details and conflicting trust signals. Some may be inaccurate, but they are still part of the public evidence a buyer or AI system can encounter.",
+    title: "Review equity was divided across identities",
+    finding:
+      "The most substantial Google review history remained attached to the legacy identity, while a newer profile represented the current business. The assessment treated that as an entity and reputation problem, not a reason to discard legitimate reviews.",
+    source: "Direct Google Maps observations",
+    sourceType: "Self-recorded public observation",
   },
-];
+] as const;
 
-const correctionSequence = [
-  "Establish one owner-approved canonical business record before changing profiles or citations.",
-  "Correct owned website identity, including organization and local-business structured data.",
-  "Choose the eligible Google Business Profile path, then preserve legitimate review equity where the platform permits.",
-  "Redirect or retire priority legacy URLs and remove non-converting utility pages from search indexing.",
-  "Correct the priority third-party records, document submission status, and keep unresolved records visible in the closeout.",
-  "Run a documented prompt panel at the beginning and close of the work, while treating the observations as point-in-time rather than a ranking guarantee.",
-];
+const sequence = [
+  "Confirm the canonical legal name, license, primary phone, address treatment, and relationship to the legacy identity.",
+  "Correct owned website identity, structured data, indexation, and one-to-one redirects before creating more pages.",
+  "Choose a policy-compliant Google profile path that protects legitimate review history without combining unrelated entities by assumption.",
+  "Prepare source-specific correction briefs for directories and profiles the business can control or claim.",
+  "Only then run a controlled AI Search observation panel and report mentions, recommendations, citations, and absences separately.",
+] as const;
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "When AI Cannot Resolve a Local Business",
-  description:
-    "An anonymized public-surface diagnostic showing how conflicting identity, profile, website, and directory information can make a local business harder for AI search to understand.",
-  author: {
-    "@type": "Person",
-    "@id": "https://www.sequoiageo.com/#aaron-husak",
-    name: "Aaron Husak",
+const deliverables = [
+  {
+    title: "Evidence register",
+    description: "A dated source list separating official records, direct public observations, owner statements, and items that still required account access.",
   },
-  publisher: {
-    "@id": "https://www.sequoiageo.com/#organization",
+  {
+    title: "Public-surface scorecard",
+    description: "An eight-dimension assessment that made entity consistency, reputation, technical defects, and measurement limits visible without combining them into one vague claim.",
   },
-  datePublished: "2026-08-20",
-  dateModified: "2026-08-20",
-  mainEntityOfPage: "https://www.sequoiageo.com/case-studies/ai-search-readiness",
-};
+  {
+    title: "Prioritized correction sequence",
+    description: "A documented order for confirming the business identity, correcting owned surfaces, protecting legitimate review history, and preparing source-specific submissions.",
+  },
+  {
+    title: "Measurement boundary and recheck date",
+    description: "A written record of what was observed, what was not measured, and when the public evidence becomes too old to rely on without another check.",
+  },
+] as const;
 
-export default function AiSearchReadinessFieldNote() {
+export default function HicksPavingAiSearchReadinessPage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
+    <main>
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: "https://www.sequoiageo.com/" },
           { name: "Case Studies", url: "https://www.sequoiageo.com/case-studies" },
-          {
-            name: "AI Search Readiness",
-            url: "https://www.sequoiageo.com/case-studies/ai-search-readiness",
-          },
+          { name: "Hicks Paving AI Search Readiness Snapshot", url: "https://www.sequoiageo.com/case-studies/ai-search-readiness" },
         ]}
       />
-
-      <div className="border-b border-gray-100 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
-          <Link
-            href="/case-studies"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#1A5C3A] transition-colors hover:text-[#0D2318]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M19 12H5M12 5l-7 7 7 7" />
-            </svg>
-            Back to Case Studies
-          </Link>
-        </div>
-      </div>
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Hicks Paving AI Search Readiness Snapshot",
+            description: "A permissioned example of a public-surface assessment, verified identity conflicts, and the correction sequence Sequoia GEO produced.",
+            author: { "@type": "Organization", name: "Sequoia GEO" },
+            publisher: { "@type": "Organization", name: "Sequoia GEO", url: "https://www.sequoiageo.com" },
+            datePublished: "2026-08-30",
+            dateModified: "2026-08-31",
+            mainEntityOfPage: "https://www.sequoiageo.com/case-studies/ai-search-readiness",
+          }),
+        }}
+      />
       <section className="bg-[#0D2318] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="section-overline mb-4">Anonymized GEO Field Note</p>
-            <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
-              When AI Cannot Resolve a Local Business
-            </h1>
-            <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]/80">
-              An AI-search readiness diagnosis of a local contractor whose public information
-              was asking search engines, customers, and retrieval systems to reconcile several
-              versions of the same company.
-            </p>
-            <p className="mx-auto mt-6 max-w-2xl rounded-xl border border-[#C8EDD2]/15 bg-white/5 px-5 py-4 text-sm leading-relaxed text-[#C8EDD2]/70">
-              This is a pre-engagement public-surface diagnostic, not a before-and-after
-              performance story. The company, location, source URLs, and identifying details
-              have been removed. No claim is made about rankings, AI recommendations, traffic,
-              leads, or booked work.
-            </p>
-            <p className="mt-5 text-sm text-[#C8EDD2]/55">By Aaron Husak · August 20, 2026</p>
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <p className="section-overline mb-4 text-[#82D2A0]">Permissioned named example</p>
+          <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+            What the Hicks Paving public footprint showed before AI Search work began
+          </h1>
+          <p className="mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]/80">
+            A dated example of why Sequoia establishes one defensible business identity before trying
+            to influence how search engines or AI assistants describe a company.
+          </p>
+          <div className="mt-8 max-w-4xl rounded-2xl border border-white/15 bg-white/5 p-6 text-sm leading-relaxed text-[#C8EDD2]/80">
+            This page shows what the August 14, 2026 public-surface assessment found and the correction
+            sequence it produced. It does not show a change in AI assistant recommendations, leads,
+            jobs, or business results. Those outcomes were not measured in this assessment.
           </div>
+          <p className="mt-5 max-w-4xl text-sm leading-relaxed text-[#C8EDD2]/70">
+            Sequoia GEO performs this evidence-led AI-search readiness work for home-service and local-service businesses. Review the <Link href="/ai-search-methodology" className="font-bold text-white underline underline-offset-4">public methodology</Link> or <Link href="/ai-search-assessment" className="font-bold text-white underline underline-offset-4">request a free assessment</Link>.
+          </p>
         </div>
       </section>
-
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <p className="text-sm font-semibold text-[#1A5C3A]">The question</p>
-            <h2 className="mt-3 font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Why would a real local business be hard for AI search to understand?
-            </h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
-              <p>
-                A business can have years of experience, genuine customer proof, an active
-                website, and still leave AI systems with an unreliable record. AI search does
-                not receive a single, authoritative answer about a company. It encounters the
-                website, structured data, local profiles, reviews, directories, historical
-                pages, and public records, then has to decide whether those sources describe
-                the same entity.
-              </p>
-              <p>
-                In this diagnostic, the core problem was not a lack of marketing activity. It
-                was public contradiction. The current company had credible assets, but those
-                assets were divided across records that did not consistently agree on identity,
-                location, contact information, history, and trust signals.
-              </p>
-              <p>
-                That does not prove any individual AI product made a particular decision.
-                Model outputs vary by prompt, account, location, model version, and time. It
-                does explain why recommendation-ready visibility starts with a coherent public
-                record, not with a promise to appear in an answer.
-              </p>
-            </div>
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["Scope", "Public website, profiles, maps, official records, directories, reviews, and observable search readiness"],
+              ["Evidence date", "August 14, 2026"],
+              ["Evidence expiry", "Treat the observations as historical after November 12, 2026 unless they are reverified"],
+              ["Permission", "Client approved use of Hicks Paving as the named example"],
+            ].map(([label, value]) => (
+              <div key={label} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-6">
+                <p className="text-xs font-extrabold uppercase tracking-wider text-[#3A9E6A]">{label}</p>
+                <p className="mt-3 text-sm leading-relaxed text-gray-700">{value}</p>
+              </div>
+            ))}
           </div>
-        </div>
-      </section>
-
-      <section className="bg-[#fafaf8] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <p className="section-overline mb-4">What the public record showed</p>
-            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Five conflicts that made the answer less trustworthy
-            </h2>
-            <div className="mt-10 grid gap-5 sm:grid-cols-2">
-              {conflictLayers.map((item) => (
-                <article
-                  key={item.number}
-                  className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm"
-                >
-                  <p className="text-sm font-bold tracking-widest text-[#3A9E6A]">{item.number}</p>
-                  <h3 className="mt-4 text-xl font-bold leading-snug text-[#0D2318]">{item.title}</h3>
-                  <p className="mt-4 leading-relaxed text-gray-600">{item.text}</p>
+          <div className="mt-14">
+            <p className="section-overline mb-4">What Sequoia produced</p>
+            <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Four documented outputs from the assessment</h2>
+            <div className="mt-8 grid gap-5 md:grid-cols-2">
+              {deliverables.map((item) => (
+                <article key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-6">
+                  <h3 className="text-lg font-bold text-[#0D2318]">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-700">{item.description}</p>
                 </article>
               ))}
             </div>
-            <p className="mt-6 text-sm leading-relaxed text-gray-500">
-              Observations were drawn from publicly available owned and third-party surfaces.
-              They are presented as a pattern, not as a legal conclusion about any entity or
-              source.
-            </p>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <p className="text-sm font-semibold text-[#1A5C3A]">The work comes in an order</p>
-            <h2 className="mt-3 font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Correction before content, evidence before claims
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Publishing more location pages or chasing AI mentions before the company record is
-              settled would add more material to an already conflicted surface. The responsible
-              sequence is to make the business legible first.
-            </p>
-            <ol className="mt-10 space-y-5">
-              {correctionSequence.map((item, index) => (
-                <li key={item} className="flex gap-5">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2] text-sm font-extrabold text-[#0D2318]">
-                    {index + 1}
-                  </span>
-                  <p className="pt-1 text-lg leading-relaxed text-gray-700">{item}</p>
-                </li>
+          <div className="mt-14">
+            <p className="section-overline mb-4">What the evidence showed</p>
+            <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Five conflicts that had to be separated</h2>
+            <div className="mt-10 space-y-5">
+              {findings.map((item, index) => (
+                <article key={item.title} className="rounded-2xl border border-gray-200 p-7 sm:p-8">
+                  <div className="flex gap-5">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2] font-extrabold text-[#0D2318]">{index + 1}</span>
+                    <div>
+                      <h3 className="text-xl font-bold text-[#0D2318]">{item.title}</h3>
+                      <p className="mt-3 leading-relaxed text-gray-700">{item.finding}</p>
+                      <dl className="mt-5 grid gap-3 text-sm text-gray-600 sm:grid-cols-3">
+                        <div><dt className="font-bold text-[#0D2318]">Source</dt><dd className="mt-1">{item.source}</dd></div>
+                        <div><dt className="font-bold text-[#0D2318]">Source type</dt><dd className="mt-1">{item.sourceType}</dd></div>
+                        <div><dt className="font-bold text-[#0D2318]">Checked</dt><dd className="mt-1">August 14, 2026</dd></div>
+                      </dl>
+                    </div>
+                  </div>
+                </article>
               ))}
-            </ol>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#1a1a1a] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <p className="section-overline mb-4">What this does and does not prove</p>
-            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              AI visibility is a measurement problem, not a slogan.
-            </h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-400">
-              <p>
-                This field note documents a public-information problem and the correction path.
-                It does not claim a model outcome, a position, a recommendation share, or a
-                commercial result. Those claims need a documented baseline, repeatable prompts,
-                source review, and enough time for independently controlled systems to update.
-              </p>
-              <p>
-                For a company with this pattern, the first evidence of progress is a cleaner
-                canonical record, implemented corrections, and an honest log of what remains
-                pending or outside the company&apos;s control. Only then does it make sense to
-                evaluate whether public retrieval is becoming more consistent.
-              </p>
-              <p>
-                The observation stages, repeated-session controls, and reporting limits used for
-                that evaluation are published in Sequoia GEO&apos;s{" "}
-                <Link
-                  href="/ai-search-methodology"
-                  className="font-semibold text-[#3A9E6A] underline decoration-[#3A9E6A]/50 underline-offset-4 hover:text-[#C8EDD2]"
-                >
-                  AI search measurement methodology
-                </Link>
-                .
-              </p>
             </div>
           </div>
         </div>
       </section>
-
-      <section className="bg-[#0D2318] py-20">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <p className="section-overline mb-4">Your public surface</p>
-          <h2 className="font-serif text-3xl font-extrabold text-white sm:text-4xl">
-            Is public information making your company harder to recommend?
-          </h2>
-          <p className="mt-5 text-lg leading-relaxed text-[#C8EDD2]/75">
-            We can identify the owned and third-party signals that need to agree before you ask
-            search engines or AI systems to trust the answer.
-          </p>
-          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              href="/audit"
-              className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
-            >
-              Request a Public-Surface Audit
-            </Link>
-            <Link
-              href="/ai-seo-pricing"
-              className="inline-flex items-center justify-center rounded-lg border border-[#C8EDD2]/35 px-8 py-4 text-base font-semibold text-white transition hover:border-[#C8EDD2]"
-            >
-              View GEO and AI SEO Pricing
-            </Link>
-          </div>
+      <section className="bg-[#fafaf8] py-20 sm:py-24">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <p className="section-overline mb-4">What the assessment produced</p>
+          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">A correction order, not another generic content plan</h2>
+          <ol className="mt-10 space-y-4">
+            {sequence.map((item, index) => (
+              <li key={item} className="flex gap-4 rounded-xl border border-gray-200 bg-white p-6">
+                <span className="font-extrabold text-[#3A9E6A]">{String(index + 1).padStart(2, "0")}</span>
+                <span className="leading-relaxed text-gray-700">{item}</span>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
-    </>
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-2">
+            <div>
+              <h2 className="text-3xl font-extrabold text-[#0D2318]">What was not measured</h2>
+              <ul className="mt-6 space-y-3 text-gray-700">
+                <li>No analytics, Search Console, advertising, call-tracking, or CRM accounts were reviewed.</li>
+                <li>No test lead was submitted.</li>
+                <li>No controlled ChatGPT, Gemini, or Google AI recommendation panel was run.</li>
+                <li>No recommendation, lead, job, or causation result is claimed.</li>
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-[#3A9E6A]/25 bg-[#C8EDD2]/25 p-7">
+              <h2 className="text-2xl font-extrabold text-[#0D2318]">Why that limit matters</h2>
+              <p className="mt-4 leading-relaxed text-gray-700">
+                AI answers can change by product, wording, location, account state, and date. A public
+                evidence audit can show why a business is difficult to resolve, but it cannot prove
+                what every assistant showed or what caused a later customer decision.
+              </p>
+              <Link href="/ai-search-methodology" className="mt-6 inline-flex font-bold text-[#1A5C3A] underline underline-offset-4">See how later observations are measured</Link>
+            </div>
+          </div>
+          <p className="mt-10 text-sm leading-relaxed text-gray-500">
+            Last reviewed August 31, 2026. Public records and profiles can change after the evidence date.
+            Treat these observations as historical after November 12, 2026 unless they are reverified.
+            This is a marketing and public-surface assessment, not a legal opinion.
+          </p>
+        </div>
+      </section>
+      <section className="bg-[#1A5C3A] py-16">
+        <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white">Find the conflicts affecting your public story</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-[#C8EDD2]/85">Start with a hand-reviewed public-surface snapshot before deciding what deserves implementation.</p>
+          <Link href="/ai-search-assessment" className="mt-7 inline-flex rounded-lg bg-white px-7 py-3.5 font-bold text-[#1A5C3A]">Request an AI Search Snapshot</Link>
+        </div>
+      </section>
+    </main>
   );
 }

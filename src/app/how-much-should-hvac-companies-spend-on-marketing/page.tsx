@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "Should a new HVAC company spend more than 10 percent?",
     answer:
-      "Sometimes, and briefly. When nobody knows your name, awareness costs more than it returns for a while. What I watch is not the percent. It is whether every dollar is tracked to a call and every call to a booked job. A small untracked budget wastes more than a large tracked one.",
+      "Sometimes, and briefly. When nobody knows your name, awareness costs more than it returns for a while. What I watch is not only the percent. It is how much spend can be reconciled to calls, qualified inquiries, and jobs booked without filling data gaps by assumption.",
   },
   {
     question: "What do HVAC leads cost right now?",
@@ -70,7 +70,7 @@ export default function HvacMarketingBudgetPage() {
             $17 million in annual revenue with more than 130 employees, and our annual ad
             spend ran in the low seven figures. Low seven figures against $17 million lands
             in the 6 to 10 percent band. That spend rate carried the company onto the Inc
-            5000 list four years straight, 2020 through 2023.
+            5000 list four years straight, 2021 through 2024.
           </p>
           <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Link
@@ -136,7 +136,7 @@ export default function HvacMarketingBudgetPage() {
             {[
               {
                 title: "Nobody knows your name yet",
-                body: "Plan for the top of the band and expect it to feel heavy. Awareness is bought before it pays. The discipline that saves you is tracking, not thrift: every dollar tied to a call, every call tied to a booked job, from day one.",
+                body: "Plan for the top of the band and expect it to feel heavy. Awareness is bought before it pays. The discipline that protects the budget is staged measurement: spend, calls, qualified inquiries, and jobs booked, with missing joins reported honestly.",
               },
               {
                 title: "Referrals carry the trucks",

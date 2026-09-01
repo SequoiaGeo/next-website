@@ -31,9 +31,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
+  title: "Home Services Marketing by a 13-Year Owner and Operator | Sequoia GEO",
   description:
-    "Home services marketing connected to booked jobs. 13-year operator, 4x Inc 5000. I see your booking rate, average ticket, and where revenue leaks. Not just your lead count.",
+    "Operator-led marketing for home service companies across AI Search, SEO, websites, paid media, public profiles, tracking, and the booking handoff.",
   keywords: [
     "fractional CMO home services",
     "home services marketing",
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.sequoiageo.com",
     siteName: "Sequoia GEO",
-    title: "Home Services Marketing by a 13-Year Industry Operator | Sequoia GEO",
+    title: "Home Services Marketing by a 13-Year Owner and Operator | Sequoia GEO",
     description:
-      "Your marketing agency sees clicks. I trace calls, booking rate, and jobs booked across the full marketing system. 13 years as a home services operator. 4x Inc 5000.",
+      "Operator-led marketing across AI Search, SEO, websites, paid media, tracking, and the booking handoff. Aaron's home-services career began in 2006 and includes 13 years as an owner and operator.",
     images: [
       {
         url: "/og-image.png",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Home Services Marketing That Looks at the Full Picture | Sequoia GEO",
     description:
-      "Your marketing agency sees clicks. I trace calls, booking rate, and jobs booked across the full marketing system. 4x Inc 5000.",
+      "Operator-led marketing across AI Search, SEO, websites, paid media, tracking, and the booking handoff. 4x Inc 5000.",
   },
   metadataBase: new URL("https://www.sequoiageo.com"),
 };
@@ -81,7 +81,7 @@ const organizationSchema = {
   logo: "https://www.sequoiageo.com/logo.png",
   image: "https://www.sequoiageo.com/og-image.png",
   description:
-    "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, a home services marketer since 2006 and 13-year owner and operator.",
+    "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.",
   foundingDate: "2024",
   founder: {
     "@type": "Person",
@@ -146,10 +146,10 @@ const organizationSchema = {
       },
     ],
     award: [
-      "Inc. 5000 Fastest-Growing Companies 2020, Balanced Comfort",
       "Inc. 5000 Fastest-Growing Companies 2021, Balanced Comfort (#817, 595% growth)",
       "Inc. 5000 Fastest-Growing Companies 2022, Balanced Comfort (#511)",
       "Inc. 5000 Fastest-Growing Companies 2023, Balanced Comfort",
+      "Inc. 5000 Fastest-Growing Companies 2024, Balanced Comfort",
     ],
     knowsAbout: [
       "Home services marketing",

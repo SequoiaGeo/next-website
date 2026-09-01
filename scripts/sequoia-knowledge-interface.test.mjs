@@ -45,6 +45,7 @@ test("catalog covers every approved topic and all seven required tools", () => {
   assert.ok(catalog.serviceFit.potentialFit.length > 0);
   assert.ok(catalog.methodology.stages.length === 8);
   assert.ok(catalog.freeAudit.afterRequest.length > 0);
+  assert.ok(catalog.aiSearchAssessment.afterRequest.length > 0);
   assert.ok(catalog.caseStudyEvidence.length > 0);
   assert.ok(catalog.contactOptions.length > 0);
 
@@ -105,6 +106,7 @@ test("answers are deterministic, cited, and refuse unsupported or instruction-sh
     ["Is Sequoia right for my business?", "service_fit", "/services"],
     ["How does Sequoia measure AI search visibility?", "methodology", "/ai-search-methodology"],
     ["What happens after I request my free audit?", "free_audit", "/audit"],
+    ["What happens after I request an AI Search assessment?", "ai_search_assessment", "/ai-search-assessment"],
   ];
   for (const [question, intent, citationPath] of suggestionExpectations) {
     const response = answerSequoiaQuestion(catalog, question);
@@ -195,10 +197,15 @@ test("feature flag, kill switch, noindex, and no-cache controls are explicit", (
   assert.match(questionPanel, /setInterval\(refreshStatus, 60_000\)/);
   assert.match(questionPanel, /maxLength=\{280\}/);
   assert.match(questionPanel, /Do not enter contact, account, or confidential information/);
+  assert.match(questionPanel, /Questions may be reviewed to improve Ask Sequoia and this website/);
   assert.match(questionPanel, /not sent to an AI model/);
   assert.doesNotMatch(questionPanel, /autoFocus|autofocus/);
   assert.match(questionPanel, /aria-live="polite"/);
-  assert.match(questionPanel, /This does not send your question or contact information/);
+  assert.match(questionPanel, /does not send your question to an AI model/);
+  assert.match(questionPanel, /\/api\/sequoia-knowledge\/query/);
+  assert.match(questionPanel, /input_method: inputMethod/);
+  assert.match(questionPanel, /ask\(question, "typed"\)/);
+  assert.match(questionPanel, /ask\(suggestion, "suggestion"\)/);
 
   const draft = read("src/lib/sequoia-consultation-draft.ts");
   assert.match(draft, /origin: "sequoia_knowledge_interface"/);
@@ -260,4 +267,17 @@ test("knowledge answer path imports no model SDK and exposes no answer endpoint"
   assert.doesNotMatch(engine, /\bfetch\s*\(/);
   assert.doesNotMatch(engine, /from\s+["'](?:openai|@anthropic-ai|@google\/generative-ai)["']|new\s+OpenAI\b|(?:OPENAI|ANTHROPIC|GEMINI)_API_KEY/);
   assert.equal(existsSync(join(root, "src/app/api/sequoia-knowledge/answer/route.ts")), false);
+});
+
+test("submitted searches are disclosed and kept out of analytics", () => {
+  const privacy = read("src/app/privacy-policy/page.tsx");
+  assert.match(privacy, /Questions may\s+be reviewed to improve Ask Sequoia and this website/);
+  assert.match(privacy, /do not send the question text to\s+Google Analytics/);
+
+  const queryRoute = read("src/app/api/sequoia-knowledge/query/route.ts");
+  assert.match(queryRoute, /isSameOrigin/);
+  assert.match(queryRoute, /consumeServerBudget/);
+  assert.match(queryRoute, /answerSequoiaQuestion/);
+  assert.match(queryRoute, /Submitted knowledge search/);
+  assert.doesNotMatch(queryRoute, /trackKnowledgeStage|gtag|google-analytics/);
 });

@@ -279,7 +279,7 @@ export default function WebDesignFresnoPage() {
             <div className="bg-[#FAF7F2] rounded-2xl p-8">
               <div className="space-y-6">
                 {[
-                  { label: "Inc 5000 Rankings (2020 to 2023)", value: "4x" },
+                  { label: "Inc 5000 Rankings (2021 to 2024)", value: "4x" },
                   { label: "Based in Fresno, CA", value: "✓" },
                   { label: "SEO Built Into Every Site", value: "Always" },
                   { label: "Revenue Attribution Included", value: "✓" },

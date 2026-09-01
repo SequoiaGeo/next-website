@@ -69,7 +69,7 @@ Every tool result includes the catalog version, the public boundary statement, a
 | `sequoia_consultation_accepted_submission` | The existing lead policy confirmed a durable accepted capture with a lead id. | A qualified lead. |
 | `sequoia_qualified_lead` | The operating system later confirms the written qualified-lead definition. | A browser form success alone. |
 
-Raw questions, answer text, contact fields, draft text, email addresses, phone numbers, and names are excluded from the knowledge analytics. The Ask input, answer region, and prepared message field are marked for Clarity masking.
+Raw questions, answer text, contact fields, draft text, email addresses, phone numbers, and names are excluded from the knowledge analytics. After a visitor submits a question, a separate same-origin server route recomputes its catalog classification and sends a private internal record for website-improvement review. Typed questions and suggestion-button clicks are labeled separately. The Ask input, answer region, and prepared message field remain marked for Clarity masking.
 
 ## Homepage surface
 
@@ -101,7 +101,7 @@ Run all gates with a staging or local build, never by changing production first.
 1. Build: `npm run build` passes with the feature off by default.
 2. Source consistency: `node --test scripts/sequoia-knowledge-interface.test.mjs` and the existing public-claims suites pass.
 3. Security: unsupported questions refuse, instruction-shaped questions refuse, schemas reject extra fields, no question appears in the URL, no knowledge answer endpoint exists, and the consultation tool makes no request.
-4. Privacy: Clarity masking is present, analytics receive no raw content, the draft expires, storage failure leaves the normal contact form working, and opening the review in a new tab is disclosed as unsupported.
+4. Privacy: Clarity masking is present, analytics receive no raw content, submitted-question recording is disclosed before submission and in the privacy policy, the draft expires, recording failure does not block the answer or the normal contact form, and opening the review in a new tab is disclosed as unsupported.
 5. Tool behavior: in the current ChatGPT desktop built-in browser with a supported model, confirm all seven tools appear under Site tools, read calls return citations, invalid input is denied, and prepare creates a same-tab draft without submitting.
 6. Human behavior: Ask Sequoia works in a browser without WebMCP support, citations open the visible source pages, and the visitor can edit or clear the prepared context.
 7. Analytics: confirm each event above appears as its own event and that availability or registration is not used as the denominator for tool conversion.

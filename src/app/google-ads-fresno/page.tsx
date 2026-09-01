@@ -246,7 +246,7 @@ export default function GoogleAdsFresnoPage() {
                 We Ran Google Ads Before We Managed Them
               </h2>
               <p className="text-gray-600 mb-4">
-                Sequoia GEO was founded by Aaron Husak after scaling a home services company to 4x Inc 5000 recognition between 2020 and 2023. During that run, we managed seven-figure Google Ads budgets internally and learned what actually moves revenue versus what just moves metrics.
+                Sequoia GEO was founded by Aaron Husak after scaling a home services company to 4x Inc 5000 recognition between 2021 and 2024. During that run, we managed seven-figure Google Ads budgets internally and learned what actually moves revenue versus what just moves metrics.
               </p>
               <p className="text-gray-600 mb-4">
                 That operating experience shapes how we approach every client account. We do not chase impressions. We do not celebrate low CPCs if those clicks are not converting. We optimize for one thing: the cost to acquire a booked, closed customer.
@@ -259,7 +259,7 @@ export default function GoogleAdsFresnoPage() {
               <div className="space-y-6">
                 {[
                   { label: "Years Running Google Ads", value: "13+" },
-                  { label: "Inc 5000 Rankings (2020 to 2023)", value: "4x" },
+                  { label: "Inc 5000 Rankings (2021 to 2024)", value: "4x" },
                   { label: "Fresno & Central Valley Focus", value: "✓" },
                   { label: "Revenue-Tied Attribution", value: "Always" },
                   { label: "Engagement Terms", value: "90 days, then month to month" },

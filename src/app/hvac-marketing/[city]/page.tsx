@@ -215,7 +215,7 @@ export default async function CityPage({
               </h2>
               <div className="space-y-4 text-[15px] text-gray-600 leading-relaxed">
                 <p>
-                  Sequoia GEO was founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2020 through 2023). The marketing systems built during that growth period are what Sequoia GEO brings to contractor clients today.
+                  Sequoia GEO was founded by Aaron Husak, who built Balanced Comfort HVAC from a solo operation to $17M+ in annual revenue and four consecutive Inc. 5000 rankings (2021 through 2024). The marketing systems built during that growth period are what Sequoia GEO brings to contractor clients today.
                 </p>
                 <p>
                   What that means for {data.city} contractors: you are working with someone who has managed real HVAC marketing budgets with real P&L accountability, not a generalist agency that took on HVAC clients because the category is large.

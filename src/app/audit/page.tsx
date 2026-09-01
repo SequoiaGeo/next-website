@@ -1,388 +1,236 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "Free Marketing Audit for Home Service Contractors | Sequoia GEO",
+  title: "Free Marketing Scorecard for Home Services | Sequoia GEO",
   description:
-    "Start with a hand-reviewed public-surface marketing scorecard for your home service business. No account access is needed to begin. Deeper verification is optional.",
+    "Request a hand-reviewed public marketing scorecard covering positioning, website conversion, SEO, content, local identity, reputation, and distribution.",
   alternates: { canonical: "https://www.sequoiageo.com/audit" },
 };
 
-const heroDeliverables = [
+const dimensions = [
   {
-    label: "How it starts",
-    desc: "I score the eight things customers, Google, and AI systems can see before anyone shares a password: positioning, conversion, SEO, content, local consistency, reputation, and distribution.",
+    title: "Positioning and offer",
+    body: "Can a prospective customer understand who the business serves, what problem it solves, and why it is credible?",
   },
   {
-    label: "What happens next",
-    desc: "You get the public findings first. If one issue needs account-level verification, we decide together what access is actually necessary.",
+    title: "Website experience and conversion",
+    body: "Does the site give a visitor a clear service path, usable contact options, and enough trust to take the next step?",
   },
   {
-    label: "What you get back",
-    desc: "A written findings report with the source and confidence behind each issue, plus the 5 fixes that should come first.",
-  },
-];
-
-const proofChips = [
-  "4x Inc 5000",
-  "13 years as an operator",
-  "You work with me, not an account manager",
-];
-
-const auditItems = [
-  {
-    title: "LSA Setup & Phone Verification",
-    desc: "I call the phone number attached to your LSA campaign. You'd be surprised how often it doesn't work.",
+    title: "Technical SEO",
+    body: "Can search engines crawl, render, index, and connect the pages that are supposed to represent the business?",
   },
   {
-    title: "Conversion Tracking Accuracy",
-    desc: "Most dashboards show thousands of 'conversions' that aren't phone calls or form fills. I find the real number.",
+    title: "On-page SEO",
+    body: "Do the primary pages answer a specific search need without competing against another page on the same site?",
   },
   {
-    title: "Website Ownership",
-    desc: "Who actually owns your website and domain? If you left today, would you take it with you?",
+    title: "Content authority",
+    body: "Does the site demonstrate first-hand knowledge, answer buyer questions, and support important claims with evidence?",
   },
   {
-    title: "Ad Spend Attribution",
-    desc: "Where is your budget actually going? I break down every channel and what it's producing in booked jobs.",
+    title: "Entity and local consistency",
+    body: "Do the website, business profiles, official records, addresses, phones, services, and service areas describe the same company?",
   },
   {
-    title: "Booking Rate Analysis",
-    desc: "I look at calls versus booked jobs. Most agencies don't have this number. I make it unavoidable.",
+    title: "Reputation footprint",
+    body: "What can a buyer verify from reviews, responses, partner pages, associations, and other independent sources?",
   },
   {
-    title: "Lead Quality & Jobs Booked",
-    desc: "Not just cost per lead. I reconcile which sources produce qualified calls and jobs booked.",
-  },
-  {
-    title: "Google Business Profile Health",
-    desc: "NAP consistency, category accuracy, photo recency, review velocity, and whether your profile is suppressing itself.",
-  },
-  {
-    title: "CSR Call Handling",
-    desc: "I listen to calls. One call review often finds more revenue opportunity than a full month of optimization.",
-  },
-  {
-    title: "Website Speed & Technical Health",
-    desc: "Slow pages lose calls before anyone reads a word. I measure it against your actual competitors.",
-  },
-  {
-    title: "Review Strategy",
-    desc: "Volume, recency, response rate, and sentiment. All four matter. Most contractors are strong on one and weak on the rest.",
-  },
-  {
-    title: "Competitive Gap Analysis",
-    desc: "What are your top 3 local competitors doing that you aren't? Where are you winning?",
-  },
-  {
-    title: "AI Search Visibility",
-    desc: "Does your business appear when a homeowner asks ChatGPT for a recommendation in your market? Most don't.",
+    title: "Social and distribution",
+    body: "Is useful work being distributed through the channels the intended audience already uses, with a path back to the business?",
   },
 ];
 
 const deliverables = [
   {
-    title: "Written findings report",
-    desc: "Every finding documented with the source, confidence level, why it matters, and the next action it supports.",
+    title: "Eight-dimension scorecard",
+    body: "Each area receives a score, assessment, evidence source, and confidence level so the result can be checked.",
   },
   {
-    title: "Prioritized action list",
-    desc: "Not a 47-point wishlist. The 5 actions with the strongest evidence and clearest next step, in order.",
+    title: "Prioritized findings",
+    body: "The report identifies the five corrections that deserve attention first instead of producing an unranked list of observations.",
   },
   {
-    title: "A straight conversation",
-    desc: "We go through it together. You ask questions. I give direct answers. No upsell pressure.",
+    title: "Access decision",
+    body: "If a public finding requires account-level verification, the report identifies the exact system and evidence needed next.",
   },
-];
-
-const goodFit = [
-  "Spending $5K to $30K per month on marketing",
-  "Have at least one active lead channel",
-  "Want to understand your actual numbers",
-  "Want one marketing problem verified before approving more work",
-];
-
-const notGoodFit = [
-  "Just starting out with no marketing budget",
-  "Looking for a surface-level SEO report",
-  "Want account-level conclusions without providing the underlying evidence",
 ];
 
 export default function AuditPage() {
   return (
     <main className="min-h-screen bg-[#fafaf8]">
-
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: "https://www.sequoiageo.com/" },
-          { name: "Free Audit", url: "https://www.sequoiageo.com/audit" },
+          { name: "Marketing Scorecard", url: "https://www.sequoiageo.com/audit" },
         ]}
       />
 
-      {/* Hero + capture: everything a cold click needs in the first viewport */}
-      <div id="audit-form" className="scroll-mt-20 bg-[#0D2318]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 sm:py-16">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14 lg:items-start">
-
-            {/* Left: the offer */}
-            <div>
-              <p className="section-overline text-[#3A9E6A] mb-4">Free Marketing Audit</p>
-              <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl leading-[1.08]">
-                I&rsquo;ll build the public-surface scorecard for your business and show you what customers, Google, and AI can see.
-              </h1>
-              <p className="mt-4 text-base text-[#C8EDD2]/70 leading-relaxed">
-                No account access to start. No manufactured problems. If the public evidence is clean, I will tell you that.
+      <section id="audit-form" className="scroll-mt-20 bg-[#0D2318] py-14 sm:py-20">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:items-start lg:px-8">
+          <div>
+            <p className="section-overline mb-4 text-[#3A9E6A]">Free Marketing Scorecard</p>
+            <h1 className="font-serif text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl">
+              See what your public marketing says before sharing account access.
+            </h1>
+            <p className="mt-6 text-lg leading-relaxed text-[#C8EDD2]/80">
+              Sequoia reviews the website, search presence, public profiles, reputation, positioning,
+              and conversion path that a prospective customer can see. Every finding includes its
+              source and confidence so you can decide what deserves deeper verification.
+            </p>
+            <ul className="mt-8 space-y-4 text-sm leading-relaxed text-[#C8EDD2]/75">
+              <li><strong className="text-white">Public first:</strong> no advertising, CRM, or analytics access is needed to begin.</li>
+              <li><strong className="text-white">Hand reviewed:</strong> the scorecard is not generated from one automated scan.</li>
+              <li><strong className="text-white">Operator led:</strong> you work with me, not an account manager.</li>
+            </ul>
+            <div className="mt-8 rounded-xl border border-white/10 bg-white/5 p-5">
+              <p className="font-bold text-white">Looking specifically at ChatGPT, Gemini, or Google AI?</p>
+              <p className="mt-2 text-sm leading-relaxed text-[#C8EDD2]/70">
+                The AI Search Assessment examines recommendation questions, citations, retrieval,
+                public contradictions, and how AI visibility is measured.
               </p>
-
-              <ul className="mt-7 space-y-4">
-                {heroDeliverables.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <svg aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                    <p className="text-sm leading-relaxed text-[#C8EDD2]/80">
-                      <span className="font-bold text-white">{item.label}: </span>
-                      {item.desc}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-7 flex flex-wrap gap-3">
-                {proofChips.map((chip, i) => (
-                  <span
-                    key={i}
-                    className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-[#3A9E6A]/10 px-4 py-2 text-sm font-medium text-[#3A9E6A]"
-                  >
-                    <svg aria-hidden="true" className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                    {chip}
-                  </span>
-                ))}
-              </div>
-
-              <p className="mt-7 text-sm text-[#C8EDD2]/60">
-                Rather talk than type?{" "}
-                <a href="tel:5595213122" className="font-semibold text-white hover:text-[#C8EDD2] transition-colors">
-                  Call me at (559) 521-3122
-                </a>
-                .
-              </p>
+              <Link href="/ai-search-assessment" className="mt-3 inline-flex font-semibold text-[#C8EDD2] underline underline-offset-4">
+                Request the AI Search Assessment
+              </Link>
             </div>
+          </div>
 
-            {/* Right: the capture. Section chrome stripped so the card sits in the hero. */}
-            <div className="[&>section]:bg-transparent [&>section]:py-0 [&>section>div]:max-w-none [&>section>div]:px-0">
-              <InlineLeadForm
-                source="audit_page"
-                heading="Request your public-surface scorecard"
-                subtext="Tell me where to send it. I review every request personally. No account access is needed to start."
-                buttonText="Request My Scorecard"
-                collectCompany
-                companyLabel="Business name"
-                companyPlaceholder="Acme Plumbing"
-              />
-            </div>
-
+          <div className="[&>section]:bg-transparent [&>section]:py-0 [&>section>div]:max-w-none [&>section>div]:px-0">
+            <InlineLeadForm
+              source="audit_page"
+              heading="Request your marketing scorecard"
+              subtext="Tell me which business to review. I examine the public surface personally before requesting access to anything else."
+              buttonText="Request My Marketing Scorecard"
+              collectCompany
+              companyLabel="Business name"
+              companyPlaceholder="Your business"
+            />
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Audit verification method */}
-      <div className="bg-[#fafaf8]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-2xl mb-10">
-            <p className="section-overline mb-3">From One Audit</p>
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl leading-[1.08]">
-              What the audit verifies
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="section-overline mb-4">Public-Surface Review</p>
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">
+              Eight dimensions customers can encounter before they contact you
             </h2>
-            <p className="mt-4 text-base text-gray-500 leading-relaxed">
-              These are the failure patterns the review is designed to verify, not results attributed to a named company.
+            <p className="mt-5 text-lg leading-relaxed text-gray-600">
+              The first review establishes what is visible. It does not claim to know booked jobs,
+              sales outcomes, account settings, or internal call handling before the supporting
+              systems and records are available.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl border border-gray-200 bg-white p-8">
-              <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A]">
-                False conversions
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-gray-500">
-                The review inspects every conversion action, excludes page views and other nonlead
-                events, and verifies whether the remaining actions became qualified inquiries.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-gray-200 bg-white p-8">
-              <p className="text-4xl font-extrabold tracking-tight text-[#1A5C3A]">
-                Mixed call data
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-gray-500">
-                The review separates new-customer calls from repeat callers and nonlead activity
-                before any source is credited with demand.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* What we examine */}
-      <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-2xl mb-12">
-            <p className="section-overline mb-3">What I Examine</p>
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl leading-[1.08]">
-              The 12-point audit
-            </h2>
-            <p className="mt-4 text-base text-gray-500 leading-relaxed">
-              The first eight dimensions use public evidence. Account-level steps require access
-              only after you see what the public surface shows.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-px sm:grid-cols-2 bg-gray-100 rounded-2xl overflow-hidden border border-gray-100">
-            {auditItems.map((item, i) => (
-              <div key={i} className="bg-white p-7">
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl font-black text-[#1A5C3A]/15 leading-none shrink-0 mt-0.5 tabular-nums">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {dimensions.map((item, index) => (
+              <article key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
+                <div className="flex gap-4">
+                  <span className="font-black text-[#1A5C3A]">0{index + 1}</span>
                   <div>
-                    <h3 className="text-base font-bold text-[#1a1a1a]">{item.title}</h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-gray-500">{item.desc}</p>
+                    <h3 className="text-lg font-bold text-[#0D2318]">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* What you get */}
-      <div className="bg-[#1a1a1a]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-2xl mb-12">
-            <p className="section-overline mb-3">Deliverables</p>
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl leading-[1.08]">
-              What the audit delivers
-            </h2>
+      <section className="bg-[#fafaf8] py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="text-center">
+            <p className="section-overline mb-4">What Comes Back</p>
+            <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">A decision document, not a dashboard screenshot</h2>
           </div>
-
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {deliverables.map((item, i) => (
-              <div
-                key={i}
-                className="rounded-2xl border border-white/10 bg-white/5 p-8"
-              >
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#1A5C3A]">
-                  <span className="text-sm font-black text-white">{i + 1}</span>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {deliverables.map((item, index) => (
+              <article key={item.title} className="rounded-2xl border border-gray-200 bg-white p-8">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1A5C3A] font-black text-white">
+                  {index + 1}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-white/50">{item.desc}</p>
-              </div>
+                <h3 className="mt-5 text-xl font-bold text-[#0D2318]">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.body}</p>
+              </article>
             ))}
           </div>
-
-          <p className="mt-10 text-sm text-white/30 border-t border-white/10 pt-8">
-            The audit typically takes 3 to 5 business days. The strategy call is 45 to 60 minutes.
-          </p>
         </div>
-      </div>
+      </section>
 
-      {/* Who this is for */}
-      <div className="bg-[#fafaf8]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-2xl mb-12">
-            <p className="section-overline mb-3">Fit Check</p>
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl leading-[1.08]">
-              Who this is for
-            </h2>
+      <section className="bg-[#0D2318] py-20 sm:py-24">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-2 lg:px-8">
+          <div>
+            <p className="section-overline mb-4 text-[#3A9E6A]">Evidence Boundary</p>
+            <h2 className="text-3xl font-extrabold text-white">What the free review can establish</h2>
+            <ul className="mt-7 space-y-3 text-sm leading-relaxed text-[#C8EDD2]/75">
+              <li>What customers and search systems can currently reach</li>
+              <li>Where public business facts agree or conflict</li>
+              <li>Whether important pages and contact paths function visibly</li>
+              <li>Which claims have independent support</li>
+              <li>Which corrections can begin without account access</li>
+            </ul>
           </div>
-
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {/* Good fit */}
-            <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#C8EDD2]/30 p-8">
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1A5C3A]">
-                  <svg aria-hidden="true" className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
-                </div>
-                <h3 className="text-base font-bold text-[#0D2318]">Good fit</h3>
-              </div>
-              <ul className="space-y-3">
-                {goodFit.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <svg aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                    <span className="text-sm leading-relaxed text-[#1a1a1a]">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Not a good fit */}
-            <div className="rounded-2xl border border-gray-200 bg-white p-8">
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-200">
-                  <svg aria-hidden="true" className="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </div>
-                <h3 className="text-base font-bold text-[#1a1a1a]">Not a good fit</h3>
-              </div>
-              <ul className="space-y-3">
-                {notGoodFit.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <svg aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    <span className="text-sm leading-relaxed text-gray-500">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom CTA: scrolls back to the form, never off the page */}
-      <div className="bg-[#0D2318]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-2xl">
-            <p className="section-overline text-[#3A9E6A] mb-4">Limited Availability</p>
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl leading-[1.08]">
-              I complete up to 10 full audits each month.
-            </h2>
-            <p className="mt-5 text-lg text-[#C8EDD2]/70 leading-relaxed">
-              The public-surface scorecard comes first, and no account access is needed to begin.
-              If the findings justify a deeper review, we decide what access is necessary. You
-              will hear from me within one business day.
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
+            <p className="section-overline mb-4 text-[#3A9E6A]">What Requires More Evidence</p>
+            <h2 className="text-2xl font-extrabold text-white">Account and operating conclusions</h2>
+            <ul className="mt-7 space-y-3 text-sm leading-relaxed text-[#C8EDD2]/75">
+              <li>Advertising configuration and spend efficiency</li>
+              <li>CRM source records and lead qualification</li>
+              <li>Call handling and appointment outcomes</li>
+              <li>Analytics events and attribution joins</li>
+              <li>Jobs booked or other verified operating outcomes</li>
+            </ul>
+            <p className="mt-6 text-sm leading-relaxed text-[#C8EDD2]/60">
+              If one of these systems matters, the scorecard identifies the access and record needed
+              before Sequoia presents an account-level conclusion.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <a
-                href="#audit-form"
-                className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white transition hover:bg-[#245a42]"
-              >
-                Request My Scorecard
-                <svg aria-hidden="true" className="ml-2 h-4 w-4 rotate-[-90deg]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </a>
-              <a
-                href="tel:5595213122"
-                className="inline-flex items-center gap-2 text-sm font-medium text-[#C8EDD2]/60 hover:text-[#C8EDD2] transition-colors"
-              >
-                <svg aria-hidden="true" className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                </svg>
-                (559) 521-3122
-              </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-[#3A9E6A]/25 bg-[#C8EDD2]/30 p-8">
+              <p className="section-overline mb-3">Good Fit</p>
+              <h2 className="text-2xl font-extrabold text-[#0D2318]">You need one reliable starting point.</h2>
+              <p className="mt-4 text-sm leading-relaxed text-[#0D2318]/75">
+                The scorecard is designed for an established service business that has active public
+                marketing and wants to understand what is true before approving broader work.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-8">
+              <p className="section-overline mb-3">Not The Same Offer</p>
+              <h2 className="text-2xl font-extrabold text-[#0D2318]">AI Search has its own assessment.</h2>
+              <p className="mt-4 text-sm leading-relaxed text-gray-600">
+                If your primary question is why AI products do or do not mention, cite, or recommend
+                the company, use the dedicated AI Search path so the review begins with the right evidence.
+              </p>
+              <Link href="/ai-search-assessment" className="mt-5 inline-flex font-semibold text-[#1A5C3A] underline underline-offset-4">
+                Go to the AI Search Assessment
+              </Link>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
+      <section className="bg-[#1A5C3A] py-16">
+        <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
+          <h2 className="font-serif text-3xl font-extrabold text-white">Start with the public evidence.</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-[#C8EDD2]/80">
+            Request the scorecard. You will hear from me personally about the business, the public
+            findings, and whether deeper verification is warranted.
+          </p>
+          <a href="#audit-form" className="mt-7 inline-flex rounded-lg bg-white px-7 py-3.5 font-semibold text-[#1A5C3A]">
+            Request My Marketing Scorecard
+          </a>
+        </div>
+      </section>
     </main>
   );
 }

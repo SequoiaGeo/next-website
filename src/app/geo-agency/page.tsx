@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
+import TradeAiSearchNav from "@/components/TradeAiSearchNav";
+import CityAiSearchIndex from "@/components/CityAiSearchIndex";
+import AiSearchTrustPanel from "@/components/AiSearchTrustPanel";
 
 export const metadata: Metadata = {
   title: "AI SEO Agency for Home Services | Sequoia GEO",
@@ -115,12 +118,9 @@ export default function GeoAgencyPage() {
               answers. GEO is the industry label. AI SEO is the work buyers recognize. The foundation
               is still credible SEO, not a separate set of secret ranking tricks.
             </p>
-            <p className="mt-5 text-sm font-semibold text-[#1A5C3A]">
-              Engagements start at $2,500 per month with a three-month initial term, then month to month.
-            </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href="/audit"
+                href="/ai-search-assessment"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
                 Request a Public-Surface Review
@@ -141,6 +141,12 @@ export default function GeoAgencyPage() {
           </div>
         </div>
       </section>
+
+      <TradeAiSearchNav currentHref="/geo-agency" />
+
+      <CityAiSearchIndex />
+
+      <AiSearchTrustPanel />
 
       <section className="bg-[#0D2318] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -356,7 +362,7 @@ export default function GeoAgencyPage() {
                   You work with Aaron, not an account manager
                 </h2>
                 <p className="mt-5 text-lg leading-relaxed text-[#C8EDD2]/75">
-                  Aaron Husak spent 13 years building and running a home service company before
+                  Aaron Husak spent 13 years building and running a home service company, in an industry career that began in 2006, before
                   founding Sequoia GEO. He leads the strategy, joins the working meetings, reviews the
                   evidence, and remains accountable for the decisions. Specialized implementation
                   support may be added, but the strategic relationship is not handed off.
@@ -409,7 +415,7 @@ export default function GeoAgencyPage() {
             what remains uncertain, and which correction should come first.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/audit" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
+            <Link href="/ai-search-assessment" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
               Request a Public-Surface Review
             </Link>
             <Link href="/ai-seo-pricing" className="inline-flex items-center justify-center rounded-lg border border-white/40 px-8 py-4 text-base font-semibold text-white transition hover:border-white">

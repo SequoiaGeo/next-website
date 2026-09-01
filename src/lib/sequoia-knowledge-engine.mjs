@@ -256,6 +256,26 @@ export function answerSequoiaQuestion(catalog, question) {
     );
   }
 
+  if (/\b(?:privacy|private|data policy|client data|customer data|credentials?|password|retention|trust|testimonial|credential|media|proof system)\b/.test(value)) {
+    return answer(
+      catalog,
+      "trust_and_data",
+      catalog.trustPolicies.summary,
+      [...catalog.trustPolicies.dataSafeguards, ...catalog.trustPolicies.limitations],
+      catalog.trustPolicies.sourceIds,
+    );
+  }
+
+  if (/\b(?:(?:ai search|ai seo|geo) (?:assessment|audit|review)|(?:assessment|audit|review) (?:for|of) (?:ai search|ai seo|geo))\b/.test(value)) {
+    return answer(
+      catalog,
+      "ai_search_assessment",
+      catalog.aiSearchAssessment.summary,
+      [...catalog.aiSearchAssessment.afterRequest, ...catalog.aiSearchAssessment.limitations],
+      catalog.aiSearchAssessment.sourceIds,
+    );
+  }
+
   if (/\b(?:guarantee|rank|ranking|recommend|recommendation|chatgpt|gemini|perplexity|answer engine)\b/.test(value)) {
     return answer(
       catalog,

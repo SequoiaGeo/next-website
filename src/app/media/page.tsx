@@ -107,6 +107,35 @@ export default function MediaPage() {
         </div>
       </section>
 
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="section-overline mb-3">Supporting Education</div>
+            <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a]">
+              AI Search training, labeled for what it proves
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-600">
+              Training supports professional development. It does not establish client results,
+              recommendation gains, or platform authority.
+            </p>
+          </div>
+          <a
+            href="https://credsverse.com/credentials/bb8823fd-8d81-4d93-99fc-14d6f4b668cf?preview=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 block max-w-2xl rounded-2xl border border-gray-200 bg-[#fafaf8] p-7 transition hover:border-[#3A9E6A]/50"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#1A5C3A]">Surfer Academy</p>
+            <h3 className="mt-3 text-xl font-bold text-[#0D2318]">AI Search Expert Certification</h3>
+            <p className="mt-3 text-sm leading-relaxed text-gray-600">
+              A public credential confirming completion of AI Search training. It is supporting
+              education, not evidence of a client outcome.
+            </p>
+            <span className="mt-5 inline-flex text-sm font-bold text-[#1A5C3A] underline underline-offset-4">Verify the credential</span>
+          </a>
+        </div>
+      </section>
+
       <section className="bg-[#0D2318] py-16">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
