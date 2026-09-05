@@ -29,7 +29,7 @@ const deliverables = [
     step: "05",
     title: "Month two priorities are set",
     description:
-      "The first month ends with an evidence-backed priority list for the rest of the initial term, not another report that sits unread.",
+      "The first month ends with an evidence-backed priority list for the next phase of work, not another report that sits unread.",
   },
 ];
 
@@ -48,8 +48,7 @@ export default function FirstThirtyDays() {
             </h2>
             <p className="mt-5 text-base text-[#C8EDD2]/70 leading-relaxed">
               The first 30 days establish the baseline, correct the first approved constraint,
-              and document what changed. The work continues through the three-month initial
-              term so we can measure whether the fix produced the intended result.
+              and document what changed. We then measure whether the fix produced the intended result.
             </p>
             <p className="mt-4 text-base text-[#C8EDD2]/70 leading-relaxed">
               Most clients find more value in the first 30 days than they expected, because
@@ -61,7 +60,6 @@ export default function FirstThirtyDays() {
               {[
                 "Nothing changes without your approval",
                 "You own all accounts and data",
-                "Three-month initial term, then month to month",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#3A9E6A]/20">

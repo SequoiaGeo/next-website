@@ -154,7 +154,7 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop navigation */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-8">
           {/* Services dropdown */}
           <div className="relative" ref={servicesDropdownRef}>
             <button
@@ -203,6 +203,13 @@ export default function Navigation() {
             className="text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
           >
             Case Studies
+          </Link>
+
+          <Link
+            href="/ai-seo-pricing"
+            className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-[#1A5C3A] transition-colors"
+          >
+            Services &amp; Pricing
           </Link>
 
           {/* Resources dropdown */}
@@ -274,7 +281,7 @@ export default function Navigation() {
           <a
             href="tel:5595213122"
             onClick={() => trackCallIntent("header_desktop")}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            className="hidden xl:inline-flex items-center gap-2 whitespace-nowrap text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
           >
             <svg aria-hidden="true" className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -354,6 +361,14 @@ export default function Navigation() {
             className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
             Case Studies
+          </Link>
+
+          <Link
+            href="/ai-seo-pricing"
+            onClick={() => setMobileOpen(false)}
+            className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
+          >
+            Services &amp; Pricing
           </Link>
 
           {/* Mobile Resources accordion */}

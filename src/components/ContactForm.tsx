@@ -17,7 +17,7 @@ import {
 } from "@/lib/sequoia-consultation-draft";
 import { trackKnowledgeStage } from "@/lib/sequoia-knowledge-analytics";
 
-export default function ContactForm() {
+export default function ContactForm({ showEngagementTerms = true }: { showEngagementTerms?: boolean }) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -167,7 +167,9 @@ export default function ContactForm() {
               {[
                 { label: "Evidence before recommendations", desc: "I review the marketing and booking path before the call" },
                 { label: "No pitch deck", desc: "A real conversation about the constraint you are seeing" },
-                { label: "Clear engagement terms", desc: "Three months initially, then month to month" },
+                ...(showEngagementTerms
+                  ? [{ label: "Clear engagement terms", desc: "Three months initially, then month to month" }]
+                  : []),
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4 py-4 first:pt-0">
                   <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#C8EDD2]">
