@@ -86,9 +86,10 @@ test("buyer-language panel is frozen without GEO and requires five repetitions",
   assert.match(protocol, /not approved for the website, proposals, pitch decks, sales emails, sales calls, social posts, podcast appearances/);
 });
 
-test("the approved starting price remains public", () => {
+test("the approved starting price remains public on pricing, not in the homepage hero", () => {
   const pricing = read("src/app/ai-seo-pricing/page.tsx");
   const homepage = read("src/components/Hero.tsx");
   assert.match(pricing, /\$2,500/);
-  assert.match(homepage, /\$2,500\/mo/);
+  assert.doesNotMatch(homepage, /\$2,500\/mo/);
+  assert.match(read("src/components/Navigation.tsx"), /href="\/ai-seo-pricing"/);
 });

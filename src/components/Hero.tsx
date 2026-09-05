@@ -29,10 +29,6 @@ export default function Hero() {
               My home-services career began in 2006, including 13 years building and operating a home service company. Now I lead every Sequoia engagement and remain your point of contact. I look across AI search, traditional search, paid media, your website, tracking, and the booking handoff to find the marketing constraint that deserves attention first.
             </p>
 
-            <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">
-              Engagements start at $2,500/mo with a three-month initial term, then month to month.
-            </p>
-
             <div className="mt-8">
               <Link
                 href="/contact#book"
