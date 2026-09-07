@@ -4,6 +4,8 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import AiSearchTrustPanel from "@/components/AiSearchTrustPanel";
+import SnapshotExample from "@/components/SnapshotExample";
+import SnapshotNextSteps from "@/components/SnapshotNextSteps";
 
 export const metadata: Metadata = {
   title: "Free AI Search Snapshot | Sequoia GEO",
@@ -107,6 +109,7 @@ export default function AiSearchAssessmentPage() {
             <div className="mt-6 rounded-xl border border-white/15 bg-white/5 p-5 text-base leading-relaxed text-gray-200">
               <p><strong className="text-white">What you receive:</strong> Documented findings, their public sources, and a prioritized correction path. Use it with your team or existing provider, or discuss a paid engagement with Sequoia.</p>
               <p className="mt-3">Requesting the snapshot does not book a meeting. If deeper verification requires account access, we explain what is needed first.</p>
+              <details className="mt-4"><summary className="cursor-pointer font-bold text-white">Delivery and follow-up</summary><div className="mt-3"><SnapshotNextSteps /></div></details>
               <Link href="/case-studies/ai-search-readiness" className="mt-4 inline-flex font-bold text-white underline underline-offset-4">See an actual snapshot example</Link>
               <p className="mt-2 text-sm">A dated diagnostic, not evidence of increased recommendations or leads.</p>
             </div>
@@ -146,6 +149,7 @@ export default function AiSearchAssessmentPage() {
       </section>
 
       <AiSearchTrustPanel />
+      <section aria-label="Assessment sample" className="mx-auto max-w-3xl px-6 pb-16"><SnapshotExample /></section>
 
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

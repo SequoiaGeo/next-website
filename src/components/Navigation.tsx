@@ -7,24 +7,11 @@ import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
 const serviceLinks = [
   {
-    group: "Core Services",
+    group: "Start with AI Search",
     items: [
       { label: "AI SEO / Search Visibility", href: "/geo-agency" },
       { label: "AI Search Assessment", href: "/ai-search-assessment" },
       { label: "AI SEO by Market", href: "/geo-agency#markets" },
-      { label: "LSA Management", href: "/lsa-management" },
-      { label: "AI Automation", href: "/ai-automation" },
-      { label: "Operator-Led Marketing", href: "/fractional-cmo" },
-      { label: "Website Design", href: "/websites" },
-    ],
-  },
-  {
-    group: "By Trade",
-    items: [
-      { label: "HVAC SEO & Marketing", href: "/hvac-seo" },
-      { label: "Plumbing SEO", href: "/plumbing-seo" },
-      { label: "Roofing SEO", href: "/roofing-seo" },
-      { label: "Restoration SEO", href: "/restoration-seo" },
     ],
   },
   {
@@ -40,35 +27,25 @@ const serviceLinks = [
 
 const resourceLinks = [
   {
+    group: "Company and supporting services",
+    items: [
+      { label: "About Sequoia", href: "/about-sequoia-geo" },
+      { label: "Blog", href: "/blog" },
+      { label: "Media and workshops", href: "/media" },
+      { label: "Website Design", href: "/websites" },
+      { label: "LSA Management", href: "/lsa-management" },
+      { label: "AI Automation", href: "/ai-automation" },
+      { label: "Operator-Led Marketing", href: "/fractional-cmo" },
+    ],
+  },
+  {
     group: "Guides and Standards",
     items: [
-      { label: "Marketing Leak Calculator", href: "/marketing-leak-calculator" },
-      { label: "LSA Guide for Contractors", href: "/lsa-guide" },
       { label: "AI SEO Guide", href: "/ai-website-seo-guide" },
-      { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },
       { label: "Sequoia Proof System", href: "/proof-system" },
-      { label: "AI Search Measurement Method", href: "/ai-search-methodology" },
       { label: "AI and Client Data Policy", href: "/ai-and-client-data-policy" },
       { label: "Hicks Paving AI Search Snapshot", href: "/case-studies/ai-search-readiness" },
       { label: "AI SEO Agency Comparison", href: "/best-ai-seo-agencies-home-services" },
-    ],
-  },
-  {
-    group: "Industry Data",
-    items: [
-      { label: "HVAC Statistics 2026", href: "/hvac-statistics" },
-      { label: "Plumbing Statistics 2026", href: "/plumbing-statistics" },
-      { label: "LSA Statistics 2026", href: "/local-services-ads-statistics" },
-    ],
-  },
-  {
-    group: "Compare Agencies",
-    items: [
-      { label: "Best HVAC Marketing Agencies", href: "/best-hvac-marketing-agencies" },
-      { label: "Best Plumbing Marketing Agencies", href: "/best-plumbing-marketing-agencies" },
-      { label: "Best Roofing Marketing Agencies", href: "/best-roofing-marketing-agencies" },
-      { label: "AI SEO Agencies for Home Services", href: "/best-ai-seo-agencies-home-services" },
-      { label: "Leaving Your Marketing Agency?", href: "/leaving-my-marketing-agency" },
     ],
   },
   {
@@ -148,7 +125,7 @@ export default function Navigation() {
               Sequoia GEO
             </span>
             <span className="text-xs text-gray-500 hidden sm:block leading-tight">
-              Growth Operations for Home Services
+              AI Search for Service Businesses
             </span>
           </div>
         </Link>
@@ -163,7 +140,7 @@ export default function Navigation() {
               aria-expanded={servicesOpen}
               aria-haspopup="true"
             >
-              Services
+              AI Search
               <svg
                 className={`h-3.5 w-3.5 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
                 fill="none"
@@ -176,7 +153,7 @@ export default function Navigation() {
             </button>
 
             {servicesOpen && (
-              <div className="absolute top-full left-0 mt-2 w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/20 py-3 z-50">
+              <div className="absolute top-full left-0 mt-2 max-h-[70vh] overflow-y-auto w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/20 py-3 z-50">
                 {serviceLinks.map((group) => (
                   <div key={group.group} className="px-2 mb-1 last:mb-0">
                     <p className="px-3 py-1.5 text-xs font-bold text-[#1A5C3A] uppercase tracking-wider">
@@ -202,7 +179,7 @@ export default function Navigation() {
             href="/case-studies"
             className="text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
           >
-            Case Studies
+            Client Work
           </Link>
 
           <Link
@@ -220,7 +197,7 @@ export default function Navigation() {
               aria-expanded={resourcesOpen}
               aria-haspopup="true"
             >
-              Resources
+              More
               <svg
                 className={`h-3.5 w-3.5 transition-transform duration-200 ${resourcesOpen ? "rotate-180" : ""}`}
                 fill="none"
@@ -233,7 +210,7 @@ export default function Navigation() {
             </button>
 
             {resourcesOpen && (
-              <div className="absolute top-full right-0 mt-2 w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/20 py-3 z-50">
+              <div className="absolute top-full right-0 mt-2 max-h-[70vh] overflow-y-auto w-72 rounded-xl bg-white border border-gray-200 shadow-xl shadow-black/20 py-3 z-50">
                 {resourceLinks.map((group) => (
                   <div key={group.group} className="px-2 mb-1 last:mb-0">
                     <p className="px-3 py-1.5 text-xs font-bold text-[#1A5C3A] uppercase tracking-wider">
@@ -269,10 +246,10 @@ export default function Navigation() {
           </div>
 
           <Link
-            href="/blog"
+            href="/ai-search-methodology"
             className="text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
           >
-            Blog
+            How We Measure
           </Link>
         </div>
 
@@ -293,7 +270,7 @@ export default function Navigation() {
             onClick={() => trackCtaIntent("header_desktop", "schedule")}
             className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
           >
-            Choose a Time
+            Contact
           </Link>
         </div>
 
@@ -313,6 +290,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       <div
+        hidden={!mobileOpen}
         className={`lg:hidden fixed inset-x-0 top-[60px] bottom-0 bg-white border-t border-gray-200 transition-all duration-300 z-40 overflow-y-auto ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
@@ -321,9 +299,10 @@ export default function Navigation() {
           {/* Mobile Services accordion */}
           <button
             onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+            aria-expanded={mobileServicesOpen}
             className="flex items-center justify-between text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors w-full text-left"
           >
-            Services
+            AI Search
             <svg
               className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
               fill="none"
@@ -360,7 +339,7 @@ export default function Navigation() {
             onClick={() => setMobileOpen(false)}
             className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
-            Case Studies
+            Client Work
           </Link>
 
           <Link
@@ -374,9 +353,10 @@ export default function Navigation() {
           {/* Mobile Resources accordion */}
           <button
             onClick={() => setMobileResourcesOpen(!mobileResourcesOpen)}
+            aria-expanded={mobileResourcesOpen}
             className="flex items-center justify-between text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors w-full text-left"
           >
-            Resources
+            More
             <svg
               className={`h-4 w-4 transition-transform duration-200 ${mobileResourcesOpen ? "rotate-180" : ""}`}
               fill="none"
@@ -422,11 +402,11 @@ export default function Navigation() {
           )}
 
           <Link
-            href="/blog"
+            href="/ai-search-methodology"
             onClick={() => setMobileOpen(false)}
             className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
-            Blog
+            How We Measure
           </Link>
 
           <div className="mt-6 flex flex-col gap-4">
@@ -447,7 +427,7 @@ export default function Navigation() {
               }}
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-[#0D2318] w-full"
             >
-              Choose a Time
+              Contact
             </Link>
           </div>
         </div>

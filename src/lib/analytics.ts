@@ -26,6 +26,8 @@ type LeadParams = {
 };
 
 let lastPhoneIntentAt = 0;
+// Labels this experience without changing event names or conversion eligibility.
+export const EXPERIENCE_VERSION = "homepage-trust-20260907";
 let lastCtaClickAt = 0;
 const emittedLeadIds = new Set<string>();
 
@@ -45,6 +47,7 @@ function emitLeadConversion({ source, value, ...rest }: LeadParams) {
   const aiAttribution = readAiAttribution();
   if (typeof window.gtag === "function") {
     window.gtag("event", "generate_lead", {
+      experience_version: EXPERIENCE_VERSION,
       currency: "USD",
       value: value ?? 0,
       lead_source: source,
@@ -108,6 +111,7 @@ export function trackCtaIntent(source: string, ctaContract?: string) {
   lastCtaClickAt = Date.now();
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
   window.gtag("event", "cta_click", {
+    experience_version: EXPERIENCE_VERSION,
     event_category: "CTA",
     event_label: source,
     source,
@@ -118,5 +122,5 @@ export function trackCtaIntent(source: string, ctaContract?: string) {
 /** Fire an arbitrary GA4 event (engagement, clicks, etc.). */
 export function trackEvent(name: string, params: Record<string, unknown> = {}) {
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-  window.gtag("event", name, params);
+  window.gtag("event", name, { experience_version: EXPERIENCE_VERSION, ...params });
 }

@@ -73,7 +73,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-pale-green/80 text-sm leading-relaxed max-w-md mb-4">
-              Growth operations for home service companies doing $2M to $15M.
+              AI-search visibility and website improvements for home-service and local-service businesses.
               Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">
