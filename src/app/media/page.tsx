@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ClientVideoGrid from "@/components/ClientVideoGrid";
+import YouTubeFacade from "@/components/YouTubeFacade";
 import { podcastAppearances, tradeMedia, tradeWriting, type MediaItem } from "@/data/media";
 
 export const metadata: Metadata = {
@@ -135,6 +137,17 @@ export default function MediaPage() {
           </a>
         </div>
       </section>
+
+      <section id="workshops" className="bg-white py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-[#0D2318]">Google Business Profile workshop</h2>
+          <p className="mt-4 text-base leading-relaxed text-gray-600">Watch the existing workshop and website walkthroughs below. These demonstrate the approach, not an increase in AI recommendations.</p>
+          <div className="relative mt-8 overflow-hidden rounded-2xl bg-black" style={{ paddingBottom: "56.25%" }}>
+            <YouTubeFacade videoId="KhPbr3CSGBE" title="Google Business Profile Optimization for Contractors (Live Workshop Replay)" />
+          </div>
+        </div>
+      </section>
+      <ClientVideoGrid />
 
       <section className="bg-[#0D2318] py-16">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">

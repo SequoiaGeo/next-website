@@ -20,7 +20,7 @@ const suggestions = [
   "What does working with Sequoia cost?",
   "Is Sequoia right for my business?",
   "How does Sequoia measure AI search visibility?",
-  "What happens after I request my free audit?",
+  "What happens after I request my free AI Search Snapshot?",
 ];
 
 function limitedAnswer(reason: string): Answer {
@@ -165,16 +165,16 @@ export default function SequoiaQuestionPanel({
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         {embedded && (
           <div className="mx-auto mb-9 max-w-3xl text-center">
-            <p className="section-overline mb-3 text-[#1A5C3A]">Ask from approved public facts</p>
+            <p className="section-overline mb-3 text-[#1A5C3A]">Ask Sequoia</p>
             <h2
               id="homepage-ask-sequoia-heading"
               className="text-3xl font-extrabold tracking-tight text-[#111111] sm:text-4xl"
             >
-              What would you like to know about Sequoia GEO?
+              Have a question about working with Sequoia?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
-              Ask about AI search, services, published pricing, fit, the free marketing audit, methodology, or approved client evidence.
-              Every supported answer cites a visible Sequoia page.
+              Ask about AI search, services, pricing, client work, or your Free AI Search Snapshot.
+              Follow the sources to learn more about each answer.
             </p>
           </div>
         )}
@@ -218,11 +218,11 @@ export default function SequoiaQuestionPanel({
                 required
                 rows={3}
                 className="w-full resize-none border-0 bg-transparent px-2 py-2 text-base leading-relaxed text-[#1a1a1a] placeholder:text-gray-400 focus:outline-none focus:ring-0 sm:text-lg"
-                placeholder="Ask about AI search, pricing, the free audit, services, case studies, or whether Sequoia is right for your business..."
+                placeholder="What would you like to know about our services or the Free AI Search Snapshot?"
               />
               <div className="mt-3 flex flex-col gap-3 border-t border-gray-100 pt-4 sm:flex-row sm:items-center sm:justify-between">
                 <div className="text-sm leading-relaxed text-gray-500">
-                  <p>Approved public topics only. Do not enter contact, account, or confidential information.</p>
+                  <p>Do not enter contact, account, or confidential information.</p>
                   <p className="mt-1">Questions may be reviewed to improve Ask Sequoia and this website. They are not sent to an AI model.</p>
                 </div>
                 <div className="flex shrink-0 items-center justify-between gap-3 sm:justify-end">
@@ -266,9 +266,7 @@ export default function SequoiaQuestionPanel({
 
             <div aria-live="polite" className="mt-8">
               {!answer ? (
-                <div className="mx-auto max-w-2xl text-center text-sm leading-relaxed text-gray-500">
-                  Answers are limited to catalog version {catalog.catalogVersion}. Unsupported questions are refused instead of guessed.
-                </div>
+                <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-gray-600">Choose a question above or write your own.</p>
               ) : (
                 <div className="space-y-4">
                   <div className="ml-auto max-w-2xl rounded-2xl rounded-br-md bg-[#0D2318] px-5 py-4 text-base leading-relaxed text-white">
@@ -278,7 +276,7 @@ export default function SequoiaQuestionPanel({
                     <div className="flex items-center gap-3">
                       <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1A5C3A] text-sm font-black text-white">S</span>
                       <p className={`text-sm font-bold uppercase tracking-wider ${answer.refused ? "text-amber-700" : "text-[#1A5C3A]"}`}>
-                        {answer.refused ? "Catalog refusal" : "Catalog answer"}
+                        {answer.refused ? "Let us help you directly" : "Sequoia answer"}
                       </p>
                     </div>
                     <h3 className="mt-4 text-xl font-bold leading-snug text-[#0D2318] sm:text-2xl">{answer.summary}</h3>
@@ -339,6 +337,10 @@ export default function SequoiaQuestionPanel({
                 </div>
               )}
             </div>
+            <details className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-gray-600">
+              <summary className="cursor-pointer font-semibold text-[#1A5C3A]">How these answers work</summary>
+              <p className="mt-3">Answers use approved public information and include links to the source pages. Questions outside that information are refused instead of guessed. Catalog version: {catalog.catalogVersion}.</p>
+            </details>
           </div>
         )}
       </div>
