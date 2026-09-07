@@ -242,10 +242,10 @@ test("analytics stages remain distinct and qualification is never fired by the b
 
 test("homepage embeds one guarded question panel after proof without a duplicate launcher", () => {
   const homepage = read("src/app/page.tsx");
-  const proofPosition = homepage.indexOf("<ClientResults />");
+  const proofPosition = homepage.indexOf('id="proof"');
   const panelPosition = homepage.indexOf('<SequoiaQuestionPanel surface="homepage_inline" embedded />');
-  const problemPosition = homepage.indexOf("<Problem />");
-  assert.ok(proofPosition >= 0 && panelPosition > proofPosition && problemPosition > panelPosition);
+  const faqPosition = homepage.indexOf('id="questions"');
+  assert.ok(proofPosition >= 0 && panelPosition > proofPosition && faqPosition > panelPosition);
   assert.match(homepage, /SEQUOIA_KNOWLEDGE_ENABLED === "true"/);
   assert.match(homepage, /SEQUOIA_KNOWLEDGE_KILL_SWITCH !== "true"/);
 
@@ -254,7 +254,7 @@ test("homepage embeds one guarded question panel after proof without a duplicate
   assert.match(panel, /"ask_sequoia" \| "homepage_inline"/);
   assert.match(panel, /if \(embedded && status !== "enabled"\) return null/);
   assert.match(panel, /embedded \? "enabled" : "loading"/);
-  assert.match(panel, /What would you like to know about Sequoia GEO\?/);
+  assert.match(panel, /Have a question about working with Sequoia\?/);
   assert.match(panel, /trackKnowledgeStage\("panel_view"/);
   assert.match(panel, /trackKnowledgeStage\("handoff_click"/);
 

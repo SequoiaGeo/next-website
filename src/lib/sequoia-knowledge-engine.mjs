@@ -266,7 +266,7 @@ export function answerSequoiaQuestion(catalog, question) {
     );
   }
 
-  if (/\b(?:(?:ai search|ai seo|geo) (?:assessment|audit|review)|(?:assessment|audit|review) (?:for|of) (?:ai search|ai seo|geo))\b/.test(value)) {
+  if (/\b(?:(?:ai search|ai seo|geo) (?:snapshot|assessment|audit|review)|(?:snapshot|assessment|audit|review) (?:for|of) (?:ai search|ai seo|geo))\b/.test(value)) {
     return answer(
       catalog,
       "ai_search_assessment",

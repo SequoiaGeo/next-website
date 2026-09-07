@@ -66,5 +66,7 @@ test("only the two assessment pages opt into the campaign qualification field", 
     assert.doesNotMatch(source, /collectCompany|companyRequired/, filename);
   }
 
-  assert.equal(inlineFormPages.length, 17);
+  // The homepage now routes to the existing assessment instead of rendering a duplicate form.
+  assert.equal(inlineFormPages.length, 16);
+  assert.ok(!inlineFormPages.includes("page.tsx"));
 });

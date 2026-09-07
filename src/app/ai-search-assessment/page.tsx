@@ -104,6 +104,12 @@ export default function AiSearchAssessmentPage() {
               This is a dated, controlled sample, not a universal rank, and it does not assume that a
               later inquiry came from an observed answer.
             </p>
+            <div className="mt-6 rounded-xl border border-white/15 bg-white/5 p-5 text-base leading-relaxed text-gray-200">
+              <p><strong className="text-white">What you receive:</strong> Documented findings, their public sources, and a prioritized correction path. Use it with your team or existing provider, or discuss a paid engagement with Sequoia.</p>
+              <p className="mt-3">Requesting the snapshot does not book a meeting. If deeper verification requires account access, we explain what is needed first.</p>
+              <Link href="/case-studies/ai-search-readiness" className="mt-4 inline-flex font-bold text-white underline underline-offset-4">See an actual snapshot example</Link>
+              <p className="mt-2 text-sm">A dated diagnostic, not evidence of increased recommendations or leads.</p>
+            </div>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               {[
                 ["Public first", "No account access to begin"],

@@ -33,8 +33,9 @@ test("desktop and first-level mobile navigation expose pricing without a submenu
   assert.match(mobile, /href="\/ai-seo-pricing"\s+onClick=\{\(\) => setMobileOpen\(false\)\}/);
 });
 
-test("homepage opts out of term copy without changing the contact-page default", () => {
-  assert.match(read("src/app/page.tsx"), /<ContactForm showEngagementTerms=\{false\} \/>/);
+test("homepage links to assessment without changing the contact-page term default", () => {
+  assert.doesNotMatch(read("src/app/page.tsx"), /<ContactForm/);
+  assert.match(read("src/app/page.tsx"), /href="\/ai-search-assessment"/);
   assert.match(read("src/components/ContactForm.tsx"), /showEngagementTerms = true/);
   assert.match(read("src/components/ContactForm.tsx"), /\.\.\.\(showEngagementTerms\s*\?/);
   assert.match(read("src/app/contact/page.tsx"), /<ContactForm \/>/);

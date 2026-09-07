@@ -29,7 +29,7 @@ export default function SitewideIntentTracker() {
 
       const ctaContract = link.hash === "#book"
         ? "schedule"
-        : link.hash === "#contact"
+        : link.hash === "#contact" || (link.origin === window.location.origin && link.pathname === "/ai-search-assessment")
           ? "intake"
           : null;
       if (!ctaContract || ctaClickWasTrackedRecently()) return;

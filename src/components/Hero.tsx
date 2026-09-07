@@ -4,7 +4,6 @@ import YouTubeFacade from "@/components/YouTubeFacade";
 const credentials = [
   "4x Inc 5000",
   "130+ employees built",
-  "$17M+ revenue at exit",
   "13 years as an owner and operator",
   "You work with me, not an account manager",
 ];
@@ -18,23 +17,23 @@ export default function Hero() {
           {/* Left: Copy */}
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#1A5C3A] mb-6">
-              Operator-Led Marketing for Home Service Contractors
+              AI Search Visibility for Home Service Businesses
             </p>
 
             <h1 className="text-4xl font-extrabold text-[#111111] sm:text-5xl lg:text-[3.5rem] leading-[1.06] tracking-tight">
-              Fix what keeps customers from <span className="text-[#1A5C3A]">finding, trusting, and contacting</span> your business.
+              Help customers <span className="text-[#1A5C3A]">find and trust your business</span> in AI search and Google.
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              My home-services career began in 2006, including 13 years building and operating a home service company. Now I lead every Sequoia engagement and remain your point of contact. I look across AI search, traditional search, paid media, your website, tracking, and the booking handoff to find the marketing constraint that deserves attention first.
+              Sequoia GEO helps home-service companies improve search visibility, correct website problems, and verify what changed. My home-services career began in 2006, including 13 years as an owner and operator. I lead every engagement and remain your point of contact.
             </p>
 
             <div className="mt-8">
               <Link
-                href="/contact#book"
+                href="/ai-search-assessment"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
               >
-                Choose a Time With Aaron
+                Request My Free AI Search Snapshot
                 <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -42,13 +41,13 @@ export default function Hero() {
             </div>
 
             <p className="mt-3 text-sm text-gray-400">
-              15 minutes. No pitch deck. You work directly with me.
+              Hand reviewed. Public information first. No account access needed.
             </p>
 
             <p className="mt-3 text-sm text-gray-500">
-              Want proof first?{" "}
-              <Link href="/case-studies" className="font-semibold text-[#1A5C3A] underline-offset-2 hover:underline">
-                See client results
+              Prefer a conversation?{" "}
+              <Link href="/contact#book" className="font-semibold text-[#1A5C3A] underline-offset-2 hover:underline">
+                Choose a time with Aaron
               </Link>
             </p>
 
