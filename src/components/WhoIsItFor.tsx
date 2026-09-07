@@ -1,18 +1,17 @@
 import Link from "next/link";
 
 const goodFit = [
-  "Spending $5K to $30K/month on marketing with revenue that isn't growing proportionally",
-  "Can't answer \"which channel produces our most profitable jobs\" in 30 seconds",
-  "Been through 2 to 3 agencies in the last few years and none of them moved the needle",
-  "Want someone who understands your P&L, not just your click-through rate",
-  "Doing $2M to $15M and need executive marketing leadership without the $300K salary",
+  "You run a home-service or local-service business and want customers to find accurate information about you",
+  "You want to understand whether ChatGPT and other AI search products mention, cite, or recommend your business",
+  "You need help correcting website or public-profile problems, with evidence of what changed",
+  "You can invest in an agreed scope of work if the assessment identifies a worthwhile next step",
+  "You want a partner who distinguishes visibility from inquiries and qualified leads",
 ];
 
 const badFit = [
-  "Looking for the cheapest SEO package available",
-  "Just need someone to \"run your Google Ads\"",
-  "Not willing to share booking data, call recordings, and financials",
-  "Want a vendor to check in with once a month, not someone embedded in your business",
+  "You need guaranteed rankings, AI recommendations, or a promised number of leads",
+  "You want fabricated reviews, unsupported claims, or misleading reporting",
+  "You are not ready to approve or implement any corrections after the assessment",
 ];
 
 export default function WhoIsItFor() {
@@ -25,19 +24,19 @@ export default function WhoIsItFor() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <p className="section-overline mb-4">Is This a Fit?</p>
             <h2 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl leading-[1.08]">
-              Built for contractors doing $2M to $15M{" "}
-              <span className="text-[#1A5C3A]">who are done cycling through agencies.</span>
+              For service businesses ready to{" "}
+              <span className="text-[#1A5C3A]">improve how customers find and evaluate them.</span>
             </h2>
             <p className="mt-5 text-base text-gray-500 leading-relaxed">
-              Every client gets the same depth of attention that produced four Inc 5000
-              rankings at Balanced Comfort.
+              Fit starts with your business needs, the evidence, and the work you are ready to undertake.
+              Company size alone does not decide it. The public snapshot requires no account access.
             </p>
             <div className="mt-8 flex flex-col gap-3">
               <Link
-                href="/contact#book"
+                href="/ai-search-assessment"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0D2318]"
               >
-                Choose a Time With Aaron
+                Request My Free AI Search Snapshot
                 <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>

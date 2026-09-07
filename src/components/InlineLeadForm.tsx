@@ -10,6 +10,7 @@ import { useState, useEffect, useRef, FormEvent } from "react";
 import { trackCallIntent, trackCapturedLead, trackCtaIntent, trackEvent } from "@/lib/analytics";
 import { readCampaignAttribution } from "@/lib/campaign-attribution";
 import { readAiAttribution } from "@/lib/ai-attribution";
+import SnapshotNextSteps from "@/components/SnapshotNextSteps";
 import DiscoverySourceFields, {
   type DiscoveryEvidence,
 } from "@/components/DiscoverySourceFields";
@@ -119,7 +120,7 @@ export default function InlineLeadForm({
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <div className="rounded-2xl border border-[#1A5C3A] bg-white p-8 shadow-xl sm:p-10">
           {submitted ? (
-            <div className="py-6 text-center">
+            <div className="py-6 text-center" role="status" aria-live="polite">
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#C8EDD2]">
                 <svg aria-hidden="true" className="h-7 w-7 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -128,9 +129,9 @@ export default function InlineLeadForm({
               <h3 className="mt-5 text-xl font-bold text-[#1a1a1a]">
                 Got it. I have your context.
               </h3>
-              <p className="mt-2 text-sm text-gray-500">
+              {source === "ai_search_assessment_page" ? <div className="mt-4 text-left text-gray-700"><SnapshotNextSteps /></div> : <p className="mt-2 text-sm text-gray-500">
                 You will hear from me within one business day, usually much faster.
-              </p>
+              </p>}
               <a
                 href="/contact#book"
                 onClick={() => trackCtaIntent(`${source}_success`, "schedule")}

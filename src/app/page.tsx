@@ -3,6 +3,8 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import WhoIsItFor from "@/components/WhoIsItFor";
 import SequoiaQuestionPanel from "@/components/SequoiaQuestionPanel";
+import SnapshotExample from "@/components/SnapshotExample";
+import SnapshotNextSteps from "@/components/SnapshotNextSteps";
 
 export const metadata: Metadata = {
   title: "AI Search Visibility for Home Service Businesses | Sequoia GEO",
@@ -40,8 +42,7 @@ export default function Home() {
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
               <h3 className="text-xl font-bold text-[#0D2318]">Inside an AI Search Snapshot</h3>
-              <p className="mt-4 text-base leading-relaxed text-gray-700">The August 14, 2026 Hicks Paving assessment found conflicting public business identities, incorrect organization data on the website, and legacy URLs returning errors. The published example shows the findings and the recommended correction sequence.</p>
-              <p className="mt-4 text-sm leading-relaxed text-gray-600">This is a permissioned diagnostic example, not proof of increased AI recommendations, leads, or jobs.</p>
+              <SnapshotExample />
               <Link href="/case-studies/ai-search-readiness" className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Read the actual assessment example</Link>
             </article>
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
@@ -51,7 +52,11 @@ export default function Home() {
                 <Link href="/case-studies" className="underline underline-offset-4">Browse client work</Link>
                 <Link href="/ai-search-methodology" className="underline underline-offset-4">Read the AI search measurement method</Link>
                 <Link href="/proof-system" className="underline underline-offset-4">See our proof standards</Link>
+                <a href="https://www.google.com/maps?cid=5823435747371480489" className="underline underline-offset-4">Read Sequoia GEO reviews on Google</a>
+                <a href="https://www.thefirstclick.net/ep-320-using-ai-to-increase-website-clarity-with-aaron-husak/" className="underline underline-offset-4">Podcast: using AI to improve website clarity</a>
+                <a href="https://www.grownearby.com/podcast/the-success-story-of-aaron-husak/" className="underline underline-offset-4">Podcast: Aaron&rsquo;s home-services operating background</a>
               </div>
+              <p className="mt-5 text-sm leading-relaxed text-gray-600">Interviews and operating credentials provide background on Aaron. They are not endorsements of Sequoia&rsquo;s services or proof of client AI-search results.</p>
             </article>
           </div>
         </div>
@@ -69,6 +74,7 @@ export default function Home() {
             ))}
           </div>
           <p className="mt-6 text-base text-gray-600">Hand reviewed by Aaron. Public information first. No account access needed to begin.</p>
+          <details className="mt-5 rounded-xl border border-gray-200 p-5 text-gray-700"><summary className="cursor-pointer font-bold text-[#0D2318]">After you submit: delivery and follow-up</summary><div className="mt-4"><SnapshotNextSteps /></div></details>
           <Link href="/ai-search-assessment" className={`${primaryButton} mt-6`}>Request My Free AI Search Snapshot</Link>
         </div>
       </section>
