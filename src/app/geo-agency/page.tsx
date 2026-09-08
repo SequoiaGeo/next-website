@@ -405,6 +405,14 @@ export default function GeoAgencyPage() {
         </div>
       </section>
 
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-3xl px-6">
+          <h2 className="text-2xl font-bold text-[#0D2318]">Comparing AI SEO agencies for your home-service business?</h2>
+          <p className="mt-4 text-base text-gray-600">Compare assessment scope, published evidence, measurement rules, and engagement terms before choosing a provider. Our guide discloses that Sequoia GEO is one of the providers discussed and does not present the list as an independent ranking.</p>
+          <Link className="mt-5 inline-block font-semibold text-[#1A5C3A] underline" href="/best-ai-seo-agencies-home-services">Read the home-service AI SEO agency comparison guide</Link>
+        </div>
+      </section>
+
       <section className="bg-[#1A5C3A] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold text-white">
