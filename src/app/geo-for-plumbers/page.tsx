@@ -208,7 +208,7 @@ export default function GeoForPlumbersPage() {
               },
               {
                 title: "Google Business Profile depth",
-                body: "Your GBP is a primary source AI tools pull from. We optimize categories, services, reviews, and posts so it feeds the right signal into AI answers.",
+                body: "We keep categories, services, hours, and contact details consistent with your website. We record which public sources each observed AI answer actually cites rather than assuming it used your profile.",
               },
               {
                 title: "Monitoring and reporting",
@@ -243,7 +243,7 @@ export default function GeoForPlumbersPage() {
               GEO vs. Traditional Plumbing SEO
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              They are not the same work, and you want both. Here is the difference.
+              The foundations overlap. AI-search testing adds a different measurement layer, not a replacement for plumbing SEO.
             </p>
           </div>
           <div className="mx-auto max-w-4xl grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -288,6 +288,20 @@ export default function GeoForPlumbersPage() {
             AI SEO does not replace plumbing SEO or paid ads. It adds broader observation and
             attribution so you can test whether AI-assisted discovery is producing qualified demand.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#0D2318]">Start with the questions a homeowner actually asks</h2>
+          <p className="mt-5 text-lg text-gray-600">An emergency leak, a recurring kitchen clog, a sewer repair, and a tankless water heater replacement are different buying decisions. Your public pages should explain which jobs you handle, where you work, actual emergency availability, and what happens when someone requests an estimate.</p>
+          <p className="mt-4 text-base text-gray-600">We choose a fixed set of service-specific questions, record the companies and sources returned, and repeat the observations. A recommendation for drain cleaning is not proof of visibility for repiping. A correction to a page is not proof of a new lead.</p>
+          <div className="mt-6 flex flex-wrap gap-5 text-base font-semibold text-[#1A5C3A]">
+            <Link className="underline" href="/ai-search-methodology">How we measure AI visibility</Link>
+            <Link className="underline" href="/case-studies/kabam-plumbing">Review our plumbing work</Link>
+            <Link className="underline" href="/best-ai-seo-agencies-home-services">Compare AI SEO providers</Link>
+            <Link className="underline" href="/ai-seo-pricing">Scope and pricing</Link>
+          </div>
         </div>
       </section>
 

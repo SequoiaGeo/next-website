@@ -4,6 +4,7 @@
 
 import { readAiAttribution } from "@/lib/ai-attribution";
 import { readCampaignAttribution } from "@/lib/campaign-attribution";
+import { analyticsEventParams } from "@/lib/analytics-event-params.mjs";
 import {
   dispatchCapturedLead,
   type LeadCaptureResponse,
@@ -83,7 +84,7 @@ export function trackCallIntent(source: string) {
   window.gtag("event", "phone_click", {
     event_category: "CTA",
     event_label: source,
-    source,
+    interaction_source: source,
     cta_contract: "call",
     landing_path: window.location.pathname,
     ...(campaignAttribution ?? {}),
@@ -114,7 +115,7 @@ export function trackCtaIntent(source: string, ctaContract?: string) {
     experience_version: EXPERIENCE_VERSION,
     event_category: "CTA",
     event_label: source,
-    source,
+    interaction_source: source,
     ...(ctaContract ? { cta_contract: ctaContract } : {}),
   });
 }
@@ -122,5 +123,5 @@ export function trackCtaIntent(source: string, ctaContract?: string) {
 /** Fire an arbitrary GA4 event (engagement, clicks, etc.). */
 export function trackEvent(name: string, params: Record<string, unknown> = {}) {
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-  window.gtag("event", name, { experience_version: EXPERIENCE_VERSION, ...params });
+  window.gtag("event", name, { experience_version: EXPERIENCE_VERSION, ...analyticsEventParams(params) });
 }

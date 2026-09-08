@@ -54,7 +54,7 @@ export default function DragonsPage() {
             first look is free and there is no pitch at the show.
           </p>
           <Link
-            href="/audit?utm_source=httyd_program&utm_medium=print"
+            href="/audit"
             className="mt-4 block rounded-xl border border-[#FFD166] py-3 text-center text-sm font-extrabold text-[#FFD166]"
           >
             See what AI says about your business
