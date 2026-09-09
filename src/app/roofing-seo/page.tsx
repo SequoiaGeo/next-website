@@ -4,6 +4,7 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import CalculatorBanner from "@/components/CalculatorBanner";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
+import TradeSearchCoverage from "@/components/TradeSearchCoverage";
 
 export const metadata: Metadata = {
   title: "Roofing SEO Services Managed by a Home Services Operator",
@@ -430,6 +431,8 @@ export default function RoofingSeoPage() {
           </div>
         </div>
       </section>
+
+      <TradeSearchCoverage trade="roofing" />
 
       {/* Roofing SEO FAQ */}
       <section className="bg-white py-20">

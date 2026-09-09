@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: [
           "/api/",
-          "/_next/",
+          // Keep framework scripts, styles, and images crawlable for rendering.
           // /v2 disallow removed: the A/B test is gone and next.config.mjs
           // redirects /v2 to /, so crawlers should see the redirect.
           // Calculators are intentionally indexable: both are in the sitemap,
