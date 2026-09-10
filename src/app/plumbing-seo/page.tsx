@@ -4,6 +4,7 @@ import FaqJsonLd from "@/components/FaqJsonLd";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import type { Metadata } from "next";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
+import TradeSearchCoverage from "@/components/TradeSearchCoverage";
 
 export const metadata: Metadata = {
   title: "Plumbing SEO Services Managed by a Former Plumbing Operator",
@@ -434,6 +435,8 @@ export default function PlumbingSeoPage() {
           </div>
         </div>
       </section>
+
+      <TradeSearchCoverage trade="plumbing" />
 
       {/* FAQ */}
       <section className="bg-[#fafaf8] py-20">

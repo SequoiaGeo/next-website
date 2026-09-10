@@ -4,6 +4,7 @@ import InlineLeadForm from "@/components/InlineLeadForm";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
+import TradeSearchCoverage from "@/components/TradeSearchCoverage";
 
 export const metadata: Metadata = {
   title: "HVAC SEO & Marketing That Books Jobs | Sequoia GEO",
@@ -456,6 +457,8 @@ export default function HvacSeoPage() {
           </div>
         </div>
       </section>
+
+      <TradeSearchCoverage trade="hvac" />
 
       {/* HVAC SEO FAQ */}
       <section className="bg-[#fafaf8] py-20">
