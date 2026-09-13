@@ -1,11 +1,6 @@
 import Link from "next/link";
 import YouTubeFacade from "@/components/YouTubeFacade";
 
-const credentials = [
-  "Balanced Comfort: 4x Inc. 5000 (2021 to 2024)",
-  "13 years as an owner and operator",
-];
-
 export default function Hero() {
   return (
     <section className="bg-white border-b border-gray-100">
@@ -22,11 +17,11 @@ export default function Hero() {
               Help customers <span className="text-[#1A5C3A]">find and trust your business</span> in AI search and Google.
             </h1>
 
-            <p className="mt-6 text-lg font-bold text-[#0D2318] leading-relaxed max-w-xl">
-              Marketing expertise built from running a home-service company.
+            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
+              Help more customers discover your business, understand why you&rsquo;re the right choice, and take the next step.
             </p>
-            <p className="mt-3 text-lg text-gray-600 leading-relaxed max-w-xl">
-              Before founding Sequoia GEO, Aaron Husak scaled an HVAC and plumbing company to $17 million and led it through four consecutive Inc. 5000 appearances. Today, Sequoia helps home-service businesses improve their visibility in Google and AI search, fix website problems, and verify the results.
+            <p className="mt-4 text-sm font-medium text-[#0D2318] leading-relaxed max-w-xl">
+              Founded by an HVAC and plumbing operator who scaled a company to $17M and earned four consecutive Inc. 5000 appearances.
             </p>
 
             <div className="mt-8">
@@ -62,19 +57,6 @@ export default function Hero() {
               Prefer to call? (559) 521-3122
             </a>
 
-            {/* Proof strip */}
-            <div className="mt-10 pt-8 border-t border-gray-100">
-              <ul className="flex flex-wrap gap-x-6 gap-y-2 list-none p-0 m-0" aria-label="Credentials">
-                {credentials.map((c) => (
-                  <li key={c} className="text-sm font-medium text-gray-500">
-                    {c}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/case-studies/balanced-comfort" className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-[#1A5C3A] underline underline-offset-4">
-                Explore the founder&rsquo;s operating track record
-              </Link>
-            </div>
           </div>
 
           {/* Right: Client video testimonial */}

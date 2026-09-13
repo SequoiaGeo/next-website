@@ -106,8 +106,9 @@ test("homepage does not promise universal closed-loop attribution", () => {
   assert.doesNotMatch(homepage, /single pipeline view/i);
   assert.doesNotMatch(homepage, /connect marketing sources to qualified leads and jobs booked/i);
   assert.doesNotMatch(hero, /I am accountable for the booked job/i);
-  assert.match(hero, /improve their visibility in Google and AI search, fix website problems, and verify the results/i);
-  assert.match(hero, /Before founding Sequoia GEO/);
+  assert.match(hero, /Help more customers discover your business/);
+  assert.match(hero, /Founded by an HVAC and plumbing operator/);
+  assert.match(homepage, /His company, Balanced Comfort/);
   assert.doesNotMatch(hero, /My home-services career|You work with me, not an account manager/);
   assert.match(homepage, /Lighthouse lab test/);
   assert.match(homepage, /not a claim of additional leads or booked jobs/);

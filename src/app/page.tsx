@@ -39,6 +39,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="section-overline mb-4">See the work before you decide</p>
           <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Documented work. Measurable improvements.</h2>
+          <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
           <article className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
             <p className="text-sm font-semibold text-[#1A5C3A]">Client result: A Fireman&rsquo;s Chimney Sweep</p>
             <h3 className="mt-3 text-2xl font-bold text-[#0D2318]">Mobile performance improved from 56 to 87.</h3>
