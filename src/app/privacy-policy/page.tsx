@@ -14,10 +14,14 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         <p className="text-sm text-gray-500 mb-12">
-          Last Updated: August 31, 2026
+          Last Updated: September 12, 2026
         </p>
 
         <div className="prose prose-lg max-w-none space-y-10 text-gray-700">
+          <div id="contact-card">
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">Digital Contact Card</h2>
+            <p>When you request Aaron’s contact details, we use the email address you enter to send that one requested email through our email delivery provider, Resend. This request does not subscribe you to marketing emails or create a sales inquiry in our CRM. Delivery records may be retained by our email provider to operate and protect the service. We use temporary hashed email and network identifiers to limit repeated requests and abuse. Please enter only your own email address.</p>
+          </div>
           <p>
             Sequoia GEO (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or
             &quot;our&quot;) is committed to protecting the privacy of our
