@@ -38,7 +38,13 @@ export default function Home() {
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="section-overline mb-4">See the work before you decide</p>
-          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Real findings. Clear limits. A practical next step.</h2>
+          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Documented work. Measurable improvements.</h2>
+          <article className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
+            <p className="text-sm font-semibold text-[#1A5C3A]">Client result: A Fireman&rsquo;s Chimney Sweep</p>
+            <h3 className="mt-3 text-2xl font-bold text-[#0D2318]">Mobile performance improved from 56 to 87.</h3>
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-gray-700">Sequoia rebuilt the website and established a measurement foundation. The June 6, 2026 Lighthouse lab test documented a higher mobile performance score. This is a website performance result, not a claim of additional leads or booked jobs.</p>
+            <Link href="/case-studies/firemans-chimney-sweep" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the website work and results</Link>
+          </article>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
               <h3 className="text-xl font-bold text-[#0D2318]">Inside an AI Search Snapshot</h3>

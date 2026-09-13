@@ -2,10 +2,8 @@ import Link from "next/link";
 import YouTubeFacade from "@/components/YouTubeFacade";
 
 const credentials = [
-  "4x Inc 5000",
-  "130+ employees built",
+  "Balanced Comfort: 4x Inc. 5000 (2021 to 2024)",
   "13 years as an owner and operator",
-  "You work with me, not an account manager",
 ];
 
 export default function Hero() {
@@ -24,8 +22,11 @@ export default function Hero() {
               Help customers <span className="text-[#1A5C3A]">find and trust your business</span> in AI search and Google.
             </h1>
 
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              Sequoia GEO helps home-service companies improve search visibility, correct website problems, and verify what changed. My home-services career began in 2006, including 13 years as an owner and operator. I lead every engagement and remain your point of contact.
+            <p className="mt-6 text-lg font-bold text-[#0D2318] leading-relaxed max-w-xl">
+              Marketing expertise built from running a home-service company.
+            </p>
+            <p className="mt-3 text-lg text-gray-600 leading-relaxed max-w-xl">
+              Before founding Sequoia GEO, Aaron Husak scaled an HVAC and plumbing company to $17 million and led it through four consecutive Inc. 5000 appearances. Today, Sequoia helps home-service businesses improve their visibility in Google and AI search, fix website problems, and verify the results.
             </p>
 
             <div className="mt-8">
@@ -70,6 +71,9 @@ export default function Hero() {
                   </li>
                 ))}
               </ul>
+              <Link href="/case-studies/balanced-comfort" className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-[#1A5C3A] underline underline-offset-4">
+                Explore the founder&rsquo;s operating track record
+              </Link>
             </div>
           </div>
 
