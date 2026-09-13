@@ -80,6 +80,9 @@ export default function Footer() {
               4x Inc 5000 (2021 to 2024) &middot; Former California contractor qualifier &middot; Fresno, CA &middot; Serving Nationwide
             </p>
             <div className="flex flex-col gap-2 text-sm">
+              <Link href="/card" className="font-semibold text-white hover:text-accent-green transition-colors">
+                Save Aaron’s Contact Details
+              </Link>
               <Link href="/contact#book" className="font-semibold text-white hover:text-accent-green transition-colors">
                 Choose a Time With Aaron
               </Link>
