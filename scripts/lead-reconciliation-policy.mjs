@@ -1,6 +1,7 @@
 const WEBSITE_SOURCES = new Set([
   "contact_form",
   "homepage_top",
+  "homepage_website_assessment",
   "audit_page",
   "hvac_seo_page",
   "plumbing_seo_page",
