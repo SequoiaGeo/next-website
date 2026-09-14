@@ -7,6 +7,7 @@ const FORM_SOURCES = new Set([
   "contact_form",
   "sequoia_knowledge_interface",
   "homepage_top",
+  "homepage_website_assessment",
   "audit_page",
   "hvac_seo_page",
   "plumbing_seo_page",
@@ -116,6 +117,7 @@ function evidenceNote(input, now) {
     .replace(/\s+/g, " ");
   if (reportedQuestion) lines.push(`reported_ai_question: ${reportedQuestion}`);
 
+  if (input.businessWebsite) lines.push(`assessment_website: ${cleanText(input.businessWebsite, 500).replace(/[\r\n]+/g, " ")}`);
   if (input.smsConsent === true) lines.push("sms_consent: granted");
   else if (input.smsConsent === false) lines.push("sms_consent: not_granted");
   else lines.push("sms_consent: not_collected");

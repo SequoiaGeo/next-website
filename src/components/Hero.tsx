@@ -1,11 +1,11 @@
 import Link from "next/link";
-import YouTubeFacade from "@/components/YouTubeFacade";
+import WebsiteAssessmentForm from "@/components/WebsiteAssessmentForm";
 
 export default function Hero() {
   return (
     <section className="bg-white border-b border-gray-100">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-16 pb-20 sm:pt-20 sm:pb-24 lg:pt-24 lg:pb-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8 pt-8 pb-14 sm:pt-16 sm:pb-20">
+        <div>
 
           {/* Left: Copy */}
           <div>
@@ -20,21 +20,13 @@ export default function Hero() {
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
               Help more customers discover your business, understand why you&rsquo;re the right choice, and take the next step.
             </p>
+            <div className="mt-6">
+              <WebsiteAssessmentForm />
+            </div>
+
             <p className="mt-4 text-sm font-medium text-[#0D2318] leading-relaxed max-w-xl">
               Founded by an HVAC and plumbing operator who scaled a company to $17M and earned four consecutive Inc. 5000 appearances.
             </p>
-
-            <div className="mt-8">
-              <Link
-                href="/ai-search-assessment"
-                className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
-              >
-                Request My Free AI Search Snapshot
-                <svg aria-hidden="true" className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </Link>
-            </div>
 
             <p className="mt-3 text-sm text-gray-400">
               Hand reviewed. Public information first. No account access needed.
@@ -57,23 +49,6 @@ export default function Hero() {
               Prefer to call? (559) 521-3122
             </a>
 
-          </div>
-
-          {/* Right: Client video testimonial */}
-          <div className="mx-auto w-full max-w-[320px] lg:max-w-[340px]">
-            <div
-              className="relative w-full overflow-hidden rounded-2xl shadow-2xl border border-gray-100 bg-black"
-              style={{ paddingBottom: "177.78%" }}
-            >
-              <YouTubeFacade
-                videoId="IpbCaelX2jo"
-                title="Michael Bissett of KABAM Plumbing on working with Sequoia GEO"
-                isShort
-              />
-            </div>
-            <p className="mt-3 text-sm text-gray-500 text-center">
-              Michael Bissett, owner of KABAM Plumbing, Sun City Center FL.
-            </p>
           </div>
 
         </div>

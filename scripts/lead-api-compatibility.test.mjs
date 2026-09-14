@@ -17,6 +17,16 @@ const LEGACY_CASES = [
   {
     routePath: ["api", "contact"],
     body: {
+      source: "homepage_website_assessment",
+      businessWebsite: "example.com/services?private=test",
+      name: "Assessment Fixture",
+      email: "assessment@invalid.example",
+      website: "",
+    },
+  },
+  {
+    routePath: ["api", "contact"],
+    body: {
       name: "Legacy Contact Fixture",
       phone: "559-555-1212",
       email: "legacy-contact@invalid.example",
@@ -212,6 +222,48 @@ test("compiled APIs do not accept capture when email and the direct CRM note bot
       assert.notEqual(payload.captured, true);
       assert.ok(!calls.some((call) => call.url === process.env.GHL_WEBHOOK_URL));
     }
+  } finally {
+    delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+    delete process.env.HIGHLEVEL_LOCATION_ID;
+    deliveryMode = "success";
+  }
+});
+
+test("website assessment preserves website in notification and webhook without requiring phone", async () => {
+  const start = outboundCalls.length;
+  await postLegacyBody(["api", "contact"], LEGACY_CASES[0].body);
+  const calls = outboundCalls.slice(start);
+  const mail = JSON.parse(calls.find((c) => c.url.startsWith("https://api.resend.com/")).init.body);
+  const webhook = JSON.parse(calls.find((c) => c.url === process.env.GHL_WEBHOOK_URL).init.body);
+  assert.ok(mail.html.includes("https://example.com/services"));
+  assert.equal(webhook.businessWebsite, "https://example.com/services");
+  assert.equal(webhook.source, "homepage_website_assessment");
+  assert.equal(webhook.phone, undefined);
+  assert.ok(!mail.html.includes("private=test"));
+});
+
+test("website assessment rejects incomplete input, silently drops honeypot, leaves legacy phone requirement intact", async () => {
+  for (const extra of [{ businessWebsite: "javascript:alert(1)" }, { email: "" }, { name: "" }, { source: "contact_form" }]) {
+    const start = outboundCalls.length;
+    const { response } = await invokeLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, ...extra });
+    assert.equal(response.status, 400);
+    assert.equal(outboundCalls.length, start);
+  }
+  const start = outboundCalls.length;
+  const { payload } = await invokeLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, website: "bot" });
+  assert.notEqual(payload.captured, true);
+  assert.equal(outboundCalls.length, start);
+});
+
+test("website assessment remains actionable when only direct CRM succeeds", async () => {
+  process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN = "pit_direct_fixture";
+  process.env.HIGHLEVEL_LOCATION_ID = "location_direct_fixture";
+  deliveryMode = "direct_success";
+  try {
+    const start = outboundCalls.length;
+    await postLegacyBody(["api", "contact"], LEGACY_CASES[0].body);
+    const notes = outboundCalls.slice(start).filter((c) => c.url.endsWith("/notes") && c.init?.method === "POST");
+    assert.ok(notes.some((c) => JSON.parse(c.init.body).body.includes("assessment_website: https://example.com/services")));
   } finally {
     delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
     delete process.env.HIGHLEVEL_LOCATION_ID;

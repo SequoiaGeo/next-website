@@ -1,7 +1,8 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
-import { checkLead, escapeHtml } from "@/lib/spam-protection";
+import { checkLead, checkEmailLead, escapeHtml } from "@/lib/spam-protection";
+import { normalizeAssessmentWebsite } from "@/lib/assessment-website.mjs";
 import { isSyntheticAttributionTest } from "@/lib/lead-capture-policy.mjs";
 import { captureWebsiteLead } from "@/lib/highlevel-lead-capture.mjs";
 
@@ -57,6 +58,7 @@ const FORM_SOURCES = new Set([
   "contact_form",
   "sequoia_knowledge_interface",
   "homepage_top",
+  "homepage_website_assessment",
   "audit_page",
   "hvac_seo_page",
   "plumbing_seo_page",
@@ -159,9 +161,19 @@ export async function POST(req: Request) {
 
   try {
     const body = await req.json();
+    if (!body || typeof body !== "object" || Array.isArray(body)) {
+      return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+    }
+    const isWebsiteAssessment = body.source === "homepage_website_assessment";
+    const businessWebsite = isWebsiteAssessment ? normalizeAssessmentWebsite(body.businessWebsite) : "";
 
     // --- Spam / bot protection (honeypot and validation) ---
-    const spam = checkLead(body);
+    const emailCheck = isWebsiteAssessment ? checkEmailLead(body) : null;
+    const spam = emailCheck
+      ? emailCheck.ok
+        ? { ok: true as const, clean: { ...emailCheck.clean, phone: "", company: "", smsConsent: false, message: `Free AI search assessment requested for: ${businessWebsite}` } }
+        : emailCheck
+      : checkLead(body);
     if (!spam.ok) {
       if (spam.silentDrop) {
         // Looks like a bot. Return a 200 so it gets no signal, but send nothing.
@@ -170,9 +182,12 @@ export async function POST(req: Request) {
       }
       // Real validation failure, tell the user what to fix.
       return NextResponse.json(
-        { error: "Please enter a valid name, phone, and email." },
+        { error: isWebsiteAssessment ? "Please enter your name and a valid email." : "Please enter a valid name, phone, and email." },
         { status: 400 }
       );
+    }
+    if (isWebsiteAssessment && !businessWebsite) {
+      return NextResponse.json({ error: "Please enter a valid public business website." }, { status: 400 });
     }
 
     const { name, phone, email, company, message, smsConsent } = spam.clean;
@@ -336,7 +351,8 @@ export async function POST(req: Request) {
       firstName: name.split(" ")[0],
       lastName: name.split(" ").slice(1).join(" ") || "",
       email,
-      phone,
+      phone: phone || undefined,
+      businessWebsite: businessWebsite || undefined,
       companyName: company || undefined,
       message,
       leadId,
@@ -368,6 +384,7 @@ export async function POST(req: Request) {
         email,
         phone,
         companyName: company || "",
+        businessWebsite,
         source,
         campaign: campaignAttribution,
         ai: aiAttribution,
