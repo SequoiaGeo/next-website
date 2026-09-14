@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { normalizeAssessmentWebsite } from "@/lib/assessment-website.mjs";
+import { MARKETING_EMAIL_CONSENT_TEXT } from "@/lib/assessment-consent.mjs";
 import { trackCapturedLead, trackEvent } from "@/lib/analytics";
 import { readCampaignAttribution } from "@/lib/campaign-attribution";
 import { readAiAttribution } from "@/lib/ai-attribution";
@@ -15,6 +16,7 @@ export default function WebsiteAssessmentForm() {
   const [businessWebsite, setBusinessWebsite] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [marketingEmailConsent, setMarketingEmailConsent] = useState(false);
   const [honeypot, setHoneypot] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -67,6 +69,7 @@ export default function WebsiteAssessmentForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           source, name, email, businessWebsite: normalizedWebsite, website: honeypot,
+          marketingEmailConsent,
           campaignAttribution: readCampaignAttribution(),
           aiAttribution: readAiAttribution(),
         }),
@@ -117,6 +120,10 @@ export default function WebsiteAssessmentForm() {
           </div>
           <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden"><label htmlFor="assessment-hp">Leave this blank</label><input id="assessment-hp" name="website" tabIndex={-1} autoComplete="off" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} /></div>
           <p className="mt-4 text-sm text-gray-600">We use these details to review your website and respond to your request. <a href="/privacy-policy" className="underline">Privacy policy</a>.</p>
+          <label className="mt-4 flex items-start gap-3 text-sm text-gray-700" htmlFor="assessment-marketing-consent">
+            <input id="assessment-marketing-consent" name="marketingEmailConsent" type="checkbox" checked={marketingEmailConsent} onChange={(e) => setMarketingEmailConsent(e.target.checked)} className="mt-1 h-5 w-5 shrink-0 accent-[#1A5C3A]" />
+            <span>{MARKETING_EMAIL_CONSENT_TEXT} <span className="block mt-1">Optional. Your assessment does not depend on this choice.</span></span>
+          </label>
           <button type="submit" disabled={loading} className={`${buttonClass} mt-5 w-full`}>{loading ? "Sending request..." : "Send my assessment request"}</button>
         </form>
       )}

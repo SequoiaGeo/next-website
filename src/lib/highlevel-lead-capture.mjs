@@ -118,6 +118,13 @@ function evidenceNote(input, now) {
   if (reportedQuestion) lines.push(`reported_ai_question: ${reportedQuestion}`);
 
   if (input.businessWebsite) lines.push(`assessment_website: ${cleanText(input.businessWebsite, 500).replace(/[\r\n]+/g, " ")}`);
+  if (input.marketingEmailConsent) {
+    const consent = input.marketingEmailConsent;
+    lines.push(`marketing_email_consent: ${consent.granted === true ? "granted" : "not_granted"}`);
+    lines.push(`marketing_email_consent_recorded_at: ${cleanText(consent.recordedAt, 40)}`);
+    lines.push(`marketing_email_consent_version: ${cleanText(consent.version, 40)}`);
+    lines.push(`marketing_email_consent_text: ${cleanText(consent.text, 500).replace(/[\r\n]+/g, " ")}`);
+  }
   if (input.smsConsent === true) lines.push("sms_consent: granted");
   else if (input.smsConsent === false) lines.push("sms_consent: not_granted");
   else lines.push("sms_consent: not_collected");

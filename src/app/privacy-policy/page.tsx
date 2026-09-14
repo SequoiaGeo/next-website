@@ -14,10 +14,14 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         <p className="text-sm text-gray-500 mb-12">
-          Last Updated: September 12, 2026
+          Last Updated: September 14, 2026
         </p>
 
         <div className="prose prose-lg max-w-none space-y-10 text-gray-700">
+          <div id="assessment-email-consent">
+            <h2 className="text-2xl font-bold text-[#0D2318] mb-4">Assessment Requests and Optional Marketing Emails</h2>
+            <p>When you request a website assessment, we use your submitted website, name, and email address to review your website and respond. The separate marketing-email checkbox is optional and unchecked by default. You can receive your assessment without subscribing to marketing emails. We record your submitted choice, the notice wording and version, and the time it was recorded with your assessment request in our notification and customer-management systems. If you opt in, we may send occasional Sequoia GEO marketing emails. You can unsubscribe using the link in a marketing email or contact us to withdraw your permission. Leaving the checkbox unchecked does not cancel a previous subscription; use the unsubscribe option to do that. This checkbox does not authorize marketing texts or calls.</p>
+          </div>
           <div id="contact-card">
             <h2 className="text-2xl font-bold text-[#0D2318] mb-4">Digital Contact Card</h2>
             <p>When you request Aaron’s contact details, we use the email address you enter to send that one requested email through our email delivery provider, Resend. This request does not subscribe you to marketing emails or create a sales inquiry in our CRM. Delivery records may be retained by our email provider to operate and protect the service. We use temporary hashed email and network identifiers to limit repeated requests and abuse. Please enter only your own email address.</p>

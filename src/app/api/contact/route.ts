@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
 import { checkLead, checkEmailLead, escapeHtml } from "@/lib/spam-protection";
 import { normalizeAssessmentWebsite } from "@/lib/assessment-website.mjs";
+import { assessmentMarketingConsent } from "@/lib/assessment-consent.mjs";
 import { isSyntheticAttributionTest } from "@/lib/lead-capture-policy.mjs";
 import { captureWebsiteLead } from "@/lib/highlevel-lead-capture.mjs";
 
@@ -166,6 +167,7 @@ export async function POST(req: Request) {
     }
     const isWebsiteAssessment = body.source === "homepage_website_assessment";
     const businessWebsite = isWebsiteAssessment ? normalizeAssessmentWebsite(body.businessWebsite) : "";
+    const marketingEmailConsent = isWebsiteAssessment ? assessmentMarketingConsent(body.marketingEmailConsent) : undefined;
 
     // --- Spam / bot protection (honeypot and validation) ---
     const emailCheck = isWebsiteAssessment ? checkEmailLead(body) : null;
@@ -284,6 +286,7 @@ export async function POST(req: Request) {
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888;">SMS Consent</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; color: #1a1a1a;">${smsConsent ? "Yes" : "No"}</td>
             </tr>
+            ${marketingEmailConsent ? `<tr><td style="padding: 10px 0; font-size: 14px;">Marketing email opt-in</td><td style="padding: 10px 0; font-size: 14px;">${marketingEmailConsent.granted ? "Yes" : "Not selected"}<br>Recorded: ${marketingEmailConsent.recordedAt}<br>Version: ${marketingEmailConsent.version}<br>${escapeHtml(marketingEmailConsent.text)}</td></tr>` : ""}
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #888;">Source</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; color: #1a1a1a;">${safeSource}</td>
@@ -353,6 +356,7 @@ export async function POST(req: Request) {
       email,
       phone: phone || undefined,
       businessWebsite: businessWebsite || undefined,
+      marketingEmailConsent,
       companyName: company || undefined,
       message,
       leadId,
@@ -385,6 +389,7 @@ export async function POST(req: Request) {
         phone,
         companyName: company || "",
         businessWebsite,
+        marketingEmailConsent,
         source,
         campaign: campaignAttribution,
         ai: aiAttribution,
