@@ -270,3 +270,37 @@ test("website assessment remains actionable when only direct CRM succeeds", asyn
     deliveryMode = "success";
   }
 });
+
+test("assessment optional email choice survives email, webhook and direct CRM without requiring opt-in", async () => {
+  for (const choice of [true, false, "true"]) {
+    const start = outboundCalls.length;
+    await postLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, marketingEmailConsent: choice });
+    const calls = outboundCalls.slice(start);
+    const mail = JSON.parse(calls.find(c => c.url.startsWith("https://api.resend.com/")).init.body);
+    const webhook = JSON.parse(calls.find(c => c.url === process.env.GHL_WEBHOOK_URL).init.body);
+    assert.equal(webhook.marketingEmailConsent.granted, choice === true);
+    assert.equal(webhook.marketingEmailConsent.version, "2026-09-14");
+    assert.ok(Number.isFinite(Date.parse(webhook.marketingEmailConsent.recordedAt)));
+    assert.ok(mail.html.includes("Marketing email opt-in"));
+    assert.ok(mail.html.includes(choice === true ? ">Yes<br>Recorded:" : ">Not selected<br>Recorded:"));
+  }
+  process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN = "pit_direct_fixture";
+  process.env.HIGHLEVEL_LOCATION_ID = "location_direct_fixture";
+  deliveryMode = "direct_success";
+  try {
+    for (const choice of [false, true]) {
+      const start = outboundCalls.length;
+      await postLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, marketingEmailConsent: choice });
+      const note = outboundCalls.slice(start).find(c => c.url.endsWith("/notes") && c.init?.method === "POST");
+      const body = JSON.parse(note.init.body).body;
+      assert.ok(body.includes(`marketing_email_consent: ${choice ? "granted" : "not_granted"}`));
+      assert.ok(body.includes("marketing_email_consent_version: 2026-09-14"));
+      assert.ok(body.includes("marketing_email_consent_recorded_at:"));
+      assert.ok(body.includes("marketing_email_consent_text: Yes, send me occasional"));
+    }
+  } finally {
+    delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+    delete process.env.HIGHLEVEL_LOCATION_ID;
+    deliveryMode = "success";
+  }
+});
