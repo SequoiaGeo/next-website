@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import OperatorStory from "@/components/OperatorStory";
 import WhoIsItFor from "@/components/WhoIsItFor";
 import SequoiaQuestionPanel from "@/components/SequoiaQuestionPanel";
 import SnapshotExample from "@/components/SnapshotExample";
@@ -68,6 +69,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <OperatorStory />
       <section id="snapshot" className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="section-overline mb-4">Free AI Search Snapshot</p>
@@ -87,12 +89,12 @@ export default function Home() {
       </section>
       <section id="how-it-works" className="bg-[#0D2318] py-16 text-white sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">A clear path from findings to corrections.</h2>
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Know what matters. Know what happens next.</h2>
           <ol className="mt-8 grid gap-8 md:grid-cols-3">
             {[
               ["01. Establish the baseline", "Start with a snapshot of the public evidence and the gaps worth investigating."],
-              ["02. Agree on the work", "Choose the corrections, access, responsibilities, and scope before a paid engagement begins."],
-              ["03. Correct and verify", "Implement approved changes and check the result. Visibility, inquiries, and qualified leads remain separate measures."],
+              ["02. Agree on the work", "Review the priorities with Aaron. Agree on scope, responsibilities, access, and how progress will be shared before a paid engagement begins."],
+              ["03. See what changed", "Review the approved work and its supporting evidence. See what was completed, what remains unresolved, and what comes next. Visibility and qualified leads are reported separately."],
             ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
           </ol>
           <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. No ranking or lead guarantees.</p>
