@@ -125,7 +125,7 @@ export default function Navigation() {
               Sequoia GEO
             </span>
             <span className="text-xs text-gray-500 hidden sm:block leading-tight">
-              AI Search for Service Businesses
+              Marketing Your Home Service Business
             </span>
           </div>
         </Link>

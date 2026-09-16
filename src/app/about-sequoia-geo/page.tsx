@@ -41,21 +41,20 @@ export default function AboutPage() {
                   In home services since 2006. Thirteen years as an owner and operator.
                 </h2>
               </div>
-              <div className="relative w-48 lg:w-full max-w-[240px]">
-                <div className="overflow-hidden rounded-2xl shadow-xl">
+              <figure className="w-full max-w-[360px]">
+                <div className="overflow-hidden">
                   <Image
-                    src="/aaron-husak.webp"
-                    alt="Aaron Husak, Founder of Sequoia GEO"
-                    width={480}
-                    height={497}
+                    src="/images/aaron-first-office.jpg"
+                    alt="Aaron Husak outside the building where he opened his first office"
+                    width={1368}
+                    height={1824}
+                    sizes="(max-width: 767px) 90vw, 360px"
                     className="w-full object-cover object-top"
                   />
                 </div>
-                <div className="absolute -bottom-3 -right-3 rounded-xl border border-[#3A9E6A]/30 bg-white px-3 py-2 shadow-lg">
-                  <p className="text-xs font-bold text-[#1a1a1a]">4x Inc 5000</p>
-                  <p className="text-xs text-gray-500">2021 to 2024</p>
-                </div>
-              </div>
+                <figcaption className="mt-3 text-sm leading-relaxed text-gray-600">Outside the building where Aaron opened his first office.</figcaption>
+                <p className="mt-4 text-sm font-bold text-[#1A5C3A]">Four consecutive Inc. 5000 appearances, 2021 to 2024.</p>
+              </figure>
             </div>
 
             {/* Right: story */}

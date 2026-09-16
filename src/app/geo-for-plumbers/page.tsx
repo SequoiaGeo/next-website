@@ -103,13 +103,15 @@ export default function GeoForPlumbersPage() {
               AI SEO · Plumbing Companies
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl lg:text-6xl">
-              AI SEO for Plumbers: Build a Verifiable{" "}
-              <span className="text-[#1A5C3A]">AI Search Foundation</span>
+              AI SEO for Plumbers: Help Homeowners{" "}
+              <span className="text-[#1A5C3A]">Find and Choose Your Company</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              Sequoia GEO establishes what is true, corrects conflicting public information, strengthens
-              first-hand plumbing evidence, and measures how the business appears across conventional
-              and AI-assisted search. GEO and AEO are industry labels. AI SEO is the broader work.
+              When a homeowner asks who can fix a leaking pipe, clear a blocked drain, or replace a
+              water heater, can AI search find accurate information about your company? Sequoia GEO
+              tests those questions, checks the sources behind the answers, and improves your
+              service pages and public business information. We track recommendations separately
+              from inquiries and booked jobs. No provider can guarantee an AI recommendation.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-500">
               Built by Aaron Husak, who spent 13 years running a home services company to 4x Inc 5000.
@@ -133,8 +135,6 @@ export default function GeoForPlumbersPage() {
           </div>
         </div>
       </section>
-
-      <TradeAiSearchNav currentHref="/geo-for-plumbers" />
 
       {/* Why it matters */}
       <section className="bg-[#0D2318] py-20">
@@ -177,6 +177,7 @@ export default function GeoForPlumbersPage() {
       </section>
 
       {/* What GEO for plumbers covers */}
+      <TradeAiSearchNav currentHref="/geo-for-plumbers" />
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
