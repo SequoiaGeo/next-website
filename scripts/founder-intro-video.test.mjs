@@ -23,5 +23,6 @@ test('introduction loads a local poster and defers the privacy-enhanced player u
   assert.match(video, /aria-label="Open Aaron's introduction video/);
   assert.match(video, /player\.current\?\.focus\(\)/);
   assert.match(video, /Watch on YouTube/);
-  assert.ok(existsSync(new URL('../public/images/aaron-intro-video.jpg', import.meta.url)));
+  assert.match(video, /src="\/images\/aaron-intro-hat-v3\.png"/);
+  assert.ok(existsSync(new URL('../public/images/aaron-intro-hat-v3.png', import.meta.url)));
 });
