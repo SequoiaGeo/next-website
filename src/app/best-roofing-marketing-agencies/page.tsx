@@ -302,7 +302,7 @@ export default function BestRoofingAgenciesPage() {
       {/* Hero */}
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-          <p className="section-overline mb-4">Research & Rankings</p>
+          <p className="section-overline on-dark mb-4">Research & Rankings</p>
           <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight">
             Best Roofing Marketing Agencies 2026
           </h1>
@@ -332,7 +332,7 @@ export default function BestRoofingAgenciesPage() {
               key={agency.rank}
               className={`rounded-2xl border p-8 shadow-sm ${agency.isOwnAgency ? "border-[#3A9E6A]/40 ring-2 ring-[#3A9E6A]/20" : "border-gray-200"}`}
             >
-              <div className="flex items-start justify-between gap-4 mb-5">
+              <div className="flex flex-col items-start justify-between gap-4 mb-5 sm:flex-row">
                 <div className="flex items-center gap-3">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0D2318] text-sm font-black text-white shrink-0">
                     {agency.rank}
@@ -402,9 +402,9 @@ export default function BestRoofingAgenciesPage() {
           <p className="text-gray-500 text-sm mb-10 border-b border-gray-200 pb-6">The right roofing marketing agency depends on your revenue, your market type (retail vs. storm), and whether you need brand building, lead volume, or attribution clarity.</p>
           <div className="space-y-4">
             {howToChoose.map((item) => (
-              <div key={item.tier} className="flex gap-5 p-5 rounded-xl bg-white border border-gray-200">
+              <div key={item.tier} className="flex flex-col gap-5 p-5 rounded-xl bg-white border border-gray-200 sm:flex-row">
                 <div className="shrink-0">
-                  <span className="inline-block rounded-lg bg-[#C8EDD2] px-3 py-1 text-xs font-bold text-[#0D2318] whitespace-nowrap">{item.tier}</span>
+                  <span className="inline-block max-w-full rounded-lg bg-[#C8EDD2] px-3 py-1 text-xs font-bold text-[#0D2318]">{item.tier}</span>
                 </div>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.rec}</p>
               </div>

@@ -102,7 +102,7 @@ export default function HicksPavingAiSearchReadinessPage() {
       />
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <p className="section-overline mb-4 text-[#82D2A0]">Permissioned named example</p>
+          <p className="section-overline on-dark mb-4">Permissioned named example</p>
           <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
             What the Hicks Paving public footprint showed before AI Search work began
           </h1>

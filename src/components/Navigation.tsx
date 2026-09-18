@@ -51,6 +51,7 @@ const resourceLinks = [
   {
     group: "Tools",
     items: [
+      { label: "Ask Sequoia", href: "/ask-sequoia" },
       { label: "Sales Training Tool", href: "/sales-training" },
       { label: "GitHub Tools for Home Services", href: "/github-repos-home-service-businesses" },
     ],
@@ -275,6 +276,7 @@ export default function Navigation() {
         </div>
 
         {/* Mobile hamburger */}
+        <Link href="/ask-sequoia" aria-label="Ask Sequoia" className="ml-auto mr-2 inline-flex min-h-11 items-center px-2 text-sm font-semibold text-[#1A5C3A] underline underline-offset-4 lg:hidden">Ask</Link>
         <button
           type="button"
           onClick={() => setMobileOpen(!mobileOpen)}
