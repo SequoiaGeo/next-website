@@ -19,10 +19,10 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl">
-              Request a Marketing Baseline Review
+              Book a 15-minute call with Aaron
             </h1>
             <p className="mt-4 text-lg text-gray-600">
-              Tell me what you&rsquo;re spending on marketing. I&rsquo;ll tell you what it&rsquo;s actually producing.
+              Discuss your marketing priorities and whether Sequoia can help. Choose a time below to book your Marketing Baseline Review.
             </p>
             <div className="mt-4 inline-flex items-center gap-2 text-sm text-gray-500">
               <svg className="h-4 w-4 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -33,6 +33,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <p className="bg-[#fafaf8] px-6 pt-5 text-center text-base text-gray-700">Prefer an emailed assessment instead of a call? <a href="/ai-search-assessment" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Request your free AI Search Snapshot</a>.</p>
 
       {/* Trust strip: proof at the point of commitment */}
       <section className="bg-[#fafaf8] pt-8 pb-2">

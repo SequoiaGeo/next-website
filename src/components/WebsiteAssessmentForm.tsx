@@ -104,7 +104,7 @@ export default function WebsiteAssessmentForm() {
             <input ref={websiteInput} id="assessment-business-website" name="businessWebsite" type="text" inputMode="url" autoComplete="url" autoCapitalize="none" spellCheck={false} required maxLength={500} placeholder="yourcompany.com" value={businessWebsite} onChange={(e) => { start(); setBusinessWebsite(e.target.value); }} aria-describedby="assessment-help assessment-error" aria-invalid={Boolean(error)} className={`${fieldClass} !mt-0 sm:flex-1 sm:min-w-0`} data-clarity-mask="true" />
             <button type="submit" className={buttonClass}>Get my free assessment</button>
           </div>
-          <p id="assessment-help" className="mt-3 text-sm text-gray-600">Website issues, search-visibility findings, and recommended next steps. Next, tell us where to email it.</p>
+          <p id="assessment-help" className="mt-3 text-sm text-gray-600">Your free AI Search Snapshot includes website issues, search-visibility findings, and next steps. Next, tell us where to email it. No call is booked.</p>
         </form>
       ) : (
         <form onSubmit={submit} className="rounded-xl border border-gray-200 bg-[#fafaf8] p-5 sm:p-6">

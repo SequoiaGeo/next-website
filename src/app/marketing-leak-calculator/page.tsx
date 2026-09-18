@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useState, useMemo, useEffect, useRef, FormEvent } from "react";
+import { useState, useMemo, useEffect, useRef, useId, FormEvent } from "react";
 import Link from "next/link";
 import { trackCapturedLead, trackEvent } from "@/lib/analytics";
 
@@ -20,14 +20,17 @@ function Slider({
   label: string; value: number; min: number; max: number; step: number;
   onChange: (v: number) => void; format: (v: number) => string;
 }) {
+  const inputId = useId();
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between">
-        <label className="text-sm font-semibold text-[#1a1a1a]">{label}</label>
+        <label htmlFor={inputId} className="text-sm font-semibold text-[#1a1a1a]">{label}</label>
         <span className="text-base font-extrabold text-[#1A5C3A]">{format(value)}</span>
       </div>
       <input
         type="range"
+        id={inputId}
+        aria-valuetext={format(value)}
         min={min}
         max={max}
         step={step}
@@ -142,7 +145,7 @@ export default function MarketingLeakCalculator() {
   };
 
   return (
-    <main className="min-h-screen bg-[#fafaf8]">
+    <div className="min-h-screen bg-[#fafaf8]">
 
       {/* Nav strip */}
       <div className="border-b border-gray-200 bg-white px-6 py-4">
@@ -199,7 +202,7 @@ export default function MarketingLeakCalculator() {
             />
             <div className="space-y-3">
               <div className="flex items-center justify-between">
-                <label className="text-sm font-semibold text-[#1a1a1a]">Your booking rate</label>
+                <label htmlFor="marketing-booking-rate" className="text-sm font-semibold text-[#1a1a1a]">Your booking rate</label>
                 <div className="flex items-center gap-2">
                   <span className="text-base font-extrabold" style={{ color: leakColor }}>{bookingRate}%</span>
                   <span className="text-xs font-medium px-2 py-0.5 rounded-full" style={{ background: `${leakColor}20`, color: leakColor }}>
@@ -209,6 +212,8 @@ export default function MarketingLeakCalculator() {
               </div>
               <input
                 type="range"
+                id="marketing-booking-rate"
+                aria-valuetext={`${bookingRate}%`}
                 min={10}
                 max={90}
                 step={1}
@@ -431,6 +436,6 @@ export default function MarketingLeakCalculator() {
         </div>
       </div>
 
-    </main>
+    </div>
   );
 }

@@ -19,6 +19,7 @@ const services = [
 ];
 
 const resources = [
+  { label: "Ask Sequoia", href: "/ask-sequoia" },
   { label: "Free LSA Guide", href: "/lsa-guide" },
   { label: "AI SEO Guide", href: "/ai-website-seo-guide" },
   { label: "GEO & AI SEO Pricing", href: "/ai-seo-pricing" },

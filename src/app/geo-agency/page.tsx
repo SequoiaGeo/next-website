@@ -123,7 +123,7 @@ export default function GeoAgencyPage() {
                 href="/ai-search-assessment"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#1A5C3A]/25 transition hover:bg-[#0D2318]"
               >
-                Request a Public-Surface Review
+                Request a Free AI Search Snapshot
               </Link>
               <Link
                 href="/ai-search-methodology"
@@ -424,7 +424,7 @@ export default function GeoAgencyPage() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="/ai-search-assessment" className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]">
-              Request a Public-Surface Review
+              Request a Free AI Search Snapshot
             </Link>
             <Link href="/ai-seo-pricing" className="inline-flex items-center justify-center rounded-lg border border-white/40 px-8 py-4 text-base font-semibold text-white transition hover:border-white">
               View Pricing

@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useState, useMemo, useEffect, useRef, FormEvent } from "react";
+import { useState, useMemo, useEffect, useRef, useId, FormEvent } from "react";
 import Link from "next/link";
 import { trackCapturedLead } from "@/lib/analytics";
 
@@ -20,14 +20,17 @@ function Slider({
   label: string; value: number; min: number; max: number; step: number;
   onChange: (v: number) => void; format: (v: number) => string;
 }) {
+  const inputId = useId();
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between">
-        <label className="text-sm font-semibold text-[#1a1a1a]">{label}</label>
+        <label htmlFor={inputId} className="text-sm font-semibold text-[#1a1a1a]">{label}</label>
         <span className="text-base font-extrabold text-[#1A5C3A]">{format(value)}</span>
       </div>
       <input
         type="range"
+        id={inputId}
+        aria-valuetext={format(value)}
         min={min}
         max={max}
         step={step}
@@ -143,7 +146,7 @@ export default function CSRCalculator() {
   };
 
   return (
-    <main className="min-h-screen bg-[#fafaf8]">
+    <div className="min-h-screen bg-[#fafaf8]">
 
       {/* Nav strip */}
       <div className="border-b border-gray-200 bg-white px-6 py-4">
@@ -477,6 +480,6 @@ export default function CSRCalculator() {
         </div>
       </div>
 
-    </main>
+    </div>
   );
 }

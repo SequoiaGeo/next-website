@@ -315,7 +315,7 @@ export default function SequoiaKnowledgeInterface() {
   return (
     <Link
       href="/ask-sequoia"
-      className="fixed bottom-24 right-4 z-40 rounded-full border border-white/15 bg-[#0D2318] px-5 py-3 text-sm font-bold text-white shadow-xl transition hover:bg-[#1A5C3A] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3A9E6A] sm:bottom-6 sm:right-6"
+      className="hidden lg:block fixed bottom-6 right-6 z-40 rounded-full border border-white/15 bg-[#0D2318] px-5 py-3 text-sm font-bold text-white shadow-xl transition hover:bg-[#1A5C3A] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3A9E6A]"
     >
       Ask Sequoia
     </Link>

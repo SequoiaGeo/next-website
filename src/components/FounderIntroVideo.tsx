@@ -36,8 +36,8 @@ export default function FounderIntroVideo() {
             className="group absolute inset-0 h-full w-full focus-visible:outline focus-visible:outline-4 focus-visible:-outline-offset-4 focus-visible:outline-white"
           >
             <Image src="/images/aaron-intro-hat-v3.png" alt="" fill priority sizes="(max-width: 1024px) 100vw, 560px" className="object-cover" />
-            <span className="absolute inset-0 flex items-center justify-center bg-black/15 group-hover:bg-black/25">
-              <span className="flex h-16 w-16 items-center justify-center rounded-full bg-[#1A5C3A] text-white shadow-lg">
+            <span className="absolute inset-0 flex items-end justify-center pb-3 bg-black/15 group-hover:bg-black/25">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#1A5C3A] text-white shadow-lg sm:h-12 sm:w-12">
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="ml-1 h-7 w-7"><path d="M8 5v14l11-7z" /></svg>
               </span>
             </span>

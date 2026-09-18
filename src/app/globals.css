@@ -24,7 +24,7 @@ p, li, span, a, label, input, textarea, button {
 
 /* Section overline, replaces pill badges */
 .section-overline {
-  /* #1A5C3A on white = 8.3:1 contrast (WCAG AA pass). Override with text-[#3A9E6A] only on dark backgrounds. */
+  /* Use the explicit on-dark variant on dark backgrounds. */
   @apply text-xs font-semibold uppercase tracking-[0.15em] text-[#1A5C3A];
 }
 
@@ -125,6 +125,14 @@ button:focus-visible {
 }
 
 /* Blog / prose overrides */
+.prose {
+  overflow-wrap: anywhere;
+}
+
+.section-overline.on-dark {
+  color: #C8EDD2;
+}
+
 .prose h2 {
   @apply text-2xl font-extrabold text-[#1a1a1a] mt-10 mb-4;
   font-family: var(--font-fraunces), ui-serif, Georgia, serif;

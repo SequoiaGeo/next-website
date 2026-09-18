@@ -51,7 +51,7 @@ export default function CityAiSearchHub({ city }: { city: CityAiSearchSurface })
                 href="/ai-search-assessment"
                 className="rounded-lg bg-[#1A5C3A] px-8 py-4 text-base font-semibold text-white transition hover:bg-[#0D2318]"
               >
-                Request a Public-Surface Review
+                Request a Free AI Search Snapshot
               </Link>
               <Link
                 href="/ai-search-methodology"
@@ -224,7 +224,7 @@ export default function CityAiSearchHub({ city }: { city: CityAiSearchSurface })
             href="/ai-search-assessment"
             className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 text-base font-semibold text-[#1A5C3A] transition hover:bg-[#C8EDD2]"
           >
-            Request a Public-Surface Review
+            Request a Free AI Search Snapshot
           </Link>
         </div>
       </section>

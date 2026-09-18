@@ -243,7 +243,7 @@ export default function BestHvacMarketingAgenciesPage() {
       {/* Hero */}
       <section className="bg-[#0D2318] py-20 sm:py-28">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-          <p className="section-overline mb-4">Agency Comparison</p>
+          <p className="section-overline on-dark mb-4">Agency Comparison</p>
           <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight">
             Best HVAC Marketing Agencies 2026
           </h1>
