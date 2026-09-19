@@ -60,7 +60,7 @@ export default function AboutPage() {
             {/* Right: story */}
             <div className="space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                Aaron Husak began working in home services in 2006, starting in sales and marketing
+                Aaron Husak began his home-service sales and marketing career in 2006, cold calling
                 for a residential solar company. In 2012, he launched Balanced Comfort Heating &amp; Air
                 in Fresno, California. One truck. No employees. Competing against companies with decades
                 of name recognition and marketing budgets that dwarfed his entire operation.
@@ -78,9 +78,10 @@ export default function AboutPage() {
                 line. In December 2024, Balanced Comfort was acquired.
               </p>
               <p>
-                After the exit, Aaron started Sequoia GEO to take those 13 years of operator-level
-                marketing knowledge and work directly with other contractors. Not as a vendor managing
-                a dashboard. As an operator who understands why revenue didn&rsquo;t move.
+                In October 2025, Aaron founded Sequoia GEO to bring his home-service sales, marketing,
+                and operating experience to other contractors. His focus today is helping businesses
+                get found through Google and AI search, with an owner&rsquo;s perspective on what matters
+                after someone finds you: the inquiry, the conversation, and the job booked.
               </p>
               <div className="pt-2">
                 <Link
