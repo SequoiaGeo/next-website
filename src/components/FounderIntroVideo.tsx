@@ -46,6 +46,7 @@ export default function FounderIntroVideo() {
         )}
       </div>
       <figcaption className="mt-3 text-sm leading-relaxed text-[#34483b]">
+        <span className="mb-2 block font-semibold">Led by Aaron Husak. Home-service sales and marketing since 2006. Thirteen years as an owner and operator.</span>
         <span className="font-semibold">Meet Aaron: marketing from an owner&apos;s perspective.</span>{" "}
         <a href={`https://www.youtube.com/watch?v=${videoId}`} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Watch on YouTube</a>
       </figcaption>

@@ -11,9 +11,11 @@ export default function OperatorStory() {
         </figure>
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.15em] text-[#1A5C3A]">The experience behind the work</p>
-          <h2 id="operator-story-heading" className="mt-4 text-3xl font-bold leading-tight tracking-tight text-[#0D2318] sm:text-4xl">Marketing decisions from someone who has run the business.</h2>
-          <p className="mt-5 text-lg leading-relaxed text-gray-700">An empty dispatch board is not an abstract marketing problem. Aaron spent 13 years owning and operating a home-services company before founding Sequoia GEO.</p>
-          <p className="mt-4 text-base leading-relaxed text-gray-700">Today, he leads your engagement and remains your point of contact. You get clear priorities, an explanation of the work, and evidence of what changed. An AI mention is never presented as a booked job.</p>
+          <h2 id="operator-story-heading" className="mt-4 text-3xl font-bold leading-tight tracking-tight text-[#0D2318] sm:text-4xl">I started by picking up the phone.</h2>
+          <p className="mt-5 text-lg leading-relaxed text-gray-700">My home-services career began in 2006, cold calling for a solar company. I later spent 13 years owning and operating a home-service business, experiencing firsthand what it takes to generate opportunities, earn customers&rsquo; trust, and keep crews working.</p>
+          <p className="mt-4 text-base leading-relaxed text-gray-700">I founded Sequoia GEO in October 2025 to bring that experience to other home-service owners.</p>
+          <p className="mt-4 text-base leading-relaxed text-gray-700">Today, I help businesses get found through Google and AI search, with an owner&rsquo;s perspective on what matters after someone finds you: the inquiry, the conversation, and the job booked.</p>
+          <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">Aaron Husak, Founder of Sequoia GEO</p>
           <Link href="/about-sequoia-geo" className="mt-6 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Meet Aaron and see his operating background</Link>
         </div>
       </div>
