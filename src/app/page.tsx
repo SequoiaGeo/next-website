@@ -62,6 +62,29 @@ export default function Home() {
               <figcaption className="mt-3 text-sm leading-relaxed text-gray-600"><span className="block font-semibold text-[#0D2318]">Michael Bissett, Owner</span>KABAM Plumbing Services · Client testimonial</figcaption>
             </figure>
           </article>
+          <article aria-labelledby="amazing-air-proof-heading" className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
+            <p className="text-sm font-semibold text-[#1A5C3A]">Amazing Air Solutions · San Antonio, Texas</p>
+            <h3 id="amazing-air-proof-heading" className="mt-3 max-w-3xl text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">Make it possible for customers to find you and take the next step.</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">A homeowner should not have to work around a broken website to request service. For Amazing Air, we repaired the paths customers use to navigate, book, and reach relevant service pages.</p>
+            <div className="mt-6 grid gap-6 md:grid-cols-3">
+              <div>
+                <h4 className="text-lg font-bold text-[#0D2318]">Mobile navigation that works</h4>
+                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The problem:</strong> Mobile navigation buttons changed appearance without taking visitors anywhere.</p>
+                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The repair:</strong> Replaced them with working links to the homepage, services, phone, and booking path.</p>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-[#0D2318]">A usable booking path</h4>
+                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The problem:</strong> Book-online buttons failed to open the scheduler because its configured website address did not match.</p>
+                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The repair:</strong> Corrected the integration, verified the scheduler opened on desktop, and added a contact-page fallback.</p>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-[#0D2318]">Old links with somewhere to go</h4>
+                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The problem:</strong> Legacy website addresses still appearing in search led to missing pages.</p>
+                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The repair:</strong> Added redirects and verified sampled legacy addresses reached live pages.</p>
+              </div>
+            </div>
+            <p className="mt-6 border-t border-gray-200 pt-5 text-sm leading-relaxed text-gray-600">Documented repairs from May and June 2026. These are verified website corrections, not a measured increase in leads, bookings, or AI recommendations.</p>
+          </article>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
               <h3 className="text-xl font-bold text-[#0D2318]">Inside an AI Search Snapshot</h3>
