@@ -6,6 +6,7 @@ import WhoIsItFor from "@/components/WhoIsItFor";
 import SequoiaQuestionPanel from "@/components/SequoiaQuestionPanel";
 import SnapshotExample from "@/components/SnapshotExample";
 import SnapshotNextSteps from "@/components/SnapshotNextSteps";
+import YouTubeFacade from "@/components/YouTubeFacade";
 
 export const metadata: Metadata = {
   title: "AI Search Visibility for Home Service Businesses | Sequoia GEO",
@@ -41,11 +42,25 @@ export default function Home() {
           <p className="section-overline mb-4">See the work before you decide</p>
           <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Documented work. Measurable improvements.</h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
-          <article className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
-            <p className="text-sm font-semibold text-[#1A5C3A]">Client result: A Fireman&rsquo;s Chimney Sweep</p>
-            <h3 className="mt-3 text-2xl font-bold text-[#0D2318]">Mobile performance improved from 56 to 87.</h3>
-            <p className="mt-3 max-w-3xl text-base leading-relaxed text-gray-700">Sequoia rebuilt the website and established a measurement foundation. The June 6, 2026 Lighthouse lab test documented a higher mobile performance score. This is a website performance result, not a claim of additional leads or booked jobs.</p>
-            <Link href="/case-studies/firemans-chimney-sweep" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the website work and results</Link>
+          <article className="mt-8 grid gap-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 md:grid-cols-[1.3fr_0.7fr] md:items-center lg:gap-12" aria-labelledby="kabam-proof-heading">
+            <div>
+              <p className="text-sm font-semibold text-[#1A5C3A]">KABAM Plumbing Services · Sun City Center, Florida</p>
+              <h3 id="kabam-proof-heading" className="mt-3 text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">A website built around the business Mike actually runs.</h3>
+              <p className="mt-4 text-base leading-relaxed text-gray-700">Mike is an independent plumber competing with larger companies. We rebuilt KABAM&rsquo;s website around his plumbing services and the communities he serves, giving prospective customers a clearer picture of who to call and what he can help with.</p>
+              <ul className="mt-5 space-y-3 text-base leading-relaxed text-gray-700">
+                <li><strong className="text-[#0D2318]">A website he owns,</strong> with content about his plumbing services.</li>
+                <li><strong className="text-[#0D2318]">Local service pages,</strong> covering Sun City Center, Apollo Beach, Wimauma, Riverview, and surrounding communities.</li>
+                <li><strong className="text-[#0D2318]">Clearer measurement,</strong> including corrections to duplicate form tracking.</li>
+              </ul>
+              <p className="mt-5 text-base leading-relaxed text-gray-700">Hear Mike describe his experience working with Sequoia GEO.</p>
+              <Link href="/case-studies/kabam-plumbing" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See KABAM&rsquo;s website story</Link>
+            </div>
+            <figure className="mx-auto w-full max-w-[280px]">
+              <div className="relative aspect-[9/16] overflow-hidden rounded-xl bg-black">
+                <YouTubeFacade videoId="IpbCaelX2jo" title="Michael Bissett of KABAM Plumbing on working with Sequoia GEO" isShort />
+              </div>
+              <figcaption className="mt-3 text-sm leading-relaxed text-gray-600"><span className="block font-semibold text-[#0D2318]">Michael Bissett, Owner</span>KABAM Plumbing Services · Client testimonial</figcaption>
+            </figure>
           </article>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
