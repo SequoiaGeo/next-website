@@ -2,11 +2,12 @@ export type MediaItem = {
   outlet: string;
   title: string;
   url: string;
-  datePublished: string;
-  displayDate: string;
+  datePublished?: string;
+  displayDate?: string;
   summary: string;
   kind: "podcast" | "trade-media" | "writing";
   seriesUrl?: string;
+  videoUrl?: string;
 };
 
 export const podcastAppearances: MediaItem[] = [
@@ -34,6 +35,7 @@ export const podcastAppearances: MediaItem[] = [
   },
   {
     outlet: "Digital Marketing Therapy",
+    videoUrl: "https://www.youtube.com/watch?v=qiLaCEZCTjE",
     title: "Using AI to Increase Website Clarity",
     url: "https://www.thefirstclick.net/ep-320-using-ai-to-increase-website-clarity-with-aaron-husak/",
     datePublished: "2026-03-10",
@@ -64,6 +66,15 @@ export const podcastAppearances: MediaItem[] = [
       "An operator-focused conversation about building Balanced Comfort and the lessons behind its growth.",
     kind: "podcast",
     seriesUrl: "https://www.grownearby.com/podcast/",
+  },
+  {
+    outlet: "Live Local Business",
+    title: "Aaron Husak: Why He Thinks WordPress Is Dead",
+    url: "https://www.youtube.com/watch?v=Ey0KtO8vs6g",
+    videoUrl: "https://www.youtube.com/watch?v=Ey0KtO8vs6g",
+    summary:
+      "Aaron discusses Google Business Profiles, website consistency, measuring marketing outcomes, and his perspective on AI-assisted business operations.",
+    kind: "podcast",
   },
 ];
 
@@ -108,4 +119,5 @@ export const featuredAboutMedia: MediaItem[] = [
   podcastAppearances[0],
   podcastAppearances[1],
   podcastAppearances[2],
+  podcastAppearances[5],
 ];

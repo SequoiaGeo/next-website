@@ -173,7 +173,8 @@ export default function AboutPage() {
                   <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">Featured Conversations and Trade Media</p>
                   <div className="space-y-3">
                     {featuredAboutMedia.map((item) => (
-                      <a key={item.url} href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group">
+                      <div key={item.url}>
+                      <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group">
                         <span className="mt-0.5 flex-shrink-0 h-8 w-8 rounded-full bg-[#C8EDD2] flex items-center justify-center">
                           {item.kind === "podcast" ? (
                             <svg className="h-4 w-4 text-[#1A5C3A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" /></svg>
@@ -184,8 +185,15 @@ export default function AboutPage() {
                         <div>
                           <p className="text-sm font-semibold text-[#1a1a1a] group-hover:text-[#1A5C3A] transition-colors">{item.outlet}</p>
                           <p className="text-xs text-gray-500">{item.title}</p>
+                          {item.videoUrl === item.url && <p className="mt-1 text-sm font-semibold text-[#1A5C3A] underline underline-offset-4">Watch the interview on YouTube</p>}
                         </div>
                       </a>
+                      {item.videoUrl && item.videoUrl !== item.url && (
+                        <a href={item.videoUrl} target="_blank" rel="noopener noreferrer" className="ml-11 inline-flex min-h-[44px] items-center rounded text-sm font-semibold text-[#1A5C3A] underline underline-offset-4 hover:text-[#0D2318]" aria-label={`Watch ${item.title} on YouTube`}>
+                          Watch the interview on YouTube
+                        </a>
+                      )}
+                      </div>
                     ))}
                   </div>
                   <Link href="/media" className="mt-5 inline-flex items-center gap-1 text-xs font-semibold text-[#1A5C3A] hover:text-[#0D2318]">
