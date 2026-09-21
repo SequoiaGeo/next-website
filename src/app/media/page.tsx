@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 
 function MediaCard({ item }: { item: MediaItem }) {
   return (
+    <div className="flex h-full flex-col">
     <a
       href={item.url}
       target="_blank"
@@ -23,21 +24,27 @@ function MediaCard({ item }: { item: MediaItem }) {
         <p className="text-xs font-semibold uppercase tracking-widest text-[#1A5C3A]">
           {item.outlet}
         </p>
-        <time dateTime={item.datePublished} className="text-xs text-gray-500">
+        {item.datePublished && <time dateTime={item.datePublished} className="text-xs text-gray-500">
           {item.displayDate}
-        </time>
+        </time>}
       </div>
       <h3 className="mt-4 text-xl font-bold leading-snug text-[#1a1a1a] transition-colors group-hover:text-[#1A5C3A]">
         {item.title}
       </h3>
       <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">{item.summary}</p>
       <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[#1A5C3A]">
-        View the original publication
+        {item.url === item.videoUrl ? "Watch the interview on YouTube" : "View the original publication"}
         <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
         </svg>
       </span>
     </a>
+    {item.videoUrl && item.videoUrl !== item.url && (
+      <a href={item.videoUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-[44px] items-center rounded px-2 text-sm font-semibold text-[#1A5C3A] underline underline-offset-4 hover:text-[#0D2318]" aria-label={`Watch ${item.title} on YouTube`}>
+        Watch the interview on YouTube
+      </a>
+    )}
+    </div>
   );
 }
 
