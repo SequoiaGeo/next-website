@@ -271,7 +271,7 @@ export default function Navigation() {
             onClick={() => trackCtaIntent("header_desktop", "schedule")}
             className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
           >
-            Contact
+            Book a 15-Minute Call
           </Link>
         </div>
 
@@ -429,7 +429,7 @@ export default function Navigation() {
               }}
               className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-[#0D2318] w-full"
             >
-              Contact
+              Book a 15-Minute Call
             </Link>
           </div>
         </div>
