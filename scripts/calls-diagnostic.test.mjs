@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {diagnoseCalls} from '../src/lib/calls-diagnostic.mjs';
+test('unknown is not zero',()=>{assert.equal(diagnoseCalls({}, {},true,true).rows.length,0);});
+test('zero baseline has no percent',()=>{assert.equal(diagnoseCalls({calls:'0'},{calls:'4'},true,true).rows[0].percent,null);});
+test('invalid numbers rejected',()=>{for(const value of ['-1','1.2','abc','Infinity']) assert.ok(diagnoseCalls({calls:value},{calls:'4'},true,true).errors.length);});
+test('matched subsets validated',()=>assert.ok(diagnoseCalls({calls:'5',answered:'6'},{},true,true).errors.length));
+test('unconfirmed comparability withholds rates',()=>assert.equal(diagnoseCalls({calls:'5',answered:'4'},{calls:'5',answered:'3'},false,true).rates.length,0));
+test('unmatched calls withhold rates',()=>assert.equal(diagnoseCalls({calls:'5',answered:'4'},{calls:'5',answered:'3'},true,false).rates.length,0));
+test('call handling example uses percentage points',()=>{const r=diagnoseCalls({calls:'50',answered:'45',booked:'27'},{calls:'50',answered:'30',booked:'18'},true,true);assert.ok(Math.abs(r.rates[0].points+30)<1e-9);assert.equal(r.rates[1].points,0);});
+test('zero denominators do not produce invalid rates',()=>assert.equal(diagnoseCalls({calls:'0',answered:'0',booked:'0'},{calls:'0',answered:'0',booked:'0'},true,true).rates.length,0));
+test('rates can decline while counts increase',()=>{const r=diagnoseCalls({calls:'40',answered:'40'},{calls:'60',answered:'45'},true,true);assert.ok(r.findings.some(t=>t.includes('Answer rate declined')));assert.ok(!r.findings.some(t=>t.startsWith('No decline')));});

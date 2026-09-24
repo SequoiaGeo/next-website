@@ -19,6 +19,7 @@ const services = [
 ];
 
 const resources = [
+  { label: "Owner Tools & Worksheets", href: "/resources" },
   { label: "Ask Sequoia", href: "/ask-sequoia" },
   { label: "Free LSA Guide", href: "/lsa-guide" },
   { label: "AI SEO Guide", href: "/ai-website-seo-guide" },

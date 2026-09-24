@@ -63,6 +63,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/case-studies/ai-search-readiness`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.8 },
 
     // Guides and resources
+    { url: `${BASE_URL}/resources`, lastModified: "2026-09-24", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/resources/where-are-my-calls-going`, lastModified: "2026-09-24", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/resources/ai-search-with-your-current-agency`, lastModified: "2026-09-24", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/resources/ai-recommendation-comparison`, lastModified: "2026-09-24", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/lsa-guide`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/ai-website-seo-guide`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/contractors-guide-ai-search`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },

@@ -17,6 +17,8 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      { source: "/resources/marketing-ownership-checklist", destination: "/leaving-my-marketing-agency#marketing-ownership-checklist", permanent: true },
+      { source: "/resources/marketing-leadership-fit", destination: "/fractional-cmo#marketing-leadership-fit", permanent: true },
       // === ABOUT ===
       { source: "/about", destination: "/about-sequoia-geo", permanent: true },
 

@@ -472,6 +472,7 @@ export default function LeavingMyMarketingAgencyPage() {
       </section>
 
       {/* FAQ */}
+      <OwnerWorksheet slug="marketing-ownership-checklist" />
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-12">
@@ -526,3 +527,4 @@ export default function LeavingMyMarketingAgencyPage() {
     </>
   );
 }
+import OwnerWorksheet from '@/components/OwnerWorksheet';

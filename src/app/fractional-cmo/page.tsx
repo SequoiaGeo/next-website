@@ -663,6 +663,7 @@ export default function FractionalCmoPage() {
       </section>
 
       {/* Related services */}
+      <OwnerWorksheet slug="marketing-leadership-fit" />
       <section className="bg-[#fafaf8] py-16">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -716,3 +717,4 @@ export default function FractionalCmoPage() {
     </>
   );
 }
+import OwnerWorksheet from '@/components/OwnerWorksheet';
