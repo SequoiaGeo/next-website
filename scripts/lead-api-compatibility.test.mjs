@@ -167,6 +167,25 @@ async function postLegacyBody(routePath, body) {
   assert.equal(payload.isSyntheticTest, false);
 }
 
+test("estimate review requires explicit consent and preserves it in notification", async () => {
+  const body = { source: "estimate_review", estimateAiConsent: true, name: "Review Fixture", email: "review@invalid.example", phone: "5595551212", company: "Fixture", website: "" };
+  for (const value of [false, undefined, "true"]) {
+    const start = outboundCalls.length;
+    const { response } = await invokeLegacyBody(["api", "contact"], { ...body, estimateAiConsent: value });
+    assert.equal(response.status, 400);
+    assert.equal(outboundCalls.length, start);
+  }
+  const start = outboundCalls.length;
+  await postLegacyBody(["api", "contact"], body);
+  const calls = outboundCalls.slice(start);
+  const mail = JSON.parse(calls.find(c => c.url.startsWith("https://api.resend.com/")).init.body);
+  assert.match(mail.html, /Free AI Estimate Review requested/);
+  assert.match(mail.html, /Consent version 2026-09-25/);
+  const webhook = JSON.parse(calls.find(c => c.url === process.env.GHL_WEBHOOK_URL).init.body);
+  assert.equal(webhook.source, "estimate_review");
+  assert.equal(webhook.smsConsent, undefined);
+});
+
 test("legacy request bodies remain accepted by all three compiled lead APIs", async () => {
   for (const fixture of LEGACY_CASES) {
     const callStart = outboundCalls.length;

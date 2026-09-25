@@ -56,6 +56,7 @@ const REPORTED_AI_ASSISTANTS = new Set([
 ]);
 
 const FORM_SOURCES = new Set([
+  "estimate_review",
   "contact_form",
   "sequoia_knowledge_interface",
   "homepage_top",
@@ -166,6 +167,13 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid request" }, { status: 400 });
     }
     const isWebsiteAssessment = body.source === "homepage_website_assessment";
+    if (body.source === "estimate_review") {
+      if (body.estimateAiConsent !== true) {
+        return NextResponse.json({ error: "Please authorize the AI-assisted estimate review." }, { status: 400 });
+      }
+      body.message = "Free AI Estimate Review requested. Permission granted for a redacted sample to be reviewed using ChatGPT, Claude and Gemini plus human review. Consent version 2026-09-25. No document collected by this form. Sample to follow by email. No marketing consent granted.";
+      body.smsConsent = false;
+    }
     const businessWebsite = isWebsiteAssessment ? normalizeAssessmentWebsite(body.businessWebsite) : "";
     const marketingEmailConsent = isWebsiteAssessment ? assessmentMarketingConsent(body.marketingEmailConsent) : undefined;
 
@@ -383,6 +391,7 @@ export async function POST(req: Request) {
       {
         leadId,
         captureKind: "contact",
+        estimateAiConsent: source === "estimate_review" && body.estimateAiConsent === true,
         firstName: legacyWebhookPayload.firstName,
         lastName: legacyWebhookPayload.lastName,
         email,

@@ -4,6 +4,7 @@ const REQUEST_TIMEOUT_MS = 4500;
 
 const CAPTURE_KINDS = new Set(["contact", "guide", "calculator"]);
 const FORM_SOURCES = new Set([
+  "estimate_review",
   "contact_form",
   "sequoia_knowledge_interface",
   "homepage_top",
@@ -92,6 +93,8 @@ function evidenceNote(input, now) {
     `record_type: ${input.isSyntheticTest ? "synthetic_test" : "website_submission"}`,
     `capture_kind: ${CAPTURE_KINDS.has(input.captureKind) ? input.captureKind : "contact"}`,
     `form_source: ${FORM_SOURCES.has(input.source) ? input.source : "contact_form"}`,
+    ...(input.source === "estimate_review" && input.estimateAiConsent === true
+      ? ["estimate_review_consent: ChatGPT, Claude, Gemini and human review of authorized redacted sample; version 2026-09-25; no marketing consent; document to follow by email"] : []),
   ];
 
   const campaignLine = [

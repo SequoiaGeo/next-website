@@ -63,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/case-studies/ai-search-readiness`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.8 },
 
     // Guides and resources
+    { url: `${BASE_URL}/resources/will-chatgpt-choose-your-estimate`, lastModified: "2026-09-25", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/resources`, lastModified: "2026-09-24", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/resources/where-are-my-calls-going`, lastModified: "2026-09-24", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/resources/ai-search-with-your-current-agency`, lastModified: "2026-09-24", changeFrequency: "monthly", priority: 0.7 },
