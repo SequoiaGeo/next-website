@@ -196,6 +196,25 @@ test("legacy request bodies remain accepted by all three compiled lead APIs", as
   }
 });
 
+test("estimate review consent reaches direct CRM evidence without marketing permission", async () => {
+  process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN = "pit_direct_fixture";
+  process.env.HIGHLEVEL_LOCATION_ID = "location_direct_fixture";
+  deliveryMode = "direct_success";
+  try {
+    const start = outboundCalls.length;
+    await postLegacyBody(["api", "contact"], { source: "estimate_review", estimateAiConsent: true, smsConsent: true, name: "Review Fixture", email: "review@invalid.example", phone: "5595551212", company: "Fixture", website: "" });
+    const note = outboundCalls.slice(start).find(c => c.url.endsWith("/notes") && c.init?.method === "POST");
+    const evidence = JSON.parse(note.init.body).body;
+    assert.match(evidence, /form_source: estimate_review/);
+    assert.match(evidence, /estimate_review_consent: ChatGPT, Claude, Gemini/);
+    assert.match(evidence, /version 2026-09-25; no marketing consent/);
+  } finally {
+    delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+    delete process.env.HIGHLEVEL_LOCATION_ID;
+    deliveryMode = "success";
+  }
+});
+
 test("compiled APIs do not claim capture when every internal channel fails", async () => {
   deliveryMode = "failure";
   try {
