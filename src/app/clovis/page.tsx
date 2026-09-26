@@ -20,7 +20,7 @@ export default function ClovisfestPage() {
       </div>
     </section>
     <section className="mx-auto flex max-w-5xl flex-col items-start gap-6 px-5 pt-12 sm:flex-row sm:items-center" aria-label="Meet Aaron">
-      <img src="/aaron-husak.webp" alt="Aaron Husak, founder of Sequoia GEO" width="772" height="800" className="h-48 w-48 shrink-0 rounded-2xl object-cover" />
+      <img src="/images/aaron-intro-hat-v3.png" alt="Aaron Husak wearing a Sequoia GEO hat" width="1672" height="941" className="h-64 w-44 shrink-0 rounded-2xl object-cover object-right" />
       <div><h2 className="text-2xl font-bold">Hi, I’m Aaron.</h2><p className="mt-3 max-w-2xl leading-relaxed text-slate-600">I’m the founder of Sequoia GEO. If we met at ClovisFest, here’s a face to go with the conversation. This checklist gives you a place to start with your own website, and my contact details if you want to keep talking.</p></div>
     </section>
     <section className="mx-auto max-w-5xl px-5 py-14"><p className="text-sm font-bold uppercase tracking-widest">Inside the checklist</p><h2 className="mt-3 text-3xl font-bold">Useful changes, not another acronym.</h2><div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{checklist.map((item, i) => <article key={item.title} className="rounded-2xl border border-green-900/10 bg-white p-6"><p className="text-sm font-bold text-green-700">0{i + 1}</p><h3 className="mt-2 text-xl font-bold">{item.title}</h3><p className="mt-3 leading-relaxed text-slate-600">{item.detail}</p></article>)}</div><p className="mt-6 text-sm text-slate-600">These checks improve clarity and search readiness. They do not guarantee placement or recommendations in AI answers.</p></section>
