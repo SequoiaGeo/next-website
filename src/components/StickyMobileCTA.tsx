@@ -6,7 +6,7 @@ import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
 // Paid landing pages ship their own StickyCallBar. Rendering this bar there
 // would stack two fixed bottom bars on top of each other, so skip them.
-const EXCLUDED_ROUTES = new Set<string>(["/found-me-in-chatgpt", "/immanuel", "/dragons"]);
+const EXCLUDED_ROUTES = new Set<string>(["/found-me-in-chatgpt", "/immanuel", "/dragons", "/clovis"]);
 
 /**
  * Sticky bottom bar on mobile (hidden on desktop), mounted sitewide in
