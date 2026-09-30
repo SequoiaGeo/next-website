@@ -3,16 +3,26 @@ import Link from "next/link";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import OperatorStory from "@/components/OperatorStory";
-import WhoIsItFor from "@/components/WhoIsItFor";
-import SequoiaQuestionPanel from "@/components/SequoiaQuestionPanel";
+import MarketingAgents from "@/components/MarketingAgents";
+
 import SnapshotExample from "@/components/SnapshotExample";
 import SnapshotNextSteps from "@/components/SnapshotNextSteps";
 import YouTubeFacade from "@/components/YouTubeFacade";
 
 export const metadata: Metadata = {
-  title: "AI Search Visibility for Home Service Businesses | Sequoia GEO",
-  description: "Improve search visibility, correct website problems, and verify what changed. Request a free, hand-reviewed AI Search Snapshot from Sequoia GEO.",
+  title: "Custom AI Marketing Agents & AI Search | Sequoia GEO",
+  description: "Custom AI marketing agents for local businesses. Follow up with leads, reconnect with customers, create campaigns, and measure results with Sequoia GEO.",
   alternates: { canonical: "https://www.sequoiageo.com/" },
+  openGraph: {
+    title: "AI Marketing Agents, Built Around Your Business | Sequoia GEO",
+    description: "Custom agents for lead follow-up, customer reactivation, content, reviews, and advertising performance.",
+    url: "https://www.sequoiageo.com/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Marketing Agents | Sequoia GEO",
+    description: "Custom builds and ongoing management for the marketing tasks that need consistent attention.",
+  },
 };
 
 const snapshotItems = [
@@ -22,26 +32,38 @@ const snapshotItems = [
 ];
 
 const questions = [
-  ["What can Sequoia help us improve?", "AI-search visibility, traditional search, service-page clarity, website problems, and the evidence used to measure changes. We agree on the work your business needs rather than promising to manage every part of your operation."],
-  ["Does the snapshot require account access or a meeting?", "No account access is needed for the public-surface snapshot, and the request does not automatically schedule a meeting. If a finding needs deeper verification, we explain the specific access needed. You can choose a time to discuss the findings separately."],
-  ["Can you guarantee ChatGPT will recommend us?", "No. Answers vary by question, platform, location, session, and time. We distinguish citations, mentions, recommendations, and inquiries, and document the limits of what was observed."],
-  ["Is this the same as the general marketing audit?", "No. The Free AI Search Snapshot focuses on what search and AI systems can verify about your business. The separate Free Marketing Scorecard reviews your broader public marketing presence."],
+  ["What does an agent actually do?", "It uses your business information and connected tools to handle an agreed task, such as following up on an open estimate or preparing a campaign. We define what it can do, what needs approval, and when it hands work to your team."],
+  ["Do we need all five agents?", "No. Start with one recurring task and a measurable goal. We confirm whether your tools and process support a useful pilot before proposing a build."],
+  ["Will this work with our existing software?", "We review your tools, available integrations, and access requirements during scoping. Supported connections and any additional software costs are confirmed in the proposal."],
+  ["Who manages it after launch?", "Sequoia offers ongoing monitoring and workflow improvements within the agreed scope. Your team retains control of business decisions, approvals, and customer situations that need a person."],
+  ["Do you still offer AI search and GEO?", "Yes. AI search, website improvements, and broader marketing work remain available. Search helps customers find and evaluate you; agents help your team carry out the marketing work that follows."],
 ];
-
 const primaryButton = "inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3 text-base font-bold text-white hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]";
 
 export default function Home() {
-  const knowledgeEnabled =
-    process.env.SEQUOIA_KNOWLEDGE_ENABLED === "true" &&
-    process.env.SEQUOIA_KNOWLEDGE_KILL_SWITCH !== "true";
 
   return (
     <>
       <Hero />
+      <MarketingAgents />
+      <section id="how-it-works" className="bg-[#0D2318] py-16 text-white sm:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Start with one workflow. Build from there.</h2>
+          <ol className="mt-8 grid gap-8 md:grid-cols-3">
+            {[
+              ["01. Choose the task", "Identify the recurring task, current process, and result worth measuring. Confirm which tools and data the agent would need."],
+              ["02. Build and test", "Agree on scope, access, approvals, and costs. Test the workflow and human handoffs with your team before a pilot goes live."],
+              ["03. Manage and improve", "Review completed work, exceptions, qualified leads, and booked jobs where tracking supports them. Improve the workflow as your process changes."],
+            ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
+          </ol>
+          <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. No ranking or lead guarantees.</p>
+        </div>
+      </section>
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <p className="section-overline mb-4">See the work before you decide</p>
-          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Documented work. Measurable improvements.</h2>
+          <p className="section-overline mb-4">Our website and marketing track record</p>
+          <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">The examples below document website and marketing projects. They do not represent results from the agent builds offered above.</p>
+          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Website and marketing work you can inspect.</h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
           <article className="mt-8 grid gap-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 md:grid-cols-[1.3fr_0.7fr] md:items-center lg:gap-12" aria-labelledby="kabam-proof-heading">
             <div>
@@ -118,7 +140,7 @@ export default function Home() {
       <section id="snapshot" className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="section-overline mb-4">Free AI Search Snapshot</p>
-          <h2 className="text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Know what needs attention before choosing a service.</h2>
+          <h2 className="text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Help customers find and evaluate your business.</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {snapshotItems.map(([title, body]) => (
               <div key={title} className="rounded-xl bg-[#fafaf8] p-6">
@@ -132,26 +154,11 @@ export default function Home() {
           <Link href="/ai-search-assessment" className={`${primaryButton} mt-6`}>Request My Free AI Search Snapshot</Link>
         </div>
       </section>
-      <section id="how-it-works" className="bg-[#0D2318] py-16 text-white sm:py-20">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Know what matters. Know what happens next.</h2>
-          <ol className="mt-8 grid gap-8 md:grid-cols-3">
-            {[
-              ["01. Establish the baseline", "Start with a snapshot of the public evidence and the gaps worth investigating."],
-              ["02. Agree on the work", "Review the priorities with Aaron. Agree on scope, responsibilities, access, and how progress will be shared before a paid engagement begins."],
-              ["03. See what changed", "Review the approved work and its supporting evidence. See what was completed, what remains unresolved, and what comes next. Visibility and qualified leads are reported separately."],
-            ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
-          </ol>
-          <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. No ranking or lead guarantees.</p>
-        </div>
-      </section>
-      {knowledgeEnabled && (
-        <SequoiaQuestionPanel surface="homepage_inline" embedded />
-      )}
-      <WhoIsItFor />
+
+
       <section id="questions" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-[#0D2318]">Before you request a snapshot</h2>
+          <h2 className="text-3xl font-extrabold text-[#0D2318]">Before you build your first agent</h2>
           <div className="mt-8 space-y-4">
             {questions.map(([question, answer]) => (
               <details key={question} className="rounded-xl border border-gray-200 bg-white p-6">
@@ -166,11 +173,11 @@ export default function Home() {
       </section>
       <section id="contact" className="bg-white py-16 text-center sm:py-20">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Start with your Free AI Search Snapshot.</h2>
-          <p className="mt-5 text-lg leading-relaxed text-gray-600">Find out what public information supports your business, where it conflicts, and which corrections deserve attention.</p>
+          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">What keeps falling through the cracks?</h2>
+          <p className="mt-5 text-lg leading-relaxed text-gray-600">Bring one recurring marketing task and the tools your team uses. We will work out whether an agent can help and what a first build would involve.</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-5 sm:flex-row">
-            <Link href="/ai-search-assessment" className={primaryButton}>Request My Free AI Search Snapshot</Link>
-            <Link href="/contact#book" className="inline-flex min-h-12 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Prefer to talk? Choose a time</Link>
+            <Link href="/contact#book" className={primaryButton}>Plan My First Agent</Link>
+            <Link href="/marketing-agents" className="inline-flex min-h-12 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the five agents</Link>
           </div>
         </div>
       </section>

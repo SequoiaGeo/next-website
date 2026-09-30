@@ -7,8 +7,9 @@ import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
 const serviceLinks = [
   {
-    group: "Start with AI Search",
+    group: "Marketing Agents and AI Search",
     items: [
+      { label: "AI Marketing Agents", href: "/marketing-agents" },
       { label: "AI SEO / Search Visibility", href: "/geo-agency" },
       { label: "AI Search Assessment", href: "/ai-search-assessment" },
       { label: "AI SEO by Market", href: "/geo-agency#markets" },
@@ -141,7 +142,7 @@ export default function Navigation() {
               aria-expanded={servicesOpen}
               aria-haspopup="true"
             >
-              AI Search
+              Services
               <svg
                 className={`h-3.5 w-3.5 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
                 fill="none"
@@ -184,10 +185,10 @@ export default function Navigation() {
           </Link>
 
           <Link
-            href="/ai-seo-pricing"
+            href="/marketing-agents"
             className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-[#1A5C3A] transition-colors"
           >
-            Services &amp; Pricing
+            Marketing Agents
           </Link>
 
           {/* Resources dropdown */}
@@ -304,7 +305,7 @@ export default function Navigation() {
             aria-expanded={mobileServicesOpen}
             className="flex items-center justify-between text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors w-full text-left"
           >
-            AI Search
+            Services
             <svg
               className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
               fill="none"
@@ -345,11 +346,11 @@ export default function Navigation() {
           </Link>
 
           <Link
-            href="/ai-seo-pricing"
+            href="/marketing-agents"
             onClick={() => setMobileOpen(false)}
             className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
-            Services &amp; Pricing
+            Marketing Agents
           </Link>
 
           {/* Mobile Resources accordion */}
