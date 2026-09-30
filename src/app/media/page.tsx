@@ -64,6 +64,24 @@ export default function MediaPage() {
         </div>
       </section>
 
+      <section id="our-podcast" className="scroll-mt-24 bg-[#fafaf8] py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="section-overline mb-3">Our show</div>
+          <h2 className="text-3xl font-extrabold text-[#0D2318]">A Chat with Chat</h2>
+          <p className="mt-4 max-w-3xl text-gray-600">Aaron Husak and ChatGPT explore AI search and marketing for local home service businesses.</p>
+          <Link href="/podcast/episode-2" className="mt-8 grid overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md md:grid-cols-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/podcast/episode-2.png" alt="A Chat with Chat episode 2: Would AI pick your HVAC company?" width="1672" height="941" className="h-auto w-full self-center" />
+            <div className="p-7 sm:p-9">
+              <p className="text-sm font-semibold text-[#1A5C3A]">Episode 2 · September 30, 2026 · 27 minutes</p>
+              <h3 className="mt-3 text-2xl font-bold text-[#0D2318]">Same Prompt, Different HVAC Picks: What Our AI Search Test Revealed</h3>
+              <p className="mt-4 leading-relaxed text-gray-600">A live look at Gemini recommendations, changing sources, and what repeated searches can tell a home service business.</p>
+              <span className="mt-6 inline-block font-bold text-[#1A5C3A] underline underline-offset-4">Watch or listen to episode 2</span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="max-w-3xl">
