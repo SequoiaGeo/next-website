@@ -1,4 +1,4 @@
-﻿import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/ContactForm";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
@@ -22,7 +22,7 @@ export default function ContactPage() {
               Book a 15-minute call with Aaron
             </h1>
             <p className="mt-4 text-lg text-gray-600">
-              Discuss your marketing priorities and whether Sequoia can help. Choose a time below to book your Marketing Baseline Review.
+              Discuss your marketing priorities and whether Sequoia can help. Planning an agent? Bring one task you want handled and the tools your team uses. Choose a time below to book your Marketing Baseline Review.
             </p>
             <div className="mt-4 inline-flex items-center gap-2 text-sm text-gray-500">
               <svg className="h-4 w-4 text-[#3A9E6A]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

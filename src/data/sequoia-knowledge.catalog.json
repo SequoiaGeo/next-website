@@ -1,13 +1,20 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-08-30.3",
+  "catalogVersion": "2026-09-30.1",
   "status": "approved_for_public_use",
   "approvedOn": "2026-08-30",
-  "reviewValidUntil": "2026-09-29",
+  "reviewValidUntil": "2026-10-30",
+  "lastSourceReview": "2026-09-30: Reconciled catalog summaries, pricing, historical case-study dates, methodology, and data policies against cited repository pages. Added the custom marketing-agent offer. Historical result dates remain unchanged.",
   "owner": "Sequoia GEO",
   "externalModelSpendLimitUsd": 0,
   "publicBoundary": "This interface reports approved public facts only. It does not claim to improve or control rankings, citations, or recommendations in ChatGPT, Gemini, or any other answer system.",
   "sources": {
+    "marketing_agents": {
+      "label": "Custom AI Marketing Agents",
+      "path": "/marketing-agents",
+      "sourceFile": "src/app/marketing-agents/page.tsx",
+      "sourceAnchors": ["These are custom build options.", "Your proposal separates setup, ongoing management, and any software or usage costs."]
+    },
     "services": {
       "label": "Services",
       "path": "/services",
@@ -148,6 +155,12 @@
     }
   },
   "services": [
+    {
+      "id": "marketing_agents",
+      "name": "Custom AI marketing agents",
+      "summary": "Scoped builds and ongoing management for lead and estimate follow-up, customer reactivation, content and campaigns, reviews and referrals, and advertising performance. Supported integrations, approvals, and costs are confirmed before work begins.",
+      "sourceIds": ["marketing_agents"]
+    },
     {
       "id": "paid_search",
       "name": "Google Ads and Local Service Ads",
