@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import AiSearchEvidencePath from "@/components/AiSearchEvidencePath";
@@ -230,11 +230,11 @@ const agencies = [
     tagColor: "bg-[#C8EDD2]/50 text-[#1A5C3A] border-[#3A9E6A]/30",
     meta: [
       { label: "Best for", value: "$2M to $15M revenue contractors" },
-      { label: "Pricing", value: "From $2,500 a month, 3-month initial term, month to month after" },
+      { label: "Pricing", value: "From $4,500 a month, 3-month initial term, month to month after" },
       { label: "Team scale", value: "Principal-led" },
     ],
     summary:
-      "Sequoia GEO is an operator-led marketing practice founded by Aaron Husak, who built Balanced Comfort HVAC to $17M+ in revenue and four consecutive Inc. 5000 rankings before a 2024 exit. While the practice's core case study base is in HVAC and plumbing, the operator-level marketing systems developed through that process translate directly to roofing contractors facing the same conversion and lead quality challenges. Aaron leads every engagement. Engagements start at $2,500 a month with a 3-month initial term, month to month after.",
+      "Sequoia GEO is an operator-led marketing practice founded by Aaron Husak, who built Balanced Comfort HVAC to $17M+ in revenue and four consecutive Inc. 5000 rankings before a 2024 exit. While the practice's core case study base is in HVAC and plumbing, the operator-level marketing systems developed through that process translate directly to roofing contractors facing the same conversion and lead quality challenges. Aaron leads every engagement. Engagements start at $4,500 a month with a 3-month initial term, month to month after.",
     strengths: [
       "Only practice on this list where the founder built and operated a $17M+ home service company with Inc. 5000 recognition",
       "Revenue attribution extends past lead counts to booking rates, CSR quality, and appointment data",

@@ -7,14 +7,14 @@ import InlineLeadForm from "@/components/InlineLeadForm";
 export const metadata: Metadata = {
   title: "How Much Does SEO Cost for Contractors?",
   description:
-    "Contractor SEO runs from $2,500 a month here, 3-month initial term, month to month after. What that buys, and the honest cases where you should not buy it.",
+    "Contractor SEO runs from $4,500 a month here, 3-month initial term, month to month after. What that buys, and the honest cases where you should not buy it.",
   alternates: {
     canonical: "https://www.sequoiageo.com/how-much-does-seo-cost-for-contractors",
   },
   openGraph: {
     title: "How Much Does SEO Cost for Contractors?",
     description:
-      "Contractor SEO runs from $2,500 a month here, 3-month initial term, month to month after. What that buys, and the honest cases where you should not buy it.",
+      "Contractor SEO runs from $4,500 a month here, 3-month initial term, month to month after. What that buys, and the honest cases where you should not buy it.",
     url: "https://www.sequoiageo.com/how-much-does-seo-cost-for-contractors",
     type: "website",
   },
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "What does contractor SEO cost per month?",
     answer:
-      "From this practice, engagements start at $2,500 a month with a 3-month initial term, then month to month. Ad spend, when we run ads, is separate: your money, your accounts, billed to you directly by Google.",
+      "From this practice, engagements start at $4,500 a month with a 3-month initial term, then month to month. Ad spend, when we run ads, is separate: your money, your accounts, billed to you directly by Google.",
   },
   {
     question: "Why is there a 3-month initial term?",
@@ -65,7 +65,7 @@ export default function ContractorSeoCostPage() {
             How Much Does SEO Cost for Contractors?
           </h1>
           <p className="mt-6 text-xl leading-relaxed text-gray-700">
-            Here, it starts at $2,500 a month, with a 3-month initial term and month to
+            Here, it starts at $4,500 a month, with a 3-month initial term and month to
             month after that. Ad spend, when we run ads at all, is separate: it stays in
             accounts you own and Google bills you directly. I publish the price because I
             spent 13 years running a home services company, got pitched by every marketing
@@ -93,7 +93,7 @@ export default function ContractorSeoCostPage() {
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a]">
-              What $2,500 a Month Buys
+              What $4,500 a Month Buys
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               Outcomes, not activity. These are the four things the fee is accountable for.
@@ -211,7 +211,7 @@ export default function ContractorSeoCostPage() {
               },
               {
                 title: "The fee would strain cash",
-                body: "If $2,500 a month strains the business, wait. A stressed budget makes rushed calls, and a program cut off early helps nobody. Stabilize first, then buy the compounding.",
+                body: "If $4,500 a month strains the business, wait. A stressed budget makes rushed calls, and a program cut off early helps nobody. Stabilize first, then buy the compounding.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">

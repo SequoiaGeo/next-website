@@ -51,7 +51,7 @@ const faqs = [
   {
     question: "What does plumbing SEO cost with Sequoia GEO?",
     answer:
-      "Engagements start at $2,500 a month with an initial term of three months, then continue month to month. Ad spend is separate and stays yours. Google bills you directly, and nothing is marked up or routed through Sequoia GEO. You own your domain, analytics, ad accounts, and the pages built for your business.",
+      "Engagements start at $4,500 a month with an initial term of three months, then continue month to month. Ad spend is separate and stays yours. Google bills you directly, and nothing is marked up or routed through Sequoia GEO. You own your domain, analytics, ad accounts, and the pages built for your business.",
   },
   {
     question: "Can you verify one problem if I already have an agency?",

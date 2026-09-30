@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
@@ -188,7 +188,7 @@ const agencies = [
     tag: "Best for operator-led accountability",
     tagColor: "bg-[#C8EDD2] text-[#0D2318]",
     idealFor: "HVAC and home service contractors who want a marketing partner that has actually operated and scaled the same kind of business, and can be held accountable to revenue, not just clicks",
-    pricing: "From $2,500 a month, 3-month initial term, month to month after",
+    pricing: "From $4,500 a month, 3-month initial term, month to month after",
     teamScale: "Boutique",
     summary:
       "Sequoia GEO is an operator-led home services marketing practice founded by Aaron Husak, who grew Balanced Comfort (HVAC) to $17M+ in peak revenue and earned four consecutive Inc 5000 rankings (2021 to 2024) before founding the practice. The core differentiator is operator credibility, Aaron built and scaled the exact type of business their clients run, leads every engagement, and has answered for both marketing spend and the bottom line. Services include Google Ads, SEO, Local Services Ads, Google Business Profile management, and website development. For HVAC business owners who have worked with agencies that optimize for impressions while their dispatch board sits empty, Sequoia GEO offers a different kind of accountability.",

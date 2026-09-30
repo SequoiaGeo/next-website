@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -158,7 +158,7 @@ export default function HowItWorksPage() {
             <div className="mt-8 rounded-xl border border-[#3A9E6A]/20 bg-white px-6 py-5 shadow-sm">
               <p className="text-sm font-bold text-[#1a1a1a]">Pricing</p>
               <p className="mt-1 text-sm leading-relaxed text-gray-600">
-                Engagements start at $2,500 per month with a three-month initial term, then month to
+                Engagements start at $4,500 per month with a three-month initial term, then month to
                 month. Scope is defined before work begins, and ad spend and separately approved tools
                 are not included in the monthly fee.
               </p>

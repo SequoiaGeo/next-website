@@ -29,7 +29,7 @@ const roofingFaqs = [
   },
   {
     q: "How much does roofing SEO cost?",
-    a: "Engagements start at $2,500 per month with an initial term of three months, then continue month to month. The scope depends on the market, the starting point, and the verified constraints. Ad spend is separate, and the business retains ownership of its domain, analytics, ad accounts, and published pages.",
+    a: "Engagements start at $4,500 per month with an initial term of three months, then continue month to month. The scope depends on the market, the starting point, and the verified constraints. Ad spend is separate, and the business retains ownership of its domain, analytics, ad accounts, and published pages.",
   },
   {
     q: "Do I need roofing SEO if I am already running Google Ads?",

@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
@@ -7,7 +7,7 @@ import ServiceJsonLd from "@/components/ServiceJsonLd";
 export const metadata: Metadata = {
   title: "Fractional CMO for Home Service Contractors | $17M Operator",
   description:
-    "Marketing leadership without the full-time hire. Fractional Marketing Lead services start at $5,000 a month. Led by a founder with a home-services career that began in 2006, including 13 years as an owner and operator.",
+    "Marketing leadership without the full-time hire. Fractional Marketing Lead services start at $7,000 a month. Led by a founder with a home-services career that began in 2006, including 13 years as an owner and operator.",
   alternates: {
     canonical: "https://www.sequoiageo.com/fractional-cmo",
   },
@@ -27,7 +27,7 @@ const primaryFaqs = [
   {
     question: "How long does a fractional CMO engagement last?",
     answer:
-      "Every engagement begins with a 90-day initial term. The first 90 days establish the operating plan, measurement, ownership, and first priorities. After that, the engagement continues month to month for as long as the business needs hands-on marketing leadership.",
+      "Initial terms are 90 days for Search Foundation, six months for Fractional Marketing Lead, and twelve months for Complex Leadership. Each continues month to month after its initial term. The first 90 days establish the operating plan, measurement, ownership, and first priorities.",
   },
   {
     question: "Can a fractional CMO help if I'm already working with agencies?",
@@ -37,7 +37,7 @@ const primaryFaqs = [
   {
     question: "What does fractional CMO pricing look like for home service companies?",
     answer:
-      "Fractional Marketing Lead engagements at Sequoia GEO start at $5,000 per month, with a 90-day initial term and month to month after. Complex Leadership starts at $6,500 per month when the work spans multiple markets, brands, vendors, or channels. Bounded Search Foundation work starts at $2,500 per month. Ad spend stays in your accounts, and paid-media execution is explicitly scoped rather than assumed.",
+      "Fractional Marketing Lead engagements at Sequoia GEO start at $7,000 per month, with a six-month initial term and month to month after. Complex Leadership starts at $9,500 per month with a twelve-month initial term when the work spans multiple markets, brands, vendors, or channels. Bounded Search Foundation work starts at $4,500 per month. Ad spend stays in your accounts, and paid-media execution is explicitly scoped rather than assumed.",
   },
   {
     question: "What industries do you work with?",
@@ -139,7 +139,7 @@ export default function FractionalCmoPage() {
               <li><strong>Who this is for:</strong> Home service companies doing $2M to $15M in revenue with no dedicated marketing leader.</li>
               <li><strong>What a fractional CMO does:</strong> Owns the marketing function part-time. Sets strategy, manages vendors, and improves attribution toward <strong>cost per booked job</strong> when the available systems support a dependable join.</li>
               <li><strong>Why an operator matters:</strong> 13 years running Balanced Comfort to $17M, 4x Inc 5000, California Licensed Contractor. I&rsquo;ve sat in the dispatch chair, not just the marketing meeting.</li>
-              <li><strong>Pricing:</strong> Fractional Marketing Lead starts at $5,000 per month. Complex Leadership starts at $6,500 per month. Bounded Search Foundation work starts at $2,500 per month. Every engagement begins with a 90-day initial term.</li>
+              <li><strong>Pricing:</strong> Fractional Marketing Lead starts at $7,000 per month. Complex Leadership starts at $9,500 per month. Bounded Search Foundation work starts at $4,500 per month. Initial terms are 90 days for Search Foundation, six months for Fractional Marketing Lead, and twelve months for Complex Leadership. Each continues month to month afterward.</li>
             </ul>
           </div>
         </div>

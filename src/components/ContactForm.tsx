@@ -168,7 +168,7 @@ export default function ContactForm({ showEngagementTerms = true }: { showEngage
                 { label: "Evidence before recommendations", desc: "I review the marketing and booking path before the call" },
                 { label: "No pitch deck", desc: "A real conversation about the constraint you are seeing" },
                 ...(showEngagementTerms
-                  ? [{ label: "Clear engagement terms", desc: "Three months initially, then month to month" }]
+                  ? [{ label: "Clear engagement terms", desc: "Initial term depends on the service, then month to month" }]
                   : []),
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4 py-4 first:pt-0">

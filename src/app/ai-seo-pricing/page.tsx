@@ -8,14 +8,14 @@ import AiSearchTrustPanel from "@/components/AiSearchTrustPanel";
 export const metadata: Metadata = {
   title: "GEO and AI SEO Pricing for Service Businesses | Sequoia GEO",
   description:
-    "GEO and AI SEO engagements at Sequoia GEO start at $2,500 a month, with a three-month initial term. See what is included, what is separate, and what cannot be guaranteed.",
+    "Search Foundation engagements at Sequoia GEO start at $4,500 a month, with a three-month initial term. See what is included, what is separate, and what cannot be guaranteed.",
   alternates: {
     canonical: "https://www.sequoiageo.com/ai-seo-pricing",
   },
   openGraph: {
     title: "GEO and AI SEO Pricing for Service Businesses | Sequoia GEO",
     description:
-      "GEO and AI SEO engagements start at $2,500 a month, with a three-month initial term. What is included, what is separate, and what cannot be guaranteed.",
+      "Search Foundation engagements start at $4,500 a month, with a three-month initial term. What is included, what is separate, and what cannot be guaranteed.",
     url: "https://www.sequoiageo.com/ai-seo-pricing",
     type: "website",
   },
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "How much does GEO or AI SEO cost?",
     answer:
-      "At Sequoia GEO, engagements start at $2,500 a month with a three-month initial term, then month to month. GEO and AI SEO are part of the same operator-led search engagement, not a separate AI surcharge.",
+      "At Sequoia GEO, Search Foundation engagements start at $4,500 a month with a three-month initial term, then month to month. GEO and AI SEO are part of the same operator-led search engagement, not a separate AI surcharge.",
   },
   {
     question: "Is GEO different from SEO?",
@@ -35,7 +35,7 @@ const faqs = [
   {
     question: "What is included in the monthly fee?",
     answer:
-      "Search Foundation starts at $2,500 a month and covers a bounded search, AI visibility, conversion, or public-information constraint. Sequoia's AI Search Evidence System is included when AI visibility is part of the scope, with a controlled manual baseline, public-source reconciliation, lead attribution, and remeasurement instead of a separate software fee. Automated OpenAI query and source collection remains pilot-only pending live validation. Fractional Marketing Lead starts at $5,000 a month when a business needs weekly marketing leadership, launch planning, measurement oversight, and cross-channel direction. Complex Leadership starts at $6,500 a month for multiple markets, brands, vendors, or a broader operating load. Every engagement has a defined scope before work begins.",
+      "Search Foundation starts at $4,500 a month and covers a bounded search, AI visibility, conversion, or public-information constraint. Sequoia's AI Search Evidence System is included when AI visibility is part of the scope, with a controlled manual baseline, public-source reconciliation, lead attribution, and remeasurement instead of a separate software fee. Automated OpenAI query and source collection remains pilot-only pending live validation. Fractional Marketing Lead starts at $7,000 a month with a six-month initial term when a business needs weekly marketing leadership, launch planning, measurement oversight, and cross-channel direction. Complex Leadership starts at $9,500 a month with a twelve-month initial term for multiple markets, brands, vendors, or a broader operating load. Every engagement has a defined scope before work begins.",
   },
   {
     question: "What is not included?",
@@ -50,7 +50,7 @@ const faqs = [
   {
     question: "What happens in the first 30 days?",
     answer:
-      "The first 30 days establish the baseline, identify the first approved constraint, make the first corrections, and document what changed. The initial three-month term gives the work time to be implemented, discovered, and evaluated without pretending a result can be promised on a fixed date.",
+      "The first 30 days establish the baseline, identify the first approved constraint, make the first corrections, and document what changed. Search Foundation's initial three-month term gives the work time to be implemented, discovered, and evaluated without pretending a result can be promised on a fixed date.",
   },
   {
     question: "Is paid media management included?",
@@ -85,9 +85,10 @@ export default function AiSeoPricingPage() {
             How Much Does GEO and AI SEO Cost?
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-700">
-            Search Foundation starts at <strong>$2,500 a month</strong>. Marketing leadership
-            starts at <strong>$5,000 a month</strong>. Both begin with a 90-day initial term,
-            then continue month to month. GEO and AI SEO are part of the work, not a separate
+            Search Foundation starts at <strong>$4,500 a month</strong>. Marketing leadership
+            starts at <strong>$7,000 a month</strong>. Initial terms are 90 days for Search Foundation,
+            six months for Fractional Marketing Lead, and twelve months for Complex Leadership.
+            Each continues month to month afterward. GEO and AI SEO are part of the work, not a separate
             AI surcharge.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600">
@@ -146,7 +147,8 @@ export default function AiSeoPricingPage() {
             {[
               {
                 name: "Search Foundation",
-                price: "$2,500",
+                price: "$4,500",
+                term: "90-day initial term",
                 description: "For one bounded search, AI visibility, conversion, or public-information constraint.",
                 items: [
                   "Baseline and first approved priority",
@@ -157,7 +159,8 @@ export default function AiSeoPricingPage() {
               },
               {
                 name: "Fractional Marketing Lead",
-                price: "$5,000",
+                price: "$7,000",
+                term: "6-month initial term",
                 description: "For a launch or an established business that needs a marketing leader in the room every week.",
                 items: [
                   "Weekly decision meeting and a 90-day operating plan",
@@ -168,7 +171,8 @@ export default function AiSeoPricingPage() {
               },
               {
                 name: "Complex Leadership",
-                price: "$6,500",
+                price: "$9,500",
+                term: "12-month initial term",
                 description: "For multiple markets, brands, vendors, channels, or a larger operating load.",
                 items: [
                   "Cross-channel and multi-party marketing leadership",
@@ -191,6 +195,7 @@ export default function AiSeoPricingPage() {
                 <p className="mt-4 text-5xl font-extrabold tracking-tight">{tier.price}</p>
                 <p className={`mt-1 text-sm font-semibold ${index === 1 ? "text-[#C8EDD2]" : "text-gray-600"}`}>per month, starting price</p>
                 <p className={`mt-5 text-sm leading-relaxed ${index === 1 ? "text-[#C8EDD2]/80" : "text-gray-600"}`}>{tier.description}</p>
+                <p className={`mt-3 text-sm font-semibold ${index === 1 ? "text-[#C8EDD2]" : "text-gray-700"}`}>{tier.term}. Month to month afterward.</p>
                 <ul className="mt-6 space-y-3">
                   {tier.items.map((item) => (
                     <li key={item} className={`flex gap-3 text-sm leading-relaxed ${index === 1 ? "text-[#C8EDD2]" : "text-gray-700"}`}>
@@ -203,7 +208,7 @@ export default function AiSeoPricingPage() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm leading-relaxed text-gray-600">
-            Every starting engagement has a 90-day initial term, then continues month to month.
+            Search Foundation has a 90-day initial term, Fractional Marketing Lead a six-month initial term, and Complex Leadership a twelve-month initial term. Each continues month to month after its initial term.
             Ad spend stays in your accounts. Major site builds, third-party software, and hands-on
             paid media execution are defined separately before work begins.
           </p>

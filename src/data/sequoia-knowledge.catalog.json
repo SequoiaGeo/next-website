@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-09-30.1",
+  "catalogVersion": "2026-09-30.2",
   "status": "approved_for_public_use",
   "approvedOn": "2026-08-30",
   "reviewValidUntil": "2026-10-30",
@@ -33,11 +33,11 @@
       "sourceFile": "src/app/ai-seo-pricing/page.tsx",
       "sourceAnchors": [
         "Search Foundation starts at",
-        "Fractional Marketing Lead starts at $5,000",
-        "Complex Leadership starts at $6,500",
+        "Fractional Marketing Lead starts at $7,000",
+        "Complex Leadership starts at $9,500",
         "Website Foundation starts at $2,500",
         "Custom website projects start at $7,500",
-        "Every starting engagement has a 90-day initial term, then continues month to month.",
+        "Search Foundation has a 90-day initial term, Fractional Marketing Lead a six-month initial term, and Complex Leadership a twelve-month initial term.",
         "Guaranteed rankings, citations, recommendations, lead volume, or timing"
       ]
     },
@@ -214,7 +214,7 @@
     {
       "id": "search_foundation",
       "name": "Search Foundation",
-      "amountUsd": 2500,
+      "amountUsd": 4500,
       "billing": "per_month_starting_price",
       "conditions": "One bounded search, AI visibility, conversion, or public-information constraint. Monthly engagements begin with a 90-day initial term, then continue month to month.",
       "notAQuote": true,
@@ -223,18 +223,18 @@
     {
       "id": "fractional_marketing_lead",
       "name": "Fractional Marketing Lead",
-      "amountUsd": 5000,
+      "amountUsd": 7000,
       "billing": "per_month_starting_price",
-      "conditions": "For a launch or established business that needs weekly marketing leadership. Monthly engagements begin with a 90-day initial term, then continue month to month.",
+      "conditions": "For a launch or established business that needs weekly marketing leadership. A six-month initial term, then month to month.",
       "notAQuote": true,
       "sourceIds": ["pricing"]
     },
     {
       "id": "complex_leadership",
       "name": "Complex Leadership",
-      "amountUsd": 6500,
+      "amountUsd": 9500,
       "billing": "per_month_starting_price",
-      "conditions": "For multiple markets, brands, vendors, channels, or a larger operating load. Monthly engagements begin with a 90-day initial term, then continue month to month.",
+      "conditions": "For multiple markets, brands, vendors, channels, or a larger operating load. A twelve-month initial term, then month to month.",
       "notAQuote": true,
       "sourceIds": ["pricing"]
     },

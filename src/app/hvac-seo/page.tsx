@@ -49,7 +49,7 @@ const faqs = [
   {
     question: "What does HVAC SEO cost with Sequoia GEO?",
     answer:
-      "Engagements start at $2,500 a month with a 3-month initial term, month to month after. Ad spend is separate, stays yours, and is billed to you directly by Google.",
+      "Engagements start at $4,500 a month with a 3-month initial term, month to month after. Ad spend is separate, stays yours, and is billed to you directly by Google.",
   },
 ];
 
@@ -510,7 +510,7 @@ export default function HvacSeoPage() {
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
             Every engagement starts with a Marketing Baseline Review. I look at your spend, your booking rate,
             your phone handling, and your revenue, before touching a single campaign. Engagements
-            start at $2,500 a month.
+            start at $4,500 a month.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
