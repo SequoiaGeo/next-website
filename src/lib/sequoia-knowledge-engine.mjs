@@ -242,6 +242,15 @@ export function answerSequoiaQuestion(catalog, question) {
   if (!normalized.ok) return refusal(catalog, normalized.reason);
   const value = normalized.value;
 
+  if (/\b(?:agents?|reactivation)\b/.test(value)) {
+    const service = catalog.services.find((item) => item.id === "marketing_agents");
+    return answer(catalog, "marketing_agents", service.summary, [
+      "Start with one workflow. Scope, supported integrations, human approvals, and success measures are agreed before launch.",
+      "Agent builds are quoted individually. Existing search and website starting prices are not agent quotes. The proposal separates setup, ongoing management, and software or usage costs.",
+      "The website case studies describe website and marketing projects, not measured results from these agent builds.",
+    ], service.sourceIds);
+  }
+
   if (/\b(?:prices?|pricing|cost|fee|month|term|budget|website project)\b/.test(value)) {
     const pricing = getPublishedStartingPrices(catalog);
     return answer(

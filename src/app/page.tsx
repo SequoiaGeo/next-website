@@ -4,6 +4,7 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import OperatorStory from "@/components/OperatorStory";
 import MarketingAgents from "@/components/MarketingAgents";
+import SequoiaQuestionPanel from "@/components/SequoiaQuestionPanel";
 
 import SnapshotExample from "@/components/SnapshotExample";
 import SnapshotNextSteps from "@/components/SnapshotNextSteps";
@@ -41,6 +42,9 @@ const questions = [
 const primaryButton = "inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3 text-base font-bold text-white hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]";
 
 export default function Home() {
+  const knowledgeEnabled =
+    process.env.SEQUOIA_KNOWLEDGE_ENABLED === "true" &&
+    process.env.SEQUOIA_KNOWLEDGE_KILL_SWITCH !== "true";
 
   return (
     <>
@@ -156,6 +160,9 @@ export default function Home() {
       </section>
 
 
+      {knowledgeEnabled && (
+        <SequoiaQuestionPanel surface="homepage_inline" embedded />
+      )}
       <section id="questions" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-[#0D2318]">Before you build your first agent</h2>
