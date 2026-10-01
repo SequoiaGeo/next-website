@@ -7,12 +7,12 @@ import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
 const serviceLinks = [
   {
-    group: "Marketing Agents and AI Search",
+    group: "GEO and Home Services Marketing",
     items: [
-      { label: "AI Marketing Agents", href: "/marketing-agents" },
       { label: "AI SEO / Search Visibility", href: "/geo-agency" },
       { label: "AI Search Assessment", href: "/ai-search-assessment" },
       { label: "AI SEO by Market", href: "/geo-agency#markets" },
+      { label: "AI Marketing Agents", href: "/marketing-agents" },
     ],
   },
   {
@@ -185,10 +185,10 @@ export default function Navigation() {
           </Link>
 
           <Link
-            href="/marketing-agents"
+            href="/ai-seo-pricing"
             className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-[#1A5C3A] transition-colors"
           >
-            Marketing Agents
+            Services &amp; Pricing
           </Link>
 
           {/* Resources dropdown */}
@@ -346,11 +346,11 @@ export default function Navigation() {
           </Link>
 
           <Link
-            href="/marketing-agents"
+            href="/ai-seo-pricing"
             onClick={() => setMobileOpen(false)}
             className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
-            Marketing Agents
+            Services &amp; Pricing
           </Link>
 
           {/* Mobile Resources accordion */}

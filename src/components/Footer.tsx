@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const services = [
-  { label: "AI Marketing Agents", href: "/marketing-agents" },
   { label: "ChatGPT Ads", href: "/chatgpt-ads" },
   { label: "HVAC SEO", href: "/hvac-seo" },
   { label: "Plumbing SEO", href: "/plumbing-seo" },
@@ -17,6 +16,7 @@ const services = [
   { label: "AI SEO for Roofers", href: "/ai-seo-for-roofers" },
   { label: "AI SEO for Restoration", href: "/geo-for-restoration" },
   { label: "Fresno SEO Agency", href: "/seo-agency-fresno" },
+  { label: "AI Marketing Agents", href: "/marketing-agents" },
 ];
 
 const resources = [
@@ -77,7 +77,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-pale-green/80 text-sm leading-relaxed max-w-md mb-4">
-              Custom AI marketing agents, AI-search visibility, and website improvements for local and home-service businesses.
+              Digital marketing for home-service businesses, with a focus on GEO, AI-search visibility, SEO, and websites. AI marketing agents are available as an additional service.
               Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">

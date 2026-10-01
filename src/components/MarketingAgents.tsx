@@ -4,9 +4,9 @@ import { marketingAgents } from "@/data/marketing-agents";
 export default function MarketingAgents() {
   return <section id="agents" className="scroll-mt-24 bg-white py-16 sm:py-20">
     <div className="mx-auto max-w-6xl px-6 lg:px-8">
-      <p className="section-overline mb-4">Five places to put an agent to work</p>
-      <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Start with the task your team keeps chasing.</h2>
-      <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-700">An agent uses your business context and connected tools to carry out an agreed task. We scope, build, test, and manage that workflow around the way your team works.</p>
+      <p className="section-overline mb-4">Additional offering: AI marketing agents</p>
+      <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">AI support for the work between customer conversations.</h2>
+      <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-700">For home-service teams, an agent uses your business context and connected tools to carry out an agreed task. We scope, build, test, and manage that workflow around the way your team works.</p>
       <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {marketingAgents.map((agent, index) => <article key={agent.id} className="flex flex-col rounded-2xl border border-[#0D2318]/15 bg-[#fafaf8] p-7">
           <span className="text-sm font-bold tracking-widest text-[#1A5C3A]">0{index + 1}</span>

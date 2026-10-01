@@ -11,18 +11,18 @@ import SnapshotNextSteps from "@/components/SnapshotNextSteps";
 import YouTubeFacade from "@/components/YouTubeFacade";
 
 export const metadata: Metadata = {
-  title: "Custom AI Marketing Agents & AI Search | Sequoia GEO",
-  description: "Custom AI marketing agents for local businesses. Follow up with leads, reconnect with customers, create campaigns, and measure results with Sequoia GEO.",
+  title: "Home Services Digital Marketing & GEO | Sequoia GEO",
+  description: "Digital marketing for home-service businesses, focused on GEO, AI search visibility, SEO, websites, and local profiles. Led by former home-service owner Aaron Husak.",
   alternates: { canonical: "https://www.sequoiageo.com/" },
   openGraph: {
-    title: "AI Marketing Agents, Built Around Your Business | Sequoia GEO",
-    description: "Custom agents for lead follow-up, customer reactivation, content, reviews, and advertising performance.",
+    title: "Digital Marketing for Home-Service Businesses | Sequoia GEO",
+    description: "Help homeowners find and evaluate your business through AI search, Google, and a website built around your services.",
     url: "https://www.sequoiageo.com/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Marketing Agents | Sequoia GEO",
-    description: "Custom builds and ongoing management for the marketing tasks that need consistent attention.",
+    title: "Home Services Marketing & GEO | Sequoia GEO",
+    description: "GEO, SEO, websites, and digital marketing for HVAC, plumbing, roofing, and other home-service businesses.",
   },
 };
 
@@ -33,11 +33,11 @@ const snapshotItems = [
 ];
 
 const questions = [
-  ["What does an agent actually do?", "It uses your business information and connected tools to handle an agreed task, such as following up on an open estimate or preparing a campaign. We define what it can do, what needs approval, and when it hands work to your team."],
-  ["Do we need all five agents?", "No. Start with one recurring task and a measurable goal. We confirm whether your tools and process support a useful pilot before proposing a build."],
-  ["Will this work with our existing software?", "We review your tools, available integrations, and access requirements during scoping. Supported connections and any additional software costs are confirmed in the proposal."],
-  ["Who manages it after launch?", "Sequoia offers ongoing monitoring and workflow improvements within the agreed scope. Your team retains control of business decisions, approvals, and customer situations that need a person."],
-  ["Do you still offer AI search and GEO?", "Yes. AI search, website improvements, and broader marketing work remain available. Search helps customers find and evaluate you; agents help your team carry out the marketing work that follows."],
+  ["Who do you work with?", "We focus on home-service businesses, including HVAC, plumbing, roofing, and restoration companies. Aaron brings 13 years of experience owning and operating a home-service business."],
+  ["What is GEO?", "Generative engine optimization helps AI search tools understand and evaluate your business. We work on clear service information, consistent business details, supporting evidence, and technical access. No provider can guarantee an AI recommendation."],
+  ["Do you also handle SEO and other marketing?", "Yes. GEO works alongside SEO, Google Business Profile management, website improvements, paid media, and measurement. Your proposal defines the priorities, responsibilities, and fees."],
+  ["How do we start?", "Book a 15-minute conversation about your marketing priorities, or request an emailed AI Search Snapshot. We review the evidence and agree on a scope before paid work begins."],
+  ["Can you build AI agents for our team?", "Yes, as an additional offering. We can scope a workflow for estimate follow-up, customer reactivation, content, reviews, or advertising analysis, with tool access and human approvals established before launch."],
 ];
 const primaryButton = "inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3 text-base font-bold text-white hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]";
 
@@ -49,15 +49,27 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <MarketingAgents />
+      <section id="services" className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <p className="section-overline mb-4">Digital marketing for the trades</p>
+          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Get found. Earn trust. Make it easier to reach you.</h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              ["GEO and search visibility", "Help Google and AI search tools understand your services, service areas, and the evidence behind your business. GEO, SEO, and local profiles work together.", "/geo-agency"],
+              ["Websites that support inquiries", "Give homeowners clear service information, proof of your work, and a working path to call or request service.", "/web-design-fresno"],
+              ["Marketing direction and measurement", "Coordinate campaigns, paid media, and follow-up around the priorities that matter. Report inquiries and booked jobs where the records support them.", "/fractional-cmo"],
+            ].map(([title, body, href]) => <article key={title} className="rounded-xl border border-gray-200 p-6"><h3 className="text-xl font-bold text-[#0D2318]">{title}</h3><p className="mt-3 leading-relaxed text-gray-700">{body}</p><Link href={href} className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline">Explore {title.toLowerCase()}</Link></article>)}
+          </div>
+        </div>
+      </section>
       <section id="how-it-works" className="bg-[#0D2318] py-16 text-white sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Start with one workflow. Build from there.</h2>
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Start with the marketing problem that needs attention.</h2>
           <ol className="mt-8 grid gap-8 md:grid-cols-3">
             {[
-              ["01. Choose the task", "Identify the recurring task, current process, and result worth measuring. Confirm which tools and data the agent would need."],
-              ["02. Build and test", "Agree on scope, access, approvals, and costs. Test the workflow and human handoffs with your team before a pilot goes live."],
-              ["03. Manage and improve", "Review completed work, exceptions, qualified leads, and booked jobs where tracking supports them. Improve the workflow as your process changes."],
+              ["01. Review the evidence", "Review your website, search presence, and inquiry path. Identify the gaps and the information needed to understand them."],
+              ["02. Agree on priorities", "Define the scope, access, responsibilities, and costs. Implement the agreed search, website, or marketing improvements."],
+              ["03. Measure and improve", "Review completed work, search visibility, inquiries, and booked jobs where tracking supports them. Use the findings to choose the next priority."],
             ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
           </ol>
           <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. No ranking or lead guarantees.</p>
@@ -66,7 +78,7 @@ export default function Home() {
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="section-overline mb-4">Our website and marketing track record</p>
-          <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">The examples below document website and marketing projects. They do not represent results from the agent builds offered above.</p>
+          <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">The examples below document website and marketing projects. They are not claims of guaranteed future results.</p>
           <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Website and marketing work you can inspect.</h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
           <article className="mt-8 grid gap-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 md:grid-cols-[1.3fr_0.7fr] md:items-center lg:gap-12" aria-labelledby="kabam-proof-heading">
@@ -141,6 +153,7 @@ export default function Home() {
         </div>
       </section>
       <OperatorStory />
+      <MarketingAgents />
       <section id="snapshot" className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="section-overline mb-4">Free AI Search Snapshot</p>
@@ -165,7 +178,7 @@ export default function Home() {
       )}
       <section id="questions" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-[#0D2318]">Before you build your first agent</h2>
+          <h2 className="text-3xl font-extrabold text-[#0D2318]">Before we work together</h2>
           <div className="mt-8 space-y-4">
             {questions.map(([question, answer]) => (
               <details key={question} className="rounded-xl border border-gray-200 bg-white p-6">
@@ -180,11 +193,11 @@ export default function Home() {
       </section>
       <section id="contact" className="bg-white py-16 text-center sm:py-20">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">What keeps falling through the cracks?</h2>
-          <p className="mt-5 text-lg leading-relaxed text-gray-600">Bring one recurring marketing task and the tools your team uses. We will work out whether an agent can help and what a first build would involve.</p>
+          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">What needs to work better in your marketing?</h2>
+          <p className="mt-5 text-lg leading-relaxed text-gray-600">Tell Aaron about your home-service business and the marketing challenge you want to solve. We will discuss the next step and whether Sequoia is the right fit.</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-5 sm:flex-row">
-            <Link href="/contact#book" className={primaryButton}>Plan My First Agent</Link>
-            <Link href="/marketing-agents" className="inline-flex min-h-12 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the five agents</Link>
+            <Link href="/contact#book" className={primaryButton}>Book a 15-Minute Call</Link>
+            <Link href="/ai-search-assessment" className="inline-flex min-h-12 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Get My Free AI Search Snapshot</Link>
           </div>
         </div>
       </section>

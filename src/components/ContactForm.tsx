@@ -320,7 +320,7 @@ export default function ContactForm({ showEngagementTerms = true }: { showEngage
                   />
                 </div>
 
-                {hasPreparedDraft && (
+                {(
                   <>
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium text-[#1a1a1a]">Company <span className="text-gray-400">(optional)</span></label>
