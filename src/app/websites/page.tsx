@@ -328,6 +328,23 @@ export default function WebsitesPage() {
         </div>
       </section>
 
+      <section aria-labelledby="website-search-scope" className="bg-white py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 id="website-search-scope" className="text-3xl font-extrabold text-[#1a1a1a]">Website launch and ongoing SEO are different scopes</h2>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <div className="rounded-xl border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-[#1A5C3A]">The website project</h3>
+              <p className="mt-3 leading-relaxed text-gray-600">The proposal defines the pages, content, mobile layout, contact paths, and launch checks. Search foundations include descriptive titles, crawlable service information, internal links, and appropriate structured data. For a replacement site, we review existing URLs and plan redirects where needed.</p>
+            </div>
+            <div className="rounded-xl border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-[#1A5C3A]">The ongoing search engagement</h3>
+              <p className="mt-3 leading-relaxed text-gray-600">Recurring work has a separate agreed scope: reviewing search performance, improving priority pages, reconciling public business information, and checking AI visibility when included. Launching a website does not mean that ongoing SEO or Google Business Profile management is included indefinitely.</p>
+            </div>
+          </div>
+          <p className="mt-6 leading-relaxed text-gray-600">For HVAC companies, <Link href="/hvac-seo" className="font-semibold text-[#1A5C3A] underline">see how the search work fits your services and seasons</Link>. Review <Link href="/ai-seo-pricing" className="font-semibold text-[#1A5C3A] underline">ongoing engagement pricing and exclusions</Link>. A full rebuild is not automatically included in a monthly search engagement.</p>
+        </div>
+      </section>
+
       {/* Case study callout */}
       <section className="bg-[#fafaf8] py-14">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
@@ -336,12 +353,12 @@ export default function WebsitesPage() {
               Case Study
             </p>
             <p className="text-lg font-bold text-[#1a1a1a]">
-              A rebuild that hit page one in its first month
+              A website rebuild with local search and measurement work
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              A firefighter-owned chimney company came to us with a dated template site and zero
-              measurement. We rebuilt it as a migration, protected every ranking it had earned,
-              and Google had it on page one within three weeks of launch.
+              Our published A Fireman&rsquo;s Chimney Sweep case study explains the starting site,
+              migration planning, service-area content, and measurement work. Search visibility
+              is not proof of qualified leads, booked jobs, or AI recommendations.
             </p>
             <Link
               href="/case-studies/firemans-chimney-sweep"

@@ -82,14 +82,15 @@ export default function HvacSeoPage() {
               <span className="text-[#1A5C3A]">Ran an HVAC Company</span>
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              I spent 13 years running Balanced Comfort Heating &amp; Air. I know your seasonality,
-              your CSR challenges, your average ticket, and what an emergency call is worth.
-              That context shapes every digital marketing decision I make for your HVAC business.
+              Help homeowners find your HVAC business when they need a repair, replacement,
+              or maintenance visit. I improve your service pages, Google Business Profile,
+              and website search foundations, then track qualified inquiries and booked jobs
+              where the available records support that connection.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-500">
-              Most vendors treat SEO for HVAC companies as a checklist: update meta tags, build
-              citations, move on. I tie every tactic to a business outcome, not organic traffic
-              numbers. The market data behind that approach is on our{" "}
+              I spent 13 years building and operating Balanced Comfort, a home-service company.
+              You work directly with me to prioritize the services and areas you want to grow,
+              account for seasonal demand, and review what changed. See the market context in our{" "}
               <Link href="/hvac-statistics" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">
                 HVAC industry statistics
               </Link>{" "}
@@ -110,6 +111,22 @@ export default function HvacSeoPage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="hvac-service-scope" className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 id="hvac-service-scope" className="text-3xl font-extrabold text-[#1a1a1a]">What I work on for your HVAC business</h2>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">We agree on the priorities before work begins. Your service mix, service area, existing website, and available records determine the scope.</p>
+          <dl className="mt-8 grid gap-6 sm:grid-cols-2">
+            {[
+              ["Service pages and local search", "Review repair, installation, and maintenance pages, address crawl and mobile-use problems, and improve the approved pages around the services and areas you actually cover."],
+              ["Google Business Profile", "Review categories, services, hours, website links, and business information. Identify corrections and a process for requesting genuine customer reviews."],
+              ["AI-search visibility", "Check relevant customer questions, inspect the sources in the answers, and reconcile conflicting business information. A citation, a recommendation, and an inquiry are different outcomes."],
+              ["Progress you can review", "Review completed changes, remaining priorities, search visibility, and captured inquiries. Report qualified leads and booked jobs when the records verify them, with attribution gaps stated plainly."],
+            ].map(([title, description]) => <div key={title} className="rounded-xl border border-gray-200 p-6"><dt className="text-lg font-bold text-[#1A5C3A]">{title}</dt><dd className="mt-3 leading-relaxed text-gray-600">{description}</dd></div>)}
+          </dl>
+          <p className="mt-6 leading-relaxed text-gray-600">A full website rebuild, paid-ad management, and ad spend are not automatically included. <Link href="/websites" className="font-semibold text-[#1A5C3A] underline">Website projects</Link> and <Link href="/ai-seo-pricing" className="font-semibold text-[#1A5C3A] underline">ongoing search engagements</Link> have a written scope. No rankings or AI recommendations are guaranteed.</p>
         </div>
       </section>
 
