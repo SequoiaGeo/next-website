@@ -5,9 +5,9 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
-  title: "Website Designs That Grab Attention and Convert | Sequoia GEO",
+  title: "Website Design for Plumbers and Home Services | Sequoia GEO",
   description:
-    "Websites built by Sequoia GEO, from-scratch builds and full rebuilds for home service contractors, nonprofits, and local businesses. Built to convert, not just look good.",
+    "Website design and rebuilds for plumbers and home-service businesses. Review real work, service-page planning, inquiry paths, and the scope of a website project.",
   alternates: {
     canonical: "https://www.sequoiageo.com/websites",
   },
@@ -48,7 +48,7 @@ const sites: PortfolioSite[] = [
     industry: "Plumbing Contractor",
     buildType: "Rebuild",
     story:
-      "Full site rebuild for a plumbing contractor. Old site had no clear calls to action, no phone number above the fold, and was losing leads before they ever hit the contact form.",
+      "Website rebuild for an owner-operated plumbing contractor. Review the site and documented case study for its service coverage, contact paths, and the limits of the reported results.",
     accentColor: "#1a3a5c",
     textColor: "#c8dded",
     screenshot: "/kabam-home-page.webp",
@@ -162,6 +162,20 @@ export default function WebsitesPage() {
               Mobile-first, fast load
             </span>
           </div>
+        </div>
+      </section>
+
+      <section id="plumbing-websites" className="bg-white py-16 scroll-mt-24">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#0D2318]">Plumber website design built around the jobs you handle</h2>
+          <p className="mt-5 text-lg text-gray-700">A drain-cleaning request and a planned water heater replacement need different information. We plan service pages around your actual work and service area, then give customers a clear way to call or request help.</p>
+          <div className="mt-8 grid gap-8 sm:grid-cols-2">
+            <div><h3 className="text-xl font-semibold">Agree on the build before it begins</h3><p className="mt-3 text-gray-700">The proposal defines the page list, content and photo responsibilities, existing URL redirects, inquiry routing, measurement setup, and launch checks. We also identify who owns the domain and accounts and who handles maintenance after launch.</p></div>
+            <div><h3 className="text-xl font-semibold">Check the path from phone to inbox</h3><p className="mt-3 text-gray-700">Review mobile navigation, phone links, form delivery, and any booking integration included in scope. Confirm where inquiries arrive and who follows up. A submitted form and a booked job remain separate measurements.</p></div>
+          </div>
+          <p className="mt-6 text-lg text-gray-700">KABAM Plumbing is one example of our work for an owner-operated plumbing business. <Link href="/case-studies/kabam-plumbing" className="font-semibold text-[#1A5C3A] underline">Read the documented case study</Link> and inspect the live site in the portfolio below.</p>
+          <p className="mt-5 text-gray-700">A website project does not automatically include ongoing SEO, ads, or a guaranteed number of inquiries. If you need continued search work, review <Link href="/plumbing-seo" className="text-[#1A5C3A] underline">plumbing SEO and GEO services</Link>. We can scope a repair, rebuild, or ongoing engagement around the verified need.</p>
+          <Link href="/contact#book" className="mt-7 inline-flex rounded-lg bg-[#1A5C3A] px-6 py-3 font-semibold text-white">Discuss your plumbing website with Aaron</Link>
         </div>
       </section>
 

@@ -1636,7 +1636,7 @@ const posts: Record<string, Post> = {
           Plumbing companies have a natural SEO advantage that most trades don&rsquo;t: urgency.
           A homeowner with a broken water heater or a backed-up main line is highly motivated to book
           quickly. They&rsquo;re not comparison shopping for 30 days. They call the first credible
-          plumber they find. Local SEO is the system that makes sure they find you first.
+          plumber they find. Local SEO helps your business compete for those searches, while the website and phone response determine whether an inquiry can move forward.
         </p>
         <p>
           I ran a home services company that included plumbing for 13 years and held California&rsquo;s
@@ -1789,6 +1789,39 @@ const posts: Record<string, Post> = {
         <p>
           You can&rsquo;t fix what you don&rsquo;t measure. Pull these numbers monthly. The trends
           will show where plumbing marketing, intake, and follow-up need closer investigation.
+        </p>
+        <h2>Start With One Service and One Customer Path</h2>
+        <p>
+          Choose a job your team wants and can deliver, such as water heater replacement.
+          Check the relevant service page on a phone: does it explain the work, identify the
+          areas you serve, show your own project photos, and make the next step clear?
+          Then check what happens after an inquiry arrives. A working button is only the beginning.
+        </p>
+        <ul>
+          <li><strong>Search:</strong> Use Search Console to see which queries actually bring people to that page.</li>
+          <li><strong>Inquiry:</strong> Verify that calls reach the right person and forms reach the inbox or CRM your team monitors.</li>
+          <li><strong>Fit:</strong> Separate service requests from vendors, job applicants, and calls outside your service area.</li>
+          <li><strong>Outcome:</strong> Record whether the request became a booked job, and why it did not when that is known.</li>
+        </ul>
+        <p>
+          These checks help distinguish a visibility problem from a website or intake problem.
+          They are a practical review sequence, not a promise of a particular ranking or lead count.
+        </p>
+        <h2>A Plumbing Example You Can Inspect</h2>
+        <p>
+          Our <Link href="/case-studies/kabam-plumbing">KABAM Plumbing case study</Link> documents
+          work for an owner-operated plumbing business, including its rebuilt website and Google
+          Business Profile. Use the example to examine the work and how the measurements are defined.
+          A profile call-button click does not establish a completed call or a booked job.
+        </p>
+        <p>
+          Need help applying this to your business? Review our <Link href="/plumbing-seo">plumbing SEO services</Link>
+          {" "}for ongoing search work, or our <Link href="/websites#plumbing-websites">plumber website design scope</Link>
+          {" "}if the website itself needs attention. They are different scopes, and a new website is not always the first priority.
+        </p>
+        <p>
+          <Link href="/contact#book">Book a 15-minute conversation with Aaron</Link> to discuss
+          your service area, job mix, current provider, and the problem you want verified.
         </p>
       </div>
     ),

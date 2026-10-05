@@ -282,7 +282,7 @@ export default function PlumbingSeoPage() {
               },
               {
                 title: "Technical Health and Indexation",
-                body: "Sitemap errors, pages excluded from the index, slow mobile loads, duplicate URLs, and broken internal links can prevent useful pages from competing. The staging-server redirect above is the class of crawl failure this review is designed to find.",
+                body: "Sitemap errors, pages excluded from the index, slow mobile loads, duplicate URLs, and broken internal links can prevent useful pages from competing.",
               },
               {
                 title: "Authority, Reviews, and Accountability",
@@ -477,6 +477,7 @@ export default function PlumbingSeoPage() {
               { label: "AI Search Visibility", href: "/geo-for-plumbers" },
               { label: "Best Plumbing SEO Keywords", href: "/blog/best-plumbing-seo-keywords" },
               { label: "Marketing Baseline Review", href: "/audit" },
+              { label: "Plumber Website Design", href: "/websites#plumbing-websites" },
             ].map((link) => (
               <Link
                 key={link.href}
