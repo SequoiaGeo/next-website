@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
+import { podcastPostCards } from "@/data/podcast-posts";
 
 export const metadata: Metadata = {
   title: "Blog | Sequoia GEO: Home Services Marketing Insights",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+  ...podcastPostCards,
   {
     slug: "what-are-chatgpt-ads",
     title: "What Are ChatGPT Ads and Should Your Business Run Them?",

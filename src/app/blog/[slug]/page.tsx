@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { podcastPosts } from "@/data/podcast-posts";
 
 interface Post {
   title: string;
@@ -13,6 +14,7 @@ interface Post {
 }
 
 const posts: Record<string, Post> = {
+  ...podcastPosts,
   "what-are-chatgpt-ads": {
     title: "What Are ChatGPT Ads and Should Your Business Run Them?",
     description:

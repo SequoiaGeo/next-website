@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import ClientVideoGrid from "@/components/ClientVideoGrid";
 import YouTubeFacade from "@/components/YouTubeFacade";
+import { podcastPostCards } from "@/data/podcast-posts";
 import { podcastAppearances, tradeMedia, tradeWriting, type MediaItem } from "@/data/media";
 
 export const metadata: Metadata = {
@@ -79,6 +80,18 @@ export default function MediaPage() {
               <span className="mt-6 inline-block font-bold text-[#1A5C3A] underline underline-offset-4">Watch or listen to episode 2</span>
             </div>
           </Link>
+          <div className="mt-10">
+            <h3 className="text-2xl font-bold text-[#0D2318]">Read the episode takeaways</h3>
+            <p className="mt-3 text-gray-600">Articles from our first three conversations. Episode 3&apos;s full interview is scheduled for October 13.</p>
+            <div className="mt-6 grid gap-5 md:grid-cols-3">
+              {podcastPostCards.map((post, index) => <Link key={post.slug} href={`/blog/${post.slug}`} className="rounded-xl border border-gray-200 bg-white p-6 transition hover:border-[#1A5C3A]">
+                <p className="text-sm font-semibold text-[#1A5C3A]">Episode {index + 1}</p>
+                <h4 className="mt-3 text-lg font-bold text-[#0D2318]">{post.title}</h4>
+                <p className="mt-3 text-gray-600">{post.excerpt}</p>
+                <span className="mt-4 inline-block font-semibold text-[#1A5C3A] underline">Read the article</span>
+              </Link>)}
+            </div>
+          </div>
         </div>
       </section>
 
