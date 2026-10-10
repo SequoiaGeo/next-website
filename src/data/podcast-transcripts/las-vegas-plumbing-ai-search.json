@@ -1,0 +1,172 @@
+[
+  {
+    "timestamp": "0:00",
+    "seconds": 0,
+    "text": "Hey, it's Aaron with Sequoia GEO. And today we're going to run some searches through ChatGPT and find out what it's showing for an emergency plumber situation in Las Vegas. And so this uh send out a help contractors that are trying to understand why they are or are not, mostly are not, showing up in AI search and potentially what you can do about"
+  },
+  {
+    "timestamp": "0:30",
+    "seconds": 30,
+    "text": "it. So, uh first things first, to start this off and if you were going to do this yourself, what I would recommend in chat, and you can also do this in Gemini, is set this up as a temporary chat. So, that's up here, you click this little bubble, that turns it on, and then you go to unpersonalize. So, it is not using anything that's uh been searched or uh that you've done in chat before as a reference. And so, here we've got our temporary chat, we've already got our"
+  },
+  {
+    "timestamp": "1:01",
+    "seconds": 61,
+    "text": "prompt in here as well, \"I need an emergency plumber for a toilet overflowing in Las Vegas.\" And go. All right, so we're sending that prompt over to chat. It's going to start doing its research here, and it's going to give us a couple recommendations. All right, so it came back pretty quick, uh four recommendations for us, uh Rodeo, Impact, Hips, and Pure. And [snorts] you'll notice that it's given us the star rating, the reviews,"
+  },
+  {
+    "timestamp": "1:31",
+    "seconds": 91,
+    "text": "and uh if they're open 24/7. And because it's associating that with emergency. Now, it's only about 2:00 right now in Las Vegas, so it's not that we need the 24/7, but I think because we use the term emergency, that's that's why it brought that up. Uh so, it gives me the phone numbers here, I can also go here and click on their website and so forth. Um but these These only four that it listed. If we scroll down, uh it's got some recommendations for you the homeowner on what to do."
+  },
+  {
+    "timestamp": "2:02",
+    "seconds": 122,
+    "text": "And um it acts asks a uh follow-up. It actually prompts you what to say uh when you call. Now, for this search, it's not giving us our sources. In some searches, it will. And if you can get the sources, you can start to see what other websites or companies that it checked before giving you these four. And so, if you're a plumbing company, specifically in Las Vegas, it doesn't"
+  },
+  {
+    "timestamp": "2:33",
+    "seconds": 153,
+    "text": "really matter. It could be any kind of home service company as well. No matter what city you're in, and you run a search like this as a customer might, you'd want to find out, you know, why aren't you ranking? Um what does what's also interesting is, depending on the search term, just because it's related to plumbing, doesn't mean that these four companies are going to pop up every time. And so, if we said uh I need a new tankless water heater in Las Vegas,"
+  },
+  {
+    "timestamp": "3:12",
+    "seconds": 192,
+    "text": "and sent that over to chat, it's going to search that for us, and we'll see which companies it comes up with. All right. These are good local installers to call for quotes. So, we've got Nothing But Water Heaters, Water Heater Pros, Rodeo Plumbing of Las Vegas, and Ninth Island Plumbing. So, let's see here. Actually, we've got Rodeo Plumbing of Las Vegas showing up twice. So,"
+  },
+  {
+    "timestamp": "3:43",
+    "seconds": 223,
+    "text": "just from this brief review, it looks like Rodeo Plumbing has spent some time and probably some money understanding how they show up in AI search because you'll notice that uh the companies it's recommending have got 700, 500, 1300 reviews. Up here, I think they're even lower. Um 350, 422. I mean, a fair amount of reviews, no doubt. But"
+  },
+  {
+    "timestamp": "4:13",
+    "seconds": 253,
+    "text": "in a large market like Las Vegas, there are companies who have many many more reviews than this. So, it's not just basing how they rank on reviews alone. Now, let's see if it gave us the sources over here. Yes, it did. Okay. So, let's check these sources here. And it came up with 23 sources. And these are all the companies that chat looked at before giving us this information. It actually pulled some installation cost"
+  },
+  {
+    "timestamp": "4:43",
+    "seconds": 283,
+    "text": "data uh from this uh costadedier.com website at quite a few times. Uh Get Low's in there, uh Ideal Services, and a few others down here as well. Um you see a couple websites showing up more than once. Um but what it doesn't clearly tell us is why it recommended some of these over others. So, let's ask it. Why these companies over others?"
+  },
+  {
+    "timestamp": "5:15",
+    "seconds": 315,
+    "text": ">> [laughter] >> And you can do the same. Actually, you know, um what's also interesting here we noticed that cost data uh it's saying right here a complete tankless install in Las Vegas 2250 to 5550. Gas systems potentially running higher. Um and it's re- recommending what kind of gas unit to use. So, there's a lot of information that chat is providing to a customer"
+  },
+  {
+    "timestamp": "5:45",
+    "seconds": 345,
+    "text": "that if I don't know anything about tankless water heaters, I'm going to think, okay, well, I am going to ask about these things. And I'm going to look to make sure that the quote includes the permit, removal, gas line charges, venting, condensate drain, and warranty. Which is a very important note for the estimates that you're sending to customers. Let's say the company called you out. They saw your truck, saw your yard sign, you worked with them in the past, but now they're using AI to help them refine their bids"
+  },
+  {
+    "timestamp": "6:17",
+    "seconds": 377,
+    "text": "and determine which company they're going to end up choosing. Well, if Chat is telling them here to look out for these things, and your estimate doesn't specifically say old heater removal or gas line changes or venting, then it may actually look at another estimate that does clearly call those out, assuming that you may not be doing those things. Now, most companies, you're going to remove the old heater uh, and to put in the new tankless water"
+  },
+  {
+    "timestamp": "6:47",
+    "seconds": 407,
+    "text": "heater, and you're going to haul it away. But, because it didn't specifically state that, Chat's not going to assume that you're going to do that. Okay, so let's go down here. Why these companies over others? Uh, and it gives us the rationale. Um, not simply because they were plumbers with high ratings. They weren't meant as definitive top four in all of Las Vegas. So, it's not giving us It just told us it's not giving us the top uh, four top plumbing companies in Las Vegas. Uh, it"
+  },
+  {
+    "timestamp": "7:18",
+    "seconds": 438,
+    "text": "said water heater specialization, demonstrated tankless work, review history, licensing information. Now, licensing permitting information. Where's it getting that from? I didn't see in its sources anything about city or county. So, those companies must be talking about the permitting or licensing requirements in those areas, um which is another layer."
+  },
+  {
+    "timestamp": "7:49",
+    "seconds": 469,
+    "text": "Um so then it goes through and it talks about uh specifically each one of these companies, what uh stood out about them versus um you know, the others. And so again, you can go through AI, um whether it's ChatGPT or Gemini. In Gemini, you can do something very similar where you're also looking at a temporary chat. And that's ultimately what you want to use. Um and you notice here it's it's rec-"
+  },
+  {
+    "timestamp": "8:21",
+    "seconds": 501,
+    "text": "recommending three written quotes. I get the exact model number and BTU rating. And and then um you know, most of the time now their customers going to be feeding this back into AI. If they use it to find you, assume they're going to use it to go through your proposal. And I've been saying that for months. Um hopefully some of you have started to uh adapt that process so that you know kind of what Chat or Gemini might say"
+  },
+  {
+    "timestamp": "8:52",
+    "seconds": 532,
+    "text": "about your proposal when you send it to customers. Um so why these companies over others? Now, you can go on and continue this conversation with Chat and say, \"How would I get my company to rank and be recommended if if it's not here now?\" >> [snorts] >> And it We can give it your company name, your company website and it will actually go through and create a list of"
+  },
+  {
+    "timestamp": "9:25",
+    "seconds": 565,
+    "text": "hey, here's why. These are the things that I saw on your site. These are the reasons that I didn't recommend you. And here's here are some of the things that I was looking for. And so yeah, you can spend the time and go back and forth with uh chat or Gemini or Claude or Grok or any number of the different AI platforms that are out there now. Um but, you know, and then actually just based on this generic question we asked,"
+  },
+  {
+    "timestamp": "9:55",
+    "seconds": 595,
+    "text": "it came back with make your company company unmistakably relevant to the exact searches you want. So, a little bit of research is going to be required there for you to go in and say, \"Okay, what is my customer going to search?\" Um I was having a conversation with a plumber in Southern California on Facebook. This is about 2 weeks ago. And the customer had searched uh cuz he had a screenshot of their uh ChatGPT session."
+  },
+  {
+    "timestamp": "10:25",
+    "seconds": 625,
+    "text": "Uh the customer had searched, \"Recommend a plumber for a new HVAC system.\" I don't know why a customer would want a plumber to put in their air conditioning system, but that's what they searched. And so, even if it doesn't make sense to someone in the industry, uh there are going to going to be questions and queries that you're not thinking of because you're in the industry. And so, um"
+  },
+  {
+    "timestamp": "10:57",
+    "seconds": 657,
+    "text": "assume that if a customer's gotten a quote from you uh for a tankless water heater, and you included the model number, maybe you deal with Navien. And they go in and search that Navien brand, who installs it, what's it going to cost, assume that chat is going to give them more information about that. I mean, we we just simply asked about tankless water heater up here. It didn't specify type or installation method or location, and"
+  },
+  {
+    "timestamp": "11:28",
+    "seconds": 688,
+    "text": "it's given us a range of 2,500 to 5,500. I am certain that there are a significant amount of companies in the Las Vegas area um because I know a few of them that are well above that 5,500 mark. And so, they would look at that number and go, \"Whoa, wait, what about this? What about this? What about this?\" Um but understand this is what chat is telling customers when they search. Um if you want to establish"
+  },
+  {
+    "timestamp": "11:59",
+    "seconds": 719,
+    "text": "a different cost that would be something you could put on your site uh if you list your pricing online. And then that might be uh helpful for you. Now, if you're charging $20,000 for a tankless water heater and it's saying five that could be a challenge, right? So, those are some of the things to consider. Um make sure ChatGPT can actually crawl your website. So, depending on your host hosting"
+  },
+  {
+    "timestamp": "12:29",
+    "seconds": 749,
+    "text": "settings you can actually tell AI bots, \"Don't crawl my website.\" And if your website is set up that way it won't. But that means you're not going to show up in AI. And so, understand that some of those uh settings are important to understand um when considering whether or not you show up in AI. And then uh this one's interesting. Okay, we're on ChatGPT. This is a product by OpenAI."
+  },
+  {
+    "timestamp": "12:59",
+    "seconds": 779,
+    "text": "It is recommending that you strengthen your Google Business Profile aggressively. Which is the first workshop video that I made um when I just got started was on improving your Google Business Profile and the importance of Google Business Profile. Um Google rankings and ChatGPT recommendations aren't the same thing. However um even to ChatGPT, it's saying that your Google Business Profile is very important. And so, aggressively is an"
+  },
+  {
+    "timestamp": "13:30",
+    "seconds": 810,
+    "text": "interesting term there. Um, but making sure that it's up-to-date and um, you're posting on it frequently, you're getting relevant reviews on that platform as well, and then responding to those reviews. All of those things are important. Um, get get reviews, as we just talked about, and then make sure your business identity is consistent everywhere. Um, this work is is like related to citations. Um, and so, everywhere that you're"
+  },
+  {
+    "timestamp": "14:02",
+    "seconds": 842,
+    "text": "mentioned online needs to be consistent. I did an assessment for a foundation company out of Texas last week, and they had three different company names on their website. Not on Yelp and BBB and these other places out in the, you know, in the world, but on their own website, they had three different company names. And so, what do you call that company, right? How how do you even know what to call that company if that's the case?"
+  },
+  {
+    "timestamp": "14:33",
+    "seconds": 873,
+    "text": "And getting that cleaned up is going to be the first order of business. And so, pretty straightforward there. However, it may not be obvious unless these are things that you're actively looking for. Um, show evidence of expertise, not just SEO copy. And that last piece is is interesting because of chat and AI now, it's easier than ever to create content. It's also easier than ever for your content to sound like everyone else's"
+  },
+  {
+    "timestamp": "15:04",
+    "seconds": 904,
+    "text": "and sound very generic. Use your unique experiences. You're out in the field, you know this type of housing stock, you know this age of homes for the city that you're in, for the neighborhood that you're in. Again, understanding what customers may search. Uh, and so, if you've got a name for the neighborhood that you live in, um, that may be what customers are using to search for your services if, uh, they're looking for that specific area. You know, you think about, um,"
+  },
+  {
+    "timestamp": "15:36",
+    "seconds": 936,
+    "text": "uh, down in used to live in San Diego, and there's a lot of different pockets and neighborhoods. San Diego's a very big place. And so, um, the homes that are in North Park are going to be significantly different, uh, in terms of, uh, what they're looking for, what they need as opposed to homes that are, uh, further inland. Or closer to the coast. And so, understanding those differences, uh, is important. And showing that you have expertise and that you understand"
+  },
+  {
+    "timestamp": "16:08",
+    "seconds": 968,
+    "text": "those differences needs to be visible on your website. So, it's some of it is getting what's out of your head, what's in your CRM, whether that's Service Titan or Housecall Pro or Jobber, whatever it is, getting those customer experiences onto your website. And there's a right way to do that. So, um, I hope this has been interesting for you and you've kind of understood a little bit more about what it takes to rank on AI search. Again, my name is Aaron with Sequoia GEO. Happy to help. If there's"
+  },
+  {
+    "timestamp": "16:39",
+    "seconds": 999,
+    "text": "anything I can do, you can head over to my website at sequoiageo.com. I do provide a free assessment of what's going on with your AI search rankings and I'd be happy to provide you that assessment, no cost. I don't need any logins. It's all publicly available information and I have a specific process that I follow to search, uh, AI not only AI, but the web for what's going on with your business and your public display online. So, thank you so"
+  },
+  {
+    "timestamp": "17:10",
+    "seconds": 1030,
+    "text": "much for watching. I hope this was helpful and I'll see you next time."
+  }
+]

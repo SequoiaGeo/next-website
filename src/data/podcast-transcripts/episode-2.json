@@ -1,0 +1,272 @@
+[
+  {
+    "timestamp": "0:01",
+    "seconds": 1,
+    "text": "Hello and welcome to the second episode of a chat with chat. My name is Aaron with Sequoia GEO and with me today is our co-host ChatGPT. >> Hi Erin and hi everyone. I'm ChatGPT. Glad to be here. Excited to dive into today's conversation with you. >> Excellent. And a quick update for everyone. I did switch from Astra Light, which we were using last week, over to"
+  },
+  {
+    "timestamp": "0:31",
+    "seconds": 31,
+    "text": "Soul 6, which chat, that's the newer model of Soul. Is that correct? >> Let me check that quickly. >> Yes. If you mean GT6 Soul, that's a newer generation of Soul. For clarity though, Soul and Astra are different model lines, so I'd probably introduce it as a switch from Astrolite to GT6 Soul. Okay, that's what I thought I did. I'm not here to argue with you, Chat. Come on, let's keep it professional."
+  },
+  {
+    "timestamp": "1:01",
+    "seconds": 61,
+    "text": ">> You're right. And my apologies if that came off nitpicky. Sounds good. Switch to GBT6 soul. >> All right, >> what's next on the agenda for episode two? >> Yeah, let's get to what the meat of the content will be for today. So earlier this week I observed a interesting pattern when I was working with Gemini in terms of searching for it was an alternative to a software that I work with. So I was looking for alternatives to this software trying to basically"
+  },
+  {
+    "timestamp": "1:34",
+    "seconds": 94,
+    "text": "recreate what I had heard a customer had done in order to find that company. And when searching in Gemini Flash, I found that my sources were dramatically different than what I found searching in Gemini with the Pro model. What are your thoughts on the difference in sources and it wasn't there was no overlap whatsoever. The the types of sources from Flash were review sites whereas the"
+  },
+  {
+    "timestamp": "2:04",
+    "seconds": 124,
+    "text": "types of sources for Pro were the actual websites themselves. What was I seeing there? What can you give me any feedback on that? >> Let me take a look. That's striking. My best take is the models just took different routes. Flash may have treated alternatives as a comparison task and drawn review sites while Pro may have checked vendor sites for capabilities. Also, the links shown in the Gemini app"
+  },
+  {
+    "timestamp": "2:34",
+    "seconds": 154,
+    "text": "can include related sources, so they aren't always a complete record of what was used. For the podcast, I'd frame it as the same company can serve us through review roundups in one answer and through its own site in another. It's worth repeating the same prompt a few times before calling it a consistent pattern. >> I completely agree. Yes. So, it just goes to show that when you're working with generative engine optimization or AI search, it's not just about the type"
+  },
+  {
+    "timestamp": "3:04",
+    "seconds": 184,
+    "text": "of AI that you're using, whether it's ChatGPT or Gemini or Claude. the the model that you're using to search with could produce wildly different results depending on how it's searching and where it's searching for those answers. And so for today, I actually wanted to demonstrate this. I wanted to actually pull in a temporary chat, which I've got right here. And with that, it's the prompt is"
+  },
+  {
+    "timestamp": "3:38",
+    "seconds": 218,
+    "text": "find me an HVAC company in Phoenix for a problem with my AC unit. Now, chat, I know that you can't see this, so I'll go ahead and dictate to you what I'm seeing, and then we can discuss kind of its answers and results. So, I'm going to go ahead and hit search first with the Gemini flash model. >> Okay, let me check that with you. Go ahead with the flash result. I couldn't see the Gemini window from here. So tell me which companies it names and what kinds of sites show up in the links."
+  },
+  {
+    "timestamp": "4:09",
+    "seconds": 249,
+    "text": "Yeah, >> we can compare from there. >> So we've got our recommended Phoenix HVAC companies. Parker and Suns Ghetto Air Conditioning and Plumbing, George Brazil, AC by Sam LLC. That seems like an outlier there because these other three are huge names in the industry. And then you've got AC by Sam. So, let's take a look at our sources. Here we go. All right. And so, we've got 2 3 4 5 6 7"
+  },
+  {
+    "timestamp": "4:40",
+    "seconds": 280,
+    "text": "8 10 11 sources in here. Two of the sources are AC directly from AC by Sam's website. It's interesting. Some of the sample copy actually includes an Mdash in the AC by Sam LLC website. There's a thumbtack link. There's two four from Ghetto, two three from Parker and Suns and then actually a third from AC by Sam which is all the way at the top. Now question"
+  },
+  {
+    "timestamp": "5:12",
+    "seconds": 312,
+    "text": "when is there a ranking is there does it make any difference how these sources are ranked? Does that mean that Gemini saw that AC by Sam LLC page first or are these sources in no particular order? >> I can check that for you. I wouldn't read the source list as a ranking. So AC by Sam appearing first doesn't mean it was found first or trusted most. What's solid to say is Flash recommended a"
+  },
+  {
+    "timestamp": "5:43",
+    "seconds": 343,
+    "text": "smaller company alongside three big names and several links came from that company's site. The useful test is which claim each link supports, not its position. Next step, run the same prompted probe and compare companies claims and links rather than treating the first source as a score. Okay, so let's do that. We're going to open a new pro chat here. Switch over to temporary, switch our model to pro, and then we're going to insert the same prompt and go."
+  },
+  {
+    "timestamp": "6:13",
+    "seconds": 373,
+    "text": "All right, searching the web now. It's expected to take a little bit longer. Is there anything you can tell us about how Gemini searches in Flash versus Pro? >> Let me check that. Quick note for context. Google does say Flash and Pro have different speed and reasoning strengths, but there's more to it. Google says Flash is tuned for speed, while Pro generally takes longer and can reason more deeply. Their docs also say"
+  },
+  {
+    "timestamp": "6:44",
+    "seconds": 404,
+    "text": "a model can decide whether to search, generate one or more queries, and use those results. So, two models could take different paths from the same prompt. What Google doesn't tell us is exactly which searches the Gemini app ran here. So, the strongest comparison is what you're doing, the recommendations, claims, and links that appear on your screen. >> Okay. All right. So, the pro search is completed. And actually this time AC by Sam LLC is ranked first. Then we've got"
+  },
+  {
+    "timestamp": "7:14",
+    "seconds": 434,
+    "text": "Ghtle Parker and Suns. And then a new company has come in at Rightway. What's surprising me is that when I look at the sources after searching under Pro, I only see four sources this time. My expectation was that when using Pro, I would actually have significantly more sources. As I've seen in the past when I've run searches like this to review sources, sometimes 140 different sources"
+  },
+  {
+    "timestamp": "7:45",
+    "seconds": 465,
+    "text": "when I'm running the pro model. This time I only got four, which I find curious. And it's one per company they recommended. So AC by Sam, Ghetto, Parker and Suns, Rightway Heating, Cooling, and Plumbing each had one site, one page that was basically pulled by Gemini. What are your thoughts on that? Let me [snorts] take a look. That's the key surprise here. Pro took longer, but showed four links versus Flash's 11. So"
+  },
+  {
+    "timestamp": "8:16",
+    "seconds": 496,
+    "text": "more reasoning time didn't mean more displayed sources. Also, I'd say listed first rather than ranged first. The most telling difference is Rightway replacing George Brazil, while three companies appear in both answers. That's a good example of variation, but not yet proof of a stable flash versus pro pattern. So, I'm going to paste in the sites directly that Pro gave us for each of these companies because I would like to know what your thoughts are on the"
+  },
+  {
+    "timestamp": "8:49",
+    "seconds": 529,
+    "text": "landing pages that we were given because Parker and Suns is the only one out of the four where we actually ended up on their homepage. The others appear to have some tracking code associated to it and there are specific AC repair pages whereas the Parker and Suns page was the homepage for Parker and Suns. >> Let me check those pages with you. Paste those four links when you're ready. I'll"
+  },
+  {
+    "timestamp": "9:19",
+    "seconds": 559,
+    "text": "check whether H1 actually covers AC repair, what evidence it gives homeowner and what those tracking parameters really indicate. The homepage can still be relevant, but a dedicated repair page might answer this particular prompt more directly. From the first two links, both fit the prompt closely. They go to feeding AC repair pages and the highlighted text marker is in tracking. Redways is also a feeding AC repair page with emergency repair support. So that's three focused and Parker and Suns left"
+  },
+  {
+    "timestamp": "9:50",
+    "seconds": 590,
+    "text": "compare. Small naming detail, the site spells it right way. Could you paste the Parker and Suns link so I can compare all four? Now we can see the distinction. AC by Sam, Gattle, and Rightway each have a dedicated Phoenix AC repair page. Park and Sun's homepage is broader, but it still names Phoenix. Mentions HVAC repairs and cooling, offers 24/7 service, and includes a customer account of an AC repair. So the homepage can give enough relevant info"
+  },
+  {
+    "timestamp": "10:20",
+    "seconds": 620,
+    "text": "for this broad prompts while the focus pages make the city and service match more explicit. We can tell from these four links that one page type cause the company to be recommended or listed higher. Are there similar elements on each of these four pages that other than the city name because that's pretty easy for any company to do which would have helped us to understand why Gemini picked these four companies under the pro model and three of these four were"
+  },
+  {
+    "timestamp": "10:51",
+    "seconds": 651,
+    "text": "selected under flash as well. Let me check that the overlap makes those common page signals worth checking, but I'm separating the page content from any claim about why Gemini picked them. Yes, beyond Phoenix, they all show three basics. They repair cooling systems, they can respond when help is needed, and there's a clear way to contact your book, plus trust signals like reviews or guarantees. The three dedicated repair"
+  },
+  {
+    "timestamp": "11:21",
+    "seconds": 681,
+    "text": "pages also name specific problems and fixes. Parker and Suns covers repair more broadly, but still signals 247 help, an AC repair account. That explains how they could answer the prompt, not why Gemini chose these four over others. Two runs can't isolate the codes. and the additional code at the end of the URL, the hashtag colon and then text"
+  },
+  {
+    "timestamp": "11:51",
+    "seconds": 711,
+    "text": "equals comprehensive 20% so on and so forth. What is that? >> Let me double check that detail. It's a text fragments meaning scroll to and highlight these words. The percent 20 just means a space in the ghetto link. It points to the comprehensive AC repair services passage. It's not attracting and you can remove everything from the hash onward and still open the same page. >> Why did Gemini include it in the URL?"
+  },
+  {
+    "timestamp": "12:24",
+    "seconds": 744,
+    "text": ">> Let me check. Most likely to drop you on the exact passage relevant to its answer. So you don't have to hunt through the page. It shows what it's pointing you toward, not what I found first or exclusively. Okay, what would be the next step in our investigation here? >> Let me take that. I'd test whether this difference repeats. Run the C Phoenix CX Chrome three more times in fresh temporary chats with Flash than three"
+  },
+  {
+    "timestamp": "12:54",
+    "seconds": 774,
+    "text": "with Pro. Track the companies, the order, how many sources are shown, company sites versus third party sites. If the model pattern stays different, that's stronger. If it varies within the same model, the takeaway is one AI searches snapshot, then make the problem more specific, like my AC is blowing warm air. >> All right, so I'm going to go back to flash and we're going to search this again and let's see what results we get. And again, we're using temporary chats, so it shouldn't be seeing"
+  },
+  {
+    "timestamp": "13:25",
+    "seconds": 805,
+    "text": "the chats that we had done previously. And this is actually quite surprising. So ran the same prompt again and the same four companies that showed up when we ran this the first time under flash are showing up again. Parker and Suns George Brazil is now in second position instead of third like it was last time. And Gtle has swapped places with it. And then fourth is AC by Sam."
+  },
+  {
+    "timestamp": "13:55",
+    "seconds": 835,
+    "text": "Okay, let's do this again. Actually, let's double check those sources. And this time we've got two five sources. Okay, we're going to copy that prompt. New chat. Run it again in flash. Make sure that we're on temporary. Okay, running it again. Park and suns ghetto George Brazil AC by Sam. This is pretty much given us a clear signal that if someone's using"
+  },
+  {
+    "timestamp": "14:26",
+    "seconds": 866,
+    "text": "Flash Google Gemini and they're searching this prompt, find me an HVAC company in Phoenix for a problem with my AC unit. These are the four companies it looks like it's going to get. Okay, this is a little bit different of a format this time. Like it was three companies instead of four. I clicked on the Okay, more options. It didn't do anything. And then it didn't give us a option to review sources this time. What are your thoughts on this?"
+  },
+  {
+    "timestamp": "14:58",
+    "seconds": 898,
+    "text": ">> Let me take a look. I describe this as promising repeatability for this prompt today, but not something I generalize yet. The first two flash runs matched on four companies with a small order swap. The latest run changed format, showed three companies, and had no sources banned. Google says sources aren't provided for every response, so missing links don't prove it used no web info. For the episode, I'd say the overlap was strong, but order, count, and visible sources varied. Which three showed up in"
+  },
+  {
+    "timestamp": "15:29",
+    "seconds": 929,
+    "text": "the last run? Then we can state the overlap precisely. >> All right. So, I ran it again under flash and this time we had alien air conditioning and heating pop up. I'll paste in that page so that you can take a look at that. I see the Alien Air Conditioning homepage with highlighted text about technicians and recommendations. Let me check the page itself before we connect it to the run. Alien Air's homepage has the same kind of elements. Phoenix cooling repairs, 24/7 emergency availability, reviews,"
+  },
+  {
+    "timestamp": "16:00",
+    "seconds": 960,
+    "text": "credentials, contact info. The highlighted claim is about non-commission technicians, which is a trust claim on their own page, not independent proof. Was Alien Hero one of the three in that last Flash answer? >> Yeah. So, we had Ghtle pop up again, Parker and Sons pop up again, George Brazil pop up again, and then Alien jumped in there as well where we had not seen that before. >> So, that's still heavy overlap, but with"
+  },
+  {
+    "timestamp": "16:31",
+    "seconds": 991,
+    "text": "a new entrance on the third run and presentation changes, I'd call that overlap, but not a guarantee. The consistent bits across those pages are clear repair intent, 24/7 availability, and quick contact, plus trust scenes. For the episode, I'd frame it as repeated tests showed overlap plus churn. So, treat a single AI answer as a snapshot and check a few runs. Yeah, it seems like we've got some repeatability here with that prompt within Flash. Now, we could continue and"
+  },
+  {
+    "timestamp": "17:04",
+    "seconds": 1024,
+    "text": "run the same type of thing through Pro and see if it gives us different results. My thesis coming into this podcast was if you run Flash versus Pro, the sources are going to be different and most likely your answers are going to be different because those sources are different. But we haven't seen that today. Now, further testing is definitely needed because one run on Pro does not equal grounds for determining what's happening, but from what we're"
+  },
+  {
+    "timestamp": "17:34",
+    "seconds": 1054,
+    "text": "seeing in Flash, you can get some repeatability when using the same prompt in the same model. And so, I think we've at least come to some kind of conclusion on that today. Of course, should we run it 50, 100 times? Yeah, we would have more certainty if we did that. How quickly would something like that change is another question because at the end of the day, we want to come back to for"
+  },
+  {
+    "timestamp": "18:04",
+    "seconds": 1084,
+    "text": "our business owners, our marketers out there, how can I get a handle on improving my generative engine optimization when there's a lot of uncertainty out there about what it is in the first place? >> Let me take that. The live runs do support a narrower conclusion than your original thesis. Repeatability with some chart, not always those four and not necessarily different sources, different answers. For a business owner, I turn"
+  },
+  {
+    "timestamp": "18:35",
+    "seconds": 1115,
+    "text": "that uncertainty into over a routine. Make your site clear about each service location, urgent problem, and how to book. Back it with reviews, credentials, and consistent business info. And track a few real customer prompts across models every few weeks to see trend lines. that gives you something actionable without pretending there's one fixed AI rating. >> And from the pages that I shared, is there are we developing a best practices here for that prompt to understand"
+  },
+  {
+    "timestamp": "19:05",
+    "seconds": 1145,
+    "text": "what's typically getting these pages sourced? Let me think about that. Yes, the pages do give us a useful checklist. Yes, we're developing practical page guidelines, but not proven selection factors. The shared pattern is Phoenix coverage, AC repair specificity, urgent availability, trust evidence, and a clear call or book step. For this prompt, make those facts unvisible on a real repair page."
+  },
+  {
+    "timestamp": "19:36",
+    "seconds": 1176,
+    "text": "Describe the problems you actually handle and bad claims with verifiable detail. Then see if it's cited over repeated runs. to learn what distinguishes those picks. Next step is comparing them with qualified Phoenix HVAC companies it did mention. >> Yeah, that's a good question because there are you could probably find out faster. How many HVAC companies are there in Phoenix? >> Let me check that quickly. A reasonable"
+  },
+  {
+    "timestamp": "20:06",
+    "seconds": 1206,
+    "text": "working figure is several hundred. One Phoenix directory counted 748 listings in August. Another showed 793 active licenses in September, though some firms pulled more than one. For the podcast, I'd say hundreds of HVAC businesses compete in Phoenix. Yet, Gemini named only a handful each time, and avoid a precise total unless we define the market. >> Okay. Yeah. Seeing only four of those get re recommended"
+  },
+  {
+    "timestamp": "20:36",
+    "seconds": 1236,
+    "text": "I is definitely something that companies need to be aware of because now the direction that we're heading with the announcement of DOTS Meta's Muse has been out for a little bit now. You've got all of these [clears throat] personal agents coming online. You've got Google coming out with Gemini Spark as well at some point soon. customers are going to be using these agents which are probably going to be"
+  },
+  {
+    "timestamp": "21:08",
+    "seconds": 1268,
+    "text": "basing their searches in a similar fashion to what we're seeing right now like with these results today. Is that do you think that's a fair statement? Let me take that. Yes. As a directional concern, that's fair. Those launches show a systems moving from answers toward acting for users. So being discoverable and verifiable online could matter a lot, but we don't know they'll choose companies the same way this Gemini chat did. Agents may weigh"
+  },
+  {
+    "timestamp": "21:40",
+    "seconds": 1300,
+    "text": "location, price, reviews, booking, availability differently. As safe on air line is, this test shows how AI can narrow hundreds of options to a few names. So businesses should test whether they appear and not assume all agents search alike. >> Now you mentioned price in your last answer. Did the sites that I shared with you all have pricing on those pages? >> Let me check those pages for pricing specifically."
+  },
+  {
+    "timestamp": "22:10",
+    "seconds": 1330,
+    "text": "No, I mentioned price as something a future agent might consider. Not a shared feature of these pages and I should have been clear. None of the four Prol pages gave a standard AC repair price. One quotes after diagnosis, one shows discount. Others make general pricing claims. So today's test gives us no evidence that price drove these recommendations. Though an agent that can book might weigh price if it's available. >> That's kind of the general consensus"
+  },
+  {
+    "timestamp": "22:40",
+    "seconds": 1360,
+    "text": "right now is that you've got to have pricing on your website because AI is going to more likely recommend you if you have pricing on your website. We just didn't happen to see that today. So, I guess what I'd like to wrap up with are give me the five things that were consistent across the sites that I shared with you that Gemini Flash had sourced."
+  },
+  {
+    "timestamp": "23:10",
+    "seconds": 1390,
+    "text": "Five consistent things across those pages. They serve Phoenix. They repair hasty units. They handle urgent problems quickly. They include trust signals like reviews or credentials. and they give a clear way to call or book. >> So, no real magic sauce then. This is all pretty straightforward stuff here, right? >> More hygiene than heck. Clear service pages, fast contact, trust signals. The work is doing the basics well than testing prompts and tightening weak spots."
+  },
+  {
+    "timestamp": "23:41",
+    "seconds": 1421,
+    "text": "Now, when you said they handle urgent prompts quickly, how could you tell >> from what the pages say? 247 emergency wording, same day claims, things like that. That's marketing language, not verified performance. >> But the fact that all of them stated that stood out to you. >> Exactly. For an emergency AC repair prompt, that promise matches what the user is asking for. So, it's a plausible"
+  },
+  {
+    "timestamp": "24:11",
+    "seconds": 1451,
+    "text": "shared signal. >> All right. Why don't we have you run the same prompt that we were using for Gemini? And just out of curiosity, I'd like to see what you come up with. >> Let me try it with web search. One company I'd put on the short list is Champion Air. Their site says Phoenix AC repair plus 247 emergency support and an $89 repair diagnostic that's waved with proof of repair. Another option I found"
+  },
+  {
+    "timestamp": "24:41",
+    "seconds": 1481,
+    "text": "is Dawn Air, which says it serves your Phoenix and handles AC repairs and emergency service. I haven't checked actual availability or independently verified those claims. Interesting difference from Gemini's recurrent 4, but not a clean model test since I've already seen your results and the search tool isn't the same. Yeah, I'm just curious to see what you were going to come up with and then Champion Air and Dawn Air. Yeah, it's interesting that those two popped up and for Gemini, which we were using"
+  },
+  {
+    "timestamp": "25:11",
+    "seconds": 1511,
+    "text": "temporary chats every time did not. And so it sounds like more investigation is needed here. >> Exactly. more investigation and more repeated runs, plus comparing what's cited versus what's merely mentions and maybe also varying the prompt to see when the scent changes. >> Yeah. Yeah, that's another key point. Thank you. That the prompt was the same every time. And that may or may not be the most popular prompt used by"
+  },
+  {
+    "timestamp": "25:41",
+    "seconds": 1541,
+    "text": "customers. And so when someone tells you, \"Oh, I found you with AI.\" really getting a sense of or even a screenshot of the exact prompt that was used is a lot like asking, oh, what keywords did you use in Google, except that it's more likely you're going to find that history in Gemini or ChatGPT to for customers to pull that up because if they just go to Google, search your"
+  },
+  {
+    "timestamp": "26:12",
+    "seconds": 1572,
+    "text": "business, those keywords are gone after they've run that search and clicked on your website. So, you might have the opportunity here if you get in the habit of having your CSRs ask, \"Oh, what prompt did you use?\" That would certainly be a new CSR question for 2026 and going into 2027. >> Exactly. I like that analogy. Capturing the exact prompt turns AI sent me into something you could actually learn from, just like old keyword conversations, but"
+  },
+  {
+    "timestamp": "26:43",
+    "seconds": 1603,
+    "text": "more concrete. And because prompts are easy to misremember, asking for a screenshot when possible is smart. That gives you real prompts to test against instead of guessing. >> Well, thanks Chat. I've enjoyed today's conversation. Any last words, >> just that this was great, Erin. Same prompts, repeatability and churn, and some cloud pre testing ideas to follow up on. >> Excellent. Join us next time on a chat with chat where my co-host chat and I"
+  },
+  {
+    "timestamp": "27:16",
+    "seconds": 1636,
+    "text": "discuss all things AI search and GEO for your home service business. Thanks very much and we'll see you next time."
+  }
+]

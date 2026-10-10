@@ -1,0 +1,434 @@
+Transcript from public YouTube captions. Lightly corrected for names; automatic transcription may contain errors.
+Source: https://www.youtube.com/watch?v=iSvjrBFPTfk
+
+[0:00] Hey, it's Aaron with Sequoia GEO. And
+[0:03] today we're going to run some searches
+[0:05] through ChatGPT
+[0:07] and find out what it's showing for an
+[0:11] emergency plumber situation in Las
+[0:14] Vegas.
+[0:15] And so this uh send out a help
+[0:18] contractors that are trying to
+[0:20] understand why they are or are not,
+[0:24] mostly are not, showing up in AI search
+[0:27] and potentially what you can do about
+[0:30] it. So,
+[0:31] uh first things first, to start this off
+[0:34] and if you were going to do this
+[0:35] yourself, what I would recommend in
+[0:37] chat, and you can also do this in
+[0:39] Gemini,
+[0:40] is set this up as a temporary chat. So,
+[0:43] that's up here, you click this little
+[0:45] bubble, that turns it on, and then you
+[0:47] go to unpersonalize. So, it is not using
+[0:50] anything that's uh been searched or uh
+[0:54] that you've done in chat before as a
+[0:56] reference. And so, here we've got our
+[0:59] temporary chat, we've already got our
+[1:01] prompt in here as well, "I need an
+[1:02] emergency plumber for a toilet
+[1:04] overflowing in Las Vegas." And go.
+[1:09] All right, so we're sending that prompt
+[1:10] over to chat. It's going to start doing
+[1:12] its research here,
+[1:14] and it's going to give us a couple
+[1:16] recommendations.
+[1:19] All right, so it came back pretty quick,
+[1:21] uh four recommendations for us, uh
+[1:23] Rodeo, Impact, Hips, and Pure.
+[1:27] And [snorts]
+[1:27] you'll notice that it's given us the
+[1:29] star rating, the reviews,
+[1:31] and uh if they're open 24/7. And because
+[1:35] it's associating that with emergency.
+[1:37] Now,
+[1:38] it's only about 2:00 right now in Las
+[1:41] Vegas, so it's not that we need the
+[1:43] 24/7, but I think because we use the
+[1:46] term emergency, that's that's why it
+[1:48] brought that up. Uh so, it gives me the
+[1:50] phone numbers here, I can also go here
+[1:52] and click on their website and so forth.
+[1:54] Um but these These only four that it
+[1:56] listed. If we scroll down,
+[1:58] uh it's got some recommendations for you
+[2:00] the homeowner on what to do.
+[2:02] And um
+[2:04] it acts
+[2:06] asks a uh follow-up. It actually prompts
+[2:09] you what to say
+[2:11] uh when you call. Now,
+[2:14] for this search, it's not giving us our
+[2:15] sources. In some searches, it will. And
+[2:18] if you can get the sources, you can
+[2:21] start to see what other websites or
+[2:24] companies that it checked before giving
+[2:27] you these four.
+[2:28] And so, if you're a plumbing company,
+[2:31] specifically in Las Vegas, it doesn't
+[2:33] really matter. It could be any kind of
+[2:35] home service company as well. No matter
+[2:37] what city you're in, and you run a
+[2:39] search like this as a customer might,
+[2:42] you'd want to find out, you know, why
+[2:44] aren't you ranking?
+[2:46] Um what does what's also interesting is,
+[2:50] depending on the search term, just
+[2:52] because it's related to plumbing,
+[2:54] doesn't mean that these four companies
+[2:57] are going to pop up every time.
+[2:59] And so, if we said uh I need a new
+[3:02] tankless water heater in Las Vegas,
+[3:12] and sent that over to chat,
+[3:14] it's going to
+[3:17] search that for us,
+[3:19] and we'll see which companies it comes
+[3:22] up with.
+[3:25] All right. These are good local
+[3:27] installers to call for quotes.
+[3:29] So, we've got Nothing But Water Heaters,
+[3:31] Water Heater Pros, Rodeo Plumbing of Las
+[3:33] Vegas, and Ninth Island Plumbing. So,
+[3:37] let's see here. Actually, we've got
+[3:39] Rodeo Plumbing of Las Vegas showing up
+[3:41] twice. So,
+[3:43] just from this brief review, it looks
+[3:46] like Rodeo Plumbing has spent
+[3:49] some time and probably some money
+[3:52] understanding how they show up in AI
+[3:55] search because you'll notice that uh
+[3:58] the companies it's recommending have got
+[4:01] 700, 500, 1300 reviews. Up here, I think
+[4:05] they're even lower.
+[4:07] Um 350, 422. I mean, a fair amount of
+[4:10] reviews, no doubt. But
+[4:13] in a large market like Las Vegas, there
+[4:16] are companies who have many many more
+[4:18] reviews than this. So, it's not just
+[4:20] basing how they rank on reviews alone.
+[4:23] Now, let's see if it gave us the sources
+[4:25] over here.
+[4:26] Yes, it did. Okay. So, let's check these
+[4:29] sources here.
+[4:30] And it came up with 23 sources.
+[4:33] And these are all the companies that
+[4:36] chat looked at
+[4:38] before giving us this information. It
+[4:40] actually pulled some installation cost
+[4:43] data
+[4:44] uh from this
+[4:46] uh
+[4:47] costadedier.com
+[4:49] website at quite a few times. Uh Get
+[4:52] Low's in there, uh Ideal Services, and a
+[4:55] few others down here as well. Um you see
+[4:57] a couple websites showing up more than
+[5:00] once.
+[5:01] Um but what it doesn't clearly tell us
+[5:04] is why it recommended some of these over
+[5:08] others. So, let's ask it. Why these
+[5:10] companies
+[5:12] over others?
+[5:15] >> [laughter]
+[5:15] >> And you can do the same.
+[5:17] Actually, you know, um what's also
+[5:18] interesting here we noticed that cost
+[5:21] data
+[5:22] uh it's saying right here
+[5:24] a complete tankless install in Las Vegas
+[5:27] 2250 to 5550.
+[5:30] Gas systems potentially running higher.
+[5:33] Um and it's re- recommending what kind
+[5:36] of gas unit to use.
+[5:38] So, there's a lot of information that
+[5:42] chat is providing to a customer
+[5:45] that if I don't know anything about
+[5:46] tankless water heaters,
+[5:48] I'm going to think, okay, well, I am
+[5:50] going to ask about these things. And I'm
+[5:51] going to look to make sure that the
+[5:53] quote includes the permit, removal, gas
+[5:57] line charges, venting, condensate drain,
+[5:58] and warranty. Which is a very important
+[6:01] note for the estimates that you're
+[6:04] sending to customers. Let's say the
+[6:06] company called you out. They saw your
+[6:08] truck, saw your yard sign, you worked
+[6:11] with them in the past, but now they're
+[6:14] using AI to help them refine their bids
+[6:17] and determine which company they're
+[6:19] going to end up choosing. Well, if Chat
+[6:22] is telling them here to look out for
+[6:23] these things, and your estimate doesn't
+[6:26] specifically say old heater removal or
+[6:30] gas line changes or venting, then it may
+[6:34] actually look at another estimate that
+[6:36] does clearly call those out, assuming
+[6:38] that you may not be doing those things.
+[6:41] Now, most companies, you're going to
+[6:42] remove the old heater
+[6:44] uh, and to put in the new tankless water
+[6:47] heater, and you're going to haul it
+[6:48] away. But, because it didn't
+[6:49] specifically state that, Chat's not
+[6:52] going to assume that you're going to do
+[6:54] that. Okay, so let's go down here.
+[6:56] Why these companies over others? Uh, and
+[6:59] it gives us the rationale. Um, not
+[7:02] simply because they were plumbers with
+[7:03] high ratings. They weren't meant as
+[7:05] definitive top four in all of Las Vegas.
+[7:08] So, it's not giving us It just told us
+[7:11] it's not giving us the top uh, four top
+[7:16] plumbing companies in Las Vegas. Uh, it
+[7:18] said water heater specialization,
+[7:21] demonstrated tankless work, review
+[7:24] history, licensing information. Now,
+[7:26] licensing permitting information.
+[7:29] Where's it getting that from?
+[7:32] I didn't see in its sources anything
+[7:36] about city or county. So, those
+[7:39] companies must be talking about the
+[7:42] permitting or licensing requirements in
+[7:45] those areas,
+[7:47] um which is another layer.
+[7:49] Um so then it goes through and it talks
+[7:51] about
+[7:52] uh specifically each one of these
+[7:55] companies, what
+[7:57] uh stood out about them versus um
+[8:01] you know, the others.
+[8:02] And so again, you can go through AI,
+[8:06] um whether it's ChatGPT or Gemini. In
+[8:10] Gemini, you can do something very
+[8:11] similar where you're also looking at a
+[8:13] temporary chat. And that's ultimately
+[8:16] what you want to use.
+[8:18] Um and you notice here it's it's rec-
+[8:21] recommending three written quotes.
+[8:24] I get the exact model number and BTU
+[8:26] rating. And and then um
+[8:28] you know, most of the time now
+[8:30] their customers going to be feeding this
+[8:32] back into AI. If they use it to find
+[8:35] you, assume they're going to use it to
+[8:37] go through your proposal.
+[8:40] And I've been saying that for months. Um
+[8:42] hopefully some of you have started to
+[8:45] uh adapt that process so that you know
+[8:49] kind of what Chat or Gemini might say
+[8:52] about your proposal when you send it to
+[8:53] customers.
+[8:55] Um so why these companies over others?
+[8:57] Now, you can go on and continue this
+[9:00] conversation with Chat and say, "How
+[9:03] would I get my company
+[9:05] to rank
+[9:07] and be recommended
+[9:10] if
+[9:11] if it's not here now?"
+[9:14] >> [snorts]
+[9:15] >> And it We can give it your company name,
+[9:19] your company website and it will
+[9:21] actually go through and create a list of
+[9:25] hey, here's why.
+[9:27] These are the things that I saw on your
+[9:28] site. These are the reasons that I
+[9:31] didn't recommend you. And here's here
+[9:33] are some of the things that I was
+[9:34] looking for.
+[9:35] And so yeah, you can spend the time and
+[9:38] go back and forth with uh chat or Gemini
+[9:41] or Claude or Grok or
+[9:44] any number of the different AI platforms
+[9:47] that are out there now. Um
+[9:50] but, you know, and then actually just
+[9:52] based on this generic question we asked,
+[9:55] it came back with make your company
+[9:56] company unmistakably relevant to the
+[9:58] exact searches you want.
+[10:01] So, a little bit of research is going to
+[10:03] be required there for you to go in and
+[10:06] say, "Okay, what is my customer going to
+[10:09] search?" Um I was having a conversation
+[10:11] with a plumber in Southern California on
+[10:15] Facebook. This is about 2 weeks ago. And
+[10:18] the customer had searched
+[10:20] uh cuz he had a screenshot of their uh
+[10:23] ChatGPT session.
+[10:25] Uh the customer had searched, "Recommend
+[10:28] a plumber for a new HVAC system."
+[10:33] I don't know why a customer would want a
+[10:36] plumber to put in their air conditioning
+[10:38] system, but that's what they searched.
+[10:41] And so, even if it doesn't make sense
+[10:44] to someone in the industry,
+[10:46] uh there are going to going to be
+[10:48] questions and queries that you're not
+[10:50] thinking of because you're in the
+[10:53] industry. And so, um
+[10:57] assume that if a customer's gotten a
+[10:59] quote from you uh for a tankless water
+[11:02] heater, and you included the model
+[11:04] number,
+[11:05] maybe you deal with Navien.
+[11:08] And they go in and search that Navien
+[11:11] brand, who installs it, what's it going
+[11:12] to cost,
+[11:14] assume that
+[11:17] chat is going to give them more
+[11:18] information about that. I mean, we we
+[11:20] just simply asked about tankless water
+[11:22] heater up here. It didn't specify type
+[11:25] or installation method or location, and
+[11:28] it's given us a range of 2,500 to 5,500.
+[11:32] I am certain that there are a
+[11:35] significant amount of companies in the
+[11:36] Las Vegas area
+[11:38] um because I know a few of them
+[11:40] that are well above that 5,500 mark.
+[11:44] And so, they would look at that number
+[11:46] and go, "Whoa, wait, what about this?
+[11:48] What about this? What about this?"
+[11:49] Um
+[11:51] but understand this is what chat is
+[11:54] telling customers when they search.
+[11:56] Um
+[11:57] if you want to establish
+[11:59] a different cost that would be something
+[12:02] you could put on your site uh if you
+[12:05] list your pricing online.
+[12:07] And then that might be uh helpful for
+[12:10] you. Now, if you're charging $20,000 for
+[12:13] a tankless water heater and it's saying
+[12:14] five that could be a challenge, right?
+[12:17] So, those are some of the things to
+[12:19] consider.
+[12:20] Um
+[12:21] make sure ChatGPT can actually crawl
+[12:23] your website.
+[12:25] So, depending on your host hosting
+[12:29] settings
+[12:30] you can actually tell AI bots, "Don't
+[12:33] crawl my website."
+[12:35] And if your website is set up that way
+[12:38] it won't.
+[12:40] But that means you're not going to show
+[12:41] up in AI. And so, understand that some
+[12:44] of those uh settings are important to
+[12:47] understand um
+[12:49] when considering whether or not you show
+[12:51] up in AI. And then uh this one's
+[12:53] interesting.
+[12:55] Okay, we're on ChatGPT. This is a
+[12:57] product by OpenAI.
+[12:59] It is recommending that you strengthen
+[13:01] your Google Business Profile
+[13:03] aggressively. Which is the first
+[13:05] workshop video that I made
+[13:07] um when I just got started was on
+[13:11] improving your Google Business Profile
+[13:13] and the importance of Google Business
+[13:15] Profile.
+[13:16] Um Google rankings and ChatGPT
+[13:18] recommendations aren't the same thing.
+[13:21] However
+[13:22] um even to ChatGPT, it's saying that
+[13:25] your Google Business Profile is very
+[13:28] important. And so, aggressively is an
+[13:30] interesting term there.
+[13:32] Um, but making sure that it's up-to-date
+[13:35] and um, you're posting on it frequently,
+[13:38] you're getting relevant reviews on that
+[13:41] platform as well, and then responding to
+[13:43] those reviews. All of those things are
+[13:45] important. Um, get get reviews, as we
+[13:49] just talked about, and then make sure
+[13:51] your business identity is consistent
+[13:52] everywhere.
+[13:54] Um,
+[13:55] this work is is like related to
+[13:58] citations.
+[13:59] Um, and so, everywhere that you're
+[14:02] mentioned online needs to be consistent.
+[14:06] I did an assessment for a foundation
+[14:08] company out of Texas last week, and they
+[14:12] had three different company names
+[14:15] on their website. Not on Yelp and BBB
+[14:18] and these other places out in the, you
+[14:20] know, in the world, but on their own
+[14:23] website, they had three different
+[14:25] company names.
+[14:26] And so, what do you call that company,
+[14:28] right? How how do you even know what to
+[14:30] call that company if that's the case?
+[14:33] And getting that cleaned up is going to
+[14:34] be the first order of business. And so,
+[14:38] pretty straightforward there. However,
+[14:41] it may not be obvious unless these are
+[14:43] things that you're actively looking for.
+[14:46] Um, show evidence of expertise, not just
+[14:49] SEO copy. And that last piece is is
+[14:52] interesting because
+[14:55] of chat and AI now, it's easier than
+[14:58] ever to create content.
+[15:00] It's also easier than ever for your
+[15:02] content to sound like everyone else's
+[15:04] and sound very generic.
+[15:06] Use your unique experiences.
+[15:09] You're out in the field, you know this
+[15:10] type of housing stock, you know this age
+[15:13] of homes for the city that you're in,
+[15:15] for the neighborhood that you're in.
+[15:17] Again, understanding what customers may
+[15:19] search.
+[15:20] Uh, and so, if you've got a name for the
+[15:22] neighborhood that you live in,
+[15:25] um, that may be what customers are using
+[15:28] to search for your services if, uh,
+[15:31] they're looking for that specific area.
+[15:33] You know, you think about, um,
+[15:36] uh, down in used to live in San Diego,
+[15:38] and there's a lot of different pockets
+[15:40] and neighborhoods. San Diego's a very
+[15:42] big place.
+[15:43] And so, um, the homes that are in North
+[15:46] Park are going to be significantly
+[15:49] different, uh, in terms of,
+[15:52] uh, what they're looking for, what they
+[15:54] need as opposed to homes that are, uh,
+[15:56] further inland.
+[15:58] Or closer to the coast. And so,
+[16:00] understanding those differences,
+[16:02] uh, is important. And showing that you
+[16:05] have expertise and that you understand
+[16:08] those differences needs to be visible on
+[16:10] your website. So, it's some of it is
+[16:12] getting what's out of your head,
+[16:14] what's in your CRM, whether that's
+[16:16] Service Titan or Housecall Pro or
+[16:19] Jobber, whatever it is,
+[16:20] getting those customer experiences onto
+[16:22] your website. And there's a right way to
+[16:25] do that. So,
+[16:26] um,
+[16:28] I hope this has been interesting for you
+[16:30] and you've kind of understood a little
+[16:31] bit more about what it takes to rank on
+[16:34] AI search. Again, my name is Aaron with
+[16:37] Sequoia GEO. Happy to help. If there's
+[16:39] anything I can do, you can head over to
+[16:41] my website at sequoiageo.com.
+[16:45] I do provide a free assessment of what's
+[16:48] going on with your AI search rankings
+[16:51] and I'd be happy to provide you that
+[16:53] assessment, no cost. I don't need any
+[16:55] logins. It's all publicly available
+[16:58] information and I have a specific
+[17:00] process that I follow to search, uh, AI
+[17:03] not only AI, but the web for what's
+[17:06] going on with your business and your
+[17:08] public display online. So, thank you so
+[17:10] much for watching. I hope this was
+[17:12] helpful and I'll see you next time.

@@ -1,0 +1,635 @@
+Transcript from public YouTube captions. Lightly corrected for names; automatic transcription may contain errors.
+Source: https://www.youtube.com/watch?v=7Xggxnh3ulY
+
+[0:01] Hello and welcome to the second episode
+[0:04] of a chat with chat. My name is Aaron
+[0:08] with Sequoia GEO and with me today is
+[0:10] our co-host ChatGPT.
+[0:14] >> Hi Erin and hi everyone. I'm ChatGPT.
+[0:17] Glad to be here. Excited to dive into
+[0:20] today's conversation with you.
+[0:22] >> Excellent. And a quick update for
+[0:24] everyone. I did switch from Astra Light,
+[0:28] which we were using last week, over to
+[0:31] Soul 6, which chat, that's the newer
+[0:35] model of Soul. Is that correct?
+[0:38] >> Let me check that quickly.
+[0:41] >> Yes. If you mean GT6 Soul, that's a
+[0:43] newer generation of Soul. For clarity
+[0:46] though, Soul and Astra are different
+[0:48] model lines, so I'd probably introduce
+[0:50] it as a switch from Astrolite to GT6
+[0:52] Soul.
+[0:55] Okay, that's what I thought I did. I'm
+[0:57] not here to argue with you, Chat. Come
+[0:59] on, let's keep it professional.
+[1:01] >> You're right. And my apologies if that
+[1:03] came off nitpicky. Sounds good. Switch
+[1:06] to GBT6 soul.
+[1:07] >> All right,
+[1:08] >> what's next on the agenda for episode
+[1:09] two?
+[1:09] >> Yeah, let's get to what the meat of the
+[1:12] content will be for today. So earlier
+[1:15] this week I observed a interesting
+[1:18] pattern when I was working with Gemini
+[1:22] in terms of searching for it was an
+[1:25] alternative to a software that I work
+[1:28] with. So I was looking for alternatives
+[1:30] to this software trying to basically
+[1:34] recreate what I had heard a customer had
+[1:37] done in order to find that company. And
+[1:41] when searching in Gemini Flash, I found
+[1:44] that my sources were dramatically
+[1:47] different than what I found searching in
+[1:50] Gemini with the Pro model. What are your
+[1:53] thoughts on the difference in sources
+[1:55] and it wasn't there was no overlap
+[1:57] whatsoever. The the types of sources
+[2:01] from Flash were review sites whereas the
+[2:04] types of sources for Pro were the actual
+[2:08] websites themselves. What was I seeing
+[2:10] there? What can you give me any feedback
+[2:12] on that?
+[2:14] >> Let me take a look. That's striking. My
+[2:18] best take is the models just took
+[2:21] different routes. Flash may have treated
+[2:23] alternatives as a comparison task and
+[2:26] drawn review sites while Pro may have
+[2:29] checked vendor sites for capabilities.
+[2:31] Also, the links shown in the Gemini app
+[2:34] can include related sources, so they
+[2:36] aren't always a complete record of what
+[2:38] was used. For the podcast, I'd frame it
+[2:40] as the same company can serve us through
+[2:42] review roundups in one answer and
+[2:44] through its own site in another. It's
+[2:46] worth repeating the same prompt a few
+[2:48] times before calling it a consistent
+[2:50] pattern.
+[2:52] >> I completely agree. Yes. So, it just
+[2:55] goes to show that when you're working
+[2:58] with generative engine optimization or
+[3:00] AI search, it's not just about the type
+[3:04] of AI that you're using, whether it's
+[3:06] ChatGPT or Gemini or Claude. the the
+[3:12] model that you're using to search with
+[3:14] could produce wildly different results
+[3:17] depending on
+[3:19] how it's searching and where it's
+[3:22] searching for those answers. And so for
+[3:26] today, I actually wanted to demonstrate
+[3:28] this. I wanted to actually pull in a
+[3:30] temporary chat, which I've got right
+[3:33] here. And with that, it's the prompt is
+[3:38] find me an HVAC company in Phoenix for a
+[3:40] problem with my AC unit. Now, chat, I
+[3:43] know that you can't see this, so I'll go
+[3:45] ahead and dictate to you what I'm
+[3:48] seeing, and then we can discuss kind of
+[3:50] its answers and results. So, I'm going
+[3:52] to go ahead and hit search first with
+[3:54] the Gemini flash model.
+[3:58] >> Okay, let me check that with you. Go
+[4:00] ahead with the flash result. I couldn't
+[4:02] see the Gemini window from here. So tell
+[4:04] me which companies it names and what
+[4:07] kinds of sites show up in the links.
+[4:09] Yeah,
+[4:09] >> we can compare from there.
+[4:11] >> So we've got our recommended Phoenix
+[4:13] HVAC companies. Parker and Suns Ghetto
+[4:16] Air Conditioning and Plumbing, George
+[4:18] Brazil, AC by Sam LLC. That seems like
+[4:23] an outlier there because these other
+[4:25] three are huge names in the industry.
+[4:27] And then you've got AC by Sam. So, let's
+[4:30] take a look at our sources. Here we go.
+[4:35] All right. And so, we've got 2 3 4 5 6 7
+[4:40] 8 10 11 sources in here. Two of the
+[4:44] sources are AC directly from AC by Sam's
+[4:48] website. It's interesting. Some of the
+[4:51] sample copy actually includes an Mdash
+[4:53] in the AC by Sam LLC website. There's a
+[4:57] thumbtack link. There's two four from
+[5:00] Ghetto, two
+[5:03] three from Parker and Suns and then
+[5:05] actually a third from AC by Sam which is
+[5:08] all the way at the top. Now question
+[5:12] when is there a ranking
+[5:15] is there does it make any difference how
+[5:17] these sources are ranked? Does that mean
+[5:20] that Gemini saw that AC by Sam LLC page
+[5:25] first or are these sources in no
+[5:27] particular order?
+[5:30] >> I can check that for you. I wouldn't
+[5:33] read the source list as a ranking. So AC
+[5:36] by Sam appearing first doesn't mean it
+[5:38] was found first or trusted most. What's
+[5:41] solid to say is Flash recommended a
+[5:43] smaller company alongside three big
+[5:45] names and several links came from that
+[5:47] company's site. The useful test is which
+[5:50] claim each link supports, not its
+[5:52] position. Next step, run the same
+[5:54] prompted probe and compare companies
+[5:56] claims and links rather than treating
+[5:58] the first source as a score. Okay, so
+[6:01] let's do that. We're going to open a new
+[6:02] pro chat here. Switch over to temporary,
+[6:06] switch our model to pro, and then we're
+[6:09] going to insert the same prompt and go.
+[6:13] All right, searching the web now. It's
+[6:16] expected to take a little bit longer. Is
+[6:18] there anything you can tell us about how
+[6:22] Gemini searches in Flash versus Pro?
+[6:26] >> Let me check that. Quick note for
+[6:29] context. Google does say Flash and Pro
+[6:32] have different speed and reasoning
+[6:34] strengths, but there's more to it.
+[6:37] Google says Flash is tuned for speed,
+[6:39] while Pro generally takes longer and can
+[6:41] reason more deeply. Their docs also say
+[6:44] a model can decide whether to search,
+[6:46] generate one or more queries, and use
+[6:49] those results. So, two models could take
+[6:51] different paths from the same prompt.
+[6:54] What Google doesn't tell us is exactly
+[6:55] which searches the Gemini app ran here.
+[6:58] So, the strongest comparison is what
+[7:00] you're doing, the recommendations,
+[7:02] claims, and links that appear on your
+[7:03] screen.
+[7:05] >> Okay. All right. So, the pro search is
+[7:07] completed. And actually this time AC by
+[7:11] Sam LLC is ranked first. Then we've got
+[7:14] Ghtle Parker and Suns. And then a new
+[7:18] company has come in at Rightway. What's
+[7:22] surprising me is that when I look at the
+[7:24] sources after searching under Pro, I
+[7:27] only see four sources this time. My
+[7:30] expectation was that when using Pro, I
+[7:34] would actually have significantly more
+[7:36] sources. As I've seen in the past when
+[7:39] I've run searches like this to review
+[7:41] sources, sometimes 140 different sources
+[7:45] when I'm running the pro model. This
+[7:47] time I only got four, which I find
+[7:49] curious. And it's one per company they
+[7:52] recommended. So AC by Sam, Ghetto,
+[7:55] Parker and Suns, Rightway Heating,
+[7:57] Cooling, and Plumbing each had one site,
+[8:00] one page that was basically pulled by
+[8:04] Gemini. What are your thoughts on that?
+[8:08] Let me [snorts] take a look. That's the
+[8:10] key surprise here. Pro took longer, but
+[8:13] showed four links versus Flash's 11. So
+[8:16] more reasoning time didn't mean more
+[8:18] displayed sources. Also, I'd say listed
+[8:21] first rather than ranged first. The most
+[8:24] telling difference is Rightway replacing
+[8:26] George Brazil, while three companies
+[8:28] appear in both answers. That's a good
+[8:30] example of variation, but not yet proof
+[8:32] of a stable flash versus pro pattern.
+[8:36] So, I'm going to paste in the sites
+[8:38] directly that Pro gave us for each of
+[8:42] these companies because I would like to
+[8:45] know what your thoughts are on the
+[8:49] landing pages that we were given because
+[8:51] Parker and Suns is the only one out of
+[8:54] the four where we actually ended up on
+[8:57] their homepage. The others appear to
+[9:01] have some tracking code associated to it
+[9:04] and there are specific AC repair pages
+[9:08] whereas the Parker and Suns page was the
+[9:10] homepage for Parker and Suns.
+[9:14] >> Let me check those pages with you. Paste
+[9:16] those four links when you're ready. I'll
+[9:19] check whether H1 actually covers AC
+[9:21] repair, what evidence it gives homeowner
+[9:24] and what those tracking parameters
+[9:26] really indicate. The homepage can still
+[9:28] be relevant, but a dedicated repair page
+[9:30] might answer this particular prompt more
+[9:32] directly. From the first two links, both
+[9:35] fit the prompt closely. They go to
+[9:38] feeding AC repair pages and the
+[9:40] highlighted text marker is in tracking.
+[9:43] Redways is also a feeding AC repair page
+[9:46] with emergency repair support. So that's
+[9:48] three focused and Parker and Suns left
+[9:50] compare. Small naming detail, the site
+[9:53] spells it right way. Could you paste the
+[9:55] Parker and Suns link so I can compare
+[9:57] all four? Now we can see the
+[9:59] distinction. AC by Sam, Gattle, and
+[10:02] Rightway each have a dedicated Phoenix
+[10:04] AC repair page. Park and Sun's homepage
+[10:07] is broader, but it still names Phoenix.
+[10:10] Mentions HVAC repairs and cooling,
+[10:12] offers 24/7 service, and includes a
+[10:14] customer account of an AC repair. So the
+[10:18] homepage can give enough relevant info
+[10:20] for this broad prompts while the focus
+[10:22] pages make the city and service match
+[10:24] more explicit. We can tell from these
+[10:26] four links that one page type cause the
+[10:28] company to be recommended or listed
+[10:30] higher.
+[10:31] Are there similar elements on each of
+[10:34] these four pages that other than the
+[10:37] city name because that's pretty easy for
+[10:40] any company to do which would have
+[10:43] helped us to understand why Gemini
+[10:46] picked these four companies under the
+[10:49] pro model and three of these four were
+[10:51] selected under flash as well.
+[10:54] Let me check that
+[10:57] the overlap makes those common page
+[11:00] signals worth checking, but I'm
+[11:02] separating the page content from any
+[11:04] claim about why Gemini picked them. Yes,
+[11:08] beyond Phoenix, they all show three
+[11:10] basics. They repair cooling systems,
+[11:12] they can respond when help is needed,
+[11:14] and there's a clear way to contact your
+[11:16] book, plus trust signals like reviews or
+[11:19] guarantees. The three dedicated repair
+[11:21] pages also name specific problems and
+[11:23] fixes. Parker and Suns covers repair
+[11:25] more broadly, but still signals 247
+[11:28] help, an AC repair account. That
+[11:30] explains how they could answer the
+[11:32] prompt, not why Gemini chose these four
+[11:35] over others. Two runs can't isolate the
+[11:37] codes.
+[11:40] and the additional code at the end of
+[11:45] the URL, the hashtag colon and then text
+[11:51] equals comprehensive 20% so on and so
+[11:54] forth. What is that?
+[11:58] >> Let me double check that detail. It's a
+[12:01] text fragments meaning scroll to and
+[12:04] highlight these words. The percent 20
+[12:07] just means a space in the ghetto link.
+[12:09] It points to the comprehensive AC repair
+[12:11] services passage. It's not attracting
+[12:14] and you can remove everything from the
+[12:15] hash onward and still open the same
+[12:17] page.
+[12:19] >> Why did Gemini include it in the URL?
+[12:24] >> Let me check. Most likely to drop you on
+[12:27] the exact passage relevant to its
+[12:29] answer. So you don't have to hunt
+[12:31] through the page. It shows what it's
+[12:34] pointing you toward, not what I found
+[12:36] first or exclusively.
+[12:38] Okay, what would be the next step in our
+[12:42] investigation here?
+[12:45] >> Let me take that. I'd test whether this
+[12:48] difference repeats. Run the C Phoenix CX
+[12:50] Chrome three more times in fresh
+[12:52] temporary chats with Flash than three
+[12:54] with Pro. Track the companies, the
+[12:56] order, how many sources are shown,
+[12:58] company sites versus third party sites.
+[13:00] If the model pattern stays different,
+[13:03] that's stronger. If it varies within the
+[13:04] same model, the takeaway is one AI
+[13:07] searches snapshot, then make the problem
+[13:09] more specific, like my AC is blowing
+[13:11] warm air.
+[13:13] >> All right, so I'm going to go back to
+[13:15] flash and we're going to search this
+[13:17] again and let's see what results we get.
+[13:21] And again, we're using temporary chats,
+[13:23] so it shouldn't be seeing
+[13:25] the chats that we had done previously.
+[13:29] And this is actually quite surprising.
+[13:32] So ran the same prompt again and the
+[13:36] same four companies that showed up when
+[13:39] we ran this the first time under flash
+[13:41] are showing up again. Parker and Suns
+[13:44] George Brazil is now in second position
+[13:46] instead of third like it was last time.
+[13:48] And Gtle has swapped places with it. And
+[13:50] then fourth is AC by Sam.
+[13:55] Okay, let's do this again. Actually,
+[13:57] let's double check those sources.
+[14:00] And this time we've got two five
+[14:04] sources. Okay,
+[14:07] we're going to copy that prompt. New
+[14:10] chat. Run it again in flash. Make sure
+[14:13] that we're on temporary.
+[14:15] Okay, running it again.
+[14:18] Park and suns ghetto George Brazil AC by
+[14:21] Sam. This is pretty much given us a
+[14:23] clear signal that if someone's using
+[14:26] Flash
+[14:28] Google Gemini and they're searching this
+[14:31] prompt, find me an HVAC company in
+[14:33] Phoenix for a problem with my AC unit.
+[14:35] These are the four companies it looks
+[14:37] like it's going to get. Okay, this is a
+[14:40] little bit different of a format this
+[14:41] time. Like it was three companies
+[14:44] instead of four. I clicked on the Okay,
+[14:47] more options. It didn't do anything. And
+[14:51] then it didn't give us a option to
+[14:52] review sources this time.
+[14:55] What are your thoughts on this?
+[14:58] >> Let me take a look. I describe this as
+[15:01] promising repeatability for this prompt
+[15:04] today, but not something I generalize
+[15:06] yet. The first two flash runs matched on
+[15:09] four companies with a small order swap.
+[15:11] The latest run changed format, showed
+[15:13] three companies, and had no sources
+[15:15] banned. Google says sources aren't
+[15:17] provided for every response, so missing
+[15:19] links don't prove it used no web info.
+[15:22] For the episode, I'd say the overlap was
+[15:24] strong, but order, count, and visible
+[15:26] sources varied. Which three showed up in
+[15:29] the last run? Then we can state the
+[15:31] overlap precisely.
+[15:33] >> All right. So, I ran it again under
+[15:35] flash and this time we had alien air
+[15:38] conditioning and heating pop up. I'll
+[15:40] paste in that page so that you can take
+[15:43] a look at that. I see the Alien Air
+[15:45] Conditioning homepage with highlighted
+[15:47] text about technicians and
+[15:49] recommendations. Let me check the page
+[15:50] itself before we connect it to the run.
+[15:52] Alien Air's homepage has the same kind
+[15:55] of elements. Phoenix cooling repairs,
+[15:58] 24/7 emergency availability, reviews,
+[16:00] credentials, contact info. The
+[16:02] highlighted claim is about
+[16:04] non-commission technicians, which is a
+[16:06] trust claim on their own page, not
+[16:09] independent proof. Was Alien Hero one of
+[16:12] the three in that last Flash answer?
+[16:14] >> Yeah. So, we had Ghtle pop up again,
+[16:17] Parker and Sons pop up again, George
+[16:20] Brazil pop up again, and then Alien
+[16:22] jumped in there as well where we had not
+[16:25] seen that before.
+[16:28] >> So, that's still heavy overlap, but with
+[16:31] a new entrance on the third run and
+[16:33] presentation changes, I'd call that
+[16:35] overlap, but not a guarantee. The
+[16:38] consistent bits across those pages are
+[16:40] clear repair intent, 24/7 availability,
+[16:43] and quick contact, plus trust scenes.
+[16:46] For the episode, I'd frame it as
+[16:48] repeated tests showed overlap plus
+[16:50] churn. So, treat a single AI answer as a
+[16:53] snapshot and check a few runs.
+[16:56] Yeah, it seems like we've got some
+[16:58] repeatability here with that prompt
+[17:00] within Flash. Now, we could continue and
+[17:04] run the same type of thing through Pro
+[17:06] and see if it gives us different
+[17:09] results. My thesis coming into this
+[17:11] podcast was if you run Flash versus Pro,
+[17:15] the sources are going to be different
+[17:17] and most likely your answers are going
+[17:19] to be different because those sources
+[17:21] are different. But we haven't seen that
+[17:23] today. Now, further testing is
+[17:25] definitely needed because one run on Pro
+[17:27] does not equal grounds for determining
+[17:31] what's happening, but from what we're
+[17:34] seeing in Flash, you can get some
+[17:37] repeatability when using the same prompt
+[17:41] in the same model. And so, I think we've
+[17:44] at least come to some kind of conclusion
+[17:47] on that today. Of course, should we run
+[17:50] it 50, 100 times? Yeah, we would have
+[17:53] more certainty if we did that. How
+[17:56] quickly would something like that change
+[17:58] is another question because at the end
+[18:00] of the day, we want to come back to for
+[18:04] our business owners, our marketers out
+[18:06] there, how can I get a handle on
+[18:08] improving my generative engine
+[18:10] optimization
+[18:12] when there's a lot of uncertainty out
+[18:14] there about what it is in the first
+[18:17] place?
+[18:20] >> Let me take that. The live runs do
+[18:23] support a narrower conclusion than your
+[18:25] original thesis. Repeatability with some
+[18:28] chart, not always those four and not
+[18:31] necessarily different sources, different
+[18:33] answers. For a business owner, I turn
+[18:35] that uncertainty into over a routine.
+[18:37] Make your site clear about each service
+[18:39] location, urgent problem, and how to
+[18:41] book. Back it with reviews, credentials,
+[18:43] and consistent business info. And track
+[18:46] a few real customer prompts across
+[18:47] models every few weeks to see trend
+[18:49] lines. that gives you something
+[18:50] actionable without pretending there's
+[18:53] one fixed AI rating.
+[18:56] >> And from the pages that I shared, is
+[18:59] there are we developing a best practices
+[19:02] here for that prompt to understand
+[19:05] what's typically getting these pages
+[19:08] sourced?
+[19:12] Let me think about that.
+[19:15] Yes, the pages do give us a useful
+[19:17] checklist. Yes, we're developing
+[19:20] practical page guidelines, but not
+[19:23] proven selection factors. The shared
+[19:25] pattern is Phoenix coverage, AC repair
+[19:28] specificity, urgent availability, trust
+[19:30] evidence, and a clear call or book step.
+[19:33] For this prompt, make those facts
+[19:34] unvisible on a real repair page.
+[19:36] Describe the problems you actually
+[19:38] handle and bad claims with verifiable
+[19:40] detail. Then see if it's cited over
+[19:42] repeated runs. to learn what
+[19:44] distinguishes those picks. Next step is
+[19:46] comparing them with qualified Phoenix
+[19:48] HVAC companies it did mention.
+[19:53] >> Yeah, that's a good question because
+[19:55] there are you could probably find out
+[19:57] faster. How many HVAC companies are
+[20:00] there in Phoenix?
+[20:03] >> Let me check that quickly. A reasonable
+[20:06] working figure is several hundred. One
+[20:09] Phoenix directory counted 748 listings
+[20:12] in August. Another showed 793 active
+[20:16] licenses in September, though some firms
+[20:18] pulled more than one. For the podcast,
+[20:20] I'd say hundreds of HVAC businesses
+[20:23] compete in Phoenix. Yet, Gemini named
+[20:25] only a handful each time, and avoid a
+[20:28] precise total unless we define the
+[20:29] market.
+[20:31] >> Okay. Yeah. Seeing only four of those
+[20:34] get re recommended
+[20:36] I is definitely something that companies
+[20:39] need to be aware of because now the
+[20:43] direction that we're heading with the
+[20:45] announcement of DOTS Meta's Muse has
+[20:48] been out for a little bit now. You've
+[20:50] got all of these [clears throat]
+[20:52] personal agents coming online. You've
+[20:56] got Google coming out with Gemini Spark
+[20:58] as well at some point soon.
+[21:03] customers are going to be using these
+[21:05] agents which are probably going to be
+[21:08] basing their searches
+[21:10] in a similar fashion to what we're
+[21:12] seeing right now like with these results
+[21:15] today. Is that do you think that's a
+[21:17] fair statement?
+[21:20] Let me take that. Yes. As a directional
+[21:24] concern, that's fair. Those launches
+[21:26] show a systems moving from answers
+[21:28] toward acting for users. So being
+[21:30] discoverable and verifiable online could
+[21:33] matter a lot, but we don't know they'll
+[21:36] choose companies the same way this
+[21:37] Gemini chat did. Agents may weigh
+[21:40] location, price, reviews, booking,
+[21:42] availability differently. As safe on air
+[21:45] line is, this test shows how AI can
+[21:47] narrow hundreds of options to a few
+[21:49] names. So businesses should test whether
+[21:51] they appear and not assume all agents
+[21:54] search alike.
+[21:55] >> Now you mentioned price in your last
+[21:58] answer. Did the sites that I shared with
+[22:02] you all have pricing on those pages?
+[22:07] >> Let me check those pages for pricing
+[22:09] specifically.
+[22:10] No, I mentioned price as something a
+[22:13] future agent might consider. Not a
+[22:15] shared feature of these pages and I
+[22:17] should have been clear. None of the four
+[22:19] Prol pages gave a standard AC repair
+[22:21] price. One quotes after diagnosis, one
+[22:24] shows discount. Others make general
+[22:26] pricing claims. So today's test gives us
+[22:29] no evidence that price drove these
+[22:31] recommendations. Though an agent that
+[22:33] can book might weigh price if it's
+[22:36] available.
+[22:38] >> That's kind of the general consensus
+[22:40] right now is that you've got to have
+[22:42] pricing on your website because AI is
+[22:44] going to more likely recommend you if
+[22:48] you have pricing on your website. We
+[22:51] just didn't happen to see that today.
+[22:53] So, I guess what I'd like to wrap up
+[22:56] with are give me the five things that
+[23:00] were consistent across the sites that I
+[23:03] shared with you that Gemini Flash had
+[23:07] sourced.
+[23:10] Five consistent things across those
+[23:12] pages. They serve Phoenix. They repair
+[23:15] hasty units. They handle urgent problems
+[23:17] quickly. They include trust signals like
+[23:20] reviews or credentials. and they give a
+[23:22] clear way to call or book.
+[23:24] >> So, no real magic sauce then. This is
+[23:26] all pretty straightforward stuff here,
+[23:28] right?
+[23:30] >> More hygiene than heck. Clear service
+[23:32] pages, fast contact, trust signals. The
+[23:35] work is doing the basics well than
+[23:37] testing prompts and tightening weak
+[23:39] spots.
+[23:41] Now, when you said they handle urgent
+[23:43] prompts quickly, how could you tell
+[23:48] >> from what the pages say? 247 emergency
+[23:52] wording, same day claims, things like
+[23:54] that. That's marketing language, not
+[23:56] verified performance.
+[23:58] >> But the fact that all of them stated
+[24:00] that stood out to you.
+[24:03] >> Exactly. For an emergency AC repair
+[24:06] prompt, that promise matches what the
+[24:08] user is asking for. So, it's a plausible
+[24:11] shared signal.
+[24:13] >> All right. Why don't we have you run the
+[24:15] same prompt that we were using for
+[24:18] Gemini? And just out of curiosity, I'd
+[24:21] like to see what you come up with.
+[24:24] >> Let me try it with web search. One
+[24:27] company I'd put on the short list is
+[24:29] Champion Air. Their site says Phoenix AC
+[24:33] repair plus 247 emergency support and an
+[24:36] $89 repair diagnostic that's waved with
+[24:39] proof of repair. Another option I found
+[24:41] is Dawn Air, which says it serves your
+[24:43] Phoenix and handles AC repairs and
+[24:45] emergency service. I haven't checked
+[24:47] actual availability or independently
+[24:49] verified those claims. Interesting
+[24:50] difference from Gemini's recurrent 4,
+[24:52] but not a clean model test since I've
+[24:55] already seen your results and the search
+[24:57] tool isn't the same.
+[24:59] Yeah, I'm just curious to see what you
+[25:02] were going to come up with and then
+[25:04] Champion Air and Dawn Air. Yeah, it's
+[25:06] interesting that those two popped up and
+[25:09] for Gemini, which we were using
+[25:11] temporary chats every time did not. And
+[25:14] so it sounds like more investigation is
+[25:16] needed here.
+[25:19] >> Exactly. more investigation and more
+[25:21] repeated runs, plus comparing what's
+[25:23] cited versus what's merely mentions and
+[25:26] maybe also varying the prompt to see
+[25:28] when the scent changes.
+[25:30] >> Yeah. Yeah, that's another key point.
+[25:32] Thank you. That the prompt was the same
+[25:35] every time. And that may or may not be
+[25:38] the most popular prompt used by
+[25:41] customers. And so when someone tells
+[25:45] you, "Oh, I found you with AI."
+[25:48] really getting a sense of or even a
+[25:50] screenshot of the exact prompt that was
+[25:53] used is a lot like asking, oh, what
+[25:56] keywords did you use in Google, except
+[26:00] that it's more likely you're going to
+[26:02] find that history in Gemini or ChatGPT
+[26:07] to for customers to pull that up because
+[26:10] if they just go to Google, search your
+[26:12] business, those keywords are gone after
+[26:15] they've run that search and clicked on
+[26:17] your website. So, you might have the
+[26:20] opportunity here if you get in the habit
+[26:21] of having your CSRs ask, "Oh, what
+[26:24] prompt did you use?" That would
+[26:26] certainly be a new CSR question for 2026
+[26:30] and going into 2027.
+[26:34] >> Exactly. I like that analogy. Capturing
+[26:36] the exact prompt turns AI sent me into
+[26:39] something you could actually learn from,
+[26:41] just like old keyword conversations, but
+[26:43] more concrete. And because prompts are
+[26:46] easy to misremember, asking for a
+[26:47] screenshot when possible is smart. That
+[26:49] gives you real prompts to test against
+[26:51] instead of guessing.
+[26:54] >> Well, thanks Chat. I've enjoyed today's
+[26:56] conversation. Any last words,
+[27:00] >> just that this was great, Erin. Same
+[27:03] prompts, repeatability and churn, and
+[27:06] some cloud pre testing ideas to follow
+[27:08] up on.
+[27:09] >> Excellent. Join us next time on a chat
+[27:12] with chat where my co-host chat and I
+[27:16] discuss all things AI search and GEO for
+[27:20] your home service business. Thanks very
+[27:23] much and we'll see you next time.

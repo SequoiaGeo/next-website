@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import ClientVideoGrid from "@/components/ClientVideoGrid";
 import YouTubeFacade from "@/components/YouTubeFacade";
+import { podcastVideos } from "@/data/podcast-videos";
 import { podcastPostCards } from "@/data/podcast-posts";
 import { podcastAppearances, tradeMedia, tradeWriting, type MediaItem } from "@/data/media";
 
@@ -70,19 +71,16 @@ export default function MediaPage() {
           <div className="section-overline mb-3">Our show</div>
           <h2 className="text-3xl font-extrabold text-[#0D2318]">A Chat with Chat</h2>
           <p className="mt-4 max-w-3xl text-gray-600">Aaron Husak and ChatGPT explore AI search and marketing for local home service businesses.</p>
-          <Link href="/podcast/episode-2" className="mt-8 grid overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md md:grid-cols-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/podcast/episode-2.png" alt="A Chat with Chat episode 2: Would AI pick your HVAC company?" width="1672" height="941" className="h-auto w-full self-center" />
-            <div className="p-7 sm:p-9">
-              <p className="text-sm font-semibold text-[#1A5C3A]">Episode 2 · September 30, 2026 · 27 minutes</p>
-              <h3 className="mt-3 text-2xl font-bold text-[#0D2318]">Same Prompt, Different HVAC Picks: What Our AI Search Test Revealed</h3>
-              <p className="mt-4 leading-relaxed text-gray-600">A live look at Gemini recommendations, changing sources, and what repeated searches can tell a home service business.</p>
-              <span className="mt-6 inline-block font-bold text-[#1A5C3A] underline underline-offset-4">Watch or listen to episode 2</span>
-            </div>
-          </Link>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {podcastVideos.map(video => <Link key={video.slug} href={`/podcast/${video.slug}`} className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`} alt={video.title} width="480" height="360" loading="lazy" className="aspect-video w-full object-cover" />
+              <div className="p-6"><p className="font-semibold text-[#1A5C3A]">{video.label} · {video.runtime}</p><h3 className="mt-3 text-xl font-bold text-[#0D2318]">{video.title}</h3><p className="mt-4 leading-relaxed text-gray-600">{video.description}</p><span className="mt-5 inline-block font-semibold text-[#1A5C3A] underline underline-offset-4">Watch and read the full transcript</span></div>
+            </Link>)}
+          </div>
           <div className="mt-10">
             <h3 className="text-2xl font-bold text-[#0D2318]">Read the episode takeaways</h3>
-            <p className="mt-3 text-gray-600">Articles from our first three conversations. Episode 3&apos;s full interview is scheduled for October 13.</p>
+            <p className="mt-3 text-gray-600">Articles from our first three conversations, with links to the full videos and transcripts.</p>
             <div className="mt-6 grid gap-5 md:grid-cols-3">
               {podcastPostCards.map((post, index) => <Link key={post.slug} href={`/blog/${post.slug}`} className="rounded-xl border border-gray-200 bg-white p-6 transition hover:border-[#1A5C3A]">
                 <p className="text-sm font-semibold text-[#1A5C3A]">Episode {index + 1}</p>

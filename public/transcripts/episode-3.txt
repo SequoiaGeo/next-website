@@ -1,0 +1,950 @@
+Transcript from public YouTube captions. Lightly corrected for names; automatic transcription may contain errors.
+Source: https://www.youtube.com/watch?v=mMjck0bXMps
+
+[0:01] All right, welcome back to a chat with
+[0:03] chat. Today we're joined by Shaurya Jain,
+[0:07] founder of Honest HVAC Marketing Agency.
+[0:11] Uh he got started in digital marketing
+[0:13] back in 2013. And today we're going to
+[0:16] be exploring how HVAC businesses work
+[0:19] when customers ask AI for
+[0:21] recommendations, what Shaurya is learning
+[0:25] from his work, and how contractors are
+[0:28] adjusting to the visibility with AI
+[0:31] search and generative engine
+[0:32] optimization. Shaurya, welcome to the
+[0:35] podcast. Tell us a little bit about your
+[0:38] background and what you've been up to.
+[0:40] >> Yes. So, first of all, thanks Aaron for
+[0:42] inviting me over as being the first
+[0:45] guest. So, what I've been up to, I've
+[0:47] been up to the same thing as you
+[0:49] basically helping HVAC companies and I
+[0:53] don't have the advantage of running an
+[0:56] HVAC company like you have. But I do
+[0:59] have extensive experience in being a
+[1:02] marketer. So, I've been a marketer for
+[1:04] the last 13 years. And we have been
+[1:07] helping HVAC companies with their
+[1:09] Facebook ads and local SEO. We have been
+[1:13] doing tons of research to see how HA
+[1:18] companies are do like doing in the
+[1:21] search results in AI how they have set
+[1:25] up their websites. I just I yesterday
+[1:28] itself I published a new study where we
+[1:31] studied like 1,300 HVAC websites to see
+[1:34] how ready were they for generating leads
+[1:37] like how good were they good were the
+[1:41] websites in terms of generating leads.
+[1:44] So I'm excited to to talk about those
+[1:46] things with you.
+[1:49] >> That's fantastic. Now, yeah, I'm very
+[1:52] interested in the research that you did.
+[1:54] 1,300 websites, that's a pretty good
+[1:56] sized sample. How did you go about
+[2:00] analyzing that many businesses or that
+[2:03] many business websites?
+[2:04] >> Yeah. So, I first of all scraped a lot
+[2:08] of 1500 or 2,000 HVAC businesses across
+[2:11] different cities in the US. And then we
+[2:14] created a python script where we
+[2:18] asked where we tried to look at
+[2:22] different things. So the five different
+[2:24] things that we try to look at were let
+[2:27] me read those to you. So how fast can a
+[2:30] visitor contact the business? How many
+[2:34] ways they have to contact the visitor?
+[2:36] whether the page earns the trust of the
+[2:39] visitor, whether the sites whether the
+[2:41] site measures results and whether it
+[2:45] works on a phone well enough. So within
+[2:48] each of these five categories, there
+[2:49] were different things that we looked at.
+[2:51] How many ways did listed on the website
+[2:55] to be for contacting? Was there a
+[2:58] contact form as well? Was there a button
+[3:01] to chat with the business? We looked at
+[3:05] if the star rating was there, how many
+[3:08] reviews the business had? Did they
+[3:11] present it on the website? Did they
+[3:13] present the actual reviews they have
+[3:15] got? We looked at things like sideway
+[3:20] whether the font was legible or not on a
+[3:24] mobile whether they were using their
+[3:27] real photos of their crew or like stock
+[3:30] photos because stock photos usually
+[3:33] don't really insp like they are not
+[3:37] really trustworthy like they don't seem
+[3:40] very trustworthy brands that use stock
+[3:43] photos. So we looked at a bunch of such
+[3:47] stuff and if you want me to like share
+[3:50] with you the major findings I I could do
+[3:53] that for you.
+[3:54] >> Oh yeah. So it sounds like you had a
+[3:57] number of different parameters that you
+[4:00] were checking these websites against. So
+[4:01] do you know how many parameters were
+[4:03] there that you were testing?
+[4:06] I don't have it at the back of my hand,
+[4:10] but you could say if there were like
+[4:13] five categories, there would be like
+[4:15] five each, five subcategories within
+[4:18] each of 25 to 30 parameters.
+[4:21] >> Yeah.
+[4:21] >> Yeah. Excellent. Okay. And then, of
+[4:24] course, I don't want to forget my
+[4:26] co-host Chat who's been kind of
+[4:28] patiently listening to us over here.
+[4:31] Chat, did you have anything to chime in
+[4:33] on the conversation so far?
+[5:05] All right. So that's a good question. So
+[5:08] basically I used your friend Claude
+[5:11] cowork to visit each of So first of all
+[5:15] we took a screenshot of the homepage of
+[5:19] each of the website and then Claude
+[5:22] analyze if it was a stock photo or if it
+[5:26] was a like a real crew, real trucks, a
+[5:31] real company. So that's how we were able
+[5:33] to analyze if they were using stock
+[5:36] photos or real photos.
+[5:40] >> Yeah, that's good. So you're using
+[5:42] Claude to analyze the photos and I'm
+[5:45] assuming was Claude analyzing the other
+[5:48] parameters that you had. You had
+[5:49] mentioned that you were running a a
+[5:51] Python script. How much of the work was
+[5:54] Claude doing versus what Python was
+[5:56] looking for?
+[5:59] Python the Python script went out and
+[6:03] scraped all the data but the data
+[6:05] crunching that was done by Claude. So it
+[6:08] was able to like I was able to do this
+[6:12] entire research in over two days you
+[6:15] could say the the only time consuming
+[6:18] part was the running the Python script
+[6:22] it going out and collecting all that
+[6:25] information.
+[6:26] >> Yeah. Yeah. Okay. So 1,300 websites
+[6:30] checked in 2 days or was it actually
+[6:33] more than 1300 or cuz you had mentioned
+[6:36] 2,000 I think at the beginning that that
+[6:38] didn't work for this test. How did that
+[6:41] go?
+[6:42] >> Yeah. So basically they were more but
+[6:45] some websites don't really allow like
+[6:48] they have a cloudflare on installed on
+[6:51] them. So the they stop the bots
+[6:54] >> from visiting the website. So we had to
+[6:57] discard those websites.
+[6:59] >> Okay. Okay, that makes sense. And yes,
+[7:02] let's get to the meat of it. What were
+[7:04] some of your findings from those 1300
+[7:06] websites you found you checked?
+[7:09] >> All right. So the
+[7:11] one of the major findings was that for
+[7:14] about 40% of the websites don't have any
+[7:18] other way they don't give any other way
+[7:21] to the homeowner to contact them other
+[7:23] than calling them. So they have no form,
+[7:26] they have no booking link, they have no
+[7:28] chat, nothing like that. Then only about
+[7:32] 28% of the sites re showed their star
+[7:36] rating and their actual reviews on the
+[7:39] website. So like about 70% of the
+[7:42] websites don't even show their reviews
+[7:45] which really help with social proof and
+[7:51] about
+[7:53] only about 20% of the websites had real
+[7:57] photos of their crew trucks and the work
+[8:00] that they are doing. About 80% didn't
+[8:03] have that. So that's also really bad in
+[8:06] my opinion.
+[8:07] >> Yeah. And and we're not talking about
+[8:09] highlevel stuff here. This these are
+[8:11] some of the basic, you know, blocking
+[8:14] and tackling of building a home service
+[8:18] website. Yeah. Not having your reviews
+[8:20] on your website and then not having a
+[8:23] picture of of your crew. Um were you
+[8:27] surprised at the results?
+[8:30] Yes, especially for the
+[8:33] stock photos thing because if 80% of the
+[8:36] businesses HVAC businesses are using
+[8:38] stock photos and for me like showing
+[8:42] your crew, showing your work that that
+[8:47] is one of the biggest lever what one
+[8:52] could pull for like getting the trust of
+[8:55] the homeowner by showing your real team.
+[8:58] So yeah, that was really surprising.
+[9:02] >> Yeah. Yeah. And so how do you think that
+[9:06] some of those results are impacting
+[9:10] those companies and their business? What
+[9:13] when you don't do those things, what
+[9:15] happens?
+[9:18] I think
+[9:20] it's killing their conversions. So even
+[9:23] if you get someone to visit your
+[9:25] website, even if you rank high on
+[9:28] Google, someone visits your website, but
+[9:31] they don't trust you enough because you
+[9:33] are not showing your reviews there, you
+[9:35] are not showing the work, the before and
+[9:38] after pictures, the testimonials, the
+[9:41] video testimonials, your crew, the
+[9:44] people that work for you. then you will
+[9:47] lose out to people that are doing that
+[9:51] even if they are ranking
+[9:53] a bit lower on Google because people
+[9:57] want to feel safe when they
+[10:01] decide to work with an HVAC company.
+[10:04] They don't want to work with someone
+[10:06] that looks shady.
+[10:08] >> Yeah. Yeah. Trust trust is one of the
+[10:11] most important factors. You're inviting
+[10:14] someone into your home. Yeah.
+[10:15] >> Right. And yeah, it's amazing the
+[10:19] quality of websites we're still seeing
+[10:21] in 2026 now, right? As there's no excuse
+[10:25] anymore.
+[10:27] >> You don't have to learn how to build a
+[10:29] website with WordPress or whatever other
+[10:32] complicated builder that that's out
+[10:34] there. Um, yeah, there's really no
+[10:37] excuse anymore. So, that that's
+[10:39] interesting. What inspired you to do a
+[10:42] study like this?
+[10:45] content. I just wanted to produce some
+[10:47] content to produce some thought
+[10:49] leadership content. So I basically asked
+[10:52] Claude itself that hey give me some
+[10:54] ideas about some studies that I could do
+[10:56] that wouldn't
+[10:58] require too much technical skills and
+[11:00] this is one of the studies that I could
+[11:03] do without requiring too much scraping
+[11:06] too much technical knowledge.
+[11:09] >> Excellent. Okay Chat, did you have
+[11:11] anything to add to the conversation?
+[11:14] Let me check.
+[11:15] >> I'm really scared about this.
+[11:18] >> ChatGPT chiming in.
+[11:19] >> List of things contractors can check.
+[11:22] Shaurya, have you tested those changes with
+[11:25] a client and measured whether more
+[11:27] visitors actually contacted them or
+[11:29] booked a job?
+[11:32] >> Yeah. So, I haven't got the chance to
+[11:35] test it, AB test it because I just
+[11:39] published it yesterday. But like
+[11:40] intuitively speaking, we all know that
+[11:43] if you put your team's photos on the
+[11:48] website, if you put the work that you
+[11:50] have been doing on your website, your
+[11:54] social proof, wherever it is on Yelp, on
+[11:57] Google review, if you put it on your
+[11:59] website, that will help you with the
+[12:01] conversion rate. That is like any
+[12:03] marketer can intuitively say that.
+[12:09] Yeah, I have to agree. The the actual
+[12:12] results would be interesting to see, of
+[12:14] course, but there's going to be so many
+[12:16] factors because if you're coming across
+[12:18] a website that doesn't have pictures of
+[12:20] its employees, that doesn't have
+[12:23] customer reviews, you're not going to
+[12:25] tell go to them and say, "Hey, I know
+[12:27] that you're trying to pay bills,
+[12:30] and I know, yeah, maybe business is
+[12:33] important to you, but I got this test I
+[12:35] really want to run, right? Yeah,
+[12:37] >> I'm going to change one thing this month
+[12:39] and I'm going to change one more thing
+[12:41] next month and they're going to go,
+[12:42] "What the hell am I paying you for?" You
+[12:44] know why?
+[12:45] >> Why?
+[12:46] >> This is like the bare minimum I would
+[12:48] say that we don't even need to think
+[12:50] about doing this stuff. It's like common
+[12:53] sense now.
+[12:54] >> Yeah. Yeah. It's going to happen. It's
+[12:56] going to happen. So
+[12:59] that research that you were doing, how
+[13:02] do you think it applies to uh AI search
+[13:06] and generative engine optimization? Have
+[13:08] you done a lot of research on that at
+[13:11] this point in time?
+[13:13] >> Yeah. So
+[13:15] with AI, I'm not too sure. So I do know
+[13:19] that when AI searches for
+[13:23] so when someone searches for HVAC
+[13:25] companies in the fan out queries people
+[13:29] the the LLMs do look for like
+[13:31] testimonials
+[13:33] reviews that kind of stuff. So if you
+[13:36] put it on your website as well that
+[13:39] could help you but I do know that these
+[13:42] things help you rank higher in the SERs.
+[13:46] So like there's this local SEO expert
+[13:49] Joy Hawkins like she is very famous in
+[13:53] the local SEO space. So she did
+[13:56] presented at a conference where she said
+[13:59] that like she had done split testing
+[14:02] with her clients where she put real
+[14:05] photos of their crew of their team
+[14:08] members on their websites. real photos
+[14:11] of so let's say if it's a page about
+[14:16] HVAC in Los Angeles so and if it's a
+[14:22] page let's say targeting a specific
+[14:25] neighborhood in Los Angeles so on each
+[14:29] of these neighborhood pages she put a
+[14:33] specific like picture of the work that
+[14:36] the that the crew did in that
+[14:39] neighborhood. So, so on all the pages
+[14:41] like it the the images were not
+[14:44] repeated. They were all they were all
+[14:47] what do you say unique
+[14:49] >> unique
+[14:49] >> and that she said that helped with the
+[14:52] rankings that single thing. So
+[14:55] >> yeah yeah that's that is interesting as
+[15:00] far as your customers go. Do you have
+[15:03] customers that are asking about AI
+[15:06] search at this point in time? Have they
+[15:07] come to you and said, "Hey, how do we
+[15:09] start to show up?"
+[15:12] >> Yeah, some of them do have asked me and
+[15:15] we are now offering this as well. But
+[15:19] like it's so difficult to track this
+[15:25] thing and also I find it a bit difficult
+[15:28] to wrap my head around because it's such
+[15:30] a new thing that what to track exactly
+[15:34] and how to track it. So we are still
+[15:36] learning that thing but yeah clients
+[15:39] have been asking about this.
+[15:41] >> Yeah it's from what we've been seeing
+[15:45] something that I've noticed even on my
+[15:47] website is that there's areas where I
+[15:51] will not show up in Google for ranking
+[15:55] even though I've spent a ton of time
+[15:57] dedicating to SEO for certain keywords.
+[16:01] But then we'll start getting traffic and
+[16:03] inquiries from ChatGPT and we're
+[16:07] getting recommended. And it's crazy to
+[16:10] me that you could have something that
+[16:12] like this that is so new where you're
+[16:16] showing up in one area AI search now and
+[16:20] you are really struggling to show up in
+[16:22] in Google search.
+[16:24] >> Yeah, that's true. That's true. I've
+[16:25] noticed that like one of my websites
+[16:29] were was ranking in ChatGPT and it was
+[16:31] sending me tons of leads and it was just
+[16:34] a onepage website ranking for just one
+[16:37] particular keyword and it had zero DR
+[16:41] zero anything but somehow ChatGPT
+[16:44] picked it up and started recommending it
+[16:46] and it's nowhere to be seen on Google.
+[16:49] So
+[16:49] >> yeah.
+[16:50] >> Yeah, it's really but I think at the end
+[16:53] of the day, Google is going to come out
+[16:55] as the winner. So we have to we should
+[17:00] optimize our website according to Google
+[17:04] AI instead of ChatGPT.
+[17:06] >> Yeah, a lot of people are predicting
+[17:08] that Google's going to eventually end up
+[17:10] on top. They have all the data. They've
+[17:12] got a huge head start with the search
+[17:14] that they've been doing. They seem to
+[17:16] have been hesitant to release maybe some
+[17:19] of their higher quality or newer models,
+[17:21] but they've so much of the traffic right
+[17:23] now. I mean, they would really have to
+[17:26] flop in to not come out on top.
+[17:29] >> Um, and so, yeah, it's been a pretty
+[17:32] wild and interesting experience. Now,
+[17:36] personal agents seem to be the new rave
+[17:40] and what's coming out now. Have you
+[17:42] tested any personal agents yourself like
+[17:45] Muse or you've got Grockbot or Dots?
+[17:49] Anything like that?
+[17:50] >> No, I haven't got the chance to do that
+[17:53] yet.
+[17:54] >> Okay. Yeah, that that seems to be like
+[17:57] the next wave. Right now, we're stuck in
+[18:01] in AI and agents are getting um are
+[18:05] coming out pretty quickly. So, it will
+[18:07] be interesting to see where that goes.
+[18:09] So,
+[18:10] >> yeah.
+[18:11] Chat, did you have any questions that
+[18:13] you wanted to add in?
+[18:16] >> Let me check that quickly.
+[18:22] >> That's interesting. Sure am. That
+[18:23] onepage website is a great example. How
+[18:26] did you establish that those leads came
+[18:28] from ChatGPT? Did people tell you or
+[18:30] could you actually track their visits
+[18:32] through to an inquiry?
+[18:35] >> Yeah. So yeah when I got on calls with
+[18:39] these people so I asked them like hey
+[18:43] where did you find me and some of them
+[18:46] didn't remember at all and some of them
+[18:48] did and then when I went into ChatGPT
+[18:53] so one of the person actually told me
+[18:56] the exact thing that they searched for
+[18:57] so when I searched for that even on my
+[19:00] end then I came to know so at for this
+[19:03] particular thing I'm ranking in ChatGPT
+[19:07] because no one else was like targeting
+[19:09] that keyword and I somehow was. So
+[19:13] that's how it happened.
+[19:15] And was that an intentional was that the
+[19:18] point of that page or was it something
+[19:21] else that you were working with and it
+[19:24] was just an accidental discovery?
+[19:27] >> Yeah, it wasn't intentional at all. I
+[19:30] didn't plan to have that website show up
+[19:34] anywhere in the SERs or in any chat LLMs
+[19:38] because I didn't do any SEO work on that
+[19:40] website. It was a onepage website just
+[19:42] for the sake of if I reach out to
+[19:45] someone and they want to check out. So
+[19:47] like it had a VSSL of me.
+[19:49] >> Yeah,
+[19:50] >> that's all. And a like a big wall of
+[19:53] text below that and it somehow did. And
+[19:56] it sent me like a lead every other day.
+[20:00] And these leads also like the ones that
+[20:02] find you from ChatGPT and Google when
+[20:05] they book a call they do show up in as
+[20:08] opposed to when you are reaching out
+[20:10] people cold call with a cold outreach
+[20:12] they might flake on you but not these
+[20:14] people.
+[20:15] >> Yeah.
+[20:16] >> So the quality of the traffic is is very
+[20:18] good. It's a really it's a strange
+[20:21] phenomenon because for the past what 5,
+[20:24] 10, 20 years or so, you go to Google,
+[20:27] you bounce around on different websites
+[20:30] and you have a a decent feeling about
+[20:33] what Google is providing you. You've got
+[20:35] reviews there that you may or may not
+[20:37] fully trust, right? But there's a lot of
+[20:40] trust signals there and you get your top
+[20:43] 10 on page one of Google. And now AI has
+[20:48] given you three options, usually
+[20:50] recommending three, sometimes four I've
+[20:52] seen. And those are like the these are
+[20:56] the companies. There's nobody else that
+[20:57] exists, right?
+[20:58] >> Yeah.
+[20:59] >> Which is crazy because now you have to
+[21:02] figure out how to get as one of those
+[21:05] four that are recommended. I did a
+[21:08] another episode last week
+[21:11] where I was actually analyzing one
+[21:15] particular prompt for Phoenix, Arizona,
+[21:18] and it related to HVAC repair. And so I
+[21:21] put that prompt in. I was using
+[21:23] temporary uh chats so that each time it
+[21:27] was like a fresh run
+[21:28] >> and it was with Gemini and every time it
+[21:34] would give me two names that everyone in
+[21:36] the entire country knows. These are huge
+[21:39] companies. And then one guy that's got
+[21:42] 111,
+[21:44] not 1100, 111 reviews. And he came up
+[21:48] multiple times. I'm going, how is this
+[21:50] guy doing this?
+[21:51] >> So like he had less reviews than he
+[21:53] usually. That's what I
+[21:55] >> So So the number one recommended by AI
+[21:58] and it was pretty consistent. I ran the
+[22:00] prompt six times in the temporary chat
+[22:03] and it was like 34,000 reviews was
+[22:06] number one.
+[22:07] >> Okay.
+[22:07] >> The second position was like 14,000
+[22:09] reviews. Guy had 111 reviews and it was
+[22:13] showing up in like the third or fourth
+[22:16] position.
+[22:16] >> That's it. It makes no sense, right?
+[22:18] This doesn't
+[22:20] >> in the SEO world.
+[22:23] >> There's something wrong here. We're
+[22:24] thinking that there's some black hat
+[22:27] situation going on because you shouldn't
+[22:29] be able to show up like that.
+[22:30] >> Yeah. Yeah, it makes sense.
+[22:33] >> And so I actually after I recorded the
+[22:36] interview and it would have been fun to
+[22:37] do it live, but I called the guy up and
+[22:40] I said, "Hey, this sounds weird, right?
+[22:42] This is abnormal, but I just did a
+[22:45] podcast and I was searching in your area
+[22:48] through AI and you kept showing up. What
+[22:52] What's going on? What are you doing?"
+[22:53] And I was expecting like I got this
+[22:55] agency, they specialize in this blah
+[22:58] blah blah. They know what's going on.
+[23:00] No. His response was I provide really
+[23:03] good service.
+[23:05] >> That's good, but AI doesn't really
+[23:08] that's not why they're ranking you over
+[23:11] all these other people that probably
+[23:12] provide good service, too.
+[23:14] >> Yeah. Yeah.
+[23:15] >> And so I dug into his website and there
+[23:17] was nothing clear to show why he would
+[23:21] be getting represented so well. And and
+[23:25] again it his was one of the four
+[23:28] companies that were the chosen one.
+[23:30] Right. The the other I think there's 750
+[23:35] HVAC contractors in the Phoenix area. It
+[23:37] didn't exist at that point. Right.
+[23:40] So yeah, pretty wild.
+[23:43] >> Yeah. But I
+[23:47] wouldn't like Gemini also take into
+[23:50] account where you are searching from. So
+[23:51] like he would be just ranking in that
+[23:53] particular neighborhood, right? Not in
+[23:55] entire Phoenix, Arizona.
+[23:58] >> So I wasn't actually searching by
+[23:59] neighborhood. I was just searching
+[24:00] Phoenix. So I was just searching by the
+[24:03] city name. So it was very
+[24:04] >> And you are not And you are not in But
+[24:07] let's say someone is in Phoenix and they
+[24:10] search for
+[24:12] HVAC repair. FE Phoenix then Gemini
+[24:16] would probably take into account their
+[24:19] location and then present
+[24:22] >> it would depend on it may I know it does
+[24:25] when you do a search on your phone in
+[24:27] Google but these were since they were
+[24:32] temporary chats granted yeah I'm in
+[24:34] California so I'm not in that location
+[24:37] but I it would be curious to see I'd be
+[24:40] curious to see what the results would be
+[24:42] like if you searched actually chat
+[24:46] that's a good question for you. Do the
+[24:50] search results vary
+[24:53] either for you or for Gemini based on
+[24:56] your location.
+[24:59] >> Let me check that for you.
+[25:08] >> Yes, both can use location. ChatGPT
+[25:11] search can use your approximate location
+[25:13] from your internet connection and Gemini
+[25:15] can use general or precise device
+[25:17] location if permitted. A temporary chat
+[25:20] doesn't necessarily remove those
+[25:22] signals. So your Phoenix runs show
+[25:24] repeatability under your conditions, but
+[25:26] they don't establish what someone
+[25:27] physically in Phoenix would see.
+[25:30] >> Okay. So, if I'm not located in Phoenix
+[25:34] and I'm running a search for that area,
+[25:37] my results may be different than someone
+[25:40] in Phoenix. Is that right, Chat?
+[25:43] >> Let me check that quickly.
+[25:47] >> That's right. They may differ even with
+[25:49] the same Phoenix prompt. Location is one
+[25:52] possible influence, and answers can also
+[25:54] vary between runs. So, we need a
+[25:56] comparison to say whether location
+[25:58] actually changed yours.
+[26:00] Interesting. Okay. In chat, if I had
+[26:02] something like if there was a way to set
+[26:05] my location with a browser extension
+[26:09] uh for Gemini, for instance, would that
+[26:12] help to simulate searches in that area?
+[26:17] >> Let me check. That
+[26:21] >> could help depending on what the
+[26:23] extension changes. If it changes the
+[26:26] browser's reported coordinates, Gemini
+[26:28] would need permission to use that
+[26:30] location. Your connection could still
+[26:32] indicate California. I treat it as a
+[26:34] partial simulation. You could check the
+[26:36] location Gemini displays, then compare
+[26:38] your results with someone actually in
+[26:40] Phoenix using the same prompt and model.
+[26:43] >> Yeah. Wow. So, the plot thickens then.
+[26:46] >> Mhm.
+[26:47] >> That's interesting.
+[26:49] So I would wonder now one thing he did
+[26:52] say is that his phone calls have
+[26:55] increased over the last couple months
+[26:58] been getting more calls.
+[27:00] >> So
+[27:02] >> to me it was an indication that
+[27:05] >> it was working for him. He had no idea.
+[27:08] >> Yeah,
+[27:09] >> it was working for him. Yeah. I mean
+[27:12] >> tell him to double Tell him to double
+[27:14] down on that.
+[27:15] >> Yeah. whatever you're doing, do more of
+[27:18] it.
+[27:19] >> Um, but yeah, and when I called him, it
+[27:22] went to voicemail and then he called me
+[27:24] back. It was the owner
+[27:26] cell phone number that was on the
+[27:27] website. This was like
+[27:30] >> it was not an established company
+[27:32] whatsoever. That's
+[27:33] >> I think that's the opportunity that a
+[27:36] lot of people are missing right now
+[27:39] that AI search is so new that you could
+[27:42] show up like your one page did when
+[27:47] other things that you're try that you've
+[27:49] been trying to do with Google for such a
+[27:51] long time is a struggle.
+[27:55] >> Yeah. I think if just like you had
+[27:59] interest in marketing and you probably
+[28:02] that's why you were able to grow your
+[28:04] HVAC business. So if someone a marketing
+[28:06] minded person puts their mind to this
+[28:09] they can really take advantage of this
+[28:11] because agencies most agencies I would
+[28:14] say don't really care that much about
+[28:17] the results as much as a business owner
+[28:21] themselves would do. So yeah that's
+[28:25] true.
+[28:26] >> Yeah. Yeah, and I think that's actually
+[28:28] a good segue into learning a little bit
+[28:30] about more more about your business.
+[28:33] Tell me more about like how you named
+[28:35] the business and I noticed you've got
+[28:37] some unique guarantees on your website
+[28:40] as well. Talk to us about that.
+[28:42] Yeah. So,
+[28:45] Honest HVAC Marketing Agency, I named it
+[28:48] honest because
+[28:51] first of all, it's a good
+[28:53] positioning thing that in the sea of
+[28:57] HVAC marketing agencies, you need to
+[29:00] stand out. I wouldn't say that I'm pro
+[29:04] the most honest person in the world. I'm
+[29:07] not. But it makes for a good brand
+[29:11] positioning. And secondly,
+[29:14] yes, we do try to be more honest than
+[29:18] the other marketing agencies when it
+[29:20] comes to so a lot of marketing agency,
+[29:22] they just report on
+[29:25] rankings and
+[29:28] stuff like that. But we don't do that.
+[29:31] Moreover, if we
+[29:33] don't provide a service or we are not
+[29:35] good at something like we are not good
+[29:38] at Google ads. So we tell it honestly to
+[29:41] the people. If someone is looking
+[29:43] specifically for that we don't want to
+[29:45] waste their money. So yeah I'm
+[29:50] honest like I find myself to be a little
+[29:54] more to be a little more honest than the
+[29:57] average guy. So it gels well with my
+[30:01] personality, this brand. So that's how I
+[30:05] named it this way.
+[30:06] >> Excellent. Okay. And and how long ago
+[30:10] did you create Honest Hack Marketing
+[30:13] Agency?
+[30:14] >> Yeah, about a year ago as well, just
+[30:16] like you.
+[30:16] >> Oh, okay. Yeah. Nice.
+[30:18] >> Nice. So, yeah, we're on very similar
+[30:21] paths. I
+[30:21] >> Yeah,
+[30:22] >> that's very cool. That's very cool. And
+[30:24] yeah, I noticed that you had a unique
+[30:26] guarantee. How did you come up with that
+[30:29] guarantee and how receptive are
+[30:32] customers to it? That seems like a slam
+[30:35] dunk if I'm a business owner.
+[30:37] >> To be honest, most people don't even
+[30:41] care about the guarantee. Uh it's as if
+[30:44] they forget about it when they start
+[30:46] doing business with us. Plus like with
+[30:50] the help of database reactivation
+[30:53] Facebook ads it's pretty easy to deliver
+[30:56] on this guarantee but once they see how
+[31:01] we work and
+[31:04] they get to know us they don't really
+[31:08] ask about it just it's just like a foot
+[31:10] in the door.
+[31:12] >> Yeah. Sure. Okay. Now you mentioned
+[31:14] database reactivation that that is a hot
+[31:18] topic that's getting thrown around a lot
+[31:20] right now. What have you found works
+[31:22] best for database? So how are you
+[31:25] executing on database reactivation?
+[31:30] I would say the
+[31:33] usual like tuneups those are the go-to
+[31:36] things like it works according to the
+[31:39] season of course for different seasons
+[31:41] there are different things but the
+[31:43] >> low cost offers work the best with
+[31:46] database reactivation
+[31:48] and what else works well asking for
+[31:52] referrals yeah that also works well if
+[31:54] you give them some kind of discount or
+[31:57] some kind of credit Sure. And is that
+[32:00] the reactivation campaigns? Are those
+[32:03] email, SMS, outbound? What's typically
+[32:07] how's that typically working?
+[32:09] >> Yeah, it's just SMS that that has the
+[32:11] highest open rate
+[32:13] >> and deliverability rate. So, yeah, SMS
+[32:17] for sure.
+[32:18] >> Excellent. Okay. Okay. Anything else
+[32:21] that you want to tell us about Honest
+[32:22] Hack Marketing Agency?
+[32:25] Probably it would be better if because
+[32:30] I'm
+[32:33] the listeners wouldn't get too much by
+[32:35] listening to me talk about our agency.
+[32:38] Probably I could provide them some with
+[32:40] some more value by talking about another
+[32:43] study that we did
+[32:45] >> uh about the Google reviews. So we
+[32:48] analyzed
+[32:50] 17,000
+[32:52] something Google reviews 17,241
+[32:56] reviews and the number one the most
+[33:01] s not surprising but the best finding
+[33:04] out of this was that
+[33:06] people
+[33:08] the most praised thing about an HVAC
+[33:11] business is when a technician
+[33:14] explains
+[33:16] to the homeowner what's what exactly is
+[33:19] wrong with their system? What's the
+[33:22] breakdown of the cost that so basically
+[33:27] telling them that hey this is what went
+[33:29] wrong with your system. So that gives a
+[33:31] sense of control to the homeowner. They
+[33:34] are not left wondering that hey this
+[33:37] person just came checked a few things
+[33:39] and now he's quoting us like $1,000.
+[33:42] >> Mhm.
+[33:43] >> He's explaining to us what went wrong.
+[33:45] So we now have more information. We can
+[33:48] use this information to doublech check
+[33:50] if what he's saying is right or wrong.
+[33:53] So that thing gets appreciated a lot as
+[33:57] well as when a technician explain also
+[34:01] explains the cost breakup what he has
+[34:04] just quoted to the homeowner. So it's
+[34:07] not just one figure thrown on thrown
+[34:11] their way. It's like a specific
+[34:14] breakdown that hey this much is for
+[34:16] labor, this much is for this part, this
+[34:18] much is for this part.
+[34:20] >> So
+[34:21] >> interesting. Okay. And you said how many
+[34:23] total reviews?
+[34:24] >> We analyzed 17,241
+[34:28] reviews across five
+[34:31] different cities, the five most popular
+[34:33] cities in the US. And I guess there we
+[34:38] analyze about 100 or 120
+[34:43] businesses. So the all these Yeah.
+[34:46] companies. So 17,000 reviews were from
+[34:49] 100 something companies.
+[34:51] >> Okay. And the reviews what would be
+[34:56] interesting is the average star rating.
+[34:59] Was the average star rating for all the
+[35:01] businesses that you reviewed pretty
+[35:03] high? Was there a minimum don't review a
+[35:06] business's reviews if they're under
+[35:09] three stars on average? Did you have
+[35:12] anything like that or was it just any
+[35:14] was it more open?
+[35:15] >> Yeah, it was totally open that but the
+[35:19] finding was that most of the businesses
+[35:22] I would say all of the businesses have
+[35:24] more than 4.1 rating overall. Okay,
+[35:27] that's what it found. So the edge that
+[35:30] businesses have isn't their star rating
+[35:32] exactly, but what how many reviews they
+[35:34] have in total and what those reviews say
+[35:36] because what they say also impacts your
+[35:39] Google ranking.
+[35:41] >> Yeah. Yeah. And we're finding it to be
+[35:44] another trust signal for AI search and
+[35:47] generative engine optimization obviously
+[35:50] because it's unique content like a
+[35:52] human. I would say 95% of the time those
+[35:57] reviews are written by humans. I don't
+[35:58] think we've gotten to the point where
+[36:00] we're having our AI review a company or
+[36:04] write a company review for us yet.
+[36:06] Although I think that's coming.
+[36:08] >> Yeah, that's coming for sure. A lot of
+[36:10] these CRM and all they give the ability
+[36:14] to oneclick generate a review which one
+[36:18] could just copy paste.
+[36:19] >> Yeah.
+[36:20] >> Yeah. Now, what about responses? Did you
+[36:23] measure how many of those reviews were
+[36:26] getting responded to?
+[36:28] >> Yeah. So, one thing, one of the
+[36:30] interesting findings about the responses
+[36:34] was that
+[36:36] so the fivestar reviews get responded
+[36:39] 79.6%
+[36:41] of the times, but the one and one star
+[36:45] reviews and twostar reviews, they get
+[36:48] responded just 64% of the time. So one
+[36:50] thing was that
+[36:52] >> contractors should reply if not at least
+[36:56] as much or even more as they are
+[36:59] responding to the fivestar reviews
+[37:02] because they can present their side of
+[37:05] the story. If someone left a one-star
+[37:08] review, they could tell that hey this is
+[37:11] what happened and if I'm reading it I
+[37:14] could get their side of the story
+[37:15] instead of just believing the one star
+[37:17] review.
+[37:19] Yeah, it's an opportunity and
+[37:23] contractors handle one-star reviews
+[37:25] wrong most of the time. There's too many
+[37:28] of them that are using that response as
+[37:31] a way to
+[37:34] attack is the wrong word, but get back
+[37:36] at the customer that's leaving that that
+[37:38] review. And I see it when I'm talking to
+[37:42] customers or researching a company that
+[37:45] is looking to have their marketing done.
+[37:47] And there's just there's so many wrong
+[37:49] ways of handling a one-star review. And
+[37:53] what people don't realize is that some
+[37:55] of your best customers are only looking
+[37:58] at the one and two star reviews. That
+[38:00] that's the only thing that they're
+[38:02] searching before because they want to
+[38:04] know if something goes sideways, how are
+[38:06] you going to deal with them? Are you
+[38:08] gonna attack them personally like you
+[38:10] did
+[38:10] >> these people call them or not?
+[38:14] >> Oh jeez. Yeah, that's pretty rough, but
+[38:16] it's out there. There was there was a
+[38:18] post last week in one of the groups on
+[38:20] Facebook and you know the guy's response
+[38:24] to the customer was basically going
+[38:27] through like he was in a court of law
+[38:29] and detailing every single instance and
+[38:33] some of it was a little bit much. He was
+[38:35] just going overboard with his response
+[38:38] about the situation and he was getting a
+[38:40] little he was getting getting a little
+[38:42] cute with his response. And if I'm a
+[38:45] when I responded to him and I said,
+[38:46] "Hey, if I'm the customer here, I don't
+[38:48] want to deal with any of this. I don't
+[38:50] care if you're right or not at this
+[38:52] point. Just your response should be
+[38:57] either yes, we screwed up. Here's what
+[39:00] we're doing about it." or some of my
+[39:02] responses when we would get the
+[39:04] occasional one-star review and I took it
+[39:06] personally,
+[39:07] >> you know, and it was and I would post my
+[39:09] cell phone number and say, "Hey, this is
+[39:12] going sideways. I understand something's
+[39:15] wrong. I can't find your information. I
+[39:17] want to talk to you. Call me on my cell
+[39:20] phone number." And occasionally I would
+[39:22] get people that call and they were
+[39:25] shocked that the owner was giving them
+[39:27] their phone number to call. And that a
+[39:30] lot of these people just want to be
+[39:31] heard.
+[39:32] >> Yeah.
+[39:32] >> And they want to know that you
+[39:35] understand their concerns and they it's
+[39:37] not necessarily that they just want all
+[39:38] their money back. Some people do, but
+[39:41] that's not necessarily the case. And
+[39:42] >> yeah, most of the times it's just being
+[39:44] that they want to get hurt. Even I have
+[39:48] seen that
+[39:49] >> when if I have had a bad experience, I
+[39:53] don't want the money back unless it's a
+[39:56] really big amount. I don't want the
+[39:57] money back. I just want to make sure
+[39:59] that
+[40:00] >> this doesn't happen again with anyone
+[40:03] else. Yeah. Like on these food delivery
+[40:06] apps, they say that, "Hey, do you want a
+[40:08] refund?" I say, "No, I don't want a
+[40:09] refund. I just wanted to let you know
+[40:11] that I had a bad bad experience."
+[40:13] >> Yeah. Yeah. So, you've done some pretty
+[40:16] some interesting research projects. One
+[40:19] on reviews
+[40:21] um and then the other on the business
+[40:23] websites. Do you have your next research
+[40:25] project lined up? Do you know what's
+[40:26] coming up in the future?
+[40:28] >> No, I've published about four so far and
+[40:31] I'm now not going to I'm going to put it
+[40:35] on hold for now. Focus on other things
+[40:38] so that I can get some business coming
+[40:41] in instead of mental masturbating with
+[40:44] the thought leadership content.
+[40:48] >> Yes. Yes, it can be. It's interesting,
+[40:50] but does it really move the needle?
+[40:52] Yeah, I understand. That's excellent.
+[40:54] chat, did you have any other questions
+[40:58] for our guest today?
+[41:00] >> Let me check that.
+[41:07] >> One last question, Shaurya. For an HVAC
+[41:10] owner listening who wants to turn what
+[41:12] we've discussed into more booked jobs,
+[41:15] what's the first thing you'd have them
+[41:16] change this week, and how would you
+[41:18] check whether it helped?
+[41:25] All right. So, the easiest thing that I
+[41:29] would say for an HVAC business owner to
+[41:33] get results is like
+[41:38] SMS and call all your past customers
+[41:40] that you haven't requested a review from
+[41:43] and have a system in place that makes it
+[41:47] automated from the next time around.
+[41:49] Because reviews are the one of the
+[41:51] biggest
+[41:53] pieces of the puzzle when it comes to
+[41:55] Google ranking. And when you get start
+[41:58] when you start getting more reviews, you
+[41:59] start ranking higher. When you start
+[42:01] ranking higher, you start getting more
+[42:03] jobs. So yeah, focus on getting more
+[42:05] reviews.
+[42:08] >> Awesome. Yeah, absolutely. The reviews
+[42:11] are critical. the other elements that
+[42:13] you talked about being important for the
+[42:15] website were that really good
+[42:18] information um based on your research
+[42:21] reports. So, I appreciate you joining us
+[42:24] today. Was there anything else that
+[42:25] you'd like to leave us with before we
+[42:27] close this out?
+[42:32] >> Nothing really. I wouldn't pitch myself
+[42:35] when Aaron does the same things. It
+[42:38] wouldn't be the nice thing to do. It's
+[42:40] quite it's quite all right. No problem.
+[42:44] A very respectful guest. I appreciate
+[42:46] that. Yes. Okay. This has been a chat
+[42:49] with chat. Thanks for joining us today.
+[42:52] Great conversation and I hope you can
+[42:54] take this and start executing it in your
+[42:56] business. We'll see you next time.
+[43:01] All right.
+[43:06] I've put a short intro and five GEO
+[43:09] focused questions on screen centered on
+[43:12] how

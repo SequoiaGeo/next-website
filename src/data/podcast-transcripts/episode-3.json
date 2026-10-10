@@ -1,0 +1,417 @@
+[
+  {
+    "timestamp": "0:01",
+    "seconds": 1,
+    "text": "All right, welcome back to a chat with chat. Today we're joined by Shaurya Jain, founder of Honest HVAC Marketing Agency. Uh he got started in digital marketing back in 2013. And today we're going to be exploring how HVAC businesses work when customers ask AI for recommendations, what Shaurya is learning from his work, and how contractors are adjusting to the visibility with AI"
+  },
+  {
+    "timestamp": "0:31",
+    "seconds": 31,
+    "text": "search and generative engine optimization. Shaurya, welcome to the podcast. Tell us a little bit about your background and what you've been up to. >> Yes. So, first of all, thanks Aaron for inviting me over as being the first guest. So, what I've been up to, I've been up to the same thing as you basically helping HVAC companies and I don't have the advantage of running an HVAC company like you have. But I do have extensive experience in being a"
+  },
+  {
+    "timestamp": "1:02",
+    "seconds": 62,
+    "text": "marketer. So, I've been a marketer for the last 13 years. And we have been helping HVAC companies with their Facebook ads and local SEO. We have been doing tons of research to see how HA companies are do like doing in the search results in AI how they have set up their websites. I just I yesterday itself I published a new study where we studied like 1,300 HVAC websites to see"
+  },
+  {
+    "timestamp": "1:34",
+    "seconds": 94,
+    "text": "how ready were they for generating leads like how good were they good were the websites in terms of generating leads. So I'm excited to to talk about those things with you. >> That's fantastic. Now, yeah, I'm very interested in the research that you did. 1,300 websites, that's a pretty good sized sample. How did you go about analyzing that many businesses or that many business websites?"
+  },
+  {
+    "timestamp": "2:04",
+    "seconds": 124,
+    "text": ">> Yeah. So, I first of all scraped a lot of 1500 or 2,000 HVAC businesses across different cities in the US. And then we created a python script where we asked where we tried to look at different things. So the five different things that we try to look at were let me read those to you. So how fast can a visitor contact the business? How many"
+  },
+  {
+    "timestamp": "2:34",
+    "seconds": 154,
+    "text": "ways they have to contact the visitor? whether the page earns the trust of the visitor, whether the sites whether the site measures results and whether it works on a phone well enough. So within each of these five categories, there were different things that we looked at. How many ways did listed on the website to be for contacting? Was there a contact form as well? Was there a button to chat with the business? We looked at"
+  },
+  {
+    "timestamp": "3:05",
+    "seconds": 185,
+    "text": "if the star rating was there, how many reviews the business had? Did they present it on the website? Did they present the actual reviews they have got? We looked at things like sideway whether the font was legible or not on a mobile whether they were using their real photos of their crew or like stock photos because stock photos usually don't really insp like they are not"
+  },
+  {
+    "timestamp": "3:37",
+    "seconds": 217,
+    "text": "really trustworthy like they don't seem very trustworthy brands that use stock photos. So we looked at a bunch of such stuff and if you want me to like share with you the major findings I I could do that for you. >> Oh yeah. So it sounds like you had a number of different parameters that you were checking these websites against. So do you know how many parameters were there that you were testing? I don't have it at the back of my hand,"
+  },
+  {
+    "timestamp": "4:10",
+    "seconds": 250,
+    "text": "but you could say if there were like five categories, there would be like five each, five subcategories within each of 25 to 30 parameters. >> Yeah. >> Yeah. Excellent. Okay. And then, of course, I don't want to forget my co-host Chat who's been kind of patiently listening to us over here. Chat, did you have anything to chime in on the conversation so far?"
+  },
+  {
+    "timestamp": "5:05",
+    "seconds": 305,
+    "text": "All right. So that's a good question. So basically I used your friend Claude cowork to visit each of So first of all we took a screenshot of the homepage of each of the website and then Claude analyze if it was a stock photo or if it was a like a real crew, real trucks, a real company. So that's how we were able to analyze if they were using stock"
+  },
+  {
+    "timestamp": "5:36",
+    "seconds": 336,
+    "text": "photos or real photos. >> Yeah, that's good. So you're using Claude to analyze the photos and I'm assuming was Claude analyzing the other parameters that you had. You had mentioned that you were running a a Python script. How much of the work was Claude doing versus what Python was looking for? Python the Python script went out and scraped all the data but the data crunching that was done by Claude. So it"
+  },
+  {
+    "timestamp": "6:08",
+    "seconds": 368,
+    "text": "was able to like I was able to do this entire research in over two days you could say the the only time consuming part was the running the Python script it going out and collecting all that information. >> Yeah. Yeah. Okay. So 1,300 websites checked in 2 days or was it actually more than 1300 or cuz you had mentioned 2,000 I think at the beginning that that"
+  },
+  {
+    "timestamp": "6:38",
+    "seconds": 398,
+    "text": "didn't work for this test. How did that go? >> Yeah. So basically they were more but some websites don't really allow like they have a cloudflare on installed on them. So the they stop the bots >> from visiting the website. So we had to discard those websites. >> Okay. Okay, that makes sense. And yes, let's get to the meat of it. What were some of your findings from those 1300 websites you found you checked?"
+  },
+  {
+    "timestamp": "7:09",
+    "seconds": 429,
+    "text": ">> All right. So the one of the major findings was that for about 40% of the websites don't have any other way they don't give any other way to the homeowner to contact them other than calling them. So they have no form, they have no booking link, they have no chat, nothing like that. Then only about 28% of the sites re showed their star rating and their actual reviews on the"
+  },
+  {
+    "timestamp": "7:39",
+    "seconds": 459,
+    "text": "website. So like about 70% of the websites don't even show their reviews which really help with social proof and about only about 20% of the websites had real photos of their crew trucks and the work that they are doing. About 80% didn't have that. So that's also really bad in my opinion. >> Yeah. And and we're not talking about"
+  },
+  {
+    "timestamp": "8:09",
+    "seconds": 489,
+    "text": "highlevel stuff here. This these are some of the basic, you know, blocking and tackling of building a home service website. Yeah. Not having your reviews on your website and then not having a picture of of your crew. Um were you surprised at the results? Yes, especially for the stock photos thing because if 80% of the businesses HVAC businesses are using stock photos and for me like showing"
+  },
+  {
+    "timestamp": "8:42",
+    "seconds": 522,
+    "text": "your crew, showing your work that that is one of the biggest lever what one could pull for like getting the trust of the homeowner by showing your real team. So yeah, that was really surprising. >> Yeah. Yeah. And so how do you think that some of those results are impacting those companies and their business? What"
+  },
+  {
+    "timestamp": "9:13",
+    "seconds": 553,
+    "text": "when you don't do those things, what happens? I think it's killing their conversions. So even if you get someone to visit your website, even if you rank high on Google, someone visits your website, but they don't trust you enough because you are not showing your reviews there, you are not showing the work, the before and after pictures, the testimonials, the video testimonials, your crew, the"
+  },
+  {
+    "timestamp": "9:44",
+    "seconds": 584,
+    "text": "people that work for you. then you will lose out to people that are doing that even if they are ranking a bit lower on Google because people want to feel safe when they decide to work with an HVAC company. They don't want to work with someone that looks shady. >> Yeah. Yeah. Trust trust is one of the most important factors. You're inviting"
+  },
+  {
+    "timestamp": "10:14",
+    "seconds": 614,
+    "text": "someone into your home. Yeah. >> Right. And yeah, it's amazing the quality of websites we're still seeing in 2026 now, right? As there's no excuse anymore. >> You don't have to learn how to build a website with WordPress or whatever other complicated builder that that's out there. Um, yeah, there's really no excuse anymore. So, that that's interesting. What inspired you to do a study like this?"
+  },
+  {
+    "timestamp": "10:45",
+    "seconds": 645,
+    "text": "content. I just wanted to produce some content to produce some thought leadership content. So I basically asked Claude itself that hey give me some ideas about some studies that I could do that wouldn't require too much technical skills and this is one of the studies that I could do without requiring too much scraping too much technical knowledge. >> Excellent. Okay Chat, did you have anything to add to the conversation? Let me check."
+  },
+  {
+    "timestamp": "11:15",
+    "seconds": 675,
+    "text": ">> I'm really scared about this. >> ChatGPT chiming in. >> List of things contractors can check. Shaurya, have you tested those changes with a client and measured whether more visitors actually contacted them or booked a job? >> Yeah. So, I haven't got the chance to test it, AB test it because I just published it yesterday. But like intuitively speaking, we all know that if you put your team's photos on the"
+  },
+  {
+    "timestamp": "11:48",
+    "seconds": 708,
+    "text": "website, if you put the work that you have been doing on your website, your social proof, wherever it is on Yelp, on Google review, if you put it on your website, that will help you with the conversion rate. That is like any marketer can intuitively say that. Yeah, I have to agree. The the actual results would be interesting to see, of course, but there's going to be so many factors because if you're coming across"
+  },
+  {
+    "timestamp": "12:18",
+    "seconds": 738,
+    "text": "a website that doesn't have pictures of its employees, that doesn't have customer reviews, you're not going to tell go to them and say, \"Hey, I know that you're trying to pay bills, and I know, yeah, maybe business is important to you, but I got this test I really want to run, right? Yeah, >> I'm going to change one thing this month and I'm going to change one more thing next month and they're going to go, \"What the hell am I paying you for?\" You know why? >> Why? >> This is like the bare minimum I would"
+  },
+  {
+    "timestamp": "12:48",
+    "seconds": 768,
+    "text": "say that we don't even need to think about doing this stuff. It's like common sense now. >> Yeah. Yeah. It's going to happen. It's going to happen. So that research that you were doing, how do you think it applies to uh AI search and generative engine optimization? Have you done a lot of research on that at this point in time? >> Yeah. So with AI, I'm not too sure. So I do know"
+  },
+  {
+    "timestamp": "13:19",
+    "seconds": 799,
+    "text": "that when AI searches for so when someone searches for HVAC companies in the fan out queries people the the LLMs do look for like testimonials reviews that kind of stuff. So if you put it on your website as well that could help you but I do know that these things help you rank higher in the SERs. So like there's this local SEO expert"
+  },
+  {
+    "timestamp": "13:49",
+    "seconds": 829,
+    "text": "Joy Hawkins like she is very famous in the local SEO space. So she did presented at a conference where she said that like she had done split testing with her clients where she put real photos of their crew of their team members on their websites. real photos of so let's say if it's a page about HVAC in Los Angeles so and if it's a"
+  },
+  {
+    "timestamp": "14:22",
+    "seconds": 862,
+    "text": "page let's say targeting a specific neighborhood in Los Angeles so on each of these neighborhood pages she put a specific like picture of the work that the that the crew did in that neighborhood. So, so on all the pages like it the the images were not repeated. They were all they were all what do you say unique >> unique >> and that she said that helped with the"
+  },
+  {
+    "timestamp": "14:52",
+    "seconds": 892,
+    "text": "rankings that single thing. So >> yeah yeah that's that is interesting as far as your customers go. Do you have customers that are asking about AI search at this point in time? Have they come to you and said, \"Hey, how do we start to show up?\" >> Yeah, some of them do have asked me and we are now offering this as well. But like it's so difficult to track this"
+  },
+  {
+    "timestamp": "15:25",
+    "seconds": 925,
+    "text": "thing and also I find it a bit difficult to wrap my head around because it's such a new thing that what to track exactly and how to track it. So we are still learning that thing but yeah clients have been asking about this. >> Yeah it's from what we've been seeing something that I've noticed even on my website is that there's areas where I will not show up in Google for ranking"
+  },
+  {
+    "timestamp": "15:55",
+    "seconds": 955,
+    "text": "even though I've spent a ton of time dedicating to SEO for certain keywords. But then we'll start getting traffic and inquiries from ChatGPT and we're getting recommended. And it's crazy to me that you could have something that like this that is so new where you're showing up in one area AI search now and you are really struggling to show up in in Google search. >> Yeah, that's true. That's true. I've"
+  },
+  {
+    "timestamp": "16:25",
+    "seconds": 985,
+    "text": "noticed that like one of my websites were was ranking in ChatGPT and it was sending me tons of leads and it was just a onepage website ranking for just one particular keyword and it had zero DR zero anything but somehow ChatGPT picked it up and started recommending it and it's nowhere to be seen on Google. So >> yeah. >> Yeah, it's really but I think at the end of the day, Google is going to come out"
+  },
+  {
+    "timestamp": "16:55",
+    "seconds": 1015,
+    "text": "as the winner. So we have to we should optimize our website according to Google AI instead of ChatGPT. >> Yeah, a lot of people are predicting that Google's going to eventually end up on top. They have all the data. They've got a huge head start with the search that they've been doing. They seem to have been hesitant to release maybe some of their higher quality or newer models, but they've so much of the traffic right now. I mean, they would really have to"
+  },
+  {
+    "timestamp": "17:26",
+    "seconds": 1046,
+    "text": "flop in to not come out on top. >> Um, and so, yeah, it's been a pretty wild and interesting experience. Now, personal agents seem to be the new rave and what's coming out now. Have you tested any personal agents yourself like Muse or you've got Grockbot or Dots? Anything like that? >> No, I haven't got the chance to do that yet. >> Okay. Yeah, that that seems to be like"
+  },
+  {
+    "timestamp": "17:57",
+    "seconds": 1077,
+    "text": "the next wave. Right now, we're stuck in in AI and agents are getting um are coming out pretty quickly. So, it will be interesting to see where that goes. So, >> yeah. Chat, did you have any questions that you wanted to add in? >> Let me check that quickly. >> That's interesting. Sure am. That onepage website is a great example. How did you establish that those leads came"
+  },
+  {
+    "timestamp": "18:28",
+    "seconds": 1108,
+    "text": "from ChatGPT? Did people tell you or could you actually track their visits through to an inquiry? >> Yeah. So yeah when I got on calls with these people so I asked them like hey where did you find me and some of them didn't remember at all and some of them did and then when I went into ChatGPT so one of the person actually told me the exact thing that they searched for so when I searched for that even on my"
+  },
+  {
+    "timestamp": "19:00",
+    "seconds": 1140,
+    "text": "end then I came to know so at for this particular thing I'm ranking in ChatGPT because no one else was like targeting that keyword and I somehow was. So that's how it happened. And was that an intentional was that the point of that page or was it something else that you were working with and it was just an accidental discovery? >> Yeah, it wasn't intentional at all. I"
+  },
+  {
+    "timestamp": "19:30",
+    "seconds": 1170,
+    "text": "didn't plan to have that website show up anywhere in the SERs or in any chat LLMs because I didn't do any SEO work on that website. It was a onepage website just for the sake of if I reach out to someone and they want to check out. So like it had a VSSL of me. >> Yeah, >> that's all. And a like a big wall of text below that and it somehow did. And it sent me like a lead every other day."
+  },
+  {
+    "timestamp": "20:00",
+    "seconds": 1200,
+    "text": "And these leads also like the ones that find you from ChatGPT and Google when they book a call they do show up in as opposed to when you are reaching out people cold call with a cold outreach they might flake on you but not these people. >> Yeah. >> So the quality of the traffic is is very good. It's a really it's a strange phenomenon because for the past what 5, 10, 20 years or so, you go to Google, you bounce around on different websites"
+  },
+  {
+    "timestamp": "20:30",
+    "seconds": 1230,
+    "text": "and you have a a decent feeling about what Google is providing you. You've got reviews there that you may or may not fully trust, right? But there's a lot of trust signals there and you get your top 10 on page one of Google. And now AI has given you three options, usually recommending three, sometimes four I've seen. And those are like the these are the companies. There's nobody else that exists, right? >> Yeah. >> Which is crazy because now you have to"
+  },
+  {
+    "timestamp": "21:02",
+    "seconds": 1262,
+    "text": "figure out how to get as one of those four that are recommended. I did a another episode last week where I was actually analyzing one particular prompt for Phoenix, Arizona, and it related to HVAC repair. And so I put that prompt in. I was using temporary uh chats so that each time it was like a fresh run >> and it was with Gemini and every time it"
+  },
+  {
+    "timestamp": "21:34",
+    "seconds": 1294,
+    "text": "would give me two names that everyone in the entire country knows. These are huge companies. And then one guy that's got 111, not 1100, 111 reviews. And he came up multiple times. I'm going, how is this guy doing this? >> So like he had less reviews than he usually. That's what I >> So So the number one recommended by AI and it was pretty consistent. I ran the prompt six times in the temporary chat and it was like 34,000 reviews was"
+  },
+  {
+    "timestamp": "22:06",
+    "seconds": 1326,
+    "text": "number one. >> Okay. >> The second position was like 14,000 reviews. Guy had 111 reviews and it was showing up in like the third or fourth position. >> That's it. It makes no sense, right? This doesn't >> in the SEO world. >> There's something wrong here. We're thinking that there's some black hat situation going on because you shouldn't be able to show up like that. >> Yeah. Yeah, it makes sense. >> And so I actually after I recorded the"
+  },
+  {
+    "timestamp": "22:36",
+    "seconds": 1356,
+    "text": "interview and it would have been fun to do it live, but I called the guy up and I said, \"Hey, this sounds weird, right? This is abnormal, but I just did a podcast and I was searching in your area through AI and you kept showing up. What What's going on? What are you doing?\" And I was expecting like I got this agency, they specialize in this blah blah blah. They know what's going on. No. His response was I provide really good service. >> That's good, but AI doesn't really"
+  },
+  {
+    "timestamp": "23:08",
+    "seconds": 1388,
+    "text": "that's not why they're ranking you over all these other people that probably provide good service, too. >> Yeah. Yeah. >> And so I dug into his website and there was nothing clear to show why he would be getting represented so well. And and again it his was one of the four companies that were the chosen one. Right. The the other I think there's 750 HVAC contractors in the Phoenix area. It didn't exist at that point. Right."
+  },
+  {
+    "timestamp": "23:40",
+    "seconds": 1420,
+    "text": "So yeah, pretty wild. >> Yeah. But I wouldn't like Gemini also take into account where you are searching from. So like he would be just ranking in that particular neighborhood, right? Not in entire Phoenix, Arizona. >> So I wasn't actually searching by neighborhood. I was just searching Phoenix. So I was just searching by the city name. So it was very >> And you are not And you are not in But let's say someone is in Phoenix and they"
+  },
+  {
+    "timestamp": "24:10",
+    "seconds": 1450,
+    "text": "search for HVAC repair. FE Phoenix then Gemini would probably take into account their location and then present >> it would depend on it may I know it does when you do a search on your phone in Google but these were since they were temporary chats granted yeah I'm in California so I'm not in that location but I it would be curious to see I'd be"
+  },
+  {
+    "timestamp": "24:40",
+    "seconds": 1480,
+    "text": "curious to see what the results would be like if you searched actually chat that's a good question for you. Do the search results vary either for you or for Gemini based on your location. >> Let me check that for you. >> Yes, both can use location. ChatGPT"
+  },
+  {
+    "timestamp": "25:11",
+    "seconds": 1511,
+    "text": "search can use your approximate location from your internet connection and Gemini can use general or precise device location if permitted. A temporary chat doesn't necessarily remove those signals. So your Phoenix runs show repeatability under your conditions, but they don't establish what someone physically in Phoenix would see. >> Okay. So, if I'm not located in Phoenix and I'm running a search for that area, my results may be different than someone in Phoenix. Is that right, Chat?"
+  },
+  {
+    "timestamp": "25:43",
+    "seconds": 1543,
+    "text": ">> Let me check that quickly. >> That's right. They may differ even with the same Phoenix prompt. Location is one possible influence, and answers can also vary between runs. So, we need a comparison to say whether location actually changed yours. Interesting. Okay. In chat, if I had something like if there was a way to set my location with a browser extension uh for Gemini, for instance, would that help to simulate searches in that area?"
+  },
+  {
+    "timestamp": "26:17",
+    "seconds": 1577,
+    "text": ">> Let me check. That >> could help depending on what the extension changes. If it changes the browser's reported coordinates, Gemini would need permission to use that location. Your connection could still indicate California. I treat it as a partial simulation. You could check the location Gemini displays, then compare your results with someone actually in Phoenix using the same prompt and model. >> Yeah. Wow. So, the plot thickens then. >> Mhm."
+  },
+  {
+    "timestamp": "26:47",
+    "seconds": 1607,
+    "text": ">> That's interesting. So I would wonder now one thing he did say is that his phone calls have increased over the last couple months been getting more calls. >> So >> to me it was an indication that >> it was working for him. He had no idea. >> Yeah, >> it was working for him. Yeah. I mean >> tell him to double Tell him to double down on that. >> Yeah. whatever you're doing, do more of"
+  },
+  {
+    "timestamp": "27:18",
+    "seconds": 1638,
+    "text": "it. >> Um, but yeah, and when I called him, it went to voicemail and then he called me back. It was the owner cell phone number that was on the website. This was like >> it was not an established company whatsoever. That's >> I think that's the opportunity that a lot of people are missing right now that AI search is so new that you could show up like your one page did when other things that you're try that you've"
+  },
+  {
+    "timestamp": "27:49",
+    "seconds": 1669,
+    "text": "been trying to do with Google for such a long time is a struggle. >> Yeah. I think if just like you had interest in marketing and you probably that's why you were able to grow your HVAC business. So if someone a marketing minded person puts their mind to this they can really take advantage of this because agencies most agencies I would say don't really care that much about the results as much as a business owner"
+  },
+  {
+    "timestamp": "28:21",
+    "seconds": 1701,
+    "text": "themselves would do. So yeah that's true. >> Yeah. Yeah, and I think that's actually a good segue into learning a little bit about more more about your business. Tell me more about like how you named the business and I noticed you've got some unique guarantees on your website as well. Talk to us about that. Yeah. So, Honest HVAC Marketing Agency, I named it honest because"
+  },
+  {
+    "timestamp": "28:51",
+    "seconds": 1731,
+    "text": "first of all, it's a good positioning thing that in the sea of HVAC marketing agencies, you need to stand out. I wouldn't say that I'm pro the most honest person in the world. I'm not. But it makes for a good brand positioning. And secondly, yes, we do try to be more honest than the other marketing agencies when it comes to so a lot of marketing agency,"
+  },
+  {
+    "timestamp": "29:22",
+    "seconds": 1762,
+    "text": "they just report on rankings and stuff like that. But we don't do that. Moreover, if we don't provide a service or we are not good at something like we are not good at Google ads. So we tell it honestly to the people. If someone is looking specifically for that we don't want to waste their money. So yeah I'm honest like I find myself to be a little"
+  },
+  {
+    "timestamp": "29:54",
+    "seconds": 1794,
+    "text": "more to be a little more honest than the average guy. So it gels well with my personality, this brand. So that's how I named it this way. >> Excellent. Okay. And and how long ago did you create Honest HVAC Marketing Agency? >> Yeah, about a year ago as well, just like you. >> Oh, okay. Yeah. Nice. >> Nice. So, yeah, we're on very similar paths. I >> Yeah, >> that's very cool. That's very cool. And"
+  },
+  {
+    "timestamp": "30:24",
+    "seconds": 1824,
+    "text": "yeah, I noticed that you had a unique guarantee. How did you come up with that guarantee and how receptive are customers to it? That seems like a slam dunk if I'm a business owner. >> To be honest, most people don't even care about the guarantee. Uh it's as if they forget about it when they start doing business with us. Plus like with the help of database reactivation Facebook ads it's pretty easy to deliver"
+  },
+  {
+    "timestamp": "30:56",
+    "seconds": 1856,
+    "text": "on this guarantee but once they see how we work and they get to know us they don't really ask about it just it's just like a foot in the door. >> Yeah. Sure. Okay. Now you mentioned database reactivation that that is a hot topic that's getting thrown around a lot right now. What have you found works best for database? So how are you executing on database reactivation?"
+  },
+  {
+    "timestamp": "31:30",
+    "seconds": 1890,
+    "text": "I would say the usual like tuneups those are the go-to things like it works according to the season of course for different seasons there are different things but the >> low cost offers work the best with database reactivation and what else works well asking for referrals yeah that also works well if you give them some kind of discount or some kind of credit Sure. And is that"
+  },
+  {
+    "timestamp": "32:00",
+    "seconds": 1920,
+    "text": "the reactivation campaigns? Are those email, SMS, outbound? What's typically how's that typically working? >> Yeah, it's just SMS that that has the highest open rate >> and deliverability rate. So, yeah, SMS for sure. >> Excellent. Okay. Okay. Anything else that you want to tell us about Honest HVAC Marketing Agency? Probably it would be better if because"
+  },
+  {
+    "timestamp": "32:30",
+    "seconds": 1950,
+    "text": "I'm the listeners wouldn't get too much by listening to me talk about our agency. Probably I could provide them some with some more value by talking about another study that we did >> uh about the Google reviews. So we analyzed 17,000 something Google reviews 17,241 reviews and the number one the most"
+  },
+  {
+    "timestamp": "33:01",
+    "seconds": 1981,
+    "text": "s not surprising but the best finding out of this was that people the most praised thing about an HVAC business is when a technician explains to the homeowner what's what exactly is wrong with their system? What's the breakdown of the cost that so basically telling them that hey this is what went wrong with your system. So that gives a"
+  },
+  {
+    "timestamp": "33:31",
+    "seconds": 2011,
+    "text": "sense of control to the homeowner. They are not left wondering that hey this person just came checked a few things and now he's quoting us like $1,000. >> Mhm. >> He's explaining to us what went wrong. So we now have more information. We can use this information to doublech check if what he's saying is right or wrong. So that thing gets appreciated a lot as well as when a technician explain also"
+  },
+  {
+    "timestamp": "34:01",
+    "seconds": 2041,
+    "text": "explains the cost breakup what he has just quoted to the homeowner. So it's not just one figure thrown on thrown their way. It's like a specific breakdown that hey this much is for labor, this much is for this part, this much is for this part. >> So >> interesting. Okay. And you said how many total reviews? >> We analyzed 17,241 reviews across five"
+  },
+  {
+    "timestamp": "34:31",
+    "seconds": 2071,
+    "text": "different cities, the five most popular cities in the US. And I guess there we analyze about 100 or 120 businesses. So the all these Yeah. companies. So 17,000 reviews were from 100 something companies. >> Okay. And the reviews what would be interesting is the average star rating. Was the average star rating for all the"
+  },
+  {
+    "timestamp": "35:01",
+    "seconds": 2101,
+    "text": "businesses that you reviewed pretty high? Was there a minimum don't review a business's reviews if they're under three stars on average? Did you have anything like that or was it just any was it more open? >> Yeah, it was totally open that but the finding was that most of the businesses I would say all of the businesses have more than 4.1 rating overall. Okay, that's what it found. So the edge that businesses have isn't their star rating"
+  },
+  {
+    "timestamp": "35:32",
+    "seconds": 2132,
+    "text": "exactly, but what how many reviews they have in total and what those reviews say because what they say also impacts your Google ranking. >> Yeah. Yeah. And we're finding it to be another trust signal for AI search and generative engine optimization obviously because it's unique content like a human. I would say 95% of the time those reviews are written by humans. I don't think we've gotten to the point where we're having our AI review a company or"
+  },
+  {
+    "timestamp": "36:04",
+    "seconds": 2164,
+    "text": "write a company review for us yet. Although I think that's coming. >> Yeah, that's coming for sure. A lot of these CRM and all they give the ability to oneclick generate a review which one could just copy paste. >> Yeah. >> Yeah. Now, what about responses? Did you measure how many of those reviews were getting responded to? >> Yeah. So, one thing, one of the interesting findings about the responses"
+  },
+  {
+    "timestamp": "36:34",
+    "seconds": 2194,
+    "text": "was that so the fivestar reviews get responded 79.6% of the times, but the one and one star reviews and twostar reviews, they get responded just 64% of the time. So one thing was that >> contractors should reply if not at least as much or even more as they are responding to the fivestar reviews because they can present their side of"
+  },
+  {
+    "timestamp": "37:05",
+    "seconds": 2225,
+    "text": "the story. If someone left a one-star review, they could tell that hey this is what happened and if I'm reading it I could get their side of the story instead of just believing the one star review. Yeah, it's an opportunity and contractors handle one-star reviews wrong most of the time. There's too many of them that are using that response as a way to attack is the wrong word, but get back"
+  },
+  {
+    "timestamp": "37:36",
+    "seconds": 2256,
+    "text": "at the customer that's leaving that that review. And I see it when I'm talking to customers or researching a company that is looking to have their marketing done. And there's just there's so many wrong ways of handling a one-star review. And what people don't realize is that some of your best customers are only looking at the one and two star reviews. That that's the only thing that they're searching before because they want to know if something goes sideways, how are"
+  },
+  {
+    "timestamp": "38:06",
+    "seconds": 2286,
+    "text": "you going to deal with them? Are you gonna attack them personally like you did >> these people call them or not? >> Oh jeez. Yeah, that's pretty rough, but it's out there. There was there was a post last week in one of the groups on Facebook and you know the guy's response to the customer was basically going through like he was in a court of law and detailing every single instance and some of it was a little bit much. He was just going overboard with his response"
+  },
+  {
+    "timestamp": "38:38",
+    "seconds": 2318,
+    "text": "about the situation and he was getting a little he was getting getting a little cute with his response. And if I'm a when I responded to him and I said, \"Hey, if I'm the customer here, I don't want to deal with any of this. I don't care if you're right or not at this point. Just your response should be either yes, we screwed up. Here's what we're doing about it.\" or some of my responses when we would get the occasional one-star review and I took it personally, >> you know, and it was and I would post my"
+  },
+  {
+    "timestamp": "39:09",
+    "seconds": 2349,
+    "text": "cell phone number and say, \"Hey, this is going sideways. I understand something's wrong. I can't find your information. I want to talk to you. Call me on my cell phone number.\" And occasionally I would get people that call and they were shocked that the owner was giving them their phone number to call. And that a lot of these people just want to be heard. >> Yeah. >> And they want to know that you understand their concerns and they it's not necessarily that they just want all their money back. Some people do, but"
+  },
+  {
+    "timestamp": "39:41",
+    "seconds": 2381,
+    "text": "that's not necessarily the case. And >> yeah, most of the times it's just being that they want to get hurt. Even I have seen that >> when if I have had a bad experience, I don't want the money back unless it's a really big amount. I don't want the money back. I just want to make sure that >> this doesn't happen again with anyone else. Yeah. Like on these food delivery apps, they say that, \"Hey, do you want a refund?\" I say, \"No, I don't want a refund. I just wanted to let you know"
+  },
+  {
+    "timestamp": "40:11",
+    "seconds": 2411,
+    "text": "that I had a bad bad experience.\" >> Yeah. Yeah. So, you've done some pretty some interesting research projects. One on reviews um and then the other on the business websites. Do you have your next research project lined up? Do you know what's coming up in the future? >> No, I've published about four so far and I'm now not going to I'm going to put it on hold for now. Focus on other things so that I can get some business coming"
+  },
+  {
+    "timestamp": "40:41",
+    "seconds": 2441,
+    "text": "in instead of mental masturbating with the thought leadership content. >> Yes. Yes, it can be. It's interesting, but does it really move the needle? Yeah, I understand. That's excellent. chat, did you have any other questions for our guest today? >> Let me check that. >> One last question, Shaurya. For an HVAC owner listening who wants to turn what"
+  },
+  {
+    "timestamp": "41:12",
+    "seconds": 2472,
+    "text": "we've discussed into more booked jobs, what's the first thing you'd have them change this week, and how would you check whether it helped? All right. So, the easiest thing that I would say for an HVAC business owner to get results is like SMS and call all your past customers that you haven't requested a review from"
+  },
+  {
+    "timestamp": "41:43",
+    "seconds": 2503,
+    "text": "and have a system in place that makes it automated from the next time around. Because reviews are the one of the biggest pieces of the puzzle when it comes to Google ranking. And when you get start when you start getting more reviews, you start ranking higher. When you start ranking higher, you start getting more jobs. So yeah, focus on getting more reviews. >> Awesome. Yeah, absolutely. The reviews are critical. the other elements that"
+  },
+  {
+    "timestamp": "42:13",
+    "seconds": 2533,
+    "text": "you talked about being important for the website were that really good information um based on your research reports. So, I appreciate you joining us today. Was there anything else that you'd like to leave us with before we close this out? >> Nothing really. I wouldn't pitch myself when Aaron does the same things. It wouldn't be the nice thing to do. It's quite it's quite all right. No problem."
+  },
+  {
+    "timestamp": "42:44",
+    "seconds": 2564,
+    "text": "A very respectful guest. I appreciate that. Yes. Okay. This has been a chat with chat. Thanks for joining us today. Great conversation and I hope you can take this and start executing it in your business. We'll see you next time. All right. I've put a short intro and five GEO focused questions on screen centered on how"
+  }
+]

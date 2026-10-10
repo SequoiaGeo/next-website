@@ -9,7 +9,7 @@ export const podcastPosts = {
     title: "GEO vs. SEO: What Home Service Businesses Should Measure",
     description: "Episode 1 of A Chat with Chat explores GEO, local SEO, customer trust, and how contractors can measure AI discovery without confusing mentions with jobs.",
     content: <>
-      <p><strong>From A Chat with Chat, episode 1, recorded September 18, 2026.</strong> Aaron Husak and ChatGPT discuss what AI search changes for home service businesses, and which marketing fundamentals still matter.</p>
+      <p><strong>From A Chat with Chat, episode 1, recorded September 18, 2026.</strong> Aaron Husak and ChatGPT discuss what AI search changes for home service businesses, and which marketing fundamentals still matter. <Link href="/podcast/episode-1">Watch episode 1 and read the transcript.</Link></p>
       <p>If a homeowner asks an AI tool to recommend an HVAC company, your business can become part of their shortlist before they visit your website. That creates a measurement question: how do you find out whether you appeared, what the answer said about you, and whether the person eventually contacted your company?</p>
       <p>In our first episode, we explored generative engine optimization, or GEO, through that practical lens. The goal is to understand customer discovery and improve the information available about your business. An AI mention alone does not establish that your marketing produced a lead or a job booked.</p>
       <h2>GEO and SEO share a foundation</h2>
@@ -68,7 +68,7 @@ export const podcastPosts = {
     title: "HVAC Website Trust and AI Search: Lessons with Shaurya Jain",
     description: "Episode 3 guest Shaurya Jain discusses HVAC website research, reviews, and reported ChatGPT inquiries. Practical lessons, with measurement limits made clear.",
     content: <>
-      <p><strong>From A Chat with Chat, episode 3, recorded October 9, 2026.</strong> The full interview is scheduled for October 13. This article shares takeaways from the recorded conversation; the video is not available here yet.</p>
+      <p><strong>From A Chat with Chat, episode 3, recorded October 9, 2026.</strong> <Link href="/podcast/episode-3">Watch the full interview and read the transcript.</Link></p>
       <Image src="/images/podcast/episode-3.png" alt="Aaron Husak and Shaurya Jain, A Chat with Chat episode 3" width={1672} height={941} className="my-6 h-auto w-full rounded-xl" />
       <p>A website can attract attention and still leave a homeowner unsure whom to trust or how to get help. In our first guest interview, Aaron Husak and ChatGPT spoke with Shaurya Jain, founder of <a href="https://www.honesthvacmarketing.agency/" target="_blank" rel="noopener noreferrer">Honest HVAC Marketing Agency</a>, about that gap.</p>
       <p>Shaurya brought research on HVAC websites and customer reviews, along with an account of receiving inquiries through ChatGPT. The strongest practical thread was how contractors present their business, help a visitor contact them, and verify whether marketing is producing real inquiries.</p>

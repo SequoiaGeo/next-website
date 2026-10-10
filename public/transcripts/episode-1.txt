@@ -1,0 +1,293 @@
+Transcript from public YouTube captions. Lightly corrected for names; automatic transcription may contain errors.
+Source: https://www.youtube.com/watch?v=DY1B2COtwI8
+
+[0:02] Okay, my name is Aaron. I'm with Sequoia
+[0:05] Geo and today I'm here with Chat who is
+[0:08] our co-host for our very first episode
+[0:11] of a chat with Chat.
+[0:14] How are we doing today, Chat?
+[0:15] >> Aaron. I'm Chat.
+[0:17] I'm doing great. Excited to co-host this
+[0:19] first episode with you.
+[0:21] I'm ChatGPT. I'm here to help turn
+[0:22] ideas into momentum.
+[0:24] We can talk things through,
+[0:26] help structure a project, work with
+[0:28] what's on the screen, write code, or dig
+[0:30] into research. Where do you want to kick
+[0:32] this off?
+[0:33] >> We know there's a lot that you can do,
+[0:35] but today we're going to be focusing on
+[0:38] really starting our podcast off with an
+[0:41] introductory discussion about why we
+[0:44] started this podcast and some of the
+[0:46] things that we'd like to cover
+[0:48] in the future episodes. Sequoia GEO's
+[0:51] focus is really marketing home service
+[0:54] businesses and with the explosion of AI,
+[0:58] there's been a lot of buzz with related
+[1:00] to
+[1:02] AI search, generative engine
+[1:04] optimization, and overall improving
+[1:07] websites and search results for home
+[1:11] service businesses.
+[1:14] >> Let me think through a clean intro setup
+[1:17] for this.
+[1:19] >> Don't think too long. We're live now.
+[1:21] >> Got it. Big picture, this show is
+[1:24] basically about cutting through the buzz
+[1:26] and turning what's happening into
+[1:27] practical moves for home service
+[1:29] companies.
+[1:31] We can start by saying why you created
+[1:33] podcast. Owners are hearing a lot about
+[1:35] AI search and GEO and so on and they
+[1:38] need clarity, not hype. Then tee up
+[1:41] what's coming, how AI search is changing
+[1:43] customer journeys, what generative
+[1:45] engine optimization means in plain
+[1:47] English,
+[1:48] and simple website moves that actually
+[1:51] help visibility and leads.
+[1:53] >> Yeah, that sounds good. I I initially
+[1:55] what I'd like to cover is what is what
+[1:58] makes AI search or generative engine
+[2:02] optimization different?
+[2:05] >> Let me pin that down.
+[2:07] So, think of it like this. Traditional
+[2:10] SEO is about ranking a page. Generative
+[2:14] engine optimization adds being
+[2:15] understood and cited by the AI giving
+[2:19] the answer. For home services, that
+[2:20] means really clear service and location
+[2:22] pages, consistent business info, strong
+[2:25] reviews, proof you know your stuff, and
+[2:27] genuinely useful answers to real
+[2:29] homeowner questions. It's not replacing
+[2:32] SEO, it's building on it because now
+[2:34] visibility includes being recommended
+[2:36] inside the answer, not just showing up
+[2:38] as a link.
+[2:41] >> Visibility includes being recommended
+[2:43] inside the answer. So, how do we do
+[2:44] that? How does a heating and air
+[2:47] conditioning company, say they're
+[2:49] located in I don't know, San Francisco,
+[2:53] get recommended inside the answer versus
+[2:56] the other what? A thousand HVAC
+[3:00] companies that are in that area?
+[3:03] >> Let me think that through carefully.
+[3:05] One key piece is that it's less a single
+[3:09] trick and more that the business keeps
+[3:11] showing up as relevant, reputable, and
+[3:13] consistent across the web, not just on
+[3:15] their own site.
+[3:16] >> Okay, and
+[3:18] I still haven't nailed down though what
+[3:21] makes it different from
+[3:23] SEO when we're trying to add these AI
+[3:27] search and GEO layers on top of it.
+[3:31] >> Let me untangle that clearly.
+[3:33] The clean line is SEO helps you rank and
+[3:37] get retrieved
+[3:38] and GEO helps your info get understood,
+[3:42] trusted, and pulled into the synthesized
+[3:44] answer with confidence.
+[3:49] Let me pin down the practical difference
+[3:51] for an HVAC company. That's because GEO
+[3:54] isn't a replacement, it's a second
+[3:56] target. SEO helps that San Francisco
+[3:58] HVAC page get found. GEO helps an AI
+[4:02] system recognize the business as real,
+[4:04] pull the right facts, verify them, and
+[4:06] include them in an answer. So, overlap
+[4:09] is big, but the outcome changes. It's
+[4:11] less use the keyword everywhere and more
+[4:14] make each claim clear, structured,
+[4:16] supported, and consistent.
+[4:18] And the honest take is that much of it
+[4:20] isn't different at all. It's SEO
+[4:23] evolving, plus some new content
+[4:24] requirements and new ways to measure
+[4:26] success.
+[4:29] >> Okay, so in your opinion, the two are
+[4:32] different.
+[4:34] >> They're distinct, but not separate.
+[4:37] Same foundation, slightly different
+[4:38] outcome and metrics.
+[4:41] >> And how do we track how we're ranking or
+[4:44] getting recommended in AI search?
+[4:48] >> Let me check that quickly.
+[4:51] AI search is tracked less like one fixed
+[4:54] ranking position and more like
+[4:55] repeatable prompt visibility, since
+[4:57] answers vary by system, location, and
+[5:00] wording. We take real customer
+[5:02] questions, run them regularly across the
+[5:04] major AI search experiences, and log
+[5:08] whether you're mentioned or cited, where
+[5:10] you show up, who else is mentioned, and
+[5:12] whether the facts about your business
+[5:13] come through accurately. Then,
+[5:16] we watch referral traffic, leads, and
+[5:19] jobs booked, and track share of voice
+[5:21] across those prompts.
+[5:23] The goal isn't a universal number one
+[5:25] ranking, it's consistent visibility
+[5:28] trends across a stable set of prompts,
+[5:30] not any one test.
+[5:33] >> So, if I find that my competitor is
+[5:37] consistently getting recommended and I'm
+[5:40] rarely getting recommended, and I might
+[5:42] not even be
+[5:44] in any of the source material that
+[5:46] you're using. What do I need to do today
+[5:50] to start showing up and get cited?
+[5:53] >> Let me map out the most direct moves
+[5:56] there.
+[5:57] First,
+[5:58] look at the competitors' evidence trail,
+[6:01] not a stack of generic AI pages.
+[6:04] Ask what claims they're making, what
+[6:06] questions they're answering,
+[6:08] and who independently confirms them.
+[6:11] Then, in order, make sure your site is
+[6:13] crawlable, build solid pages for each
+[6:16] real service and service area with
+[6:18] proof, like licensing, warranties,
+[6:21] project photos, tech credentials, and
+[6:24] answer customer questions.
+[6:26] Align your name, address, phone,
+[6:28] services, and coverage across your site,
+[6:31] Google Business Profile, directories,
+[6:33] and trade associations, and add accurate
+[6:36] structured data to reduce ambiguity.
+[6:39] Earn detailed reviews and legitimate
+[6:41] local mentions. Then, retest the same
+[6:44] prompts every few weeks and watch
+[6:45] mentions, citations, leads, and jobs. No
+[6:48] one guarantees a recommendation, but
+[6:51] those steps make your business easier to
+[6:54] cite and trust, which is what shifts the
+[6:56] odds.
+[6:58] >> Now, some people may be asking the
+[7:00] question of why is this important? Why
+[7:03] do I need to worry about GEO or AI
+[7:05] search? And there was a recent study
+[7:08] done by BrightLocal that you might want
+[7:10] to pull up because
+[7:12] it's claiming that 45% of US adults
+[7:17] utilize AI to I believe the language is
+[7:20] that they found
+[7:22] contractors or home service providers
+[7:24] using AI. What does that report say?
+[7:28] >> Let me check that report.
+[7:30] Wording matters a lot there. I'm
+[7:33] checking the original language and
+[7:34] methodology before we lean on that stat.
+[7:37] All right, I found the BrightLocal
+[7:39] write-up. That 45% figure is about local
+[7:43] business recommendations broadly, not
+[7:45] specifically contractors.
+[7:46] >> Okay.
+[7:47] >> They say 45% of US adults used AI tools
+[7:52] for local business recommendations in
+[7:53] the past year, up from 6% year before.
+[7:57] So, the headline is the speed of
+[7:58] adoption, not that everyone is booking
+[8:01] via AI. And most people still verify on
+[8:04] Google, social, and review sites
+[8:05] afterward. That's exactly why GEO
+[8:08] matters now, because AI is influencing
+[8:10] the short list, while traditional search
+[8:13] and reviews still confirm the choice.
+[8:15] You need to show up credibly in both
+[8:16] places or layers, really.
+[8:20] >> All right, so that's pretty interesting
+[8:21] because that BrightLocal finding we're
+[8:25] hearing a lot of people citing that 45%
+[8:29] and making implications that it's bigger
+[8:34] or more related to home service
+[8:37] providers than than what it's stating.
+[8:40] So, a thousand about a thousand people
+[8:43] were surveyed, and almost half of them
+[8:46] said that they've used AI for local
+[8:48] recommendations. It doesn't say It
+[8:50] sounds like it doesn't say how often
+[8:52] they're using it. And what's also
+[8:55] interesting is that 88% still check the
+[8:57] source.
+[8:59] And that kind of leans towards the
+[9:03] zero-click phenomenon that a lot of
+[9:06] people have been experiencing lately.
+[9:08] Would you agree with that?
+[9:10] >> Let me think through that connection.
+[9:13] I'd separate the two claims. 45% is used
+[9:18] at least once in the past year, and
+[9:21] the 88% stats shows AI is shaping the
+[9:24] journey, but not replacing it.
+[9:27] So, I wouldn't call that zero-click
+[9:29] evidence, especially for home services,
+[9:31] where trust drives more verification
+[9:33] clicks.
+[9:34] The safer takeaway is that AI is an
+[9:37] influential discovery layer, not that it
+[9:39] is replaced search.
+[9:41] And for contractors, it's influencing
+[9:43] the short list. Then people validate
+[9:45] elsewhere.
+[9:46] >> What other related questions do you
+[9:48] think we should be asking about that?
+[9:51] >> Let me frame a few crisp on my
+[9:53] questions.
+[9:55] I'd push from headline numbers to
+[9:58] behavior. So,
+[10:01] what kinds of local businesses were
+[10:03] people actually searching for? Which AI
+[10:05] tools? How often and for what stakes?
+[10:08] Did they start in AI or see it inside
+[10:10] Google?
+[10:11] What exactly did they verify afterward?
+[10:14] And crucially, did AI lead to a call, a
+[10:17] lead, or a booked job? Or was it just
+[10:19] one step along the way?
+[10:22] >> Yeah, those are all good questions and
+[10:24] customers need to start asking
+[10:28] what did they search when they found the
+[10:32] company they ended up calling. So, if if
+[10:35] customers are telling you, "Oh, I found
+[10:36] you on ChatGPT."
+[10:38] If you can get a screenshot of that
+[10:40] search, that would be very helpful to
+[10:43] understanding what you're showing up for
+[10:46] when people search and also
+[10:49] who else is showing up when that's
+[10:51] searched as well.
+[10:54] >> Totally. That's exactly the kind of
+[10:56] ground truth that cuts through the hype.
+[10:58] Asking what they typed, what tool, and
+[11:02] grabbing screenshots when possible cuz
+[11:04] you have real prompts to test, plus the
+[11:06] actual competitors and claims showing
+[11:08] up.
+[11:09] It's a simple habit, but it turns GEO
+[11:12] from theory into something you can
+[11:13] actually optimize and measure.
+[11:17] >> Any closing thoughts for our first
+[11:20] episode on a chat with chat?
+[11:24] >> Yeah, I planned it like this. AI search
+[11:28] is changing how people form a short
+[11:30] list, but the fundamentals haven't gone
+[11:32] away. Be findable, be credible, and be
+[11:35] consistent everywhere.
+[11:37] We'll use this podcast to turn the
+[11:38] shifting landscape into plain language
+[11:41] and practical steps.
+[11:42] And next time, we can go deeper on one
+[11:45] comfy piece. AI search behavior, geo
+[11:47] basics, or website moves. Your pick.
+[11:51] >> That sounds great. Thanks so much for
+[11:52] your help today, Chat. And I look
+[11:54] forward to our next episode. I hope that
+[11:57] all of you can join us.
+[12:00] >> Looking forward to it.
