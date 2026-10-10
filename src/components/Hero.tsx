@@ -15,7 +15,9 @@ export default function Hero() {
         <p className="mt-6 text-sm leading-relaxed text-[#526156]">Work directly with Aaron Husak. Bring your marketing questions and get an owner&rsquo;s perspective on the next step.</p>
       </div>
       <figure className="mx-auto w-full max-w-md lg:ml-auto lg:mr-0">
-        <Image src="/images/aaron-first-office.jpg" alt="Aaron Husak outside his first office" width={2004} height={2672} priority sizes="(max-width: 1023px) 90vw, 448px" className="aspect-[4/5] w-full object-cover object-bottom" />
+        <div className="aspect-[4/5] overflow-hidden">
+          <Image src="/images/aaron-intro-hat-v3.png" alt="Aaron Husak wearing a Sequoia GEO hat against a green background" width={1672} height={941} priority sizes="(max-width: 1023px) 90vw, 448px" className="h-full w-full origin-top-right scale-125 object-cover object-right" />
+        </div>
         <figcaption className="mt-4 border-t border-[#0D2318]/20 pt-4 text-base leading-relaxed text-[#34483b]">
           <strong className="block text-[#0D2318]">The person you&rsquo;ll work with.</strong>
           Aaron Husak, founder of Sequoia GEO. <Link href="/about-sequoia-geo" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Read my story</Link>.
