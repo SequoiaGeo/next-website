@@ -108,6 +108,9 @@ export default function Footer() {
               <Link href="/blog" className="text-pale-green/70 hover:text-white transition-colors">
                 Blog
               </Link>
+              <Link href="/podcast" className="text-pale-green/70 hover:text-white transition-colors">
+                Podcast and Transcripts
+              </Link>
             </div>
           </div>
 

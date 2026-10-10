@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import InlineLeadForm from "@/components/InlineLeadForm";
 import OperatorStory from "@/components/OperatorStory";
 import MarketingAgents from "@/components/MarketingAgents";
 import SequoiaQuestionPanel from "@/components/SequoiaQuestionPanel";
@@ -11,17 +12,17 @@ import SnapshotNextSteps from "@/components/SnapshotNextSteps";
 import YouTubeFacade from "@/components/YouTubeFacade";
 
 export const metadata: Metadata = {
-  title: "Home Services Digital Marketing & GEO | Sequoia GEO",
-  description: "Digital marketing for home-service businesses, focused on GEO, AI search visibility, SEO, websites, and local profiles. Led by former home-service owner Aaron Husak.",
+  title: "Home Services Marketing & Fractional CMO | Sequoia GEO",
+  description: "Marketing strategy, SEO, GEO, websites, and paid media for home-service contractors. Work directly with Aaron Husak, a former home-service owner and operator.",
   alternates: { canonical: "https://www.sequoiageo.com/" },
   openGraph: {
-    title: "Digital Marketing for Home-Service Businesses | Sequoia GEO",
-    description: "Help homeowners find and evaluate your business through AI search, Google, and a website built around your services.",
+    title: "Home Services Marketing & Fractional CMO | Sequoia GEO",
+    description: "Connect search, advertising, your website, and the booking handoff. Work directly with former home-service owner Aaron Husak.",
     url: "https://www.sequoiageo.com/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Home Services Marketing & GEO | Sequoia GEO",
+    title: "Home Services Marketing & Fractional CMO | Sequoia GEO",
     description: "GEO, SEO, websites, and digital marketing for HVAC, plumbing, roofing, and other home-service businesses.",
   },
 };
@@ -49,10 +50,13 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <div id="inquiry" className="scroll-mt-20">
+        <InlineLeadForm source="homepage_top" heading="Tell Aaron what needs to work better" subtext="Share your business and contact details. Aaron will follow up to discuss your marketing priorities. Prefer to choose a time now? Use the call booking link above." buttonText="Request a Conversation" collectCompany />
+      </div>
       <section id="services" className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="section-overline mb-4">Digital marketing for the trades</p>
-          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Get found. Earn trust. Make it easier to reach you.</h2>
+          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">A marketing plan that reaches beyond the click.</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {[
               ["GEO and search visibility", "Help Google and AI search tools understand your services, service areas, and the evidence behind your business. GEO, SEO, and local profiles work together.", "/geo-agency"],
@@ -60,19 +64,6 @@ export default function Home() {
               ["Marketing direction and measurement", "Coordinate campaigns, paid media, and follow-up around the priorities that matter. Report inquiries and booked jobs where the records support them.", "/fractional-cmo"],
             ].map(([title, body, href]) => <article key={title} className="rounded-xl border border-gray-200 p-6"><h3 className="text-xl font-bold text-[#0D2318]">{title}</h3><p className="mt-3 leading-relaxed text-gray-700">{body}</p><Link href={href} className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline">Explore {title.toLowerCase()}</Link></article>)}
           </div>
-        </div>
-      </section>
-      <section id="how-it-works" className="bg-[#0D2318] py-16 text-white sm:py-20">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Start with the marketing problem that needs attention.</h2>
-          <ol className="mt-8 grid gap-8 md:grid-cols-3">
-            {[
-              ["01. Review the evidence", "Review your website, search presence, and inquiry path. Identify the gaps and the information needed to understand them."],
-              ["02. Agree on priorities", "Define the scope, access, responsibilities, and costs. Implement the agreed search, website, or marketing improvements."],
-              ["03. Measure and improve", "Review completed work, search visibility, inquiries, and booked jobs where tracking supports them. Use the findings to choose the next priority."],
-            ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
-          </ol>
-          <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. No ranking or lead guarantees.</p>
         </div>
       </section>
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
@@ -150,6 +141,19 @@ export default function Home() {
               <p className="mt-5 text-sm leading-relaxed text-gray-600">Interviews and operating credentials provide background on Aaron. They are not endorsements of Sequoia&rsquo;s services or proof of client AI-search results.</p>
             </article>
           </div>
+        </div>
+      </section>
+      <section id="how-it-works" className="bg-[#0D2318] py-16 text-white sm:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Start with the marketing problem that needs attention.</h2>
+          <ol className="mt-8 grid gap-8 md:grid-cols-3">
+            {[
+              ["01. Review the evidence", "Review your website, search presence, and inquiry path. Identify the gaps and the information needed to understand them."],
+              ["02. Agree on priorities", "Define the scope, access, responsibilities, and costs. Implement the agreed search, website, or marketing improvements."],
+              ["03. Measure and improve", "Review completed work, search visibility, inquiries, and booked jobs where tracking supports them. Use the findings to choose the next priority."],
+            ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
+          </ol>
+          <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. No ranking or lead guarantees.</p>
         </div>
       </section>
       <OperatorStory />
