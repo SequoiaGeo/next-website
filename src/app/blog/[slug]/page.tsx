@@ -1181,7 +1181,7 @@ const posts: Record<string, Post> = {
         <p>
           The rule: every review request should be directed to the GBP for the location that did the work.
           If your Sacramento team completed the job, the review request goes to the Sacramento GBP, not
-          the Fresno headquarters listing.
+          the Sanger headquarters listing.
         </p>
         <p>
           Implement this at the field service software level. In ServiceTitan or Housecall Pro, you can

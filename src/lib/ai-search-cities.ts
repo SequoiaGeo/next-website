@@ -41,13 +41,13 @@ export const aiSearchCities: CityAiSearchSurface[] = [
     indexDescription:
       "Sequoia's home market, used to show how local identity, licensing, services, and public evidence can be reconciled before recommendation claims are made.",
     relationship:
-      "Sequoia GEO is based in Fresno. This is the one city in this pilot where Sequoia claims a local operating presence.",
+      "Sequoia GEO is based in Sanger. Sequoia serves nearby Fresno and the Central Valley; this page does not represent a Fresno office.",
     scope:
       "A Fresno AI search assessment starts by separating the business customers intend to hire from similarly named companies, old locations, incomplete profiles, and service claims that no longer match the operation. The work then tests whether AI products retrieve and describe the same verified entity across locally framed commercial questions.",
     verificationFocus: {
       title: "Use a real local entity as the starting point",
       body:
-        "Fresno gives Sequoia a direct test of its own standard. The company name, Fresno location, services, founder history, public profiles, and published methods should agree before Sequoia asks another local business to meet the same standard. When they do not agree, the contradiction is recorded and corrected before visibility is presented as progress.",
+        "Fresno gives Sequoia a direct test of its own standard. The company name, Sanger headquarters, Fresno service area, services, founder history, public profiles, and published methods should agree before Sequoia asks another local business to meet the same standard. When they do not agree, the contradiction is recorded and corrected before visibility is presented as progress.",
     },
     verificationChecks: [
       {
@@ -94,7 +94,7 @@ export const aiSearchCities: CityAiSearchSurface[] = [
       {
         question: "Is Sequoia GEO located in Fresno?",
         answer:
-          "Yes. Sequoia GEO is based in Fresno, California, and also works with companies nationally. A Fresno page can therefore describe Sequoia's local relationship without implying offices in other pilot cities.",
+          "Sequoia GEO is based in Sanger, California, and also works with companies nationally. A Fresno page can therefore describe Sequoia's local relationship without implying offices in other pilot cities.",
       },
       {
         question: "What does Sequoia verify for a Fresno contractor?",
@@ -169,7 +169,7 @@ export const aiSearchCities: CityAiSearchSurface[] = [
       {
         question: "Does Sequoia GEO have an office in Colorado Springs?",
         answer:
-          "No. Sequoia is based in Fresno and works with companies nationally. This page addresses AI search visibility for businesses serving Colorado Springs and does not represent a local Sequoia office.",
+          "No. Sequoia is based in Sanger and works with companies nationally. This page addresses AI search visibility for businesses serving Colorado Springs and does not represent a local Sequoia office.",
       },
       {
         question: "Why include regional contractor records in an AI SEO review?",
@@ -244,7 +244,7 @@ export const aiSearchCities: CityAiSearchSurface[] = [
       {
         question: "Does Sequoia GEO have a Boise office?",
         answer:
-          "No. Sequoia is based in Fresno and serves companies nationally. This Boise page explains how the AI search method applies to businesses serving the market without claiming a local Sequoia location.",
+          "No. Sequoia is based in Sanger and serves companies nationally. This Boise page explains how the AI search method applies to businesses serving the market without claiming a local Sequoia location.",
       },
       {
         question: "What makes a Boise AI search assessment locally relevant?",
@@ -324,7 +324,7 @@ export const aiSearchCities: CityAiSearchSurface[] = [
       {
         question: "Does Sequoia GEO have an office in Chattanooga?",
         answer:
-          "No. Sequoia is based in Fresno and serves companies nationally. This page applies Sequoia's AI search method to businesses serving Chattanooga without representing a local Sequoia location.",
+          "No. Sequoia is based in Sanger and serves companies nationally. This page applies Sequoia's AI search method to businesses serving Chattanooga without representing a local Sequoia location.",
       },
       {
         question: "Why does a Chattanooga assessment check two states?",
@@ -399,7 +399,7 @@ export const aiSearchCities: CityAiSearchSurface[] = [
       {
         question: "Does Sequoia GEO have a Reno office?",
         answer:
-          "No. Sequoia is based in Fresno and works with companies nationally. This page addresses businesses serving Reno and does not represent a local Sequoia office or address.",
+          "No. Sequoia is based in Sanger and works with companies nationally. This page addresses businesses serving Reno and does not represent a local Sequoia office or address.",
       },
       {
         question: "What does the Nevada contractor search establish?",

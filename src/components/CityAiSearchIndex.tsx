@@ -13,7 +13,7 @@ export default function CityAiSearchIndex() {
             Five city hubs built around verifiable local questions
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-gray-600">
-            Sequoia is based in Fresno and works with companies nationally. These pages do not
+            Sequoia is based in Sanger and works with companies nationally. These pages do not
             manufacture local offices. They show how the same evidence standard changes when the
             business identity, service area, credentials, and official sources change by market.
           </p>

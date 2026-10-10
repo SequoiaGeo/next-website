@@ -28,12 +28,12 @@ export default function ChatGptAdsPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Sequoia GEO",
-            "description": "Small marketing practice in Fresno, CA managing ChatGPT Ads, Google Ads, local SEO, and AI search visibility for service businesses. Founded by a 4x Inc 5000 operator.",
+            "description": "Small marketing practice in Sanger, CA managing ChatGPT Ads, Google Ads, local SEO, and AI search visibility for service businesses. Founded by a 4x Inc 5000 operator.",
             "url": "https://www.sequoiageo.com",
             "telephone": "+15595213122",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Fresno",
+              "streetAddress": "9617 East Olive Avenue", "postalCode": "93657", "addressLocality": "Sanger",
               "addressRegion": "CA",
               "addressCountry": "US"
             },
@@ -62,7 +62,7 @@ export default function ChatGptAdsPage() {
               "telephone": "+15595213122",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Fresno",
+                "streetAddress": "9617 East Olive Avenue", "postalCode": "93657", "addressLocality": "Sanger",
                 "addressRegion": "CA",
                 "addressCountry": "US"
               }

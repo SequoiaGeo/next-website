@@ -82,7 +82,7 @@ const organizationSchema = {
   image: "https://www.sequoiageo.com/og-image.png",
   description:
     "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.",
-  foundingDate: "2024",
+  foundingDate: "2025",
   founder: {
     "@type": "Person",
     "@id": "https://www.sequoiageo.com/#aaron-husak",
@@ -100,8 +100,10 @@ const organizationSchema = {
   },
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Fresno",
+    streetAddress: "9617 East Olive Avenue",
+    addressLocality: "Sanger",
     addressRegion: "CA",
+    postalCode: "93657",
     addressCountry: "US",
   },
   telephone: "+1-559-521-3122",

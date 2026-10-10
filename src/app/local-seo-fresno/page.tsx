@@ -26,7 +26,7 @@ export default function LocalSeoFresnoPage() {
             "telephone": "+15595213122",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Fresno",
+              "streetAddress": "9617 East Olive Avenue", "postalCode": "93657", "addressLocality": "Sanger",
               "addressRegion": "CA",
               "addressCountry": "US"
             },
