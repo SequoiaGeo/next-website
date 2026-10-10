@@ -38,12 +38,12 @@ export default function WebsiteHistoryPage() {
       <p className="mt-4 max-w-3xl leading-relaxed text-[#526156]">Dates below are source-control record dates, not independently confirmed production timestamps. This is a selected history, not every repository change. Changes often overlap, so later search results cannot automatically be attributed to one release.</p>
 
       <section className="mt-12 border-y border-[#0D2318]/20 py-8" aria-labelledby="search-context">
-        <h2 id="search-context" className="text-2xl font-bold">Search context, measured October 9</h2>
+        <h2 id="search-context" className="text-2xl font-bold">Site-wide search context, not release outcomes</h2>
         <p className="mt-3 max-w-3xl leading-relaxed">Search Console Web search, September 9 through October 6 compared with August 12 through September 8. Both periods contain 28 complete days. This observation is separate from the release timeline, not a result assigned to an individual change.</p>
         <div className="mt-6 grid gap-5 sm:grid-cols-3">
           {[['Clicks', '85 → 75'], ['Impressions', '97.9K → 51.3K'], ['Average position', '35.5 → 41.1']].map(([label, value]) => <div key={label} className="border-l-2 border-[#1A5C3A] pl-4"><p className="text-[#526156]">{label}, previous → current</p><p className="mt-2 text-3xl font-semibold">{value}</p></div>)}
         </div>
-        <p className="mt-5 text-base leading-relaxed text-[#526156]">Impressions retain the interface&apos;s rounding. Average position is affected by query mix; a higher number is worse. These figures measure search activity, not leads or booked jobs. They exclude separate AI-feature reporting. No cause of the decline has been established.</p>
+        <p className="mt-5 text-base leading-relaxed text-[#526156]">Read October 9, 2026; the interface reported its last update about 30.5 hours earlier. Impressions retain the interface&apos;s rounding. Average position is affected by query mix; a higher number is worse. These figures measure search activity, not leads or booked jobs. They exclude separate AI-feature reporting. This is a site-wide observation across overlapping changes, not a before-and-after result for any entry. No cause of the decline has been established.</p>
       </section>
 
       <section className="mt-12" aria-labelledby="recent-visual">
