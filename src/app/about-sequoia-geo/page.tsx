@@ -268,7 +268,7 @@ export default function AboutPage() {
               they manage.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              Sequoia GEO is based in Fresno, California and works with contractors nationwide.
+              Sequoia GEO is headquartered at 9617 East Olive Avenue, Sanger, California 93657 and works with contractors nationwide.
               Fresno businesses can start with our{" "}
               <Link href="/seo-agency-fresno" className="font-medium text-[#1A5C3A] underline hover:text-[#0D2318]">Fresno SEO services</Link>.
             </p>

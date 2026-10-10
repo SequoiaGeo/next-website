@@ -27,7 +27,7 @@ export default function SeoAgencyFresnoPage() {
             "telephone": "+15595213122",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Fresno",
+              "streetAddress": "9617 East Olive Avenue", "postalCode": "93657", "addressLocality": "Sanger",
               "addressRegion": "CA",
               "addressCountry": "US",
             },
@@ -86,10 +86,10 @@ export default function SeoAgencyFresnoPage() {
               },
               {
                 "@type": "Question",
-                "name": "Is Sequoia GEO actually based in Fresno?",
+                "name": "Where is Sequoia GEO based?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. Aaron Husak built and ran a Fresno-based home services company here for 13 years before starting Sequoia GEO. This is not a remote agency guessing at the market. We know Fresno's neighborhoods, seasonality, and competitive landscape from years of operating a local business in it.",
+                  "text": "Sequoia GEO is headquartered in Sanger, California and serves Fresno and the Central Valley. Aaron Husak built and ran a Fresno-based home services company here for 13 years before starting Sequoia GEO. This is not a remote agency guessing at the market. We know Fresno's neighborhoods, seasonality, and competitive landscape from years of operating a local business in it.",
                 },
               },
             ],

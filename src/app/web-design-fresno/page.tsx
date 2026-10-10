@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
@@ -26,7 +26,7 @@ export default function WebDesignFresnoPage() {
             "telephone": "+15595213122",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Fresno",
+              "streetAddress": "9617 East Olive Avenue", "postalCode": "93657", "addressLocality": "Sanger",
               "addressRegion": "CA",
               "addressCountry": "US"
             },
@@ -273,7 +273,7 @@ export default function WebDesignFresnoPage() {
                 The lesson: a website is not a marketing channel on its own. It is the destination that makes every other channel work. A weak website makes your Google Ads more expensive, your SEO harder, and your word-of-mouth referrals less likely to convert.
               </p>
               <p className="text-gray-600">
-                We are based in Fresno and focused on the Central Valley. We understand local market dynamics here, the competitive landscape, the neighborhoods, the seasonality, in a way that a San Francisco or Los Angeles agency never will.
+                We are based in Sanger and focused on the Central Valley. We understand local market dynamics here, the competitive landscape, the neighborhoods, the seasonality, in a way that a San Francisco or Los Angeles agency never will.
               </p>
             </div>
             <div className="bg-[#FAF7F2] rounded-2xl p-8">

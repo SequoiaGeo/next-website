@@ -50,25 +50,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div id="inquiry" className="scroll-mt-20">
-        <InlineLeadForm source="homepage_top" heading="Tell Aaron what needs to work better" subtext="Share your business and contact details. Aaron will follow up to discuss your marketing priorities. Prefer to choose a time now? Use the call booking link above." buttonText="Request a Conversation" collectCompany />
-      </div>
-      <section id="services" className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <p className="section-overline mb-4">Digital marketing for the trades</p>
-          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">A marketing plan that reaches beyond the click.</h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {[
-              ["GEO and search visibility", "Help Google and AI search tools understand your services, service areas, and the evidence behind your business. GEO, SEO, and local profiles work together.", "/geo-agency"],
-              ["Websites that support inquiries", "Give homeowners clear service information, proof of your work, and a working path to call or request service.", "/web-design-fresno"],
-              ["Marketing direction and measurement", "Coordinate campaigns, paid media, and follow-up around the priorities that matter. Report inquiries and booked jobs where the records support them.", "/fractional-cmo"],
-            ].map(([title, body, href]) => <article key={title} className="rounded-xl border border-gray-200 p-6"><h3 className="text-xl font-bold text-[#0D2318]">{title}</h3><p className="mt-3 leading-relaxed text-gray-700">{body}</p><Link href={href} className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline">Explore {title.toLowerCase()}</Link></article>)}
-          </div>
-        </div>
-      </section>
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <p className="section-overline mb-4">Our website and marketing track record</p>
+          <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Our website and marketing track record</p>
           <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">The examples below document website and marketing projects. They are not claims of guaranteed future results.</p>
           <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Website and marketing work you can inspect.</h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
@@ -143,6 +127,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div id="inquiry" className="scroll-mt-20">
+        <InlineLeadForm source="homepage_top" heading="Tell Aaron what needs to work better" subtext="Share your business and contact details. Aaron will follow up to discuss your marketing priorities. Prefer to choose a time now? Use the call booking link above." buttonText="Request a Conversation" collectCompany />
+      </div>
+      <section id="services" className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Digital marketing for the trades</p>
+          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">A marketing plan that reaches beyond the click.</h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              ["GEO and search visibility", "Help Google and AI search tools understand your services, service areas, and the evidence behind your business. GEO, SEO, and local profiles work together.", "/geo-agency"],
+              ["Websites that support inquiries", "Give homeowners clear service information, proof of your work, and a working path to call or request service.", "/web-design-fresno"],
+              ["Marketing direction and measurement", "Coordinate campaigns, paid media, and follow-up around the priorities that matter. Report inquiries and booked jobs where the records support them.", "/fractional-cmo"],
+            ].map(([title, body, href]) => <article key={title} className="border-t border-[#0D2318]/20 pt-6"><h3 className="text-xl font-bold text-[#0D2318]">{title}</h3><p className="mt-3 leading-relaxed text-gray-700">{body}</p><Link href={href} className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline">Explore {title.toLowerCase()}</Link></article>)}
+          </div>
+        </div>
+      </section>
       <section id="how-it-works" className="bg-[#0D2318] py-16 text-white sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Start with the marketing problem that needs attention.</h2>
@@ -160,7 +160,7 @@ export default function Home() {
       <MarketingAgents />
       <section id="snapshot" className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <p className="section-overline mb-4">Free AI Search Snapshot</p>
+          <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Free AI Search Snapshot</p>
           <h2 className="text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Help customers find and evaluate your business.</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {snapshotItems.map(([title, body]) => (

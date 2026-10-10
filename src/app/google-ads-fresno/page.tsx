@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import BookingCalendar from "@/components/BookingCalendar";
 import type { Metadata } from "next";
 
@@ -26,7 +26,7 @@ export default function GoogleAdsFresnoPage() {
             "telephone": "+15595213122",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Fresno",
+              "streetAddress": "9617 East Olive Avenue", "postalCode": "93657", "addressLocality": "Sanger",
               "addressRegion": "CA",
               "addressCountry": "US"
             },
@@ -252,7 +252,7 @@ export default function GoogleAdsFresnoPage() {
                 That operating experience shapes how we approach every client account. We do not chase impressions. We do not celebrate low CPCs if those clicks are not converting. We optimize for one thing: the cost to acquire a booked, closed customer.
               </p>
               <p className="text-gray-600">
-                We are based in Fresno and work with local businesses across the Central Valley. We keep our client roster small so every account gets real attention from the same person managing the campaigns.
+                We are based in Sanger and work with local businesses across the Central Valley. We keep our client roster small so every account gets real attention from the same person managing the campaigns.
               </p>
             </div>
             <div className="bg-[#FAF7F2] rounded-2xl p-8">

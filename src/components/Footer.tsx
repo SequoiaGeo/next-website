@@ -81,8 +81,9 @@ export default function Footer() {
               Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">
-              4x Inc 5000 (2021 to 2024) &middot; Former California contractor qualifier &middot; Fresno, CA &middot; Serving Nationwide
+              4x Inc 5000 (2021 to 2024) &middot; Former California contractor qualifier &middot; Serving Nationwide
             </p>
+            <p className="mt-3 text-sm leading-relaxed text-gray-400">Headquarters: 9617 East Olive Avenue, Sanger, CA 93657</p>
             <div className="flex flex-col gap-2 text-sm">
               <Link href="/card" className="font-semibold text-white hover:text-accent-green transition-colors">
                 Save Aaron’s Contact Details
