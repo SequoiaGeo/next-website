@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
 import InlineLeadForm from "@/components/InlineLeadForm";
@@ -51,7 +52,8 @@ export default function AutoDetailingMarketingPage() {
             <p className="mt-5 leading-relaxed text-[#C8EDD2]">Ongoing Search Foundation engagements start at <strong className="text-white">$4,500 per month</strong>, with a three-month initial term. Advertising spend is separate.</p>
             <Link href="/contact#book" className="btn btn-white mt-8">Talk through your shop&apos;s marketing</Link>
           </div>
-          <div className="border-l-2 border-[#6FCF97] pl-6 text-white">
+          <div className="text-white">
+            <Image src="/images/auto-detailing/red-ferrari.webp" alt="Red Ferrari parked on a city street" width={1800} height={1202} priority sizes="(min-width: 1024px) 460px, 100vw" className="mb-7 h-auto w-full" />
             <h2 className="text-2xl font-semibold">Experience with an established shop.</h2>
             <p className="mt-4 text-lg leading-relaxed text-[#C8EDD2]">Our work in automotive detailing and protection includes rebuilding service pages, relaunching paid search, and repairing call and form measurement.</p>
             <p className="mt-4 leading-relaxed text-[#C8EDD2]">You work directly with Aaron Husak, a former home-service owner and operator, on priorities, scope and reporting.</p>
@@ -90,6 +92,13 @@ export default function AutoDetailingMarketingPage() {
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-[#0D2318] sm:text-4xl">Make each service worth choosing.</h2>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-700">These are the questions service pages should help answer. They are planning examples, not customer quotations or claims about a particular shop.</p>
+          <div className="mt-8 grid gap-8 md:grid-cols-[0.7fr_1.3fr] md:items-center">
+            <Image src="/images/auto-detailing/black-lamborghini.webp" alt="Glossy black Lamborghini with reflections across its hood" width={1012} height={1800} sizes="(min-width: 768px) 380px, 100vw" className="mx-auto h-auto w-full max-w-sm" />
+            <div>
+              <h3 className="text-2xl font-semibold text-[#0D2318]">Speak to owners who care about the finish.</h3>
+              <p className="mt-4 text-lg leading-relaxed text-gray-700">For customers entrusting a luxury or performance vehicle to your team, the details matter. Show how your shop assesses the paint, recommends the right service and explains the work before an appointment.</p>
+            </div>
+          </div>
           <div className="mt-8 divide-y divide-gray-200 border-y border-gray-200">
             {services.map(([name, question, action]) => (
               <article key={name} className="grid gap-4 py-7 md:grid-cols-[190px_1fr_1fr]">

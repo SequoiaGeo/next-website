@@ -1,0 +1,26 @@
+[
+  {
+    "file": "red-ferrari.jpg",
+    "source_url": "https://www.pexels.com/photo/photo-of-ferrari-sports-car-parked-on-road-2664399/",
+    "photographer": "Roman Pohorecki",
+    "license_url": "https://www.pexels.com/license/",
+    "checked_date": "2026-10-12",
+    "dimensions": [
+      6016,
+      4016
+    ],
+    "use": "Illustrative stock photograph, not client work or endorsement."
+  },
+  {
+    "file": "black-lamborghini.jpg",
+    "source_url": "https://www.pexels.com/photo/black-lamborghini-sports-car-parked-on-the-road-8115879/",
+    "photographer": "Cristian Muduc",
+    "license_url": "https://www.pexels.com/license/",
+    "checked_date": "2026-10-12",
+    "dimensions": [
+      3508,
+      6240
+    ],
+    "use": "Illustrative stock photograph, not client work or endorsement."
+  }
+]
