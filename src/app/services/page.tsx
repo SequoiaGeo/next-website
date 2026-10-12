@@ -58,6 +58,7 @@ const tradePages = [
   { label: "HVAC SEO", href: "/hvac-seo" },
   { label: "Plumbing SEO", href: "/plumbing-seo" },
   { label: "Roofing SEO", href: "/roofing-seo" },
+  { label: "Auto Detailing Marketing", href: "/auto-detailing-marketing" },
   { label: "Restoration SEO", href: "/restoration-seo" },
   { label: "Fractional CMO", href: "/fractional-cmo" },
   { label: "AI Automation", href: "/ai-automation" },
