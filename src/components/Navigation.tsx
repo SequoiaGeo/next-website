@@ -11,6 +11,7 @@ const serviceLinks = [
     items: [
       { label: "AI SEO / Search Visibility", href: "/geo-agency" },
       { label: "AI Search Assessment", href: "/ai-search-assessment" },
+      { label: "Auto Detailing Marketing", href: "/auto-detailing-marketing" },
       { label: "AI SEO by Market", href: "/geo-agency#markets" },
       { label: "AI Marketing Agents", href: "/marketing-agents" },
     ],
