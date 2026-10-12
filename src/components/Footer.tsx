@@ -6,6 +6,7 @@ const services = [
   { label: "HVAC SEO", href: "/hvac-seo" },
   { label: "Plumbing SEO", href: "/plumbing-seo" },
   { label: "Roofing SEO", href: "/roofing-seo" },
+  { label: "Auto Detailing Marketing", href: "/auto-detailing-marketing" },
   { label: "LSA Management", href: "/lsa-management" },
   { label: "Operator-Led Marketing", href: "/fractional-cmo" },
   { label: "AI Automation", href: "/ai-automation" },

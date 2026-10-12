@@ -7,6 +7,7 @@ const BASE_URL = "https://www.sequoiageo.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages with stable lastModified dates (not new Date() which changes every build)
   const staticPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/auto-detailing-marketing`, lastModified: "2026-10-12", changeFrequency: "monthly", priority: 0.8 },
     // Core pages
     { url: BASE_URL, lastModified: "2026-09-30", changeFrequency: "weekly", priority: 1.0 },
     { url: `${BASE_URL}/about-sequoia-geo`, lastModified: "2026-08-21", changeFrequency: "monthly", priority: 0.8 },
