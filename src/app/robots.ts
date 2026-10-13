@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: "https://www.sequoiageo.com/sitemap.xml",
+    sitemap: ["https://www.sequoiageo.com/sitemap.xml", "https://www.sequoiageo.com/video-sitemap.xml"],
   };
 }
