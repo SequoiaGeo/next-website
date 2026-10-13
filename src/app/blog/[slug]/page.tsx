@@ -5824,6 +5824,7 @@ export default async function BlogPostPage({
     dateModified: post.dateISO,
     author: {
       "@type": "Person",
+      "@id": "https://www.sequoiageo.com/#aaron-husak",
       name: "Aaron Husak",
       url: "https://www.sequoiageo.com/about-sequoia-geo",
       jobTitle: "Founder, Sequoia GEO",
@@ -5831,6 +5832,7 @@ export default async function BlogPostPage({
     },
     publisher: {
       "@type": "Organization",
+      "@id": "https://www.sequoiageo.com/#organization",
       name: "Sequoia GEO",
       url: "https://www.sequoiageo.com",
     },

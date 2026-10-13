@@ -81,7 +81,7 @@ const organizationSchema = {
   logo: "https://www.sequoiageo.com/logo.png",
   image: "https://www.sequoiageo.com/og-image.png",
   description:
-    "Growth operations for home service companies doing $2M-$15M. Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.",
+    "Operator-led marketing for home service companies and established auto detailing shops across AI search, SEO, websites, paid media, public profiles, tracking, and the booking handoff. Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.",
   foundingDate: "2025",
   founder: {
     "@type": "Person",

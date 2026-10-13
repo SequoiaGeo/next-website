@@ -20,7 +20,7 @@ export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
   const schema = { "@context": "https://schema.org", "@type": "VideoObject", "@id": `${url}#video`, name: video.title, description: video.description,
     thumbnailUrl: `https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`, uploadDate: video.date, duration: video.duration,
     embedUrl: `https://www.youtube-nocookie.com/embed/${video.videoId}`, url, inLanguage: "en", transcript: transcript.map(cue => cue.text).join(" "),
-    publisher: { "@type": "Organization", name: "Sequoia GEO", url: base } };
+    publisher: { "@type": "Organization", "@id": `${base}/#organization`, name: "Sequoia GEO", url: base } };
   return <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     <section className="bg-[#0D2318] py-12 sm:py-16">

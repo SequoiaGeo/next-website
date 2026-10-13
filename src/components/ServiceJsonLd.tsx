@@ -21,11 +21,14 @@ export default function ServiceJsonLd({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `${url}#service`,
+    name: serviceType,
     serviceType,
     description,
     url,
     provider: {
       "@type": "Organization",
+      "@id": "https://www.sequoiageo.com/#organization",
       name: "Sequoia GEO",
       url: "https://www.sequoiageo.com",
       telephone: "+15595213122",
