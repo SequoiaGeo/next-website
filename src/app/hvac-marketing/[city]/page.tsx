@@ -88,14 +88,14 @@ export default async function CityPage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Sequoia GEO",
+            "@type": "Service",
+            "@id": `https://www.sequoiageo.com/hvac-marketing/${slug}#service`,
+            "serviceType": "HVAC marketing",
+            "name": `HVAC marketing in ${data.city}, ${data.stateAbbr}`,
             "description": `HVAC and home services marketing agency serving contractors in ${data.city}, ${data.state}`,
             "url": `https://www.sequoiageo.com/hvac-marketing/${slug}`,
-            "telephone": "+15595213122",
-            "email": "aaron@sequoiageo.com",
+            "provider": { "@type": "Organization", "@id": "https://www.sequoiageo.com/#organization", "name": "Sequoia GEO", "url": "https://www.sequoiageo.com" },
             "areaServed": { "@type": "City", "name": data.city, "containedInPlace": { "@type": "State", "name": data.state } },
-            "founder": { "@type": "Person", "name": "Aaron Husak" },
           })
         }}
       />
