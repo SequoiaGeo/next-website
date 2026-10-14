@@ -176,6 +176,12 @@ export async function POST(req: Request) {
       body.message = "Free AI Estimate Review requested. Permission granted for a redacted sample to be reviewed using ChatGPT, Claude and Gemini plus human review. Consent version 2026-09-25. No document collected by this form. Sample to follow by email. No marketing consent granted.";
       body.smsConsent = false;
     }
+    const isPaidSnapshot = ["paid_snapshot_google", "paid_snapshot_chatgpt"].includes(body.source);
+    const qualificationText = (value: unknown) => typeof value === "string" ? value.replace(/[\u0000-\u001F\u007F]/g, " ").replace(/\s+/g, " ").trim().slice(0, 160) : "";
+    const snapshotQualification = isPaidSnapshot ? {
+      trade: qualificationText(body.snapshotTrade),
+      serviceArea: qualificationText(body.snapshotServiceArea),
+    } : undefined;
     const businessWebsite = isWebsiteAssessment ? normalizeAssessmentWebsite(body.businessWebsite) : "";
     const marketingEmailConsent = isWebsiteAssessment ? assessmentMarketingConsent(body.marketingEmailConsent) : undefined;
 
@@ -183,7 +189,7 @@ export async function POST(req: Request) {
     const emailCheck = isWebsiteAssessment ? checkEmailLead(body) : null;
     const spam = emailCheck
       ? emailCheck.ok
-        ? { ok: true as const, clean: { ...emailCheck.clean, phone: "", company: "", smsConsent: false, message: `Free AI search assessment requested for: ${businessWebsite}` } }
+        ? { ok: true as const, clean: { ...emailCheck.clean, phone: "", company: "", smsConsent: false, message: "Free AI search assessment requested for: " + businessWebsite + (snapshotQualification?.trade ? " | Trade: " + snapshotQualification.trade : "") + (snapshotQualification?.serviceArea ? " | Service area: " + snapshotQualification.serviceArea : "") } }
         : emailCheck
       : checkLead(body);
     if (!spam.ok) {
@@ -367,6 +373,7 @@ export async function POST(req: Request) {
       phone: phone || undefined,
       businessWebsite: businessWebsite || undefined,
       marketingEmailConsent,
+      snapshotQualification,
       companyName: company || undefined,
       message,
       leadId,
@@ -401,6 +408,7 @@ export async function POST(req: Request) {
         companyName: company || "",
         businessWebsite,
         marketingEmailConsent,
+        snapshotQualification,
         source,
         campaign: campaignAttribution,
         ai: aiAttribution,

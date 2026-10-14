@@ -123,6 +123,10 @@ function evidenceNote(input, now) {
   if (reportedQuestion) lines.push(`reported_ai_question: ${reportedQuestion}`);
 
   if (input.businessWebsite) lines.push(`assessment_website: ${cleanText(input.businessWebsite, 500).replace(/[\r\n]+/g, " ")}`);
+  if (["paid_snapshot_google", "paid_snapshot_chatgpt"].includes(input.source)) {
+    if (input.snapshotQualification?.trade) lines.push("snapshot_trade: " + cleanText(input.snapshotQualification.trade, 160).replace(/[\r\n]+/g, " "));
+    if (input.snapshotQualification?.serviceArea) lines.push("snapshot_service_area: " + cleanText(input.snapshotQualification.serviceArea, 160).replace(/[\r\n]+/g, " "));
+  }
   if (input.marketingEmailConsent) {
     const consent = input.marketingEmailConsent;
     lines.push(`marketing_email_consent: ${consent.granted === true ? "granted" : "not_granted"}`);

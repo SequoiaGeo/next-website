@@ -172,10 +172,11 @@ test("paid Snapshot requests preserve channel attribution through accepted captu
     const source = `paid_snapshot_${channel}`;
     const campaignAttribution = { utm_source: channel === "google" ? "google" : "openai_ads", utm_medium: "cpc", utm_campaign: "snapshot_comparison_202610", utm_content: "snapshot_v1", landing_path: `/ai-search-snapshot/${channel}` };
     const start = outboundCalls.length;
-    await postLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, source, campaignAttribution });
+    await postLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, source, campaignAttribution, snapshotTrade: "Roofing", snapshotServiceArea: "Phoenix, AZ" });
     const calls = outboundCalls.slice(start);
     const webhook = JSON.parse(calls.find(c => c.url === process.env.GHL_WEBHOOK_URL).init.body);
     assert.equal(webhook.source, source);
+    assert.deepEqual(webhook.snapshotQualification, { trade: "Roofing", serviceArea: "Phoenix, AZ" });
     assert.equal(webhook.utmSource, campaignAttribution.utm_source);
     assert.equal(webhook.utmCampaign, campaignAttribution.utm_campaign);
     assert.equal(webhook.campaignLandingPath, campaignAttribution.landing_path);
@@ -183,6 +184,8 @@ test("paid Snapshot requests preserve channel attribution through accepted captu
     assert.ok(notification.html.includes(source));
     assert.ok(notification.html.includes(campaignAttribution.landing_path));
     assert.ok(notification.html.includes("https://example.com/services"));
+    assert.ok(notification.html.includes("Roofing"));
+    assert.ok(notification.html.includes("Phoenix, AZ"));
 
     deliveryMode = "failure";
     try {
@@ -362,6 +365,24 @@ test("assessment optional email choice survives email, webhook and direct CRM wi
       assert.ok(body.includes("marketing_email_consent_recorded_at:"));
       assert.ok(body.includes("marketing_email_consent_text: Yes, send me occasional"));
     }
+  } finally {
+    delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+    delete process.env.HIGHLEVEL_LOCATION_ID;
+    deliveryMode = "success";
+  }
+});
+
+test("paid Snapshot qualification remains in direct CRM when notification delivery fails", async () => {
+  process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN = "pit_direct_fixture";
+  process.env.HIGHLEVEL_LOCATION_ID = "location_direct_fixture";
+  deliveryMode = "direct_success";
+  try {
+    const start = outboundCalls.length;
+    await postLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, source: "paid_snapshot_google", snapshotTrade: "Roofing", snapshotServiceArea: "Phoenix, AZ" });
+    const note = outboundCalls.slice(start).find(c => c.url.endsWith("/notes") && c.init?.method === "POST");
+    const evidence = JSON.parse(note.init.body).body;
+    assert.ok(evidence.includes("snapshot_trade: Roofing"));
+    assert.ok(evidence.includes("snapshot_service_area: Phoenix, AZ"));
   } finally {
     delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
     delete process.env.HIGHLEVEL_LOCATION_ID;

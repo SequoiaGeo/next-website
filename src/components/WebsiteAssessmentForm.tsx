@@ -12,6 +12,9 @@ const fieldClass = "mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 
 const buttonClass = "min-h-12 rounded-lg bg-[#1A5C3A] px-6 py-3 font-bold text-white hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A] disabled:opacity-60";
 
 export default function WebsiteAssessmentForm({ source = defaultSource }: { source?: string } = {}) {
+  const isPaidSnapshot = source === "paid_snapshot_google" || source === "paid_snapshot_chatgpt";
+  const [trade, setTrade] = useState("");
+  const [serviceArea, setServiceArea] = useState("");
   const [step, setStep] = useState<"website" | "details" | "success">("website");
   const [businessWebsite, setBusinessWebsite] = useState("");
   const [name, setName] = useState("");
@@ -70,6 +73,7 @@ export default function WebsiteAssessmentForm({ source = defaultSource }: { sour
         body: JSON.stringify({
           source, name, email, businessWebsite: normalizedWebsite, website: honeypot,
           marketingEmailConsent,
+          ...(isPaidSnapshot ? { snapshotTrade: trade, snapshotServiceArea: serviceArea } : {}),
           campaignAttribution: readCampaignAttribution(),
           aiAttribution: readAiAttribution(),
         }),
@@ -78,7 +82,7 @@ export default function WebsiteAssessmentForm({ source = defaultSource }: { sour
       if (!response.ok || (!honeypot && result.captured !== true)) throw new Error("Not captured");
       if (!honeypot) trackCapturedLead(result, { source, cta_contract: "intake" });
       setStep("success");
-      setName(""); setEmail(""); setBusinessWebsite("");
+      setName(""); setEmail(""); setBusinessWebsite(""); setTrade(""); setServiceArea("");
     } catch {
       setError("Your request could not be confirmed. Please try again or email Aaron@sequoiageo.com.");
       trackEvent("form_error", { source, cta_contract: "intake" });
@@ -102,7 +106,7 @@ export default function WebsiteAssessmentForm({ source = defaultSource }: { sour
           <label htmlFor="assessment-business-website" className="block font-semibold">Enter your website for a free assessment</label>
           <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-start">
             <input ref={websiteInput} id="assessment-business-website" name="businessWebsite" type="text" inputMode="url" autoComplete="url" autoCapitalize="none" spellCheck={false} required maxLength={500} placeholder="yourcompany.com" value={businessWebsite} onChange={(e) => { start(); setBusinessWebsite(e.target.value); }} aria-describedby="assessment-help assessment-error" aria-invalid={Boolean(error)} className={`${fieldClass} !mt-0 sm:flex-1 sm:min-w-0`} data-clarity-mask="true" />
-            <button type="submit" className={buttonClass}>Get my free assessment</button>
+            <button type="submit" className={buttonClass}>{isPaidSnapshot ? "Get my free Snapshot" : "Get my free assessment"}</button>
           </div>
           <p id="assessment-help" className="mt-3 text-sm text-gray-600">Your free AI Search Snapshot includes website issues, search-visibility findings, and next steps. Next, tell us where to email it. No call is booked.</p>
         </form>
@@ -117,6 +121,10 @@ export default function WebsiteAssessmentForm({ source = defaultSource }: { sour
               <div><label htmlFor="assessment-name" className="text-sm font-semibold">First name</label><input ref={nameInput} id="assessment-name" name="name" autoComplete="given-name" required maxLength={100} value={name} onChange={(e) => setName(e.target.value)} className={fieldClass} /></div>
               <div><label htmlFor="assessment-email" className="text-sm font-semibold">Email address</label><input id="assessment-email" name="email" type="email" autoComplete="email" required maxLength={254} value={email} onChange={(e) => setEmail(e.target.value)} className={fieldClass} /></div>
             </div>
+            {isPaidSnapshot && <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <div><label htmlFor="snapshot-trade" className="text-sm font-semibold">Your trade</label><select id="snapshot-trade" required value={trade} onChange={e => setTrade(e.target.value)} className={fieldClass}><option value="">Select your trade</option>{["HVAC", "Plumbing", "Roofing", "Restoration", "Electrical", "Landscaping", "Other home service"].map(value => <option key={value}>{value}</option>)}</select></div>
+              <div><label htmlFor="snapshot-service-area" className="text-sm font-semibold">Primary service area</label><input id="snapshot-service-area" required maxLength={160} placeholder="City and state" value={serviceArea} onChange={e => setServiceArea(e.target.value)} className={fieldClass} /></div>
+            </div>}
           </div>
           <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden"><label htmlFor="assessment-hp">Leave this blank</label><input id="assessment-hp" name="website" tabIndex={-1} autoComplete="off" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} /></div>
           <p className="mt-4 text-sm text-gray-600">We use these details to review your website and respond to your request. <a href="/privacy-policy" className="underline">Privacy policy</a>.</p>
@@ -124,7 +132,7 @@ export default function WebsiteAssessmentForm({ source = defaultSource }: { sour
             <input id="assessment-marketing-consent" name="marketingEmailConsent" type="checkbox" checked={marketingEmailConsent} onChange={(e) => setMarketingEmailConsent(e.target.checked)} className="mt-1 h-5 w-5 shrink-0 accent-[#1A5C3A]" />
             <span>{MARKETING_EMAIL_CONSENT_TEXT} <span className="block mt-1">Optional. Your assessment does not depend on this choice.</span></span>
           </label>
-          <button type="submit" disabled={loading} className={`${buttonClass} mt-5 w-full`}>{loading ? "Sending request..." : "Send my assessment request"}</button>
+          <button type="submit" disabled={loading} className={`${buttonClass} mt-5 w-full`}>{loading ? "Sending request..." : isPaidSnapshot ? "Send my Snapshot request" : "Send my assessment request"}</button>
         </form>
       )}
       <p id="assessment-error" role="alert" className="mt-2 text-sm text-red-700">{error}</p>
