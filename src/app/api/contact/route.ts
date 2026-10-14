@@ -61,6 +61,8 @@ const FORM_SOURCES = new Set([
   "sequoia_knowledge_interface",
   "homepage_top",
   "homepage_website_assessment",
+  "paid_snapshot_google",
+  "paid_snapshot_chatgpt",
   "audit_page",
   "hvac_seo_page",
   "plumbing_seo_page",
@@ -166,7 +168,7 @@ export async function POST(req: Request) {
     if (!body || typeof body !== "object" || Array.isArray(body)) {
       return NextResponse.json({ error: "Invalid request" }, { status: 400 });
     }
-    const isWebsiteAssessment = body.source === "homepage_website_assessment";
+    const isWebsiteAssessment = ["homepage_website_assessment", "paid_snapshot_google", "paid_snapshot_chatgpt"].includes(body.source);
     if (body.source === "estimate_review") {
       if (body.estimateAiConsent !== true) {
         return NextResponse.json({ error: "Please authorize the AI-assisted estimate review." }, { status: 400 });

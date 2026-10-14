@@ -310,7 +310,7 @@ export default function SequoiaKnowledgeInterface() {
     };
   }, [enabled]);
 
-  if (!enabled || pathname === "/" || pathname === "/ask-sequoia" || pathname === "/clovis") return null;
+  if (!enabled || pathname === "/" || pathname === "/ask-sequoia" || pathname === "/clovis" || pathname === "/ai-search-snapshot/google" || pathname === "/ai-search-snapshot/chatgpt") return null;
 
   return (
     <Link

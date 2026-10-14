@@ -11,7 +11,7 @@
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 
-const BARE_ROUTES = new Set<string>(["/found-me-in-chatgpt", "/immanuel", "/dragons", "/clovis"]);
+const BARE_ROUTES = new Set<string>(["/found-me-in-chatgpt", "/immanuel", "/dragons", "/clovis", "/ai-search-snapshot/google", "/ai-search-snapshot/chatgpt"]);
 
 export default function ChromeGate({ children }: { children: ReactNode }) {
   const pathname = usePathname();
