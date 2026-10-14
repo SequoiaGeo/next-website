@@ -167,6 +167,32 @@ async function postLegacyBody(routePath, body) {
   assert.equal(payload.isSyntheticTest, false);
 }
 
+test("paid Snapshot requests preserve channel attribution through accepted capture", async () => {
+  for (const channel of ["google", "chatgpt"]) {
+    const source = `paid_snapshot_${channel}`;
+    const campaignAttribution = { utm_source: channel === "google" ? "google" : "openai_ads", utm_medium: "cpc", utm_campaign: "snapshot_comparison_202610", utm_content: "snapshot_v1", landing_path: `/ai-search-snapshot/${channel}` };
+    const start = outboundCalls.length;
+    await postLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, source, campaignAttribution });
+    const calls = outboundCalls.slice(start);
+    const webhook = JSON.parse(calls.find(c => c.url === process.env.GHL_WEBHOOK_URL).init.body);
+    assert.equal(webhook.source, source);
+    assert.equal(webhook.utmSource, campaignAttribution.utm_source);
+    assert.equal(webhook.utmCampaign, campaignAttribution.utm_campaign);
+    assert.equal(webhook.campaignLandingPath, campaignAttribution.landing_path);
+    const notification = JSON.parse(calls.find(c => c.url.startsWith("https://api.resend.com/")).init.body);
+    assert.ok(notification.html.includes(source));
+    assert.ok(notification.html.includes(campaignAttribution.landing_path));
+    assert.ok(notification.html.includes("https://example.com/services"));
+
+    deliveryMode = "failure";
+    try {
+      const { response, payload } = await invokeLegacyBody(["api", "contact"], { ...LEGACY_CASES[0].body, source, campaignAttribution });
+      assert.equal(response.status, 500);
+      assert.notEqual(payload.captured, true);
+    } finally { deliveryMode = "success"; }
+  }
+});
+
 test("estimate review requires explicit consent and preserves it in notification", async () => {
   const body = { source: "estimate_review", estimateAiConsent: true, name: "Review Fixture", email: "review@invalid.example", phone: "5595551212", company: "Fixture", website: "" };
   for (const value of [false, undefined, "true"]) {

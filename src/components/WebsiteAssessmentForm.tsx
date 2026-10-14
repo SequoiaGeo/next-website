@@ -7,11 +7,11 @@ import { trackCapturedLead, trackEvent } from "@/lib/analytics";
 import { readCampaignAttribution } from "@/lib/campaign-attribution";
 import { readAiAttribution } from "@/lib/ai-attribution";
 
-const source = "homepage_website_assessment";
+const defaultSource = "homepage_website_assessment";
 const fieldClass = "mt-2 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-base text-[#111111] focus:outline-none focus:ring-2 focus:ring-[#1A5C3A]";
 const buttonClass = "min-h-12 rounded-lg bg-[#1A5C3A] px-6 py-3 font-bold text-white hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A] disabled:opacity-60";
 
-export default function WebsiteAssessmentForm() {
+export default function WebsiteAssessmentForm({ source = defaultSource }: { source?: string } = {}) {
   const [step, setStep] = useState<"website" | "details" | "success">("website");
   const [businessWebsite, setBusinessWebsite] = useState("");
   const [name, setName] = useState("");
