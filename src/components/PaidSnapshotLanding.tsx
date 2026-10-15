@@ -89,6 +89,7 @@ export default function PaidSnapshotLanding({ source }: { source: "paid_snapshot
         <div><strong>Sequoia GEO</strong><br />9617 East Olive Avenue, Sanger, CA 93657</div>
         <div><a href="mailto:aaron@sequoiageo.com" className="underline">aaron@sequoiageo.com</a><br /><Link href="/privacy-policy" className="underline">Privacy policy</Link></div>
       </div>
+      <p className="mx-auto mt-6 max-w-6xl border-t border-white/20 pt-5 text-sm leading-relaxed text-[#D5E5DA]">Service-area eligibility: Sequoia GEO cannot accept HVAC or plumbing businesses located within 60 miles of Fresno, California.</p>
     </footer>
   </div>;
 }

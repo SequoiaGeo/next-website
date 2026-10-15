@@ -24,7 +24,7 @@ This is a channel comparison using matched pages, not an A/B test of page copy o
 Do not auto-disqualify from inferred website attributes or silently label unanswered records as qualified.
 
 ## Launch remains separate
-USD500 media each, matching dates, and the original Fresno-area HVAC/plumbing restriction are unchanged. Do not activate until OpenAI creative/destinations, provider approvals, geography, and production intake/event verification are complete.
+USD500 media each and matching dates are unchanged. Aaron explicitly removed the geographic ad-exclusion requirement on October 14, 2026. Both pages now disclose that Sequoia GEO cannot accept HVAC or plumbing businesses located within 60 miles of Fresno, California; Aaron will screen and decline those inquiries. Do not treat Fresno ad targeting as a launch blocker. OpenAI creative/destinations, provider approvals and appropriate event verification remain readiness items. This copy update does not activate either campaign.
 Local compiled API success/failure checks do not prove production delivery or platform receipt. No production inquiry was submitted by this release.
 
 ## Review
