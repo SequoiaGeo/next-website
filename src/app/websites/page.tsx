@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+import AFCSResultsCard from "@/components/AFCSResultsCard";
+import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
@@ -359,6 +360,7 @@ export default function WebsitesPage() {
         </div>
       </section>
 
+      <section className="bg-[#fafaf8] px-6 py-8"><div className="mx-auto max-w-4xl"><AFCSResultsCard /></div></section>
       {/* Case study callout */}
       <section className="bg-[#fafaf8] py-14">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">

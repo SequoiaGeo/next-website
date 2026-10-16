@@ -52,24 +52,48 @@ export default function Home() {
       <Hero />
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Our website and marketing track record</p>
-          <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">The examples below document website and marketing projects. They are not claims of guaranteed future results.</p>
-          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Website and marketing work you can inspect.</h2>
+          <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Results an owner can evaluate</p>
+          <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">Search traffic, calls and the owner&rsquo;s experience, with the dates and sources attached. These are not claims of guaranteed future results.</p>
+          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">What changed for the businesses we work with.</h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
+                    <div className="mt-8 grid gap-4 lg:grid-cols-3" aria-label="Dated client results">
+            <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
+              <p className="text-sm font-semibold text-[#1A5C3A]">AFCS · Google organic search</p>
+              <h3 className="mt-3 text-4xl font-extrabold text-[#0D2318]">+365%</h3>
+              <p className="mt-3 text-lg font-semibold text-[#0D2318]">26 to 121 website clicks</p>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">June 5 to July 4 versus September 14 to October 13, 2026. Both 30-day windows follow launch. Seasonal demand may contribute.</p>
+              <Link href="/case-studies/firemans-chimney-sweep" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the Search Console evidence</Link>
+            </article>
+            <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
+              <p className="text-sm font-semibold text-[#1A5C3A]">Amazing Air · Google organic search</p>
+              <h3 className="mt-3 text-4xl font-extrabold text-[#0D2318]">+50%</h3>
+              <p className="mt-3 text-lg font-semibold text-[#0D2318]">40 to 60 website clicks</p>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">April 10 to May 9 versus September 14 to October 13, 2026. Our first 30 days working together versus a later 30-day window.</p>
+              <a href="#amazing-air-proof-heading" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the work and measurement</a>
+            </article>
+            <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
+              <p className="text-sm font-semibold text-[#1A5C3A]">KABAM · Owner testimonial</p>
+              <h3 className="mt-3 text-3xl font-extrabold text-[#0D2318]">15 to 20 calls a week</h3>
+              <p className="mt-3 text-lg font-semibold text-[#0D2318]">Up from 10 to 12, Mike reported.</p>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">Client-reported in his May 2026 testimonial. Business-wide calls, not independently reconciled qualified leads or jobs booked. Individual results vary.</p>
+              <a href="#kabam-proof-heading" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Hear directly from the owner</a>
+            </article>
+          </div>
+          <p className="mt-5 max-w-4xl text-base leading-relaxed text-gray-700">The search figures come from Google Search Console, verified October 16, 2026. They show observed changes during our work together, not a controlled measure of SEO alone. Website clicks and reported calls are different stages; neither is a booked-job count.</p>
           <article className="mt-8 grid gap-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 md:grid-cols-[1.3fr_0.7fr] md:items-center lg:gap-12" aria-labelledby="kabam-proof-heading">
             <div>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
                 <Image src="/kabam-logo.png" alt="KABAM Plumbing Services logo" width={600} height={329} sizes="144px" className="h-auto w-36 shrink-0 object-contain" />
                 <p className="max-w-[240px] text-sm font-semibold text-[#1A5C3A]">KABAM Plumbing Services · Sun City Center, Florida</p>
               </div>
-              <h3 id="kabam-proof-heading" className="mt-3 text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">A website built around the business Mike actually runs.</h3>
+              <h3 id="kabam-proof-heading" className="mt-3 text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">More calls, and an owner growing his team.</h3>
               <p className="mt-4 text-base leading-relaxed text-gray-700">Mike is an independent plumber competing with larger companies. We rebuilt KABAM&rsquo;s website around his plumbing services and the communities he serves, giving prospective customers a clearer picture of who to call and what he can help with.</p>
               <ul className="mt-5 space-y-3 text-base leading-relaxed text-gray-700">
                 <li><strong className="text-[#0D2318]">A website he owns,</strong> with content about his plumbing services.</li>
                 <li><strong className="text-[#0D2318]">Local service pages,</strong> covering Sun City Center, Apollo Beach, Wimauma, Riverview, and surrounding communities.</li>
                 <li><strong className="text-[#0D2318]">Clearer measurement,</strong> including corrections to duplicate form tracking.</li>
               </ul>
-              <p className="mt-5 text-base leading-relaxed text-gray-700">Hear Mike describe his experience working with Sequoia GEO.</p>
+              <p className="mt-5 text-base leading-relaxed text-gray-700">In his May 2026 testimonial, Mike describes moving from 10 to 12 calls a week to 15 to 20, and hiring an apprentice. Those are his reported business outcomes, not independently verified SEO attribution. Hear his experience in his own words.</p>
               <Link href="/case-studies/kabam-plumbing" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See KABAM&rsquo;s website story</Link>
             </div>
             <figure className="mx-auto w-full max-w-[280px]">
@@ -86,6 +110,7 @@ export default function Home() {
             </div>
             <h3 id="amazing-air-proof-heading" className="mt-3 max-w-3xl text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">Make it possible for customers to find you and take the next step.</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">A homeowner should not have to work around a broken website to request service. For Amazing Air, we repaired the paths customers use to navigate, book, and reach relevant service pages.</p>
+            <div className="mt-5 rounded-xl bg-[#fafaf8] p-5"><p className="text-2xl font-extrabold text-[#1A5C3A]">40 to 60 organic Google clicks</p><p className="mt-2 text-base leading-relaxed text-gray-700">Search Console recorded 50% more clicks in September 14 to October 13 than in April 10 to May 9, 2026, our first 30 days working together. Impressions declined from 29,465 to 25,796. These are dated search results, not a measured increase in leads, bookings, or AI recommendations.</p></div>
             <div className="mt-6 grid gap-6 md:grid-cols-3">
               <div>
                 <h4 className="text-lg font-bold text-[#0D2318]">Mobile navigation that works</h4>
