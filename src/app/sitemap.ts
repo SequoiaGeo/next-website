@@ -63,7 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Case studies
     { url: `${BASE_URL}/case-studies`, lastModified: "2026-08-30", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/case-studies/balanced-comfort`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/case-studies/firemans-chimney-sweep`, lastModified: "2026-07-07", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/case-studies/firemans-chimney-sweep`, lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/kabam-plumbing`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/luma-exteriors`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/case-studies/window-insulation-company`, lastModified: "2026-07-08", changeFrequency: "monthly", priority: 0.7 },

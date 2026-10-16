@@ -1,0 +1,30 @@
+{
+  "verifiedOn": "2026-10-16",
+  "source": "Google Search Console, final web-search property totals, same domain and filters",
+  "launchDate": "2026-06-05",
+  "first": {
+    "start": "2026-06-05",
+    "end": "2026-07-04",
+    "clicks": 26,
+    "impressions": 8174
+  },
+  "later": {
+    "start": "2026-09-14",
+    "end": "2026-10-13",
+    "clicks": 121,
+    "impressions": 25915
+  },
+  "clickIncreasePercent": 365.3846153846154,
+  "displayPercent": 365,
+  "limits": [
+    "Both windows follow launch; this is not old-site traffic versus new-site traffic.",
+    "Seasonality and other changes may contribute; no controlled attribution.",
+    "September 20 accounts for 20854 later-window impressions but only one click.",
+    "Clicks are not unique leads or booked jobs.",
+    "Matched Google Business Profile growth has not been verified and is not claimed."
+  ],
+  "assets": {
+    "oldWebsite": "No genuine historical screenshot located in checked local archives; archive lookup inaccessible. Not fabricated.",
+    "currentWebsite": "Public website visually inspected October 16. Screenshot captured in browser but filesystem save was blocked; current-site link supplied."
+  }
+}

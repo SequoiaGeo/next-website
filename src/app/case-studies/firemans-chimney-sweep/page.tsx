@@ -1,242 +1,64 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { afcsResults as r } from "@/data/afcs-results";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
+const url = "https://www.sequoiageo.com/case-studies/firemans-chimney-sweep";
 export const metadata: Metadata = {
-  title: "A Fireman's Chimney Sweep Case Study | Sequoia GEO",
-  description:
-    "A new website that hit page one in its first month, for a firefighter-owned chimney company that had never measured anything. Website rebuild, local SEO, and measurement from day one.",
-  alternates: {
-    canonical: "https://www.sequoiageo.com/case-studies/firemans-chimney-sweep",
-  },
+  title: "Home-Service SEO Case Study: 26 to 121 Clicks | Sequoia GEO",
+  description: "A home-service website rebuild and SEO case study. AFCS grew from 26 to 121 organic Google clicks across two documented 30-day post-launch windows.",
+  alternates: { canonical: url },
+  openGraph: { title: "A home-service website. 365% more organic clicks.", description: "26 to 121 Google organic clicks across documented 30-day windows. See the work, dates and Search Console evidence.", url },
 };
-
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline:
-    "A new website that hit page one in its first month, for a company that had never measured anything",
-  description:
-    "How A Fireman's Chimney Sweep in Emmett, Idaho went from an unmeasured template site to a page-one presence in its first month, with analytics, call tracking, and form tracking wired from day one.",
-  author: {
-    "@type": "Person",
-    "@id": "https://www.sequoiageo.com/#aaron-husak",
-    name: "Aaron Husak",
-  },
-  publisher: {
-    "@id": "https://www.sequoiageo.com/#organization",
-  },
-  datePublished: "2026-07-07",
-  dateModified: "2026-07-07",
-  mainEntityOfPage: "https://www.sequoiageo.com/case-studies/firemans-chimney-sweep",
+const article = {
+  "@context": "https://schema.org", "@type": "Article",
+  headline: "A home-service website, from 26 to 121 organic Google clicks",
+  description: metadata.description,
+  datePublished: "2026-07-07", dateModified: "2026-10-16", mainEntityOfPage: url,
+  author: { "@type": "Person", "@id": "https://www.sequoiageo.com/#aaron-husak", name: "Aaron Husak" },
+  publisher: { "@id": "https://www.sequoiageo.com/#organization" },
 };
-
-const stats = [
-  { value: "367", label: "Google reviews at a 4.8 rating" },
-  { value: "3 weeks", label: "To page one for core chimney terms" },
-  { value: "5.8", label: "Average search position, first month" },
-  { value: "56 → 87", label: "Lighthouse mobile performance score" },
-];
-
 export default function FiremansChimneySweepCaseStudy() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-
-      {/* Nav strip */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4">
-          <Link
-            href="/case-studies"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M19 12H5M12 5l-7 7 7 7" />
-            </svg>
-            Back to Case Studies
-          </Link>
-        </div>
+  return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} />
+    <BreadcrumbJsonLd items={[{name:"Home",url:"https://www.sequoiageo.com/"},{name:"Case Studies",url:"https://www.sequoiageo.com/case-studies"},{name:"Home-Service SEO: AFCS",url}]} />
+    <section className="bg-[#0D2318] px-6 py-20 text-white sm:py-24">
+      <div className="mx-auto max-w-4xl">
+        <Link href="/case-studies" className="text-base text-[#C8EDD2] underline underline-offset-4">All case studies</Link>
+        <p className="mt-8 text-sm font-semibold uppercase tracking-wider text-[#C8EDD2]">Home-service website and SEO</p>
+        <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">A stronger website.<br />26 to 121 organic clicks.</h1>
+        <p className="mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]">A Fireman&apos;s Chimney Sweep had an established service business and a website that needed rebuilding. Sequoia GEO rebuilt it around the services and communities its customers search for, then continued the SEO work.</p>
+        <div className="mt-9 flex flex-wrap items-end gap-4"><strong className="text-6xl font-extrabold text-[#6FCF97]">+{r.clickIncreasePercent}%</strong><p className="max-w-md text-base leading-relaxed">organic Google clicks: June 5 to July 4 versus September 14 to October 13, 2026. The website launched June 5; both windows follow launch.</p></div>
+        <p className="mt-5 text-sm leading-relaxed text-[#C8EDD2]">Measured in Google Search Console. Both periods follow launch. Seasonal demand may contribute. This is website search traffic, not a lead or booked-job count.</p>
       </div>
-
-      {/* Hero */}
-      <section className="bg-[#0D2318] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="section-overline mb-4">Client Case Study</p>
-            <h1 className="font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              A Fireman&rsquo;s Chimney Sweep
-            </h1>
-            <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              A new website that hit page one in its first month, for a company that had never
-              measured anything. Firefighter-owned, based in Emmett, Idaho, serving Boise and 27
-              surrounding towns.
-            </p>
-            <p className="mt-4 text-sm text-[#C8EDD2]/60">
-              By Aaron Husak · Published July 7, 2026
-            </p>
-          </div>
-
-          {/* Stats */}
-          <div className="mx-auto mt-14 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
-            {stats.map((item) => (
-              <div
-                key={item.label}
-                className="rounded-xl border border-white/10 bg-white/5 p-5 text-center"
-              >
-                <div className="text-2xl font-extrabold text-[#3A9E6A]">{item.value}</div>
-                <div className="mt-1 text-xs text-[#C8EDD2]/70 leading-snug">{item.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 1 - Where they started */}
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <p className="text-sm font-semibold text-[#1A5C3A] mb-4">
-              Engagement: website rebuild, local SEO, Google Business Profile management, review
-              management, analytics
-            </p>
-            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Where they started
-            </h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
-              <p>
-                Bryan runs a chimney company built on reputation: 367 Google reviews at a 4.8,
-                earned one fireplace at a time. His website did not match the business. It was a
-                dated template site, and in all the years it had been up, nothing had ever been
-                measured. No analytics. No conversion tracking. No way to know if the website
-                produced a single job.
-              </p>
-              <p>
-                That is more common than most contractors think. The phone rings, the trucks stay
-                busy, and nobody can say which dollar of marketing did it.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 2 - What we did */}
-      <section className="bg-[#fafaf8] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What we did
-            </h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
-              <p>
-                We rebuilt the site from scratch and treated the launch like a migration, not a
-                redo. Every page of the old site that had standing in Google got a permanent
-                redirect to its replacement, so the rankings the business had earned were carried
-                over instead of thrown away.
-              </p>
-              <p>
-                The new build: a page for every service, a page for every one of the 28 towns
-                Bryan actually serves, written with real local detail instead of copy-pasted
-                templates. Mobile performance went from a 56 to an 87 on Google&rsquo;s own
-                Lighthouse test, because a chimney customer on a phone does not wait ten seconds
-                for a hero image.
-              </p>
-              <p>
-                Then we turned the lights on: analytics, call tracking, and form tracking wired
-                from day one, so every lead has a source. When Bryan asked for the service-request
-                form to require the customer&rsquo;s address so he could quote accurately on the
-                first call, it was live the same day.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3 - What happened */}
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              What happened
-            </h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-600">
-              <p>
-                Within three weeks of launch, Google had the new site on page one for the searches
-                that matter to this business: chimney cleaning, chimney inspection, and chimney
-                sweep terms in the Boise area. Across its first full month, the site averaged
-                position 5.8 for every query it appeared on, and Google showed it in results more
-                than 8,000 times.
-              </p>
-              <p>
-                We will be straight about the volume: chimney work is seasonal, and summer is the
-                quiet season. The clicks in month one were modest, and anyone who promises
-                otherwise in June is selling you something. What the first month proved is
-                position. The site enters the busy season ranking, indexed, and measured, which is
-                the entire point of building in the off-season.
-              </p>
-              <p>
-                Service requests now come through the site with everything Bryan needs to quote,
-                and he can see where each one came from.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4 - The takeaway */}
-      <section className="bg-[#1a1a1a] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <p className="section-overline mb-4">The Takeaway</p>
-            <h2 className="font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              You do not need a decade of SEO history to rank.
-            </h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-gray-400">
-              <p>
-                You need a technically clean site, pages that reflect the real business, a launch
-                that protects what you already earned, and measurement from day one. Reputation
-                did the rest here, because 367 Google reviews at a 4.8 were always the strongest
-                asset this company had. The website finally caught up to it.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Attribution + CTA */}
-      <section className="bg-[#0D2318] py-20">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="font-serif text-3xl font-extrabold text-white">
-            Ready for a website that earns its keep?
-          </h2>
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-[#3A9E6A] px-8 py-4 text-base font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
-            >
-              Book a Free Strategy Call
-            </Link>
-          </div>
-          <p className="mt-10 text-xs leading-relaxed text-[#C8EDD2]/50">
-            Every number in this case study comes from the client&rsquo;s own Google Search
-            Console, Google Business Profile, and Lighthouse tests, not from an agency dashboard.
-            Review count and search positions verified July 7, 2026. Published with the
-            owner&rsquo;s permission.
-          </p>
-        </div>
-      </section>
-    </>
-  );
+    </section>
+    <section className="bg-white px-6 py-16">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="text-3xl font-extrabold text-[#0D2318]">What changed in Google Search</h2>
+        <p className="mt-4 text-lg leading-relaxed text-gray-700">The new website launched June 5, 2026. Its first 30 days recorded 26 organic clicks. A later complete 30-day window recorded 121, an increase of 95 clicks, or 365%.</p>
+        <figure className="mt-8 rounded-2xl bg-[#fafaf8] p-6 sm:p-8" aria-label="Organic Google clicks increased from 26 to 121 across two 30-day post-launch windows">
+          {[r.first,r.latest].map((w) => <div key={w.label} className="mb-7 last:mb-0"><div className="mb-2 flex flex-wrap items-baseline justify-between gap-2"><span className="text-base font-semibold text-[#0D2318]">{w.label}</span><strong className="text-2xl text-[#1A5C3A]">{w.clicks} clicks</strong></div><div className="h-8 rounded bg-[#dbe8e0]"><div className="h-8 rounded bg-[#1A5C3A]" style={{width:`${w.clicks/r.latest.clicks*100}%`}} /></div><p className="mt-2 text-sm text-gray-600">{w.dates}</p></div>)}
+          <figcaption className="mt-6 border-t border-gray-200 pt-4 text-sm leading-relaxed text-gray-600">Google Search Console, web search, same domain property and filters. Verified October 16, 2026.</figcaption>
+        </figure>
+        <div className="mt-8 overflow-x-auto"><table className="w-full text-left text-base"><caption className="mb-4 text-left font-semibold">Two equal 30-day reporting windows</caption><thead><tr className="border-b border-gray-300"><th className="p-3">Metric</th><th className="p-3">June 5 to July 4</th><th className="p-3">September 14 to October 13</th></tr></thead><tbody><tr className="border-b border-gray-200"><th className="p-3 font-medium">Organic clicks</th><td className="p-3">26</td><td className="p-3">121</td></tr><tr className="border-b border-gray-200"><th className="p-3 font-medium">Search impressions</th><td className="p-3">8,174</td><td className="p-3">25,915</td></tr></tbody></table></div>
+        <p className="mt-4 text-base leading-relaxed text-gray-600">We lead with clicks. One day, September 20, accounts for 20,854 of the later window&apos;s impressions but only one click. That spike makes the impression increase a poor standalone measure of progress.</p>
+      </div>
+    </section>
+    <section className="bg-[#fafaf8] px-6 py-16">
+      <div className="mx-auto grid max-w-4xl gap-10 md:grid-cols-2">
+        <div><h2 className="text-3xl font-extrabold text-[#0D2318]">The starting point</h2><p className="mt-5 text-lg leading-relaxed text-gray-700">AFCS serves homeowners across Idaho&apos;s Treasure Valley. Its previous website ran on Wix. The rebuild needed to present the real services and service areas clearly, support phone and quote requests, and preserve relevant routes from the previous site.</p></div>
+        <div><h2 className="text-3xl font-extrabold text-[#0D2318]">The work</h2><ul className="mt-5 list-disc space-y-3 pl-5 text-lg leading-relaxed text-gray-700"><li>Rebuilt the website with dedicated service and service-area pages.</li><li>Mapped legacy URLs to relevant replacements during the migration.</li><li>Improved mobile presentation and contact paths.</li><li>Continued technical SEO and checked performance through Search Console.</li></ul></div>
+      </div>
+    </section>
+    <section className="bg-white px-6 py-16">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="text-3xl font-extrabold text-[#0D2318]">A result other home-service owners can evaluate</h2>
+        <p className="mt-5 text-lg leading-relaxed text-gray-700">The business in this case happens to provide chimney services. The work addresses a familiar home-service challenge: helping homeowners find the services you offer, in the places you actually serve, through a website built around that information.</p>
+        <p className="mt-5 text-lg leading-relaxed text-gray-700">The documented result is an increase in organic Google clicks during our work together. It is not a promise that another trade or market will see the same increase.</p>
+        <a href="https://firemancs.com/" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Visit the rebuilt AFCS website</a>
+        <div className="mt-8 rounded-xl border border-gray-200 p-6"><h3 className="text-xl font-bold text-[#0D2318]">How to read the evidence</h3><p className="mt-3 text-base leading-relaxed text-gray-700">The first window is after the June 5 launch, not traffic from the old Wix site. These are dated observations, not a controlled experiment. Fall demand can affect chimney searches. Clicks are not unique customers, qualified leads or booked jobs. Google Business Profile actions and Maps rankings are separate and are not included in this click-growth claim.</p></div>
+      </div>
+    </section>
+    <section className="bg-[#0D2318] px-6 py-16 text-white"><div className="mx-auto max-w-4xl"><h2 className="text-3xl font-extrabold">What is your website contributing?</h2><p className="mt-4 max-w-2xl text-lg leading-relaxed text-[#C8EDD2]">Let&apos;s look at your starting point, the gaps worth fixing and how we would measure the work.</p><Link href="/contact" className="mt-7 inline-flex min-h-12 items-center rounded-lg bg-[#6FCF97] px-6 py-3 text-base font-bold text-[#0D2318]">Discuss your website and SEO</Link></div></section>
+  </>;
 }
