@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
@@ -133,8 +134,8 @@ export default function Navigation() {
     >
       <nav aria-label="Main navigation" className="container-narrow flex items-center justify-between py-3 lg:py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0">
-          <span className="brand-wordmark">Sequoia GEO</span>
+        <Link href="/" aria-label="Sequoia GEO homepage" className="flex items-center gap-3 shrink-0">
+          <Image src="/logo.png" alt="Sequoia GEO" width={64} height={64} sizes="64px" className="brand-logo" priority />
         </Link>
 
         {/* Desktop navigation */}

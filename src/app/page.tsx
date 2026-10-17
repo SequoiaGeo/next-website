@@ -74,14 +74,14 @@ export default function Home() {
               <a href="#amazing-air-proof-heading" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the work and measurement</a>
             </article>
             <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
-              <p className="text-sm font-semibold text-[#1A5C3A]">KABAM · Owner testimonial</p>
-              <h3 className="mt-3 text-3xl font-extrabold text-[#0D2318]">15 to 20 calls a week</h3>
-              <p className="mt-3 text-lg font-semibold text-[#0D2318]">Up from 10 to 12, Mike reported.</p>
-              <p className="mt-3 text-sm leading-relaxed text-gray-600">Client-reported in his May 2026 testimonial. Business-wide calls, not independently reconciled qualified leads or jobs booked.</p>
+              <p className="text-sm font-semibold text-[#1A5C3A]">KABAM · Plumbing</p>
+              <h3 className="mt-3 text-3xl font-extrabold text-[#0D2318]">50%</h3>
+              <p className="mt-3 text-lg font-semibold text-[#0D2318]">increase in phone calls</p>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">Mike Bissett, KABAM Plumbing. <a href="https://www.youtube.com/watch?v=IpbCaelX2jo&amp;t=52" className="underline underline-offset-4">Client testimonial, May 2026.</a></p>
               <a href="#kabam-proof-heading" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Hear directly from the owner</a>
             </article>
           </div>
-          <p className="mt-5 max-w-4xl text-base leading-relaxed text-gray-700">The search figures come from Google Search Console, verified October 16, 2026. They show observed changes during our work together, not a controlled measure of SEO alone. Website clicks and reported calls are different stages; neither is a booked-job count.</p>
+          <p className="mt-5 max-w-4xl text-base leading-relaxed text-gray-700">The search figures come from Google Search Console, verified October 16, 2026. They show observed changes during our work together, not a controlled measure of SEO alone. Website clicks and phone calls are different stages; neither is a booked-job count.</p>
           <article className="mt-8 grid gap-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 md:grid-cols-[1.3fr_0.7fr] md:items-center lg:gap-12" aria-labelledby="kabam-proof-heading">
             <div>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -95,7 +95,7 @@ export default function Home() {
                 <li><strong className="text-[#0D2318]">Local service pages,</strong> covering Sun City Center, Apollo Beach, Wimauma, Riverview, and surrounding communities.</li>
                 <li><strong className="text-[#0D2318]">Clearer measurement,</strong> including corrections to duplicate form tracking.</li>
               </ul>
-              <p className="mt-5 text-base leading-relaxed text-gray-700">In his May 2026 testimonial, Mike describes moving from 10 to 12 calls a week to 15 to 20, and hiring an apprentice. Those are his reported business outcomes, not independently verified SEO attribution. Hear his experience in his own words.</p>
+              <p className="mt-5 text-base leading-relaxed text-gray-700">In his May 2026 testimonial, Mike shares the increase in phone calls and his decision to hire an apprentice. Hear his experience working with Sequoia GEO in his own words.</p>
               <Link href="/case-studies/kabam-plumbing" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See KABAM&rsquo;s website story</Link>
             </div>
             <figure className="mx-auto w-full max-w-[280px]">
