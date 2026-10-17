@@ -212,7 +212,7 @@ h1[class], h2[class] {
   background: var(--forest-ivory);
   border-color: #1736291f;
 }
-.forest-navigation nav { height: 100%; max-width: 1440px; padding-inline: 32px; }
+.forest-navigation nav { height: 100%; max-width: 1440px; padding-inline: 32px; padding-block: 8px; }
 .forest-navigation[data-homepage="true"] { margin-bottom: -80px; }
 .forest-navigation[data-over-hero="true"] { background: transparent; border-color: transparent; box-shadow: none; }
 .brand-wordmark {
@@ -320,4 +320,9 @@ h1[class], h2[class] {
 .forest-navigation[data-over-hero="true"] .forest-button:focus-visible { outline-color: #f7f3e9; }
 .forest-home #proof { scroll-margin-top: 90px; }
 
-.founder-portrait-image { width: 100%; height: 100%; object-fit: cover; transform: scale(2.4); transform-origin: 77% 47%; }
+.founder-portrait-image { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+
+/* Existing brand badge: light on the hero, dark on solid navigation. */
+.brand-logo { display: block; width: 64px; height: 64px; object-fit: contain; }
+.forest-navigation[data-over-hero="true"] .brand-logo { filter: brightness(0) invert(1); }
+@media (max-width: 1023px) { .brand-logo { width: 52px; height: 52px; } }

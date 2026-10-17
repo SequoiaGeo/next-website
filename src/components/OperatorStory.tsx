@@ -6,8 +6,8 @@ export default function OperatorStory() {
     <section aria-labelledby="operator-story-heading" className="border-y border-[#0D2318]/15 bg-[#f7f5ef] py-14 sm:py-20">
       <div className="mx-auto grid max-w-6xl gap-9 px-6 md:grid-cols-[0.8fr_1.2fr] md:items-center lg:gap-16 lg:px-8">
         <figure>
-          <Image src="/images/aaron-crawlspace.jpg" alt="Aaron Husak wearing protective coveralls before heading into a crawlspace" width={1368} height={1824} sizes="(max-width: 767px) 90vw, 420px" className="max-h-[460px] w-full object-cover object-[center_30%]" />
-          <figcaption className="mt-3 text-sm leading-relaxed text-gray-600">Before heading into a crawlspace, part of Aaron&rsquo;s hands-on home-services background.</figcaption>
+          <Image src="/images/aaron-painted-black-hat.webp" alt="Painted headshot of Aaron Husak in his black Sequoia GEO hat" width={1122} height={1402} sizes="(max-width: 767px) 90vw, 400px" className="mx-auto h-auto w-full max-w-[400px] rounded-sm" />
+          <figcaption className="mt-3 text-sm leading-relaxed text-gray-600">Aaron Husak, Founder of Sequoia GEO.</figcaption>
         </figure>
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.15em] text-[#1A5C3A]">The experience behind the work</p>

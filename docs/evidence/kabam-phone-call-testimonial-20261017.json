@@ -1,0 +1,15 @@
+{
+  "subject": "KABAM homepage phone-call result",
+  "source": "https://www.youtube.com/watch?v=IpbCaelX2jo&t=52",
+  "source_type": "client testimonial",
+  "checked": "2026-10-17",
+  "timestamp": "00:52 to 00:58",
+  "source_weekly_call_ranges": {
+    "earlier": "10 to 12",
+    "later": "15 to 20"
+  },
+  "approved_headline": "50% increase in phone calls",
+  "headline_basis": "Aaron-approved rounded summary. The video states call ranges, not a literal percentage or an audited count.",
+  "scope": "Business-wide phone calls, not qualified leads, paid-channel conversions or booked jobs.",
+  "presentation": "Dated client-testimonial citation and timestamp link in the same card; do not identify as verified analytics."
+}
