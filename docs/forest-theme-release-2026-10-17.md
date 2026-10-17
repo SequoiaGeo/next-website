@@ -36,3 +36,7 @@ Rollback: revert this release commit or PR. No data migration or account setting
 Public verification after PR 42 found that HTML declared generated next/font variable classes different from those in the delivered font CSS. The browser therefore resolved the unset custom properties to its default Times New Roman. Local production output did not reproduce the mismatch. The rollout cause was not established.
 
 The focused correction serves the same existing Inter and Fraunces Latin font assets under stable public URLs and family names, with explicit CSS variables and preload links. It removes dependence on generated font variable classes. Both fonts remain self-hosted, with their upstream SIL Open Font License notices retained in docs/font-licenses. No change to content, lead handling or theme direction.
+
+## Approved painted landscape variation
+
+Aaron approved a fine-art landscape oil-painting variation and its homepage mockup, then requested publication. The hero uses the text-free painting as a new optimized WebP asset. Existing live text, buttons, founder introduction, dated proof, forms and stable self-hosted fonts remain. The desktop scrim adds a dark top gradient for the brighter sky; the phone crop moves toward the sequoia. The generated painting is decorative brand imagery, not client evidence or a location claim. Rollback can restore the prior hero asset and scrim.
