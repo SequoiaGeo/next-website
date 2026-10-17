@@ -5,7 +5,7 @@ export default function FounderIntroduction() {
   return <section className="founder-introduction" aria-label="Meet your marketing leader">
     <div className="founder-introduction-inner">
       <span className="founder-portrait">
-      <Image src="/aaron-husak.webp" alt="Aaron Husak, founder of Sequoia GEO" width={104} height={104} sizes="(max-width: 640px) 64px, 88px" className="founder-portrait-image" />
+      <Image src="/aaron-husak.webp" alt="Aaron Husak, founder of Sequoia GEO" width={104} height={104} sizes="256px" className="founder-portrait-image" />
       </span>
       <div className="founder-introduction-copy">
         <p className="forest-kicker">An owner&rsquo;s perspective</p>
