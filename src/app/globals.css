@@ -242,7 +242,7 @@ h1[class], h2[class] {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: linear-gradient(90deg, rgba(6,26,20,.95) 0%, rgba(6,26,20,.80) 34%, rgba(6,26,20,.48) 57%, rgba(6,26,20,.04) 80%);
+  background: linear-gradient(180deg, rgba(6,26,20,.65), transparent 170px), linear-gradient(90deg, rgba(6,26,20,.91) 0%, rgba(6,26,20,.74) 34%, rgba(6,26,20,.38) 57%, rgba(6,26,20,0) 80%);
 }
 .forest-hero-content { max-width: 1440px; margin: 0 auto; padding: 160px 64px 70px; }
 .forest-eyebrow { font-size: 12px; line-height: 1.8; letter-spacing: .16em; text-transform: uppercase; color: #ece7d8; }
@@ -294,7 +294,7 @@ h1[class], h2[class] {
   .brand-wordmark { font-size: 19px; letter-spacing: .11em; }
   .forest-navigation nav { padding-inline: 20px; }
   .forest-hero-content { padding: 118px 24px 36px; }
-  .forest-hero-image { object-position: 67% center; }
+  .forest-hero-image { object-position: 75% center; }
   .forest-hero-shade { background: linear-gradient(90deg, rgba(6,26,20,.94), rgba(6,26,20,.76) 57%, rgba(6,26,20,.48)); }
   .forest-eyebrow { max-width: 270px; font-size: 10px; letter-spacing: .14em; }
   .forest-hero h1 { margin-top: 20px; font-size: clamp(40px, 10.8vw, 60px); max-width: 100%; }

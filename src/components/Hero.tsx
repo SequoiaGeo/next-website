@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="forest-hero" aria-labelledby="hero-heading">
-      <Image src="/images/sequoia-fog-hero.webp" alt="" fill priority sizes="100vw" className="forest-hero-image" />
+      <Image src="/images/sequoia-painted-landscape-hero.webp" alt="" fill priority sizes="100vw" className="forest-hero-image" />
       <div className="forest-hero-shade" aria-hidden="true" />
       <div className="forest-hero-content">
         <p className="forest-eyebrow">Marketing leadership for home-service owners</p>
