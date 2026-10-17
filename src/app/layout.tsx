@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
@@ -14,21 +13,6 @@ import StickyMobileCTA from "@/components/StickyMobileCTA";
 import SequoiaKnowledgeInterface from "@/components/SequoiaKnowledgeInterface";
 import { podcastAppearances, tradeMedia } from "@/data/media";
 
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-  preload: false,
-});
-
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  subsets: ["latin"],
-  display: "swap",
-  preload: true,
-  weight: ["300", "400", "700", "900"],
-});
 
 export const metadata: Metadata = {
   title: "Home Services Marketing by a 13-Year Owner and Operator | Sequoia GEO",
@@ -178,8 +162,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang="en">
       <head>
+        <link rel="preload" href="/fonts/sequoia-fraunces-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/sequoia-inter-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         {/* Preconnect to GA4/GTM to cut 100 to 200ms from DNS+TLS on first load */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
