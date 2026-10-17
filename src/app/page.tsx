@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import FounderIntroduction from "@/components/FounderIntroduction";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import OperatorStory from "@/components/OperatorStory";
 import MarketingAgents from "@/components/MarketingAgents";
@@ -30,17 +31,17 @@ export const metadata: Metadata = {
 const snapshotItems = [
   ["What we examine", "Your public business identity, website access, service pages, supporting sources, and the questions customers could ask about your services."],
   ["What you receive", "A documented snapshot of the findings, the sources behind them, and a prioritized correction path. Unknowns are labeled, not filled with assumptions."],
-  ["What happens next", "Use the findings with your team or existing provider, or discuss a paid engagement with Sequoia. Requesting the snapshot does not book a meeting."],
+  ["What happens next", "Identify what deserves attention first, then discuss how Aaron can lead the plan and coordinate the work with your team. Requesting the snapshot does not book a meeting."],
 ];
 
 const questions = [
   ["Who do you work with?", "We focus on home-service businesses, including HVAC, plumbing, roofing, and restoration companies. Aaron brings 13 years of experience owning and operating a home-service business."],
-  ["What is GEO?", "Generative engine optimization helps AI search tools understand and evaluate your business. We work on clear service information, consistent business details, supporting evidence, and technical access. No provider can guarantee an AI recommendation."],
+  ["What is GEO?", "Generative engine optimization helps AI search tools understand and evaluate your business. We work on clear service information, consistent business details, supporting evidence, and technical access. The work focuses on making your business understandable and supported by evidence."],
   ["Do you also handle SEO and other marketing?", "Yes. GEO works alongside SEO, Google Business Profile management, website improvements, paid media, and measurement. Your proposal defines the priorities, responsibilities, and fees."],
   ["How do we start?", "Book a 15-minute conversation about your marketing priorities, or request an emailed AI Search Snapshot. We review the evidence and agree on a scope before paid work begins."],
-  ["Can you build AI agents for our team?", "Yes, as an additional offering. We can scope a workflow for estimate follow-up, customer reactivation, content, reviews, or advertising analysis, with tool access and human approvals established before launch."],
+  ["Can you build AI agents for our team?", "AI agents support research, content, analysis and production within the agreed marketing program, with Aaron directing and reviewing the work. Workflows inside your own business are scoped separately with access and approvals defined before launch."],
 ];
-const primaryButton = "inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3 text-base font-bold text-white hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]";
+const primaryButton = "forest-button";
 
 export default function Home() {
   const knowledgeEnabled =
@@ -48,13 +49,14 @@ export default function Home() {
     process.env.SEQUOIA_KNOWLEDGE_KILL_SWITCH !== "true";
 
   return (
-    <>
+    <div className="forest-home">
       <Hero />
+      <FounderIntroduction />
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Results an owner can evaluate</p>
-          <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">Search traffic, calls and the owner&rsquo;s experience, with the dates and sources attached. These are not claims of guaranteed future results.</p>
-          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">What changed for the businesses we work with.</h2>
+          <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">Real businesses. Documented search results. Hear from an owner and see the work behind the numbers.</p>
+          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">See the work. Understand the decisions.</h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
                     <div className="mt-8 grid gap-4 lg:grid-cols-3" aria-label="Dated client results">
             <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
@@ -75,7 +77,7 @@ export default function Home() {
               <p className="text-sm font-semibold text-[#1A5C3A]">KABAM · Owner testimonial</p>
               <h3 className="mt-3 text-3xl font-extrabold text-[#0D2318]">15 to 20 calls a week</h3>
               <p className="mt-3 text-lg font-semibold text-[#0D2318]">Up from 10 to 12, Mike reported.</p>
-              <p className="mt-3 text-sm leading-relaxed text-gray-600">Client-reported in his May 2026 testimonial. Business-wide calls, not independently reconciled qualified leads or jobs booked. Individual results vary.</p>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">Client-reported in his May 2026 testimonial. Business-wide calls, not independently reconciled qualified leads or jobs booked.</p>
               <a href="#kabam-proof-heading" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Hear directly from the owner</a>
             </article>
           </div>
@@ -110,7 +112,7 @@ export default function Home() {
             </div>
             <h3 id="amazing-air-proof-heading" className="mt-3 max-w-3xl text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">Make it possible for customers to find you and take the next step.</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">A homeowner should not have to work around a broken website to request service. For Amazing Air, we repaired the paths customers use to navigate, book, and reach relevant service pages.</p>
-            <div className="mt-5 rounded-xl bg-[#fafaf8] p-5"><p className="text-2xl font-extrabold text-[#1A5C3A]">40 to 60 organic Google clicks</p><p className="mt-2 text-base leading-relaxed text-gray-700">Search Console recorded 50% more clicks in September 14 to October 13 than in April 10 to May 9, 2026, our first 30 days working together. Impressions declined from 29,465 to 25,796. These are dated search results, not a measured increase in leads, bookings, or AI recommendations.</p></div>
+            <div className="mt-5 rounded-xl bg-[#fafaf8] p-5"><p className="text-2xl font-extrabold text-[#1A5C3A]">40 to 60 organic Google clicks</p><p className="mt-2 text-base leading-relaxed text-gray-700">Search Console recorded 50% more clicks in September 14 to October 13 than in April 10 to May 9, 2026, our first 30 days working together. Impressions declined from 29,465 to 25,796. These are website clicks from search, measured separately from customer inquiries.</p></div>
             <div className="mt-6 grid gap-6 md:grid-cols-3">
               <div>
                 <h4 className="text-lg font-bold text-[#0D2318]">Mobile navigation that works</h4>
@@ -128,7 +130,7 @@ export default function Home() {
                 <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The repair:</strong> Added redirects and verified sampled legacy addresses reached live pages.</p>
               </div>
             </div>
-            <p className="mt-6 border-t border-gray-200 pt-5 text-sm leading-relaxed text-gray-600">Documented repairs from May and June 2026. These are verified website corrections, not a measured increase in leads, bookings, or AI recommendations.</p>
+            <p className="mt-6 border-t border-gray-200 pt-5 text-sm leading-relaxed text-gray-600">Documented repairs from May and June 2026. The priority was restoring the paths homeowners use to find service and contact the team.</p>
           </article>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
@@ -158,12 +160,12 @@ export default function Home() {
       <section id="services" className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Digital marketing for the trades</p>
-          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">A marketing plan that reaches beyond the click.</h2>
+          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">One direction for your marketing.</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {[
-              ["GEO and search visibility", "Help Google and AI search tools understand your services, service areas, and the evidence behind your business. GEO, SEO, and local profiles work together.", "/geo-agency"],
-              ["Websites that support inquiries", "Give homeowners clear service information, proof of your work, and a working path to call or request service.", "/web-design-fresno"],
-              ["Marketing direction and measurement", "Coordinate campaigns, paid media, and follow-up around the priorities that matter. Report inquiries and booked jobs where the records support them.", "/fractional-cmo"],
+              ["Get found for the work you want", "I set the search priorities around your services and communities, then coordinate SEO, AI search and local profiles so customers can find and evaluate your business.", "/geo-agency"],
+              ["Turn interest into customer inquiries", "Your advertising, service pages and contact paths should work together. I direct the improvements that help interested homeowners understand your offer and reach your team.", "/websites"],
+              ["Know what your marketing produces", "I bring the numbers together, review inquiry quality and use the evidence to decide what to continue, change or stop. You have one person accountable for the plan and its performance.", "/fractional-cmo"],
             ].map(([title, body, href]) => <article key={title} className="border-t border-[#0D2318]/20 pt-6"><h3 className="text-xl font-bold text-[#0D2318]">{title}</h3><p className="mt-3 leading-relaxed text-gray-700">{body}</p><Link href={href} className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline">Explore {title.toLowerCase()}</Link></article>)}
           </div>
         </div>
@@ -174,11 +176,11 @@ export default function Home() {
           <ol className="mt-8 grid gap-8 md:grid-cols-3">
             {[
               ["01. Review the evidence", "Review your website, search presence, and inquiry path. Identify the gaps and the information needed to understand them."],
-              ["02. Agree on priorities", "Define the scope, access, responsibilities, and costs. Implement the agreed search, website, or marketing improvements."],
+              ["02. Set the priorities. Own the plan.", "I turn your business goals and current performance into a focused marketing plan: what deserves investment, what needs correcting and how we will measure progress. Then I direct the execution."],
               ["03. Measure and improve", "Review completed work, search visibility, inquiries, and booked jobs where tracking supports them. Use the findings to choose the next priority."],
             ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
           </ol>
-          <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. No ranking or lead guarantees.</p>
+          <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. I remain your direct point of contact.</p>
         </div>
       </section>
       <OperatorStory />
@@ -222,14 +224,15 @@ export default function Home() {
       </section>
       <section id="contact" className="bg-white py-16 text-center sm:py-20">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">What needs to work better in your marketing?</h2>
+          <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Let&rsquo;s put your marketing in focus.</h2>
           <p className="mt-5 text-lg leading-relaxed text-gray-600">Tell Aaron about your home-service business and the marketing challenge you want to solve. We will discuss the next step and whether Sequoia is the right fit.</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-5 sm:flex-row">
-            <Link href="/contact#book" className={primaryButton}>Book a 15-Minute Call</Link>
+            <Link href="/contact#book" className={primaryButton}>Talk marketing with Aaron</Link>
             <Link href="/ai-search-assessment" className="inline-flex min-h-12 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Get My Free AI Search Snapshot</Link>
           </div>
         </div>
       </section>
-    </>
+      <p className="forest-results-note">Results vary. Rankings, lead volume and AI recommendations are not guaranteed.</p>
+    </div>
   );
 }

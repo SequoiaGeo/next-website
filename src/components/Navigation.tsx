@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { trackCallIntent, trackCtaIntent } from "@/lib/analytics";
 
 const serviceLinks = [
@@ -61,6 +61,8 @@ const resourceLinks = [
 ];
 
 export default function Navigation() {
+  const pathname = usePathname();
+  const isHomepage = pathname === "/";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
@@ -72,9 +74,10 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -106,31 +109,32 @@ export default function Navigation() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
+  useEffect(() => {
+    const onEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setServicesOpen(false);
+      setResourcesOpen(false);
+      if (mobileOpen) {
+        setMobileOpen(false);
+        document.getElementById("mobile-menu-toggle")?.focus();
+      }
+    };
+    document.addEventListener("keydown", onEscape);
+    return () => document.removeEventListener("keydown", onEscape);
+  }, [mobileOpen]);
+
   return (
     <header
-      className={`sticky top-0 z-50 w-full bg-white transition-all duration-300 ${
+      data-homepage={isHomepage}
+      data-over-hero={isHomepage && !scrolled && !mobileOpen && !servicesOpen && !resourcesOpen}
+      className={`forest-navigation sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled ? "border-b border-gray-200 shadow-sm" : "border-b border-gray-100"
       }`}
     >
       <nav aria-label="Main navigation" className="container-narrow flex items-center justify-between py-3 lg:py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
-          <Image
-            src="/logo.png"
-            alt="Sequoia GEO logo"
-            width={44}
-            height={44}
-            className="rounded-lg"
-            priority
-          />
-          <div className="flex flex-col">
-            <span className="text-lg font-bold text-[#1A5C3A] leading-tight tracking-tight">
-              Sequoia GEO
-            </span>
-            <span className="text-xs text-gray-500 hidden sm:block leading-tight">
-              Marketing Your Home Service Business
-            </span>
-          </div>
+          <span className="brand-wordmark">Sequoia GEO</span>
         </Link>
 
         {/* Desktop navigation */}
@@ -261,7 +265,7 @@ export default function Navigation() {
           <a
             href="tel:5595213122"
             onClick={() => trackCallIntent("header_desktop")}
-            className="hidden xl:inline-flex items-center gap-2 whitespace-nowrap text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
+            className="hidden 2xl:inline-flex items-center gap-2 whitespace-nowrap text-sm font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
           >
             <svg aria-hidden="true" className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -271,15 +275,17 @@ export default function Navigation() {
           <Link
             href="/contact#book"
             onClick={() => trackCtaIntent("header_desktop", "schedule")}
-            className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A5C3A]"
+            className="forest-button forest-nav-button"
           >
-            Book a 15-Minute Call
+            Talk with Aaron
           </Link>
         </div>
 
         {/* Mobile hamburger */}
         <Link href="/ask-sequoia" aria-label="Ask Sequoia" className="ml-auto mr-2 inline-flex min-h-11 items-center px-2 text-sm font-semibold text-[#1A5C3A] underline underline-offset-4 lg:hidden">Ask</Link>
         <button
+          id="mobile-menu-toggle"
+          aria-controls="mobile-navigation"
           type="button"
           onClick={() => setMobileOpen(!mobileOpen)}
           className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
@@ -294,8 +300,9 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       <div
+        id="mobile-navigation"
         hidden={!mobileOpen}
-        className={`lg:hidden fixed inset-x-0 top-[60px] bottom-0 bg-white border-t border-gray-200 transition-all duration-300 z-40 overflow-y-auto ${
+        className={`lg:hidden fixed inset-x-0 top-[72px] bottom-0 bg-white border-t border-gray-200 transition-all duration-300 z-40 overflow-y-auto ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -429,9 +436,9 @@ export default function Navigation() {
                 setMobileOpen(false);
                 trackCtaIntent("header_mobile", "schedule");
               }}
-              className="inline-flex items-center justify-center rounded-lg bg-[#1A5C3A] px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-[#0D2318] w-full"
+              className="forest-button w-full"
             >
-              Book a 15-Minute Call
+              Talk with Aaron
             </Link>
           </div>
         </div>

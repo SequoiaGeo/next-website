@@ -31,15 +31,16 @@ test('delivery expectations are shared before and after snapshot submission', ()
 
 test('buyer navigation stays accessible and retains direct pricing', () => {
   const nav = read('src/components/Navigation.tsx');
-  for (const label of ['AI Search', 'Client Work', 'How We Measure', 'Services &amp; Pricing', 'Contact']) assert.ok(nav.includes(label));
+  for (const label of ['AI Search', 'Client Work', 'How We Measure', 'Services &amp; Pricing', 'Talk with Aaron']) assert.ok(nav.includes(label));
   assert.match(nav, /hidden=\{!mobileOpen\}/);
+  assert.match(nav, /href="\/contact#book"/);
   assert.match(nav, /aria-expanded=\{mobileServicesOpen\}/);
   assert.match(nav, /max-h-\[70vh\]/);
 });
 
 test('measurement retains separate stages and adds a release label', () => {
   const analytics = read('src/lib/analytics.ts');
-  assert.match(analytics, /EXPERIENCE_VERSION = "homepage-trust-20260907"/);
+  assert.match(analytics, /EXPERIENCE_VERSION = "sequoia-forest-20261017"/);
   assert.match(analytics, /dispatchCapturedLead\(response/);
   const form = read('src/components/InlineLeadForm.tsx');
   assert.match(form, /trackEvent\("form_view"/);

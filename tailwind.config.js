@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "dark-green": "#1B4332",
+        "dark-green": "#11271f",
         "medium-green": "#2D6A4F",
         "light-green": "#40916C",
         "accent-green": "#52B788",
         "pale-green": "#D8F3DC",
         "dark-text": "#1a1a1a",
-        background: "#fafaf8",
+        background: "#f7f3e9",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
