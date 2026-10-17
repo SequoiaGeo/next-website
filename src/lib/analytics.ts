@@ -28,7 +28,7 @@ type LeadParams = {
 
 let lastPhoneIntentAt = 0;
 // Labels this experience without changing event names or conversion eligibility.
-export const EXPERIENCE_VERSION = "homepage-trust-20260907";
+export const EXPERIENCE_VERSION = "sequoia-forest-20261017";
 let lastCtaClickAt = 0;
 const emittedLeadIds = new Set<string>();
 

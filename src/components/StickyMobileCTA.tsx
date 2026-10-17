@@ -74,7 +74,7 @@ export default function StickyMobileCTA() {
         <a
           href={bookingHref}
           onClick={() => trackCtaIntent("sticky_mobile_book", "schedule")}
-          className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-[#3A9E6A] px-4 py-3 text-sm font-semibold text-[#0D2318] transition hover:bg-[#6FCF97]"
+          className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#d69b36] px-4 py-3 text-sm font-semibold text-[#0D2318] transition hover:bg-[#e7b454]"
         >
           Choose a Time
           <svg

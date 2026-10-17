@@ -59,7 +59,7 @@ const legalLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-green text-white">
+    <footer className="forest-footer bg-dark-green text-white">
       <div className="container-narrow py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
 
@@ -78,7 +78,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-pale-green/80 text-sm leading-relaxed max-w-md mb-4">
-              Digital marketing for home-service businesses, with a focus on GEO, AI-search visibility, SEO, and websites. AI marketing agents are available as an additional service.
+              One accountable marketing leader for home-service businesses. Strategy, search, advertising and your website, with AI agents and specialists supporting execution under Aaron&rsquo;s direction.
               Founded by Aaron Husak, whose home-services career began in 2006 and includes 13 years as an owner and operator.
             </p>
             <p className="text-pale-green/60 text-xs leading-relaxed max-w-md mb-6">

@@ -106,11 +106,12 @@ test("homepage does not promise universal closed-loop attribution", () => {
   assert.doesNotMatch(homepage, /single pipeline view/i);
   assert.doesNotMatch(homepage, /connect marketing sources to qualified leads and jobs booked/i);
   assert.doesNotMatch(hero, /I am accountable for the booked job/i);
-  assert.match(hero, /where tracking supports it/);
-  assert.match(hero, /13 years of experience owning and operating a home-service company/);
-  assert.match(hero, /No ranking or lead guarantees/);
+  assert.match(homepage, /where tracking supports them/);
+  const founder = readFileSync(join(root, "src/components/FounderIntroduction.tsx"), "utf8");
+  assert.match(founder, /13 years owning and operating a home-service company/);
+  assert.match(homepage, /Rankings, lead volume and AI recommendations are not guaranteed/);
   assert.match(homepage, /His company, Balanced Comfort/);
   assert.doesNotMatch(hero, /My home-services career|You work with me, not an account manager/);
-  assert.match(homepage, /not claims of guaranteed future results/);
-  assert.match(homepage, /not a measured increase in leads, bookings, or AI recommendations/);
+  assert.match(homepage, /neither is a booked-job count/);
+  assert.match(homepage, /These are website clicks from search, measured separately from customer inquiries/);
 });
