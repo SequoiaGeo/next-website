@@ -161,7 +161,23 @@ button:focus-visible {
 }
 
 /* Sequoia forest theme, October 2026. Live text over an optimized static image. */
+@font-face {
+  font-family: "Sequoia Inter";
+  src: url("/fonts/sequoia-inter-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sequoia Fraunces";
+  src: url("/fonts/sequoia-fraunces-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
+  --font-inter: "Sequoia Inter", Arial;
+  --font-fraunces: "Sequoia Fraunces", Georgia;
   --forest-ink: #11271f;
   --forest-ivory: #f7f3e9;
   --forest-amber: #d69b36;

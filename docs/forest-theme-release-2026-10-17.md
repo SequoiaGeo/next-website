@@ -30,3 +30,9 @@ Claude bridge was unavailable with its previously recorded expired OAuth state, 
 The decorative forest background was generated from the user-approved visual concept, with all text removed through image generation, then encoded as WebP. It does not represent client work or a factual location claim. Existing founder and client assets remain the factual proof.
 
 Rollback: revert this release commit or PR. No data migration or account settings changed.
+
+## Production font correction
+
+Public verification after PR 42 found that HTML declared generated next/font variable classes different from those in the delivered font CSS. The browser therefore resolved the unset custom properties to its default Times New Roman. Local production output did not reproduce the mismatch. The rollout cause was not established.
+
+The focused correction serves the same existing Inter and Fraunces Latin font assets under stable public URLs and family names, with explicit CSS variables and preload links. It removes dependence on generated font variable classes. Both fonts remain self-hosted, with their upstream SIL Open Font License notices retained in docs/font-licenses. No change to content, lead handling or theme direction.
