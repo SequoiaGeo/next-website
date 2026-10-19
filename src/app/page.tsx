@@ -229,7 +229,7 @@ export default function Home() {
           <h2 className="text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Let&rsquo;s put your marketing in focus.</h2>
           <p className="mt-5 text-lg leading-relaxed text-gray-600">Tell Aaron about your home-service business and the marketing challenge you want to solve. We will discuss the next step and whether Sequoia is the right fit.</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-5 sm:flex-row">
-            <Link href="/contact#book" className={primaryButton}>Talk marketing with Aaron</Link>
+            <Link href="/contact#book" className={primaryButton}>Book a call</Link>
             <Link href="/ai-search-assessment" className="inline-flex min-h-12 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Get My Free AI Search Snapshot</Link>
           </div>
         </div>
