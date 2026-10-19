@@ -4,6 +4,7 @@
 export interface BlogPostMeta {
   slug: string;
   dateISO: string;
+  modifiedDateISO?: string;
 }
 
 export const blogPostsMeta: BlogPostMeta[] = [
@@ -23,7 +24,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
   { slug: "local-seo-for-plumbers", dateISO: "2025-09-15" },
   { slug: "best-plumbing-seo-keywords", dateISO: "2026-04-18" },
   { slug: "which-marketing-agency-specializes-in-contractors", dateISO: "2026-04-18" },
-  { slug: "fractional-cmo-vs-agency-vs-marketing-manager", dateISO: "2026-04-18" },
+  { slug: "fractional-cmo-vs-agency-vs-marketing-manager", dateISO: "2026-04-18", modifiedDateISO: "2026-10-19" },
   { slug: "contractor-marketing-services-local-seo", dateISO: "2026-04-18" },
   { slug: "geoblocking-contractor-website", dateISO: "2026-04-18" },
   { slug: "gbp-suspension-reinstatement-playbook", dateISO: "2026-04-18" },
