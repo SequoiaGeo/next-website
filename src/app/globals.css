@@ -213,7 +213,7 @@ h1[class], h2[class] {
   border-color: #1736291f;
 }
 .forest-navigation nav { height: 100%; max-width: 1440px; padding-inline: 32px; padding-block: 8px; }
-.forest-navigation[data-homepage="true"] { margin-bottom: -80px; }
+.forest-navigation[data-homepage="true"] { height: 100px; margin-bottom: -100px; }
 .forest-navigation[data-over-hero="true"] { background: transparent; border-color: transparent; box-shadow: none; }
 .brand-wordmark {
   font-family: var(--font-fraunces), Georgia, serif;
@@ -282,7 +282,7 @@ h1[class], h2[class] {
 @media (min-width: 1440px) { .forest-hero-content { padding-top: 175px; padding-bottom: 86px; } }
 @media (max-width: 1023px) {
   .forest-navigation { height: 72px; }
-  .forest-navigation[data-homepage="true"] { margin-bottom: -72px; }
+  .forest-navigation[data-homepage="true"] { height: 84px; margin-bottom: -84px; }
   .forest-navigation nav { padding-inline: 24px; }
   .forest-hero-content { padding: 130px 32px 56px; }
   .forest-hero h1 { max-width: 700px; }
@@ -326,3 +326,8 @@ h1[class], h2[class] {
 .brand-logo { display: block; width: 64px; height: 64px; object-fit: contain; }
 .forest-navigation[data-over-hero="true"] .brand-logo { filter: brightness(0) invert(1); }
 @media (max-width: 1023px) { .brand-logo { width: 52px; height: 52px; } }
+
+/* Homepage header logo: 30 percent larger at each existing breakpoint. */
+.forest-navigation[data-homepage="true"] .brand-logo { width: 83.2px; height: 83.2px; }
+@media (max-width: 1023px) { .forest-navigation[data-homepage="true"] .brand-logo { width: 67.6px; height: 67.6px; } }
+@media (max-width: 1023px) { .forest-navigation[data-homepage="true"] #mobile-navigation { top: 84px; } }
