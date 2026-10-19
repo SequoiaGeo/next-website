@@ -205,7 +205,7 @@ const agencies = [
     tagColor: "bg-[#C8EDD2]/50 text-[#1A5C3A] border-[#3A9E6A]/30",
     meta: [
       { label: "Best for", value: "$2M to $15M revenue contractors" },
-      { label: "Pricing", value: "From $4,500 a month, 3-month initial term, month to month after" },
+      { label: "Pricing", value: "Execution from $4,500 a month; leadership from $7,000 separately" },
       { label: "Team scale", value: "Principal-led" },
     ],
     summary:

@@ -105,7 +105,7 @@ export function getPublishedStartingPrices(catalog) {
       startingPrices: catalog.publishedStartingPrices,
       conditions: catalog.pricingConditions,
     },
-    ["pricing"],
+    sourceIdsFrom(catalog.publishedStartingPrices),
   );
 }
 

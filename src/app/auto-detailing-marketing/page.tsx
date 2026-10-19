@@ -33,7 +33,7 @@ const faqs = [
   ["Can you help with ceramic-coating and PPF marketing?", "Yes. We develop distinct service explanations and inquiry paths for coatings, PPF, correction, tinting and detailing. The priority is the services your shop can deliver and wants to sell, using accurate scope and approved manufacturer claims."],
   ["Will AI search recommend my detailing business?", "No provider can guarantee that. We improve the accuracy, crawlability and usefulness of your public information, then observe relevant AI answers. Mentions and citations are reported separately from identifiable referrals, inquiries and appointments."],
   ["Do you work only with Fresno shops?", "Sequoia GEO is based in Sanger and works with businesses nationwide. Fresno and Clovis shop owners can discuss a local meeting; other engagements can be handled remotely."],
-  ["What does an engagement cost?", "Our Search Foundation engagement starts at $4,500 per month with an initial three-month term, then continues month to month. Advertising spend is separate. Website projects have separate scopes and fees. We agree on responsibilities and deliverables before work begins; review our current services and pricing for the full terms."],
+  ["What does an engagement cost?", "Our Marketing execution engagement starts at $4,500 per month with an initial three-month term, then continues month to month. Advertising spend is separate. Website projects have separate scopes and fees. We agree on responsibilities and deliverables before work begins; review our current services and pricing for the full terms."],
   ["Is this suitable for a new solo mobile detailer?", "This ongoing engagement is intended for established shops with a team, a dedicated facility, appointment capacity and budget for sustained marketing. A new solo operator looking for a low-cost starter package is unlikely to be a fit. Selling a premium service alone does not establish that a shop is ready for this engagement."],
 ];
 
@@ -49,7 +49,7 @@ export default function AutoDetailingMarketingPage() {
             <p className="text-base font-semibold text-[#C8EDD2]">For established premium detailing and protection shops</p>
             <h1 className="mt-5 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-6xl">Auto detailing marketing for the work you want to book.</h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-[#C8EDD2]">For shops serving luxury, performance and enthusiast vehicles. Build your marketing around the right inquiries for coatings, paint correction, tinting, PPF and detailing, with a team and facility ready to deliver the work.</p>
-            <p className="mt-5 leading-relaxed text-[#C8EDD2]">Ongoing Search Foundation engagements start at <strong className="text-white">$4,500 per month</strong>, with a three-month initial term. Advertising spend is separate.</p>
+            <p className="mt-5 leading-relaxed text-[#C8EDD2]">Ongoing marketing execution engagements start at <strong className="text-white">$4,500 per month</strong>, with a three-month initial term. Advertising spend is separate.</p>
             <Link href="/contact#book" className="btn btn-white mt-8">Talk through your shop&apos;s marketing</Link>
           </div>
           <div className="text-white">
@@ -186,7 +186,7 @@ export default function AutoDetailingMarketingPage() {
           </div>
         </div>
       </section>
-      <InlineLeadForm source="auto_detailing_marketing_page" heading="Discuss your established shop" subtext="Search Foundation starts at $4,500 per month with a three-month initial term; advertising spend is separate. Share your shop name and contact details to discuss fit, services and capacity." buttonText="Request a conversation" collectCompany companyLabel="Shop name" companyPlaceholder="Your detailing or protection shop" />
+      <InlineLeadForm source="auto_detailing_marketing_page" heading="Discuss your established shop" subtext="Marketing execution starts at $4,500 per month with a three-month initial term; advertising spend is separate. Share your shop name and contact details to discuss fit, services and capacity." buttonText="Request a conversation" collectCompany companyLabel="Shop name" companyPlaceholder="Your detailing or protection shop" />
     </main>
   );
 }

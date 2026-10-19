@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "What does contractor SEO cost per month?",
     answer:
-      "From this practice, engagements start at $4,500 a month with a 3-month initial term, then month to month. Ad spend, when we run ads, is separate: your money, your accounts, billed to you directly by Google.",
+      "From this practice, marketing execution starts at $4,500 a month with a 3-month initial term, then month to month. Ad spend, when we run ads, is separate: your money, your accounts, billed to you directly by Google.",
   },
   {
     question: "Why is there a 3-month initial term?",
