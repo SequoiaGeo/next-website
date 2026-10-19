@@ -14,7 +14,7 @@ const faqs = [
   ["Is this an automated score?", "No. Aaron reviews the public evidence. There is no instant score or claim that one answer represents your permanent position in AI search."],
   ["Do I need to book a call or give you account access?", "No. The review starts with public information. Receive it by email without booking a meeting. Please do not send passwords or private customer information."],
   ["What if I already have a marketing agency?", "Use the findings to discuss priorities with your existing provider. If you want Sequoia GEO to help, we agree on responsibilities and scope before any paid work."],
-  ["What does help after the Snapshot cost?", "The Snapshot is free, with no paid commitment. Ongoing Search Foundation engagements start at $4,500 per month with a three-month initial term, then continue month to month. Advertising spend is separate. Website projects and broader marketing leadership have separate scopes and fees."],
+  ["What does help after the Snapshot cost?", "The Snapshot is free, with no paid commitment. Ongoing marketing execution engagements start at $4,500 per month with a three-month initial term, then continue month to month. Advertising spend is separate. Website projects and broader marketing leadership have separate scopes and fees."],
   ["Will this guarantee more leads or AI recommendations?", "No. AI answers vary by product, question, location and date. The review identifies observations and priorities. It cannot guarantee recommendations, rankings, inquiries or booked jobs."],
 ];
 
@@ -35,7 +35,7 @@ export default function PaidSnapshotLanding({ source }: { source: "paid_snapshot
         <p className="mt-6 text-lg leading-relaxed text-[#34483b]">Get a free AI Search Snapshot of what ChatGPT and Google AI show about your business, where competitors appear, and what deserves attention first.</p>
         <p className="mt-4 text-base leading-relaxed text-[#34483b]">Written findings. Linked sources. Priorities you can discuss with your team or marketing provider.</p>
         <a href="#request" className="mt-7 inline-flex min-h-12 items-center rounded-lg bg-[#1A5C3A] px-6 py-3 font-bold text-white hover:bg-[#0D2318]">Get my free AI Search Snapshot</a>
-        <p className="mt-4 text-sm leading-relaxed text-[#526156]">Hand reviewed by Aaron. No account access. No required call.</p><p className="mt-4 text-sm leading-relaxed text-[#526156]">Looking for ongoing help? Search Foundation starts at $4,500 per month with a three-month initial term. Advertising spend is separate. The Snapshot is free either way.</p>
+        <p className="mt-4 text-sm leading-relaxed text-[#526156]">Hand reviewed by Aaron. No account access. No required call.</p><p className="mt-4 text-sm leading-relaxed text-[#526156]">Looking for ongoing help? Marketing execution starts at $4,500 per month with a three-month initial term. Advertising spend is separate. The Snapshot is free either way.</p>
       </div>
       <div id="request" className="scroll-mt-6 rounded-2xl border border-[#1A5C3A]/20 bg-white p-5 shadow-sm sm:p-7">
         <p className="text-sm font-bold text-[#1A5C3A]">FREE AI SEARCH SNAPSHOT</p>
@@ -71,7 +71,7 @@ export default function PaidSnapshotLanding({ source }: { source: "paid_snapshot
     <section className="bg-[#0D2318] px-6 py-12 text-white sm:py-16">
       <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
         <div><p className="text-sm font-bold text-[#C8EDD2]">IS THIS A FIT?</p><h2 className="mt-3 font-serif text-3xl font-bold">For owners ready to act on the findings.</h2><p className="mt-4 leading-relaxed text-[#D5E5DA]">This is built for established service businesses with a team, capacity for more of the right work, and an owner or manager involved in marketing decisions.</p></div>
-        <div><h3 className="text-xl font-bold">Free review. Clear paid-service expectations.</h3><p className="mt-4 leading-relaxed text-[#D5E5DA]">There is no obligation to hire us. If you need ongoing help, Search Foundation starts at <strong className="text-white">$4,500 per month</strong>, with a three-month initial term. Advertising spend is separate.</p><Link href="/ai-seo-pricing" className="mt-4 inline-block font-semibold text-white underline underline-offset-4">Review services, pricing and terms</Link></div>
+        <div><h3 className="text-xl font-bold">Free review. Clear paid-service expectations.</h3><p className="mt-4 leading-relaxed text-[#D5E5DA]">There is no obligation to hire us. If you need ongoing help, Marketing execution starts at <strong className="text-white">$4,500 per month</strong>, with a three-month initial term. Advertising spend is separate.</p><Link href="/ai-seo-pricing" className="mt-4 inline-block font-semibold text-white underline underline-offset-4">Review services, pricing and terms</Link></div>
       </div>
     </section>
     <section className="mx-auto max-w-4xl px-6 py-12 sm:py-16">

@@ -12,7 +12,7 @@ export default function MarketingAgents() {
     <div className="mx-auto max-w-6xl px-6 lg:px-8">
       <p className="section-overline mb-4">How the work gets done</p>
       <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">A coordinated marketing team, directed by an owner.</h2>
-      <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-700">You get execution across the agreed marketing channels without building an internal department. I direct AI agents and specialists across research, content, website improvements, campaign analysis and reporting. I assign the work, review the output and decide what changes next.</p>
+      <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-700">When you add a separately priced execution scope, you get support across the agreed marketing channels without building an internal department. I direct AI agents and specialists across research, content, website improvements, campaign analysis and reporting. I assign the work, review the output and decide what changes next.</p>
       <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {executionAreas.map((area, index) => <article key={area.name} className="flex flex-col rounded-2xl border border-[#0D2318]/15 bg-[#fafaf8] p-7">
           <span className="text-sm font-bold tracking-widest text-[#1A5C3A]">0{index + 1}</span>

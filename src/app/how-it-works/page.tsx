@@ -158,9 +158,7 @@ export default function HowItWorksPage() {
             <div className="mt-8 rounded-xl border border-[#3A9E6A]/20 bg-white px-6 py-5 shadow-sm">
               <p className="text-sm font-bold text-[#1a1a1a]">Pricing</p>
               <p className="mt-1 text-sm leading-relaxed text-gray-600">
-                Engagements start at $4,500 per month with a three-month initial term, then month to
-                month. Scope is defined before work begins, and ad spend and separately approved tools
-                are not included in the monthly fee.
+                Fractional CMO leadership starts at $7,000 per month. Optional marketing execution starts at $4,500 per month separately. Leadership has a six-month initial term and execution a 90-day initial term, each month to month afterward. Ad spend and approved software are additional. The agreement defines the work and responsibilities.
               </p>
             </div>
             <p className="mt-6 text-sm text-gray-500">

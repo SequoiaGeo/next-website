@@ -5661,7 +5661,7 @@ const posts: Record<string, Post> = {
         <ul>
           <li><strong>AI visibility audit.</strong> Starting at $2,500 for a defined public-surface and AI-search assessment with prioritized corrections.</li>
           <li><strong>AI SEO and growth management.</strong> Starting at $4,500 per month for focused execution and measurement.</li>
-          <li><strong>Integrated marketing leadership.</strong> Starting at $7,000 per month when the work requires regular leadership meetings, cross-channel management, and active coordination.</li>
+          <li><strong>Fractional CMO leadership.</strong> Starting at $7,000 per month for priorities, budget recommendations, team and vendor direction, weekly meetings and performance oversight. Marketing execution is priced separately, starting at $4,500 per month.</li>
           <li><strong>New websites.</strong> Starting at $2,500 for a focused Next.js build, with more extensive custom work priced from the actual requirements.</li>
         </ul>
         <p>

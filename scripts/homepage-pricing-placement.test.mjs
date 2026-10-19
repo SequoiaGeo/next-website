@@ -12,14 +12,16 @@ const visibleHtml = (file) => read(file)
   .replace(/<[^>]+>/g, " ")
   .replace(/\s+/g, " ");
 
-test("homepage copy does not present service fees or contract terms", () => {
+test("homepage leads with leadership and uses the shared approved offer", () => {
   const homepageCopy = [
     "src/components/Hero.tsx",
     "src/app/page.tsx",
-    "src/components/FirstThirtyDays.tsx",
+    "src/components/MarketingLeadershipOffer.tsx",
   ].map(read).join("\n");
   assert.doesNotMatch(homepageCopy, /\$2,500|Engagements start at/i);
-  assert.doesNotMatch(homepageCopy, termPattern);
+  assert.match(homepageCopy, /Starting at \$7,000 per month/);
+  assert.match(homepageCopy, /Starting at \$4,500 per month/);
+  assert.match(homepageCopy, /Optional marketing execution/);
 });
 
 test("desktop and first-level mobile navigation expose pricing without a submenu", () => {
@@ -42,13 +44,13 @@ test("homepage links to assessment without changing the contact-page term defaul
 });
 
 test("published fees and terms remain available and Ask Sequoia still cites them", () => {
-  const pricing = read("src/app/ai-seo-pricing/page.tsx");
+  const pricing = read("src/app/ai-seo-pricing/page.tsx") + read("src/lib/marketing-offer.ts");
   assert.match(pricing, /\$4,500/);
-  assert.match(pricing, /Fractional Marketing Lead a six-month initial term/);
+  assert.match(pricing, /Leadership has a six-month initial term/);
   const catalog = JSON.parse(read("src/data/sequoia-knowledge.catalog.json"));
   assert.equal(catalog.publishedStartingPrices.find((price) => price.id === "search_foundation").amountUsd, 4500);
   assert.equal(catalog.publishedStartingPrices.find((price) => price.id === "fractional_marketing_lead").amountUsd, 7000);
-  assert.equal(catalog.publishedStartingPrices.find((price) => price.id === "complex_leadership").amountUsd, 9500);
+  assert.ok(!catalog.publishedStartingPrices.some((price) => price.id === "complex_leadership"));
   assert.equal(catalog.publishedStartingPrices.find((price) => price.id === "website_foundation").amountUsd, 2500);
   const answer = answerSequoiaQuestion(catalog, "What does working with Sequoia cost?");
   assert.equal(answer.refused, false);
@@ -56,10 +58,11 @@ test("published fees and terms remain available and Ask Sequoia still cites them
   assert.ok(answer.citations.some((citation) => citation.path === "/ai-seo-pricing"));
 });
 
-test("built homepage omits fees and terms while pricing and contact retain them", () => {
+test("built homepage and pricing show separate leadership and execution fees", () => {
   const homepage = visibleHtml(".next/server/app/index.html");
   assert.doesNotMatch(homepage, /\$2,500|Engagements start at/i);
-  assert.doesNotMatch(homepage, termPattern);
+  assert.match(homepage, /Starting at \$7,000 per month/);
+  assert.match(homepage, /Starting at \$4,500 per month/);
   assert.match(homepage, /Services &amp; Pricing/);
   const pricing = visibleHtml(".next/server/app/ai-seo-pricing.html");
   assert.match(pricing, /\$4,500/);

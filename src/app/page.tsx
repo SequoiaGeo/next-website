@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import MarketingLeadershipOffer from "@/components/MarketingLeadershipOffer";
 import Hero from "@/components/Hero";
 import FounderIntroduction from "@/components/FounderIntroduction";
 import InlineLeadForm from "@/components/InlineLeadForm";
@@ -14,7 +15,7 @@ import YouTubeFacade from "@/components/YouTubeFacade";
 
 export const metadata: Metadata = {
   title: "Home Services Marketing & Fractional CMO | Sequoia GEO",
-  description: "Marketing strategy, SEO, GEO, websites, and paid media for home-service contractors. Work directly with Aaron Husak, a former home-service owner and operator.",
+  description: "Fractional CMO leadership for home-service companies, starting at $7,000 per month. Optional marketing execution starts at $4,500 separately. Work directly with Aaron Husak.",
   alternates: { canonical: "https://www.sequoiageo.com/" },
   openGraph: {
     title: "Home Services Marketing & Fractional CMO | Sequoia GEO",
@@ -37,7 +38,7 @@ const snapshotItems = [
 const questions = [
   ["Who do you work with?", "We focus on home-service businesses, including HVAC, plumbing, roofing, and restoration companies. Aaron brings 13 years of experience owning and operating a home-service business."],
   ["What is GEO?", "Generative engine optimization helps AI search tools understand and evaluate your business. We work on clear service information, consistent business details, supporting evidence, and technical access. The work focuses on making your business understandable and supported by evidence."],
-  ["Do you also handle SEO and other marketing?", "Yes. GEO works alongside SEO, Google Business Profile management, website improvements, paid media, and measurement. Your proposal defines the priorities, responsibilities, and fees."],
+  ["Do you also handle SEO and other marketing?", "Yes. Fractional CMO leadership starts at $7,000 per month. Optional execution starts at $4,500 separately and can include SEO, GEO, Google Business Profile, websites and paid media. Your agreement defines channels, output and responsibilities. Ad spend and approved software are additional."],
   ["How do we start?", "Book a 15-minute conversation about your marketing priorities, or request an emailed AI Search Snapshot. We review the evidence and agree on a scope before paid work begins."],
   ["Can you build AI agents for our team?", "AI agents support research, content, analysis and production within the agreed marketing program, with Aaron directing and reviewing the work. Workflows inside your own business are scoped separately with access and approvals defined before launch."],
 ];
@@ -183,6 +184,7 @@ export default function Home() {
           <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. I remain your direct point of contact.</p>
         </div>
       </section>
+      <MarketingLeadershipOffer />
       <OperatorStory />
       <MarketingAgents />
       <section id="snapshot" className="bg-white py-16 sm:py-20">

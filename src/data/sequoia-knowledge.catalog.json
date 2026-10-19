@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-10-16.1",
+  "catalogVersion": "2026-10-19.1",
   "status": "approved_for_public_use",
   "approvedOn": "2026-08-30",
   "reviewValidUntil": "2026-10-30",
-  "lastSourceReview": "2026-10-16: Updated AFCS evidence and source anchors to the verified dated Search Console comparison. Other review limits unchanged.",
+  "lastSourceReview": "2026-10-19: Approved fractional CMO leadership and optional execution pricing and responsibilities. Existing client proof and measurement limits unchanged.",
   "owner": "Sequoia GEO",
   "externalModelSpendLimitUsd": 0,
   "publicBoundary": "This interface reports approved public facts only. It does not claim to improve or control rankings, citations, or recommendations in ChatGPT, Gemini, or any other answer system.",
@@ -23,7 +23,7 @@
       "path": "/services",
       "sourceFile": "src/app/services/page.tsx",
       "sourceAnchors": [
-        "Not standalone services: channels I manage as your growth operator.",
+        "Fractional CMO leadership starts at $7,000 per month.",
         "Google Ads & Local Service Ads",
         "Local SEO & Google Business Profile",
         "Marketing Attribution",
@@ -33,15 +33,13 @@
     "pricing": {
       "label": "Published pricing and conditions",
       "path": "/ai-seo-pricing",
-      "sourceFile": "src/app/ai-seo-pricing/page.tsx",
+      "sourceFile": "src/lib/marketing-offer.ts",
       "sourceAnchors": [
-        "Search Foundation starts at",
-        "Fractional Marketing Lead starts at $7,000",
-        "Complex Leadership starts at $9,500",
-        "Website Foundation starts at $2,500",
-        "Custom website projects start at $7,500",
-        "Search Foundation has a 90-day initial term, Fractional Marketing Lead a six-month initial term, and Complex Leadership a twelve-month initial term.",
-        "Guaranteed rankings, citations, recommendations, lead volume, or timing"
+        "Fractional CMO leadership starts at $7,000 per month.",
+        "Optional marketing execution starts at $4,500 per month",
+        "Together, engagements start at $11,500 per month.",
+        "Leadership has a six-month initial term",
+        "Execution has a 90-day initial term"
       ]
     },
     "methodology": {
@@ -155,6 +153,15 @@
         "Both periods follow launch.",
         "Clicks are not unique customers"
       ]
+    },
+    "website_pricing": {
+      "label": "Website project starting prices",
+      "path": "/ai-seo-pricing",
+      "sourceFile": "src/app/ai-seo-pricing/page.tsx",
+      "sourceAnchors": [
+        "Website Foundation starts at $2,500",
+        "Custom website projects start at $7,500"
+      ]
     }
   },
   "services": [
@@ -236,10 +243,10 @@
   "publishedStartingPrices": [
     {
       "id": "search_foundation",
-      "name": "Search Foundation",
+      "name": "Marketing execution",
       "amountUsd": 4500,
       "billing": "per_month_starting_price",
-      "conditions": "One bounded search, AI visibility, conversion, or public-information constraint. Monthly engagements begin with a 90-day initial term, then continue month to month.",
+      "conditions": "Optional, separately priced implementation. Written scope defines channels, production volumes, access and approvals. A 90-day initial term, then month to month. Media and approved software are additional.",
       "notAQuote": true,
       "sourceIds": [
         "pricing"
@@ -247,21 +254,10 @@
     },
     {
       "id": "fractional_marketing_lead",
-      "name": "Fractional Marketing Lead",
+      "name": "Fractional CMO leadership",
       "amountUsd": 7000,
       "billing": "per_month_starting_price",
-      "conditions": "For a launch or established business that needs weekly marketing leadership. A six-month initial term, then month to month.",
-      "notAQuote": true,
-      "sourceIds": [
-        "pricing"
-      ]
-    },
-    {
-      "id": "complex_leadership",
-      "name": "Complex Leadership",
-      "amountUsd": 9500,
-      "billing": "per_month_starting_price",
-      "conditions": "For multiple markets, brands, vendors, channels, or a larger operating load. A twelve-month initial term, then month to month.",
+      "conditions": "Leadership alone is available: priorities, positioning, planning, budget recommendations, team and vendor direction, weekly meetings and monthly performance reviews. A six-month initial term, then month to month. Execution starts at $4,500 separately; together from $11,500. Media and approved software are additional.",
       "notAQuote": true,
       "sourceIds": [
         "pricing"
@@ -275,7 +271,7 @@
       "conditions": "One location, up to five standard pages, a contact form, basic analytics and technical search setup, two written revision rounds, launch, and handoff.",
       "notAQuote": true,
       "sourceIds": [
-        "pricing"
+        "website_pricing"
       ]
     },
     {
@@ -286,7 +282,7 @@
       "conditions": "For nonstandard interfaces, applications, booking flows, migrations, e-commerce, or advanced integrations. Scope is reviewed separately.",
       "notAQuote": true,
       "sourceIds": [
-        "pricing"
+        "website_pricing"
       ]
     }
   ],

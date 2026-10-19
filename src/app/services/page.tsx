@@ -1,11 +1,12 @@
-﻿import Link from "next/link";
+﻿import MarketingLeadershipOffer from "@/components/MarketingLeadershipOffer";
+import Link from "next/link";
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "Services | Sequoia GEO: Growth Operations for Home Services",
+  title: "Fractional CMO Leadership and Execution | Sequoia GEO",
   description:
-    "Not standalone services: channels I manage as your growth operator. Google Ads, Local SEO, GBP, website optimization, review systems, attribution, and vendor accountability.",
+    "Fractional CMO leadership starts at $7,000 per month. Optional execution starts at $4,500 separately across agreed search, website, content and advertising work.",
   alternates: {
     canonical: "https://www.sequoiageo.com/services",
   },
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Google Ads & Local Service Ads",
-    description: "Managed to revenue, not leads. Every campaign tied to booked jobs, average ticket, and cost per closed call, not cost per click.",
+    description: "Advertising management where scoped, with reporting on genuine inquiries, qualified leads and booked jobs when records support the connection.",
     href: "/contact",
   },
   {
@@ -29,27 +30,27 @@ const services = [
   },
   {
     title: "Review Generation Systems",
-    description: "Built around how techs actually work. Integrated with your dispatch workflow so reviews happen automatically after every closed job.",
+    description: "Review-request workflows designed around your service process, with supported integrations and approvals defined before implementation.",
     href: "/contact",
   },
   {
     title: "Marketing Attribution",
-    description: "Connecting ad spend to booked jobs. Call tracking, form tracking, and CRM integration so you know exactly which channel produced which revenue.",
+    description: "Call, form and CRM measurement that keeps inquiries, qualified leads and booked jobs as separate stages, with attribution limits visible.",
     href: "/contact",
   },
   {
     title: "AI Search Visibility (GEO)",
-    description: "Positioning your business in ChatGPT, Perplexity, and Gemini responses when homeowners ask about HVAC, plumbing, or roofing services.",
+    description: "SEO and GEO implementation built on accurate service information, supporting evidence, technical access and repeatable visibility measurements.",
     href: "/contact",
   },
   {
     title: "Vendor Management",
-    description: "Already have an SEO company or PPC manager? I evaluate their work against revenue outcomes and hold them accountable to metrics that matter.",
+    description: "Leadership evaluates and coordinates existing providers against agreed priorities and performance measures. You approve provider and spending changes.",
     href: "/contact",
   },
   {
     title: "Operational Insights",
-    description: "Booking rate analysis, phone handling audits, average ticket review, and CSR performance feedback. The stuff no agency will tell you.",
+    description: "Coordinate with sales and dispatch on inquiry handling and service capacity. Your team remains responsible for answering, selling and fulfilling jobs.",
     href: "/contact",
   },
 ];
@@ -79,23 +80,22 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#3A9E6A]/30 bg-white px-5 py-2 text-sm font-medium text-[#1A5C3A] shadow-sm mb-6">
               <span className="inline-block h-2 w-2 rounded-full bg-[#3A9E6A]" />
-              The Channels I Manage
+              Leadership and implementation
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl">
-              Tools of the Trade
+              A marketing leader. A coordinated plan.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-gray-600">
-              These aren&rsquo;t standalone services. They&rsquo;re the channels I manage as your growth operator,
-              each one connected to revenue, not just reports.
+              Aaron leads the strategy, priorities, budget recommendations and providers. Keep your existing team, or add a defined Sequoia execution scope to carry out the plan.
             </p>
             <p className="mt-4 text-base text-gray-500">
-              Every engagement starts with a Full Picture Audit before any of these are touched.
-              I don&rsquo;t add budget to a broken pipeline.
+              We establish the baseline and responsibilities before work begins. You approve hiring and spending commitments.
             </p>
           </div>
         </div>
       </section>
 
+      <MarketingLeadershipOffer />
       {/* Services grid */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

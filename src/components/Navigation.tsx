@@ -38,7 +38,7 @@ const resourceLinks = [
       { label: "Website Design", href: "/websites" },
       { label: "LSA Management", href: "/lsa-management" },
       { label: "AI Automation", href: "/ai-automation" },
-      { label: "Operator-Led Marketing", href: "/fractional-cmo" },
+      { label: "Fractional CMO Leadership", href: "/fractional-cmo" },
     ],
   },
   {
