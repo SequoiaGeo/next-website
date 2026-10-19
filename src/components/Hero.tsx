@@ -15,7 +15,7 @@ export default function Hero() {
           <Link href="/contact#book" className="forest-button">Book a call <span aria-hidden="true">&#8599;</span></Link>
           <Link href="#proof" className="forest-hero-proof-link">See client results <span aria-hidden="true">&#8595;</span></Link>
         </div>
-        <p className="forest-hero-trades">HVAC <span aria-hidden="true">&middot;</span> Plumbing <span aria-hidden="true">&middot;</span> Roofing <span aria-hidden="true">&middot;</span> Restoration</p>
+        <p className="forest-hero-trades">HVAC <span aria-hidden="true">&middot;</span> Plumbing <span aria-hidden="true">&middot;</span> Roofing <span aria-hidden="true">&middot;</span> Restoration <span aria-hidden="true">&middot;</span> Electrical <span aria-hidden="true">&middot;</span> Home Services</p>
       </div>
     </section>
   );
