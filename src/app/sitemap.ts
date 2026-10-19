@@ -104,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/marketing-leak-calculator`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.6 },
 
     // Blog index
-    { url: `${BASE_URL}/blog`, lastModified: "2026-07-08", changeFrequency: "weekly", priority: 0.6 },
+    { url: `${BASE_URL}/blog`, lastModified: "2026-10-19", changeFrequency: "weekly", priority: 0.6 },
   ];
 
   // Programmatic HVAC city pages, generated from the same source list that
@@ -119,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Individual blog post pages, generated from the shared blog metadata
   const blogPages: MetadataRoute.Sitemap = blogPostsMeta.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: post.dateISO,
+    lastModified: post.modifiedDateISO ?? post.dateISO,
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));

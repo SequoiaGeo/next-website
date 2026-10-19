@@ -2,12 +2,15 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { podcastPosts } from "@/data/podcast-posts";
+import { leadershipComparisonPost, leadershipComparisonSlug } from "@/data/leadership-comparison-post";
 
 interface Post {
   title: string;
   description: string;
   date: string;
   dateISO: string;
+  modifiedDate?: string;
+  modifiedDateISO?: string;
   readTime: string;
   category: string;
   content: React.ReactNode;
@@ -15,6 +18,7 @@ interface Post {
 
 const posts: Record<string, Post> = {
   ...podcastPosts,
+  [leadershipComparisonSlug]: leadershipComparisonPost,
   "what-are-chatgpt-ads": {
     title: "What Are ChatGPT Ads and Should Your Business Run Them?",
     description:
@@ -2694,429 +2698,6 @@ const posts: Record<string, Post> = {
     ),
   },
 
-  "fractional-cmo-vs-agency-vs-marketing-manager": {
-    title: "Fractional CMO vs Marketing Agency vs In-House Marketing Manager: What Home Service Contractors Actually Need",
-    description:
-      "Comparing fractional CMO, marketing agency, and in-house marketing manager for home service contractors. What each option costs, what it delivers, who it is right for, and where each falls short.",
-    date: "April 2026",
-    dateISO: "2026-04-18",
-    readTime: "16 min read",
-    category: "Fractional CMO",
-    content: (
-      <div className="prose prose-lg max-w-none">
-        <p>
-          I hired a marketing agency three times before I figured out what I actually needed. The first one sold me on
-          branding and a new website. The second promised Google Ads ROI in 60 days. The third had a proven track record
-          with restaurants. None of them understood what it meant to run an HVAC company where one missed heat call in
-          January can cost you $15,000 in revenue and a service agreement renewal.
-        </p>
-        <p>
-          After 13 years running Balanced Comfort in Fresno, growing from a two-man shop to $17M+ with 130 employees
-          and 4x Inc 5000 recognition, I now run Sequoia GEO doing fractional CMO work for home service contractors. I
-          have a strong opinion about this decision, and I want to give you a straight comparison so you can make the
-          right call for your company.
-        </p>
-        <p>
-          This is a comparison of three marketing leadership options available to home service contractors: fractional
-          CMO, marketing agency, and in-house marketing manager. I will cover what each option actually delivers, what
-          it costs, who it is right for, and where each one falls short.
-        </p>
-
-        <h2>The Core Problem: Home Service Marketing Requires Operator-Level Thinking</h2>
-        <p>
-          Before we compare options, understand the context. Marketing for an HVAC, plumbing, roofing, or restoration
-          company is not the same as marketing for a consumer brand or a tech company. Your marketing has to account
-          for seasonal demand swings that can double or halve call volume in 30 days, service areas defined by
-          technician drive time, Google Business Profile as a primary revenue driver, and the reality that most
-          marketing professionals have never dispatched a plumber or managed a roofing crew.
-        </p>
-        <p>
-          Most marketing agency account managers, in-house marketing coordinators, and even experienced marketing
-          directors have no home service operating background. That gap shows up in every marketing decision they make.
-          When I run a fractional CMO engagement, I bring both the marketing expertise and the operational context.
-          That combination is rare, and it matters.
-        </p>
-
-        <h2>What Is a Fractional CMO?</h2>
-        <p>
-          A fractional chief marketing officer is a senior marketing executive who works with your company on a
-          part-time or contract basis, typically as an ongoing monthly engagement. You get the strategy, leadership,
-          and accountability of a seasoned CMO without the full-time salary, benefits, and overhead that comes with
-          hiring one directly.
-        </p>
-        <p>
-          A fractional CMO handles marketing strategy and annual planning, setting budget allocation across channels
-          including Google Ads, local SEO, GBP, email, and direct mail. They also manage vendor selection and
-          accountability, define KPIs and build the reporting system you actually need, connect marketing data to your
-          CRM and job data, and bring operator-level judgment to every strategic decision about your marketing mix.
-          The fractional CMO role is strategic leadership, not execution.
-        </p>
-        <p>
-          For a home service company doing $2M to $15M, a fractional CMO engagement typically runs $3,000 to $8,000
-          per month. That range reflects the difference between a few hours of advisory work and a deeply embedded
-          engagement where the fractional CMO is accessible weekly and actively managing your marketing mix with
-          accountability to business outcomes.
-        </p>
-
-        <h2>What Does a Marketing Agency Do?</h2>
-        <p>
-          A marketing agency is an external firm that provides execution services. Some agencies are full-service
-          digital marketing companies. Others specialize in paid advertising, local SEO, website development, content,
-          or social media. A contractor marketing agency specifically focuses on home service companies and typically
-          offers some combination of Google Ads and Local Services Ads management, local SEO and Google Business
-          Profile optimization, website design and conversion optimization, content marketing and blog strategy, social
-          media management, review management, and email and SMS campaigns.
-        </p>
-        <p>
-          Agencies operate on retainers, typically $1,500 to $8,000 per month depending on scope, plus ad spend which
-          runs separately. Some charge a percentage of ad spend rather than a flat management fee.
-        </p>
-        <p>
-          The critical limitation of most agencies is structural. Most agencies are execution shops. They are built to
-          deliver a defined scope of services efficiently across a portfolio of clients. They are not structured to
-          think strategically about your specific business, understand your operational constraints, or challenge you
-          when you are allocating your marketing budget incorrectly. The account manager assigned to your business may
-          be managing fifteen other clients simultaneously and may have no home services background.
-        </p>
-        <p>
-          This is not an indictment of every digital marketing agency. Some contractor-specific agencies have excellent
-          operators who understand the business. But even the best agency is constrained by its model: they deliver
-          what you pay for, in the scope you contracted, without the ownership mentality that a true marketing leader
-          brings to a company.
-        </p>
-
-        <h2>What Does an In-House Marketing Manager Do?</h2>
-        <p>
-          An in-house marketing manager is a full-time employee dedicated to your marketing function. They sit inside
-          your company, attend your meetings, understand your culture, and can respond quickly to operational
-          realities. This sounds ideal in theory. In practice, there are real constraints that most business owners
-          underestimate.
-        </p>
-        <p>
-          A marketing manager hire at the level most home service companies can afford, typically $50,000 to $75,000
-          per year in base salary, is generally a coordinator or generalist with two to five years of experience. They
-          can execute tasks, manage vendor relationships, run social media, and handle content production. What they
-          typically cannot do is build a comprehensive marketing strategy, make sophisticated media buying decisions,
-          or bring the operator-level knowledge that changes how your entire marketing function is structured.
-        </p>
-        <p>
-          Total cost of an in-house marketing manager is significantly higher than the salary line suggests. You are
-          looking at base salary of $50,000 to $85,000, benefits and payroll taxes adding 25 to 35 percent, tools and
-          software running $500 to $1,500 per month, and the management time you will spend supervising them. Total
-          loaded cost is typically $80,000 to $120,000 annually before any media spend. For a company at $3M in
-          revenue, that is a significant overhead commitment with no guarantee of strategic output.
-        </p>
-        <p>
-          In-house marketing also has a specific failure mode I have seen repeatedly: the person you hire is only as
-          good as the direction they receive. Without senior marketing leadership, an in-house coordinator will execute
-          the most visible tasks and avoid the harder strategic work that actually drives revenue. They stay busy and
-          produce output, but that output may not be moving the needle on what matters.
-        </p>
-
-        <h2>Fractional CMO vs Marketing Agency vs In-House: Side-by-Side Comparison</h2>
-        <div className="overflow-x-auto my-8">
-          <table className="w-full text-sm border-collapse">
-            <thead>
-              <tr className="bg-[#0D2318] text-white">
-                <th className="p-3 text-left font-semibold">Factor</th>
-                <th className="p-3 text-left font-semibold">Fractional CMO</th>
-                <th className="p-3 text-left font-semibold">Marketing Agency</th>
-                <th className="p-3 text-left font-semibold">In-House Manager</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Monthly cost", "$3,000 to $8,000", "$1,500 to $8,000 + ad spend", "$7,000 to $10,000 fully loaded"],
-                ["Seniority level", "C-suite equivalent", "Account manager level", "Coordinator to manager"],
-                ["Strategy ownership", "Yes", "Limited, scope-bound", "Limited, needs direction"],
-                ["Execution", "No, manages vendors", "Yes", "Yes"],
-                ["Home services knowledge", "High when specialized", "Varies widely", "Low at hire"],
-                ["Accountability", "High, results-focused", "Scope-focused", "Depends on management"],
-                ["Flexibility", "High", "Medium", "Low, employment overhead"],
-                ["Vendor management", "Yes", "N/A, is the vendor", "Can manage with guidance"],
-                ["CRM &amp; data integration", "Yes", "Rarely", "Sometimes"],
-              ].map((row, i) => (
-                <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#fafaf8]"}>
-                  {row.map((cell, j) => (
-                    <td key={j} className="p-3 border border-gray-200 align-top"
-                      dangerouslySetInnerHTML={{ __html: cell }} />
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <h2>When a Fractional CMO Is the Right Choice</h2>
-        <p>
-          A fractional CMO is the right choice when your company has outgrown marketing execution but is not yet
-          ready or willing to hire a full-time chief marketing officer. Specific indicators: you are spending $5,000
-          to $30,000 per month on marketing and are not confident you are getting the return you should; you have
-          vendors or agencies you are not sure how to evaluate; your marketing decisions are consequential enough that
-          making them without a senior marketing leader is a risk; you are entering a new service line or market that
-          requires strategic thinking; you have tried agencies and been disappointed by the lack of strategic input.
-        </p>
-        <p>
-          A fractional CMO is not a fit if what you primarily need is execution. If your marketing strategy is solid
-          and you just need someone to run the ads and manage the content calendar, that is agency or in-house work.
-          The value of a fractional CMO is the judgment and leadership layer.
-        </p>
-
-        <h2>When a Marketing Agency Is the Right Choice</h2>
-        <p>
-          A digital marketing agency makes sense when you have a defined marketing strategy and need reliable
-          execution partners for specific channels. It also works well when you are early in your marketing maturity
-          and need to establish a baseline, including website, Google presence, and basic local SEO, before investing
-          in leadership. An agency also performs well under the direction of a fractional CMO or in-house marketing
-          director who needs execution capacity underneath them.
-        </p>
-        <p>
-          The key word is defined. Agencies work best when you know what you want, you can evaluate whether they are
-          delivering it, and you have someone with enough marketing knowledge to hold them accountable. If you are
-          hiring a contractor marketing agency without that accountability layer, you are at significant risk of paying
-          for activity that does not produce booked jobs.
-        </p>
-        <p>
-          When evaluating a contractor marketing agency, ask for case studies from companies with similar revenue and
-          similar service mix. Ask how they measure success and whether they connect their work to jobs booked, not
-          just impressions and clicks. Ask who specifically will be working on your account.
-        </p>
-
-        <h2>When an In-House Marketing Manager Is the Right Choice</h2>
-        <p>
-          An in-house marketing manager makes sense when you have a senior marketing leader already in place who can
-          provide direction and development. It also makes sense when managing multiple external vendors has become a
-          full-time coordination job, or when you have enough marketing volume and complexity that you need someone
-          inside the business available daily.
-        </p>
-        <p>
-          In-house makes less sense as a standalone first hire without strategic direction. The companies I have seen
-          burn money fastest are those that hired a marketing coordinator without any senior direction and expected
-          them to figure it out. The coordinator gets busy producing output, the results are mediocre, and eighteen
-          months later you are starting over.
-        </p>
-
-        <h2>The Marketing Structure That Works for $3M to $10M Home Service Companies</h2>
-        <p>
-          After running my own company and now advising home service contractors, the marketing structure I see
-          working most consistently for companies in the $3M to $10M range is: a fractional CMO setting strategy,
-          managing vendors, and owning results, combined with one to two specialist agencies handling execution in
-          their respective lanes, typically a local SEO and GBP specialist and a paid search specialist. Optionally,
-          one in-house marketing coordinator handling content, social media, and local tasks once the company reaches
-          $5M or above.
-        </p>
-        <p>
-          This structure gives you C-level marketing leadership at a fraction of full-time CMO cost, specialist
-          execution without the overhead of a full in-house team, and the accountability that comes from having one
-          person responsible for the entire marketing strategy and its business outcomes. The fractional CMO is the
-          connective tissue that holds everything together.
-        </p>
-
-        <h2>Key Differences Between Fractional CMO and Marketing Agency Approaches</h2>
-        <p>
-          When business owners dig into the key differences between a fractional CMO and a marketing agency, two
-          things stand out immediately. First, a marketing agency focuses on executing a defined scope of
-          deliverables, while a fractional CMO focuses on strategy, strategic oversight, and making sure all your
-          marketing efforts are aligned with your business goals. Second, unlike agencies that operate within a fixed
-          contract and deliver campaign execution to spec, a fractional CMO functions as strategic marketing
-          leadership embedded inside your business, with accountability to revenue outcomes rather than activity
-          metrics.
-        </p>
-        <p>
-          The fractional CMO model aligns marketing directly to business objectives. Every channel, every vendor,
-          every campaign is evaluated against whether it is moving the business toward its overall business
-          objectives: more booked jobs, lower cost per acquisition, higher customer lifetime value. Agencies focus on
-          their lane. A fractional CMO holds the whole system accountable.
-        </p>
-
-        <h2>What Fractional Leadership Actually Delivers</h2>
-        <p>
-          Fractional leadership gives smaller home service companies gain access to executive level expertise and
-          executive level marketing leadership that would otherwise require a $200,000+ full-time hire. When you bring
-          in a fractional CMO, your company gains access to strategic direction, industry insights, and specialized
-          expertise that most home service companies at the $3M to $10M range have never had before.
-        </p>
-        <p>
-          A fractional CMO focuses on building a strong marketing foundation first, including a clear marketing
-          strategy with defined priorities, measurable results tied to CRM data, and a solid strategy for long term
-          growth. Without that strategic foundation, all the campaign management and campaign execution in the world
-          will not produce sustainable growth.
-        </p>
-        <p>
-          Unlike agencies, the fractional CMO also serves as part of your executive team for marketing decisions.
-          They provide strategic leadership in your planning meetings, challenge your assumptions about marketing
-          channels, and give you the senior expertise to make budget decisions with confidence rather than guesswork.
-        </p>
-
-        <h2>Managing Multiple Agencies and Internal Resources</h2>
-        <p>
-          Most home service companies at $5M+ are working with multiple agencies at the same time: one for local SEO,
-          one for paid ads, sometimes a third for content creation or social media management. Managing these
-          relationships is a real job. Without strategic oversight, multiple agencies operate in silos, each
-          optimizing for their own metrics rather than for your business growth.
-        </p>
-        <p>
-          A fractional CMO manages all those vendor relationships with a single lens: what combination of marketing
-          efforts is producing the most booked jobs per dollar spent. They evaluate campaign management across all
-          channels, align agencies to the same KPIs, and eliminate the duplication and gaps that appear when multiple
-          agencies operate without coordination.
-        </p>
-        <p>
-          This also extends to internal resources. If you have an in-house coordinator or a marketing team member,
-          the fractional CMO provides the strategic direction and accountability that makes their work effective.
-          Without that layer, your internal resources tend to execute in the direction of least resistance rather than
-          highest business impact.
-        </p>
-
-        <h2>Marketing Challenges Specific to Home Service Contractors</h2>
-        <p>
-          The marketing challenges home service contractors face are genuinely different from those facing most
-          businesses. Seasonal demand creates execution windows where marketing efforts need to scale quickly and
-          compress just as fast. Service area constraints mean your targeting has to be precise or your paid ads and
-          paid media spend is wasted on impressions outside your trade radius. Content creation for home service
-          companies has to balance technical credibility with accessibility, a balance that generic content agencies
-          consistently get wrong.
-        </p>
-        <p>
-          Executing campaigns for home service companies requires understanding dispatch patterns, technician
-          capacity, and how lead volume interacts with your ability to convert calls to booked jobs. A spike in paid
-          advertising that doubles inbound calls is only valuable if your CSR team can handle the volume. These
-          connections between marketing initiatives and operational reality are what good strategic marketing
-          leadership looks like in practice.
-        </p>
-        <p>
-          Agencies focus on their deliverable. They are executing campaigns, producing content creation, managing
-          paid media, and sending you reports. What they are not doing is connecting those marketing tasks to your
-          business objectives or adjusting strategy when the market shifts. That gap is where most home service
-          marketing budgets leak.
-        </p>
-
-        <h2>Red Flags for Each Option</h2>
-        <h3>Red Flags When Evaluating a Marketing Agency</h3>
-        <p>
-          Watch for these warning signs: no specific home services experience or case studies from comparable
-          companies; reporting that shows impressions and traffic but never connects to calls or revenue; long-term
-          contracts with automatic renewals and exit penalties; account managers who rotate frequently and do not know
-          your business; promises of specific ranking positions or guaranteed lead volume; bundled packages where you
-          are paying for services you cannot evaluate.
-        </p>
-
-        <h3>Red Flags When Evaluating a Fractional CMO</h3>
-        <p>
-          Fractional CMO red flags include: no operating experience in home services, since a marketing agency
-          background alone is not sufficient; vague deliverables without KPIs tied to business outcomes;
-          unwillingness to audit your existing vendor contracts and spending before starting work; a tendency to
-          immediately sell you new channels and new spend before reviewing what you currently have; no defined
-          mechanism for measuring whether the engagement is producing results.
-        </p>
-
-        <h3>Red Flags When Building an In-House Marketing Team</h3>
-        <p>
-          Common in-house mistakes: hiring a generalist coordinator and expecting them to function as a marketing
-          director; no defined onboarding plan or senior guidance structure; measuring success by activity rather than
-          business outcomes; building an in-house team before your marketing strategy is clear and your current
-          channels are performing.
-        </p>
-
-        <h2>The Economics of Fractional CMO vs Full-Time CMO</h2>
-        <p>
-          A full-time chief marketing officer for a home service company at the $3M to $10M revenue range commands
-          $150,000 to $220,000 in base salary, plus benefits and management overhead. You get comparable strategic
-          thinking through a fractional CMO engagement at roughly one-tenth the cost, with the ability to scale up or
-          down as your needs change.
-        </p>
-        <p>
-          The model works because you are not paying for the CMO to be present forty hours a week. You are paying for
-          focused, senior-level marketing leadership applied directly to your highest-leverage decisions: budget
-          allocation, vendor evaluation, competitive strategy, and performance optimization. Those decisions compound
-          over time. Getting them right early pays dividends across every marketing dollar spent afterward.
-        </p>
-
-        <h2>Making the Decision for Your Company</h2>
-        <p>
-          If you are under $2M in revenue, focus on the basics first: a solid website, Google Business Profile
-          optimization, Google Ads with a reputable contractor marketing agency, and a review-building process. You do
-          not need fractional CMO services yet.
-        </p>
-        <p>
-          If you are between $2M and $5M and spending $3,000 to $10,000 per month on marketing without a clear
-          picture of what is working, a fractional CMO engagement to audit and restructure your marketing will pay
-          for itself quickly. This is the stage where most home service companies are paying for activity without
-          strategy, and the gap between what they are spending and what they are getting is significant.
-        </p>
-        <p>
-          If you are between $5M and $15M with multiple channels, multiple vendors, and a growing team, fractional
-          CMO services are almost certainly the right call. You need marketing leadership, not just marketing
-          execution. The strategic decisions at this scale require someone with the experience and authority to make
-          them well and be accountable for the outcomes.
-        </p>
-
-        <h2>Frequently Asked Questions: Fractional CMO vs Marketing Agency</h2>
-        <h3>What is the difference between a fractional CMO and a marketing director?</h3>
-        <p>
-          A marketing director is a full-time employee who typically manages a marketing team and handles day-to-day
-          marketing operations. A fractional CMO operates at a higher strategic level, usually on a part-time basis,
-          setting the overall marketing strategy, managing vendors including multiple agencies, and holding the entire
-          marketing function accountable to business growth. For home service companies under $10M, a fractional CMO
-          provides more strategic leverage at lower cost than a full-time marketing director hire.
-        </p>
-
-        <h3>Can I use both a fractional CMO and a marketing agency?</h3>
-        <p>
-          Yes, and this is the model that works best for most home service companies. The fractional CMO provides
-          executive level marketing leadership and strategic oversight. The marketing agency focuses on executing
-          specific channels, whether that is local SEO, Google Ads, or content creation. The fractional CMO manages
-          the agency relationship, evaluates performance, and ensures all marketing efforts are aligned with the
-          company&rsquo;s business objectives.
-        </p>
-
-        <h3>What should I expect in terms of measurable results?</h3>
-        <p>
-          The key differences between good fractional CMO engagements and poor ones come down to measurable results.
-          A quality engagement produces clear reporting on cost per lead, cost per booked job, and revenue attribution
-          by channel. Within 90 days you should have a clear marketing strategy, defined KPIs, and a baseline
-          measurement system. Within 6 months you should see marketing efforts improving against those KPIs. Within
-          12 months you should have enough data to make confident budget allocation decisions based on what is
-          actually working.
-        </p>
-
-        <h3>How does a fractional CMO handle software and marketing tools?</h3>
-        <p>
-          Part of the fractional CMO value is evaluating and rationalizing your marketing technology stack. Most home
-          service companies accumulate marketing software tools over time without a clear plan: a CRM, a reputation
-          management platform, a scheduling tool, an email platform, maybe a reporting dashboard. A fractional CMO
-          assesses whether each tool is being used effectively, whether it is connected to your business data, and
-          whether the monthly cost is justified by the value it produces. Consolidating and optimizing your tool stack
-          often frees up $500 to $2,000 per month that can be redirected to higher-ROI channels.
-        </p>
-
-        <h2>The Bottom Line</h2>
-        <p>
-          Most home service contractors I talk to are paying for marketing execution without marketing leadership.
-          They have agencies doing work, an employee posting on social media, maybe someone managing Google Ads, but
-          no one is sitting at the table making strategic decisions about where the marketing budget goes, how to
-          measure whether it is working, or what to do differently when it is not producing results.
-        </p>
-        <p>
-          That leadership gap is expensive. It means running marketing campaigns based on vendor recommendations
-          rather than business strategy. It means renewing agency contracts based on activity reports rather than
-          revenue outcomes. It means making budget decisions by gut feel when you should be making them based on data
-          from your CRM and your call center.
-        </p>
-        <p>
-          A fractional CMO fills that gap without the cost of a full-time executive hire. For home service companies
-          at the $2M to $15M range, fractional CMO services represent the highest-leverage marketing investment
-          available at that stage. The question is not whether the model works. The question is whether you are
-          working with someone who has actually built a home service company and understands the difference between
-          marketing metrics and marketing outcomes.
-        </p>
-        <p>
-          Every Sequoia GEO engagement starts with a full audit of what your marketing is currently producing before
-          we spend anything new. Book a strategy call to see what that looks like for your company.
-        </p>
-      </div>
-    ),
-  },
 
   "contractor-marketing-services-local-seo": {
     title: "Contractor Marketing Services: What Actually Works for Local SEO in Home Services",
@@ -5797,6 +5378,14 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Sequoia GEO`,
     description: post.description,
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.description,
+      url: `https://www.sequoiageo.com/blog/${slug}`,
+      publishedTime: post.dateISO,
+      modifiedTime: post.modifiedDateISO ?? post.dateISO,
+    },
     alternates: {
       canonical: `https://www.sequoiageo.com/blog/${slug}`,
     },
@@ -5821,7 +5410,7 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.description,
     datePublished: post.dateISO,
-    dateModified: post.dateISO,
+    dateModified: post.modifiedDateISO ?? post.dateISO,
     author: {
       "@type": "Person",
       "@id": "https://www.sequoiageo.com/#aaron-husak",
@@ -5882,6 +5471,7 @@ export default async function BlogPostPage({
               </Link>
             </div>
             <time dateTime={post.dateISO}>{post.date}</time>
+            {post.modifiedDateISO && <span>Updated <time dateTime={post.modifiedDateISO}>{post.modifiedDate}</time></span>}
             <span>{post.readTime}</span>
           </div>
         </div>

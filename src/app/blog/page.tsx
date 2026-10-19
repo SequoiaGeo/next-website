@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
 import { podcastPostCards } from "@/data/podcast-posts";
+import { leadershipComparisonCard } from "@/data/leadership-comparison-post";
 
 export const metadata: Metadata = {
   title: "Blog | Sequoia GEO: Home Services Marketing Insights",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+  leadershipComparisonCard,
   ...podcastPostCards,
   {
     slug: "what-are-chatgpt-ads",
@@ -94,15 +96,7 @@ const posts = [
     readTime: "18 min read",
     category: "Local SEO",
   },
-  {
-    slug: "fractional-cmo-vs-agency-vs-marketing-manager",
-    title: "Fractional CMO vs Marketing Agency vs In-House Marketing Manager",
-    excerpt:
-      "Three options, one decision that shapes every marketing dollar you spend. What each option actually costs, what it delivers, who it is right for, and the failure modes I have watched kill otherwise solid home service marketing programs.",
-    date: "April 2026",
-    readTime: "16 min read",
-    category: "Fractional CMO",
-  },
+
   {
     slug: "which-marketing-agency-specializes-in-contractors",
     title: "How to Choose a Digital Marketing Agency for Contractors (Without Getting Burned)",
