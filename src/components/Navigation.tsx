@@ -135,7 +135,7 @@ export default function Navigation() {
       <nav aria-label="Main navigation" className="container-narrow flex items-center justify-between py-3 lg:py-4">
         {/* Logo */}
         <Link href="/" aria-label="Sequoia GEO homepage" className="flex items-center gap-3 shrink-0">
-          <Image src="/logo.png" alt="Sequoia GEO" width={64} height={64} sizes="64px" className="brand-logo" priority />
+          <Image src="/logo.png" alt="Sequoia GEO" width={64} height={64} sizes={isHomepage ? "(max-width: 1023px) 68px, 84px" : "64px"} className="brand-logo" priority />
         </Link>
 
         {/* Desktop navigation */}
