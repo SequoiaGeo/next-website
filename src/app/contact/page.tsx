@@ -21,6 +21,14 @@ export default function ContactPage() {
             <h1 className="text-4xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-5xl">
               Book a 15-minute call with Aaron
             </h1>
+            <div className="mt-5 flex flex-col items-center justify-center gap-3 text-lg font-semibold text-[#1A5C3A] sm:flex-row sm:gap-6">
+              <a href="tel:5595213122" className="rounded underline underline-offset-4 hover:text-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
+                Call (559) 521-3122
+              </a>
+              <a href="mailto:Aaron@sequoiageo.com" className="rounded underline underline-offset-4 hover:text-[#0D2318] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
+                Email Aaron@sequoiageo.com
+              </a>
+            </div>
             <p className="mt-4 text-lg text-gray-600">
               Discuss your marketing priorities and whether Sequoia can help. Planning an agent? Bring one task you want handled and the tools your team uses. Choose a time below to book your Marketing Baseline Review.
             </p>
