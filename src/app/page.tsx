@@ -7,7 +7,6 @@ import FounderIntroduction from "@/components/FounderIntroduction";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import OperatorStory from "@/components/OperatorStory";
 import MarketingAgents from "@/components/MarketingAgents";
-import SequoiaQuestionPanel from "@/components/SequoiaQuestionPanel";
 
 import SnapshotExample from "@/components/SnapshotExample";
 import SnapshotNextSteps from "@/components/SnapshotNextSteps";
@@ -45,9 +44,6 @@ const questions = [
 const primaryButton = "forest-button";
 
 export default function Home() {
-  const knowledgeEnabled =
-    process.env.SEQUOIA_KNOWLEDGE_ENABLED === "true" &&
-    process.env.SEQUOIA_KNOWLEDGE_KILL_SWITCH !== "true";
 
   return (
     <div className="forest-home">
@@ -206,9 +202,6 @@ export default function Home() {
       </section>
 
 
-      {knowledgeEnabled && (
-        <SequoiaQuestionPanel surface="homepage_inline" embedded />
-      )}
       <section id="questions" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-[#0D2318]">Before we work together</h2>

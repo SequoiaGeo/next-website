@@ -252,14 +252,17 @@ test("analytics stages remain distinct and qualification is never fired by the b
   assert.doesNotMatch(contactForm, /trackKnowledgeStage\("qualified_lead"/);
 });
 
-test("homepage embeds one guarded question panel after proof without a duplicate launcher", () => {
+test("homepage omits the question panel while standalone Ask remains available", () => {
   const homepage = read("src/app/page.tsx");
   const proofPosition = homepage.indexOf('id="proof"');
   const panelPosition = homepage.indexOf('<SequoiaQuestionPanel surface="homepage_inline" embedded />');
   const faqPosition = homepage.indexOf('id="questions"');
-  assert.ok(proofPosition >= 0 && panelPosition > proofPosition && faqPosition > panelPosition);
-  assert.match(homepage, /SEQUOIA_KNOWLEDGE_ENABLED === "true"/);
-  assert.match(homepage, /SEQUOIA_KNOWLEDGE_KILL_SWITCH !== "true"/);
+  assert.ok(proofPosition >= 0 && faqPosition > proofPosition);
+  assert.equal(panelPosition, -1);
+  assert.doesNotMatch(homepage, /SequoiaQuestionPanel/);
+  assert.match(read("src/components/AskSequoiaExperience.tsx"), /<SequoiaQuestionPanel surface="ask_sequoia"/);
+
+
 
   const panel = read("src/components/SequoiaQuestionPanel.tsx");
   assert.match(panel, /surface: KnowledgeSurface/);

@@ -12,8 +12,9 @@ test('calculators retain ranges with labels and a single layout-owned main', () 
   }
   assert.match(read('app/marketing-leak-calculator/page.tsx'), /htmlFor="marketing-booking-rate"/);
 });
-test('mobile help has a direct navigation alternative and no floating overlap', () => {
-  assert.match(read('components/Navigation.tsx'), /href="\/ask-sequoia" aria-label="Ask Sequoia"/);
+test('mobile header exposes phone contact and omits the Ask link', () => {
+  assert.match(read('components/Navigation.tsx'), /trackCallIntent\("header_mobile"\)/);
+  assert.doesNotMatch(read('components/Navigation.tsx'), /\/ask-sequoia/);
   assert.match(read('components/SequoiaKnowledgeInterface.tsx'), /hidden lg:block fixed/);
 });
 test('hero and video preserve the headline, form and opt-in playback', () => {
