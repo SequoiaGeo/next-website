@@ -114,6 +114,16 @@ export default function HvacSeoPage() {
         </div>
       </section>
 
+      <section aria-labelledby="hvac-client-result" className="bg-[#eef5ef] py-10 sm:py-12">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-wide text-[#1A5C3A]">Verified HVAC client result</p>
+          <h2 id="hvac-client-result" className="mt-3 text-3xl font-extrabold text-[#0D2318] sm:text-4xl">Amazing Air: 50% more organic search clicks</h2>
+          <p className="mt-4 text-lg leading-relaxed text-gray-700">Since we began rebuilding and optimizing Amazing Air Solutions&rsquo; website, Google organic clicks increased from 40 in our first 30 days working together to 60 in the comparison period, as recorded in Google Search Console.</p>
+          <p className="mt-3 leading-relaxed text-gray-700">Our work included repairing mobile navigation, correcting the booking integration, and restoring paths to relevant service pages.</p>
+          <p className="mt-3 text-sm leading-relaxed text-gray-600">April 10 to May 9 compared with September 14 to October 13, 2026. These are website clicks from Google Search, not inquiries or booked jobs. Impressions declined over the same periods; seasonality and other factors can affect results.</p>
+          <Link href="/#amazing-air-proof-heading" className="mt-5 inline-block font-semibold text-[#1A5C3A] underline underline-offset-4 hover:text-[#0D2318]">See Amazing Air&rsquo;s work and results</Link>
+        </div>
+      </section>
       <section aria-labelledby="hvac-service-scope" className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 id="hvac-service-scope" className="text-3xl font-extrabold text-[#1a1a1a]">What I work on for your HVAC business</h2>
