@@ -16,7 +16,10 @@ interface Post {
   content: React.ReactNode;
 }
 
+import { searchEverywherePost, searchEverywhereSlug } from "@/data/search-everywhere-post";
+
 const posts: Record<string, Post> = {
+  [searchEverywhereSlug]: searchEverywherePost,
   ...podcastPosts,
   [leadershipComparisonSlug]: leadershipComparisonPost,
   "what-are-chatgpt-ads": {

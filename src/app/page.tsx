@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import MarketingLeadershipOffer from "@/components/MarketingLeadershipOffer";
 import Hero from "@/components/Hero";
+import SearchEverywhere from "@/components/SearchEverywhere";
 import FounderIntroduction from "@/components/FounderIntroduction";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import OperatorStory from "@/components/OperatorStory";
@@ -49,6 +50,7 @@ export default function Home() {
     <div className="forest-home">
       <Hero />
       <FounderIntroduction />
+      <SearchEverywhere />
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Results an owner can evaluate</p>
