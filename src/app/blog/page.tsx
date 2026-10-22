@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   },
 };
 
+import { searchEverywhereCard } from "@/data/search-everywhere-post";
+
 const posts = [
+  searchEverywhereCard,
   leadershipComparisonCard,
   ...podcastPostCards,
   {
