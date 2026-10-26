@@ -64,9 +64,9 @@ test("the case-study page operates as the proof hub", () => {
   assert.match(pages.cases, /The Sequoia Proof Library/);
   assert.match(pages.cases, /Founder operating history/);
   assert.match(pages.cases, /Client implementation records/);
-  assert.match(pages.cases, /AI Search diagnostic evidence/);
+  assert.match(pages.cases, /AI Search methodology/);
   assert.match(pages.cases, /href="\/proof-system"/);
-  assert.match(pages.cases, /href="\/case-studies\/ai-search-readiness"/);
+  assert.match(pages.cases, /\/ai-search-methodology/);
 });
 
 test("the five-page package follows language and claims rules", () => {

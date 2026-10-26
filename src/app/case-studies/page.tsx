@@ -73,11 +73,11 @@ export default function CaseStudiesPage() {
                 cta: "Review implementation records",
               },
               {
-                label: "AI Search diagnostic evidence",
-                title: "Hicks Paving AI Search readiness snapshot",
-                body: "This permissioned, dated example shows how conflicting entities, profiles, official records, and website data can make a business difficult for a search system to resolve. It does not claim recommendation or business-outcome gains.",
-                href: "/case-studies/ai-search-readiness",
-                cta: "Read the named assessment example",
+                label: "AI Search methodology",
+                title: "How we measure AI search visibility",
+                body: "Review how we distinguish mentions, citations, recommendations, visits, inquiries, and jobs booked, with the limits of each measure made clear.",
+                href: "/ai-search-methodology",
+                cta: "Read the methodology",
               },
             ].map((item) => (
               <article key={item.label} className="rounded-2xl border border-gray-200 bg-[#fafaf8] p-7">
@@ -375,67 +375,10 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* AI-search readiness field note */}
-            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-              <div className="bg-[#0D2318] px-8 py-10 sm:px-12">
-                <span className="inline-block rounded-full bg-[#3A9E6A]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#3A9E6A]">
-                  Anonymized GEO Field Note
-                </span>
-                <h2 className="mt-4 font-serif text-3xl font-extrabold text-white sm:text-4xl">
-                  When AI Cannot Resolve a Local Business
-                </h2>
-                <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]/80">
-                  A pre-engagement public-surface diagnosis of a local contractor whose website,
-                  profiles, historical pages, and third-party records gave conflicting answers
-                  about the same business. This is a correction plan, not a performance claim.
-                </p>
-              </div>
-              <div className="border-b border-gray-100 bg-[#fafaf8] px-8 py-6 sm:px-12">
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  {[
-                    { value: "Identity", label: "Must be canonical" },
-                    { value: "Profiles", label: "Must agree" },
-                    { value: "Schema", label: "Must name the business" },
-                    { value: "Evidence", label: "Before claims" },
-                  ].map((item) => (
-                    <div
-                      key={item.label}
-                      className="rounded-xl bg-[#C8EDD2] px-4 py-4 text-center"
-                    >
-                      <div className="text-xl font-extrabold text-[#0D2318]">{item.value}</div>
-                      <div className="mt-1 text-xs leading-snug text-[#1A5C3A]">{item.label}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="px-8 py-6 sm:px-12">
-                <Link
-                  href="/case-studies/ai-search-readiness"
-                  className="inline-flex items-center gap-2 text-base font-semibold text-[#1A5C3A] transition-colors hover:text-[#0D2318]"
-                >
-                  Read the Hicks Paving snapshot
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-
             {/* Client results note */}
             <p className="mt-8 text-sm text-gray-500 text-center">
-              Named case studies are added with client approval. Diagnostic field notes are
-              anonymized and distinguish current observations from verified outcomes.
+              Named case studies are added with client approval. We distinguish completed
+              work from verified outcomes.
             </p>
           </div>
         </div>

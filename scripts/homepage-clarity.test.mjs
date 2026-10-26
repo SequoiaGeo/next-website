@@ -22,7 +22,7 @@ test('homepage preserves the knowledge kill switch and customer-fit component', 
   assert.match(home, /SEQUOIA_KNOWLEDGE_ENABLED === "true"/);
   assert.match(home, /SEQUOIA_KNOWLEDGE_KILL_SWITCH !== "true"/);
   assert.match(home, /<WhoIsItFor\s*\/>/);
-  assert.match(home, /\/case-studies\/ai-search-readiness/);
+  assert.match(home, /\/ai-search-methodology/);
   assert.match(home, /\/ai-search-assessment/);
   assert.doesNotMatch(home, /<FullPicture|<Problem|<FirstThirtyDays|<Services\s*\/>/);
 });

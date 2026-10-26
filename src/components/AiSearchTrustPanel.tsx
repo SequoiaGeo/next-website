@@ -2,12 +2,6 @@ import Link from "next/link";
 
 const evidence = [
   {
-    label: "Named assessment example",
-    title: "Hicks Paving AI Search readiness snapshot",
-    body: "A permissioned, dated public-surface assessment showing the evidence conflicts found before implementation. It does not claim a change in AI recommendations or business results.",
-    href: "/case-studies/ai-search-readiness",
-  },
-  {
     label: "Public measurement standard",
     title: "AI Search Measurement Methodology",
     body: "See how Sequoia separates citations, mentions, recommendations, referral visits, inquiries, qualified leads, and jobs booked.",
@@ -57,8 +51,8 @@ export default function AiSearchTrustPanel() {
                 Trust the method before you trust the claim
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                Sequoia publishes the boundaries around its AI Search work. You can inspect a named
-                assessment example, the measurement definitions, the broader proof rules, and the data
+                Sequoia publishes the boundaries around its AI Search work. You can inspect the
+                measurement definitions, the broader proof rules, and the data
                 safeguards before sharing account access.
               </p>
             </div>

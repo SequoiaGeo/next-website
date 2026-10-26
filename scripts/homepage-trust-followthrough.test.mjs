@@ -13,8 +13,8 @@ test('fit guidance and shared branding match the search offer', () => {
 
 test('sample separates observed evidence from proposed corrections', () => {
   const sample = read('src/components/SnapshotExample.tsx');
-  for (const label of ['Finding', 'Evidence', 'Recommended correction', 'August 14, 2026', 'not a screenshot or proof the correction was completed']) assert.ok(sample.includes(label));
-  assert.match(sample, /\/case-studies\/ai-search-readiness/);
+  for (const label of ['Business identity', 'Public sources', 'Correction priorities', 'not findings or results for a particular client']) assert.ok(sample.includes(label));
+  assert.match(sample, /\/ai-search-methodology/);
   for (const path of ['src/app/page.tsx', 'src/app/ai-search-assessment/page.tsx']) assert.match(read(path), /<SnapshotExample\s*\/>/);
 });
 

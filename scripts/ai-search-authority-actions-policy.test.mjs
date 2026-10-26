@@ -59,18 +59,14 @@ test("only roofing and plumbing agency comparisons receive the evidence treatmen
   assert.match(roofing, /<AiSearchEvidencePath \/>/);
   assert.match(plumbing, /<AiSearchEvidencePath \/>/);
   assert.doesNotMatch(hvac, /AiSearchEvidencePath/);
-  for (const href of ["/ai-search-methodology", "/case-studies/ai-search-readiness", "/ai-search-assessment"]) {
+  for (const href of ["/ai-search-methodology", "/proof-system", "/ai-search-assessment"]) {
     assert.match(component, new RegExp(href));
   }
 });
 
-test("Hicks case names outputs and preserves outcome boundaries", () => {
-  const page = read("src/app/case-studies/ai-search-readiness/page.tsx");
-  for (const phrase of ["Evidence register", "Public-surface scorecard", "Prioritized correction sequence", "Measurement boundary and recheck date"]) {
-    assert.match(page, new RegExp(phrase));
-  }
-  assert.match(page, /No recommendation, lead, job, or causation result is claimed/);
-  assert.match(page, /Client approved use of Hicks Paving as the named example/);
+test("public catalog excludes the retired example", () => {
+  const catalog = read("src/data/sequoia-knowledge.catalog.json");
+  assert.doesNotMatch(catalog, /hicks|case-studies\/ai-search-readiness/i);
 });
 
 test("buyer-language panel is frozen without GEO and requires five repetitions", () => {
