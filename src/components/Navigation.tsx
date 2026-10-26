@@ -47,7 +47,6 @@ const resourceLinks = [
       { label: "AI SEO Guide", href: "/ai-website-seo-guide" },
       { label: "Sequoia Proof System", href: "/proof-system" },
       { label: "AI and Client Data Policy", href: "/ai-and-client-data-policy" },
-      { label: "Hicks Paving AI Search Snapshot", href: "/case-studies/ai-search-readiness" },
       { label: "AI SEO Agency Comparison", href: "/best-ai-seo-agencies-home-services" },
     ],
   },

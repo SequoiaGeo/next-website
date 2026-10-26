@@ -110,7 +110,7 @@ export default function AiSearchAssessmentPage() {
               <p><strong className="text-white">What you receive:</strong> Documented findings, their public sources, and a prioritized correction path. Use it with your team or existing provider, or discuss a paid engagement with Sequoia.</p>
               <p className="mt-3">Requesting the snapshot does not book a meeting. If deeper verification requires account access, we explain what is needed first.</p>
               <details className="mt-4"><summary className="cursor-pointer font-bold text-white">Delivery and follow-up</summary><div className="mt-3"><SnapshotNextSteps /></div></details>
-              <Link href="/case-studies/ai-search-readiness" className="mt-4 inline-flex font-bold text-white underline underline-offset-4">See an actual snapshot example</Link>
+              <Link href="/ai-search-methodology" className="mt-4 inline-flex font-bold text-white underline underline-offset-4">See how we assess and measure</Link>
               <p className="mt-2 text-sm">A dated diagnostic, not evidence of increased recommendations or leads.</p>
             </div>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -231,8 +231,8 @@ export default function AiSearchAssessmentPage() {
             </div>
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link href="/case-studies/ai-search-readiness" className="rounded-lg bg-[#1A5C3A] px-6 py-3 font-semibold text-white">
-              See an AI readiness case study
+            <Link href="/ai-search-methodology" className="rounded-lg bg-[#1A5C3A] px-6 py-3 font-semibold text-white">
+              Read the AI search methodology
             </Link>
             <Link href="/ai-seo-pricing" className="rounded-lg border border-[#1A5C3A] px-6 py-3 font-semibold text-[#1A5C3A]">
               Review engagement pricing

@@ -135,7 +135,7 @@ export default function Home() {
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
               <h3 className="text-xl font-bold text-[#0D2318]">Inside an AI Search Snapshot</h3>
               <SnapshotExample />
-              <Link href="/case-studies/ai-search-readiness" className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Read the actual assessment example</Link>
+              <Link href="/ai-search-methodology" className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Read the assessment methodology</Link>
             </article>
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
               <h3 className="text-xl font-bold text-[#0D2318]">Verify our work and our method</h3>

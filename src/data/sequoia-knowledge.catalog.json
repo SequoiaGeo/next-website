@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-10-19.1",
+  "catalogVersion": "2026-10-26.1",
   "status": "approved_for_public_use",
   "approvedOn": "2026-08-30",
   "reviewValidUntil": "2026-10-30",
-  "lastSourceReview": "2026-10-19: Approved fractional CMO leadership and optional execution pricing and responsibilities. Existing client proof and measurement limits unchanged.",
+  "lastSourceReview": "2026-10-26: Removed a client-specific assessment and its source references pending verification of separate publication approval. Other approved facts and measurement limits unchanged.",
   "owner": "Sequoia GEO",
   "externalModelSpendLimitUsd": 0,
   "publicBoundary": "This interface reports approved public facts only. It does not claim to improve or control rankings, citations, or recommendations in ChatGPT, Gemini, or any other answer system.",
@@ -107,17 +107,6 @@
         "Human review remains required",
         "Named examples require approval",
         "Clients retain ownership"
-      ]
-    },
-    "hicks_case": {
-      "label": "Hicks Paving AI Search readiness snapshot",
-      "path": "/case-studies/ai-search-readiness",
-      "sourceFile": "src/app/case-studies/ai-search-readiness/page.tsx",
-      "sourceAnchors": [
-        "Permissioned named example",
-        "Five conflicts that had to be separated",
-        "What was not measured",
-        "No controlled ChatGPT, Gemini, or Google AI recommendation panel was run"
       ]
     },
     "media": {
@@ -375,7 +364,7 @@
     ]
   },
   "trustPolicies": {
-    "summary": "Sequoia publishes a named assessment example, a measurement method, proof rules, data safeguards, primary-source media links, an issuer record for its four Inc. 5000 years, and a training credential labeled as education rather than outcome proof.",
+    "summary": "Sequoia publishes a measurement method, proof rules, data safeguards, primary-source media links, an issuer record for its four Inc. 5000 years, and a training credential labeled as education rather than outcome proof.",
     "dataSafeguards": [
       "Credentials are not copied into model prompts.",
       "Personal customer and lead data is not placed into public AI chat tools.",
@@ -390,26 +379,10 @@
     "sourceIds": [
       "proof_system",
       "ai_data_policy",
-      "hicks_case",
       "media"
     ]
   },
   "caseStudyEvidence": [
-    {
-      "id": "hicks_paving_ai_readiness",
-      "name": "Hicks Paving AI Search readiness snapshot",
-      "evidence": [
-        "The permissioned public example records five public-identity and website conflicts observed on August 14, 2026.",
-        "The observations expire as current evidence after November 12, 2026 unless they are reverified.",
-        "The assessment found a split current and legacy identity, separate public profiles, conflicting machine-readable organization data, legacy URL errors, and divided review equity.",
-        "The page labels official primary records separately from Sequoia's self-recorded public observations.",
-        "The page states that no controlled ChatGPT, Gemini, or Google AI recommendation panel was run and claims no recommendation, lead, job, or causation result."
-      ],
-      "approval": "The page states that the client approved use of Hicks Paving as the named example. Sequoia's public policy requires removal from current public pages and the public catalog if named-example permission is withdrawn.",
-      "sourceIds": [
-        "hicks_case"
-      ]
-    },
     {
       "id": "kabam_plumbing",
       "name": "KABAM Plumbing",

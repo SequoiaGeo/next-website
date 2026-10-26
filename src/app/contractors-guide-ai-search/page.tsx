@@ -318,10 +318,10 @@ export default function ContractorsGuideAISearchPage() {
               Request a Public-Surface Audit
             </Link>
             <Link
-              href="/case-studies/ai-search-readiness"
+              href="/ai-search-methodology"
               className="inline-flex items-center justify-center rounded-lg border border-[#C8EDD2]/30 px-7 py-4 text-base font-semibold text-white transition hover:border-[#C8EDD2]"
             >
-              Read the AI Readiness Field Note
+              Read the AI Search Methodology
             </Link>
           </div>
           <p className="mt-5 text-sm text-[#C8EDD2]/55">

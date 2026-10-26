@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 
@@ -31,23 +31,13 @@ test("public AI Search trust surfaces stay connected", () => {
   ]) {
     const source = read(surface);
     assert.match(source, /ai-and-client-data-policy/);
-    assert.match(source, /case-studies\/ai-search-readiness/);
+    assert.match(source, /ai-search-methodology/);
   }
 });
 
-test("Hicks Paving sample stays permissioned, dated, sourced, and bounded", () => {
-  const page = read("src/app/case-studies/ai-search-readiness/page.tsx");
-
-  assert.match(page, /Permissioned named example/);
-  assert.match(page, /Client approved use of Hicks Paving as the named example/);
-  assert.match(page, /August 14, 2026/);
-  assert.match(page, /historical after November 12, 2026 unless they are reverified/);
-  assert.match(page, /Official primary record/);
-  assert.match(page, /Self-recorded public observation/);
-  assert.match(page, /does not show a change in AI assistant recommendations, leads/);
-  assert.match(page, /No controlled ChatGPT, Gemini, or Google AI recommendation panel was run/);
-  assert.match(page, /not a legal opinion/);
-  assert.doesNotMatch(page, /<Testimonials|testimonial|blockquote|leaderboard|overall score/i);
+test("retired named example is absent from public routes and source", () => {
+  assert.equal(existsSync(join(root, "src/app/case-studies/ai-search-readiness/page.tsx")), false);
+  assert.doesNotMatch(readTree("src"), /hicks/i);
 });
 
 test("AI and client data policy contains the minimum safeguards", () => {
@@ -88,7 +78,6 @@ test("trust release follows Sequoia language rules", () => {
   const source = [
     read("src/components/AiSearchTrustPanel.tsx"),
     read("src/app/ai-and-client-data-policy/page.tsx"),
-    read("src/app/case-studies/ai-search-readiness/page.tsx"),
   ].join("\n");
 
   assert.doesNotMatch(source, /[–—]/);

@@ -30,7 +30,6 @@ const resources = [
   { label: "Sequoia Proof System", href: "/proof-system" },
   { label: "AI Search Measurement Method", href: "/ai-search-methodology" },
   { label: "AI and Client Data Policy", href: "/ai-and-client-data-policy" },
-  { label: "Hicks Paving AI Search Snapshot", href: "/case-studies/ai-search-readiness" },
   { label: "AI SEO Agency Comparison", href: "/best-ai-seo-agencies-home-services" },
   { label: "GitHub Tools for Home Services", href: "/github-repos-home-service-businesses" },
   { label: "HVAC Statistics 2026", href: "/hvac-statistics" },
