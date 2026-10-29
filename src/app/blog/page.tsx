@@ -14,7 +14,11 @@ export const metadata: Metadata = {
 
 import { searchEverywhereCard } from "@/data/search-everywhere-post";
 
+import { aiDiscoveryCard, recommendationCard } from "@/data/ai-discovery-posts";
+
 const posts = [
+  recommendationCard,
+  aiDiscoveryCard,
   searchEverywhereCard,
   leadershipComparisonCard,
   ...podcastPostCards,
@@ -117,15 +121,6 @@ const posts = [
     date: "April 2026",
     readTime: "14 min read",
     category: "Local SEO",
-  },
-  {
-    slug: "ai-search-replacing-google-home-services",
-    title: "How AI Search Is Replacing Google for Home Service Searches",
-    excerpt:
-      "AI search engines are changing how homeowners find contractors. Here's what HVAC, plumbing, and roofing companies need to know before 2027.",
-    date: "April 2026",
-    readTime: "9 min read",
-    category: "Generative Engine Optimization",
   },
   {
     slug: "google-removed-call-button-gbp",
