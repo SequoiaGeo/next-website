@@ -11,8 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Core pages
     { url: BASE_URL, lastModified: "2026-09-30", changeFrequency: "weekly", priority: 1.0 },
     { url: `${BASE_URL}/about-sequoia-geo`, lastModified: "2026-08-21", changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/media`, lastModified: "2026-10-09", changeFrequency: "weekly", priority: 0.6 },
-    { url: `${BASE_URL}/podcast`, lastModified: "2026-10-09", changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/media`, lastModified: "2026-10-28", changeFrequency: "weekly", priority: 0.6 },
+    { url: `${BASE_URL}/podcast`, lastModified: "2026-10-28", changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/podcast/episode-4`, lastModified: "2026-10-28", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/podcast/episode-1`, lastModified: "2026-10-09", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/podcast/episode-2`, lastModified: "2026-10-09", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/podcast/episode-3`, lastModified: "2026-10-09", changeFrequency: "monthly", priority: 0.6 },

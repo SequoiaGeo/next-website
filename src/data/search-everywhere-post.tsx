@@ -3,15 +3,17 @@ export const searchEverywhereCard = {
   slug: searchEverywhereSlug,
   title: "Search Everywhere Optimization for Home-Service Businesses",
   excerpt: "How we turn real service records into customer answers, connect search and AI visibility, and measure the steps toward inquiries and booked jobs.",
-  date: "October 22, 2026",
-  readTime: "7 min read",
+  date: "Updated October 29, 2026",
+  readTime: "9 min read",
   category: "Search Strategy",
 };
 export const searchEverywherePost = {
   title: searchEverywhereCard.title,
   description: "What search everywhere optimization means for home-service businesses, where to focus, and how to measure visibility, inquiries and booked jobs.",
-  date: searchEverywhereCard.date,
+  date: "October 22, 2026",
   dateISO: "2026-10-22",
+  modifiedDate: "October 29, 2026",
+  modifiedDateISO: "2026-10-29",
   readTime: searchEverywhereCard.readTime,
   category: searchEverywhereCard.category,
   content: <>
@@ -28,6 +30,13 @@ export const searchEverywherePost = {
 <p>This is a marketing framework, not an official renaming of SEO. It also does not create an obligation to use every platform.</p>
 <p>Google says the established SEO practices remain relevant for its AI Overviews and AI Mode, with no additional technical requirements or special optimizations necessary. Other AI services have their own systems. The practical foundation is still useful content, accessible pages and accurate information. <a href="https://developers.google.com/search/docs/appearance/ai-features">Google&apos;s AI-search guidance</a></p>
 
+<h2>One customer journey can cross several channels</h2>
+<p>A homeowner might ask AI what causes an AC shutdown, compare companies in Google Maps, read a job example on your website and call directly from a business listing. This is an illustrative journey, not an attribution record from a particular customer.</p>
+<p>In <a href="https://www.brightlocal.com/research/consumer-search-behavior-channels/">BrightLocal&apos;s July 2026 survey</a> of 1,227 US consumers who recently searched for a local business, 75% used multiple channels in their most recent search. The survey covers local businesses broadly, not just contractors, and measures reported behavior.</p>
+<p>This is why we treat AI, Google, Maps and reviews as connected parts of discovery. Our <a href="/blog/ai-search-replacing-google-home-services">updated home-service discovery guide</a> explains what that means for SEO priorities.</p>
+<h2>Check whether AI knows you or recommends you</h2>
+<p>A branded question such as &ldquo;Does Example Plumbing install water heaters?&rdquo; tests recognition. An unbranded question such as &ldquo;Who should I hire to replace a water heater in [city]?&rdquo; tests selection. These are illustrative prompts, not measured homeowner search demand.</p>
+<p>Keep those tests separate, repeat them under documented conditions and preserve the dates, platform, location and sources. A correct company description is not proof that you appear on a service shortlist. See <a href="/blog/chatgpt-knows-your-company-does-it-recommend-you">ChatGPT Knows Your Company. Does It Recommend You?</a> for the test procedure.</p>
 <h2>How we have applied this in our client work</h2>
 <h3>Amazing Air: turn service records into answers customers need</h3>
 <p>For Amazing Air, we published five distinct articles based on anonymized service records. They covered drainage problems, a condensate pump repair, a new-homeowner evaluation, a ductwork estimate and an indoor-coil replacement estimate.</p>
@@ -58,6 +67,7 @@ export const searchEverywherePost = {
 <p>A larger audience is useful when it creates opportunities with the right customers. Your reporting should show the stages separately.</p>
 <div className="my-6 overflow-x-auto"><table className="w-full min-w-[480px] border-collapse text-left text-base"><thead><tr><th scope="col" className="border-b border-gray-300 p-3 align-top">Stage</th><th scope="col" className="border-b border-gray-300 p-3 align-top">What to examine</th></tr></thead><tbody>
 <tr><td className="border-b border-gray-200 p-3 align-top">Visibility</td><td className="border-b border-gray-200 p-3 align-top">Relevant search impressions, listing visibility, video reach and mentions or citations within a defined AI sample.</td></tr>
+<tr><td className="border-b border-gray-200 p-3 align-top">Recommendations</td><td className="border-b border-gray-200 p-3 align-top">Explicit provider suggestions, recorded separately from a name mention or source citation, with the test question, dates and number of observations.</td></tr>
 <tr><td className="border-b border-gray-200 p-3 align-top">Website visits</td><td className="border-b border-gray-200 p-3 align-top">Organic clicks and visits attributed to listings, video links or identifiable AI referrals.</td></tr>
 <tr><td className="border-b border-gray-200 p-3 align-top">Inquiries</td><td className="border-b border-gray-200 p-3 align-top">Actual calls and accepted forms, screened for service, location, spam and duplicates.</td></tr>
 <tr><td className="border-b border-gray-200 p-3 align-top">Booked work</td><td className="border-b border-gray-200 p-3 align-top">Which inquiries became bookings, reconciled with the team&apos;s records.</td></tr>
@@ -66,8 +76,9 @@ export const searchEverywherePost = {
 <p>AI tracking tools measure the prompts and platforms they sample, not every private conversation. Referral analytics captures identifiable visits, not all AI influence. Customer feedback can add context, but it is not perfect attribution.</p>
 <p>Marketing should be accountable for relevant demand and a working inquiry path. Answering calls, scheduling and closing the work also require coordination with the business. Record those stages so the owner can see where attention is needed.</p>
 
+<p><a href="https://blogs.bing.com/webmaster/2026/10/introducing-topics-portfolio-beta-in-ai-performance/">Bing&apos;s October 13 Topics Portfolio beta</a> can help eligible sites examine citation topics. Its estimates are directional reporting signals, not homeowner search volume or booked jobs. Availability depends on sufficient data. Our <a href="/ai-search-methodology">measurement methodology</a> keeps those distinctions explicit.</p>
 <h2>A focused way to begin</h2>
-<p>Choose one priority service. Review its website page, Business Profile information and contact path. Find one completed job that demonstrates your expertise, confirm the facts and permissions, and turn it into a useful customer story.</p>
+<p>Choose one priority service. Review its website page, Business Profile information and contact path. Compare important listings for factual conflicts, check that service descriptions match the operation and test phone, form and booking destinations on mobile. Find one completed job that demonstrates your expertise, confirm the facts and permissions, and turn it into a useful customer story.</p>
 <p>Then select one supporting format and record the starting point. Look for relevant visits and inquiries over a defined period before expanding the plan.</p>
 <p>You can use AI to organize notes or prepare an outline. A person who understands the work still needs to check the facts and approve what is published. Google specifically emphasizes accuracy, relevance and added value in AI-assisted content. <a href="https://developers.google.com/search/docs/fundamentals/using-gen-ai-content">Google&apos;s content guidance</a></p>
 <p>Search everywhere optimization earns its place when it helps the right customer make a better-informed decision and reach your team. Rankings, leads and AI recommendations cannot be guaranteed.</p>

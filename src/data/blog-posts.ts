@@ -8,7 +8,8 @@ export interface BlogPostMeta {
 }
 
 export const blogPostsMeta: BlogPostMeta[] = [
-  { slug: "search-everywhere-optimization-home-services", dateISO: "2026-10-22" },
+  { slug: "chatgpt-knows-your-company-does-it-recommend-you", dateISO: "2026-10-29" },
+  { slug: "search-everywhere-optimization-home-services", dateISO: "2026-10-22", modifiedDateISO: "2026-10-29" },
   { slug: "geo-vs-seo-home-service-podcast", dateISO: "2026-10-09" },
   { slug: "same-prompt-different-hvac-ai-recommendations", dateISO: "2026-10-09" },
   { slug: "hvac-website-trust-ai-search-shaurya-jain", dateISO: "2026-10-09" },
@@ -33,5 +34,5 @@ export const blogPostsMeta: BlogPostMeta[] = [
   { slug: "gbp-utm-tracking-ga4", dateISO: "2026-04-18" },
   { slug: "dead-phone-number-lsa", dateISO: "2026-04-14" },
   { slug: "three-agencies-one-report", dateISO: "2026-04-07" },
-  { slug: "ai-search-replacing-google-home-services", dateISO: "2026-04-10" },
+  { slug: "ai-search-replacing-google-home-services", dateISO: "2026-04-10", modifiedDateISO: "2026-10-29" },
 ];
