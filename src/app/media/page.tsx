@@ -72,7 +72,7 @@ export default function MediaPage() {
           <h2 className="text-3xl font-extrabold text-[#0D2318]">A Chat with Chat</h2>
           <p className="mt-4 max-w-3xl text-gray-600">Aaron Husak and ChatGPT explore AI search and marketing for local home service businesses.</p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            {podcastVideos.map(video => <Link key={video.slug} href={`/podcast/${video.slug}`} className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+            {[...podcastVideos].sort((a, b) => b.date.localeCompare(a.date)).map(video => <Link key={video.slug} href={`/podcast/${video.slug}`} className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={`https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`} alt={video.title} width="480" height="360" loading="lazy" className="aspect-video w-full object-cover" />
               <div className="p-6"><p className="font-semibold text-[#1A5C3A]">{video.label} · {video.runtime}</p><h3 className="mt-3 text-xl font-bold text-[#0D2318]">{video.title}</h3><p className="mt-4 leading-relaxed text-gray-600">{video.description}</p><span className="mt-5 inline-block font-semibold text-[#1A5C3A] underline underline-offset-4">Watch and read the full transcript</span></div>
