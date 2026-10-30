@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import ChromeGate from "@/components/ChromeGate";
-import AiReferrerTracker from "@/components/AiReferrerTracker";
-import OaiqPixel from "@/components/OaiqPixel";
-import SitewideIntentTracker from "@/components/SitewideIntentTracker";
-import CampaignAttributionTracker from "@/components/CampaignAttributionTracker";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import SequoiaKnowledgeInterface from "@/components/SequoiaKnowledgeInterface";
 import { podcastAppearances, tradeMedia } from "@/data/media";
@@ -166,10 +161,6 @@ export default function RootLayout({
       <head>
         <link rel="preload" href="/fonts/sequoia-fraunces-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/sequoia-inter-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        {/* Preconnect to GA4/GTM to cut 100 to 200ms from DNS+TLS on first load */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -195,79 +186,7 @@ export default function RootLayout({
             landing pages that ship their own StickyCallBar. */}
         <StickyMobileCTA />
 
-        {/* GA4 Consent Mode v2: analytics_storage granted by default (B2B site,
-            low traffic, need every data point). Ad storage stays denied until
-            cookie consent. CookieBanner upgrades ad_storage on acceptance. */}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <Script
-              id="ga4-consent-defaults"
-              strategy="beforeInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});`,
-              }}
-            />
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script
-              id="google-analytics"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_ID}');gtag('config','AW-1042937332');`,
-              }}
-            />
-          </>
-        )}
-
-        {/* Microsoft Clarity, loads for everyone, same posture as GA4 above
-            (analytics on by default for a US/B2B audience; the banner still
-            governs ad_storage). Previously gated behind cookie-accept, which
-            left Clarity recording ~nothing and CRO decisions blind. */}
-        {process.env.NEXT_PUBLIC_CLARITY_ID && (
-          <Script
-            id="ms-clarity"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","${process.env.NEXT_PUBLIC_CLARITY_ID}");`,
-            }}
-          />
-        )}
-
-        {/* Meta Pixel, dataset 1394557232154617 ("AI Automation Cold" in Events Manager).
-            Same default-on posture as GA4/Clarity above. Base PageView on every page;
-            feeds retargeting for the call campaign and the future CAPI/Conversion Leads setup. */}
-        <Script
-          id="meta-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1394557232154617');fbq('track','PageView');`,
-          }}
-        />
-        <noscript>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            alt=""
-            src="https://www.facebook.com/tr?id=1394557232154617&ev=PageView&noscript=1"
-          />
-        </noscript>
-
-        {/* OpenAI Ads (ChatGPT) pixel for the chatgpt-test-2026-07 campaign.
-            Inert until the base snippet from the OpenAI console is pasted into
-            OaiqPixel.tsx. lead_created fires from trackCapturedLead in lib/analytics. */}
-        <OaiqPixel />
-
-        {/* Cookie consent banner, upgrades ad consent on acceptance */}
-        <CookieBanner clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
-
-        {/* AI referrer tracker: fires ai_referrer_seen GA4 event when visitor arrives from a known AI engine */}
-        {process.env.NEXT_PUBLIC_GA_ID && <AiReferrerTracker />}
-        {process.env.NEXT_PUBLIC_GA_ID && <SitewideIntentTracker />}
-        <CampaignAttributionTracker />
+        <CookieBanner gaId={process.env.NEXT_PUBLIC_GA_ID} clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
         <SequoiaKnowledgeInterface />
 
       </body>
