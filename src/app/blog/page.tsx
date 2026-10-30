@@ -1,3 +1,4 @@
+import { geoGuideCards } from "@/data/geo-guide-series";
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
 import { podcastPostCards } from "@/data/podcast-posts";
@@ -17,6 +18,7 @@ import { searchEverywhereCard } from "@/data/search-everywhere-post";
 import { aiDiscoveryCard, recommendationCard } from "@/data/ai-discovery-posts";
 
 const posts = [
+  ...geoGuideCards,
   recommendationCard,
   aiDiscoveryCard,
   searchEverywhereCard,
