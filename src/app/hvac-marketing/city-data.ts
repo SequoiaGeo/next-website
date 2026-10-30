@@ -165,9 +165,9 @@ export const cities: CityData[] = [
     climateDetail:
       "Wichita runs 95 to 105°F in summer with real humidity and -10 to 20°F cold snaps in winter. It is a market that needs both AC and a reliable furnace, and homeowners know it. Tornado season creates additional HVAC replacement demand from storm damage to ductwork, outdoor units, and rooftop equipment. Wichita homeowners cannot treat HVAC as optional the way homeowners in mild markets can.",
     housingNote:
-      "Wichita grew heavily in the 1950s through 1970s as an aviation manufacturing center (Spirit AeroSystems, Textron Aviation, Cessna are headquartered here). The result is a large inventory of older single-family homes where replacement demand is significant and steady. One of the most affordable major cities in the US means homeowners have budget for professional service rather than deferred maintenance.",
+      "Wichita grew heavily in the 1950s through 1970s as an aviation manufacturing center (Spirit AeroSystems, Textron Aviation, Cessna are headquartered here). The result is a large inventory of older single-family homes where replacement demand is significant and steady. Service pages should distinguish repair, replacement and maintenance needs rather than infer a homeowner budget from city-level housing costs.",
     marketOpportunity:
-      "National agencies almost entirely ignore Wichita. The combination of an extreme climate, older housing stock, affordable market, stable industrial employment, and near-zero agency competition for local SEO authority in the contractor marketing niche makes this a high-return market to enter before competitors discover it.",
+      "Wichita service content should explain the equipment, housing types and seasonal work the contractor actually handles. Review current local search results and inquiry records before deciding where a marketing investment is justified.",
     agencyLandscape:
       "Wichita has almost no contractors working with agencies that have specific HVAC marketing depth. The dominant pattern is either national agencies treating Wichita as an afterthought or local generalist agencies with no trade-specific methodology.",
     keyStats: [

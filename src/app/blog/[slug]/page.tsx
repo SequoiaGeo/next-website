@@ -428,6 +428,7 @@ const posts: Record<string, Post> = {
           propose anything. It is free, it takes about 15 minutes of your time to start, and you keep the
           findings whether or not we ever work together.
         </p>
+<p className="mt-5 leading-relaxed">Use the call-routing worksheet to <Link href="/resources/where-are-my-calls-going" className="font-semibold underline underline-offset-4">trace your call routing and lead records</Link> before comparing platforms or counting forwarded calls as new inquiries.</p>
         <div className="mt-8">
           <Link
             href="/audit"
@@ -1092,10 +1093,8 @@ const posts: Record<string, Post> = {
         </p>
         <p>
           Organic SEO compounds over time. A blog post or service page built in November is gaining
-          authority by March, when replacement season starts. A Google Ads campaign paused for three
-          months loses its Quality Score and bidding efficiency. The companies that maintain consistent
-          marketing activity through the off-season own the spring with less competition and better
-          ad performance.
+          authority by March, when replacement season starts. Before restarting seasonal campaigns, review current demand, tracking, budgets and bidding
+          settings. Allow for changed market conditions rather than assuming previous results will resume.
         </p>
 
         <h2>Measuring What Actually Matters</h2>
@@ -1305,6 +1304,7 @@ const posts: Record<string, Post> = {
         <p>
           Pricing typically falls into three ranges based on time commitment and scope:
         </p>
+<p className="mt-5 leading-relaxed">These are illustrative engagement categories, not a current Sequoia quote. Review <Link href="/ai-seo-pricing" className="font-semibold underline underline-offset-4">current Sequoia leadership and execution pricing</Link> for starting fees, responsibilities and terms.</p>
 
         <h3>$2,000 to $4,000/month: Advisory level</h3>
         <p>
@@ -1374,7 +1374,7 @@ const posts: Record<string, Post> = {
           A Fractional CMO engagement works best for home service companies doing $2M to $15M revenue
           that have outgrown founder-led marketing but aren&rsquo;t yet at the scale to justify a full-time
           marketing executive. If you&rsquo;re spending more than $5,000/month on marketing and don&rsquo;t
-          have clear attribution to revenue, the engagement will almost certainly pay for itself.
+          have clear attribution to revenue, the case depends on the decisions that need leadership, implementation capacity and the cost of the engagement.
         </p>
         <p>
           If you&rsquo;re under $1M revenue and still validating what works, you don&rsquo;t need a
@@ -4568,15 +4568,16 @@ const posts: Record<string, Post> = {
         <p>
           Track GBP traffic volume over time alongside your rankings. If your GBP traffic drops, check
           whether your ranking in the local Map Pack has declined. The correlation between GBP traffic and
-          Map Pack position is usually very tight. A traffic drop that matches a ranking drop confirms the
-          ranking change is the cause.
+          Map Pack position is usually very tight. A matching decline makes ranking visibility one hypothesis to investigate. Compare the same
+          dates, demand, profile interactions, tagged visits and qualified inquiries before assigning a cause.
         </p>
         <p>
-          If your GBP tracking reveals strong traffic but weak conversions, the problem is on your website
-          not your listing. If it reveals low traffic despite good rankings, the problem is click-through
-          rate from the listing itself. UTM tracking pinpoints which part of the funnel needs attention.
-          That is the value of building this infrastructure before you need it.
+          Strong tagged traffic with few recorded actions can prompt a review of website paths,
+          tracking and inquiry handling. Low traffic can reflect demand, listing engagement or attribution
+          gaps. Tagged website visits do not measure phone-button clicks or completed calls. Use the
+          pattern to choose the next check rather than declare a cause.
         </p>
+<p className="mt-5 leading-relaxed">Then <Link href="/blog/how-to-use-geo-tools-contractors" className="font-semibold underline underline-offset-4">connect visibility reports to inquiries and bookings</Link> so each report has a defined role in the decision.</p>
         <p>
           Sequoia GEO helps home service contractors build measurement systems that connect GBP performance,
           local SEO rankings, and actual revenue. If you want to understand exactly what your marketing is

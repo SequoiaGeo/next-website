@@ -4,37 +4,19 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Contractors: Recover the Leads You're Losing",
+  title: "AI Automation for Contractors: Follow-Up and Intake | Sequoia GEO",
   description:
-    "Automate missed-call follow-up, review requests, and unsold estimate rehash for your HVAC, plumbing, or roofing company. Recover revenue that slips through the cracks every month.",
+    "Plan missed-call follow-up, estimate reminders and intake workflows around supported tools, human handoffs and measurable inquiries and booked jobs.",
   alternates: { canonical: "https://www.sequoiageo.com/ai-automation" },
 };
 
 const automations = [
-  {
-    title: "Missed Call Follow-Up",
-    body: "When a call goes unanswered, an automated text goes out within 60 seconds. \u201cHey, we just missed your call, is there anything we can help with?\u201d Most customers respond. Most competitors never call back.",
-  },
-  {
-    title: "Post-Job Review Requests",
-    body: "A text goes out 2\u20134 hours after job completion, when satisfaction is highest. Personalized to the job type. Includes a direct link to your Google review page. No one has to remember to do it.",
-  },
-  {
-    title: "Unsold Estimate Rehash",
-    body: "Customers who received an estimate and went silent get a follow-up sequence over 7 to 14 days. Not pushy. Just present. A meaningful percentage of these come back and book, recovering revenue that would otherwise be lost.",
-  },
-  {
-    title: "Appointment Confirmations and Reminders",
-    body: "Automated confirmations at booking, reminders the day before, and day-of notifications. Reduces no-shows and keeps your schedule full.",
-  },
-  {
-    title: "After-Hours Intake",
-    body: "Your chat widget or SMS number collects name, address, and service needed after hours. The lead is in your CRM when the office opens, ready to book.",
-  },
-  {
-    title: "Re-engagement Campaigns",
-    body: "Customers who haven\u2019t booked in 12\u201318 months get a seasonal outreach. Tune-up season. Storm preparedness. Service plan renewal. Automated, personalized, and tied to your service history.",
-  },
+  { title: "Missed Call Follow-Up", body: "An eligible unanswered call can trigger an approved text through the connected phone system. We agree on response targets, consent rules, duplicate handling and the person responsible for replies." },
+  { title: "Post-Job Review Requests", body: "A completed-job record can trigger a review request on an agreed schedule. The scope defines eligible contacts, opt-outs, message content and how delivery failures are reviewed." },
+  { title: "Unsold Estimate Follow-Up", body: "Use approved reminders for eligible estimates that remain open. Stop when a contact replies, books or opts out. Measure responses and booked jobs rather than assuming every reminder recovers a customer." },
+  { title: "Appointment Confirmations and Reminders", body: "Send confirmations and reminders from verified appointment records. Define what happens when a customer cancels, reschedules or needs a person to respond." },
+  { title: "After-Hours Intake", body: "Collect the agreed service-request details through supported channels. Confirm where requests arrive, who reviews them and what customers should do when urgent help is needed." },
+  { title: "Re-engagement Campaigns", body: "Prepare relevant seasonal outreach from eligible service-history records. Contact eligibility, approvals, sending limits and follow-up ownership are part of the scope." },
 ];
 
 export default function AiAutomationPage() {
@@ -61,9 +43,8 @@ export default function AiAutomationPage() {
               The jobs your team doesn&rsquo;t have time to do, automated.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              Every contractor has the same list: follow up with missed calls, ask for reviews after the
-              job, re-engage customers who got an estimate and went silent. Nobody does it consistently.
-              AI automation does.
+              Missed calls, review requests and open estimates compete for your team&rsquo;s attention.
+              Agreed workflows can handle routine steps while your team handles decisions and exceptions.
             </p>
           </div>
         </div>
@@ -74,18 +55,14 @@ export default function AiAutomationPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-extrabold tracking-tight text-[#1a1a1a] sm:text-4xl">
-              Manual follow-up doesn&rsquo;t happen at scale.
+              Follow-up needs an owner and a defined process.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
               Your CSRs are busy booking calls. Your techs are running jobs. Your office staff is managing
-              schedules and handling inbound volume. Nobody has bandwidth to chase missed calls, unsold
-              estimates, and review requests as part of their daily operations. The customer who called at
-              7 PM and went to voicemail doesn&rsquo;t get called back until the next morning, if at all.
-              The customer who got a quote three weeks ago and went quiet never hears from you again. The
-              job you completed yesterday doesn&rsquo;t get a review request until someone remembers to
-              send one. AI automation is the only way to save time on these follow-ups while driving
-              increased efficiency across the entire customer lifecycle. This is not a people problem.
-              It&rsquo;s a systems problem.
+              schedules and handling inbound volume. Missed calls, unsold estimates and review requests can fall between those responsibilities.
+              Before automating, establish where each request arrives, who follows up and which records
+              show whether the work happened. Automation can support a repeatable process when the connected data and handoffs are reliable.
+              Start by <Link href="/resources/where-are-my-calls-going" className="underline">checking where calls arrive and who handles them</Link>.
             </p>
           </div>
         </div>
@@ -100,27 +77,27 @@ export default function AiAutomationPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               AI automation for home service businesses is not about replacing your team. It handles
-              the follow-up tasks that require consistent execution at scale, things that are simple
-              in concept but impossible to do manually at volume across every customer, every day.
+              routine follow-up steps within defined rules. Your team remains responsible for
+              customer decisions, approvals and exceptions.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {[
               {
-                title: "Faster Response Times for Every Inquiry",
-                body: "When a potential customer calls and hits voicemail, every minute without a response increases the chance they call a competitor. AI automation sends a text within 60 seconds of a missed call, opening the conversation before anyone else gets a chance. Response time is one of the most important factors in converting home service inquiries into booked jobs, and AI makes it consistent across every call, every day, including nights and weekends.",
+                title: "Missed-Call Response Targets",
+                body: "A connected phone system can trigger follow-up after an eligible missed call. Response targets depend on the integration and delivery service. We test routing, duplicate prevention and escalation to a person before release.",
               },
               {
-                title: "Systematic Review Generation After Every Job",
-                body: "Online reviews are the single most influential factor for new customers choosing between home service companies in local search. A review generation system that works automatically after every completed job removes the human dependency entirely. The right timing and personalized message get significantly higher response rates than generic requests. Over a decade of operating home services taught me that the companies with the most reviews almost never ask manually, they have a system.",
+                title: "Review Requests From Completed-Job Records",
+                body: "Use verified job status to schedule relevant requests without relying on someone to remember each one. Your team approves the message and contact rules, monitors delivery issues and handles replies. A sent request does not guarantee a review.",
               },
               {
-                title: "Revenue Recovery from Unsold Estimates",
-                body: "Every home service company has a backlog of estimates that were requested, quoted, and then went silent. These represent real revenue that your business already spent time and resources to generate. An automated follow-up sequence over 7 to 14 days, non-pushy, timed appropriately, recovers a meaningful percentage of those customers. Building relationships with past estimate contacts through thoughtful automation is one of the highest-ROI activities available to a growing home service business.",
+                title: "Follow-Up on Open Estimates",
+                body: "Define which estimates are eligible, when reminders stop and who handles questions. Track replies, qualified inquiries and booked jobs against the original estimate records. The result depends on the offer, contact eligibility and follow-up handling.",
               },
               {
                 title: "Re-engagement Campaigns for Repeat Business",
-                body: "Repeat customers are your most profitable customers. They convert at higher rates, have higher average tickets, and generate more referrals. AI automation re-engages past customers with seasonal outreach before they search for a competitor. Tune-up season reminders, service plan renewals, and storm preparedness messages sent automatically to your customer list create a repeat customer pipeline that generates revenue without paid advertising. The key is personalization, messages that reference their service history feel different than bulk marketing emails.",
+                body: "Use relevant service history for seasonal reminders and renewal conversations. Agree on eligible contacts, approved messages and opt-out handling. Evaluate the campaign through qualified inquiries and bookings, with sending and software costs reported separately.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -199,20 +176,19 @@ export default function AiAutomationPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              It runs through the tools you already have.
+              Confirm the connections before the build.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[#C8EDD2]/80">
-              Most of these automations run through GoHighLevel, which integrates with ServiceTitan,
-              Housecall Pro, and other field service platforms. We build the custom automation workflows,
-              write the messaging, connect the integrations, and hand you something that runs without you
-              touching it. No manual updates required, the key features are configured once and execute
-              automatically every time a trigger condition is met.
+              We assess your CRM, phone system and field service software before recommending a build.
+              GoHighLevel may support parts of the workflow; ServiceTitan, Housecall Pro and other
+              connections require verification of access, supported features and any additional costs.
+              The scope defines response targets, monitoring ownership and exception handling.
             </p>
             <div className="mt-6 rounded-xl border border-white/10 bg-white/5 px-6 py-4">
               <p className="text-sm leading-relaxed text-[#C8EDD2]/70">
-                This isn&rsquo;t a separate platform you have to learn. It layers onto your existing CRM
-                and phone system. Better data informed decisions come from having every follow-up logged,
-                tracked, and reportable, not scattered across text threads and sticky notes.
+                The handoff includes operating instructions and a named owner for monitoring. For work
+                that needs reasoning or approval steps, explore <Link href="/marketing-agents" className="underline">custom agents with approval and handoff rules</Link>.
+                Connected records can improve reporting, but missing events remain measurement gaps.
               </p>
             </div>
           </div>
@@ -231,27 +207,27 @@ export default function AiAutomationPage() {
             {[
               {
                 q: "What platforms do these automations run on?",
-                a: "Most of the automations we build run through GoHighLevel, which integrates directly with ServiceTitan, Housecall Pro, and other field service management platforms. GoHighLevel handles the text messaging, email sequences, and CRM tracking. Your existing job management software remains the system of record. We build the automation workflows, write the messaging, configure the integrations, and hand you something that runs without ongoing attention. The key features are set up once and execute automatically every time a trigger condition is met, a missed call, a completed job, an unsold estimate that went cold.",
+                a: "We assess the available CRM, phone and field service connections first. GoHighLevel may support messaging and tracking, but compatibility with ServiceTitan, Housecall Pro or another platform must be verified for the requested workflow. The proposal names supported features, costs, monitoring ownership and human handoffs.",
               },
               {
                 q: "How is AI automation different from a mass email blast?",
-                a: "AI automation for home service businesses is personalized, triggered, and timed, the opposite of a bulk marketing email. A missed call follow-up goes out within 60 seconds of a specific call, addressed to that specific person. A review request references the job type completed. An unsold estimate follow-up references the quote that was sent. Mass email campaigns go to everyone at once with generic messaging. Triggered automation goes to the right person at the right moment in their customer journey, which is why response rates and conversion rates are meaningfully higher.",
+                a: "A triggered workflow responds to an agreed event, such as an eligible missed call or open estimate. It uses approved timing, contact rules and stop conditions. A scheduled campaign reaches a defined audience. Either approach needs relevant messaging, contact eligibility and a person responsible for replies.",
               },
               {
                 q: "Will this feel spammy to our customers?",
-                a: "Not when it is built correctly. The difference between automation that feels helpful and automation that feels intrusive is timing, tone, and relevance. A text that says 'We just missed your call, is there anything we can help with?' sent within a minute is welcome because the customer was just trying to reach you. A review request sent a few hours after a completed job, when satisfaction is highest, gets strong response rates because the timing is natural. We write the messaging to sound like it comes from your team, because it does.",
+                a: "We review timing, relevance, contact eligibility and message wording before release. Opt-outs, duplicate prevention and human replies are part of the design. The team monitors actual responses rather than assuming every automated message is welcome.",
               },
               {
                 q: "How long does setup take?",
-                a: "For most home service businesses, the core automation workflows, missed call follow-up, post-job review requests, appointment confirmations, and after-hours intake, can be built and tested within two to three weeks. More complex workflows that integrate directly with your ServiceTitan or Housecall Pro data take longer depending on the depth of integration. We document everything so your team knows what is running and can adjust messaging over time. The goal is a system your business owns, not a black box dependent on our ongoing involvement.",
+                a: "The timeline depends on access, integration support, data quality, approvals and testing. We agree on milestones after verifying those dependencies. Handoff documentation identifies who maintains the workflow and how failures or changes are handled.",
               },
               {
                 q: "What makes AI automation worth the investment for a home service company?",
-                a: "The case is measurable: recovered missed calls, re-engaged unsold estimates, and consistent review requests can all be tracked to calls and jobs booked. Missed-call follow-up and unsold-estimate recovery work opportunities you already paid to generate. Review requests can strengthen the public proof customers see. Each workflow should be judged on accepted leads and jobs booked, not whether the automation ran.",
+                a: "Evaluate each workflow using matched inquiry and booking records where available. A delivered message or completed automation is not a booked job. Software, sending and maintenance costs belong in the comparison.",
               },
               {
                 q: "Do I need a large team to make this work?",
-                a: "No. AI automation is specifically designed for home service businesses where the team is focused on running jobs, not managing follow-up sequences. The automations run without anyone triggering them manually. A CSR still handles calls that come in. Your dispatch team still manages the schedule. The automation handles everything in between, the touchpoints between a lead and a booking, between a completed job and a review, between a lapsed customer and a returning appointment. Business owners who implement these systems typically report that their team feels less stretched, not more, because the follow-up work happens automatically.",
+                a: "A smaller team can use agreed workflows for routine steps, but someone must own replies, escalations, monitoring and updates. We define those responsibilities before launch so automation supports the team rather than leaving exceptions unattended.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -270,10 +246,9 @@ export default function AiAutomationPage() {
             Want to see what&rsquo;s possible for your specific setup?
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            The first conversation is free. Bring your current stack and we&rsquo;ll tell you exactly
-            what can be automated and what the lift looks like. Every workflow we build is designed to
-            reduce risk of losing leads to faster competitors and give you cleaner data for decision
-            making about where your revenue is actually coming from.
+            The first conversation is free. Bring your current tools and follow-up process.
+            We&rsquo;ll identify what needs verification, where automation may help and what a defined
+            implementation would require. Outcomes are measured in qualified inquiries and booked jobs.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link

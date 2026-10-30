@@ -57,6 +57,7 @@ export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
           <a href={`/transcripts/${video.slug}.txt`} download className="mt-4 inline-block font-semibold text-[#1A5C3A] underline underline-offset-4">Download the text transcript</a>
           <div className="mt-8 space-y-6">{transcript.map(cue => <p key={cue.seconds} className="leading-8 text-gray-800"><a href={`https://www.youtube.com/watch?v=${video.videoId}&t=${cue.seconds}s`} target="_blank" rel="noopener noreferrer" aria-label={`Watch at ${cue.timestamp}`} className="mr-3 inline-block rounded bg-[#edf5ef] px-2 font-mono text-sm font-semibold text-[#1A5C3A]">{cue.timestamp}</a>{cue.text}</p>)}</div>
         </section>
+        {video.slug === "episode-4" && <p className="mt-8 text-lg text-gray-700">For a written reference, <Link href="/ai-website-seo-guide" className="font-semibold text-[#1A5C3A] underline underline-offset-4">read the AI website and search guide</Link>.</p>}
         <nav aria-label="More episodes" className="mt-12 border-t border-gray-200 pt-8"><h2 className="text-2xl font-bold text-[#0D2318]">More from Sequoia GEO</h2><ul className="mt-5 space-y-4">{podcastVideos.filter(item => item.slug !== video.slug).map(item => <li key={item.slug}><Link className="font-semibold text-[#1A5C3A] underline underline-offset-4" href={`/podcast/${item.slug}`}>{item.title}</Link></li>)}</ul></nav>
       </div>
     </section>

@@ -102,9 +102,8 @@ export default function MarketingLeakCalculator() {
     };
   }, [monthlySpend, monthlyCalls, bookingRate, avgTicket]);
 
-  const leakSeverity = bookingRate < 35 ? "critical" : bookingRate < 50 ? "moderate" : "good";
-  const leakColor = leakSeverity === "critical" ? "#ef4444" : leakSeverity === "moderate" ? "#f59e0b" : "#22c55e";
-  const leakLabel = leakSeverity === "critical" ? "Significant leak" : leakSeverity === "moderate" ? "Room to improve" : "Above average";
+  const leakColor = "#1A5C3A";
+  const leakLabel = "Your input";
 
   // Honest capture: success UI and the lead event fire only when the server
   // confirmed the capture. A failed POST used to show "check your email" and
@@ -161,12 +160,11 @@ export default function MarketingLeakCalculator() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-14 sm:py-16">
           <p className="section-overline text-[#3A9E6A] mb-4">Free Tool</p>
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-[1.08] max-w-2xl">
-            How much revenue is leaking from{" "}
+            What could a different booking rate change in{" "}
             <span className="text-[#3A9E6A]">your marketing pipeline?</span>
           </h1>
           <p className="mt-4 text-base text-[#C8EDD2]/60 max-w-xl leading-relaxed">
-            Enter your numbers. The calculator shows you what your marketing is actually producing
-            versus what it could be producing, in dollars.
+            Compare illustrative scenarios based on your inputs. Use qualified service inquiries and bookings from the same period, excluding spam, duplicate calls and existing-job updates. A modeled booking is not a completed job or a forecast.
           </p>
         </div>
       </div>
@@ -192,7 +190,7 @@ export default function MarketingLeakCalculator() {
               format={(v) => formatDollar(v)}
             />
             <Slider
-              label="Monthly inbound calls from marketing"
+              label="Monthly qualified inquiries from marketing"
               value={monthlyCalls}
               min={10}
               max={500}
@@ -226,7 +224,7 @@ export default function MarketingLeakCalculator() {
               />
               <div className="flex justify-between text-xs text-gray-500">
                 <span>10%</span>
-                <span className="text-gray-500">Industry avg: 42%</span>
+                <span className="text-gray-500">Comparison: 42%</span>
                 <span>90%</span>
               </div>
             </div>
@@ -242,12 +240,12 @@ export default function MarketingLeakCalculator() {
 
             {/* Industry context */}
             <div className="rounded-xl bg-[#fafaf8] border border-gray-100 p-4">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Industry benchmarks</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Illustrative comparison rates</p>
               <div className="grid grid-cols-3 gap-3 text-center">
                 {[
-                  { label: "Average", value: "42%" },
-                  { label: "Good", value: "55%" },
-                  { label: "Top 10%", value: "65%+" },
+                  { label: "Scenario A", value: "42%" },
+                  { label: "Scenario B", value: "55%" },
+                  { label: "Scenario C", value: "65%" },
                 ].map((b) => (
                   <div key={b.label}>
                     <p className="text-base font-extrabold text-[#1a1a1a]">{b.value}</p>
@@ -263,11 +261,11 @@ export default function MarketingLeakCalculator() {
 
             {/* Current state */}
             <div className="rounded-2xl bg-[#1a1a1a] p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Where you are now</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Based on your inputs</p>
               <div className="grid grid-cols-2 gap-5">
                 <div>
                   <p className="text-3xl font-extrabold text-white">{formatDollar(results.currentRevenue)}</p>
-                  <p className="text-xs text-gray-500 mt-1">Monthly revenue from marketing</p>
+                  <p className="text-xs text-gray-500 mt-1">Modeled monthly booked value</p>
                 </div>
                 <div>
                   <p className="text-3xl font-extrabold text-white">{results.currentJobs}</p>
@@ -279,19 +277,19 @@ export default function MarketingLeakCalculator() {
                 </div>
                 <div>
                   <p className="text-3xl font-extrabold text-white">{results.revenuePerDollarSpent.toFixed(1)}x</p>
-                  <p className="text-xs text-gray-500 mt-1">Revenue per $1 spent</p>
+                  <p className="text-xs text-gray-500 mt-1">Modeled booked value per $1 spent</p>
                 </div>
               </div>
             </div>
 
             {/* What it could be */}
             <div className="rounded-2xl border border-gray-200 bg-white p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">What the same spend could produce</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Illustrative comparison scenarios</p>
               <div className="space-y-3">
                 {[
-                  { label: "At industry average (42%)", value: results.industryAvgRevenue, highlight: false },
-                  { label: "At good performer (55%)", value: results.goodRevenue, highlight: false },
-                  { label: "At top 10% (65%)", value: results.topRevenue, highlight: true },
+                  { label: "At comparison rate A (42%)", value: results.industryAvgRevenue, highlight: false },
+                  { label: "At comparison rate B (55%)", value: results.goodRevenue, highlight: false },
+                  { label: "At comparison rate C (65%)", value: results.topRevenue, highlight: true },
                 ].map((row) => (
                   <div key={row.label} className={`flex items-center justify-between rounded-lg px-4 py-3 ${row.highlight ? "bg-[#C8EDD2]" : "bg-gray-50"}`}>
                     <span className={`text-sm ${row.highlight ? "font-semibold text-[#0D2318]" : "text-gray-600"}`}>{row.label}</span>
@@ -304,14 +302,15 @@ export default function MarketingLeakCalculator() {
             {/* The gap */}
             {results.annualGap > 0 && (
               <div className="rounded-2xl bg-[#0D2318] p-7">
-                <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A]/60 mb-2">Annual revenue gap</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A]/60 mb-2">Modeled annual difference</p>
                 <p className="text-5xl font-extrabold text-[#3A9E6A]">{formatCurrency(results.annualGap)}</p>
                 <p className="mt-2 text-sm text-[#C8EDD2]/60 leading-relaxed">
-                  That&rsquo;s the difference between your current booking rate and what a top-performing
-                  operation produces from the same marketing spend.
+                  This compares your inputs with a 65% booking-rate assumption while holding inquiry volume
+                  and average job value constant. The comparison rates are examples, not industry benchmarks.
                 </p>
                 <p className="mt-3 text-sm text-[#C8EDD2]/40">
-                  This doesn&rsquo;t require more marketing spend. It requires fixing what&rsquo;s leaking.
+                  Investigate call handling, qualification and delivery capacity before assuming this increase
+                  is achievable. The result is a scenario, not a measured loss or guaranteed recovery.
                 </p>
               </div>
             )}
@@ -341,7 +340,7 @@ export default function MarketingLeakCalculator() {
                 <div className="rounded-2xl border border-gray-200 bg-white p-6">
                   <p className="text-base font-semibold text-[#1a1a1a] mb-1">Want this breakdown emailed to you?</p>
                   <p className="text-sm text-gray-500 mb-4">
-                    I&rsquo;ll send your full breakdown plus a short note on the fastest way to close that gap. No spam, no obligation.
+                    I&rsquo;ll send your scenario breakdown and a note on the assumptions worth reviewing. No obligation.
                   </p>
                   <form onSubmit={handleCapture} className="space-y-3">
                     {/* Honeypot: hidden from real users (off-screen, no tab stop,
@@ -409,7 +408,7 @@ export default function MarketingLeakCalculator() {
             <div className="rounded-2xl border border-gray-200 bg-white p-6">
               <p className="text-base font-semibold text-[#1a1a1a] mb-1">Want to know specifically where yours is leaking?</p>
               <p className="text-sm text-gray-500 mb-4">
-                The first conversation is a free audit. Bring your numbers and we&rsquo;ll tell you exactly what the gap is and how to close it.
+                The first conversation is a free audit. Bring your inquiry and booking records so we can review the baseline, assumptions and unresolved gaps.
               </p>
               <Link
                 href="/contact"

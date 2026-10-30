@@ -162,11 +162,11 @@ export default function CSRCalculator() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-14 sm:py-16">
           <p className="section-overline text-[#3A9E6A] mb-4">Free Tool</p>
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl leading-[1.08] max-w-2xl">
-            What is a 5% booking rate improvement{" "}
-            <span className="text-[#3A9E6A]">actually worth?</span>
+            What could a five-percentage-point increase{" "}
+            <span className="text-[#3A9E6A]">in booking rate change?</span>
           </h1>
           <p className="mt-4 text-base text-[#C8EDD2]/60 max-w-xl leading-relaxed">
-            The CSR is the most underused seat in most contracting operations. This calculator shows you the dollar value of closing the gap.
+            Explore illustrative scenarios based on your inputs. Use qualified service inquiries and bookings from the same period. Spam, existing-job updates and duplicate calls should not inflate the call count. Modeled bookings are not completed jobs or a forecast.
           </p>
         </div>
       </div>
@@ -183,7 +183,7 @@ export default function CSRCalculator() {
             </div>
 
             <Slider
-              label="Monthly inbound calls"
+              label="Monthly qualified service inquiries"
               value={monthlyCalls}
               min={10}
               max={500}
@@ -212,12 +212,12 @@ export default function CSRCalculator() {
 
             {/* Industry context */}
             <div className="rounded-xl bg-[#fafaf8] border border-gray-100 p-4">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Industry benchmarks</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Illustrative comparison rates</p>
               <div className="grid grid-cols-3 gap-3 text-center">
                 {[
-                  { label: "Average", value: "38 to 42%" },
-                  { label: "Good", value: "55 to 60%" },
-                  { label: "Top ops", value: "65%+" },
+                  { label: "Scenario A", value: "38 to 42%" },
+                  { label: "Scenario B", value: "55 to 60%" },
+                  { label: "Scenario C", value: "65%" },
                 ].map((b) => (
                   <div key={b.label}>
                     <p className="text-base font-extrabold text-[#1a1a1a]">{b.value}</p>
@@ -233,11 +233,11 @@ export default function CSRCalculator() {
 
             {/* Current state */}
             <div className="rounded-2xl bg-[#1a1a1a] p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Where you are now</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Based on your inputs</p>
               <div className="grid grid-cols-2 gap-5">
                 <div>
                   <p className="text-3xl font-extrabold text-white">{formatDollar(results.currentRevenue)}</p>
-                  <p className="text-xs text-gray-500 mt-1">Monthly revenue</p>
+                  <p className="text-xs text-gray-500 mt-1">Modeled monthly booked value</p>
                 </div>
                 <div>
                   <p className="text-3xl font-extrabold text-white">{results.currentJobs}</p>
@@ -308,10 +308,10 @@ export default function CSRCalculator() {
 
             {/* Annual value callout */}
             <div className="rounded-2xl bg-[#0D2318] p-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A]/60 mb-2">The annual value of a 5% improvement</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-[#3A9E6A]/60 mb-2">Modeled annual value of five percentage points</p>
               <p className="text-5xl font-extrabold text-[#3A9E6A]">{formatCurrency(results.plus5AnnualGain)}</p>
               <p className="mt-3 text-sm text-[#C8EDD2]/60 leading-relaxed">
-                That doesn&rsquo;t require more leads. It requires better call handling. Most contractors never measure this.
+                This scenario holds inquiry volume and average job value constant. It does not establish that the increase can be achieved or that booked work will be completed.
               </p>
             </div>
 
@@ -337,7 +337,7 @@ export default function CSRCalculator() {
               </div>
             ) : (
               <div className="rounded-2xl border border-gray-200 bg-white p-6">
-                <p className="text-base font-semibold text-[#1a1a1a] mb-1">Want this number fixed? Leave your info and I will call you.</p>
+                <p className="text-base font-semibold text-[#1a1a1a] mb-1">Want to review these assumptions? Leave your info and I will call you.</p>
                 <p className="text-sm text-gray-500 mb-4">
                   I listen to real calls, score the booking performance, and tell you where the points are. No pitch deck.
                 </p>
@@ -430,15 +430,15 @@ export default function CSRCalculator() {
               {[
                 {
                   title: "Response time",
-                  body: "Calls answered live versus going to voicemail. Every missed call is a booked job that went to a competitor.",
+                  body: "A missed qualified inquiry can become a lost booking when follow-up is delayed. Phone logs show handling; booking records show the outcome.",
                 },
                 {
                   title: "Call handling script",
-                  body: "The first 30 seconds of the call determine the booking. Most CSRs improvise. Top operations train.",
+                  body: "Practice qualification, service explanations and the booking request. Review actual calls to identify where coaching may help.",
                 },
                 {
                   title: "Follow-up on missed calls and voicemails",
-                  body: "Voicemails that don\u2019t get called back within the hour convert at a fraction of live-answer rates.",
+                  body: "Agree on follow-up targets and review what happens to missed qualified inquiries. A callback attempt is not a confirmed booking.",
                 },
               ].map((item) => (
                 <li key={item.title} className="flex gap-4">
@@ -455,7 +455,7 @@ export default function CSRCalculator() {
               ))}
             </ul>
             <p className="mt-8 text-sm text-gray-500 border-l-2 border-[#3A9E6A] pl-4">
-              Industry average is 38 to 42%. Good CSR operations run 55 to 65%.
+              These comparison rates are illustrative assumptions, not industry benchmarks. Use your own qualified-call and booking records to establish a baseline.
             </p>
           </div>
         </div>
@@ -466,7 +466,7 @@ export default function CSRCalculator() {
         <div className="rounded-2xl border border-gray-200 bg-white p-8 sm:p-10 max-w-2xl">
           <h2 className="text-xl font-extrabold text-[#1a1a1a] mb-2">Want to know where yours is leaking?</h2>
           <p className="text-sm text-gray-500 leading-relaxed mb-6">
-            We review actual call recordings as part of the audit. One call review often finds more opportunity than a full month of optimization.
+            Where access and scope permit, we review call recordings and compare handling with inquiry and booking records. We distinguish observations from outcomes.
           </p>
           <Link
             href="/contact"

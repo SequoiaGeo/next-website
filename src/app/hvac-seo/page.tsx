@@ -137,6 +137,7 @@ export default function HvacSeoPage() {
             ].map(([title, description]) => <div key={title} className="rounded-xl border border-gray-200 p-6"><dt className="text-lg font-bold text-[#1A5C3A]">{title}</dt><dd className="mt-3 leading-relaxed text-gray-600">{description}</dd></div>)}
           </dl>
           <p className="mt-6 leading-relaxed text-gray-600">A full website rebuild, paid-ad management, and ad spend are not automatically included. <Link href="/websites" className="font-semibold text-[#1A5C3A] underline">Website projects</Link> and <Link href="/ai-seo-pricing" className="font-semibold text-[#1A5C3A] underline">ongoing search engagements</Link> have a written scope. No rankings or AI recommendations are guaranteed.</p>
+<p className="mt-5 leading-relaxed">For the AI-search part of the plan, read <Link href="/blog/get-business-mentioned-ai-search-contractors" className="font-semibold underline underline-offset-4">how contractors can improve their AI search sources</Link>.</p>
         </div>
       </section>
 

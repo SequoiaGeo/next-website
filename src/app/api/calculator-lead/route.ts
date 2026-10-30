@@ -71,7 +71,7 @@ export async function POST(req: Request) {
     const currentRevenue = num(body.currentRevenue);
     const annualGap = num(body.annualGap);
 
-    const gapText = annualGap !== undefined ? fmt(annualGap) : "your revenue gap";
+    const gapText = annualGap !== undefined ? fmt(annualGap) : "your modeled difference";
 
     // Capture the lead FIRST (notify Aaron + push to GHL), each isolated in its own
     // try/catch so one channel failing can never swallow the lead. The prospect
@@ -97,8 +97,8 @@ export async function POST(req: Request) {
             <p><strong>Monthly calls:</strong> ${monthlyCalls ?? "-"}</p>
             <p><strong>Booking rate:</strong> ${bookingRate ?? "-"}%</p>
             <p><strong>Average ticket:</strong> ${avgTicket !== undefined ? fmt(avgTicket) : "-"}</p>
-            <p><strong>Current monthly revenue:</strong> ${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</p>
-            <p><strong>Annual gap:</strong> ${gapText}</p>
+            <p><strong>Modeled monthly booked value:</strong> ${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</p>
+            <p><strong>Modeled annual difference:</strong> ${gapText}</p>
             <p><strong>Source:</strong> ${labels.sourceLine}</p>
           </div>
         `,
@@ -179,17 +179,17 @@ export async function POST(req: Request) {
             <tr><td style="padding: 6px 0; color: #555;">Monthly inbound calls</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${monthlyCalls ?? "-"}</td></tr>
             <tr><td style="padding: 6px 0; color: #555;">Booking rate</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${bookingRate ?? "-"}%</td></tr>
             <tr><td style="padding: 6px 0; color: #555;">Average ticket</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${avgTicket !== undefined ? fmt(avgTicket) : "-"}</td></tr>
-            <tr><td style="padding: 6px 0; color: #555;">Current monthly revenue from marketing</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</td></tr>
+            <tr><td style="padding: 6px 0; color: #555;">Modeled monthly booked value</td><td style="padding: 6px 0; text-align: right; font-weight: 600;">${currentRevenue !== undefined ? fmt(currentRevenue) : "-"}</td></tr>
           </table>
           <div style="background: #0D2318; border-radius: 10px; padding: 20px 24px; margin: 0 0 24px;">
-            <p style="color: #6FCF97; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 6px;">Annual revenue gap</p>
+            <p style="color: #6FCF97; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 6px;">Modeled annual difference</p>
             <p style="color: #6FCF97; font-size: 32px; font-weight: 800; margin: 0;">${gapText}</p>
             <p style="color: rgba(200,237,210,0.7); font-size: 14px; line-height: 1.5; margin: 8px 0 0;">
-              That is the difference between your current booking rate and what a top-performing operation produces from the same spend. It does not require more marketing budget. It requires fixing what is leaking.
+              This is an illustrative scenario based on your inputs, not a measured loss or a forecast. The marketing calculator compares your input with a 65% booking-rate assumption; the CSR calculator models a five-percentage-point increase capped at 90%. Inquiry volume and average job value are held constant. Booked work may not be completed or collected. Review qualified-inquiry and booking records before assuming any increase is achievable.
             </p>
           </div>
           <p style="color: #555; line-height: 1.6; margin: 0 0 12px;">
-            Want me to look at where yours is actually leaking? The first conversation is a free audit. I will pull your numbers apart and tell you exactly where the gap is and how to close it.
+            The first conversation is a free audit. Bring your inquiry and booking records so we can review the baseline, assumptions and unresolved gaps.
           </p>
           <p style="margin: 0 0 24px;">
             <a href="https://www.sequoiageo.com/contact" style="display: inline-block; background: #1A5C3A; color: white; font-weight: 600; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-size: 15px;">

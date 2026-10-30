@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.sequoiageo.com/privacy-policy" },
   title: "Privacy Policy | Sequoia GEO",
   description:
     "Sequoia GEO's privacy policy outlines how we collect, use, and protect your personal information when you use our marketing services and website.",
@@ -14,7 +15,7 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         <p className="text-sm text-gray-500 mb-12">
-          Last Updated: September 14, 2026
+          Last Updated: October 30, 2026
         </p>
 
         <div className="prose prose-lg max-w-none space-y-10 text-gray-700">
