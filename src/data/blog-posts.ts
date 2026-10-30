@@ -8,6 +8,10 @@ export interface BlogPostMeta {
 }
 
 export const blogPostsMeta: BlogPostMeta[] = [
+  { slug: "ai-search-visibility-tools-contractors", dateISO: "2026-10-30" },
+  { slug: "how-to-use-geo-tools-contractors", dateISO: "2026-10-30" },
+  { slug: "get-business-mentioned-ai-search-contractors", dateISO: "2026-10-30" },
+
   { slug: "chatgpt-knows-your-company-does-it-recommend-you", dateISO: "2026-10-29" },
   { slug: "search-everywhere-optimization-home-services", dateISO: "2026-10-22", modifiedDateISO: "2026-10-29" },
   { slug: "geo-vs-seo-home-service-podcast", dateISO: "2026-10-09" },

@@ -1,3 +1,4 @@
+import { geoGuidePosts } from "@/data/geo-guide-series";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -21,6 +22,7 @@ import { searchEverywherePost, searchEverywhereSlug } from "@/data/search-everyw
 import { aiDiscoveryPost, aiDiscoverySlug, recommendationPost, recommendationSlug } from "@/data/ai-discovery-posts";
 
 const posts: Record<string, Post> = {
+  ...geoGuidePosts,
   [recommendationSlug]: recommendationPost,
   [searchEverywhereSlug]: searchEverywherePost,
   ...podcastPosts,
@@ -5156,7 +5158,7 @@ export default async function BlogPostPage({
       name: "Aaron Husak",
       url: "https://www.sequoiageo.com/about-sequoia-geo",
       jobTitle: "Founder, Sequoia GEO",
-      description: "California Licensed Contractor (B, C-2, C-20, C-36). 13 years running Balanced Comfort Heating & Air. 4x Inc 5000 honoree.",
+      description: "Former California contractor qualifier (B, C-2, C-20, C-36). 13 years as an owner and operator at Balanced Comfort. 4x Inc 5000 honoree.",
     },
     publisher: {
       "@type": "Organization",
@@ -5242,7 +5244,7 @@ export default async function BlogPostPage({
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
                   13 years building Balanced Comfort Heating &amp; Air from startup to 130+ employees.
-                  4x Inc 5000 (2021 to 2024). CA Licensed Contractor B, C-2, C-20, C-36.
+                  4x Inc 5000 (2021 to 2024). Former California contractor qualifier: B, C-2, C-20, C-36.
                   Now working directly with local and home service businesses as a growth operator and marketing lead.
                 </p>
                 <Link
@@ -5267,7 +5269,7 @@ export default async function BlogPostPage({
             Want an operator&rsquo;s read on your marketing?
           </p>
           <p className="mt-2 text-base text-[#C8EDD2]/80">
-            Tell me what you&rsquo;re spending. I&rsquo;ll tell you what it&rsquo;s actually producing.
+            Review your marketing priorities, the evidence available and what needs attention next.
           </p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
