@@ -138,10 +138,13 @@ export default function PrivacyPolicy() {
               Cookies and Tracking Technologies
             </h2>
             <p>
-              Our website uses cookies and similar technologies to collect usage
-              data, remember your preferences, and improve your experience. You
-              can control cookie settings through your browser preferences. Note
-              that disabling cookies may affect certain features of our website.
+              Optional analytics and advertising measurement stay off until you
+              accept our cookie banner. Choose Cookie settings at the bottom left
+              of a page to change your decision. Your preference is stored for up
+              to 180 days. Forms, navigation and contact links remain available
+              when you decline. Our <a href="/cookies" className="underline">Cookie Policy</a> identifies
+              the providers, browser storage and external-service limitations.
+              You can also manage stored cookies through your browser.
             </p>
           </div>
 
