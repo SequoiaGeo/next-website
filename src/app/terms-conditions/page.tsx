@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.sequoiageo.com/terms-conditions" },
   title: "Terms & Conditions | Sequoia GEO",
   description:
     "Review the terms and conditions governing the use of Sequoia GEO's marketing services, website, and related offerings.",

@@ -325,6 +325,7 @@ export default function GeoAgencyPage() {
                 Sequoia publishes the definitions before reporting the outcome. That prevents a proxy
                 metric from quietly becoming a customer result.
               </p>
+<p className="mt-5 leading-relaxed">See <Link href="/blog/ai-search-visibility-tools-contractors" className="font-semibold underline underline-offset-4">which AI search tools measure which signals</Link> before using a visibility report to choose your next action.</p>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[

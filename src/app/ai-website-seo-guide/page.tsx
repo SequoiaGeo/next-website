@@ -152,6 +152,7 @@ export default function AIWebsiteSEOGuidePage() {
                   <p>
                     No five-item list determines every AI answer. These are five controllable surfaces worth reviewing because they affect whether a business is understandable, retrievable, and credible:
                   </p>
+<p className="mt-5 leading-relaxed">For a measurement plan, <Link href="/blog/ai-search-visibility-tools-contractors" className="font-semibold underline underline-offset-4">compare tools for AI search visibility</Link> and decide which observation each tool can support.</p>
                   <div className="space-y-5 mt-4 not-prose">
                     {[
                       {
@@ -228,6 +229,7 @@ export default function AIWebsiteSEOGuidePage() {
                   <p>
                     Schema markup is machine-readable data that can help search engines interpret facts already visible on the page. It can reduce ambiguity, but it is not an authority score and it does not instruct an assistant to recommend the business.
                   </p>
+<p className="mt-5 leading-relaxed">For a related discussion, <Link href="/podcast/episode-4" className="font-semibold underline underline-offset-4">hear Wes Towers discuss websites and trust</Link>. The episode explores how real people, service detail and verifiable evidence help customers evaluate a contractor.</p>
                   <p>
                     Three schema types commonly used by contractor websites are:
                   </p>

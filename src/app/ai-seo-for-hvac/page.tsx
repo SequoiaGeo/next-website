@@ -125,6 +125,7 @@ export default function AiSeoForHvacPage() {
               commercial work create different questions. AI systems also encounter changing service
               areas, manufacturer claims, licenses, locations, and reviews across many sources.
             </p>
+<p className="mt-5 leading-relaxed">Our guide explains how to <Link href="/blog/get-business-mentioned-ai-search-contractors" className="font-semibold underline underline-offset-4">improve the sources behind AI answers</Link> while keeping services and public evidence verifiable.</p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {workAreas.map((area) => (

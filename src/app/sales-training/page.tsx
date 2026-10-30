@@ -85,7 +85,7 @@ const faqs = [
   },
   {
     q: "How does sales training affect conversion rates?",
-    a: "The average home service company books 35-45% of inbound calls without dedicated phone sales training. Companies with trained CSRs running structured training programs routinely hit 65-80% booking rates. That gap represents thousands of dollars per month in jobs that are being lost to the same marketing budget.",
+    a: "Booking rates depend on which inquiries qualify, service fit, availability and call handling. Use your own records to establish a baseline, then review whether coaching changes handling and booked jobs. Practice alone does not establish a particular booking-rate increase.",
   },
 ];
 
@@ -146,12 +146,12 @@ export default function SalesTrainingPage() {
               who already knows the answer, or video courses that cover generic sales techniques. Talk N Sell Pro
               puts your team into the conversation with a realistic AI customer and lets them work through
               objections, pricing questions, and booking scenarios in real time. The tool does not grade or
-              judge. It creates reps who close deals.
+              judge. It gives your team a place to rehearse objections, pricing questions and booking conversations. Pair practice with coaching and review of actual calls.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
               Sales enablement for home service companies has historically meant a PDF of scripts and a
               manager listening in on calls. That approach does not scale. Talk N Sell Pro gives every member
-              of your sales team unlimited practice reps before they get on a live call with a real customer.
+              of your sales team repeated practice opportunities before they get on a live call with a real customer.
             </p>
           </div>
 
@@ -359,7 +359,7 @@ export default function SalesTrainingPage() {
             <div className="rounded-2xl border border-[#3A9E6A]/30 bg-[#C8EDD2]/10 p-7">
               <h3 className="text-base font-bold text-[#1A5C3A] mb-3">AI-powered practice reps</h3>
               <p className="text-sm leading-relaxed text-gray-600">
-                Talk N Sell Pro gives sales representatives unlimited private practice. The AI customer
+                Talk N Sell Pro gives sales representatives private practice opportunities. The AI customer
                 does not get tired, does not judge, and responds realistically to whatever direction the
                 conversation takes. Reps can work through the same scenario ten times in a row until the
                 response becomes automatic. That is what changes conversion rates and close rates on real

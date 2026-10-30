@@ -403,7 +403,7 @@ export default function LeavingMyMarketingAgencyPage() {
             <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
               <span>4x Inc 5000 (2021 to 2024)</span>
               <span className="text-gray-400">|</span>
-              <span>CA Licensed Contractor B, C-2, C-20, C-36</span>
+              <span>Former California contractor qualifier: B, C-2, C-20, C-36</span>
               <span className="text-gray-400">|</span>
               <span>13 Years HVAC &amp; Plumbing Operations</span>
             </div>

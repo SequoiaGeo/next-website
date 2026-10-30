@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How Sequoia GEO Engagements Work | First 90 Days",
   description:
-    "What happens during the first 90 days with Sequoia GEO, from baseline and approved corrections through measurement and the month-to-month decision.",
+    "What happens during the first 90 days with Sequoia GEO, from access and baseline through approved corrections, reporting and the next operating decisions.",
   alternates: { canonical: "https://www.sequoiageo.com/how-it-works" },
 };
 
@@ -12,26 +12,26 @@ const steps = [
   {
     week: "Week 1",
     title: "Access and baseline",
-    what: "We get access to your Google Ads, LSA, Analytics, GBP, and CRM. We run the 12-point audit. We call your phone numbers. We review call recordings. We check every tracking definition.",
-    get: "A findings document with everything we discover, the source of each finding, and an estimated revenue impact.",
+    what: "We agree on access to the accounts and records relevant to your scope. That can include Ads, LSA, Analytics, GBP, CRM and phone logs. Where access permits, we check contact paths, review call recordings and inspect tracking definitions.",
+    get: "A findings document with supporting sources, operational consequences and gaps we could not verify.",
   },
   {
     week: "Week 2",
     title: "The real numbers",
-    what: "We calculate your actual cost per booked job across every channel. We compare your booking rate to industry benchmarks. We identify the gap between what your marketing spend is producing and what it should be producing.",
-    get: "A clear picture of what each channel is actually costing you in booked jobs, not just leads.",
+    what: "We reconcile available channel costs, inquiries and booking records. Where the records can be matched, we calculate cost per booked job and booking rate for the defined period. Missing records remain visible as measurement gaps.",
+    get: "A documented baseline that separates inquiries, qualified leads and booked jobs, with the limits of each source.",
   },
   {
     week: "Week 3",
     title: "Approved fixes",
-    what: "We present our recommendations in order of ROI. For anything you approve, we implement it. That might be fixing LSA settings, updating tracking definitions, revising ad copy, or adjusting bid strategy.",
-    get: "Changes live in your accounts. Not recommendations sitting in a slide deck.",
+    what: "We prioritize recommendations by evidence and expected impact. Aaron directs the plan. Your team, existing providers or Sequoia carry out approved work according to the agreed execution scope.",
+    get: "Named owners, approved changes and a record of what was implemented and verified.",
   },
   {
     week: "Week 4",
     title: "Systems and reporting",
-    what: "We set up the reporting framework you\u2019ll use going forward: a dashboard that shows cost per booked job, booking rate, revenue by channel, and the other metrics that actually matter.",
-    get: "A real-time reporting setup that gives you the full picture, not just what each vendor wants you to see.",
+    what: "We define a reporting cadence around the connected data sources. Reports separate visibility, inquiries, call handling and booked jobs. Cost per booked job is included where costs and booking records can be reconciled.",
+    get: "An agreed reporting view with source definitions, update frequency and unresolved data gaps.",
   },
   {
     week: "Day 30",
@@ -53,8 +53,8 @@ export default function HowItWorksPage() {
               Baseline first. Corrections next. Measurement through day 90.
             </h1>
             <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]/80">
-              Here&rsquo;s what happens during the three-month initial term, beginning with a
-              focused first-month audit and implementation sprint.
+              Here&rsquo;s how the first 90 days establish the baseline, priorities and responsibilities
+              for your agreed leadership and execution scope.
             </p>
           </div>
         </div>
@@ -70,8 +70,8 @@ export default function HowItWorksPage() {
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
               The first 30 days are for establishing the baseline, reviewing the available evidence,
               correcting the first approved constraint, and documenting what changed. They are not a
-              separate trial or a deadline for promising results. Every starting engagement has a
-              three-month initial term, then continues month to month.
+              separate trial or a deadline for promising results. Leadership has a six-month initial
+              term. Optional execution has a 90-day initial term. Each continues month to month afterward.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
               Months two and three are where we verify implementation, observe the available signals,
@@ -139,7 +139,7 @@ export default function HowItWorksPage() {
               {[
                 "Approved priorities move from diagnosis into implementation and verification.",
                 "Reporting separates technical corrections, visibility signals, inquiries, qualified leads, and jobs booked.",
-                "Before the initial term ends, we review what is complete, what remains open, and whether continued month-to-month work is justified.",
+                "At the end of each agreed initial term, we review what is complete, what remains open, and the priorities for any continued month-to-month work.",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <svg
@@ -167,7 +167,7 @@ export default function HowItWorksPage() {
                 href="/case-studies/firemans-chimney-sweep"
                 className="font-semibold text-[#1A5C3A] hover:text-[#0D2318] transition-colors"
               >
-                Read how a chimney company&rsquo;s rebuilt site hit page one in its first month
+                Read the chimney-company website case study and its documented Search Console results
               </Link>
               .
             </p>
@@ -182,8 +182,8 @@ export default function HowItWorksPage() {
             Start with a free strategy call.
           </h2>
           <p className="mt-4 text-lg text-[#C8EDD2]/80">
-            In 15 minutes, we can determine whether a three-month engagement fits the problem you
-            are trying to solve. If it does not, we will say so.
+            In 15 minutes, we can discuss the problem you are trying to solve and whether leadership,
+            execution or another next step fits your needs.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
