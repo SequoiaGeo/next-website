@@ -70,6 +70,7 @@ export default function MediaPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="section-overline mb-3">Our show</div>
           <h2 className="text-3xl font-extrabold text-[#0D2318]">A Chat with Chat</h2>
+          <p className="mt-3 text-xl font-semibold text-[#1A5C3A]">Home Service Marketing and AI</p>
           <p className="mt-4 max-w-3xl text-gray-600">Aaron Husak and ChatGPT explore AI search and marketing for local home service businesses.</p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {[...podcastVideos].sort((a, b) => b.date.localeCompare(a.date)).map(video => <Link key={video.slug} href={`/podcast/${video.slug}`} className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
