@@ -39,14 +39,14 @@ export default function HomepageCaseStudies() {
             <article key={study.name} className="rounded-lg border border-[#173629]/15 bg-[#fffdf7] p-6">
               <h3 className="text-xl font-bold text-[#0D2318]">{study.name}</h3>
               <p className="mt-2 text-sm font-semibold text-[#46574c]">{study.service}</p>
-              <p className="mt-5 text-2xl font-bold leading-tight text-[#1A5C3A]">{study.headline}</p>
+              <p className="mt-4 text-sm font-semibold text-[#1A5C3A]">{study.type}</p>
+              <p className="mt-3 text-2xl font-bold leading-tight text-[#1A5C3A]">{study.headline}</p>
               <h4 className="mt-5 font-bold text-[#0D2318]">What we did</h4>
               <p className="mt-2 text-base leading-relaxed text-[#46574c]">{study.work}</p>
-              <h4 className="mt-5 font-bold text-[#0D2318]">What followed</h4>
+              <h4 className="mt-5 font-bold text-[#0D2318]">What the record shows</h4>
               <p className="mt-2 text-base leading-relaxed text-[#46574c]">{study.result}</p>
               <div className="mt-5 border-t border-[#173629]/15 pt-4">
-                <p className="text-sm font-semibold text-[#1A5C3A]">{study.type}</p>
-                <p className="mt-2 text-sm leading-relaxed text-[#46574c]">{study.evidence}</p>
+                <p className="text-sm leading-relaxed text-[#46574c]">{study.evidence}</p>
               </div>
             </article>
           ))}
