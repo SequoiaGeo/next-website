@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import MarketingLeadershipOffer from "@/components/MarketingLeadershipOffer";
 import Hero from "@/components/Hero";
+import HomepageTestimonials from "@/components/HomepageTestimonials";
 import SearchEverywhere from "@/components/SearchEverywhere";
 import FounderIntroduction from "@/components/FounderIntroduction";
 import InlineLeadForm from "@/components/InlineLeadForm";
@@ -49,6 +50,7 @@ export default function Home() {
   return (
     <div className="forest-home">
       <Hero />
+      <HomepageTestimonials />
       <FounderIntroduction />
       <SearchEverywhere />
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
@@ -59,21 +61,21 @@ export default function Home() {
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
                     <div className="mt-8 grid gap-4 lg:grid-cols-3" aria-label="Dated client results">
             <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
-              <p className="text-sm font-semibold text-[#1A5C3A]">AFCS · Google organic search</p>
+              <p className="text-sm font-semibold text-[#1A5C3A]">AFCS Â· Google organic search</p>
               <h3 className="mt-3 text-4xl font-extrabold text-[#0D2318]">+365%</h3>
               <p className="mt-3 text-lg font-semibold text-[#0D2318]">26 to 121 website clicks</p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">June 5 to July 4 versus September 14 to October 13, 2026. Both 30-day windows follow launch. Seasonal demand may contribute.</p>
               <Link href="/case-studies/firemans-chimney-sweep" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the Search Console evidence</Link>
             </article>
             <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
-              <p className="text-sm font-semibold text-[#1A5C3A]">Amazing Air · Google organic search</p>
+              <p className="text-sm font-semibold text-[#1A5C3A]">Amazing Air Â· Google organic search</p>
               <h3 className="mt-3 text-4xl font-extrabold text-[#0D2318]">+50%</h3>
               <p className="mt-3 text-lg font-semibold text-[#0D2318]">40 to 60 website clicks</p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">April 10 to May 9 versus September 14 to October 13, 2026. Our first 30 days working together versus a later 30-day window.</p>
               <a href="#amazing-air-proof-heading" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the work and measurement</a>
             </article>
             <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
-              <p className="text-sm font-semibold text-[#1A5C3A]">KABAM · Plumbing</p>
+              <p className="text-sm font-semibold text-[#1A5C3A]">KABAM Â· Plumbing</p>
               <h3 className="mt-3 text-3xl font-extrabold text-[#0D2318]">50%</h3>
               <p className="mt-3 text-lg font-semibold text-[#0D2318]">increase in phone calls</p>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">Mike Bissett, KABAM Plumbing. <a href="https://www.youtube.com/watch?v=IpbCaelX2jo&amp;t=52" className="underline underline-offset-4">Client testimonial, May 2026.</a></p>
@@ -85,7 +87,7 @@ export default function Home() {
             <div>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
                 <Image src="/kabam-logo.png" alt="KABAM Plumbing Services logo" width={600} height={329} sizes="144px" className="h-auto w-36 shrink-0 object-contain" />
-                <p className="max-w-[240px] text-sm font-semibold text-[#1A5C3A]">KABAM Plumbing Services · Sun City Center, Florida</p>
+                <p className="max-w-[240px] text-sm font-semibold text-[#1A5C3A]">KABAM Plumbing Services Â· Sun City Center, Florida</p>
               </div>
               <h3 id="kabam-proof-heading" className="mt-3 text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">More calls, and an owner growing his team.</h3>
               <p className="mt-4 text-base leading-relaxed text-gray-700">Mike is an independent plumber competing with larger companies. We rebuilt KABAM&rsquo;s website around his plumbing services and the communities he serves, giving prospective customers a clearer picture of who to call and what he can help with.</p>
@@ -101,13 +103,13 @@ export default function Home() {
               <div className="relative aspect-[9/16] overflow-hidden rounded-xl bg-black">
                 <YouTubeFacade videoId="IpbCaelX2jo" title="Michael Bissett of KABAM Plumbing on working with Sequoia GEO" isShort />
               </div>
-              <figcaption className="mt-3 text-sm leading-relaxed text-gray-600"><span className="block font-semibold text-[#0D2318]">Michael Bissett, Owner</span>KABAM Plumbing Services · Client testimonial</figcaption>
+              <figcaption className="mt-3 text-sm leading-relaxed text-gray-600"><span className="block font-semibold text-[#0D2318]">Michael Bissett, Owner</span>KABAM Plumbing Services Â· Client testimonial</figcaption>
             </figure>
           </article>
           <article aria-labelledby="amazing-air-proof-heading" className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
             <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
               <Image src="/amazing-air-logo.png" alt="Amazing Air Solutions logo" width={504} height={255} sizes="144px" className="h-auto w-36 shrink-0 object-contain" />
-              <p className="max-w-[240px] text-sm font-semibold text-[#1A5C3A]">Amazing Air Solutions · San Antonio, Texas</p>
+              <p className="max-w-[240px] text-sm font-semibold text-[#1A5C3A]">Amazing Air Solutions Â· San Antonio, Texas</p>
             </div>
             <h3 id="amazing-air-proof-heading" className="mt-3 max-w-3xl text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">Make it possible for customers to find you and take the next step.</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">A homeowner should not have to work around a broken website to request service. For Amazing Air, we repaired the paths customers use to navigate, book, and reach relevant service pages.</p>
