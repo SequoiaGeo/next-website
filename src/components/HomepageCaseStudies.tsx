@@ -52,6 +52,16 @@ export default function HomepageCaseStudies() {
           ))}
         </div>
         <p className="mt-6 max-w-4xl text-sm leading-relaxed text-[#46574c]">Search clicks, phone calls, and booked jobs are different measures. These examples describe the work and the evidence available for each client; they do not establish that Sequoia alone caused the observed changes or predict another client’s results.</p>
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-6 rounded-lg bg-[#11271f] p-6 text-white sm:p-8">
+          <div className="max-w-xl">
+            <h3 className="font-serif text-2xl font-bold sm:text-3xl">Let&rsquo;s talk about your marketing.</h3>
+            <p className="mt-3 text-base leading-relaxed text-[#C8EDD2]">Tell Aaron about your business and the next priority you want help with.</p>
+          </div>
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <a href="#inquiry" className="forest-button">Talk with Aaron <span aria-hidden="true">&#8595;</span></a>
+            <a href="tel:5595213122" className="inline-flex min-h-11 items-center text-lg font-semibold text-white underline underline-offset-4">(559) 521-3122</a>
+          </div>
+        </div>
       </div>
     </section>
   );
