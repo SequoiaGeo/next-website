@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026-10-26.1",
+  "catalogVersion": "2026-11-03.1",
   "status": "approved_for_public_use",
   "approvedOn": "2026-08-30",
-  "reviewValidUntil": "2026-10-30",
-  "lastSourceReview": "2026-10-26: Removed a client-specific assessment and its source references pending verification of separate publication approval. Other approved facts and measurement limits unchanged.",
+  "reviewValidUntil": "2026-12-03",
+  "lastSourceReview": "2026-11-03: Reviewed all 13 source records against production pages and repository sources. Confirmed published prices, engagement terms, contact paths, methodology and dated case-study limits. Added fractional CMO leadership to the service list, corrected the AFCS approval description, and aligned service and trust citations. Original approval date, case-study measurement dates and excluded client-specific material remain unchanged. Next review due December 3, 2026.",
   "owner": "Sequoia GEO",
   "externalModelSpendLimitUsd": 0,
   "publicBoundary": "This interface reports approved public facts only. It does not claim to improve or control rankings, citations, or recommendations in ChatGPT, Gemini, or any other answer system.",
@@ -23,7 +23,7 @@
       "path": "/services",
       "sourceFile": "src/app/services/page.tsx",
       "sourceAnchors": [
-        "Fractional CMO leadership starts at $7,000 per month.",
+        "Aaron leads the strategy, priorities, budget recommendations and providers.",
         "Google Ads & Local Service Ads",
         "Local SEO & Google Business Profile",
         "Marketing Attribution",
@@ -154,6 +154,15 @@
     }
   },
   "services": [
+    {
+      "id": "fractional_cmo_leadership",
+      "name": "Fractional CMO leadership",
+      "summary": "Aaron leads marketing priorities, positioning, planning, budget recommendations, team and vendor direction, and performance oversight. Leadership includes a rolling 90-day plan, weekly decision meetings and monthly reviews. Keep existing providers or add a separately priced execution scope; the client approves hiring and spending commitments.",
+      "sourceIds": [
+        "services",
+        "pricing"
+      ]
+    },
     {
       "id": "marketing_agents",
       "name": "Custom AI marketing agents",
@@ -379,7 +388,8 @@
     "sourceIds": [
       "proof_system",
       "ai_data_policy",
-      "media"
+      "media",
+      "ai_assessment"
     ]
   },
   "caseStudyEvidence": [
@@ -406,7 +416,7 @@
         "The source reports 8,174 and 25,915 impressions, while identifying a one-day spike that makes the impression increase a poor standalone measure.",
         "These are dated organic website clicks, not unique customers, qualified leads or booked jobs. Google Business Profile growth is not claimed. Verified October 16, 2026."
       ],
-      "approval": "The public case study states that it was published with the owner's permission.",
+      "approval": "Named publication approval is recorded in the retained client records. The public case-study page provides dated search evidence and limitations; it does not display the permission record.",
       "sourceIds": [
         "chimney_case"
       ]
