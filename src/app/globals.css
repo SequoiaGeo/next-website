@@ -246,9 +246,12 @@ h1[class], h2[class] {
 }
 .forest-hero-content { max-width: 1440px; margin: 0 auto; padding: 160px 64px 70px; }
 .forest-eyebrow { font-size: 12px; line-height: 1.8; letter-spacing: .16em; text-transform: uppercase; color: #ece7d8; }
-.forest-hero h1 { max-width: 940px; margin-top: 24px; font-family: var(--font-fraunces), Georgia, serif; font-size: clamp(46px, 5.5vw, 80px); font-weight: 400; line-height: 1.08; letter-spacing: -.045em; text-wrap: balance; }
+.forest-hero h1 { max-width: 940px; margin-top: 24px; font-family: var(--font-fraunces), Georgia, serif; font-size: clamp(40px, 4.6vw, 64px); font-weight: 400; line-height: 1.08; letter-spacing: -.045em; text-wrap: balance; }
 .forest-hero-promise { margin-top: 26px; max-width: 760px; font-family: var(--font-fraunces), Georgia, serif; font-size: clamp(20px, 2vw, 27px); line-height: 1.5; }
 .forest-hero-context { max-width: 490px; margin-top: 15px; font-size: 16px; line-height: 1.8; color: #e3e8e1; }
+.forest-hero-evidence { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; max-width: 830px; margin-top: 24px; padding: 0; list-style: none; }
+.forest-hero-evidence li { position: relative; padding-left: 24px; font-size: 16px; font-weight: 600; line-height: 1.5; color: #f7f3e9; }
+.forest-hero-evidence li::before { content: "\2713"; position: absolute; left: 0; color: #e8bb6c; }
 .forest-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 25px; margin-top: 30px; }
 .forest-hero-proof-link { display: inline-flex; min-height: 44px; align-items: center; gap: 12px; color: #f7f3e9; font-size: 14px; text-underline-offset: 5px; text-decoration: underline; }
 .forest-hero-trades { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; font-size: 13px; letter-spacing: .035em; color: #e3e8e1; }
@@ -297,8 +300,10 @@ h1[class], h2[class] {
   .forest-hero-image { object-position: 75% center; }
   .forest-hero-shade { background: linear-gradient(90deg, rgba(6,26,20,.94), rgba(6,26,20,.76) 57%, rgba(6,26,20,.48)); }
   .forest-eyebrow { max-width: 270px; font-size: 10px; letter-spacing: .14em; }
-  .forest-hero h1 { margin-top: 20px; font-size: clamp(40px, 10.8vw, 60px); max-width: 100%; }
+  .forest-hero h1 { margin-top: 20px; font-size: clamp(34px, 8.5vw, 48px); max-width: 100%; }
   .forest-hero-promise { margin-top: 22px; font-size: 20px; }
+  .forest-hero-evidence { grid-template-columns: 1fr; gap: 10px; margin-top: 20px; }
+  .forest-hero-evidence li { font-size: 15px; }
   .forest-hero-context { margin-top: 14px; font-size: 14px; line-height: 1.7; }
   .forest-hero-actions { margin-top: 23px; gap: 8px 24px; }
   .forest-hero-actions .forest-button { padding-inline: 22px; }
