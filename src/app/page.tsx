@@ -61,7 +61,10 @@ export default function Home() {
               ["03. Put the first priorities into motion.", "During the first 30 days of the engagement, establish the baseline and a 90-day plan with priorities, owners, and deadlines. Regular reviews keep decisions and work moving."],
             ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
           </ol>
-          <Link href="/contact#book" className="forest-button mt-8">Book a conversation with Aaron <span aria-hidden="true">&#8599;</span></Link>
+          <div className="mt-8 flex flex-wrap items-center gap-4 sm:gap-6">
+            <Link href="/contact#book" className="forest-button">Book a conversation with Aaron <span aria-hidden="true">&#8599;</span></Link>
+            <a href="tel:5595213122" className="inline-flex min-h-11 items-center text-lg font-semibold text-white underline underline-offset-4">(559) 521-3122</a>
+          </div>
         </div>
       </section>
       <FounderIntroduction />
