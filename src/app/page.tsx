@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import MarketingLeadershipOffer from "@/components/MarketingLeadershipOffer";
 import Hero from "@/components/Hero";
 import HomepageTestimonials from "@/components/HomepageTestimonials";
@@ -12,7 +11,6 @@ import MarketingAgents from "@/components/MarketingAgents";
 
 import SnapshotExample from "@/components/SnapshotExample";
 import SnapshotNextSteps from "@/components/SnapshotNextSteps";
-import YouTubeFacade from "@/components/YouTubeFacade";
 
 export const metadata: Metadata = {
   title: "Home Services Marketing & Fractional CMO | Sequoia GEO",
@@ -69,63 +67,9 @@ export default function Home() {
       </section>
       <HomepageCaseStudies />
       <SearchEverywhere />
-      <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
+      <section id="proof" aria-label="Evidence and assessment method" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <p className="mb-4 text-base font-semibold text-[#1A5C3A]">Results an owner can evaluate</p>
-          <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">Real businesses. Documented search results. Hear from an owner and see the work behind the numbers.</p>
-          <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">See the work. Understand the decisions.</h2>
-          <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
-          <article className="mt-8 grid gap-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 md:grid-cols-[1.3fr_0.7fr] md:items-center lg:gap-12" aria-labelledby="kabam-proof-heading">
-            <div>
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-                <Image src="/kabam-logo.png" alt="KABAM Plumbing Services logo" width={600} height={329} sizes="144px" className="h-auto w-36 shrink-0 object-contain" />
-                <p className="max-w-[240px] text-sm font-semibold text-[#1A5C3A]">KABAM Plumbing Services · Sun City Center, Florida</p>
-              </div>
-              <h3 id="kabam-proof-heading" className="mt-3 text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">More calls, and an owner growing his team.</h3>
-              <p className="mt-4 text-base leading-relaxed text-gray-700">Mike is an independent plumber competing with larger companies. We rebuilt KABAM&rsquo;s website around his plumbing services and the communities he serves, giving prospective customers a clearer picture of who to call and what he can help with.</p>
-              <ul className="mt-5 space-y-3 text-base leading-relaxed text-gray-700">
-                <li><strong className="text-[#0D2318]">A website he owns,</strong> with content about his plumbing services.</li>
-                <li><strong className="text-[#0D2318]">Local service pages,</strong> covering Sun City Center, Apollo Beach, Wimauma, Riverview, and surrounding communities.</li>
-                <li><strong className="text-[#0D2318]">Clearer measurement,</strong> including corrections to duplicate form tracking.</li>
-              </ul>
-              <p className="mt-5 text-base leading-relaxed text-gray-700">In his May 2026 testimonial, Mike shares the increase in phone calls and his decision to hire an apprentice. Hear his experience working with Sequoia GEO in his own words.</p>
-              <Link href="/case-studies/kabam-plumbing" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See KABAM&rsquo;s website story</Link>
-            </div>
-            <figure className="mx-auto w-full max-w-[280px]">
-              <div className="relative aspect-[9/16] overflow-hidden rounded-xl bg-black">
-                <YouTubeFacade videoId="IpbCaelX2jo" title="Michael Bissett of KABAM Plumbing on working with Sequoia GEO" isShort />
-              </div>
-              <figcaption className="mt-3 text-sm leading-relaxed text-gray-600"><span className="block font-semibold text-[#0D2318]">Michael Bissett, Owner</span>KABAM Plumbing Services · Client testimonial</figcaption>
-            </figure>
-          </article>
-          <article aria-labelledby="amazing-air-proof-heading" className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-              <Image src="/amazing-air-logo.png" alt="Amazing Air Solutions logo" width={504} height={255} sizes="144px" className="h-auto w-36 shrink-0 object-contain" />
-              <p className="max-w-[240px] text-sm font-semibold text-[#1A5C3A]">Amazing Air Solutions · San Antonio, Texas</p>
-            </div>
-            <h3 id="amazing-air-proof-heading" className="mt-3 max-w-3xl text-2xl font-bold leading-tight text-[#0D2318] sm:text-3xl">Make it possible for customers to find you and take the next step.</h3>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">A homeowner should not have to work around a broken website to request service. For Amazing Air, we repaired the paths customers use to navigate, book, and reach relevant service pages.</p>
-            <div className="mt-5 rounded-xl bg-[#fafaf8] p-5"><p className="text-2xl font-extrabold text-[#1A5C3A]">40 to 60 organic Google clicks</p><p className="mt-2 text-base leading-relaxed text-gray-700">Search Console recorded 50% more clicks in September 14 to October 13 than in April 10 to May 9, 2026, our first 30 days working together. Impressions declined from 29,465 to 25,796. These are website clicks from search, measured separately from customer inquiries.</p></div>
-            <div className="mt-6 grid gap-6 md:grid-cols-3">
-              <div>
-                <h4 className="text-lg font-bold text-[#0D2318]">Mobile navigation that works</h4>
-                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The problem:</strong> Mobile navigation buttons changed appearance without taking visitors anywhere.</p>
-                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The repair:</strong> Replaced them with working links to the homepage, services, phone, and booking path.</p>
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-[#0D2318]">A usable booking path</h4>
-                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The problem:</strong> Book-online buttons failed to open the scheduler because its configured website address did not match.</p>
-                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The repair:</strong> Corrected the integration, verified the scheduler opened on desktop, and added a contact-page fallback.</p>
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-[#0D2318]">Old links with somewhere to go</h4>
-                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The problem:</strong> Legacy website addresses still appearing in search led to missing pages.</p>
-                <p className="mt-3 text-base leading-relaxed text-gray-700"><strong>The repair:</strong> Added redirects and verified sampled legacy addresses reached live pages.</p>
-              </div>
-            </div>
-            <p className="mt-6 border-t border-gray-200 pt-5 text-sm leading-relaxed text-gray-600">Documented repairs from May and June 2026. The priority was restoring the paths homeowners use to find service and contact the team.</p>
-          </article>
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
               <h3 className="text-xl font-bold text-[#0D2318]">Inside an AI Search Snapshot</h3>
               <SnapshotExample />
