@@ -5,7 +5,7 @@ import MarketingLeadershipOffer from "@/components/MarketingLeadershipOffer";
 import Hero from "@/components/Hero";
 import HomepageTestimonials from "@/components/HomepageTestimonials";
 import SearchEverywhere from "@/components/SearchEverywhere";
-import FounderIntroduction from "@/components/FounderIntroduction";
+import HomepageCaseStudies from "@/components/HomepageCaseStudies";
 import InlineLeadForm from "@/components/InlineLeadForm";
 import OperatorStory from "@/components/OperatorStory";
 import MarketingAgents from "@/components/MarketingAgents";
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <FounderIntroduction />
+      <HomepageCaseStudies />
       <SearchEverywhere />
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
@@ -75,30 +75,6 @@ export default function Home() {
           <p className="mb-4 max-w-3xl text-base leading-relaxed text-gray-600">Real businesses. Documented search results. Hear from an owner and see the work behind the numbers.</p>
           <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">See the work. Understand the decisions.</h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700">Founder Aaron Husak spent 13 years as an owner and operator. His company, Balanced Comfort, appeared on the Inc. 5000 in 2021, 2022, 2023, and 2024. <Link href="/case-studies/balanced-comfort" className="font-semibold text-[#1A5C3A] underline underline-offset-4">Explore his operating track record</Link>.</p>
-                    <div className="mt-8 grid gap-4 lg:grid-cols-3" aria-label="Dated client results">
-            <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
-              <p className="text-sm font-semibold text-[#1A5C3A]">AFCS · Google organic search</p>
-              <h3 className="mt-3 text-4xl font-extrabold text-[#0D2318]">+365%</h3>
-              <p className="mt-3 text-lg font-semibold text-[#0D2318]">26 to 121 website clicks</p>
-              <p className="mt-3 text-sm leading-relaxed text-gray-600">June 5 to July 4 versus September 14 to October 13, 2026. Both 30-day windows follow launch. Seasonal demand may contribute.</p>
-              <Link href="/case-studies/firemans-chimney-sweep" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the Search Console evidence</Link>
-            </article>
-            <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
-              <p className="text-sm font-semibold text-[#1A5C3A]">Amazing Air · Google organic search</p>
-              <h3 className="mt-3 text-4xl font-extrabold text-[#0D2318]">+50%</h3>
-              <p className="mt-3 text-lg font-semibold text-[#0D2318]">40 to 60 website clicks</p>
-              <p className="mt-3 text-sm leading-relaxed text-gray-600">April 10 to May 9 versus September 14 to October 13, 2026. Our first 30 days working together versus a later 30-day window.</p>
-              <a href="#amazing-air-proof-heading" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">See the work and measurement</a>
-            </article>
-            <article className="rounded-2xl border border-[#1A5C3A]/20 bg-white p-6">
-              <p className="text-sm font-semibold text-[#1A5C3A]">KABAM · Plumbing</p>
-              <h3 className="mt-3 text-3xl font-extrabold text-[#0D2318]">50%</h3>
-              <p className="mt-3 text-lg font-semibold text-[#0D2318]">increase in phone calls</p>
-              <p className="mt-3 text-sm leading-relaxed text-gray-600">Mike Bissett, KABAM Plumbing. <a href="https://www.youtube.com/watch?v=IpbCaelX2jo&amp;t=52" className="underline underline-offset-4">Client testimonial, May 2026.</a></p>
-              <a href="#kabam-proof-heading" className="mt-4 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Hear directly from the owner</a>
-            </article>
-          </div>
-          <p className="mt-5 max-w-4xl text-base leading-relaxed text-gray-700">The search figures come from Google Search Console, verified October 16, 2026. They show observed changes during our work together, not a controlled measure of SEO alone. Website clicks and phone calls are different stages; neither is a booked-job count.</p>
           <article className="mt-8 grid gap-8 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 md:grid-cols-[1.3fr_0.7fr] md:items-center lg:gap-12" aria-labelledby="kabam-proof-heading">
             <div>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
