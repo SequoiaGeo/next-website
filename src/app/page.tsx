@@ -51,6 +51,19 @@ export default function Home() {
     <div className="forest-home">
       <Hero />
       <HomepageTestimonials />
+      <section id="how-it-works" aria-labelledby="how-we-start-heading" className="scroll-mt-28 bg-[#0D2318] py-12 text-white sm:py-16">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <h2 id="how-we-start-heading" className="text-3xl font-extrabold tracking-tight sm:text-4xl">Here&rsquo;s how we start.</h2>
+          <ol className="mt-8 grid gap-8 md:grid-cols-3">
+            {[
+              ["01. Tell Aaron what needs to work better.", "Book a 15-minute conversation about your goals, current marketing, and what’s getting in the way. We’ll determine whether there’s a fit."],
+              ["02. Agree on the work and who owns it.", "Define the scope, responsibilities, fees, and measures of progress. Aaron can lead your existing providers, or you can add a separately scoped Sequoia execution team."],
+              ["03. Put the first priorities into motion.", "During the first 30 days of the engagement, establish the baseline and a 90-day plan with priorities, owners, and deadlines. Regular reviews keep decisions and work moving."],
+            ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
+          </ol>
+          <Link href="/contact#book" className="forest-button mt-8">Book a conversation with Aaron <span aria-hidden="true">&#8599;</span></Link>
+        </div>
+      </section>
       <FounderIntroduction />
       <SearchEverywhere />
       <section id="proof" className="bg-[#fafaf8] py-16 sm:py-20">
@@ -171,19 +184,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="how-it-works" className="bg-[#0D2318] py-16 text-white sm:py-20">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Start with the marketing problem that needs attention.</h2>
-          <ol className="mt-8 grid gap-8 md:grid-cols-3">
-            {[
-              ["01. Review the evidence", "Review your website, search presence, and inquiry path. Identify the gaps and the information needed to understand them."],
-              ["02. Set the priorities. Own the plan.", "I turn your business goals and current performance into a focused marketing plan: what deserves investment, what needs correcting and how we will measure progress. Then I direct the execution."],
-              ["03. Measure and improve", "Review completed work, search visibility, inquiries, and booked jobs where tracking supports them. Use the findings to choose the next priority."],
-            ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
-          </ol>
-          <p className="mt-8 text-base text-gray-200">You retain ownership of your accounts and assets. I remain your direct point of contact.</p>
-        </div>
-      </section>
+
       <MarketingLeadershipOffer />
       <OperatorStory />
       <MarketingAgents />
