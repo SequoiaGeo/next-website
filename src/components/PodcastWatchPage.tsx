@@ -5,9 +5,10 @@ import one from "@/data/podcast-transcripts/episode-1.json";
 import two from "@/data/podcast-transcripts/episode-2.json";
 import three from "@/data/podcast-transcripts/episode-3.json";
 import four from "@/data/podcast-transcripts/episode-4.json";
+import five from "@/data/podcast-transcripts/episode-5.json";
 import plumbing from "@/data/podcast-transcripts/las-vegas-plumbing-ai-search.json";
 
-const transcripts = { "episode-1": one, "episode-2": two, "episode-3": three, "episode-4": four, "las-vegas-plumbing-ai-search": plumbing };
+const transcripts = { "episode-1": one, "episode-2": two, "episode-3": three, "episode-4": four, "episode-5": five, "las-vegas-plumbing-ai-search": plumbing };
 const base = "https://www.sequoiageo.com";
 export function watchMetadata(video: PodcastVideo): Metadata {
   return { title: `${video.title} | Sequoia GEO`, description: video.description,
@@ -37,6 +38,7 @@ export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
           <a href="#transcript" className="underline underline-offset-4">Read the full transcript</a>
           <a href={`https://www.youtube.com/watch?v=${video.videoId}`} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Watch on YouTube</a>
           {video.slug === "episode-2" && <a href="https://www.buzzsprout.com/2651769/episodes/19889912" className="underline underline-offset-4">Listen to the audio episode</a>}
+          {video.slug === "episode-5" && <a href="https://www.buzzsprout.com/2651769/episodes/20063951" className="underline underline-offset-4">Listen to the audio episode</a>}
         </div>
       </div>
     </section>
@@ -46,14 +48,16 @@ export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
         <ul className="mt-5 list-disc space-y-3 pl-6 leading-relaxed text-gray-700">{video.takeaways.map(item => <li key={item}>{item}</li>)}</ul>
         <p className="mt-6 leading-relaxed text-gray-600">These conversations are exploratory. Guest experiences and claims in the recording are attributed to the speaker and have not all been independently verified. AI recommendations can change. A mention, a website visit, an inquiry, and a job booked are separate outcomes. ChatGPT participates as an AI co-host with a synthetic voice.</p>
         {video.slug === "episode-4" && <p className="mt-5 leading-relaxed text-gray-600">Music: <a href="https://incompetech.com/music/royalty-free/index.html?Search=Search&amp;isrc=USUAN1100844" className="underline underline-offset-4">Cipher by Kevin MacLeod</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" className="underline underline-offset-4">CC BY 4.0</a>. Shortened and faded for this episode.</p>}
+        {video.slug === "episode-5" && <p className="mt-5 leading-relaxed text-gray-600">Music: <a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100844" className="underline underline-offset-4">Cipher by Kevin MacLeod</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" className="underline underline-offset-4">CC BY 4.0</a>. Excerpt trimmed and volume adjusted for this episode.</p>}
         <div className="mt-7 flex flex-wrap gap-5 font-semibold text-[#1A5C3A]">
+          {video.slug === "episode-5" && <a href="https://www.brandinglosangeles.com/" className="underline underline-offset-4">Benjamin&apos;s company: Branding Los Angeles</a>}
           {"article" in video && <Link href={`/blog/${video.article}`} className="underline underline-offset-4">Read the companion article</Link>}
           <Link href={video.service} className="underline underline-offset-4">Explore related services</Link>
           <Link href="/ai-search-assessment" className="underline underline-offset-4">Request an AI search assessment</Link>
         </div>
         <section id="transcript" className="mt-14 scroll-mt-24 border-t border-gray-200 pt-10">
           <h2 className="text-3xl font-bold text-[#0D2318]">Full transcript</h2>
-          <p className="mt-4 leading-relaxed text-gray-600">{video.slug === "episode-4" ? "From the Descript transcript of the published episode." : "From the published YouTube captions, lightly corrected for names."} Automatic transcription may contain errors. Timestamps open the corresponding point on YouTube. The recording is the source of truth.</p>
+          <p className="mt-4 leading-relaxed text-gray-600">{(video.slug === "episode-4" || video.slug === "episode-5") ? "From the Descript transcript of the published episode." : "From the published YouTube captions, lightly corrected for names."} Automatic transcription may contain errors. Timestamps open the corresponding point on YouTube. The recording is the source of truth.</p>
           <a href={`/transcripts/${video.slug}.txt`} download className="mt-4 inline-block font-semibold text-[#1A5C3A] underline underline-offset-4">Download the text transcript</a>
           <div className="mt-8 space-y-6">{transcript.map(cue => <p key={cue.seconds} className="leading-8 text-gray-800"><a href={`https://www.youtube.com/watch?v=${video.videoId}&t=${cue.seconds}s`} target="_blank" rel="noopener noreferrer" aria-label={`Watch at ${cue.timestamp}`} className="mr-3 inline-block rounded bg-[#edf5ef] px-2 font-mono text-sm font-semibold text-[#1A5C3A]">{cue.timestamp}</a>{cue.text}</p>)}</div>
         </section>
