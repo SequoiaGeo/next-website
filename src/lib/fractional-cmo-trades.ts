@@ -44,23 +44,23 @@ export const clientProof: Record<"afcs" | "kabam" | "amazingAir", ClientProofPoi
     },
     kabam: {
         client: "KABAM Plumbing",
-        headline: "Revenue doubled",
-        detail: "KABAM Plumbing doubled its revenue while working with Sequoia GEO. Owner Mike Bissett also reported weekly calls rising from 10-12 to 15-20 and hiring an apprentice to keep up.",
+        headline: "More weekly calls and a growing team",
+        detail: "Mike Bissett said KABAM used to receive 10 to 12 calls a week. He reported receiving 15 to 20 a week and adding to his team.",
         source: "Client-reported results and May 2026 owner video testimonial",
         href: "/case-studies/kabam-plumbing",
     },
     amazingAir: {
         client: "Amazing Air Solutions",
         headline: "40 to 60 organic Google clicks",
-        detail: "After Sequoia rebuilt and optimized the HVAC company's website, Google organic clicks grew from 40 in the first 30 days to 60 in the comparison period, a 50% increase.",
+        detail: "Sequoia repaired mobile navigation and the booking integration and redirected old URLs. Google Search Console recorded 40 organic clicks April 10 to May 9 and 60 September 14 to October 13, 2026.",
         source: "Google Search Console, comparable 30-day windows",
-        href: "/#amazing-air-proof-heading",
+        href: "/#client-case-studies",
     },
 };
 
 export const operatorProof = [
-    { value: "13 years", label: "Building and operating Balanced Comfort" },
-    { value: "130+", label: "Employees at peak, from a one-person start" },
+    { value: "13 years", label: "Operating a home-service company" },
+    { value: "133", label: "Employees, starting from zero" },
     { value: "$17M+", label: "Annual revenue before the 2024 exit" },
     { value: "4x", label: "Inc. 5000, 2021 to 2024" },
     { value: "4,000+", label: "Five-star reviews reported" },

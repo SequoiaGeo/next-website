@@ -54,18 +54,8 @@ const roofingLeadership = [
     },
 ];
 
-const speedMath = [
-    ["Retail roofing leads per month", "120", "120"],
-    ["First response", "2+ hours", "Under 5 minutes"],
-    ["Inspection set rate", "40%", "65%"],
-    ["Inspections per month", "48", "78"],
-    ["Close rate on inspections", "30%", "30%"],
-    ["Sold roofs per month", "14", "23"],
-    ["Revenue at $16,000 per retail roof", "$224,000", "$368,000"],
-];
-
 const firstThirtyDays = [
-    "Deliver the Local AI Visibility Index for your market and replacement services.",
+    "Use the Local AI Visibility Index if local search is a priority for your team.",
     "Map every lead source into ServiceTitan, AccuLynx or JobNimbus from lead to inspection to sold roof.",
     "Measure speed to lead and inspection set rate with your appointment setters.",
     "Review paid search, LSA, SEO, direct mail and canvassing spend against one scorecard.",
@@ -95,7 +85,7 @@ const roofingFaqs = [
     },
     {
         question: "How does a fractional CMO engagement start?",
-        answer: "Every engagement starts with the Local AI Visibility Index: an executive score, an AI recommendation map across ChatGPT, Google AI Overviews and Perplexity, share of AI voice against your top three local competitors, the sources AI cites, map-pack and GBP health, review velocity, and a 90-day action plan.",
+        answer: "When local search is a priority, we use the Local AI Visibility Index: an executive score, an AI recommendation map across ChatGPT, Google AI Overviews and Perplexity, share of AI voice against your top three local competitors, the sources AI cites, map-pack and GBP health, review velocity, and a 90-day action plan.",
     },
 ];
 
@@ -107,10 +97,11 @@ export default function FractionalCmoForRoofingCompaniesPage() {
 
  <section className="bg-[#0D2318] py-20 text-white sm:py-28"><div className="mx-auto max-w-4xl px-6 lg:px-8">
   <p className="text-sm font-bold uppercase tracking-wider text-[#C8EDD2]">Fractional CMO for roofing companies</p>
-  <h1 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-6xl">Build a roofing company that does not wait for the next storm.</h1>
-  <p className="mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]">Aaron Husak spent 13 years building and operating a residential home-service company to more than 130 employees and $17M+ in revenue. Now he leads marketing for independent roofing owners: predictable retail replacement demand, a budget allocated by sold roof, faster response to every lead, and how your company shows up when homeowners ask AI who to trust with their roof.</p>
+  <h1 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-6xl">We already have a marketing agency. When would we need a fractional CMO?</h1>
+  <p className="mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]">Your agency can be doing good work while you still decide what to spend, which jobs to pursue, and whether your crews have room. I work with your operations team and your agency to set priorities, recommend where the budget goes, and track the jobs you want to book. You keep final approval.</p>
+  <p className="mt-4 max-w-3xl text-lg leading-relaxed text-white">Storm leads fill the inbox, but you need retail replacements next month. I compare each source by inspections held and roofs sold, then recommend which campaigns your agency should fund.</p>
   <ul className="mt-8 flex flex-wrap gap-3 text-sm font-semibold"><li className="rounded-full border border-white/25 px-4 py-2">$5M to $20M in revenue</li><li className="rounded-full border border-white/25 px-4 py-2">30 to 120 employees and crews</li><li className="rounded-full border border-white/25 px-4 py-2">Retail and insurance roofing</li></ul>
-  <div className="mt-9 flex flex-wrap gap-4"><Link href="/contact#book" className="inline-flex min-h-12 items-center rounded-lg bg-white px-7 py-3 font-bold text-[#0D2318]">Talk with Aaron about your roofing company</Link><Link href="#local-ai-visibility-index" className="inline-flex min-h-12 items-center rounded-lg border border-white/40 px-7 py-3 font-bold text-white">See how it starts</Link></div>
+  <div className="mt-9 flex flex-wrap gap-4"><Link href="/contact#book" className="inline-flex min-h-12 items-center rounded-lg bg-white px-7 py-3 font-bold text-[#0D2318]">Talk with Aaron about your roofing company</Link><Link href="#first-month" className="inline-flex min-h-12 items-center rounded-lg border border-white/40 px-7 py-3 font-bold text-white">See how it starts</Link></div>
  </div></section>
 
  <section className="bg-white py-16"><div className="mx-auto max-w-6xl px-6 lg:px-8"><div className="grid gap-10 md:grid-cols-2">
@@ -129,28 +120,22 @@ export default function FractionalCmoForRoofingCompaniesPage() {
   <p className="section-overline mb-4">What Aaron leads in a roofing company</p>
   <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Count sold roofs, not leads.</h2>
   <div className="mt-9 grid gap-5 md:grid-cols-2">{roofingLeadership.map((item, index) => <article key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7"><p className="text-sm font-bold text-[#1A5C3A]">{String(index + 1).padStart(2, "0")}</p><h3 className="mt-3 text-xl font-bold text-[#0D2318]">{item.title}</h3><p className="mt-3 leading-relaxed text-gray-700">{item.body}</p></article>)}</div>
-  <div className="mt-12 grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-start">
-   <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
-    <table className="w-full min-w-[520px] border-collapse text-left"><caption className="p-5 text-left text-lg font-bold text-[#0D2318]">Speed-to-lead math on the same lead volume</caption><thead><tr className="border-y border-gray-200 bg-[#fafaf8]"><th scope="col" className="p-4">Illustration</th><th scope="col" className="p-4">Slow</th><th scope="col" className="p-4">Fast</th></tr></thead><tbody>{speedMath.map((row) => <tr key={row[0]} className="border-b border-gray-200"><th scope="row" className="p-4 font-semibold">{row[0]}</th><td className="p-4 text-gray-700">{row[1]}</td><td className="p-4 font-bold text-[#0D2318]">{row[2]}</td></tr>)}</tbody></table>
-   </div>
-   <div>
-    <h3 className="text-2xl font-extrabold text-[#0D2318]">Nine more sold roofs a month, from leads you already bought.</h3>
-    <p className="mt-4 leading-relaxed text-gray-700">When appointment setters reach every new lead in under five minutes, more homeowners book the inspection before they book someone else. Moving the inspection set rate from 40% to 65% on 120 monthly leads, with the same 30% close rate, produces 23 sold roofs instead of 14. At $16,000 per retail roof, that is $144,000 a month more on the same spend.</p>
-    <p className="mt-4 text-sm leading-relaxed text-gray-600">This is an illustration, not a client result. Your baseline comes from your own CRM and call records.</p>
-    <Link href="/marketing-leak-calculator" className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Estimate your own marketing leak</Link>
-   </div>
-  </div>
+ </div></section>
+
+ <section className="bg-white py-16"><div className="mx-auto max-w-4xl px-6 lg:px-8">
+  <h2 className="text-3xl font-extrabold text-[#0D2318]">Which lead sources turn into signed roofs?</h2>
+  <p className="mt-4 text-lg leading-relaxed text-gray-700">Choose a recent group of leads that has had time to close. Separate retail from insurance work, then count inspections held and contracts signed by source. Compare spend per signed roof before moving budget.</p>
  </div></section>
 
  <LocalAiVisibilityIndex trade="roofing" exampleQuestion="best roof replacement company near me"/>
 
- <MarketingLeadershipOffer/>
+ <MarketingLeadershipOffer showGuarantee/>
 
- <FractionalCmoProof heading="Led by an operator who has carried crews through slow months." operatorParagraph="Aaron spent 13 years building and operating Balanced Comfort, a residential home-service company in Fresno, from a one-person operation to more than 130 employees and $17M+ in annual revenue before its 2024 exit. The company appeared on the Inc. 5000 in 2021, 2022, 2023 and 2024 and reports more than 4,000 five-star reviews. Keeping crews busy when demand drops is the problem he solved for 13 years." proofOrder={["afcs", "kabam", "amazingAir"]} proofIntro="Results from home-service companies that approved being named, starting with a chimney and roofline service company. The same leadership and measurement discipline applies to roofing."/>
+ <FractionalCmoProof heading="Led by an operator who has carried crews through slow months." operatorParagraph="Aaron spent 13 years operating a residential HVAC and plumbing company. He scaled the team from zero to 133 employees and earned four consecutive Inc. 5000 appearances. Today he works directly with owners, dispatchers and marketing providers on the jobs their crews have room to take." proofOrder={["afcs", "kabam", "amazingAir"]} proofIntro="Results from home-service companies that approved being named, starting with a chimney and roofline service company. The same leadership and measurement discipline applies to roofing."/>
 
  <section className="bg-[#fafaf8] py-16"><div className="mx-auto max-w-6xl px-6 lg:px-8"><div className="grid gap-10 md:grid-cols-2">
   <div>
-   <h2 className="text-3xl font-extrabold text-[#0D2318]">The first 30 days in a roofing company</h2>
+   <h2 id="first-month" className="text-3xl font-extrabold text-[#0D2318]">The first 30 days in a roofing company</h2>
    <ol className="mt-5 list-decimal space-y-3 pl-5 leading-relaxed text-gray-700">{firstThirtyDays.map((step) => <li key={step}>{step}</li>)}</ol>
    <p className="mt-5 leading-relaxed text-gray-700">This is a working plan with decisions and accountability, not a promise that every channel can be rebuilt in the first month.</p>
   </div>
@@ -166,6 +151,7 @@ export default function FractionalCmoForRoofingCompaniesPage() {
  <section className="bg-[#fafaf8] py-16"><div className="mx-auto max-w-4xl px-6 lg:px-8">
   <h2 className="text-3xl font-extrabold text-[#0D2318]">Questions roofing owners ask</h2>
   <div className="mt-8 space-y-4">{roofingFaqs.map((faq) => <details key={faq.question} className="rounded-xl border border-gray-200 bg-white p-6"><summary className="cursor-pointer text-lg font-bold">{faq.question}</summary><p className="mt-4 leading-relaxed text-gray-700">{faq.answer}</p></details>)}</div>
+  <p className="mt-6 leading-relaxed text-gray-700">Bring one marketing decision you are stuck on. We can talk through how I would approach it with your team.</p>
   <Link href="/contact#book" className="mt-8 inline-flex min-h-12 items-center rounded-lg bg-[#1A5C3A] px-7 py-3 font-bold text-white">Talk with Aaron about leading your roofing marketing</Link>
   <p className="mt-6 text-base text-gray-600">Results vary. Rankings, lead volume and AI recommendations are not guaranteed.</p>
  </div></section>
