@@ -45,7 +45,7 @@ export const clientProof: Record<"afcs" | "kabam" | "amazingAir", ClientProofPoi
     kabam: {
         client: "KABAM Plumbing",
         headline: "More weekly calls and a growing team",
-        detail: "Owner Mike Bissett reported that weekly calls increased from about a dozen to between 15 and 20, and that he added to his team.",
+        detail: "Mike Bissett said KABAM used to receive 10 to 12 calls a week. He reported receiving 15 to 20 a week and adding to his team.",
         source: "Client-reported results and May 2026 owner video testimonial",
         href: "/case-studies/kabam-plumbing",
     },
