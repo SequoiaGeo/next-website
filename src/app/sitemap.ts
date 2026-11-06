@@ -38,7 +38,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/geo-agency/boise-id`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/geo-agency/chattanooga-tn`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/geo-agency/reno-nv`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/fractional-cmo`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/fractional-cmo`, lastModified: "2026-11-06", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/fractional-cmo-for-hvac-companies`, lastModified: "2026-11-06", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/fractional-cmo-for-plumbing-companies`, lastModified: "2026-11-06", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/fractional-cmo-for-roofing-companies`, lastModified: "2026-11-06", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/lsa-management`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/ai-automation`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/websites`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
@@ -90,7 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/how-much-should-plumbers-spend-on-marketing`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/how-much-do-hvac-plumbing-leads-cost`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/how-much-does-seo-cost-for-contractors`, lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/ai-seo-pricing`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/ai-seo-pricing`, lastModified: "2026-11-06", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/google-lsa-changes-2026`, lastModified: "2026-08-03", changeFrequency: "weekly", priority: 0.8 },
 
     // Statistics pages
