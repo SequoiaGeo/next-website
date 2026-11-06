@@ -424,7 +424,7 @@ export default function BestRoofingAgenciesPage() {
               { label: "Best Plumbing Agencies", href: "/best-plumbing-marketing-agencies" },
               { label: "Local Services Ads Guide", href: "/lsa-guide" },
               { label: "LSA Management", href: "/lsa-management" },
-              { label: "Fractional CMO", href: "/fractional-cmo" },
+              { label: "Fractional CMO for Roofing Companies", href: "/fractional-cmo-for-roofing-companies" },
             ].map((link) => (
               <Link
                 key={link.href}
