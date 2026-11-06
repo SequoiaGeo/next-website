@@ -116,6 +116,12 @@ export default function FractionalCmoForPlumbingCompaniesPage() {
   </div>
  </div></div></section>
 
+ <section className="bg-[#fafaf8] py-16 sm:py-20"><div className="mx-auto max-w-6xl px-6 lg:px-8">
+  <p className="section-overline mb-4">What Aaron leads in a plumbing company</p>
+  <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Win the emergency call. Earn the replacement job.</h2>
+  <div className="mt-9 grid gap-5 md:grid-cols-2">{plumbingLeadership.map((item, index) => <article key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7"><p className="text-sm font-bold text-[#1A5C3A]">{String(index + 1).padStart(2, "0")}</p><h3 className="mt-3 text-xl font-bold text-[#0D2318]">{item.title}</h3><p className="mt-3 leading-relaxed text-gray-700">{item.body}</p></article>)}</div>
+ </div></section>
+
  <section className="bg-white py-16"><div className="mx-auto max-w-4xl px-6 lg:px-8">
   <h2 className="text-3xl font-extrabold text-[#0D2318]">What would answering 40 more calls change?</h2>
   <p className="mt-4 text-lg leading-relaxed text-gray-700">Suppose your team answers 348 of 400 calls and books 42% of those answered. Answering 388 at the same booking rate would mean about 17 additional bookings. Compare that opportunity with the cost of after-hours coverage.</p>
