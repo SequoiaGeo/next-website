@@ -414,7 +414,7 @@ export default function BestHvacMarketingAgenciesPage() {
               { label: "LSA Statistics 2026", href: "/local-services-ads-statistics" },
               { label: "LSA Management", href: "/lsa-management" },
               { label: "Free LSA Guide", href: "/lsa-guide" },
-              { label: "Fractional CMO", href: "/fractional-cmo" },
+              { label: "Fractional CMO for HVAC Companies", href: "/fractional-cmo-for-hvac-companies" },
             ].map((link) => (
               <Link
                 key={link.href}
