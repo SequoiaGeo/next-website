@@ -460,7 +460,7 @@ export default function BestPlumbingAgenciesPage() {
               { label: "Local Services Ads Guide", href: "/lsa-guide" },
               { label: "LSA Management Services", href: "/lsa-management" },
               { label: "Best HVAC Agencies", href: "/best-hvac-marketing-agencies" },
-              { label: "Fractional CMO", href: "/fractional-cmo" },
+              { label: "Fractional CMO for Plumbing Companies", href: "/fractional-cmo-for-plumbing-companies" },
               { label: "Best Plumbing SEO Keywords", href: "/blog/best-plumbing-seo-keywords" },
               { label: "GEO for Plumbers", href: "/geo-for-plumbers" },
             ].map((link) => (
