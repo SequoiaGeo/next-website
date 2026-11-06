@@ -25,7 +25,7 @@ export default function FractionalCmoProof({
      <dd className="mt-2 text-2xl font-extrabold text-[#0D2318]">{item.value}</dd>
     </div>)}
    </dl>
-   <Link href="/case-studies/balanced-comfort" className="mt-6 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Read the Balanced Comfort story</Link>
+   <Link href="/case-studies/balanced-comfort" className="mt-6 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Read Aaron’s operating story</Link>
    <h3 className="mt-14 text-2xl font-extrabold text-[#0D2318]">Client results</h3>
    <p className="mt-3 max-w-3xl leading-relaxed text-gray-700">{proofIntro}</p>
    <div className="mt-6 grid gap-5 md:grid-cols-3">

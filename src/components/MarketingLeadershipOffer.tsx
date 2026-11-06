@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { leadershipResponsibilities } from "@/lib/marketing-offer";
-export default function MarketingLeadershipOffer({ detailed = false }: {
+export default function MarketingLeadershipOffer({ detailed = false, showGuarantee = false }: {
     detailed?: boolean;
+    showGuarantee?: boolean;
 }) {
     return <section id="leadership-and-execution" className="bg-[#fafaf8] py-16 sm:py-20">
   <div className="mx-auto max-w-6xl px-6 lg:px-8">
@@ -12,6 +13,7 @@ export default function MarketingLeadershipOffer({ detailed = false }: {
     <article className="rounded-2xl bg-[#0D2318] p-7 text-white sm:p-9">
      <h3 className="text-2xl font-bold">Fractional CMO leadership</h3>
      <p className="mt-4 text-3xl font-extrabold">Starting at $7,000 per month</p>
+     {showGuarantee && <p className="mt-2 font-semibold">Satisfaction Guarantee</p>}
      <p className="mt-5 leading-relaxed text-[#C8EDD2]">The priorities, positioning, marketing plan, budget recommendations, team and vendor direction, and performance oversight.</p>
      <ul className="mt-5 list-disc space-y-2 pl-5 leading-relaxed text-[#C8EDD2]"><li>A rolling 90-day plan with owners and deadlines</li><li>Weekly decision meetings and monthly performance reviews</li><li>Direct leadership from Aaron across your team and providers</li></ul>
      <Link href="/fractional-cmo" className="mt-6 inline-flex min-h-11 items-center font-bold text-white underline underline-offset-4">Explore the leadership role</Link>

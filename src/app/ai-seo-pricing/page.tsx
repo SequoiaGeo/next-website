@@ -34,7 +34,7 @@ const plans = [
         term: "Six-month initial term, then month to month",
         summary: "Aaron Husak leads your marketing function: priorities, positioning, budget recommendations, agencies and team, measurement, and AI search visibility strategy.",
         includes: [
-            "Local AI Visibility Index to set the baseline",
+            "Local AI Visibility Index when relevant to your plan",
             "Rolling 90-day plan with owners and deadlines",
             "AI search visibility strategy across ChatGPT, Google AI Overviews and Perplexity",
             "Direction and review of your agencies, coordinator and providers",
@@ -98,7 +98,7 @@ const pricingFaqs = [
     },
     {
         question: "What is included in the $7,000 fractional CMO retainer?",
-        answer: "The retainer covers marketing leadership from Aaron Husak: business priorities, positioning, a rolling 90-day plan, budget recommendations, direction of your team and providers, measurement and accountability, coordination with operations, technology and AI direction, AI search visibility strategy, weekly decision meetings and a monthly performance review. Every engagement starts with the Local AI Visibility Index.",
+        answer: "The retainer covers marketing leadership from Aaron Husak: business priorities, positioning, a rolling 90-day plan, budget recommendations, direction of your team and providers, measurement and accountability, coordination with operations, technology and AI direction, AI search visibility strategy, weekly decision meetings and a monthly performance review. When local search is a priority, Aaron can document a baseline with the Local AI Visibility Index.",
     },
     {
         question: "Is AI SEO included in the fractional CMO price?",
@@ -147,7 +147,7 @@ export default function PricingPage() {
  <section className="bg-[#0D2318] py-20 text-white sm:py-24"><div className="mx-auto max-w-4xl px-6 lg:px-8">
   <p className="font-semibold text-[#C8EDD2]">Fractional CMO pricing</p>
   <h1 className="mt-4 text-4xl font-extrabold sm:text-5xl">Fractional CMO pricing for home service companies</h1>
-  <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]">Fractional CMO leadership starts at <strong className="text-white">$7,000 per month</strong>, with AI search visibility strategy included. It is built for independent HVAC, plumbing, roofing and other home service companies doing $5 million to $20 million. Add AI SEO and GEO execution from $4,500 per month, or engage both from $11,500.</p>
+  <p className="mt-6 text-xl leading-relaxed text-[#C8EDD2]">Fractional CMO leadership starts at <strong className="text-white">$7,000 per month</strong>, with a Satisfaction Guarantee. Keep the agency you trust. Aaron leads the plan and coordinates your providers with your operations team. It is built for independent HVAC, plumbing, roofing and other home service companies doing $5 million to $20 million. Add AI SEO and GEO execution from $4,500 per month, or engage both from $11,500.</p>
   <div className="mt-8 flex flex-wrap gap-4"><Link href="/contact#book" className="inline-flex min-h-12 items-center rounded-lg bg-white px-7 py-3 font-bold text-[#0D2318]">Discuss your plan with Aaron</Link><Link href="#pricing-plans" className="inline-flex min-h-12 items-center rounded-lg border border-white/40 px-7 py-3 font-bold text-white">Compare the options</Link></div>
  </div></section>
 

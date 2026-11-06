@@ -54,17 +54,8 @@ const plumbingLeadership = [
     },
 ];
 
-const callMath = [
-    ["Inbound calls per month", "400", "400"],
-    ["Missed or sent to voicemail", "13% (52)", "3% (12)"],
-    ["Calls answered", "348", "388"],
-    ["Booking rate on answered calls", "42%", "80%"],
-    ["Booked jobs per month", "146", "310"],
-    ["Revenue at $550 per booked job", "$80,300", "$170,500"],
-];
-
 const firstThirtyDays = [
-    "Deliver the Local AI Visibility Index for your market, including emergency and septic questions.",
+    "Use the Local AI Visibility Index if local search is a priority for your team.",
     "Audit call tracking, missed calls and after-hours handling in ServiceTitan or Housecall Pro.",
     "Set a booking-rate baseline from recorded calls with your CSR lead and answering service.",
     "Review GBP, LSA, SEO and paid search providers against one scorecard.",
@@ -94,7 +85,7 @@ const plumbingFaqs = [
     },
     {
         question: "How does a fractional CMO engagement start?",
-        answer: "Every engagement starts with the Local AI Visibility Index: an executive score, an AI recommendation map across ChatGPT, Google AI Overviews and Perplexity, share of AI voice against your top three local competitors, the sources AI cites, map-pack and GBP health, review velocity, and a 90-day action plan.",
+        answer: "When local search is a priority, we use the Local AI Visibility Index: an executive score, an AI recommendation map across ChatGPT, Google AI Overviews and Perplexity, share of AI voice against your top three local competitors, the sources AI cites, map-pack and GBP health, review velocity, and a 90-day action plan.",
     },
 ];
 
@@ -106,10 +97,11 @@ export default function FractionalCmoForPlumbingCompaniesPage() {
 
  <section className="bg-[#0D2318] py-20 text-white sm:py-28"><div className="mx-auto max-w-4xl px-6 lg:px-8">
   <p className="text-sm font-bold uppercase tracking-wider text-[#C8EDD2]">Fractional CMO for plumbing companies</p>
-  <h1 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-6xl">Keep the board full. Grow the jobs that pay for the trucks.</h1>
-  <p className="mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]">Aaron Husak spent 13 years building and operating Balanced Comfort, a residential plumbing and HVAC company licensed for plumbing in California, to more than 130 employees. Now he leads marketing for independent plumbing, drain and septic owners: the plan, the budget, the agencies, the missed calls and how your company shows up when a homeowner with a flooded floor asks AI who to call.</p>
+  <h1 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-6xl">We already have a marketing agency. When would we need a fractional CMO?</h1>
+  <p className="mt-6 max-w-3xl text-xl leading-relaxed text-[#C8EDD2]">Your agency can be doing good work while you still decide what to spend, which jobs to pursue, and whether your crews have room. I work with your operations team and your agency to set priorities, recommend where the budget goes, and track the jobs you want to book. You keep final approval.</p>
+  <p className="mt-4 max-w-3xl text-lg leading-relaxed text-white">Your drain crews are booked, but next week’s sewer and repipe estimate slots are open. I check which campaigns generate those estimates and ask your agency for a spending plan that fits both schedules.</p>
   <ul className="mt-8 flex flex-wrap gap-3 text-sm font-semibold"><li className="rounded-full border border-white/25 px-4 py-2">$5M to $20M in revenue</li><li className="rounded-full border border-white/25 px-4 py-2">30 to 120 employees</li><li className="rounded-full border border-white/25 px-4 py-2">Plumbing, drain, sewer and septic</li></ul>
-  <div className="mt-9 flex flex-wrap gap-4"><Link href="/contact#book" className="inline-flex min-h-12 items-center rounded-lg bg-white px-7 py-3 font-bold text-[#0D2318]">Talk with Aaron about your plumbing company</Link><Link href="#local-ai-visibility-index" className="inline-flex min-h-12 items-center rounded-lg border border-white/40 px-7 py-3 font-bold text-white">See how it starts</Link></div>
+  <div className="mt-9 flex flex-wrap gap-4"><Link href="/contact#book" className="inline-flex min-h-12 items-center rounded-lg bg-white px-7 py-3 font-bold text-[#0D2318]">Talk with Aaron about your plumbing company</Link><Link href="#first-month" className="inline-flex min-h-12 items-center rounded-lg border border-white/40 px-7 py-3 font-bold text-white">See how it starts</Link></div>
  </div></section>
 
  <section className="bg-white py-16"><div className="mx-auto max-w-6xl px-6 lg:px-8"><div className="grid gap-10 md:grid-cols-2">
@@ -124,32 +116,20 @@ export default function FractionalCmoForPlumbingCompaniesPage() {
   </div>
  </div></div></section>
 
- <section className="bg-[#fafaf8] py-16 sm:py-20"><div className="mx-auto max-w-6xl px-6 lg:px-8">
-  <p className="section-overline mb-4">What Aaron leads in a plumbing company</p>
-  <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight text-[#0D2318] sm:text-4xl">Win the emergency call. Earn the replacement job.</h2>
-  <div className="mt-9 grid gap-5 md:grid-cols-2">{plumbingLeadership.map((item, index) => <article key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7"><p className="text-sm font-bold text-[#1A5C3A]">{String(index + 1).padStart(2, "0")}</p><h3 className="mt-3 text-xl font-bold text-[#0D2318]">{item.title}</h3><p className="mt-3 leading-relaxed text-gray-700">{item.body}</p></article>)}</div>
-  <div className="mt-12 grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-start">
-   <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
-    <table className="w-full min-w-[520px] border-collapse text-left"><caption className="p-5 text-left text-lg font-bold text-[#0D2318]">Missed-call and booking math on the same call volume</caption><thead><tr className="border-y border-gray-200 bg-[#fafaf8]"><th scope="col" className="p-4">Illustration</th><th scope="col" className="p-4">Leaking</th><th scope="col" className="p-4">Plugged</th></tr></thead><tbody>{callMath.map((row) => <tr key={row[0]} className="border-b border-gray-200"><th scope="row" className="p-4 font-semibold">{row[0]}</th><td className="p-4 text-gray-700">{row[1]}</td><td className="p-4 font-bold text-[#0D2318]">{row[2]}</td></tr>)}</tbody></table>
-   </div>
-   <div>
-    <h3 className="text-2xl font-extrabold text-[#0D2318]">164 more booked jobs a month from calls you already paid for.</h3>
-    <p className="mt-4 leading-relaxed text-gray-700">In one published plumbing example, 13% of calls went to voicemail. Published figures put the average booking rate around 42%. Answer nearly every call, after hours included, and book 80% of the ones you should, and 400 monthly calls become 310 booked jobs instead of 146. At $550 per booked job, that is $90,200 a month more, before a single repipe or septic replacement closes.</p>
-    <p className="mt-4 text-sm leading-relaxed text-gray-600">This is an illustration, not a client result. Your baseline comes from your own call logs and booking report.</p>
-    <Link href="/resources/where-are-my-calls-going" className="mt-5 inline-flex min-h-11 items-center font-bold text-[#1A5C3A] underline underline-offset-4">Find out where your calls are going</Link>
-   </div>
-  </div>
+ <section className="bg-white py-16"><div className="mx-auto max-w-4xl px-6 lg:px-8">
+  <h2 className="text-3xl font-extrabold text-[#0D2318]">What would answering 40 more calls change?</h2>
+  <p className="mt-4 text-lg leading-relaxed text-gray-700">Suppose your team answers 348 of 400 calls and books 42% of those answered. Answering 388 at the same booking rate would mean about 17 additional bookings. Compare that opportunity with the cost of after-hours coverage.</p>
  </div></section>
 
  <LocalAiVisibilityIndex trade="plumbing" exampleQuestion="emergency plumber near me open now"/>
 
- <MarketingLeadershipOffer/>
+ <MarketingLeadershipOffer showGuarantee/>
 
- <FractionalCmoProof heading="Led by an owner who has answered the 2 a.m. call." operatorParagraph="Aaron spent 13 years building and operating Balanced Comfort, a residential plumbing and HVAC company in Fresno, from a one-person operation to more than 130 employees and $17M+ in annual revenue before its 2024 exit. The company appeared on the Inc. 5000 in 2021, 2022, 2023 and 2024 and reports more than 4,000 five-star reviews. He has staffed the after-hours phone, priced the repipe and argued with the answering service." proofOrder={["kabam", "afcs", "amazingAir"]} proofIntro="Results from home-service companies that approved being named, starting with a plumbing company."/>
+ <FractionalCmoProof heading="Led by an owner who has answered the 2 a.m. call." operatorParagraph="Aaron spent 13 years operating a residential HVAC and plumbing company. He scaled the team from zero to 133 employees and earned four consecutive Inc. 5000 appearances. Today he works directly with owners, dispatchers and marketing providers on the jobs their crews have room to take." proofOrder={["kabam", "afcs", "amazingAir"]} proofIntro="Results from home-service companies that approved being named, starting with a plumbing company."/>
 
  <section className="bg-[#fafaf8] py-16"><div className="mx-auto max-w-6xl px-6 lg:px-8"><div className="grid gap-10 md:grid-cols-2">
   <div>
-   <h2 className="text-3xl font-extrabold text-[#0D2318]">The first 30 days in a plumbing company</h2>
+   <h2 id="first-month" className="text-3xl font-extrabold text-[#0D2318]">The first 30 days in a plumbing company</h2>
    <ol className="mt-5 list-decimal space-y-3 pl-5 leading-relaxed text-gray-700">{firstThirtyDays.map((step) => <li key={step}>{step}</li>)}</ol>
    <p className="mt-5 leading-relaxed text-gray-700">This is a working plan with decisions and accountability, not a promise that every channel can be rebuilt in the first month.</p>
   </div>
@@ -165,6 +145,7 @@ export default function FractionalCmoForPlumbingCompaniesPage() {
  <section className="bg-[#fafaf8] py-16"><div className="mx-auto max-w-4xl px-6 lg:px-8">
   <h2 className="text-3xl font-extrabold text-[#0D2318]">Questions plumbing owners ask</h2>
   <div className="mt-8 space-y-4">{plumbingFaqs.map((faq) => <details key={faq.question} className="rounded-xl border border-gray-200 bg-white p-6"><summary className="cursor-pointer text-lg font-bold">{faq.question}</summary><p className="mt-4 leading-relaxed text-gray-700">{faq.answer}</p></details>)}</div>
+  <p className="mt-6 leading-relaxed text-gray-700">Bring one marketing decision you are stuck on. We can talk through how I would approach it with your team.</p>
   <Link href="/contact#book" className="mt-8 inline-flex min-h-12 items-center rounded-lg bg-[#1A5C3A] px-7 py-3 font-bold text-white">Talk with Aaron about leading your plumbing marketing</Link>
   <p className="mt-6 text-base text-gray-600">Results vary. Rankings, lead volume and AI recommendations are not guaranteed.</p>
  </div></section>
