@@ -51,8 +51,8 @@ export const clientProof: Record<"afcs" | "kabam" | "amazingAir", ClientProofPoi
     },
     amazingAir: {
         client: "Amazing Air Solutions",
-        headline: "40 to 60 organic Google clicks",
-        detail: "Sequoia repaired mobile navigation and the booking integration and redirected old URLs. Google Search Console recorded 40 organic clicks April 10 to May 9 and 60 September 14 to October 13, 2026.",
+        headline: "50% more organic Google clicks",
+        detail: "Sequoia rebuilt the website, fixed mobile navigation and the booking integration, and redirected old URLs. Google Search Console recorded 40 organic clicks April 10 to May 9 and 60 September 14 to October 13, 2026.",
         source: "Google Search Console, comparable 30-day windows",
         href: "/#client-case-studies",
     },
