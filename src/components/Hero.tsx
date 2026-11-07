@@ -11,7 +11,7 @@ export default function Hero() {
         <h1 id="hero-heading">Home Service Marketing and Fractional CMO Leadership</h1>
         <p className="forest-hero-promise">Your marketing. One accountable leader.</p>
         <ul className="forest-hero-evidence" aria-label="Why work with Aaron">
-          <li>Thirteen years operating in home services</li>
+          <li>20 years in home services, including 13 years building and leading a company.</li>
           <li>Scaled the team from zero to 133 employees</li>
           <li>Four consecutive Inc. 5000 appearances</li>
           <li>Work directly with Aaron on strategy and performance</li>
