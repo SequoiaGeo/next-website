@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { featuredAboutMedia } from "@/data/media";
@@ -59,6 +59,7 @@ export default function AboutPage() {
 
             {/* Right: story */}
             <div className="space-y-6 text-lg leading-relaxed text-gray-600">
+              <p>Contracting Business selected Aaron for its <a href="https://www.contractingbusiness.com/columns/article/21277790/introducing-contracting-business-influencer-team" className="font-semibold text-[#1A5C3A] underline underline-offset-4">2024 Team of Influencers</a>, a group of industry contributors sharing perspectives on HVAC business management and trends.</p>
               <p>
                 Aaron Husak began his home-service sales and marketing career in 2006, cold calling
                 for a residential solar company. In 2012, he launched Balanced Comfort Heating &amp; Air
