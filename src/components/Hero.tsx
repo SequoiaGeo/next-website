@@ -16,6 +16,7 @@ export default function Hero() {
           <li>Four consecutive Inc. 5000 appearances</li>
           <li>Work directly with Aaron on strategy and performance</li>
         </ul>
+        <p className="mt-4 text-base leading-relaxed text-white">Selected for <a href="https://www.contractingbusiness.com/columns/article/21277790/introducing-contracting-business-influencer-team" className="font-semibold underline underline-offset-4">Contracting Business&rsquo;s 2024 Team of Influencers</a>.</p>
         <div className="forest-hero-actions">
           <Link href="/contact#book" className="forest-button">Book a call <span aria-hidden="true">&#8599;</span></Link>
           <Link href="#client-case-studies" className="forest-hero-proof-link">See client results <span aria-hidden="true">&#8595;</span></Link>
