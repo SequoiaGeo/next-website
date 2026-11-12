@@ -1,4 +1,5 @@
 import { geoGuidePosts } from "@/data/geo-guide-series";
+import { businessWalkthroughPost, businessWalkthroughSlug } from "@/data/chatgpt-business-walkthrough";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -6,6 +7,7 @@ import { podcastPosts } from "@/data/podcast-posts";
 import { leadershipComparisonPost, leadershipComparisonSlug } from "@/data/leadership-comparison-post";
 
 interface Post {
+  image?: string;
   title: string;
   description: string;
   date: string;
@@ -22,6 +24,7 @@ import { searchEverywherePost, searchEverywhereSlug } from "@/data/search-everyw
 import { aiDiscoveryPost, aiDiscoverySlug, recommendationPost, recommendationSlug } from "@/data/ai-discovery-posts";
 
 const posts: Record<string, Post> = {
+  [businessWalkthroughSlug]: businessWalkthroughPost,
   ...geoGuidePosts,
   [recommendationSlug]: recommendationPost,
   [searchEverywhereSlug]: searchEverywherePost,
@@ -5127,6 +5130,7 @@ export async function generateMetadata({
       url: `https://www.sequoiageo.com/blog/${slug}`,
       publishedTime: post.dateISO,
       modifiedTime: post.modifiedDateISO ?? post.dateISO,
+      ...(post.image ? { images: [{ url: post.image, alt: post.title }] } : {}),
     },
     alternates: {
       canonical: `https://www.sequoiageo.com/blog/${slug}`,
