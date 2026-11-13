@@ -56,6 +56,7 @@ export const businessWalkthroughPost = {
     <p>For a contractor, this is an opportunity to review the information associated with the business. Keep service details, business information, project evidence, and customer experience accurate across your existing channels. A claimed profile alone does not establish that ChatGPT will recommend the company.</p>
     <p>Related reading: <Link href="/blog/chatgpt-knows-your-company-does-it-recommend-you" className="underline">ChatGPT recognition versus recommendations</Link>, and <Link href="/blog/how-to-use-geo-tools-contractors" className="underline">how contractors can interpret AI search reports</Link>.</p>
     <h2 id="transcript">Full walkthrough transcript</h2>
+    <p><strong>Next tutorial:</strong> once verification is complete, watch <Link href="/blog/how-to-edit-chatgpt-business-profile" className="underline">how to edit your ChatGPT business profile</Link> for category, description, contact, location, and hours updates.</p>
     <p>This is the supplied transcript, with editing markers removed, paragraph spacing cleaned up, and Sequoia GEO&apos;s name and website spelling corrected. Spoken observations and predictions reflect the recording, not a promise of current feature access. The notes above clarify rollout limits and verification status.</p>
     <p><a href="/transcripts/chatgpt-business-hub.txt" download className="font-semibold underline">Download the transcript as text</a></p>
     <div className="rounded-xl border border-gray-200 bg-[#fafaf8] p-5 sm:p-8">
