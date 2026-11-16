@@ -1,0 +1,184 @@
+{
+  "episode-1": [
+    {
+      "question": "What is GEO, and how is it different from SEO for contractors?",
+      "answer": "SEO helps people find your pages in search. In this episode, GEO adds the goal of having your business information understood and included in an AI answer. The foundations overlap: clear service pages, consistent business details, reviews, and evidence of your work. The difference is partly what you measure, including mentions and citations rather than only page rankings.",
+      "seconds": 125,
+      "timestamp": "2:05"
+    },
+    {
+      "question": "How can I tell whether AI search is bringing my business customers?",
+      "answer": "Track a consistent set of real customer questions across AI tools, recording mentions, citations, and whether the business details are accurate. Then check referral visits, inquiries, and jobs booked separately. The episode emphasizes trends across repeated tests, because one recommendation is a snapshot and does not establish a fixed ranking or a new customer.",
+      "seconds": 284,
+      "timestamp": "4:44"
+    },
+    {
+      "question": "What should I check when AI recommends a competitor instead of my company?",
+      "answer": "Start with the evidence behind the competitor: which services they explain, which homeowner questions they answer, and which independent sources support their claims. Then review your own service and location pages, project proof, credentials, and business information. The episode recommends improving those foundations and repeating the same searches, without promising that any change guarantees a recommendation.",
+      "seconds": 346,
+      "timestamp": "5:46"
+    },
+    {
+      "question": "What should our office ask a customer who says they found us on ChatGPT?",
+      "answer": "Ask what they searched, which tool they used, and whether they can share a screenshot of the answer. That gives you the actual wording and competing recommendations to investigate. The conversation suggests using those customer examples to build your testing list, instead of guessing what homeowners ask or treating an AI mention as a booked job.",
+      "seconds": 628,
+      "timestamp": "10:28"
+    }
+  ],
+  "episode-2": [
+    {
+      "question": "Why does Gemini recommend different HVAC companies for the same question?",
+      "answer": "The live tests showed overlapping company names alongside changes in order, sources, and occasional new companies. Different models can also take different routes to an answer. The episode treats those observations as variation under the test conditions, not proof of a permanent ranking or a rule that Flash and Pro always recommend different businesses.",
+      "seconds": 991,
+      "timestamp": "16:31"
+    },
+    {
+      "question": "Does appearing first in an AI source list mean my business ranks first?",
+      "answer": "No. In the discussion, being first in a displayed source list is not treated as evidence that a page was found first or trusted most. Look at which claim each link supports and distinguish a linked source from a recommended company. Compare repeated answers rather than assigning a ranking score to the source order.",
+      "seconds": 312,
+      "timestamp": "5:12"
+    },
+    {
+      "question": "What information should an HVAC repair page make clear to homeowners?",
+      "answer": "The pages examined shared practical details: the city served, AC repair services, urgent availability, trust evidence, and a way to call or book. Dedicated repair pages also described specific problems. Those are useful checks for your own page, but the episode explicitly separates these observed features from proven reasons why Gemini selected a company.",
+      "seconds": 1145,
+      "timestamp": "19:05"
+    },
+    {
+      "question": "Did this test show that publishing prices makes AI recommend a contractor?",
+      "answer": "No. None of the four Pro pages discussed published a standard AC repair price. Some used diagnostic quotes, discounts, or general pricing statements. The conversation corrects an earlier suggestion about price: this test did not establish that pricing caused the recommendations, even though pricing information can be relevant to a homeowner comparing options.",
+      "seconds": 1330,
+      "timestamp": "22:10"
+    }
+  ],
+  "episode-3": [
+    {
+      "question": "Which parts of an HVAC website should an owner check first?",
+      "answer": "Shaurya describes checking contact options, visible reviews, real team and job photos, mobile readability, and measurement. These give homeowners ways to evaluate and contact the business. His project examined website features; he said he had not yet tested whether changing them increased conversions, so the findings are a checklist rather than a measured promise of more jobs.",
+      "seconds": 124,
+      "timestamp": "2:04"
+    },
+    {
+      "question": "Can a business get ChatGPT inquiries without ranking well on Google?",
+      "answer": "Shaurya reports receiving inquiries through a one-page website that he had not intentionally optimized for search. He identified the source through customer conversations, including one person sharing the exact prompt. That is a guest experience, not evidence that every similar website will perform the same way or that traditional search work is unnecessary.",
+      "seconds": 1108,
+      "timestamp": "18:28"
+    },
+    {
+      "question": "What do homeowners value in an HVAC technician, according to the review discussion?",
+      "answer": "In his review analysis, Shaurya says customers appreciated technicians explaining what was wrong with the system and breaking down the proposed cost. The practical takeaway is to help a homeowner understand the diagnosis and recommendation before asking for a decision. The episode presents this as his research finding, not a guaranteed way to win every estimate.",
+      "seconds": 1981,
+      "timestamp": "33:01"
+    },
+    {
+      "question": "How should a contractor respond to a one-star review?",
+      "answer": "Aaron recommends responding to the concern rather than attacking the customer or writing a lengthy argument. Acknowledge what went wrong when appropriate and offer a direct path to discuss it. The conversation emphasizes that future customers read those exchanges to judge how the company might treat them if their own job has a problem.",
+      "seconds": 2256,
+      "timestamp": "37:36"
+    }
+  ],
+  "episode-4": [
+    {
+      "question": "Do contractors still need a website when customers use AI search?",
+      "answer": "Wes argues that the website remains a place to explain the business and support a considered buying decision. It gives you control over your messaging and provides information people can review before hiring. His advice is to keep it as a central resource, even while customers discover the company through social media, search, or AI.",
+      "seconds": 1709,
+      "timestamp": "28:29"
+    },
+    {
+      "question": "How can we turn completed jobs into website content without a full writing project?",
+      "answer": "Wes describes starting with before-and-after photos and a few sentences about the work and its location. Existing project descriptions can also supply detail. Those materials give a writer or AI tool something specific to organize into a case study, rather than producing generic copy that could describe any contractor. The contractor still supplies the firsthand experience.",
+      "seconds": 1233,
+      "timestamp": "20:33"
+    },
+    {
+      "question": "What makes a contractor website feel credible to a homeowner?",
+      "answer": "The discussion emphasizes details a customer can check: who does the work, what a job involved, how a problem was handled, and what happens after a call. Wes also recommends showing the real people behind the business. Reviews contribute context, but the episode notes that no review platform makes fabricated feedback impossible.",
+      "seconds": 1865,
+      "timestamp": "31:05"
+    },
+    {
+      "question": "How can we learn whether AI influenced a customer who calls us?",
+      "answer": "Wes recommends making the source of the inquiry part of the customer conversation. Ask what prompted them to contact the company rather than relying entirely on clickable referral data. A person may see an AI recommendation and call later, so the discussion treats customer answers as useful context alongside the information available in website reporting.",
+      "seconds": 1586,
+      "timestamp": "26:26"
+    }
+  ],
+  "episode-5": [
+    {
+      "question": "Where should I start if people find my contracting business but do not hire us?",
+      "answer": "Benjamin starts with an audit of the company and owner, their public reputation, existing strengths, and business goals. He looks beyond the website to understand what is already working and what may be undermining trust. That gives the business a starting point before adding more marketing activity or applying the same plan to every contractor.",
+      "seconds": 150,
+      "timestamp": "2:30"
+    },
+    {
+      "question": "How can our business stand out when every contractor promises great service?",
+      "answer": "Benjamin suggests studying recurring complaints in local competitors' reviews, such as missed appointments, and addressing the underlying problem in your own operations and messaging. Explain what you actually do differently and can deliver. His point is to respond to specific customer concerns, instead of relying only on familiar claims like licensed, experienced, or family-owned.",
+      "seconds": 1274,
+      "timestamp": "21:14"
+    },
+    {
+      "question": "What should contractors film instead of staged social media content?",
+      "answer": "Benjamin recommends documenting the work already happening: the job, the task, and the people doing it. The purpose is to help a prospective customer see that your experience is real and relevant to their situation. He encourages choosing what to share deliberately, with the audience and purpose in mind rather than following a trend.",
+      "seconds": 922,
+      "timestamp": "15:22"
+    },
+    {
+      "question": "Why might more advertising fail to produce more booked jobs?",
+      "answer": "Benjamin describes a construction client whose team could not keep up with the proposals needed after leads arrived. His broader point is that marketing and operational capacity need to work together. Before increasing demand, check whether the office and field team can respond and follow through, so the business can handle the inquiries it receives.",
+      "seconds": 481,
+      "timestamp": "8:01"
+    }
+  ],
+  "episode-6": [
+    {
+      "question": "What should a contractor include on an About page?",
+      "answer": "Jason and Aaron recommend making the business story visible in one place instead of assuming customers already know it. Explain who you are and the story behind the company, including the reasons you started. The discussion highlights that useful details are often still in the owner's head or scattered around the web rather than clearly presented on the site.",
+      "seconds": 3203,
+      "timestamp": "53:23"
+    },
+    {
+      "question": "How can I turn customer questions into ideas for website content?",
+      "answer": "Jason suggests describing your business, service, and location aloud to an AI tool, then brainstorming what a customer might actually ask. Start with their language rather than only industry terminology. Use that conversation to organize a content plan based on your experience, while reviewing its suggestions instead of assuming the tool knows every customer or search.",
+      "seconds": 547,
+      "timestamp": "9:07"
+    },
+    {
+      "question": "Do I need to update my website every day to improve AI visibility?",
+      "answer": "No daily rewrite is prescribed. The conversation distinguishes useful corrections, such as accurate service areas and clearer installation details, from changing words for its own sake. Jason agrees that when the website is doing its job, the owner can spend time on other work. Updates should improve the information a customer receives, not merely create activity.",
+      "seconds": 3146,
+      "timestamp": "52:26"
+    },
+    {
+      "question": "Should I let an AI agent send customer emails without reviewing them?",
+      "answer": "Aaron recommends reviewing the draft before it goes out, especially whether it sounds like the business and preserves trust. Jason also describes an agent sending repeated emails when he was not checking it. The takeaway from their discussion is to keep oversight of outreach rather than assuming an instruction alone will prevent every unwanted message.",
+      "seconds": 2156,
+      "timestamp": "35:56"
+    }
+  ],
+  "las-vegas-plumbing-ai-search": [
+    {
+      "question": "Why did ChatGPT recommend different plumbers for emergency repair and water heaters?",
+      "answer": "The walkthrough changes the request from an overflowing toilet to a tankless water heater installation and receives a different set of recommendations, with some overlap. That illustrates why a business should test the actual services homeowners need. One broad plumbing query does not show whether the company will appear for every plumbing problem.",
+      "seconds": 153,
+      "timestamp": "2:33"
+    },
+    {
+      "question": "What should a plumbing estimate explain if a customer might compare it with AI?",
+      "answer": "Aaron points to specific scope details such as removal of the old heater, permits, gas-line changes, venting, and warranty. Clearly state what applies to the proposed job and what is included. A homeowner comparing estimates should not have to guess whether an omitted item is included, excluded, or simply not relevant to that installation.",
+      "seconds": 345,
+      "timestamp": "5:45"
+    },
+    {
+      "question": "How can we find out what homeowners actually ask AI about plumbing?",
+      "answer": "Ask customers about the words they used and request an example or screenshot when available. Aaron describes a customer using terminology that a contractor might not have anticipated. The lesson is to investigate real customer language, including imperfect wording, rather than building every test around the terms people inside the trade prefer.",
+      "seconds": 595,
+      "timestamp": "9:55"
+    },
+    {
+      "question": "What kind of evidence can a plumbing company add to its website?",
+      "answer": "The walkthrough recommends using firsthand job experience and explaining relevant local differences, such as neighborhood housing types and the problems encountered there. Information from completed work can show what the company understands and does. That gives customers more substance than generic service claims and makes expertise visible rather than leaving it only in the owner's head.",
+      "seconds": 873,
+      "timestamp": "14:33"
+    }
+  ]
+}

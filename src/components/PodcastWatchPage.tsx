@@ -8,6 +8,7 @@ import four from "@/data/podcast-transcripts/episode-4.json";
 import six from "@/data/podcast-transcripts/episode-6.json";
 import five from "@/data/podcast-transcripts/episode-5.json";
 import plumbing from "@/data/podcast-transcripts/las-vegas-plumbing-ai-search.json";
+import podcastFaqs from "@/data/podcast-faqs.json";
 
 const transcripts = { "episode-1": one, "episode-2": two, "episode-3": three, "episode-4": four, "episode-5": five, "episode-6": six, "las-vegas-plumbing-ai-search": plumbing };
 const base = "https://www.sequoiageo.com";
@@ -19,6 +20,7 @@ export function watchMetadata(video: PodcastVideo): Metadata {
 
 export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
   const transcript = transcripts[video.slug];
+  const faqs = podcastFaqs[video.slug];
   const url = `${base}/podcast/${video.slug}`;
   const schema = { "@context": "https://schema.org", "@type": "VideoObject", "@id": `${url}#video`, name: video.title, description: video.description,
     thumbnailUrl: `https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`, uploadDate: video.date, duration: video.duration,
@@ -37,6 +39,7 @@ export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
         </div>
         <div className="mt-5 flex flex-wrap gap-5 font-semibold text-[#C8EDD2]">
           <a href="#transcript" className="underline underline-offset-4">Read the full transcript</a>
+          <a href="#episode-faq" className="underline underline-offset-4">Episode questions and answers</a>
           <a href={`https://www.youtube.com/watch?v=${video.videoId}`} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Watch on YouTube</a>
           {video.slug === "episode-2" && <a href="https://www.buzzsprout.com/2651769/episodes/19889912" className="underline underline-offset-4">Listen to the audio episode</a>}
           {video.slug === "episode-6" && <a href="https://www.buzzsprout.com/2651769/episodes/20127258" className="underline underline-offset-4">Listen to the audio episode</a>}
@@ -58,6 +61,15 @@ export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
           <Link href={video.service} className="underline underline-offset-4">Explore related services</Link>
           <Link href="/ai-search-assessment" className="underline underline-offset-4">Request an AI search assessment</Link>
         </div>
+        <section id="episode-faq" aria-labelledby="episode-faq-heading" className="mt-14 scroll-mt-24 border-t border-gray-200 pt-10">
+          <h2 id="episode-faq-heading" className="text-3xl font-bold text-[#0D2318]">Questions answered in this episode</h2>
+          <p className="mt-4 leading-relaxed text-gray-600">Summarized from the conversation. Follow each timestamp to hear the discussion in context.</p>
+          <div className="mt-8 space-y-8">{faqs.map(faq => <article key={faq.question}>
+            <h3 className="text-xl font-bold text-[#0D2318]">{faq.question}</h3>
+            <p className="mt-3 leading-8 text-gray-800">{faq.answer}</p>
+            <a href={`https://www.youtube.com/watch?v=${video.videoId}&t=${faq.seconds}s`} target="_blank" rel="noopener noreferrer" aria-label={`Watch the discussion of ${faq.question} at ${faq.timestamp}`} className="mt-3 inline-block font-semibold text-[#1A5C3A] underline underline-offset-4">Watch this discussion at {faq.timestamp}</a>
+          </article>)}</div>
+        </section>
         <section id="transcript" className="mt-14 scroll-mt-24 border-t border-gray-200 pt-10">
           <h2 className="text-3xl font-bold text-[#0D2318]">Full transcript</h2>
           <p className="mt-4 leading-relaxed text-gray-600">{(video.slug === "episode-4" || video.slug === "episode-5" || video.slug === "episode-6") ? "From the Descript transcript of the published episode." : "From the published YouTube captions, lightly corrected for names."} Automatic transcription may contain errors. Timestamps open the corresponding point on YouTube. The recording is the source of truth.</p>
