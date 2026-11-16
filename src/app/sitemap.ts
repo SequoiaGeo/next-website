@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/about-sequoia-geo`, lastModified: "2026-08-21", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/media`, lastModified: "2026-11-16", changeFrequency: "weekly", priority: 0.6 },
     { url: `${BASE_URL}/podcast`, lastModified: "2026-11-16", changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/podcast/apply`, lastModified: "2026-11-16", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/podcast/episode-6`, lastModified: "2026-11-16", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/podcast/episode-5`, lastModified: "2026-11-16", changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/podcast/episode-4`, lastModified: "2026-11-16", changeFrequency: "monthly", priority: 0.6 },

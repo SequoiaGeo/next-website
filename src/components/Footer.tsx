@@ -112,6 +112,9 @@ export default function Footer() {
               <Link href="/podcast" className="text-pale-green/70 hover:text-white transition-colors">
                 Podcast and Transcripts
               </Link>
+              <Link href="/podcast/apply" className="text-pale-green/70 hover:text-white transition-colors">
+                Apply to Be a Podcast Guest
+              </Link>
             </div>
           </div>
 
