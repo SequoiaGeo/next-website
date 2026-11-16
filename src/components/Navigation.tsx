@@ -195,6 +195,13 @@ export default function Navigation() {
             Services &amp; Pricing
           </Link>
 
+          <Link
+            href="/podcast"
+            className="text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
+          >
+            Podcast
+          </Link>
+
           {/* Resources dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
@@ -358,6 +365,14 @@ export default function Navigation() {
             className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
             Services &amp; Pricing
+          </Link>
+
+          <Link
+            href="/podcast"
+            onClick={() => setMobileOpen(false)}
+            className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
+          >
+            Podcast
           </Link>
 
           {/* Mobile Resources accordion */}
