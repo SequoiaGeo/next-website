@@ -276,7 +276,7 @@ export default function Navigation() {
             onClick={() => trackCtaIntent("header_desktop", "schedule")}
             className="forest-button forest-nav-button"
           >
-            Talk with Aaron
+            Book Now
           </Link>
         </div>
 
@@ -437,7 +437,7 @@ export default function Navigation() {
               }}
               className="forest-button w-full"
             >
-              Talk with Aaron
+              Book Now
             </Link>
           </div>
         </div>
