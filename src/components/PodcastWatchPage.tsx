@@ -9,6 +9,7 @@ import six from "@/data/podcast-transcripts/episode-6.json";
 import five from "@/data/podcast-transcripts/episode-5.json";
 import plumbing from "@/data/podcast-transcripts/las-vegas-plumbing-ai-search.json";
 import podcastFaqs from "@/data/podcast-faqs.json";
+import podcastAudiences from "@/data/podcast-audiences.json";
 
 const transcripts = { "episode-1": one, "episode-2": two, "episode-3": three, "episode-4": four, "episode-5": five, "episode-6": six, "las-vegas-plumbing-ai-search": plumbing };
 const base = "https://www.sequoiageo.com";
@@ -49,6 +50,10 @@ export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
     </section>
     <section className="bg-white py-12">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
+        <section aria-labelledby="episode-audience-heading" className="mb-10">
+          <h2 id="episode-audience-heading" className="text-2xl font-bold text-[#0D2318]">Who this episode is for</h2>
+          <p className="mt-4 leading-8 text-gray-700">{podcastAudiences[video.slug]}</p>
+        </section>
         <h2 className="text-2xl font-bold text-[#0D2318]">What this conversation covers</h2>
         <ul className="mt-5 list-disc space-y-3 pl-6 leading-relaxed text-gray-700">{video.takeaways.map(item => <li key={item}>{item}</li>)}</ul>
         <p className="mt-6 leading-relaxed text-gray-600">These conversations are exploratory. Guest experiences and claims in the recording are attributed to the speaker and have not all been independently verified. AI recommendations can change. A mention, a website visit, an inquiry, and a job booked are separate outcomes. ChatGPT participates as an AI co-host with a synthetic voice.</p>
