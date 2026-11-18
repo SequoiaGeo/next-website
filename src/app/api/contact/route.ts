@@ -56,6 +56,7 @@ const REPORTED_AI_ASSISTANTS = new Set([
 ]);
 
 const FORM_SOURCES = new Set([
+  "chatgpt_profile_help",
   "estimate_review",
   "contact_form",
   "sequoia_knowledge_interface",
@@ -186,10 +187,15 @@ export async function POST(req: Request) {
     const marketingEmailConsent = isWebsiteAssessment ? assessmentMarketingConsent(body.marketingEmailConsent) : undefined;
 
     // --- Spam / bot protection (honeypot and validation) ---
-    const emailCheck = isWebsiteAssessment ? checkEmailLead(body) : null;
+    const isProfileHelp = body.source === "chatgpt_profile_help";
+    if (isProfileHelp && (typeof body.message !== "string" || !body.message.trim() || body.message.length > 1500)) {
+      return NextResponse.json({ error: "Please describe where you are getting stuck (up to 1,500 characters)." }, { status: 400 });
+    }
+    const profileMessage = isProfileHelp ? "ChatGPT profile setup help requested. Website: " + normalizeAssessmentWebsite(body.businessWebsite) + "\nIssue: " + body.message.trim() : "";
+    const emailCheck = isWebsiteAssessment || isProfileHelp ? checkEmailLead(body) : null;
     const spam = emailCheck
       ? emailCheck.ok
-        ? { ok: true as const, clean: { ...emailCheck.clean, phone: "", company: "", smsConsent: false, message: "Free AI search assessment requested for: " + businessWebsite + (snapshotQualification?.trade ? " | Trade: " + snapshotQualification.trade : "") + (snapshotQualification?.serviceArea ? " | Service area: " + snapshotQualification.serviceArea : "") } }
+        ? { ok: true as const, clean: { ...emailCheck.clean, phone: "", company: "", smsConsent: false, message: isProfileHelp ? profileMessage : "Free AI search assessment requested for: " + businessWebsite + (snapshotQualification?.trade ? " | Trade: " + snapshotQualification.trade : "") + (snapshotQualification?.serviceArea ? " | Service area: " + snapshotQualification.serviceArea : "") } }
         : emailCheck
       : checkLead(body);
     if (!spam.ok) {
@@ -200,7 +206,7 @@ export async function POST(req: Request) {
       }
       // Real validation failure, tell the user what to fix.
       return NextResponse.json(
-        { error: isWebsiteAssessment ? "Please enter your name and a valid email." : "Please enter a valid name, phone, and email." },
+        { error: isWebsiteAssessment || isProfileHelp ? "Please enter your name and a valid email." : "Please enter a valid name, phone, and email." },
         { status: 400 }
       );
     }
@@ -400,6 +406,7 @@ export async function POST(req: Request) {
       {
         leadId,
         captureKind: "contact",
+        profileHelpContext: isProfileHelp ? message : undefined,
         estimateAiConsent: source === "estimate_review" && body.estimateAiConsent === true,
         firstName: legacyWebhookPayload.firstName,
         lastName: legacyWebhookPayload.lastName,

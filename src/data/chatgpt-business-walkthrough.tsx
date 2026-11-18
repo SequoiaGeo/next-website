@@ -1,10 +1,11 @@
 import Link from "next/link";
 import YouTubeFacade from "@/components/YouTubeFacade";
+import ProfileHelpForm from "@/components/ProfileHelpForm";
 import transcript from "@/data/tutorial-transcripts/chatgpt-business-hub.json";
 
 export const businessWalkthroughSlug = "how-to-claim-business-on-chatgpt";
-const title = "How to Claim Your Business on ChatGPT: Step-by-Step Setup";
-const description = "Follow Aaron Husak's ChatGPT Business Hub walkthrough: claim a business, submit verification, explore the dashboard, and read the full transcript.";
+const title = "Set Up Your Business Profile on ChatGPT";
+const description = "Watch Aaron Husak's business profile setup tutorial, follow the written steps, troubleshoot common issues, and request help where you are stuck.";
 const dateISO = "2026-11-12";
 const date = "November 12, 2026";
 const category = "AI Search";
@@ -15,7 +16,8 @@ export const businessWalkthroughPost = {
   title, description, date, dateISO, category, readTime,
   image: "/images/chatgpt-business-thumbnail.png",
   content: <>
-    <p>I recorded the process of claiming Sequoia GEO in ChatGPT, from finding the business to submitting verification and exploring Business Hub. This walkthrough shows what I encountered, including what was still pending when the recording ended.</p>
+    <p>Follow along as I walk through setting up Sequoia GEO&apos;s business profile on ChatGPT. Below the video, you will find the steps I followed, what to have ready, and guidance for common setup problems. This guide is for business owners managing their own company&apos;s information.</p>
+    <p><a href="#profile-help" className="font-semibold underline">Already started and getting stuck? Get help with your profile.</a></p>
     <div className="relative my-8 aspect-video overflow-hidden rounded-xl bg-black">
       <YouTubeFacade videoId="QqhB09OEC-k" title={title} />
     </div>
@@ -28,6 +30,8 @@ export const businessWalkthroughPost = {
       <li><a href="#setup-steps">The setup steps I followed</a></li>
       <li><a href="#dashboard">What the dashboard showed</a></li>
       <li><a href="#limitations">What to keep in perspective</a></li>
+      <li><a href="#troubleshooting">Troubleshooting your setup</a></li>
+      <li><a href="#profile-help">Get help with your profile</a></li>
       <li><a href="#transcript">Full walkthrough transcript</a></li>
     </ul></nav>
     <h2 id="before-you-start">Before you start</h2>
@@ -55,6 +59,18 @@ export const businessWalkthroughPost = {
     </ul>
     <p>For a contractor, this is an opportunity to review the information associated with the business. Keep service details, business information, project evidence, and customer experience accurate across your existing channels. A claimed profile alone does not establish that ChatGPT will recommend the company.</p>
     <p>Related reading: <Link href="/blog/chatgpt-knows-your-company-does-it-recommend-you" className="underline">ChatGPT recognition versus recommendations</Link>, and <Link href="/blog/how-to-use-geo-tools-contractors" className="underline">how contractors can interpret AI search reports</Link>.</p>
+    <h2 id="troubleshooting">Getting stuck? Check these points first</h2>
+    <h3>My verification is still pending</h3>
+    <p>Check whether your account shows a pending review or asks for another action. In my first recording, submitting the details did not immediately unlock editing. Follow the instructions shown in your account. I cannot approve a verification or promise a review time; account-access and verification decisions belong to OpenAI.</p>
+    <h3>I cannot save my photos</h3>
+    <p>In my follow-up recording, the interface asked for at least three photos before saving. I discarded that attempt rather than completing the upload. Check the requirements and error message shown in your own account, including any file restrictions. That recording does not establish a universal photo requirement or a verified fix for every upload error.</p>
+    <h3>My screen does not match the video</h3>
+    <p>Check your verification status and the business you are managing. Feature availability and interface labels may differ. Agent Builder was unavailable in my account during the first recording, and the products section later requested separate domain verification. Neither step should be assumed complete just because the business claim was accepted.</p>
+    <h2>What to check after your details save</h2>
+    <ul><li>Confirm your category and description accurately explain your services.</li><li>Check your website, phone, email, location, hours, and time zone.</li><li>Review which changes saved and which still show a pending action.</li><li>Track website visits and inquiries separately from profile views or mentions. A completed profile does not guarantee recommendations.</li></ul>
+    <h2 id="profile-help">Having trouble getting your profile set up?</h2>
+    <p>Tell me where you are stuck, and I will let you know how I can help. If you need hands-on assistance, we can discuss the scope and cost before any work begins.</p>
+    <ProfileHelpForm />
     <h2 id="transcript">Full walkthrough transcript</h2>
     <p><strong>Next tutorial:</strong> once verification is complete, watch <Link href="/blog/how-to-edit-chatgpt-business-profile" className="underline">how to edit your ChatGPT business profile</Link> for category, description, contact, location, and hours updates.</p>
     <p>This is the supplied transcript, with editing markers removed, paragraph spacing cleaned up, and Sequoia GEO&apos;s name and website spelling corrected. Spoken observations and predictions reflect the recording, not a promise of current feature access. The notes above clarify rollout limits and verification status.</p>
