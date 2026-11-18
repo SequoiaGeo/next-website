@@ -14,6 +14,11 @@ export const metadata: Metadata = {
 
 const services = [
   {
+    title: "Podcast & Video Content",
+    description: "Guided interviews turned into edited videos and social clips. Available as a separately scoped content project, with no fractional CMO engagement required.",
+    href: "/podcast-production",
+  },
+  {
     title: "Google Ads & Local Service Ads",
     description: "Advertising management where scoped, with reporting on genuine inquiries, qualified leads and booked jobs when records support the connection.",
     href: "/contact",

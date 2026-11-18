@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const services = [
+  { label: "Podcast & Video Content", href: "/podcast-production" },
   { label: "ChatGPT Ads", href: "/chatgpt-ads" },
   { label: "HVAC SEO", href: "/hvac-seo" },
   { label: "Plumbing SEO", href: "/plumbing-seo" },
@@ -21,6 +22,7 @@ const services = [
 ];
 
 const resources = [
+  { label: "Fractional CMO Directory", href: "/resources/fractional-cmos-home-services" },
   { label: "ClovisFest Checklist & QR", href: "/clovis" },
   { label: "Owner Tools & Worksheets", href: "/resources" },
   { label: "Ask Sequoia", href: "/ask-sequoia" },

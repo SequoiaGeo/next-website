@@ -25,7 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/services`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/github-repos-home-service-businesses`, lastModified: "2026-08-20", changeFrequency: "monthly", priority: 0.7 },
 
+    { url: `${BASE_URL}/resources/fractional-cmos-home-services`, lastModified: "2026-11-18", changeFrequency: "monthly", priority: 0.7 },
+
     // Service pages
+    { url: `${BASE_URL}/podcast-production`, lastModified: "2026-11-18", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/marketing-agents`, lastModified: "2026-09-30", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/chatgpt-ads`, lastModified: "2026-07-27", changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/geo-agency`, lastModified: "2026-08-29", changeFrequency: "monthly", priority: 0.9 },

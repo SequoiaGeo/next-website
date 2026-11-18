@@ -10,6 +10,7 @@ const serviceLinks = [
   {
     group: "GEO and Home Services Marketing",
     items: [
+      { label: "Podcast & Video Content", href: "/podcast-production" },
       { label: "AI SEO / Search Visibility", href: "/geo-agency" },
       { label: "AI Search Assessment", href: "/ai-search-assessment" },
       { label: "Auto Detailing Marketing", href: "/auto-detailing-marketing" },
@@ -32,7 +33,8 @@ const resourceLinks = [
   {
     group: "Company and supporting services",
     items: [
-      { label: "About Sequoia", href: "/about-sequoia-geo" },
+      { label: "How We Measure", href: "/ai-search-methodology" },
+      { label: "Fractional CMO Directory", href: "/resources/fractional-cmos-home-services" },
       { label: "Blog", href: "/blog" },
       { label: "Media and workshops", href: "/media" },
       { label: "Website Design", href: "/websites" },
@@ -259,10 +261,10 @@ export default function Navigation() {
           </div>
 
           <Link
-            href="/ai-search-methodology"
+            href="/about-sequoia-geo"
             className="text-sm font-medium text-gray-700 hover:text-[#1A5C3A] transition-colors"
           >
-            How We Measure
+            About Us
           </Link>
         </div>
 
@@ -427,11 +429,11 @@ export default function Navigation() {
           )}
 
           <Link
-            href="/ai-search-methodology"
+            href="/about-sequoia-geo"
             onClick={() => setMobileOpen(false)}
             className="text-lg font-medium text-gray-800 hover:text-[#1A5C3A] py-3 border-b border-gray-100 transition-colors"
           >
-            How We Measure
+            About Us
           </Link>
 
           <div className="mt-6 flex flex-col gap-4">
