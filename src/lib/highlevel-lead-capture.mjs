@@ -4,6 +4,7 @@ const REQUEST_TIMEOUT_MS = 4500;
 
 const CAPTURE_KINDS = new Set(["contact", "guide", "calculator"]);
 const FORM_SOURCES = new Set([
+  "chatgpt_profile_help",
   "estimate_review",
   "contact_form",
   "sequoia_knowledge_interface",
@@ -122,6 +123,10 @@ function evidenceNote(input, now) {
     .replace(/\s+/g, " ");
   if (reportedQuestion) lines.push(`reported_ai_question: ${reportedQuestion}`);
 
+  if (input.source === "chatgpt_profile_help") {
+    lines.push("profile_help_context: " + cleanText(input.profileHelpContext, 2000).replace(/[\r\n]+/g, " "));
+    lines.push("marketing_email_consent: not_granted");
+  }
   if (input.businessWebsite) lines.push(`assessment_website: ${cleanText(input.businessWebsite, 500).replace(/[\r\n]+/g, " ")}`);
   if (["paid_snapshot_google", "paid_snapshot_chatgpt"].includes(input.source)) {
     if (input.snapshotQualification?.trade) lines.push("snapshot_trade: " + cleanText(input.snapshotQualification.trade, 160).replace(/[\r\n]+/g, " "));

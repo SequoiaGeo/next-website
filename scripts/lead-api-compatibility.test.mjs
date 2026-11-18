@@ -389,3 +389,33 @@ test("paid Snapshot qualification remains in direct CRM when notification delive
     deliveryMode = "success";
   }
 });
+
+test("profile help preserves issue in direct CRM when email fails without requiring phone", async () => {
+  process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN = "pit_direct_fixture";
+  process.env.HIGHLEVEL_LOCATION_ID = "location_direct_fixture";
+  deliveryMode = "direct_success";
+  try {
+    const start = outboundCalls.length;
+    await postLegacyBody(["api", "contact"], { name: "Profile Fixture", email: "profile@invalid.example", source: "chatgpt_profile_help", businessWebsite: "example.com", message: "Cannot save photos", website: "" });
+    const note = outboundCalls.slice(start).find(c => c.url.endsWith("/notes") && c.init?.method === "POST");
+    const evidence = JSON.parse(note.init.body).body;
+    assert.ok(evidence.includes("form_source: chatgpt_profile_help"));
+    assert.ok(evidence.includes("Cannot save photos"));
+    assert.ok(evidence.includes("example.com"));
+    assert.ok(evidence.includes("marketing_email_consent: not_granted"));
+  } finally {
+    delete process.env.HIGHLEVEL_PRIVATE_INTEGRATION_TOKEN;
+    delete process.env.HIGHLEVEL_LOCATION_ID;
+    deliveryMode = "success";
+  }
+});
+
+test("profile help rejects missing issue and does not capture honeypot", async () => {
+  const body = { name: "Profile Fixture", email: "profile@invalid.example", source: "chatgpt_profile_help", message: "Cannot save photos", website: "" };
+  const missing = await invokeLegacyBody(["api", "contact"], { ...body, message: "" });
+  assert.equal(missing.response.status, 400);
+  const start = outboundCalls.length;
+  const bot = await invokeLegacyBody(["api", "contact"], { ...body, website: "spam" });
+  assert.equal(bot.payload.captured, undefined);
+  assert.equal(outboundCalls.length, start);
+});
