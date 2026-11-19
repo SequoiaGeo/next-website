@@ -54,9 +54,9 @@ export default function Home() {
           <h2 id="how-we-start-heading" className="text-3xl font-extrabold tracking-tight sm:text-4xl">Here&rsquo;s how we start.</h2>
           <ol className="mt-8 grid gap-8 md:grid-cols-3">
             {[
-              ["01. Tell Aaron what needs to work better.", "Book a 15-minute conversation about your goals, current marketing, and what’s getting in the way. We’ll determine whether there’s a fit."],
-              ["02. Agree on the work and who owns it.", "Define the scope, responsibilities, fees, and measures of progress. Aaron can lead your existing providers, or you can add a separately scoped Sequoia execution team."],
-              ["03. Put the first priorities into motion.", "During the first 30 days of the engagement, establish the baseline and a 90-day plan with priorities, owners, and deadlines. Regular reviews keep decisions and work moving."],
+              ["1. Tell Aaron what needs to work better.", "Book a 15-minute conversation about your goals, current marketing, and what’s getting in the way. We’ll determine whether there’s a fit."],
+              ["2. Agree on the work and who owns it.", "Define the scope, responsibilities, fees, and measures of progress. Aaron can lead your existing providers, or you can add a separately scoped Sequoia execution team."],
+              ["3. Put the first priorities into motion.", "During the first 30 days of the engagement, establish the baseline and a 90-day plan with priorities, owners, and deadlines. Regular reviews keep decisions and work moving."],
             ].map(([title, body]) => <li key={title}><h3 className="text-xl font-bold text-[#C8EDD2]">{title}</h3><p className="mt-3 text-base leading-relaxed text-gray-200">{body}</p></li>)}
           </ol>
           <div className="mt-8 flex flex-wrap items-center gap-4 sm:gap-6">
