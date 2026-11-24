@@ -180,5 +180,31 @@
       "seconds": 873,
       "timestamp": "14:33"
     }
+  ],
+  "episode-7": [
+    {
+      "question": "What does Josh mean by treating SEO as a science?",
+      "answer": "Josh describes an ongoing process of forming hypotheses, looking for patterns across pages, and testing individual changes. He distinguishes large correlation studies from more controlled experiments. The episode presents his testing approach and interpretations, rather than an independently verified formula for rankings.",
+      "seconds": 1550,
+      "timestamp": "25:50"
+    },
+    {
+      "question": "How does single-variable SEO testing differ from correlation research?",
+      "answer": "Josh describes comparing closely matched pages while changing one element, then observing their rankings. Correlation research looks for patterns across many pages but can leave other influences unresolved. He explains why he uses both approaches and why isolating a variable matters to his conclusions.",
+      "seconds": 1693,
+      "timestamp": "28:13"
+    },
+    {
+      "question": "What does Josh say about using AI to write website content?",
+      "answer": "Josh distinguishes generic AI output from content developed with business context, customer needs, and human expertise. He argues that how AI is used matters more than the label alone. His claims about particular ranking effects are his interpretations of his tests.",
+      "seconds": 390,
+      "timestamp": "6:30"
+    },
+    {
+      "question": "Why look beyond rankings when evaluating SEO?",
+      "answer": "The discussion connects search intent with the inquiries a contractor wants. Josh contrasts informational searches with urgent service needs and emphasizes qualified leads. Owners can ask how reported visibility relates to qualified calls and booked jobs, rather than treating a higher ranking as a completed business result.",
+      "seconds": 720,
+      "timestamp": "12:00"
+    }
   ]
 }
