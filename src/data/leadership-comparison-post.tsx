@@ -5,7 +5,7 @@ export const leadershipComparisonCard = {
     slug: leadershipComparisonSlug,
     title: "Fractional CMO vs Marketing Agency: Who Leads the Plan?",
     excerpt: "Who sets priorities, who does the work, and who connects the pieces? A practical guide for home-service owners choosing marketing leadership, execution or both.",
-    date: "Updated October 19, 2026",
+    date: "Updated November 25, 2026",
     readTime: "8 min read",
     category: "Fractional CMO",
 };
@@ -14,12 +14,12 @@ export const leadershipComparisonPost = {
     description: "Fractional CMO vs marketing agency: compare responsibilities, execution, accountability and costs for home-service companies. Find the support you need.",
     date: "April 18, 2026",
     dateISO: "2026-04-18",
-    modifiedDate: "October 19, 2026",
-    modifiedDateISO: "2026-10-19",
+    modifiedDate: "November 25, 2026",
+    modifiedDateISO: "2026-11-25",
     readTime: leadershipComparisonCard.readTime,
     category: leadershipComparisonCard.category,
     content: <>
-    <p className="text-base text-gray-600">Updated October 19, 2026: revised the responsibilities comparison and Sequoia GEO pricing. Originally published April 18, 2026.</p>
+    <p className="text-base text-gray-600">Updated November 25, 2026: added a sample leadership plan and scorecard to help evaluate the role. Originally published April 18, 2026.</p>
     <p>Your ad company wants more budget. Your SEO provider wants more pages. Someone needs photos for social media. Each has a report, and you are still the person deciding what matters, getting everyone aligned and asking whether the work is producing the inquiries your business needs.</p>
     <p>That is where the <strong>fractional CMO vs marketing agency</strong> decision becomes useful. You may need better execution. You may need someone to lead the whole marketing function. You may need both. Hiring another provider will not automatically settle which problem you have.</p>
     <div className="my-8 rounded-2xl border border-[#1A5C3A]/20 bg-[#fafaf8] p-6 sm:p-8">
@@ -35,6 +35,8 @@ export const leadershipComparisonPost = {
     <p>Those responsibilities connect. A decision to promote a particular service affects the audience, message, pages, advertising budget and demands on dispatch. Someone needs to lead that decision across the whole business.</p>
     <p>The <a href="https://www.ama.org/marketing-news/how-to-develop-an-effective-marketing-strategy/" target="_blank" rel="noopener noreferrer">American Marketing Association&apos;s strategy guidance</a> similarly emphasizes connecting marketing objectives, audiences, tactics and measurement to business goals. A strategy has to guide actual choices.</p>
     <p>Leadership also needs working authority. The owner and marketing leader should agree on account access, budget limits, provider responsibilities and how decisions are approved. At Sequoia, you retain approval over hiring and spending commitments.</p>
+
+    <p>To see how these responsibilities become working documents, review our <Link href="/fractional-cmo#sample-plan">sample 90-day fractional CMO plan</Link> and <Link href="/fractional-cmo#sample-scorecard">inquiry and booking scorecard</Link>. These are illustrative examples, not client results. They show what to ask for when evaluating a leadership engagement.</p>
 
     <h2>What does a marketing agency cover?</h2>
     <p>An agency provides people and capabilities to deliver an agreed scope. That might include SEO and GEO implementation, website development, service and location content, Google Business Profile management, paid advertising, social media, email or creative production.</p>

@@ -68,6 +68,10 @@ export default function PodcastWatchPage({ video }: { video: PodcastVideo }) {
           <Link href={video.service} className="underline underline-offset-4">Explore related services</Link>
           <Link href="/ai-search-assessment" className="underline underline-offset-4">Request an AI search assessment</Link>
         </div>
+        {(video.slug === "episode-5" || video.slug === "episode-7") && <aside className="mt-10 border-l-4 border-[#1A5C3A] bg-[#fafaf8] p-6" aria-labelledby="leadership-next-step">
+          <h2 id="leadership-next-step" className="text-xl font-bold text-[#0D2318]">Put the discussion to work in your business</h2>
+          <p className="mt-3 leading-relaxed text-gray-700">{video.slug === "episode-5" ? "If your reputation, messaging and customer follow-up are being handled by different people, someone needs to coordinate the priorities." : "If your providers report rankings and clicks but you need to decide what deserves the next investment, use a shared scorecard that separates visibility, inquiries and booked jobs."} Aaron&apos;s <Link href="/fractional-cmo" className="font-semibold text-[#1A5C3A] underline underline-offset-4">fractional CMO services for home-service companies</Link> connect those decisions across your team and providers. <Link href="/fractional-cmo#sample-scorecard" className="font-semibold text-[#1A5C3A] underline underline-offset-4">See the sample scorecard and 90-day plan.</Link></p>
+        </aside>}
         <section id="episode-faq" aria-labelledby="episode-faq-heading" className="mt-14 scroll-mt-24 border-t border-gray-200 pt-10">
           <h2 id="episode-faq-heading" className="text-3xl font-bold text-[#0D2318]">Questions answered in this episode</h2>
           <p className="mt-4 leading-relaxed text-gray-600">Summarized from the conversation. Follow each timestamp to hear the discussion in context.</p>
