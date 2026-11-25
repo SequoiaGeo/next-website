@@ -312,6 +312,8 @@ export default function BalancedComfortCaseStudy() {
         </div>
       </section>
 
+      <section className="bg-white py-12"><div className="mx-auto max-w-4xl px-6 lg:px-8"><h2 className="text-2xl font-bold text-[#0D2318]">How that operating experience informs the work today</h2><p className="mt-5 text-lg leading-relaxed text-gray-700">Aaron brings this owner-operator perspective to <Link href="/fractional-cmo" className="font-semibold text-[#1A5C3A] underline underline-offset-4">fractional CMO leadership for home-service companies</Link>: coordinating providers, checking inquiry quality and matching marketing priorities to operating capacity. See a <Link href="/fractional-cmo#sample-plan" className="font-semibold text-[#1A5C3A] underline underline-offset-4">sample 90-day plan</Link>. Balanced Comfort is founder history, not a Sequoia GEO fractional CMO client case study.</p></div></section>
+
       {/* CTA */}
       <section className="bg-[#0D2318] py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
