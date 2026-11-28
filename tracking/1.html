@@ -1,0 +1,15 @@
+<script>
+(function(w,d){
+if(!w.__sgGtmStarted || w.__sgGoogleReady) return;
+var ga={{Site GA4 ID}};
+if(!ga) return;
+w.gtag('js',new Date());
+w.gtag('config',ga);
+w.gtag('config','AW-1042937332');
+w.__sgGoogleReady=true;
+var pending=w.__sgPendingGoogleEvents||[];
+w.__sgPendingGoogleEvents=[];
+for(var i=0;i<pending.length;i++) w.gtag.apply(w,pending[i]);
+var s=d.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(ga);d.head.appendChild(s);
+})(window,document);
+</script>

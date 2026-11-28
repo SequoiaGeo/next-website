@@ -1,0 +1,10 @@
+<script>
+(function(w,d){
+var id={{Site Clarity ID}};
+if(!w.__sgGtmStarted || !id || w.__sgClarityStarted) return;
+w.__sgClarityStarted=true;
+w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+w.clarity('consentv2',{analytics_Storage:'granted',ad_Storage:'denied'});
+var s=d.createElement('script');s.async=true;s.src='https://www.clarity.ms/tag/'+id;d.head.appendChild(s);
+})(window,document);
+</script>
