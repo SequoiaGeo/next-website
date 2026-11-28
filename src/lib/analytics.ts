@@ -1,5 +1,5 @@
 // Lightweight GA4 + Google Ads event helper.
-// gtag is loaded globally in layout.tsx (GA4 config + AW-1042937332 Google Ads).
+// GTM loads gtag after cookie acceptance (existing GA4 and Google Ads destinations).
 // Safe to call before gtag loads or during SSR: it no-ops instead of throwing.
 
 import { readAiAttribution } from "@/lib/ai-attribution";
@@ -13,7 +13,7 @@ import {
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
-    // OpenAI Ads (ChatGPT) pixel, loaded by OaiqPixel in layout.tsx
+    // OpenAI Ads (ChatGPT) pixel, loaded by the consent-gated GTM container
     oaiq?: (...args: unknown[]) => void;
   }
 }

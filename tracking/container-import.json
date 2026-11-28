@@ -1,0 +1,161 @@
+{
+  "exportFormatVersion": 2,
+  "containerVersion": {
+    "accountId": "6327088944",
+    "containerId": "236934577",
+    "containerVersionId": "0",
+    "container": {
+      "accountId": "6327088944",
+      "containerId": "236934577",
+      "name": "www.sequoiageo.com",
+      "publicId": "GTM-P5JJKJDF",
+      "usageContext": [
+        "WEB"
+      ]
+    },
+    "tag": [
+      {
+        "accountId": "6327088944",
+        "containerId": "236934577",
+        "tagId": "1",
+        "name": "Google Analytics and Ads - existing destinations",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function(w,d){\nif(!w.__sgGtmStarted || w.__sgGoogleReady) return;\nvar ga={{Site GA4 ID}};\nif(!ga) return;\nw.gtag('js',new Date());\nw.gtag('config',ga);\nw.gtag('config','AW-1042937332');\nw.__sgGoogleReady=true;\nvar pending=w.__sgPendingGoogleEvents||[];\nw.__sgPendingGoogleEvents=[];\nfor(var i=0;i<pending.length;i++) w.gtag.apply(w,pending[i]);\nvar s=d.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(ga);d.head.appendChild(s);\n})(window,document);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "2147479553"
+        ],
+        "tagFiringOption": "ONCE_PER_LOAD"
+      },
+      {
+        "accountId": "6327088944",
+        "containerId": "236934577",
+        "tagId": "2",
+        "name": "Microsoft Clarity - existing project",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function(w,d){\nvar id={{Site Clarity ID}};\nif(!w.__sgGtmStarted || !id || w.__sgClarityStarted) return;\nw.__sgClarityStarted=true;\nw.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};\nw.clarity('consentv2',{analytics_Storage:'granted',ad_Storage:'denied'});\nvar s=d.createElement('script');s.async=true;s.src='https://www.clarity.ms/tag/'+id;d.head.appendChild(s);\n})(window,document);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "2147479553"
+        ],
+        "tagFiringOption": "ONCE_PER_LOAD"
+      },
+      {
+        "accountId": "6327088944",
+        "containerId": "236934577",
+        "tagId": "3",
+        "name": "Meta Pixel - existing page view",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function(f,b,e,v,n,t,s){\nif(!f.__sgGtmStarted || f.__sgMetaStarted) return;f.__sgMetaStarted=true;\nif(!f.fbq){n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments);};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=true;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=true;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);}\nf.fbq('init','1394557232154617');f.fbq('track','PageView');\n})(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "2147479553"
+        ],
+        "tagFiringOption": "ONCE_PER_LOAD"
+      },
+      {
+        "accountId": "6327088944",
+        "containerId": "236934577",
+        "tagId": "4",
+        "name": "ChatGPT Pixel - existing lead measurement",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function(w,d){\nif(!w.__sgGtmStarted || w.__sgOaiStarted) return;w.__sgOaiStarted=true;\nvar pending=(w.oaiq&&w.oaiq.q)||[];\nvar q=function(){q.q.push(arguments);};q.q=[];w.oaiq=q;\nw.oaiq('init',{pixelId:'6Msga3a42xZqxa2qY1vCYy',debug:false});\nfor(var i=0;i<pending.length;i++)w.oaiq.apply(w,pending[i]);\nvar s=d.createElement('script');s.async=true;s.src='https://bzrcdn.openai.com/sdk/oaiq.min.js';d.head.appendChild(s);\n})(window,document);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "2147479553"
+        ],
+        "tagFiringOption": "ONCE_PER_LOAD"
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "6327088944",
+        "containerId": "236934577",
+        "variableId": "1",
+        "name": "Site GA4 ID",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "sg_ga_id"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "accountId": "6327088944",
+        "containerId": "236934577",
+        "variableId": "2",
+        "name": "Site Clarity ID",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "sg_clarity_id"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          }
+        ]
+      }
+    ]
+  }
+}

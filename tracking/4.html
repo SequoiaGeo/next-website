@@ -1,0 +1,10 @@
+<script>
+(function(w,d){
+if(!w.__sgGtmStarted || w.__sgOaiStarted) return;w.__sgOaiStarted=true;
+var pending=(w.oaiq&&w.oaiq.q)||[];
+var q=function(){q.q.push(arguments);};q.q=[];w.oaiq=q;
+w.oaiq('init',{pixelId:'6Msga3a42xZqxa2qY1vCYy',debug:false});
+for(var i=0;i<pending.length;i++)w.oaiq.apply(w,pending[i]);
+var s=d.createElement('script');s.async=true;s.src='https://bzrcdn.openai.com/sdk/oaiq.min.js';d.head.appendChild(s);
+})(window,document);
+</script>
